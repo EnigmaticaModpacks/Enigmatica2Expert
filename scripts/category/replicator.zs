@@ -9,6 +9,7 @@ import crafttweaker.world.IFacing;
 import crafttweaker.world.IVector3d;
 import crafttweaker.world.IVector3d.create as V;
 import crafttweaker.world.IWorld;
+import mods.ctutils.utils.Math.abs;
 import mods.requious.AssemblyRecipe;
 import mods.requious.Color;
 import mods.requious.ComponentFace;
@@ -18,6 +19,7 @@ import mods.requious.MachineVisual;
 import mods.requious.RecipeContainer;
 import mods.requious.SlotVisual;
 import scripts.category.uu.getCost;
+import scripts.D.D_zs;
 
 static TICK_STEP as int = 1;
 static ENERGY_USAGE as int = 20000;
@@ -34,9 +36,14 @@ craft.make(<requious:replicator>, ["pretty",
   "M": <ic2:te:75>,   # MFSU
 });
 
-// ========================================================
-// Assembly
-// ========================================================
+/* 
+ █████╗ ███████╗███████╗███████╗███╗   ███╗██████╗ ██╗  ██╗   ██╗
+██╔══██╗██╔════╝██╔════╝██╔════╝████╗ ████║██╔══██╗██║  ╚██╗ ██╔╝
+███████║███████╗███████╗█████╗  ██╔████╔██║██████╔╝██║   ╚████╔╝ 
+██╔══██║╚════██║╚════██║██╔══╝  ██║╚██╔╝██║██╔══██╗██║    ╚██╔╝  
+██║  ██║███████║███████║███████╗██║ ╚═╝ ██║██████╔╝███████╗██║   
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝   
+ */
 var
 x = <assembly:replicator>;
 
@@ -57,6 +64,15 @@ x.setItemSlot(catlX,catlY, ComponentFace.all(), 64)
   .setHandAccess(true,true)
   .setFilter(<*>.only(function(item) { return getCost(item) > 0; }))
   .setGroup("input");
+
+static upgrX as int = 7;
+static upgrY as int = 2;
+x.setItemSlot(upgrX,upgrY, ComponentFace.none(), 64)
+  .setAccess(false,false)
+  .setHandAccess(true,true)
+  .setFilter(<ic2:upgrade>)
+  .setBackground(SlotVisual.create(1,1).addPart(replTexture, 7, 2))
+  .setGroup("upgrade");
 
 static outX as int = 4;
 static outY as int = 4;
@@ -115,8 +131,17 @@ x.addVisual(MachineVisual.smoke(
       /*global*/ false
 ));
 
+/*
+██╗      ██████╗  ██████╗ ██╗ ██████╗
+██║     ██╔═══██╗██╔════╝ ██║██╔════╝
+██║     ██║   ██║██║  ███╗██║██║     
+██║     ██║   ██║██║   ██║██║██║     
+███████╗╚██████╔╝╚██████╔╝██║╚██████╗
+╚══════╝ ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝
+*/
+
 // ========================================================
-// Logic
+// Variables
 // ========================================================
 function pushErr(m as MachineContainer, reason as string) as void {
   if (isNull(reason)) return m.setString('error', '');
@@ -131,9 +156,33 @@ function defineVars(m as MachineContainer) as void {
   m.setString('error', ''); // Error line
   m.setInteger('goal', 0); // how much UU need. -1 if just trying to push output
   m.setInteger('buffer', 0); // stored UU in internal
+  m.setInteger('tick', 0);
 }
 
-// <ic2:te:62> // type: pattern_storage
+// ========================================================
+// Consumptions
+// ========================================================
+function calcConsumption(upgrAmount as int, tick as double) as int {
+  val s = pow(1.3d, upgrAmount);
+  val resid = s - (s as int) as double;
+  if (resid == 0) return s as int;
+  val bonus = (tick % (1.0d / resid) + 0.5d) as int == 0 ? 1 : 0;
+  return s as int + bonus;
+}
+
+function calcPowerConsumption(upgrAmount as int) as int {
+  val powerUsage = pow(1.6d, upgrAmount);
+  return (powerUsage * ENERGY_USAGE as double) as int;
+}
+
+// ========================================================
+// States
+// ========================================================
+function getUpgrAmount(m as MachineContainer) as double {
+  val upgr = m.getItem(upgrX, upgrY);
+  return isNull(upgr) ? 0.0d : upgr.amount as double;
+}
+
 static facings as IFacing[] = [
   IFacing.north(),
   IFacing.east(),
@@ -143,26 +192,32 @@ static facings as IFacing[] = [
   IFacing.up(),
 ] as IFacing[];
 
-function getPSBlock(world as IWorld, pos as IBlockPos) as IBlock {
+function getBlockWithStorage(world as IWorld, pos as IBlockPos) as D_zs {
   val block = world.getBlock(pos);
-  if (
-      isNull(block)
-    || block.definition.id != 'ic2:te'
-    || !D(block.data).check('InvSlots.SaveSlot.Contents')
-  ) return null;
-  return block;
+  if (isNull(block)) return null; // No block at all
+  val d = D(block.data);
+  val nbtPaths = [
+    'InvSlots.SaveSlot.Contents[0]',
+    'InvSlots.disk.Contents[0]',
+    'Items[0]',
+  ] as string[];
+  for path in nbtPaths {
+    if(d.getString(path~'.id', '') != 'ic2:crystal_memory') continue;
+    return d.move(path);
+  }
+  return null;
 }
 
-function findPatternStorage(m as MachineContainer) as IBlock {
+function findPatternStorage(m as MachineContainer) as D_zs {
   // Check previously stored face side
   var face = m.getInteger('face_index');
   if (face > 0) {
-    val b = getPSBlock(m.world, m.pos.getOffset(facings[face - 1], 1));
+    val b = getBlockWithStorage(m.world, m.pos.getOffset(facings[face - 1], 1));
     if (!isNull(b)) return b;
   }
 
   for i, f in facings {
-    val b = getPSBlock(m.world, m.pos.getOffset(f, 1));
+    val b = getBlockWithStorage(m.world, m.pos.getOffset(f, 1));
     if (isNull(b)) continue;
     m.setInteger('face_index', i + 1);
     return b;
@@ -171,22 +226,16 @@ function findPatternStorage(m as MachineContainer) as IBlock {
   return null;
 }
 
-function getReplicateItem(m as MachineContainer, block as IBlock) as IItemStack {
-  val data = D(block.data).move('InvSlots.SaveSlot.Contents[0]');
-  if (data.getString('id', '') != 'ic2:crystal_memory') {
-    pushErr(m, '§eNeed cryst.\n§e memory');
-    return null;
-  }
-
-  data.move('tag.Pattern');
-  if(!data.check(['id','Damage'])) {
+function getReplicateItem(m as MachineContainer, d as D_zs) as IItemStack {
+  d.move('tag.Pattern');
+  if(!d.check(['id','Damage'])) {
     pushErr(m, '§3Write data\n§3 to memory');
     return null;
   }
 
   val item = itemUtils.getItem(
-    data.getString('id', ''),
-    data.getString('Damage', '')
+    d.getString('id', ''),
+    d.getString('Damage', '')
   );
 
   if(isNull(item)) {
@@ -197,30 +246,40 @@ function getReplicateItem(m as MachineContainer, block as IBlock) as IItemStack 
   return item;
 }
 
-function consumeEnergy(m as MachineContainer) as void {
+function consumeEnergy(m as MachineContainer, amount as int) as void {
   val energy = m.getEnergy(powX, powY);
-  m.setEnergy(powX, powY, energy - ENERGY_USAGE);
-  m.setDouble('active', 10);
+  m.setEnergy(powX, powY, energy - amount);
+  m.setInteger('active', 10);
 }
 
 // Machine completed it task and could start new one
-function succes(m as MachineContainer) as void {
-  consumeEnergy(m);
+function succes(m as MachineContainer, powr as int) as void {
+  consumeEnergy(m, powr);
   m.setInteger('goal', 0);
   pushErr(m, null);
+}
+
+function consumeMatter(m as MachineContainer, amount as int) as bool {
+  val fluid = m.getFluid(mattX, mattY);
+  if (isNull(fluid) || fluid.amount <= 0) return false;
+  m.setFluid(mattX, mattY, fluid.amount > amount
+      ? fluid * (fluid.amount - amount)
+      : null
+  );
+  return true;
 }
 
 // Try to add target item to output
 // If succes, set goal to 0
 // If failed, goal would be set to -1
-function pushOutput(m as MachineContainer) as void {
+function pushOutput(m as MachineContainer, powr as int) as void {
   val out = m.getItem(outX, outY);
   val item = m.getItem(displX, displY);
 
   // Slot is empty
   if (isNull(out)) {
     m.setItem(outX, outY, item);
-    return succes(m);
+    return succes(m, powr);
   }
 
   // Slot partially occupied with same item
@@ -231,7 +290,7 @@ function pushOutput(m as MachineContainer) as void {
     && out.amount < out.maxStackSize
   ) {
     m.setItem(outX, outY, out * (out.amount + item.amount));
-    return succes(m);
+    return succes(m, powr);
   }
 
   // Unable to output
@@ -239,63 +298,68 @@ function pushOutput(m as MachineContainer) as void {
   pushErr(m, '§fNo output\n§f space');
 }
 
-function consumeMatter(m as MachineContainer) as bool {
-  val fluid = m.getFluid(mattX, mattY);
-  if (isNull(fluid) || fluid.amount <= 0) return false;
-  m.setFluid(mattX, mattY, fluid.amount > 1 ? fluid * (fluid.amount - 1) : null);
+function spentBuffer(m as MachineContainer, powr as int, buffer as int, goal as int) as bool {
+  if (buffer < goal) return false;
+  m.setInteger('buffer', buffer - goal);
+  pushOutput(m, powr);
   return true;
 }
 
 // Consume fluid and add it to buffer
 // Goal always bigger than 0 here
-function work(m as MachineContainer) as void {
+function work(m as MachineContainer, tick as int, upgrAmount as int, powr as int) as void {
   var buffer = m.getInteger('buffer');
   val goal = m.getInteger('goal');
 
   // Buffer still left from previous run, just output item
-  if (buffer >= goal) {
-    m.setInteger('buffer', buffer - goal);
-    return pushOutput(m);
-  }
+  if (spentBuffer(m, powr, buffer, goal)) return;
 
   // Consume to increase buffer
-  if(!consumeMatter(m)) return pushErr(m, '§dNeed UU\n§d matter');
-  buffer += 100;
+  val toConsume = calcConsumption(upgrAmount, tick);
+  if(!consumeMatter(m, toConsume))
+    return pushErr(m, '§dNeed UU\n§d matter');
+  buffer += 100 * toConsume;
 
   // Instantly drop result if cost below 1mb
-  if (buffer >= goal) {
-    m.setInteger('buffer', buffer - goal);
-    return pushOutput(m);
-  }
+  if (spentBuffer(m, powr, buffer, goal)) return;
 
   // Just add to buffer, skip
   m.setInteger('buffer', buffer);
-  consumeEnergy(m);
+  consumeEnergy(m, powr);
   pushErr(m, null);
 }
 
-// ========================================================
-// Entry
-// ========================================================
+/* 
+████████╗██╗ ██████╗██╗  ██╗
+╚══██╔══╝██║██╔════╝██║ ██╔╝
+   ██║   ██║██║     █████╔╝ 
+   ██║   ██║██║     ██╔═██╗ 
+   ██║   ██║╚██████╗██║  ██╗
+   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝
+*/
 function tick(m as MachineContainer) as void {
   defineVars(m);
+  val tick = m.getInteger('tick');
+  m.setInteger('tick', tick + 1);
+
+  // ⚡ Check energy
+  val upgrAmount = getUpgrAmount(m);
+  val energy = m.getEnergy(powX, powY);
+  val powr = calcPowerConsumption(upgrAmount);
+  if (energy < powr) return pushErr(m, '§cNeed\n§c energy');
 
   // 📦 Output is stuck
   val goal = m.getInteger('goal');
-  if (goal < 0) return pushOutput(m);
-
-  // ⚡ Check energy
-  val energy = m.getEnergy(powX, powY);
-  if (energy < ENERGY_USAGE) return pushErr(m, '§cNeed\n§c energy');
+  if (goal < 0) return pushOutput(m, powr);
 
   // ⚙️ Check if we already working
-  if (goal > 0) return work(m);
+  if (goal > 0) return work(m, tick, upgrAmount, powr);
 
   // ❔ Find what item we should replicate
   val ps = findPatternStorage(m);
   if (isNull(ps)) {
     m.setItem(displX, displY, null);
-    return pushErr(m, '§bPlace Ptrn.\n§b Storage');
+    return pushErr(m, '§bPlace adjst.\n§b Storage');
   }
   val item = getReplicateItem(m, ps);
   if(isNull(item)) return m.setItem(displX, displY, null);
@@ -313,7 +377,7 @@ function tick(m as MachineContainer) as void {
   // ✔️ Consume catalyst and start operation
   m.setItem(catlX, catlY, catl.amount > 1 ? catl * (catl.amount - 1) : null);
   m.setInteger('goal', catlCost);
-  work(m);
+  work(m, tick, upgrAmount, powr);
 }
 
 x.addRecipe(AssemblyRecipe.create(function(c) {})
@@ -321,4 +385,6 @@ x.addRecipe(AssemblyRecipe.create(function(c) {})
   if(m.world.remote) return false;
   tick(m);
   return true;
-}, 0));
+// Note: this number should be negative to
+// be able speed up machine with Time In Bottle
+}, -2000000));
