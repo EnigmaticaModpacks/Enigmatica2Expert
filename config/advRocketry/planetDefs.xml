@@ -19,6 +19,7 @@
 				<rotationalPeriod>128000</rotationalPeriod>
 				<atmosphereDensity>0</atmosphereDensity>
 				<generateCaves>true</generateCaves>
+				<generateCraters>true</generateCraters>
 			</planet>
 		</planet>
 		<planet name="Mercury" DIMID="101" customIcon="lava">
@@ -186,7 +187,7 @@
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
 	</star>
-	<star name="HD 42176" temp="145" x="-90" y="-33" numPlanets="0" numGasGiants="0">
+	<star name="HD 42176" temp="145" x="-90" y="-33" numPlanets="0" numGasGiants="0" blackHole="true">
 		<planet name="KELT-1b" DIMID="117" customIcon="gasgiantred">
 			<skyColor>0,1,0.5</skyColor>
 			<fogColor>0,0,1</fogColor>
@@ -219,9 +220,12 @@
 			<orbitalDistance>80</orbitalDistance>
 			<rotationalPeriod>8000</rotationalPeriod>
 			<generateCaves>true</generateCaves>
+			<generateCraters>true</generateCraters>
 		</planet>
 	</star>
-	<star name="HD 63776" temp="87" x="6" y="-142" numPlanets="0" numGasGiants="0">
+	<star blackHole="false" name="Magnis Vulpes" temp="87" x="6" y="-142" numPlanets="0" numGasGiants="0">
+		<star temp="200" separation="10.0" />
+		<star temp="100" separation="6.0" />
 		<planet name="KELT-4ab" DIMID="120" customIcon="iceworld">
 			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
 			<skyColor>0,1,0</skyColor>
@@ -254,6 +258,9 @@
 			<orbitalDistance>130</orbitalDistance>
 			<rotationalPeriod>18000</rotationalPeriod>
 			<generateCaves>true</generateCaves>
+			<generateVolcanos>true</generateVolcanos>
+			<generateGeodes>true</generateGeodes>
+			<generateCraters>true</generateCraters>
 		</planet>
 		<planet name="Kepler 0119" DIMID="123" customIcon="marslike">
 			<biomeIds>advancedrocketry:hotdryrock</biomeIds>

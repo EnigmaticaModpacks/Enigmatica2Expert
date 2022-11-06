@@ -7,14 +7,14 @@
 			"generator": {
 				"type": "sequential",
 				"generators": [
-					 {"type": "plate","block": "advancedrocketry:hotturf","radius": 10,"height":64,"material": ["advancedrocketry:hotturf", "stone"]}
-					,{"type": "plate","block": "air","radius": 7,"height": 64,"material": ["advancedrocketry:hotturf", "stone", "lava", "water", "clay", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite","end_stone", "redstone_ore", "thermalfoundation:ore_fluid", "actuallyadditions:block_misc", "draconicevolution:draconium_ore", "nuclearcraft:ore", "thaumcraft:ore_cinnabar", "exnihilocreatio:block_endstone_crushed", "libvulpes:ore0", "nuclearcraft:fluid_sulfur", "nuclearcraft:fluid_sodium"]}
+					 {"type": "plate","block": "advancedrocketry:hotturf","radius": 10,"height":144,"material": ["advancedrocketry:hotturf", "stone"]}
+					,{"type": "plate","block": "air","radius": 7,"height": 144,"material": ["advancedrocketry:hotturf", "stone", "lava", "water", "clay", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite","end_stone", "redstone_ore", "thermalfoundation:ore_fluid", "actuallyadditions:block_misc", "draconicevolution:draconium_ore", "nuclearcraft:ore", "thaumcraft:ore_cinnabar", "exnihilocreatio:block_endstone_crushed", "libvulpes:ore0", "nuclearcraft:fluid_sulfur", "nuclearcraft:fluid_sodium"]}
 				]
 			},
       "chunk-chance": 30,
 			"cluster-count": {"min":1, "max": 4},
-			"min-height": 66,
-			"max-height": 66,
+			"min-height": 146,
+			"max-height": 146,
 			"dimension": {"restriction": "whitelist", "value": [119]}
     },
     
@@ -30,9 +30,9 @@
 				"count": 1,
 				"material": "advancedrocketry:hotturf"
 			},
-			"cluster-count": 16,
+			"cluster-count": 32,
 			"min-height": 10,
-			"max-height": 120,
+			"max-height": 200,
 			"dimension": {"restriction": "whitelist", "value": [119]}
 		},
     
@@ -43,9 +43,9 @@
 				"cluster-size": 30,
 				"material": ["stone", "quark:elder_prismarine", "contenttweaker:compressed_crushed_granite"]
 			},
-			"cluster-count": 16,
+			"cluster-count": 32,
 			"min-height": 0,
-			"max-height": 144,
+			"max-height": 224,
 			"dimension": {"restriction": "whitelist", "value": [119]}
 		},
 
@@ -64,9 +64,9 @@
 					,{"block": "libvulpes:ore0","cluster-size": 14,"material": "advancedrocketry:hotturf"}
 				]
 			},
-			"cluster-count": 200,
+			"cluster-count": 250,
 			"min-height": 10,
-			"max-height": 121,
+			"max-height": 191,
 			"dimension": {"restriction": "whitelist", "value": [119]}
 		}
   }
