@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Enigmatica2Expert-Extended",
-  "version": "v0.76.0",
+  "version": "v0.77.0",
   "author": "krutoy242",
   "overrides": "overrides",
   "files": [
@@ -425,13 +425,14 @@
     {"projectID":557549,"fileID":3957880,"required":true,"___name":"Had Enough Items"},
     {"projectID":570458,"fileID":4056418,"required":true,"___name":"AE2 Unofficial Extended Life"},
     {"projectID":605580,"fileID":3907875,"required":true,"___name":"Entity Desync Fix"},
-    {"projectID":623955,"fileID":4062794,"required":true,"___name":"AE2 Fluid Crafting Rework"},
+    {"projectID":623955,"fileID":4068625,"required":true,"___name":"AE2 Fluid Crafting Rework"},
     {"projectID":627303,"fileID":3846860,"required":true,"___name":"Spectral Edge"},
     {"projectID":633720,"fileID":3852709,"required":true,"___name":"dan's Crafting Tweaks"},
     {"projectID":644875,"fileID":3876698,"required":true,"___name":"Pointer"},
     {"projectID":653506,"fileID":4033447,"required":true,"___name":"Tweaked Petroleum"},
     {"projectID":667524,"fileID":4033450,"required":true,"___name":"Tweaked Petroleum: Gas Addon"},
     {"projectID":687630,"fileID":4036743,"required":true,"___name":"Tweaked Excavation"},
-    {"projectID":687632,"fileID":4036750,"required":true,"___name":"Tweaked Lib"}
+    {"projectID":687632,"fileID":4036750,"required":true,"___name":"Tweaked Lib"},
+    {"projectID":687633,"fileID":4070070,"required":true,"___name":"Forked Proxy"}
   ]
 }
