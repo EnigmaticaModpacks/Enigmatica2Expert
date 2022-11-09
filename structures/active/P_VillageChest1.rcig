@@ -7,7 +7,7 @@
       "min": 1,
       "max": 8,
       "item": {
-        "id": "harvestcraft:tomatoitem",
+        "id": "rustic:tomato",
         "damage": 0,
         "count": 1
       }

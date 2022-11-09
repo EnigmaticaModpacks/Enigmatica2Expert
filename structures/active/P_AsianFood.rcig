@@ -107,7 +107,7 @@
       "min": 5,
       "max": 15,
       "item": {
-        "id": "harvestcraft:chilipepperitem",
+        "id": "rustic:chili_pepper",
         "damage": 0,
         "count": 1
       }

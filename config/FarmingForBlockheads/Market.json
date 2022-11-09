@@ -30,7 +30,11 @@
     "BiomesOPlenty Sacred Oak Sapling": "1*minecraft:emerald:8"
   },
   "defaults blacklist": [
-    "examplemod:example_item"
+    "harvestcraft:chilipepperseeditem",
+    "harvestcraft:coffeeseeditem",
+    "harvestcraft:grapeseeditem",
+    "harvestcraft:olive_sapling",
+    "harvestcraft:tomatoseeditem"
   ],
   "custom entries": {
     "__comment": "You can define additional items to be sold by the Market here. Defaults can be overridden. Prefix with ! to blacklist instead.",

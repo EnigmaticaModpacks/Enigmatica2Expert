@@ -129,3 +129,16 @@ craft.remake(<harvestcraft:groundtrap>, ["pretty",
 recipes.remove(<harvestcraft:royaljellyitem>);
 mods.integrateddynamics.Squeezer.addRecipe(<harvestcraft:queenbeeitem>, <harvestcraft:royaljellyitem>, 1.0f, <harvestcraft:royaljellyitem>, 1.0f, null, 0, null);
 scripts.process.squeeze([<harvestcraft:queenbeeitem>], null, "only: TECentrifuge", <harvestcraft:royaljellyitem> * 4);
+
+# Simple seed rework
+for item in [
+  // <harvestcraft:chilipepperseeditem>,
+  // <harvestcraft:coffeeseeditem>,
+  // <harvestcraft:grapeseeditem>,
+  // <harvestcraft:tomatoseeditem>,
+  <harvestcraft:olive_sapling>,
+] as IItemStack[] {
+  for i in 0 .. 3 {
+    mods.thermalexpansion.Insolator.removeRecipe(item, <thermalfoundation:fertilizer>.definition.makeStack(i));
+  }
+}

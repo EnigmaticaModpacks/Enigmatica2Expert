@@ -87,7 +87,7 @@
       "min": 8,
       "max": 16,
       "item": {
-        "id": "harvestcraft:grapeitem",
+        "id": "rustic:grapes",
         "damage": 0,
         "count": 1
       }
@@ -107,7 +107,7 @@
       "min": 5,
       "max": 15,
       "item": {
-        "id": "harvestcraft:tomatoitem",
+        "id": "rustic:tomato",
         "damage": 0,
         "count": 1
       }

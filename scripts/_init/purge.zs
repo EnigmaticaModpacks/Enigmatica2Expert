@@ -139,3 +139,16 @@ utils.rh(<avaritiafurnace:compressedfurnace>);
 utils.rh(<avaritiafurnace:doublecompessedfurnace>);
 utils.rh(<avaritiafurnace:triplecompressedfurnace>);
 utils.rh(<itemfilters:filter>);
+
+# Pams replacements
+utils.rh(<harvestcraft:chilipepperitem>);
+utils.rh(<harvestcraft:chilipepperseeditem>);
+utils.rh(<harvestcraft:coffeebeanitem>);
+utils.rh(<harvestcraft:coffeeseeditem>);
+utils.rh(<harvestcraft:grapeitem>);
+utils.rh(<harvestcraft:grapeseeditem>);
+utils.rh(<harvestcraft:olive_sapling>);
+utils.rh(<harvestcraft:oliveitem>);
+utils.rh(<harvestcraft:pamolive>);
+utils.rh(<harvestcraft:tomatoitem>);
+utils.rh(<harvestcraft:tomatoseeditem>);
