@@ -11,19 +11,15 @@
  */
 
 // @ts-check
-import { join, parse, resolve } from 'path'
+import { join, resolve } from 'path'
 
-import boxen from 'boxen'
 import chalk from 'chalk'
 import * as del from 'del'
 import fast_glob from 'fast-glob'
 import fs_extra from 'fs-extra'
 import git_describe from 'git-describe'
-import logUpdate from 'log-update'
-import numeral from 'numeral'
 import parseGitignore from 'parse-gitignore'
 import simpleGit from 'simple-git'
-import Client from 'ssh2-sftp-client'
 import terminal_kit from 'terminal-kit'
 import yargs from 'yargs'
 
@@ -515,9 +511,9 @@ const style = {
   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
   */
 
-  if (await pressEnterOrEsc(`[${STEP++}] FORCE Push tag? ENTER / ESC`)) {
-    await git.push(['--force'])
-    await git.pushTags(['--force'])
+  if (await pressEnterOrEsc(`[${STEP++}] Push tag? ENTER / ESC`)) {
+    await git.push()
+    await git.pushTags()
   }
 
   const inputTitle = await enterString(

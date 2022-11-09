@@ -19,7 +19,9 @@ import {
   injectInFile,
   loadJson,
   loadText,
+  naturalSort,
   saveObjAsJson,
+  saveText,
   setBlockDropsList,
 } from '../lib/utils.js'
 
@@ -107,7 +109,7 @@ export async function init(h = defaultHelper, options = argv) {
       )
         continue
 
-      const replacedGrid = g.grid.replaceAll(regex, (...args) =>
+      const replacedGrid = g.grid.replace(regex, (...args) =>
         args[2].substring(0, 1).toUpperCase()
       )
       const line = `remakeShape${g.postfix}(${g.name}, ${g.output}${
@@ -190,9 +192,25 @@ export async function init(h = defaultHelper, options = argv) {
   await h.begin('Saving default options')
   const moreDefOptsPath = 'config/MoreDefaultOptions/'
 
+  /**
+   * @typedef MDOptions
+   * @property {string} sourceFilePath "menu.json"
+   * @property {string} destinationFilePath "minemenu/menu.json"
+   * @property {boolean} clientSide true
+   * @property {boolean} serverSide false
+   */
+
+  /** @type {MDOptions[]} */
   const mdoJson = loadJson('config/MoreDefaultOptions.json')
   mdoJson.forEach((o) => {
-    copySync(o.destinationFilePath, join(moreDefOptsPath, o.sourceFilePath))
+    const dest = join(moreDefOptsPath, o.sourceFilePath)
+    if (o.sourceFilePath !== 'options.txt') return copySync(o.destinationFilePath, dest)
+
+    const opts = loadText(o.destinationFilePath)
+    const list = opts
+      .split('\n')
+      .sort((a, b) => [a, b].every(l => l.startsWith('key_')) ? naturalSort(a, b) : 0)
+    saveText(list.join('\n'), dest)
   })
 
   // ###############################################################################
@@ -300,7 +318,6 @@ export async function init(h = defaultHelper, options = argv) {
 }
 
 if (
-  // @ts-expect-error
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()

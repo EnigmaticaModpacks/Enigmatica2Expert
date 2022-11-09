@@ -2,32 +2,40 @@
 
 List of priorities:
 
-- [x] ✏️ Fix Dragon Blood recipes in Blood Magic Altair
-- [x] ✏️ Makes replicator work with chests
-- [x] ✏️ Add Overclocking upgrades to replicator
-- [x] ✏️ Add Infinite sprayer in Building kit
-- [x] ✏️ Add loot chest conversion recipes. 4 or 9 Common => 1 Uncommon and so on
-- [x] ✏️ Integrate BitHop
+- [ ] ✏️ Add Sentient Ingot in smeltery
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
-- [x] ✏️ Rad shielding any damage
+- [ ] ✏️ Impetus Gen add Primordial Pearl
 - [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
-- [x] 🔄 Revert nutrition punishment
-- [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
-- [ ] 🔄 Skyblock should be different dimension (probably advanced rocketry)
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/better-fusion-reactor-for-mekanism
+- [ ] ✏️ Double Compressed blocks make sledgeable and higher hardness
+- [ ] ✏️ JEI blacklist from purging not workign
+- [ ] ✏️ Use duration to show cloche speed
+- [ ] ✏️ Modular Machines cheaper
+- [ ] ✏️ Fix Advanced Dimlets uncraftable
+- [ ] ✏️ Buff Porous Stone output
+- [x] ✏️ Vitium seeds can be planted in the overworld by the AA farmer
+- [ ] ✏️ Buff porous stone output
+- [ ] ✏️ Fix Monster Spawner craft
+- [ ] ✏️ Buff AA rings (bansoukoyu) to encrease capacity and blaze output
+- [ ] ✏️ Add IC2 Electrolyzer compat
+- [ ] ✏️ Integrate Alluring Fishhook
+- [ ] 🐀 Fix rats not spawn on garbage piles
+- [ ] 📀 Buff dev/null/ to hold more then 64 blocks
+- [ ] 🟢 Add **better-fusion-reactor-for-mekanism**
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
-- [ ] 🟢 Add integrated proxy from skri
+- [ ] 🟢 Add **Bogo Sorter**
+- [ ] 📖 Add warning about Pam's crops in AA farmer, also farmland from FfB
+- [ ] 📖 Add mobs in Mek's gear
+- [ ] 📖 Add quiver in Combat kit
+- [ ] 📖 Nerf travel kit
+- [ ] 📖 Add Primordial Grain to JEI and book
+- [ ] 📖 Drill upgrades in AA quest lines
+- [ ] 📖 Fix "5.12E11d" strings.
+- [ ] 🌿 Add Patchouli book page with sorted UU values
+- [ ] 🌍 AdvRock geodes should contain modded ores
+- [ ] ⚡ Remove automatic IE armor recycling to speed up game load
 
-- [ ] ✏️ Rework loot boxes. Maybe cut tiers to only 3.
-  > Ideas for new rewards:
-  > - Creative modifier
-  > - All the armor resistance modifiers
-  > - Animania mob eggs
-  > - Thermal expansion tanks (you get one for free when unlocking IE so why not more from quests?)
-  > - The rf-generating spectre coil
-  > - Maybe add not enough wands but make all the wands exclusive to quest loot
-  > - Crystal Disk with uncraftable stuff
+fix `type: "loot"` in quests
 
 ---
 
@@ -37,6 +45,9 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📖 List of items that may be add into loot boxes in future: https://i.imgur.com/G0A2KF1.png
+- [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
+- [ ] 🔄 Skyblock should be different dimension (probably advanced rocketry)
 - [ ] ✏️ More Alien Crystal blocks + mica to get Crystaltine and ET gems
 - [ ] ✏️ Dense RTG harder?
 - [ ] 🔨 Add trait that efficiency growth with difficulty
@@ -122,7 +133,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🌍 118_KELT-2ab: Return Kelps
 - [ ] 🌍 Add generation of structures in **Ratlantis**
 - [ ] 🌍 Add new AdvRocke atmospheres
-- [ ] 🌍 Add planet with `<genType>2</genType>` from [Config](http://arwiki.dmodoomsirius.me/AdvancedRocketry/config/AdvancedPlanetConfiguration.php)
+- [ ] 🌍 Add planet with `<genType>2</genType>` from [Config](http://arwiki.dmodoomsirius.me/AdvancedRocketry/config/AdvancedPlanetConfiguration.php) ```<planet name="Caves" DIMID="124"> <genType>1</genType> </planet> <planet name="Caves" DIMID="126"> <genType>1</genType> <generateCaves>true</generateCaves> </planet> <planet name="Asteroid Belt" DIMID="125"> <genType>2</genType> </planet>```
 - [ ] 🌍 Add water animals at dim 118
 - [ ] 🌍 Advanced Rocketry 121 KELT-6a have no leaves on trees
 - [ ] 🌿 Patchouli: Change **texture** of book
@@ -223,6 +234,7 @@ Items that should have more uses:
 ![](https://git.io/JLhhW "Blue Quartz")
 ![](https://git.io/JCqV9 "Particle Generator")
 ![](https://git.io/JuMlF "Material Absorber")
+[Magical Snow Globe]
 
 ## 💧 Liquids of Interest
 

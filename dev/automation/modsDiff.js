@@ -132,7 +132,7 @@ export async function init(h = defaultHelper) {
 
   /** @type {CF2Addon[]} */
   const cursedUnion = await fetchMods(diff.union.map(addon => addon.addonID))
-  cursedUnion.sort((a, b) => b.downloadCount - a.downloadCount)
+  cursedUnion.sort((a, b) => a.id - b.id)
 
   // fs.writeFileSync(
   //   'CurseForge_example_return.json',

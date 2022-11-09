@@ -66,7 +66,7 @@ let itemsTree
 export const getItemsTree = () =>
   (itemsTree ??= getCSV('config/tellme/items-csv.csv').reduce(
     (result, o) => (
-      // @ts-expect-error
+      // @ts-expect-error types
       ((result[o['Registry name']] ??= {})[o['Meta/dmg']] = new Set(
         o['Ore Dict keys'].split(',')
       )),

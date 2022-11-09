@@ -8,7 +8,7 @@
     "automate": "esno mc-tools/packages/run/src/cli.ts dev/tools/mct-run.json",
     "bansoukou-prune": "node \"dev/_other/advancement-fix.js\" -r",
     "format-test": "esno mc-tools/scripts/format.ts scripts/MiscRecipes.zs",
-    "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts --levels=dev/tools/reduce_mods.json",
+    "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts levels dev/tools/reduce_mods.json",
     "md-to-html": "node ./dev/lib/curseforge-md-to-html.js ./changelogs/LATEST.md"
   },
   "dependencies": {
@@ -43,6 +43,7 @@
     "mc-benchmark": "^1.0.5",
     "memoizee": "^0.4.15",
     "minimist": "^1.2.7",
+    "nbt-ts": "^1.3.5",
     "node-curseforge": "^1.2.2",
     "node-fetch": "^3.2.10",
     "numeral": "^2.0.6",
