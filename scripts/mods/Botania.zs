@@ -366,3 +366,18 @@ scripts.process.melt(<botania:gaiahead>, <liquid:dark_matter> * (144*3), "except
 <entity:botania:pink_wither>.addDrop(<enderio:item_alloy_endergy_ingot:4>, 2, 6);
 <entity:botania:pink_wither>.addDrop(<industrialforegoing:pink_slime_ingot>, 3, 9);
 <entity:botania:pixie>.addPlayerOnlyDrop(<jaopca:item_dusttinytitanium>, 1, 3);
+
+# Metamorphic stones
+val metStones = [
+	<botania:biomestonea>,
+	<botania:biomestonea:1>,
+	<botania:biomestonea:2>,
+	<botania:biomestonea:3>,
+	<botania:biomestonea:4>,
+	<botania:biomestonea:5>,
+	<botania:biomestonea:6>,
+	<botania:biomestonea:7>,
+] as IItemStack[];
+for stone in metStones {
+	scripts.jei.crafting_hints.addInsOutCatl([<minecraft:stone:*>], stone, <botania:specialflower>.withTag({type: "marimorphosis"}));
+}
