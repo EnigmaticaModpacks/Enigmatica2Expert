@@ -224,8 +224,8 @@
 		</planet>
 	</star>
 	<star blackHole="false" name="Magnis Vulpes" temp="87" x="6" y="-142" numPlanets="0" numGasGiants="0">
-		<star temp="200" separation="10.0" />
-		<star temp="100" separation="6.0" />
+		<star temp="200" separation="10.0"/>
+		<star temp="100" separation="6.0"/>
 		<planet name="KELT-4ab" DIMID="120" customIcon="iceworld">
 			<biomeIds>biomesoplenty:alps,iceandfire:glacier,biomesoplenty:alps_foothills,biomesoplenty:glacier</biomeIds>
 			<skyColor>0,1,0</skyColor>
