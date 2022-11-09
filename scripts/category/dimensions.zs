@@ -37,7 +37,7 @@ function isForbidTravel(player as IPlayer, dimension as int) as bool {
   val isNether = dimension == -1;
   if(player.hasGameStage("skyblock")) {
     # Show message that player playing skyblock and cant visit any dims
-    if(isNether || restrictedDims has dimension) {
+    if(isNether || !(allowedDims has dimension)) {
       player.world.catenation().sleep(1).then(function(world, ctx) {
         player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.restricted"));
       }).start();
@@ -79,36 +79,4 @@ events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDi
 });
 
 
-static restrictedDims as int[] = [
-/*Inject_js(
-getCSV('config/tellme/dimensions-csv.csv')
-.filter(l=>![0,-1,144,-343800852,2,-2].includes(parseInt(l.ID)))
-.map(l=>`  ${l.ID},`)
-)*/
-  1,
-  14676,
-  -11325,
-  -8,
-  7,
-  100,
-  101,
-  102,
-  103,
-  105,
-  106,
-  108,
-  109,
-  110,
-  111,
-  112,
-  113,
-  114,
-  115,
-  118,
-  119,
-  120,
-  121,
-  122,
-  123,
-/**/
-] as int[];
+static allowedDims as int[] = [0, -1, 144, -343800852, 2, -2] as int[];
