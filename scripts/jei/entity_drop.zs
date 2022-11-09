@@ -1,4 +1,5 @@
 #priority 975
+#ignoreBracketErrors
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -17,6 +18,7 @@ x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
 function add(entity as string, dropList as IItemStack[]) as void {
   var fixedList = [] as IItemStack[];
   for item in dropList {
+    if(isNull(item)) continue;
     fixedList += item.amount >= 100
       ? item * (item.amount / 100)
       : item.anyAmount().withLore(["§fChance: §b" ~ item.amount ~ "%"]);

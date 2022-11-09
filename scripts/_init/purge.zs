@@ -7,6 +7,7 @@
  */
 
 #priority 3000
+#ignoreBracketErrors
 	
 # MFE -> MFSU Upgrade Kit removal
 utils.rh(<ic2:upgrade_kit>);

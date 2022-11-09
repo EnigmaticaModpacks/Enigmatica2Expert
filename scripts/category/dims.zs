@@ -1,4 +1,5 @@
 #priority 960
+#ignoreBracketErrors
 
 import crafttweaker.item.IItemStack;
 

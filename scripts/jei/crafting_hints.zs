@@ -57,7 +57,9 @@ function fill(input as IIngredient, fluid as ILiquidStack, output as IItemStack,
 function special(output as IItemStack, input2d as IIngredient[][], condition as string) as void {
   val assRec = AssemblyRecipe.create(function(c) {
     c.addItemOutput("output1", output);
-    c.addItemOutput("output2", <engineersdecor:sign_caution>.withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
+    c.addItemOutput("output2", 
+      utils.tryCatch("engineersdecor:sign_caution", <minecraft:structure_void>)
+      .withDisplayName("§e§lCondition").withLore(["§e" ~ condition]));
   });
   for y, input1d in input2d {
     for x, ingr in input1d {
