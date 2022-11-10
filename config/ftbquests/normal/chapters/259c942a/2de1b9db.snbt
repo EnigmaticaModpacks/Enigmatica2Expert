@@ -18,7 +18,8 @@
 		type: "item",
 		items: [{
 			item: "immersivepetroleum:schematic"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "a5b8eac4",

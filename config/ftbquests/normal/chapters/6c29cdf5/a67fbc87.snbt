@@ -24,7 +24,7 @@
 				type: "orechidVacuam"
 			}
 		}],
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "bde3cf46",

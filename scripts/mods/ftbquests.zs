@@ -4,8 +4,8 @@ val rarities = [
   'common',
   'uncommon',
   'rare',
-  'epic',
   'legendary',
+  'mithic',
 ] as string[];
 
 for i, rarity in rarities {
