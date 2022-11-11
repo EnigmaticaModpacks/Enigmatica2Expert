@@ -30,7 +30,7 @@
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "epic"
+				type: "legendary"
 			}
 		}
 	}]

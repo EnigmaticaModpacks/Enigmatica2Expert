@@ -1,5 +1,5 @@
 {
-	title: "Legendary",
+	title: "Mythic",
 	loot_size: 1,
 	rewards: [{
 		item: "minecraft:nether_star",
@@ -307,8 +307,8 @@
 		weight: 15
 	}],
 	loot_crate: {
-		string_id: "legendary",
-		item_name: "Legendary",
+		string_id: "mythic",
+		item_name: "Mythic",
 		color: 16758528,
 		glow: true,
 		drops: {

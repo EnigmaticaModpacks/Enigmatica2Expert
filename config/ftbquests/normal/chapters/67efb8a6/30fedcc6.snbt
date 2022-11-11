@@ -39,7 +39,7 @@
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "legendary"
+				type: "mythic"
 			}
 		}
 	}]

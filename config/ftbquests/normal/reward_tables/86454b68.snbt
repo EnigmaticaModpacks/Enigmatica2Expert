@@ -1,5 +1,5 @@
 {
-	title: "Epic",
+	title: "Legendary",
 	loot_size: 1,
 	rewards: [{
 		item: "minecraft:skull 1 5",
@@ -637,8 +637,8 @@
 		weight: 10
 	}],
 	loot_crate: {
-		string_id: "epic",
-		item_name: "Epic",
+		string_id: "legendary",
+		item_name: "Legendary",
 		color: 15260730,
 		drops: {
 			passive: 0,
