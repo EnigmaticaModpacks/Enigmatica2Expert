@@ -75,20 +75,19 @@ mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:hopper>);
 	[<ore:blockSheetmetalGold>, <ore:plateDenseObsidian>, <ore:blockSheetmetalGold>]]);
 
 # Faster Alumite Alloying
-// mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Removing PlusTic's alloys wouldn't have effect
+mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Magically, removing Alumite have effect
 mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 432, [<liquid:aluminum> * 720, <liquid:iron> * 288,  <liquid:obsidian> * 288]);
-mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 864, [<liquid:aluminum> * 1440, <liquid:iron> * 576,  <liquid:obsidian> * 576]);
 
 # Alumite alloying in other machines
-scripts.process.alloy([<ore:ingotFakeIron> * 2, <ore:ingotAluminium> * 5, <ore:obsidian> * 2 ], <plustic:alumiteingot>, "Only: AlloySmelter arcFurnance");
-scripts.process.alloy([<ore:blockFakeIron> * 2, <ore:blockAluminium> * 5, <ore:obsidian> * 18], <plustic:alumiteblock>, "Only: AdvRockArc");
+scripts.process.alloy([<ore:ingotFakeIron> * 2, <ore:ingotAluminium> * 5, <ore:obsidian> * 2 ], <plustic:alumiteingot> * 3, "Only: AlloySmelter arcFurnance");
+scripts.process.alloy([<ore:blockFakeIron> * 2, <ore:blockAluminium> * 5, <ore:obsidian> * 18], <plustic:alumiteblock> * 3, "Only: AdvRockArc");
 
 # Faster Osmiridium Alloying
-	// mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>); // Removing PlusTic's alloys wouldn't have effect
+	// mods.tconstruct.Alloy.removeRecipe(<liquid:osmiridium>); // Removing Osmiridium PlusTic's alloy wouldn't have effect
 	mods.tconstruct.Alloy.addRecipe(<liquid:osmiridium> * 144, [<liquid:osmium> * 72, <liquid:iridium> * 72]);
 
 # Osgloglas recipe after moving to tconevo
-	// mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>); // Removing PlusTic's alloys wouldn't have effect
+	// mods.tconstruct.Alloy.removeRecipe(<liquid:osgloglas>); // Removing Osgloglas PlusTic's alloy wouldn't have effect
 	mods.tconstruct.Alloy.addRecipe(<liquid:osgloglas> * 144, [<liquid:osmium> * 144, <liquid:refined_obsidian> * 144,  <liquid:refined_glowstone> * 144]);
 
 # Faster Bronze Alloying

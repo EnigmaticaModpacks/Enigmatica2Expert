@@ -236,3 +236,13 @@ craft.remake(<draconicevolution:diss_enchanter>, ["pretty",
   "E": <minecraft:enchanted_book:*>, # Enchanted Book
   "n": <minecraft:enchanting_table>, # Enchantment Table
 });
+
+# [Generator] from [Draconium Ingot][+2]
+craft.remake(<draconicevolution:generator>, ["pretty",
+  "▬ ⌂ ▬",
+  "⌂ - ⌂",
+  "▬ ⌂ ▬"], {
+  "▬": <ore:ingotBrickNether>, # Nether Brick
+  "⌂": <ic2:casing:5>,         # Steel Item Casing
+  "-": <ore:ingotDraconium>,   # Draconium Ingot
+});

@@ -69,15 +69,15 @@ craft.make(<avaritia:neutron_collector>, ["pretty",
 	<quark:soul_bead>, 	<ore:slimecrystalPink>, <ore:plateElite>, <bloodmagic:demon_crystal>, 
 	<ore:dragonEgg>, 	<scalinghealth:heartcontainer>, 
 	<rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1 as float}}}),
-	<ore:blockWither>, <ore:blockAethium>, 	<ore:blockCosmicNeutronium>, <ore:dustAlchEmerald>, 
+	<ore:blockWither>, <ore:blockAethium>, 	<ore:blockCosmicNeutronium>, <extendedcrafting:storage:7>, 
 	<ore:blockEvilMetal>, <ore:blockCoalCoke>, 	<ore:compressed3xDustBedrock>, <tconstruct:firewood:1>, 
 	<ore:blockLudicrite>, <ore:blockAmethyst>, 	<randomthings:spectreilluminator>, 
 	<twilightforest:block_storage:4>, <ore:blockSupremium>, <ore:blockDilithium>, 	
 	<ore:blockCrystalMatrix>, <ore:blockEnderium>, <deepmoblearning:infused_ingot_block>, 	
 	<contenttweaker:terrestrial_artifact_block>, <extrautils2:decorativesolid:6>, <appliedenergistics2:fluix_block>,
 	<draconicevolution:draconium_block:1>, <ore:blockMyrmexResin>, 
-	<advancedrocketry:hotturf>, <forestry:bee_combs_0>, <ore:blockBoundMetal>, 
-	<extendedcrafting:storage:7>, <ore:blockAstralStarmetal>, <ore:blockOsgloglas>, <ore:blockMirion>]);
+	<advancedrocketry:hotturf>, <forestry:bee_combs_0>, <ore:blockBoundMetal>,
+	<ore:blockAstralStarmetal>, <ore:blockOsgloglas>, <ore:blockMirion>]);
 	
 # [Endest Pearl] from [Pristine Enderman Matter][+5]
 mods.avaritia.ExtremeCrafting.remove(<avaritia:endest_pearl>);

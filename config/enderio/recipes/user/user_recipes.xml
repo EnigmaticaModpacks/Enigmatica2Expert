@@ -569,7 +569,7 @@
       <input name="ingotFakeIron" amount="2"/>
       <input name="ingotAluminium" amount="5"/>
       <input name="obsidian" amount="2"/>
-      <output name="plustic:alumiteingot"/>
+      <output name="plustic:alumiteingot" amount="3"/>
     </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

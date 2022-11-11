@@ -76,8 +76,8 @@ mods.forestry.Carpenter.addRecipe(<modularmachinery:blockcasing:5>,
 
 # Modularium
 recipes.remove(<modularmachinery:itemmodularium>);
-recipes.addShapedMirrored("Modularium",
-<modularmachinery:itemmodularium> * 2,
+recipes.addShaped("Modularium",
+<modularmachinery:itemmodularium> * 24,
 [[<ore:ingotElectricalSteel>, <ore:ingotPlatinum>, <ore:ingotElectricalSteel>],
 [<actuallyadditions:item_crystal_empowered:1>, <ore:itemPulsatingCrystal>, <actuallyadditions:item_crystal_empowered:1>],
 [<ore:ingotElectricalSteel>, <ore:ingotPlatinum>, <ore:ingotElectricalSteel>]]);

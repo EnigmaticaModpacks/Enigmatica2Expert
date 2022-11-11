@@ -19,4 +19,6 @@
   ,{"key": "TWOND_CATALYZATION_CHAMBER","ops": [{"op": "replace","path": "stages/2/recipes/2","value": "thaumcraft:alchemist_stone"}]}
   ,{"key": "TWOND_TRANSMUTER_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:transmuter_stone"}]}
   ,{"key": "TWOND_ALIENIST_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:alienist_stone"}]}
+
+  ,{"key": "IMPETUS_GENERATOR","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:impetus_generator"}]}
 ]

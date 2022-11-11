@@ -382,7 +382,6 @@ removeItems(<ore:chest>, [
 
 recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [<ore:trapdoorWood>]);
 recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
-recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [<ore:doorWood>]);
 
 # Rats
 addItems(<ore:hatArcheologist>, [<quark:archaeologist_hat>, <rats:archeologist_hat>]);

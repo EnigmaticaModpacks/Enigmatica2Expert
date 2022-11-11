@@ -838,10 +838,6 @@ val mobChunks = {
 	"minecraft:blaze": 17,
 	"minecraft:ghast": 18,
 	"minecraft:enderman": 19,
-	"minecraft:wither_skeleton": 20,
-	"thermalfoundation:blizz": 21,
-	"thermalfoundation:blitz": 22,
-	"thermalfoundation:basalz": 23,
 } as int[string];
 for id, meta in mobChunks {
 	recipes.addShapeless(<mysticalagriculture:chunk>.definition.makeStack(meta) * 4, [

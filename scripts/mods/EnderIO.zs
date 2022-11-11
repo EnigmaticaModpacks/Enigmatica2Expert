@@ -520,6 +520,7 @@ craft.reshapeless(<enderio:item_material:38>, "▲▲▲©S©▲▲▲", {
 
 # Low-level machines (original in Alloy Smelter)
 scripts.process.compress(<ore:itemPowderPhotovoltaic> * 4, <enderio:item_material:3>, "Except: Compressor");
+mods.mekanism.compressor.addRecipe(<ore:itemPowderPhotovoltaic> * 4, <enderio:item_material:3>);
 mods.immersiveengineering.MetalPress.addRecipe(<enderio:item_material:3>, <ore:itemPowderPhotovoltaic> * 4, <immersiveengineering:mold:0>, 2000);
 
 # Cheaper to match other solar panels

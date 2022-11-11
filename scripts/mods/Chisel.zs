@@ -134,3 +134,76 @@ addVariation("engineers_sign", <engineersdecor:sign_firehazard>);
 addVariation("engineers_sign", <engineersdecor:sign_hotsurface>);
 addVariation("engineers_sign", <engineersdecor:sign_magneticfield>);
 addVariation("engineers_sign", <engineersdecor:sign_frost>);
+
+val allDoors = [
+  <minecraft:wooden_door>,
+  <minecraft:spruce_door>,
+  <minecraft:birch_door>,
+  <minecraft:jungle_door>,
+  <minecraft:acacia_door>,
+  <minecraft:dark_oak_door>,
+  <biomesoplenty:sacred_oak_door>,
+  <biomesoplenty:cherry_door>,
+  <biomesoplenty:umbran_door>,
+  <biomesoplenty:fir_door>,
+  <biomesoplenty:magic_door>,
+  <biomesoplenty:mangrove_door>,
+  <biomesoplenty:palm_door>,
+  <biomesoplenty:redwood_door>,
+  <biomesoplenty:willow_door>,
+  <biomesoplenty:pine_door>,
+  <biomesoplenty:hellbark_door>,
+  <biomesoplenty:jacaranda_door>,
+  <biomesoplenty:mahogany_door>,
+  <biomesoplenty:ebony_door>,
+  <biomesoplenty:eucalyptus_door>,
+  <forestry:doors.larch>,
+  <forestry:doors.teak>,
+  <forestry:doors.acacia>,
+  <forestry:doors.lime>,
+  <forestry:doors.chestnut>,
+  <forestry:doors.wenge>,
+  <forestry:doors.baobab>,
+  <forestry:doors.sequoia>,
+  <forestry:doors.kapok>,
+  <forestry:doors.ebony>,
+  <forestry:doors.mahogany>,
+  <forestry:doors.balsa>,
+  <forestry:doors.willow>,
+  <forestry:doors.walnut>,
+  <forestry:doors.greenheart>,
+  <forestry:doors.cherry>,
+  <forestry:doors.mahoe>,
+  <forestry:doors.poplar>,
+  <forestry:doors.palm>,
+  <forestry:doors.papaya>,
+  <forestry:doors.pine>,
+  <forestry:doors.plum>,
+  <forestry:doors.maple>,
+  <forestry:doors.citrus>,
+  <forestry:doors.giganteum>,
+  <forestry:doors.ipe>,
+  <forestry:doors.padauk>,
+  <forestry:doors.cocobolo>,
+  <forestry:doors.zebrawood>,
+  <integrateddynamics:menril_door>,
+  <rustic:olive_door>,
+  <rustic:ironwood_door>,
+  // <twilightforest:canopy_door>,
+  // <twilightforest:dark_door>,
+  // <twilightforest:mangrove_door>,
+  // <twilightforest:mine_door>,
+  // <twilightforest:sort_door>,
+  // <twilightforest:time_door>,
+  // <twilightforest:trans_door>,
+  // <twilightforest:twilight_oak_door>,
+] as IItemStack[];
+
+for door in allDoors {
+	addVariation("door", door);
+	if(
+		door.definition.owner == 'forestry' 
+		|| door.definition.owner == 'integrateddynamics'
+	) continue;
+	mods.thermalexpansion.Sawmill.removeRecipe(door);
+}

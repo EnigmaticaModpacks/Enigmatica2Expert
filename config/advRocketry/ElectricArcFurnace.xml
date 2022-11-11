@@ -108,7 +108,7 @@
 			<oreDict>obsidian 18</oreDict>
 		</input>
 		<output>
-			<itemStack>plustic:alumiteblock 1 0</itemStack>
+			<itemStack>plustic:alumiteblock 3 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -192,7 +192,7 @@
 			<itemStack>actuallyadditions:item_crystal_empowered 1 1</itemStack>
 		</input>
 		<output>
-			<itemStack>modularmachinery:itemmodularium 2 0</itemStack>
+			<itemStack>modularmachinery:itemmodularium 24 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

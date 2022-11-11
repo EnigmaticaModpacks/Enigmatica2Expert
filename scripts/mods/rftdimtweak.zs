@@ -42,19 +42,17 @@ val energyDimletIngrs = {
 } as IItemStack[string];
 
 for name, ingr in energyDimletIngrs {
-  scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",
-    [
-      <ore:blockDraconiumCharged> * 4,             # Charged Draconium Block
-      <rftdimtweak:dimlet_control_circuit_seven>,  # Dimlet Control Circuit Rarity 7
-      <rftoolsdim:dimlet_memory_unit:2>,           # Dimlet Advanced Memory Unit
-      <rftoolsdim:dimlet_type_controller:11>,      # Dimlet Special Type Controller
-      <rftdimtweak:dimlet_type_controller_energy>, # Dimlet Energy Type Controller
-      ingr,
-    ], null,
-    [
-      <rftdimtweak:known_dimletreplica>.withTag({dkey: name})
-    ], null, {power: 700000, timeRequired: 100}
-  );
+  # [Energy Dimlet] from [Dimlet Special Type Controller][+4]
+  craft.remake(<rftdimtweak:known_dimletreplica>.withTag({dkey: name}), ["pretty",
+    "■ ▄ ■",
+    "Ϟ D i",
+    "■ ▄ ■"], {
+    "■": <ore:blockDraconiumCharged>,                 # Charged Draconium Block
+    "▄": <ore:blockDimensional>,                      # Dimensional Blank Block
+    "Ϟ": <rftdimtweak:dimlet_type_controller_energy>, # Dimlet Energy Type Controller
+    "D": ingr,
+    "i": <rftdimtweak:dimlet_control_circuit_seven>,  # Dimlet Control Circuit Rarity 7
+  });
 }
 
 # [Dimlet Control Circuit Rarity 7] from [Machine Circuitry][+1]

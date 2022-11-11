@@ -2,6 +2,11 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 #modloaded exnihilocreatio
 
+# Make baits stackable
+for i in 0 .. 13 {
+	itemUtils.getItem('excompressum:bait', i).maxStackSize = 64;
+}
+
 # End Cake
 	recipes.remove(<exnihilocreatio:block_end_cake>);
 	recipes.addShaped("End Cake", 

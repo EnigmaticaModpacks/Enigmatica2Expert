@@ -33,3 +33,9 @@ craft.make(<tconstruct:shard>.withTag({Material: "darkwood"}) * 16, ["##"], {
 craft.make(<tconstruct:shard>.withTag({Material: "darkwood"}) * 8, ["# ", " #"], {
   "#": <advancedrocketry:planks>, # Lightwood planks
 });
+
+mods.tconstruct.Casting.addTableRecipe(
+  <tconevo:metal:30>, # [Sentient Ingot]
+  <tconevo:material>, # Coalescence Matrix
+  <liquid:raw_will>, # Demonic Will
+1000);

@@ -24,6 +24,24 @@
       ,{"name": "additionalcompression:charcoal_compressed" ,"metadata": "1", "rewards": [{"name": "advancedrocketry:misc"   ,"count": 9  ,"metadata": "1","chance": 1.0,"luck": 0.0}]}
       ,{"name": "extrautils2:compressedcobblestone"         ,"metadata": "1", "rewards": [{"name": "minecraft:gravel"        ,"count": 81 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
       ,{"name": "extrautils2:compressedcobblestone"         ,"metadata": "2", "rewards": [{"name": "minecraft:gravel"        ,"count": 729,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+
+      ,{"name": "extrautils2:compressedsand"                ,"metadata": "1", "rewards": [{"name": "exnihilocreatio:block_dust"              ,"count": 81 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "extrautils2:compressedgravel"              ,"metadata": "1", "rewards": [{"name": "minecraft:sand"                          ,"count": 81 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "extrautils2:compressednetherrack"          ,"metadata": "1", "rewards": [{"name": "exnihilocreatio:block_netherrack_crushed","count": 729,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "extrautils2:compressednetherrack"          ,"metadata": "2", "rewards": [{"name": "exnihilocreatio:block_netherrack_crushed","count": 729,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+
+      ,{"name": "additionalcompression:meatporkchop_compressed", "metadata": "0", "rewards": [{"name": "harvestcraft:groundporkitem"   ,"count": 18  ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatporkchop_compressed", "metadata": "1", "rewards": [{"name": "harvestcraft:groundporkitem"   ,"count": 162 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatporkchop_compressed", "metadata": "2", "rewards": [{"name": "harvestcraft:groundporkitem"   ,"count": 1458,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatbeef_compressed"    , "metadata": "0", "rewards": [{"name": "harvestcraft:groundbeefitem"   ,"count": 18  ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatbeef_compressed"    , "metadata": "1", "rewards": [{"name": "harvestcraft:groundbeefitem"   ,"count": 162 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatbeef_compressed"    , "metadata": "2", "rewards": [{"name": "harvestcraft:groundbeefitem"   ,"count": 1458,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatchicken_compressed" , "metadata": "0", "rewards": [{"name": "harvestcraft:groundchickenitem","count": 18  ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatchicken_compressed" , "metadata": "1", "rewards": [{"name": "harvestcraft:groundchickenitem","count": 162 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatchicken_compressed" , "metadata": "2", "rewards": [{"name": "harvestcraft:groundchickenitem","count": 1458,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatfish_compressed"    , "metadata": "0", "rewards": [{"name": "harvestcraft:groundfishitem"   ,"count": 18  ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatfish_compressed"    , "metadata": "1", "rewards": [{"name": "harvestcraft:groundfishitem"   ,"count": 162 ,"metadata": "0","chance": 1.0,"luck": 0.0}]}
+      ,{"name": "additionalcompression:meatfish_compressed"    , "metadata": "2", "rewards": [{"name": "harvestcraft:groundfishitem"   ,"count": 1458,"metadata": "0","chance": 1.0,"luck": 0.0}]}
     ],
     "example": {
       "__comment": "This example would allow Obsidian to be hammered into nine diamonds using a Compressed Hammer.",

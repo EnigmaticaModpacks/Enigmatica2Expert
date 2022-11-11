@@ -294,6 +294,25 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   "V": <thaumcraft:vis_resonator>, # Vis Resonator
 }).shaped());
 
+# [Impetus Generator] from [Vis Generator][+9]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumicaugmentation:impetus_generator>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "impetus_generator", # Name
+  "IMPETUS_GENERATOR", # Research
+  700, # Vis cost
+  [<aspect:ignis> * 2, <aspect:ordo> * 2, <aspect:perditio> * 2, <aspect:aer> * 2],
+  <thaumicaugmentation:impetus_generator>, # Output
+  scripts.craft.grid.Grid(["pretty",
+  "E P E",
+  "R V R",
+  "E I E"], {
+  "E": <thaumcraft:stone_eldritch_tile>,          # Eldritch Stone
+  "P": <thaumcraft:primordial_pearl>.anyDamage(), # Primordial Pearl
+  "R": <thaumcraft:nugget:10>,                    # Rare Earths
+  "V": <ore:craftingPiston>,                      # Piston
+  "I": <thaumicaugmentation:material:5>,          # Impetus Jewel
+}).shaped());
+
 /*
  █████╗ ███████╗██████╗ ███████╗ ██████╗████████╗███████╗
 ██╔══██╗██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝██╔════╝
