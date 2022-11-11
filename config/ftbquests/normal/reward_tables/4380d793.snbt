@@ -1,0 +1,16 @@
+{
+	title: "Generators",
+	loot_size: 1,
+	rewards: [{
+		item: "mekanismgenerators:generator 1 6"
+	}],
+	loot_crate: {
+		string_id: "generators",
+		color: 11602,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

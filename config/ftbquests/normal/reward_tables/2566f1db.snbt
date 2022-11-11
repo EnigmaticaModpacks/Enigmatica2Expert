@@ -1,0 +1,21 @@
+{
+	title: "Materials",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "fusewood"
+			}
+		}
+	}],
+	loot_crate: {
+		string_id: "materials",
+		color: 2686988,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

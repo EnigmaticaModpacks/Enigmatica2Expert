@@ -1,0 +1,16 @@
+{
+	title: "Storage",
+	loot_size: 1,
+	rewards: [{
+		item: "storagedrawers:controller"
+	}],
+	loot_crate: {
+		string_id: "storage",
+		color: 1776415,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

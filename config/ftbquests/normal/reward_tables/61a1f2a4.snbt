@@ -1,0 +1,16 @@
+{
+	title: "Food",
+	loot_size: 1,
+	rewards: [{
+		item: "harvestcraft:thankfuldinneritem"
+	}],
+	loot_crate: {
+		string_id: "food",
+		color: 9060377,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}

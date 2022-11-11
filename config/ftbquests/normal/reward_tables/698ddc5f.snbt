@@ -1,0 +1,17 @@
+{
+	title: "Decor",
+	loot_size: 1,
+	rewards: [{
+		item: "forestry:doors.cocobolo",
+		count: 4
+	}],
+	loot_crate: {
+		string_id: "decor",
+		color: 9532858,
+		drops: {
+			passive: 0,
+			monster: 0,
+			boss: 0
+		}
+	}
+}
