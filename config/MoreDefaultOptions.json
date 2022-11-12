@@ -46,5 +46,11 @@
     "destinationFilePath": "local/client/ftbutilities.cfg",
     "clientSide": true,
     "serverSide": false
+  },
+  {
+    "sourceFilePath": "config.json",
+    "destinationFilePath": "config/bogosorter/config.json",
+    "clientSide": true,
+    "serverSide": true
   }
 ]

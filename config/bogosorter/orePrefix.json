@@ -1,0 +1,28 @@
+{
+  "_comment": "Setting this to true will recreate this entire file on next start",
+  "reload": false,
+  "orePrefixes": [
+    "ingot",
+    "gem",
+    "dust",
+    "nugget",
+    "block",
+    "blockSheetmetal",
+    "plate",
+    "plateDense",
+    "gear",
+    "stick",
+    "wire",
+    "ball",
+    "crystal",
+    "coin",
+    "fuel",
+    "crushed",
+    "crushedPurified",
+    "glass",
+    "ore",
+    "oreCrystal",
+    "log",
+    "rod"
+  ]
+}

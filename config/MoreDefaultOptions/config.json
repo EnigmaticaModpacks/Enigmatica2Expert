@@ -1,0 +1,51 @@
+{
+  "General": {
+    "enableAutoRefill": false,
+    "refillDmgThreshold": 1,
+    "enableHotbarSwap": false
+  },
+  "ItemSortRules": [
+    {
+      "name": "hunger",
+      "inverted": false
+    },
+    {
+      "name": "saturation",
+      "inverted": false
+    },
+    {
+      "name": "is_block",
+      "inverted": false
+    },
+    {
+      "name": "mod",
+      "inverted": false
+    },
+    {
+      "name": "display_name",
+      "inverted": false
+    },
+    {
+      "name": "registry_order",
+      "inverted": false
+    },
+    {
+      "name": "color",
+      "inverted": false
+    }
+  ],
+  "NbtSortRules": [
+    {
+      "name": "enchantment",
+      "inverted": false
+    },
+    {
+      "name": "enchantment_book",
+      "inverted": false
+    },
+    {
+      "name": "potion",
+      "inverted": false
+    }
+  ]
+}

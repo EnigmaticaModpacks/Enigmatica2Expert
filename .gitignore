@@ -81,3 +81,4 @@ config/jeiexporter
 config/jei/jei.cfg
 config/smoothfont/smoothfont.cfg
 config/fantasticlib/**/*
+config/bogosorter/config.json
