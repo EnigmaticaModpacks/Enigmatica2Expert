@@ -38,7 +38,7 @@ export function getModsIds(json_Path_A, json_Path_B) {
     updated: B.filter(
       o =>
         map_A[o.addonID]
-        && map_A[o.addonID].installedFile?.id !== o.installedFile?.id,
+        && map_A[o.addonID].installedFile?.id !== o.installedFile?.id
     ),
   }
   return result
@@ -50,8 +50,8 @@ function getLogo(logo) {
 
   // Example of url:
   // https://media.forgecdn.net/avatars/thumbnails/5/796/256/256/635351433944342580.png
-  // return url.replace(/(media\.forgecdn\.net\/avatars\/thumbnails\/\d+\/\d+\/)\d+\/\d+/, '$1'+'64/64')
-  return url
+  return url.replace(/256\/256/, '30/30')
+  // return url
 }
 
 const exceptionsList = [
@@ -97,8 +97,8 @@ export function formatRow(mcAddon, curseAddon, options = {}) {
     + (options.noIcon
       ? ''
       : `<img src="${logo}"${' '.repeat(
-          Math.max(1, 93 - logo.length),
-        )}width="50"> | ${getSquare(name, fileName)} `)
+          Math.max(1, 93 - logo.length)
+        )}> | ${getSquare(name, fileName)} `)
     }${' '.repeat(Math.max(0, 38 - name.length))}[**${name}**](${
       curseAddon.links.websiteUrl
     })${' '.repeat(Math.max(1, 75 - curseAddon.links.websiteUrl.length))}`
@@ -122,7 +122,7 @@ export async function init(h = defaultHelper) {
   await h.begin('Get Mods diffs from JSONs')
   const diff = getModsIds(
     '../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json',
-    'minecraftinstance.json',
+    'minecraftinstance.json'
   )
 
   // Debug cutoff
@@ -157,7 +157,7 @@ export async function init(h = defaultHelper) {
       'MODS.md',
       `<!-- Automatic generated list ${key} -->\n`,
       '\n<!-- End of list -->',
-      formatTable(rows),
+      formatTable(rows)
     )
   }
 

@@ -34,6 +34,7 @@ List of priorities:
 - [ ] 🌿 Add Patchouli book page with sorted UU values
 - [ ] 🌍 AdvRock geodes should contain modded ores
 - [ ] ⚡ Remove automatic IE armor recycling to speed up game load
+- [ ] 📖 Add Black Hole Gen and valid fuel
 
 fix `type: "loot"` in quests
 

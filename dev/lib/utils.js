@@ -315,9 +315,32 @@ export function setBlockDropsList(blockDropList) {
 }
 
 /**
+ * Round first 2 digits
+ * @param {number} n
+ * @returns {number}
+ */
+function smartRound(n) {
+  const m = Math.round(Math.log10(n))
+  const l = 10 ** (-m + 1)
+  return ((n * l + 0.5) | 0) / l
+}
+
+/**
  * @param {BlockDrop[]} arr
  */
 function saveBlockDrops(arr) {
+  // Round values
+  arr.forEach((a) => {
+    let i = 0
+    while (true) {
+      for (let j = 0; j < 4; j++) {
+        const k = `${j}chance${i}`
+        if (!a[k]) return
+        a[k] = smartRound(a[k])
+      }
+      i++
+    }
+  })
   saveText(
     JSON.stringify(
       arr.sort(({ name: a, meta: am }, { name: b, meta: bm }) =>
