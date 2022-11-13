@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest712.name}",
+	icon: "nuclearcraft:salt_fission_controller",
 	x: 5.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [

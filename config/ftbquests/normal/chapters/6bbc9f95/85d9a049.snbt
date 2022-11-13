@@ -1,4 +1,10 @@
 {
+	icon: {
+		id: "thaumcraft:golem",
+		tag: {
+			props: 0L
+		}
+	},
 	x: 11.5d,
 	y: 4.166666666666666d,
 	text: [

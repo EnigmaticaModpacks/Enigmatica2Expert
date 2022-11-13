@@ -1,4 +1,5 @@
 {
+	icon: "thaumcraft:thaumium_chest",
 	x: 12.5d,
 	y: 0.8333333333333333d,
 	text: [

@@ -1,5 +1,11 @@
 {
 	title: "{bq.quest53.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "obsidian"
+		}
+	},
 	x: 6.7d,
 	y: 3.5d,
 	text: [
@@ -8,6 +14,7 @@
 	dependencies: [
 		"e90285ae"
 	],
+	or_tasks: true,
 	tasks: [{
 		uid: "81ffcb0b",
 		type: "item",

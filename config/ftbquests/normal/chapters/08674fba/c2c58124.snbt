@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest443.name}",
+	icon: "advancedrocketry:spacechestplate",
 	x: 0.5d,
 	y: 3.8333333333333335d,
 	text: [

@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest715.name}",
+	icon: "nuclearcraft:turbine_controller",
 	x: 3.6666666666666665d,
 	y: 2.333333333333333d,
 	text: [

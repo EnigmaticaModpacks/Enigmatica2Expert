@@ -2,10 +2,10 @@
 	x: 11.4d,
 	y: 4.8d,
 	text: [
-		"Item info §nmust§r be put into Memory by pressing \"§nexport to Crystal§r\" button."
+		"Item info §nmust§r be put into Memory to work with replicator."
 	],
 	dependencies: [
-		"827fa685"
+		"658445bd"
 	],
 	tasks: [{
 		uid: "c04e6137",

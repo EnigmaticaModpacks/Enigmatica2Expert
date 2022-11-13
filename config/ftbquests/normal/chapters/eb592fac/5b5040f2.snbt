@@ -1,4 +1,5 @@
 {
+	icon: "rftools:elevator_button_module",
 	x: -3.958333333333333d,
 	y: 1.6666666666666667d,
 	text: [

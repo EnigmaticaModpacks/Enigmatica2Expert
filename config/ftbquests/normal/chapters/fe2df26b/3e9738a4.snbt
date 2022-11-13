@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest847.name}",
+	icon: "threng:big_assembler 1 2",
 	x: 4.0d,
 	y: 4.0d,
 	text: [

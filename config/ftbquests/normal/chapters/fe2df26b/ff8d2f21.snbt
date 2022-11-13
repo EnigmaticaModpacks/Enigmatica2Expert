@@ -1,4 +1,5 @@
 {
+	icon: "immersivecables:wire_coil",
 	x: -0.5d,
 	y: 2.5d,
 	text: [

@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest269.name}",
+	icon: "rftools:powercell_simple",
 	x: 2.125d,
 	y: 0.6041666666666666d,
 	text: [

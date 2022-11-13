@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest438.name}",
+	icon: "advancedrocketry:rocketmotor",
 	x: 14.166666666666666d,
 	y: 3.8333333333333335d,
 	text: [

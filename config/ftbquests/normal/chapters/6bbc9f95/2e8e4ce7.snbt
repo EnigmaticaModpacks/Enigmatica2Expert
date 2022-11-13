@@ -14,22 +14,6 @@
 			item: "thaumcraft:arcane_workbench"
 		}],
 		ignore_nbt: 1b
-	},
-	{
-		uid: "8e10c2a3",
-		type: "item",
-		items: [{
-			item: "minecraft:crafting_table"
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "ae59987a",
-		type: "item",
-		items: [{
-			item: "thaumcraft:salis_mundus"
-		}],
-		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "cd67992d",

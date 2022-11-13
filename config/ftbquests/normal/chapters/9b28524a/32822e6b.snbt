@@ -1,4 +1,18 @@
 {
+	icon: {
+		id: "bloodmagic:bound_sword",
+		tag: {
+			Unbreakable: 1b,
+			activated: 1b,
+			binding: {
+				id: {
+					M: -2145320399625435168L,
+					L: -7015483457058418587L
+				},
+				name: "Krutoy242"
+			}
+		}
+	},
 	x: 8.333333333333332d,
 	y: 1.1666666666666665d,
 	text: [

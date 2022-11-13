@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest327.name}",
+	icon: "extrautils2:powerbattery",
 	x: 6.666666666666667d,
 	y: 6.166666666666667d,
 	text: [

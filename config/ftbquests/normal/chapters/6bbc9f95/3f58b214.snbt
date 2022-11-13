@@ -1,4 +1,10 @@
 {
+	icon: {
+		id: "thaumcraft:fortress_chest",
+		tag: {
+			hasIC2Jetpack: 1b
+		}
+	},
 	x: 13.833333333333334d,
 	y: 0.8333333333333333d,
 	text: [

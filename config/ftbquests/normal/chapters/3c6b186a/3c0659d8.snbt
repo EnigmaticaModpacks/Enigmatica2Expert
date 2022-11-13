@@ -5,7 +5,7 @@
 		"{bq.quest85.desc}"
 	],
 	dependencies: [
-		"27ed5f6b"
+		"cae88f3f"
 	],
 	tasks: [{
 		uid: "a5ba401a",

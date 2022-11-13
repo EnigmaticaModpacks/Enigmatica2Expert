@@ -15,22 +15,6 @@
 			item: "thaumcraft:thaumonomicon"
 		}],
 		ignore_nbt: 1b
-	},
-	{
-		uid: "4ca4f95e",
-		type: "item",
-		items: [{
-			item: "thaumcraft:salis_mundus"
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "579847ba",
-		type: "item",
-		items: [{
-			item: "minecraft:bookshelf"
-		}],
-		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "106cb215",

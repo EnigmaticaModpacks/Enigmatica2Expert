@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest315.name}",
+	icon: "immersiveengineering:wirecoil",
 	x: -5.166666666666667d,
 	y: 2.166666666666667d,
 	text: [

@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest721.name}",
+	icon: "animania:friesian_cheese_wheel",
 	x: -5.0d,
 	y: 1.5d,
 	text: [

@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest205.name}",
+	icon: "mekanismgenerators:reactor",
 	x: 2.375d,
 	y: -1.7916666666666665d,
 	text: [

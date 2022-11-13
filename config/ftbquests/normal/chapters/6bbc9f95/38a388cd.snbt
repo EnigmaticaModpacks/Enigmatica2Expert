@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest637.name}",
+	icon: "thaumcraft:infusion_matrix",
 	x: 2.0d,
 	y: 10.0d,
 	text: [

@@ -1,4 +1,5 @@
 {
+	icon: "industrialforegoing:mob_duplicator",
 	x: 8.0d,
 	y: 4.75d,
 	text: [

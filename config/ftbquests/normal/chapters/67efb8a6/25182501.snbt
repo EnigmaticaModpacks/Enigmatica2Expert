@@ -1,4 +1,5 @@
 {
+	icon: "draconicevolution:particle_generator 1 2",
 	x: 2.5d,
 	y: 5.0d,
 	text: [

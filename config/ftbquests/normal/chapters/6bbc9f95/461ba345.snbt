@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest672.name}",
+	icon: "thaumcraft:cloth_chest",
 	x: 3.3333333333333335d,
 	y: 7.5d,
 	text: [

@@ -1,4 +1,10 @@
 {
+	icon: {
+		id: "ic2:jetpack_electric",
+		tag: {
+			charge: 30000.0d
+		}
+	},
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [

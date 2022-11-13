@@ -1,4 +1,5 @@
 {
+	icon: "packagedauto:packager",
 	x: 5.5d,
 	y: 1.0d,
 	text: [

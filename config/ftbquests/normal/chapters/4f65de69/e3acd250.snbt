@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest696.name}",
+	icon: "cookingforblockheads:cooking_table",
 	x: 2.125d,
 	y: 5.041666666666667d,
 	text: [

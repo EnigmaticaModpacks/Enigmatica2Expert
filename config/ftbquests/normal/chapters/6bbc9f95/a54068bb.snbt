@@ -15,22 +15,6 @@
 			item: "thaumcraft:crucible"
 		}],
 		ignore_nbt: 1b
-	},
-	{
-		uid: "4b302d79",
-		type: "item",
-		items: [{
-			item: "minecraft:cauldron"
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "69b33a88",
-		type: "item",
-		items: [{
-			item: "thaumcraft:salis_mundus"
-		}],
-		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "c432195e",

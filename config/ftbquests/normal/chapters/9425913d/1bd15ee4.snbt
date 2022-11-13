@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest833.name}",
+	icon: "psi:cad_assembler",
 	x: 11.5d,
 	y: 3.8333333333333335d,
 	text: [

@@ -1,5 +1,11 @@
 {
 	title: "{bq.quest893.name}",
+	icon: {
+		id: "industrialwires:ic2_wire_coil",
+		tag: {
+			wireLength: 1024
+		}
+	},
 	x: 4.166666666666666d,
 	y: -0.5416666666666667d,
 	text: [

@@ -1,4 +1,10 @@
 {
+	icon: {
+		id: "thaumcraft:void_robe_chest",
+		tag: {
+			hasIC2Jetpack: 1b
+		}
+	},
 	x: 16.458333333333336d,
 	y: 0.8333333333333333d,
 	text: [

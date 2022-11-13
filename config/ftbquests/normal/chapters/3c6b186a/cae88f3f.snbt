@@ -1,4 +1,5 @@
 {
+	icon: "ic2:crafting",
 	x: 2.5d,
 	y: 0.8333333333333333d,
 	text: [
@@ -12,13 +13,6 @@
 		type: "item",
 		items: [{
 			item: "ic2:crafting"
-		}]
-	},
-	{
-		uid: "cb5ac7d4",
-		type: "item",
-		items: [{
-			item: "ic2:treetap"
 		}]
 	},
 	{

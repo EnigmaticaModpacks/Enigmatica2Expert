@@ -1,5 +1,6 @@
 {
 	title: "{bq.quest845.name}",
+	icon: "appliedenergistics2:crafting_unit",
 	x: -3.5d,
 	y: -0.5d,
 	text: [
