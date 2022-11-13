@@ -2,12 +2,11 @@
 	title: "{bq.quest443.name}",
 	icon: "advancedrocketry:spacechestplate",
 	x: 0.5d,
-	y: 3.8333333333333335d,
+	y: 2.5d,
 	text: [
 		"{bq.quest443.desc}"
 	],
 	dependencies: [
-		"d071f1f9",
 		"b302e7bd"
 	],
 	tasks: [{

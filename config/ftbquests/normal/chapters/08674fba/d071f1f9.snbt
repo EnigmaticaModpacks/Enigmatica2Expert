@@ -1,8 +1,0 @@
-{
-	icon: "libvulpes:productingot 1 7",
-	x: 0.5d,
-	y: 2.5d,
-	dependencies: [
-		"b302e7bd"
-	]
-}
