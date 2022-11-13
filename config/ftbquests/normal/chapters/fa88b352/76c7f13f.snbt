@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest714.name}",
-	icon: "nuclearcraft:heat_exchanger_controller",
 	x: 4.666666666666667d,
 	y: 1.5d,
 	text: [

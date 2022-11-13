@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1006.name}",
-	icon: "cyclicmagic:block_hydrator",
 	x: -9.5d,
 	y: 15.5d,
 	text: [
@@ -10,7 +8,6 @@
 		"d8284260",
 		"c2e489aa"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "4f1b59ff",
 		type: "item",

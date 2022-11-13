@@ -1,13 +1,4 @@
 {
-	title: "{bq.quest412.name}",
-	icon: {
-		id: "ic2:jetpack_electric",
-		Damage: 26s,
-		tag: {
-			ENABLED: 1b,
-			RARITY: 1
-		}
-	},
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [

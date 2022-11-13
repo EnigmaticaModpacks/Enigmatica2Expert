@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest484.name}",
-	icon: "environmentaltech:ionite_crystal",
 	x: 5.25d,
 	y: 8.0d,
 	text: [

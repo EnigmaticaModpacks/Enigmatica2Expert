@@ -1,22 +1,4 @@
 {
-	title: "{bq.quest238.name}",
-	icon: {
-		id: "thermalexpansion:device",
-		Damage: 3s,
-		tag: {
-			RSControl: 0b,
-			Facing: 3b,
-			Energy: 0,
-			SideCache: [B;
-				1b,
-				1b,
-				2b,
-				2b,
-				2b,
-				2b
-			]
-		}
-	},
 	x: 10.8d,
 	y: 6.4d,
 	text: [

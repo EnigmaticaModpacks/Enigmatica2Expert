@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest551.name}",
-	icon: {
-		id: "draconicevolution:draconic_shovel",
-		tag: {
-			Energy: 16000000
-		}
-	},
 	x: 3.0d,
 	y: 10.5d,
 	text: [

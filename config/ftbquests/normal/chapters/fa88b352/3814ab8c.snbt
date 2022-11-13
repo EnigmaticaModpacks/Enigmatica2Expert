@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest499.name}",
-	icon: "nuclearcraft:part 1 1",
 	x: 10.5d,
 	y: 7.5d,
 	text: [

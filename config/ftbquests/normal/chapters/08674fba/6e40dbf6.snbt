@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest433.name}",
-	icon: "advancedrocketry:electrolyser",
 	x: 10.166666666666666d,
 	y: 1.8333333333333333d,
 	text: [

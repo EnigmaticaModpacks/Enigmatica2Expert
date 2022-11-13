@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest258.name}",
-	icon: "twilightforest:torchberries",
 	x: 0.5d,
 	y: -0.16666666666666669d,
 	text: [

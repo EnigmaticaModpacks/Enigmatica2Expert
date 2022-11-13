@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest587.name}",
-	icon: "enderio:block_transceiver",
 	x: 6.166666666666667d,
 	y: 2.5d,
 	text: [

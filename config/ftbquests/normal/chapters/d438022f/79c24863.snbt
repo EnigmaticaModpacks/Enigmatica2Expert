@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest988.name}",
-	icon: "randomthings:pitcherplant",
 	x: -9.666666666666666d,
 	y: 8.0d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"e9290458"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "e0679354",
 		type: "item",

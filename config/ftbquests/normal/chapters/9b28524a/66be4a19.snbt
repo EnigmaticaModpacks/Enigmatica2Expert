@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest946.name}",
-	icon: "animus:blockbloodwood",
 	x: 4.0d,
 	y: 5.5d,
 	text: [

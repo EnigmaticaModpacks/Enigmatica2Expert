@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest483.name}",
-	icon: "environmentaltech:pladium_crystal",
 	x: 5.25d,
 	y: 6.5d,
 	text: [

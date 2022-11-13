@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest201.name}",
-	icon: "mekanism:machineblock 1 4",
 	x: 8.833333333333334d,
 	y: 6.5d,
 	text: [

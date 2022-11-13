@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest649.name}",
-	icon: "thaumcraft:jar_normal",
 	x: 3.3333333333333335d,
 	y: 12.0d,
 	text: [

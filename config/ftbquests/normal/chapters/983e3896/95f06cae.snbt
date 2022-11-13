@@ -1,12 +1,5 @@
 {
 	title: "{bq.quest153.name}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "astralsorcery.liquidstarlight",
-			Amount: 1000
-		}
-	},
 	x: -0.16666666666666663d,
 	y: 3.5d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1005.name}",
-	icon: "randomthings:spectrecoil_number",
 	x: -13.833333333333334d,
 	y: 10.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9092f6f7"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "8778b257",
 		type: "item",

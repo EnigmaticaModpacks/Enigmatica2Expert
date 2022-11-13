@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest15.name}",
-	icon: "teslacorelib:machine_case",
 	x: 1.5d,
 	y: 2.166666666666667d,
 	text: [

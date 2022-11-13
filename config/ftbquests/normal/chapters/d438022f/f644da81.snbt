@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1018.name}",
-	icon: "cyclicmagic:builder_block",
 	x: -16.666666666666668d,
 	y: 21.833333333333332d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"727feb19"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "8def31cd",
 		type: "item",

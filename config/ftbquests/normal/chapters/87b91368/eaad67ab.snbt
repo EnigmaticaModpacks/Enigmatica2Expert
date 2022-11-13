@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest726.name}",
-	icon: "rats:rat_upgrade_aristocrat",
 	x: -3.5d,
 	y: 6.25d,
 	text: [

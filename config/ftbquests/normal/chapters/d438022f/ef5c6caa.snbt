@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1002.name}",
-	icon: "randomthings:spectrelens",
 	x: -13.833333333333334d,
 	y: 12.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9092f6f7"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "3dc57e08",
 		type: "item",

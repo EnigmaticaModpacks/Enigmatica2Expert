@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest730.name}",
-	icon: "rats:chunky_cheese_token",
 	x: -1.25d,
 	y: 6.25d,
 	text: [

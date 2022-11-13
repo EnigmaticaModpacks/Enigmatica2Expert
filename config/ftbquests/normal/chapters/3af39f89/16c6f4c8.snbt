@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest878.name}",
-	icon: "thermallogistics:terminal_item",
 	x: 6.833333333333333d,
 	y: 2.6666666666666665d,
 	text: [

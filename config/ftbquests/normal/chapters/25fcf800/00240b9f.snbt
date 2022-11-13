@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest497.name}",
-	icon: "environmentaltech:modifier_piezo",
 	x: 9.75d,
 	y: 0.5d,
 	text: [

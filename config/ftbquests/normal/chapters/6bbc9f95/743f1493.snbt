@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest651.name}",
-	icon: "thaumcraft:focus_pouch",
 	x: 7.0d,
 	y: 9.0d,
 	text: [

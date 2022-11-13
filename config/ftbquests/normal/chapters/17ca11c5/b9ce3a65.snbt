@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest925.name}",
-	icon: "extrautils2:creativeharvest",
 	x: 6.375d,
 	y: -4.0d,
 	text: [

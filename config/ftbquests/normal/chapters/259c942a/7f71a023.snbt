@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest104.name}",
-	icon: "immersiveengineering:stone_decoration 1 10",
 	x: -3.5d,
 	y: 2.166666666666667d,
 	text: [

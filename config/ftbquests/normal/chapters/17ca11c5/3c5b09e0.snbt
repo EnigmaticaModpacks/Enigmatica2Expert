@@ -1,9 +1,4 @@
 {
-	title: "{bq.quest32.name}",
-	icon: {
-		id: "avaritia:infinity_axe",
-		tag: {}
-	},
 	x: 7.208333333333333d,
 	y: 10.958333333333332d,
 	text: [

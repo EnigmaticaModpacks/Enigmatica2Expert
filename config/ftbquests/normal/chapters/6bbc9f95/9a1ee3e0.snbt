@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest676.name}",
-	icon: "thaumcraft:brain_box",
 	x: 8.2d,
 	y: 4.8d,
 	text: [

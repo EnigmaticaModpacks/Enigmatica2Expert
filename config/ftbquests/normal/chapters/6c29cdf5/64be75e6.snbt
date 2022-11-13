@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest386.name}",
-	icon: "botania:livingrock",
 	x: 3.5d,
 	y: 3.8333333333333335d,
 	text: [

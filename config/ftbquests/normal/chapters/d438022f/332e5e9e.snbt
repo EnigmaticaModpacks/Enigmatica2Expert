@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest952.name}",
-	icon: "bibliocraft:typesettingtable",
 	x: -12.666666666666666d,
 	y: 19.333333333333332d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"6eea845e"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "799d86be",
 		type: "item",

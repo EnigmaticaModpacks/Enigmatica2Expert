@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest128.name}",
-	icon: "actuallyadditions:block_fermenting_barrel",
 	x: -2.1666666666666665d,
 	y: 3.5d,
 	text: [

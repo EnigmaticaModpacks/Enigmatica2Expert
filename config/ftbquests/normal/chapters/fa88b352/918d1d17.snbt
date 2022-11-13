@@ -1,12 +1,5 @@
 {
 	title: "{bq.quest688.name}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "deuterium",
-			Amount: 1000
-		}
-	},
 	x: 13.3d,
 	y: 6.5d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest732.name}",
-	icon: "rats:rat_cage",
 	x: -6.5d,
 	y: 2.75d,
 	text: [

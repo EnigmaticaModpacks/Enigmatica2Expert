@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest704.name}",
-	icon: "extrautils2:lawsword",
 	x: 9.0d,
 	y: 5.0d,
 	text: [

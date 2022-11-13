@@ -1,24 +1,5 @@
 {
 	title: "{bq.quest232.name}",
-	icon: {
-		id: "thermalexpansion:cell",
-		tag: {
-			Recv: 5000,
-			RSControl: 0b,
-			Facing: 3b,
-			Energy: 0,
-			Level: 0b,
-			SideCache: [B;
-				2b,
-				1b,
-				1b,
-				1b,
-				1b,
-				1b
-			],
-			Send: 5000
-		}
-	},
 	x: 5.666666666666667d,
 	y: 2.6666666666666665d,
 	text: [

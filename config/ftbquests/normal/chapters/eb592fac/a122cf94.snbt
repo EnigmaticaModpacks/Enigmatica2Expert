@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest902.name}",
-	icon: "rftools:storage_module_tablet",
 	x: -7.125d,
 	y: 2.8333333333333335d,
 	text: [

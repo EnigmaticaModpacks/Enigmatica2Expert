@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest724.name}",
-	icon: "rats:rat_upgrade_gemcutter",
 	x: -3.5d,
 	y: 1.25d,
 	text: [

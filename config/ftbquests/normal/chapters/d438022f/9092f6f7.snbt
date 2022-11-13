@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest999.name}",
-	icon: "randomthings:ingredient 1 2",
 	x: -12.666666666666666d,
 	y: 11.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dc869094"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "df2e3456",
 		type: "item",

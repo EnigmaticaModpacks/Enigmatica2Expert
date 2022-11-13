@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest536.name}",
-	icon: {
-		id: "draconicevolution:wyvern_shovel",
-		tag: {
-			Energy: 2000000
-		}
-	},
 	x: 4.5d,
 	y: 11.0d,
 	text: [

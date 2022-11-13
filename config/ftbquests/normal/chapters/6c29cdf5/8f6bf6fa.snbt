@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest400.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "bellethorn"
-		}
-	},
 	x: 16.833333333333332d,
 	y: 5.833333333333333d,
 	text: [

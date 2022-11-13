@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1058.name}",
-	icon: "randomthings:stableenderpearl",
 	x: -15.666666666666668d,
 	y: 8.833333333333334d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dc869094"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "cfb1a435",
 		type: "item",

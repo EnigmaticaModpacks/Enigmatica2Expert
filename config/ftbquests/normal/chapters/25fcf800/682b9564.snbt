@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest494.name}",
-	icon: "environmentaltech:solar_cont_5",
 	x: 9.75d,
 	y: 8.0d,
 	text: [

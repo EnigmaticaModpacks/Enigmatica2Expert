@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest176.name}",
-	icon: "mekanism:reinforcedalloy",
 	x: 3.5d,
 	y: 6.5d,
 	text: [

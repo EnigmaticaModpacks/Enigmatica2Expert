@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest652.name}",
-	icon: "thaumcraft:focus_1",
 	x: 8.5d,
 	y: 7.5d,
 	text: [

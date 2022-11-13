@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest301.name}",
-	icon: "immersivepetroleum:schematic",
 	x: 3.1666666666666665d,
 	y: 3.5d,
 	text: [

@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest616.name}",
-	icon: {
-		id: "bloodmagic:blood_orb",
-		tag: {
-			orb: "bloodmagic:magician"
-		}
-	},
 	x: 8.5d,
 	y: 4.5d,
 	text: [

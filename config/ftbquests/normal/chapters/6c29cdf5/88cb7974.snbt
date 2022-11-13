@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest388.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "kekimurus"
-		}
-	},
 	x: 13.5d,
 	y: 4.666666666666667d,
 	text: [

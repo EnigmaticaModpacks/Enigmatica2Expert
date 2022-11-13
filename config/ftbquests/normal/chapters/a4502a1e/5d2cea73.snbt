@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest345.name}",
-	icon: {
-		id: "extrautils2:machine",
-		tag: {
-			Type: "extrautils2:generator_potion"
-		}
-	},
 	x: 16.0d,
 	y: 3.0d,
 	text: [

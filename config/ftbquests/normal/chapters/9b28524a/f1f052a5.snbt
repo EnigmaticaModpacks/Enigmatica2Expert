@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest601.name}",
-	icon: "bloodmagic:blood_rune",
 	x: 5.833333333333333d,
 	y: 3.1666666666666665d,
 	text: [

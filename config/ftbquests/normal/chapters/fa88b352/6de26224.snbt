@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest509.name}",
-	icon: "nuclearcraft:electrolyser_idle",
 	x: 9.0d,
 	y: 0.5d,
 	text: [

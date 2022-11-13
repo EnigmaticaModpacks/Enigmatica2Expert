@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest661.name}",
-	icon: "thaumcraft:ingot 1 2",
 	x: 8.166666666666668d,
 	y: 2.5d,
 	text: [

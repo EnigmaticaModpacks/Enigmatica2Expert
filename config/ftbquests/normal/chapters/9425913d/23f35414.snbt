@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest597.name}",
-	icon: "bloodmagic:soul_snare",
 	x: 9.5d,
 	y: 5.5d,
 	text: [

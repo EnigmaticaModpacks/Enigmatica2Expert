@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest633.name}",
-	icon: "bloodmagic:sigil_seer",
 	x: 4.0d,
 	y: 0.5d,
 	text: [

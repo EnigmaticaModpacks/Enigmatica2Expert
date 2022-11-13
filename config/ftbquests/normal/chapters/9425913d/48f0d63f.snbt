@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest38.name}",
-	icon: "appliedenergistics2:inscriber",
 	x: 1.5d,
 	y: 3.8333333333333335d,
 	text: [
@@ -9,7 +8,6 @@
 	dependencies: [
 		"09abfe41"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "48b44682",
 		type: "item",

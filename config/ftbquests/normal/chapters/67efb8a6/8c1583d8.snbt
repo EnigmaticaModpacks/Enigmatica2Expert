@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest547.name}",
-	icon: "draconicevolution:crystal_binder",
 	x: 0.375d,
 	y: 8.25d,
 	text: [

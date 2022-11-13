@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest627.name}",
-	icon: "bloodmagic:ritual_controller",
 	x: 5.0d,
 	y: 1.8333333333333333d,
 	text: [

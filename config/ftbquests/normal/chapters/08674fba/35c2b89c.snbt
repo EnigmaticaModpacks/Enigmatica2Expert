@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest401.name}",
-	icon: "advancedrocketry:suitworkstation",
 	x: 0.5d,
 	y: 5.333333333333333d,
 	text: [

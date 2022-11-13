@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest640.name}",
-	icon: "thaumcraft:research_table",
 	x: 5.5d,
 	y: 1.5d,
 	text: [

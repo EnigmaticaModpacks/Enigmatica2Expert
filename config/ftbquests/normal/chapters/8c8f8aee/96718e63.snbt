@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest302.name}",
-	icon: {
-		id: "actuallyadditions:item_battery",
-		tag: {
-			Energy: 200000
-		}
-	},
 	x: -5.5d,
 	y: 6.166666666666667d,
 	text: [

@@ -1,10 +1,5 @@
 {
 	title: "{bq.quest75.name}",
-	icon: {
-		id: "ic2:te",
-		Damage: 74s,
-		tag: {}
-	},
 	x: 0.8333333333333333d,
 	y: 4.833333333333333d,
 	text: [

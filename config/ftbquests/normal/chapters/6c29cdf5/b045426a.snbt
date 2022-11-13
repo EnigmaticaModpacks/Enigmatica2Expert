@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest365.name}",
-	icon: "botania:spreader",
 	x: 1.75d,
 	y: 1.1666666666666665d,
 	text: [

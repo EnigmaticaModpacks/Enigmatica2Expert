@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest705.name}",
-	icon: "industrialforegoing:protein_reactor",
 	x: 2.166666666666667d,
 	y: 5.833333333333333d,
 	text: [

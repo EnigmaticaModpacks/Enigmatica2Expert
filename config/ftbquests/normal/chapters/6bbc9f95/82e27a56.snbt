@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest639.name}",
-	icon: "thaumcraft:thaumometer",
 	x: -0.6d,
 	y: 3.3d,
 	text: [

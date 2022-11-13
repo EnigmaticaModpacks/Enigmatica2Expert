@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest752.name}",
-	icon: "twilightforest:firefly",
 	x: 0.5d,
 	y: 1.8333333333333333d,
 	text: [

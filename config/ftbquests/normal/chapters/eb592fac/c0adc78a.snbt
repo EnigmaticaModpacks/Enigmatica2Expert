@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest694.name}",
-	icon: "rftoolsdim:phased_field_generator",
 	x: 5.166666666666667d,
 	y: 4.125d,
 	text: [

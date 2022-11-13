@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest866.name}",
-	icon: "twilightforest:alpha_fur",
 	x: 4.5d,
 	y: 0.5d,
 	text: [

@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest391.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "munchdew"
-		}
-	},
 	x: 13.333333333333334d,
 	y: 3.6666666666666665d,
 	text: [

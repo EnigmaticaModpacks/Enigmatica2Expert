@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest538.name}",
-	icon: "draconicevolution:crafting_injector 1 2",
 	x: 8.5d,
 	y: 0.75d,
 	text: [

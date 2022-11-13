@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest582.name}",
-	icon: "enderio:block_sag_mill",
 	x: 7.5d,
 	y: 3.8333333333333335d,
 	text: [

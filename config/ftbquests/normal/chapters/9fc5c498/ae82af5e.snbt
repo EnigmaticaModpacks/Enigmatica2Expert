@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest575.name}",
-	icon: "enderio:block_weather_obelisk",
 	x: 4.833333333333333d,
 	y: 5.166666666666667d,
 	text: [

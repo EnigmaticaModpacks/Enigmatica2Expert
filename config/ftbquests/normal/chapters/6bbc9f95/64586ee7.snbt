@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest646.name}",
-	icon: "thaumcraft:smelter_vent",
 	x: 2.0d,
 	y: 13.333333333333334d,
 	text: [

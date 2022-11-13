@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest93.name}",
-	icon: "randomthings:eclipsedclock",
 	x: -10.0d,
 	y: 5.5d,
 	text: [

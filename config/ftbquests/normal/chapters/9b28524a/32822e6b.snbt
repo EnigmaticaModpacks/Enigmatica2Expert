@@ -1,14 +1,4 @@
 {
-	title: "{bq.quest629.name}",
-	icon: {
-		id: "bloodmagic:bound_sword",
-		tag: {
-			Unbreakable: 1b,
-			ENABLED: 1b,
-			RARITY: 1,
-			activated: 0b
-		}
-	},
 	x: 8.333333333333332d,
 	y: 1.1666666666666665d,
 	text: [

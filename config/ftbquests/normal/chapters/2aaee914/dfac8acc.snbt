@@ -1,12 +1,5 @@
 {
 	title: "{bq.quest916.name}",
-	icon: {
-		id: "mekanism:basicblock2",
-		Damage: 3s,
-		tag: {
-			tier: 0
-		}
-	},
 	x: 10.166666666666666d,
 	y: 6.5d,
 	text: [

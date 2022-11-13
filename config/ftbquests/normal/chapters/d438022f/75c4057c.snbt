@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1028.name}",
-	icon: "cyclicmagic:sprinkler",
 	x: 1.1666666666666665d,
 	y: 14.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9e222e1c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "c57e382d",
 		type: "item",

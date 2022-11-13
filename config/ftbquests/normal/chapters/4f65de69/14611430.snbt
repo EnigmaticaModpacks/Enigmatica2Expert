@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest60.name}",
-	icon: {
-		id: "tconstruct:sharpening_kit",
-		tag: {
-			Material: "draconic_metal"
-		}
-	},
 	x: 17.125d,
 	y: 3.5d,
 	text: [

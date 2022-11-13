@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest707.name}",
-	icon: "industrialforegoing:animal_resource_harvester",
 	x: -2.8333333333333335d,
 	y: 4.0d,
 	text: [

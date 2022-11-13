@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest962.name}",
-	icon: "rustic:wildberry_bush",
 	x: -19.166666666666668d,
 	y: 18.333333333333332d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"3ecc3fbe"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "4fc80802",
 		type: "item",

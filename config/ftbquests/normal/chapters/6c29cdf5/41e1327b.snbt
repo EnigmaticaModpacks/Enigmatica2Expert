@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest783.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "petro_petunia"
-		}
-	},
 	x: 12.541666666666666d,
 	y: 8.625d,
 	text: [

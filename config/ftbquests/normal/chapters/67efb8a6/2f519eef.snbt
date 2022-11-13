@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest553.name}",
-	icon: {
-		id: "draconicevolution:draconic_staff_of_power",
-		tag: {
-			Energy: 48000000
-		}
-	},
 	x: 1.5d,
 	y: 10.0d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest44.name}",
-	icon: "rftools:creative_screen",
 	x: 8.2d,
 	y: 3.3d,
 	text: [

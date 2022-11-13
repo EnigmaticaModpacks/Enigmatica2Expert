@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest403.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "orechidIgnem"
-		}
-	},
 	x: 4.833333333333333d,
 	y: 11.666666666666666d,
 	text: [

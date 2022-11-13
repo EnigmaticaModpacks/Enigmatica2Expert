@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1017.name}",
-	icon: "cyclicmagic:fire_starter",
 	x: -9.5d,
 	y: 19.166666666666668d,
 	text: [
@@ -10,7 +8,6 @@
 		"332e5e9e",
 		"113883dc"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "57990abc",
 		type: "item",

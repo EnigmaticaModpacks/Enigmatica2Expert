@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1007.name}",
-	icon: "cyclicmagic:dehydrator",
 	x: -16.666666666666668d,
 	y: 15.5d,
 	text: [
@@ -10,7 +8,6 @@
 		"a6d357d3",
 		"37406152"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "21e6fd58",
 		type: "item",

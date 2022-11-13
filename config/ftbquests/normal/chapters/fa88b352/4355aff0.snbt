@@ -1,13 +1,5 @@
 {
 	title: "{bq.quest923.name}",
-	icon: {
-		id: "nuclearcraft:voltaic_pile_basic",
-		tag: {
-			maxTransfer: 80000,
-			capacity: 1600000,
-			energy: 0
-		}
-	},
 	x: 9.333333333333334d,
 	y: 10.166666666666666d,
 	text: [

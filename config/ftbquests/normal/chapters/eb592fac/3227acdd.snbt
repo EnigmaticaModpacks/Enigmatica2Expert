@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest272.name}",
-	icon: "rftools:dialing_device",
 	x: -2.125d,
 	y: 0.6041666666666666d,
 	text: [

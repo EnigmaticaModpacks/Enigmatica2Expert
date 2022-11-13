@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest303.name}",
-	icon: "actuallyadditions:item_spawner_changer",
 	x: 3.6666666666666665d,
 	y: 6.5d,
 	text: [

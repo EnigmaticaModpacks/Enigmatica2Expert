@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest469.name}",
-	icon: "environmentaltech:structure_frame_3",
 	x: 6.75d,
 	y: 5.0d,
 	text: [

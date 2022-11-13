@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest580.name}",
-	icon: "enderio:block_soul_binder",
 	x: 10.166666666666666d,
 	y: 2.5d,
 	text: [

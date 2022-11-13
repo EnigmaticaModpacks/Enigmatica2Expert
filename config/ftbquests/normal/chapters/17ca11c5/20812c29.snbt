@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest25.name}",
-	icon: "avaritia:infinity_chestplate",
 	x: 1.625d,
 	y: 10.75d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest926.name}",
-	icon: "psicosts:creative_cell",
 	x: 1.125d,
 	y: -0.625d,
 	text: [

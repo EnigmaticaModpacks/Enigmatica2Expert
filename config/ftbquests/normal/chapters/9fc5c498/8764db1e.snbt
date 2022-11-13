@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest566.name}",
-	icon: "enderio:block_stirling_generator",
 	x: 0.8333333333333333d,
 	y: 2.5d,
 	text: [

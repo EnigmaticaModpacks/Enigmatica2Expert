@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest655.name}",
-	icon: "thaumcraft:caster_basic",
 	x: 8.5d,
 	y: 9.0d,
 	text: [

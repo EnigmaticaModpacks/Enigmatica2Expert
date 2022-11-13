@@ -1,9 +1,4 @@
 {
-	title: "{bq.quest944.name}",
-	icon: {
-		id: "rats:rat_arrow",
-		tag: {}
-	},
 	x: -6.5d,
 	y: 0.16666666666666669d,
 	text: [

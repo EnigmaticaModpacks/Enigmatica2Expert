@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest59.name}",
-	icon: {
-		id: "tconstruct:sharpening_kit",
-		tag: {
-			Material: "ma.supremium"
-		}
-	},
 	x: 15.6d,
 	y: 3.5d,
 	text: [

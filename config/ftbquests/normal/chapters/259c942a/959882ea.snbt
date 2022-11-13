@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest297.name}",
-	icon: "immersiveengineering:metal_decoration0 1 5",
 	x: 1.5d,
 	y: 3.5d,
 	text: [

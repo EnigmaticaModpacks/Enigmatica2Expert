@@ -1,18 +1,15 @@
 {
 	title: "{bq.quest956.name}",
-	icon: "rustic:cabinet",
 	x: -20.833333333333332d,
 	y: 21.333333333333336d,
 	shape: "heart",
 	text: [
 		"{bq.quest956.desc}"
 	],
-	hide_dependency_lines: true,
 	dependencies: [
 		"37406152"
 	],
 	size: 1.3333333333333333d,
-	or_tasks: true,
 	tasks: [{
 		uid: "1ae9a0b3",
 		type: "item",

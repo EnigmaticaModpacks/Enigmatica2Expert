@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest180.name}",
-	icon: "mekanism:controlcircuit 1 2",
 	x: 2.166666666666667d,
 	y: 7.833333333333333d,
 	text: [

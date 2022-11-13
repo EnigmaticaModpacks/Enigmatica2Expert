@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1073.name}",
-	icon: "thaumadditions:knowledge_tome",
 	x: 5.5d,
 	y: 4.833333333333333d,
 	text: [

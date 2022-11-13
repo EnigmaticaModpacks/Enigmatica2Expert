@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest900.name}",
-	icon: "rftools:crafter1",
 	x: -3.958333333333333d,
 	y: 2.8333333333333335d,
 	text: [

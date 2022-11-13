@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest473.name}",
-	icon: "environmentaltech:erodium_crystal",
 	x: 5.25d,
 	y: 3.5d,
 	text: [

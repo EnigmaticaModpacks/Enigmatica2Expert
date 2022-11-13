@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest111.name}",
-	icon: "extrautils2:passivegenerator",
 	x: 7.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
@@ -9,7 +8,6 @@
 	dependencies: [
 		"29946b47"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "80b0ab63",
 		type: "item",

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest699.name}",
-	icon: "industrialforegoing:sludge_refiner",
 	x: 1.0d,
 	y: 7.5d,
 	text: [

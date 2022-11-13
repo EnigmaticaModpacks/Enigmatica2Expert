@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest594.name}",
-	icon: "enderio:block_painter",
 	x: 7.5d,
 	y: 2.5d,
 	text: [

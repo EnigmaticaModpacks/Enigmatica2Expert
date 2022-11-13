@@ -1,12 +1,4 @@
 {
-	title: "{bq.quest857.name}",
-	icon: {
-		id: "wct:wct",
-		tag: {
-			InfinityEnergy: 2147483647,
-			internalCurrentPower: 1600000.0d
-		}
-	},
 	x: 5.4d,
 	y: -1.9d,
 	text: [
@@ -15,7 +7,6 @@
 	dependencies: [
 		"6690bc40"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "55db32bc",
 		type: "item",

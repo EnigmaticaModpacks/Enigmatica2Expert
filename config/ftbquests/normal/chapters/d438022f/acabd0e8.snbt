@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest964.name}",
-	icon: "darkutils:ender_hopper",
 	x: -6.333333333333333d,
 	y: 19.333333333333332d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"50ecf6a3"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "1d7cd050",
 		type: "item",

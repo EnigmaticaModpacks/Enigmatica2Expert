@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest810.name}",
-	icon: "industrialforegoing:enchantment_extractor",
 	x: -2.5d,
 	y: 6.333333333333333d,
 	text: [

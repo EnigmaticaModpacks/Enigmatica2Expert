@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest659.name}",
-	icon: "thaumcraft:candle_white",
 	x: 3.3333333333333335d,
 	y: 10.666666666666666d,
 	text: [

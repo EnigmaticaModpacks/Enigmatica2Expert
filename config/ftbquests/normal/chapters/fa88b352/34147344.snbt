@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest510.name}",
-	icon: "nuclearcraft:irradiator_idle",
 	x: 10.5d,
 	y: 0.8333333333333333d,
 	text: [

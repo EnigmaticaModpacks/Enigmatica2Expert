@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest809.name}",
-	icon: "vaultopic:vice",
 	x: 6.7d,
 	y: 5.1d,
 	text: [

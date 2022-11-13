@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest728.name}",
-	icon: "rats:rat_diamond",
 	x: -2.0d,
 	y: 0.0d,
 	text: [

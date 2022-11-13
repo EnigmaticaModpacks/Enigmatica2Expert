@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest942.name}",
-	icon: "usefulrailroads:rail_teleport",
 	x: 9.625d,
 	y: 5.0d,
 	text: [

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest436.name}",
-	icon: "advancedrocketry:gravitycontroller",
 	x: 10.166666666666666d,
 	y: 8.5d,
 	text: [

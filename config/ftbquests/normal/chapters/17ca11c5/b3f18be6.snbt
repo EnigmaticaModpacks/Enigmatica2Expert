@@ -1,14 +1,5 @@
 {
 	title: "{bq.quest0.name}",
-	icon: {
-		id: "mekanism:energycube",
-		tag: {
-			tier: 4,
-			mekData: {
-				energyStored: 1.7976931348623157E308d
-			}
-		}
-	},
 	x: 5.249999999999999d,
 	y: 7.541666666666668d,
 	text: [
@@ -28,7 +19,7 @@
 			tag: {
 				tier: 4,
 				mekData: {
-					energyStored: 1.7976931348623157E308d
+					energyStored: "1.7976931348623157E308d"
 				}
 			}
 		}]

@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest933.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "orechidVacuam"
-		}
-	},
 	x: 6.166666666666667d,
 	y: 11.666666666666666d,
 	text: [

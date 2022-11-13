@@ -1,9 +1,4 @@
 {
-	title: "{bq.quest407.name}",
-	icon: {
-		id: "botania:manaring",
-		tag: {}
-	},
 	x: 0.5d,
 	y: 5.166666666666667d,
 	text: [

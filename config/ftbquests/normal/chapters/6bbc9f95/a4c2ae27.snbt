@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest681.name}",
-	icon: "thaumcraft:essentia_output",
 	x: 2.0d,
 	y: 14.666666666666666d,
 	text: [

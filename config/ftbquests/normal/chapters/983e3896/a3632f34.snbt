@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest154.name}",
-	icon: {
-		id: "astralsorcery:itemskyresonator",
-		tag: {
-			astralsorcery: {}
-		}
-	},
 	x: -1.1666666666666667d,
 	y: 6.166666666666667d,
 	text: [

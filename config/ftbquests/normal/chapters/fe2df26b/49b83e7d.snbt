@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest850.name}",
-	icon: "threng:machine 1 4",
 	x: -0.5d,
 	y: 4.0d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"b6524265"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "b03d53ce",
 		type: "item",

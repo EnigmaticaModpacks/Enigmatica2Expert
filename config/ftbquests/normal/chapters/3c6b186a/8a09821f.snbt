@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest425.name}",
-	icon: "ic2:misc_resource 1 1",
 	x: 10.5d,
 	y: 7.5d,
 	text: [

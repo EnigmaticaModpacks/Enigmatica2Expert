@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest515.name}",
-	icon: "nuclearcraft:chemical_reactor_idle",
 	x: 12.833333333333334d,
 	y: 3.0d,
 	text: [

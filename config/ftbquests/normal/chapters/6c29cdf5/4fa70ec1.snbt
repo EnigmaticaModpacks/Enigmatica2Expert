@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest361.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "puredaisy"
-		}
-	},
 	x: 3.5d,
 	y: 2.5d,
 	text: [

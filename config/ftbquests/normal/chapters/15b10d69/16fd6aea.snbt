@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest816.name}",
-	icon: "industrialforegoing:villager_trade_exchanger",
 	x: 5.0d,
 	y: 2.8333333333333335d,
 	text: [

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest17.name}",
-	icon: "claybucket:unfiredclaybucket",
 	x: -2.375d,
 	y: 2.0d,
 	text: [

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest847.name}",
-	icon: "threng:big_assembler 1 4",
 	x: 4.0d,
 	y: 4.0d,
 	text: [
@@ -9,7 +8,6 @@
 	dependencies: [
 		"75e96e73"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "91d6bf5b",
 		type: "item",

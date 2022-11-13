@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest285.name}",
-	icon: {
-		id: "forestry:ffarm",
-		tag: {
-			FarmBlock: 0
-		}
-	},
 	x: -0.8333333333333333d,
 	y: 3.5d,
 	text: [

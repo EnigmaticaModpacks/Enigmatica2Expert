@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest373.name}",
-	icon: "botania:alchemycatalyst",
 	x: 0.5d,
 	y: 6.5d,
 	text: [

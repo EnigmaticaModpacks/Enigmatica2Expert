@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest409.name}",
-	icon: "botania:grasshorn",
 	x: -0.9166666666666667d,
 	y: 2.5d,
 	text: [

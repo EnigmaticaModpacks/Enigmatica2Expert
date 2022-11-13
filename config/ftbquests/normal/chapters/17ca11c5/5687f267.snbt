@@ -1,13 +1,5 @@
 {
 	title: "{bq.quest452.name}",
-	icon: {
-		id: "astralsorcery:itemknowledgeshare",
-		tag: {
-			astralsorcery: {
-				creativeKnowledge: 1b
-			}
-		}
-	},
 	x: 2.375d,
 	y: 3.541666666666667d,
 	text: [

@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest394.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "narslimmus"
-		}
-	},
 	x: 13.166666666666666d,
 	y: 6.666666666666667d,
 	text: [

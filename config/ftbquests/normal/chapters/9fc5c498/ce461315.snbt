@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest579.name}",
-	icon: "enderio:block_farm_station",
 	x: 11.5d,
 	y: 2.5d,
 	text: [

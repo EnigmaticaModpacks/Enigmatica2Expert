@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest306.name}",
-	icon: {
-		id: "immersiveengineering:blueprint",
-		tag: {
-			blueprint: "components"
-		}
-	},
 	x: -0.16666666666666663d,
 	y: 4.833333333333333d,
 	text: [

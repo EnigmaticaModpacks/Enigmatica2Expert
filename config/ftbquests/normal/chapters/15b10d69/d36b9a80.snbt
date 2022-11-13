@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest142.name}",
-	icon: "industrialforegoing:laser_base",
 	x: 9.0d,
 	y: 3.0d,
 	text: [

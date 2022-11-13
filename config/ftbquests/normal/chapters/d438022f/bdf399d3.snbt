@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1010.name}",
-	icon: "cyclicmagic:auto_crafter",
 	x: 0.16666666666666669d,
 	y: 14.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9e222e1c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "1d37d618",
 		type: "item",

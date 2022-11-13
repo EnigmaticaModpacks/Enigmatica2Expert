@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest490.name}",
-	icon: "environmentaltech:void_res_miner_cont_6",
 	x: 8.25d,
 	y: 9.5d,
 	text: [

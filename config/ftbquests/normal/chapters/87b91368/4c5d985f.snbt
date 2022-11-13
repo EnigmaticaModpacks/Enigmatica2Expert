@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1062.name}",
-	icon: "rats:rat_upgrade_shears",
 	x: -3.5d,
 	y: 0.0d,
 	text: [

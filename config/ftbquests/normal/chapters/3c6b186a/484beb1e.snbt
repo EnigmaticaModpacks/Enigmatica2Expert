@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest422.name}",
-	icon: "ic2:foam_sprayer",
 	x: 7.5d,
 	y: 6.166666666666667d,
 	text: [

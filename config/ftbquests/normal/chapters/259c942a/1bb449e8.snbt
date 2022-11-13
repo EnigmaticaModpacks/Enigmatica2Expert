@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest555.name}",
-	icon: "portabledrill:portable_drill",
 	x: 4.5d,
 	y: 6.166666666666667d,
 	text: [

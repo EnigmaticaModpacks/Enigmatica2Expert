@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest288.name}",
-	icon: "mekanism:atomicdisassembler",
 	x: 13.166666666666666d,
 	y: 6.5d,
 	text: [

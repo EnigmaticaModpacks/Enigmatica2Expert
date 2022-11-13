@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest986.name}",
-	icon: "randomthings:fertilizeddirt",
 	x: -10.833333333333334d,
 	y: 8.166666666666668d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dc869094"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "e10cdd54",
 		type: "item",

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest685.name}",
-	icon: "actuallyadditions:item_crystal_empowered 1 4",
 	x: 1.5d,
 	y: 5.5d,
 	text: [

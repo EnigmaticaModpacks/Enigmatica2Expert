@@ -1,20 +1,4 @@
 {
-	title: "{bq.quest548.name}",
-	icon: {
-		id: "draconicevolution:draconic_bow",
-		tag: {
-			Energy: 16000000,
-			Profile_0: {
-				bowFireArrow: 0b,
-				bowZoomModifier: 0,
-				bowArrowSpeedModifier: 0,
-				bowShockPower: 0.0d,
-				bowAutoFire: 0b,
-				bowExplosionPower: 0.0d,
-				bowArrowDamage: 2.0d
-			}
-		}
-	},
 	x: 2.0d,
 	y: 12.5d,
 	text: [

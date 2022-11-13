@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest997.name}",
-	icon: "randomthings:summoningpendulum",
 	x: -14.833333333333334d,
 	y: 10.666666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9092f6f7"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "95f5a3c4",
 		type: "item",

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest102.name}",
-	icon: "immersiveengineering:treated_wood",
 	x: -1.8333333333333335d,
 	y: 2.166666666666667d,
 	text: [

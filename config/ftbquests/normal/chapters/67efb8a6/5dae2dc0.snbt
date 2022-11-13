@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest525.name}",
-	icon: "draconicevolution:wyvern_energy_core",
 	x: 4.5d,
 	y: 5.25d,
 	text: [

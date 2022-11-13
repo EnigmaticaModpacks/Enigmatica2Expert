@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1000.name}",
-	icon: "randomthings:spectrekey",
 	x: -12.666666666666666d,
 	y: 15.333333333333334d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9092f6f7"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "540f6f28",
 		type: "item",

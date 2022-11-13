@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest577.name}",
-	icon: "enderio:block_inhibitor_obelisk",
 	x: 6.166666666666667d,
 	y: 6.5d,
 	text: [

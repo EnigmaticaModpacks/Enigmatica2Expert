@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest450.name}",
-	icon: "mekanism:roadplasticblock 1 15",
 	x: 3.5d,
 	y: 2.166666666666667d,
 	text: [

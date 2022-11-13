@@ -1,12 +1,4 @@
 {
-	title: "{bq.quest773.name}",
-	icon: {
-		id: "botania:autocraftinghalo",
-		tag: {
-			equipped: 0b,
-			rotationBase: 449.93347f
-		}
-	},
 	x: 1.8333333333333333d,
 	y: 7.833333333333333d,
 	text: [

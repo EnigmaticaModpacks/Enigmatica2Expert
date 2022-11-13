@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest542.name}",
-	icon: {
-		id: "draconicevolution:wyvern_axe",
-		tag: {
-			Energy: 2000000
-		}
-	},
 	x: 5.5d,
 	y: 9.0d,
 	text: [

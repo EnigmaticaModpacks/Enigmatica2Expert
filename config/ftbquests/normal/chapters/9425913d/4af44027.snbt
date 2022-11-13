@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest40.name}",
-	icon: "environmentaltech:litherite_crystal",
 	x: 1.5d,
 	y: 5.5d,
 	text: [

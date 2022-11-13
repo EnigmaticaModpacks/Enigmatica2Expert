@@ -1,17 +1,4 @@
 {
-	title: "{bq.quest168.name}",
-	icon: {
-		id: "astralsorcery:itemcelestialcrystal",
-		tag: {
-			astralsorcery: {
-				crystalProperties: {
-					collectiveCapability: 100,
-					size: 900,
-					purity: 100
-				}
-			}
-		}
-	},
 	x: -0.16666666666666663d,
 	y: 6.166666666666667d,
 	text: [

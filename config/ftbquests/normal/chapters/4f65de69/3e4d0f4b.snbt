@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest57.name}",
-	icon: {
-		id: "tconstruct:sharpening_kit",
-		tag: {
-			Material: "enderium"
-		}
-	},
 	x: 12.625d,
 	y: 3.5d,
 	text: [

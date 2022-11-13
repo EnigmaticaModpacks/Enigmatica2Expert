@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest1059.name}",
-	icon: "ic2:crop_stick",
 	x: -2.375d,
 	y: 5.0d,
 	text: [

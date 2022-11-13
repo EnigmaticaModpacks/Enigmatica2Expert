@@ -1,12 +1,4 @@
 {
-	title: "{bq.quest958.name}",
-	icon: {
-		id: "rustic:liquid_barrel",
-		tag: {
-			FluidName: "wildberryjuice",
-			Amount: 16000
-		}
-	},
 	x: -19.5d,
 	y: 23.0d,
 	text: [
@@ -15,7 +7,6 @@
 	dependencies: [
 		"3ecc3fbe"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "d80a23db",
 		type: "item",

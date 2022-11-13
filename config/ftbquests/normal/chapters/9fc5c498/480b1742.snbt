@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest591.name}",
-	icon: "enderio:block_enchanter",
 	x: -0.5d,
 	y: 0.8333333333333333d,
 	text: [

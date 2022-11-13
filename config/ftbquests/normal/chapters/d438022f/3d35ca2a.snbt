@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest795.name}",
-	icon: {
-		id: "randomthings:timeinabottle",
-		tag: {
-			timeData: {}
-		}
-	},
 	x: -11.166666666666666d,
 	y: 5.833333333333333d,
 	text: [

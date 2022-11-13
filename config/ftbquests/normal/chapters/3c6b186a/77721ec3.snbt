@@ -1,10 +1,4 @@
 {
-	title: "{bq.quest419.name}",
-	icon: {
-		id: "ic2:mining_laser",
-		Damage: 26s,
-		tag: {}
-	},
 	x: 7.5d,
 	y: 3.5d,
 	text: [

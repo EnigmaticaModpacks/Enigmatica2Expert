@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest392.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "entropinnyum"
-		}
-	},
 	x: 13.166666666666666d,
 	y: 2.6666666666666665d,
 	text: [

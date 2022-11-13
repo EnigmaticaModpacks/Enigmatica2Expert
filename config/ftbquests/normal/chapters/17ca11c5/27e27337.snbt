@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest927.name}",
-	icon: "psi:cad_assembly 1 5",
 	x: 7.1d,
 	y: 5.1d,
 	text: [

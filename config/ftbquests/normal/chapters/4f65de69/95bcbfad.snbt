@@ -1,6 +1,5 @@
 {
 	title: "Uncraftable TCon Parts",
-	icon: "contenttweaker:supremium_chest_base",
 	x: 15.6d,
 	y: 6.1d,
 	text: [
@@ -11,7 +10,6 @@
 	dependencies: [
 		"5c870b2e"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "9c9ecd84",
 		type: "item",

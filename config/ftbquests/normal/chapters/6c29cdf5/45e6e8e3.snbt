@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest420.name}",
-	icon: "botania:sparkupgrade",
 	x: 0.5d,
 	y: 9.166666666666666d,
 	text: [

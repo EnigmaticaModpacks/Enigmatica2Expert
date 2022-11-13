@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1072.name}",
-	icon: "rats:plague_doctorate",
 	x: -0.5d,
 	y: 1.25d,
 	text: [

@@ -1,17 +1,4 @@
 {
-	title: "{bq.quest917.name}",
-	icon: {
-		id: "immersiveengineering:graphite_electrode",
-		tag: {
-			Unbreakable: 1,
-			display: {
-				Lore: [
-					"Reinforced with Titanium Iridium Alloy"
-				],
-				Name: "Unbreakable Graphite Electrode"
-			}
-		}
-	},
 	x: 6.0d,
 	y: 3.5d,
 	text: [

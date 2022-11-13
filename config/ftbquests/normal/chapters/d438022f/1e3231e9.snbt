@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest992.name}",
-	icon: "randomthings:rainshield",
 	x: -10.666666666666666d,
 	y: 9.333333333333334d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dc869094"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "14b887a4",
 		type: "item",

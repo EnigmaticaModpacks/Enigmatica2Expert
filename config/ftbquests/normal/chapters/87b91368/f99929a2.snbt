@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest723.name}",
-	icon: "rats:rat_upgrade_basic",
 	x: -5.0d,
 	y: 4.208333333333333d,
 	text: [

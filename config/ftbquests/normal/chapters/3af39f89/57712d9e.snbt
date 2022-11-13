@@ -1,15 +1,5 @@
 {
 	title: "{bq.quest223.name}",
-	icon: {
-		id: "thermalexpansion:dynamo",
-		Damage: 1s,
-		tag: {
-			RSControl: 0b,
-			Facing: 1b,
-			Energy: 0,
-			Level: 0b
-		}
-	},
 	x: 3.1666666666666665d,
 	y: 4.5d,
 	text: [

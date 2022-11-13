@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest853.name}",
-	icon: "aeadditions:fluidfiller",
 	x: -2.0d,
 	y: 2.5d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"228e865e"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "3bc9ef90",
 		type: "item",

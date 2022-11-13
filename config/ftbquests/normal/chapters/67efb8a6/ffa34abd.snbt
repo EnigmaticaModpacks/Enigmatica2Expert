@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest541.name}",
-	icon: {
-		id: "draconicevolution:draconium_capacitor",
-		tag: {
-			Energy: 64000000
-		}
-	},
 	x: 6.5d,
 	y: 5.25d,
 	text: [

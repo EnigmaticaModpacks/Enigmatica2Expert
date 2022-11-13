@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest482.name}",
-	icon: "environmentaltech:kyronite_crystal",
 	x: 5.25d,
 	y: 5.0d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest522.name}",
-	icon: "nuclearcraft:upgrade",
 	x: 10.5d,
 	y: 3.5d,
 	text: [

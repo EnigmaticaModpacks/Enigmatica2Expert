@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest375.name}",
-	icon: "botania:manaresource 1 5",
 	x: 9.166666666666666d,
 	y: 6.5d,
 	text: [

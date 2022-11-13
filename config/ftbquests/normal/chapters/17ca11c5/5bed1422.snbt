@@ -1,13 +1,5 @@
 {
 	title: "{bq.quest2.name}",
-	icon: {
-		id: "mekanism:machineblock2",
-		Damage: 11s,
-		tag: {
-			tier: 4,
-			mekData: {}
-		}
-	},
 	x: 3.791666666666667d,
 	y: 7.541666666666668d,
 	text: [

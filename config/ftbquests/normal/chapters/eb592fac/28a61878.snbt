@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest263.name}",
-	icon: "rftools:environmental_controller",
 	x: 1.875d,
 	y: -0.6458333333333334d,
 	text: [

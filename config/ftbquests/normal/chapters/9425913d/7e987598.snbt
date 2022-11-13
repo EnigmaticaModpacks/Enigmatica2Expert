@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest65.name}",
-	icon: "extendedcrafting:table_ultimate",
 	x: 5.55d,
 	y: 8.25d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest873.name}",
-	icon: "minecraft:diamond",
 	x: 3.625d,
 	y: 2.0d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dabc815c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "5b0511e5",
 		type: "item",

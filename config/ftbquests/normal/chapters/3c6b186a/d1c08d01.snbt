@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest79.name}",
-	icon: "ic2:te 1 43",
 	x: 4.166666666666666d,
 	y: 3.5d,
 	text: [

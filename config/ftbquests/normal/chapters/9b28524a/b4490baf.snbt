@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest769.name}",
 	icon: {
 		id: "bloodmagic:living_armour_chest",
 		tag: {}

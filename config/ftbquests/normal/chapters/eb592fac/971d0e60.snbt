@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest255.name}",
-	icon: "rftools:matter_receiver",
 	x: -7.125d,
 	y: 0.6666666666666666d,
 	text: [

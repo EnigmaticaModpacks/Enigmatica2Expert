@@ -1,23 +1,4 @@
 {
-	title: "{bq.quest799.name}",
-	icon: {
-		id: "littletiles:chisel",
-		tag: {
-			preview: {
-				bBox: [I;
-					0,
-					0,
-					0,
-					1,
-					1,
-					1
-				],
-				tile: {
-					block: "minecraft:stone"
-				}
-			}
-		}
-	},
 	x: 11.125d,
 	y: 6.041666666666667d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest632.name}",
-	icon: "bloodmagic:ritual_reader",
 	x: 5.0d,
 	y: 0.5d,
 	text: [

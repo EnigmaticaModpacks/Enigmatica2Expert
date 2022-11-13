@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest693.name}",
-	icon: "rftoolsdim:dimlet_workbench",
 	x: 6.666666666666667d,
 	y: 2.5d,
 	text: [

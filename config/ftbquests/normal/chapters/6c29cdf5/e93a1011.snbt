@@ -1,9 +1,4 @@
 {
-	title: "{bq.quest370.name}",
-	icon: {
-		id: "botania:manatablet",
-		tag: {}
-	},
 	x: 1.8333333333333333d,
 	y: 5.166666666666667d,
 	text: [

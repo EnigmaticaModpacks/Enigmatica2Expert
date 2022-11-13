@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1035.name}",
-	icon: "cyclicmagic:glove_climb",
 	x: -2.6666666666666665d,
 	y: 16.833333333333332d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"d5c22de0"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "066fd2c7",
 		type: "item",

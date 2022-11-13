@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest753.name}",
-	icon: "actuallyadditions:block_lava_factory_controller",
 	x: 3.6666666666666665d,
 	y: 8.5d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest498.name}",
-	icon: "environmentaltech:modifier_accuracy",
 	x: 3.25d,
 	y: 2.0d,
 	text: [

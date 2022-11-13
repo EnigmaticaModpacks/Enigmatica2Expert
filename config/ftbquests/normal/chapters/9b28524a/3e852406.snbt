@@ -1,10 +1,4 @@
 {
-	title: "{bq.quest607.name}",
-	icon: {
-		id: "bloodmagic:soul_gem",
-		Damage: 1s,
-		tag: {}
-	},
 	x: 0.8333333333333333d,
 	y: 5.5d,
 	text: [

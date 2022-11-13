@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest635.name}",
-	icon: "thaumcraft:thaumonomicon",
 	x: 0.6666666666666666d,
 	y: 0.8333333333333333d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1008.name}",
-	icon: "cyclicmagic:solidifier",
 	x: -3.666666666666667d,
 	y: 19.166666666666668d,
 	text: [
@@ -10,7 +8,6 @@
 		"33b238ff",
 		"acabd0e8"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "e4df0ede",
 		type: "item",

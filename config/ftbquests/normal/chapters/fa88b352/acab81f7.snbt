@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest519.name}",
-	icon: "nuclearcraft:nuclear_furnace_idle",
 	x: 5.166666666666667d,
 	y: 13.5d,
 	text: [

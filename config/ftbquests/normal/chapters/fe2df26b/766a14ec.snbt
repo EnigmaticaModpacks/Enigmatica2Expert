@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest838.name}",
-	icon: "appliedenergistics2:molecular_assembler",
 	x: -3.5d,
 	y: 1.0d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"c3751d75"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "50b0e2c0",
 		type: "item",

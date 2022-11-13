@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest777.name}",
-	icon: "appliedenergistics2:charger",
 	x: 1.0d,
 	y: 2.5d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"2e632fad"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "af8acd38",
 		type: "item",

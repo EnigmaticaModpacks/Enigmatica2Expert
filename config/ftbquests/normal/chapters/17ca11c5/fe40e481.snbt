@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest24.name}",
-	icon: "avaritia:infinity_helmet",
 	x: 1.625d,
 	y: 9.5d,
 	text: [

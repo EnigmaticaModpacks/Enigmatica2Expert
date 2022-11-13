@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest840.name}",
-	icon: "appliedenergistics2:wireless_access_point",
 	x: 4.1d,
 	y: -1.9d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"fb831b5c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "29f91f28",
 		type: "item",

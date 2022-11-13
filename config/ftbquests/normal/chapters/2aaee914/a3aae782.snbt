@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest191.name}",
-	icon: "mekanism:compresseddiamond",
 	x: 4.833333333333333d,
 	y: 6.5d,
 	text: [

@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest56.name}",
-	icon: {
-		id: "tconstruct:sharpening_kit",
-		tag: {
-			Material: "osgloglas"
-		}
-	},
 	x: 11.125d,
 	y: 3.5d,
 	text: [
@@ -14,7 +8,6 @@
 	dependencies: [
 		"558597eb"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "49965a09",
 		type: "item",

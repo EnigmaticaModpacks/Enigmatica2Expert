@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest687.name}",
-	icon: "biomesoplenty:terrestrial_artifact",
 	x: 2.5d,
 	y: 7.0d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest856.name}",
-	icon: "rf-capability-adapter:aecapabilityadapter",
 	x: -0.5d,
 	y: -0.5d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"ff8470d4"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "3fb17e33",
 		type: "item",

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest145.name}",
-	icon: "industrialforegoing:animal_stock_increaser",
 	x: -3.666666666666667d,
 	y: 5.666666666666667d,
 	text: [

@@ -1,15 +1,4 @@
 {
-	title: "{bq.quest363.name}",
-	icon: {
-		id: "botania:twigwand",
-		tag: {
-			color1: 0,
-			color2: 0,
-			boundTileZ: 0,
-			boundTileX: 0,
-			boundTileY: -1
-		}
-	},
 	x: 3.5d,
 	y: 1.1666666666666665d,
 	text: [

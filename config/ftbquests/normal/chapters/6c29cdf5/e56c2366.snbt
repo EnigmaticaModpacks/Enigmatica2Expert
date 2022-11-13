@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest396.name}",
-	icon: {
-		id: "botania:dice",
-		tag: {
-			soulbindUUID: "e5356349-070f-4c91-935a-2c8bf2374a08"
-		}
-	},
 	x: 10.5d,
 	y: 7.833333333333333d,
 	text: [

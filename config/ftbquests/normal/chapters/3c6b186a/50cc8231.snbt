@@ -1,13 +1,5 @@
 {
 	title: "{bq.quest77.name}",
-	icon: {
-		id: "ic2:cable",
-		Damage: 1s,
-		tag: {
-			type: 1b,
-			insulation: 0b
-		}
-	},
 	x: 0.8333333333333333d,
 	y: 7.5d,
 	text: [

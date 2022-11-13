@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest970.name}",
-	icon: "darkutils:charm_sleep",
 	x: -6.833333333333333d,
 	y: 25.333333333333332d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"50ecf6a3"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "63a14abb",
 		type: "item",

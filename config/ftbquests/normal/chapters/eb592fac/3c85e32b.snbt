@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest275.name}",
-	icon: "rftools:matter_booster",
 	x: -1.875d,
 	y: 3.125d,
 	text: [

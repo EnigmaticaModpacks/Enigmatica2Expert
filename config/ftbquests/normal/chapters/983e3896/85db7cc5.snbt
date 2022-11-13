@@ -1,23 +1,4 @@
 {
-	title: "{bq.quest806.name}",
-	icon: {
-		id: "astralsorcery:itemenchantmentamulet",
-		tag: {
-			astralsorcery: {
-				amuletEnchantments: [{
-					ench: "minecraft:projectile_protection",
-					level: 1,
-					type: 1
-				},
-				{
-					ench: "minecraft:bane_of_arthropods",
-					level: 1,
-					type: 1
-				}],
-				amuletColor: -2425011
-			}
-		}
-	},
 	x: 5.5d,
 	y: 2.166666666666667d,
 	text: [

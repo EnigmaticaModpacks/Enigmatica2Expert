@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest998.name}",
-	icon: "randomthings:reinforcedenderbucket",
 	x: -15.666666666666668d,
 	y: 7.833333333333333d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dc869094"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "d307b783",
 		type: "item",

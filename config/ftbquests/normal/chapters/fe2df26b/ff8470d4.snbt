@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest844.name}",
-	icon: "appliedenergistics2:part 1 460",
 	x: -0.5d,
 	y: -1.9d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"bd8b6cc0"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "a9680e2a",
 		type: "item",

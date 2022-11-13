@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest344.name}",
-	icon: {
-		id: "extrautils2:machine",
-		tag: {
-			Type: "extrautils2:generator_ender"
-		}
-	},
 	x: 17.0d,
 	y: -1.1666666666666667d,
 	text: [

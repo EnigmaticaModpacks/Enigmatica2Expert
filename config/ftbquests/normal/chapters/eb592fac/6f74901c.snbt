@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest717.name}",
-	icon: "rftools:spawner",
 	x: 1.875d,
 	y: 3.1041666666666665d,
 	text: [

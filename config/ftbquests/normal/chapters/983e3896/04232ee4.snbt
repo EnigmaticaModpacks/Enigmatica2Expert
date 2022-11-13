@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest166.name}",
-	icon: "astralsorcery:blockmachine",
 	x: 0.8333333333333333d,
 	y: 3.5d,
 	text: [

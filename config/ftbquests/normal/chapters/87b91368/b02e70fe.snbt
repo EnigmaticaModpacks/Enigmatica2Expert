@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest735.name}",
-	icon: "rats:idol_of_ratlantis",
 	x: -1.75d,
 	y: 9.0d,
 	text: [

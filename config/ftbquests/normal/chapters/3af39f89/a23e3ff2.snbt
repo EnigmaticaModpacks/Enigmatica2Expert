@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest240.name}",
-	icon: "thermalexpansion:augment 1 688",
 	x: 5.166666666666667d,
 	y: 5.666666666666667d,
 	text: [

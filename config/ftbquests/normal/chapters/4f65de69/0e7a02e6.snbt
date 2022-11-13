@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest621.name}",
-	icon: "conarm:armorstation",
 	x: -4.0d,
 	y: 5.0d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest503.name}",
-	icon: "nuclearcraft:fuel_reprocessor_idle",
 	x: 1.1666666666666665d,
 	y: 8.833333333333334d,
 	text: [

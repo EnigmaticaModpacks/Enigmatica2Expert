@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest961.name}",
-	icon: "rustic:honeycomb",
 	x: -19.333333333333332d,
 	y: 22.166666666666668d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"3ecc3fbe"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "c612ca9c",
 		type: "item",

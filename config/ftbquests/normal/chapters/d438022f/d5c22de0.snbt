@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1020.name}",
-	icon: "cyclicmagic:block_anvil_magma",
 	x: -3.666666666666667d,
 	y: 15.5d,
 	text: [
@@ -10,7 +8,6 @@
 		"4b0fde3b",
 		"5966422c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "15070e8d",
 		type: "item",

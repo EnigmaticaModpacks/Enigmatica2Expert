@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest399.name}",
-	icon: "botania:conjurationcatalyst",
 	x: 0.5d,
 	y: 7.833333333333333d,
 	text: [

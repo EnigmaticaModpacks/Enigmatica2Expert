@@ -1,13 +1,5 @@
 {
 	title: "{bq.quest7.name}",
-	icon: {
-		id: "xnet:netcable",
-		tag: {
-			display: {
-				LocName: "tile.xnet.netcable_blue.name}"
-			}
-		}
-	},
 	x: 1.0d,
 	y: 0.0d,
 	text: [

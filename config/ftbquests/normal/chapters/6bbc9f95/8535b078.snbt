@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest678.name}",
-	icon: "thaumcraft:thaumium_helm",
 	x: 12.5d,
 	y: 0.8333333333333333d,
 	text: [
@@ -15,7 +13,6 @@
 		items: [{
 			item: "thaumcraft:thaumium_helm"
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	},
 	{

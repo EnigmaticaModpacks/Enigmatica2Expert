@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest788.name}",
-	icon: "actuallyadditions:item_tele_staff",
 	x: 5.0d,
 	y: 6.5d,
 	text: [

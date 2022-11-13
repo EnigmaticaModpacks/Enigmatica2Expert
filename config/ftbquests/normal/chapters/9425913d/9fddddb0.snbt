@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest254.name}",
-	icon: "libvulpes:structuremachine",
 	x: 3.5d,
 	y: 5.5d,
 	text: [

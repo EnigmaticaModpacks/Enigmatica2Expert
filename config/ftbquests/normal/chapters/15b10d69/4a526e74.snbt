@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest138.name}",
-	icon: "industrialforegoing:latex_processing_unit",
 	x: -1.0d,
 	y: 1.0d,
 	text: [

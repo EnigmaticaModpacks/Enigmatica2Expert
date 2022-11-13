@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest313.name}",
-	icon: "actuallyadditions:block_fishing_net",
 	x: 3.6666666666666665d,
 	y: 5.5d,
 	text: [

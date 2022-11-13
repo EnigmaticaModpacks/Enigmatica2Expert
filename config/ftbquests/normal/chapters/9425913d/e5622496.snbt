@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest36.name}",
-	icon: "extrautils2:machine",
 	x: 7.5d,
 	y: 2.166666666666667d,
 	text: [

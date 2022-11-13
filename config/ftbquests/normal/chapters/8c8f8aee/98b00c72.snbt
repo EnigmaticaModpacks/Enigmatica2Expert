@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest122.name}",
-	icon: "actuallyadditions:block_atomic_reconstructor",
 	x: -5.5d,
 	y: 2.166666666666667d,
 	text: [

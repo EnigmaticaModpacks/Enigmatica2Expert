@@ -1,12 +1,5 @@
 {
 	title: "{bq.quest722.name}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "exhaust_steam",
-			Amount: 1000
-		}
-	},
 	x: 5.5d,
 	y: 3.5d,
 	text: [

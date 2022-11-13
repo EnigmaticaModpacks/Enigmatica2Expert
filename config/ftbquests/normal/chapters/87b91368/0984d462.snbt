@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest733.name}",
-	icon: "rats:rat_breeding_lantern",
 	x: -6.5d,
 	y: 4.0d,
 	text: [

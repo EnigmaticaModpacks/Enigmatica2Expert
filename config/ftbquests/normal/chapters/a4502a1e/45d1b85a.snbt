@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest341.name}",
-	icon: {
-		id: "extrautils2:machine",
-		tag: {
-			Type: "extrautils2:generator_culinary"
-		}
-	},
 	x: 12.0d,
 	y: -1.1666666666666667d,
 	text: [

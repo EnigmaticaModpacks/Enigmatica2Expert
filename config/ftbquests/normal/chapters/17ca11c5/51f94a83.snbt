@@ -1,9 +1,4 @@
 {
-	title: "{bq.quest28.name}",
-	icon: {
-		id: "avaritia:infinity_sword",
-		tag: {}
-	},
 	x: 5.958333333333333d,
 	y: 9.708333333333332d,
 	text: [

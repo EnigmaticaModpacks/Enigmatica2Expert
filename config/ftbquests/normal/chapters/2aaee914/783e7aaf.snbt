@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest188.name}",
-	icon: {
-		id: "mekanism:machineblock3",
-		tag: {
-			mekData: {}
-		}
-	},
 	x: 10.166666666666666d,
 	y: 7.833333333333333d,
 	text: [

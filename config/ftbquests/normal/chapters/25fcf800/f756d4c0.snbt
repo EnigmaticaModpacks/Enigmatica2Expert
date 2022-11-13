@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest481.name}",
-	icon: "environmentaltech:void_ore_miner_cont_6",
 	x: 5.25d,
 	y: 11.0d,
 	text: [

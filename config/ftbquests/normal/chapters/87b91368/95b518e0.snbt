@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest727.name}",
-	icon: "rats:rat_upgrade_ore_doubling",
 	x: -3.5d,
 	y: 3.75d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest745.name}",
-	icon: "iceandfire:hippogryph_egg",
 	x: -0.5d,
 	y: -1.25d,
 	text: [

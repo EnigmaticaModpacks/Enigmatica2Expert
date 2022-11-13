@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest567.name}",
-	icon: "enderio:item_basic_capacitor",
 	x: 2.166666666666667d,
 	y: 2.5d,
 	text: [

@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest364.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "endoflame"
-		}
-	},
 	x: 11.833333333333334d,
 	y: 4.833333333333333d,
 	text: [

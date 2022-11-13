@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest291.name}",
-	icon: {
-		id: "forestry:chipsets",
-		tag: {
-			T: 0s
-		}
-	},
 	x: -3.5d,
 	y: 2.166666666666667d,
 	text: [
@@ -14,7 +8,6 @@
 	dependencies: [
 		"8806b7fe"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "effc7eb7",
 		type: "item",

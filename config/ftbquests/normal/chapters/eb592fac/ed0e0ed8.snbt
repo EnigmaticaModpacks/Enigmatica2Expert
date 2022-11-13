@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest276.name}",
-	icon: "rftools:shape_card 1 2",
 	x: 0.0d,
 	y: 5.0d,
 	text: [

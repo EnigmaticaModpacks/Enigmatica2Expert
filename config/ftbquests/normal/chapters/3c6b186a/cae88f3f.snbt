@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest418.name}",
-	icon: "ic2:crafting",
 	x: 2.5d,
 	y: 0.8333333333333333d,
 	text: [

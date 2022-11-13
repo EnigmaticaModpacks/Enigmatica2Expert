@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest266.name}",
-	icon: "rftools:modular_storage",
 	x: -6.125d,
 	y: 3.8333333333333335d,
 	text: [

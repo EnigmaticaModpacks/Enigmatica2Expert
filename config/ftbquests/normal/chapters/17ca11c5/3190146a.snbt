@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest27.name}",
-	icon: "avaritia:infinity_boots",
 	x: 1.625d,
 	y: 13.25d,
 	text: [

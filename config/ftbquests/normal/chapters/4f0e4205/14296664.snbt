@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest95.name}",
-	icon: "twilightforest:trophy 1 8",
 	x: 1.8d,
 	y: -0.8333333333333333d,
 	text: [

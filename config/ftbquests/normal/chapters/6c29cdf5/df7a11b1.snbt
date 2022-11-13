@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest424.name}",
-	icon: "botania:diviningrod",
 	x: 10.5d,
 	y: 3.8333333333333335d,
 	text: [

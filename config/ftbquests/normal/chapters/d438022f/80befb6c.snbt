@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1037.name}",
-	icon: "cyclicmagic:charm_speed",
 	x: -0.8333333333333333d,
 	y: 14.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"9e222e1c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "3a38d912",
 		type: "item",

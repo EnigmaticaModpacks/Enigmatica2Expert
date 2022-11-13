@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest184.name}",
-	icon: "actuallyadditions:block_leaf_generator",
 	x: 3.6666666666666665d,
 	y: 7.5d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest146.name}",
-	icon: "industrialforegoing:fluid_crafter",
 	x: -3.0d,
 	y: 2.8333333333333335d,
 	text: [

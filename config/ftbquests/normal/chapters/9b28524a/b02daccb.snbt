@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest612.name}",
-	icon: {
-		id: "bloodmagic:blood_orb",
-		tag: {
-			orb: "bloodmagic:weak"
-		}
-	},
 	x: 5.166666666666667d,
 	y: 4.5d,
 	text: [

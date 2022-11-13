@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest702.name}",
-	icon: "industrialforegoing:crop_enrich_material_injector",
 	x: 0.0d,
 	y: 7.166666666666667d,
 	text: [

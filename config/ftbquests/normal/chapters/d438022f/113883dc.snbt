@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1009.name}",
-	icon: "cyclicmagic:auto_packager",
 	x: -16.666666666666668d,
 	y: 19.166666666666668d,
 	text: [
@@ -10,7 +8,6 @@
 		"37406152",
 		"a4548a67"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "43522071",
 		type: "item",

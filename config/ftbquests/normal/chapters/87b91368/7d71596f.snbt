@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest751.name}",
-	icon: "rats:marbled_cheese_raw",
 	x: -0.75d,
 	y: 7.75d,
 	text: [

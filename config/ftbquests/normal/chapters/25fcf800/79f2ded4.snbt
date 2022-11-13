@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest485.name}",
-	icon: "environmentaltech:aethium_crystal",
 	x: 5.25d,
 	y: 9.5d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1024.name}",
-	icon: "cyclicmagic:glass_strong",
 	x: -11.0d,
 	y: 14.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"5966422c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "40df6941",
 		type: "item",

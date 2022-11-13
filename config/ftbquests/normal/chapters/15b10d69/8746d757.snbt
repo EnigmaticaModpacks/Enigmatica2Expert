@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest147.name}",
-	icon: "industrialforegoing:wither_builder",
 	x: 4.5d,
 	y: 5.166666666666667d,
 	text: [

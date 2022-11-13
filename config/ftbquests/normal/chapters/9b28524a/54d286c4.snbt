@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest628.name}",
-	icon: "bloodmagic:soul_forge",
 	x: 2.5d,
 	y: 4.166666666666666d,
 	text: [

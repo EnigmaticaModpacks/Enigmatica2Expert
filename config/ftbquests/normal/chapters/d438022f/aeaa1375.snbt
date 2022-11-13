@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest990.name}",
-	icon: "randomthings:igniter",
 	x: -9.5d,
 	y: 9.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"1e3231e9"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "ab745fca",
 		type: "item",

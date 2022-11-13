@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest527.name}",
-	icon: "draconicevolution:dragon_heart",
 	x: 4.5d,
 	y: 0.75d,
 	text: [

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest39.name}",
-	icon: "rftools:machine_frame",
 	x: 3.5d,
 	y: 3.8333333333333335d,
 	text: [

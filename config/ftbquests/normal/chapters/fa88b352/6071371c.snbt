@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest517.name}",
-	icon: "nuclearcraft:crystallizer_idle",
 	x: 10.5d,
 	y: 4.833333333333333d,
 	text: [

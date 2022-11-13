@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest304.name}",
-	icon: "actuallyadditions:block_feeder",
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [

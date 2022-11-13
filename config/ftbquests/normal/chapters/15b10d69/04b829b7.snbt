@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest143.name}",
-	icon: "industrialforegoing:mob_relocator",
 	x: 4.833333333333333d,
 	y: 4.0d,
 	text: [

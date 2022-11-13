@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest319.name}",
-	icon: "extrautils2:itembuilderswand",
 	x: 0.25d,
 	y: 1.7916666666666667d,
 	text: [

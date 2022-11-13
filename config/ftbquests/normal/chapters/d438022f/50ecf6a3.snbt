@@ -1,18 +1,15 @@
 {
 	title: "{bq.quest963.name}",
-	icon: "darkutils:material",
 	x: -6.333333333333333d,
 	y: 23.5d,
 	shape: "heart",
 	text: [
 		"{bq.quest963.desc}"
 	],
-	hide_dependency_lines: true,
 	dependencies: [
 		"37406152"
 	],
 	size: 1.3333333333333333d,
-	or_tasks: true,
 	tasks: [{
 		uid: "5cf2e684",
 		type: "item",

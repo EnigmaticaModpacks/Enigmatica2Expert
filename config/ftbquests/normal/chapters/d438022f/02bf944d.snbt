@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1044.name}",
-	icon: "cyclicmagic:tool_swap",
 	x: -10.0d,
 	y: 14.166666666666666d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"5966422c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "e65c8f07",
 		type: "item",

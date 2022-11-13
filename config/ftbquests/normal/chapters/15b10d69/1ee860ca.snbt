@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest135.name}",
-	icon: "industrialforegoing:laser_drill",
 	x: 9.5d,
 	y: 4.0d,
 	text: [

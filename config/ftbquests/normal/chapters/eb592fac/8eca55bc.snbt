@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest267.name}",
-	icon: "rftools:builder",
 	x: 0.0d,
 	y: 3.5d,
 	text: [

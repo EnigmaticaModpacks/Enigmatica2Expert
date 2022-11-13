@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest664.name}",
-	icon: "thaumcraft:goggles",
 	x: 5.5d,
 	y: 6.166666666666667d,
 	text: [
@@ -16,7 +15,6 @@
 		items: [{
 			item: "thaumcraft:goggles"
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

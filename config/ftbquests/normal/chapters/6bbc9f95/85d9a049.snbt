@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest673.name}",
-	icon: {
-		id: "thaumcraft:golem",
-		tag: {
-			props: 0L
-		}
-	},
 	x: 11.5d,
 	y: 4.166666666666666d,
 	text: [
@@ -27,7 +20,6 @@
 				props: 0L
 			}
 		}],
-		ignore_damage: true,
 		ignore_nbt: 1b
 	},
 	{

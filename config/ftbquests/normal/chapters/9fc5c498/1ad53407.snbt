@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest457.name}",
-	icon: "enderio:item_capacitor_stellar",
 	x: 2.166666666666667d,
 	y: 6.5d,
 	text: [

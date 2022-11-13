@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest521.name}",
-	icon: "nuclearcraft:fission_controller_new_fixed",
 	x: 7.833333333333333d,
 	y: 14.5d,
 	text: [

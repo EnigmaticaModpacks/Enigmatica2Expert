@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest347.name}",
-	icon: {
-		id: "extrautils2:machine",
-		tag: {
-			Type: "extrautils2:generator_slime"
-		}
-	},
 	x: 12.0d,
 	y: 3.0d,
 	text: [

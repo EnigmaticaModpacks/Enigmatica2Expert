@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest20.name}",
-	icon: "extrautils2:passivegenerator 1 6",
 	x: 6.458333333333333d,
 	y: 1.541666666666667d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest505.name}",
-	icon: "nuclearcraft:machine_interface",
 	x: 9.166666666666666d,
 	y: 3.5d,
 	text: [

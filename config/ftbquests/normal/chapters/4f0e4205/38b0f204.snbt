@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest870.name}",
-	icon: "twilightforest:lamp_of_cinders",
 	x: 7.166666666666667d,
 	y: 0.5d,
 	text: [

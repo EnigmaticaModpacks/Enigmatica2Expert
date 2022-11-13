@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest776.name}",
-	icon: "bloodmagic:blood_tank",
 	x: 4.0d,
 	y: 4.5d,
 	text: [

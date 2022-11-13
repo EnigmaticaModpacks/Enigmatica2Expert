@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest335.name}",
-	icon: {
-		id: "extrautils2:machine",
-		tag: {
-			Type: "extrautils2:generator_survival"
-		}
-	},
 	x: 11.0d,
 	y: 3.0d,
 	text: [

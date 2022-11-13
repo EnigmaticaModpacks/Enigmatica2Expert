@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest782.name}",
-	icon: "storagedrawers:compdrawers",
 	x: 2.125d,
 	y: 7.041666666666667d,
 	text: [

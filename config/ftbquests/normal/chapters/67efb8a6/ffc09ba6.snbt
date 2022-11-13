@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest539.name}",
-	icon: {
-		id: "draconicevolution:wyvern_pick",
-		tag: {
-			Energy: 2000000
-		}
-	},
 	x: 5.0d,
 	y: 10.0d,
 	text: [

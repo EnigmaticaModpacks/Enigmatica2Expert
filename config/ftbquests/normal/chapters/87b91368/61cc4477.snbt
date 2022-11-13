@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest936.name}",
-	icon: "rats:purifying_liquid",
 	x: -0.5d,
 	y: 3.75d,
 	text: [

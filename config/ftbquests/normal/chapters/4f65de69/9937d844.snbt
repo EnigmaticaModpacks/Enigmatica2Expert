@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest892.name}",
-	icon: "conditionoverload:wicked_jewel",
 	x: 15.6d,
 	y: 5.1d,
 	text: [

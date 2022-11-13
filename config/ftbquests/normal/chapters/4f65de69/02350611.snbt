@@ -1,12 +1,5 @@
 {
 	title: "{bq.quest461.name}",
-	icon: {
-		id: "forge:bucketfilled",
-		tag: {
-			FluidName: "creosote",
-			Amount: 1000
-		}
-	},
 	x: 3.625d,
 	y: 7.041666666666667d,
 	text: [
@@ -15,7 +8,6 @@
 	dependencies: [
 		"dabc815c"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "d6e09611",
 		type: "item",

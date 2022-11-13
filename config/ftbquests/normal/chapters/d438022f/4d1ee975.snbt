@@ -1,18 +1,15 @@
 {
 	title: "{bq.quest950.name}",
-	icon: "quark:slime_bucket",
 	x: -20.666666666666664d,
 	y: 13.5d,
 	shape: "heart",
 	text: [
 		"{bq.quest950.desc}"
 	],
-	hide_dependency_lines: true,
 	dependencies: [
 		"37406152"
 	],
 	size: 1.3333333333333333d,
-	or_tasks: true,
 	tasks: [{
 		uid: "6fa86050",
 		type: "item",

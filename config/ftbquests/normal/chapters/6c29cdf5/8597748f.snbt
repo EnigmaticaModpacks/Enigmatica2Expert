@@ -1,9 +1,5 @@
 {
 	title: "{bq.quest404.name}",
-	icon: {
-		id: "botania:exchangerod",
-		tag: {}
-	},
 	x: 10.5d,
 	y: 5.166666666666667d,
 	text: [

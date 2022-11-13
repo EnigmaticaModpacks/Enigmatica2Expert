@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest212.name}",
-	icon: "mekanism:biofuel",
 	x: 6.166666666666667d,
 	y: 2.166666666666667d,
 	text: [

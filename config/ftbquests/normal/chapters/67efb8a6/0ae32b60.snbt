@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest550.name}",
-	icon: {
-		id: "draconicevolution:draconic_sword",
-		tag: {
-			Energy: 16000000
-		}
-	},
 	x: 2.5d,
 	y: 11.5d,
 	text: [

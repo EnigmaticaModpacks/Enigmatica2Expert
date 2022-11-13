@@ -1,23 +1,5 @@
 {
 	title: "{bq.quest217.name}",
-	icon: {
-		id: "thermalexpansion:machine",
-		Damage: 3s,
-		tag: {
-			RSControl: 0b,
-			Facing: 3b,
-			Energy: 0,
-			Level: 0b,
-			SideCache: [B;
-				3b,
-				1b,
-				2b,
-				2b,
-				2b,
-				2b
-			]
-		}
-	},
 	x: 14.333333333333334d,
 	y: 4.333333333333333d,
 	text: [

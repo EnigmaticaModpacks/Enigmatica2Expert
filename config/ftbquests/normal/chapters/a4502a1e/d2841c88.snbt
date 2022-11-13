@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest334.name}",
-	icon: "extrautils2:flattransfernode",
 	x: 2.2916666666666665d,
 	y: 0.125d,
 	text: [

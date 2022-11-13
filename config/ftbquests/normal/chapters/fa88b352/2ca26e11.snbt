@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest508.name}",
-	icon: "nuclearcraft:supercooler_idle",
 	x: 7.333333333333333d,
 	y: 0.5d,
 	text: [

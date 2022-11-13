@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest641.name}",
-	icon: "thaumcraft:arcane_workbench",
 	x: 4.166666666666666d,
 	y: 5.0d,
 	text: [

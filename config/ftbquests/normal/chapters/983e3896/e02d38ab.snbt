@@ -1,17 +1,4 @@
 {
-	title: "{bq.quest156.name}",
-	icon: {
-		id: "astralsorcery:itemrockcrystalsimple",
-		tag: {
-			astralsorcery: {
-				crystalProperties: {
-					collectiveCapability: 100,
-					size: 400,
-					purity: 100
-				}
-			}
-		}
-	},
 	x: -2.8333333333333335d,
 	y: 3.5d,
 	text: [

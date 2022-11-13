@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest530.name}",
-	icon: "draconicevolution:ender_energy_manipulator",
 	x: 2.5d,
 	y: 7.5d,
 	text: [

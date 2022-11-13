@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest674.name}",
-	icon: "thaumcraft:void_seed",
 	x: 12.5d,
 	y: 2.5d,
 	text: [

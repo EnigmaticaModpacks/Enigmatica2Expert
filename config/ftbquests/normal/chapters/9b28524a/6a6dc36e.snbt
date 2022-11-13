@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest600.name}",
-	icon: "bloodmagic:altar",
 	x: 4.0d,
 	y: 3.1666666666666665d,
 	text: [

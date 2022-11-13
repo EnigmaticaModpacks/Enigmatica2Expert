@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest243.name}",
-	icon: "thermalfoundation:upgrade",
 	x: 8.0d,
 	y: 2.6666666666666665d,
 	text: [

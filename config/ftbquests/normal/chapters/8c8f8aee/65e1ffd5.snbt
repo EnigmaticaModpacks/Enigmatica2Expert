@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest132.name}",
-	icon: "actuallyadditions:item_misc 1 24",
 	x: -0.5d,
 	y: 4.833333333333333d,
 	text: [

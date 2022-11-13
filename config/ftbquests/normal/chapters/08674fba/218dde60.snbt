@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest444.name}",
-	icon: "advancedrocketry:satellitebuilder",
 	x: 11.5d,
 	y: 5.833333333333333d,
 	text: [

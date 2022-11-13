@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest390.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "loonium"
-		}
-	},
 	x: 17.5d,
 	y: 4.833333333333333d,
 	text: [

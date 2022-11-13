@@ -1,37 +1,4 @@
 {
-	title: "{bq.quest1047.name}",
-	icon: {
-		id: "quark:backpack",
-		tag: {
-			Inventory: [{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{}]
-		}
-	},
 	x: -19.333333333333332d,
 	y: 13.5d,
 	text: [
@@ -40,7 +7,6 @@
 	dependencies: [
 		"4d1ee975"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "53b4e573",
 		type: "item",

@@ -1,9 +1,5 @@
 {
 	title: "{bq.quest906.name}",
-	icon: {
-		id: "thermalinnovation:injector",
-		tag: {}
-	},
 	x: 11.333333333333334d,
 	y: 4.166666666666667d,
 	text: [

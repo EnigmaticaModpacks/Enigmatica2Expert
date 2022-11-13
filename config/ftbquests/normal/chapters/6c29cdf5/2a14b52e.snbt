@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest362.name}",
-	icon: "botania:livingwood",
 	x: 1.75d,
 	y: 2.5d,
 	text: [

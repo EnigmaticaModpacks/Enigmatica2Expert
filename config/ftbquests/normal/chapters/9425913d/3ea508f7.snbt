@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest898.name}",
-	icon: "rftools:machine_base",
 	x: 2.0d,
 	y: 0.0d,
 	text: [

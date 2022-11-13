@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest764.name}",
-	icon: "compactmachines3:machine 1 5",
 	x: 12.625d,
 	y: 5.041666666666667d,
 	text: [

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest42.name}",
-	icon: "nuclearcraft:manufactory_idle",
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [

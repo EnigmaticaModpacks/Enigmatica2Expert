@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest368.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "hopperhock"
-		}
-	},
 	x: 14.833333333333334d,
 	y: 1.8333333333333333d,
 	text: [

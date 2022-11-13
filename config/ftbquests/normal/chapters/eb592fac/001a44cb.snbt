@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest265.name}",
-	icon: "rftools:machine_infuser",
 	x: 2.125d,
 	y: 1.8541666666666665d,
 	text: [

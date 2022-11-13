@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest331.name}",
-	icon: {
-		id: "extrautils2:machine",
-		tag: {
-			Type: "extrautils2:furnace"
-		}
-	},
 	x: 3.8333333333333335d,
 	y: 2.333333333333333d,
 	text: [

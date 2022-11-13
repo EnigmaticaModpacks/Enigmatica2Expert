@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest55.name}",
-	icon: {
-		id: "tconstruct:sharpening_kit",
-		tag: {
-			Material: "manyullyn"
-		}
-	},
 	x: 9.625d,
 	y: 3.5d,
 	text: [

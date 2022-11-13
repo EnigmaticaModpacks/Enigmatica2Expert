@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest1074.name}",
-	icon: "opencomputers:case1",
 	x: -0.5d,
 	y: 0.5d,
 	text: [

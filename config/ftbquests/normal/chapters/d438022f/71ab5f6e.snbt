@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest1029.name}",
-	icon: "cyclicmagic:beacon_potion",
 	x: 5.0d,
 	y: 19.166666666666668d,
 	text: [
@@ -11,7 +9,6 @@
 		"a6a64aad"
 	],
 	size: 2.0d,
-	or_tasks: true,
 	tasks: [{
 		uid: "b7301c8d",
 		type: "item",

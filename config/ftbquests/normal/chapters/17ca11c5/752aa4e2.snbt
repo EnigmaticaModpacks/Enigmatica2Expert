@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest740.name}",
-	icon: "requious:infinity_furnace",
 	x: 2.375d,
 	y: -0.625d,
 	text: [

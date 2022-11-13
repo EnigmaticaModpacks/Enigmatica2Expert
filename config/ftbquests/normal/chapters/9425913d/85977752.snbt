@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest879.name}",
-	icon: "thermalexpansion:frame 1 64",
 	x: 4.0d,
 	y: 0.0d,
 	text: [

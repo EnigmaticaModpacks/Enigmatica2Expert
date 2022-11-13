@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest731.name}",
-	icon: "rats:little_black_squash_balls",
 	x: -2.0d,
 	y: 1.25d,
 	text: [

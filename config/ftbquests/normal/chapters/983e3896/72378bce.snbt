@@ -1,19 +1,5 @@
 {
 	title: "{bq.quest171.name}",
-	icon: {
-		id: "astralsorcery:blockcollectorcrystal",
-		tag: {
-			astralsorcery: {
-				constellationName: "astralsorcery.constellation.discidia",
-				crystalProperties: {
-					collectiveCapability: 100,
-					size: 400,
-					purity: 100
-				},
-				collectorType: 0
-			}
-		}
-	},
 	x: 6.166666666666667d,
 	y: 3.5d,
 	text: [
@@ -23,7 +9,6 @@
 		"b58fd49f",
 		"6af5b978"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "175cd1cd",
 		type: "item",

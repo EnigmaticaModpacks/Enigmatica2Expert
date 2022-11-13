@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest624.name}",
-	icon: "bloodmagic:arcane_ashes",
 	x: 2.5d,
 	y: 5.5d,
 	text: [

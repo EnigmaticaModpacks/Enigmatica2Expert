@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest177.name}",
-	icon: "mekanism:atomicalloy",
 	x: 3.5d,
 	y: 7.833333333333333d,
 	text: [

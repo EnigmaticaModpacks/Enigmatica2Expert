@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest163.name}",
-	icon: "astralsorcery:blockaltar 1 3",
 	x: 9.0d,
 	y: 0.8333333333333333d,
 	text: [

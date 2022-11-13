@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest369.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "jadedAmaranthus"
-		}
-	},
 	x: 18.166666666666668d,
 	y: 2.8333333333333335d,
 	text: [

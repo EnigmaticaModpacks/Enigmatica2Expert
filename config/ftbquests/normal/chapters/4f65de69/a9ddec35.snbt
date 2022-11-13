@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest130.name}",
-	icon: "tcomplement:high_oven_controller",
 	x: 0.625d,
 	y: 2.0d,
 	text: [

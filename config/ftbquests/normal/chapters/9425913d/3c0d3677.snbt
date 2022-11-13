@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest66.name}",
-	icon: "deepmoblearning:soot_covered_plate",
 	x: 11.5d,
 	y: 5.5d,
 	text: [

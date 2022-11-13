@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest488.name}",
-	icon: "environmentaltech:void_res_miner_cont_4",
 	x: 8.25d,
 	y: 6.5d,
 	text: [

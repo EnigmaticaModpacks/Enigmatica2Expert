@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest634.name}",
-	icon: "bloodmagic:dagger_of_sacrifice",
 	x: 3.0d,
 	y: 0.5d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest954.name}",
-	icon: "quark:iron_rod",
 	x: -19.166666666666668d,
 	y: 16.166666666666664d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"4d1ee975"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "3ff11b5c",
 		type: "item",

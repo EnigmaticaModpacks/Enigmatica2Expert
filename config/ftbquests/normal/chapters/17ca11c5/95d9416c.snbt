@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest928.name}",
-	icon: "buildinggadgets:constructionpastecontainercreative",
 	x: 2.375d,
 	y: 0.541666666666667d,
 	text: [

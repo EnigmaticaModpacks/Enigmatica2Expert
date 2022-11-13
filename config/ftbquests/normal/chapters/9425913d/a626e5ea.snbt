@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest9.name}",
-	icon: "actuallyadditions:block_misc 1 9",
 	x: 3.5d,
 	y: 2.166666666666667d,
 	text: [

@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest903.name}",
-	icon: "rftoolsdim:empty_dimension_tab",
 	x: 5.833333333333333d,
 	y: -0.6666666666666667d,
 	text: [

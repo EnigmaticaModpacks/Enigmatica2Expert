@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest169.name}",
-	icon: "astralsorcery:itemcraftingcomponent 1 4",
 	x: 9.0d,
 	y: 3.5d,
 	text: [

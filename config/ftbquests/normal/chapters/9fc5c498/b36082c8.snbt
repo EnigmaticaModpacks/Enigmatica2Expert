@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest578.name}",
-	icon: "enderio:block_relocator_obelisk",
 	x: 3.5d,
 	y: 6.5d,
 	text: [

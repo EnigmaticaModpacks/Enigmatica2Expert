@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest468.name}",
-	icon: "draconicevolution:wyvern_core",
 	x: 6.5d,
 	y: 6.75d,
 	text: [

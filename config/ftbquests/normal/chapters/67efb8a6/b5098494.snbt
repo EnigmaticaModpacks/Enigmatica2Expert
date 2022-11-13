@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest523.name}",
-	icon: "draconicevolution:awakened_core",
 	x: 8.5d,
 	y: 6.75d,
 	text: [

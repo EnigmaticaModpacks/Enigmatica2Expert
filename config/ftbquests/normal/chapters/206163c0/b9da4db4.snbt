@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest290.name}",
-	icon: "forestry:engine_biogas",
 	x: -6.166666666666667d,
 	y: 3.5d,
 	text: [

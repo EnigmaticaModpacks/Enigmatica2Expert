@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest755.name}",
-	icon: "randomthings:ingredient 1 11",
 	x: -2.0d,
 	y: 2.5d,
 	text: [

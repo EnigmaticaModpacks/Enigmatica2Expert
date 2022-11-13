@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest533.name}",
-	icon: "draconicevolution:fusion_crafting_core",
 	x: 8.5d,
 	y: 5.25d,
 	text: [

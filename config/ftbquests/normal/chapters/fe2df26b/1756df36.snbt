@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest845.name}",
-	icon: "appliedenergistics2:crafting_accelerator",
 	x: -3.5d,
 	y: -0.5d,
 	text: [
@@ -9,7 +8,6 @@
 	dependencies: [
 		"766a14ec"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "74a371df",
 		type: "item",

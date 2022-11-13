@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest703.name}",
-	icon: "industrialforegoing:water_resources_collector",
 	x: 3.3333333333333335d,
 	y: 5.5d,
 	text: [

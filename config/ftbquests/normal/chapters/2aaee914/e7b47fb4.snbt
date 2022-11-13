@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest210.name}",
-	icon: "mekanism:tierinstaller 1 3",
 	x: 13.166666666666666d,
 	y: 5.166666666666667d,
 	text: [

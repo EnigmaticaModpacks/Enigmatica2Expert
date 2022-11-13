@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest514.name}",
-	icon: "nuclearcraft:salt_mixer_idle",
 	x: 7.833333333333333d,
 	y: 2.5d,
 	text: [

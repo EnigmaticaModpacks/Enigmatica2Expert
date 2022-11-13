@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest623.name}",
-	icon: {
-		id: "bloodmagic:sacrificial_dagger",
-		tag: {
-			sacrifice: 0b
-		}
-	},
 	x: 3.0d,
 	y: 1.8333333333333333d,
 	text: [

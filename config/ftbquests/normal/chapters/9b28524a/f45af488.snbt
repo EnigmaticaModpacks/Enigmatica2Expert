@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest622.name}",
-	icon: "bloodmagic:activation_crystal",
 	x: 6.0d,
 	y: 1.8333333333333333d,
 	text: [

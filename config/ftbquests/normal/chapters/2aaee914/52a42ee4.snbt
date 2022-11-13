@@ -1,12 +1,4 @@
 {
-	title: "{bq.quest907.name}",
-	icon: {
-		id: "mekanism:machineblock",
-		Damage: 12s,
-		tag: {
-			mekData: {}
-		}
-	},
 	x: 4.833333333333333d,
 	y: 9.166666666666666d,
 	text: [

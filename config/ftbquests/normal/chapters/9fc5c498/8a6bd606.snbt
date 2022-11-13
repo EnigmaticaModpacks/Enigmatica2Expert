@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest589.name}",
-	icon: "enderio:block_cap_bank 1 2",
 	x: 3.5d,
 	y: 3.8333333333333335d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest496.name}",
-	icon: "environmentaltech:modifier_speed",
 	x: 4.25d,
 	y: 2.0d,
 	text: [

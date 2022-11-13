@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest526.name}",
-	icon: "draconicevolution:draconic_energy_core",
 	x: 4.5d,
 	y: 3.75d,
 	text: [

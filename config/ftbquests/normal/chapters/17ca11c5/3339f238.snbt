@@ -1,12 +1,5 @@
 {
 	title: "{bq.quest3.name}",
-	icon: {
-		id: "botania:manatablet",
-		tag: {
-			mana: 500000,
-			creative: 1b
-		}
-	},
 	x: 0.45833333333333337d,
 	y: 6.125d,
 	text: [

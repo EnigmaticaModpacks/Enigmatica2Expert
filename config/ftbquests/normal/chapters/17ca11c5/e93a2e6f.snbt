@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest21.name}",
-	icon: "extendedcrafting:compressor",
 	x: 5.208333333333333d,
 	y: -0.625d,
 	text: [

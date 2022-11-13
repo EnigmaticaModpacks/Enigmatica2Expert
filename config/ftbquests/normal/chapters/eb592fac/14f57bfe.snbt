@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest264.name}",
-	icon: "rftools:charged_porter",
 	x: -7.125d,
 	y: 1.6666666666666667d,
 	text: [

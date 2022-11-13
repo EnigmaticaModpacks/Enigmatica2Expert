@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest638.name}",
-	icon: "thaumcraft:wand_workbench",
 	x: 7.0d,
 	y: 7.5d,
 	text: [

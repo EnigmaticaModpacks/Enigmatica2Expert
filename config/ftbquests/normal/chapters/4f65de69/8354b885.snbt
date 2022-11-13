@@ -1,9 +1,5 @@
 {
 	title: "{bq.quest802.name}",
-	icon: {
-		id: "cyclicmagic:book_ender",
-		tag: {}
-	},
 	x: 14.125d,
 	y: 5.041666666666667d,
 	text: [

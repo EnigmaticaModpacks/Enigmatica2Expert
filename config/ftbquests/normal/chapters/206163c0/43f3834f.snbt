@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest282.name}",
-	icon: "forestry:flexible_casing",
 	x: -3.5d,
 	y: 3.5d,
 	text: [

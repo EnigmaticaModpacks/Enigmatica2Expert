@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest940.name}",
-	icon: "biomesoplenty:biome_finder",
 	x: 11.5d,
 	y: 2.166666666666667d,
 	text: [

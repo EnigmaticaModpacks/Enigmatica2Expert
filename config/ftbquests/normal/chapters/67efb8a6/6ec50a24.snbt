@@ -1,11 +1,4 @@
 {
-	title: "{bq.quest549.name}",
-	icon: {
-		id: "draconicevolution:draconic_axe",
-		tag: {
-			Energy: 16000000
-		}
-	},
 	x: 4.0d,
 	y: 8.5d,
 	text: [

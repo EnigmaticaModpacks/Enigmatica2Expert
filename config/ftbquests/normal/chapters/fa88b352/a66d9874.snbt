@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest507.name}",
-	icon: "nuclearcraft:melter_idle",
 	x: 0.8333333333333333d,
 	y: 7.5d,
 	text: [

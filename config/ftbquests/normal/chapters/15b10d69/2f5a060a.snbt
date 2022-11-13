@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest812.name}",
-	icon: "industrialforegoing:animal_byproduct_recolector",
 	x: -4.166666666666667d,
 	y: 4.5d,
 	text: [

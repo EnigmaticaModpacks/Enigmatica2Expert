@@ -1,9 +1,4 @@
 {
-	title: "{bq.quest711.name}",
-	icon: {
-		id: "dwmh:ocarina",
-		tag: {}
-	},
 	x: 4.7d,
 	y: -3.5d,
 	text: [

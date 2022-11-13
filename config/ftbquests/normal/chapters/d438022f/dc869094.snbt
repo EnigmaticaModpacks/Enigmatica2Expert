@@ -1,13 +1,11 @@
 {
 	title: "{bq.quest762.name}",
-	icon: "randomthings:ingredient 1 7",
 	x: -12.666666666666668d,
 	y: 8.333333333333334d,
 	shape: "heart",
 	text: [
 		"{bq.quest762.desc}"
 	],
-	hide_dependency_lines: true,
 	dependencies: [
 		"37406152"
 	],

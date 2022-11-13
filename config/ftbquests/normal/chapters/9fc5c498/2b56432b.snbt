@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest583.name}",
-	icon: "enderio:block_power_monitor",
 	x: 7.5d,
 	y: 5.166666666666667d,
 	text: [

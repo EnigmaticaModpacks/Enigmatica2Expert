@@ -1,13 +1,5 @@
 {
 	title: "{bq.quest801.name}",
-	icon: {
-		id: "buildinggadgets:buildingtool",
-		tag: {
-			blockstate: {
-				Name: "minecraft:air"
-			}
-		}
-	},
 	x: 11.125d,
 	y: 5.041666666666667d,
 	text: [

@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest372.name}",
-	icon: "botania:opencrate",
 	x: 0.4166666666666667d,
 	y: 2.5d,
 	text: [

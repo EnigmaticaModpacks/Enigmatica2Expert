@@ -1,11 +1,5 @@
 {
 	title: "{bq.quest389.name}",
-	icon: {
-		id: "botania:specialflower",
-		tag: {
-			type: "gourmaryllis"
-		}
-	},
 	x: 13.333333333333334d,
 	y: 5.666666666666667d,
 	text: [

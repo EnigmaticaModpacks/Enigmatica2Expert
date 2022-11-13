@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest573.name}",
-	icon: "enderio:block_experience_obelisk",
 	x: 4.833333333333333d,
 	y: 2.5d,
 	text: [

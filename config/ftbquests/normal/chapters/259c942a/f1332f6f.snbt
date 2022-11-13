@@ -1,6 +1,5 @@
 {
 	title: "{bq.quest300.name}",
-	icon: "immersiveengineering:mold",
 	x: -0.16666666666666663d,
 	y: 6.166666666666667d,
 	text: [

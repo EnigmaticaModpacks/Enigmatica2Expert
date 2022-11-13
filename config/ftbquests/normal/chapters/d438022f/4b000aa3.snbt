@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest994.name}",
-	icon: "randomthings:slimecube",
 	x: -11.0d,
 	y: 7.0d,
 	text: [
@@ -9,7 +7,6 @@
 	dependencies: [
 		"dc869094"
 	],
-	or_tasks: true,
 	tasks: [{
 		uid: "e42bb099",
 		type: "item",

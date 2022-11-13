@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest134.name}",
-	icon: "industrialforegoing:material_stonework_factory",
 	x: 7.0d,
 	y: 3.0d,
 	text: [

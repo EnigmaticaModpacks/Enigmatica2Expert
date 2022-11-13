@@ -1,6 +1,4 @@
 {
-	title: "{bq.quest930.name}",
-	icon: "industrialforegoing:hydrator",
 	x: 2.0d,
 	y: 7.166666666666667d,
 	text: [
