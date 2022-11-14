@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 6.5d,
 	text: [
-		"{bq.quest176.desc}"
+		"{q.mekanism.reinforced_alloy.desc}"
 	],
 	dependencies: [
 		"48923a31"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest484.name}",
+	title: "{q.environmental_tech.ionite.name}",
 	x: 5.25d,
 	y: 8.0d,
 	text: [
-		"{bq.quest484.desc}"
+		"{q.environmental_tech.ionite.desc}"
 	],
 	dependencies: [
 		"ebbfcb77"

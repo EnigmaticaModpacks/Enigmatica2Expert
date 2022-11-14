@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest747.name}",
+	title: "{q.animals.dragon_steel.name}",
 	x: 4.125d,
 	y: 4.208333333333334d,
 	text: [
-		"{bq.quest747.desc}"
+		"{q.animals.dragon_steel.desc}"
 	],
 	dependencies: [
 		"0336805a",

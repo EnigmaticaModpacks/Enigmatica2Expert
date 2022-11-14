@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest50.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "quark:custom_chest",

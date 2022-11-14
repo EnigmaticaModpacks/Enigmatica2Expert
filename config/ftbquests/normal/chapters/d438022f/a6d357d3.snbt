@@ -2,7 +2,7 @@
 	x: -19.166666666666668d,
 	y: 16.166666666666664d,
 	text: [
-		"{bq.quest954.desc}"
+		"{q.utils.iron_rod.desc}"
 	],
 	dependencies: [
 		"4d1ee975"

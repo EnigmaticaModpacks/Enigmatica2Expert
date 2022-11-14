@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest9.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "actuallyadditions:block_misc 1 9",

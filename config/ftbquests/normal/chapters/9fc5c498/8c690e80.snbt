@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 6.5d,
 	text: [
-		"{bq.quest577.desc}"
+		"{q.ender_io.inhibitor_obelisk.desc}"
 	],
 	dependencies: [
 		"ff5a849e"

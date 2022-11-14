@@ -2,7 +2,7 @@
 	x: 5.0d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest816.desc}"
+		"{q.industrial_foregoing.villager_trade_exc.desc}"
 	],
 	dependencies: [
 		"0060934f"

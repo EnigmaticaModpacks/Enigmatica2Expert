@@ -3,7 +3,7 @@
 	x: 6.166666666666667d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest429.desc}"
+		"{q.advanced_rocketry.crystallizer.desc}"
 	],
 	dependencies: [
 		"e8c6a755"

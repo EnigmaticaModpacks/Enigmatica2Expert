@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter7.name}",
+	title: "{q.mekanism.name}",
 	icon: "mekanism:machineblock 1 8",
 	description: [
-		"{bq.chapter7.desc}"
+		"{q.mekanism.desc}"
 	],
 	always_invisible: false,
 	group: 0,

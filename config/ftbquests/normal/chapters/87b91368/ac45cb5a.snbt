@@ -2,7 +2,7 @@
 	x: -1.75d,
 	y: 7.75d,
 	text: [
-		"{bq.quest738.desc}"
+		"{q.animals.gem_of_ratlantis.desc}"
 	],
 	dependencies: [
 		"83168172"

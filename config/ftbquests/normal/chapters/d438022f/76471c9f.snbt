@@ -2,7 +2,7 @@
 	x: -3.666666666666667d,
 	y: 23.166666666666668d,
 	text: [
-		"{bq.quest968.desc}"
+		"{q.utils.maim_trap.desc}"
 	],
 	dependencies: [
 		"a8abebe1"

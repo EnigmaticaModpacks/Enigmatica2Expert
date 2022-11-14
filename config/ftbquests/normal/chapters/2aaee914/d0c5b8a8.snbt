@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest182.desc}"
+		"{q.mekanism.enrichment_chamber.desc}"
 	],
 	dependencies: [
 		"6d298370"

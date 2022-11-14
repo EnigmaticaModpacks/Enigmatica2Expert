@@ -2,7 +2,7 @@
 	x: 3.75d,
 	y: 3.5d,
 	text: [
-		"{bq.quest474.desc}"
+		"{q.environmental_tech.void_ore_miner_con.desc}"
 	],
 	dependencies: [
 		"b2bc3ad7"

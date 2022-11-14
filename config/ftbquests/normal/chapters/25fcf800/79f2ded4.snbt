@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest485.name}",
+	title: "{q.environmental_tech.aethium.name}",
 	x: 5.25d,
 	y: 9.5d,
 	text: [
-		"{bq.quest485.desc}"
+		"{q.environmental_tech.aethium.desc}"
 	],
 	dependencies: [
 		"07cc749e"

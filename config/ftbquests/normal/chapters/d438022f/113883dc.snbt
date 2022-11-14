@@ -2,7 +2,7 @@
 	x: -16.666666666666668d,
 	y: 19.166666666666668d,
 	text: [
-		"{bq.quest1009.desc}"
+		"{q.utils.packager.desc}"
 	],
 	dependencies: [
 		"37406152",

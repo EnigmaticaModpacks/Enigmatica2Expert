@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest886.name}",
+	title: "{q.extra_utilities.generators_top_part.name}",
 	icon: {
 		id: "minecraft:air",
 		Count: 0,
@@ -9,7 +9,7 @@
 	x: 10.416666666666666d,
 	y: -1.0833333333333333d,
 	text: [
-		"{bq.quest886.desc}"
+		"{q.extra_utilities.generators_top_part.desc}"
 	],
 	dependencies: [
 		"0d9b37cb"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest375.name}",
+	title: "{q.botania.gaia_guardian_i.name}",
 	x: 9.166666666666666d,
 	y: 6.5d,
 	text: [
-		"{bq.quest375.desc}"
+		"{q.botania.gaia_guardian_i.desc}"
 	],
 	dependencies: [
 		"5672d99b",

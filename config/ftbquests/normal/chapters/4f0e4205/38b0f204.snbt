@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest870.name}",
+	title: "{q.twilight_forest.troll_caves.name}",
 	x: 7.166666666666667d,
 	y: 0.5d,
 	text: [
-		"{bq.quest870.desc}"
+		"{q.twilight_forest.troll_caves.desc}"
 	],
 	dependencies: [
 		"7a3595e1",

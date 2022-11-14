@@ -2,7 +2,7 @@
 	x: 11.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest579.desc}"
+		"{q.ender_io.farming_station.desc}"
 	],
 	dependencies: [
 		"e3ba78e0"

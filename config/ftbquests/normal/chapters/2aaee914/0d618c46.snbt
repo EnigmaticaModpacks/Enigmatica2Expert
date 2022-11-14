@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest450.name}",
+	title: "{q.mekanism.plastic_road.name}",
 	x: 3.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest450.desc}"
+		"{q.mekanism.plastic_road.desc}"
 	],
 	dependencies: [
 		"2f9b92b2"

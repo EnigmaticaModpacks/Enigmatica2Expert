@@ -2,7 +2,7 @@
 	x: 12.166666666666666d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest831.desc}"
+		"{q.blood_magic.charging_rune.desc}"
 	],
 	dependencies: [
 		"3e08b4d3"

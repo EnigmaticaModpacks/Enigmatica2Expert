@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest380.desc}"
+		"{q.botania.spark.desc}"
 	],
 	dependencies: [
 		"2bc0a8f1",

@@ -2,7 +2,7 @@
 	x: -9.833333333333334d,
 	y: 6.666666666666667d,
 	text: [
-		"{bq.quest995.desc}"
+		"{q.utils.nature_core.desc}"
 	],
 	dependencies: [
 		"4b000aa3"

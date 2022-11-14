@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest976.name}",
+	title: "{q.utils.auto_enchantment_t.name}",
 	x: -8.0d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest976.desc}"
+		"{q.utils.auto_enchantment_t.desc}"
 	],
 	dependencies: [
 		"5966422c"

@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 4.5d,
 	text: [
-		"{bq.quest682.desc}"
+		"{q.actually_additions.empowered_palis_cr.desc}"
 	],
 	dependencies: [
 		"20e504e1"

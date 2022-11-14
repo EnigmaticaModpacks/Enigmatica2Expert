@@ -2,7 +2,7 @@
 	x: -5.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest122.desc}"
+		"{q.actually_additions.atomic_reconstructor.desc}"
 	],
 	dependencies: [
 		"dae9f45f"

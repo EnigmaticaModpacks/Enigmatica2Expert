@@ -2,7 +2,7 @@
 	x: -9.666666666666666d,
 	y: 8.0d,
 	text: [
-		"{bq.quest988.desc}"
+		"{q.utils.pitcher_plant.desc}"
 	],
 	dependencies: [
 		"e9290458"

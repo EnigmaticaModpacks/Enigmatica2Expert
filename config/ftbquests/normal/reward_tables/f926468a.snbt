@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest792.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "enderio:item_dark_steel_sword"

@@ -2,7 +2,7 @@
 	x: -1.8333333333333335d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest107.desc}"
+		"{q.immersive_engineer.windmill.desc}"
 	],
 	dependencies: [
 		"84558dfe"

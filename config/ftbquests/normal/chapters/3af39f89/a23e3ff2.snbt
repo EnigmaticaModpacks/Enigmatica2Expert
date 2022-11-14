@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest240.name}",
+	title: "{q.thermal_expansion.elemental_catalyzer.name}",
 	x: 5.166666666666667d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest240.desc}"
+		"{q.thermal_expansion.elemental_catalyzer.desc}"
 	],
 	dependencies: [
 		"3770b7c7"

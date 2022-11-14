@@ -2,7 +2,7 @@
 	x: 7.833333333333333d,
 	y: 10.166666666666666d,
 	text: [
-		"{bq.quest465.desc}"
+		"{q.nuclearcraft.basic_plating.desc}"
 	],
 	dependencies: [
 		"22e03e00",

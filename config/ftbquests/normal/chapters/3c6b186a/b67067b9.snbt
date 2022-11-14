@@ -2,7 +2,7 @@
 	x: 9.166666666666666d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest90.desc}"
+		"{q.industrialcraft.induction_furnace.desc}"
 	],
 	dependencies: [
 		"4d36c8e9"

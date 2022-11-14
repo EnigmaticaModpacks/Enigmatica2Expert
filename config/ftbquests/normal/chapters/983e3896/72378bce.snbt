@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest171.name}",
+	title: "{q.astral_sorcery.collector_crystals.name}",
 	x: 6.166666666666667d,
 	y: 3.5d,
 	text: [
-		"{bq.quest171.desc}"
+		"{q.astral_sorcery.collector_crystals.desc}"
 	],
 	dependencies: [
 		"b58fd49f",

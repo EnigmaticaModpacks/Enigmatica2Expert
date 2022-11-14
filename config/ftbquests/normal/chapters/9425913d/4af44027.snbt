@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest40.name}",
+	title: "{q.gates.gate:_environmenta.name}",
 	x: 1.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest40.desc}"
+		"{q.gates.gate:_environmenta.desc}"
 	],
 	dependencies: [
 		"bd7fc30c"

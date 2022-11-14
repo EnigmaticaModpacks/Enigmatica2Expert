@@ -2,7 +2,7 @@
 	x: 0.08333333333333337d,
 	y: 0.125d,
 	text: [
-		"{bq.quest326.desc}"
+		"{q.extra_utilities.dark_glass.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

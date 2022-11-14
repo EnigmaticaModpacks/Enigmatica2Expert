@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest248.name}",
+	title: "{q.thermal_expansion.isentropic_reservoir.name}",
 	x: 3.1666666666666665d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest248.desc}"
+		"{q.thermal_expansion.isentropic_reservoir.desc}"
 	],
 	dependencies: [
 		"57712d9e"

@@ -2,7 +2,7 @@
 	x: -6.833333333333333d,
 	y: 2.5833333333333335d,
 	text: [
-		"{bq.quest789.desc}"
+		"{q.actually_additions.ring_of_growth.desc}"
 	],
 	dependencies: [
 		"03d4419e"

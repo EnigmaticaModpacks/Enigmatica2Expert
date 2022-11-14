@@ -2,7 +2,7 @@
 	x: 9.166666666666666d,
 	y: 3.5d,
 	text: [
-		"{bq.quest505.desc}"
+		"{q.nuclearcraft.machine_interface.desc}"
 	],
 	dependencies: [
 		"0bf36970",

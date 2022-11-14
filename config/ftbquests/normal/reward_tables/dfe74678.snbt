@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest572.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "deepmoblearning:glitch_infused_sword"

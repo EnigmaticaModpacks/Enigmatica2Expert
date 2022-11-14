@@ -2,7 +2,7 @@
 	x: 6.833333333333333d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest825.desc}"
+		"{q.blood_magic.rune_of_self_sacri.desc}"
 	],
 	dependencies: [
 		"24823213"

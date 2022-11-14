@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 10.0d,
 	text: [
-		"{bq.quest553.desc}"
+		"{q.draconic_evolution.draconic_staff_of_.desc}"
 	],
 	dependencies: [
 		"965611ca",

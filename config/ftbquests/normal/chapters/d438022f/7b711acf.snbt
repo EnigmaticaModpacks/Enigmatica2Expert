@@ -2,7 +2,7 @@
 	x: -15.666666666666668d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1015.desc}"
+		"{q.utils.forester.desc}"
 	],
 	dependencies: [
 		"d8284260"

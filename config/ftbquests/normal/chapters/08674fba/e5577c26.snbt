@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest1076.name}",
+	title: "{q.advanced_rocketry.extraterrestrial_o.name}",
 	icon: "advancedrocketry:jackhammer",
 	x: 4.6d,
 	y: 11.3d,
 	text: [
-		"{bq.quest1076.desc}"
+		"{q.advanced_rocketry.extraterrestrial_o.desc}"
 	],
 	dependencies: [
 		"d25f75cc"

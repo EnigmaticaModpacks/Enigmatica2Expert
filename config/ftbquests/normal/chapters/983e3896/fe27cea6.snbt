@@ -2,7 +2,7 @@
 	x: 8.166666666666668d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest162.desc}"
+		"{q.astral_sorcery.starlight_infuser.desc}"
 	],
 	dependencies: [
 		"770ef5aa"

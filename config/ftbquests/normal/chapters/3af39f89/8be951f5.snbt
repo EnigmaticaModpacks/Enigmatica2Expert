@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest229.name}",
+	title: "{q.thermal_expansion.compactor.name}",
 	x: 13.333333333333334d,
 	y: 1.5d,
 	text: [
-		"{bq.quest229.desc}"
+		"{q.thermal_expansion.compactor.desc}"
 	],
 	dependencies: [
 		"9c15c499"

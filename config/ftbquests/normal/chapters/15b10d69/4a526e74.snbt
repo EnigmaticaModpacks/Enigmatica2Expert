@@ -2,7 +2,7 @@
 	x: -1.0d,
 	y: 1.0d,
 	text: [
-		"{bq.quest138.desc}"
+		"{q.industrial_foregoing.latex_processing_u.desc}"
 	],
 	dependencies: [
 		"5f555127"

@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest187.desc}"
+		"{q.mekanism.energized_smelter.desc}"
 	],
 	dependencies: [
 		"702f421e"

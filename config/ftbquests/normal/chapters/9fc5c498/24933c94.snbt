@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest584.desc}"
+		"{q.ender_io.the_vat.desc}"
 	],
 	dependencies: [
 		"0cce2fa6"

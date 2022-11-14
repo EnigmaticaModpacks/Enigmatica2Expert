@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest801.name}",
+	title: "{q.getting_started.buildes.name}",
 	x: 11.125d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest801.desc}"
+		"{q.getting_started.buildes.desc}"
 	],
 	dependencies: [
 		"857a6a1a"

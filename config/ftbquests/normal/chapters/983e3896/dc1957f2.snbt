@@ -2,7 +2,7 @@
 	x: 2.8333333333333335d,
 	y: 3.5d,
 	text: [
-		"{bq.quest158.desc}"
+		"{q.astral_sorcery.starmetal_ore.desc}"
 	],
 	dependencies: [
 		"5e313583"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest817.name}",
+	title: "{q.thermal_expansion.arcane_ensorcellator.name}",
 	x: 11.333333333333334d,
 	y: 0.33333333333333337d,
 	text: [
-		"{bq.quest817.desc}"
+		"{q.thermal_expansion.arcane_ensorcellator.desc}"
 	],
 	dependencies: [
 		"9c15c499"

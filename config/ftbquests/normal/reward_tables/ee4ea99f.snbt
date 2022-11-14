@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest745.name}",
 	loot_size: 1,
 	rewards: [{
 		icon: "minecraft:rabbit_foot 15",

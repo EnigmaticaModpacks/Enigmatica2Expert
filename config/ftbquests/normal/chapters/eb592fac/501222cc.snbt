@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest903.name}",
+	title: "{q.rftools.dimension_tab.name}",
 	x: 5.833333333333333d,
 	y: -0.6666666666666667d,
 	text: [
-		"{bq.quest903.desc}"
+		"{q.rftools.dimension_tab.desc}"
 	],
 	dependencies: [
 		"a1377b51"

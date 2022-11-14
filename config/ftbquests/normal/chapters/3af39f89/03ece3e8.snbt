@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest226.name}",
+	title: "{q.thermal_expansion.enervation_dynamo.name}",
 	x: 6.166666666666667d,
 	y: 4.5d,
 	text: [
-		"{bq.quest226.desc}"
+		"{q.thermal_expansion.enervation_dynamo.desc}"
 	],
 	dependencies: [
 		"dfa7ef0d"

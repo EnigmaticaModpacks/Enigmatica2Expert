@@ -2,7 +2,7 @@
 	x: 0.0d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest702.desc}"
+		"{q.industrial_foregoing.plant_fertilizer.desc}"
 	],
 	dependencies: [
 		"66102e1b"

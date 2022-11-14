@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest330.name}",
+	title: "{q.extra_utilities.utilities.name}",
 	icon: "extrautils2:ingredients 1 11",
 	x: 1.1666666666666665d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest330.desc}"
+		"{q.extra_utilities.utilities.desc}"
 	],
 	dependencies: [
 		"29946b47"

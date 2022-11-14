@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest670.name}",
+	title: "{q.thaumcraft.golem_press.name}",
 	icon: "thaumcraft:golem_builder",
 	x: 9.833333333333332d,
 	y: 4.166666666666667d,
 	text: [
-		"{bq.quest670.desc}"
+		"{q.thaumcraft.golem_press.desc}"
 	],
 	dependencies: [
 		"69992959"

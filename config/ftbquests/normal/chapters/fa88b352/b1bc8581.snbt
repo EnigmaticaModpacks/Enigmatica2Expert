@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest689.name}",
+	title: "{q.nuclearcraft.fission_fuels.name}",
 	icon: "nuclearcraft:fission_controller_new_fixed",
 	x: 8.833333333333334d,
 	y: 12.583333333333334d,
 	text: [
-		"{bq.quest689.desc}"
+		"{q.nuclearcraft.fission_fuels.desc}"
 	],
 	dependencies: [
 		"0bf36970",

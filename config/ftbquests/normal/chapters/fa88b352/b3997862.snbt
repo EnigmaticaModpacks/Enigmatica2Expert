@@ -2,7 +2,7 @@
 	x: 14.5d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest520.desc}"
+		"{q.nuclearcraft.fusion_core.desc}"
 	],
 	dependencies: [
 		"426e6344",

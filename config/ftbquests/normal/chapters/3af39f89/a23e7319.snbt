@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest244.name}",
+	title: "{q.thermal_expansion.disjunctive_extrac.name}",
 	x: 6.166666666666667d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest244.desc}"
+		"{q.thermal_expansion.disjunctive_extrac.desc}"
 	],
 	dependencies: [
 		"03ece3e8"

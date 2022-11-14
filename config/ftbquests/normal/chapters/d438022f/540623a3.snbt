@@ -2,7 +2,7 @@
 	x: -16.666666666666668d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1031.desc}"
+		"{q.utils.magic_bean.desc}"
 	],
 	dependencies: [
 		"d8284260"

@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest583.desc}"
+		"{q.ender_io.power_monitor.desc}"
 	],
 	dependencies: [
 		"0cce2fa6"

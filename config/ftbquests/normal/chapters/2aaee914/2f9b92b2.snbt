@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest211.desc}"
+		"{q.mekanism.electrolytic_separ.desc}"
 	],
 	dependencies: [
 		"d0c5b8a8"

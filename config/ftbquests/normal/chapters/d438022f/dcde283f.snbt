@@ -2,7 +2,7 @@
 	x: -11.166666666666666d,
 	y: 10.666666666666666d,
 	text: [
-		"{bq.quest1003.desc}"
+		"{q.utils.spectre_energy_inj.desc}"
 	],
 	dependencies: [
 		"9092f6f7"

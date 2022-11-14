@@ -2,7 +2,7 @@
 	x: 2.375d,
 	y: 2.125d,
 	text: [
-		"{bq.quest453.desc}"
+		"{q.bragging_rights.creative_sacrifici.desc}"
 	],
 	dependencies: [
 		"a1377b51"

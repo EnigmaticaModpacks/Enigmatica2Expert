@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest392.name}",
+	title: "{q.botania.entropinnyum.name}",
 	x: 13.166666666666666d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest392.desc}"
+		"{q.botania.entropinnyum.desc}"
 	],
 	dependencies: [
 		"5672d99b",

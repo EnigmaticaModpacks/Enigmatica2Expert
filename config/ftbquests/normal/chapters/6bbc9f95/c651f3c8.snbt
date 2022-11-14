@@ -2,7 +2,7 @@
 	x: 2.166666666666667d,
 	y: 5.5d,
 	text: [
-		"{bq.quest643.desc}"
+		"{q.thaumcraft.arcane_stone.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

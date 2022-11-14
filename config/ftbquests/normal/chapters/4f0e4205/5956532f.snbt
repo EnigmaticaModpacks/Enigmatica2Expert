@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest867.name}",
+	title: "{q.twilight_forest.aurora_palace.name}",
 	x: 5.833333333333333d,
 	y: 0.5d,
 	text: [
-		"{bq.quest867.desc}"
+		"{q.twilight_forest.aurora_palace.desc}"
 	],
 	dependencies: [
 		"6be282e4"

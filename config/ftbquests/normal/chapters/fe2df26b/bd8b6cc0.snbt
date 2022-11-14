@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: -1.9d,
 	text: [
-		"{bq.quest843.desc}"
+		"{q.applied_energetics.me_storage_bus.desc}"
 	],
 	dependencies: [
 		"b140dcf4"

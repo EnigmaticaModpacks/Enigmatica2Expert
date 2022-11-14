@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter8.name}",
+	title: "{q.blood_magic.name}",
 	icon: "bloodmagic:altar",
 	description: [
-		"{bq.chapter8.desc}"
+		"{q.blood_magic.desc}"
 	],
 	always_invisible: false,
 	group: 0,

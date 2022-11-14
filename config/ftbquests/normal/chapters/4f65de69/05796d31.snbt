@@ -2,7 +2,7 @@
 	x: 11.125d,
 	y: 6.041666666666667d,
 	text: [
-		"{bq.quest799.desc}"
+		"{q.getting_started.little_chisel.desc}"
 	],
 	dependencies: [
 		"857a6a1a"
@@ -15,12 +15,12 @@
 			tag: {
 				preview: {
 					bBox: [I;
-						0,
-						0,
-						0,
-						1,
-						1,
-						1
+						0i,
+						0i,
+						0i,
+						1i,
+						1i,
+						1i
 					],
 					tile: {
 						block: "minecraft:stone"

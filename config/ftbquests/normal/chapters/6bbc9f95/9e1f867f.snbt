@@ -2,7 +2,7 @@
 	x: 3.3333333333333335d,
 	y: 13.333333333333334d,
 	text: [
-		"{bq.quest667.desc}"
+		"{q.thaumcraft.infusion_speed_stone.desc}"
 	],
 	dependencies: [
 		"f0a632f4"

@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest51.name}",
 	loot_size: 1,
 	rewards: [{
 		icon: "thermalfoundation:material 16 163",

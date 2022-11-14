@@ -2,7 +2,7 @@
 	x: -10.666666666666666d,
 	y: 9.333333333333334d,
 	text: [
-		"{bq.quest992.desc}"
+		"{q.utils.rain_shield.desc}"
 	],
 	dependencies: [
 		"dc869094"

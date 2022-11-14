@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: 3.75d,
 	text: [
-		"{bq.quest526.desc}"
+		"{q.draconic_evolution.draconic_energy_core.desc}"
 	],
 	dependencies: [
 		"b22a849a",

@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1034.name}",
+	title: "{q.rftools.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 6.75d,
 	y: 4.5d,
 	text: [
-		"{bq.quest1034.desc}"
+		"{q.rftools.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

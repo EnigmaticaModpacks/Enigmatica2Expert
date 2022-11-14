@@ -3,7 +3,7 @@
 	x: -0.5d,
 	y: -1.9d,
 	text: [
-		"{bq.quest844.desc}"
+		"{q.applied_energetics.p2p_tunnel_me.desc}"
 	],
 	dependencies: [
 		"bd8b6cc0"

@@ -2,7 +2,7 @@
 	x: 7.833333333333333d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest464.desc}"
+		"{q.nuclearcraft.manufactory.desc}"
 	],
 	dependencies: [
 		"22e03e00",

@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest556.name}",
+	title: "{q.draconic_evolution.wyvern_chestplate.name}",
 	icon: {
 		id: "draconicevolution:wyvern_chest",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 7.333333333333333d,
 	y: 8.666666666666666d,
 	text: [
-		"{bq.quest556.desc}"
+		"{q.draconic_evolution.wyvern_chestplate.desc}"
 	],
 	dependencies: [
 		"64f8083b"

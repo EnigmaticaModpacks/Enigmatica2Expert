@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest305.desc}"
+		"{q.immersive_engineer.external_heater.desc}"
 	],
 	dependencies: [
 		"ee5087c9"

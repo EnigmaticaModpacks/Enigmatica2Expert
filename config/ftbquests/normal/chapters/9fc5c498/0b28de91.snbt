@@ -3,7 +3,7 @@
 	x: 10.166666666666666d,
 	y: 6.5d,
 	text: [
-		"{bq.quest454.desc}"
+		"{q.ender_io.stellar_helmet.desc}"
 	],
 	dependencies: [
 		"c1453b27"

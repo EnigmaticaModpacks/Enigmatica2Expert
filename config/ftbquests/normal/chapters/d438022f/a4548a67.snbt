@@ -2,7 +2,7 @@
 	x: -19.166666666666668d,
 	y: 18.333333333333332d,
 	text: [
-		"{bq.quest962.desc}"
+		"{q.utils.wildberry_bush.desc}"
 	],
 	dependencies: [
 		"3ecc3fbe"

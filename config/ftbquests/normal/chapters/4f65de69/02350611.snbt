@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest461.name}",
+	title: "{q.getting_started.smeltery_fuels.name}",
 	x: 3.625d,
 	y: 7.041666666666667d,
 	text: [
-		"{bq.quest461.desc}"
+		"{q.getting_started.smeltery_fuels.desc}"
 	],
 	dependencies: [
 		"dabc815c"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest65.name}",
+	title: "{q.gates.gate:_bragging_rig.name}",
 	x: 5.55d,
 	y: 8.25d,
 	text: [
-		"{bq.quest65.desc}"
+		"{q.gates.gate:_bragging_rig.desc}"
 	],
 	dependencies: [
 		"4af44027",

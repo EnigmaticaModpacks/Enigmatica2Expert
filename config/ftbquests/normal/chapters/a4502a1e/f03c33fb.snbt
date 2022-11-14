@@ -1,11 +1,11 @@
 {
-	title: "{bq.quest909.name}",
+	title: "{q.extra_utilities.rainbow_generator__2.name}",
 	icon: "extrautils2:rainbowgenerator",
 	disable_toast: true,
 	x: 14.458333333333334d,
 	y: 0.9166666666666667d,
 	text: [
-		"{bq.quest909.desc}"
+		"{q.extra_utilities.rainbow_generator__2.desc}"
 	],
 	dependencies: [
 		"a9db8bf5",

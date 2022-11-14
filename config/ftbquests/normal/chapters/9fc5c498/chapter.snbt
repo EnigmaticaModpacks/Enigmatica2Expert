@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter4.name}",
+	title: "{q.ender_io.name}",
 	icon: "enderio:item_material 1 1",
 	description: [
-		"{bq.chapter4.desc}"
+		"{q.ender_io.desc}"
 	],
 	always_invisible: false,
 	group: 0,

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest113.name}",
+	title: "{q.extra_utilities.gp_generation_iii.name}",
 	x: 7.833333333333333d,
 	y: 5.0d,
 	text: [
-		"{bq.quest113.desc}"
+		"{q.extra_utilities.gp_generation_iii.desc}"
 	],
 	dependencies: [
 		"f991b9da"

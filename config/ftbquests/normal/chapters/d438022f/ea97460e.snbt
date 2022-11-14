@@ -2,7 +2,7 @@
 	x: -15.666666666666668d,
 	y: 8.833333333333334d,
 	text: [
-		"{bq.quest1058.desc}"
+		"{q.utils.stable_ender_pearl.desc}"
 	],
 	dependencies: [
 		"dc869094"

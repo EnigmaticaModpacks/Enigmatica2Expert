@@ -2,7 +2,7 @@
 	x: 10.0d,
 	y: 6.9d,
 	text: [
-		"{bq.quest250.desc}"
+		"{q.thermal_expansion.augment:_clastic_d.desc}"
 	],
 	dependencies: [
 		"201e5351"

@@ -3,7 +3,7 @@
 	x: 3.5d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest766.desc}"
+		"{q.botania.manasteel_helmet.desc}"
 	],
 	dependencies: [
 		"aca34b29"

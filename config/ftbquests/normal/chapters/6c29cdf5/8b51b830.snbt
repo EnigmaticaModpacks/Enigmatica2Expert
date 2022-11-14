@@ -2,7 +2,7 @@
 	x: 0.4166666666666667d,
 	y: 2.5d,
 	text: [
-		"{bq.quest372.desc}"
+		"{q.botania.open_crate.desc}"
 	],
 	dependencies: [
 		"5672d99b",

@@ -2,7 +2,7 @@
 	x: -15.666666666666668d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest998.desc}"
+		"{q.utils.reinforced_ender_b.desc}"
 	],
 	dependencies: [
 		"dc869094"

@@ -2,7 +2,7 @@
 	x: -2.8333333333333335d,
 	y: 4.0d,
 	text: [
-		"{bq.quest707.desc}"
+		"{q.industrial_foregoing.animal_rancher.desc}"
 	],
 	dependencies: [
 		"0060934f"

@@ -2,7 +2,7 @@
 	x: 2.8333333333333335d,
 	y: 3.5d,
 	text: [
-		"{bq.quest174.desc}"
+		"{q.mekanism.metallurgic_infuser.desc}"
 	],
 	dependencies: [
 		"0b4341a3"

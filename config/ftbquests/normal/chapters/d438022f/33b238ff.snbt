@@ -2,7 +2,7 @@
 	x: -9.5d,
 	y: 19.166666666666668d,
 	text: [
-		"{bq.quest1017.desc}"
+		"{q.utils.fire_starter.desc}"
 	],
 	dependencies: [
 		"332e5e9e",

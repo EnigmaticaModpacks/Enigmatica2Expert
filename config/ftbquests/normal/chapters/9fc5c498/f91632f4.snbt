@@ -2,7 +2,7 @@
 	x: 10.166666666666666d,
 	y: 2.5d,
 	text: [
-		"{bq.quest580.desc}"
+		"{q.ender_io.soul_binder.desc}"
 	],
 	dependencies: [
 		"e3ba78e0"

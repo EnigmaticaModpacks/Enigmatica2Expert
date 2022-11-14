@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest334.name}",
+	title: "{q.extra_utilities.flat_transfer_node.name}",
 	x: 2.2916666666666665d,
 	y: 0.125d,
 	text: [
-		"{bq.quest334.desc}"
+		"{q.extra_utilities.flat_transfer_node.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

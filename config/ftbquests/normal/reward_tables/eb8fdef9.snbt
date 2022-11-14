@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest454.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "enderio:item_stellar_alloy_sword"

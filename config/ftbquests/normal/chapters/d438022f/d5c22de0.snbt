@@ -2,7 +2,7 @@
 	x: -3.666666666666667d,
 	y: 15.5d,
 	text: [
-		"{bq.quest1020.desc}"
+		"{q.utils.magma_anvil.desc}"
 	],
 	dependencies: [
 		"4b0fde3b",

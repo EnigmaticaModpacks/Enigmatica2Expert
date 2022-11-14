@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest81.desc}"
+		"{q.industrialcraft.metal_former.desc}"
 	],
 	dependencies: [
 		"ebffced2"

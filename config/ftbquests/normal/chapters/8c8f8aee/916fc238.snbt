@@ -2,7 +2,7 @@
 	x: -6.833333333333333d,
 	y: 6.666666666666667d,
 	text: [
-		"{bq.quest125.desc}"
+		"{q.actually_additions.powered_furnace.desc}"
 	],
 	dependencies: [
 		"5130e1f3"

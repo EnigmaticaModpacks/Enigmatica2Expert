@@ -3,7 +3,7 @@
 	x: 6.166666666666667d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest767.desc}"
+		"{q.botania.elementium_helmet.desc}"
 	],
 	dependencies: [
 		"4aa39f8e"

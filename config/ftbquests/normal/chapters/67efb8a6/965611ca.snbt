@@ -2,7 +2,7 @@
 	x: 3.0d,
 	y: 10.5d,
 	text: [
-		"{bq.quest551.desc}"
+		"{q.draconic_evolution.draconic_shovel.desc}"
 	],
 	dependencies: [
 		"84b5dffe"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest737.name}",
+	title: "{q.animals.prime_meat.name}",
 	icon: "animania:cooked_prime_beef",
 	x: 2.0d,
 	y: -1.25d,
 	text: [
-		"{bq.quest737.desc}"
+		"{q.animals.prime_meat.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 7.0d,
 	text: [
-		"{bq.quest687.desc}"
+		"{q.actually_additions.terrestrial_artifact.desc}"
 	],
 	dependencies: [
 		"b4bba5bb",

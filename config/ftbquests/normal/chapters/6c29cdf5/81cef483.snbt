@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest773.desc}"
+		"{q.botania.manufactory_halo.desc}"
 	],
 	dependencies: [
 		"2bc0a8f1",

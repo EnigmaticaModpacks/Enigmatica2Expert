@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest345.name}",
+	title: "{q.extra_utilities.potion_generator.name}",
 	x: 16.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest345.desc}"
+		"{q.extra_utilities.potion_generator.desc}"
 	],
 	dependencies: [
 		"f31c5840"

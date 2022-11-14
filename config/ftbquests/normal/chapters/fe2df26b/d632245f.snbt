@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: -3.5d,
 	text: [
-		"{bq.quest835.desc}"
+		"{q.applied_energetics.me_drive.desc}"
 	],
 	dependencies: [
 		"bd8b6cc0"

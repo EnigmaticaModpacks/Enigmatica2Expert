@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest603.name}",
+	title: "{q.blood_magic.blood_altar_tier_4.name}",
 	icon: "bloodmagic:decorative_brick",
 	x: 9.166666666666666d,
 	y: 3.1666666666666665d,
 	text: [
-		"{bq.quest603.desc}"
+		"{q.blood_magic.blood_altar_tier_4.desc}"
 	],
 	dependencies: [
 		"32822e6b",

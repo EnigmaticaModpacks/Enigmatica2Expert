@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest932.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "farmingforblockheads:fertilizer",

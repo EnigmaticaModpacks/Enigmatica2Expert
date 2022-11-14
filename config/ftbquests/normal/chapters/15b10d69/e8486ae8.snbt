@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest705.name}",
+	title: "{q.industrial_foregoing.protein_reactor_ge.name}",
 	x: 2.166666666666667d,
 	y: 5.833333333333333d,
 	text: [
-		"{bq.quest705.desc}"
+		"{q.industrial_foregoing.protein_reactor_ge.desc}"
 	],
 	dependencies: [
 		"66102e1b"

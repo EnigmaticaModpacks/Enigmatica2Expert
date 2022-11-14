@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 5.833333333333333d,
 	text: [
-		"{bq.quest611.desc}"
+		"{q.blood_magic.blank_slate.desc}"
 	],
 	dependencies: [
 		"b02daccb"

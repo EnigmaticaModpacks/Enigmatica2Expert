@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest659.name}",
+	title: "{q.thaumcraft.tallow_candle.name}",
 	x: 3.3333333333333335d,
 	y: 10.666666666666666d,
 	text: [
-		"{bq.quest659.desc}"
+		"{q.thaumcraft.tallow_candle.desc}"
 	],
 	dependencies: [
 		"38a388cd"

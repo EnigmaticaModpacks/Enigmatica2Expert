@@ -1,5 +1,5 @@
 {
-	title: "{bq.chapter13.name}",
+	title: "{q.thermal_expansion.name}",
 	icon: {
 		id: "thermalexpansion:machine",
 		Damage: 3s,
@@ -19,7 +19,7 @@
 		}
 	},
 	description: [
-		"{bq.chapter13.desc}"
+		"{q.thermal_expansion.desc}"
 	],
 	always_invisible: false,
 	group: 0,

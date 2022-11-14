@@ -2,7 +2,7 @@
 	x: -4.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest97.desc}"
+		"{q.forestry.carpenter.desc}"
 	],
 	dependencies: [
 		"383eccde"

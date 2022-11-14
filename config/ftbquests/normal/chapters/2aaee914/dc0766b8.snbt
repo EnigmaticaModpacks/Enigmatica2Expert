@@ -2,7 +2,7 @@
 	x: 8.833333333333334d,
 	y: 6.5d,
 	text: [
-		"{bq.quest201.desc}"
+		"{q.mekanism.digital_miner.desc}"
 	],
 	dependencies: [
 		"f79e06c9"

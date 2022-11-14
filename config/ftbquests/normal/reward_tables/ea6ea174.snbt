@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest727.name}",
 	loot_size: 1,
 	rewards: [{
 		icon: "netherendingores:ore_nether_vanilla 12 3",

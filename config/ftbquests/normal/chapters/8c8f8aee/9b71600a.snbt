@@ -2,7 +2,7 @@
 	x: -3.833333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest129.desc}"
+		"{q.actually_additions.canola_press.desc}"
 	],
 	dependencies: [
 		"98b00c72"

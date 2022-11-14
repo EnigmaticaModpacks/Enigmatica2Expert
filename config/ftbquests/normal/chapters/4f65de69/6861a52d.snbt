@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest1069.name}",
+	title: "{q.getting_started.difficulty.name}",
 	icon: "scalinghealth:difficultychanger 1 1",
 	x: 0.625d,
 	y: 6.0d,
 	text: [
-		"{bq.quest1069.desc}"
+		"{q.getting_started.difficulty.desc}"
 	],
 	dependencies: [
 		"649bcf3e"

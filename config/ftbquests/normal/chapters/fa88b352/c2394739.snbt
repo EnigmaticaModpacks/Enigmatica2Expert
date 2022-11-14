@@ -2,7 +2,7 @@
 	x: 1.1666666666666665d,
 	y: 8.833333333333334d,
 	text: [
-		"{bq.quest503.desc}"
+		"{q.nuclearcraft.fuel_reprocessor.desc}"
 	],
 	dependencies: [
 		"626f1235",

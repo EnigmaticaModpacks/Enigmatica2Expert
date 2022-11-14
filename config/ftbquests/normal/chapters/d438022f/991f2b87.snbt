@@ -3,7 +3,7 @@
 	x: -11.166666666666666d,
 	y: 23.0d,
 	text: [
-		"{bq.quest955.desc}"
+		"{q.utils.painting_press.desc}"
 	],
 	dependencies: [
 		"6eea845e"

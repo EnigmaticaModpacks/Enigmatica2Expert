@@ -3,7 +3,7 @@
 	x: 4.833333333333333d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest768.desc}"
+		"{q.botania.terrasteel_helmet.desc}"
 	],
 	dependencies: [
 		"33f630e1"

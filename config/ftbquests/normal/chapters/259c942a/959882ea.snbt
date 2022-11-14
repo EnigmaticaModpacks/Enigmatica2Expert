@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest297.desc}"
+		"{q.immersive_engineer.heavy_engineering_.desc}"
 	],
 	dependencies: [
 		"8c8d1535"

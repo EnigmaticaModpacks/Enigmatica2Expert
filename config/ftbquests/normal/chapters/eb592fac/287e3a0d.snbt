@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest900.name}",
+	title: "{q.rftools.crafter.name}",
 	x: -3.958333333333333d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest900.desc}"
+		"{q.rftools.crafter.desc}"
 	],
 	dependencies: [
 		"094a95d2",

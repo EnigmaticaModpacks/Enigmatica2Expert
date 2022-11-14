@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest862.name}",
+	title: "{q.twilight_forest.the_naga.name}",
 	x: 1.8333333333333333d,
 	y: 0.5d,
 	text: [
-		"{bq.quest862.desc}"
+		"{q.twilight_forest.the_naga.desc}"
 	],
 	dependencies: [
 		"b42dc050"

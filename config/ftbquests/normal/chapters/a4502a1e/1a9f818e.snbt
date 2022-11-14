@@ -2,7 +2,7 @@
 	x: 11.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest335.desc}"
+		"{q.extra_utilities.survival_generator.desc}"
 	],
 	dependencies: [
 		"f31c5840"

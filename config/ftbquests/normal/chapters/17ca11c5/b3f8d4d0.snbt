@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest19.name}",
+	title: "{q.bragging_rights.creative_gasses.name}",
 	x: 2.3333333333333335d,
 	y: 7.541666666666668d,
 	text: [
-		"{bq.quest19.desc}"
+		"{q.bragging_rights.creative_gasses.desc}"
 	],
 	dependencies: [
 		"7e987598",

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest604.name}",
+	title: "{q.blood_magic.blood_altar_tier_5.name}",
 	icon: "minecraft:beacon",
 	x: 10.833333333333334d,
 	y: 3.1666666666666665d,
 	text: [
-		"{bq.quest604.desc}"
+		"{q.blood_magic.blood_altar_tier_5.desc}"
 	],
 	dependencies: [
 		"4c883699"

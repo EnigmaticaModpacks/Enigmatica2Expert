@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest344.name}",
+	title: "{q.extra_utilities.ender_generator.name}",
 	x: 17.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest344.desc}"
+		"{q.extra_utilities.ender_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

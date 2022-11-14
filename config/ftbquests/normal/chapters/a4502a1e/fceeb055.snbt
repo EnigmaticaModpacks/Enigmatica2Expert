@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 2.333333333333333d,
 	text: [
-		"{bq.quest883.desc}"
+		"{q.extra_utilities.blue_quartz.desc}"
 	],
 	dependencies: [
 		"6ec3f2d7"

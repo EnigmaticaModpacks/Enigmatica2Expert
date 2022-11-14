@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest602.name}",
+	title: "{q.blood_magic.blood_altar_tier_3.name}",
 	icon: "minecraft:glowstone",
 	x: 7.5d,
 	y: 3.1666666666666665d,
 	text: [
-		"{bq.quest602.desc}"
+		"{q.blood_magic.blood_altar_tier_3.desc}"
 	],
 	dependencies: [
 		"f1f052a5"

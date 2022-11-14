@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest718.name}",
+	title: "{q.animals.animals_entry.name}",
 	icon: {
 		id: "draconicevolution:mob_soul",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 1.625d,
 	y: -2.875d,
 	text: [
-		"{bq.quest718.desc}"
+		"{q.animals.animals_entry.desc}"
 	],
 	dependencies: [
 		"fc892a79"

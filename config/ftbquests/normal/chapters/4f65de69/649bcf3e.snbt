@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1061.name}",
+	title: "{q.getting_started.mob_spawning_changes.name}",
 	icon: {
 		id: "draconicevolution:mob_soul",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 0.625d,
 	y: 5.0d,
 	text: [
-		"{bq.quest1061.desc}"
+		"{q.getting_started.mob_spawning_changes.desc}"
 	],
 	dependencies: [
 		"18c9097c"

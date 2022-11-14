@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest77.name}",
+	title: "{q.industrialcraft.extreme_voltage.name}",
 	x: 0.8333333333333333d,
 	y: 7.5d,
 	text: [
-		"{bq.quest77.desc}"
+		"{q.industrialcraft.extreme_voltage.desc}"
 	],
 	dependencies: [
 		"a1d7ecb9"

@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest83.desc}"
+		"{q.industrialcraft.solar_panel.desc}"
 	],
 	dependencies: [
 		"cae88f3f"

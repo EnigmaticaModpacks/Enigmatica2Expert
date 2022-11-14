@@ -2,7 +2,7 @@
 	x: -2.0d,
 	y: -0.5d,
 	text: [
-		"{bq.quest1075.desc}"
+		"{q.applied_energetics.pattern_expansion_.desc}"
 	],
 	dependencies: [
 		"c3751d75"

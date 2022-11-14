@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest78.desc}"
+		"{q.industrialcraft.extractor.desc}"
 	],
 	dependencies: [
 		"059b39c7"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest17.name}",
+	title: "{q.getting_started.clay_bucket.name}",
 	x: -2.375d,
 	y: 2.0d,
 	text: [
-		"{bq.quest17.desc}"
+		"{q.getting_started.clay_bucket.desc}"
 	],
 	dependencies: [
 		"628df521"

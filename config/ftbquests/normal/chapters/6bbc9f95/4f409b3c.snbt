@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest635.name}",
+	title: "{q.thaumcraft.thaumcraft.name}",
 	x: 0.6666666666666666d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest635.desc}"
+		"{q.thaumcraft.thaumcraft.desc}"
 	],
 	dependencies: [
 		"2957f2cc"

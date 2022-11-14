@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest861.name}",
+	title: "{q.twilight_forest.enter_the_twilight.name}",
 	icon: "twilightforest:miniature_structure 1 6",
 	x: 0.5d,
 	y: 0.5d,
 	text: [
-		"{bq.quest861.desc}"
+		"{q.twilight_forest.enter_the_twilight.desc}"
 	],
 	dependencies: [
 		"7c48f7e5"

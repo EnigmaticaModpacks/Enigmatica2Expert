@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest557.name}",
+	title: "{q.immersive_engineer.metal_press.name}",
 	icon: "immersiveengineering:metal_multiblock",
 	x: 4.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest557.desc}"
+		"{q.immersive_engineer.metal_press.desc}"
 	],
 	dependencies: [
 		"2de1b9db"

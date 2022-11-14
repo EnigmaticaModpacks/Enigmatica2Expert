@@ -3,7 +3,7 @@
 	x: 8.166666666666668d,
 	y: 9.833333333333334d,
 	text: [
-		"{bq.quest446.desc}"
+		"{q.advanced_rocketry.warp_core.desc}"
 	],
 	dependencies: [
 		"e7f8d37c",

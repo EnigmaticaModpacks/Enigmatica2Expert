@@ -3,7 +3,7 @@
 	x: 6.166666666666667d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest426.desc}"
+		"{q.advanced_rocketry.electric_arc_furnace.desc}"
 	],
 	dependencies: [
 		"e8c6a755"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest300.name}",
+	title: "{q.immersive_engineer.metal_press_molds.name}",
 	x: -0.16666666666666663d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest300.desc}"
+		"{q.immersive_engineer.metal_press_molds.desc}"
 	],
 	dependencies: [
 		"6766877f"

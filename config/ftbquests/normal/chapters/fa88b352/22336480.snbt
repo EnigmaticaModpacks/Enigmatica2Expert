@@ -2,7 +2,7 @@
 	x: 9.166666666666666d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest511.desc}"
+		"{q.nuclearcraft.ingot_former.desc}"
 	],
 	dependencies: [
 		"0bf36970",

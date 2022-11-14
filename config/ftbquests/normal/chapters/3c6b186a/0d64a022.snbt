@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest94.desc}"
+		"{q.industrialcraft.matter_fabricator.desc}"
 	],
 	dependencies: [
 		"4d36c8e9"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest762.name}",
+	title: "{q.utils.mod:_random_things.name}",
 	x: -12.666666666666668d,
 	y: 8.333333333333334d,
 	shape: "heart",
 	text: [
-		"{bq.quest762.desc}"
+		"{q.utils.mod:_random_things.desc}"
 	],
 	dependencies: [
 		"37406152"

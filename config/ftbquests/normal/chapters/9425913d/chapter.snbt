@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter21.name}",
+	title: "{q.gates.name}",
 	icon: "minecraft:crafting_table",
 	description: [
-		"{bq.chapter21.desc}"
+		"{q.gates.desc}"
 	],
 	always_invisible: false,
 	group: 0,

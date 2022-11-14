@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest130.name}",
+	title: "{q.getting_started.high_oven.name}",
 	x: 0.625d,
 	y: 2.0d,
 	text: [
-		"{bq.quest130.desc}"
+		"{q.getting_started.high_oven.desc}"
 	],
 	dependencies: [
 		"65ffe0b8"

@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1039.name}",
+	title: "{q.ender_io.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 12.0d,
 	y: 5.25d,
 	text: [
-		"{bq.quest1039.desc}"
+		"{q.ender_io.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

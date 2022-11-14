@@ -2,7 +2,7 @@
 	x: 3.6666666666666665d,
 	y: 9.5d,
 	text: [
-		"{bq.quest706.desc}"
+		"{q.actually_additions.vertical_digger.desc}"
 	],
 	dependencies: [
 		"b4bba5bb"

@@ -2,7 +2,7 @@
 	x: -12.666666666666666d,
 	y: 11.166666666666666d,
 	text: [
-		"{bq.quest999.desc}"
+		"{q.utils.ectoplasm.desc}"
 	],
 	dependencies: [
 		"dc869094"

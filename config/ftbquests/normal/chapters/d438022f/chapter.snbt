@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter24.name}",
+	title: "{q.utils.name}",
 	icon: "minecraft:apple",
 	description: [
-		"{bq.chapter24.desc}"
+		"{q.utils.desc}"
 	],
 	always_invisible: false,
 	group: 0,

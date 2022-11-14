@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest993.name}",
+	title: "{q.nuclearcraft.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 14.399999999999999d,
 	y: 13.5d,
 	text: [
-		"{bq.quest993.desc}"
+		"{q.nuclearcraft.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

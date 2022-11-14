@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest932.name}",
+	title: "{q.getting_started.farming_for_blockh.name}",
 	x: -0.875d,
 	y: 5.0d,
 	text: [
-		"{bq.quest932.desc}"
+		"{q.getting_started.farming_for_blockh.desc}"
 	],
 	dependencies: [
 		"90536e42"

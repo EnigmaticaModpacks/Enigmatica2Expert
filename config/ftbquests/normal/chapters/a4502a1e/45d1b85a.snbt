@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest341.name}",
+	title: "{q.extra_utilities.culinary_generator.name}",
 	x: 12.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest341.desc}"
+		"{q.extra_utilities.culinary_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

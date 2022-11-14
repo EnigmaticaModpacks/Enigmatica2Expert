@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest516.desc}"
+		"{q.nuclearcraft.decay_hastener.desc}"
 	],
 	dependencies: [
 		"626f1235",

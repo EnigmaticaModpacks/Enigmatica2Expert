@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter19.name}",
+	title: "{q.draconic_evolution.name}",
 	icon: "draconicevolution:awakened_core",
 	description: [
-		"{bq.chapter19.desc}"
+		"{q.draconic_evolution.desc}"
 	],
 	always_invisible: false,
 	group: 0,

@@ -2,7 +2,7 @@
 	x: -13.666666666666666d,
 	y: 21.833333333333332d,
 	text: [
-		"{bq.quest1055.desc}"
+		"{q.utils.pattern_replicator.desc}"
 	],
 	dependencies: [
 		"727feb19"

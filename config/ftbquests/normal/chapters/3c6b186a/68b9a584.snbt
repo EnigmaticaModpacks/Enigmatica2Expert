@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 6.1d,
 	text: [
-		"{bq.quest71.desc}"
+		"{q.industrialcraft.replicator.desc}"
 	],
 	dependencies: [
 		"60b8a626"

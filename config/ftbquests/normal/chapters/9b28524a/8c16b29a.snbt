@@ -2,7 +2,7 @@
 	x: 3.0d,
 	y: 0.5d,
 	text: [
-		"{bq.quest634.desc}"
+		"{q.blood_magic.dagger_of_sacrifice.desc}"
 	],
 	dependencies: [
 		"8227019b"

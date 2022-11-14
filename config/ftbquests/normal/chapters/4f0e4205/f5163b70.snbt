@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest752.name}",
+	title: "{q.twilight_forest.twilight_forest_an.name}",
 	x: 0.5d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest752.desc}"
+		"{q.twilight_forest.twilight_forest_an.desc}"
 	],
 	dependencies: [
 		"b42dc050"

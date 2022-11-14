@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest739.name}",
+	title: "{q.immersive_engineer.excavator.name}",
 	icon: "immersiveengineering:metal_multiblock 1 11",
 	x: 3.1666666666666665d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest739.desc}"
+		"{q.immersive_engineer.excavator.desc}"
 	],
 	dependencies: [
 		"2de1b9db"

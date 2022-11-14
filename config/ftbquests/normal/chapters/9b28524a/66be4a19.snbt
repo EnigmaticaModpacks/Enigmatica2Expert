@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: 5.5d,
 	text: [
-		"{bq.quest946.desc}"
+		"{q.blood_magic.blood_wood.desc}"
 	],
 	dependencies: [
 		"6a6dc36e"

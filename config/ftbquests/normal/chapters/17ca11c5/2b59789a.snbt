@@ -2,7 +2,7 @@
 	x: 7.1d,
 	y: 6.1d,
 	text: [
-		"{bq.quest22.desc}"
+		"{q.bragging_rights.creative_flux_capa.desc}"
 	],
 	dependencies: [
 		"7e987598",

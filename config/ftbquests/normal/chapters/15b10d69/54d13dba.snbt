@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: -0.04166666666666663d,
 	text: [
-		"{bq.quest895.desc}"
+		"{q.industrial_foregoing.straw.desc}"
 	],
 	dependencies: [
 		"0060934f"

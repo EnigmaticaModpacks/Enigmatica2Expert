@@ -2,7 +2,7 @@
 	x: 1.9375d,
 	y: 3.4166666666666665d,
 	text: [
-		"{bq.quest595.desc}"
+		"{q.extra_utilities.ring_of_the_flying.desc}"
 	],
 	dependencies: [
 		"9bdf45c4"

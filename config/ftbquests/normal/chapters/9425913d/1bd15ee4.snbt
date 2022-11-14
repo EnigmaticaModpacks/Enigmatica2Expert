@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest833.name}",
+	title: "{q.gates.gate:_psi.name}",
 	icon: "psi:cad_assembler",
 	x: 11.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest833.desc}"
+		"{q.gates.gate:_psi.desc}"
 	],
 	dependencies: [
 		"5672d99b"

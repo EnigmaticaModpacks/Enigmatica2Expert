@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 1.1666666666666665d,
 	text: [
-		"{bq.quest1052.desc}"
+		"{q.thaumcraft.porous_stone.desc}"
 	],
 	dependencies: [
 		"a54068bb"

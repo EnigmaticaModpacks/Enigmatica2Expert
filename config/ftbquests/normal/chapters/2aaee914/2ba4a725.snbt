@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 10.5d,
 	text: [
-		"{bq.quest803.desc}"
+		"{q.mekanism.chemical_injection.desc}"
 	],
 	dependencies: [
 		"b149be6c"

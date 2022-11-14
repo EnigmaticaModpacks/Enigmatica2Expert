@@ -2,7 +2,7 @@
 	x: 2.8333333333333335d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest181.desc}"
+		"{q.mekanism.ultimate_control_c.desc}"
 	],
 	dependencies: [
 		"20e504e1",

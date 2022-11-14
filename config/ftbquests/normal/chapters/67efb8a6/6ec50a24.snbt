@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: 8.5d,
 	text: [
-		"{bq.quest549.desc}"
+		"{q.draconic_evolution.draconic_axe.desc}"
 	],
 	dependencies: [
 		"0fa6089d"

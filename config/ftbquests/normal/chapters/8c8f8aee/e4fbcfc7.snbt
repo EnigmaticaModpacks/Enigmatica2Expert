@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest304.desc}"
+		"{q.actually_additions.automatic_feeder.desc}"
 	],
 	dependencies: [
 		"dae9f45f"

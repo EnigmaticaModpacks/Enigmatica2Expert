@@ -2,7 +2,7 @@
 	x: -4.166666666666667d,
 	y: 3.3333333333333335d,
 	text: [
-		"{bq.quest815.desc}"
+		"{q.industrial_foregoing.froster.desc}"
 	],
 	dependencies: [
 		"cab63320"

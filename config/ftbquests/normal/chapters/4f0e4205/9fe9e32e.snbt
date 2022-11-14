@@ -3,7 +3,7 @@
 	x: 4.5d,
 	y: -0.16666666666666669d,
 	text: [
-		"{bq.quest786.desc}"
+		"{q.twilight_forest.arctic_hood.desc}"
 	],
 	dependencies: [
 		"6be282e4"

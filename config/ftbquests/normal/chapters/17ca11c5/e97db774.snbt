@@ -2,7 +2,7 @@
 	x: 7.208333333333333d,
 	y: 12.208333333333332d,
 	text: [
-		"{bq.quest33.desc}"
+		"{q.bragging_rights.hoe_of_the_green_e.desc}"
 	],
 	dependencies: [
 		"802f9b21"

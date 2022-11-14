@@ -2,7 +2,7 @@
 	x: 3.1666666666666665d,
 	y: 3.5d,
 	text: [
-		"{bq.quest301.desc}"
+		"{q.immersive_engineer.projector.desc}"
 	],
 	dependencies: [
 		"8c8d1535",

@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 2.25d,
 	text: [
-		"{bq.quest531.desc}"
+		"{q.draconic_evolution.wyvern_fusion_craf.desc}"
 	],
 	dependencies: [
 		"6cd0c127"

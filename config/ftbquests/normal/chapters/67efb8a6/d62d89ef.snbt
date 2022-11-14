@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 8.666666666666666d,
 	text: [
-		"{bq.quest931.desc}"
+		"{q.draconic_evolution.mob_grinder.desc}"
 	],
 	dependencies: [
 		"a9d391e5"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest483.name}",
+	title: "{q.environmental_tech.pladium.name}",
 	x: 5.25d,
 	y: 6.5d,
 	text: [
-		"{bq.quest483.desc}"
+		"{q.environmental_tech.pladium.desc}"
 	],
 	dependencies: [
 		"ee32d75b"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest1074.name}",
+	title: "{q.gates.gate:_computers.name}",
 	x: -0.5d,
 	y: 0.5d,
 	text: [
-		"{bq.quest1074.desc}"
+		"{q.gates.gate:_computers.desc}"
 	],
 	dependencies: [
 		"ca359f03",

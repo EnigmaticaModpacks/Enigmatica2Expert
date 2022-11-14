@@ -2,7 +2,7 @@
 	x: 8.2d,
 	y: 3.3d,
 	text: [
-		"{bq.quest44.desc}"
+		"{q.bragging_rights.creative_screen.desc}"
 	],
 	dependencies: [
 		"29812a25"

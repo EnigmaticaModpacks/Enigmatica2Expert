@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest84.desc}"
+		"{q.industrialcraft.semifluid_generator.desc}"
 	],
 	dependencies: [
 		"cae88f3f"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest391.name}",
+	title: "{q.botania.munchdew.name}",
 	x: 13.333333333333334d,
 	y: 3.6666666666666665d,
 	text: [
-		"{bq.quest391.desc}"
+		"{q.botania.munchdew.desc}"
 	],
 	dependencies: [
 		"5672d99b",

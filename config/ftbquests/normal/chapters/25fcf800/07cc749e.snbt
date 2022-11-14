@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest480.name}",
+	title: "{q.environmental_tech.void_ore_miner_tie.name}",
 	x: 3.75d,
 	y: 9.5d,
 	text: [
-		"{bq.quest480.desc}"
+		"{q.environmental_tech.void_ore_miner_tie.desc}"
 	],
 	dependencies: [
 		"ebbfcb77",

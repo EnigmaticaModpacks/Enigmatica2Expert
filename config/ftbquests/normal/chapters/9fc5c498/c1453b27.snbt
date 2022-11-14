@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest759.name}",
+	title: "{q.ender_io.end_steel_armor.name}",
 	icon: "enderio:item_end_steel_chestplate",
 	x: 10.166666666666666d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest759.desc}"
+		"{q.ender_io.end_steel_armor.desc}"
 	],
 	dependencies: [
 		"a1061823"

@@ -6,7 +6,7 @@
 	x: 2.5d,
 	y: 6.833333333333333d,
 	text: [
-		"{bq.quest769.desc}"
+		"{q.blood_magic.living_helmet.desc}"
 	],
 	dependencies: [
 		"3088e482"

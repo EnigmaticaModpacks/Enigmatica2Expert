@@ -2,7 +2,7 @@
 	x: -7.833333333333334d,
 	y: 22.5d,
 	text: [
-		"{bq.quest967.desc}"
+		"{q.utils.timer.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

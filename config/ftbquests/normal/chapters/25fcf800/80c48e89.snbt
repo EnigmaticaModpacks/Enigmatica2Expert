@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest832.name}",
+	title: "{q.environmental_tech.nano_bot_beacon.name}",
 	icon: "environmentaltech:nano_cont_personal_1",
 	x: 6.75d,
 	y: 0.5d,
 	text: [
-		"{bq.quest832.desc}"
+		"{q.environmental_tech.nano_bot_beacon.desc}"
 	],
 	dependencies: [
 		"b2bc3ad7"

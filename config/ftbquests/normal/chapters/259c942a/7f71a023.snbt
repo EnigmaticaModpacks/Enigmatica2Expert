@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest104.name}",
+	title: "{q.immersive_engineer.alloy_kiln.name}",
 	x: -3.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest104.desc}"
+		"{q.immersive_engineer.alloy_kiln.desc}"
 	],
 	dependencies: [
 		"1c4deb33"

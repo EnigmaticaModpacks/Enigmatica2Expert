@@ -2,7 +2,7 @@
 	x: -0.16666666666666663d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest106.desc}"
+		"{q.immersive_engineer.engineer_s_workbench.desc}"
 	],
 	dependencies: [
 		"3e86795a"

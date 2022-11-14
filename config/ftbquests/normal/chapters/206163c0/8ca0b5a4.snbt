@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: -0.5d,
 	text: [
-		"{bq.quest872.desc}"
+		"{q.forestry.advanced_analyzer.desc}"
 	],
 	dependencies: [
 		"29f2b63c"

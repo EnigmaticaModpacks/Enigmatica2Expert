@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest343.name}",
+	title: "{q.extra_utilities.heated_redstone_ge.name}",
 	x: 14.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest343.desc}"
+		"{q.extra_utilities.heated_redstone_ge.desc}"
 	],
 	dependencies: [
 		"f31c5840"

@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest575.desc}"
+		"{q.ender_io.weather_obelisk.desc}"
 	],
 	dependencies: [
 		"cf12b353"

@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest280.desc}"
+		"{q.forestry.portable_analyzer.desc}"
 	],
 	dependencies: [
 		"2c5eefd7"

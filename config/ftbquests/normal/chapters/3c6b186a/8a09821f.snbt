@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 7.5d,
 	text: [
-		"{bq.quest425.desc}"
+		"{q.industrialcraft.iridium_ore.desc}"
 	],
 	dependencies: [
 		"68b9a584"

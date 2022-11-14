@@ -2,7 +2,7 @@
 	x: -6.166666666666667d,
 	y: 3.5d,
 	text: [
-		"{bq.quest290.desc}"
+		"{q.forestry.biogas_engine.desc}"
 	],
 	dependencies: [
 		"90654ce3"

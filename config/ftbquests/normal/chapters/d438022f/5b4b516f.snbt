@@ -2,7 +2,7 @@
 	x: -4.166666666666667d,
 	y: 10.666666666666666d,
 	text: [
-		"{bq.quest978.desc}"
+		"{q.utils.elevator.desc}"
 	],
 	dependencies: [
 		"9f41b8d8"

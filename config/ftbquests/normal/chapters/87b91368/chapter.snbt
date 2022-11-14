@@ -1,5 +1,5 @@
 {
-	title: "{bq.chapter16.name}",
+	title: "{q.animals.name}",
 	icon: {
 		id: "openblocks:trophy",
 		tag: {
@@ -7,7 +7,7 @@
 		}
 	},
 	description: [
-		"{bq.chapter16.desc}"
+		"{q.animals.desc}"
 	],
 	always_invisible: false,
 	group: 0,

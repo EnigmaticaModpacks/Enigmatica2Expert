@@ -3,7 +3,7 @@
 	x: 6.166666666666667d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest384.desc}"
+		"{q.botania.natura_pylon.desc}"
 	],
 	dependencies: [
 		"5672d99b",

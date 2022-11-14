@@ -2,7 +2,7 @@
 	x: 6.5d,
 	y: 5.25d,
 	text: [
-		"{bq.quest541.desc}"
+		"{q.draconic_evolution.wyvern_flux_capaci.desc}"
 	],
 	dependencies: [
 		"64f8083b"

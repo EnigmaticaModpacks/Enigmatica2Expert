@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 0.5d,
 	text: [
-		"{bq.quest509.desc}"
+		"{q.nuclearcraft.electrolyzer.desc}"
 	],
 	dependencies: [
 		"3ba07972",

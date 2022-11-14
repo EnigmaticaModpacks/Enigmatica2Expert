@@ -2,7 +2,7 @@
 	x: 13.083333333333334d,
 	y: 8.583333333333334d,
 	text: [
-		"{bq.quest890.desc}"
+		"{q.advanced_rocketry.pressurized_tank.desc}"
 	],
 	dependencies: [
 		"e7f8d37c"

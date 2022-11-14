@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest722.name}",
+	title: "{q.nuclearcraft.molten_salt_two_st.name}",
 	x: 5.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest722.desc}"
+		"{q.nuclearcraft.molten_salt_two_st.desc}"
 	],
 	dependencies: [
 		"0bf36970",

@@ -2,7 +2,7 @@
 	x: -6.5d,
 	y: 0.16666666666666669d,
 	text: [
-		"{bq.quest944.desc}"
+		"{q.animals.rat_on_arrow.desc}"
 	],
 	dependencies: [
 		"46340f69"

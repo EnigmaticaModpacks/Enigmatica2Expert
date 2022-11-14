@@ -2,7 +2,7 @@
 	x: 9.75d,
 	y: 0.5d,
 	text: [
-		"{bq.quest497.desc}"
+		"{q.environmental_tech.piezo_modifier.desc}"
 	],
 	dependencies: [
 		"829d92ae"

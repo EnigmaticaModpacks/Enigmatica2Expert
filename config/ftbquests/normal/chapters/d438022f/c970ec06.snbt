@@ -2,7 +2,7 @@
 	x: -19.333333333333332d,
 	y: 13.5d,
 	text: [
-		"{bq.quest1047.desc}"
+		"{q.utils.backpack.desc}"
 	],
 	dependencies: [
 		"4d1ee975"

@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest160.desc}"
+		"{q.astral_sorcery.looking_glass.desc}"
 	],
 	dependencies: [
 		"580bb684"

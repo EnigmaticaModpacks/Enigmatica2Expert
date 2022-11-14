@@ -2,7 +2,7 @@
 	x: 10.166666666666666d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest208.desc}"
+		"{q.mekanism.advanced_tier_inst.desc}"
 	],
 	dependencies: [
 		"54c54cc4"

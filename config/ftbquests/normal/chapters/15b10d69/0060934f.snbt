@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest139.name}",
+	title: "{q.industrial_foregoing.rubber.name}",
 	icon: "industrialforegoing:dryrubber",
 	x: 1.0d,
 	y: 1.0d,
 	text: [
-		"{bq.quest139.desc}"
+		"{q.industrial_foregoing.rubber.desc}"
 	],
 	dependencies: [
 		"4a526e74"

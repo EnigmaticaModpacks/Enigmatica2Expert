@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest1059.name}",
+	title: "{q.getting_started.crop_breeding.name}",
 	x: -2.375d,
 	y: 5.0d,
 	text: [
-		"{bq.quest1059.desc}"
+		"{q.getting_started.crop_breeding.desc}"
 	],
 	dependencies: [
 		"ca359f03"

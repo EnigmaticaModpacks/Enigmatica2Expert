@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest2.name}",
+	title: "{q.bragging_rights.creative_fluids.name}",
 	x: 3.791666666666667d,
 	y: 7.541666666666668d,
 	text: [
-		"{bq.quest2.desc}"
+		"{q.bragging_rights.creative_fluids.desc}"
 	],
 	dependencies: [
 		"7e987598",

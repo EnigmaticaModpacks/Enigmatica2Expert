@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest804.desc}"
+		"{q.astral_sorcery.celestial_gateway.desc}"
 	],
 	dependencies: [
 		"d051b719"

@@ -2,7 +2,7 @@
 	x: 10.166666666666666d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest441.desc}"
+		"{q.advanced_rocketry.oxygen_vent.desc}"
 	],
 	dependencies: [
 		"8b514522"

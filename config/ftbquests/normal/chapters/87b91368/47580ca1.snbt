@@ -2,7 +2,7 @@
 	x: -6.5d,
 	y: 2.75d,
 	text: [
-		"{bq.quest732.desc}"
+		"{q.animals.rat_cage.desc}"
 	],
 	dependencies: [
 		"5016eb7b"

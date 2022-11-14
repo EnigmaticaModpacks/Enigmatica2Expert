@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest562.name}",
+	title: "{q.immersive_engineer.crusher.name}",
 	icon: "immersiveengineering:metal_multiblock 1 1",
 	x: 4.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest562.desc}"
+		"{q.immersive_engineer.crusher.desc}"
 	],
 	dependencies: [
 		"2de1b9db"

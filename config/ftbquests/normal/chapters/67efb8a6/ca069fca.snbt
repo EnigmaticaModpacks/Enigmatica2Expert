@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 6.75d,
 	text: [
-		"{bq.quest524.desc}"
+		"{q.draconic_evolution.chaotic_core.desc}"
 	],
 	dependencies: [
 		"b5098494",

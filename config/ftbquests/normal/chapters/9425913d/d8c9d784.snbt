@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest940.name}",
+	title: "{q.gates.gate:_exploration.name}",
 	icon: {
 		id: "naturescompass:naturescompass",
 		tag: {}
@@ -7,7 +7,7 @@
 	x: 11.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest940.desc}"
+		"{q.gates.gate:_exploration.desc}"
 	],
 	dependencies: [
 		"4fc58528"

@@ -2,7 +2,7 @@
 	x: 1.0833333333333333d,
 	y: 1.9583333333333335d,
 	text: [
-		"{bq.quest356.desc}"
+		"{q.extra_utilities.scanner.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

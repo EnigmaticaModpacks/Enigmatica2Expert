@@ -2,7 +2,7 @@
 	x: -6.166666666666667d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest287.desc}"
+		"{q.forestry.clockwork_engine.desc}"
 	],
 	dependencies: [
 		"383eccde"

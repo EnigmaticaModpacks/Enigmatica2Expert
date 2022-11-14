@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: 5.25d,
 	text: [
-		"{bq.quest525.desc}"
+		"{q.draconic_evolution.wyvern_energy_core.desc}"
 	],
 	dependencies: [
 		"a9d391e5"

@@ -2,7 +2,7 @@
 	x: 11.666666666666666d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest518.desc}"
+		"{q.nuclearcraft.fluid_enricher.desc}"
 	],
 	dependencies: [
 		"3ba07972",

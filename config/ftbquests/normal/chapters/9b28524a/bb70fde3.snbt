@@ -2,7 +2,7 @@
 	x: 6.0d,
 	y: 0.5d,
 	text: [
-		"{bq.quest631.desc}"
+		"{q.blood_magic.awakened_activatio.desc}"
 	],
 	dependencies: [
 		"f45af488"

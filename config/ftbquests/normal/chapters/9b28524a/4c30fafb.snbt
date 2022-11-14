@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 0.5d,
 	text: [
-		"{bq.quest630.desc}"
+		"{q.blood_magic.ritual_diviner_dusk_.desc}"
 	],
 	dependencies: [
 		"6a44d25c"

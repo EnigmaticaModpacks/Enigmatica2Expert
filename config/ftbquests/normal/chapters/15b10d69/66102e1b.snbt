@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: 6.0d,
 	text: [
-		"{bq.quest144.desc}"
+		"{q.industrial_foregoing.plant_sower.desc}"
 	],
 	dependencies: [
 		"0060934f"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest438.name}",
+	title: "{q.advanced_rocketry.building_a_rocket.name}",
 	icon: "advancedrocketry:rocketmotor",
 	x: 14.166666666666666d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest438.desc}"
+		"{q.advanced_rocketry.building_a_rocket.desc}"
 	],
 	dependencies: [
 		"dc1e6896",

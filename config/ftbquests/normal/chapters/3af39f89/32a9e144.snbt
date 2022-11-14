@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest906.name}",
+	title: "{q.thermal_expansion.hypoinfuser.name}",
 	x: 11.333333333333334d,
 	y: 4.166666666666667d,
 	text: [
-		"{bq.quest906.desc}"
+		"{q.thermal_expansion.hypoinfuser.desc}"
 	],
 	dependencies: [
 		"aa982aad"

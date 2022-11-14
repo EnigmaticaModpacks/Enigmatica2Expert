@@ -2,7 +2,7 @@
 	x: -2.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest701.desc}"
+		"{q.industrial_foregoing.animal_baby_separa.desc}"
 	],
 	dependencies: [
 		"6ad20599"

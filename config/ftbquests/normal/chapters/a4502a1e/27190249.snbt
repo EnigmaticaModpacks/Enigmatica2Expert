@@ -2,7 +2,7 @@
 	x: 1.75d,
 	y: -0.37499999999999994d,
 	text: [
-		"{bq.quest904.desc}"
+		"{q.extra_utilities.angel_block.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest163.desc}"
+		"{q.astral_sorcery.iridescent_altar.desc}"
 	],
 	dependencies: [
 		"b58fd49f",

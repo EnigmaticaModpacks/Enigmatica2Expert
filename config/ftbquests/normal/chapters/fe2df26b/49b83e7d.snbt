@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: 4.0d,
 	text: [
-		"{bq.quest850.desc}"
+		"{q.applied_energetics.me_level_maintainer.desc}"
 	],
 	dependencies: [
 		"b6524265"

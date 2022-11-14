@@ -2,7 +2,7 @@
 	x: 2.0d,
 	y: 1.25d,
 	text: [
-		"{bq.quest741.desc}"
+		"{q.animals.pixie_jar.desc}"
 	],
 	dependencies: [
 		"9df40b6e"

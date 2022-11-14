@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 0.75d,
 	text: [
-		"{bq.quest534.desc}"
+		"{q.draconic_evolution.chaotic_fusion_cra.desc}"
 	],
 	dependencies: [
 		"ca069fca",

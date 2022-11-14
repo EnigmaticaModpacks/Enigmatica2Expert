@@ -2,7 +2,7 @@
 	x: -6.5d,
 	y: 1.5d,
 	text: [
-		"{bq.quest736.desc}"
+		"{q.animals.raw_plastic.desc}"
 	],
 	dependencies: [
 		"67de8e53"

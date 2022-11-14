@@ -2,7 +2,7 @@
 	x: -11.0d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1026.desc}"
+		"{q.utils.water_candle.desc}"
 	],
 	dependencies: [
 		"33b238ff"

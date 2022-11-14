@@ -2,7 +2,7 @@
 	x: -0.08333333333333331d,
 	y: 0.9583333333333333d,
 	text: [
-		"{bq.quest355.desc}"
+		"{q.extra_utilities.mechanical_user.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

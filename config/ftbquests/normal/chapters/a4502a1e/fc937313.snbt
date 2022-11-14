@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest350.name}",
+	title: "{q.extra_utilities.overclocked_genera.name}",
 	x: 17.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest350.desc}"
+		"{q.extra_utilities.overclocked_genera.desc}"
 	],
 	dependencies: [
 		"f31c5840"

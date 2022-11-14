@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest489.name}",
+	title: "{q.environmental_tech.void_resource_mine_3.name}",
 	x: 8.25d,
 	y: 8.0d,
 	text: [
-		"{bq.quest489.desc}"
+		"{q.environmental_tech.void_resource_mine_3.desc}"
 	],
 	dependencies: [
 		"f210c3f3",

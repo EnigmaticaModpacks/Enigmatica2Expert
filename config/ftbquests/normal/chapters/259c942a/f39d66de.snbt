@@ -2,7 +2,7 @@
 	x: 3.1666666666666665d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest772.desc}"
+		"{q.immersive_engineer.automatic_lubricator.desc}"
 	],
 	dependencies: [
 		"862cd6dd"

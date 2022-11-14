@@ -3,7 +3,7 @@
 	x: 4.166666666666666d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest432.desc}"
+		"{q.advanced_rocketry.rolling_machine.desc}"
 	],
 	dependencies: [
 		"e8c6a755"

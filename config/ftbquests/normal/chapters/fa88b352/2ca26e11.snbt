@@ -2,7 +2,7 @@
 	x: 7.333333333333333d,
 	y: 0.5d,
 	text: [
-		"{bq.quest508.desc}"
+		"{q.nuclearcraft.supercooler.desc}"
 	],
 	dependencies: [
 		"3ba07972",

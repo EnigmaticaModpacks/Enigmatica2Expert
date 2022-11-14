@@ -2,7 +2,7 @@
 	x: 6.666666666666667d,
 	y: 5.0d,
 	text: [
-		"{bq.quest325.desc}"
+		"{q.extra_utilities.ethereal_glass.desc}"
 	],
 	dependencies: [
 		"0e08c73f"

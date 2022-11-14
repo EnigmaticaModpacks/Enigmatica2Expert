@@ -2,7 +2,7 @@
 	x: -14.666666666666666d,
 	y: 8.833333333333334d,
 	text: [
-		"{bq.quest1057.desc}"
+		"{q.utils.inventory_rerouter.desc}"
 	],
 	dependencies: [
 		"dc869094"

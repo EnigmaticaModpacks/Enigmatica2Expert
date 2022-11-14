@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 7.5d,
 	text: [
-		"{bq.quest530.desc}"
+		"{q.draconic_evolution.ender_energy_manip.desc}"
 	],
 	dependencies: [
 		"a9d391e5"

@@ -16,7 +16,7 @@
 	x: 8.333333333333332d,
 	y: 1.1666666666666665d,
 	text: [
-		"{bq.quest629.desc}"
+		"{q.blood_magic.bound_blade.desc}"
 	],
 	dependencies: [
 		"170439ef"

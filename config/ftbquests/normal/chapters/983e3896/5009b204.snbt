@@ -2,7 +2,7 @@
 	x: 6.833333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest805.desc}"
+		"{q.astral_sorcery.stellar_refraction.desc}"
 	],
 	dependencies: [
 		"770ef5aa"

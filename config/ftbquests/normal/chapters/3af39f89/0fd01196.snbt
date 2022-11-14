@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest249.name}",
+	title: "{q.thermal_expansion.turbine_conversion.name}",
 	x: 2.166666666666667d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest249.desc}"
+		"{q.thermal_expansion.turbine_conversion.desc}"
 	],
 	dependencies: [
 		"dfa7ef0d"

@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest908.desc}"
+		"{q.mekanism.fluidic_plenisher.desc}"
 	],
 	dependencies: [
 		"ae2d378c"

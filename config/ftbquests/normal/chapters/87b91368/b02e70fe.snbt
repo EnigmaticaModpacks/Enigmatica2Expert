@@ -2,7 +2,7 @@
 	x: -1.75d,
 	y: 9.0d,
 	text: [
-		"{bq.quest735.desc}"
+		"{q.animals.avatar_of_ratlantis.desc}"
 	],
 	dependencies: [
 		"ac45cb5a"

@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest461.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "minecraft:ice",

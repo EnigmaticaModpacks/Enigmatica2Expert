@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter15.name}",
+	title: "{q.rftools.name}",
 	icon: "rftools:builder",
 	description: [
-		"{bq.chapter15.desc}"
+		"{q.rftools.desc}"
 	],
 	always_invisible: false,
 	group: 0,

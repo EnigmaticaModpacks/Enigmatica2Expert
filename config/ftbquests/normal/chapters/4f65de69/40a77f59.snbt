@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest61.name}",
+	title: "{q.getting_started.harvest_level_14.name}",
 	x: 18.625d,
 	y: 3.5d,
 	text: [
-		"{bq.quest61.desc}"
+		"{q.getting_started.harvest_level_14.desc}"
 	],
 	dependencies: [
 		"14611430"

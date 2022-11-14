@@ -2,7 +2,7 @@
 	x: 6.375d,
 	y: -2.2916666666666665d,
 	text: [
-		"{bq.quest716.desc}"
+		"{q.bragging_rights.infinity_drill.desc}"
 	],
 	dependencies: [
 		"3f59aa76"

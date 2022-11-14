@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter12.name}",
+	title: "{q.industrial_foregoing.name}",
 	icon: "industrialforegoing:mob_duplicator",
 	description: [
-		"{bq.chapter12.desc}"
+		"{q.industrial_foregoing.desc}"
 	],
 	always_invisible: false,
 	group: 0,

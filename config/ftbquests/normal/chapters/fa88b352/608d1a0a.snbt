@@ -2,7 +2,7 @@
 	x: 7.833333333333333d,
 	y: 14.5d,
 	text: [
-		"{bq.quest521.desc}"
+		"{q.nuclearcraft.fission_controller.desc}"
 	],
 	dependencies: [
 		"acab81f7",

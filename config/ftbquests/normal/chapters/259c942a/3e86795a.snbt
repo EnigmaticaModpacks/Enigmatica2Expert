@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest102.name}",
+	title: "{q.immersive_engineer.treated_wood.name}",
 	x: -1.8333333333333335d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest102.desc}"
+		"{q.immersive_engineer.treated_wood.desc}"
 	],
 	dependencies: [
 		"bf09a7ad"

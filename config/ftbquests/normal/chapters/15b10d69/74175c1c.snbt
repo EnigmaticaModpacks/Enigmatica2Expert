@@ -3,7 +3,7 @@
 	x: 8.0d,
 	y: 1.0d,
 	text: [
-		"{bq.quest140.desc}"
+		"{q.industrial_foregoing.mob_slaughter_fact.desc}"
 	],
 	dependencies: [
 		"0060934f"

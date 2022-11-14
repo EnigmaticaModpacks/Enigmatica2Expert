@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: -1.9d,
 	text: [
-		"{bq.quest842.desc}"
+		"{q.applied_energetics.me_crafting_terminal.desc}"
 	],
 	dependencies: [
 		"bd8b6cc0"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest568.name}",
+	title: "{q.ender_io.machine_chassis.name}",
 	x: 6.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest568.desc}"
+		"{q.ender_io.machine_chassis.desc}"
 	],
 	dependencies: [
 		"2265d20b"

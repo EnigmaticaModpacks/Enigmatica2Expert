@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest166.desc}"
+		"{q.astral_sorcery.telescope.desc}"
 	],
 	dependencies: [
 		"d051b719",

@@ -2,7 +2,7 @@
 	x: 0.0d,
 	y: 3.5d,
 	text: [
-		"{bq.quest267.desc}"
+		"{q.rftools.builder.desc}"
 	],
 	dependencies: [
 		"f6e8e410"

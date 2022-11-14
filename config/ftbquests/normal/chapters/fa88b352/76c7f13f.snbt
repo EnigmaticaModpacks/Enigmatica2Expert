@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest714.name}",
+	title: "{q.nuclearcraft.heat_exchanger.name}",
 	icon: "nuclearcraft:heat_exchanger_controller",
 	x: 4.666666666666667d,
 	y: 1.5d,
 	text: [
-		"{bq.quest714.desc}"
+		"{q.nuclearcraft.heat_exchanger.desc}"
 	],
 	dependencies: [
 		"7a6e05d3",

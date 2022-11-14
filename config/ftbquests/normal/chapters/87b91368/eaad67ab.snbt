@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest726.name}",
+	title: "{q.animals.aristoc_rat.name}",
 	x: -3.5d,
 	y: 6.25d,
 	text: [
-		"{bq.quest726.desc}"
+		"{q.animals.aristoc_rat.desc}"
 	],
 	dependencies: [
 		"f99929a2"

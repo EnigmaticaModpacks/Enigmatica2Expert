@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest342.name}",
+	title: "{q.extra_utilities.magmatic_generator.name}",
 	x: 15.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest342.desc}"
+		"{q.extra_utilities.magmatic_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest148.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "ic2:wrench_new"

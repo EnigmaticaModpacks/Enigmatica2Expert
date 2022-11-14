@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest540.name}",
+	title: "{q.draconic_evolution.basic_power_transfer.name}",
 	icon: "draconicevolution:energy_crystal 1 6",
 	x: 0.375d,
 	y: 6.75d,
 	text: [
-		"{bq.quest540.desc}"
+		"{q.draconic_evolution.basic_power_transfer.desc}"
 	],
 	dependencies: [
 		"a9d391e5"

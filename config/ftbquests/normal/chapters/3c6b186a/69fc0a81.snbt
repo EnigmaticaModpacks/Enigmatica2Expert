@@ -2,7 +2,7 @@
 	x: 5.833333333333333d,
 	y: 8.833333333333334d,
 	text: [
-		"{bq.quest89.desc}"
+		"{q.industrialcraft.ore_washing_plant.desc}"
 	],
 	dependencies: [
 		"94ee86d9"

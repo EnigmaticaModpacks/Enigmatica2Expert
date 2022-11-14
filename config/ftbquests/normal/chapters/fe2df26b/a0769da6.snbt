@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: 5.5d,
 	text: [
-		"{bq.quest849.desc}"
+		"{q.applied_energetics.me_circuit_etcher.desc}"
 	],
 	dependencies: [
 		"b6524265"

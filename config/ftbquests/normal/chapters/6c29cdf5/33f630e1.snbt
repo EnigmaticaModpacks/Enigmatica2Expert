@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest381.name}",
+	title: "{q.botania.terrasteel.name}",
 	x: 4.833333333333333d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest381.desc}"
+		"{q.botania.terrasteel.desc}"
 	],
 	dependencies: [
 		"5672d99b",

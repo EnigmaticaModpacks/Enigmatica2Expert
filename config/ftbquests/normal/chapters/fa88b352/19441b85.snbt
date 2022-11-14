@@ -2,7 +2,7 @@
 	x: 1.1666666666666665d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest512.desc}"
+		"{q.nuclearcraft.pressurizer.desc}"
 	],
 	dependencies: [
 		"626f1235",

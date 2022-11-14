@@ -2,7 +2,7 @@
 	x: -4.166666666666667d,
 	y: 4.5d,
 	text: [
-		"{bq.quest812.desc}"
+		"{q.industrial_foregoing.animal_sewer.desc}"
 	],
 	dependencies: [
 		"6ad20599"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest637.name}",
+	title: "{q.thaumcraft.infusion_crafting.name}",
 	icon: "thaumcraft:infusion_matrix",
 	x: 2.0d,
 	y: 10.0d,
 	text: [
-		"{bq.quest637.desc}"
+		"{q.thaumcraft.infusion_crafting.desc}"
 	],
 	dependencies: [
 		"f85506a2"

@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest626.desc}"
+		"{q.blood_magic.ritual_diviner.desc}"
 	],
 	dependencies: [
 		"170439ef"

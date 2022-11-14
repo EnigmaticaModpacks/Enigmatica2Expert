@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest783.name}",
+	title: "{q.botania.petro_petunia.name}",
 	x: 12.541666666666666d,
 	y: 8.625d,
 	text: [
-		"{bq.quest783.desc}"
+		"{q.botania.petro_petunia.desc}"
 	],
 	dependencies: [
 		"5672d99b",

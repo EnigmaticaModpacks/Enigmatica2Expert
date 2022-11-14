@@ -2,7 +2,7 @@
 	x: -14.666666666666666d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1011.desc}"
+		"{q.utils.automatic_fishing_.desc}"
 	],
 	dependencies: [
 		"d8284260"

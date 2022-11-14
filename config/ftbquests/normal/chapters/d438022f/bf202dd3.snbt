@@ -2,7 +2,7 @@
 	x: -19.5d,
 	y: 23.0d,
 	text: [
-		"{bq.quest958.desc}"
+		"{q.utils.liquid_barrel.desc}"
 	],
 	dependencies: [
 		"3ecc3fbe"

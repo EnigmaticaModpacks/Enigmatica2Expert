@@ -2,7 +2,7 @@
 	x: -2.125d,
 	y: 1.8541666666666665d,
 	text: [
-		"{bq.quest901.desc}"
+		"{q.rftools.rf_monitor.desc}"
 	],
 	dependencies: [
 		"f6e8e410"

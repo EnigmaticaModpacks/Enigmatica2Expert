@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest298.desc}"
+		"{q.immersive_engineer.generator_block.desc}"
 	],
 	dependencies: [
 		"959882ea"

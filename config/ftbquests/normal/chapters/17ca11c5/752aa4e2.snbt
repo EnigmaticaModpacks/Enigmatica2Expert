@@ -2,7 +2,7 @@
 	x: 2.375d,
 	y: -0.625d,
 	text: [
-		"{bq.quest740.desc}"
+		"{q.bragging_rights.infinity_furnace.desc}"
 	],
 	dependencies: [
 		"fbbabf40"

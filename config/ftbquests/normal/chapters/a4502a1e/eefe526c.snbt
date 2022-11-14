@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest318.name}",
+	title: "{q.extra_utilities.the_deep_dark.name}",
 	x: 9.0d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest318.desc}"
+		"{q.extra_utilities.the_deep_dark.desc}"
 	],
 	dependencies: [
 		"fceeb055"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest665.name}",
+	title: "{q.thaumcraft.thaumium.name}",
 	x: 11.166666666666666d,
 	y: 2.5d,
 	text: [
-		"{bq.quest665.desc}"
+		"{q.thaumcraft.thaumium.desc}"
 	],
 	dependencies: [
 		"69992959"

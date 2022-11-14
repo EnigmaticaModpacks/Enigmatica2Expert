@@ -2,7 +2,7 @@
 	x: 8.833333333333334d,
 	y: 2.5d,
 	text: [
-		"{bq.quest581.desc}"
+		"{q.ender_io.slice_n_splice.desc}"
 	],
 	dependencies: [
 		"e3ba78e0"

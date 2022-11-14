@@ -2,7 +2,7 @@
 	x: 2.0d,
 	y: 12.5d,
 	text: [
-		"{bq.quest548.desc}"
+		"{q.draconic_evolution.draconic_bow.desc}"
 	],
 	dependencies: [
 		"72c18686"

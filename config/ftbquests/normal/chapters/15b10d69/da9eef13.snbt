@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest133.name}",
+	title: "{q.industrial_foregoing.industrial_foregoing.name}",
 	icon: "industrialforegoing:book_manual",
 	x: -4.0d,
 	y: 1.0d,
 	text: [
-		"{bq.quest133.desc}"
+		"{q.industrial_foregoing.industrial_foregoing.desc}"
 	],
 	dependencies: [
 		"09abfe41"

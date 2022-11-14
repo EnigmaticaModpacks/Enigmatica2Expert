@@ -2,7 +2,7 @@
 	x: 5.166666666666667d,
 	y: 2.5d,
 	text: [
-		"{bq.quest644.desc}"
+		"{q.thaumcraft.silverwood_log.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

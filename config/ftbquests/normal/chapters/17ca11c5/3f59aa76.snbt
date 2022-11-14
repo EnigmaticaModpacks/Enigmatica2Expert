@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest700.name}",
+	title: "{q.bragging_rights.black_hole_storage.name}",
 	icon: "industrialforegoing:black_hole_tank",
 	x: 5.125d,
 	y: -1.9999999999999996d,
 	text: [
-		"{bq.quest700.desc}"
+		"{q.bragging_rights.black_hole_storage.desc}"
 	],
 	dependencies: [
 		"b4b83088"

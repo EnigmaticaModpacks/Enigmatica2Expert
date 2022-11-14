@@ -2,7 +2,7 @@
 	x: -10.0d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1044.desc}"
+		"{q.utils.standard_exchange_.desc}"
 	],
 	dependencies: [
 		"5966422c"

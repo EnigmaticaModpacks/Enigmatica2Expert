@@ -2,7 +2,7 @@
 	x: 10.166666666666666d,
 	y: 5.833333333333333d,
 	text: [
-		"{bq.quest449.desc}"
+		"{q.advanced_rocketry.space_station_id_c.desc}"
 	],
 	dependencies: [
 		"8b514522"

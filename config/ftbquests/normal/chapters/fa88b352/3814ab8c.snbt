@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 7.5d,
 	text: [
-		"{bq.quest499.desc}"
+		"{q.nuclearcraft.advanced_plating.desc}"
 	],
 	dependencies: [
 		"a741066c",

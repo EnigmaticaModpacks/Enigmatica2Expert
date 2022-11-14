@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest74.name}",
+	title: "{q.industrialcraft.low_voltage.name}",
 	icon: {
 		id: "ic2:cable",
 		tag: {
@@ -10,7 +10,7 @@
 	x: 0.8333333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest74.desc}"
+		"{q.industrialcraft.low_voltage.desc}"
 	],
 	dependencies: [
 		"83c7fb15"

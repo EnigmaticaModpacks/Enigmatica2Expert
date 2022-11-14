@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest688.name}",
+	title: "{q.nuclearcraft.fusion_fuels.name}",
 	x: 13.3d,
 	y: 6.5d,
 	text: [
-		"{bq.quest688.desc}"
+		"{q.nuclearcraft.fusion_fuels.desc}"
 	],
 	dependencies: [
 		"0bf36970",

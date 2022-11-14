@@ -2,7 +2,7 @@
 	x: -5.5d,
 	y: 10.833333333333334d,
 	text: [
-		"{bq.quest322.desc}"
+		"{q.actually_additions.quintuple_battery.desc}"
 	],
 	dependencies: [
 		"0e3f4ad2"

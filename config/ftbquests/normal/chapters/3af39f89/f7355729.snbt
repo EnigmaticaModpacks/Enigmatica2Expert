@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest216.name}",
+	title: "{q.thermal_expansion.sawmill.name}",
 	x: 11.333333333333334d,
 	y: 1.5d,
 	text: [
-		"{bq.quest216.desc}"
+		"{q.thermal_expansion.sawmill.desc}"
 	],
 	dependencies: [
 		"9c15c499"

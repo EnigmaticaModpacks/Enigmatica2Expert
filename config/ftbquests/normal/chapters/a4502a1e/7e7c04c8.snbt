@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest117.name}",
+	title: "{q.extra_utilities.fluid_storage_i.name}",
 	x: 5.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest117.desc}"
+		"{q.extra_utilities.fluid_storage_i.desc}"
 	],
 	dependencies: [
 		"0e08c73f"

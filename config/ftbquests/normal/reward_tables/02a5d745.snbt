@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest38.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "appliedenergistics2:material 1 10",

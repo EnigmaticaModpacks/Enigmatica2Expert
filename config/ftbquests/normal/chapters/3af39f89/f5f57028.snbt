@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest256.name}",
+	title: "{q.thermal_expansion.gearworking_die.name}",
 	x: 13.333333333333334d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest256.desc}"
+		"{q.thermal_expansion.gearworking_die.desc}"
 	],
 	dependencies: [
 		"8be951f5"

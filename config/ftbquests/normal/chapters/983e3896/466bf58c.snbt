@@ -2,7 +2,7 @@
 	x: -1.1666666666666667d,
 	y: 3.5d,
 	text: [
-		"{bq.quest165.desc}"
+		"{q.astral_sorcery.grindstone.desc}"
 	],
 	dependencies: [
 		"e02d38ab"

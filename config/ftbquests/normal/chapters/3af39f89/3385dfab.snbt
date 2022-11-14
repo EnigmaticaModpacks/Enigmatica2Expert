@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest241.name}",
+	title: "{q.thermal_expansion.lapidary_calibration.name}",
 	x: 7.166666666666667d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest241.desc}"
+		"{q.thermal_expansion.lapidary_calibration.desc}"
 	],
 	dependencies: [
 		"e4048270"

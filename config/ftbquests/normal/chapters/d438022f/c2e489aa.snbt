@@ -2,7 +2,7 @@
 	x: -12.666666666666666d,
 	y: 15.333333333333334d,
 	text: [
-		"{bq.quest1000.desc}"
+		"{q.utils.spectre_key.desc}"
 	],
 	dependencies: [
 		"9092f6f7"

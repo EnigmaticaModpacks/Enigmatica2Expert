@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest724.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "minecraft:diamond_ore",

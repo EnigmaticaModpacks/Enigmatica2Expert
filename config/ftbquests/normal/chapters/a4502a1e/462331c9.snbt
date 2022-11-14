@@ -3,7 +3,7 @@
 	x: 6.666666666666667d,
 	y: 8.5d,
 	text: [
-		"{bq.quest312.desc}"
+		"{q.extra_utilities.indexer.desc}"
 	],
 	dependencies: [
 		"e31eaec7"

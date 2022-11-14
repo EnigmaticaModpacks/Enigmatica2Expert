@@ -2,7 +2,7 @@
 	x: 5.0d,
 	y: 0.5d,
 	text: [
-		"{bq.quest632.desc}"
+		"{q.blood_magic.ritual_tinkerer.desc}"
 	],
 	dependencies: [
 		"5eb2c3ea"

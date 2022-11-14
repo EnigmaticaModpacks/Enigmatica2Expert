@@ -2,7 +2,7 @@
 	x: 11.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest209.desc}"
+		"{q.mekanism.elite_tier_installer.desc}"
 	],
 	dependencies: [
 		"e28c10ce"

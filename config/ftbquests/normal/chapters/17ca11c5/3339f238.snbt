@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest3.name}",
+	title: "{q.bragging_rights.creative_mana_tablet.name}",
 	x: 0.45833333333333337d,
 	y: 6.125d,
 	text: [
-		"{bq.quest3.desc}"
+		"{q.bragging_rights.creative_mana_tablet.desc}"
 	],
 	dependencies: [
 		"7e987598",

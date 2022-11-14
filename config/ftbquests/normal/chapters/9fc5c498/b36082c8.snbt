@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 6.5d,
 	text: [
-		"{bq.quest578.desc}"
+		"{q.ender_io.relocator_obelisk.desc}"
 	],
 	dependencies: [
 		"ff5a849e"

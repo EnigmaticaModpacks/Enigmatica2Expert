@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest779.name}",
+	title: "{q.industrialcraft.nano_armor.name}",
 	icon: {
 		id: "ic2:nano_chestplate",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 5.833333333333333d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest779.desc}"
+		"{q.industrialcraft.nano_armor.desc}"
 	],
 	dependencies: [
 		"d1c08d01"

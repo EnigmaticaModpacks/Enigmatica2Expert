@@ -2,7 +2,7 @@
 	x: 8.2d,
 	y: 2.2d,
 	text: [
-		"{bq.quest357.desc}"
+		"{q.bragging_rights.rainbow_generator_.desc}"
 	],
 	dependencies: [
 		"29812a25",

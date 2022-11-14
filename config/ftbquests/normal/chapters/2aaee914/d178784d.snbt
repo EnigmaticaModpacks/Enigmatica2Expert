@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest199.name}",
+	title: "{q.mekanism.osgloglas.name}",
 	x: 8.833333333333334d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest199.desc}"
+		"{q.mekanism.osgloglas.desc}"
 	],
 	dependencies: [
 		"b44cd2ec",

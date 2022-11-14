@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 9.5d,
 	text: [
-		"{bq.quest684.desc}"
+		"{q.actually_additions.empowered_void_cry.desc}"
 	],
 	dependencies: [
 		"20e504e1"

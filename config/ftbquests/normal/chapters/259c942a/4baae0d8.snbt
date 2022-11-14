@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest299.desc}"
+		"{q.immersive_engineer.radiator_block.desc}"
 	],
 	dependencies: [
 		"b34aca62"

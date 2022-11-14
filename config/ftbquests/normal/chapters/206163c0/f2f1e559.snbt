@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest285.name}",
+	title: "{q.forestry.farms.name}",
 	icon: {
 		id: "forestry:ffarm",
 		tag: {
@@ -9,7 +9,7 @@
 	x: -0.8333333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest285.desc}"
+		"{q.forestry.farms.desc}"
 	],
 	dependencies: [
 		"d1b19bf0"

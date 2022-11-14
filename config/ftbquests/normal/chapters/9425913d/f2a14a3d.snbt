@@ -3,7 +3,7 @@
 	x: 12.066666666666666d,
 	y: 1.7333333333333334d,
 	text: [
-		"{bq.quest941.desc}"
+		"{q.gates.dragon_helmet.desc}"
 	],
 	dependencies: [
 		"d8c9d784"

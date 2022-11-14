@@ -2,7 +2,7 @@
 	x: 5.208333333333333d,
 	y: -0.625d,
 	text: [
-		"{bq.quest21.desc}"
+		"{q.bragging_rights.quantum_compressor.desc}"
 	],
 	dependencies: [
 		"fbbabf40"

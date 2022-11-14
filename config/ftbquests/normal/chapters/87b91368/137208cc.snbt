@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest462.name}",
+	title: "{q.animals.ember_root.name}",
 	icon: {
 		id: "draconicevolution:mob_soul",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 4.7d,
 	y: -2.4d,
 	text: [
-		"{bq.quest462.desc}"
+		"{q.animals.ember_root.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

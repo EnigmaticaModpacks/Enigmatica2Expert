@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest463.name}",
+	title: "{q.environmental_tech.environmental_tech.name}",
 	icon: "environmentaltech:litherite_crystal",
 	x: 3.8333333333333335d,
 	y: 0.5d,
 	text: [
-		"{bq.quest463.desc}"
+		"{q.environmental_tech.environmental_tech.desc}"
 	],
 	dependencies: [
 		"4af44027"

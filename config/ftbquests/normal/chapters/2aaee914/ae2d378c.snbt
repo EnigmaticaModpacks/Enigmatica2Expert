@@ -2,7 +2,7 @@
 	x: 2.166666666666667d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest178.desc}"
+		"{q.mekanism.basic_control_circ.desc}"
 	],
 	dependencies: [
 		"6d298370"

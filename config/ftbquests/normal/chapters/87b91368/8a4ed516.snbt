@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest945.name}",
+	title: "{q.animals.dreadwood.name}",
 	icon: "iceandfire:dreadwood_log",
 	x: 4.75d,
 	y: 0.0d,
 	text: [
-		"{bq.quest945.desc}"
+		"{q.animals.dreadwood.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

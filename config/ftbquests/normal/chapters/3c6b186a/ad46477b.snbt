@@ -2,7 +2,7 @@
 	x: 9.166666666666666d,
 	y: 3.5d,
 	text: [
-		"{bq.quest91.desc}"
+		"{q.industrialcraft.thermal_centrifuge.desc}"
 	],
 	dependencies: [
 		"77721ec3",

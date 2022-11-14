@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest819.name}",
+	title: "{q.animals.jury_rigged.name}",
 	x: -3.5d,
 	y: 5.0d,
 	text: [
-		"{bq.quest819.desc}"
+		"{q.animals.jury_rigged.desc}"
 	],
 	dependencies: [
 		"f99929a2"

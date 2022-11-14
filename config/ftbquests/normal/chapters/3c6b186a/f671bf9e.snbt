@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest414.name}",
+	title: "{q.industrialcraft.rtg_fuel.name}",
 	x: 2.5d,
 	y: 8.833333333333334d,
 	text: [
-		"{bq.quest414.desc}"
+		"{q.industrialcraft.rtg_fuel.desc}"
 	],
 	dependencies: [
 		"f77e75cc"

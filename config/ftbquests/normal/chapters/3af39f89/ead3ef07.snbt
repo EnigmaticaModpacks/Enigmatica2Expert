@@ -2,7 +2,7 @@
 	x: 14.333333333333334d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest239.desc}"
+		"{q.thermal_expansion.rosin.desc}"
 	],
 	dependencies: [
 		"39590220"

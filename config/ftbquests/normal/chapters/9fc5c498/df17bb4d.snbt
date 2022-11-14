@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest594.desc}"
+		"{q.ender_io.painting_machine.desc}"
 	],
 	dependencies: [
 		"0cce2fa6"

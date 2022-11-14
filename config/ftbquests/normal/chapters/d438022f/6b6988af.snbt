@@ -2,7 +2,7 @@
 	x: -3.666666666666667d,
 	y: 24.333333333333332d,
 	text: [
-		"{bq.quest969.desc}"
+		"{q.utils.monolith_of_spawning.desc}"
 	],
 	dependencies: [
 		"a8abebe1"

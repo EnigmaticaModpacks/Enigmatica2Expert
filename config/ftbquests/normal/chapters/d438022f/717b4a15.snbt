@@ -2,7 +2,7 @@
 	x: -10.0d,
 	y: 5.5d,
 	text: [
-		"{bq.quest93.desc}"
+		"{q.utils.eclipsed_clock.desc}"
 	],
 	dependencies: [
 		"3d35ca2a"

@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest193.desc}"
+		"{q.mekanism.wind_generator.desc}"
 	],
 	dependencies: [
 		"efd1a725"

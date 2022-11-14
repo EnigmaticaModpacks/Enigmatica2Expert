@@ -2,7 +2,7 @@
 	x: 3.4583333333333335d,
 	y: -1.25d,
 	text: [
-		"{bq.quest559.desc}"
+		"{q.animals.hamster_wheel.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

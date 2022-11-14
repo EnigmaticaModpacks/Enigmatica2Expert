@@ -2,7 +2,7 @@
 	x: 7.4d,
 	y: 8.3d,
 	text: [
-		"{bq.quest455.desc}"
+		"{q.advanced_rocketry.destabilized_clath.desc}"
 	],
 	dependencies: [
 		"d25f75cc"

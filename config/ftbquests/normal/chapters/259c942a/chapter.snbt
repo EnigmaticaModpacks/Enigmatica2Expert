@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter3.name}",
+	title: "{q.immersive_engineer.name}",
 	icon: "immersiveengineering:tool",
 	description: [
-		"{bq.chapter3.desc}"
+		"{q.immersive_engineer.desc}"
 	],
 	always_invisible: false,
 	group: 0,

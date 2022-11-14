@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest347.name}",
+	title: "{q.extra_utilities.slimey_generator.name}",
 	x: 12.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest347.desc}"
+		"{q.extra_utilities.slimey_generator.desc}"
 	],
 	dependencies: [
 		"f31c5840"

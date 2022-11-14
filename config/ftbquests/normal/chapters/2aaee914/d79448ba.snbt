@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest918.name}",
+	title: "{q.mekanism.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -22,7 +22,7 @@
 	x: 12.75d,
 	y: 8.25d,
 	text: [
-		"{bq.quest918.desc}"
+		"{q.mekanism.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

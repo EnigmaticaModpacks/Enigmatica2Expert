@@ -3,7 +3,7 @@
 	x: 4.833333333333333d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest379.desc}"
+		"{q.botania.terrestrial_agglom.desc}"
 	],
 	dependencies: [
 		"5672d99b",

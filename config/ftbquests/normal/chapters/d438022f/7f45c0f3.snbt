@@ -2,7 +2,7 @@
 	x: -10.0d,
 	y: 10.833333333333334d,
 	text: [
-		"{bq.quest1004.desc}"
+		"{q.utils.spectre_coil.desc}"
 	],
 	dependencies: [
 		"dcde283f"

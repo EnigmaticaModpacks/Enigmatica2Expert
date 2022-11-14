@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: 0.75d,
 	text: [
-		"{bq.quest527.desc}"
+		"{q.draconic_evolution.dragon_heart.desc}"
 	],
 	dependencies: [
 		"91dd82e5"

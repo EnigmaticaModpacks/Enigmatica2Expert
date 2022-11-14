@@ -2,7 +2,7 @@
 	x: 3.6666666666666665d,
 	y: 3.5d,
 	text: [
-		"{bq.quest314.desc}"
+		"{q.actually_additions.greenhouse_glass.desc}"
 	],
 	dependencies: [
 		"bebab91b"

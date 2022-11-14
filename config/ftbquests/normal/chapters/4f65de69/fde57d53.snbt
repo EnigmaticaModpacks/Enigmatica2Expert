@@ -2,7 +2,7 @@
 	x: 3.625d,
 	y: 6.041666666666667d,
 	text: [
-		"{bq.quest797.desc}"
+		"{q.getting_started.morphing_tool.desc}"
 	],
 	dependencies: [
 		"dabc815c"

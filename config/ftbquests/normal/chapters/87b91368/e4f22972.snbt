@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest719.name}",
+	title: "{q.animals.prime_eggs.name}",
 	icon: "animania:peacock_egg_blue",
 	x: 0.75d,
 	y: 0.0d,
 	text: [
-		"{bq.quest719.desc}"
+		"{q.animals.prime_eggs.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

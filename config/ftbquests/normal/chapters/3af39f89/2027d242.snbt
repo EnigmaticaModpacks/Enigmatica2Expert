@@ -2,7 +2,7 @@
 	x: 13.333333333333334d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest237.desc}"
+		"{q.thermal_expansion.cinnabar.desc}"
 	],
 	dependencies: [
 		"7d9c6e00"

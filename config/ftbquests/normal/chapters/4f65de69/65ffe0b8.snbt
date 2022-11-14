@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest18.name}",
+	title: "{q.getting_started.smeltery.name}",
 	icon: "tconstruct:smeltery_controller",
 	x: -0.875d,
 	y: 2.0d,
 	text: [
-		"{bq.quest18.desc}"
+		"{q.getting_started.smeltery.desc}"
 	],
 	dependencies: [
 		"d866b24e"

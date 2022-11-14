@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest434.name}",
+	title: "{q.getting_started.excavation.name}",
 	x: -4.0d,
 	y: 2.0d,
 	text: [
-		"{bq.quest434.desc}"
+		"{q.getting_started.excavation.desc}"
 	],
 	dependencies: [
 		"c35399e6"

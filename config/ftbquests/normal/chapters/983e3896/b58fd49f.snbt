@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 3.5d,
 	text: [
-		"{bq.quest169.desc}"
+		"{q.astral_sorcery.resonating_gem.desc}"
 	],
 	dependencies: [
 		"fe27cea6"

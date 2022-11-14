@@ -2,7 +2,7 @@
 	x: 6.666666666666667d,
 	y: 2.5d,
 	text: [
-		"{bq.quest693.desc}"
+		"{q.rftools.dimlet_workbench.desc}"
 	],
 	dependencies: [
 		"1af45b18"

@@ -2,7 +2,7 @@
 	x: 6.0d,
 	y: 3.5d,
 	text: [
-		"{bq.quest917.desc}"
+		"{q.immersive_engineer.graphite_electrode.desc}"
 	],
 	dependencies: [
 		"8e2ee44a"

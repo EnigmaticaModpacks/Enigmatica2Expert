@@ -2,7 +2,7 @@
 	x: 13.833333333333334d,
 	y: 2.5d,
 	text: [
-		"{bq.quest675.desc}"
+		"{q.thaumcraft.void_metal_ingot.desc}"
 	],
 	dependencies: [
 		"baa9431f"

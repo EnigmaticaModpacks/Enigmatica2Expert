@@ -3,7 +3,7 @@
 	x: -3.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest294.desc}"
+		"{q.immersive_engineer.thermoelectric_gen.desc}"
 	],
 	dependencies: [
 		"7f71a023"

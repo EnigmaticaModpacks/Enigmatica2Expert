@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest232.name}",
+	title: "{q.thermal_expansion.energy_cell.name}",
 	x: 5.666666666666667d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest232.desc}"
+		"{q.thermal_expansion.energy_cell.desc}"
 	],
 	dependencies: [
 		"9c15c499"

@@ -2,7 +2,7 @@
 	x: 11.166666666666666d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest713.desc}"
+		"{q.industrialcraft.advanced_miner.desc}"
 	],
 	dependencies: [
 		"4d36c8e9"

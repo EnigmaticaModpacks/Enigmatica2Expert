@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 7.5d,
 	text: [
-		"{bq.quest507.desc}"
+		"{q.nuclearcraft.melter.desc}"
 	],
 	dependencies: [
 		"626f1235",

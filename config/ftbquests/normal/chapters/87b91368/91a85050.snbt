@@ -2,7 +2,7 @@
 	x: 4.7d,
 	y: -4.5d,
 	text: [
-		"{bq.quest64.desc}"
+		"{q.animals.ball_of_fur.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

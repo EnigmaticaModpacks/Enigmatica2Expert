@@ -2,7 +2,7 @@
 	x: -2.0d,
 	y: 1.0d,
 	text: [
-		"{bq.quest836.desc}"
+		"{q.applied_energetics.me_interface.desc}"
 	],
 	dependencies: [
 		"2e632fad"

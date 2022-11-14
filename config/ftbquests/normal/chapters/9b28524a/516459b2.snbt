@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 9.5d,
 	text: [
-		"{bq.quest610.desc}"
+		"{q.blood_magic.grand_tartaric_gem.desc}"
 	],
 	dependencies: [
 		"489f82e1"

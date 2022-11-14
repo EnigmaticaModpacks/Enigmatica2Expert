@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest874.name}",
+	title: "{q.getting_started.toolkits.name}",
 	x: 0.625d,
 	y: 0.5d,
 	text: [
-		"{bq.quest874.desc}"
+		"{q.getting_started.toolkits.desc}"
 	],
 	dependencies: [
 		"65ffe0b8"

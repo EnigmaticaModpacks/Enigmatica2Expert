@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 3.5d,
 	text: [
-		"{bq.quest183.desc}"
+		"{q.mekanism.crusher.desc}"
 	],
 	dependencies: [
 		"d0c5b8a8"

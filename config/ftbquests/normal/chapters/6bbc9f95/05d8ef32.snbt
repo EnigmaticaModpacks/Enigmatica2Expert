@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest668.name}",
+	title: "{q.thaumcraft.nitor.name}",
 	x: 6.833333333333333d,
 	y: 2.5d,
 	text: [
-		"{bq.quest668.desc}"
+		"{q.thaumcraft.nitor.desc}"
 	],
 	dependencies: [
 		"a54068bb"

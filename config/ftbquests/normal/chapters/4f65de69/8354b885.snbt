@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest802.name}",
+	title: "{q.getting_started.teleportation.name}",
 	x: 14.125d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest802.desc}"
+		"{q.getting_started.teleportation.desc}"
 	],
 	dependencies: [
 		"224cb929"

@@ -3,7 +3,7 @@
 	x: -0.4999999999999999d,
 	y: 7.0d,
 	text: [
-		"{bq.quest123.desc}"
+		"{q.actually_additions.empowerer.desc}"
 	],
 	dependencies: [
 		"03d4419e"

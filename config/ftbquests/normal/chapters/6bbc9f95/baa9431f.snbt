@@ -2,7 +2,7 @@
 	x: 12.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest674.desc}"
+		"{q.thaumcraft.void_seed.desc}"
 	],
 	dependencies: [
 		"644b9777"

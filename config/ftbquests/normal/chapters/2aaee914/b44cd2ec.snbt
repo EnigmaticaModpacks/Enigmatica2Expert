@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest198.desc}"
+		"{q.mekanism.glowstone_ingot.desc}"
 	],
 	dependencies: [
 		"9eb5e63d"

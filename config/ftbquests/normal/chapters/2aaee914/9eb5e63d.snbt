@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest189.desc}"
+		"{q.mekanism.osmium_compressor.desc}"
 	],
 	dependencies: [
 		"88fdde2d"

@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest809.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "colossalchests:chest_wall",

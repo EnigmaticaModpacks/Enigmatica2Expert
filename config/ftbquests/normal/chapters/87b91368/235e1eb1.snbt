@@ -2,7 +2,7 @@
 	x: -0.45833333333333337d,
 	y: -2.875d,
 	text: [
-		"{bq.quest939.desc}"
+		"{q.animals.heart_dust.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

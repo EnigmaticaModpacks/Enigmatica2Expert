@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 10.5d,
 	text: [
-		"{bq.quest796.desc}"
+		"{q.mekanism.chemical_crystalli.desc}"
 	],
 	dependencies: [
 		"b149be6c"

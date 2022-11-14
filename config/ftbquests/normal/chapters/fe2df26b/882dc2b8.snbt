@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: 2.5d,
 	text: [
-		"{bq.quest777.desc}"
+		"{q.applied_energetics.charger.desc}"
 	],
 	dependencies: [
 		"2e632fad"

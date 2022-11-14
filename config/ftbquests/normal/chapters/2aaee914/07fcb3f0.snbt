@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest212.desc}"
+		"{q.mekanism.bio_fuel.desc}"
 	],
 	dependencies: [
 		"702f421e"

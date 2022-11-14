@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 6.5d,
 	text: [
-		"{bq.quest191.desc}"
+		"{q.mekanism.compressed_diamond.desc}"
 	],
 	dependencies: [
 		"307c984a"

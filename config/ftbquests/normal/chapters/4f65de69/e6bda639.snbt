@@ -2,7 +2,7 @@
 	x: 8.125d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest778.desc}"
+		"{q.getting_started.hole_filler.desc}"
 	],
 	dependencies: [
 		"b1868c44"

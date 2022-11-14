@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest38.name}",
+	title: "{q.gates.gate:_applied_ener.name}",
 	x: 1.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest38.desc}"
+		"{q.gates.gate:_applied_ener.desc}"
 	],
 	dependencies: [
 		"09abfe41"

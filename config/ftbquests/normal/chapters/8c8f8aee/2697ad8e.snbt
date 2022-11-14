@@ -2,7 +2,7 @@
 	x: 3.6666666666666665d,
 	y: 7.5d,
 	text: [
-		"{bq.quest184.desc}"
+		"{q.actually_additions.leaf_eating_genera.desc}"
 	],
 	dependencies: [
 		"a4305fb1"

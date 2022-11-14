@@ -2,7 +2,7 @@
 	x: 6.666666666666667d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest695.desc}"
+		"{q.rftools.dimlet_parcel.desc}"
 	],
 	dependencies: [
 		"501222cc"

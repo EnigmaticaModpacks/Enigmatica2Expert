@@ -2,7 +2,7 @@
 	x: 5.5d,
 	y: 9.0d,
 	text: [
-		"{bq.quest542.desc}"
+		"{q.draconic_evolution.axe_of_the_wyvern.desc}"
 	],
 	dependencies: [
 		"64f8083b"

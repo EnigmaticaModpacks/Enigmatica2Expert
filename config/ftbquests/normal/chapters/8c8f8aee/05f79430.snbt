@@ -2,7 +2,7 @@
 	x: 3.6666666666666665d,
 	y: 6.5d,
 	text: [
-		"{bq.quest303.desc}"
+		"{q.actually_additions.spawner_changer.desc}"
 	],
 	dependencies: [
 		"98a9cb2b"

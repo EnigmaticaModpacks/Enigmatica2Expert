@@ -2,7 +2,7 @@
 	x: 1.8333333333333333d,
 	y: 10.166666666666666d,
 	text: [
-		"{bq.quest506.desc}"
+		"{q.nuclearcraft.fluid_infuser.desc}"
 	],
 	dependencies: [
 		"626f1235",

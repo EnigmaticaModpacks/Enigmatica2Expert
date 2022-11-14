@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 11.25d,
 	text: [
-		"{bq.quest947.desc}"
+		"{q.advanced_rocketry.lightwood_wood.desc}"
 	],
 	dependencies: [
 		"d25f75cc"

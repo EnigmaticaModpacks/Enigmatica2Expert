@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest826.name}",
+	title: "{q.blood_magic.rune_of_displacement.name}",
 	x: 8.5d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest826.desc}"
+		"{q.blood_magic.rune_of_displacement.desc}"
 	],
 	dependencies: [
 		"ef0195ea"

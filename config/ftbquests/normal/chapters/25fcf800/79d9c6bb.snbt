@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest486.name}",
+	title: "{q.environmental_tech.void_resource_mine_2.name}",
 	icon: "environmentaltech:void_res_miner_cont_1",
 	x: 8.25d,
 	y: 3.5d,
 	text: [
-		"{bq.quest486.desc}"
+		"{q.environmental_tech.void_resource_mine_2.desc}"
 	],
 	dependencies: [
 		"d2bbd45a",

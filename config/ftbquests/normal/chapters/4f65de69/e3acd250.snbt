@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest696.name}",
+	title: "{q.getting_started.cooking_for_blockh.name}",
 	icon: "cookingforblockheads:cooking_table",
 	x: 2.125d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest696.desc}"
+		"{q.getting_started.cooking_for_blockh.desc}"
 	],
 	dependencies: [
 		"9eaa496f"

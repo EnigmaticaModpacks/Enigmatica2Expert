@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest564.name}",
+	title: "{q.gates.gate:_ender_io.name}",
 	x: 5.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest564.desc}"
+		"{q.gates.gate:_ender_io.desc}"
 	],
 	dependencies: [
 		"bd7fc30c"

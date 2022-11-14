@@ -3,7 +3,7 @@
 	x: -19.166666666666668d,
 	y: 21.333333333333332d,
 	text: [
-		"{bq.quest960.desc}"
+		"{q.utils.alchemic_condenser.desc}"
 	],
 	dependencies: [
 		"3ecc3fbe"

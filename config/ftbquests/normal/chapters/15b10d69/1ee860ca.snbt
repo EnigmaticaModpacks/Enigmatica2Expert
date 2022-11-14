@@ -2,7 +2,7 @@
 	x: 9.5d,
 	y: 4.0d,
 	text: [
-		"{bq.quest135.desc}"
+		"{q.industrial_foregoing.laser_drill.desc}"
 	],
 	dependencies: [
 		"d36b9a80"

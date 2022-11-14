@@ -2,7 +2,7 @@
 	x: 9.3d,
 	y: 6.4d,
 	text: [
-		"{bq.quest235.desc}"
+		"{q.thermal_expansion.thermal_mediator.desc}"
 	],
 	dependencies: [
 		"85977752",

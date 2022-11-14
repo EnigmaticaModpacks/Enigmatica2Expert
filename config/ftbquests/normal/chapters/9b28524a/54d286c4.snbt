@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 4.166666666666666d,
 	text: [
-		"{bq.quest628.desc}"
+		"{q.blood_magic.hellfire_forge.desc}"
 	],
 	dependencies: [
 		"6e05cd97"

@@ -2,7 +2,7 @@
 	x: 7.833333333333334d,
 	y: 2.3333333333333335d,
 	text: [
-		"{bq.quest114.desc}"
+		"{q.extra_utilities.resonator.desc}"
 	],
 	dependencies: [
 		"dff12c7a"

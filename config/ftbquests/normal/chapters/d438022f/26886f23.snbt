@@ -2,7 +2,7 @@
 	x: -5.833333333333333d,
 	y: 10.333333333333334d,
 	text: [
-		"{bq.quest980.desc}"
+		"{q.utils.hang_glider.desc}"
 	],
 	dependencies: [
 		"9f41b8d8"

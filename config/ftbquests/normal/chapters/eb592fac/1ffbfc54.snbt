@@ -3,7 +3,7 @@
 	x: -3.958333333333333d,
 	y: 0.6666666666666666d,
 	text: [
-		"{bq.quest268.desc}"
+		"{q.rftools.screen.desc}"
 	],
 	dependencies: [
 		"094a95d2",

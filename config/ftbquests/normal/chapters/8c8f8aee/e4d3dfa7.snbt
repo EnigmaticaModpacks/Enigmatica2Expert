@@ -3,7 +3,7 @@
 	x: 3.6666666666666665d,
 	y: 4.5d,
 	text: [
-		"{bq.quest310.desc}"
+		"{q.actually_additions.phantomface.desc}"
 	],
 	dependencies: [
 		"bebab91b"

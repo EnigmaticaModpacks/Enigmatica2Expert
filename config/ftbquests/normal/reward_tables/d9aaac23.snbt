@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest730.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "rats:marbled_cheese_raw",

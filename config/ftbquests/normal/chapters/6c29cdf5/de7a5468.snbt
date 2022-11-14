@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest395.name}",
+	title: "{q.botania.orechid.name}",
 	x: 3.5d,
 	y: 11.666666666666666d,
 	text: [
-		"{bq.quest395.desc}"
+		"{q.botania.orechid.desc}"
 	],
 	dependencies: [
 		"5672d99b",

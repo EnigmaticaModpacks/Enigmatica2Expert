@@ -2,7 +2,7 @@
 	x: 3.3333333333333335d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest657.desc}"
+		"{q.thaumcraft.enchanted_fabric.desc}"
 	],
 	dependencies: [
 		"4510505c"

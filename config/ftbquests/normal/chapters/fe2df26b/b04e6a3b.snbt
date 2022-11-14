@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: -0.5d,
 	text: [
-		"{bq.quest856.desc}"
+		"{q.applied_energetics.me_capability_adap.desc}"
 	],
 	dependencies: [
 		"ff8470d4"

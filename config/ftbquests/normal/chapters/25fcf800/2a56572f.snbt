@@ -2,7 +2,7 @@
 	x: 6.75d,
 	y: 3.5d,
 	text: [
-		"{bq.quest358.desc}"
+		"{q.environmental_tech.structure_frame_ti.desc}"
 	],
 	dependencies: [
 		"d2bbd45a",

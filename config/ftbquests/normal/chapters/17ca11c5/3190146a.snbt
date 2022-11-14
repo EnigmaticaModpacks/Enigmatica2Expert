@@ -2,7 +2,7 @@
 	x: 1.625d,
 	y: 13.25d,
 	text: [
-		"{bq.quest27.desc}"
+		"{q.bragging_rights.infinity_boots.desc}"
 	],
 	dependencies: [
 		"15fc4ddf"

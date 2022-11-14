@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest927.name}",
+	title: "{q.bragging_rights.creative_rod_frame.name}",
 	x: 7.1d,
 	y: 5.1d,
 	text: [
-		"{bq.quest927.desc}"
+		"{q.bragging_rights.creative_rod_frame.desc}"
 	],
 	dependencies: [
 		"7e987598",

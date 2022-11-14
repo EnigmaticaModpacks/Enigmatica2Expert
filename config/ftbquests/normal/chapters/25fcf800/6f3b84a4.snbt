@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1066.name}",
+	title: "{q.environmental_tech.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 6.75d,
 	y: 11.25d,
 	text: [
-		"{bq.quest1066.desc}"
+		"{q.environmental_tech.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

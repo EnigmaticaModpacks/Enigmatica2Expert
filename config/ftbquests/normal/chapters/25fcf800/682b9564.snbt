@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest494.name}",
+	title: "{q.environmental_tech.solar_array_tier_5.name}",
 	x: 9.75d,
 	y: 8.0d,
 	text: [
-		"{bq.quest494.desc}"
+		"{q.environmental_tech.solar_array_tier_5.desc}"
 	],
 	dependencies: [
 		"3ff4e736",

@@ -2,7 +2,7 @@
 	x: -0.6d,
 	y: 3.3d,
 	text: [
-		"{bq.quest639.desc}"
+		"{q.thaumcraft.thaumometer.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

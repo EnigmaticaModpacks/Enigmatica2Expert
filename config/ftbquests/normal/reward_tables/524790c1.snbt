@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest1022.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "quark:quilted_wool",

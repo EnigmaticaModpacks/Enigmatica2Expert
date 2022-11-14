@@ -2,7 +2,7 @@
 	x: 7.208333333333333d,
 	y: 9.708333333333332d,
 	text: [
-		"{bq.quest31.desc}"
+		"{q.bragging_rights.longbow_of_the_hea.desc}"
 	],
 	dependencies: [
 		"51f94a83"

@@ -2,7 +2,7 @@
 	x: 5.208333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest894.desc}"
+		"{q.bragging_rights.creative_storage_u.desc}"
 	],
 	dependencies: [
 		"a1377b51"

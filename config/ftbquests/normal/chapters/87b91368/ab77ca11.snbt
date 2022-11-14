@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: 1.25d,
 	text: [
-		"{bq.quest1072.desc}"
+		"{q.animals.plague_doctorate.desc}"
 	],
 	dependencies: [
 		"a65a3f5b"

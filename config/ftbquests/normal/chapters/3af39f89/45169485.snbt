@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest245.name}",
+	title: "{q.thermal_expansion.ignition_plugs.name}",
 	x: 4.166666666666666d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest245.desc}"
+		"{q.thermal_expansion.ignition_plugs.desc}"
 	],
 	dependencies: [
 		"277d36ea"

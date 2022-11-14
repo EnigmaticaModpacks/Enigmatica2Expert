@@ -2,7 +2,7 @@
 	x: 8.2d,
 	y: 1.0d,
 	text: [
-		"{bq.quest858.desc}"
+		"{q.bragging_rights.infinity_booster_c.desc}"
 	],
 	dependencies: [
 		"29812a25"

@@ -2,7 +2,7 @@
 	x: 5.166666666666667d,
 	y: 2.5d,
 	text: [
-		"{bq.quest691.desc}"
+		"{q.rftools.dimension_builder.desc}"
 	],
 	dependencies: [
 		"7c3fd1d6"

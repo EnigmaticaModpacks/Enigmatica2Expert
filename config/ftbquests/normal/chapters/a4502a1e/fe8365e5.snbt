@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 5.0d,
 	text: [
-		"{bq.quest704.desc}"
+		"{q.extra_utilities.kikoku.desc}"
 	],
 	dependencies: [
 		"fceeb055"

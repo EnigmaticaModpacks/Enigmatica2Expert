@@ -2,7 +2,7 @@
 	x: -0.16666666666666663d,
 	y: 3.5d,
 	text: [
-		"{bq.quest761.desc}"
+		"{q.immersive_engineer.powered_lantern.desc}"
 	],
 	dependencies: [
 		"ec158bbd"

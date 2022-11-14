@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest443.name}",
+	title: "{q.advanced_rocketry.space_suit.name}",
 	icon: "advancedrocketry:spacechestplate",
 	x: 0.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest443.desc}"
+		"{q.advanced_rocketry.space_suit.desc}"
 	],
 	dependencies: [
 		"b302e7bd"

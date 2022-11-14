@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest597.name}",
+	title: "{q.gates.gate:_blood_magic.name}",
 	x: 9.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest597.desc}"
+		"{q.gates.gate:_blood_magic.desc}"
 	],
 	dependencies: [
 		"5672d99b"

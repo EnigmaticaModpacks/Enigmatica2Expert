@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 7.5d,
 	text: [
-		"{bq.quest638.desc}"
+		"{q.thaumcraft.focal_manipulator.desc}"
 	],
 	dependencies: [
 		"4510505c"

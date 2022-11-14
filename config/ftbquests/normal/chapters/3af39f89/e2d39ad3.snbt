@@ -2,7 +2,7 @@
 	x: 15.333333333333334d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest877.desc}"
+		"{q.thermal_expansion.rich_biomass.desc}"
 	],
 	dependencies: [
 		"a784088f"

@@ -3,7 +3,7 @@
 	x: 8.166666666666668d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest656.desc}"
+		"{q.thaumcraft.alchemical_constru.desc}"
 	],
 	dependencies: [
 		"05d8ef32"

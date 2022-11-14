@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1068.name}",
+	title: "{q.draconic_evolution.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 12.75d,
 	y: 2.25d,
 	text: [
-		"{bq.quest1068.desc}"
+		"{q.draconic_evolution.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

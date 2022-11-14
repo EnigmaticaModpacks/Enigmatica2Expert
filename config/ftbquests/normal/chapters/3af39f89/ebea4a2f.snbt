@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest217.name}",
+	title: "{q.thermal_expansion.induction_smelter.name}",
 	x: 14.333333333333334d,
 	y: 4.333333333333333d,
 	text: [
-		"{bq.quest217.desc}"
+		"{q.thermal_expansion.induction_smelter.desc}"
 	],
 	dependencies: [
 		"ead3ef07"

@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: -0.5d,
 	text: [
-		"{bq.quest938.desc}"
+		"{q.immersive_engineer.fluid_pipe.desc}"
 	],
 	dependencies: [
 		"1c4deb33"

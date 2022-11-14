@@ -2,7 +2,7 @@
 	x: -11.0d,
 	y: 7.0d,
 	text: [
-		"{bq.quest994.desc}"
+		"{q.utils.slime_cube.desc}"
 	],
 	dependencies: [
 		"dc869094"

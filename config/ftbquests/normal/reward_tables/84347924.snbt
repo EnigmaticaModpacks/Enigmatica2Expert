@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest891.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "forestry:digger_bag_t2"

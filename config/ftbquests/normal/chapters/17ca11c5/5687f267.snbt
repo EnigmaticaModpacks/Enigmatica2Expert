@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest452.name}",
+	title: "{q.bragging_rights.scroll_of_massive_.name}",
 	x: 2.375d,
 	y: 3.541666666666667d,
 	text: [
-		"{bq.quest452.desc}"
+		"{q.bragging_rights.scroll_of_massive_.desc}"
 	],
 	dependencies: [
 		"a1377b51"

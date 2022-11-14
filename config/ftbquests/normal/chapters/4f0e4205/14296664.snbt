@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest95.name}",
+	title: "{q.twilight_forest.questing_ram.name}",
 	x: 1.8d,
 	y: -0.8333333333333333d,
 	text: [
-		"{bq.quest95.desc}"
+		"{q.twilight_forest.questing_ram.desc}"
 	],
 	dependencies: [
 		"b42dc050"

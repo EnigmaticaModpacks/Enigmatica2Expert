@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest661.name}",
+	title: "{q.thaumcraft.alchemical_brass.name}",
 	x: 8.166666666666668d,
 	y: 2.5d,
 	text: [
-		"{bq.quest661.desc}"
+		"{q.thaumcraft.alchemical_brass.desc}"
 	],
 	dependencies: [
 		"05d8ef32"

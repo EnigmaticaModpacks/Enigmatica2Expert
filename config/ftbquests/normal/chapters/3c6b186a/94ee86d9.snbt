@@ -2,7 +2,7 @@
 	x: 5.833333333333333d,
 	y: 7.5d,
 	text: [
-		"{bq.quest88.desc}"
+		"{q.industrialcraft.block_cutting_mach.desc}"
 	],
 	dependencies: [
 		"2231f97b"

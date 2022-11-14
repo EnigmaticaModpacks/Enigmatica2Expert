@@ -2,7 +2,7 @@
 	x: -1.8333333333333335d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest1060.desc}"
+		"{q.industrialcraft.cropnalyzer.desc}"
 	],
 	dependencies: [
 		"b522c8b8"

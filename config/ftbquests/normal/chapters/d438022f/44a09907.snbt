@@ -2,7 +2,7 @@
 	x: -9.0d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1027.desc}"
+		"{q.utils.fan.desc}"
 	],
 	dependencies: [
 		"5966422c"

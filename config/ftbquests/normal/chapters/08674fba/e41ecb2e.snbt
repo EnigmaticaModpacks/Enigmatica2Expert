@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest436.name}",
+	title: "{q.advanced_rocketry.gravity_controller.name}",
 	x: 10.166666666666666d,
 	y: 8.5d,
 	text: [
-		"{bq.quest436.desc}"
+		"{q.advanced_rocketry.gravity_controller.desc}"
 	],
 	dependencies: [
 		"8b514522"

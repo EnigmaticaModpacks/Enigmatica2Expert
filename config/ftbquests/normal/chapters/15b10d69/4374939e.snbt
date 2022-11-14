@@ -2,7 +2,7 @@
 	x: -2.5d,
 	y: 6.333333333333333d,
 	text: [
-		"{bq.quest810.desc}"
+		"{q.industrial_foregoing.enchantment_extrac.desc}"
 	],
 	dependencies: [
 		"69cbbacb"

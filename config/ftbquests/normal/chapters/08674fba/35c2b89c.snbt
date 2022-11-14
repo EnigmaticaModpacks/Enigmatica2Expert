@@ -2,7 +2,7 @@
 	x: 0.5d,
 	y: 3.9999999999999996d,
 	text: [
-		"{bq.quest401.desc}"
+		"{q.advanced_rocketry.suit_workstation.desc}"
 	],
 	dependencies: [
 		"c2c58124"

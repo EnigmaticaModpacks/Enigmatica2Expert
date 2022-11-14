@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest914.desc}"
+		"{q.industrialcraft.universal_fluid_cell.desc}"
 	],
 	dependencies: [
 		"b522c8b8"

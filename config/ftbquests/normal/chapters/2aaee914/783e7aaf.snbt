@@ -2,7 +2,7 @@
 	x: 10.166666666666666d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest188.desc}"
+		"{q.mekanism.quantum_entanglopo.desc}"
 	],
 	dependencies: [
 		"f79e06c9"

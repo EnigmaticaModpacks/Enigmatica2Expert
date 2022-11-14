@@ -2,7 +2,7 @@
 	x: 3.3333333333333335d,
 	y: 14.666666666666666d,
 	text: [
-		"{bq.quest666.desc}"
+		"{q.thaumcraft.infusion_cost_stone.desc}"
 	],
 	dependencies: [
 		"9e1f867f"

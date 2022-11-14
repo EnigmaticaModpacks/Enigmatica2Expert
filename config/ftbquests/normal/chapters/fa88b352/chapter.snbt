@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter17.name}",
+	title: "{q.nuclearcraft.name}",
 	icon: "nuclearcraft:fission_controller_new_active",
 	description: [
-		"{bq.chapter17.desc}"
+		"{q.nuclearcraft.desc}"
 	],
 	always_invisible: false,
 	group: 0,

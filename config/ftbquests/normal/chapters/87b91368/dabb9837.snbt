@@ -2,7 +2,7 @@
 	x: 0.75d,
 	y: 1.25d,
 	text: [
-		"{bq.quest742.desc}"
+		"{q.animals.giant_death_worm_egg.desc}"
 	],
 	dependencies: [
 		"e4f22972"

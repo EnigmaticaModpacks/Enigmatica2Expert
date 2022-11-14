@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest404.name}",
+	title: "{q.botania.wand_of_equal_trade.name}",
 	x: 10.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest404.desc}"
+		"{q.botania.wand_of_equal_trade.desc}"
 	],
 	dependencies: [
 		"5672d99b",

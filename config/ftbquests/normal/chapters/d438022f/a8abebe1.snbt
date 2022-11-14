@@ -2,7 +2,7 @@
 	x: -4.833333333333333d,
 	y: 23.5d,
 	text: [
-		"{bq.quest1048.desc}"
+		"{q.utils.shulker_pearl.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

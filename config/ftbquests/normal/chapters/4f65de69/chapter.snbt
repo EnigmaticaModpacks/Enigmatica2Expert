@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter0.name}",
+	title: "{q.getting_started.name}",
 	icon: "thermalexpansion:satchel",
 	description: [
-		"{bq.chapter0.desc}"
+		"{q.getting_started.desc}"
 	],
 	always_invisible: false,
 	group: 0,

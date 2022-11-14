@@ -2,7 +2,7 @@
 	x: 8.833333333333334d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest197.desc}"
+		"{q.mekanism.refined_obsidian_i.desc}"
 	],
 	dependencies: [
 		"9eb5e63d"

@@ -2,7 +2,7 @@
 	x: 12.833333333333334d,
 	y: 3.0d,
 	text: [
-		"{bq.quest515.desc}"
+		"{q.nuclearcraft.chemical_reactor.desc}"
 	],
 	dependencies: [
 		"3ba07972",

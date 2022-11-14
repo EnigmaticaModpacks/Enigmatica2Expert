@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest957.name}",
+	title: "{q.thaumcraft.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -23,7 +23,7 @@
 	x: 11.25d,
 	y: 9.0d,
 	text: [
-		"{bq.quest957.desc}"
+		"{q.thaumcraft.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

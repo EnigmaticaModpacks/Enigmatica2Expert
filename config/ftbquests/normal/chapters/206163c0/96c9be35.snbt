@@ -2,7 +2,7 @@
 	x: -6.166666666666667d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest289.desc}"
+		"{q.forestry.peat_fired_engine.desc}"
 	],
 	dependencies: [
 		"b9da4db4"

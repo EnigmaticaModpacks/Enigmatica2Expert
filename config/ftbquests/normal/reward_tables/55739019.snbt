@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest839.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "advgenerators:exchanger_controller"

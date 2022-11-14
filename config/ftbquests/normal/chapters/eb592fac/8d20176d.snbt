@@ -2,7 +2,7 @@
 	x: -1.0d,
 	y: 5.0d,
 	text: [
-		"{bq.quest262.desc}"
+		"{q.rftools.shape_card_void_.desc}"
 	],
 	dependencies: [
 		"8eca55bc"

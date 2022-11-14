@@ -2,7 +2,7 @@
 	x: -6.833333333333333d,
 	y: 3.9583333333333335d,
 	text: [
-		"{bq.quest770.desc}"
+		"{q.actually_additions.bio_reactor.desc}"
 	],
 	dependencies: [
 		"03d4419e"

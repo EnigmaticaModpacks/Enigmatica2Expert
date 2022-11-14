@@ -2,7 +2,7 @@
 	x: -5.0d,
 	y: 10.5d,
 	text: [
-		"{bq.quest982.desc}"
+		"{q.utils.enhanced_building_.desc}"
 	],
 	dependencies: [
 		"9f41b8d8"

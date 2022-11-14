@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest134.desc}"
+		"{q.industrial_foregoing.material_stonework.desc}"
 	],
 	dependencies: [
 		"74175c1c"

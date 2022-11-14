@@ -2,7 +2,7 @@
 	x: 9.3d,
 	y: 5.3d,
 	text: [
-		"{bq.quest234.desc}"
+		"{q.thermal_expansion.nullifier.desc}"
 	],
 	dependencies: [
 		"85977752",

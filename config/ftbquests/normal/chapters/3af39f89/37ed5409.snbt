@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest875.name}",
+	title: "{q.thermal_expansion.phytogenic_insolator.name}",
 	x: 15.333333333333334d,
 	y: 4.333333333333333d,
 	text: [
-		"{bq.quest875.desc}"
+		"{q.thermal_expansion.phytogenic_insolator.desc}"
 	],
 	dependencies: [
 		"e2d39ad3"

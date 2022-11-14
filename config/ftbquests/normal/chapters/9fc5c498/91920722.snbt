@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 2.5d,
 	text: [
-		"{bq.quest587.desc}"
+		"{q.ender_io.dimensional_transc.desc}"
 	],
 	dependencies: [
 		"0cce2fa6"

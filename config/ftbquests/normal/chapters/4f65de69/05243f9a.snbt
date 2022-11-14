@@ -3,7 +3,7 @@
 	x: -0.875d,
 	y: 0.5d,
 	text: [
-		"{bq.quest763.desc}"
+		"{q.getting_started.casting_machine.desc}"
 	],
 	dependencies: [
 		"65ffe0b8"

@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest589.desc}"
+		"{q.ender_io.capacitor_bank.desc}"
 	],
 	dependencies: [
 		"df96f36a",

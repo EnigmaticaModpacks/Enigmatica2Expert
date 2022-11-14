@@ -2,7 +2,7 @@
 	x: -9.5d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest990.desc}"
+		"{q.utils.igniter.desc}"
 	],
 	dependencies: [
 		"1e3231e9"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest892.name}",
+	title: "{q.getting_started.condition_overload.name}",
 	x: 15.6d,
 	y: 5.1d,
 	text: [
-		"{bq.quest892.desc}"
+		"{q.getting_started.condition_overload.desc}"
 	],
 	dependencies: [
 		"5c870b2e"

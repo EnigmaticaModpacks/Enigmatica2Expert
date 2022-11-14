@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest765.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "botania:manaresource 1 3"

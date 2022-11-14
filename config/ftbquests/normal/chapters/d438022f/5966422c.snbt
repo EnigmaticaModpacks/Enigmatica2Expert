@@ -2,7 +2,7 @@
 	x: -9.5d,
 	y: 15.5d,
 	text: [
-		"{bq.quest1006.desc}"
+		"{q.utils.hydrator.desc}"
 	],
 	dependencies: [
 		"d8284260",

@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter1.name}",
+	title: "{q.advanced_rocketry.name}",
 	icon: "advancedrocketry:planetidchip",
 	description: [
-		"{bq.chapter1.desc}"
+		"{q.advanced_rocketry.desc}"
 	],
 	always_invisible: false,
 	group: 0,

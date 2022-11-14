@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest601.name}",
+	title: "{q.blood_magic.blood_altar_tier_2.name}",
 	x: 5.833333333333333d,
 	y: 3.1666666666666665d,
 	text: [
-		"{bq.quest601.desc}"
+		"{q.blood_magic.blood_altar_tier_2.desc}"
 	],
 	dependencies: [
 		"6a6dc36e"

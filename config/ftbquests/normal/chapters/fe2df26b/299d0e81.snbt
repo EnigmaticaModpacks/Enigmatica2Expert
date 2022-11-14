@@ -2,7 +2,7 @@
 	x: 5.4d,
 	y: -1.9d,
 	text: [
-		"{bq.quest857.desc}"
+		"{q.applied_energetics.wireless_crafting_.desc}"
 	],
 	dependencies: [
 		"6690bc40"

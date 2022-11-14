@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest387.desc}"
+		"{q.botania.elementium_ingot.desc}"
 	],
 	dependencies: [
 		"5672d99b",

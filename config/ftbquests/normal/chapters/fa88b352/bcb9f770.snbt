@@ -2,7 +2,7 @@
 	x: 2.8333333333333335d,
 	y: 3.5d,
 	text: [
-		"{bq.quest513.desc}"
+		"{q.nuclearcraft.isotope_separator.desc}"
 	],
 	dependencies: [
 		"626f1235",

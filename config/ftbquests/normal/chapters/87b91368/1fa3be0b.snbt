@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest725.name}",
+	title: "{q.animals.chef.name}",
 	x: -3.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest725.desc}"
+		"{q.animals.chef.desc}"
 	],
 	dependencies: [
 		"a65a3f5b",

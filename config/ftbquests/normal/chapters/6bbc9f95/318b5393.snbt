@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest663.desc}"
+		"{q.thaumcraft.everfull_urn.desc}"
 	],
 	dependencies: [
 		"4510505c"

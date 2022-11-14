@@ -2,7 +2,7 @@
 	x: -7.125d,
 	y: 0.6666666666666666d,
 	text: [
-		"{bq.quest255.desc}"
+		"{q.rftools.matter_receiver.desc}"
 	],
 	dependencies: [
 		"094a95d2",

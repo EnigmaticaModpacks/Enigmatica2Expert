@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest352.name}",
+	title: "{q.extra_utilities.halitosis_generator.name}",
 	x: 14.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest352.desc}"
+		"{q.extra_utilities.halitosis_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

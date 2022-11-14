@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest161.desc}"
+		"{q.astral_sorcery.celestial_altar.desc}"
 	],
 	dependencies: [
 		"d051b719"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest847.name}",
+	title: "{q.applied_energetics.mass_assembly_cham.name}",
 	icon: "threng:big_assembler 1 2",
 	x: 4.0d,
 	y: 4.0d,
 	text: [
-		"{bq.quest847.desc}"
+		"{q.applied_energetics.mass_assembly_cham.desc}"
 	],
 	dependencies: [
 		"75e96e73"

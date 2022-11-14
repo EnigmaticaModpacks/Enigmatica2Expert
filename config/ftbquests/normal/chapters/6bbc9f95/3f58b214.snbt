@@ -8,7 +8,7 @@
 	x: 13.833333333333334d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest680.desc}"
+		"{q.thaumcraft.thaumium_fortress_.desc}"
 	],
 	dependencies: [
 		"8535b078"

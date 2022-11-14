@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 6.75d,
 	text: [
-		"{bq.quest523.desc}"
+		"{q.draconic_evolution.awakened_core.desc}"
 	],
 	dependencies: [
 		"64f8083b"

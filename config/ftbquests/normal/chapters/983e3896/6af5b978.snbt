@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 3.5d,
 	text: [
-		"{bq.quest172.desc}"
+		"{q.astral_sorcery.attunement_altar.desc}"
 	],
 	dependencies: [
 		"d051b719"

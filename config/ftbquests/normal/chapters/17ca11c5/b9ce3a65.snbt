@@ -2,7 +2,7 @@
 	x: 6.375d,
 	y: -4.0d,
 	text: [
-		"{bq.quest925.desc}"
+		"{q.bragging_rights.creative_harvest.desc}"
 	],
 	dependencies: [
 		"b4b83088"

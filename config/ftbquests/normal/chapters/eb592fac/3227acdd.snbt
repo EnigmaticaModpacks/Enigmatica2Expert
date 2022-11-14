@@ -2,7 +2,7 @@
 	x: -2.125d,
 	y: 0.6041666666666666d,
 	text: [
-		"{bq.quest272.desc}"
+		"{q.rftools.dialing_device.desc}"
 	],
 	dependencies: [
 		"f6e8e410"

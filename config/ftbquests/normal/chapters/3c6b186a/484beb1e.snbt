@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest422.desc}"
+		"{q.industrialcraft.cf_sprayer.desc}"
 	],
 	dependencies: [
 		"2231f97b"

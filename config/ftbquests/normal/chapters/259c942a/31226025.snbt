@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest108.name}",
+	title: "{q.immersive_engineer.improved_blast_fur.name}",
 	icon: "immersiveengineering:stone_decoration 1 2",
 	x: -0.16666666666666663d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest108.desc}"
+		"{q.immersive_engineer.improved_blast_fur.desc}"
 	],
 	dependencies: [
 		"876a8652"

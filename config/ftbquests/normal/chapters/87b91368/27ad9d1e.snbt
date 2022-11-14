@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest771.name}",
+	title: "{q.animals.black_death.name}",
 	icon: {
 		id: "draconicevolution:mob_soul",
 		tag: {
@@ -9,7 +9,7 @@
 	x: -0.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest771.desc}"
+		"{q.animals.black_death.desc}"
 	],
 	dependencies: [
 		"ab77ca11"

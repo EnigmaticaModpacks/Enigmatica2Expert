@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest697.name}",
+	title: "{q.getting_started.cow_in_a_jar.name}",
 	icon: "cookingforblockheads:cow_jar",
 	x: 2.125d,
 	y: 6.041666666666667d,
 	text: [
-		"{bq.quest697.desc}"
+		"{q.getting_started.cow_in_a_jar.desc}"
 	],
 	dependencies: [
 		"e3acd250"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest397.name}",
+	title: "{q.botania.clayconia.name}",
 	x: 18.5d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest397.desc}"
+		"{q.botania.clayconia.desc}"
 	],
 	dependencies: [
 		"5fe4c911",

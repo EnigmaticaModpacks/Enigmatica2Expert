@@ -2,7 +2,7 @@
 	x: -3.666666666666667d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1036.desc}"
+		"{q.utils.air_charm.desc}"
 	],
 	dependencies: [
 		"a6a64aad"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest291.name}",
+	title: "{q.forestry.circuit_boards.name}",
 	x: -3.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest291.desc}"
+		"{q.forestry.circuit_boards.desc}"
 	],
 	dependencies: [
 		"8806b7fe"

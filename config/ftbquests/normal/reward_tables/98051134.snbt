@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest786.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "twilightforest:ice_sword"

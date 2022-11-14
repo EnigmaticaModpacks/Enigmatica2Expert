@@ -3,7 +3,7 @@
 	x: 0.6666666666666666d,
 	y: 10.0d,
 	text: [
-		"{bq.quest650.desc}"
+		"{q.thaumcraft.essentia_smeltery.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

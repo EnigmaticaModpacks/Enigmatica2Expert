@@ -2,7 +2,7 @@
 	x: 6.666666666666667d,
 	y: 7.333333333333333d,
 	text: [
-		"{bq.quest324.desc}"
+		"{q.extra_utilities.screen.desc}"
 	],
 	dependencies: [
 		"0e08c73f"

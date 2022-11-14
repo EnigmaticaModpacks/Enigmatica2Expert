@@ -2,7 +2,7 @@
 	x: 1.625d,
 	y: 9.5d,
 	text: [
-		"{bq.quest24.desc}"
+		"{q.bragging_rights.infinity_helmet.desc}"
 	],
 	dependencies: [
 		"af1b2362"

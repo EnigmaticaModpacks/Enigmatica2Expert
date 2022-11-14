@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter2.name}",
+	title: "{q.forestry.name}",
 	icon: "forestry:carpenter",
 	description: [
-		"{bq.chapter2.desc}"
+		"{q.forestry.desc}"
 	],
 	always_invisible: false,
 	group: 0,

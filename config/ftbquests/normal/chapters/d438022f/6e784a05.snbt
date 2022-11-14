@@ -2,7 +2,7 @@
 	x: -7.833333333333334d,
 	y: 24.166666666666668d,
 	text: [
-		"{bq.quest972.desc}"
+		"{q.utils.null_charm.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

@@ -2,7 +2,7 @@
 	x: 0.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest284.desc}"
+		"{q.forestry.centrifuge.desc}"
 	],
 	dependencies: [
 		"2c5eefd7"

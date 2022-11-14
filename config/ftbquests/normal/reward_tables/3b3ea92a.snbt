@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest726.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "storagedrawers:upgrade_storage 1 1",

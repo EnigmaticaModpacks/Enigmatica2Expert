@@ -2,7 +2,7 @@
 	x: -1.8333333333333335d,
 	y: 3.5d,
 	text: [
-		"{bq.quest109.desc}"
+		"{q.immersive_engineer.kinetic_dynamo.desc}"
 	],
 	dependencies: [
 		"3e86795a"

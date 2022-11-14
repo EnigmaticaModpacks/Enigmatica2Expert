@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest721.name}",
+	title: "{q.animals.cheese_wheels.name}",
 	icon: "animania:friesian_cheese_wheel",
 	x: -5.0d,
 	y: 1.5d,
 	text: [
-		"{bq.quest721.desc}"
+		"{q.animals.cheese_wheels.desc}"
 	],
 	dependencies: [
 		"46340f69"

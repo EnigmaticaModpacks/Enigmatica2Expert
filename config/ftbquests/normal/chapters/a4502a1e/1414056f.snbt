@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest353.name}",
+	title: "{q.extra_utilities.death_generator.name}",
 	x: 13.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest353.desc}"
+		"{q.extra_utilities.death_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest351.name}",
+	title: "{q.extra_utilities.disenchantment_gen.name}",
 	x: 18.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest351.desc}"
+		"{q.extra_utilities.disenchantment_gen.desc}"
 	],
 	dependencies: [
 		"42b1f141"

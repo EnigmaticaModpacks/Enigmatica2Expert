@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 3.5d,
 	text: [
-		"{bq.quest79.desc}"
+		"{q.industrialcraft.compressor.desc}"
 	],
 	dependencies: [
 		"96a7cd4a"

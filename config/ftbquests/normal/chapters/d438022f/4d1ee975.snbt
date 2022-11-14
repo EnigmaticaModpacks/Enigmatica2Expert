@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest950.name}",
+	title: "{q.utils.mod:_quark.name}",
 	x: -20.666666666666664d,
 	y: 13.5d,
 	shape: "heart",
 	text: [
-		"{bq.quest950.desc}"
+		"{q.utils.mod:_quark.desc}"
 	],
 	dependencies: [
 		"37406152"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest616.name}",
+	title: "{q.blood_magic.magician_blood_orb.name}",
 	x: 8.5d,
 	y: 4.5d,
 	text: [
-		"{bq.quest616.desc}"
+		"{q.blood_magic.magician_blood_orb.desc}"
 	],
 	dependencies: [
 		"170439ef"

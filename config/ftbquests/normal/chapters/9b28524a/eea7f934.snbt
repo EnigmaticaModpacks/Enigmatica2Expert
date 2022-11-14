@@ -2,7 +2,7 @@
 	x: 5.166666666666667d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest824.desc}"
+		"{q.blood_magic.speed_rune.desc}"
 	],
 	dependencies: [
 		"3bf12c63"

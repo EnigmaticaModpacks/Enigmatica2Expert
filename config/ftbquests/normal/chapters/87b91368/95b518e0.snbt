@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest727.name}",
+	title: "{q.animals.rat_ore_doubling.name}",
 	x: -3.5d,
 	y: 3.75d,
 	text: [
-		"{bq.quest727.desc}"
+		"{q.animals.rat_ore_doubling.desc}"
 	],
 	dependencies: [
 		"6a56d29d",

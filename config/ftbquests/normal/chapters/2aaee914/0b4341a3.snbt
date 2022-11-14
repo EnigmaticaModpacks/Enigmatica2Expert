@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest173.name}",
+	title: "{q.mekanism.mekanism.name}",
 	icon: "mekanism:basicblock 1 8",
 	x: 0.8333333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest173.desc}"
+		"{q.mekanism.mekanism.desc}"
 	],
 	dependencies: [
 		"bd2ed1f2"

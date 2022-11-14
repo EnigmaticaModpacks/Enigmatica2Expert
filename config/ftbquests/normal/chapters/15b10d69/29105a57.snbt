@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest141.name}",
+	title: "{q.industrial_foregoing.upgrades.name}",
 	icon: "industrialforegoing:range_addon 1 9",
 	x: 10.0d,
 	y: 1.0d,
 	text: [
-		"{bq.quest141.desc}"
+		"{q.industrial_foregoing.upgrades.desc}"
 	],
 	dependencies: [
 		"74175c1c"

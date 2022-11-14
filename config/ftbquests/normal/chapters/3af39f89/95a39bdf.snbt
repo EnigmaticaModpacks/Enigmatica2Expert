@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest780.name}",
+	title: "{q.thermal_expansion.flux_armor.name}",
 	icon: {
 		id: "redstonearsenal:armor.plate_flux",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 4.5d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest780.desc}"
+		"{q.thermal_expansion.flux_armor.desc}"
 	],
 	dependencies: [
 		"9c15c499"

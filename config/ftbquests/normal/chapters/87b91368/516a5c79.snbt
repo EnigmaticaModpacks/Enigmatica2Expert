@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest247.name}",
+	title: "{q.animals.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -22,7 +22,7 @@
 	x: 4.5d,
 	y: 6.75d,
 	text: [
-		"{bq.quest247.desc}"
+		"{q.animals.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

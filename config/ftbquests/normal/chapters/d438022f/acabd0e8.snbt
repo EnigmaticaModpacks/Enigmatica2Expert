@@ -2,7 +2,7 @@
 	x: -6.333333333333333d,
 	y: 19.333333333333332d,
 	text: [
-		"{bq.quest964.desc}"
+		"{q.utils.ender_hopper.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

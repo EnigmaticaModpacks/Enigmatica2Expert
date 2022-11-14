@@ -2,7 +2,7 @@
 	x: -11.0d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1024.desc}"
+		"{q.utils.tempered_glass.desc}"
 	],
 	dependencies: [
 		"5966422c"

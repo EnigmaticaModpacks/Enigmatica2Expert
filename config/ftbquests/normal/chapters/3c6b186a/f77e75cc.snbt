@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest421.name}",
+	title: "{q.industrialcraft.plutonium.name}",
 	x: 4.166666666666666d,
 	y: 8.833333333333334d,
 	text: [
-		"{bq.quest421.desc}"
+		"{q.industrialcraft.plutonium.desc}"
 	],
 	dependencies: [
 		"533c2a59"

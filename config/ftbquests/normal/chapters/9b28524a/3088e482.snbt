@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest624.desc}"
+		"{q.blood_magic.arcane_ashes.desc}"
 	],
 	dependencies: [
 		"54d286c4"

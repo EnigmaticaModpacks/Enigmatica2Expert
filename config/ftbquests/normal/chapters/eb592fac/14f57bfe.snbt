@@ -2,7 +2,7 @@
 	x: -7.125d,
 	y: 1.6666666666666667d,
 	text: [
-		"{bq.quest264.desc}"
+		"{q.rftools.charged_porter.desc}"
 	],
 	dependencies: [
 		"971d0e60"

@@ -2,7 +2,7 @@
 	x: 3.625d,
 	y: 2.0d,
 	text: [
-		"{bq.quest873.desc}"
+		"{q.getting_started.diamond.desc}"
 	],
 	dependencies: [
 		"dabc815c"

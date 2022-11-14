@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest907.desc}"
+		"{q.mekanism.electric_pump.desc}"
 	],
 	dependencies: [
 		"7b68c590"

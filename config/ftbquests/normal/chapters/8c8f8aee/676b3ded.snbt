@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest753.name}",
+	title: "{q.actually_additions.lava_factory.name}",
 	x: 3.6666666666666665d,
 	y: 8.5d,
 	text: [
-		"{bq.quest753.desc}"
+		"{q.actually_additions.lava_factory.desc}"
 	],
 	dependencies: [
 		"0ebc3d1d"

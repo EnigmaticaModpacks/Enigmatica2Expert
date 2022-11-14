@@ -2,7 +2,7 @@
 	x: -3.0d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest146.desc}"
+		"{q.industrial_foregoing.fluid_crafter.desc}"
 	],
 	dependencies: [
 		"0060934f"

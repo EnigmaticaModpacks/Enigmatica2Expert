@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest110.name}",
+	title: "{q.extra_utilities.extra_utilities_2.name}",
 	icon: "extrautils2:book",
 	x: 3.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest110.desc}"
+		"{q.extra_utilities.extra_utilities_2.desc}"
 	],
 	dependencies: [
 		"e5622496"

@@ -2,7 +2,7 @@
 	x: 7.833333333333333d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest383.desc}"
+		"{q.botania.elven_gateway_core.desc}"
 	],
 	dependencies: [
 		"5672d99b",

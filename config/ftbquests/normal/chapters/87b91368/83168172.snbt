@@ -2,7 +2,7 @@
 	x: -1.25d,
 	y: 6.25d,
 	text: [
-		"{bq.quest730.desc}"
+		"{q.animals.chunky_cheese_token.desc}"
 	],
 	dependencies: [
 		"eaad67ab"

@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest12.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "mysticalagriculture:storage 1 5",

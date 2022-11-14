@@ -3,7 +3,7 @@
 	x: 15.166666666666666d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest679.desc}"
+		"{q.thaumcraft.void_helm.desc}"
 	],
 	dependencies: [
 		"83ab3c5f"

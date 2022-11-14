@@ -2,7 +2,7 @@
 	x: -8.75d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest775.desc}"
+		"{q.forestry.bottler.desc}"
 	],
 	dependencies: [
 		"383eccde"

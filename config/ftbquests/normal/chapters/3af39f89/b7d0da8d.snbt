@@ -2,7 +2,7 @@
 	x: 14.333333333333334d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest236.desc}"
+		"{q.thermal_expansion.rich_slag.desc}"
 	],
 	dependencies: [
 		"ebea4a2f"

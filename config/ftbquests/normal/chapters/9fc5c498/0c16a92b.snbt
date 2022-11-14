@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest792.name}",
+	title: "{q.ender_io.dark_steel_armor.name}",
 	icon: "enderio:item_dark_steel_chestplate",
 	x: -0.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest792.desc}"
+		"{q.ender_io.dark_steel_armor.desc}"
 	],
 	dependencies: [
 		"2265d20b"

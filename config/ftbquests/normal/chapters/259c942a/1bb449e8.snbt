@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest555.desc}"
+		"{q.immersive_engineer.portable_drill.desc}"
 	],
 	dependencies: [
 		"54fa3132"

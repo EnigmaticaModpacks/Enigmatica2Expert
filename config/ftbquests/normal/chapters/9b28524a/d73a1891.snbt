@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 4.166666666666666d,
 	text: [
-		"{bq.quest606.desc}"
+		"{q.blood_magic.petty_tartaric_gem.desc}"
 	],
 	dependencies: [
 		"54d286c4"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest348.name}",
+	title: "{q.extra_utilities.frosty_generator.name}",
 	x: 16.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest348.desc}"
+		"{q.extra_utilities.frosty_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

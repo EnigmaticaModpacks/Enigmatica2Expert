@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 6.5d,
 	text: [
-		"{bq.quest405.desc}"
+		"{q.botania.shard_of_laputa.desc}"
 	],
 	dependencies: [
 		"f94ec042",

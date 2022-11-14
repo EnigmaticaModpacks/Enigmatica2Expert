@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest200.name}",
+	title: "{q.mekanism.mekanism_steel.name}",
 	icon: "thermalfoundation:material 1 160",
 	x: 7.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest200.desc}"
+		"{q.mekanism.mekanism_steel.desc}"
 	],
 	dependencies: [
 		"4b203b3d"

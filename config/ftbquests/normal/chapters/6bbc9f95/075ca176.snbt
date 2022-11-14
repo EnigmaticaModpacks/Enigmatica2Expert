@@ -2,7 +2,7 @@
 	x: 2.0d,
 	y: 12.0d,
 	text: [
-		"{bq.quest660.desc}"
+		"{q.thaumcraft.arcane_bellows.desc}"
 	],
 	dependencies: [
 		"f85506a2"

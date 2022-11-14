@@ -2,7 +2,7 @@
 	x: 1.1666666666666667d,
 	y: 2.833333333333334d,
 	text: [
-		"{bq.quest708.desc}"
+		"{q.bragging_rights.creative_cheese.desc}"
 	],
 	dependencies: [
 		"a1377b51"

@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: 0.5d,
 	text: [
-		"{bq.quest633.desc}"
+		"{q.blood_magic.seer_s_sigil.desc}"
 	],
 	dependencies: [
 		"1b9ee0ad"

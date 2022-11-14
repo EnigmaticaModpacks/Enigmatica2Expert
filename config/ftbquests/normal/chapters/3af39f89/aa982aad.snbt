@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest879.name}",
+	title: "{q.thermal_expansion.mini_gate:_thermal.name}",
 	icon: "thermalexpansion:frame 1 64",
 	x: 10.0d,
 	y: 4.5d,

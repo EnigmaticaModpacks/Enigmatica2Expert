@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 2.5d,
 	text: [
-		"{bq.quest566.desc}"
+		"{q.ender_io.stirling_generator.desc}"
 	],
 	dependencies: [
 		"2265d20b"

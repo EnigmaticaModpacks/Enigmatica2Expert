@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest361.name}",
+	title: "{q.botania.pure_daisy.name}",
 	x: 3.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest361.desc}"
+		"{q.botania.pure_daisy.desc}"
 	],
 	dependencies: [
 		"5672d99b",

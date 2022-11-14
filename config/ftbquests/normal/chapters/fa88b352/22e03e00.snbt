@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest451.name}",
+	title: "{q.nuclearcraft.nuclearcraft.name}",
 	icon: "nuclearcraft:manufactory_idle",
 	x: 7.833333333333333d,
 	y: 7.5d,
 	text: [
-		"{bq.quest451.desc}"
+		"{q.nuclearcraft.nuclearcraft.desc}"
 	],
 	dependencies: [
 		"0bf36970"

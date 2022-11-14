@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: -0.5d,
 	text: [
-		"{bq.quest794.desc}"
+		"{q.forestry.scented_hive.desc}"
 	],
 	dependencies: [
 		"d7a49014"

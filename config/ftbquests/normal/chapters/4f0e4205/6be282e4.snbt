@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest866.name}",
+	title: "{q.twilight_forest.yeti_lair.name}",
 	x: 4.5d,
 	y: 0.5d,
 	text: [
-		"{bq.quest866.desc}"
+		"{q.twilight_forest.yeti_lair.desc}"
 	],
 	dependencies: [
 		"da09753d"

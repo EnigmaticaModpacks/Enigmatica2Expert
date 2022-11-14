@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest251.name}",
+	title: "{q.thermal_expansion.resin_funnel.name}",
 	x: 11.333333333333334d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest251.desc}"
+		"{q.thermal_expansion.resin_funnel.desc}"
 	],
 	dependencies: [
 		"f7355729"

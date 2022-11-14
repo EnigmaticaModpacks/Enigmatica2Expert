@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest170.desc}"
+		"{q.astral_sorcery.stardust.desc}"
 	],
 	dependencies: [
 		"466bf58c",

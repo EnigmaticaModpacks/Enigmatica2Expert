@@ -2,7 +2,7 @@
 	x: 5.0d,
 	y: 6.5d,
 	text: [
-		"{bq.quest788.desc}"
+		"{q.actually_additions.teleport_staff.desc}"
 	],
 	dependencies: [
 		"98a9cb2b"

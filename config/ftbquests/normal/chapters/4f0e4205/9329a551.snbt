@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest868.name}",
+	title: "{q.twilight_forest.the_labyrinth.name}",
 	x: 4.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest868.desc}"
+		"{q.twilight_forest.the_labyrinth.desc}"
 	],
 	dependencies: [
 		"da09753d"

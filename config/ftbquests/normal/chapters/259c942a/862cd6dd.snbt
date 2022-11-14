@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest295.desc}"
+		"{q.immersive_engineer.redstone_engineeri.desc}"
 	],
 	dependencies: [
 		"31226025"

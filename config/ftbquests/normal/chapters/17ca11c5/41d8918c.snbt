@@ -2,7 +2,7 @@
 	x: 3.791666666666667d,
 	y: -3.4166666666666665d,
 	text: [
-		"{bq.quest823.desc}"
+		"{q.bragging_rights.automation_interface.desc}"
 	],
 	dependencies: [
 		"b4b83088"

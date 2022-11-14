@@ -2,7 +2,7 @@
 	x: 6.0d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest622.desc}"
+		"{q.blood_magic.weak_activation_cr.desc}"
 	],
 	dependencies: [
 		"170439ef"

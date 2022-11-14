@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest329.name}",
+	title: "{q.extra_utilities.cursed_earth.name}",
 	icon: "extrautils2:cursedearth",
 	x: 0.9166666666666667d,
 	y: -0.37499999999999994d,
 	text: [
-		"{bq.quest329.desc}"
+		"{q.extra_utilities.cursed_earth.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

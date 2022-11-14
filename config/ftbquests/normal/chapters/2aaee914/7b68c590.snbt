@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest177.desc}"
+		"{q.mekanism.atomic_alloy.desc}"
 	],
 	dependencies: [
 		"6856159e",

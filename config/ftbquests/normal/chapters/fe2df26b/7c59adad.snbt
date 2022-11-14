@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest837.desc}"
+		"{q.applied_energetics.matter_condenser.desc}"
 	],
 	dependencies: [
 		"882dc2b8"

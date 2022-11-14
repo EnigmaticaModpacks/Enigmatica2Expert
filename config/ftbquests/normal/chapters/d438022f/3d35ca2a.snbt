@@ -2,7 +2,7 @@
 	x: -11.166666666666666d,
 	y: 5.833333333333333d,
 	text: [
-		"{bq.quest795.desc}"
+		"{q.utils.time_in_a_bottle.desc}"
 	],
 	dependencies: [
 		"dc869094"

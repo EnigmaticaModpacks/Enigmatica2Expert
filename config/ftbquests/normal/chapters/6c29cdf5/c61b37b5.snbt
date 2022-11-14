@@ -2,7 +2,7 @@
 	x: 0.5d,
 	y: 6.5d,
 	text: [
-		"{bq.quest373.desc}"
+		"{q.botania.alchemy_catalyst.desc}"
 	],
 	dependencies: [
 		"5672d99b",

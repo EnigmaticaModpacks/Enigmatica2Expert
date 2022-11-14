@@ -2,7 +2,7 @@
 	x: 2.8333333333333335d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest159.desc}"
+		"{q.astral_sorcery.linking_tool.desc}"
 	],
 	dependencies: [
 		"d051b719"

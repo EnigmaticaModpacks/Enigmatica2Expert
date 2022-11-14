@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest10.name}",
+	title: "{q.gates.gate:_ex_nihilo.name}",
 	x: 7.5d,
 	y: 0.5d,
 	text: [
-		"{bq.quest10.desc}"
+		"{q.gates.gate:_ex_nihilo.desc}"
 	],
 	dependencies: [
 		"ca359f03"

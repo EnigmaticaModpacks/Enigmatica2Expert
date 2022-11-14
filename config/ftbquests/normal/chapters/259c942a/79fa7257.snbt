@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest1070.name}",
+	title: "{q.immersive_engineer.solar_tower.name}",
 	x: 4.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest1070.desc}"
+		"{q.immersive_engineer.solar_tower.desc}"
 	],
 	dependencies: [
 		"2de1b9db"

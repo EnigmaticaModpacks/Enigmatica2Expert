@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest254.name}",
+	title: "{q.gates.gate:_advanced_roc.name}",
 	x: 3.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest254.desc}"
+		"{q.gates.gate:_advanced_roc.desc}"
 	],
 	dependencies: [
 		"bd7fc30c"

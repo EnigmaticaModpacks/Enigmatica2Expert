@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest50.name}",
+	title: "{q.getting_started.wood.name}",
 	icon: "minecraft:log",
 	x: -5.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest50.desc}"
+		"{q.getting_started.wood.desc}"
 	],
 	dependencies: [
 		"fc892a79"

@@ -2,7 +2,7 @@
 	x: -10.833333333333334d,
 	y: 8.166666666666668d,
 	text: [
-		"{bq.quest986.desc}"
+		"{q.utils.fertilized_dirt.desc}"
 	],
 	dependencies: [
 		"dc869094"

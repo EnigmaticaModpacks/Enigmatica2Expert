@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest871.name}",
+	title: "{q.twilight_forest.final_plateau.name}",
 	x: 8.5d,
 	y: 0.5d,
 	text: [
-		"{bq.quest871.desc}"
+		"{q.twilight_forest.final_plateau.desc}"
 	],
 	dependencies: [
 		"38b0f204"

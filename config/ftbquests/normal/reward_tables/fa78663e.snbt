@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest213.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "exnihilocreatio:item_doll 1 4",

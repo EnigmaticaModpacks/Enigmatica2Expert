@@ -2,7 +2,7 @@
 	x: -2.1666666666666665d,
 	y: 3.5d,
 	text: [
-		"{bq.quest292.desc}"
+		"{q.forestry.tin_electron_tube.desc}"
 	],
 	dependencies: [
 		"c8f37d85",

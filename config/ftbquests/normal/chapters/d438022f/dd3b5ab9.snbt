@@ -2,7 +2,7 @@
 	x: -10.0d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1045.desc}"
+		"{q.utils.ranged_building_sc.desc}"
 	],
 	dependencies: [
 		"33b238ff"

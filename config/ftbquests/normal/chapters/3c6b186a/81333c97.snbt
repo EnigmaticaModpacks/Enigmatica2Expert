@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest893.name}",
+	title: "{q.industrialcraft.addon:_industrial_.name}",
 	icon: {
 		id: "industrialwires:ic2_wire_coil",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 4.166666666666666d,
 	y: -0.5416666666666667d,
 	text: [
-		"{bq.quest893.desc}"
+		"{q.industrialcraft.addon:_industrial_.desc}"
 	],
 	dependencies: [
 		"cae88f3f"

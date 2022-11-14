@@ -2,7 +2,7 @@
 	x: 2.5d,
 	y: 4.0d,
 	text: [
-		"{bq.quest848.desc}"
+		"{q.applied_energetics.fluix_aggregator.desc}"
 	],
 	dependencies: [
 		"b6524265"

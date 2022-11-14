@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest364.name}",
+	title: "{q.botania.endoflame.name}",
 	x: 11.833333333333334d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest364.desc}"
+		"{q.botania.endoflame.desc}"
 	],
 	dependencies: [
 		"5672d99b",

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest253.name}",
+	title: "{q.thermal_expansion.pyrolytic_conversion.name}",
 	x: 10.3d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest253.desc}"
+		"{q.thermal_expansion.pyrolytic_conversion.desc}"
 	],
 	dependencies: [
 		"85fb72cb"

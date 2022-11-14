@@ -2,7 +2,7 @@
 	x: 0.8333333333333333d,
 	y: 10.5d,
 	text: [
-		"{bq.quest729.desc}"
+		"{q.mekanism.chemical_dissoluti.desc}"
 	],
 	dependencies: [
 		"b149be6c"

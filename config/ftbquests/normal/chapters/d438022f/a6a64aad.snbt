@@ -2,7 +2,7 @@
 	x: -3.666666666666667d,
 	y: 19.166666666666668d,
 	text: [
-		"{bq.quest1008.desc}"
+		"{q.utils.solidifier.desc}"
 	],
 	dependencies: [
 		"33b238ff",

@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest800.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "netherendingores:ore_nether_modded_1 1 6",

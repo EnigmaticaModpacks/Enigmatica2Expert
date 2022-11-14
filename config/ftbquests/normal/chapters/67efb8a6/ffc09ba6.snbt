@@ -2,7 +2,7 @@
 	x: 5.0d,
 	y: 10.0d,
 	text: [
-		"{bq.quest539.desc}"
+		"{q.draconic_evolution.pickaxe_of_the_wyv.desc}"
 	],
 	dependencies: [
 		"64f8083b"

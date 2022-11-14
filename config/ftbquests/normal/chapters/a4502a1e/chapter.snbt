@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter14.name}",
+	title: "{q.extra_utilities.name}",
 	icon: "extrautils2:user",
 	description: [
-		"{bq.chapter14.desc}"
+		"{q.extra_utilities.desc}"
 	],
 	always_invisible: false,
 	group: 0,

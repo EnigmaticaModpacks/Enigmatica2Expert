@@ -2,7 +2,7 @@
 	x: -13.833333333333334d,
 	y: 10.166666666666666d,
 	text: [
-		"{bq.quest1005.desc}"
+		"{q.utils.spectre_coil_nr_364.desc}"
 	],
 	dependencies: [
 		"9092f6f7"

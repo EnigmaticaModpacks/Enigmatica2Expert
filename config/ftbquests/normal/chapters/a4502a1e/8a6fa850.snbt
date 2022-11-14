@@ -2,7 +2,7 @@
 	x: 0.25d,
 	y: 1.7916666666666667d,
 	text: [
-		"{bq.quest319.desc}"
+		"{q.extra_utilities.builders_wand.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest522.desc}"
+		"{q.nuclearcraft.speed_upgrade.desc}"
 	],
 	dependencies: [
 		"0bf36970",

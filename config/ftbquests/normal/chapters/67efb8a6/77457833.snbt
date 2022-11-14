@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 0.75d,
 	text: [
-		"{bq.quest538.desc}"
+		"{q.draconic_evolution.draconic_fusion_cr.desc}"
 	],
 	dependencies: [
 		"8aec2f93"

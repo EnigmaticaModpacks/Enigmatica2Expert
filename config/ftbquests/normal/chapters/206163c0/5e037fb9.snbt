@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest337.name}",
+	title: "{q.forestry.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 3.0d,
 	y: 2.25d,
 	text: [
-		"{bq.quest337.desc}"
+		"{q.forestry.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

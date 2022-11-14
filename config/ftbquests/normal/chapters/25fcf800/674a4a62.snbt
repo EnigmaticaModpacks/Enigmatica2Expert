@@ -2,7 +2,7 @@
 	x: 3.25d,
 	y: 2.0d,
 	text: [
-		"{bq.quest498.desc}"
+		"{q.environmental_tech.accuracy_modifier.desc}"
 	],
 	dependencies: [
 		"a4a22291"

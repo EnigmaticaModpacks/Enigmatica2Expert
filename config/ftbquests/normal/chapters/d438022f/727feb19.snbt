@@ -2,7 +2,7 @@
 	x: -15.666666666666668d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1012.desc}"
+		"{q.utils.battery.desc}"
 	],
 	dependencies: [
 		"113883dc"

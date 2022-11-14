@@ -2,7 +2,7 @@
 	x: 1.625d,
 	y: 10.75d,
 	text: [
-		"{bq.quest25.desc}"
+		"{q.bragging_rights.infinity_breastplate.desc}"
 	],
 	dependencies: [
 		"fe40e481"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest546.name}",
+	title: "{q.draconic_evolution.draconic_power_tra.name}",
 	icon: "draconicevolution:energy_crystal 1 8",
 	x: 0.375d,
 	y: 3.75d,
 	text: [
-		"{bq.quest546.desc}"
+		"{q.draconic_evolution.draconic_power_tra.desc}"
 	],
 	dependencies: [
 		"eb59a16d"

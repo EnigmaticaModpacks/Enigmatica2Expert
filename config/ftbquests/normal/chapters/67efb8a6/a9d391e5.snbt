@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest467.name}",
+	title: "{q.draconic_evolution.draconic_evolution.name}",
 	icon: "draconicevolution:draconic_core",
 	x: 4.5d,
 	y: 6.75d,
 	text: [
-		"{bq.quest467.desc}"
+		"{q.draconic_evolution.draconic_evolution.desc}"
 	],
 	dependencies: [
 		"91dd82e5"

@@ -2,7 +2,7 @@
 	x: 0.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest407.desc}"
+		"{q.botania.band_of_mana.desc}"
 	],
 	dependencies: [
 		"5672d99b",

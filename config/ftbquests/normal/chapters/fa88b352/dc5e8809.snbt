@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 13.5d,
 	text: [
-		"{bq.quest500.desc}"
+		"{q.nuclearcraft.du_plating.desc}"
 	],
 	dependencies: [
 		"3814ab8c",

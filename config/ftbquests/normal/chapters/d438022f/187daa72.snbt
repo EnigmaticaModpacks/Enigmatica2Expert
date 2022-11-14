@@ -2,7 +2,7 @@
 	x: -2.6666666666666665d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1030.desc}"
+		"{q.utils.ender_book.desc}"
 	],
 	dependencies: [
 		"a6a64aad"

@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: 3.75d,
 	text: [
-		"{bq.quest936.desc}"
+		"{q.animals.purifying_liquid.desc}"
 	],
 	dependencies: [
 		"27ad9d1e"

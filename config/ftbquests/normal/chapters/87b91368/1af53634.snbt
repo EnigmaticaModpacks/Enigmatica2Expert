@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest757.name}",
+	title: "{q.animals.ice_dragon_forge.name}",
 	icon: "iceandfire:dragonforge_ice_core",
 	x: 4.75d,
 	y: 2.75d,
 	text: [
-		"{bq.quest757.desc}"
+		"{q.animals.ice_dragon_forge.desc}"
 	],
 	dependencies: [
 		"7d4799a3",

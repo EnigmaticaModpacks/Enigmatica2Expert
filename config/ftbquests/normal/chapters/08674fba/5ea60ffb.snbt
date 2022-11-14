@@ -3,7 +3,7 @@
 	x: 5.166666666666667d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest431.desc}"
+		"{q.advanced_rocketry.lathe.desc}"
 	],
 	dependencies: [
 		"e8c6a755"

@@ -2,7 +2,7 @@
 	x: -7.5d,
 	y: 4.791666666666667d,
 	text: [
-		"{bq.quest98.desc}"
+		"{q.forestry.bio_generator.desc}"
 	],
 	dependencies: [
 		"72395a5a"

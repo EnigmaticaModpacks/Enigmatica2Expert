@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest148.name}",
+	title: "{q.industrialcraft.hazmat_suit.name}",
 	icon: "ic2:hazmat_chestplate",
 	x: 2.5d,
 	y: -0.5d,
 	text: [
-		"{bq.quest148.desc}"
+		"{q.industrialcraft.hazmat_suit.desc}"
 	],
 	dependencies: [
 		"cae88f3f"

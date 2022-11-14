@@ -1,5 +1,5 @@
 {
-	title: "{bq.chapter6.name}",
+	title: "{q.botania.name}",
 	icon: {
 		id: "botania:twigwand",
 		tag: {
@@ -8,7 +8,7 @@
 		}
 	},
 	description: [
-		"{bq.chapter6.desc}"
+		"{q.botania.desc}"
 	],
 	always_invisible: false,
 	group: 0,

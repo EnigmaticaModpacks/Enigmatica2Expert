@@ -2,7 +2,7 @@
 	x: -0.8333333333333333d,
 	y: -0.5d,
 	text: [
-		"{bq.quest793.desc}"
+		"{q.forestry.alveary.desc}"
 	],
 	dependencies: [
 		"4007e26a"

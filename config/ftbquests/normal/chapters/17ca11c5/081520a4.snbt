@@ -2,7 +2,7 @@
 	x: 9.3d,
 	y: 2.2d,
 	text: [
-		"{bq.quest43.desc}"
+		"{q.bragging_rights.rainbow_stone.desc}"
 	],
 	dependencies: [
 		"0c8a0b69"

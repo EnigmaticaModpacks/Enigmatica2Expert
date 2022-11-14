@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: -0.5d,
 	text: [
-		"{bq.quest841.desc}"
+		"{q.applied_energetics.wireless_booster.desc}"
 	],
 	dependencies: [
 		"6690bc40"

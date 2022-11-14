@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest420.name}",
+	title: "{q.botania.spark_augments.name}",
 	x: 0.5d,
 	y: 9.166666666666666d,
 	text: [
-		"{bq.quest420.desc}"
+		"{q.botania.spark_augments.desc}"
 	],
 	dependencies: [
 		"5672d99b",

@@ -2,7 +2,7 @@
 	x: 12.625d,
 	y: 6.041666666666667d,
 	text: [
-		"{bq.quest896.desc}"
+		"{q.getting_started.item_conduit.desc}"
 	],
 	dependencies: [
 		"3e4d0f4b"

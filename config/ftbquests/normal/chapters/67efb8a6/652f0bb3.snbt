@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: 12.0d,
 	text: [
-		"{bq.quest535.desc}"
+		"{q.draconic_evolution.sword_of_the_wyvern.desc}"
 	],
 	dependencies: [
 		"64f8083b"

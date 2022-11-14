@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest270.name}",
+	title: "{q.rftools.shape_card.name}",
 	icon: "rftools:shape_card",
 	x: 1.0d,
 	y: 5.0d,
 	text: [
-		"{bq.quest270.desc}"
+		"{q.rftools.shape_card.desc}"
 	],
 	dependencies: [
 		"8eca55bc"

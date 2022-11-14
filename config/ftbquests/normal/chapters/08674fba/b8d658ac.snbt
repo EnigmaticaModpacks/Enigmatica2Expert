@@ -2,7 +2,7 @@
 	x: 15.666666666666666d,
 	y: 9.833333333333334d,
 	text: [
-		"{bq.quest458.desc}"
+		"{q.advanced_rocketry.hovercraft.desc}"
 	],
 	dependencies: [
 		"e7f8d37c"

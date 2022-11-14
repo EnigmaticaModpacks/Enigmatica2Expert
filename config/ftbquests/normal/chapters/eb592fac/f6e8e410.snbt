@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest34.name}",
+	title: "{q.rftools.rftools.name}",
 	icon: "rftools:machine_frame",
 	x: 0.0d,
 	y: -2.4583333333333335d,
 	text: [
-		"{bq.quest34.desc}"
+		"{q.rftools.rftools.desc}"
 	],
 	dependencies: [
 		"cabe63d2"

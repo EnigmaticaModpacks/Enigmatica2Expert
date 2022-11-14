@@ -2,7 +2,7 @@
 	x: 10.166666666666666d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest592.desc}"
+		"{q.ender_io.soul_vial.desc}"
 	],
 	dependencies: [
 		"f91632f4"

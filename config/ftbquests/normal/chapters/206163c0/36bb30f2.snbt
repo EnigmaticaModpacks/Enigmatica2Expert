@@ -2,7 +2,7 @@
 	x: -2.1666666666666665d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest293.desc}"
+		"{q.forestry.blazing_electron_t.desc}"
 	],
 	dependencies: [
 		"d1b19bf0"

@@ -2,7 +2,7 @@
 	x: 4.7d,
 	y: -3.5d,
 	text: [
-		"{bq.quest711.desc}"
+		"{q.animals.ocarina.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

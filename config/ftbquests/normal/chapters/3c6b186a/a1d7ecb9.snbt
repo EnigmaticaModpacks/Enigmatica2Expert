@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest76.name}",
+	title: "{q.industrialcraft.high_voltage.name}",
 	icon: {
 		id: "ic2:cable",
 		Damage: 3s,
@@ -11,7 +11,7 @@
 	x: 0.8333333333333333d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest76.desc}"
+		"{q.industrialcraft.high_voltage.desc}"
 	],
 	dependencies: [
 		"e9d7d5e6"

@@ -3,7 +3,7 @@
 	x: 5.5d,
 	y: 1.5d,
 	text: [
-		"{bq.quest640.desc}"
+		"{q.thaumcraft.research_table.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

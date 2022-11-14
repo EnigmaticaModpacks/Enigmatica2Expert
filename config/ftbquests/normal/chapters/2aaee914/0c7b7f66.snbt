@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest203.desc}"
+		"{q.mekanism.heat_generator.desc}"
 	],
 	dependencies: [
 		"a655c4cb"

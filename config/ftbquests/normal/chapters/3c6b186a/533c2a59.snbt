@@ -3,7 +3,7 @@
 	x: 4.166666666666666d,
 	y: 7.5d,
 	text: [
-		"{bq.quest86.desc}"
+		"{q.industrialcraft.nuclear_reactor.desc}"
 	],
 	dependencies: [
 		"3c0659d8"

@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 5.25d,
 	text: [
-		"{bq.quest533.desc}"
+		"{q.draconic_evolution.fusion_crafting_core.desc}"
 	],
 	dependencies: [
 		"64f8083b"

@@ -2,7 +2,7 @@
 	x: -0.9166666666666667d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest410.desc}"
+		"{q.botania.horn_of_the_canopy.desc}"
 	],
 	dependencies: [
 		"5672d99b",

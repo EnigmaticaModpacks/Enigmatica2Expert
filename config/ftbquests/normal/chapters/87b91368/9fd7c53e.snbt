@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest756.name}",
+	title: "{q.animals.eye_of_dragons.name}",
 	icon: "eyeofdragons:eye_of_firedragon",
 	x: 3.5d,
 	y: 0.0d,
 	text: [
-		"{bq.quest756.desc}"
+		"{q.animals.eye_of_dragons.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

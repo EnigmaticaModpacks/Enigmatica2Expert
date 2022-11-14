@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest57.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "extendedcrafting:storage 1 7"

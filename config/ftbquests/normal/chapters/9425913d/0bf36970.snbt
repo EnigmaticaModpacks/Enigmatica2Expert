@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest42.name}",
+	title: "{q.gates.gate:_nuclearcraft.name}",
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest42.desc}"
+		"{q.gates.gate:_nuclearcraft.desc}"
 	],
 	dependencies: [
 		"e07d1afe"

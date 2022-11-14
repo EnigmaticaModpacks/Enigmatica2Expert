@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1023.name}",
+	title: "{q.industrial_foregoing.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 9.0d,
 	y: 6.0d,
 	text: [
-		"{bq.quest1023.desc}"
+		"{q.industrial_foregoing.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

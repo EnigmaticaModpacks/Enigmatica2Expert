@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 1.0d,
 	text: [
-		"{bq.quest838.desc}"
+		"{q.applied_energetics.molecular_assembler.desc}"
 	],
 	dependencies: [
 		"c3751d75"

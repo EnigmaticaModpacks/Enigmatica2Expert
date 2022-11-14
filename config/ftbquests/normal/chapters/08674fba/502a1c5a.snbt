@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest445.name}",
+	title: "{q.advanced_rocketry.co2_scrubber.name}",
 	icon: "advancedrocketry:oxygenscrubber",
 	x: 12.166666666666666d,
 	y: 7.166666666666667d,
 	text: [
-		"{bq.quest445.desc}"
+		"{q.advanced_rocketry.co2_scrubber.desc}"
 	],
 	dependencies: [
 		"39e02dec"

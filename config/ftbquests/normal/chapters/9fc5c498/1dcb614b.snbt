@@ -2,7 +2,7 @@
 	x: 2.166666666666667d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest570.desc}"
+		"{q.ender_io.octadic_capacitor.desc}"
 	],
 	dependencies: [
 		"d5c9fdda"

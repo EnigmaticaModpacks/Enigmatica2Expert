@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter9.name}",
+	title: "{q.thaumcraft.name}",
 	icon: "thaumcraft:goggles",
 	description: [
-		"{bq.chapter9.desc}"
+		"{q.thaumcraft.desc}"
 	],
 	always_invisible: false,
 	group: 0,

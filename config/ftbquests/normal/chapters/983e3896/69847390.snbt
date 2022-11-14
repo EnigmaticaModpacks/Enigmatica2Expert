@@ -2,7 +2,7 @@
 	x: 9.833333333333334d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest807.desc}"
+		"{q.astral_sorcery.containment_chalice.desc}"
 	],
 	dependencies: [
 		"4aabb15e"

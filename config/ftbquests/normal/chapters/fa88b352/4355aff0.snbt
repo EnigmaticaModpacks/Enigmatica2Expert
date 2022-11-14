@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest923.name}",
+	title: "{q.nuclearcraft.voltatic_pile.name}",
 	x: 9.333333333333334d,
 	y: 10.166666666666666d,
 	text: [
-		"{bq.quest923.desc}"
+		"{q.nuclearcraft.voltatic_pile.desc}"
 	],
 	dependencies: [
 		"a741066c",

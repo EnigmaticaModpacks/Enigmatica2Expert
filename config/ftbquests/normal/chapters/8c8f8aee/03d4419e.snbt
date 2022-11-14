@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest126.name}",
+	title: "{q.actually_additions.enori.name}",
 	x: -5.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest126.desc}"
+		"{q.actually_additions.enori.desc}"
 	],
 	dependencies: [
 		"98b00c72"

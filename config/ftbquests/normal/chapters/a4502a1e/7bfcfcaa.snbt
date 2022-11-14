@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest340.name}",
+	title: "{q.extra_utilities.furnace_generator.name}",
 	x: 11.0d,
 	y: -1.1666666666666667d,
 	text: [
-		"{bq.quest340.desc}"
+		"{q.extra_utilities.furnace_generator.desc}"
 	],
 	dependencies: [
 		"42b1f141"

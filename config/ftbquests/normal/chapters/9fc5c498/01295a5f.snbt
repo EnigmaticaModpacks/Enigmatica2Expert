@@ -2,7 +2,7 @@
 	x: 11.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest585.desc}"
+		"{q.ender_io.killer_joe.desc}"
 	],
 	dependencies: [
 		"f91632f4"

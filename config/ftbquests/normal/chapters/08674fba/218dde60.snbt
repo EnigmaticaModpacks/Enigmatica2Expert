@@ -2,7 +2,7 @@
 	x: 11.5d,
 	y: 5.833333333333333d,
 	text: [
-		"{bq.quest444.desc}"
+		"{q.advanced_rocketry.satellite_builder.desc}"
 	],
 	dependencies: [
 		"ec0657e8"

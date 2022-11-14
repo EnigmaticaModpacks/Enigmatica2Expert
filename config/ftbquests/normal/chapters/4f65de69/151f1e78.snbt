@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest257.name}",
+	title: "{q.getting_started.important_nerfs.name}",
 	icon: "minecraft:torch",
 	x: -5.5d,
 	y: 5.0d,
 	text: [
-		"{bq.quest257.desc}"
+		"{q.getting_started.important_nerfs.desc}"
 	],
 	dependencies: [
 		"f968d750"

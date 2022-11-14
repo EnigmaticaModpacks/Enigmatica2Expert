@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 7.5d,
 	text: [
-		"{bq.quest652.desc}"
+		"{q.thaumcraft.blank_lesser_focus.desc}"
 	],
 	dependencies: [
 		"b1e42bf7"

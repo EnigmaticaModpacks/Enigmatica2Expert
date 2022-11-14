@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest846.name}",
+	title: "{q.applied_energetics.fluix_steel.name}",
 	x: 1.0d,
 	y: 4.0d,
 	text: [
-		"{bq.quest846.desc}"
+		"{q.applied_energetics.fluix_steel.desc}"
 	],
 	dependencies: [
 		"882dc2b8"

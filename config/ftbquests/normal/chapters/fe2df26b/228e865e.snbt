@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest854.desc}"
+		"{q.applied_energetics.me_fluid_assembler.desc}"
 	],
 	dependencies: [
 		"766a14ec"

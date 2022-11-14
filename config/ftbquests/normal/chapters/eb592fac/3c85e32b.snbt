@@ -2,7 +2,7 @@
 	x: -1.875d,
 	y: 3.125d,
 	text: [
-		"{bq.quest275.desc}"
+		"{q.rftools.matter_booster.desc}"
 	],
 	dependencies: [
 		"f6e8e410"

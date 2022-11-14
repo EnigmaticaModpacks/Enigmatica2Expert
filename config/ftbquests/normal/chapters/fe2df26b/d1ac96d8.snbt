@@ -3,7 +3,7 @@
 	x: 5.5d,
 	y: 1.0d,
 	text: [
-		"{bq.quest852.desc}"
+		"{q.applied_energetics.packager.desc}"
 	],
 	dependencies: [
 		"4bfcd69f"

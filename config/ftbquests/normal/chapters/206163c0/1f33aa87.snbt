@@ -2,7 +2,7 @@
 	x: -4.833333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest281.desc}"
+		"{q.forestry.rainmaker.desc}"
 	],
 	dependencies: [
 		"8806b7fe"

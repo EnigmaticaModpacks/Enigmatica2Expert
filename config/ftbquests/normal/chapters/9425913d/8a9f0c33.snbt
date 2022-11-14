@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest8.name}",
+	title: "{q.gates.gate:_astral_sorcery.name}",
 	x: 9.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest8.desc}"
+		"{q.gates.gate:_astral_sorcery.desc}"
 	],
 	dependencies: [
 		"2957f2cc"

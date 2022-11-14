@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest897.name}",
+	title: "{q.getting_started.harder_branch_mining.name}",
 	icon: {
 		id: "tconstruct:pickaxe",
 		Damage: 1s,
@@ -65,7 +65,7 @@
 	x: 3.625d,
 	y: 1.0d,
 	text: [
-		"{bq.quest897.desc}"
+		"{q.getting_started.harder_branch_mining.desc}"
 	],
 	dependencies: [
 		"dabc815c"

@@ -2,13 +2,13 @@
 	icon: {
 		id: "ic2:mining_laser",
 		tag: {
-			charge: 2.0E7d
+			charge: "2.0E7d"
 		}
 	},
 	x: 7.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest419.desc}"
+		"{q.industrialcraft.mining_laser.desc}"
 	],
 	dependencies: [
 		"c26c77d4"

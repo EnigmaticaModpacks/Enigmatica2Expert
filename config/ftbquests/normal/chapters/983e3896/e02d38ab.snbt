@@ -2,7 +2,7 @@
 	x: -2.8333333333333335d,
 	y: 3.5d,
 	text: [
-		"{bq.quest156.desc}"
+		"{q.astral_sorcery.rock_crystal.desc}"
 	],
 	dependencies: [
 		"032c3854"

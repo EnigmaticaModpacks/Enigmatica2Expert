@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest764.name}",
+	title: "{q.getting_started.compact_machines.name}",
 	x: 12.625d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest764.desc}"
+		"{q.getting_started.compact_machines.desc}"
 	],
 	dependencies: [
 		"3e4d0f4b"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest869.name}",
+	title: "{q.twilight_forest.the_hydra.name}",
 	x: 5.833333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest869.desc}"
+		"{q.twilight_forest.the_hydra.desc}"
 	],
 	dependencies: [
 		"9329a551"

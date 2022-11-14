@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest131.name}",
+	title: "{q.actually_additions.upgraded_canola_po.name}",
 	x: -0.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest131.desc}"
+		"{q.actually_additions.upgraded_canola_po.desc}"
 	],
 	dependencies: [
 		"f72762fb"

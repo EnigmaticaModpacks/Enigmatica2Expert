@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest323.name}",
+	title: "{q.animals.prime_wool.name}",
 	icon: "animania:wool 1 3",
 	x: 0.75d,
 	y: -1.25d,
 	text: [
-		"{bq.quest323.desc}"
+		"{q.animals.prime_wool.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

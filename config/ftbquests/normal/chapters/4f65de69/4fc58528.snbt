@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest53.name}",
+	title: "{q.getting_started.harvest_level_6.name}",
 	icon: {
 		id: "tconstruct:sharpening_kit",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 6.7d,
 	y: 3.5d,
 	text: [
-		"{bq.quest53.desc}"
+		"{q.getting_started.harvest_level_6.desc}"
 	],
 	dependencies: [
 		"e90285ae"

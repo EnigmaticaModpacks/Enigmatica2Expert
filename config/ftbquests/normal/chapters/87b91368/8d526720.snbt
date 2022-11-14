@@ -2,7 +2,7 @@
 	x: -6.5d,
 	y: -1.0d,
 	text: [
-		"{bq.quest1063.desc}"
+		"{q.animals.garbage_pile.desc}"
 	],
 	dependencies: [
 		"46340f69"

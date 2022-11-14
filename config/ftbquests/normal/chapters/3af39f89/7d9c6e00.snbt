@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest214.name}",
+	title: "{q.thermal_expansion.pulverizer.name}",
 	x: 13.333333333333334d,
 	y: 4.333333333333333d,
 	text: [
-		"{bq.quest214.desc}"
+		"{q.thermal_expansion.pulverizer.desc}"
 	],
 	dependencies: [
 		"f5f57028"

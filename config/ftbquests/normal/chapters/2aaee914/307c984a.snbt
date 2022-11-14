@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest190.desc}"
+		"{q.mekanism.compressed_redstone.desc}"
 	],
 	dependencies: [
 		"d0c5b8a8"

@@ -2,7 +2,7 @@
 	x: 2.125d,
 	y: 7.041666666666667d,
 	text: [
-		"{bq.quest782.desc}"
+		"{q.getting_started.compacting_drawer.desc}"
 	],
 	dependencies: [
 		"9eaa496f"

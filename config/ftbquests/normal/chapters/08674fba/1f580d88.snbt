@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest402.name}",
+	title: "{q.advanced_rocketry.holo_projector.name}",
 	icon: "libvulpes:holoprojector",
 	x: 2.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest402.desc}"
+		"{q.advanced_rocketry.holo_projector.desc}"
 	],
 	dependencies: [
 		"9fddddb0"

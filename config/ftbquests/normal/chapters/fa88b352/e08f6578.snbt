@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest924.name}",
+	title: "{q.nuclearcraft.lithium_ion_battery.name}",
 	x: 6.333333333333333d,
 	y: 10.166666666666666d,
 	text: [
-		"{bq.quest924.desc}"
+		"{q.nuclearcraft.lithium_ion_battery.desc}"
 	],
 	dependencies: [
 		"a741066c",

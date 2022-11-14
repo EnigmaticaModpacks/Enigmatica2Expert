@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest692.name}",
+	title: "{q.immersive_engineer.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -35,7 +35,7 @@
 	x: 6.0d,
 	y: 6.0d,
 	text: [
-		"{bq.quest692.desc}"
+		"{q.immersive_engineer.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

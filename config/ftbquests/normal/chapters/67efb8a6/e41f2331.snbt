@@ -2,7 +2,7 @@
 	x: 12.666666666666666d,
 	y: 6.75d,
 	text: [
-		"{bq.quest537.desc}"
+		"{q.draconic_evolution.chaos_shard.desc}"
 	],
 	dependencies: [
 		"b5098494"

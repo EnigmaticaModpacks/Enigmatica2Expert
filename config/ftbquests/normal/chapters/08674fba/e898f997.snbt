@@ -3,7 +3,7 @@
 	x: 6.166666666666667d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest428.desc}"
+		"{q.advanced_rocketry.precision_assembler.desc}"
 	],
 	dependencies: [
 		"e8c6a755"

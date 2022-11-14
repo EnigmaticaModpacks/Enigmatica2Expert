@@ -3,7 +3,7 @@
 	x: 5.833333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest72.desc}"
+		"{q.industrialcraft.blast_furnace.desc}"
 	],
 	dependencies: [
 		"059b39c7"

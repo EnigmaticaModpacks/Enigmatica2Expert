@@ -2,7 +2,7 @@
 	x: 8.0d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest243.desc}"
+		"{q.thermal_expansion.hardened_upgrade_kit.desc}"
 	],
 	dependencies: [
 		"9c15c499"

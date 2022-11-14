@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 9.0d,
 	text: [
-		"{bq.quest651.desc}"
+		"{q.thaumcraft.focus_pouch.desc}"
 	],
 	dependencies: [
 		"b1e42bf7"

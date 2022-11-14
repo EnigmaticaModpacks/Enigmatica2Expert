@@ -2,7 +2,7 @@
 	x: 10.7d,
 	y: 5.3d,
 	text: [
-		"{bq.quest233.desc}"
+		"{q.thermal_expansion.aqueous_accumulator.desc}"
 	],
 	dependencies: [
 		"85977752",

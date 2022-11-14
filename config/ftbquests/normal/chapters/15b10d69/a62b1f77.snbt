@@ -3,7 +3,7 @@
 	x: 8.0d,
 	y: 4.75d,
 	text: [
-		"{bq.quest149.desc}"
+		"{q.industrial_foregoing.mob_duplicator.desc}"
 	],
 	dependencies: [
 		"74175c1c",

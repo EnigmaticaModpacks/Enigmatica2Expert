@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest327.name}",
+	title: "{q.extra_utilities.wireless_rf.name}",
 	icon: "extrautils2:powerbattery",
 	x: 6.666666666666667d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest327.desc}"
+		"{q.extra_utilities.wireless_rf.desc}"
 	],
 	dependencies: [
 		"0e08c73f"

@@ -3,7 +3,7 @@
 	x: 3.8333333333333335d,
 	y: 6.333333333333333d,
 	text: [
-		"{bq.quest859.desc}"
+		"{q.extra_utilities.terraformer.desc}"
 	],
 	dependencies: [
 		"29946b47"

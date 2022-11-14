@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest37.name}",
+	title: "{q.getting_started.welcome.name}",
 	icon: "thermalexpansion:satchel",
 	x: -7.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest37.desc}"
+		"{q.getting_started.welcome.desc}"
 	],
 	size: 2.0d,
 	tasks: [{

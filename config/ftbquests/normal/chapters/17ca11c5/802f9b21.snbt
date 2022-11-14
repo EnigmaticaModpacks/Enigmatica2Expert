@@ -2,7 +2,7 @@
 	x: 5.958333333333333d,
 	y: 12.208333333333332d,
 	text: [
-		"{bq.quest30.desc}"
+		"{q.bragging_rights.planet_eater.desc}"
 	],
 	dependencies: [
 		"3c5b09e0"

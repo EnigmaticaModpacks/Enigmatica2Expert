@@ -3,7 +3,7 @@
 	x: 10.166666666666666d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest433.desc}"
+		"{q.advanced_rocketry.electrolyser.desc}"
 	],
 	dependencies: [
 		"5ab2270f"

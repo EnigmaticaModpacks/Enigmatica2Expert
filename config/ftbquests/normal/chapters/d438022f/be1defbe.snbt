@@ -2,7 +2,7 @@
 	x: -6.833333333333333d,
 	y: 25.333333333333332d,
 	text: [
-		"{bq.quest970.desc}"
+		"{q.utils.sleep_charm.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

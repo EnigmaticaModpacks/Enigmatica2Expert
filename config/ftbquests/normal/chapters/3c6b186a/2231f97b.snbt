@@ -2,7 +2,7 @@
 	x: 5.833333333333333d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest87.desc}"
+		"{q.industrialcraft.fluid_solid_cannin.desc}"
 	],
 	dependencies: [
 		"80c99c37"

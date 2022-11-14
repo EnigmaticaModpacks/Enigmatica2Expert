@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest785.name}",
+	title: "{q.immersive_engineer.wires_changes.name}",
 	x: -5.166666666666667d,
 	y: -0.5d,
 	text: [
-		"{bq.quest785.desc}"
+		"{q.immersive_engineer.wires_changes.desc}"
 	],
 	dependencies: [
 		"1c4deb33"

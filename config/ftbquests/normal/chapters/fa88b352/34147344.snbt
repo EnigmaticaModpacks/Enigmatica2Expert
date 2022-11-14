@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest510.desc}"
+		"{q.nuclearcraft.neutron_irradiator.desc}"
 	],
 	dependencies: [
 		"3ba07972",

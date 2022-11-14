@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest671.name}",
+	title: "{q.thaumcraft.infernal_furnace.name}",
 	icon: "thaumcraft:infernal_furnace",
 	x: 5.5d,
 	y: 8.166666666666668d,
 	text: [
-		"{bq.quest671.desc}"
+		"{q.thaumcraft.infernal_furnace.desc}"
 	],
 	dependencies: [
 		"4510505c"

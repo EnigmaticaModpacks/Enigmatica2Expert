@@ -2,7 +2,7 @@
 	x: 7.833333333333333d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest339.desc}"
+		"{q.extra_utilities.diamond_spikes.desc}"
 	],
 	dependencies: [
 		"f991b9da"

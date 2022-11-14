@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest142.desc}"
+		"{q.industrial_foregoing.laser_base.desc}"
 	],
 	dependencies: [
 		"74175c1c"

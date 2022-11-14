@@ -2,7 +2,7 @@
 	x: 4.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest147.desc}"
+		"{q.industrial_foregoing.wither_builder.desc}"
 	],
 	dependencies: [
 		"0060934f"

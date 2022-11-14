@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest561.name}",
+	title: "{q.draconic_evolution.draconic_chestplate.name}",
 	icon: {
 		id: "draconicevolution:draconic_chest",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 8.5d,
 	y: 8.666666666666666d,
 	text: [
-		"{bq.quest561.desc}"
+		"{q.draconic_evolution.draconic_chestplate.desc}"
 	],
 	dependencies: [
 		"b5098494",

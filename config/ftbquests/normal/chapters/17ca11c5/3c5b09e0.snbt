@@ -2,7 +2,7 @@
 	x: 7.208333333333333d,
 	y: 10.958333333333332d,
 	text: [
-		"{bq.quest32.desc}"
+		"{q.bragging_rights.nature_s_ruin.desc}"
 	],
 	dependencies: [
 		"5d0d9b75"

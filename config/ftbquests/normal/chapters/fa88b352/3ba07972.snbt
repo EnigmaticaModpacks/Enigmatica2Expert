@@ -2,7 +2,7 @@
 	x: 7.833333333333333d,
 	y: 2.5d,
 	text: [
-		"{bq.quest514.desc}"
+		"{q.nuclearcraft.salt_mixer.desc}"
 	],
 	dependencies: [
 		"0bf36970",

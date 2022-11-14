@@ -3,7 +3,7 @@
 	x: 1.8333333333333333d,
 	y: 1.1666666666666667d,
 	text: [
-		"{bq.quest787.desc}"
+		"{q.twilight_forest.ironwood_helm.desc}"
 	],
 	dependencies: [
 		"95b739d8"

@@ -2,7 +2,7 @@
 	x: 3.791666666666667d,
 	y: -0.6249999999999996d,
 	text: [
-		"{bq.quest820.desc}"
+		"{q.bragging_rights.advanced_crafting_.desc}"
 	],
 	dependencies: [
 		"b4b83088"

@@ -2,7 +2,7 @@
 	x: -2.1666666666666665d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest860.desc}"
+		"{q.forestry.habitat_former.desc}"
 	],
 	dependencies: [
 		"c8f37d85"

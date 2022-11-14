@@ -2,7 +2,7 @@
 	x: -0.9166666666666667d,
 	y: 2.5d,
 	text: [
-		"{bq.quest409.desc}"
+		"{q.botania.horn_of_the_wild.desc}"
 	],
 	dependencies: [
 		"8b51b830",

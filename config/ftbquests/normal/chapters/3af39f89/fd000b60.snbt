@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest228.name}",
+	title: "{q.thermal_expansion.magma_crucible.name}",
 	x: 10.333333333333334d,
 	y: 0.33333333333333337d,
 	text: [
-		"{bq.quest228.desc}"
+		"{q.thermal_expansion.magma_crucible.desc}"
 	],
 	dependencies: [
 		"9c15c499"

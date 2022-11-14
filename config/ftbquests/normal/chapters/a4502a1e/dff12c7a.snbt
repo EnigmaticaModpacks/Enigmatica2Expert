@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest111.name}",
+	title: "{q.extra_utilities.gp_generation_i.name}",
 	icon: "extrautils2:passivegenerator 1 7",
 	x: 7.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest111.desc}"
+		"{q.extra_utilities.gp_generation_i.desc}"
 	],
 	dependencies: [
 		"29946b47"

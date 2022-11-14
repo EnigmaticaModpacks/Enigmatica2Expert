@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest911.name}",
+	title: "{q.actually_additions.item_laser.name}",
 	icon: "actuallyadditions:block_laser_relay_item",
 	x: -3.833333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest911.desc}"
+		"{q.actually_additions.item_laser.desc}"
 	],
 	dependencies: [
 		"98b00c72"

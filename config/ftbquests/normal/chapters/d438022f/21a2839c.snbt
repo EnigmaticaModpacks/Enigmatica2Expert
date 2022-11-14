@@ -2,7 +2,7 @@
 	x: -4.666666666666667d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1016.desc}"
+		"{q.utils.automated_user.desc}"
 	],
 	dependencies: [
 		"a6a64aad"

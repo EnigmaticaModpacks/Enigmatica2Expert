@@ -2,7 +2,7 @@
 	x: 3.6666666666666665d,
 	y: 5.5d,
 	text: [
-		"{bq.quest313.desc}"
+		"{q.actually_additions.fishing_net.desc}"
 	],
 	dependencies: [
 		"5ef52760"

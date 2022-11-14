@@ -2,7 +2,7 @@
 	x: -2.0d,
 	y: 0.0d,
 	text: [
-		"{bq.quest728.desc}"
+		"{q.animals.rat_diamond.desc}"
 	],
 	dependencies: [
 		"06c349a7"

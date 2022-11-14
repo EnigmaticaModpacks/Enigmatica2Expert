@@ -2,7 +2,7 @@
 	x: 3.3333333333333335d,
 	y: 5.5d,
 	text: [
-		"{bq.quest703.desc}"
+		"{q.industrial_foregoing.resources_fisher.desc}"
 	],
 	dependencies: [
 		"0060934f"

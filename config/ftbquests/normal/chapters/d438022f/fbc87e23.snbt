@@ -2,7 +2,7 @@
 	x: -8.0d,
 	y: 23.333333333333332d,
 	text: [
-		"{bq.quest971.desc}"
+		"{q.utils.focus_sash.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

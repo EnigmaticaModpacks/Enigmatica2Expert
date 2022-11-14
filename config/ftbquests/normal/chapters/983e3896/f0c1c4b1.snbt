@@ -2,7 +2,7 @@
 	x: -0.16666666666666663d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest152.desc}"
+		"{q.astral_sorcery.lightwell.desc}"
 	],
 	dependencies: [
 		"580bb684"

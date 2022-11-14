@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest878.name}",
+	title: "{q.thermal_expansion.thermal_logistics.name}",
 	x: 6.833333333333333d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest878.desc}"
+		"{q.thermal_expansion.thermal_logistics.desc}"
 	],
 	dependencies: [
 		"9c15c499"

@@ -2,7 +2,7 @@
 	x: 9.6d,
 	y: 4.8d,
 	text: [
-		"{bq.quest96.desc}"
+		"{q.industrialcraft.scanner.desc}"
 	],
 	dependencies: [
 		"0d64a022"

@@ -2,7 +2,7 @@
 	x: -2.1666666666666665d,
 	y: 3.5d,
 	text: [
-		"{bq.quest128.desc}"
+		"{q.actually_additions.fermenting_barrel.desc}"
 	],
 	dependencies: [
 		"9b71600a"

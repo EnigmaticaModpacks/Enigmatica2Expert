@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest227.name}",
+	title: "{q.thermal_expansion.numismatic_dynamo.name}",
 	x: 7.166666666666667d,
 	y: 4.5d,
 	text: [
-		"{bq.quest227.desc}"
+		"{q.thermal_expansion.numismatic_dynamo.desc}"
 	],
 	dependencies: [
 		"dfa7ef0d"

@@ -2,7 +2,7 @@
 	x: 17.125d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest889.desc}"
+		"{q.getting_started.laser_gun.desc}"
 	],
 	dependencies: [
 		"14611430"
@@ -15,7 +15,7 @@
 			tag: {
 				LockCooldown: 0,
 				StatsOriginal: {
-					AttackSpeedMultiplier: 1.0f,
+					AttackSpeedMultiplier: 1f,
 					LaserGunPower: 2.5f,
 					MiningSpeed: 6.75f,
 					FreeModifiers: 3,
@@ -23,7 +23,7 @@
 					HarvestLevel: 8,
 					LaserGunEnergy: 120000,
 					Attack: 2.5f,
-					LaserGunRange: 20.0f
+					LaserGunRange: 20f
 				},
 				Special: {
 					Categories: [
@@ -32,7 +32,7 @@
 					]
 				},
 				Stats: {
-					AttackSpeedMultiplier: 1.0f,
+					AttackSpeedMultiplier: 1f,
 					LaserGunPower: 2.5f,
 					MiningSpeed: 6.75f,
 					FreeModifiers: 2,
@@ -40,7 +40,7 @@
 					HarvestLevel: 8,
 					LaserGunEnergy: 120000,
 					Attack: 2.5f,
-					LaserGunRange: 20.0f
+					LaserGunRange: 20f
 				},
 				AttackDuration: 0,
 				Modifiers: [{

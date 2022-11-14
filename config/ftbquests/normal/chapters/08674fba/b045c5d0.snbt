@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest442.name}",
+	title: "{q.advanced_rocketry.rocket_fuel.name}",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {
@@ -10,7 +10,7 @@
 	x: 12.166666666666666d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest442.desc}"
+		"{q.advanced_rocketry.rocket_fuel.desc}"
 	],
 	dependencies: [
 		"6e40dbf6",

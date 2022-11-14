@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest316.name}",
+	title: "{q.immersive_engineer.mv_energy.name}",
 	icon: "immersiveengineering:wirecoil 1 1",
 	x: -5.166666666666667d,
 	y: 3.5d,
 	text: [
-		"{bq.quest316.desc}"
+		"{q.immersive_engineer.mv_energy.desc}"
 	],
 	dependencies: [
 		"ba179fc3"

@@ -2,7 +2,7 @@
 	x: -5.5d,
 	y: 7.333333333333333d,
 	text: [
-		"{bq.quest311.desc}"
+		"{q.actually_additions.double_battery.desc}"
 	],
 	dependencies: [
 		"96718e63"

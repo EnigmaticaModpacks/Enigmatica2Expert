@@ -2,7 +2,7 @@
 	x: -15.666666666666668d,
 	y: 21.833333333333332d,
 	text: [
-		"{bq.quest1019.desc}"
+		"{q.utils.controlled_miner.desc}"
 	],
 	dependencies: [
 		"727feb19"

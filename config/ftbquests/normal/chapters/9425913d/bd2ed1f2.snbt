@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest11.name}",
+	title: "{q.gates.gate:_mekanism.name}",
 	x: 5.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest11.desc}"
+		"{q.gates.gate:_mekanism.desc}"
 	],
 	dependencies: [
 		"00f29513"

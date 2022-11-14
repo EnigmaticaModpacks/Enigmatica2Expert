@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest627.name}",
+	title: "{q.blood_magic.rituals.name}",
 	x: 5.0d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest627.desc}"
+		"{q.blood_magic.rituals.desc}"
 	],
 	dependencies: [
 		"f1f052a5"

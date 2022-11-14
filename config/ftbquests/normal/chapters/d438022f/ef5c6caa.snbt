@@ -2,7 +2,7 @@
 	x: -13.833333333333334d,
 	y: 12.166666666666666d,
 	text: [
-		"{bq.quest1002.desc}"
+		"{q.utils.spectre_lens.desc}"
 	],
 	dependencies: [
 		"9092f6f7"

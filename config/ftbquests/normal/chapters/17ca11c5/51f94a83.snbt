@@ -2,7 +2,7 @@
 	x: 5.958333333333333d,
 	y: 9.708333333333332d,
 	text: [
-		"{bq.quest28.desc}"
+		"{q.bragging_rights.sword_of_the_cosmos.desc}"
 	],
 	dependencies: [
 		"af1b2362"

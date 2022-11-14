@@ -3,7 +3,7 @@
 	x: -6.125d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest266.desc}"
+		"{q.rftools.modular_storage.desc}"
 	],
 	dependencies: [
 		"094a95d2",

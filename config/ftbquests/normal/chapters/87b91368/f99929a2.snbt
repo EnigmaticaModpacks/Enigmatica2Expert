@@ -2,7 +2,7 @@
 	x: -5.0d,
 	y: 4.208333333333333d,
 	text: [
-		"{bq.quest723.desc}"
+		"{q.animals.rat_upgrade:_basic.desc}"
 	],
 	dependencies: [
 		"67de8e53"

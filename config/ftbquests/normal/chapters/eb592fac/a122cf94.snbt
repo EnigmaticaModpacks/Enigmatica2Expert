@@ -2,7 +2,7 @@
 	x: -7.125d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest902.desc}"
+		"{q.rftools.storage_tablet.desc}"
 	],
 	dependencies: [
 		"094a95d2",

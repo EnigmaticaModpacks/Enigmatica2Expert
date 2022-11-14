@@ -2,7 +2,7 @@
 	x: -1.4583333333333333d,
 	y: -2.875d,
 	text: [
-		"{bq.quest943.desc}"
+		"{q.animals.piggybackpack.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

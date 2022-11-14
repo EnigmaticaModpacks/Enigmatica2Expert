@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest734.name}",
+	title: "{q.animals.ore_nuggets_.name}",
 	icon: {
 		id: "rats:rat_nugget_ore",
 		tag: {
@@ -18,7 +18,7 @@
 	x: -2.0d,
 	y: 3.75d,
 	text: [
-		"{bq.quest734.desc}"
+		"{q.animals.ore_nuggets_.desc}"
 	],
 	dependencies: [
 		"95b518e0"

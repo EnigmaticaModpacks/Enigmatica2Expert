@@ -2,7 +2,7 @@
 	x: 11.833333333333334d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest366.desc}"
+		"{q.botania.petal_apothecary.desc}"
 	],
 	dependencies: [
 		"5672d99b",

@@ -3,7 +3,7 @@
 	x: -19.333333333333332d,
 	y: 22.166666666666668d,
 	text: [
-		"{bq.quest961.desc}"
+		"{q.utils.honeycomb.desc}"
 	],
 	dependencies: [
 		"3ecc3fbe"

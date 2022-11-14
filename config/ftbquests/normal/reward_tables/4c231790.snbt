@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest725.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "animania:raw_prime_beef",

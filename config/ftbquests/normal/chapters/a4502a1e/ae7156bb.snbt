@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest349.name}",
+	title: "{q.extra_utilities.explosive_generator.name}",
 	x: 15.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest349.desc}"
+		"{q.extra_utilities.explosive_generator.desc}"
 	],
 	dependencies: [
 		"f31c5840"

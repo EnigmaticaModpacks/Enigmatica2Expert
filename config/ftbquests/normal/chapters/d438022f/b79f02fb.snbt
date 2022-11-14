@@ -2,7 +2,7 @@
 	x: -14.833333333333334d,
 	y: 11.666666666666666d,
 	text: [
-		"{bq.quest996.desc}"
+		"{q.utils.player_interface.desc}"
 	],
 	dependencies: [
 		"9092f6f7"

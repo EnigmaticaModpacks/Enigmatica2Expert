@@ -2,7 +2,7 @@
 	x: 2.4583333333333335d,
 	y: -3.083333333333333d,
 	text: [
-		"{bq.quest798.desc}"
+		"{q.bragging_rights.sandwich_station.desc}"
 	],
 	dependencies: [
 		"b4b83088",

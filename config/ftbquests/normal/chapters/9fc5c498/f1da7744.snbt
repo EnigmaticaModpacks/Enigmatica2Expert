@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest590.desc}"
+		"{q.ender_io.vibrant_capacitor_.desc}"
 	],
 	dependencies: [
 		"1dcb614b",

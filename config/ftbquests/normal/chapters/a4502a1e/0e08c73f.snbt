@@ -2,7 +2,7 @@
 	x: 6.666666666666667d,
 	y: 2.333333333333333d,
 	text: [
-		"{bq.quest881.desc}"
+		"{q.extra_utilities.stoneburnt.desc}"
 	],
 	dependencies: [
 		"6ec3f2d7"

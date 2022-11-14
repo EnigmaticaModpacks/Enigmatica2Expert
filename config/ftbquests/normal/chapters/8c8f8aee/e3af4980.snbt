@@ -2,7 +2,7 @@
 	x: -3.916666666666667d,
 	y: 0.0d,
 	text: [
-		"{bq.quest307.desc}"
+		"{q.actually_additions.farmer.desc}"
 	],
 	dependencies: [
 		"dae9f45f"

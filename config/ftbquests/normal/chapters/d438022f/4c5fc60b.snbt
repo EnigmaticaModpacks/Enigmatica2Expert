@@ -2,7 +2,7 @@
 	x: -4.666666666666667d,
 	y: 16.833333333333332d,
 	text: [
-		"{bq.quest1032.desc}"
+		"{q.utils.ender_wing.desc}"
 	],
 	dependencies: [
 		"d5c22de0"

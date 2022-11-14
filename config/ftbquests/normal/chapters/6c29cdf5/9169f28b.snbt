@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest390.name}",
+	title: "{q.botania.loonium.name}",
 	x: 17.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest390.desc}"
+		"{q.botania.loonium.desc}"
 	],
 	dependencies: [
 		"5fe4c911",

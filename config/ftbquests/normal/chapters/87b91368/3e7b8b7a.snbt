@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest743.name}",
+	title: "{q.animals.myrmex_egg.name}",
 	icon: "iceandfire:myrmex_desert_egg 1 4",
 	x: 4.75d,
 	y: 1.25d,
 	text: [
-		"{bq.quest743.desc}"
+		"{q.animals.myrmex_egg.desc}"
 	],
 	dependencies: [
 		"f5163b70"

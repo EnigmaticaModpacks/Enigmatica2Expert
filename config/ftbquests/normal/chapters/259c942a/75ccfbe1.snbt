@@ -2,7 +2,7 @@
 	x: -5.166666666666667d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest560.desc}"
+		"{q.immersive_engineer.tesla_coil.desc}"
 	],
 	dependencies: [
 		"afa99b2d"

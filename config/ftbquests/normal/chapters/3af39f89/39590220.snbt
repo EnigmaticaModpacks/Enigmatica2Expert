@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest219.name}",
+	title: "{q.thermal_expansion.fractionating_still.name}",
 	x: 14.333333333333334d,
 	y: 1.5d,
 	text: [
-		"{bq.quest219.desc}"
+		"{q.thermal_expansion.fractionating_still.desc}"
 	],
 	dependencies: [
 		"9c15c499"

@@ -2,7 +2,7 @@
 	x: -14.666666666666666d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest987.desc}"
+		"{q.utils.item_collector.desc}"
 	],
 	dependencies: [
 		"dc869094"

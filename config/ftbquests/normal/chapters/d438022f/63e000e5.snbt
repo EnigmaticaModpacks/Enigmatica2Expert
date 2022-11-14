@@ -2,7 +2,7 @@
 	x: -7.5d,
 	y: 24.833333333333332d,
 	text: [
-		"{bq.quest965.desc}"
+		"{q.utils.ender_tether.desc}"
 	],
 	dependencies: [
 		"50ecf6a3"

@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest101.desc}"
+		"{q.immersive_engineer.coke_brick.desc}"
 	],
 	dependencies: [
 		"1c4deb33"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest39.name}",
+	title: "{q.gates.gate:_rftools.name}",
 	x: 3.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest39.desc}"
+		"{q.gates.gate:_rftools.desc}"
 	],
 	dependencies: [
 		"09abfe41"

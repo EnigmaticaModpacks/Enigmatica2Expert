@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter22.name}",
+	title: "{q.applied_energetics.name}",
 	icon: "chisel:futura 1 2",
 	description: [
-		"{bq.chapter22.desc}"
+		"{q.applied_energetics.desc}"
 	],
 	always_invisible: false,
 	group: 0,

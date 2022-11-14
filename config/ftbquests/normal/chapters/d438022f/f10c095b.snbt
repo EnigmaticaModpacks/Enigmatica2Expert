@@ -2,7 +2,7 @@
 	x: -2.6666666666666665d,
 	y: 16.833333333333332d,
 	text: [
-		"{bq.quest1035.desc}"
+		"{q.utils.climbing_gloves.desc}"
 	],
 	dependencies: [
 		"d5c22de0"

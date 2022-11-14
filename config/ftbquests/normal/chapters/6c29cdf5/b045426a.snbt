@@ -2,7 +2,7 @@
 	x: 1.75d,
 	y: 1.1666666666666665d,
 	text: [
-		"{bq.quest365.desc}"
+		"{q.botania.mana_spreader.desc}"
 	],
 	dependencies: [
 		"5672d99b",

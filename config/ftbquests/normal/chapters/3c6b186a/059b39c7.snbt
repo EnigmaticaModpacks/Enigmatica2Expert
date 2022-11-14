@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest69.desc}"
+		"{q.industrialcraft.macerator.desc}"
 	],
 	dependencies: [
 		"20506ca0"

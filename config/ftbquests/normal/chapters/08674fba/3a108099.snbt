@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1043.name}",
+	title: "{q.advanced_rocketry.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 0.44999999999999996d,
 	y: 7.949999999999999d,
 	text: [
-		"{bq.quest1043.desc}"
+		"{q.advanced_rocketry.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

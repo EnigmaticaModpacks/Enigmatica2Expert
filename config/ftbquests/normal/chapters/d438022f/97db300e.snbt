@@ -2,7 +2,7 @@
 	x: -3.666666666666667d,
 	y: 16.833333333333332d,
 	text: [
-		"{bq.quest1021.desc}"
+		"{q.utils.powered_diamond_an.desc}"
 	],
 	dependencies: [
 		"d5c22de0"

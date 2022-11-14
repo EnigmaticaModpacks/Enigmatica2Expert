@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest948.name}",
+	title: "{q.botania.shimmerwood.name}",
 	x: 7.833333333333333d,
 	y: 10.541666666666666d,
 	text: [
-		"{bq.quest948.desc}"
+		"{q.botania.shimmerwood.desc}"
 	],
 	dependencies: [
 		"5672d99b",

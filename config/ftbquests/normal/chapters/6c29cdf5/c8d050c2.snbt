@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest360.name}",
+	title: "{q.botania.botania.name}",
 	icon: {
 		id: "botania:lexicon",
 		tag: {}
@@ -7,7 +7,7 @@
 	x: 5.5d,
 	y: 1.8333333333333335d,
 	text: [
-		"{bq.quest360.desc}"
+		"{q.botania.botania.desc}"
 	],
 	dependencies: [
 		"5672d99b"

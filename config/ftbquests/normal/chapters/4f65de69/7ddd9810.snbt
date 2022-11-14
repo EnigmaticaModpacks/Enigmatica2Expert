@@ -2,7 +2,7 @@
 	x: 3.625d,
 	y: 5.041666666666667d,
 	text: [
-		"{bq.quest800.desc}"
+		"{q.getting_started._dank_null_.desc}"
 	],
 	dependencies: [
 		"dabc815c"

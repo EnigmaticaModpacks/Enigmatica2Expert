@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest23.name}",
+	title: "{q.bragging_rights.creative_block_exc.name}",
 	x: 3.8333333333333335d,
 	y: 11.333333333333332d,
 	text: [
-		"{bq.quest23.desc}"
+		"{q.bragging_rights.creative_block_exc.desc}"
 	],
 	dependencies: [
 		"af1b2362"

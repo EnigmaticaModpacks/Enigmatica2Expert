@@ -2,7 +2,7 @@
 	x: -0.16666666666666663d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest151.desc}"
+		"{q.astral_sorcery.luminous_crafting_.desc}"
 	],
 	dependencies: [
 		"8a6186a6"

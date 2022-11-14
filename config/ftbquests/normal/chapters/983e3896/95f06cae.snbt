@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest153.name}",
+	title: "{q.astral_sorcery.liquid_starlight.name}",
 	x: -0.16666666666666663d,
 	y: 3.5d,
 	text: [
-		"{bq.quest153.desc}"
+		"{q.astral_sorcery.liquid_starlight.desc}"
 	],
 	dependencies: [
 		"f0c1c4b1"

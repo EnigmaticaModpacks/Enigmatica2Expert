@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest218.name}",
+	title: "{q.thermal_expansion.sequential_fabrica.name}",
 	x: 12.333333333333334d,
 	y: 1.5d,
 	text: [
-		"{bq.quest218.desc}"
+		"{q.thermal_expansion.sequential_fabrica.desc}"
 	],
 	dependencies: [
 		"9c15c499"

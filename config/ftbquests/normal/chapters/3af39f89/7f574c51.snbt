@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest876.name}",
+	title: "{q.thermal_expansion.sapling_infuser.name}",
 	x: 15.333333333333334d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest876.desc}"
+		"{q.thermal_expansion.sapling_infuser.desc}"
 	],
 	dependencies: [
 		"37ed5409"

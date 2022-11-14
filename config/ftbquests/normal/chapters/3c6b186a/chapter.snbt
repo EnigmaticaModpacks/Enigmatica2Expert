@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter10.name}",
+	title: "{q.industrialcraft.name}",
 	icon: "ic2:te 1 3",
 	description: [
-		"{bq.chapter10.desc}"
+		"{q.industrialcraft.desc}"
 	],
 	always_invisible: false,
 	group: 0,

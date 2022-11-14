@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest269.name}",
+	title: "{q.rftools.power_cell.name}",
 	icon: "rftools:powercell_simple",
 	x: 2.125d,
 	y: 0.6041666666666666d,
 	text: [
-		"{bq.quest269.desc}"
+		"{q.rftools.power_cell.desc}"
 	],
 	dependencies: [
 		"f6e8e410"

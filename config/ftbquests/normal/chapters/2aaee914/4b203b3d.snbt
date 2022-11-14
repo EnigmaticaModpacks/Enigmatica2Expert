@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest186.desc}"
+		"{q.mekanism.compressed_carbon.desc}"
 	],
 	dependencies: [
 		"d0c5b8a8"

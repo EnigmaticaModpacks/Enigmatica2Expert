@@ -2,7 +2,7 @@
 	x: 5.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest806.desc}"
+		"{q.astral_sorcery.resplendent_prism.desc}"
 	],
 	dependencies: [
 		"770ef5aa"

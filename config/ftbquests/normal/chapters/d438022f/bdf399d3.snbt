@@ -2,7 +2,7 @@
 	x: 0.16666666666666669d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1010.desc}"
+		"{q.utils.auto_crafter.desc}"
 	],
 	dependencies: [
 		"9e222e1c"

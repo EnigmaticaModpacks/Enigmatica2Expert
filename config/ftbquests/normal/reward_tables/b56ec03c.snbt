@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest49.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "claybucket:claybucket 1 2"

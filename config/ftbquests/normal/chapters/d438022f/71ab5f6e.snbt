@@ -2,7 +2,7 @@
 	x: 5.0d,
 	y: 19.166666666666668d,
 	text: [
-		"{bq.quest1029.desc}"
+		"{q.utils.pharos_beacon.desc}"
 	],
 	dependencies: [
 		"9e222e1c",

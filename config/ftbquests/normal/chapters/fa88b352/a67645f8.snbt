@@ -2,7 +2,7 @@
 	x: 2.8333333333333335d,
 	y: 11.5d,
 	text: [
-		"{bq.quest504.desc}"
+		"{q.nuclearcraft.fluid_extractor.desc}"
 	],
 	dependencies: [
 		"17a47ac4",

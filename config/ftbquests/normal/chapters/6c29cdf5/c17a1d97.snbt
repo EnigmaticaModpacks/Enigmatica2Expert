@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest376.name}",
+	title: "{q.botania.thermalily.name}",
 	x: 12.833333333333334d,
 	y: 7.666666666666667d,
 	text: [
-		"{bq.quest376.desc}"
+		"{q.botania.thermalily.desc}"
 	],
 	dependencies: [
 		"5672d99b",

@@ -2,7 +2,7 @@
 	x: -14.666666666666666d,
 	y: 21.833333333333332d,
 	text: [
-		"{bq.quest1014.desc}"
+		"{q.utils.harvester.desc}"
 	],
 	dependencies: [
 		"727feb19"

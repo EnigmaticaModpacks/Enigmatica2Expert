@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest1041.name}",
+	title: "{q.thermal_expansion.the_chapter_is_com.name}",
 	icon: {
 		id: "simple_trophies:trophy",
 		tag: {
@@ -19,7 +19,7 @@
 	x: 15.0d,
 	y: 7.5d,
 	text: [
-		"{bq.quest1041.desc}"
+		"{q.thermal_expansion.the_chapter_is_com.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

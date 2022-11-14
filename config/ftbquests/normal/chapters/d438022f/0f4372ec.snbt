@@ -2,7 +2,7 @@
 	x: -16.666666666666668d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1025.desc}"
+		"{q.utils.fluid_storage_tank.desc}"
 	],
 	dependencies: [
 		"113883dc"

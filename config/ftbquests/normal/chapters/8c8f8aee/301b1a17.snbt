@@ -2,7 +2,7 @@
 	x: -6.833333333333333d,
 	y: 1.3333333333333335d,
 	text: [
-		"{bq.quest910.desc}"
+		"{q.actually_additions.shock_absorber.desc}"
 	],
 	dependencies: [
 		"98b00c72"

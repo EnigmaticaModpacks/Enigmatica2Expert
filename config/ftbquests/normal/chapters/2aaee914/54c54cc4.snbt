@@ -2,7 +2,7 @@
 	x: 8.833333333333334d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest207.desc}"
+		"{q.mekanism.basic_tier_installer.desc}"
 	],
 	dependencies: [
 		"42c0bb65"

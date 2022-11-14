@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest685.desc}"
+		"{q.actually_additions.empowered_emeradic.desc}"
 	],
 	dependencies: [
 		"20e504e1"

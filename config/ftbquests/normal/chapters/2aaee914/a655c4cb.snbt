@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest202.desc}"
+		"{q.mekanism.bio_generator.desc}"
 	],
 	dependencies: [
 		"07fcb3f0"

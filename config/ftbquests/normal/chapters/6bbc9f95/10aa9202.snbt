@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 9.0d,
 	text: [
-		"{bq.quest655.desc}"
+		"{q.thaumcraft.caster_s_gauntlet.desc}"
 	],
 	dependencies: [
 		"b1e42bf7"

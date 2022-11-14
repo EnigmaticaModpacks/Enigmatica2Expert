@@ -1,8 +1,8 @@
 {
-	title: "{bq.chapter20.name}",
+	title: "{q.bragging_rights.name}",
 	icon: "avaritia:infinity_sword",
 	description: [
-		"{bq.chapter20.desc}"
+		"{q.bragging_rights.desc}"
 	],
 	always_invisible: false,
 	group: 0,

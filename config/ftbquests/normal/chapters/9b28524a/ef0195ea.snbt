@@ -2,7 +2,7 @@
 	x: 9.5d,
 	y: 5.833333333333333d,
 	text: [
-		"{bq.quest615.desc}"
+		"{q.blood_magic.imbued_slate.desc}"
 	],
 	dependencies: [
 		"6557109c"

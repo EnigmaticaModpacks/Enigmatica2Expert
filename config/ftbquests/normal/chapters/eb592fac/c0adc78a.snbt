@@ -2,7 +2,7 @@
 	x: 5.166666666666667d,
 	y: 4.125d,
 	text: [
-		"{bq.quest694.desc}"
+		"{q.rftools.phased_field_gener.desc}"
 	],
 	dependencies: [
 		"c7f76475"

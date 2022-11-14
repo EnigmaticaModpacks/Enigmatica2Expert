@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest898.name}",
+	title: "{q.rftools.mini_gate:_rftools.name}",
 	icon: "rftools:machine_base",
 	x: -5.5d,
 	y: -0.5d,

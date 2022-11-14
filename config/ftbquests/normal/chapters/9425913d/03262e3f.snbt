@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest572.name}",
+	title: "{q.gates.glitch_infused_armor.name}",
 	icon: "deepmoblearning:glitch_infused_chestplate",
 	x: 12.0d,
 	y: 5.0d,
 	text: [
-		"{bq.quest572.desc}"
+		"{q.gates.glitch_infused_armor.desc}"
 	],
 	dependencies: [
 		"3c0d3677"

@@ -2,7 +2,7 @@
 	x: 3.1666666666666665d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest645.desc}"
+		"{q.thaumcraft.greatwood_log.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

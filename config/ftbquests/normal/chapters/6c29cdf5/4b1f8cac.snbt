@@ -2,7 +2,7 @@
 	x: 0.4166666666666667d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest411.desc}"
+		"{q.botania.horn_of_the_covering.desc}"
 	],
 	dependencies: [
 		"5672d99b",

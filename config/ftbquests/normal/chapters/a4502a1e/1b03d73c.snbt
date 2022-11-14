@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest885.name}",
+	title: "{q.extra_utilities.rainbow_generator_.name}",
 	x: 14.458333333333334d,
 	y: 2.4166666666666665d,
 	text: [
-		"{bq.quest885.desc}"
+		"{q.extra_utilities.rainbow_generator_.desc}"
 	],
 	dependencies: [
 		"fc937313",

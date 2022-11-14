@@ -2,7 +2,7 @@
 	x: 6.166666666666667d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest586.desc}"
+		"{q.ender_io.alloy_smelter.desc}"
 	],
 	dependencies: [
 		"0cce2fa6"

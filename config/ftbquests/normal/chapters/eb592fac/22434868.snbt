@@ -2,7 +2,7 @@
 	x: -4.958333333333333d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest899.desc}"
+		"{q.rftools.booster.desc}"
 	],
 	dependencies: [
 		"094a95d2",

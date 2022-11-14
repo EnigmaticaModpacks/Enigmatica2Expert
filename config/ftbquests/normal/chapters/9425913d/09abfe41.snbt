@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest15.name}",
+	title: "{q.gates.gate:_industrial_f.name}",
 	x: 1.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest15.desc}"
+		"{q.gates.gate:_industrial_f.desc}"
 	],
 	dependencies: [
 		"e07d1afe"

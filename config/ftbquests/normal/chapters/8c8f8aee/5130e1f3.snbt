@@ -2,7 +2,7 @@
 	x: -6.833333333333333d,
 	y: 5.333333333333333d,
 	text: [
-		"{bq.quest124.desc}"
+		"{q.actually_additions.crusher.desc}"
 	],
 	dependencies: [
 		"03d4419e"

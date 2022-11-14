@@ -2,7 +2,7 @@
 	x: 2.166666666666667d,
 	y: 10.5d,
 	text: [
-		"{bq.quest754.desc}"
+		"{q.mekanism.chemical_washer.desc}"
 	],
 	dependencies: [
 		"b149be6c"

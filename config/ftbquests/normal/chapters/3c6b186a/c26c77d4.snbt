@@ -2,7 +2,7 @@
 	x: 5.833333333333333d,
 	y: 3.5d,
 	text: [
-		"{bq.quest413.desc}"
+		"{q.industrialcraft.advanced_alloy.desc}"
 	],
 	dependencies: [
 		"d1c08d01"

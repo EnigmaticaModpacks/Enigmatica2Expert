@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest598.name}",
+	title: "{q.blood_magic.blood_magic.name}",
 	icon: {
 		id: "guideapi:bloodmagic-guide",
 		tag: {
@@ -13,7 +13,7 @@
 	x: 1.1666666666666667d,
 	y: 1.5d,
 	text: [
-		"{bq.quest598.desc}"
+		"{q.blood_magic.blood_magic.desc}"
 	],
 	dependencies: [
 		"23f35414"

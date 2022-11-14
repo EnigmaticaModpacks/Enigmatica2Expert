@@ -2,7 +2,7 @@
 	x: 5.166666666666667d,
 	y: 13.5d,
 	text: [
-		"{bq.quest519.desc}"
+		"{q.nuclearcraft.nuclear_furnace.desc}"
 	],
 	dependencies: [
 		"a741066c",

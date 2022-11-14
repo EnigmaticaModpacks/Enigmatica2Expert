@@ -2,7 +2,7 @@
 	x: -0.8333333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest99.desc}"
+		"{q.forestry.thermionic_fabrica.desc}"
 	],
 	dependencies: [
 		"4007e26a"

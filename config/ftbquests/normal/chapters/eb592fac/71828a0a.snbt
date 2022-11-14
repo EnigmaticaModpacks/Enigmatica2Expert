@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest774.name}",
+	title: "{q.rftools.endergenic_generator.name}",
 	icon: "rftools:endergenic",
 	x: -1.875d,
 	y: -0.6458333333333334d,
 	text: [
-		"{bq.quest774.desc}"
+		"{q.rftools.endergenic_generator.desc}"
 	],
 	dependencies: [
 		"f6e8e410"

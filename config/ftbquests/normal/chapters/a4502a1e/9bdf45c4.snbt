@@ -2,7 +2,7 @@
 	x: 1.9375d,
 	y: 1.7916666666666667d,
 	text: [
-		"{bq.quest115.desc}"
+		"{q.extra_utilities.golden_lasso.desc}"
 	],
 	dependencies: [
 		"a1b2fa88"

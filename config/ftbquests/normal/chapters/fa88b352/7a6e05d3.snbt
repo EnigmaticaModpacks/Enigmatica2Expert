@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest712.name}",
+	title: "{q.nuclearcraft.molten_salt_reactor.name}",
 	icon: "nuclearcraft:salt_fission_controller",
 	x: 5.833333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest712.desc}"
+		"{q.nuclearcraft.molten_salt_reactor.desc}"
 	],
 	dependencies: [
 		"3ba07972",

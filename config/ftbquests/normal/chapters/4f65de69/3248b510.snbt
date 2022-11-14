@@ -2,7 +2,7 @@
 	x: 9.625d,
 	y: 5.0d,
 	text: [
-		"{bq.quest942.desc}"
+		"{q.getting_started.teleport_rail.desc}"
 	],
 	dependencies: [
 		"558597eb"

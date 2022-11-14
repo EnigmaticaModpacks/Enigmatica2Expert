@@ -2,7 +2,7 @@
 	x: -0.8333333333333333d,
 	y: 14.166666666666666d,
 	text: [
-		"{bq.quest1037.desc}"
+		"{q.utils.speed_charm.desc}"
 	],
 	dependencies: [
 		"9e222e1c"

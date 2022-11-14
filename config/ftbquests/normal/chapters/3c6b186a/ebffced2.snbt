@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest80.desc}"
+		"{q.industrialcraft.electric_furnace.desc}"
 	],
 	dependencies: [
 		"d1c08d01"

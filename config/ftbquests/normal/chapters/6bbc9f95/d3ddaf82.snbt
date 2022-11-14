@@ -2,7 +2,7 @@
 	x: 0.6666666666666666d,
 	y: 12.0d,
 	text: [
-		"{bq.quest647.desc}"
+		"{q.thaumcraft.thaumium_essentia_.desc}"
 	],
 	dependencies: [
 		"f85506a2"

@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: -1.25d,
 	text: [
-		"{bq.quest745.desc}"
+		"{q.animals.hippogryph_egg.desc}"
 	],
 	dependencies: [
 		"d1d3c3b1"

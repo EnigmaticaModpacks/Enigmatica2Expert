@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest132.name}",
+	title: "{q.actually_additions.ultimate_canola.name}",
 	x: -0.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest132.desc}"
+		"{q.actually_additions.ultimate_canola.desc}"
 	],
 	dependencies: [
 		"20e504e1",

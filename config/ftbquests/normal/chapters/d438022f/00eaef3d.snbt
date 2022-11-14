@@ -2,7 +2,7 @@
 	x: -4.333333333333333d,
 	y: 12.166666666666666d,
 	text: [
-		"{bq.quest975.desc}"
+		"{q.utils.auto_anvil.desc}"
 	],
 	dependencies: [
 		"6c286b64"

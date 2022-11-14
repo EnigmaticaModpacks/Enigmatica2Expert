@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest956.name}",
+	title: "{q.utils.mod:_rustic.name}",
 	x: -20.833333333333332d,
 	y: 21.333333333333336d,
 	shape: "heart",
 	text: [
-		"{bq.quest956.desc}"
+		"{q.utils.mod:_rustic.desc}"
 	],
 	dependencies: [
 		"37406152"

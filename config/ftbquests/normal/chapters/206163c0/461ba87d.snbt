@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest891.name}",
+	title: "{q.forestry.bags.name}",
 	x: -4.833333333333333d,
 	y: -0.5d,
 	text: [
-		"{bq.quest891.desc}"
+		"{q.forestry.bags.desc}"
 	],
 	dependencies: [
 		"8806b7fe"

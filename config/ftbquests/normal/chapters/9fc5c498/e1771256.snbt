@@ -2,7 +2,7 @@
 	x: 4.833333333333333d,
 	y: 2.5d,
 	text: [
-		"{bq.quest573.desc}"
+		"{q.ender_io.experience_obelisk.desc}"
 	],
 	dependencies: [
 		"0cce2fa6"

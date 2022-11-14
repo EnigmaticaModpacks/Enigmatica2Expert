@@ -2,7 +2,7 @@
 	x: -2.0d,
 	y: 2.5d,
 	text: [
-		"{bq.quest853.desc}"
+		"{q.applied_energetics.me_fluid_auto_filler.desc}"
 	],
 	dependencies: [
 		"228e865e"

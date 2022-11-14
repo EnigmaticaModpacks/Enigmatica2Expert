@@ -2,7 +2,7 @@
 	x: -0.5000000000000001d,
 	y: 9.666666666666666d,
 	text: [
-		"{bq.quest905.desc}"
+		"{q.actually_additions.lens_of_the_miner.desc}"
 	],
 	dependencies: [
 		"20e504e1"

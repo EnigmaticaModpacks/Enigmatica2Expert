@@ -2,7 +2,7 @@
 	x: -16.666666666666668d,
 	y: 21.833333333333332d,
 	text: [
-		"{bq.quest1018.desc}"
+		"{q.utils.structure_builder.desc}"
 	],
 	dependencies: [
 		"727feb19"

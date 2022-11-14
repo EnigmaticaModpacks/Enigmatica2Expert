@@ -3,7 +3,7 @@
 	x: -11.166666666666666d,
 	y: 24.166666666666668d,
 	text: [
-		"{bq.quest953.desc}"
+		"{q.utils.white_typewriter.desc}"
 	],
 	dependencies: [
 		"6eea845e"

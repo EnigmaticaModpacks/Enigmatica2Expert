@@ -2,7 +2,7 @@
 	x: 14.166666666666666d,
 	y: 9.833333333333334d,
 	text: [
-		"{bq.quest456.desc}"
+		"{q.advanced_rocketry.dilithium_ore.desc}"
 	],
 	dependencies: [
 		"e9fa52b4"

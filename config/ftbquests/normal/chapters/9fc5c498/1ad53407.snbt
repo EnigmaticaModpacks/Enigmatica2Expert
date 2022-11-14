@@ -2,7 +2,7 @@
 	x: 2.166666666666667d,
 	y: 6.5d,
 	text: [
-		"{bq.quest457.desc}"
+		"{q.ender_io.stellar_capacitor.desc}"
 	],
 	dependencies: [
 		"1dcb614b"

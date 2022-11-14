@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest845.name}",
+	title: "{q.applied_energetics.crafting_unit.name}",
 	icon: "appliedenergistics2:crafting_unit",
 	x: -3.5d,
 	y: -0.5d,
 	text: [
-		"{bq.quest845.desc}"
+		"{q.applied_energetics.crafting_unit.desc}"
 	],
 	dependencies: [
 		"766a14ec"

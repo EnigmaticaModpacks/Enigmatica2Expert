@@ -3,7 +3,7 @@
 	x: -0.5d,
 	y: 2.5d,
 	text: [
-		"{bq.quest855.desc}"
+		"{q.applied_energetics.fluix_wire_coil.desc}"
 	],
 	dependencies: [
 		"882dc2b8"

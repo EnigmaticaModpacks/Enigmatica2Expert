@@ -2,7 +2,7 @@
 	x: 10.5d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest396.desc}"
+		"{q.botania.dice_of_fate.desc}"
 	],
 	dependencies: [
 		"5672d99b",

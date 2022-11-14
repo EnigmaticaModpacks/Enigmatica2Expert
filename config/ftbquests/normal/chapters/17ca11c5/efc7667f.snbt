@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest709.name}",
+	title: "{q.bragging_rights.creative_rat_upgrade.name}",
 	x: 0.0d,
 	y: 2.833333333333334d,
 	text: [
-		"{bq.quest709.desc}"
+		"{q.bragging_rights.creative_rat_upgrade.desc}"
 	],
 	dependencies: [
 		"a1377b51"

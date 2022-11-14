@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest565.name}",
+	title: "{q.ender_io.ender_io.name}",
 	icon: "enderio:item_material",
 	x: 0.8333333333333333d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest565.desc}"
+		"{q.ender_io.ender_io.desc}"
 	],
 	dependencies: [
 		"f7ad5a10"

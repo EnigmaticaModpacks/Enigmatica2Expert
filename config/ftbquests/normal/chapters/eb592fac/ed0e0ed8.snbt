@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest276.name}",
+	title: "{q.rftools.builder_quarry.name}",
 	x: 0.0d,
 	y: 5.0d,
 	text: [
-		"{bq.quest276.desc}"
+		"{q.rftools.builder_quarry.desc}"
 	],
 	dependencies: [
 		"8eca55bc"

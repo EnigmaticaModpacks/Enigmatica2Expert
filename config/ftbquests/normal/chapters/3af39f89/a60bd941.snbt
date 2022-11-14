@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest230.name}",
+	title: "{q.thermal_expansion.glacial_precipitator.name}",
 	x: 9.333333333333334d,
 	y: 0.33333333333333337d,
 	text: [
-		"{bq.quest230.desc}"
+		"{q.thermal_expansion.glacial_precipitator.desc}"
 	],
 	dependencies: [
 		"9c15c499"

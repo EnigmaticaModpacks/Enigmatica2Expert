@@ -2,7 +2,7 @@
 	x: -1.1666666666666667d,
 	y: 6.166666666666667d,
 	text: [
-		"{bq.quest154.desc}"
+		"{q.astral_sorcery.fosic_resonator.desc}"
 	],
 	dependencies: [
 		"95f06cae"

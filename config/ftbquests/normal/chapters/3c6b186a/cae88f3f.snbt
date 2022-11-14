@@ -3,7 +3,7 @@
 	x: 2.5d,
 	y: 0.8333333333333333d,
 	text: [
-		"{bq.quest418.desc}"
+		"{q.industrialcraft.rubber.desc}"
 	],
 	dependencies: [
 		"b522c8b8"

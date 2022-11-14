@@ -2,7 +2,7 @@
 	x: 5.5d,
 	y: 4.833333333333333d,
 	text: [
-		"{bq.quest1073.desc}"
+		"{q.thaumcraft.tome_of_sharing.desc}"
 	],
 	dependencies: [
 		"2e8e4ce7"

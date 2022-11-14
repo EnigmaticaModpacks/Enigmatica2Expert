@@ -2,7 +2,7 @@
 	x: 1.125d,
 	y: -0.625d,
 	text: [
-		"{bq.quest926.desc}"
+		"{q.bragging_rights.star_of_psi.desc}"
 	],
 	dependencies: [
 		"fbbabf40"

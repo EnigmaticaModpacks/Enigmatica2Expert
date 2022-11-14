@@ -2,7 +2,7 @@
 	x: 1.1666666666666665d,
 	y: 6.5d,
 	text: [
-		"{bq.quest683.desc}"
+		"{q.actually_additions.empowered_diamatin.desc}"
 	],
 	dependencies: [
 		"20e504e1"

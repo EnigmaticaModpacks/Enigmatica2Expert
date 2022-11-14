@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest893.name}",
 	loot_size: 1,
 	rewards: [{
 		item: "industrialwires:ic2_connector 1 1",

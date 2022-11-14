@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest809.name}",
+	title: "{q.getting_started.inventory_managment.name}",
 	x: 6.7d,
 	y: 5.1d,
 	text: [
-		"{bq.quest809.desc}"
+		"{q.getting_started.inventory_managment.desc}"
 	],
 	dependencies: [
 		"4fc58528"

@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 1.1666666666666665d,
 	text: [
-		"{bq.quest363.desc}"
+		"{q.botania.wand_of_the_forest.desc}"
 	],
 	dependencies: [
 		"5672d99b",

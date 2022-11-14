@@ -2,7 +2,7 @@
 	x: -14.833333333333334d,
 	y: 10.666666666666666d,
 	text: [
-		"{bq.quest997.desc}"
+		"{q.utils.summoning_pendulum.desc}"
 	],
 	dependencies: [
 		"9092f6f7"

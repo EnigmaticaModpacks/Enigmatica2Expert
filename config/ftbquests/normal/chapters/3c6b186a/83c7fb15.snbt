@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest73.name}",
+	title: "{q.industrialcraft.batbox_tin_cables.name}",
 	icon: {
 		id: "ic2:cable",
 		Damage: 4s,
@@ -11,7 +11,7 @@
 	x: 0.8333333333333333d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest73.desc}"
+		"{q.industrialcraft.batbox_tin_cables.desc}"
 	],
 	dependencies: [
 		"b522c8b8"

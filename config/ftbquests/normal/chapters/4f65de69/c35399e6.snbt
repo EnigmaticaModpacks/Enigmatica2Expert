@@ -1,5 +1,5 @@
 {
-	title: "{bq.quest605.name}",
+	title: "{q.getting_started.tinker_s_construct.name}",
 	icon: {
 		id: "tconstruct:tooltables",
 		Damage: 2s,
@@ -14,7 +14,7 @@
 	x: -4.0d,
 	y: 3.5d,
 	text: [
-		"{bq.quest605.desc}"
+		"{q.getting_started.tinker_s_construct.desc}"
 	],
 	dependencies: [
 		"f968d750"

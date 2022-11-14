@@ -2,7 +2,7 @@
 	x: 4.166666666666666d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest164.desc}"
+		"{q.astral_sorcery.ritual_pedestal.desc}"
 	],
 	dependencies: [
 		"d051b719",

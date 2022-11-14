@@ -2,7 +2,7 @@
 	x: 4.666666666666667d,
 	y: 13.333333333333334d,
 	text: [
-		"{bq.quest677.desc}"
+		"{q.thaumcraft.blank_label.desc}"
 	],
 	dependencies: [
 		"f0a632f4"

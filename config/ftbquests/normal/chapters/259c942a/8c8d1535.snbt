@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{bq.quest296.desc}"
+		"{q.immersive_engineer.light_engineering_.desc}"
 	],
 	dependencies: [
 		"862cd6dd"

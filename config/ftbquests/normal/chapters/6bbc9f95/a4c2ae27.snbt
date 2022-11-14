@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest681.name}",
+	title: "{q.thaumcraft.essentia_transfusers.name}",
 	x: 2.0d,
 	y: 14.666666666666666d,
 	text: [
-		"{bq.quest681.desc}"
+		"{q.thaumcraft.essentia_transfusers.desc}"
 	],
 	dependencies: [
 		"64586ee7"

@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest720.name}",
+	title: "{q.animals.peacock_feathers.name}",
 	icon: "animania:blue_peacock_feather",
 	x: 2.0d,
 	y: 0.0d,
 	text: [
-		"{bq.quest720.desc}"
+		"{q.animals.peacock_feathers.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 3.5d,
 	text: [
-		"{bq.quest282.desc}"
+		"{q.forestry.flexible_casing.desc}"
 	],
 	dependencies: [
 		"8806b7fe"

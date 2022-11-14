@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest66.name}",
+	title: "{q.gates.gate:_deep_mob_lea.name}",
 	x: 11.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest66.desc}"
+		"{q.gates.gate:_deep_mob_lea.desc}"
 	],
 	dependencies: [
 		"5672d99b"

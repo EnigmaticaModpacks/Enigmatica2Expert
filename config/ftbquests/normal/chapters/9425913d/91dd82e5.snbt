@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest41.name}",
+	title: "{q.gates.gate:_draconic_evo.name}",
 	x: -0.5d,
 	y: 5.5d,
 	text: [
-		"{bq.quest41.desc}"
+		"{q.gates.gate:_draconic_evo.desc}"
 	],
 	dependencies: [
 		"4af44027",

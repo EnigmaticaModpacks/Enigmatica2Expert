@@ -2,7 +2,7 @@
 	x: 2.166666666666667d,
 	y: 7.833333333333333d,
 	text: [
-		"{bq.quest180.desc}"
+		"{q.mekanism.elite_control_circ.desc}"
 	],
 	dependencies: [
 		"6856159e",

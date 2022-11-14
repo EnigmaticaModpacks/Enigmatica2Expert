@@ -2,7 +2,7 @@
 	x: -4.833333333333333d,
 	y: 5.666666666666667d,
 	text: [
-		"{bq.quest813.desc}"
+		"{q.industrial_foregoing.sewage_composter.desc}"
 	],
 	dependencies: [
 		"2f5a060a"

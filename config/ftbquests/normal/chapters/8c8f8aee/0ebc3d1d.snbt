@@ -2,7 +2,7 @@
 	x: 1.5d,
 	y: 8.5d,
 	text: [
-		"{bq.quest686.desc}"
+		"{q.actually_additions.empowered_enori_cr.desc}"
 	],
 	dependencies: [
 		"20e504e1"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest252.name}",
+	title: "{q.thermal_expansion.fluidic_fabrication.name}",
 	x: 12.333333333333334d,
 	y: 2.6666666666666665d,
 	text: [
-		"{bq.quest252.desc}"
+		"{q.thermal_expansion.fluidic_fabrication.desc}"
 	],
 	dependencies: [
 		"e4cdac46"

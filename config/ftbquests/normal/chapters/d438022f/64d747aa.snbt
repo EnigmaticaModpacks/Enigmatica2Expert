@@ -2,7 +2,7 @@
 	x: -9.0d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1013.desc}"
+		"{q.utils.item_collector_1.desc}"
 	],
 	dependencies: [
 		"33b238ff"

@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest621.name}",
+	title: "{q.getting_started.construct_s_armory.name}",
 	x: -4.0d,
 	y: 5.0d,
 	text: [
-		"{bq.quest621.desc}"
+		"{q.getting_started.construct_s_armory.desc}"
 	],
 	dependencies: [
 		"c35399e6"

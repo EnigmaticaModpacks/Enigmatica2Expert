@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest839.name}",
+	title: "{q.gates.gate:_advanced_gen.name}",
 	x: 7.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{bq.quest839.desc}"
+		"{q.gates.gate:_advanced_gen.desc}"
 	],
 	dependencies: [
 		"e5622496"

@@ -2,7 +2,7 @@
 	x: 1.9375d,
 	y: 2.583333333333333d,
 	text: [
-		"{bq.quest116.desc}"
+		"{q.extra_utilities.cursed_lasso.desc}"
 	],
 	dependencies: [
 		"9bdf45c4"

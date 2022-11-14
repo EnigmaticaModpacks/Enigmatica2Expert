@@ -3,7 +3,7 @@
 	x: -6.666666666666667d,
 	y: 10.166666666666666d,
 	text: [
-		"{bq.quest985.desc}"
+		"{q.utils.item_cannon.desc}"
 	],
 	dependencies: [
 		"9f41b8d8"

@@ -2,7 +2,7 @@
 	x: 1.1666666666666665d,
 	y: 7.5d,
 	text: [
-		"{bq.quest308.desc}"
+		"{q.actually_additions.empowered_restonia.desc}"
 	],
 	dependencies: [
 		"20e504e1"

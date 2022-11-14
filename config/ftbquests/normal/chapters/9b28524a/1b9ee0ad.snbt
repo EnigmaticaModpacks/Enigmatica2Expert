@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest625.desc}"
+		"{q.blood_magic.divination_sigil.desc}"
 	],
 	dependencies: [
 		"6a6dc36e"

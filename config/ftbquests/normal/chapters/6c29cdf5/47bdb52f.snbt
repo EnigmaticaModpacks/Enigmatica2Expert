@@ -2,7 +2,7 @@
 	x: 9.166666666666666d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest408.desc}"
+		"{q.botania.rod_of_the_terra_f.desc}"
 	],
 	dependencies: [
 		"8597748f",

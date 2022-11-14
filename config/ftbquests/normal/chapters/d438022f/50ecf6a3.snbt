@@ -1,10 +1,10 @@
 {
-	title: "{bq.quest963.name}",
+	title: "{q.utils.mod:_dark_utilities.name}",
 	x: -6.333333333333333d,
 	y: 23.5d,
 	shape: "heart",
 	text: [
-		"{bq.quest963.desc}"
+		"{q.utils.mod:_dark_utilities.desc}"
 	],
 	dependencies: [
 		"37406152"

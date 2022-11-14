@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest215.name}",
+	title: "{q.thermal_expansion.redstone_furnace.name}",
 	x: 10.3d,
 	y: 1.5d,
 	text: [
-		"{bq.quest215.desc}"
+		"{q.thermal_expansion.redstone_furnace.desc}"
 	],
 	dependencies: [
 		"9c15c499"

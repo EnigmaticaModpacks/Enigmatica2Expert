@@ -2,7 +2,7 @@
 	x: -2.0d,
 	y: 2.5d,
 	text: [
-		"{bq.quest755.desc}"
+		"{q.animals.golden_egg.desc}"
 	],
 	dependencies: [
 		"1fa3be0b"

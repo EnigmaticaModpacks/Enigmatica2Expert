@@ -2,7 +2,7 @@
 	x: 8.166666666666668d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest430.desc}"
+		"{q.advanced_rocketry.basic_circuit.desc}"
 	],
 	dependencies: [
 		"2a1a27df",

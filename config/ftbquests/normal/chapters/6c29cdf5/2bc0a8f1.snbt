@@ -2,7 +2,7 @@
 	x: 3.5416666666666665d,
 	y: 5.166666666666667d,
 	text: [
-		"{bq.quest374.desc}"
+		"{q.botania.mana_pool.desc}"
 	],
 	dependencies: [
 		"64be75e6",

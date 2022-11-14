@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest242.name}",
+	title: "{q.thermal_expansion.boiler_conversion.name}",
 	x: 3.1666666666666665d,
 	y: 6.666666666666667d,
 	text: [
-		"{bq.quest242.desc}"
+		"{q.thermal_expansion.boiler_conversion.desc}"
 	],
 	dependencies: [
 		"dfa7ef0d",

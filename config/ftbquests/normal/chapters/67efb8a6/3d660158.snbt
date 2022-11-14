@@ -2,7 +2,7 @@
 	x: 3.5d,
 	y: 9.5d,
 	text: [
-		"{bq.quest552.desc}"
+		"{q.draconic_evolution.draconic_pickaxe.desc}"
 	],
 	dependencies: [
 		"ffc09ba6"

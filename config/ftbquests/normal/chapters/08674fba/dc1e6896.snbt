@@ -2,7 +2,7 @@
 	x: 14.166666666666666d,
 	y: 1.8333333333333333d,
 	text: [
-		"{bq.quest435.desc}"
+		"{q.advanced_rocketry.gas_charge_pad.desc}"
 	],
 	dependencies: [
 		"6e40dbf6"

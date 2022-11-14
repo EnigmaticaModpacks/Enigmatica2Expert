@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest346.name}",
+	title: "{q.extra_utilities.pink_generator.name}",
 	x: 13.0d,
 	y: 3.0d,
 	text: [
-		"{bq.quest346.desc}"
+		"{q.extra_utilities.pink_generator.desc}"
 	],
 	dependencies: [
 		"f31c5840"

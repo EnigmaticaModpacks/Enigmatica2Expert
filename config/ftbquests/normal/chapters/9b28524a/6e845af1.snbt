@@ -2,7 +2,7 @@
 	x: 9.166666666666666d,
 	y: 8.166666666666668d,
 	text: [
-		"{bq.quest827.desc}"
+		"{q.blood_magic.rune_of_capacity.desc}"
 	],
 	dependencies: [
 		"ef0195ea"

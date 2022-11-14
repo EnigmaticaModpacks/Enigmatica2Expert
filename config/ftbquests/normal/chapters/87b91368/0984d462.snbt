@@ -2,7 +2,7 @@
 	x: -6.5d,
 	y: 4.0d,
 	text: [
-		"{bq.quest733.desc}"
+		"{q.animals.rat_breeding_lantern.desc}"
 	],
 	dependencies: [
 		"47580ca1"

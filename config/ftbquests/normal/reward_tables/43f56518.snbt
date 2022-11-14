@@ -1,5 +1,4 @@
 {
-	title: "{bq.quest799.name}",
 	loot_size: 1,
 	rewards: [{
 		title: "64",

@@ -2,7 +2,7 @@
 	x: -8.0d,
 	y: 20.5d,
 	text: [
-		"{bq.quest1056.desc}"
+		"{q.utils.inventory_upgrade.desc}"
 	],
 	dependencies: [
 		"33b238ff"

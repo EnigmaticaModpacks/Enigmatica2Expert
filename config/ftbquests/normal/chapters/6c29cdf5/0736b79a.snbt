@@ -1,9 +1,9 @@
 {
-	title: "{bq.quest369.name}",
+	title: "{q.botania.jaded_amaranthus.name}",
 	x: 18.166666666666668d,
 	y: 2.8333333333333335d,
 	text: [
-		"{bq.quest369.desc}"
+		"{q.botania.jaded_amaranthus.desc}"
 	],
 	dependencies: [
 		"5fe4c911",

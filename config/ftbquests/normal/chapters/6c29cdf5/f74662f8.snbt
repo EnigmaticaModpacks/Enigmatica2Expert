@@ -3,7 +3,7 @@
 	x: 1.8333333333333333d,
 	y: 6.5d,
 	text: [
-		"{bq.quest765.desc}"
+		"{q.botania.manaweave_cowl.desc}"
 	],
 	dependencies: [
 		"2bc0a8f1"
