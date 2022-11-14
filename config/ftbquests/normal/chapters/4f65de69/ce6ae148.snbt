@@ -12,74 +12,20 @@
 		type: "item",
 		items: [{
 			id: "plustic:laser_gun",
-			tag: {
-				LockCooldown: 0,
-				StatsOriginal: {
-					AttackSpeedMultiplier: 1f,
-					LaserGunPower: 2.5f,
-					MiningSpeed: 6.75f,
-					FreeModifiers: 3,
-					Durability: 143,
-					HarvestLevel: 8,
-					LaserGunEnergy: 120000,
-					Attack: 2.5f,
-					LaserGunRange: 20f
+			tag: {},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
 				},
-				Special: {
-					Categories: [
-						"tool",
-						"weapon"
-					]
+				"plustic:": {
+					Items: [],
+					Size: 1
 				},
-				Stats: {
-					AttackSpeedMultiplier: 1f,
-					LaserGunPower: 2.5f,
-					MiningSpeed: 6.75f,
-					FreeModifiers: 2,
-					Durability: 143,
-					HarvestLevel: 8,
-					LaserGunEnergy: 120000,
-					Attack: 2.5f,
-					LaserGunRange: 20f
-				},
-				AttackDuration: 0,
-				Modifiers: [{
-					identifier: "withering",
-					color: -14079703,
-					level: 1
-				},
-				{
-					identifier: "poisonous",
-					color: -14079703,
-					level: 1
-				},
-				{
-					identifier: "coldblooded",
-					color: -6202120,
-					level: 1
-				},
-				{
-					identifier: "toolleveling",
-					color: 16777215,
-					level: 1
-				}],
-				TinkerData: {
-					Materials: [
-						"thorium",
-						"thorium",
-						"prismarine",
-						"manyullyn"
-					],
-					Modifiers: [
-						"toolleveling"
-					]
-				},
-				Traits: [
-					"withering",
-					"poisonous",
-					"coldblooded",
-					"toolleveling"
-				]
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
 			}
 		}],
 		ignore_nbt: 1b
