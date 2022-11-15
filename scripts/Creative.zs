@@ -266,7 +266,7 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 # Creative Wireless Crafting Terminal
 	recipes.addShapeless("Creative Wireless Crafting Terminal", 
 	<wct:wct_creative>, 
-	[<wct:wct>.withTag({}),<rftools:powercell_creative>.anyDamage()]);
+	[<wct:wct>.withTag({}),<enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000})]);
 
 # TIC Creative Modifier
 	mods.extendedcrafting.TableCrafting.addShaped(4, <tconstruct:materials:50>,
