@@ -24,10 +24,10 @@ var allGasesNames as string[] = ["hydrogen", "oxygen", "water", "chlorine", "sul
 	"slurryNickel", "slurryPlatinum", "slurryThorium", "slurryTitanium", "slurryUranium"] as string[];
 
 # Gas Ingredients (can use even gas tank without any gas)
-var gt as IIngredient = <mekanism:gastank>.withTag({tier: 1, mekData: { stored: {amount: 320000/* , gasName: allGasesNames[0] */}}}) as IIngredient;
+var gt as IIngredient = <mekanism:gastank>.withTag({tier: 1, mekData: { stored: {amount: 640000/* , gasName: allGasesNames[0] */}}}) as IIngredient;
 for i in 0 to allGasesNames.length {
   if (!isNull(mods.mekanism.MekanismHelper.getGas(allGasesNames[i]))) {
-    gt = gt.or( <mekanism:gastank>.withTag({tier: 1, mekData: { stored: {amount: 320000, gasName: allGasesNames[i]}}}) );
+    gt = gt.or( <mekanism:gastank>.withTag({tier: 1, mekData: { stored: {amount: 640000, gasName: allGasesNames[i]}}}) );
   }
 }
 
