@@ -17,13 +17,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "961e06a4",
+		uid: "733e7bc2",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		item: "botania:manaresource",
+		count: 20
 	}]
 }
