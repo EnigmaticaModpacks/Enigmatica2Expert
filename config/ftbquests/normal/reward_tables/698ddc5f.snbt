@@ -2,8 +2,211 @@
 	title: "Decor",
 	loot_size: 1,
 	rewards: [{
-		item: "forestry:doors.cocobolo",
+		item: "minecraft:lit_pumpkin",
+		count: 32
+	},
+	{
+		item: {
+			id: "minecraft:banner",
+			Damage: 6s,
+			ForgeCaps: {
+				"thaumicaugmentation:elytra_harness_augment": {}
+			}
+		},
+		count: 64
+	},
+	{
+		item: "minecraft:item_frame",
+		count: 64
+	},
+	{
+		item: "minecraft:waterlily",
+		count: 16
+	},
+	{
+		item: "biomesoplenty:terrarium 1 13",
+		count: 2
+	},
+	{
+		item: "chisel:futura 1 2"
+	},
+	{
+		item: "harvestcraft:well"
+	},
+	{
+		item: "botania:elfglasspane",
+		count: 64
+	},
+	{
+		item: "cyclicmagic:beacon_redstone",
+		count: 2
+	},
+	{
+		item: "openblocks:target",
+		count: 8
+	},
+	{
+		item: "immersiveengineering:metal_device1 1 9",
+		count: 8
+	},
+	{
+		item: "advancedrocketry:launchpad",
+		count: 64
+	},
+	{
+		item: "thermaldynamics:duct_64 1 2",
+		count: 32
+	},
+	{
+		item: "immersiveengineering:metal_decoration2 1 4",
+		count: 16
+	},
+	{
+		item: "chisel:lapis 1 7",
 		count: 4
+	},
+	{
+		item: "mekanism:obsidiantnt",
+		count: 16
+	},
+	{
+		item: "extrautils2:decorativeglass 1 4",
+		count: 64
+	},
+	{
+		item: "extrautils2:decorativeglass 1 5",
+		count: 64
+	},
+	{
+		item: "rustic:chair_ironwood",
+		count: 64
+	},
+	{
+		item: "rustic:table_ironwood",
+		count: 64
+	},
+	{
+		item: "quark:smoker",
+		count: 4
+	},
+	{
+		item: "quark:lit_lamp",
+		count: 32
+	},
+	{
+		item: "rustic:vase",
+		count: 8
+	},
+	{
+		item: "tconstruct:throwball",
+		count: 16
+	},
+	{
+		item: "rats:rat_tube_light_blue",
+		count: 64
+	},
+	{
+		item: "rats:rat_lantern",
+		count: 64
+	},
+	{
+		item: "appliedenergistics2:quartz_fixture",
+		count: 16
+	},
+	{
+		item: "mia:torch_gold",
+		count: 64
+	},
+	{
+		item: "rustic:candle_lever",
+		count: 64
+	},
+	{
+		item: "rustic:lantern_wood",
+		count: 64
+	},
+	{
+		item: "quark:candle",
+		count: 64
+	},
+	{
+		item: "integrateddynamics:menril_torch",
+		count: 64
+	},
+	{
+		item: "harvestcraft:candledeco14",
+		count: 64
+	},
+	{
+		item: {
+			id: "thaumcraft:banner_red",
+			ForgeCaps: {
+				"thaumicaugmentation:elytra_harness_augment": {}
+			}
+		},
+		count: 64
+	},
+	{
+		item: "extrautils2:angelblock",
+		count: 16
+	},
+	{
+		item: "mekanism:balloon 1 2",
+		count: 16
+	},
+	{
+		item: "thaumicaugmentation:arcane_door",
+		count: 2
+	},
+	{
+		item: "rustic:iron_lantern",
+		count: 64
+	},
+	{
+		item: "enderio:block_holier_fog",
+		count: 64
+	},
+	{
+		item: "darkutils:pearl_block",
+		count: 64
+	},
+	{
+		item: "quark:paper_lantern",
+		count: 64
+	},
+	{
+		item: "architecturecraft:sawbench"
+	},
+	{
+		item: "engineersdecor:treated_wood_ladder",
+		count: 64
+	},
+	{
+		item: "engineersdecor:iron_floor_edge_light",
+		count: 64
+	},
+	{
+		item: "bibliocraft:biblioclipboard"
+	},
+	{
+		item: "bibliocraft:lanterngold 1 9",
+		count: 4
+	},
+	{
+		item: "bibliocraft:toolrack 1 5",
+		count: 16
+	},
+	{
+		item: "engineersdecor:steel_double_t_support",
+		count: 64
+	},
+	{
+		item: "engineersdecor:rebar_concrete_tile_stairs",
+		count: 64
+	},
+	{
+		item: "engineersdecor:gas_concrete_wall",
+		count: 64
 	}],
 	loot_crate: {
 		string_id: "decor",

@@ -2,758 +2,221 @@
 	title: "Common",
 	loot_size: 1,
 	rewards: [{
-		item: "minecraft:sponge",
-		count: 4,
-		weight: 10
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "food"
+			}
+		}
 	},
 	{
-		item: "minecraft:dirt 1 2",
-		weight: 10
-	},
-	{
-		item: "minecraft:grass",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "minecraft:bookshelf",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "minecraft:mossy_cobblestone",
-		count: 32,
-		weight: 10
-	},
-	{
-		item: "minecraft:soul_sand",
-		count: 64,
-		weight: 10
-	},
-	{
-		item: "minecraft:sea_lantern",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "minecraft:lit_pumpkin",
-		weight: 10
-	},
-	{
-		item: "minecraft:clay",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "minecraft:mycelium",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "minecraft:hay_block",
-		count: 9,
-		weight: 10
-	},
-	{
-		item: "minecraft:end_bricks",
-		count: 32,
-		weight: 10
-	},
-	{
-		item: "minecraft:bone_block",
-		count: 24,
-		weight: 10
-	},
-	{
-		item: "minecraft:nether_wart_block",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "minecraft:prismarine",
-		count: 32,
-		weight: 10
-	},
-	{
-		item: "minecraft:web",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "minecraft:deadbush",
-		count: 64,
-		weight: 10
-	},
-	{
-		item: "minecraft:red_flower 1 3",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "minecraft:cactus",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "minecraft:waterlily",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "minecraft:end_rod",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "minecraft:chorus_flower",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "minecraft:slime",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "minecraft:painting",
-		count: 3,
-		weight: 10
-	},
-	{
-		item: "minecraft:banner 1 6",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "chisel:bookshelf_oak",
-		count: 8,
-		weight: 10
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "decor"
+			}
+		}
 	},
 	{
 		item: "chisel:block_coal_coke1 1 12",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "biomesoplenty:sapling_0 1 4",
-		weight: 10
-	},
-	{
-		item: "biomesoplenty:sapling_1",
-		weight: 10
-	},
-	{
-		item: "biomesoplenty:sapling_1 1 1",
-		weight: 10
-	},
-	{
-		item: "biomesoplenty:sapling_1 1 7",
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:ore 1 5",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:florb",
-			Damage: 1s,
-			tag: {
-				Fluid: "bio.ethanol"
-			}
-		},
-		count: 10,
-		weight: 10
-	},
-	{
-		item: "biomesoplenty:terrarium 1 13",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "chisel:futura 1 2",
-		weight: 10
-	},
-	{
-		item: "cyclicmagic:sleeping_mat",
-		weight: 10
-	},
-	{
-		item: "chisel:ice 1 7",
-		count: 64,
-		weight: 10
+		count: 16
 	},
 	{
 		item: "chisel:icepillar 1 4",
-		count: 64,
-		weight: 10
+		count: 64
 	},
 	{
-		item: "chisel:icepillar 1 5",
-		count: 64,
-		weight: 10
-	},
-	{
-		item: "chisel:obsidian 1 13",
-		count: 64,
-		weight: 10
-	},
-	{
-		item: "chisel:prismarine 1 6",
-		count: 64,
-		weight: 10
+		item: "minecraft:nether_wart_block"
 	},
 	{
 		item: "chisel:redstone1 1 8",
-		count: 8,
-		weight: 10
+		count: 8
 	},
 	{
-		item: "openblocks:fan",
-		count: 4,
-		weight: 10
+		item: "animania:block_hamster_wheel"
 	},
 	{
-		item: "openblocks:golden_egg",
-		weight: 10
+		item: "animania:wool 1 3",
+		count: 16
 	},
 	{
-		item: "openblocks:luggage",
-		weight: 10
+		item: "bithop:bithop",
+		count: 2
 	},
 	{
-		item: "openblocks:dev_null",
-		weight: 10
+		item: "chisel:obsidian 1 13",
+		count: 32
 	},
 	{
-		item: "openblocks:sponge_on_a_stick",
-		weight: 10
+		item: "chisel:prismarine 1 6",
+		count: 32
 	},
 	{
-		item: "opencomputers:storage 1 1",
-		weight: 10
+		item: "cookingforblockheads:cow_jar"
 	},
 	{
-		item: "harvestcraft:avocado_sapling",
-		weight: 10
+		item: "excompressum:bait 1 2",
+		count: 5
 	},
 	{
-		item: "harvestcraft:well",
-		weight: 10
+		item: "excompressum:bait 1 6",
+		count: 5
 	},
 	{
-		item: "rustic:chandelier",
-		count: 2,
-		weight: 10
+		item: "flopper:flopper",
+		count: 3
 	},
 	{
-		item: "harvestcraft:cashew_sapling",
-		weight: 10
+		item: "minecraft:cactus",
+		count: 64
 	},
 	{
-		item: "harvestcraft:dragonfruit_sapling",
-		weight: 10
+		item: "minecraft:web",
+		count: 16
 	},
 	{
-		item: "twilightforest:twilight_sapling 1 1",
-		weight: 10
+		item: "minecraft:deadbush",
+		count: 64
 	},
 	{
-		item: "twilightforest:twilight_sapling 1 9",
-		weight: 10
+		item: "minecraft:end_bricks",
+		count: 8
 	},
 	{
-		item: "botania:elfglasspane",
-		count: 64,
-		weight: 10
+		item: "minecraft:grass",
+		count: 64
 	},
 	{
-		item: "chisel:chisel_hitech",
-		weight: 10
+		item: "minecraft:hay_block",
+		count: 64
 	},
 	{
-		item: "cyclicmagic:beacon_redstone",
-		count: 2,
-		weight: 10
+		item: "minecraft:mossy_cobblestone",
+		count: 64
 	},
 	{
-		item: "darkutils:trap_tile 1 2",
-		count: 16,
-		weight: 10
+		item: "minecraft:mycelium",
+		count: 64
 	},
 	{
-		item: "extrautils2:decorativeglass 1 1",
-		count: 64,
-		weight: 10
+		item: "minecraft:observer",
+		count: 8
 	},
 	{
-		item: "extrautils2:decorativeglass 1 4",
-		count: 64,
-		weight: 10
+		item: "minecraft:piston",
+		count: 8
 	},
 	{
-		item: "extrautils2:decorativeglass 1 5",
-		count: 64,
-		weight: 10
+		item: "minecraft:dirt 1 2",
+		count: 64
 	},
 	{
-		item: "forestry:doors.giganteum",
-		count: 4,
-		weight: 10
+		item: "minecraft:soul_sand",
+		count: 64
 	},
 	{
-		item: "forestry:doors.cocobolo",
-		count: 4,
-		weight: 10
+		item: "minecraft:sponge",
+		count: 2
 	},
 	{
-		item: "forestry:doors.mahoe",
-		count: 4,
-		weight: 10
+		item: "minecraft:tnt",
+		count: 8
 	},
 	{
-		item: "forestry:doors.walnut",
-		count: 4,
-		weight: 10
+		item: "openblocks:builder_guide"
 	},
 	{
-		item: "forestry:doors.wenge",
-		count: 4,
-		weight: 10
+		item: "quark:custom_bookshelf 1 1",
+		count: 16
 	},
 	{
-		item: "immersiveengineering:metal_decoration2 1 4",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "immersiveengineering:metal_device1 1 9",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "mekanism:balloon 1 2",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "openblocks:target",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "openblocks:beartrap",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:zestyzucchiniitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:chickencelerycasseroleitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:cranberryjellysandwichitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:limejellysandwichitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:fishsandwichitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:tool.shield_diamond",
-		weight: 10
-	},
-	{
-		item: "tconstruct:soil 1 4",
-		count: 64,
-		weight: 10
+		item: "rats:garbage_pile",
+		count: 16
 	},
 	{
 		item: "tconstruct:slime_congealed 1 3",
-		count: 64,
-		weight: 10
+		count: 64
 	},
 	{
-		item: "rustic:candle",
-		count: 16,
-		weight: 10
+		item: "tconstruct:slime_congealed 1 2",
+		count: 2
 	},
 	{
-		item: "rustic:iron_lantern",
-		count: 16,
-		weight: 10
+		item: "tconstruct:soil 1 4",
+		count: 32
 	},
 	{
-		item: "rustic:chair_ironwood",
-		count: 8,
-		weight: 10
+		item: "tconstruct:seared 1 4",
+		count: 64
 	},
 	{
-		item: "rustic:table_ironwood",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "storagedrawers:compdrawers",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "storagedrawers:framingtable",
-		weight: 10
-	},
-	{
-		item: "quark:smoker",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "quark:obsidian_pressure_plate",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "quark:lit_lamp",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "quark:soul_bead",
-		weight: 10
-	},
-	{
-		item: "storagedrawers:tape",
-		weight: 10
-	},
-	{
-		item: "rustic:vase",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:storage_alloy 1 1",
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:storage_alloy 1 4",
-		weight: 10
-	},
-	{
-		item: "harvestcraft:extremechiliitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:pemmicanitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:sweetandsourmeatballsitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:cheddarandsourcreampotatochipsitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:spagettiandmeatballsitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:icecreamitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:redvelvetcakeitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:nutellaitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:apricotjellysandwichitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:gingerchickenitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:mintchocolatechipicecreamitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:pineapplehamitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:garlicchickenitem",
-		count: 8,
-		weight: 10
+		item: "tconstruct:soil",
+		count: 64
 	},
 	{
 		item: "tconstruct:seared_tank 1 1",
-		count: 4,
-		weight: 10
+		count: 8
 	},
 	{
-		item: "tconstruct:seared 1 6",
-		count: 24,
-		weight: 10
+		item: "twilightforest:root 1 1"
 	},
 	{
-		item: "tconstruct:ingots 1 4",
-		count: 8,
-		weight: 10
+		item: "actuallyadditions:item_hairy_ball",
+		count: 16
 	},
 	{
-		item: "tconstruct:throwball 1 1",
-		count: 16,
-		weight: 10
+		item: "animania:entity_egg_random"
 	},
 	{
-		item: "tconstruct:tooltables 1 5",
-		weight: 10
+		item: "minecraft:bone_block",
+		count: 32
 	},
 	{
-		item: "tconstruct:slime_grass_tall 1 4",
-		count: 16,
-		weight: 10
+		item: "minecraft:clay",
+		count: 64
 	},
 	{
-		item: "tconstruct:slimesling",
-		weight: 10
+		item: "ic2:crafting 1 24",
+		count: 8
 	},
 	{
-		item: "tconstruct:materials 1 13",
-		weight: 10
+		item: "minecraft:experience_bottle",
+		count: 2
 	},
 	{
-		item: "rats:garbage_pile",
-		count: 6,
-		weight: 10
+		item: "minecraft:brewing_stand"
 	},
 	{
-		item: "rats:cheese",
-		count: 8,
-		weight: 10
+		item: "oeintegration:excavatemodifier"
 	},
 	{
-		item: "rats:raw_rat",
-		count: 16,
-		weight: 10
+		item: {
+			id: "openblocks:dev_null",
+			tag: {
+				openedInGui: 1675739793,
+				inventory: {
+					size: 1,
+					Items: [{
+						Slot: 0b,
+						id: "minecraft:cobblestone",
+						Count: 64b,
+						Damage: 0s
+					}]
+				}
+			}
+		}
 	},
 	{
 		item: "rats:rat_pelt",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "rats:assorted_vegetables",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "rats:rat_burger",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "rats:plastic_waste",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "rats:garbage_pile",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "rats:rat_tube_light_blue",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "rats:rat_lantern",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "rats:rat_crafting_table",
-		weight: 10
-	},
-	{
-		item: "scalingfeast:heartyshank",
-		weight: 20
-	},
-	{
-		item: "openblocks:beartrap",
-		count: 3,
-		weight: 10
+		count: 32
 	},
 	{
 		item: {
 			id: "thermalexpansion:florb",
 			tag: {
-				Fluid: "water"
+				Fluid: "blockfluiddirt"
 			}
-		},
-		count: 64,
-		weight: 10
-	},
-	{
-		item: "tconstruct:throwball",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "minecraft:pig"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:florb",
-			Damage: 1s,
-			tag: {
-				Fluid: "lava"
-			}
-		},
-		count: 4,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "minecraft:chicken"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "minecraft:cow"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "minecraft:sheep"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "minecraft:rabbit"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "minecraft:llama"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "quark:frog"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:morb",
-			tag: {
-				Generic: 1b,
-				id: "quark:crab"
-			}
-		},
-		count: 2,
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:florb",
-			Damage: 1s,
-			tag: {
-				Fluid: "syngas"
-			}
-		},
-		count: 10,
-		weight: 10
-	},
-	{
-		item: "thaumcraft:loot_bag",
-		count: 5,
-		weight: 40
-	},
-	{
-		item: "bhc:red_heart",
-		weight: 80
-	},
-	{
-		item: "thermaldynamics:duct_64",
-		count: 128,
-		weight: 10
+		}
 	}],
 	loot_crate: {
 		string_id: "common",

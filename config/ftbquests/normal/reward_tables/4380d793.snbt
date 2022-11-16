@@ -2,7 +2,430 @@
 	title: "Generators",
 	loot_size: 1,
 	rewards: [{
+		item: "nuclearcraft:fission_controller_new_fixed"
+	},
+	{
+		item: "nuclearcraft:rtg_uranium"
+	},
+	{
+		item: "randomthings:spectrecoil_number"
+	},
+	{
+		item: "mekanismgenerators:generator 1 1"
+	},
+	{
+		item: "mekanismgenerators:generator 1 5"
+	},
+	{
 		item: "mekanismgenerators:generator 1 6"
+	},
+	{
+		item: "extrautils2:passivegenerator 1 8"
+	},
+	{
+		item: "extrautils2:passivegenerator 1 5",
+		count: 10
+	},
+	{
+		item: "extrautils2:passivegenerator 1 4",
+		count: 10
+	},
+	{
+		item: {
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_netherstar"
+			}
+		}
+	},
+	{
+		item: "thaumcraft:vis_generator",
+		count: 4
+	},
+	{
+		item: "thaumicaugmentation:impetus_generator",
+		count: 2
+	},
+	{
+		item: "integrateddynamics:coal_generator"
+	},
+	{
+		item: {
+			id: "draconicevolution:generator",
+			tag: {
+				BCTileData: {
+					BCManagedData: {
+						powered: 0b,
+						burnTime: 16000,
+						burnTimeRemaining: -2,
+						active: 0b
+					}
+				}
+			}
+		}
+	},
+	{
+		item: "actuallyadditions:block_leaf_generator"
+	},
+	{
+		item: "actuallyadditions:block_oil_generator"
+	},
+	{
+		item: "enderio:block_combustion_generator"
+	},
+	{
+		item: "enderio:block_enhanced_combustion_generator"
+	},
+	{
+		item: "enderio:block_simple_stirling_generator"
+	},
+	{
+		item: "enderio:block_stirling_generator"
+	},
+	{
+		item: {
+			id: "thermalexpansion:dynamo",
+			Damage: 2s,
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:dynamo",
+			Damage: 4s,
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:dynamo",
+			Damage: 1s,
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:dynamo",
+			Damage: 5s,
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:dynamo",
+			Damage: 3s,
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}
+	},
+	{
+		item: {
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		}
+	},
+	{
+		item: "avaritia:neutron_collector"
+	},
+	{
+		item: "industrialforegoing:lava_fabricator"
+	},
+	{
+		item: "draconicevolution:energy_infuser"
+	},
+	{
+		item: "enderio:block_zombie_generator"
+	},
+	{
+		item: "enderio:block_franken_zombie_generator"
+	},
+	{
+		item: "enderio:block_ender_generator"
+	},
+	{
+		item: "advancedrocketry:blackholegenerator"
+	},
+	{
+		item: "industrialforegoing:petrified_fuel_generator"
+	},
+	{
+		item: "rftools:coalgenerator"
+	},
+	{
+		item: "rftools:endergenic",
+		count: 64
+	},
+	{
+		item: "appliedenergistics2:crafting_unit",
+		count: 8
+	},
+	{
+		item: "draconicevolution:energy_crystal 1 3",
+		count: 12
+	},
+	{
+		item: "rftools:powercell_simple"
+	},
+	{
+		item: "botania:blacklotus 1 1",
+		count: 64
+	},
+	{
+		item: "nuclearcraft:water_source_dense"
+	},
+	{
+		item: "advgenerators:turbine_iron",
+		count: 16
+	},
+	{
+		item: "advgenerators:turbine_kit_bronze",
+		count: 8
+	},
+	{
+		item: "advgenerators:turbine_kit_adv_alloy",
+		count: 4
+	},
+	{
+		item: "advgenerators:turbine_kit_manyullyn",
+		count: 2
+	},
+	{
+		item: "advgenerators:turbine_kit_enderium"
+	},
+	{
+		item: "advgenerators:turbine_controller"
+	},
+	{
+		item: "advgenerators:steam_turbine_controller"
+	},
+	{
+		item: "nuclearcraft:cobblestone_generator_compact",
+		count: 3
+	},
+	{
+		item: "nuclearcraft:cobblestone_generator_dense"
+	},
+	{
+		item: "nuclearcraft:helium_collector_compact",
+		count: 3
+	},
+	{
+		item: "nuclearcraft:helium_collector_dense"
+	},
+	{
+		item: "nuclearcraft:nitrogen_collector_compact",
+		count: 3
+	},
+	{
+		item: "nuclearcraft:nitrogen_collector_dense"
+	},
+	{
+		item: "thermaldynamics:duct_0 1 5",
+		count: 32
+	},
+	{
+		item: {
+			id: "forestry:bee_queen_ge",
+			tag: {
+				MaxH: 60,
+				Mate: {
+					Chromosomes: [{
+						UID1: "forestry.speciesDemonic",
+						UID0: "forestry.speciesDemonic",
+						Slot: 0b
+					},
+					{
+						UID1: "forestry.speedSlower",
+						UID0: "forestry.speedSlower",
+						Slot: 1b
+					},
+					{
+						UID1: "forestry.lifespanLonger",
+						UID0: "forestry.lifespanLonger",
+						Slot: 2b
+					},
+					{
+						UID1: "forestry.fertilityNormal",
+						UID0: "forestry.fertilityNormal",
+						Slot: 3b
+					},
+					{
+						UID1: "forestry.toleranceDown2",
+						UID0: "forestry.toleranceDown2",
+						Slot: 4b
+					},
+					{
+						UID1: "forestry.boolTrue",
+						UID0: "forestry.boolTrue",
+						Slot: 5b
+					},
+					{
+						UID1: "forestry.toleranceNone",
+						UID0: "forestry.toleranceNone",
+						Slot: 6b
+					},
+					{
+						UID1: "forestry.boolFalse",
+						UID0: "forestry.boolFalse",
+						Slot: 7b
+					},
+					{
+						UID1: "forestry.boolFalse",
+						UID0: "forestry.boolFalse",
+						Slot: 8b
+					},
+					{
+						UID1: "forestry.flowersNether",
+						UID0: "forestry.flowersNether",
+						Slot: 9b
+					},
+					{
+						UID1: "forestry.floweringAverage",
+						UID0: "forestry.floweringAverage",
+						Slot: 10b
+					},
+					{
+						UID1: "forestry.territoryAverage",
+						UID0: "forestry.territoryAverage",
+						Slot: 11b
+					},
+					{
+						UID1: "forestry.effectIgnition",
+						UID0: "forestry.effectIgnition",
+						Slot: 12b
+					}]
+				},
+				Health: 60,
+				IsAnalyzed: 1b,
+				Genome: {
+					Chromosomes: [{
+						UID1: "forestry.speciesDemonic",
+						UID0: "forestry.speciesDemonic",
+						Slot: 0b
+					},
+					{
+						UID1: "forestry.speedSlower",
+						UID0: "forestry.speedSlower",
+						Slot: 1b
+					},
+					{
+						UID1: "forestry.lifespanLonger",
+						UID0: "forestry.lifespanLonger",
+						Slot: 2b
+					},
+					{
+						UID1: "forestry.fertilityNormal",
+						UID0: "forestry.fertilityNormal",
+						Slot: 3b
+					},
+					{
+						UID1: "forestry.toleranceDown2",
+						UID0: "forestry.toleranceDown2",
+						Slot: 4b
+					},
+					{
+						UID1: "forestry.boolTrue",
+						UID0: "forestry.boolTrue",
+						Slot: 5b
+					},
+					{
+						UID1: "forestry.toleranceNone",
+						UID0: "forestry.toleranceNone",
+						Slot: 6b
+					},
+					{
+						UID1: "forestry.boolFalse",
+						UID0: "forestry.boolFalse",
+						Slot: 7b
+					},
+					{
+						UID1: "forestry.boolFalse",
+						UID0: "forestry.boolFalse",
+						Slot: 8b
+					},
+					{
+						UID1: "forestry.flowersNether",
+						UID0: "forestry.flowersNether",
+						Slot: 9b
+					},
+					{
+						UID1: "forestry.floweringAverage",
+						UID0: "forestry.floweringAverage",
+						Slot: 10b
+					},
+					{
+						UID1: "forestry.territoryAverage",
+						UID0: "forestry.territoryAverage",
+						Slot: 11b
+					},
+					{
+						UID1: "forestry.effectIgnition",
+						UID0: "forestry.effectIgnition",
+						Slot: 12b
+					}]
+				}
+			}
+		}
+	},
+	{
+		item: {
+			id: "ic2:containment_box",
+			tag: {
+				Items: [{
+					Slot: 4b,
+					id: "ic2:nuclear",
+					Count: 1b,
+					Damage: 10s
+				},
+				{
+					Slot: 5b,
+					id: "ic2:nuclear",
+					Count: 1b,
+					Damage: 10s
+				},
+				{
+					Slot: 6b,
+					id: "ic2:nuclear",
+					Count: 1b,
+					Damage: 10s
+				},
+				{
+					Slot: 7b,
+					id: "ic2:nuclear",
+					Count: 1b,
+					Damage: 10s
+				}]
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "generators",

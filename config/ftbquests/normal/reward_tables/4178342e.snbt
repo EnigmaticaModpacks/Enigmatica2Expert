@@ -2,564 +2,167 @@
 	title: "Rare",
 	loot_size: 1,
 	rewards: [{
-		item: "minecraft:shulker_shell",
-		count: 8,
-		weight: 10
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "generators"
+			}
+		}
 	},
 	{
-		item: "minecraft:dragon_breath",
-		count: 16,
-		weight: 10
-	},
-	{
-		item: "mysticalagriculture:growth_accelerator",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "draconicevolution:dislocator",
-		weight: 10
-	},
-	{
-		item: "plustic:alumiteblock",
-		weight: 10
-	},
-	{
-		item: "mysticalagriculture:crafting 1 4",
-		weight: 10
-	},
-	{
-		item: "minecraft:experience_bottle",
-		count: 32,
-		weight: 10
-	},
-	{
-		item: "minecraft:diamond_horse_armor",
-		weight: 10
-	},
-	{
-		item: "actuallyadditions:block_greenhouse_glass",
-		weight: 10
-	},
-	{
-		item: "actuallyadditions:block_ranged_collector",
-		weight: 10
-	},
-	{
-		item: "actuallyadditions:item_potion_ring 1 1",
-		weight: 10
-	},
-	{
-		item: "appliedenergistics2:crafting_unit",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "actuallyadditions:block_farmer",
-		weight: 10
-	},
-	{
-		item: "nuclearcraft:fission_controller_new_fixed",
-		weight: 10
-	},
-	{
-		item: "nuclearcraft:cobblestone_generator_compact",
-		weight: 10
-	},
-	{
-		item: "nuclearcraft:rtg_americium",
-		weight: 10
-	},
-	{
-		item: "nuclearcraft:upgrade",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:toastedwesternitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:hamsweetpicklesandwichitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:bbqplatteritem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:supremepizzaitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "betterbuilderswands:wandunbreakable 1 12",
-		weight: 10
-	},
-	{
-		item: "chisel:offsettool",
-		weight: 10
-	},
-	{
-		item: "computercraft:computer 1 16384",
-		weight: 10
-	},
-	{
-		item: "colytra:elytra_bauble",
-		weight: 10
-	},
-	{
-		item: "darkutils:charm_sleep",
-		weight: 10
-	},
-	{
-		item: "draconicevolution:energy_crystal",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "draconicevolution:energy_crystal 1 3",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "draconicevolution:energy_crystal 1 6",
-		count: 4,
-		weight: 10
-	},
-	{
-		item: "enderstorage:ender_storage",
-		weight: 10
-	},
-	{
-		item: "enderstorage:ender_pouch",
-		weight: 10
-	},
-	{
-		item: "cyclicmagic:exp_pylon",
-		weight: 10
-	},
-	{
-		item: "excompressum:auto_heavy_sieve",
-		weight: 10
-	},
-	{
-		item: "bigreactors:reactorcasing",
-		count: 24,
-		weight: 10
-	},
-	{
-		item: "extrautils2:resonator",
-		weight: 10
-	},
-	{
-		item: "farmingforblockheads:market",
-		weight: 10
-	},
-	{
-		item: "immersiveengineering:metal_device1 1 10",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "immersiveengineering:metal_device1 1 11",
-		count: 2,
-		weight: 10
+		item: "actuallyadditions:item_spawner_changer"
 	},
 	{
 		item: {
-			id: "immersiveengineering:revolver",
+			id: "botania:lens",
+			Damage: 2s,
 			tag: {
-				bullets: []
-			},
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 21
+				compositeLens: {
+					id: "botania:lens",
+					Count: 1b,
+					tag: {},
+					Damage: 4s
 				}
 			}
-		},
-		weight: 10
+		}
 	},
 	{
-		item: "immersiveengineering:chemthrower",
-		weight: 10
+		item: "enderio:item_dark_steel_upgrade"
 	},
 	{
-		item: "immersiveengineering:railgun",
-		weight: 10
+		item: "enderio:item_extract_speed_upgrade",
+		count: 8
 	},
 	{
-		item: "immersiveengineering:skyhook",
-		weight: 10
+		item: "extrautils2:ingredients 1 6",
+		count: 4
 	},
 	{
-		item: "industrialforegoing:mob_imprisonment_tool",
-		weight: 10
+		item: "extrautils2:ingredients 1 15",
+		count: 4
 	},
 	{
-		item: "mekanism:flamethrower",
-		weight: 10
-	},
-	{
-		item: "mekanism:machineblock2 1 5",
-		weight: 10
-	},
-	{
-		item: "mekanismgenerators:generator 1 6",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "mysticalagriculture:infusion_crystal",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "mysticalagriculture:watering_can 1 4",
-		weight: 10
-	},
-	{
-		item: "thermalexpansion:augment 1 673",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "thermalexpansion:augment 1 720",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:upgrade 1 34",
-		count: 2,
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:upgrade 1 33",
-		count: 3,
-		weight: 10
-	},
-	{
-		item: "thermalfoundation:material 1 1028",
-		count: 12,
-		weight: 10
+		item: "extrautils2:ingredients 1 16",
+		count: 4
 	},
 	{
 		item: {
-			id: "botania:exchangerod",
-			tag: {}
+			id: "forestry:chipsets",
+			Damage: 2s,
+			tag: {
+				T: 2s,
+				CA.I1: "forestry.machine.speed.boost.2",
+				CA.I2: "forestry.machine.speed.boost.2",
+				CA.I0: "forestry.machine.speed.boost.2",
+				LY: "forestry.machine.upgrade"
+			}
 		},
-		weight: 10
-	},
-	{
-		item: "harvestcraft:southernstylebreakfastitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:meatfeastpizzaitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:thankfuldinneritem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:cornedbeefbreakfastitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:delightedmealitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:heartybreakfastitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:ploughmanslunchitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:honeysoyribsitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:charsiuitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:shrimpokrahushpuppiesitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:wontonsoupitem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "harvestcraft:coleslawburgeritem",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "redstonearsenal:tool.shield_flux",
-		weight: 10
-	},
-	{
-		item: "redstonearsenal:tool.battlewrench_flux",
-		weight: 10
-	},
-	{
-		item: "redstonearsenal:storage",
-		weight: 10
-	},
-	{
-		item: "redstonearsenal:storage 1 1",
-		weight: 10
-	},
-	{
-		item: "rftools:builder",
-		weight: 10
-	},
-	{
-		item: "rftools:powercell_advanced",
-		weight: 10
-	},
-	{
-		item: "thermalexpansion:frame 1 129",
-		weight: 10
+		count: 3
 	},
 	{
 		item: "thermaldynamics:duct_32 1 6",
-		count: 48,
-		weight: 10
+		count: 48
 	},
 	{
-		item: "twilightforest:block_storage",
-		weight: 10
+		item: "ic2:upgrade 1 2",
+		count: 16
 	},
 	{
-		item: "twilightforest:block_storage 1 1",
-		weight: 10
+		item: "ic2:upgrade",
+		count: 12
 	},
 	{
-		item: "twilightforest:block_storage 1 2",
-		weight: 10
+		item: "ic2:upgrade 1 1",
+		count: 12
 	},
 	{
-		item: "thermaldynamics:servo 1 4",
-		count: 8,
-		weight: 10
+		item: "industrialforegoing:conveyor_upgrade",
+		count: 64
 	},
 	{
-		item: "thermaldynamics:filter 1 4",
-		count: 8,
-		weight: 10
+		item: "industrialforegoing:conveyor_upgrade 1 1",
+		count: 64
 	},
 	{
-		item: "twilightforest:block_storage 1 3",
-		weight: 10
+		item: "industrialforegoing:range_addon 1 11"
 	},
 	{
-		item: "thermalfoundation:storage_alloy 1 5",
-		weight: 10
+		item: "mctsmelteryio:upgrade 1 4",
+		count: 8
 	},
 	{
-		item: {
-			id: "appliedenergistics2:storage_cell_4k",
-			tag: {
-				it: 6s,
-				"#0": {
-					Craft: 0b,
-					Cnt: 192L,
-					id: "minecraft:log",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				"#1": {
-					Craft: 0b,
-					Cnt: 512L,
-					id: "minecraft:log",
-					Count: 1b,
-					Damage: 1s,
-					Req: 0L
-				},
-				"#2": {
-					Craft: 0b,
-					Cnt: 256L,
-					id: "minecraft:log",
-					Count: 1b,
-					Damage: 2s,
-					Req: 0L
-				},
-				"@0": 192,
-				"#3": {
-					Craft: 0b,
-					Cnt: 256L,
-					id: "minecraft:log",
-					Count: 1b,
-					Damage: 3s,
-					Req: 0L
-				},
-				"@1": 512,
-				"#4": {
-					Craft: 0b,
-					Cnt: 256L,
-					id: "minecraft:log2",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				"@2": 256,
-				"#5": {
-					Craft: 0b,
-					Cnt: 256L,
-					id: "minecraft:log2",
-					Count: 1b,
-					Damage: 1s,
-					Req: 0L
-				},
-				"@3": 256,
-				"@4": 256,
-				"@5": 256,
-				ic: 1728
-			}
-		},
-		weight: 5
+		item: "mctsmelteryio:upgrade 1 6",
+		count: 4
 	},
 	{
-		item: {
-			id: "rats:rat_nugget_ore",
-			Damage: 12s,
-			tag: {
-				OreItem: {
-					id: "draconicevolution:draconium_ore",
-					Count: 1b,
-					Damage: 0s
-				},
-				IngotItem: {
-					id: "draconicevolution:draconium_ingot",
-					Count: 1b,
-					Damage: 0s
-				}
-			}
-		},
-		count: 24,
-		weight: 10
+		item: "mekanism:tierinstaller 1 1",
+		count: 4
 	},
 	{
-		item: {
-			id: "rats:rat_nugget_ore",
-			Damage: 9s,
-			tag: {
-				OreItem: {
-					id: "tconstruct:ore",
-					Count: 1b,
-					Damage: 0s
-				},
-				IngotItem: {
-					id: "tconstruct:ingots",
-					Count: 1b,
-					Damage: 0s
-				}
-			}
-		},
-		count: 46,
-		weight: 10
+		item: "mekanism:tierinstaller",
+		count: 8
 	},
 	{
-		item: "mctsmelteryio:machine",
-		weight: 10
+		item: "mekanism:tierinstaller 1 2",
+		count: 2
 	},
 	{
-		item: "integrateddynamics:cable",
-		count: 32,
-		weight: 10
+		item: "mekanism:energyupgrade",
+		count: 8
 	},
 	{
-		item: "matc:intermediumcrystal",
-		weight: 10
+		item: "mekanism:speedupgrade",
+		count: 8
 	},
 	{
-		item: "matc:prudentiumcrystal",
-		weight: 10
+		item: "mekanism:tierinstaller 1 3"
 	},
 	{
-		item: "matc:inferiumcrystal",
-		weight: 10
-	},
-	{
-		item: "conarm:resist_mat_blast",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "conarm:resist_mat_proj",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "conarm:resist_mat_fire",
-		count: 8,
-		weight: 10
-	},
-	{
-		item: "thaumcraft:loot_bag 1 2",
-		count: 3,
-		weight: 30
-	},
-	{
-		item: "rats:rat_upgrade_buccaneer",
-		weight: 10
-	},
-	{
-		item: "rats:rat_upgrade_extreme_energy",
-		weight: 10
-	},
-	{
-		item: "rats:rat_upgrade_god",
-		weight: 10
-	},
-	{
-		item: "rats:ratlantean_flame",
-		weight: 10
-	},
-	{
-		item: {
-			id: "thermalexpansion:cache",
-			tag: {
-				RSControl: 0b,
-				Creative: 0b,
-				Level: 4b
-			}
-		},
-		weight: 10
+		item: "minecraft:skull 1 5"
 	},
 	{
 		item: {
 			id: "minecraft:enchanted_book",
 			tag: {
 				StoredEnchantments: [{
-					lvl: 4s,
-					id: 52s
+					lvl: 6s,
+					id: 34s
 				}]
 			}
-		},
-		weight: 10
+		}
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 32s
+				}]
+			}
+		}
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 6s,
+					id: 21s
+				}]
+			}
+		}
+	},
+	{
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 6s,
+					id: 35s
+				}]
+			}
+		}
 	},
 	{
 		item: {
@@ -567,158 +170,95 @@
 			tag: {
 				StoredEnchantments: [{
 					lvl: 5s,
-					id: 60s
+					id: 75s
 				}]
 			}
-		},
-		weight: 10
+		}
 	},
 	{
 		item: {
 			id: "minecraft:enchanted_book",
 			tag: {
 				StoredEnchantments: [{
-					lvl: 1s,
-					id: 66s
+					lvl: 10s,
+					id: 48s
 				}]
 			}
-		},
-		weight: 10
+		}
+	},
+	{
+		item: "nuclearcraft:upgrade 1 1",
+		count: 8
+	},
+	{
+		item: "nuclearcraft:upgrade",
+		count: 8
+	},
+	{
+		item: "rats:rat_upgrade_god"
+	},
+	{
+		item: "rats:rat_upgrade_buccaneer"
+	},
+	{
+		item: "rats:rat_upgrade_extreme_energy"
 	},
 	{
 		item: {
-			id: "extrautils2:drum",
-			Damage: 1s,
-			tag: {
-				Fluid: {
-					FluidName: "refinedcanolaoil",
-					Amount: 256000
-				}
-			}
-		},
-		weight: 10
+			id: "rats:rat_upgrade_jury_rigged",
+			tag: {}
+		}
 	},
 	{
-		item: {
-			id: "extrautils2:drum",
-			Damage: 1s,
-			tag: {
-				Fluid: {
-					FluidName: "canolaoil",
-					Amount: 256000
-				}
-			}
-		},
-		weight: 10
+		item: "rats:rat_upgrade_speed",
+		count: 4
 	},
 	{
-		item: {
-			id: "extrautils2:drum",
-			Damage: 1s,
-			tag: {
-				Fluid: {
-					FluidName: "creosote",
-					Amount: 256000
-				}
-			}
-		},
-		weight: 10
+		item: "thermaldynamics:servo 1 4",
+		count: 8
 	},
 	{
-		item: {
-			id: "openblocks:tank",
-			tag: {
-				tank: {
-					FluidName: "milk_holstein",
-					Amount: 24000
-				}
-			}
-		},
-		weight: 3
+		item: "thermalexpansion:augment 1 128",
+		count: 8
 	},
 	{
-		item: {
-			id: "openblocks:tank",
-			tag: {
-				tank: {
-					FluidName: "milk_friesian",
-					Amount: 24000
-				}
-			}
-		},
-		weight: 3
+		item: "thermalexpansion:augment 1 129",
+		count: 2
 	},
 	{
-		item: {
-			id: "openblocks:tank",
-			tag: {
-				tank: {
-					FluidName: "milk_jersey",
-					Amount: 24000
-				}
-			}
-		},
-		weight: 3
+		item: "thermalexpansion:augment 1 512",
+		count: 4
 	},
 	{
-		item: {
-			id: "openblocks:tank",
-			tag: {
-				tank: {
-					FluidName: "milk_goat",
-					Amount: 24000
-				}
-			}
-		},
-		weight: 3
+		item: "thermalexpansion:augment 1 673",
+		count: 2
 	},
 	{
-		item: {
-			id: "openblocks:tank",
-			tag: {
-				tank: {
-					FluidName: "milk_sheep",
-					Amount: 24000
-				}
-			}
-		},
-		weight: 3
+		item: "thermalexpansion:augment 1 720",
+		count: 2
 	},
 	{
-		item: {
-			id: "extrautils2:drum",
-			Damage: 1s,
-			tag: {
-				Fluid: {
-					FluidName: "diesel",
-					Amount: 256000
-				}
-			}
-		},
-		weight: 10
+		item: "thermalexpansion:augment 1 323",
+		count: 2
 	},
 	{
-		item: "plustic:osgloglasingot",
-		weight: 10
+		item: "thermalfoundation:upgrade",
+		count: 6
 	},
 	{
-		item: "actuallyadditions:item_chest_to_crate_upgrade",
-		count: 2,
-		weight: 10
+		item: "thermalfoundation:upgrade 1 33",
+		count: 4
 	},
 	{
-		item: "actuallyadditions:item_small_to_medium_crate_upgrade",
-		count: 2,
-		weight: 10
+		item: "thermalfoundation:upgrade 1 35"
 	},
 	{
-		item: "actuallyadditions:item_medium_to_large_crate_upgrade",
-		count: 2,
-		weight: 10
+		item: "thermalfoundation:upgrade 1 34",
+		count: 2
 	},
 	{
-		item: "bhc:green_heart",
-		weight: 60
+		item: "xnet:connector_upgrade",
+		count: 16
 	}],
 	loot_crate: {
 		string_id: "rare",

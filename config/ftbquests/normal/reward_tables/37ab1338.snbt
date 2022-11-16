@@ -2,239 +2,236 @@
 	title: "Mythic",
 	loot_size: 1,
 	rewards: [{
-		item: "minecraft:nether_star",
-		weight: 10
+		item: {
+			id: "twilightforest:minotaur_axe",
+			tag: {
+				"Quark:RuneColor": 16,
+				ench: [{
+					lvl: 9s,
+					id: 64
+				},
+				{
+					lvl: 9s,
+					id: 35
+				},
+				{
+					lvl: 9s,
+					id: 34
+				},
+				{
+					lvl: 15s,
+					id: 32
+				},
+				{
+					lvl: 15s,
+					id: 54
+				},
+				{
+					lvl: 12s,
+					id: 57
+				}],
+				"Quark:RuneAttached": 1b
+			}
+		}
 	},
 	{
-		item: "avaritia:cosmic_meatballs",
-		weight: 10
-	},
-	{
-		item: "plustic:osmiridiumblock",
-		weight: 10
-	},
-	{
-		item: "plustic:mirionblock",
-		weight: 10
-	},
-	{
-		item: "avaritia:ultimate_stew",
-		weight: 10
-	},
-	{
-		item: "minecraft:dragon_egg",
-		weight: 10
-	},
-	{
-		item: "actuallyadditions:item_spawner_changer",
-		weight: 10
-	},
-	{
-		item: "advancedrocketry:rocketbuilder",
-		weight: 10
-	},
-	{
-		item: "draconicevolution:dragon_heart",
-		weight: 10
-	},
-	{
-		item: "draconicevolution:dislocator_advanced",
-		weight: 2
-	},
-	{
-		item: "botania:laputashard 1 9",
-		weight: 10
-	},
-	{
-		item: "avaritiaio:infinitecapacitor"
+		item: "rats:confit_byaldi",
+		count: 64
 	},
 	{
 		item: {
-			id: "appliedenergistics2:storage_cell_64k",
+			id: "forestry:bee_drone_ge",
 			tag: {
-				"#10": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:mud",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
+				MaxH: 20,
+				"Quark:RuneColor": 16,
+				Health: 20,
+				display: {
+					Name: "§kUltimate Bee"
 				},
-				"#11": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:flesh",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				ic: 768,
-				"@10": 64,
-				"@11": 64,
-				it: 12s,
-				"#0": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "minecraft:stone",
-					Count: 1b,
-					Damage: 1s,
-					Req: 0L
-				},
-				"#1": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "minecraft:stone",
-					Count: 1b,
-					Damage: 3s,
-					Req: 0L
-				},
-				"#2": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "minecraft:stone",
-					Count: 1b,
-					Damage: 5s,
-					Req: 0L
-				},
-				"@0": 64,
-				"#3": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:dirt",
-					Count: 1b,
-					Damage: 8s,
-					Req: 0L
-				},
-				"@1": 64,
-				"#4": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:dirt",
-					Count: 1b,
-					Damage: 9s,
-					Req: 0L
-				},
-				"@2": 64,
-				"#5": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:dirt",
-					Count: 1b,
-					Damage: 10s,
-					Req: 0L
-				},
-				"@3": 64,
-				"#6": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:white_sand",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				"@4": 64,
-				"#7": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:dried_sand",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				"@5": 64,
-				"#8": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:hard_ice",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				"@6": 64,
-				"#9": {
-					Craft: 0b,
-					Cnt: 64L,
-					id: "biomesoplenty:ash_block",
-					Count: 1b,
-					Damage: 0s,
-					Req: 0L
-				},
-				"@7": 64,
-				"@8": 64,
-				"@9": 64
+				"Quark:RuneAttached": 1b,
+				IsAnalyzed: 1b,
+				Genome: {
+					Chromosomes: [{
+						UID1: "gendustry.bee.selfish",
+						UID0: "gendustry.bee.narcissistic",
+						Slot: 0b
+					},
+					{
+						UID1: "forestry.speedFastest",
+						UID0: "forestry.speedFastest",
+						Slot: 1b
+					},
+					{
+						UID1: "forestry.lifespanShortest",
+						UID0: "forestry.lifespanShortest",
+						Slot: 2b
+					},
+					{
+						UID1: "forestry.fertilityMaximum",
+						UID0: "forestry.fertilityMaximum",
+						Slot: 3b
+					},
+					{
+						UID1: "forestry.toleranceBoth5",
+						UID0: "forestry.toleranceBoth5",
+						Slot: 4b
+					},
+					{
+						UID1: "forestry.boolTrue",
+						UID0: "forestry.boolTrue",
+						Slot: 5b
+					},
+					{
+						UID1: "forestry.toleranceBoth5",
+						UID0: "forestry.toleranceBoth5",
+						Slot: 6b
+					},
+					{
+						UID1: "forestry.boolTrue",
+						UID0: "forestry.boolTrue",
+						Slot: 7b
+					},
+					{
+						UID1: "forestry.boolTrue",
+						UID0: "forestry.boolTrue",
+						Slot: 8b
+					},
+					{
+						UID1: "forestry.flowersCacti",
+						UID0: "forestry.flowersWheat",
+						Slot: 9b
+					},
+					{
+						UID1: "forestry.floweringFastest",
+						UID0: "forestry.floweringMaximum",
+						Slot: 10b
+					},
+					{
+						UID1: "forestry.territoryLarger",
+						UID0: "forestry.territoryLargest",
+						Slot: 11b
+					},
+					{
+						UID1: "forestry.effectFertile",
+						UID0: "forestry.effectExploration",
+						Slot: 12b
+					}]
+				}
 			}
 		},
-		weight: 15
+		count: 64
 	},
 	{
-		item: "ic2:nuclear 1 10",
-		count: 2,
-		weight: 10
+		item: {
+			id: "industrialforegoing:infinity_drill",
+			tag: {
+				Energy: 15625000000L,
+				Fluid: {
+					FluidName: "biofuel",
+					Amount: 0
+				},
+				Special: 0b,
+				Selected: "UNCOMMON"
+			}
+		}
 	},
 	{
-		item: "thermalexpansion:frame 1 148",
-		weight: 10
+		item: {
+			id: "mekanism:atomicdisassembler",
+			tag: {
+				mekData: {
+					mode: 4,
+					energyStored: "2.0E7d"
+				}
+			}
+		}
 	},
 	{
-		item: "mysticalagradditions:stuff 1 69",
-		weight: 10
+		item: "notenoughrtgs:rtg_californium_dense"
 	},
 	{
-		item: "nuclearcraft:rtg_californium",
-		weight: 10
+		item: "mysticalagriculture:ultimate_furnace"
 	},
 	{
-		item: "mysticalagriculture:ultimate_furnace",
-		weight: 2
+		item: "extrautils2:angelring 1 2"
 	},
 	{
-		item: "rftools:peace_essence",
-		weight: 10
+		item: {
+			id: "rats:rat_upgrade_combined",
+			tag: {
+				enchantmentColor: 2651799,
+				display: {
+					Name: "Holy Upgrade"
+				},
+				Items: [{
+					Slot: 0b,
+					id: "rats:rat_upgrade_nonbeliever",
+					Count: 1b,
+					Damage: 0s
+				},
+				{
+					Slot: 1b,
+					id: "rats:rat_upgrade_aristocrat",
+					Count: 1b,
+					Damage: 0s
+				},
+				{
+					Slot: 2b,
+					id: "rats:rat_upgrade_speed",
+					Count: 1b,
+					Damage: 0s
+				},
+				{
+					Slot: 3b,
+					id: "rats:rat_upgrade_archeologist",
+					Count: 1b,
+					Damage: 0s
+				}]
+			}
+		}
 	},
 	{
-		item: "extrautils2:angelring 1 2",
-		weight: 2
+		item: "botania:laputashard 16 19",
+		count: 16
 	},
 	{
-		item: "draconicevolution:wyvern_bow",
-		weight: 10
+		item: "draconicevolution:dislocator_advanced"
 	},
 	{
-		item: "draconicevolution:wyvern_energy_core",
-		weight: 10
+		item: {
+			id: "draconicevolution:wyvern_bow",
+			tag: {
+				DEUpgrades: {
+					arrowDmg: 2b,
+					arrowSpeed: 2b,
+					drawSpeed: 2b,
+					rfCap: 2b
+				},
+				Energy: 16000000
+			}
+		}
 	},
 	{
-		item: "draconicevolution:wyvern_axe",
-		weight: 10
+		item: "mysticalagradditions:neutronium_seeds"
 	},
 	{
-		item: "appliedenergistics2:controller",
-		weight: 10
+		item: "avaritia:singularity 1 8",
+		count: 2
 	},
 	{
-		item: "appliedenergistics2:material 1 47",
-		weight: 10
+		item: "storagedrawers:upgrade_creative",
+		count: 64
 	},
 	{
-		item: "extrautils2:passivegenerator 1 8",
-		weight: 10
-	},
-	{
-		item: "draconicevolution:ender_energy_manipulator",
-		weight: 10
-	},
-	{
-		item: "iceandfire:dragonegg_green",
-		weight: 10
-	},
-	{
-		item: "avaritia:resource 1 4",
-		count: 4,
-		weight: 2
-	},
-	{
-		item: "rats:rat_upgrade_nonbeliever",
-		weight: 2
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "perfect_fuel",
+					Amount: 24000
+				}
+			}
+		}
 	},
 	{
 		item: {
@@ -245,66 +242,181 @@
 					Amount: 24000
 				}
 			}
-		},
-		weight: 2
+		}
+	},
+	{
+		item: "botania_tweaks:compressed_tiny_potato_8",
+		count: 3
+	},
+	{
+		item: "tconevo:material 1 2",
+		count: 32
+	},
+	{
+		item: "extrautils2:teleporter 1 1"
 	},
 	{
 		item: {
-			id: "thermalexpansion:florb",
+			id: "conarm:armor_trim",
 			tag: {
-				Fluid: "blockfluidantimatter"
+				Material: "aethium"
 			}
-		},
-		weight: 10
+		}
 	},
 	{
 		item: {
-			id: "minecraft:enchanted_book",
+			id: "enderio:item_stellar_alloy_pickaxe",
 			tag: {
-				StoredEnchantments: [{
-					lvl: 6s,
-					id: 35s
-				}]
+				enderio.darksteel.upgrade.travel: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.direct: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.energyUpgrade: {
+					level: 4,
+					energy: 2500000
+				},
+				enderio.darksteel.upgrade.spoon: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.depth: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.carpet: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.tnt: {
+					level: 4
+				}
 			}
-		},
-		weight: 10
+		}
+	},
+	{
+		item: "rats:chunky_cheese_token",
+		count: 2
+	},
+	{
+		item: "additionalcompression:cobblestone_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:gravel_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:blocksand_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:dirt_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:clay_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:netherrack_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:soulsand_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:endstone_compressed 1 9"
+	},
+	{
+		item: "draconicevolution:ender_energy_manipulator",
+		count: 8
 	},
 	{
 		item: {
-			id: "minecraft:enchanted_book",
+			id: "ic2:crystal_memory",
 			tag: {
-				StoredEnchantments: [{
-					lvl: 10s,
-					id: 32s
-				}]
+				Pattern: {
+					id: "extendedcrafting:material",
+					Count: 1b,
+					Damage: 13s
+				}
 			}
-		},
-		weight: 10
+		}
 	},
 	{
 		item: {
-			id: "minecraft:enchanted_book",
+			id: "ic2:crystal_memory",
 			tag: {
-				StoredEnchantments: [{
-					lvl: 6s,
-					id: 34s
-				}]
+				Pattern: {
+					id: "draconicevolution:draconium_capacitor",
+					Count: 1b,
+					Damage: 1s
+				}
 			}
-		},
-		weight: 10
+		}
 	},
 	{
-		item: "scalinghealth:difficultychanger",
-		weight: 15
+		item: "appliedenergistics2:controller",
+		count: 6
+	},
+	{
+		item: "extrautils2:compoundbow"
 	},
 	{
 		item: {
-			id: "actuallyadditions:item_tele_staff",
+			id: "draconicevolution:draconic_shovel",
 			tag: {
-				Energy: 250000
+				DEUpgrades: {
+					digSpeed: 3b,
+					digAOE: 3b,
+					rfCap: 3b
+				},
+				Energy: 256000000
+			}
+		}
+	},
+	{
+		item: "extrautils2:fireaxe"
+	},
+	{
+		item: "rftoolsdim:dimension_builder"
+	},
+	{
+		item: {
+			id: "psicosts:psi_cell",
+			Damage: 3s,
+			tag: {
+				PsioCharge: 2560000
+			}
+		}
+	},
+	{
+		item: "aeadditions:storage.component 1 3",
+		count: 3
+	},
+	{
+		item: {
+			id: "mekanism:basicblock2",
+			Damage: 3s,
+			tag: {
+				tier: 3,
+				mekData: {
+					energyStored: "5.12E11d"
+				}
 			}
 		},
-		weight: 15
+		count: 4
+	},
+	{
+		item: "mysticalagriculture:master_infusion_crystal"
+	},
+	{
+		item: "thaumicwonders:alienist_stone"
+	},
+	{
+		item: {
+			id: "cyclicmagic:book_ender",
+			tag: {
+				location_back: ""
+			}
+		}
+	},
+	{
+		item: "avaritiafurnace:infinityfuel",
+		count: 2
 	}],
 	loot_crate: {
 		string_id: "mythic",

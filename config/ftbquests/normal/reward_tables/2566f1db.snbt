@@ -5,7 +5,311 @@
 		item: {
 			id: "tconstruct:shard",
 			tag: {
+				Material: "advanced_alloy"
+			}
+		},
+		count: 28
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "aethium"
+			}
+		},
+		count: 4
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "amethyst"
+			}
+		},
+		count: 18
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "black_quartz"
+			}
+		},
+		count: 64
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "bloodwood"
+			}
+		},
+		count: 42
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "boron_nitride"
+			}
+		},
+		count: 16
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "carbon_fiber"
+			}
+		},
+		count: 36
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "darkwood"
+			}
+		},
+		count: 14
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "desert_myrmex"
+			}
+		},
+		count: 38
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "diamantine_crystal"
+			}
+		},
+		count: 20
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "emeraldic_crystal"
+			}
+		},
+		count: 20
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "endorium"
+			}
+		},
+		count: 26
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "enori_crystal"
+			}
+		},
+		count: 20
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
 				Material: "fusewood"
+			}
+		},
+		count: 16
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "gelid_gem"
+			}
+		},
+		count: 10
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "ghostwood"
+			}
+		},
+		count: 22
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "ionite"
+			}
+		},
+		count: 6
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "jungle_myrmex"
+			}
+		},
+		count: 38
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "kyronite"
+			}
+		},
+		count: 10
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "litherite"
+			}
+		},
+		count: 12
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "lonsdaleite"
+			}
+		},
+		count: 32
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "nagascale"
+			}
+		},
+		count: 30
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "palis_crystal"
+			}
+		},
+		count: 20
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "pladium"
+			}
+		},
+		count: 8
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "restonia_crystal"
+			}
+		},
+		count: 20
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "sapphire"
+			}
+		},
+		count: 40
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "steeleaf"
+			}
+		},
+		count: 24
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "topaz"
+			}
+		},
+		count: 34
+	},
+	{
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "void_crystal"
+			}
+		},
+		count: 20
+	},
+	{
+		item: {
+			id: "tconevo:part_arcane_focus",
+			tag: {
+				Material: "enderium"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:broad_axe_head",
+			tag: {
+				Material: "gelid_enderium"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:large_plate",
+			tag: {
+				Material: "osgloglas"
+			}
+		}
+	},
+	{
+		item: "tconstruct:materials 1 50"
+	},
+	{
+		item: "tinkersaddons:modifier_item 1 3",
+		count: 4
+	},
+	{
+		item: "tinkersaddons:modifier_item 1 4",
+		count: 2
+	},
+	{
+		item: "tinkersaddons:modifier_item 1 2",
+		count: 6
+	},
+	{
+		item: "tinkersaddons:modifier_item 1 1",
+		count: 10
+	},
+	{
+		item: {
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "manyullyn"
 			}
 		}
 	}],
