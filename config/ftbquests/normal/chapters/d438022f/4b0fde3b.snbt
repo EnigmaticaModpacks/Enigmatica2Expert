@@ -17,7 +17,7 @@
 				Items: []
 			}
 		}],
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "a4836285",
