@@ -1,5 +1,5 @@
 {
-	title: "{q.gates.gate:_exploration.name}",
+	title: "{q.gates.gate_exploration.name}",
 	icon: {
 		id: "naturescompass:naturescompass",
 		tag: {}
@@ -7,7 +7,7 @@
 	x: 11.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{q.gates.gate:_exploration.desc}"
+		"{q.gates.gate_exploration.desc}"
 	],
 	dependencies: [
 		"4fc58528"

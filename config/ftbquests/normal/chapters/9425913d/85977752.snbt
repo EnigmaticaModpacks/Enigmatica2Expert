@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.mini_gate:_thermal.name}",
+	title: "{q.gates.mini_gate_thermal.name}",
 	x: 4.0d,
 	y: 0.0d,
 	text: [
-		"{q.gates.mini_gate:_thermal.desc}"
+		"{q.gates.mini_gate_thermal.desc}"
 	],
 	dependencies: [
 		"009a4c27"

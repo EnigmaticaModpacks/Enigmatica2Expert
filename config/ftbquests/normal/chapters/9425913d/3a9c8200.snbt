@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_ex_nihilo.name}",
+	title: "{q.gates.gate_ex_nihilo.name}",
 	x: 7.5d,
 	y: 0.5d,
 	text: [
-		"{q.gates.gate:_ex_nihilo.desc}"
+		"{q.gates.gate_ex_nihilo.desc}"
 	],
 	dependencies: [
 		"ca359f03"

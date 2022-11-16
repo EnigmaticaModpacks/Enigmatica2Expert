@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_botania.name}",
+	title: "{q.gates.gate_botania.name}",
 	x: 9.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{q.gates.gate:_botania.desc}"
+		"{q.gates.gate_botania.desc}"
 	],
 	dependencies: [
 		"8a9f0c33"

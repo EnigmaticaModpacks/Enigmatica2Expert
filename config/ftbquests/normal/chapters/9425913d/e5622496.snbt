@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_extra_utilit.name}",
+	title: "{q.gates.gate_extra_utilit.name}",
 	x: 7.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{q.gates.gate:_extra_utilit.desc}"
+		"{q.gates.gate_extra_utilit.desc}"
 	],
 	dependencies: [
 		"00f29513"

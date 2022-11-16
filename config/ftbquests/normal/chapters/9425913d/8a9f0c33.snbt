@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_astral_sorcery.name}",
+	title: "{q.gates.gate_astral_sorcery.name}",
 	x: 9.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{q.gates.gate:_astral_sorcery.desc}"
+		"{q.gates.gate_astral_sorcery.desc}"
 	],
 	dependencies: [
 		"2957f2cc"

@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_mystical_agr.name}",
+	title: "{q.gates.gate_mystical_agr.name}",
 	x: 7.5d,
 	y: 5.5d,
 	text: [
-		"{q.gates.gate:_mystical_agr.desc}"
+		"{q.gates.gate_mystical_agr.desc}"
 	],
 	dependencies: [
 		"5672d99b"

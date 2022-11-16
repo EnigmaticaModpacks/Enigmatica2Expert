@@ -1,10 +1,10 @@
 {
-	title: "{q.utils.mod:_rustic.name}",
+	title: "{q.utils.mod_rustic.name}",
 	x: -20.833333333333332d,
 	y: 21.333333333333336d,
 	shape: "heart",
 	text: [
-		"{q.utils.mod:_rustic.desc}"
+		"{q.utils.mod_rustic.desc}"
 	],
 	dependencies: [
 		"37406152"

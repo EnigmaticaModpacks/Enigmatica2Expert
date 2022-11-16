@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.mini_gate:_dynamos.name}",
+	title: "{q.gates.mini_gate_dynamos.name}",
 	x: 4.0d,
 	y: 1.6666666666666665d,
 	text: [
-		"{q.gates.mini_gate:_dynamos.desc}"
+		"{q.gates.mini_gate_dynamos.desc}"
 	],
 	dependencies: [
 		"a626e5ea"

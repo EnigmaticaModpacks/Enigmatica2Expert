@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.mini_gate:_pipes.name}",
+	title: "{q.gates.mini_gate_pipes.name}",
 	x: 1.0d,
 	y: 0.0d,
 	text: [
-		"{q.gates.mini_gate:_pipes.desc}"
+		"{q.gates.mini_gate_pipes.desc}"
 	],
 	dependencies: [
 		"e07d1afe"

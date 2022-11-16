@@ -1,11 +1,11 @@
 {
-	title: "{q.utils.mod:_bibliocraft.name}",
+	title: "{q.utils.mod_bibliocraft.name}",
 	icon: "bibliocraft:framingsaw",
 	x: -12.666666666666668d,
 	y: 23.666666666666668d,
 	shape: "heart",
 	text: [
-		"{q.utils.mod:_bibliocraft.desc}"
+		"{q.utils.mod_bibliocraft.desc}"
 	],
 	dependencies: [
 		"37406152"

@@ -1,10 +1,10 @@
 {
-	title: "{q.utils.mod:_quark.name}",
+	title: "{q.utils.mod_quark.name}",
 	x: -20.666666666666664d,
 	y: 13.5d,
 	shape: "heart",
 	text: [
-		"{q.utils.mod:_quark.desc}"
+		"{q.utils.mod_quark.desc}"
 	],
 	dependencies: [
 		"37406152"

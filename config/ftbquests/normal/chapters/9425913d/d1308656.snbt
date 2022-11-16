@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_advanced_gen.name}",
+	title: "{q.gates.gate_advanced_gen.name}",
 	x: 7.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{q.gates.gate:_advanced_gen.desc}"
+		"{q.gates.gate_advanced_gen.desc}"
 	],
 	dependencies: [
 		"e5622496"

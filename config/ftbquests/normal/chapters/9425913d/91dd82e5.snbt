@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_draconic_evo.name}",
+	title: "{q.gates.gate_draconic_evo.name}",
 	x: -0.5d,
 	y: 5.5d,
 	text: [
-		"{q.gates.gate:_draconic_evo.desc}"
+		"{q.gates.gate_draconic_evo.desc}"
 	],
 	dependencies: [
 		"4af44027",

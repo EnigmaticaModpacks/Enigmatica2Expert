@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 1.25d,
 	text: [
-		"{q.animals.rat_upgrade:_gemcu.desc}"
+		"{q.animals.rat_upgrade_gemcu.desc}"
 	],
 	dependencies: [
 		"f99929a2"

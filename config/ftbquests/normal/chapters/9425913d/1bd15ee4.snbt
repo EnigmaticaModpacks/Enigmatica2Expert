@@ -1,10 +1,10 @@
 {
-	title: "{q.gates.gate:_psi.name}",
+	title: "{q.gates.gate_psi.name}",
 	icon: "psi:cad_assembler",
 	x: 11.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{q.gates.gate:_psi.desc}"
+		"{q.gates.gate_psi.desc}"
 	],
 	dependencies: [
 		"5672d99b"

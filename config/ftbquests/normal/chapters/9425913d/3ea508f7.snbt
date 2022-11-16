@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.mini_gate:_rftools.name}",
+	title: "{q.gates.mini_gate_rftools.name}",
 	x: 2.0d,
 	y: 0.0d,
 	text: [
-		"{q.gates.mini_gate:_rftools.desc}"
+		"{q.gates.mini_gate_rftools.desc}"
 	],
 	dependencies: [
 		"e07d1afe"

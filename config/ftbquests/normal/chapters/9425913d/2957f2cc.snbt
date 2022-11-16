@@ -1,10 +1,10 @@
 {
-	title: "{q.gates.gate:_thaumcraft.name}",
+	title: "{q.gates.gate_thaumcraft.name}",
 	icon: "thaumcraft:goggles",
 	x: 9.5d,
 	y: 0.5d,
 	text: [
-		"{q.gates.gate:_thaumcraft.desc}"
+		"{q.gates.gate_thaumcraft.desc}"
 	],
 	dependencies: [
 		"90536e42"

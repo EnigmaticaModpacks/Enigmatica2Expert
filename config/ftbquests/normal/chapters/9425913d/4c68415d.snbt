@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_computers.name}",
+	title: "{q.gates.gate_computers.name}",
 	x: -0.5d,
 	y: 0.5d,
 	text: [
-		"{q.gates.gate:_computers.desc}"
+		"{q.gates.gate_computers.desc}"
 	],
 	dependencies: [
 		"ca359f03",

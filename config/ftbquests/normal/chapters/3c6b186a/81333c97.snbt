@@ -1,5 +1,5 @@
 {
-	title: "{q.industrialcraft.addon:_industrial_.name}",
+	title: "{q.industrialcraft.addon_industrial_.name}",
 	icon: {
 		id: "industrialwires:ic2_wire_coil",
 		tag: {
@@ -9,7 +9,7 @@
 	x: 4.166666666666666d,
 	y: -0.5416666666666667d,
 	text: [
-		"{q.industrialcraft.addon:_industrial_.desc}"
+		"{q.industrialcraft.addon_industrial_.desc}"
 	],
 	dependencies: [
 		"cae88f3f"

@@ -1,10 +1,10 @@
 {
-	title: "{q.utils.mod:_random_things.name}",
+	title: "{q.utils.mod_random_things.name}",
 	x: -12.666666666666668d,
 	y: 8.333333333333334d,
 	shape: "heart",
 	text: [
-		"{q.utils.mod:_random_things.desc}"
+		"{q.utils.mod_random_things.desc}"
 	],
 	dependencies: [
 		"37406152"

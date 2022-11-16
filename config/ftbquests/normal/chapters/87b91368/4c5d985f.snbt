@@ -2,7 +2,7 @@
 	x: -3.5d,
 	y: 0.0d,
 	text: [
-		"{q.animals.rat_upgrade:_shears.desc}"
+		"{q.animals.rat_upgrade_shears.desc}"
 	],
 	dependencies: [
 		"f99929a2"

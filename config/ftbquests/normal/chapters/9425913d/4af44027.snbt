@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_environmenta.name}",
+	title: "{q.gates.gate_environmenta.name}",
 	x: 1.5d,
 	y: 5.5d,
 	text: [
-		"{q.gates.gate:_environmenta.desc}"
+		"{q.gates.gate_environmenta.desc}"
 	],
 	dependencies: [
 		"bd7fc30c"

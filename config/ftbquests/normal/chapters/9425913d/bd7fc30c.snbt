@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_thermal_expa.name}",
+	title: "{q.gates.gate_thermal_expa.name}",
 	x: 5.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{q.gates.gate:_thermal_expa.desc}"
+		"{q.gates.gate_thermal_expa.desc}"
 	],
 	dependencies: [
 		"a626e5ea",

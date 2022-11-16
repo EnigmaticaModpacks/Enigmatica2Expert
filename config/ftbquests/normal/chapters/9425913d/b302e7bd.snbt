@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.mini_gate:_titanium.name}",
+	title: "{q.gates.mini_gate_titanium.name}",
 	x: 6.0d,
 	y: 0.0d,
 	text: [
-		"{q.gates.mini_gate:_titanium.desc}"
+		"{q.gates.mini_gate_titanium.desc}"
 	],
 	dependencies: [
 		"00f29513"

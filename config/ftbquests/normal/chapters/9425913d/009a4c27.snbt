@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_forestry.name}",
+	title: "{q.gates.gate_forestry.name}",
 	x: 3.5d,
 	y: 0.5d,
 	text: [
-		"{q.gates.gate:_forestry.desc}"
+		"{q.gates.gate_forestry.desc}"
 	],
 	dependencies: [
 		"18c9097c"

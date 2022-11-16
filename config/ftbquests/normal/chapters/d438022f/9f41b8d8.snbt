@@ -1,10 +1,10 @@
 {
-	title: "{q.utils.mod:_open_blocks.name}",
+	title: "{q.utils.mod_open_blocks.name}",
 	x: -6.333333333333333d,
 	y: 11.833333333333332d,
 	shape: "heart",
 	text: [
-		"{q.utils.mod:_open_blocks.desc}"
+		"{q.utils.mod_open_blocks.desc}"
 	],
 	dependencies: [
 		"37406152"

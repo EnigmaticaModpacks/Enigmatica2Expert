@@ -1,10 +1,10 @@
 {
-	title: "{q.utils.mod:_dark_utilities.name}",
+	title: "{q.utils.mod_dark_utilities.name}",
 	x: -6.333333333333333d,
 	y: 23.5d,
 	shape: "heart",
 	text: [
-		"{q.utils.mod:_dark_utilities.desc}"
+		"{q.utils.mod_dark_utilities.desc}"
 	],
 	dependencies: [
 		"37406152"

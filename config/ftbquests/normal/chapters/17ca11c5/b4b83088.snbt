@@ -1,9 +1,9 @@
 {
-	title: "{q.bragging_rights.gate:_extended_cra.name}",
+	title: "{q.bragging_rights.gate_extended_cra.name}",
 	x: 3.791666666666667d,
 	y: -2.1666666666666665d,
 	text: [
-		"{q.bragging_rights.gate:_extended_cra.desc}"
+		"{q.bragging_rights.gate_extended_cra.desc}"
 	],
 	dependencies: [
 		"0bf36970"

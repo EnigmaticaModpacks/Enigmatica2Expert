@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_immersive_en.name}",
+	title: "{q.gates.gate_immersive_en.name}",
 	x: 5.5d,
 	y: 0.5d,
 	text: [
-		"{q.gates.gate:_immersive_en.desc}"
+		"{q.gates.gate_immersive_en.desc}"
 	],
 	dependencies: [
 		"90536e42"

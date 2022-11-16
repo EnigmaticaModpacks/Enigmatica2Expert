@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_rftools.name}",
+	title: "{q.gates.gate_rftools.name}",
 	x: 3.5d,
 	y: 3.8333333333333335d,
 	text: [
-		"{q.gates.gate:_rftools.desc}"
+		"{q.gates.gate_rftools.desc}"
 	],
 	dependencies: [
 		"09abfe41"

@@ -1,9 +1,9 @@
 {
-	title: "{q.gates.gate:_mekanism.name}",
+	title: "{q.gates.gate_mekanism.name}",
 	x: 5.5d,
 	y: 2.166666666666667d,
 	text: [
-		"{q.gates.gate:_mekanism.desc}"
+		"{q.gates.gate_mekanism.desc}"
 	],
 	dependencies: [
 		"00f29513"
