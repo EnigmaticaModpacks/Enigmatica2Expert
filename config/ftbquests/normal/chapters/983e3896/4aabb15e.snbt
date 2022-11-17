@@ -16,18 +16,19 @@
 		}]
 	}],
 	rewards: [{
-		uid: "feef38d9",
+		uid: "2327c528",
+		type: "command",
+		command: "/astralsorcery research @p RADIANCE"
+	},
+	{
+		uid: "2bdd7b27",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "mythic"
+				type: "rare"
 			}
-		}
-	},
-	{
-		uid: "2327c528",
-		type: "command",
-		command: "/astralsorcery research @p RADIANCE"
+		},
+		count: 3
 	}]
 }

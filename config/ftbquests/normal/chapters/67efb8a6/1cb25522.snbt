@@ -24,6 +24,7 @@
 			tag: {
 				type: "legendary"
 			}
-		}
+		},
+		count: 3
 	}]
 }

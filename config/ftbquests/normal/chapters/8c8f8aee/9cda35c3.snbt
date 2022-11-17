@@ -20,12 +20,12 @@
 		}]
 	}],
 	rewards: [{
-		uid: "7a8dc41a",
+		uid: "9f52f0bd",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "legendary"
+				type: "materials"
 			}
 		}
 	}]

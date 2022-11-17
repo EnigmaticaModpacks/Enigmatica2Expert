@@ -15,9 +15,13 @@
 		}]
 	}],
 	rewards: [{
-		uid: "15ba9196",
+		uid: "8f9bcf2a",
 		type: "item",
-		item: "thaumcraft:curio 1 1",
-		count: 10
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "storage"
+			}
+		}
 	}]
 }

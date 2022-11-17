@@ -7,7 +7,8 @@
 			tag: {
 				type: "storage"
 			}
-		}
+		},
+		weight: 25
 	},
 	{
 		item: {
@@ -205,23 +206,6 @@
 	},
 	{
 		item: {
-			ForgeCaps: {
-				Parent: {
-					Size: 3,
-					Items: [{
-						Slot: 0,
-						id: "immersiveengineering:toolupgrade",
-						Count: 1b,
-						Damage: 8s
-					},
-					{
-						Slot: 1,
-						id: "immersiveengineering:toolupgrade",
-						Count: 1b,
-						Damage: 9s
-					}]
-				}
-			},
 			id: "immersiveengineering:railgun",
 			tag: {
 				"IE:Shader": {
@@ -234,7 +218,7 @@
 				},
 				upgrades: {
 					scope: 1b,
-					speed: 1f
+					speed: 1.0f
 				},
 				energy: 1600
 			}
@@ -242,23 +226,6 @@
 	},
 	{
 		item: {
-			ForgeCaps: {
-				Parent: {
-					Size: 4,
-					Items: [{
-						Slot: 0,
-						id: "immersiveengineering:toolupgrade",
-						Count: 1b,
-						Damage: 3s
-					},
-					{
-						Slot: 1,
-						id: "immersiveengineering:toolupgrade",
-						Count: 1b,
-						Damage: 7s
-					}]
-				}
-			},
 			id: "immersiveengineering:chemthrower",
 			tag: {
 				"IE:Shader": {
@@ -282,149 +249,6 @@
 	},
 	{
 		item: {
-			ForgeCaps: {
-				Parent: {
-					Size: 21,
-					Items: [{
-						Slot: 0,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "he"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 1,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "terrasteel"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 2,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "armor_piercing"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 3,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "armor_piercing"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 4,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "armor_piercing"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 5,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "casull"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 6,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "armor_piercing"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 7,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "buckshot"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 8,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "crystalwill"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 9,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "silver"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 10,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "potion"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 11,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "flare"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 12,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "dragonsbreath"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 13,
-						id: "immersiveengineering:bullet",
-						Count: 1b,
-						tag: {
-							bullet: "wolfpack"
-						},
-						Damage: 2s
-					},
-					{
-						Slot: 18,
-						id: "immersiveengineering:toolupgrade",
-						Count: 1b,
-						Damage: 5s
-					},
-					{
-						Slot: 19,
-						id: "immersiveengineering:toolupgrade",
-						Count: 1b,
-						Damage: 4s
-					}]
-				}
-			},
 			id: "immersiveengineering:revolver",
 			tag: {
 				"IE:Shader": {
@@ -436,10 +260,141 @@
 					Damage: 0s
 				},
 				upgrades: {
-					melee: 6f,
+					melee: 6.0f,
 					bullets: 6
 				},
-				bullets: []
+				bullets: [{
+					Slot: 0b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "he"
+					}
+				},
+				{
+					Slot: 1b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "terrasteel"
+					}
+				},
+				{
+					Slot: 2b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "armor_piercing"
+					}
+				},
+				{
+					Slot: 3b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "armor_piercing"
+					}
+				},
+				{
+					Slot: 4b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "armor_piercing"
+					}
+				},
+				{
+					Slot: 5b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "casull"
+					}
+				},
+				{
+					Slot: 6b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "armor_piercing"
+					}
+				},
+				{
+					Slot: 7b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "buckshot"
+					}
+				},
+				{
+					Slot: 8b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "crystalwill"
+					}
+				},
+				{
+					Slot: 9b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "silver"
+					}
+				},
+				{
+					Slot: 10b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "potion"
+					}
+				},
+				{
+					Slot: 11b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "flare"
+					}
+				},
+				{
+					Slot: 12b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "dragonsbreath"
+					}
+				},
+				{
+					Slot: 13b,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					Damage: 2s,
+					tag: {
+						bullet: "wolfpack"
+					}
+				}]
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 21
+				}
 			}
 		}
 	},
@@ -507,7 +462,7 @@
 	loot_crate: {
 		string_id: "uncommon",
 		item_name: "Uncommon",
-		color: 4554878,
+		color: 8103344,
 		drops: {
 			passive: 0,
 			monster: 0,

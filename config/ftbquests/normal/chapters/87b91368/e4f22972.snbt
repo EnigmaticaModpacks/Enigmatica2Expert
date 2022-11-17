@@ -28,12 +28,12 @@
 		}]
 	}],
 	rewards: [{
-		uid: "a0f918d5",
+		uid: "41f2d462",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "common"
+				type: "food"
 			}
 		}
 	}]

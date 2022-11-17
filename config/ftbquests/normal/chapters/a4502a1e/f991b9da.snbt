@@ -16,8 +16,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "88aadfba",
-		type: "xp_levels",
-		xp_levels: 5
+		uid: "a8695b8d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "generators"
+			}
+		}
 	}]
 }

@@ -15,8 +15,13 @@
 		}]
 	}],
 	rewards: [{
-		uid: "ffe9708a",
-		type: "loot",
-		table: 3
+		uid: "cf85687b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }

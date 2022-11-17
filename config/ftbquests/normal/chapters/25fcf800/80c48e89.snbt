@@ -10,21 +10,22 @@
 		"b2bc3ad7"
 	],
 	tasks: [{
-		uid: "e89d623b",
+		uid: "d9773714",
 		type: "item",
 		items: [{
-			item: "environmentaltech:nano_cont_personal_1 1 32767"
+			item: "environmentaltech:nano_cont_personal_1"
 		}],
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "12669aea",
+		uid: "cb474c07",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "legendary"
+				type: "rare"
 			}
-		}
+		},
+		count: 3
 	}]
 }

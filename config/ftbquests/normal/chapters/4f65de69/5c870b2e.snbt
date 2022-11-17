@@ -1,5 +1,11 @@
 {
 	title: "{q.getting_started.harvest_level_12.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		tag: {
+			Material: "ma.supremium"
+		}
+	},
 	x: 15.6d,
 	y: 3.5d,
 	text: [
@@ -8,6 +14,7 @@
 	dependencies: [
 		"224cb929"
 	],
+	or_tasks: true,
 	tasks: [{
 		uid: "23598306",
 		type: "item",
@@ -15,6 +22,16 @@
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "ma.supremium"
+			}
+		}]
+	},
+	{
+		uid: "5b9dd1af",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "primal_metal"
 			}
 		}]
 	}],

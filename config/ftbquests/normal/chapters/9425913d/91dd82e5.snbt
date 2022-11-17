@@ -24,13 +24,14 @@
 		count: 2
 	},
 	{
-		uid: "bd833e7d",
+		uid: "20e516e2",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "mythic"
+				type: "legendary"
 			}
-		}
+		},
+		count: 2
 	}]
 }

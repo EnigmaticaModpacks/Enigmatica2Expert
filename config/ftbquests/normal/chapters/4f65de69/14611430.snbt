@@ -22,5 +22,16 @@
 		uid: "88896799",
 		type: "choice",
 		table: 29
+	},
+	{
+		uid: "bb8c1ae2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		},
+		count: 3
 	}]
 }

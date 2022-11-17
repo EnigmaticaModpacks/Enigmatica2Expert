@@ -15,12 +15,6 @@
 		}]
 	}],
 	rewards: [{
-		uid: "2e4f18fe",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Bragging Rights questline!"
-	},
-	{
 		uid: "af924976",
 		type: "command",
 		auto: "invisible",

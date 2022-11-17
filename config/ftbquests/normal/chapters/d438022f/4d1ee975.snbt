@@ -24,7 +24,7 @@
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "common"
+				type: "decor"
 			}
 		}
 	}]

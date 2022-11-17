@@ -413,7 +413,7 @@
 	}],
 	loot_crate: {
 		string_id: "food",
-		color: 9060377,
+		color: 4668969,
 		drops: {
 			passive: 0,
 			monster: 0,

@@ -14,17 +14,28 @@
 		uid: "2bd3538c",
 		type: "item",
 		items: [{
-			item: "iceandfire:dragonsteel_fire_ingot"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dragonsteelIngot"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dragonsteelIngot"
+				}
+			}
 		}],
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "4612aed0",
+		uid: "70b7f912",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "legendary"
+				type: "rare"
 			}
 		}
 	}]

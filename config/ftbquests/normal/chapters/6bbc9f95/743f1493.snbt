@@ -16,8 +16,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "6459daaf",
-		type: "choice",
-		table: 48
+		uid: "483a28bc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "storage"
+			}
+		}
 	}]
 }

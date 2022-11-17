@@ -20,5 +20,15 @@
 		items: [{
 			item: "advancedrocketry:blackholegenerator"
 		}]
+	}],
+	rewards: [{
+		uid: "e81cb005",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
 	}]
 }

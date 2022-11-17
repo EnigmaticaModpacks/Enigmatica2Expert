@@ -421,7 +421,7 @@
 	loot_crate: {
 		string_id: "mythic",
 		item_name: "Mythic",
-		color: 16758528,
+		color: 10693183,
 		glow: true,
 		drops: {
 			passive: 0,

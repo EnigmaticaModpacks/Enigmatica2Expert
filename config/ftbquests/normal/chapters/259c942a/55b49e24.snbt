@@ -8,29 +8,19 @@
 		"8e2ee44a"
 	],
 	tasks: [{
-		uid: "24ef8b38",
+		uid: "f6ebb881",
 		type: "item",
 		items: [{
-			id: "immersiveengineering:graphite_electrode",
-			tag: {
-				Unbreakable: 1,
-				display: {
-					Lore: [
-						"Reinforced with Titanium Iridium Alloy"
-					],
-					Name: "Unbreakable Graphite Electrode"
-				}
-			}
-		}],
-		ignore_nbt: 1b
+			item: "immersiveengineering:graphite_electrode"
+		}]
 	}],
 	rewards: [{
-		uid: "0f4c08c2",
+		uid: "05c233af",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "legendary"
+				type: "uncommon"
 			}
 		}
 	}]

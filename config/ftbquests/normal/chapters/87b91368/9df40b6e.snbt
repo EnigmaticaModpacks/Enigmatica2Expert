@@ -29,12 +29,12 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "e1a46a37",
+		uid: "50d56258",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "common"
+				type: "food"
 			}
 		}
 	}]

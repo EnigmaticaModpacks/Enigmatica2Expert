@@ -31,12 +31,12 @@
 		}]
 	}],
 	rewards: [{
-		uid: "cd28ae85",
+		uid: "2b97e583",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "legendary"
+				type: "rare"
 			}
 		}
 	}]

@@ -7,7 +7,8 @@
 			tag: {
 				type: "materials"
 			}
-		}
+		},
+		weight: 25
 	},
 	{
 		item: "thermalexpansion:frame 1 148"
@@ -275,7 +276,7 @@
 	loot_crate: {
 		string_id: "legendary",
 		item_name: "Legendary",
-		color: 15260730,
+		color: 10897136,
 		drops: {
 			passive: 0,
 			monster: 0,

@@ -22,5 +22,15 @@
 		uid: "2be8b4de",
 		type: "choice",
 		table: 30
+	},
+	{
+		uid: "8fa5f9a3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		}
 	}]
 }

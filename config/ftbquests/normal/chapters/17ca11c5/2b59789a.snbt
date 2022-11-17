@@ -24,5 +24,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Flux Capacitor!"
+	},
+	{
+		uid: "8f62c4be",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		}
 	}]
 }

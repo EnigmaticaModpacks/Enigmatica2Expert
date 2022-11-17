@@ -1,0 +1,31 @@
+{
+	x: 8.125d,
+	y: 6.1d,
+	text: [
+		"You can combine Loot Chests to craft next tiers."
+	],
+	dependencies: [
+		"b1868c44"
+	],
+	tasks: [{
+		uid: "4c82097f",
+		type: "item",
+		items: [{
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "b2cb0875",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}
