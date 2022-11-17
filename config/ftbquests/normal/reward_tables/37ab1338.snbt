@@ -141,7 +141,7 @@
 			tag: {
 				mekData: {
 					mode: 4,
-					energyStored: "2.0E7d"
+					energyStored: 2.0E7d
 				}
 			}
 		}
@@ -394,7 +394,7 @@
 			tag: {
 				tier: 3,
 				mekData: {
-					energyStored: "5.12E11d"
+					energyStored: 5.12E11d
 				}
 			}
 		},

@@ -3,7 +3,7 @@
 	icon: {
 		id: "ic2:quantum_chestplate",
 		tag: {
-			charge: "1.0E7d"
+			charge: 1.0E7d
 		}
 	},
 	x: 10.5d,
@@ -20,7 +20,7 @@
 		items: [{
 			id: "ic2:quantum_helmet",
 			tag: {
-				charge: "1.0E7d"
+				charge: 1.0E7d
 			}
 		}],
 		ignore_nbt: 1b
@@ -31,7 +31,7 @@
 		items: [{
 			id: "ic2:quantum_chestplate",
 			tag: {
-				charge: "1.0E7d"
+				charge: 1.0E7d
 			}
 		}],
 		ignore_nbt: 1b
@@ -42,7 +42,7 @@
 		items: [{
 			id: "ic2:quantum_leggings",
 			tag: {
-				charge: "1.0E7d"
+				charge: 1.0E7d
 			}
 		}],
 		ignore_nbt: 1b
@@ -53,7 +53,7 @@
 		items: [{
 			id: "ic2:quantum_boots",
 			tag: {
-				charge: "1.0E7d"
+				charge: 1.0E7d
 			}
 		}],
 		ignore_nbt: 1b

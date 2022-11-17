@@ -2,7 +2,7 @@
 	icon: {
 		id: "ic2:mining_laser",
 		tag: {
-			charge: "2.0E7d"
+			charge: 2.0E7d
 		}
 	},
 	x: 7.5d,
