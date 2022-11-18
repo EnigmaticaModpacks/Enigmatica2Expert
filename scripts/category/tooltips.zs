@@ -16,6 +16,7 @@ for item in [
 .map(([, id]) => `  <${id}>,`)
 .sort(naturalSort)
 )*/
+  <actuallyadditions:block_farmer>,
   <advgenerators:gas_input>,
   <ae2stuff:visualiser>,
   <bloodmagic:blood_rune:1>,
