@@ -13,15 +13,16 @@ import scripts.jei.requious.add as addRecipe;
 var x = <assembly:garden_cloche>;
 x.addJEICatalyst(<immersiveengineering:metal_device1:13>);
 x.setJEIFluidSlot(0, 0, 'fluid_in');
-x.setJEIDurationSlot(1,0,"duration", scripts.jei.requious.getVisGauge(9,1));
+x.setJEIDurationSlot(2,0,"duration", SlotVisual.arrowRight());
 scripts.jei.requious.addInsOuts(x, [[1,0]], [[3,0]]);
 
-function addGardenClocheFluid(fluid as ILiquidStack, amount as int) as void {
+function addGardenClocheFluid(fluid as ILiquidStack, mult as float) as void {
   <assembly:garden_cloche>.addJEIRecipe(AssemblyRecipe.create(function(c) {
-    c.addItemOutput('output0', <minecraft:potato> * amount);
+    c.addItemOutput('output0', <minecraft:potato> * 2);
   })
   .requireFluid('fluid_in', fluid * 100)
   .requireItem("input0", <minecraft:potato>)
+  .requireDuration("duration", 40.0f * (1.0f / mult))
   );
 }
 
