@@ -10,14 +10,10 @@
 				Color1: 8349260,
 				Color0: 15905331,
 				Inventory: {
-					Slot2: {
-						Count: 50b,
-						id: "cyclicmagic:horse_upgrade_speed",
-						Damage: 0s
-					},
-					Slot3: {
-						Count: 1b,
+					Slot5: {
 						id: "minecraft:saddle",
+						Count: 1b,
+						Damage: 0s,
 						tag: {
 							HorseTweaksUpgrades: {
 								FIRE_RESISTANCE: 1b,
@@ -28,44 +24,48 @@
 								FROST_WALKER: 1b,
 								SWIMMING: 1b
 							}
-						},
+						}
+					},
+					Slot0: {
+						id: "randomthings:superlubricentboots",
+						Count: 1b,
 						Damage: 0s
 					},
 					Slot4: {
-						Count: 1b,
-						id: "astralsorcery:itemgrapplewand",
+						id: "minecraft:apple",
+						Count: 32b,
 						Damage: 0s
 					},
-					Slot5: {
+					Slot2: {
+						id: "cyclicmagic:charm_void",
 						Count: 1b,
-						id: "tconstruct:slimesling",
-						Damage: 2s
-					},
-					Slot0: {
-						Count: 1b,
-						id: "excompressum:bait",
-						Damage: 8s
+						Damage: 0s,
+						tag: {}
 					},
 					Slot1: {
-						Count: 32b,
-						id: "minecraft:apple",
+						id: "tconstruct:slimesling",
+						Count: 1b,
+						Damage: 2s
+					},
+					Slot3: {
+						id: "cyclicmagic:charm_boat",
+						Count: 1b,
+						Damage: 0s,
+						tag: {}
+					},
+					Slot8: {
+						id: "animania:item_wagon",
+						Count: 1b,
 						Damage: 0s
 					},
 					Slot6: {
+						id: "excompressum:bait",
 						Count: 1b,
-						id: "randomthings:superlubricentboots",
-						Damage: 0s
+						Damage: 8s
 					},
 					Slot7: {
-						Count: 1b,
-						id: "cyclicmagic:charm_void",
-						tag: {},
-						Damage: 0s
-					},
-					Slot8: {
-						Count: 1b,
-						id: "cyclicmagic:charm_boat",
-						tag: {},
+						id: "cyclicmagic:horse_upgrade_speed",
+						Count: 50b,
 						Damage: 0s
 					}
 				},
@@ -141,17 +141,18 @@
 				Color0: 13388876,
 				Inventory: {
 					Slot2: {
+						id: "cyclicmagic:boomerang",
+						Count: 1b,
+						Damage: 0s,
+						tag: {},
 						ForgeCaps: {
 							"astralsorcery:cap_item_amulet_holder": {}
-						},
-						Count: 1b,
-						id: "cyclicmagic:boomerang",
-						tag: {},
-						Damage: 0s
+						}
 					},
 					Slot5: {
-						Count: 4b,
 						id: "rustic:elixir",
+						Count: 6b,
+						Damage: 0s,
 						tag: {
 							ench: [{
 								lvl: 1s,
@@ -166,49 +167,88 @@
 								Effect: "minecraft:regeneration",
 								Amplifier: 1
 							}]
+						}
+					},
+					Slot1: {
+						id: "immersiveengineering:shield",
+						Count: 1b,
+						Damage: 0s,
+						ForgeCaps: {
+							Parent: {
+								Items: [],
+								Size: 1
+							}
+						}
+					},
+					Slot7: {
+						id: "randomthings:imbue",
+						Count: 10b,
+						Damage: 2s
+					},
+					Slot8: {
+						id: "botania:brewflask",
+						Count: 1b,
+						Damage: 0s,
+						tag: {
+							brewKey: "bloodthirst"
 						},
-						Damage: 0s
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						}
+					},
+					Slot6: {
+						id: "rustic:fluid_bottle",
+						Count: 10b,
+						Damage: 0s,
+						tag: {
+							Fluid: {
+								FluidName: "cider",
+								Amount: 1000,
+								Tag: {
+									Quality: 1.0f
+								}
+							}
+						}
 					},
 					Slot0: {
-						ForgeCaps: {
-							"plustic:": {
-								Size: 1,
-								Items: []
-							},
-							"astralsorcery:cap_item_amulet_holder": {},
-							"plustic:fruitsalad_cap": {
-								Size: 5,
-								Items: []
-							},
-							"plustic:musicofthespheres_cap": {
-								Size: 1,
-								Items: []
-							}
-						},
-						Count: 1b,
 						id: "tconstruct:broadsword",
+						Count: 1b,
+						Damage: 0s,
 						tag: {
-							StatsOriginal: {
-								AttackSpeedMultiplier: 1.0f,
-								MiningSpeed: 1.5f,
-								FreeModifiers: 3,
+							TinkerData: {
+								Materials: [
+									"wood",
+									"wood",
+									"wood"
+								],
+								Modifiers: [
+									"toolleveling",
+									"smite",
+									"creative"
+								],
+								UsedModifiers: 1
+							},
+							Stats: {
 								Durability: 61,
 								HarvestLevel: 0,
-								Attack: 2.5f
+								Attack: 2.5f,
+								MiningSpeed: 1.5f,
+								AttackSpeedMultiplier: 1.0f,
+								FreeModifiers: 4
+							},
+							StatsOriginal: {
+								Durability: 61,
+								HarvestLevel: 0,
+								Attack: 2.5f,
+								MiningSpeed: 1.5f,
+								AttackSpeedMultiplier: 1.0f,
+								FreeModifiers: 3
 							},
 							Special: {
 								Categories: [
-									"weapon",
-									"tool"
+									"tool",
+									"weapon"
 								]
-							},
-							Stats: {
-								AttackSpeedMultiplier: 1.0f,
-								MiningSpeed: 1.5f,
-								FreeModifiers: 2,
-								Durability: 61,
-								HarvestLevel: 0,
-								Attack: 2.5f
 							},
 							Modifiers: [{
 								identifier: "ecological",
@@ -221,86 +261,41 @@
 								level: 1
 							},
 							{
-								identifier: "bane_of_arthopods",
-								current: 24,
-								color: 6404681,
-								level: 1,
-								max: 24,
-								extraInfo: "23 / 24"
-							},
-							{
 								identifier: "smite",
-								current: 24,
 								color: 15258880,
 								level: 1,
+								current: 24,
 								max: 24,
 								extraInfo: "23 / 24"
 							},
 							{
 								identifier: "creative",
 								color: 0,
-								level: 2
+								level: 3
 							}],
-							TinkerData: {
-								UsedModifiers: 2,
-								Materials: [
-									"wood",
-									"wood",
-									"wood"
-								],
-								Modifiers: [
-									"toolleveling",
-									"bane_of_arthopods",
-									"smite",
-									"creative"
-								]
-							},
 							Traits: [
 								"ecological",
 								"toolleveling",
-								"bane_of_arthopods",
 								"smite"
-							]
-						},
-						Damage: 0s
-					},
-					Slot1: {
-						ForgeCaps: {
-							"astralsorcery:cap_item_amulet_holder": {}
-						},
-						Count: 1b,
-						id: "immersiveengineering:shield",
-						Damage: 0s
-					},
-					Slot6: {
-						Count: 10b,
-						id: "rustic:fluid_bottle",
-						tag: {
-							Fluid: {
-								FluidName: "cider",
-								Amount: 1000,
-								Tag: {
-									Quality: 1.0f
-								}
+							],
+							display: {
+								Name: "Broadsword with +3 mods"
 							}
 						},
-						Damage: 0s
-					},
-					Slot7: {
-						Count: 10b,
-						id: "randomthings:imbue",
-						Damage: 2s
-					},
-					Slot8: {
 						ForgeCaps: {
-							"astralsorcery:cap_item_amulet_holder": {}
-						},
-						Count: 1b,
-						id: "botania:brewflask",
-						tag: {
-							brewKey: "bloodthirst"
-						},
-						Damage: 0s
+							"plustic:fruitsalad_cap": {
+								Items: [],
+								Size: 5
+							},
+							"plustic:": {
+								Items: [],
+								Size: 1
+							},
+							"plustic:musicofthespheres_cap": {
+								Items: [],
+								Size: 1
+							}
+						}
 					}
 				},
 				Accessible: 1b
