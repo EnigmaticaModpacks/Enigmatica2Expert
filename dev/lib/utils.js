@@ -195,20 +195,27 @@ export function transpose(a) {
 }
 
 export function injectInFile(filename, keyStart, keyFinish, text) {
+  /** @type {import('replace-in-file').ReplaceResult[]} */
+  let replaceResult
   try {
-    return replace_in_file.sync({
-      files: filename,
-      from : new RegExp(
+    const from = new RegExp(
         `${escapeRegex(keyStart)}[\\s\\S\n\r]*?${escapeRegex(keyFinish)}`,
         'm'
-      ),
+    )
+    replaceResult = replace_in_file.sync({
+      files       : filename,
+      from,
       to          : keyStart + text + keyFinish,
       countMatches: true,
     })
   }
   catch (error) {
     console.error('Inject Error occurred:', error)
+    return 0
   }
+
+  if (!replaceResult?.[0]?.numMatches) throw new Error(`Cant replace in file ${filename}`)
+  return replaceResult[0].numMatches
 }
 
 export function write(...args) {

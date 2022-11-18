@@ -9,6 +9,7 @@
 
 // @ts-check
 
+import { getSubMetas } from '../lib/tellme.js'
 import {
   config,
   defaultHelper,
@@ -22,10 +23,25 @@ export async function init(h = defaultHelper) {
   await h.begin('Get files')
   const jeiConfigPath = 'config/jei/itemBlacklist.cfg'
   const purged = getPurged()
-  const merged = [...config(jeiConfigPath).advanced.itemBlacklist, ...purged]
+
+  /** @type {string[]} */
   const pure = []
+
+  /** @type {Set<string>} */
   const removedMods = new Set()
   const modList = getCSV('config/tellme/mod-list-csv.csv')
+
+  /** @type {string[]} */
+  const merged = [...config(jeiConfigPath).advanced.itemBlacklist, ...purged]
+
+  await h.begin('Looking for wildcarable')
+  merged.forEach((s, i) => {
+    const [source, name, meta, ...rest] = s.split(':')
+    if (!meta || rest.length || meta !== '0') return
+    const id = `${source}:${name}`
+    if (getSubMetas(id).length > 1) return
+    merged[i] = id
+  })
 
   await h.begin(`Fixing blacklist with ${merged.length} entries`)
   merged.forEach((s, i) => {
@@ -40,8 +56,8 @@ export async function init(h = defaultHelper) {
     // If mod not exist
     const mod = s.split(':')[0]
     if (
-      !['fluid', 'gas'].includes(mod) &&
-      !modList.some((m) => m.ModID === mod)
+      !['fluid', 'gas'].includes(mod)
+      && !modList.some(m => m.ModID === mod)
     ) {
       removedMods.add(mod)
       return
@@ -52,13 +68,18 @@ export async function init(h = defaultHelper) {
 
   pure.sort(naturalSort)
 
-  injectInFile(
+  const injected = injectInFile(
     jeiConfigPath,
-    '    S:itemBlacklist <\n',
-    '\n     >',
-    pure.map((s) => '        ' + s).join('\n')
+    '    S:itemBlacklist <',
+    '     >',
+    `\n${pure.map(s => `        ${s}`).join('\n')}\n`
   )
 
+  console.log('injected :>> ', injected)
+
+  /**
+   * @returns {string[]}
+   */
   function getPurged() {
     const totalPurged = [
       ...loadText('crafttweaker.log').matchAll(
@@ -67,9 +88,9 @@ export async function init(h = defaultHelper) {
     ]
 
     const purgedItems = totalPurged
-      .map((m) => m[1])
-      .map((s) => s.match(/<([^>]+)>(.withTag\(.*\))?/)[1])
-      .filter((s) => s)
+      .map(m => m[1])
+      .map(s => s.match(/<([^>]+)>(.withTag\(.*\))?/)?.[1])
+      .filter(s => s)
       .map((s) => {
         let [, source, meta] = s.match(/([^:]+:[^:]+)(:(\d+|\*))?/)
         if (meta === ':*') meta = ''
@@ -85,7 +106,7 @@ export async function init(h = defaultHelper) {
     }`
   )
 }
-// @ts-ignore
+
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )

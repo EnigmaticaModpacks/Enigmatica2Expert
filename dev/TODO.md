@@ -2,29 +2,19 @@
 
 List of priorities:
 
-- [ ] ✏️ Add Sentient Ingot in smeltery
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
-- [ ] ✏️ Impetus Gen add Primordial Pearl
 - [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
-- [ ] ✏️ Double Compressed blocks make sledgeable and higher hardness
-- [ ] ✏️ JEI blacklist from purging not workign
-- [ ] ✏️ Use duration to show cloche speed
-- [ ] ✏️ Modular Machines cheaper
-- [ ] ✏️ Fix Advanced Dimlets uncraftable
-- [ ] ✏️ Buff Porous Stone output
-- [x] ✏️ Vitium seeds can be planted in the overworld by the AA farmer
-- [ ] ✏️ Buff porous stone output
-- [ ] ✏️ Fix Monster Spawner craft
-- [ ] ✏️ Buff AA rings (bansoukoyu) to encrease capacity and blaze output
 - [ ] ✏️ Add IC2 Electrolyzer compat
 - [ ] ✏️ Integrate Alluring Fishhook
 - [ ] 🐀 Fix rats not spawn on garbage piles
 - [ ] 📀 Buff dev/null/ to hold more then 64 blocks
+- [ ] 📀 Buff Porous Stone output
+- [ ] 📀 Buff AA rings (bansoukou) to encrease capacity and blaze output
+- [ ] 📀 Remove automatic IE armor recycling to speed up game load
 - [ ] 🟢 Add **better-fusion-reactor-for-mekanism**
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
-- [ ] 📖 Add warning about Pam's crops in AA farmer, also farmland from FfB
 - [ ] 📖 Add mobs in Mek's gear
 - [ ] 📖 Add quiver in Combat kit
 - [ ] 📖 Nerf travel kit
@@ -33,10 +23,6 @@ List of priorities:
 - [ ] 📖 Fix "5.12E11d" strings.
 - [ ] 🌿 Add Patchouli book page with sorted UU values
 - [ ] 🌍 AdvRock geodes should contain modded ores
-- [ ] ⚡ Remove automatic IE armor recycling to speed up game load
-- [ ] 📖 Add Black Hole Gen and valid fuel
-
-fix `type: "loot"` in quests
 
 ---
 
@@ -268,3 +254,4 @@ Liquids that should have more uses:
   > But ???
 - No Tech
 - No base
+  > Cant stay in same chunk for long time
