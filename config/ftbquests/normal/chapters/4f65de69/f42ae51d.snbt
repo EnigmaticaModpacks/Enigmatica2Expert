@@ -1,0 +1,31 @@
+{
+	title: "§mTechnical quest.",
+	disable_toast: true,
+	x: 3.1799999999999997d,
+	y: 3.5d,
+	text: [
+		"§0§mPlease ignore. Providing back-dependency."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"ca359f03"
+	],
+	size: 0.1d,
+	or_tasks: true,
+	tasks: [{
+		uid: "66531111",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:ore 1 3"
+		}],
+		count: 2L
+	},
+	{
+		uid: "488bb426",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 3"
+		}],
+		count: 2L
+	}]
+}

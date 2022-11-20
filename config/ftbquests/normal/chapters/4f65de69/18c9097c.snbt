@@ -11,8 +11,17 @@
 	text: [
 		"{q.getting_started.harvest_level_2.desc}"
 	],
+	min_required_dependencies: 1,
 	dependencies: [
-		"90536e42"
+		"755b80fb",
+		"90536e42",
+		"39579596",
+		"ccc74530",
+		"f42ae51d",
+		"a7c0ef7d",
+		"4bc2899f",
+		"a1fb3576",
+		"eb50008f"
 	],
 	tasks: [{
 		uid: "8d18f8b8",

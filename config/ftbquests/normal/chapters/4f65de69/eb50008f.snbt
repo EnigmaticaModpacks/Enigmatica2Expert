@@ -1,0 +1,22 @@
+{
+	title: "§mTechnical quest.",
+	disable_toast: true,
+	x: 0.24d,
+	y: 3.5d,
+	text: [
+		"§0§mPlease ignore. Providing back-dependency."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"ca359f03"
+	],
+	size: 0.1d,
+	tasks: [{
+		uid: "9d4e3656",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material"
+		}],
+		count: 2L
+	}]
+}

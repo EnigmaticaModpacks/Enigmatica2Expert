@@ -11,8 +11,12 @@
 	text: [
 		"{q.getting_started.harvest_level_7.desc}"
 	],
+	min_required_dependencies: 1,
 	dependencies: [
-		"4fc58528"
+		"39579596",
+		"4fc58528",
+		"4bc2899f",
+		"a1fb3576"
 	],
 	or_tasks: true,
 	tasks: [{

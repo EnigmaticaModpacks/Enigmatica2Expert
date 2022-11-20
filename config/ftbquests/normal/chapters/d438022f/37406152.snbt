@@ -19,5 +19,10 @@
 		uid: "a3e160fe",
 		type: "choice",
 		table: 126
+	},
+	{
+		uid: "69be750f",
+		type: "item",
+		item: "randomthings:weatheregg 1 1"
 	}]
 }

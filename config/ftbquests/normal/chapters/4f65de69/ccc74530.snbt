@@ -1,0 +1,30 @@
+{
+	title: "§mTechnical quest.",
+	disable_toast: true,
+	x: 1.68d,
+	y: 3.5d,
+	text: [
+		"§0§mPlease ignore. Providing back-dependency."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"ca359f03"
+	],
+	size: 0.1d,
+	or_tasks: true,
+	tasks: [{
+		uid: "2c513191",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	},
+	{
+		uid: "3bc5d76c",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ore"
+		}],
+		count: 2L
+	}]
+}

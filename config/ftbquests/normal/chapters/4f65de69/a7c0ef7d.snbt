@@ -1,0 +1,35 @@
+{
+	title: "§mTechnical quest.",
+	disable_toast: true,
+	x: 6.239999999999999d,
+	y: 3.5d,
+	text: [
+		"§0§mPlease ignore. Providing back-dependency."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"ca359f03"
+	],
+	size: 0.1d,
+	or_tasks: true,
+	tasks: [{
+		uid: "323cdf4f",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "obsidian"
+			}
+		}]
+	},
+	{
+		uid: "4666b65d",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "sky_stone"
+			}
+		}]
+	}]
+}

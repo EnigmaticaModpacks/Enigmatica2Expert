@@ -6,6 +6,7 @@
 	text: [
 		"{q.utils.mod_random_things.desc}"
 	],
+	hide_dependency_lines: true,
 	dependencies: [
 		"37406152"
 	],

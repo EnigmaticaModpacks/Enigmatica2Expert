@@ -14,8 +14,8 @@
 		type: "checkmark"
 	}],
 	rewards: [{
-		uid: "884f3c82",
+		uid: "5480101f",
 		type: "xp_levels",
-		xp_levels: 1
+		xp_levels: 2
 	}]
 }

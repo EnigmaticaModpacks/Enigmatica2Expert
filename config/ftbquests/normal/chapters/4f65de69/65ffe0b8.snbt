@@ -63,5 +63,11 @@
 		uid: "ef07995b",
 		type: "choice",
 		table: 12
+	},
+	{
+		uid: "88beebf9",
+		type: "item",
+		item: "tconstruct:seared 1 1",
+		count: 16
 	}]
 }

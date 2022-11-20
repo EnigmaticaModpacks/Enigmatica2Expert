@@ -1,0 +1,24 @@
+{
+	title: "§mTechnical quest.",
+	disable_toast: true,
+	x: 9.18d,
+	y: 3.5d,
+	text: [
+		"§0§mPlease ignore. Providing back-dependency."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"ca359f03"
+	],
+	size: 0.1d,
+	tasks: [{
+		uid: "9edd8ee3",
+		type: "item",
+		items: [{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "manyullyn"
+			}
+		}]
+	}]
+}

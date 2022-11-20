@@ -80,7 +80,7 @@
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "rare"
+				type: "uncommon"
 			}
 		}
 	}]
