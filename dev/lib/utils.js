@@ -215,7 +215,7 @@ export function injectInFile(filename, keyStart, keyFinish, text) {
   }
 
   if (!replaceResult?.[0]?.numMatches) throw new Error(`Cant replace in file ${filename}`)
-  return replaceResult[0].numMatches
+  return replaceResult
 }
 
 export function write(...args) {

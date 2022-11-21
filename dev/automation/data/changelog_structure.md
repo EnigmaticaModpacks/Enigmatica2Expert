@@ -86,7 +86,7 @@
   ⚡ Performance
   🧩 Configs
   🌍 World Generation | Worldgen
-  📖 Quest Book | Better Questing
+  📖 Quests
   ⛏️ Mining
   📑 Tooltips
   📜 Text

@@ -75,7 +75,7 @@ export async function init(h = defaultHelper) {
     `\n${pure.map(s => `        ${s}`).join('\n')}\n`
   )
 
-  console.log('injected :>> ', injected)
+  console.log('injected :>> ', injected[0].numMatches)
 
   /**
    * @returns {string[]}

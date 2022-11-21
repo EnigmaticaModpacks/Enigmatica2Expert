@@ -20,7 +20,7 @@ export async function init(h = defaultHelper) {
     'config/endreborn.cfg': [
       {
         from: /(B:(?:"End Islands"|"End Magma, Enropy End Stone"|"End Ruines"|"Essence Ore"|Observatory)=)\w+/g,
-        to: '$1false',
+        to  : '$1false',
       },
     ],
     'config/reccomplex.cfg': [
@@ -31,13 +31,14 @@ export async function init(h = defaultHelper) {
     ],
     'config/ice_and_fire.cfg': [
       { from: /(B:"Generate Dragon Skeletons"=)\w+/g, to: '$1false' },
+      { from: /(B:"Generate Dragon Roosts"=)\w+/g, to: '$1false' },
     ],
   }
 
   let totalReplaced = 0
   _(replaces).forEach((repls, filePath) => {
     let text = loadText(filePath)
-    repls.forEach((repl) => (text = text.replace(repl.from, repl.to)))
+    repls.forEach(repl => (text = text.replace(repl.from, repl.to)))
     saveText(
       text,
       resolve('./dev/skyblock_overrides', relative(process.cwd(), filePath))
@@ -48,7 +49,6 @@ export async function init(h = defaultHelper) {
   h.result(`Replaced in files: ${totalReplaced}`)
 }
 
-// @ts-ignore
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )

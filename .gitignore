@@ -24,6 +24,7 @@ structures/inactive
 !.gitignore
 !local/ftbutilities/ranks.txt
 !.github/
+!.imgbotconfig
 
 # Devonly configs
 config/gliby_vc/

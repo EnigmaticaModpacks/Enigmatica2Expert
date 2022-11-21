@@ -2,10 +2,15 @@
 
 List of priorities:
 
+- [ ] 🟠 Downgrade Recurrent Complex
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
 - [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
 - [ ] ✏️ Add IC2 Electrolyzer compat
 - [ ] ✏️ Integrate Alluring Fishhook
+- [ ] ✏️ Melt metal essence instead of craft ingots
+- [x] ✏️ Cactus in crushing tub should give 1 bucket
+- [x] ✏️ Ash to seared brick smelt in furnace craft
+- [ ] ✏️ Drawers recipe should apply textures on craft
 - [ ] 🐀 Fix rats not spawn on garbage piles
 - [ ] 📀 Buff dev/null/ to hold more then 64 blocks
 - [ ] 📀 Buff Porous Stone output
@@ -15,12 +20,15 @@ List of priorities:
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
+- [ ] 🟢 Add **universal-tweaks**
+- [ ] 📖 Add any sharpening kit to quest for harvest level
 - [ ] 📖 Add mobs in Mek's gear
 - [ ] 📖 Add quiver in Combat kit
-- [ ] 📖 Nerf travel kit
 - [ ] 📖 Add Primordial Grain to JEI and book
 - [ ] 📖 Drill upgrades in AA quest lines
 - [ ] 📖 Fix "5.12E11d" strings.
+- [x] 📖 End Steel Armor quest fix loot chest
+- [ ] 📖 Add little tiles chest
 - [ ] 🌿 Add Patchouli book page with sorted UU values
 - [ ] 🌍 AdvRock geodes should contain modded ores
 

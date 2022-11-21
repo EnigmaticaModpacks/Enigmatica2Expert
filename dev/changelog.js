@@ -28,7 +28,6 @@ import yargs from 'yargs'
 
 import { formatRow, getModsIds } from './automation/modsDiff.js'
 import { fetchMods } from './lib/curseforge.js'
-import { generateManifest } from './lib/manifest.js'
 import { defaultHelper, escapeRegex, loadText, saveText } from './lib/utils.js'
 
 /** @typedef {import('./lib/minecraftinstance').InstalledAddon} InstalledAddon */
@@ -154,7 +153,6 @@ export async function init(h = defaultHelper) {
 }
 
 if (
-  // @ts-expect-error
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
   init()
@@ -246,10 +244,8 @@ async function getCommitChangeLines(h, commitMap, changelogStructure) {
   // Iterate fields not mentioned in "annotations"
   let unknownCommits = 0
   for (const [key, arr] of Object.entries(commitMap)) {
-    if (/\w+.*/.test(key)) {
-      unknownCommits++
-      // continue // Skip commits started with words
-    }
+    if (/\w+.*/.test(key)) unknownCommits++// continue // Skip commits started with words
+
     arr.forEach(() => {
       commitLogChanges.push(
         ...stringifySubcat({ symbol: key, aliases: ['❓❓'] })
@@ -318,7 +314,7 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
       '\n',
     ].join('\n')
   }
-
+  /*
   // Generate manifests for later use in changelog generator
   await generateManifest(version, minecraftinstance_old, '_old')
   await generateManifest(nextVersion)
@@ -366,7 +362,7 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
     makeModsChangelogBetter(nextModsChangelogsFull)
     result += `\n## [> Mods updates detailed.](https://github.com/Krutoy242/Enigmatica2Expert-Extended/blob/master/changelogs/${nextModsChangelogsFile})\n\n`
   }
-
+ */
   return result
 }
 
@@ -495,11 +491,11 @@ function getCommitMap(version) {
  */
 function parseCommitMessage(commitMessage) {
   const match = commitMessage.match(/^(?<symbol>[^a-zA-Z ]+) (?<subject>.+)/ms)
-  const symbol = match?.groups.symbol
-  if (!match || !symbol.trim()) return ['other', commitMessage]
+  const symbol = match?.groups?.symbol
+  if (!match || !symbol?.trim()) return ['other', commitMessage]
 
   // Remove leading spaces frow commit message
-  const trimmedSubject = match.groups.subject
+  const trimmedSubject = match.groups?.subject
     .split('\n')
     .map(l => l.replace(/^ {4}/, ''))
     .filter((l, i) => l || i !== 1)
@@ -553,7 +549,7 @@ function filterCommitMap(commitMap, changelogStructure) {
       if (!flatStructure[symbol].subcategory?.length) return
 
       const anySubcatName = flatStructure[symbol].subcategory
-        .map(subcat => subcat.aliases)
+        ?.map(subcat => subcat.aliases)
         .flat()
         .map(escapeRegex)
         .join('|')
