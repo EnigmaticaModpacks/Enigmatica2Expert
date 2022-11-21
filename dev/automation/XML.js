@@ -267,21 +267,5 @@ function getCustomRecipes() {
         100000,
       ),
     ],
-
-    'config/enderio/recipes/user/user_recipes.xml': getOreBases_byKinds([
-      'dustDirty',
-      'dust',
-    ])
-      .filter(b => b !== 'Aluminum')
-      .map(
-        oreBase =>
-          `<recipe name="${oreBase} Clearing">
-    <tanking type="FILL" logic="NONE">
-      <input name="dustDirty${oreBase}"/>
-      <fluid name="steam" amount="1000"/>
-      <output name="dust${oreBase}"/>
-    </tanking>
-  </recipe>`,
-      ),
   }
 }

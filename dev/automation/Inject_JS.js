@@ -10,6 +10,9 @@
 
 // @ts-check
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable unused-imports/no-unused-imports */
+
 import glob from 'glob'
 import humanizeString from 'humanize-string'
 import _ from 'lodash'

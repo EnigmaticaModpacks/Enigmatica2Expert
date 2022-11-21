@@ -11,7 +11,7 @@ import _ from 'lodash'
 import { getModLoadTimeTuples } from 'mc-benchmark'
 
 import { fetchMods } from '../lib/curseforge.js'
-import { generateManifest, loadMCInstanceFiltered } from '../lib/manifest.js'
+import { loadMCInstanceFiltered } from '../lib/manifest.js'
 import { defaultHelper, injectInFile, loadText } from '../lib/utils.js'
 
 /** @typedef {import('../lib/minecraftinstance').InstalledAddon} InstalledAddon */
@@ -161,7 +161,7 @@ export async function init(h = defaultHelper) {
     )
   }
 
-  generateManifest()
+  // generateManifest()
 
   h.result(`Described ${cursedUnion.length} mods`)
 }

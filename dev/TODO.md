@@ -2,35 +2,50 @@
 
 List of priorities:
 
-- [ ] 🟠 Downgrade Recurrent Complex
-- [ ] ✏️ Remove Cyclic's machines completely because they are laggy
-- [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
-- [ ] ✏️ Add IC2 Electrolyzer compat
-- [ ] ✏️ Integrate Alluring Fishhook
-- [ ] ✏️ Melt metal essence instead of craft ingots
-- [x] ✏️ Cactus in crushing tub should give 1 bucket
-- [x] ✏️ Ash to seared brick smelt in furnace craft
-- [ ] ✏️ Drawers recipe should apply textures on craft
-- [ ] 🐀 Fix rats not spawn on garbage piles
+- [x] ✏️ Integrate Alluring Fishhook
+- [x] ✏️ Buff Battle Kit
+- [x] ✏️ Scaffold IC2 cheaper
+- [x] ✏️ Change stone to Liquid Glass + Fiery + Dirt => Lava
+- [x] ✏️ Buff Hellbark to Lava recipe
+- [x] ✏️ Replace Recipe Any Dirt + Any Water => Mud (+EIO tank)
+- [x] ✏️ Golems should drop Essense instead of nuggets
+- [x] ✏️ Infinity Dust add craft
+- [x] ✏️ Make Osmium by right-clicking osmium essence
+- [x] ✏️ `ic2:crafting#carbon_mesh` remove shapeless recipe
+- [ ] ✏️ Add Compressed `White Sand`, `Red Sand`, `Dried Sand`, `Gravisand`
+- [x] ✏️ IE excavator shouldn't require silver
+- [x] ✏️ unattach quests from advancements
+- [x] ✏️ Change Mining Levels for End- and Nether- ores
+- [ ] ✏️ Add craft mechanic - Mud Ball hit something (humilate)
+- [ ] ✏️ Asphalt Concrete make from any water tank
+- [ ] 🔄 Check why block overrides not working for NetherEnding ores
+- [ ] 📀 FoxHound: Add Quest entry, Speed up furnace https://github.com/VazkiiMods/Quark/blob/1.12/src/main/java/vazkii/quark/world/entity/EntityFoxhound.java#L137
+- [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
 - [ ] 📀 Buff dev/null/ to hold more then 64 blocks
 - [ ] 📀 Buff Porous Stone output
 - [ ] 📀 Buff AA rings (bansoukou) to encrease capacity and blaze output
 - [ ] 📀 Remove automatic IE armor recycling to speed up game load
+- [ ] 📀 Remove automatic EnderIO tank registry
+- [ ] 📀 Buff AA Bio Reactor
+- [ ] 📀 Return Rain Tank from forestry but make it extremely fast
+- [ ] 📀 Scaling Health should increase health exponentially, not linear
 - [ ] 🟢 Add **better-fusion-reactor-for-mekanism**
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
 - [ ] 🟢 Add **universal-tweaks**
+- [ ] 🧻 JEI: add golem drops to list
+- [ ] 📖 Add Osmium Essence in quest for Osmium
+- [ ] 📖 Add notification about finishing mod chapter based on stats
 - [ ] 📖 Add any sharpening kit to quest for harvest level
-- [ ] 📖 Add mobs in Mek's gear
-- [ ] 📖 Add quiver in Combat kit
-- [ ] 📖 Add Primordial Grain to JEI and book
-- [ ] 📖 Drill upgrades in AA quest lines
-- [ ] 📖 Fix "5.12E11d" strings.
+- [x] 📖 Add info about osmium 1 per chunk
+- [x] 📖 Add quiver in Combat kit
+- [x] 📖 Add Primordial Grain to JEI and book
+- [x] 📖 Drill upgrades in AA quest lines
 - [x] 📖 End Steel Armor quest fix loot chest
-- [ ] 📖 Add little tiles chest
+- [x] 📖 Remove Torches from Certus Quartz reward
+- [ ] 📖 Icon of "Pick Reward" quest can have amounts by `"icon":` prop
 - [ ] 🌿 Add Patchouli book page with sorted UU values
-- [ ] 🌍 AdvRock geodes should contain modded ores
 
 ---
 
@@ -40,6 +55,18 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📖 Add little tiles fancy chest with lot of space
+- [ ] 📖 Fix "5.12E11d" strings in .ts code
+- [ ] 📖 Add mobs in Mek's gear
+- [ ] 🌍 AdvRock geodes should contain modded ores
+- [ ] ✏️ Drawers recipe should apply textures on craft
+- [ ] ✏️ Melt metal essence instead of craft ingots
+- [ ] ✏️ Add IC2 Electrolyzer compat
+- [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
+- [ ] ✏️ Remove Cyclic's machines completely because they are laggy
+- [ ] 🐀 Fix rats not spawn on garbage piles
+- [ ] 🟠 Do not update Recurrent Complex to `1.4.8.3` (cause crashes on server)
+- [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
 - [ ] 📖 List of items that may be add into loot boxes in future: https://i.imgur.com/G0A2KF1.png
 - [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
 - [ ] 🔄 Skyblock should be different dimension (probably advanced rocketry)
@@ -50,7 +77,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Nature chests still turn into Lootr
 - [ ] 🤹‍♂️ Change Model for Tinker's Disassembler
 - [ ] 🟢 Install `Steve Carts`
-- [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning
+- [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning. Or Add New conglomerate to explode with nuke and get Chaos Shards.
 - [ ] 📖 Fix Conflux cant be finished
 - [ ] 📖 Introduce EIO painting machine
 - [ ] 🔄 Check if golems can break blocks in skyblock
@@ -58,8 +85,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 📀 Fix NPE https://is.gd/wZprY2
 - [ ] 🔄 `/punish` command - players can punish other players on server
 - [ ] ✏️ Multiblock structure that speed up blocks like Time In Bottle, but based on numbers of mobs around https://is.gd/tPPqt2
-- [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
-- [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
 - [ ] 🔴 Do not update `JAOPCA`
 - [ ] 🔴 Do not update `Redstone Repository Revolved`
@@ -68,9 +93,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔄 Schematica Immersive Tech, Steam turbine, does not recognize thermal's steel block
 - [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
 - [ ] 🚧 Update screenshots on CF
-- [ ] 🔴 Fix Integrated proxy bug with Bansoukou: https://github.com/shBLOCK/IntegratedProxy/issues/29
 - [ ] 🟢 Install https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap (incompatible with Mineral Tracker)
-- [ ] 🟢 Fix Thaum Tweaks makes TCon Infusion Enchs obsolete https://github.com/GrigLog/ThaumTweaks/issues/37
 - [ ] 🔄 After getting 30 hearts, player need to relog to enter nether
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server), probably Install justenoughdimensions to fix mob count issue
 - [ ] ✏️ Mithrilium Plate research require craft
@@ -84,18 +107,15 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Magical Snow Globe add usage
 - [ ] ✏️ Add Flux Sponge recipe
 - [ ] ✏️ Add Greater Crimson Portal craft
-- [ ] ✏️ Add New conglomerate to explode with nuke and get Chaos Shards
 - [ ] ✏️ Make Gaia fight non-mandatory
 - [ ] ✏️ x10 Speed up rats
 - [ ] ✏️ Drop items onto garbage piles to make pile bigger
 - [ ] ✏️ Transfer liquid interaction to Witch Water
-- [ ] 🔄 Return Aqua Acrobatics new water when color fixed
 - [ ] 🔄 Fix Quark's reacharound not working after update to ROTN edition
 - [ ] ✏️ Add casts of tungsten instead of making in Part Builder
 - [ ] ✏️ Add DML data models in Space or Ratlantis
 - [ ] ✏️ Add Creative Essentia Jar recipe
 - [ ] ✏️ ? Quark Crystals: orange -> topaz nuggets, violet -> tanzanite nuggets, yellow -> brass nuggets
-- [ ] 🔄 Fix boat glitch when leaving in first person
 - [ ] 📖 Add CC/OC gate, Add EEPROM with `trader`, add Patchouli and Quest Book Entry
 - [ ] ✏️ Fix Green fertilizer output additional crop even if not grown (carrots)
 - [ ] ✏️ Peaceful: Angry chicken
@@ -122,7 +142,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔄 Add neural interface searching: with neural interface and special program find special blocks
 - [ ] 🔄 ![](https://git.io/J3p8B "Infinity Furnace") front texture empty on client
 - [ ] ✏️ ![](https://git.io/JCt00 "Creative Harvest") add more crafts
-- [ ] ✏️ ![](https://git.io/JOv90 "Sieve") Siften materials should be harder
 - [ ] ✏️ **4x** Coal Singularity (or other) => Creative Bin (or other ways to craft creative bins with one unchangable item)
 - [ ] ✏️ Add non-linear progression for End Tech (DE, Avaritia)
 - [ ] 🌍 118_KELT-2ab: Return Kelps
@@ -134,12 +153,11 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🌿 Patchouli: Change **texture** of book
 - [ ] 🏪 ![](https://git.io/J3p8B "Infinity Furnace") add speed upgrades
 - [ ] 🏪 **RequiousFracto** Causing items to trashing with **Energy Slot**. [Reported](https://github.com/DaedalusGame/RequiousFrakto/issues/21)
-- [ ] 🏪 Add Matter Replicator that **increase cost** of replication each operation
 - [ ] 📖 ![](https://git.io/JRthK "Angel Ring") add to Conflux
 - [ ] 🔄 **Perfect Fuel** Fix texture. Now it uses default one.
 - [ ] 🔄 Fix Custom Animals drops non-cooked meat
 - [ ] 🔄 Remap all **#VoidMiners** to produce not all types of ore each
-- [ ] 🔄 Move to **NUclearCraft:Overhauled**
+- [ ] 🟢 Add **NuclearCraft: Overhauled**
 - [ ] 🔨 ![](https://git.io/JnzzI "Glitch Infused Ingot") add material. Ability: drom matter from mobs
 - [ ] 🔨 Add armor trait that speed up gain for `Time In Bottle`
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
@@ -147,7 +165,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
 - [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74)
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
-- [ ] 🟢 Return Integrated Proxy when fixed https://github.com/shBLOCK/IntegratedProxy/issues/29
 - [ ] ⛏️ Mining levels rework. There is too much mining levels.
   > * [ ] Higher Mining level Ore should spawn lower
   > * [ ] Remove Excess Mining levels:
@@ -179,7 +196,6 @@ Items that should have more uses:
 
 ![](https://git.io/JtyNr "Glowing Coral")
 ![](https://git.io/JtyNo "Kelp")
-![](https://git.io/JnAYd "Cobweb")
 ![](https://git.io/Jz9q1 "Bacon")
 ![](https://git.io/Jz9qX "Bottle of Wine")
 ![](https://git.io/JuAPt "Mysical Flesh")
@@ -247,6 +263,7 @@ Liquids that should have more uses:
 ![](https://git.io/JtDnO "Chemical Thrower")
 ![](https://is.gd/rneFnc "Blue Fire Jar")
 ![](https://is.gd/XqQPA0 "Radiator Block")
+**Fluid on top**
 
 ---
 

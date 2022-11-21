@@ -29,6 +29,7 @@ import yargs from 'yargs'
 import { formatRow, getModsIds } from './automation/modsDiff.js'
 import { fetchMods } from './lib/curseforge.js'
 import { defaultHelper, escapeRegex, loadText, saveText } from './lib/utils.js'
+import { generateManifest } from './lib/manifest.js'
 
 /** @typedef {import('./lib/minecraftinstance').InstalledAddon} InstalledAddon */
 
@@ -314,10 +315,12 @@ async function getModChanges(version, nextVersion, h = defaultHelper) {
       '\n',
     ].join('\n')
   }
+
+  await generateManifest(nextVersion)
+
   /*
   // Generate manifests for later use in changelog generator
   await generateManifest(version, minecraftinstance_old, '_old')
-  await generateManifest(nextVersion)
 
   h.begin('Retrieving mod detailed changelogs', 10)
   const nextModsChangelogsFile = `MODS_${nextVersion}.md`

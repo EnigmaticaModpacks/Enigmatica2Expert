@@ -4,6 +4,7 @@ import crafttweaker.player.IPlayer;
 import mods.ctintegration.data.DataUtil.parse as sNBT;
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;
+import crafttweaker.block.IBlockState;
 
 #priority 3999
 #loader crafttweaker reloadableevents
@@ -20,6 +21,67 @@ function giveChest(player as IPlayer, items as IItemStack[]) as void {
     tag = tag + {BCTileData: {Items: [item as IData + {Slot: i as short} as IData]}} as IData;
   }
   player.give(<draconicevolution:draconium_chest>.withTag(tag));
+}
+
+function getStateFromItem(item as IItemStack) as IBlockState {
+  val block = item.asBlock();
+  if(isNull(block)) return null;
+  val def = block.definition;
+  val state = def.getStateFromMeta(block.meta);
+  return state;
+}
+
+function forEachBlockState(callback as function(IItemStack,IBlockState)void) as void {
+  for item in game.items {
+    if(
+      // Blacklist because crashing otherwise
+      item.id.startsWith("avaritiafurnace:")
+      || item.id.startsWith("bithop:screwhop")
+    ) continue;
+    
+    var lastMeta = -1 as int; // Remember, -1 is not integer by default
+    for sub in item.subItems {
+      if (lastMeta == sub.damage) continue;
+      lastMeta = sub.damage;
+      val state = getStateFromItem(sub);
+      if(isNull(state)) continue;
+      callback(sub, state);
+    }
+  }
+}
+
+function dumpOreBlocks() {
+  print('##################################################');
+  print('#                  Ore Blocks                    #');
+  forEachBlockState(function(item as IItemStack, state as IBlockState) as void {
+    val def = state.block.definition;
+    val tool = def.getHarvestTool(state);
+    val harvLevel = def.getHarvestLevel(state);
+    if(tool=="" && harvLevel == -1 as int) return;
+
+    // Check if block is ore
+    var targetLvl = -1 as int;
+    for ore in item.ores {
+      if(!(ore.name.startsWith("oreEnd") || ore.name.startsWith("oreNether"))) continue;
+      val isEnd = ore.name.startsWith("oreEnd");
+      val material = ore.name.replaceAll("^(oreEnd|oreNether)", "");
+      val origOre = oreDict['ore'+material];
+      for origItem in origOre.items {
+        val state = getStateFromItem(origItem);
+        if(isNull(state)) continue;
+        val origLvl = state.block.definition.getHarvestLevel(state);
+        targetLvl = max(3, origLvl) + (isEnd ? 3 : 2);
+        break;
+      }
+      if(targetLvl > 0) break;
+    }
+    if(targetLvl < 0) return;
+
+    // S:"extrautils2:compressedcobblestone:0"=pickaxe=3
+    
+    print('S:"'~def.id~":"~item.damage~'"='~tool~"="~targetLvl~" // was: "~harvLevel~' '~item.displayName);
+  });
+  print('##################################################');
 }
 
 function dumpLightSources(player as IPlayer) as void {
@@ -544,41 +606,8 @@ events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBl
 
   e.player.sendMessage("§eLeft Clicked§r");
   // dumpLightSources(e.player);
-  // e.player.sendMessage("§8Done!§r");
-
-  e.player.give(<twilightforest:minotaur_axe>.withTag(sNBT('{ench:[{id:64,lvl:9s},{id:35,lvl:9s},{id:34,lvl:9s},{id:32,lvl:15s},{id:54,lvl:15s},{id:57,lvl:12s}],"Quark:RuneColor":16,"Quark:RuneAttached":1b}')));
-});
-
-
-events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
-  val world = e.world;
-  if(world.isRemote()) return;
-  if(isNull(e.player.currentItem) || !(<contenttweaker:knowledge_absorber> has e.player.currentItem)) return;
-  if(isNull(e.block) || !(e.block.definition.id == "minecraft:bedrock")) return;
-
-
-  val item = e.player.currentItem;
-  e.player.currentItem.mutable().shrink(1);
-  val position = e.position;
-  val x = e.position.x;
-  val y = e.position.y;
-  val z = e.position.z;
-  e.player.sendMessage("isop "~server.isOp(e.player));
-  server.commandManager.executeCommandSilent(server, "/cofh replaceblocks "~x~" "~y~" "~z~" "~x~" "~y~" "~z~" mekanism:oreblock bedrock");
-  server.commandManager.executeCommand(e.player, "bedrockores wrap");
-  // e.player.executeCommand("bedrockores wrap");
-  server.commandManager.executeCommand(server, "/deop "~e.player.name);
-  server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x~" "~y~" "~z~" 0 0.1 0 0.1 50");
-  e.world.playSound("thaumcraft:poof", "ambient", e.position, 0.5f, 1.5f);
-
-  # Check in next tick if block replaced
-  world.catenation().sleep(1).then(function(world, ctx) {
-    if (world.getBlockState(position) != <blockstate:bedrockores:bedrock_ore>) {
-      e.world.setBlockState(<blockstate:minecraft:bedrock>, position);
-      e.player.give(item.anyAmount());
-      e.player.sendMessage("§8Failed to turn bedrock. Try again without moving.");
-    }
-  }).start();
+  dumpOreBlocks();
+  e.player.sendMessage("§8Done!§r");
 });
 
 

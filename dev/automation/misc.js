@@ -178,6 +178,8 @@ export async function init(h = defaultHelper, options = argv) {
       block_stack: 'astralsorcery:blockgemcrystals:2',
       dropList   : [{ stack: 'astralsorcery:itemperkgem' }],
     },
+
+    { block_stack: 'forestry:bog_earth:3', dropList: [{ stack: 'forestry:peat', luck: [2, 2] }] },
   ])
 
   // ###############################################################################
