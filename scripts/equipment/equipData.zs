@@ -245,12 +245,12 @@ val defaultWeaponMats as IData = [
   "livingrock"        , # 66
   "tin"               , # 67
   "bone"              , # 71
+  "cheese"            , # 73
   "dragonbone"        , # 73
   "blueslime"         , # 75
   "tanzanite"         , # 75
   "amber"             , # 77
   "endstone"          , # 77
-  "cheese"            , # 78
   "prismarine"        , # 80
   "sponge"            , # 81
   "slime"             , # 81
