@@ -57,8 +57,11 @@ const filters = [
     const  in_ore = [...getItemOredictSet(id,meta).keys()]
     const out_ore = [...getItemOredictSet(out_id,out_meta).keys()]
     return in_ore.includes('logWood')
-      || in_ore.some(o=>o.match(/dust[A-Z].+/)) &&  out_ore.some(o=>o.match(/(ingot|gem)[A-Z].+/))
-      || in_ore.some(o=>o.match(/.+Oxide/))     && !out_ore.some(o=>o.match(/.+Oxide/))
+      || in_ore.some(o=>{
+        const mat = o.match(/^dust([A-Z].+)/)?.[1]
+        return mat && out_ore.some(o=>o.replace(/^(ingot|gem)/, '') === mat)
+      })
+      || in_ore.some(o=>o.match(/.+Oxide/)) && !out_ore.some(o=>o.match(/.+Oxide/))
   }],
 ]
 
@@ -93,10 +96,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 919
+# Total Furnace recipes registered: 920
 # Filtered by JEI blacklist: 47
 # Filtered manuallly (antidupe): 15
-# Filtered by oredict: 202
+# Filtered by oredict: 199
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -113,8 +116,8 @@ infinFurnace(utils.get("animania:raw_chevon", W), utils.get("animania:cooked_che
 infinFurnace(utils.get("animania:raw_frog_legs", W), utils.get("animania:cooked_frog_legs"));
 infinFurnace(utils.get("animania:raw_horse", W), utils.get("animania:cooked_horse"));
 infinFurnace(utils.get("animania:raw_peacock", W), utils.get("animania:cooked_peacock"));
-##infinFurnace(utils.get("appliedenergistics2:material", 2), utils.get("appliedenergistics2:material", 5));
-##infinFurnace(utils.get("appliedenergistics2:material", 3), utils.get("appliedenergistics2:material", 5));
+infinFurnace(utils.get("appliedenergistics2:material", 2), utils.get("appliedenergistics2:material", 5));
+infinFurnace(utils.get("appliedenergistics2:material", 3), utils.get("appliedenergistics2:material", 5));
 infinFurnace(utils.get("appliedenergistics2:material", 4), utils.get("minecraft:bread"));
 ##infinFurnace(utils.get("appliedenergistics2:material", 49), utils.get("minecraft:iron_ingot"));
 ##infinFurnace(utils.get("appliedenergistics2:material", 51), utils.get("minecraft:gold_ingot"));
@@ -190,6 +193,7 @@ infinFurnace(utils.get("exnihilocreatio:item_material", 2), utils.get("exnihiloc
 ##infinFurnace(utils.get("exnihilocreatio:item_ore_cobalt", 2), utils.get("tconstruct:ingots"));
 infinFurnace(utils.get("extrautils2:decorativesolid", 4), utils.get("extrautils2:decorativeglass"));
 ##infinFurnace(utils.get("extrautils2:ironwood_log", W), utils.get("minecraft:coal", 1));
+infinFurnace(utils.get("forestry:ash"), utils.get("tconstruct:materials"));
 ##infinFurnace(utils.get("forestry:logs.0", W), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("forestry:logs.1", W), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("forestry:logs.2", W), utils.get("minecraft:coal", 1));
@@ -256,7 +260,7 @@ infinFurnace(utils.get("ic2:crushed", 6), utils.get("immersiveengineering:metal"
 infinFurnace(utils.get("ic2:crushed"), utils.get("thermalfoundation:material", 128));
 //infinFurnace(utils.get("ic2:dust", 3), utils.get("thermalfoundation:material", 768));
 ##infinFurnace(utils.get("ic2:dust", 11), utils.get("nuclearcraft:ingot", 6));
-##infinFurnace(utils.get("ic2:dust", 15), utils.get("tconstruct:materials"));
+infinFurnace(utils.get("ic2:dust", 15), utils.get("tconstruct:materials"));
 infinFurnace(utils.get("ic2:misc_resource", 4), utils.get("ic2:crafting"));
 infinFurnace(utils.get("ic2:mug", 1), utils.get("ic2:mug", 2));
 infinFurnace(utils.get("ic2:purified", 1), utils.get("minecraft:gold_ingot"));

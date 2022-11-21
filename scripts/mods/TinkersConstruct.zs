@@ -455,3 +455,6 @@ craft.remake(<tconstruct:brownstone:1> * 64, ["pretty",
 # Alloy furnace missed Alum Brass recipe
 mods.nuclearcraft.alloy_furnace.addRecipe(<ore:ingotCopper>, <ore:ingotAluminum> * 3, <tconstruct:ingots:5> * 4);# [Aluminum Brass Ingot]
 mods.nuclearcraft.alloy_furnace.addRecipe(<ore:blockCopper>, <ore:blockAluminum> * 3, <tconstruct:metal:5> * 4); # [Block of Aluminum Brass]
+
+# Simple Seared bricks
+furnace.addRecipe(<tconstruct:materials>, <forestry:ash>, 0.5);
