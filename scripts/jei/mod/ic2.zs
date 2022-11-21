@@ -65,15 +65,15 @@ x.setJEIFluidSlot(0, 0, 'fluid_in');
 x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
 x.setJEIEnergySlot(2, 0, 'energy_out', "rf");
 
-function semifluid(input as ILiquidStack, power as int) as void {
+function semifluid(input as ILiquidStack, eu_t as double) as void {
   <assembly:ic2_semifluid>.addJEIRecipe(AssemblyRecipe.create(function(c) {
-      c.addEnergyOutput('energy_out', power * 4, 0);
+      c.addEnergyOutput('energy_out', eu_t * 4, 0);
     })
     .requireFluid("fluid_in", input)
   );
 }
 
 # Defaults
-semifluid(<fluid:biomass>    , 8000);
-semifluid(<fluid:ic2biogas>  , 16000);
-semifluid(<fluid:bio.ethanol>, 32000);
+semifluid(<fluid:biomass>    , 8);
+semifluid(<fluid:ic2biogas>  , 16);
+semifluid(<fluid:bio.ethanol>, 32);

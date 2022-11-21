@@ -543,15 +543,15 @@ mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect(<liquid:moltensalt>, fa
 );
 
 # Semifluid generator usages
-function addSemifluidRecipe(fluid as ILiquidStack, power as int) as void {
-	scripts.jei.mod.ic2.semifluid(fluid, power);
-	mods.ic2.SemiFluidGenerator.addFluid(fluid, power as double);
+function addSemifluidRecipe(fluid as ILiquidStack, eu_t as double) as void {
+	scripts.jei.mod.ic2.semifluid(fluid, eu_t);
+	mods.ic2.SemiFluidGenerator.addFluid(fluid, eu_t);
 }
 
-addSemifluidRecipe(<fluid:biodiesel>, 40000);
-addSemifluidRecipe(<fluid:biofuel>, 80000);
-addSemifluidRecipe(<fluid:biocrude>, 256000);
-addSemifluidRecipe(<fluid:refined_biofuel>, 512000);
+addSemifluidRecipe(<fluid:biodiesel>, 40);
+addSemifluidRecipe(<fluid:biofuel>, 80);
+addSemifluidRecipe(<fluid:biocrude>, 256);
+addSemifluidRecipe(<fluid:refined_biofuel>, 512);
 
 # Solid Fuel Firebox output Ashes
 recipes.addShapeless('firebox_ashes', <forestry:ash>, [<ic2:misc_resource>]);
