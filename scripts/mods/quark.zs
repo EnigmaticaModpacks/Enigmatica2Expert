@@ -90,3 +90,6 @@ craft.shapeless(<quark:monster_box>, "MT", {
   "M": <minecraft:mob_spawner>, # Monster Spawner
   "T": <animania:truffle>,      # Truffle
 });
+
+# Recipe added with another mod
+recipes.remove(<quark:gravisand>);

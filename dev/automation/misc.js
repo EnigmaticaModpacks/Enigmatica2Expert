@@ -226,28 +226,9 @@ export async function init(h = defaultHelper, options = argv) {
   */
   await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
-    [
-      'exnihilocreatio:block_andesite_crushed',
-      'contenttweaker:compressed_crushed_andesite',
-    ],
-    [
-      'exnihilocreatio:block_diorite_crushed',
-      'contenttweaker:compressed_crushed_diorite',
-    ],
-    [
-      'exnihilocreatio:block_granite_crushed',
-      'contenttweaker:compressed_crushed_granite',
-    ],
-    [
-      'exnihilocreatio:block_skystone_crushed',
-      'contenttweaker:compressed_crushed_skystone',
-    ],
+    ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
     ['rats:garbage_pile', 'contenttweaker:compressed_garbage_pile'],
     ['enderio:block_infinity', 'enderio:block_infinity:1'],
-    [
-      'additionalcompression:dustgunpowder_compressed',
-      'additionalcompression:dustgunpowder_compressed:1',
-    ],
   ]
   const sieveRegistry = loadJson('config/exnihilocreatio/SieveRegistry.json')
   const heavySievePath = 'config/ExCompressum/HeavySieve.json'
@@ -255,7 +236,7 @@ export async function init(h = defaultHelper, options = argv) {
   blocksToCopy.forEach(([normal, compressed]) => {
     const normEntry = sieveRegistry[normal] ?? sieveRegistry[`${normal}:0`]
     if (!normEntry) {
-      h.warn(`Cant add Heavy Sieve recipe: Cant find normal entry: ${normal}`)
+      h.warn(`Cant add Heavy Sieve recipe: Cant find normal entry: ${normal}\n`)
       return
     }
     const entries = heavySieve.custom.entries

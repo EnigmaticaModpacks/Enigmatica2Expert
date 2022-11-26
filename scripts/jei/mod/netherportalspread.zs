@@ -78,7 +78,7 @@ addRecipe(x, {[Bucket("water")] : [Bucket("blood")]});
 addRecipe(x, {[<additionalcompression:meatfish_compressed:*>, <additionalcompression:meatchicken_compressed:*>, <additionalcompression:meatbeef_compressed:*>, <additionalcompression:meatporkchop_compressed:*>] : [<thaumcraft:flesh_block>]});
 addRecipe(x, {[<minecraft:wool:*>] : [<quark:color_slime>]});
 addRecipe(x, {[<minecraft:stone_slab:*>] : [<quark:fire_stone_slab>]});
-addRecipe(x, {[<minecraft:wooden_slab:*>] : [<appliedenergistics2:sky_stone_slab>]});
+addRecipe(x, {[<minecraft:wooden_slab:*>] : [<quark:charred_nether_brick_slab>]});
 addRecipe(x, {[<minecraft:glass_pane:*>] : [<chisel:glasspane1>]});
 addRecipe(x, {[<minecraft:cobblestone_wall:*>] : [<mysticalagriculture:cobbled_soulstone_wall>]});
 addRecipe(x, {[<minecraft:spruce_stairs:*>, <minecraft:oak_stairs:*>] : [<quark:basalt>]});
