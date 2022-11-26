@@ -882,3 +882,23 @@ for i, item in furnaceByTier {
 	recipes.addShapeless('1x' ~ craft.uniqueRecipeName(item), prev * 4, [item]);
 }
 # ---------------------------------
+
+# --------------------------------------------
+# Essence remake with magic mods
+# --------------------------------------------
+recipes.removeByRecipeName("mysticalagriculture:dye_13");
+mods.thaumcraft.Crucible.registerRecipe("ma_lapis", "BASEALCHEMY", <minecraft:dye:4>, <mysticalagriculture:lapis_lazuli_essence>, [<aspect:desiderium>]);
+
+recipes.removeByRecipeName("mysticalagriculture:ghast_tear");
+mods.thaumcraft.Crucible.registerRecipe("ma_ghast", "BASEALCHEMY", <minecraft:ghast_tear>, <mysticalagriculture:ghast_essence>, [<aspect:spiritus>, <aspect:exanimis>]);
+
+recipes.removeByRecipeName("mysticalagriculture:glowstone_dust");
+val GE = <mysticalagriculture:glowstone_essence>;
+mods.astralsorcery.Altar.addDiscoveryAltarRecipe(
+  "enigmatica2expert:shaped/internal/altar/glowstone",
+  <minecraft:glowstone_dust> * 12, 150, 50, [
+    GE, GE, GE,
+    GE,null,GE,
+    GE, GE, GE,
+]);
+# --------------------------------------------
