@@ -119,6 +119,8 @@ tooltips.lang.thaum.golemancy=Golemancy
 tooltips.lang.thaum.eldritch=Eldritch
 tooltips.lang.thaum.arcane=Arcane Infusion
 tooltips.lang.thaum.artifice=Artifice
+tooltips.lang.drop_at_night=§3Drop §n%s§r§3 on §n%s§r§3 undert night sky
+tooltips.lang.must_see_night=§9Must see night sky
 
 tooltips.lang.power_tier_5=§cPower Tier 5, §4any IC2 cable explodes
 tooltips.lang.fluid.corium=§aObtainable by melting down a Fission Reactor
