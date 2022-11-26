@@ -1,4 +1,5 @@
 #priority 2
+#loader crafttweaker reloadable
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -17,9 +18,10 @@ zenClass Descriptor {
 		Add both: tooltip and description
 	*/
 	function both(item as IItemStack) as void { both(item, autoLang(item)); }
-	function both(item as IItemStack, lang as string) as void {
-		tooltip(item, lang);
-		jei(item, lang);
+	function both(item as IItemStack, lang as string, a1 as string = null, a2 as string = null) as void {
+		if (isNull(a1)) { tooltip(item, lang); jei(item, lang); }
+		else if (isNull(a2)) { tooltip(item, lang, a1); jei(item, lang, a1); }
+		else { tooltip(item, lang, a1, a2); jei(item, lang, a1, a2); }
 	}
 
 	/*
@@ -28,6 +30,7 @@ zenClass Descriptor {
 	function tooltip(item as IItemStack) as void { tooltip(item, autoLang(item)); }
 	function tooltip(item as IItemStack, lang as string) as void { tooltipDescribe(item, local(lang)); }
 	function tooltip(item as IItemStack, lang as string, a1 as string) as void { tooltipDescribe(item, I18n.format(local(lang), a1)); }
+	function tooltip(item as IItemStack, lang as string, a1 as string, a2 as string) as void { tooltipDescribe(item, I18n.format(local(lang), a1, a2)); }
 
 	/*
 		Add tooltip helper
@@ -44,11 +47,21 @@ zenClass Descriptor {
 	*/
 	function jei(item as IItemStack) as void { jei(item, autoLang(item)); }
 	function jei(item as ILiquidStack, lang as string) as void { describe(item, local(lang)); }
-	function jei(item as IItemStack	 , lang as string) as void { describe(item, local(lang)); }
-	function jei(item as IItemStack	 , lang as string, a1 as string) as void { describe(item, I18n.format(local(lang), a1)); }
-	function jei(item as IItemStack	 , lang as string, a1 as string, a2 as string, a3 as string) as void { describe(item, I18n.format(local(lang), a1, a2, a3)); }
-	function jei(item as IItemStack	 , lang as string, a1 as string, a2 as string, a3 as string, a4 as string) as void { describe(item, I18n.format(local(lang), a1, a2, a3, a4)); }
-	function jei(item as IItemStack	 , lang as string, a1 as string, a2 as string, a3 as string, a4 as string, a5 as string) as void { describe(item, I18n.format(local(lang), a1, a2, a3, a4, a5)); }
+	function jei(item as IItemStack,
+		lang as string,
+		a1 as string = null,
+		a2 as string = null,
+		a3 as string = null,
+		a4 as string = null,
+		a5 as string = null
+	) as void {
+		if(isNull(a1)) return describe(item, local(lang));
+		if(isNull(a2)) return describe(item, I18n.format(local(lang), a1));
+		if(isNull(a3)) return describe(item, I18n.format(local(lang), a1, a2));
+		if(isNull(a4)) return describe(item, I18n.format(local(lang), a1, a2, a3));
+		if(isNull(a5)) return describe(item, I18n.format(local(lang), a1, a2, a3, a4));
+		describe(item, I18n.format(local(lang), a1, a2, a3, a4, a5));
+	}
 
 	/*
 		Add JEI description tab helper

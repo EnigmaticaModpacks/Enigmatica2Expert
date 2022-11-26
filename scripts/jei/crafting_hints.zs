@@ -1,4 +1,5 @@
 #priority 975
+#loader crafttweaker reloadable
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -45,13 +46,11 @@ function addInsOutCatl(input as IIngredient[], output as IItemStack, catalyst as
 }
 
 function fill(input as IIngredient, fluid as ILiquidStack, output as IItemStack, catalyst as IIngredient = null, duration as int = 0) as void {
-  <assembly:crafting_hints>.addJEIRecipe(AssemblyRecipe.create(function(c) {
-    c.addItemOutput('output1', output);})
-    .requireItem("input0", catalyst)
+  var rec = AssemblyRecipe.create(function(c) {c.addItemOutput('output1', output);})
     .requireFluid("fluid_in", fluid)
-    .requireItem("input5", input)
-    .requireDuration("duration", duration)
-  );
+    .requireItem("input5", input);
+  if(!isNull(catalyst)) rec = rec.requireItem("input0", catalyst);
+  <assembly:crafting_hints>.addJEIRecipe(rec.requireDuration("duration", duration));
 }
 
 function special(output as IItemStack, input2d as IIngredient[][], condition as string) as void {
