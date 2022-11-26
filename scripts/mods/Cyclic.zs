@@ -851,3 +851,10 @@ craft.shapeless(<cyclicmagic:magic_net> * 3, "SGSG▲GSGS", {
   "G": <minecraft:tallgrass:1>,   # Grass
   "▲": <scalinghealth:heartdust>, # Heart Dust
 });
+
+# [Alluring Fishhook]*64 from [Truffle][+2]
+craft.reshapeless(<cyclicmagic:ender_fishing> * 64, "FTC", {
+  "F": <randomthings:ingredient:7>, # Floo Powder
+  "T": <animania:truffle>,          # Truffle
+  "C": <minecraft:web>,             # Cobweb
+});

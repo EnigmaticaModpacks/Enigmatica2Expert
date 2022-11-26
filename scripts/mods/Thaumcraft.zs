@@ -347,6 +347,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
 <extrautils2:compressedcobblestone:2>          .setAspects(<aspect:terra>*500     , <aspect:perditio>*500);
 <biomesoplenty:hard_ice>                       .setAspects(<aspect:gelum>*21);
 <appliedenergistics2:sky_stone_block>          .setAspects(<aspect:alienis>*2     , <aspect:tenebrae>*7);
+<minecraft:sugar>                              .setAspects(<aspect:desiderium>    , <aspect:aqua>);
 
 
 /*

@@ -137,8 +137,8 @@ registerReservoir("Molten Melodic Alloy Reservoir (IO)"               , <liquid:
 		Copper ore 14%
 		frozen ocean
 */
-registerGasReservoir("Copper Slurry Reservoir (Europa)"     , <gas:copper>  , 1228800000, maxInt, 0    , 50    , 30, II, [], [106], [], []);
-registerReservoir("High Pressure Aquifer Reservoir (Europa)", <liquid:water>, 1228800000, maxInt, 64000, 128000, 30, II, [], [106], [], []);
+registerGasReservoir("Copper Slurry Reservoir (Europa)"     , <gas:copper>  , 1228800000, maxInt, 0     , 50     , 30, II, [], [106], [], []);
+registerReservoir("High Pressure Aquifer Reservoir (Europa)", <liquid:water>, 1228800000, maxInt, 640000, 1280000, 30, II, [], [106], [], []);
 
 # Saturn ID=107
 		//Is not reachable with tpx command
@@ -229,9 +229,9 @@ registerReservoir("Resonant Ender Reservoir (Philucka)", <liquid:ender>, 2000000
 	/*
 		frozen ocean
 */
-registerReservoir("Energized Glowstone Reservoir (KELT-2ab)"    	            , <liquid:glowstone>, 2000000   , 4500000, 50     , 2000           , 30,  I, [], [118], [], []);
-registerGasReservoir("Hydrogen Gas Reservoir (KELT-2ab)"                        , <gas:hydrogen>    , 1228800000, maxInt , 256    , 1024           , 30, II, [], [118], [], []);
-registerReservoirWithDrainChance("Extreme Pressure Aquifer Reservoir (KELT-2ab)", <liquid:water>    , 1800000000, maxInt , 5000000, 10000000, 0.85f, 25, II, [], [118], [], []);
+registerReservoir("Energized Glowstone Reservoir (KELT-2ab)"    	              , <liquid:glowstone>, 2000000   , 4500000, 50      , 2000     , 30,  I, [], [118], [], []);
+registerGasReservoir("Hydrogen Gas Reservoir (KELT-2ab)"                        , <gas:hydrogen>    , 1228800000, maxInt , 256     , 1024     , 30, II, [], [118], [], []);
+registerReservoirWithDrainChance("Extreme Pressure Aquifer Reservoir (KELT-2ab)", <liquid:water>    , 1800000000, maxInt , 50000000, 100000000, 0.85f, 25, II, [], [118], [], []);
 
 # KELT-3 ID=119
 	/*

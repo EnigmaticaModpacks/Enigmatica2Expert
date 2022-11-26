@@ -5,7 +5,7 @@
     "output": "minecraft:clay:0"
   },
   {
-    "fluidName": "lava",
+    "fluidName": "stone",
     "input": "ore:dustRedstone",
     "output": "minecraft:netherrack:0"
   },

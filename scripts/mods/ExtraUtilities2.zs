@@ -25,6 +25,17 @@ import crafttweaker.item.IIngredient;
 # Melting Ender Lilies
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:ender> * 2000, <extrautils2:enderlilly>, 100000);
 
+# [Ender Fragment] from [Ender Pearl Powder]
+recipes.removeByRecipeName("enderio:ender_defragmentation");
+craft.shapeless(<enderio:item_material:62>, "‚‚‚‚‚‚‚‚‚", {
+  "‚": <ore:nuggetEnderpearl>, # Ender Pearl Powder
+});
+
+# [Ender Lilly] from [Ender Fragment]
+craft.shapeless(<extrautils2:enderlilly>, "EEEEEEEEE", {
+  "E": <ore:itemEnderFragment>, # Ender Fragment
+});
+
 # Removing Easy Moon Stone recipe
 	recipes.remove(<extrautils2:ingredients:5>);
 	recipes.addShaped("Moon Stone", 
@@ -90,27 +101,37 @@ import crafttweaker.item.IIngredient;
 	[<ore:plateSteel>, <ore:blockCoalCoke>, <ore:plateSteel>]]);
 
 # Machine Block
-	recipes.remove(<extrautils2:machine>, true);
-	
-	var polishedStone = <extrautils2:decorativesolid:2>;
-# IC2
-	recipes.addShaped("ExtraUtilities2 Machine Block IC2", 
-	<extrautils2:machine>, 
-	[[polishedStone, <ic2:resource:11>, polishedStone],
-	[<ic2:resource:11>, <ic2:resource:12>, <ic2:resource:11>], 
-	[polishedStone, <ic2:resource:11>, polishedStone]]);
-# IE
-	recipes.addShapedMirrored("ExtraUtilities2 Machine Block IE", 
-	<extrautils2:machine>, 
-	[[polishedStone, <ore:blockSheetmetalIron>, polishedStone],
-	[<ore:blockSheetmetalIron>, <ore:electronTube>, <ore:blockSheetmetalIron>], 
-	[polishedStone, <ore:blockSheetmetalIron>, polishedStone]]);
-# Forestry
-	recipes.addShaped("ExtraUtilities2 Machine Block Forestry", 
-	<extrautils2:machine> * 3, 
-	[[polishedStone, <forestry:thermionic_tubes:3>, polishedStone],
-	[<forestry:thermionic_tubes:3>, <forestry:sturdy_machine>, <forestry:thermionic_tubes:3>], 
-	[polishedStone, <forestry:thermionic_tubes:3>, polishedStone]]);
+recipes.remove(<extrautils2:machine>, true);
+
+# [Machine Block] from [Reinforced Stone][+2]
+craft.make(<extrautils2:machine>, ["pretty",
+  "P ■ P",
+  "■ R ■",
+  "P ■ P"], {
+  "P": <extrautils2:decorativesolid:2>, # Polished Stone
+  "■": <ore:machineBlock>             , # Basic Machine Casing
+  "R": <ic2:resource:11>,               # Reinforced Stone
+});
+
+# [Machine Block]*2 from [Vacuum Tube][+2]
+craft.make(<extrautils2:machine> * 2, ["pretty",
+  "P □ P",
+  "□ T □",
+  "P □ P"], {
+  "P": <extrautils2:decorativesolid:2>, # Polished Stone
+  "□": <ore:plateConstantan>,           # Constantan Plate
+  "T": <ore:electronTube>,              # Vacuum Tube
+});
+
+# [Machine Block]*3 from [Sturdy Casing][+2]
+craft.make(<extrautils2:machine> * 3, ["pretty",
+  "P I P",
+  "I ⌂ I",
+  "P I P"], {
+  "P": <extrautils2:decorativesolid:2>, # Polished Stone
+  "I": <forestry:thermionic_tubes:3>,   # Iron Electron Tube
+  "⌂": <forestry:sturdy_machine>,       # Sturdy Casing
+});
 
 # [Sun Crystal (Empty)] from [Pure Certus Quartz Crystal][+1]
 recipes.remove(<extrautils2:suncrystal:*>);

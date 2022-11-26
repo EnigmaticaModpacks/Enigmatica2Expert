@@ -350,7 +350,7 @@ for spawner, rewards in spawnerRecycle {
 
 # Alt from chicken
 mods.tconstruct.Alloy.addRecipe(<liquid:fierymetal> * 144, [<liquid:fiery_essence> * 250, <liquid:end_steel> * 144]);
-mods.tconstruct.Alloy.addRecipe(<liquid:lava> * 288,       [<liquid:fiery_essence> * 50,  <liquid:stone> * 288]);
+mods.tconstruct.Alloy.addRecipe(<liquid:lava> * 250,       [<liquid:fiery_essence> * 50,  <liquid:menrilresin> * 250]);
 
 <entity:twilightforest:ice_crystal>.addDrop(<iceandfire:dragon_ice>, 1, 3);
 <entity:twilightforest:pinch_beetle>.addDrop(<thermalfoundation:material:2051>, 1, 3);

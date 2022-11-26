@@ -462,7 +462,7 @@ craft.make(<contenttweaker:conglomerate_of_sun> * 8, ['pretty',
 });
 
 // Saturate Phosphor
-scripts.process.fill(<contenttweaker:empowered_phosphor>, <fluid:syngas> * 1000, <contenttweaker:saturated_phosphor>, 'only: MechanicalDryingBasin NCInfuser Transposer');
+scripts.process.fill(<contenttweaker:empowered_phosphor>, <fluid:syngas> * 200, <contenttweaker:saturated_phosphor>, 'only: MechanicalDryingBasin NCInfuser Transposer');
 
 // [Empowered Phosphor] from [Phosphor][+1]
 scripts.process.alloy([<contenttweaker:blasted_coal>, <forestry:phosphor>], <contenttweaker:empowered_phosphor>, 'Only: Kiln Induction');

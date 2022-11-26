@@ -10,12 +10,14 @@ mods.botania.Orechid.removeOre("oreYellorite");
 mods.botania.Orechid.removeOre("oreTungsten");
 
 # Remove orechid advanced ore (only leave basic ones)
+mods.botania.Orechid.removeOre("oreCoal");
+mods.botania.Orechid.removeOre("oreIron");
+mods.botania.Orechid.removeOre("oreCopper");
 mods.botania.Orechid.removeOre("oreLead");
 mods.botania.Orechid.removeOre("oreTin");
 mods.botania.Orechid.removeOre("oreOsmium");
 mods.botania.Orechid.removeOre("oreSilver");
 mods.botania.Orechid.removeOre("oreQuartzBlack");
-mods.botania.Orechid.removeOre("oreCertusQuartz");
 mods.botania.Orechid.removeOre("oreAluminium");
 mods.botania.Orechid.removeOre("oreAluminum");
 mods.botania.Orechid.removeOre("oreGold");
@@ -27,14 +29,13 @@ mods.botania.Orechid.removeOre("oreMalachite");
 mods.botania.Orechid.removeOre("oreTanzanite");
 mods.botania.Orechid.removeOre("oreRuby");
 mods.botania.Orechid.removeOre("orePeridot");
-mods.botania.Orechid.removeOre("oreSapphire");
 mods.botania.Orechid.removeOre("oreEmerald");
 mods.botania.Orechid.removeOre("orePlatinum");
 mods.botania.Orechid.removeOre("oreMithril");
 
 # Buff Apatite
 mods.botania.Orechid.removeOre("oreApatite");
-mods.botania.Orechid.addOre("oreApatite", 25000);
+mods.botania.Orechid.addOre("oreApatite", 15000);
 
 # Add Orechid Ingem ores
 mods.botania.OrechidIgnem.addOre("oreNetherChargedCertusQuartz", 800);
@@ -43,8 +44,8 @@ mods.botania.OrechidIgnem.addOre("oreNetherEmerald", 800);
 
 #-------------------------------#
 # [Orechid] from [Mystical Red Petal][+7]
-mods.botania.Apothecary.removeRecipe("orechid");
-mods.botania.Apothecary.addRecipe("orechid", [
+mods.botania.Apothecary.removeRecipe("excompressum.orechidEvolved");
+mods.botania.Apothecary.addRecipe("excompressum.orechidEvolved", [
 	<ore:petalGray>,       # Mystical Gray Petal
 	<ore:petalYellow>,     # Mystical Yellow Petal
 	<ore:petalGreen>,      # Mystical Green Petal

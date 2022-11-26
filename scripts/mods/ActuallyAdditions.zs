@@ -19,29 +19,85 @@ import crafttweaker.item.IIngredient;
 recipes.removeShaped(<actuallyadditions:block_misc:2>);
 utils.compact(<ore:gemQuartzBlack>, <ore:blockQuartzBlack>);
 		
-# Drill Speed Augment I oredict compat
-	recipes.remove(<actuallyadditions:item_drill_upgrade_speed>);
-	recipes.addShaped("Drill Speed Augment I", 
-	<actuallyadditions:item_drill_upgrade_speed>, 
-	[[<actuallyadditions:item_crystal:5>, <ore:listAllsugar>, <actuallyadditions:item_crystal:5>],
-	[<ore:listAllsugar>, <actuallyadditions:block_crystal>, <ore:listAllsugar>], 
-	[<actuallyadditions:item_crystal:5>, <ore:listAllsugar>, <actuallyadditions:item_crystal:5>]]);
+# [Drill Speed Augment I] from [Restonia Crystal Block][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_speed>, ["pretty",
+  "A * A",
+  "* ╳ *",
+  "A * A"], {
+  "A": <ore:listAllsugar>,                # Sugar
+  "*": <ore:crystalEnori>,                # Enori Crystal
+  "╳": <actuallyadditions:block_crystal>, # Restonia Crystal Block
+});
 
-# Drill Speed Augment II oredict compat
-	recipes.remove(<actuallyadditions:item_drill_upgrade_speed_ii>);
-	recipes.addShapedMirrored("Drill Speed Augment II", 
-	<actuallyadditions:item_drill_upgrade_speed_ii>, 
-	[[<actuallyadditions:item_crystal:5>, <ore:listAllsugar>, <actuallyadditions:item_crystal:5>],
-	[<ore:listAllsugar>, <ore:foodCake>, <ore:listAllsugar>], 
-	[<actuallyadditions:item_crystal:5>, <ore:listAllsugar>, <actuallyadditions:item_crystal:5>]]);
+# [Drill Speed Augment II] from [Chocolate Sprinkles Cake][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_speed_ii>, ["pretty",
+  "G * G",
+  "* C *",
+  "G * G"], {
+  "G": <tconstruct:edible:30>, # Gelatinous Slime Drop
+  "*": <ore:crystalEnori>,     # Enori Crystal
+  "C": <ore:foodCake>, # Chocolate Sprinkles Cake
+});
 
-# Drill Speed Augment III oredict compat
-	recipes.remove(<actuallyadditions:item_drill_upgrade_speed_iii>);
-	recipes.addShapedMirrored("Drill Speed Augment III",
-	<actuallyadditions:item_drill_upgrade_speed_iii>, 
-	[[<actuallyadditions:item_crystal_empowered:5>, <ore:foodCake>, <actuallyadditions:item_crystal_empowered:5>],
-	[<ore:foodCake>, <actuallyadditions:item_crystal_empowered:2>, <ore:foodCake>], 
-	[<actuallyadditions:item_crystal_empowered:5>, <ore:foodCake>, <actuallyadditions:item_crystal_empowered:5>]]);
+# [Drill Speed Augment III] from [Chocolate Sprinkles Cake][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_speed_iii>, ["pretty",
+  "▬ * ▬",
+  "* C *",
+  "▬ * ▬"], {
+  "▬": <ore:ingotMarshmallow>, # Marshmallow
+  "*": <ore:crystalEnori>,     # Enori Crystal
+  "C": <ore:foodCake>, # Chocolate Sprinkles Cake
+});
+
+# [Drill Mining Augment I] from [Basic Coil][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_three_by_three>, ["pretty",
+  "* ╳ *",
+  "╳ B ╳",
+  "* ╳ *"], {
+  "*": <ore:crystalDiamantine>,         # Diamatine Crystal
+  "╳": <ore:crystalRestonia>,           # Restonia Crystal
+  "B": <actuallyadditions:item_misc:7>, # Basic Coil
+});
+
+# [Drill Mining Augment II] from [Advanced Coil][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_five_by_five>, ["pretty",
+  "* ╳ *",
+  "╳ A ╳",
+  "* ╳ *"], {
+  "*": <ore:crystalDiamantine>,         # Diamatine Crystal
+  "╳": <ore:crystalRestonia>,           # Restonia Crystal
+  "A": <actuallyadditions:item_misc:8>, # Advanced Coil
+});
+
+# [Drill Fortune Augment I] from [Advanced Coil][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_fortune>, ["pretty",
+  "G * G",
+  "* A *",
+  "G * G"], {
+  "G": <tconstruct:edible:32>,          # Gelatinous Slime Drop
+  "*": <ore:crystalEmeraldic>,          # Emeradic Crystal
+  "A": <actuallyadditions:item_misc:8>, # Advanced Coil
+});
+
+# [Drill Fortune Augment II (Gives Fortune III!)] from [Ender Casing][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_fortune_ii>, ["pretty",
+  "G ▬ G",
+  "▬ ⌂ ▬",
+  "G ▬ G"], {
+  "G": <tconstruct:edible:32>,           # Gelatinous Slime Drop
+  "▬": <ore:ingotEnderat>,               # Ender Ingot
+  "⌂": <actuallyadditions:block_misc:8>, # Ender Casing
+});
+
+# [Drill Silk Touch Augment] from [Advanced Coil][+2]
+craft.remake(<actuallyadditions:item_drill_upgrade_silk_touch>, ["pretty",
+  "╳ * ╳",
+  "* A *",
+  "╳ * ╳"], {
+  "╳": <ore:crystalEmeraldic>,          # Emeradic Crystal
+  "*": <ore:crystalDiamantine>,         # Diamatine Crystal
+  "A": <actuallyadditions:item_misc:8>, # Advanced Coil
+});
 
 # [Lens of the Miner] from [Lens of Color][+7]
 craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
@@ -744,4 +800,14 @@ craft.remake(<actuallyadditions:block_compost>, ["pretty",
   "# ≢ #"], {
   "#": <ore:plankTreatedWood>, # Treated Wood Planks
   "≢": <forestry:wood_pile>,   # Wood Pile
+});
+
+# [Handheld Filler] from [Energizer][+2]
+craft.remake(<actuallyadditions:item_filling_wand>, ["pretty",
+  "* * *",
+  "* E *",
+  "  B  "], {
+  "*": <ore:crystalVoid>,                   # Void Crystal
+  "E": <actuallyadditions:block_energizer>, # Energizer
+  "B": <actuallyadditions:item_misc:7>,     # Basic Coil
 });

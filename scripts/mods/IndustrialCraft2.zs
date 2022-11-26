@@ -55,13 +55,23 @@ furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:purified:6>);
 # Bronze
 	recipes.remove(<ic2:resource:5>);
 	recipes.remove(<ic2:ingot:1>);
-	
-# Batch Crafter
-	recipes.remove(<ic2:te:89>);
-	recipes.addShaped("Batch Crafter", <ic2:te:89>, 
-	[[null, <ic2:te:88>, null],
-	[<ore:circuitAdvanced>, <ic2:resource:13>, <ore:circuitAdvanced>], 
-	[<ore:craftingToolForgeHammer>, <thermalfoundation:wrench>.anyDamage(), <ore:craftingToolForgeHammer>]]);
+
+# Oredicting recipe
+# [Industrial Workbench] from [Basic Machine Casing][+3]
+craft.remake(<ic2:te:88>, ["Two"], {
+  "T": <ore:craftingToolForgeHammer>.noReturn(), # Forge Hammer
+  "w": <ore:workbench>, # Crafting Table
+  "o": <ore:craftingToolWireCutter>.noReturn(), # Cutter
+});
+
+# [Batch Crafter] from [Basic Machine Casing][+2]
+craft.remake(<ic2:te:89>, ["pretty",
+  "  I  ",
+  "R ■ R"], {
+  "I": <ic2:te:88>,        # Industrial Workbench
+  "R": <ore:itemRubber>,   # Rubber
+  "■": <ore:machineBlock>, # Basic Machine Casing
+});
 
 # Jetpack Attachment Plate, recipe needs oredict
 	recipes.remove(<ic2:crafting:37>);
@@ -556,17 +566,15 @@ addSemifluidRecipe(<fluid:refined_biofuel>, 512);
 # Solid Fuel Firebox output Ashes
 recipes.addShapeless('firebox_ashes', <forestry:ash>, [<ic2:misc_resource>]);
 
-# Oredicting recipe
-# [Industrial Workbench] from [Basic Machine Casing][+3]
-craft.remake(<ic2:te:88>, ["pretty",
-  "  w  ",
-  "T ■ o"], {
-  "w": <ore:workbench>, # Crafting Table
-  "T": <ore:craftingToolForgeHammer>, # Forge Hammer
-  "■": <ore:machineBlock>, # Basic Machine Casing
-  "o": <ore:craftingToolWireCutter>, # Cutter
-});
-
 # Shortcut for AR
 # [Lapotron Crystal] from [Advanced Circuit][+1]
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:circuitAdvanced> * 4], [<fluid:lapis> * 10000], [<ic2:lapotron_crystal>.withTag({}) * 4], null);
+
+# [Scaffold]*20 from [Stick][+1]
+craft.remake(<ic2:scaffold> * 20, ["pretty",
+  "≢ ≢ ≢",
+  "  #  ",
+  "#   #"], {
+  "≢": <ore:plankWood>, # Oak Wood Planks
+  "#": <ore:stickWood>, # Stick
+});

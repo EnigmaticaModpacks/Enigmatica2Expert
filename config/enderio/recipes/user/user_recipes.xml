@@ -220,6 +220,14 @@
   <recipe name="Tweak: Wood Hopper">
     <disabled/>
   </recipe>
+  <!-- Mud recipe -->
+  <recipe name="Mud from Dirt">
+    <tanking type="FILL" logic="NONE">
+      <input name="dirt"/>
+      <fluid name="water" amount="100"/>
+      <output name="biomesoplenty:mud"/>
+    </tanking>
+  </recipe>
   <!-- Mending Moss filling -->
   <recipe name="Mending Moss filling 1">
     <tanking type="FILL" logic="NONE">

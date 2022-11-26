@@ -17,7 +17,6 @@ static farmland as string[] = [
 ] as string[];
 
 events.onBlockPlace(function(e as crafttweaker.event.BlockPlaceEvent) {
-  print('place event');
   if(e.world.remote || isNull(e.current)) return;
   if(!e.current.block.definition.id.startsWith('thaumadditions:vis_crop')
     || !(farmland has e.placedAgainst.block.definition.id)) return;

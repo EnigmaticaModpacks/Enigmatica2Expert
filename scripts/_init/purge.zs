@@ -92,7 +92,7 @@ if(isNull(loadedMods["refinedstorage"])) {
 }
 
 /*Inject_js(
-getUnchangedFurnaceRecipes()
+(getUnchangedFurnaceRecipes()??[])
 .filter((r) => isJEIBlacklisted(r.in_id, r.in_meta) && !isPurged(r.input))
 .map(({input})=>[`furnace.remove(<*>, ${input});`])
 )*/
@@ -140,6 +140,7 @@ utils.rh(<avaritiafurnace:compressedfurnace>);
 utils.rh(<avaritiafurnace:doublecompessedfurnace>);
 utils.rh(<avaritiafurnace:triplecompressedfurnace>);
 utils.rh(<itemfilters:filter>);
+utils.rh(<excompressum:ore_smasher>);
 
 # Pams replacements
 utils.rh(<harvestcraft:chilipepperitem>);

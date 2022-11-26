@@ -237,15 +237,6 @@ mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:animania_h
 mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:for.honey>      * 1000);
 mods.rustic.EvaporatingBasin.addRecipe(<forestry:honey_drop>, <liquid:honey>          * 1000);
 
-# Way cheaper because its just a water
-# [Rain Tank] from [Oak Log][+1]
-craft.remake(<forestry:raintank>, ["pretty",
-  "⌂   ⌂",
-  "⌂ # ⌂"], {
-  "⌂": <ic2:casing:3>,# Iron Item Casing
-  "#": <ore:logWood>, # Oak Log
-});
-
 # Pipete clearing
 recipes.addShapeless("Pipete clearing", <forestry:pipette>, [<forestry:pipette>]);
 

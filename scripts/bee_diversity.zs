@@ -100,7 +100,7 @@ val storeFunction as IRecipeFunction = function (out, ins, cInfo) {
     val member = hashes.memberGet(hash);
     if (isNull(member)) {
       points += 1;
-      hashes += { hash: 1 } as IData;
+      hashes += { [hash]: 1 } as IData;
     }
   }
 
