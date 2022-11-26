@@ -32,8 +32,8 @@
 			TrophyName: "§cImmersive Engineering Trophy§r"
 		}
 	},
-	x: 6.0d,
-	y: 6.0d,
+	x: 6.3d,
+	y: 3.15d,
 	text: [
 		"{q.immersive_engineer.the_chapter_is_com.desc}"
 	],

@@ -1,19 +1,94 @@
 {
 	title: "{q.immersive_engineer.arc_furnace.name}",
 	icon: "immersiveengineering:metal_multiblock 1 13",
-	x: 4.5d,
-	y: 3.5d,
+	x: 3.0d,
+	y: 4.7d,
 	text: [
 		"{q.immersive_engineer.arc_furnace.desc}"
 	],
 	dependencies: [
-		"2de1b9db"
+		"959882ea"
 	],
 	tasks: [{
-		uid: "84243316",
-		type: "advancement",
-		advancement: "immersiveengineering:main/multiblock_arcfurnace",
-		criterion: ""
+		uid: "622d54fe",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 2"
+		}],
+		count: 27L
+	},
+	{
+		uid: "1a420a07",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal_slab 1 8"
+		}],
+		count: 14L
+	},
+	{
+		uid: "af39ef13",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "35763fd0",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 10L
+	},
+	{
+		uid: "b605f2f2",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 5L
+	},
+	{
+		uid: "55d3a712",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "4738890b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any blockSteel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "blockSteel"
+				}
+			}
+		}],
+		count: 6L
+	},
+	{
+		uid: "db80044b",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 5L
+	},
+	{
+		uid: "cb0fa19f",
+		type: "item",
+		items: [{
+			item: "minecraft:cauldron"
+		}]
 	}],
 	rewards: [{
 		uid: "507f24c1",

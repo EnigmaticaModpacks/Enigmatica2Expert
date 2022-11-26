@@ -9,47 +9,14 @@
 		"8806b7fe"
 	],
 	tasks: [{
-		uid: "effc7eb7",
+		uid: "0a75b9c8",
 		type: "item",
 		items: [{
 			id: "forestry:chipsets",
-			tag: {
-				T: 0s
-			}
-		}]
-	},
-	{
-		uid: "f97bf076",
-		type: "item",
-		items: [{
-			id: "forestry:chipsets",
-			Damage: 1s,
-			tag: {
-				T: 1s
-			}
-		}]
-	},
-	{
-		uid: "655245d9",
-		type: "item",
-		items: [{
-			id: "forestry:chipsets",
-			Damage: 2s,
-			tag: {
-				T: 2s
-			}
-		}]
-	},
-	{
-		uid: "8c06b6c3",
-		type: "item",
-		items: [{
-			id: "forestry:chipsets",
-			Damage: 3s,
-			tag: {
-				T: 3s
-			}
-		}]
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "42732c45",

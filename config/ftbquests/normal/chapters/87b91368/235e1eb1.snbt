@@ -1,6 +1,6 @@
 {
-	x: -0.45833333333333337d,
-	y: -2.875d,
+	x: -1.1d,
+	y: -3.4d,
 	text: [
 		"{q.animals.heart_dust.desc}"
 	],
@@ -24,5 +24,11 @@
 				entity_id: "minecraft:cow"
 			}
 		}
+	},
+	{
+		uid: "56f0c682",
+		type: "item",
+		item: "scalinghealth:heartdust",
+		count: 3
 	}]
 }

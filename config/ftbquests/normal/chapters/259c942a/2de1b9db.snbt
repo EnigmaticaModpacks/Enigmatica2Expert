@@ -1,15 +1,11 @@
 {
-	x: 3.1666666666666665d,
-	y: 3.5d,
+	x: 2.8d,
+	y: -0.5d,
 	text: [
 		"{q.immersive_engineer.projector.desc}"
 	],
 	dependencies: [
-		"8c8d1535",
-		"b34aca62",
-		"862cd6dd",
-		"959882ea",
-		"4baae0d8"
+		"862cd6dd"
 	],
 	tasks: [{
 		uid: "14de90c3",

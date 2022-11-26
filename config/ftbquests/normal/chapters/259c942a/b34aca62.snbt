@@ -1,6 +1,6 @@
 {
 	x: 1.5d,
-	y: 4.833333333333333d,
+	y: 4.8d,
 	text: [
 		"{q.immersive_engineer.generator_block.desc}"
 	],

@@ -9,17 +9,22 @@
 		"2957f2cc"
 	],
 	tasks: [{
-		uid: "9601a2d5",
+		uid: "da19395e",
 		type: "item",
 		items: [{
-			item: "astralsorcery:itemcraftingcomponent"
-		}]
+			id: "astralsorcery:itemwand",
+			tag: {
+				astralsorcery: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "a24019a1",
 		type: "item",
 		item: "astralsorcery:itemcraftingcomponent",
-		count: 16
+		count: 32
 	},
 	{
 		uid: "aaddf92d",

@@ -1,0 +1,30 @@
+{
+	x: -3.1d,
+	y: 6.3d,
+	text: [
+		"Most Drill upgrades are cheap and can be used to achieve traits like \"Silk Touch\" earlier than other tools."
+	],
+	dependencies: [
+		"9857919f"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "77e80d3c",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_drill_upgrade_silk_touch"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "07135299",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

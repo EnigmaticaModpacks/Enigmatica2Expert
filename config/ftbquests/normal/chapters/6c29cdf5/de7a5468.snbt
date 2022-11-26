@@ -10,14 +10,15 @@
 		"aca34b29"
 	],
 	tasks: [{
-		uid: "be46eb44",
+		uid: "df9c6c46",
 		type: "item",
 		items: [{
 			id: "botania:specialflower",
 			tag: {
-				type: "orechid"
+				type: "excompressum.orechidEvolved"
 			}
-		}]
+		}],
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "0682d7bd",
@@ -26,6 +27,16 @@
 			id: "ftbquests:lootcrate",
 			tag: {
 				type: "uncommon"
+			}
+		}
+	},
+	{
+		uid: "6e852a19",
+		type: "item",
+		item: {
+			id: "botania:specialflower",
+			tag: {
+				type: "orechid"
 			}
 		}
 	}]

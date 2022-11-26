@@ -1,19 +1,52 @@
 {
 	title: "{q.immersive_engineer.crusher.name}",
 	icon: "immersiveengineering:metal_multiblock 1 1",
-	x: 4.5d,
-	y: 4.833333333333333d,
+	x: 3.0d,
+	y: 2.2d,
 	text: [
 		"{q.immersive_engineer.crusher.desc}"
 	],
 	dependencies: [
-		"2de1b9db"
+		"8c8d1535"
 	],
 	tasks: [{
-		uid: "d40d562e",
-		type: "advancement",
-		advancement: "immersiveengineering:main/multiblock_crusher",
-		criterion: ""
+		uid: "ee011800",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 10L
+	},
+	{
+		uid: "1e0af00e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "9e6745bc",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 10L
+	},
+	{
+		uid: "3851b7a1",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1"
+		}],
+		count: 8L
+	},
+	{
+		uid: "6871f60d",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}],
+		count: 9L
 	}],
 	rewards: [{
 		uid: "5beffd1a",
@@ -24,5 +57,10 @@
 				type: "uncommon"
 			}
 		}
+	},
+	{
+		uid: "4a01451a",
+		type: "item",
+		item: "thermalfoundation:material 1 66"
 	}]
 }

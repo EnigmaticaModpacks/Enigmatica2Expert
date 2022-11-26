@@ -1,7 +1,7 @@
 {
 	title: "{q.immersive_engineer.steel_fluid_tank.name}",
 	icon: "immersivepetroleum:upgrades 1 2",
-	x: 1.5d,
+	x: 0.2d,
 	y: -0.5d,
 	text: [
 		"{q.immersive_engineer.steel_fluid_tank.desc}"

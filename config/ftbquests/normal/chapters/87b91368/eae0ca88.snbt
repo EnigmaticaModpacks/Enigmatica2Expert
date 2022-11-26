@@ -1,6 +1,6 @@
 {
-	x: -1.4583333333333333d,
-	y: -2.875d,
+	x: -1.1d,
+	y: -2.5d,
 	text: [
 		"{q.animals.piggybackpack.desc}"
 	],

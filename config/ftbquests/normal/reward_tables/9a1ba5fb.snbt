@@ -5,10 +5,6 @@
 		count: 10
 	},
 	{
-		item: "extrautils2:trashchest",
-		count: 2
-	},
-	{
 		item: {
 			id: "tconstruct:rapier",
 			tag: {
@@ -66,5 +62,9 @@
 				]
 			}
 		}
+	},
+	{
+		item: "rats:contaminated_food",
+		count: 5
 	}]
 }

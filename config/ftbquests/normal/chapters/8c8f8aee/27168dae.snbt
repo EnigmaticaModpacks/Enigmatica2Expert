@@ -1,25 +1,26 @@
 {
-	x: -2.8333333333333335d,
-	y: 2.166666666666667d,
+	x: -3.1d,
+	y: 4.5d,
 	text: [
-		"{q.astral_sorcery.resonating_wand.desc}"
+		"Fills area with blocks"
 	],
 	dependencies: [
-		"8a6186a6"
+		"03d4419e"
 	],
 	tasks: [{
-		uid: "a5a9c7f8",
+		uid: "71beb8c4",
 		type: "item",
 		items: [{
-			id: "astralsorcery:itemwand",
+			id: "actuallyadditions:item_filling_wand",
 			tag: {
-				astralsorcery: {}
+				Energy: 0
 			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "d42e9101",
+		uid: "ed37cece",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",

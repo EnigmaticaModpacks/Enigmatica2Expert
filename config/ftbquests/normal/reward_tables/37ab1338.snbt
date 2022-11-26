@@ -350,7 +350,7 @@
 	},
 	{
 		item: "appliedenergistics2:controller",
-		count: 6
+		count: 64
 	},
 	{
 		item: "extrautils2:compoundbow"

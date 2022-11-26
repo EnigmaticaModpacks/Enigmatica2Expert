@@ -1,6 +1,6 @@
 {
 	x: 1.5d,
-	y: 2.166666666666667d,
+	y: 2.2d,
 	text: [
 		"{q.immersive_engineer.light_engineering_.desc}"
 	],

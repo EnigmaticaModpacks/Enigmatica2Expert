@@ -1,19 +1,80 @@
 {
 	title: "{q.immersive_engineer.excavator.name}",
 	icon: "immersiveengineering:metal_multiblock 1 11",
-	x: 3.1666666666666665d,
-	y: 6.166666666666667d,
+	x: 3.0d,
+	y: 6.0d,
 	text: [
 		"{q.immersive_engineer.excavator.desc}"
 	],
 	dependencies: [
-		"2de1b9db"
+		"b34aca62",
+		"4baae0d8"
 	],
 	tasks: [{
-		uid: "5b5c794d",
-		type: "advancement",
-		advancement: "immersiveengineering:main/multiblock_excavator",
-		criterion: ""
+		uid: "182ddcef",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any blockSteel"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "blockSteel"
+				}
+			}
+		}],
+		count: 9L
+	},
+	{
+		uid: "a8066566",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 8"
+		}],
+		count: 35L
+	},
+	{
+		uid: "93d04387",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 9L
+	},
+	{
+		uid: "ad923f32",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 6L
+	},
+	{
+		uid: "e1c3d138",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 5L
+	},
+	{
+		uid: "ec51fe3e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 7"
+		}],
+		count: 3L
+	},
+	{
+		uid: "e0c8191b",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
 	}],
 	rewards: [{
 		uid: "e89d5304",

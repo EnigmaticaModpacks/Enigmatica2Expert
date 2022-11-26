@@ -1,6 +1,6 @@
 {
 	x: 1.5d,
-	y: 6.166666666666667d,
+	y: 6.0d,
 	text: [
 		"{q.immersive_engineer.radiator_block.desc}"
 	],

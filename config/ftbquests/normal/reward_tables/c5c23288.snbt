@@ -140,35 +140,6 @@
 				Color1: 1644825,
 				Color0: 13388876,
 				Inventory: {
-					Slot2: {
-						id: "cyclicmagic:boomerang",
-						Count: 1b,
-						Damage: 0s,
-						tag: {},
-						ForgeCaps: {
-							"astralsorcery:cap_item_amulet_holder": {}
-						}
-					},
-					Slot5: {
-						id: "rustic:elixir",
-						Count: 6b,
-						Damage: 0s,
-						tag: {
-							ench: [{
-								lvl: 1s,
-								id: 36s
-							}],
-							enchantmentColor: 11743532,
-							display: {
-								Name: "Longest Elixir of Regeneration"
-							},
-							ElixirEffects: [{
-								Duration: 1800000,
-								Effect: "minecraft:regeneration",
-								Amplifier: 1
-							}]
-						}
-					},
 					Slot1: {
 						id: "immersiveengineering:shield",
 						Count: 1b,
@@ -177,36 +148,6 @@
 							Parent: {
 								Items: [],
 								Size: 1
-							}
-						}
-					},
-					Slot7: {
-						id: "randomthings:imbue",
-						Count: 10b,
-						Damage: 2s
-					},
-					Slot8: {
-						id: "botania:brewflask",
-						Count: 1b,
-						Damage: 0s,
-						tag: {
-							brewKey: "bloodthirst"
-						},
-						ForgeCaps: {
-							"astralsorcery:cap_item_amulet_holder": {}
-						}
-					},
-					Slot6: {
-						id: "rustic:fluid_bottle",
-						Count: 10b,
-						Damage: 0s,
-						tag: {
-							Fluid: {
-								FluidName: "cider",
-								Amount: 1000,
-								Tag: {
-									Quality: 1.0f
-								}
 							}
 						}
 					},
@@ -294,6 +235,85 @@
 							"plustic:musicofthespheres_cap": {
 								Items: [],
 								Size: 1
+							}
+						}
+					},
+					Slot7: {
+						id: "rustic:elixir",
+						Count: 6b,
+						Damage: 0s,
+						tag: {
+							ench: [{
+								lvl: 1s,
+								id: 36s
+							}],
+							enchantmentColor: 11743532,
+							display: {
+								Name: "Longest Elixir of Regeneration"
+							},
+							ElixirEffects: [{
+								Duration: 1800000,
+								Effect: "minecraft:regeneration",
+								Amplifier: 1
+							}]
+						}
+					},
+					Slot3: {
+						id: "randomthings:floosign",
+						Count: 1b,
+						Damage: 0s
+					},
+					Slot6: {
+						id: "randomthings:imbue",
+						Count: 64b,
+						Damage: 2s
+					},
+					Slot4: {
+						id: "randomthings:flootoken",
+						Count: 64b,
+						Damage: 0s
+					},
+					Slot2: {
+						id: "cyclicmagic:boomerang",
+						Count: 1b,
+						Damage: 0s,
+						tag: {},
+						ForgeCaps: {
+							"astralsorcery:cap_item_amulet_holder": {}
+						}
+					},
+					Slot8: {
+						id: "thermalinnovation:quiver",
+						Count: 1b,
+						Damage: 4s,
+						tag: {
+							Fluid: {
+								FluidName: "potion",
+								Amount: 90000,
+								Tag: {
+									Potion: "cofhcore:healing4"
+								}
+							},
+							Arrows: 1800,
+							Mode: 1,
+							ench: [{
+								id: 55,
+								lvl: 4s
+							}],
+							enchantmentColor: 3887386
+						}
+					},
+					Slot5: {
+						id: "rustic:fluid_bottle",
+						Count: 64b,
+						Damage: 0s,
+						tag: {
+							Fluid: {
+								FluidName: "wine",
+								Amount: 1000,
+								Tag: {
+									Quality: 1.0f
+								}
 							}
 						}
 					}

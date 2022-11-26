@@ -32,5 +32,11 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fc4ad415",
+		type: "item",
+		item: "thaumcraft:curio 1 1",
+		count: 10
 	}]
 }

@@ -16,8 +16,93 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "cd67992d",
+		uid: "142d3ef4",
 		type: "item",
-		item: "thaumcraft:thaumometer"
+		item: "minecraft:gold_ingot",
+		count: 4
+	},
+	{
+		uid: "8c5051cf",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aqua"
+				}]
+			}
+		},
+		count: 3
+	},
+	{
+		uid: "59fea50d",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "terra"
+				}]
+			}
+		},
+		count: 3
+	},
+	{
+		uid: "f0a24767",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ignis"
+				}]
+			}
+		},
+		count: 3
+	},
+	{
+		uid: "63cfad08",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ordo"
+				}]
+			}
+		},
+		count: 3
+	},
+	{
+		uid: "983ca41a",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "perditio"
+				}]
+			}
+		},
+		count: 3
+	},
+	{
+		uid: "03baad6f",
+		type: "item",
+		item: {
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		},
+		count: 3
 	}]
 }

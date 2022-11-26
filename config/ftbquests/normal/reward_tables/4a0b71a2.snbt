@@ -122,7 +122,8 @@
 		}
 	},
 	{
-		item: "minecraft:torch",
+		icon: "mia:torch_gold 32",
+		item: "mia:torch_gold",
 		count: 32
 	}]
 }

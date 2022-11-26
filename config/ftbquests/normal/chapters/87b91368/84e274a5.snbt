@@ -1,0 +1,33 @@
+{
+	title: "Iron Golem",
+	icon: {
+		id: "draconicevolution:mob_soul",
+		tag: {
+			EntityName: "minecraft:villager_golem"
+		}
+	},
+	x: -1.1d,
+	y: -4.3d,
+	text: [
+		"When the §nIron Golem§r kills someone, it gets a §6buff§r for 1 minute.",
+		"",
+		"When it kills again without stopping, it gains the §6next§r level of the buff or another buff.",
+		"",
+		"When a golem reaches ~20 level it becomes a §dBlight§r."
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	tasks: [{
+		uid: "0ce4c15e",
+		type: "kill",
+		entity: "minecraft:villager_golem",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "bcc6df06",
+		type: "item",
+		item: "scalinghealth:crystalshard",
+		count: 2
+	}]
+}

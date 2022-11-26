@@ -1,12 +1,12 @@
 {
 	title: "{q.immersive_engineer.solar_tower.name}",
-	x: 4.5d,
-	y: 0.8333333333333333d,
+	x: 3.0d,
+	y: 0.83d,
 	text: [
 		"{q.immersive_engineer.solar_tower.desc}"
 	],
 	dependencies: [
-		"2de1b9db"
+		"862cd6dd"
 	],
 	tasks: [{
 		uid: "54d81314",

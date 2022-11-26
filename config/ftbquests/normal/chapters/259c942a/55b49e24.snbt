@@ -1,6 +1,6 @@
 {
-	x: 6.0d,
-	y: 3.5d,
+	x: 4.5d,
+	y: 4.7d,
 	text: [
 		"{q.immersive_engineer.graphite_electrode.desc}"
 	],
@@ -12,7 +12,8 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:graphite_electrode"
-		}]
+		}],
+		count: 3L
 	}],
 	rewards: [{
 		uid: "05c233af",

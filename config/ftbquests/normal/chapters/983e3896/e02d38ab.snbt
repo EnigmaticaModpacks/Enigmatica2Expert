@@ -5,7 +5,7 @@
 		"{q.astral_sorcery.rock_crystal.desc}"
 	],
 	dependencies: [
-		"032c3854"
+		"8a6186a6"
 	],
 	tasks: [{
 		uid: "5ed48a00",
