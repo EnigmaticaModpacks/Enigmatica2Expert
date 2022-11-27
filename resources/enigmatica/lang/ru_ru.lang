@@ -129,6 +129,7 @@ tooltips.lang.thaum.artifice=Артефактня
 tooltips.lang.drop_at_night=§3Бросьте §n%s§r§3 на §n%s§r§3 под ночным небом
 tooltips.lang.must_see_night=§9Должно видеть ночное небо
 tooltips.lang.burn_in_fluid=§3Спалите §n%s§r§3 в §n%s§r§3
+tooltips.lang.infuse_bedrock=§3ПКМ §n%s§r§3 поверх §n%s§r§3
 
 tooltips.lang.power_tier_5=§cУровень мощности 5, §4любой IC2 кабель взорвется
 tooltips.lang.fluid.corium=§a Можно получить путем плавления реактора деления
