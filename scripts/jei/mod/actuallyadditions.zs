@@ -14,36 +14,37 @@ x.addJEICatalyst(<actuallyadditions:block_atomic_reconstructor>);
 x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
 scripts.jei.requious.addInsOuts(x, [[0,0]], [[2,0]]);
 
-function addMiningLensOre(base as IIngredient, oreDictName as string, weight as int) as void {
-  val ore = oreDict[oreDictName];
-  if(ore.items.length == 0) return;
-  val output = ore.firstItem.withLore(["§e§lWeight: " ~ weight]);
-  addRecipe(<assembly:lens_of_the_miner>, {[base] as IIngredient[] : [output]});
-}
-
-function addMiningLensStoneOre(oreDictName as string, weight as int) {
-  addMiningLensOre(<minecraft:stone>, oreDictName, weight);
-}
-function addMiningLensNetherOre(oreDictName as string, weight as int) {
-  addMiningLensOre(<minecraft:netherrack>, oreDictName, weight);
-}
-
-// Values taken from:
+// Default list:
 // https://github.com/Ellpeck/ActuallyAdditions/blob/main/src/main/java/de/ellpeck/actuallyadditions/common/items/lens/LensMining.java
-addMiningLensNetherOre("oreNetherDiamond", 50);
-addMiningLensNetherOre("oreNetherRedstone", 200);
-addMiningLensNetherOre("oreNetherLapis", 250);
-addMiningLensNetherOre("oreQuartz", 3000);
-addMiningLensNetherOre("oreNetherCoal", 5000);
-addMiningLensNetherOre("crushedNetherrack", 6000);
 
-addMiningLensStoneOre("oreMalachite", 40);
-addMiningLensStoneOre("orePeridot", 40);
-addMiningLensStoneOre("oreRuby", 40);
-addMiningLensStoneOre("oreSapphire", 40);
-addMiningLensStoneOre("oreApatite", 700);
-addMiningLensStoneOre("oreCertusQuartz", 800);
-addMiningLensStoneOre("oreQuartzBlack", 3000);
-addMiningLensStoneOre("oreCoal", 5000);
-addMiningLensStoneOre("gravel", 6000);
+val endstoneList as int[IItemStack][] = [
+/*Inject_js{
+  const cfg = config('config/actuallyadditions.cfg').other
+  const filtered = cfg['Mining Lens Blacklist'].map(l => l.split('@'))
+  return cfg['Mining lens Extra Whitelist']
+    .map((l) => {
+      const [ore, w, t] = l.split('@')
+      return t !== 's'
+        ? undefined
+        : `  {${
+          getByOredict(ore).filter(o =>
+            !filtered.some(f => f[0] === o.id && (f[1] ?? 0) == o.damage)
+          ).map(o => o.commandString)
+      }: ${w}},`
+    }).filter(Boolean)
+}*/
+  {<netherendingores:ore_other_1:1>: 64},
+  {<netherendingores:ore_end_modded_1>: 40},
+  {<netherendingores:ore_end_vanilla:4>: 30},
+  {<netherendingores:ore_other_1:5>: 20},
+  {<netherendingores:ore_other_1:3>: 20},
+  {<netherendingores:ore_end_vanilla:1>: 10},
+  {<netherendingores:ore_end_vanilla:2>: 10},
+/**/
+] as int[IItemStack][];
 
+for tuple in endstoneList {
+  for output, weight in tuple {
+    addRecipe(<assembly:lens_of_the_miner>, {[<minecraft:end_stone>] as IIngredient[] : [output * weight]});
+  }
+}

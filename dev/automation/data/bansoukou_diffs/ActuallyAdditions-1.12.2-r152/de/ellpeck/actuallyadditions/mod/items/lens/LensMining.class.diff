@@ -1,0 +1,179 @@
+diff --git "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\lens\\LensMining.java" "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\lens\\LensMining.java"
+index 59f7cf97a..1fc1d8459 100644
+--- "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\lens\\LensMining.java"
++++ "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\lens\\LensMining.java"
+@@ -14,7 +14,6 @@
+  *  de.ellpeck.actuallyadditions.mod.util.StackUtil
+  *  net.minecraft.block.Block
+  *  net.minecraft.block.BlockNetherrack
+- *  net.minecraft.block.BlockStone
+  *  net.minecraft.block.state.IBlockState
+  *  net.minecraft.entity.EntityLivingBase
+  *  net.minecraft.init.Blocks
+@@ -46,7 +45,6 @@ import java.util.List;
+ import java.util.Random;
+ import net.minecraft.block.Block;
+ import net.minecraft.block.BlockNetherrack;
+-import net.minecraft.block.BlockStone;
+ import net.minecraft.block.state.IBlockState;
+ import net.minecraft.entity.EntityLivingBase;
+ import net.minecraft.init.Blocks;
+@@ -65,62 +63,6 @@ import net.minecraftforge.oredict.OreDictionary;
+ public class LensMining
+ extends Lens {
+     public static void init() {
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreCoal", (int)5000);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherCoal", (int)5000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreIron", (int)3000);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherIron", (int)3000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreGold", (int)500);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherGold", (int)500);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreDiamond", (int)50);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherDiamond", (int)50);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreLapis", (int)250);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherLapis", (int)250);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreRedstone", (int)200);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherRedstone", (int)200);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreEmerald", (int)30);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreQuartz", (int)3000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreCopper", (int)2000);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherCopper", (int)2000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreTin", (int)1800);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherTin", (int)1800);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreLead", (int)1500);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherLead", (int)1500);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreSilver", (int)1000);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherSilver", (int)1000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreNickel", (int)100);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherNickel", (int)100);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePlatinum", (int)20);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreNetherPlatinum", (int)20);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreAluminum", (int)1200);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreAluminium", (int)1200);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreOsmium", (int)1500);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreZinc", (int)1000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreYellorite", (int)1200);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreUranium", (int)400);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreCertusQuartz", (int)800);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreApatite", (int)700);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreQuartzBlack", (int)3000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreRuby", (int)40);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePeridot", (int)40);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreTopaz", (int)40);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreTanzanite", (int)40);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreMalachite", (int)40);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreSapphire", (int)40);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreAmber", (int)150);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreResonating", (int)50);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreSulfur", (int)3000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreSaltpeter", (int)250);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreFirestone", (int)30);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreSalt", (int)2900);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"oreDraconium", (int)5);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePoorIron", (int)3000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePoorGold", (int)500);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePoorCopper", (int)2000);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePoorTin", (int)1800);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePoorLead", (int)1500);
+-        ActuallyAdditionsAPI.addMiningLensStoneOre((String)"orePoorSilver", (int)1000);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreCobalt", (int)50);
+-        ActuallyAdditionsAPI.addMiningLensNetherOre((String)"oreArdite", (int)50);
+         for (String conf : ConfigStringListValues.MINING_LENS_EXTRA_WHITELIST.getValue()) {
+             if (!conf.contains("@")) continue;
+             try {
+@@ -135,54 +77,56 @@ extends Lens {
+                 if (!"s".equals(dim)) continue;
+                 ActuallyAdditionsAPI.addMiningLensStoneOre((String)ore, (int)weight);
+             }
+-            catch (Exception e) {
++            catch (Exception split) {
+                 ActuallyAdditions.LOGGER.warn("A config option appears to be incorrect: The entry " + conf + " can't be parsed!");
+             }
+         }
+     }
+ 
+     public boolean invoke(IBlockState hitState, BlockPos hitPos, IAtomicReconstructor tile) {
+-        if (!tile.getWorldObject().func_175623_d(hitPos)) {
+-            if (tile.getEnergy() >= ConfigIntValues.MINING_LENS_USE.getValue()) {
+-                int adaptedUse = ConfigIntValues.MINING_LENS_USE.getValue();
+-                List ores = null;
+-                Block hitBlock = hitState.func_177230_c();
+-                if (hitBlock instanceof BlockStone) {
+-                    ores = ActuallyAdditionsAPI.STONE_ORES;
+-                } else if (hitBlock instanceof BlockNetherrack) {
+-                    ores = ActuallyAdditionsAPI.NETHERRACK_ORES;
+-                    adaptedUse += 10000;
+-                }
+-                if (ores != null) {
+-                    Block block;
+-                    int totalWeight = WeightedRandom.func_76272_a((List)ores);
+-                    ItemStack stack = null;
+-                    boolean found = false;
+-                    block0: while (!found) {
+-                        NonNullList stacks;
+-                        WeightedOre ore = (WeightedOre)WeightedRandom.func_76273_a((Random)tile.getWorldObject().field_73012_v, (List)ores, (int)totalWeight);
+-                        if (ore == null || (stacks = OreDictionary.getOres((String)ore.name, (boolean)false)) == null || stacks.isEmpty()) continue;
+-                        for (ItemStack aStack : stacks) {
+-                            if (!StackUtil.isValid((ItemStack)aStack) || CrusherRecipeRegistry.hasBlacklistedOutput((ItemStack)aStack, (String[])ConfigStringListValues.MINING_LENS_BLACKLIST.getValue()) || !(aStack.func_77973_b() instanceof ItemBlock)) continue;
+-                            if (ConfigBoolValues.MINING_LENS_ADAPTED_USE.isEnabled()) {
+-                                adaptedUse += (totalWeight - ore.field_76292_a) % 40000;
+-                            }
+-                            stack = aStack;
+-                            found = true;
+-                            continue block0;
+-                        }
+-                    }
+-                    if (tile.getEnergy() >= adaptedUse && (block = Block.func_149634_a((Item)stack.func_77973_b())) != Blocks.field_150350_a) {
+-                        IBlockState state = block.getStateForPlacement(tile.getWorldObject(), hitPos, EnumFacing.UP, 0.0f, 0.0f, 0.0f, stack.func_77960_j(), (EntityLivingBase)FakePlayerFactory.getMinecraft((WorldServer)((WorldServer)tile.getWorldObject())), EnumHand.MAIN_HAND);
+-                        tile.getWorldObject().func_180501_a(hitPos, state, 2);
+-                        tile.getWorldObject().func_175718_b(2001, hitPos, Block.func_176210_f((IBlockState)state));
+-                        tile.extractEnergy(adaptedUse);
+-                    }
++        NonNullList stacks;
++        WeightedOre ore;
++        if (tile.getWorldObject().func_175623_d(hitPos)) {
++            return false;
++        }
++        if (tile.getEnergy() < ConfigIntValues.MINING_LENS_USE.getValue()) {
++            return true;
++        }
++        int adaptedUse = ConfigIntValues.MINING_LENS_USE.getValue();
++        List ores = null;
++        Block hitBlock = hitState.func_177230_c();
++        if (hitBlock == Blocks.field_150377_bs) {
++            ores = ActuallyAdditionsAPI.STONE_ORES;
++            adaptedUse += 10000;
++        } else if (hitBlock instanceof BlockNetherrack) {
++            ores = ActuallyAdditionsAPI.NETHERRACK_ORES;
++        }
++        if (ores == null) {
++            return true;
++        }
++        int totalWeight = WeightedRandom.func_76272_a((List)ores);
++        ItemStack stack = null;
++        boolean found = false;
++        block0: while (!found) {
++            ore = (WeightedOre)WeightedRandom.func_76273_a((Random)tile.getWorldObject().field_73012_v, (List)ores, (int)totalWeight);
++            if (ore == null || (stacks = OreDictionary.getOres((String)ore.name, (boolean)false)) == null || stacks.isEmpty()) continue;
++            for (ItemStack aStack : stacks) {
++                if (!StackUtil.isValid((ItemStack)aStack) || CrusherRecipeRegistry.hasBlacklistedOutput((ItemStack)aStack, (String[])ConfigStringListValues.MINING_LENS_BLACKLIST.getValue()) || !(aStack.func_77973_b() instanceof ItemBlock)) continue;
++                if (ConfigBoolValues.MINING_LENS_ADAPTED_USE.isEnabled()) {
++                    adaptedUse += (totalWeight - ore.field_76292_a) % 40000;
+                 }
++                stack = aStack;
++                found = true;
++                continue block0;
+             }
+-            return true;
+         }
+-        return false;
++        if (tile.getEnergy() >= adaptedUse && (ore = Block.func_149634_a((Item)stack.func_77973_b())) != Blocks.field_150350_a) {
++            stacks = ore.getStateForPlacement(tile.getWorldObject(), hitPos, EnumFacing.UP, 0.0f, 0.0f, 0.0f, stack.func_77960_j(), (EntityLivingBase)FakePlayerFactory.getMinecraft((WorldServer)((WorldServer)tile.getWorldObject())), EnumHand.MAIN_HAND);
++            tile.getWorldObject().func_180501_a(hitPos, (IBlockState)stacks, 2);
++            tile.getWorldObject().func_175718_b(2001, hitPos, Block.func_176210_f((IBlockState)stacks));
++            tile.extractEnergy(adaptedUse);
++        }
++        return true;
+     }
+ 
+     public float[] getColor() {

@@ -99,18 +99,15 @@ craft.remake(<actuallyadditions:item_drill_upgrade_silk_touch>, ["pretty",
   "A": <actuallyadditions:item_misc:8>, # Advanced Coil
 });
 
-# [Lens of the Miner] from [Lens of Color][+7]
+# [Lens of the Miner] from [Lens of Color][+3]
 craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
-  "N E ⌃",
+  "* E *",
   "E L E",
-  "e V ♥"], {
-  "⌃": <ore:oreNetherChargedCertusQuartz>,  # Nether Charged Certus Quartz Ore
+  "* D *"], {
+  "*": <actuallyadditions:block_crystal:3>, # Void Crystal Block
   "E": <cyclicmagic:exp_pylon>,             # Experience Pylon
-  "♥": <ore:oreNetherRedstone>,             # Nether Redstone Ore
-  "e": <ore:oreNetherDiamond>,              # Nether Diamond Ore
-  "V": <actuallyadditions:block_miner>,     # Vertical Digger
   "L": <actuallyadditions:item_color_lens>, # Lens of Color
-  "N": <ore:oreNetherEmerald>,              # Nether Emerald Ore
+  "D": <actuallyadditions:item_drill:*>,    # Drill
 });
 
 # [Experience_Solidifier] from [Advanced_Coil][+2]
