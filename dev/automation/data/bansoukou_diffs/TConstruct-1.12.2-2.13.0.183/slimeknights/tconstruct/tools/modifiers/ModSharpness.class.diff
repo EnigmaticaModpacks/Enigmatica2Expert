@@ -1,0 +1,27 @@
+diff --git "a/~bansoukou_unpatched\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java" "b/bansoukou\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java"
+index 4c1377e5b..f09a9734a 100644
+--- "a/~bansoukou_unpatched\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java"
++++ "b/bansoukou\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java"
+@@ -36,18 +36,11 @@ extends ToolModifier {
+         ModifierNBT.IntegerNBT data = ModifierNBT.readInteger((NBTTagCompound)modifierTag);
+         ToolNBT toolData = TagUtil.getOriginalToolStats((NBTTagCompound)rootCompound);
+         float attack = toolData.attack;
+-        int level = data.current / this.max;
+-        for (int count = data.current; count > 0; --count) {
+-            if (attack <= 10.0f) {
+-                attack += 0.05f - 0.025f * attack / 10.0f;
+-                continue;
+-            }
+-            attack = attack <= 20.0f ? (float)((double)attack + ((double)0.025f - 0.01 * (double)attack / 20.0)) : (float)((double)attack + 0.015);
+-        }
+-        attack += (float)level * 0.25f;
+-        NBTTagCompound tag = TagUtil.getToolTag((NBTTagCompound)rootCompound);
++        float level = (float)data.current / (float)this.max;
++        attack += attack * (level * level * level * level / (20.0f * 20.0f * 20.0f * 20.0f / 8.0f)) + level * 0.1f * attack + level;
++        NBTTagCompound nBTTagCompound = TagUtil.getToolTag((NBTTagCompound)rootCompound);
+         attack -= toolData.attack;
+-        tag.func_74776_a("Attack", attack += tag.func_74760_g("Attack"));
++        nBTTagCompound.func_74776_a("Attack", attack += nBTTagCompound.func_74760_g("Attack"));
+     }
+ 
+     public String getTooltip(NBTTagCompound modifierTag, boolean detailed) {
