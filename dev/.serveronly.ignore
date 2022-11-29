@@ -83,6 +83,7 @@ mods/*.jar
 !mods/RenderLib-*
 !mods/Nothirium-*
 !mods/SmoothFont-*
+!mods/DefaultWorldGenerator-*
 
 #Not sure
 # !mods/gendustryjei*
