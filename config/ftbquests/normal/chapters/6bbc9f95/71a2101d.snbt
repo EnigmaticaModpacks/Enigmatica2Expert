@@ -1,0 +1,28 @@
+{
+	x: 2.45d,
+	y: 4.75d,
+	text: [
+		"Lectern is Thaunamicon but in block form."
+	],
+	dependencies: [
+		"57594779"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "d21e823c",
+		type: "item",
+		items: [{
+			item: "thaumadditions:thaumic_lectern"
+		}]
+	}],
+	rewards: [{
+		uid: "d9ad1ca4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -11,12 +11,6 @@
 		count: 4
 	},
 	{
-		item: {
-			id: "scannable:module_block",
-			tag: {
-				meta: 0,
-				block: "mekanism:oreblock"
-			}
-		}
+		item: "mysticalagriculture:osmium_essence"
 	}]
 }

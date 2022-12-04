@@ -1,5 +1,6 @@
 {
 	title: "{q.gates.gate_ex_nihilo.name}",
+	icon: "exnihilocreatio:block_sieve",
 	x: 7.5d,
 	y: 0.5d,
 	text: [
@@ -14,13 +15,16 @@
 		items: [{
 			item: "exnihilocreatio:block_sieve"
 		}]
-	}],
-	rewards: [{
-		uid: "719a0291",
-		type: "item",
-		item: "exnihilocreatio:item_mesh 1 1"
 	},
 	{
+		uid: "57ac9254",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_dust"
+		}],
+		count: 6L
+	}],
+	rewards: [{
 		uid: "65d056d8",
 		type: "item",
 		item: "excompressum:double_compressed_diamond_hammer"
