@@ -2,48 +2,39 @@
 
 List of priorities:
 
-- [x] ✏️ Integrate Alluring Fishhook
-- [x] ✏️ Buff Battle Kit
-- [x] ✏️ Scaffold IC2 cheaper
-- [x] ✏️ Change stone to Liquid Glass + Fiery + Dirt => Lava
-- [x] ✏️ Buff Hellbark to Lava recipe
-- [x] ✏️ Replace Recipe Any Dirt + Any Water => Mud (+EIO tank)
-- [x] ✏️ Golems should drop Essense instead of nuggets
-- [x] ✏️ Infinity Dust add craft
-- [x] ✏️ Make Osmium by right-clicking osmium essence
-- [x] ✏️ `ic2:crafting#carbon_mesh` remove shapeless recipe
 - [ ] ✏️ Add Compressed `White Sand`, `Red Sand`, `Dried Sand`, `Gravisand`
-- [x] ✏️ IE excavator shouldn't require silver
-- [x] ✏️ unattach quests from advancements
-- [x] ✏️ Change Mining Levels for End- and Nether- ores
 - [ ] ✏️ Add craft mechanic - Mud Ball hit something (humilate)
-- [ ] ✏️ Asphalt Concrete make from any water tank
+- [x] ✏️ Asphalt Concrete make from any water tank
+- [x] ✏️ Refined Obsidian / Glowstone should be harder to melt
+- [ ] ✏️ Compressed Block remove too much aspects
+- [ ] ✏️ Enthropy stone add usage
+- [x] ✏️ Enderemus: add String sieve craft
+- [x] ✏️ Spear cheaper
+- [x] ✏️ Add Custom Recipes to Hedge Alchemy thaunomicon tab
+- [ ] ✏️ Cocoon Of Caprice cheaper and quest book page
+- [ ] ✏️ Petrotheum `Conflux I` craft
+- [ ] ✏️ Add gold source in peaceful skyblock (probably Sifting Garbage Piles)
+- [ ] ✏️ Hovering Hourglass cheaper, introduce earlier
 - [ ] 🔄 Check why block overrides not working for NetherEnding ores
+- [ ] 🔄 Modular Machinery multiblocks not in JEI
 - [ ] 📀 FoxHound: Add Quest entry, Speed up furnace https://github.com/VazkiiMods/Quark/blob/1.12/src/main/java/vazkii/quark/world/entity/EntityFoxhound.java#L137
-- [ ] 📀 Change Quartz modifier to `(n + 1) * 1.05`
-- [ ] 📀 Buff dev/null/ to hold more then 64 blocks
 - [ ] 📀 Buff Porous Stone output
-- [ ] 📀 Buff AA rings (bansoukou) to encrease capacity and blaze output
+- [ ] 📀 Buff AA rings to encrease capacity and blaze output
 - [ ] 📀 Remove automatic IE armor recycling to speed up game load
-- [ ] 📀 Remove automatic EnderIO tank registry
+- [ ] 📀 Remove automatic JEI registry for: `EnderIO tank`, `Forestry Squeezer`, `IC2 Jetpack Attachment`
 - [ ] 📀 Buff AA Bio Reactor
 - [ ] 📀 Return Rain Tank from forestry but make it extremely fast
 - [ ] 📀 Scaling Health should increase health exponentially, not linear
+- [ ] 📀 Fix Bedrock Ore not working command
 - [ ] 🟢 Add **better-fusion-reactor-for-mekanism**
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
-- [ ] 🟢 Add **universal-tweaks**
 - [ ] 🧻 JEI: add golem drops to list
-- [ ] 📖 Add Osmium Essence in quest for Osmium
+- [x] 🧻 Brocken Enderemus: add drop in Block Drops
+- [x] 📖 Add Osmium Essence in quest for Osmium
 - [ ] 📖 Add notification about finishing mod chapter based on stats
 - [ ] 📖 Add any sharpening kit to quest for harvest level
-- [x] 📖 Add info about osmium 1 per chunk
-- [x] 📖 Add quiver in Combat kit
-- [x] 📖 Add Primordial Grain to JEI and book
-- [x] 📖 Drill upgrades in AA quest lines
-- [x] 📖 End Steel Armor quest fix loot chest
-- [x] 📖 Remove Torches from Certus Quartz reward
 - [ ] 📖 Icon of "Pick Reward" quest can have amounts by `"icon":` prop
 - [ ] 🌿 Add Patchouli book page with sorted UU values
 
@@ -55,6 +46,7 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📀 Buff dev/null/ to hold more then 64 blocks
 - [ ] 📖 Add little tiles fancy chest with lot of space
 - [ ] 📖 Fix "5.12E11d" strings in .ts code
 - [ ] 📖 Add mobs in Mek's gear

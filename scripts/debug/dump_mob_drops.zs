@@ -70,13 +70,15 @@ static blacklistedIDs as string[] = [
 ] as string[];
 
 events.onEntityLivingAttacked(function(e as crafttweaker.event.EntityLivingAttackedEvent){
-  if(e.entity.world.remote) return;
+  if(isNull(e.entity) || e.entity.world.remote) return;
   if(!e.damageSource.trueSource instanceof IPlayer) return;
   if(!e.damageSource.creativePlayer) return;
 
   val player as IPlayer = e.damageSource.trueSource;
 
   if(
+    isNull(e.entity.definition) ||
+    isNull(e.entity.definition.id) ||
     e.entity.definition.id != 'minecraft:giant'
   ) return;
 

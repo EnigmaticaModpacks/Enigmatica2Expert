@@ -1,1 +1,5 @@
+[Client thread/WARN] [mixin]: @ModifyConstant conflict. Skipping mixins.plustweaks.json:MixinBlockCactus->@ModifyConstant::modifyConstant_BlockCactus(I)I with priority 1000, already redirected by mixins.tweaks.plantables.json:UTCactusSizeMixin->@ModifyConstant::utCactusSize(I)I with priority 1000
+[Client thread/WARN] [mixin]: @ModifyConstant conflict. Skipping mixins.plustweaks.json:MixinBlockReed->@ModifyConstant::modifyConstant_BlockReed(I)I with priority 1000, already redirected by mixins.tweaks.plantables.json:UTSugarCaneSizeMixin->@ModifyConstant::utSugarCaneSize(I)I with priority 1000
+[Client thread/WARN] [mixin]: @Final field field_147697_e:Lnet/minecraft/client/audio/SoundRegistry; in mixins.tweaks.audioreload.json:UTAudioReloadMixin should be final
+[Client thread/WARN] [mixin]: @Final field field_147698_b:Lorg/apache/logging/log4j/Logger; in mixins.tweaks.audioreload.json:UTAudioReloadMixin should be final
 [Client thread/WARN] [ReAuth]: Some Certificates required for authentication are untrusted by default
