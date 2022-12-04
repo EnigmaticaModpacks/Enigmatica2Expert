@@ -159,28 +159,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Refined Glowstone] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>mekanism:dust 1 2</itemStack>
-			<fluidStack>glowstone 250</fluidStack>
-		</input>
-		<output>
-			<fluidStack>refined_glowstone 144</fluidStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Molten Refined Obsidian] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<itemStack>thermalfoundation:material 1 770</itemStack>
-			<fluidStack>diamond 66</fluidStack>
-		</input>
-		<output>
-			<fluidStack>refined_obsidian 144</fluidStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Quicksand] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

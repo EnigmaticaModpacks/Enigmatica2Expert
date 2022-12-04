@@ -434,7 +434,7 @@ craft.remake(<immersivepetroleum:stone_decoration> * 12, [
 	A: <ore:itemSlag>,
 	B: <ore:bitumen>,
 	C: <ore:gravel>,
-	D: Bucket("water"),
+	D: <fluid:water> * 1000,
 });
 craft.remake(<immersivepetroleum:stone_decoration> * 8, [
 	"ABA",
@@ -443,7 +443,7 @@ craft.remake(<immersivepetroleum:stone_decoration> * 8, [
 	A: <ore:sand>,
 	B: <ore:bitumen>,
 	C: <ore:gravel>,
-	D: Bucket("water"),
+	D: <fluid:water> * 1000,
 });
 
 # [Portable_Drill] from [Bedrock_Miner][+2]

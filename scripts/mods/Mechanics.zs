@@ -80,17 +80,21 @@ craft.remake(<mechanics:empty_rod>, ["pretty",
 # Harder Refined obsidian and glowstone recipes
 # ----------------------------------
 
-# Remove melting in Smeltery
-mods.tconstruct.Melting.removeRecipe(<liquid:refined_obsidian>);
-mods.tconstruct.Melting.removeRecipe(<liquid:refined_glowstone>);
-
-# Remove melting in other machines
+# Remove melting in NC Melter
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 144);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 144);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
 mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
+
+# Add IE Melting Crucible recipes
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_obsidian>  *   16, <ore:nuggetRefinedObsidian>,  1600, 4);
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_glowstone> *   16, <ore:nuggetRefinedGlowstone>, 1600, 4);
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_obsidian>  *  144, <ore:ingotRefinedObsidian>,   14400, 40);
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_glowstone> *  144, <ore:ingotRefinedGlowstone>,  14400, 40);
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_obsidian>  * 1296, <ore:blockRefinedObsidian>,   129600, 400);
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_glowstone> * 1296, <ore:blockRefinedGlowstone>,  129600, 400);
 
 # Add recipes for high-end machines
 scripts.process.melt(<ore:nuggetRefinedObsidian>, <liquid:refined_obsidian>  *   16, "only: Crucible");
@@ -99,10 +103,6 @@ scripts.process.melt(<ore:ingotRefinedObsidian>,  <liquid:refined_obsidian>  *  
 scripts.process.melt(<ore:ingotRefinedGlowstone>, <liquid:refined_glowstone> *  144, "only: Crucible");
 scripts.process.melt(<ore:blockRefinedObsidian>,  <liquid:refined_obsidian>  * 1296, "only: Crucible");
 scripts.process.melt(<ore:blockRefinedGlowstone>, <liquid:refined_glowstone> * 1296, "only: Crucible");
-
-# Add advanced liquid recipes
-scripts.process.solution([<thermalfoundation:material:770>], [<liquid:diamond> * 66], [<liquid:refined_obsidian> * 144], null, "except: vat");
-scripts.process.solution([<mekanism:dust:2>], [<liquid:glowstone> * 250], [<liquid:refined_glowstone> * 144], null, "except: vat");
 
 // 
 // Mystical Agriadditions metling recipes probably added

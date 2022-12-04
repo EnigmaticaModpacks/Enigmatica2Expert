@@ -285,7 +285,16 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.3,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 2,
+            "name": "exnihilocreatio:item_ore_nickel",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.6,
             "rolls": 1
           },
           {
@@ -303,7 +312,16 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.3,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 2,
+            "name": "jaopca:item_pieceboron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.6,
             "rolls": 1
           },
           {
@@ -330,7 +348,16 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.4,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "exnihilocreatio:item_ore_nickel",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.8,
             "rolls": 1
           },
           {
@@ -348,7 +375,16 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.4,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "jaopca:item_pieceboron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.8,
             "rolls": 1
           },
           {
@@ -420,7 +456,16 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.5,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "jaopca:item_pieceboron",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 1,
             "rolls": 1
           },
           {

@@ -582,11 +582,10 @@ scripts.process.squeeze([<iceandfire:jungle_myrmex_cocoon>  ], <liquid:resin>*48
 # Add recipe because snow villages is disabled
 # [Fishing Spear] from [Steel Arrow Head][+2]
 craft.remake(<iceandfire:fishing_spear>, ["pretty",
-  "S w  ",
-  "w M  ",
+  "S    ",
+  "  M  ",
   "    M"], {
   "S": <tconstruct:arrow_head>.withTag({Material: "steel"}), # Steel Arrow Head
-  "w": <ore:woolPrime>, # Wool (Dorset, Brown)
   "M": <extrautils2:decorativesolidwood>, # Magical Planks
 });
 

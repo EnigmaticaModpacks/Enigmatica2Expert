@@ -161,6 +161,16 @@ craft.make(<thaumcraft:brain> * 8, ["pretty",
   "T": <mysticalagriculture:zombie_essence>, # Zombie Essence
 });
 
+# [Thaumonomicon Lectern] from [Lectern][+2]
+craft.remake(<thaumadditions:thaumic_lectern>, ["pretty",
+  "  T  ",
+  "# L #",
+  "# # #"], {
+  "T": <thaumcraft:thaumonomicon>,  # Thaumonomicon
+  "#": <thaumcraft:slab_greatwood>, # Greatwood Slab
+  "L": <iceandfire:lectern>,        # Lectern
+});
+
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗
 ██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝██╔══██╗██╔════╝████╗  ██║██╔════╝██║  ██║

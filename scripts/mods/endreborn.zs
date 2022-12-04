@@ -241,6 +241,12 @@ craft.remake(<endreborn:dragon_essence> * 8, ["pretty",
   "i": <mysticalagriculture:guardian_essence>, # Guardian Essence
 });
 
+# [Enderemus] from [Crushed Endstone][+1]
+craft.reshapeless(<endreborn:crop_ender_flower>, "C‚", {
+  "C": <exnihilocreatio:block_endstone_crushed>, # Crushed Endstone
+  "‚": <ore:itemEnderFragment>,
+});
+
 
 # Purpur guards are disables, so make Purpur Shards craftable
 mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);
