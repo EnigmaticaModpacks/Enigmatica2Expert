@@ -217,6 +217,10 @@ export async function init(h = defaultHelper, options = argv) {
   */
   await h.begin('Heavy Sieve automatically recipes')
   const blocksToCopy = [
+    ['biomesoplenty:dried_sand', 'contenttweaker:compressed_dried_sand'],
+    ['quark:gravisand', 'contenttweaker:compressed_gravisand'],
+    ['minecraft:sand:1', 'contenttweaker:compressed_red_sand'],
+    ['biomesoplenty:white_sand', 'contenttweaker:compressed_white_sand'],
     ['exnihilocreatio:block_skystone_crushed', 'contenttweaker:compressed_crushed_skystone'],
     ['rats:garbage_pile', 'contenttweaker:compressed_garbage_pile'],
     ['enderio:block_infinity', 'enderio:block_infinity:1'],

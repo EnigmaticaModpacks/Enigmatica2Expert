@@ -23,7 +23,7 @@ for i in 0 .. 13 {
 	[<minecraft:stone>, null, <minecraft:stone>], 
 	[<minecraft:stone>, <ore:obsidian>, <minecraft:stone>]]);
 
-# Normal -> Crushed -> Compressed -> Crushed Compressed
+# Normal -> Crushed -> Compressed -> Crushed Compressed -> Double Crushed
 val crushingInMachines = [
 	[<minecraft:netherrack>               , <exnihilocreatio:block_netherrack_crushed>],
 	[<minecraft:sand>                     , <exnihilocreatio:block_dust>              ],
@@ -34,6 +34,10 @@ val crushingInMachines = [
 	[<minecraft:stone:1>                  , <exnihilocreatio:block_granite_crushed> , <contenttweaker:compressed_granite>,  <contenttweaker:compressed_crushed_granite>],
 	[<appliedenergistics2:sky_stone_block>, <exnihilocreatio:block_skystone_crushed>, <contenttweaker:compressed_skystone>, <contenttweaker:compressed_crushed_skystone>],
 	[<rats:garbage_pile>                  , null                                    , <contenttweaker:compressed_garbage_pile>],
+	[<biomesoplenty:dried_sand>	          , null                                    , <contenttweaker:compressed_dried_sand>],
+	[<quark:gravisand>         	          , null                                    , <contenttweaker:compressed_gravisand> ],
+	[<minecraft:sand:1>        	          , null                                    , <contenttweaker:compressed_red_sand>  ],
+	[<biomesoplenty:white_sand>	          , null                                    , <contenttweaker:compressed_white_sand>],
 ] as IItemStack[][];
 for i, inputArr in crushingInMachines {
 	val normal     = inputArr[0];
@@ -47,10 +51,11 @@ for i, inputArr in crushingInMachines {
 		if(inputArr.length >= 4) {
 			val crushComps = inputArr[3];
 			utils.compact(crushed, crushComps);
-			scripts.process.crush(compressed, crushed * 9, "only: SagMill", null, null);
+			scripts.process.crush(compressed, crushed * 9, "only: SagMill");
 
 			if(inputArr.length >= 5) {
-				scripts.process.crush(crushComps, inputArr[4] * 9, "only: SagMill Pulverizer", null, null);
+				val doubleCrushed = inputArr[4];
+				scripts.process.crush(crushComps, doubleCrushed * 9, "only: SagMill Pulverizer");
 			}
 		}
 	}

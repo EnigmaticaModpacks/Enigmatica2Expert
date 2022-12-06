@@ -73,6 +73,10 @@ createBlockStone("compressed_crushed_skystone", 5, <blockmaterial:rock>);
 createBlockStone("compressed_crushed_andesite", 3, <blockmaterial:rock>);
 createBlockStone("compressed_crushed_diorite" , 3, <blockmaterial:rock>);
 createBlockStone("compressed_crushed_granite" , 3, <blockmaterial:rock>);
+createBlockStone("compressed_dried_sand"      , 3, <blockmaterial:rock>);
+createBlockStone("compressed_gravisand"       , 5, <blockmaterial:rock>);
+createBlockStone("compressed_red_sand"        , 3, <blockmaterial:rock>);
+createBlockStone("compressed_white_sand"      , 3, <blockmaterial:rock>);
 
 createBlockStone("terrestrial_artifact_block", 9, <blockmaterial:rock>);
 createBlockStone("silicon_block", 4, <blockmaterial:rock>);
