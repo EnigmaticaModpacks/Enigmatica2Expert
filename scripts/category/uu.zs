@@ -4,6 +4,20 @@
 
 import crafttweaker.item.IItemStack;
 
+/*Patchouli_js('Items/UU', paged({
+    title: 'Sorted Replicables',
+    icon: 'ic2:misc_resource:3',
+    type : 'grid',
+  },
+  matchBetween(
+      loadText('config/IC2.ini'),
+      '[balance / uu-values / predefined]',
+      '\r\n\r\n',
+      /^(\w+:[^=\s#]+)\s*=\s*(\d+)(?:.*)/gm
+    )
+    .sort((a, b) => Number(a[2]) - Number(b[2]))
+    .map(([,item])=>item.replace('@',':'))
+))*/
 
 static values as int[int][string] = {
   "teslacorelib:base_addon": { 0: 100 },
