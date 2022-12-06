@@ -114,4 +114,17 @@
 			<itemStack>avaritia:resource 1 1</itemStack>
 		</output>
 	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Energy Relay Crystal] -->
+	<Recipe timeRequired="20" power="8000000">
+		<input>
+			<itemStack>advancedrocketry:vacuumlaser 1</itemStack>
+			<oreDict>ingotMithril 1</oreDict>
+			<oreDict>ingotCyanite 1</oreDict>
+			<oreDict>ingotFluixSteel 1</oreDict>
+		</input>
+		<output>
+			<itemStack>draconicevolution:energy_crystal 4</itemStack>
+		</output>
+	</Recipe>
 </Recipes>

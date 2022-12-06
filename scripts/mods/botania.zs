@@ -382,3 +382,26 @@ val metStones = [
 for stone in metStones {
 	scripts.jei.crafting_hints.addInsOutCatl([<minecraft:stone:*>], stone, <botania:specialflower>.withTag({type: "marimorphosis"}));
 }
+
+// Way cheaper because all mods ca spawn vanilla animals
+# [Cocoon of Caprice]*4 from [Pumpkin][+2]
+craft.remake(<botania:cocoon> * 4, ["pretty",
+  "W B W",
+  "W P W",
+  "W B W"], {
+  "W": <ore:petalWhite>,                    # Mystical White Petal
+  "B": <actuallyadditions:item_hairy_ball>, # Ball of Fur
+  "P": <ore:cropPumpkin>,                   # Pumpkin
+});
+
+// Cheaper to compete other timers
+# [Hovering Hourglass] from [Redstone Torch][+3]
+craft.remake(<botania:hourglass>, ["pretty",
+  "G ‚ G",
+  "W ♥ W",
+  "G ‚ G"], {
+  "G": <ore:paneGlass>, # Glass Pane
+  "‚": <ore:nuggetGold>, # Gold Nugget
+  "W": <ore:petalWhite>, # Mystical White Petal
+  "♥": <ore:torchRedstoneActive>, # Redstone Torch
+});

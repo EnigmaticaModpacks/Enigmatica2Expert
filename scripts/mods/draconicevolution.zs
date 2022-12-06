@@ -110,6 +110,10 @@ recipes.removeShaped(<draconicevolution:energy_crystal>);
 mods.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
 	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, utils.tryCatch("threng:material", <nuclearcraft:alloy:15>),
 ], 2000, 200, 2);
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
+	<advancedrocketry:vacuumlaser>, <ore:ingotMithril>, <ore:ingotCyanite>, <ore:ingotFluixSteel>,
+], null, [<draconicevolution:energy_crystal> * 4], null, {power: 8000000, timeRequired: 20});
+
 
 # [Dislocator] from [Chorus Glass][+3]
 craft.remake(<draconicevolution:dislocator>, ["pretty",

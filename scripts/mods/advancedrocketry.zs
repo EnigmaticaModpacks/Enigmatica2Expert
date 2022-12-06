@@ -417,3 +417,16 @@ craft.remake(<advancedrocketry:lens>, ["pretty",
   "⌃   ⌃"], {
   "⌃": <appliedenergistics2:quartz_glass>, # Quartz Glass
 });
+
+# [Vacuum-Chamber High Power Laser Emitter] from [Advanced Machine Structure][+5]
+craft.remake(<advancedrocketry:vacuumlaser>, ["pretty",
+  "Y R O",
+  "L ⌂ L",
+  "T T T"], {
+  "Y": <advancedrocketry:crystal:4>, # Yellow Crystal Block
+  "R": <advancedrocketry:crystal:3>, # Red Crystal Block
+  "O": <advancedrocketry:crystal:5>, # Orange Crystal Block
+  "L": <advancedrocketry:blocklens>, # Lens
+  "⌂": <ore:casingCentrifuge>,       # Advanced Machine Structure
+  "T": <ore:sheetTitaniumIridium>,   # Titanium Iridium Alloy Sheet
+});
