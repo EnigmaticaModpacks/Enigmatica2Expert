@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "ic2:upgrade 8",
 		item: "ic2:upgrade",
 		count: 8
 	},
 	{
+		icon: "minecraft:iron_ore 32",
 		item: "minecraft:iron_ore",
 		count: 32
 	},
 	{
+		icon: "ic2:crafting 64",
 		item: "ic2:crafting",
 		count: 64
 	}]

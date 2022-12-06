@@ -4,6 +4,7 @@
 		item: "cyclicmagic:sword_slowness"
 	},
 	{
+		icon: "twilightforest:alpha_fur 16",
 		item: "twilightforest:alpha_fur",
 		count: 16
 	},

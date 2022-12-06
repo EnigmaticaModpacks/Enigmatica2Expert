@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "minecraft:snowball 64",
 		item: "minecraft:snowball",
 		count: 64
 	},
 	{
+		icon: "minecraft:ice 16",
 		item: "minecraft:ice",
 		count: 16
 	},
 	{
+		icon: "biomesoplenty:hard_ice 16",
 		item: "biomesoplenty:hard_ice",
 		count: 16
 	}]

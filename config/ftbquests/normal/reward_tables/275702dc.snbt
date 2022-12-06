@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "openblocks:beartrap 4",
 		item: "openblocks:beartrap",
 		count: 4
 	},
 	{
+		icon: "openblocks:fan 3",
 		item: "openblocks:fan",
 		count: 3
 	},
 	{
+		icon: "openblocks:sprinkler 2",
 		item: "openblocks:sprinkler",
 		count: 2
 	}]

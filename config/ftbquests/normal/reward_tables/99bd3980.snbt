@@ -1,22 +1,27 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "quark:custom_chest 4",
 		item: "quark:custom_chest",
 		count: 4
 	},
 	{
+		icon: "quark:custom_chest 4 1",
 		item: "quark:custom_chest 1 1",
 		count: 4
 	},
 	{
+		icon: "quark:custom_chest 4 2",
 		item: "quark:custom_chest 1 2",
 		count: 4
 	},
 	{
+		icon: "quark:custom_chest 4 3",
 		item: "quark:custom_chest 1 3",
 		count: 4
 	},
 	{
+		icon: "quark:custom_chest 4 4",
 		item: "quark:custom_chest 1 4",
 		count: 4
 	}]

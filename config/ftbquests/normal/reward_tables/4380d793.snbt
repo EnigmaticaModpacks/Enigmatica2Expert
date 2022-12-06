@@ -23,10 +23,12 @@
 		item: "extrautils2:passivegenerator 1 8"
 	},
 	{
+		icon: "extrautils2:passivegenerator 10 5",
 		item: "extrautils2:passivegenerator 1 5",
 		count: 10
 	},
 	{
+		icon: "extrautils2:passivegenerator 10 4",
 		item: "extrautils2:passivegenerator 1 4",
 		count: 10
 	},
@@ -39,10 +41,12 @@
 		}
 	},
 	{
+		icon: "thaumcraft:vis_generator 4",
 		item: "thaumcraft:vis_generator",
 		count: 4
 	},
 	{
+		icon: "thaumicaugmentation:impetus_generator 2",
 		item: "thaumicaugmentation:impetus_generator",
 		count: 2
 	},
@@ -181,14 +185,17 @@
 		item: "rftools:coalgenerator"
 	},
 	{
+		icon: "rftools:endergenic 64",
 		item: "rftools:endergenic",
 		count: 64
 	},
 	{
+		icon: "appliedenergistics2:crafting_unit 8",
 		item: "appliedenergistics2:crafting_unit",
 		count: 8
 	},
 	{
+		icon: "draconicevolution:energy_crystal 12 3",
 		item: "draconicevolution:energy_crystal 1 3",
 		count: 12
 	},
@@ -196,6 +203,7 @@
 		item: "rftools:powercell_simple"
 	},
 	{
+		icon: "botania:blacklotus 64 1",
 		item: "botania:blacklotus 1 1",
 		count: 64
 	},
@@ -203,18 +211,22 @@
 		item: "nuclearcraft:water_source_dense"
 	},
 	{
+		icon: "advgenerators:turbine_iron 16",
 		item: "advgenerators:turbine_iron",
 		count: 16
 	},
 	{
+		icon: "advgenerators:turbine_kit_bronze 8",
 		item: "advgenerators:turbine_kit_bronze",
 		count: 8
 	},
 	{
+		icon: "advgenerators:turbine_kit_adv_alloy 4",
 		item: "advgenerators:turbine_kit_adv_alloy",
 		count: 4
 	},
 	{
+		icon: "advgenerators:turbine_kit_manyullyn 2",
 		item: "advgenerators:turbine_kit_manyullyn",
 		count: 2
 	},
@@ -228,6 +240,7 @@
 		item: "advgenerators:steam_turbine_controller"
 	},
 	{
+		icon: "nuclearcraft:cobblestone_generator_compact 3",
 		item: "nuclearcraft:cobblestone_generator_compact",
 		count: 3
 	},
@@ -235,6 +248,7 @@
 		item: "nuclearcraft:cobblestone_generator_dense"
 	},
 	{
+		icon: "nuclearcraft:helium_collector_compact 3",
 		item: "nuclearcraft:helium_collector_compact",
 		count: 3
 	},
@@ -242,6 +256,7 @@
 		item: "nuclearcraft:helium_collector_dense"
 	},
 	{
+		icon: "nuclearcraft:nitrogen_collector_compact 3",
 		item: "nuclearcraft:nitrogen_collector_compact",
 		count: 3
 	},
@@ -249,6 +264,7 @@
 		item: "nuclearcraft:nitrogen_collector_dense"
 	},
 	{
+		icon: "thermaldynamics:duct_0 32 5",
 		item: "thermaldynamics:duct_0 1 5",
 		count: 32
 	},

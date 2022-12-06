@@ -1,10 +1,12 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "mekanism:speedupgrade 8",
 		item: "mekanism:speedupgrade",
 		count: 8
 	},
 	{
+		icon: "mekanism:energyupgrade 8",
 		item: "mekanism:energyupgrade",
 		count: 8
 	}]

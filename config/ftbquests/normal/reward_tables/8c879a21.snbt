@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "thermalfoundation:material 32 163",
 		item: "thermalfoundation:material 1 163",
 		count: 32
 	},
 	{
+		icon: "actuallyadditions:block_shock_suppressor 2",
 		item: "actuallyadditions:block_shock_suppressor",
 		count: 2
 	},
 	{
+		icon: "forestry:sturdy_machine 4",
 		item: "forestry:sturdy_machine",
 		count: 4
 	}]

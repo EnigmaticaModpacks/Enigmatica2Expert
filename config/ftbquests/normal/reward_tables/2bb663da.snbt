@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "farmingforblockheads:fertilizer 64",
 		item: "farmingforblockheads:fertilizer",
 		count: 64
 	},
 	{
+		icon: "farmingforblockheads:fertilizer 64 1",
 		item: "farmingforblockheads:fertilizer 1 1",
 		count: 64
 	},
 	{
+		icon: "farmingforblockheads:fertilizer 64 2",
 		item: "farmingforblockheads:fertilizer 1 2",
 		count: 64
 	}]

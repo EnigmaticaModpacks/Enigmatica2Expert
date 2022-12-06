@@ -12,6 +12,7 @@
 		item: "randomthings:blockdestabilizer"
 	},
 	{
+		icon: "randomthings:grassseeds 64 6",
 		item: "randomthings:grassseeds 1 6",
 		count: 64
 	}]

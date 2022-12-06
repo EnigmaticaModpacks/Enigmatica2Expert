@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "appliedenergistics2:material 64 10",
 		item: "appliedenergistics2:material 1 10",
 		count: 64
 	},
 	{
+		icon: "appliedenergistics2:material 64 12",
 		item: "appliedenergistics2:material 1 12",
 		count: 64
 	},
 	{
+		icon: "appliedenergistics2:material 64 11",
 		item: "appliedenergistics2:material 1 11",
 		count: 64
 	}]

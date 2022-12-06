@@ -9,6 +9,7 @@
 		}
 	},
 	{
+		icon: "ic2:crafting 8 15",
 		item: "ic2:crafting 1 15",
 		count: 8
 	},

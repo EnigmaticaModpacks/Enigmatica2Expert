@@ -5,10 +5,12 @@
 		item: "storagedrawers:controller"
 	},
 	{
+		icon: "engineersdecor:labeled_crate 8",
 		item: "engineersdecor:labeled_crate",
 		count: 8
 	},
 	{
+		icon: "storagedrawers:compdrawers 2",
 		item: "storagedrawers:compdrawers",
 		count: 2
 	},
@@ -462,38 +464,47 @@
 		}
 	},
 	{
+		icon: "storagedrawers:upgrade_void 16",
 		item: "storagedrawers:upgrade_void",
 		count: 16
 	},
 	{
+		icon: "storagedrawers:upgrade_one_stack 16",
 		item: "storagedrawers:upgrade_one_stack",
 		count: 16
 	},
 	{
+		icon: "storagedrawers:upgrade_storage 16",
 		item: "storagedrawers:upgrade_storage",
 		count: 16
 	},
 	{
+		icon: "storagedrawers:upgrade_storage 4 2",
 		item: "storagedrawers:upgrade_storage 1 2",
 		count: 4
 	},
 	{
+		icon: "actuallyadditions:item_chest_to_crate_upgrade 2",
 		item: "actuallyadditions:item_chest_to_crate_upgrade",
 		count: 2
 	},
 	{
+		icon: "actuallyadditions:item_small_to_medium_crate_upgrade 2",
 		item: "actuallyadditions:item_small_to_medium_crate_upgrade",
 		count: 2
 	},
 	{
+		icon: "actuallyadditions:item_medium_to_large_crate_upgrade 2",
 		item: "actuallyadditions:item_medium_to_large_crate_upgrade",
 		count: 2
 	},
 	{
+		icon: "ironchest:wood_iron_chest_upgrade 3",
 		item: "ironchest:wood_iron_chest_upgrade",
 		count: 3
 	},
 	{
+		icon: "ironchest:iron_gold_chest_upgrade 2",
 		item: "ironchest:iron_gold_chest_upgrade",
 		count: 2
 	},
@@ -586,10 +597,12 @@
 		item: "enderstorage:ender_storage 1 1"
 	},
 	{
+		icon: "openblocks:tank 8",
 		item: "openblocks:tank",
 		count: 8
 	},
 	{
+		icon: "fluiddrawers:tank 4",
 		item: "fluiddrawers:tank",
 		count: 4
 	},
@@ -597,18 +610,22 @@
 		item: "enderio:block_tank 1 1"
 	},
 	{
+		icon: "aeadditions:certustank 4",
 		item: "aeadditions:certustank",
 		count: 4
 	},
 	{
+		icon: "cyclicmagic:block_storeempty 2",
 		item: "cyclicmagic:block_storeempty",
 		count: 2
 	},
 	{
+		icon: "appliedenergistics2:part 16 76",
 		item: "appliedenergistics2:part 1 76",
 		count: 16
 	},
 	{
+		icon: "integrateddynamics:cable 32",
 		item: "integrateddynamics:cable",
 		count: 32
 	},
@@ -619,6 +636,7 @@
 		item: "mekanism:machineblock 1 13"
 	},
 	{
+		icon: "extrautils2:largishchest 3",
 		item: "extrautils2:largishchest",
 		count: 3
 	}],

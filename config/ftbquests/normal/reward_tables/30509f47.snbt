@@ -20,10 +20,12 @@
 		weight: 48
 	},
 	{
+		icon: "chisel:block_coal_coke1 16 12",
 		item: "chisel:block_coal_coke1 1 12",
 		count: 16
 	},
 	{
+		icon: "chisel:icepillar 64 4",
 		item: "chisel:icepillar 1 4",
 		count: 64
 	},
@@ -31,6 +33,7 @@
 		item: "minecraft:nether_wart_block"
 	},
 	{
+		icon: "chisel:redstone1 8 8",
 		item: "chisel:redstone1 1 8",
 		count: 8
 	},
@@ -38,18 +41,22 @@
 		item: "animania:block_hamster_wheel"
 	},
 	{
+		icon: "animania:wool 16 3",
 		item: "animania:wool 1 3",
 		count: 16
 	},
 	{
+		icon: "bithop:bithop 2",
 		item: "bithop:bithop",
 		count: 2
 	},
 	{
+		icon: "chisel:obsidian 32 13",
 		item: "chisel:obsidian 1 13",
 		count: 32
 	},
 	{
+		icon: "chisel:prismarine 32 6",
 		item: "chisel:prismarine 1 6",
 		count: 32
 	},
@@ -57,70 +64,87 @@
 		item: "cookingforblockheads:cow_jar"
 	},
 	{
+		icon: "excompressum:bait 5 2",
 		item: "excompressum:bait 1 2",
 		count: 5
 	},
 	{
+		icon: "excompressum:bait 5 6",
 		item: "excompressum:bait 1 6",
 		count: 5
 	},
 	{
+		icon: "flopper:flopper 3",
 		item: "flopper:flopper",
 		count: 3
 	},
 	{
+		icon: "minecraft:cactus 64",
 		item: "minecraft:cactus",
 		count: 64
 	},
 	{
+		icon: "minecraft:web 16",
 		item: "minecraft:web",
 		count: 16
 	},
 	{
+		icon: "minecraft:deadbush 64",
 		item: "minecraft:deadbush",
 		count: 64
 	},
 	{
+		icon: "minecraft:end_bricks 8",
 		item: "minecraft:end_bricks",
 		count: 8
 	},
 	{
+		icon: "minecraft:grass 64",
 		item: "minecraft:grass",
 		count: 64
 	},
 	{
+		icon: "minecraft:hay_block 64",
 		item: "minecraft:hay_block",
 		count: 64
 	},
 	{
+		icon: "minecraft:mossy_cobblestone 64",
 		item: "minecraft:mossy_cobblestone",
 		count: 64
 	},
 	{
+		icon: "minecraft:mycelium 64",
 		item: "minecraft:mycelium",
 		count: 64
 	},
 	{
+		icon: "minecraft:observer 8",
 		item: "minecraft:observer",
 		count: 8
 	},
 	{
+		icon: "minecraft:piston 8",
 		item: "minecraft:piston",
 		count: 8
 	},
 	{
+		icon: "minecraft:dirt 64 2",
 		item: "minecraft:dirt 1 2",
 		count: 64
 	},
 	{
+		icon: "minecraft:soul_sand 64",
 		item: "minecraft:soul_sand",
 		count: 64
 	},
 	{
+		icon: "minecraft:sponge 2",
 		item: "minecraft:sponge",
 		count: 2
 	},
 	{
+		icon: "minecraft:tnt 8",
 		item: "minecraft:tnt",
 		count: 8
 	},
@@ -128,34 +152,42 @@
 		item: "openblocks:builder_guide"
 	},
 	{
+		icon: "quark:custom_bookshelf 16 1",
 		item: "quark:custom_bookshelf 1 1",
 		count: 16
 	},
 	{
+		icon: "rats:garbage_pile 16",
 		item: "rats:garbage_pile",
 		count: 16
 	},
 	{
+		icon: "tconstruct:slime_congealed 64 3",
 		item: "tconstruct:slime_congealed 1 3",
 		count: 64
 	},
 	{
+		icon: "tconstruct:slime_congealed 2 2",
 		item: "tconstruct:slime_congealed 1 2",
 		count: 2
 	},
 	{
+		icon: "tconstruct:soil 32 4",
 		item: "tconstruct:soil 1 4",
 		count: 32
 	},
 	{
+		icon: "tconstruct:seared 64 4",
 		item: "tconstruct:seared 1 4",
 		count: 64
 	},
 	{
+		icon: "tconstruct:soil 64",
 		item: "tconstruct:soil",
 		count: 64
 	},
 	{
+		icon: "tconstruct:seared_tank 8 1",
 		item: "tconstruct:seared_tank 1 1",
 		count: 8
 	},
@@ -163,6 +195,7 @@
 		item: "twilightforest:root 1 1"
 	},
 	{
+		icon: "actuallyadditions:item_hairy_ball 16",
 		item: "actuallyadditions:item_hairy_ball",
 		count: 16
 	},
@@ -170,18 +203,22 @@
 		item: "animania:entity_egg_random"
 	},
 	{
+		icon: "minecraft:bone_block 32",
 		item: "minecraft:bone_block",
 		count: 32
 	},
 	{
+		icon: "minecraft:clay 64",
 		item: "minecraft:clay",
 		count: 64
 	},
 	{
+		icon: "ic2:crafting 8 24",
 		item: "ic2:crafting 1 24",
 		count: 8
 	},
 	{
+		icon: "minecraft:experience_bottle 2",
 		item: "minecraft:experience_bottle",
 		count: 2
 	},
@@ -209,6 +246,7 @@
 		}
 	},
 	{
+		icon: "rats:rat_pelt 32",
 		item: "rats:rat_pelt",
 		count: 32
 	},

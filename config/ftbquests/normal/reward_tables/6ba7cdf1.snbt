@@ -9,10 +9,12 @@
 		}
 	},
 	{
+		icon: "thaumcraft:curio 20 4",
 		item: "thaumcraft:curio 1 4",
 		count: 20
 	},
 	{
+		icon: "thaumcraft:curio 20 3",
 		item: "thaumcraft:curio 1 3",
 		count: 20
 	}]

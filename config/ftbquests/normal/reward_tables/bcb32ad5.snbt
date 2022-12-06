@@ -1,6 +1,7 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "iceandfire:pixie_dust 16",
 		item: "iceandfire:pixie_dust",
 		count: 16
 	},
@@ -8,6 +9,7 @@
 		item: "mia:pixie_dust_extractor"
 	},
 	{
+		icon: "extrautils2:decorativesolidwood 10 1",
 		item: "extrautils2:decorativesolidwood 1 1",
 		count: 10
 	}]

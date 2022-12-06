@@ -1,6 +1,7 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "rats:plastic_waste 10",
 		item: "rats:plastic_waste",
 		count: 10
 	},
@@ -64,6 +65,7 @@
 		}
 	},
 	{
+		icon: "rats:contaminated_food 5",
 		item: "rats:contaminated_food",
 		count: 5
 	}]

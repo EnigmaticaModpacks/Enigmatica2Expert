@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "exnihilocreatio:item_doll 2 4",
 		item: "exnihilocreatio:item_doll 1 4",
 		count: 2
 	},
 	{
+		icon: "exnihilocreatio:item_doll 2 5",
 		item: "exnihilocreatio:item_doll 1 5",
 		count: 2
 	},
 	{
+		icon: "exnihilocreatio:item_doll 2 6",
 		item: "exnihilocreatio:item_doll 1 6",
 		count: 2
 	}]

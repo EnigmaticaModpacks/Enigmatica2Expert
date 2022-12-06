@@ -1,6 +1,7 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "endreborn:dragon_scales 16",
 		item: "endreborn:dragon_scales",
 		count: 16
 	},

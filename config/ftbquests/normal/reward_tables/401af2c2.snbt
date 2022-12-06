@@ -1,6 +1,7 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "industrialwires:ic2_connector 10 1",
 		item: "industrialwires:ic2_connector 1 1",
 		count: 10
 	},
@@ -14,6 +15,7 @@
 		}
 	},
 	{
+		icon: "industrialwires:ic2_connector 4",
 		item: "industrialwires:ic2_connector",
 		count: 4
 	}]

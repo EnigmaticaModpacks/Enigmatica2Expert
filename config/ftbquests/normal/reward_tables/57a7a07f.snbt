@@ -4,6 +4,7 @@
 		item: "botania:manaresource 1 3"
 	},
 	{
+		icon: "botania:manaresource 16 22",
 		item: "botania:manaresource 1 22",
 		count: 16
 	},

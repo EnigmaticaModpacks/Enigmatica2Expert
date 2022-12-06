@@ -31,22 +31,38 @@
 		item: "enderio:item_dark_steel_upgrade"
 	},
 	{
+		icon: "enderio:item_extract_speed_upgrade 8",
 		item: "enderio:item_extract_speed_upgrade",
 		count: 8
 	},
 	{
+		icon: "extrautils2:ingredients 4 6",
 		item: "extrautils2:ingredients 1 6",
 		count: 4
 	},
 	{
+		icon: "extrautils2:ingredients 4 15",
 		item: "extrautils2:ingredients 1 15",
 		count: 4
 	},
 	{
+		icon: "extrautils2:ingredients 4 16",
 		item: "extrautils2:ingredients 1 16",
 		count: 4
 	},
 	{
+		icon: {
+			id: "forestry:chipsets",
+			Count: 3b,
+			Damage: 2s,
+			tag: {
+				T: 2s,
+				CA.I1: "forestry.machine.speed.boost.2",
+				CA.I2: "forestry.machine.speed.boost.2",
+				CA.I0: "forestry.machine.speed.boost.2",
+				LY: "forestry.machine.upgrade"
+			}
+		},
 		item: {
 			id: "forestry:chipsets",
 			Damage: 2s,
@@ -61,26 +77,32 @@
 		count: 3
 	},
 	{
+		icon: "thermaldynamics:duct_32 48 6",
 		item: "thermaldynamics:duct_32 1 6",
 		count: 48
 	},
 	{
+		icon: "ic2:upgrade 16 2",
 		item: "ic2:upgrade 1 2",
 		count: 16
 	},
 	{
+		icon: "ic2:upgrade 12",
 		item: "ic2:upgrade",
 		count: 12
 	},
 	{
+		icon: "ic2:upgrade 12 1",
 		item: "ic2:upgrade 1 1",
 		count: 12
 	},
 	{
+		icon: "industrialforegoing:conveyor_upgrade 64",
 		item: "industrialforegoing:conveyor_upgrade",
 		count: 64
 	},
 	{
+		icon: "industrialforegoing:conveyor_upgrade 64 1",
 		item: "industrialforegoing:conveyor_upgrade 1 1",
 		count: 64
 	},
@@ -88,30 +110,37 @@
 		item: "industrialforegoing:range_addon 1 11"
 	},
 	{
+		icon: "mctsmelteryio:upgrade 8 4",
 		item: "mctsmelteryio:upgrade 1 4",
 		count: 8
 	},
 	{
+		icon: "mctsmelteryio:upgrade 4 6",
 		item: "mctsmelteryio:upgrade 1 6",
 		count: 4
 	},
 	{
+		icon: "mekanism:tierinstaller 4 1",
 		item: "mekanism:tierinstaller 1 1",
 		count: 4
 	},
 	{
+		icon: "mekanism:tierinstaller 8",
 		item: "mekanism:tierinstaller",
 		count: 8
 	},
 	{
+		icon: "mekanism:tierinstaller 2 2",
 		item: "mekanism:tierinstaller 1 2",
 		count: 2
 	},
 	{
+		icon: "mekanism:energyupgrade 8",
 		item: "mekanism:energyupgrade",
 		count: 8
 	},
 	{
+		icon: "mekanism:speedupgrade 8",
 		item: "mekanism:speedupgrade",
 		count: 8
 	},
@@ -188,10 +217,12 @@
 		}
 	},
 	{
+		icon: "nuclearcraft:upgrade 8 1",
 		item: "nuclearcraft:upgrade 1 1",
 		count: 8
 	},
 	{
+		icon: "nuclearcraft:upgrade 8",
 		item: "nuclearcraft:upgrade",
 		count: 8
 	},
@@ -211,42 +242,52 @@
 		}
 	},
 	{
+		icon: "rats:rat_upgrade_speed 4",
 		item: "rats:rat_upgrade_speed",
 		count: 4
 	},
 	{
+		icon: "thermaldynamics:servo 8 4",
 		item: "thermaldynamics:servo 1 4",
 		count: 8
 	},
 	{
+		icon: "thermalexpansion:augment 8 128",
 		item: "thermalexpansion:augment 1 128",
 		count: 8
 	},
 	{
+		icon: "thermalexpansion:augment 2 129",
 		item: "thermalexpansion:augment 1 129",
 		count: 2
 	},
 	{
+		icon: "thermalexpansion:augment 4 512",
 		item: "thermalexpansion:augment 1 512",
 		count: 4
 	},
 	{
+		icon: "thermalexpansion:augment 2 673",
 		item: "thermalexpansion:augment 1 673",
 		count: 2
 	},
 	{
+		icon: "thermalexpansion:augment 2 720",
 		item: "thermalexpansion:augment 1 720",
 		count: 2
 	},
 	{
+		icon: "thermalexpansion:augment 2 323",
 		item: "thermalexpansion:augment 1 323",
 		count: 2
 	},
 	{
+		icon: "thermalfoundation:upgrade 6",
 		item: "thermalfoundation:upgrade",
 		count: 6
 	},
 	{
+		icon: "thermalfoundation:upgrade 4 33",
 		item: "thermalfoundation:upgrade 1 33",
 		count: 4
 	},
@@ -254,10 +295,12 @@
 		item: "thermalfoundation:upgrade 1 35"
 	},
 	{
+		icon: "thermalfoundation:upgrade 2 34",
 		item: "thermalfoundation:upgrade 1 34",
 		count: 2
 	},
 	{
+		icon: "xnet:connector_upgrade 16",
 		item: "xnet:connector_upgrade",
 		count: 16
 	}],

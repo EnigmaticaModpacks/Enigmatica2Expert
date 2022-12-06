@@ -1,29 +1,18 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "xnet:controller 2",
 		item: "xnet:controller",
 		count: 2
 	},
 	{
-		item: {
-			id: "xnet:netcable",
-			tag: {
-				display: {
-					LocName: "tile.xnet.netcable_blue.name}"
-				}
-			}
-		},
+		icon: "xnet:netcable 64",
+		item: "xnet:netcable",
 		count: 64
 	},
 	{
-		item: {
-			id: "xnet:connector",
-			tag: {
-				display: {
-					LocName: "tile.xnet.connector_blue.name}"
-				}
-			}
-		},
+		icon: "xnet:connector 4",
+		item: "xnet:connector",
 		count: 4
 	}]
 }

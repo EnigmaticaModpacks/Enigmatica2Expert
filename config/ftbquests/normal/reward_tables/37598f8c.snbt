@@ -2,178 +2,222 @@
 	title: "Any meat",
 	loot_size: 1,
 	rewards: [{
+		icon: "animania:raw_chevon 64",
 		item: "animania:raw_chevon",
 		count: 64
 	},
 	{
+		icon: "animania:raw_frog_legs 64",
 		item: "animania:raw_frog_legs",
 		count: 64
 	},
 	{
+		icon: "animania:raw_horse 64",
 		item: "animania:raw_horse",
 		count: 64
 	},
 	{
+		icon: "animania:raw_peacock 64",
 		item: "animania:raw_peacock",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_beef 64",
 		item: "animania:raw_prime_beef",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_chevon 64",
 		item: "animania:raw_prime_chevon",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_chicken 64",
 		item: "animania:raw_prime_chicken",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_mutton 64",
 		item: "animania:raw_prime_mutton",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_peacock 64",
 		item: "animania:raw_prime_peacock",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_pork 64",
 		item: "animania:raw_prime_pork",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_rabbit 64",
 		item: "animania:raw_prime_rabbit",
 		count: 64
 	},
 	{
+		icon: "animania:raw_prime_steak 64",
 		item: "animania:raw_prime_steak",
 		count: 64
 	},
 	{
+		icon: "betteranimalsplus:pheasantraw 64",
 		item: "betteranimalsplus:pheasantraw",
 		count: 64
 	},
 	{
+		icon: "betteranimalsplus:turkey_leg_raw 64",
 		item: "betteranimalsplus:turkey_leg_raw",
 		count: 64
 	},
 	{
+		icon: "betteranimalsplus:turkey_raw 64",
 		item: "betteranimalsplus:turkey_raw",
 		count: 64
 	},
 	{
+		icon: "betteranimalsplus:venisonraw 64",
 		item: "betteranimalsplus:venisonraw",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:duckrawitem 64",
 		item: "harvestcraft:duckrawitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundbeefitem 64",
 		item: "harvestcraft:groundbeefitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundchickenitem 64",
 		item: "harvestcraft:groundchickenitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundduckitem 64",
 		item: "harvestcraft:groundduckitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundfishitem 64",
 		item: "harvestcraft:groundfishitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundmuttonitem 64",
 		item: "harvestcraft:groundmuttonitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundporkitem 64",
 		item: "harvestcraft:groundporkitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundrabbititem 64",
 		item: "harvestcraft:groundrabbititem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundturkeyitem 64",
 		item: "harvestcraft:groundturkeyitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:groundvenisonitem 64",
 		item: "harvestcraft:groundvenisonitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:grubitem 64",
 		item: "harvestcraft:grubitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofabbititem 64",
 		item: "harvestcraft:rawtofabbititem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofaconitem 64",
 		item: "harvestcraft:rawtofaconitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofeakitem 64",
 		item: "harvestcraft:rawtofeakitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofenisonitem 64",
 		item: "harvestcraft:rawtofenisonitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofickenitem 64",
 		item: "harvestcraft:rawtofickenitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofuduckitem 64",
 		item: "harvestcraft:rawtofuduckitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofurkeyitem 64",
 		item: "harvestcraft:rawtofurkeyitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:rawtofuttonitem 64",
 		item: "harvestcraft:rawtofuttonitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:turkeyrawitem 64",
 		item: "harvestcraft:turkeyrawitem",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:venisonrawitem 64",
 		item: "harvestcraft:venisonrawitem",
 		count: 64
 	},
 	{
+		icon: "minecraft:beef 64",
 		item: "minecraft:beef",
 		count: 64
 	},
 	{
+		icon: "minecraft:chicken 64",
 		item: "minecraft:chicken",
 		count: 64
 	},
 	{
+		icon: "minecraft:mutton 64",
 		item: "minecraft:mutton",
 		count: 64
 	},
 	{
+		icon: "minecraft:porkchop 64",
 		item: "minecraft:porkchop",
 		count: 64
 	},
 	{
+		icon: "minecraft:rabbit 64",
 		item: "minecraft:rabbit",
 		count: 64
 	},
 	{
+		icon: "rats:raw_rat 64",
 		item: "rats:raw_rat",
 		count: 64
 	},
 	{
+		icon: "tconevo:edible 64",
 		item: "tconevo:edible",
 		count: 64
 	}]

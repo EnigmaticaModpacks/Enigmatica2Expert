@@ -4,6 +4,14 @@
 		item: "claybucket:claybucket 1 2"
 	},
 	{
+		icon: {
+			id: "thermalexpansion:florb",
+			Count: 5b,
+			Damage: 1s,
+			tag: {
+				Fluid: "lava"
+			}
+		},
 		item: {
 			id: "thermalexpansion:florb",
 			Damage: 1s,

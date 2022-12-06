@@ -1,6 +1,7 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "tconstruct:soil 32",
 		item: "tconstruct:soil",
 		count: 32
 	},

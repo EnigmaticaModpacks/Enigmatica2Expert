@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "storagedrawers:upgrade_storage 4 1",
 		item: "storagedrawers:upgrade_storage 1 1",
 		count: 4
 	},
 	{
+		icon: "ironchest:iron_chest 4 1",
 		item: "ironchest:iron_chest 1 1",
 		count: 4
 	},
 	{
+		icon: "tconstruct:fancy_frame 32 5",
 		item: "tconstruct:fancy_frame 1 5",
 		count: 32
 	}]

@@ -2,22 +2,27 @@
 	title: "Decor",
 	loot_size: 1,
 	rewards: [{
+		icon: "minecraft:lit_pumpkin 32",
 		item: "minecraft:lit_pumpkin",
 		count: 32
 	},
 	{
+		icon: "minecraft:banner 64 6",
 		item: "minecraft:banner 1 6",
 		count: 64
 	},
 	{
+		icon: "minecraft:item_frame 64",
 		item: "minecraft:item_frame",
 		count: 64
 	},
 	{
+		icon: "minecraft:waterlily 16",
 		item: "minecraft:waterlily",
 		count: 16
 	},
 	{
+		icon: "biomesoplenty:terrarium 2 13",
 		item: "biomesoplenty:terrarium 1 13",
 		count: 2
 	},
@@ -28,138 +33,172 @@
 		item: "harvestcraft:well"
 	},
 	{
+		icon: "botania:elfglasspane 64",
 		item: "botania:elfglasspane",
 		count: 64
 	},
 	{
+		icon: "cyclicmagic:beacon_redstone 2",
 		item: "cyclicmagic:beacon_redstone",
 		count: 2
 	},
 	{
+		icon: "openblocks:target 8",
 		item: "openblocks:target",
 		count: 8
 	},
 	{
+		icon: "immersiveengineering:metal_device1 8 9",
 		item: "immersiveengineering:metal_device1 1 9",
 		count: 8
 	},
 	{
+		icon: "advancedrocketry:launchpad 64",
 		item: "advancedrocketry:launchpad",
 		count: 64
 	},
 	{
+		icon: "thermaldynamics:duct_64 32 2",
 		item: "thermaldynamics:duct_64 1 2",
 		count: 32
 	},
 	{
+		icon: "immersiveengineering:metal_decoration2 16 4",
 		item: "immersiveengineering:metal_decoration2 1 4",
 		count: 16
 	},
 	{
+		icon: "chisel:lapis 4 7",
 		item: "chisel:lapis 1 7",
 		count: 4
 	},
 	{
+		icon: "mekanism:obsidiantnt 16",
 		item: "mekanism:obsidiantnt",
 		count: 16
 	},
 	{
+		icon: "extrautils2:decorativeglass 64 4",
 		item: "extrautils2:decorativeglass 1 4",
 		count: 64
 	},
 	{
+		icon: "extrautils2:decorativeglass 64 5",
 		item: "extrautils2:decorativeglass 1 5",
 		count: 64
 	},
 	{
+		icon: "rustic:chair_ironwood 64",
 		item: "rustic:chair_ironwood",
 		count: 64
 	},
 	{
+		icon: "rustic:table_ironwood 64",
 		item: "rustic:table_ironwood",
 		count: 64
 	},
 	{
+		icon: "quark:smoker 4",
 		item: "quark:smoker",
 		count: 4
 	},
 	{
+		icon: "quark:lit_lamp 32",
 		item: "quark:lit_lamp",
 		count: 32
 	},
 	{
+		icon: "rustic:vase 8",
 		item: "rustic:vase",
 		count: 8
 	},
 	{
+		icon: "tconstruct:throwball 16",
 		item: "tconstruct:throwball",
 		count: 16
 	},
 	{
+		icon: "rats:rat_tube_light_blue 64",
 		item: "rats:rat_tube_light_blue",
 		count: 64
 	},
 	{
+		icon: "rats:rat_lantern 64",
 		item: "rats:rat_lantern",
 		count: 64
 	},
 	{
+		icon: "appliedenergistics2:quartz_fixture 16",
 		item: "appliedenergistics2:quartz_fixture",
 		count: 16
 	},
 	{
+		icon: "mia:torch_gold 64",
 		item: "mia:torch_gold",
 		count: 64
 	},
 	{
+		icon: "rustic:candle_lever 64",
 		item: "rustic:candle_lever",
 		count: 64
 	},
 	{
+		icon: "rustic:lantern_wood 64",
 		item: "rustic:lantern_wood",
 		count: 64
 	},
 	{
+		icon: "quark:candle 64",
 		item: "quark:candle",
 		count: 64
 	},
 	{
+		icon: "integrateddynamics:menril_torch 64",
 		item: "integrateddynamics:menril_torch",
 		count: 64
 	},
 	{
+		icon: "harvestcraft:candledeco14 64",
 		item: "harvestcraft:candledeco14",
 		count: 64
 	},
 	{
+		icon: "thaumcraft:banner_red 64",
 		item: "thaumcraft:banner_red",
 		count: 64
 	},
 	{
+		icon: "extrautils2:angelblock 16",
 		item: "extrautils2:angelblock",
 		count: 16
 	},
 	{
+		icon: "mekanism:balloon 16 2",
 		item: "mekanism:balloon 1 2",
 		count: 16
 	},
 	{
+		icon: "thaumicaugmentation:arcane_door 2",
 		item: "thaumicaugmentation:arcane_door",
 		count: 2
 	},
 	{
+		icon: "rustic:iron_lantern 64",
 		item: "rustic:iron_lantern",
 		count: 64
 	},
 	{
+		icon: "enderio:block_holier_fog 64",
 		item: "enderio:block_holier_fog",
 		count: 64
 	},
 	{
+		icon: "darkutils:pearl_block 64",
 		item: "darkutils:pearl_block",
 		count: 64
 	},
 	{
+		icon: "quark:paper_lantern 64",
 		item: "quark:paper_lantern",
 		count: 64
 	},
@@ -167,10 +206,12 @@
 		item: "architecturecraft:sawbench"
 	},
 	{
+		icon: "engineersdecor:treated_wood_ladder 64",
 		item: "engineersdecor:treated_wood_ladder",
 		count: 64
 	},
 	{
+		icon: "engineersdecor:iron_floor_edge_light 64",
 		item: "engineersdecor:iron_floor_edge_light",
 		count: 64
 	},
@@ -178,22 +219,27 @@
 		item: "bibliocraft:biblioclipboard"
 	},
 	{
+		icon: "bibliocraft:lanterngold 4 9",
 		item: "bibliocraft:lanterngold 1 9",
 		count: 4
 	},
 	{
+		icon: "bibliocraft:toolrack 16 5",
 		item: "bibliocraft:toolrack 1 5",
 		count: 16
 	},
 	{
+		icon: "engineersdecor:steel_double_t_support 64",
 		item: "engineersdecor:steel_double_t_support",
 		count: 64
 	},
 	{
+		icon: "engineersdecor:rebar_concrete_tile_stairs 64",
 		item: "engineersdecor:rebar_concrete_tile_stairs",
 		count: 64
 	},
 	{
+		icon: "engineersdecor:gas_concrete_wall 64",
 		item: "engineersdecor:gas_concrete_wall",
 		count: 64
 	}],

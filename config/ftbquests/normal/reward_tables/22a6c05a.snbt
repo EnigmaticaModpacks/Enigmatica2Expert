@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "actuallyadditions:block_misc 2 9",
 		item: "actuallyadditions:block_misc 1 9",
 		count: 2
 	},
 	{
+		icon: "ic2:resource 2 13",
 		item: "ic2:resource 1 13",
 		count: 2
 	},
 	{
+		icon: "immersiveengineering:metal_decoration0 2 5",
 		item: "immersiveengineering:metal_decoration0 1 5",
 		count: 2
 	}]

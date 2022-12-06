@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "rats:marbled_cheese_raw 64",
 		item: "rats:marbled_cheese_raw",
 		count: 64
 	},
 	{
+		icon: "rats:block_of_cheese 32",
 		item: "rats:block_of_cheese",
 		count: 32
 	},
 	{
+		icon: "rats:contaminated_food 64",
 		item: "rats:contaminated_food",
 		count: 64
 	}]

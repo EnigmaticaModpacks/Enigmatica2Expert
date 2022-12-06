@@ -1,6 +1,14 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: {
+			id: "immersiveengineering:bullet",
+			Count: 64b,
+			Damage: 2s,
+			tag: {
+				bullet: "silver"
+			}
+		},
 		item: {
 			id: "immersiveengineering:bullet",
 			Damage: 2s,
@@ -11,10 +19,12 @@
 		count: 64
 	},
 	{
+		icon: "rustic:candle_silver 16",
 		item: "rustic:candle_silver",
 		count: 16
 	},
 	{
+		icon: "thermalfoundation:material 2 97",
 		item: "thermalfoundation:material 1 97",
 		count: 2
 	}]

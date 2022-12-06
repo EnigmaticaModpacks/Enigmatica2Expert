@@ -12,10 +12,12 @@
 		count: 2
 	},
 	{
+		icon: "nuclearcraft:turbine_rotor_blade_extreme 4",
 		item: "nuclearcraft:turbine_rotor_blade_extreme",
 		count: 4
 	},
 	{
+		icon: "nuclearcraft:turbine_glass 64",
 		item: "nuclearcraft:turbine_glass",
 		count: 64
 	}]

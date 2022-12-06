@@ -4,10 +4,12 @@
 		item: "libvulpes:motor"
 	},
 	{
+		icon: "advancedrocketry:thermite 64",
 		item: "advancedrocketry:thermite",
 		count: 64
 	},
 	{
+		icon: "advancedrocketry:circlelight 20",
 		item: "advancedrocketry:circlelight",
 		count: 20
 	}]

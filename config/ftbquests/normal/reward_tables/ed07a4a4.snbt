@@ -9,6 +9,7 @@
 		}
 	},
 	{
+		icon: "thaumcraft:curio 60 1",
 		item: "thaumcraft:curio 1 1",
 		count: 60
 	}]

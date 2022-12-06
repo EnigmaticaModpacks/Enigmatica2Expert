@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "minecraft:bread 16",
 		item: "minecraft:bread",
 		count: 16
 	},
 	{
+		icon: "actuallyadditions:item_food 10 15",
 		item: "actuallyadditions:item_food 1 15",
 		count: 10
 	},
 	{
+		icon: "harvestcraft:garlicbreaditem 6",
 		item: "harvestcraft:garlicbreaditem",
 		count: 6
 	}]

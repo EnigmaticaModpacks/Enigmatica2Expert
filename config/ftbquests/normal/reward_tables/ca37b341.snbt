@@ -7,6 +7,7 @@
 		item: "randomthings:floosign"
 	},
 	{
+		icon: "minecraft:brick_block 32",
 		item: "minecraft:brick_block",
 		count: 32
 	}]

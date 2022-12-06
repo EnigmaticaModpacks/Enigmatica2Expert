@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "animania:raw_prime_beef 32",
 		item: "animania:raw_prime_beef",
 		count: 32
 	},
 	{
+		icon: "animania:raw_prime_pork 32",
 		item: "animania:raw_prime_pork",
 		count: 32
 	},
 	{
+		icon: "animania:raw_prime_rabbit 32",
 		item: "animania:raw_prime_rabbit",
 		count: 32
 	}]

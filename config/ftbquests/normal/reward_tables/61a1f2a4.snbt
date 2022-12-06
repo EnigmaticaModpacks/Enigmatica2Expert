@@ -2,30 +2,37 @@
 	title: "Food",
 	loot_size: 1,
 	rewards: [{
+		icon: "harvestcraft:redvelvetcakeitem 8",
 		item: "harvestcraft:redvelvetcakeitem",
 		count: 8
 	},
 	{
+		icon: "nuclearcraft:milk_chocolate 6",
 		item: "nuclearcraft:milk_chocolate",
 		count: 6
 	},
 	{
+		icon: "nuclearcraft:dark_chocolate 8",
 		item: "nuclearcraft:dark_chocolate",
 		count: 8
 	},
 	{
+		icon: "nuclearcraft:unsweetened_chocolate 10",
 		item: "nuclearcraft:unsweetened_chocolate",
 		count: 10
 	},
 	{
+		icon: "actuallyadditions:item_food 16 20",
 		item: "actuallyadditions:item_food 1 20",
 		count: 16
 	},
 	{
+		icon: "actuallyadditions:item_food 16 15",
 		item: "actuallyadditions:item_food 1 15",
 		count: 16
 	},
 	{
+		icon: "actuallyadditions:item_food 12 12",
 		item: "actuallyadditions:item_food 1 12",
 		count: 12
 	},
@@ -33,26 +40,32 @@
 		item: "actuallyadditions:item_coffee"
 	},
 	{
+		icon: "actuallyadditions:item_food 8 18",
 		item: "actuallyadditions:item_food 1 18",
 		count: 8
 	},
 	{
+		icon: "actuallyadditions:item_food 8 13",
 		item: "actuallyadditions:item_food 1 13",
 		count: 8
 	},
 	{
+		icon: "actuallyadditions:item_food 4 14",
 		item: "actuallyadditions:item_food 1 14",
 		count: 4
 	},
 	{
+		icon: "actuallyadditions:item_food 16 17",
 		item: "actuallyadditions:item_food 1 17",
 		count: 16
 	},
 	{
+		icon: "actuallyadditions:item_food 8 11",
 		item: "actuallyadditions:item_food 1 11",
 		count: 8
 	},
 	{
+		icon: "actuallyadditions:item_food 8 19",
 		item: "actuallyadditions:item_food 1 19",
 		count: 8
 	},
@@ -69,6 +82,7 @@
 		count: 4
 	},
 	{
+		icon: "animania:friesian_cheese_wedge 8",
 		item: "animania:friesian_cheese_wedge",
 		count: 8
 	},
@@ -133,230 +147,287 @@
 		item: "extrautils2:magicapple"
 	},
 	{
+		icon: "harvestcraft:applesnowitem 16",
 		item: "harvestcraft:applesnowitem",
 		count: 16
 	},
 	{
+		icon: "harvestcraft:bbqplatteritem 8",
 		item: "harvestcraft:bbqplatteritem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:bbqpulledporkitem 8",
 		item: "harvestcraft:bbqpulledporkitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:bltitem 8",
 		item: "harvestcraft:bltitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:battenbergitem 16",
 		item: "harvestcraft:battenbergitem",
 		count: 16
 	},
 	{
+		icon: "harvestcraft:beefwellingtonitem 8",
 		item: "harvestcraft:beefwellingtonitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:bentoboxitem 8",
 		item: "harvestcraft:bentoboxitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:blueberrypancakesitem 4",
 		item: "harvestcraft:blueberrypancakesitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:charsiuitem 4",
 		item: "harvestcraft:charsiuitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:cheddarandsourcreampotatochipsitem 8",
 		item: "harvestcraft:cheddarandsourcreampotatochipsitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:chickencelerycasseroleitem 8",
 		item: "harvestcraft:chickencelerycasseroleitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:chickencurryitem 2",
 		item: "harvestcraft:chickencurryitem",
 		count: 2
 	},
 	{
+		icon: "harvestcraft:chilidogitem 8",
 		item: "harvestcraft:chilidogitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:cinnamonsugardonutitem 8",
 		item: "harvestcraft:cinnamonsugardonutitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:coconutshrimpitem 4",
 		item: "harvestcraft:coconutshrimpitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:coleslawburgeritem 8",
 		item: "harvestcraft:coleslawburgeritem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:cornedbeefbreakfastitem 3",
 		item: "harvestcraft:cornedbeefbreakfastitem",
 		count: 3
 	},
 	{
+		icon: "harvestcraft:delightedmealitem 2",
 		item: "harvestcraft:delightedmealitem",
 		count: 2
 	},
 	{
+		icon: "harvestcraft:deluxechickencurryitem 2",
 		item: "harvestcraft:deluxechickencurryitem",
 		count: 2
 	},
 	{
+		icon: "harvestcraft:eggsbenedictitem 4",
 		item: "harvestcraft:eggsbenedictitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:extremechiliitem 8",
 		item: "harvestcraft:extremechiliitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:fishdinneritem 6",
 		item: "harvestcraft:fishdinneritem",
 		count: 6
 	},
 	{
+		icon: "harvestcraft:fishsandwichitem 8",
 		item: "harvestcraft:fishsandwichitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:fishandchipsitem 6",
 		item: "harvestcraft:fishandchipsitem",
 		count: 6
 	},
 	{
+		icon: "harvestcraft:friedfeastitem 2",
 		item: "harvestcraft:friedfeastitem",
 		count: 2
 	},
 	{
+		icon: "harvestcraft:frosteddonutitem 8",
 		item: "harvestcraft:frosteddonutitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:garlicchickenitem 8",
 		item: "harvestcraft:garlicchickenitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:generaltsochickenitem 6",
 		item: "harvestcraft:generaltsochickenitem",
 		count: 6
 	},
 	{
+		icon: "harvestcraft:gingerchickenitem 8",
 		item: "harvestcraft:gingerchickenitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:heartybreakfastitem 4",
 		item: "harvestcraft:heartybreakfastitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:honeysoyribsitem 8",
 		item: "harvestcraft:honeysoyribsitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:icecreamitem 16",
 		item: "harvestcraft:icecreamitem",
 		count: 16
 	},
 	{
+		icon: "harvestcraft:meatfeastpizzaitem 3",
 		item: "harvestcraft:meatfeastpizzaitem",
 		count: 3
 	},
 	{
+		icon: "harvestcraft:mintchocolatechipicecreamitem 8",
 		item: "harvestcraft:mintchocolatechipicecreamitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:nutellaitem 16",
 		item: "harvestcraft:nutellaitem",
 		count: 16
 	},
 	{
+		icon: "harvestcraft:onionhamburgeritem 4",
 		item: "harvestcraft:onionhamburgeritem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:pekingduckitem 4",
 		item: "harvestcraft:pekingduckitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:pemmicanitem 8",
 		item: "harvestcraft:pemmicanitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:pineapplehamitem 8",
 		item: "harvestcraft:pineapplehamitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:ploughmanslunchitem 2",
 		item: "harvestcraft:ploughmanslunchitem",
 		count: 2
 	},
 	{
+		icon: "harvestcraft:poutineitem 4",
 		item: "harvestcraft:poutineitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:sausageinbreaditem 4",
 		item: "harvestcraft:sausageinbreaditem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:shrimpokrahushpuppiesitem 8",
 		item: "harvestcraft:shrimpokrahushpuppiesitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:southernstylebreakfastitem 6",
 		item: "harvestcraft:southernstylebreakfastitem",
 		count: 6
 	},
 	{
+		icon: "harvestcraft:spagettiandmeatballsitem 4",
 		item: "harvestcraft:spagettiandmeatballsitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:sundayroastitem 8",
 		item: "harvestcraft:sundayroastitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:supremepizzaitem 4",
 		item: "harvestcraft:supremepizzaitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:sweetpotatopieitem 8",
 		item: "harvestcraft:sweetpotatopieitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:sweetandsourmeatballsitem 8",
 		item: "harvestcraft:sweetandsourmeatballsitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:tacoitem 4",
 		item: "harvestcraft:tacoitem",
 		count: 4
 	},
 	{
+		icon: "harvestcraft:thankfuldinneritem 2",
 		item: "harvestcraft:thankfuldinneritem",
 		count: 2
 	},
 	{
+		icon: "harvestcraft:wontonsoupitem 8",
 		item: "harvestcraft:wontonsoupitem",
 		count: 8
 	},
 	{
+		icon: "harvestcraft:zestyzucchiniitem 8",
 		item: "harvestcraft:zestyzucchiniitem",
 		count: 8
 	},
 	{
+		icon: "mysticalagriculture:inferium_apple 16",
 		item: "mysticalagriculture:inferium_apple",
 		count: 16
 	},
 	{
+		icon: "mysticalagriculture:intermedium_apple 4",
 		item: "mysticalagriculture:intermedium_apple",
 		count: 4
 	},
 	{
+		icon: "mysticalagriculture:prudentium_apple 8",
 		item: "mysticalagriculture:prudentium_apple",
 		count: 8
 	},
 	{
+		icon: "mysticalagriculture:superium_apple 2",
 		item: "mysticalagriculture:superium_apple",
 		count: 2
 	},
@@ -364,26 +435,32 @@
 		item: "mysticalagriculture:supremium_apple"
 	},
 	{
+		icon: "nuclearcraft:graham_cracker 10",
 		item: "nuclearcraft:graham_cracker",
 		count: 10
 	},
 	{
+		icon: "quark:frog_leg 16",
 		item: "quark:frog_leg",
 		count: 16
 	},
 	{
+		icon: "rats:assorted_vegetables 16",
 		item: "rats:assorted_vegetables",
 		count: 16
 	},
 	{
+		icon: "rats:cheese 8",
 		item: "rats:cheese",
 		count: 8
 	},
 	{
+		icon: "rats:rat_burger 8",
 		item: "rats:rat_burger",
 		count: 8
 	},
 	{
+		icon: "rats:raw_rat 16",
 		item: "rats:raw_rat",
 		count: 16
 	},
@@ -397,10 +474,12 @@
 		item: "scalingfeast:ironapple"
 	},
 	{
+		icon: "tconstruct:edible 8 33",
 		item: "tconstruct:edible 1 33",
 		count: 8
 	},
 	{
+		icon: "tconstruct:edible 10 23",
 		item: "tconstruct:edible 1 23",
 		count: 10
 	},
@@ -408,6 +487,7 @@
 		item: "tconstruct:moms_spaghetti"
 	},
 	{
+		icon: "tconstruct:edible 12 10",
 		item: "tconstruct:edible 1 10",
 		count: 12
 	}],

@@ -9,6 +9,7 @@
 		}
 	},
 	{
+		icon: "excompressum:bait 4 2",
 		item: "excompressum:bait 1 2",
 		count: 4
 	},

@@ -1,10 +1,12 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "mysticalagriculture:storage 4 5",
 		item: "mysticalagriculture:storage 1 5",
 		count: 4
 	},
 	{
+		icon: "mysticalagriculture:tier2_inferium_seeds 4",
 		item: "mysticalagriculture:tier2_inferium_seeds",
 		count: 4
 	},

@@ -7,6 +7,7 @@
 		item: "fluiddrawers:tank"
 	},
 	{
+		icon: "storagedrawers:upgrade_template 4",
 		item: "storagedrawers:upgrade_template",
 		count: 4
 	}]

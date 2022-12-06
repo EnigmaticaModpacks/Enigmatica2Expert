@@ -1,14 +1,17 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "quark:quilted_wool 3",
 		item: "quark:quilted_wool",
 		count: 3
 	},
 	{
+		icon: "quark:quilted_wool 3 14",
 		item: "quark:quilted_wool 1 14",
 		count: 3
 	},
 	{
+		icon: "minecraft:wool 5",
 		item: "minecraft:wool",
 		count: 5
 	}]

@@ -1,6 +1,7 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "netherendingores:ore_nether_modded_1 2 6",
 		item: "netherendingores:ore_nether_modded_1 1 6",
 		count: 2
 	},

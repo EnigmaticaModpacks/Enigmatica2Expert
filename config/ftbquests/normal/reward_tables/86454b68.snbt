@@ -23,6 +23,7 @@
 		count: 64
 	},
 	{
+		icon: "thermalfoundation:glass 64 7",
 		item: "thermalfoundation:glass 1 7",
 		count: 64
 	},
@@ -38,22 +39,27 @@
 		}
 	},
 	{
+		icon: "actuallyadditions:block_greenhouse_glass 10",
 		item: "actuallyadditions:block_greenhouse_glass",
 		count: 10
 	},
 	{
+		icon: "scalinghealth:heartcontainer 10",
 		item: "scalinghealth:heartcontainer",
 		count: 10
 	},
 	{
+		icon: "draconicevolution:wyvern_energy_core 3",
 		item: "draconicevolution:wyvern_energy_core",
 		count: 3
 	},
 	{
+		icon: "draconicevolution:particle_generator 4",
 		item: "draconicevolution:particle_generator",
 		count: 4
 	},
 	{
+		icon: "mysticalagradditions:insanium 6",
 		item: "mysticalagradditions:insanium",
 		count: 6
 	},
@@ -118,6 +124,17 @@
 		}
 	},
 	{
+		icon: {
+			id: "extrautils2:drum",
+			Count: 4b,
+			Damage: 2s,
+			tag: {
+				Fluid: {
+					FluidName: "empoweredoil",
+					Amount: 4096000
+				}
+			}
+		},
 		item: {
 			id: "extrautils2:drum",
 			Damage: 2s,
@@ -167,14 +184,17 @@
 		}
 	},
 	{
+		icon: "thermalfoundation:material 32 1028",
 		item: "thermalfoundation:material 1 1028",
 		count: 32
 	},
 	{
+		icon: "avaritia:cosmic_meatballs 8",
 		item: "avaritia:cosmic_meatballs",
 		count: 8
 	},
 	{
+		icon: "avaritia:ultimate_stew 8",
 		item: "avaritia:ultimate_stew",
 		count: 8
 	},
@@ -193,10 +213,12 @@
 		}
 	},
 	{
+		icon: "mysticalagradditions:stuff 3 69",
 		item: "mysticalagradditions:stuff 1 69",
 		count: 3
 	},
 	{
+		icon: "appliedenergistics2:material 16 47",
 		item: "appliedenergistics2:material 1 47",
 		count: 16
 	},
@@ -211,26 +233,32 @@
 		}
 	},
 	{
+		icon: "iceandfire:fire_dragon_heart 8",
 		item: "iceandfire:fire_dragon_heart",
 		count: 8
 	},
 	{
+		icon: "iceandfire:ice_dragon_heart 8",
 		item: "iceandfire:ice_dragon_heart",
 		count: 8
 	},
 	{
+		icon: "deepmoblearning:pristine_matter_twilight_swamp 64",
 		item: "deepmoblearning:pristine_matter_twilight_swamp",
 		count: 64
 	},
 	{
+		icon: "deepmoblearning:living_matter_extraterrestrial 64",
 		item: "deepmoblearning:living_matter_extraterrestrial",
 		count: 64
 	},
 	{
+		icon: "enderio:block_infinity 64 2",
 		item: "enderio:block_infinity 1 2",
 		count: 64
 	},
 	{
+		icon: "contenttweaker:saturated_phosphor 64",
 		item: "contenttweaker:saturated_phosphor",
 		count: 64
 	},
@@ -250,26 +278,32 @@
 		item: "thaumicwonders:alchemist_stone"
 	},
 	{
+		icon: "thaumcraft:sanity_soap 64",
 		item: "thaumcraft:sanity_soap",
 		count: 64
 	},
 	{
+		icon: "thaumicwonders:primordial_grain 64",
 		item: "thaumicwonders:primordial_grain",
 		count: 64
 	},
 	{
+		icon: "contenttweaker:conglomerate_of_coal 64",
 		item: "contenttweaker:conglomerate_of_coal",
 		count: 64
 	},
 	{
+		icon: "contenttweaker:conglomerate_of_life 32",
 		item: "contenttweaker:conglomerate_of_life",
 		count: 32
 	},
 	{
+		icon: "contenttweaker:conglomerate_of_sun 64",
 		item: "contenttweaker:conglomerate_of_sun",
 		count: 64
 	},
 	{
+		icon: "minecraft:dragon_egg 2",
 		item: "minecraft:dragon_egg",
 		count: 2
 	}],

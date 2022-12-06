@@ -1,18 +1,22 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: "mysticalagriculture:nature_essence 256",
 		item: "mysticalagriculture:nature_essence",
 		count: 256
 	},
 	{
+		icon: "mysticalagriculture:dye_essence 64",
 		item: "mysticalagriculture:dye_essence",
 		count: 64
 	},
 	{
+		icon: "mysticalagriculture:platinum_essence 15",
 		item: "mysticalagriculture:platinum_essence",
 		count: 15
 	},
 	{
+		icon: "mysticalagriculture:ender_amethyst_essence 7",
 		item: "mysticalagriculture:ender_amethyst_essence",
 		count: 7
 	}]

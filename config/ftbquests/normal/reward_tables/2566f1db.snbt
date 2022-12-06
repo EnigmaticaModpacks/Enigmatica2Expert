@@ -290,18 +290,22 @@
 		item: "tconstruct:materials 1 50"
 	},
 	{
+		icon: "tinkersaddons:modifier_item 4 3",
 		item: "tinkersaddons:modifier_item 1 3",
 		count: 4
 	},
 	{
+		icon: "tinkersaddons:modifier_item 2 4",
 		item: "tinkersaddons:modifier_item 1 4",
 		count: 2
 	},
 	{
+		icon: "tinkersaddons:modifier_item 6 2",
 		item: "tinkersaddons:modifier_item 1 2",
 		count: 6
 	},
 	{
+		icon: "tinkersaddons:modifier_item 10 1",
 		item: "tinkersaddons:modifier_item 1 1",
 		count: 10
 	},

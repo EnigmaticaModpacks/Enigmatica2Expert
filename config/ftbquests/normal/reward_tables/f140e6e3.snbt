@@ -1,6 +1,14 @@
 {
 	loot_size: 1,
 	rewards: [{
+		icon: {
+			id: "bibliocraft:framedchest",
+			Count: 6b,
+			Damage: 6s,
+			tag: {
+				renderTexture: "quark:blocks/iron_plate_rusted"
+			}
+		},
 		item: {
 			id: "bibliocraft:framedchest",
 			Damage: 6s,
@@ -11,6 +19,14 @@
 		count: 6
 	},
 	{
+		icon: {
+			id: "bibliocraft:framedchest",
+			Count: 4b,
+			Damage: 6s,
+			tag: {
+				renderTexture: "chisel:blocks/metals/cobalt/badgreggy"
+			}
+		},
 		item: {
 			id: "bibliocraft:framedchest",
 			Damage: 6s,
@@ -21,6 +37,14 @@
 		count: 4
 	},
 	{
+		icon: {
+			id: "bibliocraft:framedchest",
+			Count: 4b,
+			Damage: 6s,
+			tag: {
+				renderTexture: "chisel:blocks/factory/goldplate"
+			}
+		},
 		item: {
 			id: "bibliocraft:framedchest",
 			Damage: 6s,
@@ -31,6 +55,14 @@
 		count: 4
 	},
 	{
+		icon: {
+			id: "bibliocraft:framedchest",
+			Count: 4b,
+			Damage: 6s,
+			tag: {
+				renderTexture: "sonarcore:blocks/connected/stablestonerimmedblack_green"
+			}
+		},
 		item: {
 			id: "bibliocraft:framedchest",
 			Damage: 6s,
