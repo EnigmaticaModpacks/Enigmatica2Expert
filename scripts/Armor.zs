@@ -8,18 +8,18 @@ import mods.jei.JEI.removeAndHide as rh;
 	<immersiveengineering:faraday_suit_chest>,
 	<immersiveengineering:faraday_suit_legs>,
 	<immersiveengineering:faraday_suit_feet>,
-	<ic2:nano_helmet:26>,
-	<ic2:nano_chestplate:26>,
-	<ic2:nano_leggings:26>,
-	<ic2:nano_boots:26>,
+	<ic2:nano_helmet>,
+	<ic2:nano_chestplate>,
+	<ic2:nano_leggings>,
+	<ic2:nano_boots>,
 	<redstonearsenal:armor.helmet_flux>,
 	<redstonearsenal:armor.plate_flux>,
 	<redstonearsenal:armor.legs_flux>,
 	<redstonearsenal:armor.boots_flux>,
-	<ic2:quantum_helmet:26>,
-	<ic2:quantum_chestplate:26>,
-	<ic2:quantum_leggings:26>,
-	<ic2:quantum_boots:26>
+	<ic2:quantum_helmet>,
+	<ic2:quantum_chestplate>,
+	<ic2:quantum_leggings>,
+	<ic2:quantum_boots>
 	] as IItemStack[];
 	
 		for item in energyArmor {
@@ -31,20 +31,20 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShaped(<immersiveengineering:faraday_suit_feet>, [[<ore:plateAluminum>, null, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_boots>.anyDamage(), <ore:plateAluminum>], [null, null, null]]);
 	recipes.addShaped(<immersiveengineering:faraday_suit_legs>, [[<ore:plateAluminum>, <ore:plateAluminum>, <ore:plateAluminum>],[<ore:plateAluminum>, <minecraft:iron_leggings>.anyDamage(), <ore:plateAluminum>], [<ore:plateAluminum>, null, <ore:plateAluminum>]]);
 	
-	recipes.addShaped(<ic2:nano_boots:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_feet>.anyDamage(), <ic2:crafting:15>], [null, null, null]]);
-	recipes.addShaped(<ic2:nano_leggings:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_legs>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
-	recipes.addShaped(<ic2:nano_chestplate:26>, [[<ic2:crafting:15>, <immersiveengineering:faraday_suit_chest>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
-	recipes.addShaped(<ic2:nano_helmet:26>, [[<ic2:crafting:15>, <ic2:energy_crystal:26>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles:26>.anyDamage(), <ic2:crafting:15>], [null, <immersiveengineering:faraday_suit_head>.anyDamage(), null]]);
+	recipes.addShaped(<ic2:nano_boots>, [[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_feet>.anyDamage(), <ic2:crafting:15>], [null, null, null]]);
+	recipes.addShaped(<ic2:nano_leggings>, [[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>],[<ic2:crafting:15>, <immersiveengineering:faraday_suit_legs>.anyDamage(), <ic2:crafting:15>], [<ic2:crafting:15>, null, <ic2:crafting:15>]]);
+	recipes.addShaped(<ic2:nano_chestplate>, [[<ic2:crafting:15>, <immersiveengineering:faraday_suit_chest>.anyDamage(), <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>], [<ic2:crafting:15>, <ic2:crafting:15>, <ic2:crafting:15>]]);
+	recipes.addShaped(<ic2:nano_helmet>, [[<ic2:crafting:15>, <ic2:energy_crystal>|<ic2:energy_crystal:*>, <ic2:crafting:15>],[<ic2:crafting:15>, <ic2:nightvision_goggles>.anyDamage(), <ic2:crafting:15>], [null, <immersiveengineering:faraday_suit_head>.anyDamage(), null]]);
 	
-	recipes.addShaped(<redstonearsenal:armor.boots_flux>, [[<redstonearsenal:material:224>, null, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_boots:26>.anyDamage(), <redstonearsenal:material:224>], [null, null, null]]);
-	recipes.addShaped(<redstonearsenal:armor.legs_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_leggings:26>.anyDamage(), <redstonearsenal:material:224>], [<redstonearsenal:material:224>, null, <redstonearsenal:material:224>]]);
-	recipes.addShaped(<redstonearsenal:armor.plate_flux>, [[<redstonearsenal:material:224>, <ic2:nano_chestplate:26>.anyDamage(), <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>]]);
-	recipes.addShaped(<redstonearsenal:armor.helmet_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_helmet:26>.anyDamage(), <redstonearsenal:material:224>], [null, null, null]]);
+	recipes.addShaped(<redstonearsenal:armor.boots_flux>, [[<redstonearsenal:material:224>, null, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_boots>|<ic2:nano_boots:*>, <redstonearsenal:material:224>], [null, null, null]]);
+	recipes.addShaped(<redstonearsenal:armor.legs_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_leggings>|<ic2:nano_leggings:*>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, null, <redstonearsenal:material:224>]]);
+	recipes.addShaped(<redstonearsenal:armor.plate_flux>, [[<redstonearsenal:material:224>, <ic2:nano_chestplate>|<ic2:nano_chestplate:*>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>], [<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>]]);
+	recipes.addShaped(<redstonearsenal:armor.helmet_flux>, [[<redstonearsenal:material:224>, <redstonearsenal:material:224>, <redstonearsenal:material:224>],[<redstonearsenal:material:224>, <ic2:nano_helmet>|<ic2:nano_helmet:*>, <redstonearsenal:material:224>], [null, null, null]]);
 	
-	recipes.addShaped(<ic2:quantum_boots:26>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>.anyDamage(), <ic2:rubber_boots>]]);
-	recipes.addShaped(<ic2:quantum_leggings:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
-	recipes.addShaped(<ic2:quantum_chestplate:26>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>.anyDamage(), <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
-	recipes.addShaped(<ic2:quantum_helmet:26>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>.anyDamage(), null]]);
+	recipes.addShaped(<ic2:quantum_boots>, [[null, null, null],[<ic2:crafting:4>, <redstonearsenal:armor.boots_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:rubber_boots>, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, <ic2:rubber_boots>]]);
+	recipes.addShaped(<ic2:quantum_leggings>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.legs_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, null]]);
+	recipes.addShaped(<ic2:quantum_chestplate>, [[<ic2:crafting:3>, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.plate_flux>.anyDamage(), <ic2:crafting:4>], [<ic2:crafting:3>, <ic2:jetpack_electric>.anyDamage(), <ic2:crafting:3>]]);
+	recipes.addShaped(<ic2:quantum_helmet>, [[<ic2:crafting:3>, null, <ic2:crafting:3>],[<ic2:crafting:4>, <redstonearsenal:armor.helmet_flux>.anyDamage(), <ic2:crafting:4>], [null, <ic2:lapotron_crystal>|<ic2:lapotron_crystal:*>, null]]);
 			
 # *======= Mystical Agriculture Armor =======*
 

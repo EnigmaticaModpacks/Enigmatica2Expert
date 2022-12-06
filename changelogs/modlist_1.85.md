@@ -1,4 +1,4 @@
-## Enigmatica 2 Expert - 1.84
+## Enigmatica 2 Expert - 1.85
 
   * [ActuallyAdditions-1.12.2-r152.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/3117927) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
   * [ActuallyBaubles-1.12-1.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-baubles/files/2459131) (by [Jackyy](https://www.curseforge.com/members/Jackyy/projects))
@@ -93,7 +93,7 @@
   * [ExtremeReactors-1.12.2-0.4.5.50.jar](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors/files/2648892) (by [ZeroNoRyouki](https://www.curseforge.com/members/ZeroNoRyouki/projects))
   * [FarmingForBlockheads_1.12.2-3.1.28.jar](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/2733508) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [FastFurnace-1.12.2-1.3.1.jar](https://www.curseforge.com/minecraft/mc-mods/fastfurnace/files/2706111) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
-  * [FastWorkbench-1.12.2-1.7.3.jar](https://www.curseforge.com/minecraft/mc-mods/fastworkbench/files/2838777) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+  * [FastWorkbench-1.12.2-1.7.4.jar](https://www.curseforge.com/minecraft/mc-mods/fastworkbench/files/4030366) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
   * [fencejumper-1.12-1.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/fence-jumper/files/2591087) (by [TheRealp455w0rd](https://www.curseforge.com/members/TheRealp455w0rd/projects))
   * [flatcoloredblocks-mc1.12-6.8.jar](https://www.curseforge.com/minecraft/mc-mods/flat-colored-blocks/files/2715827) (by [AlgorithmX2](https://www.curseforge.com/members/AlgorithmX2/projects))
   * [FluxNetworks-1.12.2-4.1.1.34.jar](https://www.curseforge.com/minecraft/mc-mods/flux-networks/files/3178199) (by [sonar_sonic](https://www.curseforge.com/members/sonar_sonic/projects))
@@ -113,7 +113,7 @@
   * [HorseTweaks_1.12.2-1.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/horse-tweaks/files/2696995) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [Hwyla-1.8.26-B41_1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/hwyla/files/2568751) (by [TehNut](https://www.curseforge.com/members/TehNut/projects))
   * [ic2-tweaker-0.2.0.jar](https://www.curseforge.com/minecraft/mc-mods/ic2-tweaker/files/2666979) (by [tttusk](https://www.curseforge.com/members/tttusk/projects))
-  * [iceandfire-1.8.4.jar](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons/files/2874453) (by [sbom_xela](https://www.curseforge.com/members/sbom_xela/projects))
+  * [iceandfire-1.9.1-1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons/files/2939529) (by [sbom_xela](https://www.curseforge.com/members/sbom_xela/projects))
   * [ImmersiveEngineering-0.12-98.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering/files/2974106) (by [BluSunrize](https://www.curseforge.com/members/BluSunrize/projects))
   * [immersivepetroleum-1.12.2-1.1.10.jar](https://www.curseforge.com/minecraft/mc-mods/immersive-petroleum/files/3382321) (by [Flaxbeard](https://www.curseforge.com/members/Flaxbeard/projects))
   * [incontrol-1.12-3.9.18.jar](https://www.curseforge.com/minecraft/mc-mods/in-control/files/3101719) (by [McJty](https://www.curseforge.com/members/McJty/projects))

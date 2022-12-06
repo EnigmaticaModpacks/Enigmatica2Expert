@@ -427,7 +427,7 @@ ECHO Checking for basic internet connectivity...
 ECHO INFO: Checking for basic internet connectivity... 1>>  "%~dp0logs\serverstart.log" 2>&1
 
 REM Try with Google DNS
-%MC_SYS32%\PING.EXE -n 2 -w 1000 8.8.8.8 | %MC_SYS32%\FIND.EXE "TTL="  1>>  "%~dp0logs\serverstart.log" 2>&1
+%MC_SYS32%\PING.EXE -n 2 -w 1000 8.8.8.8 | %MC_SYS32%\FIND.EXE "time="  1>>  "%~dp0logs\serverstart.log" 2>&1
 IF %ERRORLEVEL% EQU 0 (
     SET MC_SERVER_TMP_FLAG=0
 	ECHO INFO: Ping of "8.8.8.8" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -438,7 +438,7 @@ IF %ERRORLEVEL% EQU 0 (
 
 REM If Google ping failed try one more time with L3 just in case
 IF MC_SERVER_TMP_FLAG EQU 1 (
-	%MC_SYS32%\PING.EXE -n 2 -w 1000 4.2.2.1 | %MC_SYS32%\FIND.EXE "TTL="  1>>  "%~dp0logs\serverstart.log" 2>&1
+	%MC_SYS32%\PING.EXE -n 2 -w 1000 4.2.2.1 | %MC_SYS32%\FIND.EXE "time="  1>>  "%~dp0logs\serverstart.log" 2>&1
 	IF %ERRORLEVEL% EQU 0 (
 		SET MC_SERVER_TMP_FLAG=0
 		INFO: Ping of "4.4.2.1" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
@@ -601,7 +601,7 @@ IF NOT %MC_SERVER_IGNORE_OFFLINE% EQU 0 (
 )
 
 REM Ping minecraftforge before attempting download
-%MC_SYS32%\PING.EXE -n 2 -w 1000 minecraftforge.net | %MC_SYS32%\FIND.EXE "TTL="  1>> "%~dp0logs\serverstart.log" 2>&1
+%MC_SYS32%\PING.EXE -n 2 -w 1000 minecraftforge.net | %MC_SYS32%\FIND.EXE "time="  1>> "%~dp0logs\serverstart.log" 2>&1
 IF %ERRORLEVEL% EQU 0 (
 	ECHO INFO: Ping of "minecraftforge.net" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
 ) ELSE (
