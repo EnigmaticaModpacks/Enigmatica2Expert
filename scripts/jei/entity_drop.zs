@@ -252,7 +252,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add('emberroot:hero'                         , [<actuallyadditions:item_void_bag> * 12, <cyclicmagic:charm_void> * 8, <cyclicmagic:sack_ender> * 11, <cyclicmagic:storage_bag> * 10, <minecraft:dye> * 25, <minecraft:golden_axe> * 4, <minecraft:golden_sword> * 6, <minecraft:shield> * 2, <minecraft:stone_sword> * 6, <thermalexpansion:satchel:100> * 9]); // Fallen Hero
   add('emberroot:knight_fallen'                , [<minecraft:arrow> * 121, <minecraft:bone> * 136, <minecraft:iron_sword> * 6, <minecraft:rotten_flesh> * 141, <minecraft:skull:2> * 1, <minecraft:skull> * 3, <minecraft:stone_sword> * 2]); // Fallen Knight
   add('emberroot:owl'                          , [<emberroot:owl_egg> * 48, <minecraft:feather> * 167]); // Wild Owl
-  add('emberroot:rainbow_golem'                , [<deepmoblearning:soot_covered_redstone> * 623, <minecraft:dye> * 276, <minecraft:fire_charge> * 143, <minecraft:slime_ball> * 275, <thermalfoundation:material:771> * 7]); // Nature Golem
+  add('emberroot:rainbow_golem'                , [<mysticalagriculture:diamond_essence> * 150, <mysticalagriculture:crafting:39> * 300, <mekanism:nugget:3> * 550, <mechanics:heavy_nugget> * 950, <mysticalagriculture:redstone_essence> * 150, <thermalfoundation:material:228> * 500]); // Nature Golem
   add('emberroot:rainbowslime'                 , [<minecraft:dye> * 158, <minecraft:slime_ball> * 150]); // entity.rainbowslime.grey.name
   add('emberroot:rootsonesprite'               , [<minecraft:glowstone_dust> * 101, <mysticalagriculture:dye_essence> * 456]); // Sprite
   add('emberroot:rootsonespritegreater'        , [<minecraft:emerald> * 61, <minecraft:glowstone> * 71, <mysticalagriculture:platinum_essence> * 135]); // Greater Sprite
@@ -468,7 +468,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add('twilightforest:yeti'                    , [<twilightforest:arctic_fur> * 104]); // Yeti
 /**/
 
-
+// Manual added drops
 add('emberroot:rootsonespriteboss', [<minecraft:totem_of_undying> * 100, <mysticalagriculture:crafting:3> * 2000]); // Guardian of Sprites
 add('betteranimalsplus:hirschgeist', [<mysticalagriculture:crafting:2> * 400, <randomthings:ingredient:2> * 400, <betteranimalsplus:hirschgeistskull_1> * 25]);
 
