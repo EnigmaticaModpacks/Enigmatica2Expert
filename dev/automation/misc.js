@@ -35,30 +35,20 @@ export async function init(h = defaultHelper, options = argv) {
   // ###############################################################################
   // ###############################################################################
 
-  /*
+  // Fake iron automatic recipes
+  // Inspecting all recipes to automatically change some of them
+  // Required command before running
+  // /ct recipes
 
-    Fake iron automatic recipes
-
-    Inspecting all recipes to automatically change some of them
-
-    Required command before running
-    /ct recipes
-
-  */
-
-  await h.begin('Managing Fake iron recipes')
-  const crafttweaker_log = loadText('crafttweaker.log')
-  const globMatch = crafttweaker_log.match(/^Recipes:$.*/ms)
+  const globMatch = loadText('crafttweaker.log').match(/^Recipes:$.*/ms)
 
   // Add already exist remakes
-  const fakeIron_zs = loadText('scripts/category/fakeIron.zs')
+  const fakeIron_zs = loadText('scripts/mods/enderio_fakeIron.zs')
   let remakes
 
   if (!globMatch) { h.warn('No /ct recipes found in crafttweaker.log') }
   else {
-    remakes = fakeIron_zs.match(
-      /^# Start of automatically generated recipes:$.*/ms
-    )?.[0]
+    remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)?.[0]
     if (!remakes)
       h.warn('Can not find automatically generated recipes for Fake Iron')
   }
@@ -119,7 +109,7 @@ export async function init(h = defaultHelper, options = argv) {
     }
 
     injectInFile(
-      'scripts/category/fakeIron.zs',
+      'scripts/mods/enderio_fakeIron.zs',
       '# Start of automatically generated recipes:\n',
       '\n# End of automatically generated recipes',
       resultArr.sort().join('\n')

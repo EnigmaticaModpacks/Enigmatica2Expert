@@ -2,21 +2,11 @@
 
 List of priorities:
 
-- [ ] ✏️ Add Compressed `White Sand`, `Red Sand`, `Dried Sand`, `Gravisand`
-- [ ] ✏️ Add craft mechanic - Mud Ball hit something (humilate)
-- [x] ✏️ Asphalt Concrete make from any water tank
-- [x] ✏️ Refined Obsidian / Glowstone should be harder to melt
-- [ ] ✏️ Compressed Block remove too much aspects
-- [ ] ✏️ Enthropy stone add usage
-- [x] ✏️ Enderemus: add String sieve craft
-- [x] ✏️ Spear cheaper
-- [x] ✏️ Add Custom Recipes to Hedge Alchemy thaunomicon tab
-- [ ] ✏️ Cocoon Of Caprice cheaper and quest book page
-- [ ] ✏️ Petrotheum `Conflux I` craft
+- [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] ✏️ Add gold source in peaceful skyblock (probably Sifting Garbage Piles)
-- [ ] ✏️ Hovering Hourglass cheaper, introduce earlier
-- [ ] 🔄 Check why block overrides not working for NetherEnding ores
+- [ ] ✏️ Add post-space recipe for: `Mana Powder`, `Basic Energy Relay Crystal`
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
+- [ ] 📀 IC2 Terraformer less EU/t consumption
 - [ ] 📀 FoxHound: Add Quest entry, Speed up furnace https://github.com/VazkiiMods/Quark/blob/1.12/src/main/java/vazkii/quark/world/entity/EntityFoxhound.java#L137
 - [ ] 📀 Buff Porous Stone output
 - [ ] 📀 Buff AA rings to encrease capacity and blaze output
@@ -26,17 +16,16 @@ List of priorities:
 - [ ] 📀 Return Rain Tank from forestry but make it extremely fast
 - [ ] 📀 Scaling Health should increase health exponentially, not linear
 - [ ] 📀 Fix Bedrock Ore not working command
-- [ ] 🟢 Add **better-fusion-reactor-for-mekanism**
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
-- [ ] 🧻 JEI: add golem drops to list
-- [x] 🧻 Brocken Enderemus: add drop in Block Drops
-- [x] 📖 Add Osmium Essence in quest for Osmium
-- [ ] 📖 Add notification about finishing mod chapter based on stats
+- [ ] 🟢 Install `seared-ladder-backport`
+- [x] 🧻 JEI: add golem drops to list
 - [ ] 📖 Add any sharpening kit to quest for harvest level
-- [ ] 📖 Icon of "Pick Reward" quest can have amounts by `"icon":` prop
-- [ ] 🌿 Add Patchouli book page with sorted UU values
+- [x] 📖 Icon of "Pick Reward" quest can have amounts by `"icon":` prop
+- [ ] 📖 Add notification about finishing mod chapter based on stats
+- [ ] 📖 Remove all `/say @p has begun the `
+- [x] 🌿 Add Patchouli book page with sorted UU values
 
 ---
 
@@ -46,6 +35,9 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Enthropy stone add usage
+- [ ] ✏️ Compressed Block remove too much aspects - they could be easy used to spawn rifts
+- [ ] ✏️ Add craft mechanic - Mud Ball hit something (humilate)
 - [ ] 📀 Buff dev/null/ to hold more then 64 blocks
 - [ ] 📖 Add little tiles fancy chest with lot of space
 - [ ] 📖 Fix "5.12E11d" strings in .ts code

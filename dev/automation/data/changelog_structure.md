@@ -94,7 +94,7 @@
 
 x 🧱 Technical
   x 🚧 Develop
-  x 🧹 Refactoring
+  x 🧹 Refactor
   x 𝓩𝒮 ZenScript
   x 📝 TODO
   x 📃 README
