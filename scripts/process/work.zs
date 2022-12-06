@@ -5,6 +5,7 @@
 */
 
 #priority 2100
+#norun
 
 zenClass Work {
 	zenConstructor() {}

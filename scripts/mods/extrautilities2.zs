@@ -424,7 +424,7 @@ craft.remake(<extrautils2:terraformer:9>, ["pretty",
 
 # Skyblock alt
 # [Climograph Base Unit] from [Iron Sheetmetal][+2]
-scripts.skyblock.addSkyblockRecipe(<extrautils2:terraformer:9>, ["pretty",
+scripts.skyblock.skyrecipes.add(<extrautils2:terraformer:9>, ["pretty",
   "▬ S ▬",
   "S ■ S",
   "▬ S ▬"], {

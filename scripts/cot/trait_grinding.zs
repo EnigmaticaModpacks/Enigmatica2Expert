@@ -50,8 +50,8 @@ import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.sqrt;
 import mods.ctutils.utils.Math.log;
 
-import scripts.contenttweaker.utils_tcon_cot.getItemMatAmount;
-import scripts.contenttweaker.utils_tcon_cot.getArmorMatsAmount;
+import scripts.cot.utils_tcon_cot.getItemMatAmount;
+import scripts.cot.utils_tcon_cot.getArmorMatsAmount;
 
 static HARDNESS_MULT as float = 1.0 as float;
 

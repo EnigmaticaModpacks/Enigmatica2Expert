@@ -3,6 +3,11 @@
 
 import crafttweaker.item.IItemStack;
 
+// Rustic Slate
+recipes.addShapeless('slate',
+  <rustic:slate> * 4,
+  [<ore:stoneBasalt>, <ore:stoneBasalt>, <ore:stoneBasalt>, <ore:stoneLimestone>]);
+
 # Simplified Crushing tub
 recipes.remove(<rustic:crushing_tub>);
 recipes.addShaped(<rustic:crushing_tub>, [

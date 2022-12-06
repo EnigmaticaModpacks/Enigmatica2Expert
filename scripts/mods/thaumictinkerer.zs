@@ -27,3 +27,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "S": <randomthings:spectreilluminator>, # Spectre Illuminator
   "p": <thaumictinkerer:spellbinding_cloth>.anyDamage(), # Spellbinding Cloth
 }).spiral(1));
+
+// Conversion recipe between Thaumic Tinkerer Black Quartz Block & Botania Block of Smokey Quartz
+recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_block>]);
+recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztypedark>]);

@@ -78,5 +78,4 @@ events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDi
   }
 });
 
-
 static allowedDims as int[] = [0, -1, 144, -343800852, 2, -2] as int[];

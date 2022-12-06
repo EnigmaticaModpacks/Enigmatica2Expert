@@ -1,5 +1,5 @@
 import crafttweaker.item.IIngredient;
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import mods.ic2.ScrapBox;
 import scripts.jei.mod.ic2.addCrop as addCrop;

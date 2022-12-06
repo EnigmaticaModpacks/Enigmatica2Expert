@@ -34,7 +34,7 @@ val hasRecipes = [
   'test_block',
 ] as string[];
 
-val unique = scripts.unique.Unique([
+val unique = scripts.lib.unique.Unique([
   <minecraft:clay>,
   <rustic:clay_wall>,
   <rustic:clay_wall>,

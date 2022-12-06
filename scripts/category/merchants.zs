@@ -1,7 +1,7 @@
 #modloaded rockytweaks
 #ignoreBracketErrors
 
-import mods.rockytweaks.Merchant.addTrade as addTrade;
+import mods.rockytweaks.Merchant.addTrade;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 

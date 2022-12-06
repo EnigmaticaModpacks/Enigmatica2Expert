@@ -1,9 +1,49 @@
-import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import mods.requious.AssemblyRecipe;
 import crafttweaker.data.IData;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.recipes.IFurnaceRecipe;
+import mods.requious.AssemblyRecipe;
+import mods.requious.ComponentFace;
+import mods.requious.GaugeDirection;
+import mods.requious.SlotVisual;
 
 #priority -150
+
+# [Infinity_Furnace] from [Infinity_Fuel][+4]
+utils.rh(<avaritiafurnace:infinityfurnace>);
+craft.remake(<requious:infinity_furnace>, ["pretty",
+  "T R E R T",
+  "# ▬ n ▬ #",
+  "H r I r H",
+  "# ▬ Ϟ ▬ #",
+  "T R E R T"], {
+  "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
+  "#": <ore:logSequoia>,                          # Sequoia
+  "T": <mysticalagriculture:supremium_furnace>,
+  "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
+  "r": <rats:idol_of_ratlantis>,
+  "H": <scalinghealth:heartcontainer>,            # Heart Container
+  "I": <avaritiafurnace:infinityfuel>,            # Infinity Fuel
+  "▬": <ore:dragonsteelIngot>,
+  "n": <randomthings:spectrecoil_ender>,          # Ender Spectre Coil
+  "Ϟ": <randomthings:spectreenergyinjector>       # Spectre Energy Injector
+});
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+var o = <assembly:infinity_furnace>;
+o.setItemSlot(3,2,ComponentFace.all(),64).setAccess(true,false).setGroup("input");
+o.setItemSlot(5,2,ComponentFace.all(),64).setAccess(false,true).setHandAccess(false,true).setGroup("output");
+o.setDurationSlot(4,2).setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png",2,1,3,1,GaugeDirection.up(),false)).setGroup("duration");
+
+o.setJEIItemSlot(3,2, 'input');
+o.setJEIItemSlot(5,2, 'output');
+o.setJEIDurationSlot(4,2,"duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png",3,1));
+
+// -------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------
 
 function infinFurnace(inp as IIngredient, out as IItemStack) as void {
   if(isNull(inp) || isNull(out)) return;

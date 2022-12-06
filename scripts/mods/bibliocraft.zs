@@ -1,7 +1,5 @@
 #modloaded bibliocraft
 
-# *======= Recipes =======*
-	
 # Creative Bookcase
 	recipes.addShaped("Creative Bookcase Main", 
 	<bibliocraft:bookcasecreative>, 

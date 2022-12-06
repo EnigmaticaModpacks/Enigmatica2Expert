@@ -1,5 +1,11 @@
 #modloaded darkutils
 
+// Wither Dust
+recipes.remove(<darkutils:material>);
+recipes.addShapeless('Wither Dust1', <darkutils:material> * 6, [<ore:boneWither>, <ore:boneWither>]);
+recipes.addShapeless('Wither Dust2', <darkutils:material> * 9, [<minecraft:skull:1>]);
+recipes.addShapeless('Wither Dust3', <darkutils:material> * 4, [<ore:blockWither>]);
+
 # [Player Trap] from [Rat Diamond]*2[+2]
 craft.remake(<darkutils:trap_tile:7>, ["pretty",
   "  h  ",

@@ -149,7 +149,7 @@ for i, candle in candleColors {
     "s",
     "M",
     "M"], {
-    "s": scripts.category.dye.oreDye[i],
+    "s": scripts.vars.oreDye[i],
     "M": <thaumcraft:tallow>, # Magic Tallow
   });
 }

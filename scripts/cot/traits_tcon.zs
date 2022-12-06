@@ -17,8 +17,8 @@ import mods.ctutils.utils.Math.sqrt;
 import mods.ctutils.utils.Math.ceil;
 import crafttweaker.world.IWorld;
 
-import scripts.contenttweaker.utils_tcon_cot.getItemMatAmount;
-import scripts.contenttweaker.utils_tcon_cot.getArmorMatsAmount;
+import scripts.cot.utils_tcon_cot.getItemMatAmount;
+import scripts.cot.utils_tcon_cot.getArmorMatsAmount;
 
 /* 
 Some taken from: wilderness-minecraft
@@ -322,11 +322,11 @@ grindingTrait.localizedName = game.localize("e2ee.tconstruct.material.grinding.n
 grindingTrait.localizedDescription = game.localize("e2ee.tconstruct.material.grinding.description");
 grindingTrait.onFalling = function(trait, armor, player, event) {
   if(event.entityLivingBase.world.isRemote()) return;
-  scripts.contenttweaker.trait_grinding.onFalling(armor, player);
+  scripts.cot.trait_grinding.onFalling(armor, player);
 };
 grindingTrait.onAbility = function(trait, level, world, player) {
   if(world.isRemote()) return;
-  scripts.contenttweaker.trait_grinding.onAbility(trait, level, world, player);
+  scripts.cot.trait_grinding.onAbility(trait, level, world, player);
 };
 grindingTrait.register();
 

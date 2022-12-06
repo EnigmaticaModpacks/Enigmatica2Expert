@@ -3,6 +3,29 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
+scripts.lib.loot.tweak("quark:entities/crab", "legs", "quark:crab_leg", <quark:crab_leg>, [<harvestcraft:crabrawitem>], [1,3]);
+
+// Quark Polished Marble
+val marble = <ore:stoneMarble>;
+recipes.removeShaped(<quark:marble:1>);
+recipes.addShaped('Polished Marble', <quark:marble:1> * 9,
+  [[marble, marble, marble],
+    [marble, marble, marble],
+    [marble, marble, marble]]);
+
+// Quark Marble Wall Oredicted version
+recipes.remove(<quark:marble_wall>);
+recipes.addShaped('Quark Marble Wall',
+  <quark:marble_wall> * 6,
+  [[<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>],
+    [<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>]]);
+
+// Prevent melting dupe
+craft.remake(<quark:obsidian_pressure_plate>, ['AA', 'AA'], { A: <ore:obsidian> });
+
+// Conflict recipes
+recipes.removeByRecipeName('quark:basalt_1');
+
 # Fix recipes (each original quark recipe use basalt bricks for some reason)
 for i in [
 /*Inject_js(getSubMetas('quark:world_stone_carved').join(', '))*/

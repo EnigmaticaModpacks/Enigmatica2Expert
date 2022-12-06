@@ -1,7 +1,33 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 #modloaded randomthings
+
+/*Inject_js{
+setBlockDrops('randomthings:beanpod', [
+{stack: 'randomthings:ingredient:11'},...
+  cmd.below.match(/tweak.*randomthings:beanpod.*null,\s*\[(.*)\],\s*\[0,1\]\);/)[1]
+  .split(/\s*,\s{0,}/)
+  .map((cap,i,arr)=>({
+    stack: cap.match(/<([^>]+)>.{0,}/)[1],
+    chance: (100/arr.length) | 0,
+    luck: [0,1,2,3].map(()=>[0,1])
+  })),
+{stack: 'minecraft:iron_ingot', luck: [8,20]},
+{stack: 'minecraft:gold_ingot', luck: [4,15]},
+{stack: 'minecraft:emerald', luck: [0,2]},
+{stack: 'randomthings:beans', luck: [4,8]},
+])
+return '# Done!'
+}*/
+# Done!
+/**/
+scripts.lib.loot.tweak("randomthings:beanpod", "Diamond", "minecraft:diamond", null, [<biomesoplenty:gem:1>, <biomesoplenty:gem:2>, <biomesoplenty:gem:3>, <biomesoplenty:gem:4>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>], [0,1]);
+
+// NuclearCraft -> Random Things Glowing Mushroom
+recipes.removeShapeless(<minecraft:brown_mushroom>, [<nuclearcraft:glowing_mushroom>]);
+recipes.addShapeless('Random Things Glowing Mushroom',
+  <randomthings:glowingmushroom>, [<nuclearcraft:glowing_mushroom>]);
 
 # Nerf from 300
 furnace.setFuel(<randomthings:blockofsticks>, 80);

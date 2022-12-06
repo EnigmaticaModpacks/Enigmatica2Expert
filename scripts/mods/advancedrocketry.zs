@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 #modloaded advancedrocketry
 
+scripts.lib.dropt.addDrop(<advancedrocketry:geode>, <thermalfoundation:geode>);
+
 # Rename basalt as it not oredicted and have different uses
 <advancedrocketry:basalt>.displayName = game.localize("e2ee.tile.basalt_sediment");
 

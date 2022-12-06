@@ -1,5 +1,10 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 #modloaded bloodmagic
+
+// Blood Magic Guide
+recipes.addShapeless('Blood Magic Guide',
+  <guideapi:bloodmagic-guide>,
+  [<minecraft:book>, <bloodmagic:soul_snare>]);
 
 # Rune of Speed
 	recipes.remove(<bloodmagic:blood_rune:1>);

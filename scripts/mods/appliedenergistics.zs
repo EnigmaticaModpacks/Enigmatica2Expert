@@ -1,11 +1,31 @@
-import crafttweaker.item.IItemStack as IItemStack;
-import crafttweaker.item.IIngredient as IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import scripts.craft.grid.Grid;
 #modloaded appliedenergistics2
 	
-	var pearlFluix = <ore:pearlFluix>;
-	var crystalCertus = <ore:crystalCertus>;
-	
+var pearlFluix = <ore:pearlFluix>;
+var crystalCertus = <ore:crystalCertus>;
+
+// ------ Silicon unification ------
+var trueSilicon = <appliedenergistics2:material:5>;
+<ore:itemSilicon>.remove([<nuclearcraft:gem:6>, <libvulpes:productingot:3>, <enderio:item_material:5>]);
+<ore:ingotSilicon>.add(trueSilicon);
+
+// Removing
+furnace.remove(<appliedenergistics2:material:5>); // Furnance quartz dusts -> AE silicon
+mods.nuclearcraft.manufactory.removeRecipeWithOutput(<appliedenergistics2:material:5>); // Ingot->AE
+mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); // Sand -> silicon
+
+// Addition
+furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
+furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
+mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
+// ---------------------------------
+
+// Other silver occurances
+mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);
+scripts.process.crush(<minecraft:gold_ore>, <thermalfoundation:material:1>, 'only: AEGrinder', [<contenttweaker:dust_tiny_silver>], [0.9f]);
+
 # Smart Cable -> Dense
 	recipes.addShapeless("4 Smart Cables to Dense", 
 	<appliedenergistics2:part:76>, 

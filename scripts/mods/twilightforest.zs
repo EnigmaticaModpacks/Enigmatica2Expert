@@ -5,6 +5,16 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.WeightedItemStack;
 
+scripts.lib.loot.tweak("twilightforest:entities/helmet_crab", "fish", "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
+scripts.lib.loot.tweak("twilightforest:entities/deer"       , "meat", "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
+
+// Peacock fan
+recipes.addShaped(<twilightforest:peacock_fan>, [
+  [<ore:peacockFeathers>, <ore:peacockFeathers>, null],
+  [<forestry:oak_stick>, <forestry:oak_stick>, <ore:peacockFeathers>],
+  [<ore:slimecrystalBlue>, <forestry:oak_stick>, <ore:peacockFeathers>],
+]);
+
 # List of blocks and their respetive recycle materials
 # Note: despite Rock Crusher uses IIngredient as input, IOreDictEntry or
 #   wildcarded items (like <twilightforest:maze_stone:*>) will be
@@ -71,7 +81,7 @@ craft.remake(<twilightforest:ice_bomb> * 8, ["pretty",
   "◊": <ore:gemPearl>                  # Shulker Pearl
 });
 
-scripts.category.expire_in_block.set(<ore:gemPearl>, {"cyclicmagic:fire_frost" : <twilightforest:ice_bomb>});
+scripts.do.expire_in_block.set(<ore:gemPearl>, {"cyclicmagic:fire_frost" : <twilightforest:ice_bomb>});
 
 # [Sickly Twilight Oak Sapling]*8 from [Moonworm][+1]
 craft.remake(<twilightforest:twilight_sapling> * 8, ["pretty",

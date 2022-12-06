@@ -129,6 +129,34 @@ furnace.remove(<*>, <immersiveengineering:ore>);
 furnace.remove(<*>, <twilightforest:raw_venison:*>);
 /**/
 
+# *======= Metal Blocks =======*
+recipes.remove(<mekanism:basicblock:12>);
+recipes.remove(<mekanism:basicblock:1>);
+recipes.remove(<mekanism:basicblock:3>);
+recipes.remove(<mekanism:basicblock:5>);
+recipes.remove(<mekanism:basicblock:13>);
+recipes.remove(<forestry:resource_storage:3>);
+recipes.remove(<forestry:resource_storage:1>);
+recipes.remove(<forestry:resource_storage:2>);
+recipes.remove(<tcomplement:storage>);
+recipes.remove(<forestry:charcoal:0>);
+recipes.remove(<chisel:block_charcoal2:1>);
+recipes.remove(<immersiveengineering:stone_decoration:3>);
+recipes.remove(<immersiveengineering:storage>);
+recipes.remove(<immersiveengineering:storage:1>);
+recipes.remove(<immersiveengineering:storage:2>);
+recipes.remove(<immersiveengineering:storage:3>);
+recipes.remove(<immersiveengineering:storage:4>);
+recipes.remove(<immersiveengineering:storage:7>);
+recipes.remove(<immersiveengineering:storage:8>);
+recipes.remove(<ic2:ingot:2>);
+recipes.remove(<ic2:ingot:3>);
+recipes.remove(<ic2:ingot:4>);
+recipes.remove(<ic2:ingot:5>);
+recipes.remove(<ic2:ingot:6>);
+recipes.remove(<ic2:resource:5>);
+# *============================*
+
 utils.rh(<contenttweaker:item_ore_tungsten:1>);
 utils.rh(<contenttweaker:item_ore_tungsten:3>);
 utils.rh(<jaopca:block_blocktungsten>);
@@ -141,6 +169,10 @@ utils.rh(<avaritiafurnace:doublecompessedfurnace>);
 utils.rh(<avaritiafurnace:triplecompressedfurnace>);
 utils.rh(<itemfilters:filter>);
 utils.rh(<excompressum:ore_smasher>);
+utils.rh(<forestry:gear_tin>);
+utils.rh(<forestry:gear_bronze>);
+utils.rh(<forestry:gear_copper>);
+utils.rh(<appliedenergistics2:material:40>);
 
 # Pams replacements
 utils.rh(<harvestcraft:chilipepperitem>);
@@ -154,3 +186,104 @@ utils.rh(<harvestcraft:oliveitem>);
 utils.rh(<harvestcraft:pamolive>);
 utils.rh(<harvestcraft:tomatoitem>);
 utils.rh(<harvestcraft:tomatoseeditem>);
+
+# Purge removed items from furnace
+for item in itemUtils.getItemsByRegexRegistryName("thermalfoundation:((tool|armor)\\.|horse_armor_).*") {
+	furnace.remove(<*>, item);
+}
+
+for item in [
+	"actuallyadditions:block_misc:4",
+	"actuallyadditions:item_misc:5",
+	
+	"forestry:broken_bronze_shovel",
+	"forestry:broken_bronze_pickaxe",
+	"forestry:kit_pickaxe",
+	"forestry:kit_shovel",
+	
+	"ic2:ingot",
+	"ic2:bronze_pickaxe",
+	"ic2:filled_tin_can",
+	"ic2:bronze_boots",
+	"ic2:bronze_chestplate", 
+	"ic2:bronze_leggings", 
+	"ic2:bronze_helmet",
+	"ic2:bronze_sword",
+	
+	"iceandfire:armor_silver_metal_helmet",
+	"iceandfire:armor_silver_metal_chestplate",
+	"iceandfire:armor_silver_metal_leggings",
+	"iceandfire:armor_silver_metal_boots",
+	"iceandfire:silver_nugget",
+	"iceandfire:silver_ingot",
+	"iceandfire:sapphire_gem",
+	"iceandfire:silver_sword",
+	
+	"immersiveengineering:pickaxe_steel",
+	"immersiveengineering:shovel_steel",
+	"immersiveengineering:axe_steel",
+	"immersiveengineering:sword_steel",
+	
+	"minecraft:iron_pickaxe",
+	"minecraft:iron_sword",
+	"minecraft:milk_bucket",
+	"minecraft:name_tag",
+	"minecraft:obsidian",
+	"minecraft:water_bucket",
+
+	"minecraft:golden_helmet",
+	"minecraft:golden_chestplate",
+	"minecraft:golden_leggings",
+	"minecraft:golden_boots",
+	"minecraft:iron_helmet",
+	"minecraft:iron_chestplate",
+	"minecraft:iron_leggings",
+	"minecraft:iron_boots",
+	"minecraft:diamond_helmet",
+	"minecraft:diamond_chestplate",
+	"minecraft:diamond_leggings",
+	"minecraft:diamond_boots",
+	"minecraft:leather_helmet",
+	"minecraft:leather_chestplate",
+	"minecraft:leather_leggings",
+	"minecraft:leather_boots",
+
+	"twilightforest:uncrafting_table",
+	"enderio:item_dark_steel_sword",
+	"enderio:item_travel_staff",
+	"enderio:item_material:9",
+	"cyclicmagic:book_ender",
+	"twilightforest:steeleaf_helmet",
+	"twilightforest:steeleaf_chestplate",
+	"twilightforest:steeleaf_leggings",
+	"twilightforest:steeleaf_boots",
+
+	"minecraft:golden_hoe",
+	"minecraft:diamond_hoe",
+	"minecraft:iron_hoe",
+	"minecraft:stone_hoe",
+	"minecraft:wooden_hoe",
+	"minecraft:golden_axe",
+	"minecraft:golden_pickaxe",
+	"minecraft:golden_shovel",
+	"minecraft:golden_sword",
+	"minecraft:diamond_axe",
+	"minecraft:diamond_pickaxe",
+	"minecraft:diamond_shovel",
+	"minecraft:diamond_sword",
+	"minecraft:stone_axe",
+	"minecraft:stone_pickaxe",
+	"minecraft:stone_shovel",
+	"minecraft:stone_sword",
+	"minecraft:wooden_axe",
+	"minecraft:wooden_pickaxe",
+	"minecraft:wooden_shovel",
+	"minecraft:wooden_sword",
+	"minecraft:iron_sword",
+	"minecraft:bow",
+	"minecraft:iron_axe",
+	"minecraft:iron_pickaxe",
+	"minecraft:iron_shovel",
+] as string[] {
+	mods.ltt.LootTable.removeGlobalItem(item);
+}

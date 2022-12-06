@@ -10,7 +10,7 @@ import mods.ctutils.utils.Math.abs;
 #priority -1
 
 function getPoop(ore_name as string) as IItemStack {
-  for poop in scripts.mods.RatsProcessing.listRatPoop {
+  for poop in scripts.mods.ratsprocessing.listRatPoop {
     var oreBlockDef = D(poop.tag).getString('OreItem.id', '');
 
     if (oreBlockDef != '') {
@@ -76,7 +76,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   // ████╔╝██║
   // ╚██████╔╝
   //  ╚═════╝
-  scripts.process.beneficiate(dirtyGem, ore_name, 12, { meltingExceptions: scripts._init.variables.meltingExceptions }, 4);
+  scripts.process.beneficiate(dirtyGem, ore_name, 12, { meltingExceptions: scripts.vars.meltingExceptions }, 4);
 
   // manual furnance
   var ingotOrGem = utils.getSomething(ore_name, ['ingot', 'gem', 'dust', 'any'], 12);

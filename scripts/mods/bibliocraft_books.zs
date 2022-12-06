@@ -1,15 +1,13 @@
+#modloaded bibliocraft
+#priority 2000
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-import crafttweaker.oredict.IOreDict;
-import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.liquid.ILiquidStack;
-import crafttweaker.data.IData;
 import mods.zenutils.I18n;
 
-#priority 3000
-
-static meltingExceptions as IData = ['Amber','Redstone','Coal','Diamond'] as IData;
-
+// --------------------------------------------------------------------------
+// Mob written books
+// --------------------------------------------------------------------------
 
 static bookWriters        as  string[string]     = {} as string[string];
 static bookWrittenBy      as  IItemStack[string] = {} as IItemStack[string];

@@ -1,4 +1,4 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 #modloaded actuallyadditions
@@ -695,7 +695,7 @@ craft.make(<actuallyadditions:item_knife>, [" R", "K "], knife_ingrs); # [Knife]
 
 # Cheaper to use more in building
 # [White Lamp]*32 from [Black Quartz][+3]
-for i, dye in scripts.category.dye.oreDye {
+for i, dye in scripts.vars.oreDye {
 	craft.remake(<actuallyadditions:block_colored_lamp>.definition.makeStack(i) * 32, ["pretty",
 		"g * g",
 		"d ⌃ d",

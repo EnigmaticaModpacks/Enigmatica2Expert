@@ -48,6 +48,3 @@ function addDrop(block as IItemStack, drop as IItemStack) as void {
   Dropt.list(block.definition.id.replaceAll(':','_')).add(rule);
   utils.log(logStr);
 }
-
-addDrop(<advancedrocketry:geode>, <thermalfoundation:geode>);
-addDrop(<endreborn:block_lormyte_crystal>, <endreborn:item_lormyte_crystal>);

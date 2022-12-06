@@ -287,7 +287,7 @@ craft.make(bookWithAllKnowledge, ["pretty",
   "§ T §",
   "R R R"], {
   "▬": <ore:dragonsteelIngot>, # Dragonsteel Ingot
-  "§": scripts._init.variables.bookWrittenBy_ingr["Cow"], # A book written by a Cow
+  "§": scripts.mods.bibliocraft_books.bookWrittenBy_ingr["Cow"], # A book written by a Cow
   "T": <thaumadditions:knowledge_tome>, # Tome of Sharing
   "R": <rats:marbled_cheese_raw>,       # Raw Marbled Cheese
 });

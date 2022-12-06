@@ -1,4 +1,4 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 #modloaded jaopca
 
 recipes.addShaped("JAOPCA Tiny Dust1", <actuallyadditions:item_dust:7>, [[<ore:dustTinyQuartzBlack>, <ore:dustTinyQuartzBlack>, <ore:dustTinyQuartzBlack>],[<ore:dustTinyQuartzBlack>, <ore:dustTinyQuartzBlack>, <ore:dustTinyQuartzBlack>], [<ore:dustTinyQuartzBlack>, <ore:dustTinyQuartzBlack>, <ore:dustTinyQuartzBlack>]]);

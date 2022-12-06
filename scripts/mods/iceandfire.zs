@@ -4,6 +4,11 @@ import crafttweaker.item.IItemStack;
 
 # *======= Recipes =======*
 
+// Disk Platter / Iron Chain Link
+craft.remake(<iceandfire:chain_link> * 2, ['AAA', 'A A', 'AAA'], {
+  A: <ore:nuggetFakeIron>,
+});
+
 # Cockatrice Scepter
 	recipes.addShaped("Cockatrice Scepter", 
 	<iceandfire:cockatrice_scepter>, 
@@ -607,7 +612,7 @@ mods.iceandfire.recipes.addIceDragonForgeRecipe(<ore:blockPigiron>.firstItem, <d
 
 # Skyblock alt for dragon scales
 scripts.category.tooltip_utils.desc.both(<mysticalagradditions:stuff:3>, "kill.slime.by.cockatrice");
-scripts.loot.entity_kill_entity.add("minecraft:slime", "iceandfire:if_cockatrice", <mysticalagradditions:stuff:3>);
+scripts.do.entity_kill_entity.add("minecraft:slime", "iceandfire:if_cockatrice", <mysticalagradditions:stuff:3>);
 
 # Dragon Scales
 var listConversionScales as IItemStack[] = [

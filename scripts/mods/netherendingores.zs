@@ -1,6 +1,7 @@
 
 import crafttweaker.item.IItemStack;
 
+<entity:netherendingores:netherfish>.addPlayerOnlyDrop(<forestry:ash>, 3, 12);
 
 /*
 

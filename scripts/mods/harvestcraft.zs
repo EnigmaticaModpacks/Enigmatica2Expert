@@ -1,6 +1,27 @@
 #Compatibility for Immersive Engineering <liquid:ethanol> and <liquid:plantoil>
 import crafttweaker.item.IItemStack;
 
+
+// Pam's Lemonade
+recipes.remove(<harvestcraft:lemonaideitem>);
+recipes.addShapeless(<harvestcraft:lemonaideitem>, [<ore:toolJuicer>, <ore:cropLemon>, <ore:listAllsugar>, <ore:listAllsugar>]);
+
+// Pam's Cotton
+recipes.remove(<harvestcraft:cottonitem>);
+
+// Soft Pretzel
+recipes.remove(<harvestcraft:softpretzelitem>);
+recipes.addShapeless('Soft Pretzel',
+  <harvestcraft:softpretzelitem>,
+  [<ore:toolBakeware>, <ore:foodDough>, <ore:foodButter>,
+    <ore:itemSalt>, <ore:itemSalt>]);
+
+// Pam's Lavender Shortbread
+recipes.remove(<harvestcraft:lavendershortbreaditem>);
+recipes.addShapeless("Pam's Harvestcraft Lavender Shortbread",
+  <harvestcraft:lavendershortbreaditem>,
+  [<ore:toolBakeware>, <ore:foodDough>, <ore:flowerLavender>]);
+
 utils.rh(<harvestcraft:market>);
 
 oreDict.cropLychee.add(<harvestcraft:lycheeitem>);
@@ -47,7 +68,7 @@ mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 100, <ore
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil> * 80, <ore:listAllseed>, 500);
 
 
-for i, dye in scripts.category.dye.oreDye {
+for i, dye in scripts.vars.oreDye {
     if(i==0) continue;
     craft.reshapeless(itemUtils.getItem("harvestcraft:candledeco"~(i+1)) * 4, "AAAAc", {
         A: <harvestcraft:candledeco1>,

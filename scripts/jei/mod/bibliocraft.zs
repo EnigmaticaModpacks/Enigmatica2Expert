@@ -14,12 +14,12 @@ x.addJEICatalyst(<bibliocraft:desk>);
 x.setJEIDurationSlot(4,1,"duration", SlotVisual.arrowRight());
 scripts.jei.requious.addInsOuts(x, [[2,0],[0,1],[1,1],[2,1],[1,2],[2,2]], [[6,1]]);
 
-for name, book in scripts._init.variables.bookWrittenBy {
+for name, book in scripts.mods.bibliocraft_books.bookWrittenBy {
   addRecipe(x, {[
     <minecraft:name_tag:*>,
     <minecraft:paper>,
     <bibliocraft:typewriter:*>,
-    Soul(scripts._init.variables.bookWriters[name]),
+    Soul(scripts.mods.bibliocraft_books.bookWriters[name]),
     <bibliocraft:desk:*>,
     <bibliocraft:seat:*>,
   ] : [book]});

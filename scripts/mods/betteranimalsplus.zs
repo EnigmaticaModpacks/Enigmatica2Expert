@@ -42,15 +42,15 @@ utils.rh(<betteranimalsplus:crab_meat_cooked>);
 furnace.remove(<betteranimalsplus:crab_meat_cooked>);
 
 # Do not unify Venison so we could summon Hirschgeist
-// scripts.loot.animal_drops.tweak("betteranimalsplus:deer","deer-venison","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [1,3]);
-// scripts.loot.animal_drops.tweak("betteranimalsplus:reindeer","reindeer","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [1,3]);
-// scripts.loot.animal_drops.tweak("betteranimalsplus:moose","moose-venison","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [2,5]);
+// scripts.lib.loot.tweak("betteranimalsplus:deer","deer-venison","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [1,3]);
+// scripts.lib.loot.tweak("betteranimalsplus:reindeer","reindeer","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [1,3]);
+// scripts.lib.loot.tweak("betteranimalsplus:moose","moose-venison","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [2,5]);
 recipes.addShapeless("Venison conversion 1", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>]);
 recipes.addShapeless("Venison conversion 2", <harvestcraft:venisonrawitem>, [<betteranimalsplus:venisonraw>]);
 
-scripts.loot.animal_drops.tweak("betteranimalsplus:nautilus","nautilus","minecraft:fish", null, [<harvestcraft:oysterrawitem>], [1,3]);
-scripts.loot.animal_drops.tweak("betteranimalsplus:crab","crab","betteranimalsplus:crab_meat_raw", <betteranimalsplus:crab_meat_raw>, [<harvestcraft:crabrawitem>], [1,3]);
-scripts.loot.animal_drops.tweak("betteranimalsplus:hirschgeist","hirschgeist", null, null, [<randomthings:ingredient:2>, <mysticalagriculture:crafting:2>], [16,64], false, 200);
+scripts.lib.loot.tweak("betteranimalsplus:nautilus","nautilus","minecraft:fish", null, [<harvestcraft:oysterrawitem>], [1,3]);
+scripts.lib.loot.tweak("betteranimalsplus:crab","crab","betteranimalsplus:crab_meat_raw", <betteranimalsplus:crab_meat_raw>, [<harvestcraft:crabrawitem>], [1,3]);
+scripts.lib.loot.tweak("betteranimalsplus:hirschgeist","hirschgeist", null, null, [<randomthings:ingredient:2>, <mysticalagriculture:crafting:2>], [16,64], false, 200);
 
 # [Raw Turkey] from [Raw Turkey]
 craft.make(<betteranimalsplus:turkey_raw>, ["pretty",

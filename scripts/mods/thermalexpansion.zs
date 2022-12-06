@@ -14,6 +14,28 @@ for plank in <ore:plankWood>.items {
 for slab in <ore:slabWood>.items {
 	mods.thermalexpansion.Sawmill.addRecipe(<minecraft:stick> * 3, slab, 250, <thermalfoundation:material:800>, 15);
 }
+	
+recipes.addShaped("TE Wooden Gear", 
+<thermalfoundation:material:22>, 
+[[null, <ore:plankWood>, null],
+[<ore:plankWood>, null, <ore:plankWood>], 
+[null, <ore:plankWood>, null]]);
+
+recipes.addShaped("TE Stone Gear Direct", 
+<thermalfoundation:material:23>, 
+[[<ore:plankWood>, <ore:cobblestone>, <ore:plankWood>],
+[<ore:cobblestone>, null, <ore:cobblestone>], 
+[<ore:plankWood>, <ore:cobblestone>, <ore:plankWood>]]);
+
+recipes.addShaped("TE Stone Gear Wood", 
+<thermalfoundation:material:23>, 
+[[null, <ore:cobblestone>, null],
+[<ore:cobblestone>, <ore:gearWood>, <ore:cobblestone>], 
+[null, <ore:cobblestone>, null]]);
+
+// Iridium conversion
+recipes.addShapeless(<thermalfoundation:material:135> * 2, [<ic2:misc_resource:1>, <ic2:misc_resource:1>]);
+recipes.addShapeless(<ic2:misc_resource:1> * 2, [<thermalfoundation:material:135>, <thermalfoundation:material:135>]);
 
 # Canola Oil Changes	
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:refinedcanolaoil>);

@@ -1,5 +1,5 @@
-import crafttweaker.item.IItemStack as IItemStack;
-import crafttweaker.item.IIngredient as IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 #modloaded botania
 
 

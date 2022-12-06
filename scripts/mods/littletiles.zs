@@ -35,7 +35,7 @@ craft.remake(<littletiles:grabber>,            [" w ", "wOw", " # "], ingrs);
 scripts.process.melt(<littletiles:lttransparentcoloredblock:5>, <liquid:water> * 1000);
 
 // Add missed Dyable blocks recipes
-val unique = scripts.unique.Unique([
+val unique = scripts.lib.unique.Unique([
   <ore:dyeLightGray>,
   <rustic:clay_wall>,
   <rustic:clay_wall>,

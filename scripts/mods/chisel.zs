@@ -1,6 +1,14 @@
 import mods.chisel.Carving.addVariation;
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 #modloaded chisel
+
+// Chisel Lavastone / Environmental Tech Basalt
+recipes.remove(<chisel:lavastone>);
+recipes.addShapedMirrored('Chisel Lavastone',
+  <chisel:lavastone> * 16,
+  [[<ore:stone>, <ore:stone>, <ore:stone>],
+    [<minecraft:lava_bucket>, <ore:stone>, <minecraft:lava_bucket>],
+    [<ore:stone>, <ore:stone>, <ore:stone>]]);
 
 addVariation("basalt", <quark:basalt:1>);
 addVariation("basalt", <quark:basalt>);

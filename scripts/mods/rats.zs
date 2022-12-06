@@ -379,10 +379,10 @@ craft.shapeless(<actuallyadditions:item_misc:23>, "PPPPCPPPP", {
 
 # Make alt recipe for tokens
 scripts.category.tooltip_utils.desc.both(<rats:token_piece>, "kill.slime.by.marbled_cheese_golem");
-scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:marbled_cheese_golem", <rats:token_piece>);
+scripts.do.entity_kill_entity.add("minecraft:slime", "rats:marbled_cheese_golem", <rats:token_piece>);
 
 # Bonus loot
-scripts.loot.entity_kill_entity.add("minecraft:slime", "rats:rat", <thermalfoundation:fertilizer> * 4);
+scripts.do.entity_kill_entity.add("minecraft:slime", "rats:rat", <thermalfoundation:fertilizer> * 4);
 
 # [Rat Lantern] from [Raw Rat][+2]
 craft.remake(<rats:rat_lantern> * 8, [

@@ -1,11 +1,6 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 
-	utils.rh(<forestry:gear_tin>);
-	utils.rh(<forestry:gear_bronze>);
-	utils.rh(<forestry:gear_copper>);
-	utils.rh(<appliedenergistics2:material:40>);
-	
-	val gearsToRemove = [
+val gearsToRemove = [
 	<appliedenergistics2:material:40>,
 	<thermalfoundation:material:22>,
 	<thermalfoundation:material:23>,
@@ -32,29 +27,10 @@ import crafttweaker.item.IItemStack as IItemStack;
 	<thermalfoundation:material:295>,
 	<redstonearsenal:material:96>,
 	<jaopca:item_geardraconium>,
-	
-	] as IItemStack[];
-	
-	for items in gearsToRemove {
-		recipes.remove(items);
-	}
-	
-	recipes.addShaped("TE Wooden Gear", 
-	<thermalfoundation:material:22>, 
-	[[null, <ore:plankWood>, null],
-	[<ore:plankWood>, null, <ore:plankWood>], 
-	[null, <ore:plankWood>, null]]);
-	
-	recipes.addShaped("TE Stone Gear Direct", 
-	<thermalfoundation:material:23>, 
-	[[<ore:plankWood>, <ore:cobblestone>, <ore:plankWood>],
-	[<ore:cobblestone>, null, <ore:cobblestone>], 
-	[<ore:plankWood>, <ore:cobblestone>, <ore:plankWood>]]);
-	
-	recipes.addShaped("TE Stone Gear Wood", 
-	<thermalfoundation:material:23>, 
-	[[null, <ore:cobblestone>, null],
-	[<ore:cobblestone>, <ore:gearWood>, <ore:cobblestone>], 
-	[null, <ore:cobblestone>, null]]);
+] as IItemStack[];
+
+for items in gearsToRemove {
+	recipes.remove(items);
+}
 
 

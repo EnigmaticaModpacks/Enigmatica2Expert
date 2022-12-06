@@ -1,4 +1,4 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 #modloaded mekanism
@@ -185,6 +185,13 @@ craft.remake(<mekanism:machineblock2:8>, ["pretty",
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
 	[<modularmachinery:blockcasing:5>, <ore:machineTeleporter>, <modularmachinery:blockcasing:5>], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
+
+// Mekanism Boiler Casing
+recipes.remove(<mekanism:basicblock2:7>);
+recipes.addShaped(<mekanism:basicblock2:7> * 8,
+  [[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
+    [<ore:ingotSteel>, <ore:ingotFakeIron>, <ore:ingotSteel>],
+    [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]]);
 
 # [Steel Casing]*2 from [Blast Brick][+3]
 craft.remake(<mekanism:basicblock:8> * 2, ["pretty",

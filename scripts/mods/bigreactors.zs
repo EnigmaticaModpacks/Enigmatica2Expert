@@ -2,6 +2,10 @@
 	
 # *======= Recipes =======*
 
+// Graphite conversion
+recipes.addShapeless('Graphite Conversion 3', <bigreactors:blockgraphite> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
+recipes.addShapeless('Graphite Conversion 4', <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockgraphite>, <bigreactors:blockgraphite>]);
+
 # Cyanite in NuclearCraft Fission Reactor
 	mods.nuclearcraft.fission.addRecipe([<immersiveengineering:metal:5>, <bigreactors:ingotcyanite>, 4800.0, 100.0, 40.0, "URANIUM"]);
 

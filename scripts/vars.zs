@@ -1,9 +1,12 @@
-#priority 960
-#ignoreBracketErrors
-
+import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
-static represent as IItemStack[int] = {
+#priority 3000
+
+static meltingExceptions as IData = ['Amber', 'Redstone', 'Coal', 'Diamond'] as IData;
+
+static dimBlocks as IItemStack[int] = {
   0          : <quark:turf>,
   1          : <minecraft:end_stone>,
   -1         : <minecraft:netherrack>,
@@ -36,3 +39,22 @@ static represent as IItemStack[int] = {
   122        : <astralsorcery:blockblackmarble>,
   123        : <minecraft:stone:5>,
 } as IItemStack[int];
+
+static oreDye as IIngredient[] = [
+  <ore:dyeWhite>,
+  <ore:dyeOrange>,
+  <ore:dyeMagenta>,
+  <ore:dyeLightBlue>,
+  <ore:dyeYellow>,
+  <ore:dyeLime>,
+  <ore:dyePink>,
+  <ore:dyeGray>,
+  <ore:dyeLightGray>,
+  <ore:dyeCyan>,
+  <ore:dyePurple>,
+  <ore:dyeBlue>,
+  <ore:dyeBrown>,
+  <ore:dyeGreen>,
+  <ore:dyeRed>,
+  <ore:dyeBlack>,
+] as IIngredient[];

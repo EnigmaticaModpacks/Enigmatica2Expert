@@ -1,6 +1,6 @@
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import loottweaker.vanilla.loot.Functions;
 
 #modloaded loottweaker

@@ -6,13 +6,62 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.jaopca.JAOPCA;
 import mods.jaopca.OreEntry;
+import crafttweaker.entity.IEntityDefinition;
+
+// Animania Random Animal Spawn Egg
+mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>,
+  [[null, <cyclicmagic:sprout_seed>, null],
+    [<ore:egg>, <ore:egg>, <ore:egg>],
+    [null, <cyclicmagic:sprout_seed>, null]],
+  40, <liquid:meat> * 500);
+
+mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>,
+  [[null, <cyclicmagic:sprout_seed>, null],
+    [<ore:egg>, <ore:egg>, <ore:egg>],
+    [null, <cyclicmagic:sprout_seed>, null]],
+  40, <liquid:liquiddna> * 250);
+
+// Mud conversion
+recipes.remove(<animania:block_mud>);
+recipes.addShapeless('BoP Mud', <biomesoplenty:mud>, [<animania:block_mud>]);
+recipes.addShapeless('Animania Mud', <animania:block_mud>, [<biomesoplenty:mud>]);
 
 
-# ######################################################################
-#
-# Animania
-#
-# ######################################################################
+// ---------------------------------------------------------------
+// Mob drops
+// ---------------------------------------------------------------
+
+# Add 2-3 more Rabbit Legs to Animania's rabbits
+for entity in [
+  <entity:animania:buck_chinchilla>,
+  <entity:animania:buck_cottontail>,
+  <entity:animania:buck_dutch>,
+  <entity:animania:buck_havana>,
+  <entity:animania:buck_jack>,
+  <entity:animania:buck_lop>,
+  <entity:animania:buck_new_zealand>,
+  <entity:animania:buck_rex>,
+  <entity:animania:doe_chinchilla>,
+  <entity:animania:doe_cottontail>,
+  <entity:animania:doe_dutch>,
+  <entity:animania:doe_havana>,
+  <entity:animania:doe_jack>,
+  <entity:animania:doe_lop>,
+  <entity:animania:doe_new_zealand>,
+  <entity:animania:doe_rex>,
+  <entity:animania:kit_chinchilla>,
+  <entity:animania:kit_cottontail>,
+  <entity:animania:kit_dutch>,
+  <entity:animania:kit_havana>,
+  <entity:animania:kit_jack>,
+  <entity:animania:kit_lop>,
+  <entity:animania:kit_new_zealand>,
+  <entity:animania:kit_rex>,
+] as IEntityDefinition[] {
+  entity.addPlayerOnlyDrop(<minecraft:rabbit_foot>, 2, 3);
+}
+
+// ---------------------------------------------------------------
 
 # Buff from 100
 <animania:carving_knife>.maxDamage = 1000;

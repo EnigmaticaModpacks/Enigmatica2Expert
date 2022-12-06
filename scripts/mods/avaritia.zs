@@ -1,4 +1,4 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 #modloaded avaritia
 
 # *======= Recipes =======*

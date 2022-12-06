@@ -588,9 +588,9 @@ val defGroup = [
 	<mysticalagriculture:nature_essence>,
 ] as IIngredient[];
 
-val uniq_biomesoplenty = scripts.unique.Unique(defGroup + <biomesoplenty:biome_essence>);
-val uniq_tconstruct    = scripts.unique.Unique(defGroup + <ore:slimeball>);
-val uniq_other         = scripts.unique.Unique(defGroup + <mysticalagriculture:nature_essence>);
+val uniq_biomesoplenty = scripts.lib.unique.Unique(defGroup + <biomesoplenty:biome_essence>);
+val uniq_tconstruct    = scripts.lib.unique.Unique(defGroup + <ore:slimeball>);
+val uniq_other         = scripts.lib.unique.Unique(defGroup + <mysticalagriculture:nature_essence>);
 
 /*Inject_js(
 getByOredict('treeSapling')
@@ -806,7 +806,7 @@ craft.make(<quark:slime_bucket>, ["pretty",
 });
 
 # "Purification" or [Prosperity Shard Shard] into pure shards
-scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "ma.prosperity"}),  {"biomesoplenty:blue_fire": <mysticalagriculture:crafting:5>});
+scripts.do.expire_in_block.set(<tconstruct:shard>.withTag({Material: "ma.prosperity"}),  {"biomesoplenty:blue_fire": <mysticalagriculture:crafting:5>});
 
 function remakeInAltair(oldRecipeName as string, output as IItemStack, gridStr as string[], ingrsMap as IIngredient[string]) as void {
 	recipes.removeByRecipeName(oldRecipeName);
@@ -821,7 +821,7 @@ remakeInAltair("mysticalagriculture:blockcustomore", <astralsorcery:blockcustomo
 );
 
 # Adventure way to obtain Prudentium Essence
-scripts.loot.entity_kill_entity.add("minecraft:slime", "betteranimalsplus:feralwolf", <mysticalagriculture:crafting:2>);
+scripts.do.entity_kill_entity.add("minecraft:slime", "betteranimalsplus:feralwolf", <mysticalagriculture:crafting:2>);
 
 val mobChunks = {
 	"minecraft:zombie": 6,

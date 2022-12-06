@@ -22,6 +22,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 #priority 2000
+#norun
 
 
 zenClass Process {

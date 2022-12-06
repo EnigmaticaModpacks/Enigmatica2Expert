@@ -1,6 +1,17 @@
-import crafttweaker.item.IItemStack as IItemStack;
+import crafttweaker.item.IItemStack;
 import crafttweaker.item.WeightedItemStack;
 #modloaded biomesoplenty
+
+// Amber Conversion
+recipes.addShapeless('BoP Amber', <biomesoplenty:gem:7> * 2, [<thaumcraft:amber>, <thaumcraft:amber>]);
+recipes.addShapeless('Thaumcraft Amber', <thaumcraft:amber> * 2, [<biomesoplenty:gem:7>, <biomesoplenty:gem:7>]);
+
+// Make Quicksand
+scripts.process.solution([<ore:soulSand>], [<liquid:blueslime> * 1000], [<liquid:sand> * 1000], null, 'except: highoven');
+
+// Hardened Ice Unification
+craft.make(<biomesoplenty:hard_ice> * 8, ['AAA', 'A A', 'AAA'], { A: <mysticalagriculture:ice_essence> });
+scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>);
 
 # Poison bucket recipe fix (bucket could be duped)
 	recipes.remove(Bucket("poison"));

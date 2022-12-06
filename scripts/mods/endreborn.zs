@@ -3,6 +3,10 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
+
+# Chronologist
+<entity:endreborn:chronologist>.addPlayerOnlyDrop(<deepmoblearning:living_matter_extraterrestrial>, 1, 2);
+
 # Remove excess items
 for item in [
   <endreborn:tool_pickaxe_endorium>,
@@ -66,6 +70,7 @@ recipes.remove(<endreborn:block_decorative_lormyte>);
 val LS = <endreborn:item_lormyte_crystal>;
 recipes.addShapeless(LS * 9, [<endreborn:block_decorative_lormyte>]);
 recipes.addShapeless(<endreborn:block_decorative_lormyte>, [LS,LS,LS,LS,LS,LS,LS,LS,LS]);
+scripts.lib.dropt.addDrop(<endreborn:block_lormyte_crystal>, <endreborn:item_lormyte_crystal>);
 
 # Fix automatic recipe
 mods.actuallyadditions.Crusher.removeRecipe(<endreborn:death_essence>);
@@ -252,7 +257,7 @@ craft.reshapeless(<endreborn:crop_ender_flower>, "C‚", {
 mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);
 
 # [Endorium Nugget]*6 from [Ender Lilly][+1]
-scripts.category.expire_in_block.set(<extrautils2:enderlilly>, {"cyclicmagic:fire_dark" : <endreborn:item_raw_endorium> * 6});
+scripts.do.expire_in_block.set(<extrautils2:enderlilly>, {"cyclicmagic:fire_dark" : <endreborn:item_raw_endorium> * 6});
 
 # [Endorium Ingot] from [Endorium Nugget]
 recipes.addShapeless("Endorium Nuggets from Ingot", <endreborn:item_raw_endorium> * 9, [<endreborn:item_ingot_endorium>]);
@@ -262,7 +267,7 @@ craft.shapeless(<endreborn:item_ingot_endorium>, "‚‚‚‚‚‚‚‚‚", 
 });
 
 # "Purification" of shards into nuggets
-scripts.category.expire_in_block.set(<tconstruct:shard>.withTag({Material: "wolframium"}),  {"biomesoplenty:blue_fire": <endreborn:wolframium_nugget>});
+scripts.do.expire_in_block.set(<tconstruct:shard>.withTag({Material: "wolframium"}),  {"biomesoplenty:blue_fire": <endreborn:wolframium_nugget>});
 
 #----------------------------------------------------------------------------
 # Tungsten

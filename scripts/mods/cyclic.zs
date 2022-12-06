@@ -8,6 +8,16 @@ import crafttweaker.data.IData;
 
 # *======= Recipes =======*
 
+// Tallow into biomass
+scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, 'except: compressor');
+scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
+scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280);
+
+// Cyclic Guide
+recipes.addShapeless('Cyclic Guide',
+  <guideapi:cyclicmagic-guide>,
+  [<minecraft:book>, <cyclicmagic:carbon_paper>]);
+
 # Removing Simple Block Miner
 	utils.rh(<cyclicmagic:block_miner>);
 
@@ -425,14 +435,14 @@ recipes.remove(<cyclicmagic:corrupted_chorus>);
 recipes.remove(<cyclicmagic:glowing_chorus>);
 scripts.category.tooltip_utils.desc.both(<cyclicmagic:apple>, "kill.slime.by.zombie");
 scripts.category.tooltip_utils.desc.both(<cyclicmagic:corrupted_chorus>, "kill.slime.by.enderman");
-scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:zombie", <cyclicmagic:apple>);
-scripts.loot.entity_kill_entity.add("minecraft:slime", "minecraft:enderman", <cyclicmagic:corrupted_chorus>);
+scripts.do.entity_kill_entity.add("minecraft:slime", "minecraft:zombie", <cyclicmagic:apple>);
+scripts.do.entity_kill_entity.add("minecraft:slime", "minecraft:enderman", <cyclicmagic:corrupted_chorus>);
 
 # Craft in fire
 recipes.remove(<cyclicmagic:apple_lapis>);
 recipes.remove(<cyclicmagic:horse_upgrade_type>);
-scripts.category.expire_in_block.set(<ore:cropApple>,  {"cyclicmagic:fire_frost": <cyclicmagic:apple_lapis>});
-scripts.category.expire_in_block.set(<ore:cropCarrot>, {"cyclicmagic:fire_dark" : <cyclicmagic:horse_upgrade_type>});
+scripts.do.expire_in_block.set(<ore:cropApple>,  {"cyclicmagic:fire_frost": <cyclicmagic:apple_lapis>});
+scripts.do.expire_in_block.set(<ore:cropCarrot>, {"cyclicmagic:fire_dark" : <cyclicmagic:horse_upgrade_type>});
 
 # [Corrupted Chorus Fruit] peaceful alt
 # [Corrupted Chorus Fruit]*16 from [Draconium Essence]*2[+1]

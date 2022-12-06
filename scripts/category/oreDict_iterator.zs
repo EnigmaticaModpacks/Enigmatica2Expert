@@ -4,11 +4,11 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import scripts.process.beneficiate as beneficiate;
-import scripts.magicProcessing.magicProcessing as magicProcessing;
+import scripts.category.magicProcessing.magicProcessing;
 
 static benOpts as IData = {
   exceptions: "Pulverizer StarlightInfuser",
-  meltingExceptions: scripts._init.variables.meltingExceptions
+  meltingExceptions: scripts.vars.meltingExceptions
 } as IData;
 
 function getOreName(name as string, part as string) as string {
