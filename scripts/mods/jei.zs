@@ -3,7 +3,6 @@ import crafttweaker.item.IIngredient;
 
 # Thanks to the FTB Interactions devs for making me aware of this feature <3
 var categoriesToHide as string[] = [
-	
 	"minecraft.fuel",
 	"thermaldynamics.covers",
 	"jehc.market",
@@ -20,7 +19,8 @@ var categoriesToHide as string[] = [
 	"tcomplement:high_oven_melting",
 	"mekanism.energizedsmelter",
 	"jeresources.enchantment",
-	"oc.manual"
+	"oc.manual",
+	"oc.api",
 ];
 
 for category in categoriesToHide {
