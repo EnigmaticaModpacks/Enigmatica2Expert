@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 2.7d,
+	text: [
+		"Configurable timer / redstone clock.",
+		"",
+		"Way cheaper than other timers."
+	],
+	dependencies: [
+		"c8d050c2"
+	],
+	tasks: [{
+		uid: "38c1566e",
+		type: "item",
+		items: [{
+			item: "botania:hourglass"
+		}]
+	}],
+	rewards: [{
+		uid: "d59e8c52",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

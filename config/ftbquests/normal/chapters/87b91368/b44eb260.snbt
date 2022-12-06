@@ -1,0 +1,33 @@
+{
+	x: 5.8d,
+	y: -4.5d,
+	text: [
+		"Two minutes after placing it will turn into a baby animal.",
+		"",
+		"95% of the time the cocoon will turn into a farm animal— a Sheep, a Pig, a Cow, a Chicken or a Rabbit (19% chance each). Cows have a 1% chance to be a Mooshroom instead.",
+		"",
+		"5% of the time the Cocoon will become a Horse, a Wolf or an Ocelot (1.7% chance each).",
+		"",
+		"Up to 20 Chorus Fruit can be given to the cocoon to give it a chance to spawn a Shulker instead of an animal. Emeralds will cause it to spawn a baby Villager instead. Each item will increase the chance by 5%."
+	],
+	dependencies: [
+		"91a85050"
+	],
+	tasks: [{
+		uid: "896359f4",
+		type: "item",
+		items: [{
+			item: "botania:cocoon"
+		}]
+	}],
+	rewards: [{
+		uid: "a5cf814e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "decor"
+			}
+		}
+	}]
+}

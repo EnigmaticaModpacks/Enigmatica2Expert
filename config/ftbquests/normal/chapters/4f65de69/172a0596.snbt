@@ -33,7 +33,8 @@
 		type: "item",
 		items: [{
 			item: "minecraft:stick"
-		}]
+		}],
+		count: 64L
 	}],
 	rewards: [{
 		uid: "cf949f3b",
