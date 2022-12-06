@@ -15,12 +15,15 @@ events.onBlockHarvestDrops(function(e as crafttweaker.event.BlockHarvestDropsEve
   }
 });
 
-// events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBlockEvent) {
 events.onPlayerBreakSpeed(function(e as crafttweaker.event.PlayerBreakSpeedEvent) {
   if(isNull(e.player) || isNull(e.player.world) || e.player.world.remote) return;
   if(isNull(e.player.currentItem)) return;
 
-  if(e.block.definition.id == 'minecraft:wooden_slab' && <ore:stickWood> has e.player.currentItem) {
-    server.commandManager.executeCommandSilent(server, "/particle smoke "~e.x~" "~e.y~" "~e.z~" 0.2 0.1 0.2 0.01 2");
-  }
+  if(e.player.currentItem.definition.id != 'minecraft:stick') return;
+
+  val blockItem = itemUtils.getItem(e.block.definition.id);
+  if(isNull(blockItem) || isNull(blockItem.ores) || blockItem.ores.length <= 0 || !(blockItem.ores has <ore:slabWood>)) return;
+
+  server.commandManager.executeCommandSilent(server, "/particle smoke "~e.x~" "~e.y~" "~e.z~" 0.2 0.1 0.2 0.01 2");
+  e.player.currentItem.mutable().shrink(1);
 });
