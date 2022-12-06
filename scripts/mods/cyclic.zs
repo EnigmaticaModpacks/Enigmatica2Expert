@@ -8,11 +8,6 @@ import crafttweaker.data.IData;
 
 # *======= Recipes =======*
 
-// Tallow into biomass
-scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, 'except: compressor');
-scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
-scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280);
-
 // Cyclic Guide
 recipes.addShapeless('Cyclic Guide',
   <guideapi:cyclicmagic-guide>,

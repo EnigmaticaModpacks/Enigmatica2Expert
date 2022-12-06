@@ -1,5 +1,26 @@
 
 
+furnace.setFuel(<contenttweaker:conglomerate_of_coal>, 60000);
+furnace.setFuel(<contenttweaker:blasted_coal>, 120000);
+furnace.setFuel(<contenttweaker:empowered_phosphor>, 180000);
+furnace.setFuel(<contenttweaker:saturated_phosphor>, 450000);
+
+// Tallow into biomass
+scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, 'except: compressor');
+scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
+scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280);
+
+// Remove Tungsten from other places
+mods.immersiveengineering.ArcFurnace.removeRecipe(<contenttweaker:item_ore_tungsten:3>);
+mods.nuclearcraft.ingot_former.removeRecipeWithOutput([<contenttweaker:item_ore_tungsten:3>]);
+
+# Add missed furnace recipe
+furnace.addRecipe(<endreborn:item_ingot_wolframium>, <contenttweaker:item_ore_tungsten:2>, 4.0d);
+
+// Remake usage of new dusts
+utils.compact(<contenttweaker:dust_tiny_gold>  , <thermalfoundation:material:1>);
+utils.compact(<contenttweaker:dust_tiny_silver>, <thermalfoundation:material:66>);
+
 // Molten Cheese
 scripts.process.melt(<ore:cheeseWheels> | <ore:blockCheese>, <liquid:cheese> * 1000);
 scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250);

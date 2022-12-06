@@ -435,10 +435,6 @@ morphDust(<ic2:dust:2> , <liquid:petrotheum>        * 500 , <actuallyadditions:i
 morphDust(<ic2:dust:31>, <liquid:spectre>           * 500 , <biomesoplenty:crystal_shard>  , [<aspect:metallum>*40, <aspect:praemunio>*60   ]); # Ender Pearl Dust
 morphDust(<ic2:dust:36>, <liquid:cryotheum_nak_hot> * 500 , <enderio:item_material:14>     , [<aspect:metallum>*40, <aspect:spiritus>*50    ]); # Tiny Pile of Diamond Dust
 
-// Remake usage of new dusts
-utils.compact(<contenttweaker:dust_tiny_gold>  , <thermalfoundation:material:1>);
-utils.compact(<contenttweaker:dust_tiny_silver>, <thermalfoundation:material:66>);
-
 // Special case for dusts that recipes not stick with oredict
 # Coal
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:coal>);

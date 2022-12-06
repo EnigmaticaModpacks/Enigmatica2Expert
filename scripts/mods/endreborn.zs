@@ -278,11 +278,4 @@ craft.shapeless(<endreborn:item_ingot_wolframium>, "‚‚‚‚‚‚‚‚‚"
   "‚": <jaopca:item_nuggettungsten>,
 });
 
-// Remove Tungsten from other places
-mods.immersiveengineering.ArcFurnace.removeRecipe(<contenttweaker:item_ore_tungsten:3>);
-mods.nuclearcraft.ingot_former.removeRecipeWithOutput([<contenttweaker:item_ore_tungsten:3>]);
-
-# Add missed furnace recipe
-furnace.addRecipe(<endreborn:item_ingot_wolframium>, <contenttweaker:item_ore_tungsten:2>, 4.0d);
-
 #----------------------------------------------------------------------------
