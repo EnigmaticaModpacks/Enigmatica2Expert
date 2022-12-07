@@ -1,0 +1,30 @@
+{
+	x: -7.6d,
+	y: 10.3d,
+	shape: "gear",
+	text: [
+		"Placing mechanic changed.",
+		"",
+		"Placing this scaffold would fill 24 blocks of floor with Replaceable Scaffolding in max area 9x9."
+	],
+	dependencies: [
+		"9f41b8d8"
+	],
+	tasks: [{
+		uid: "dce4d155",
+		type: "item",
+		items: [{
+			item: "openblocks:scaffolding"
+		}]
+	}],
+	rewards: [{
+		uid: "1bd26161",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "decor"
+			}
+		}
+	}]
+}
