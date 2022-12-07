@@ -35,5 +35,5 @@ events.onEntityLivingDamage(function(e as crafttweaker.event.EntityLivingDamageE
     mob.motionX, mob.motionY, mob.motionZ, 2
   );
 
-  mob.world.playSound("minecraft:entity.sheep.shear", "ambient", mob.position, 1.0f, 1.0f, true);
+  player.sendPlaySoundPacket("minecraft:entity.sheep.shear", "ambient", mob.position, 1.0f, 1.0f);
 });

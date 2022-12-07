@@ -29,7 +29,7 @@ for itemId, tuple in customRecipes {
 
 events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
   val world = e.world;
-  if(isNull(world) || world.remote) return;
+  if(isNull(world)) return;
 
   val item = e.item;
   if (isNull(item) || item.amount < 1) return;
@@ -40,14 +40,18 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   val tuple = customRecipes[item.definition.id];
   if (isNull(tuple)) return;
 
-  for _, state in tuple {
-    world.destroyBlock(e.position, false);
-    world.setBlockState(state, e.position);
-    server.commandManager.executeCommandSilent(server, "/bedrockores wrap "~item.amount~" "~e.x~" "~e.y~" "~e.z);
-    server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~e.x~" "~(e.y+1.0)~" "~e.z~" 0.1 0 0.1 0.01 10");
-    world.playSound("thaumcraft:poof", "ambient", e.position, 0.5f, 1.5f);
-    item.mutable().shrink(item.amount);
+  var state as IBlockState = null;
+  for _, _state in tuple { state = _state; }
+
+  if(world.remote) {
+    world.playSound("thaumcraft:poof", "ambient", e.position.getOffset(crafttweaker.world.IFacing.up(), 1), 0.5f, 0.2f);
     return;
   }
+
+  world.destroyBlock(e.position, false);
+  world.setBlockState(state, e.position);
+  server.commandManager.executeCommandSilent(server, "/bedrockores wrap "~item.amount~" "~e.x~" "~e.y~" "~e.z);
+  server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~e.x~" "~(e.y+1.0)~" "~e.z~" 0.1 0 0.1 0.01 10");
+  item.mutable().shrink(item.amount);
 });
 

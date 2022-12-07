@@ -406,7 +406,7 @@ zenClass Utils {
         itemEntity.motionZ = mz + rnd.nextDouble(-0.1d, 0.1d);
         world.spawnEntity(itemEntity);
 
-        world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
+        // world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
         server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
       }).start();
 

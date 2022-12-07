@@ -1,4 +1,8 @@
 import crafttweaker.world.IFacing;
+import mods.ctutils.utils.Math.abs;
+
+#loader crafttweaker reloadable
+
 static itemsConsumed as int = 4;
 
 # Remove recipes defined by other methods
@@ -55,8 +59,12 @@ events.onWorldTick(function(e as crafttweaker.event.WorldTickEvent){
     world.destroyBlock(blockPos, false);
     world.setBlockState(<blockstate:astralsorcery:blockcustomsandore>, blockPos);
 
-    // Spawn particles and sound
+    // Spawn particles
     server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~p.x~" "~(p.y+1.5)~" "~p.z~" 0 1 0 -0.01 20");
-    world.playSound("thaumcraft:poof", "ambient", entityItem.position, 0.5f, 1.5f);
+
+    for pl in world.getAllPlayers() {
+      if(abs(pl.x - p.x) > 20 || abs(pl.y - p.y) > 20 || abs(pl.z - p.z) > 20) continue;
+      pl.sendPlaySoundPacket("astralsorcery:attunement", "ambient", entityItem.position, 0.5f, 3.0f);
+    }
   }
 });
