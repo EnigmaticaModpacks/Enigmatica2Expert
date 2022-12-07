@@ -397,9 +397,6 @@ removeItems(<ore:dustNetherQuartz>, [<actuallyadditions:item_dust:5>, <enderio:i
 addItems(<ore:listAllicecream>, itemUtils.getItemsByRegexRegistryName("harvestcraft:.*icecreamitem"));
 remove(<ore:listAllicecream>, <harvestcraft:silkentofuitem>);
 
-# Modular controllers
-addItems(<ore:controllerModular>, itemUtils.getItemsByRegexRegistryName("modularcontroller:.*_controller"));
-
 # Clear "ore" entry from hunks
 # And remove hunks from JEI
 function removeHunkOre(item as IItemStack) {
