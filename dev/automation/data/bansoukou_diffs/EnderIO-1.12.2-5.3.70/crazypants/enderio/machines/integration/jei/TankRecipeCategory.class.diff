@@ -1,0 +1,80 @@
+diff --git "a/~bansoukou_unpatched\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java" "b/bansoukou\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java"
+index 7a7ec0fb1..8b54edbca 100644
+--- "a/~bansoukou_unpatched\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java"
++++ "b/bansoukou\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java"
+@@ -94,9 +94,9 @@ extends BlankRecipeCategory<TankRecipeWrapper> {
+     private final IDrawable background;
+ 
+     public static void register() {
+-        if (!((Boolean)PersonalConfig.enableTankFluidInOutJEIRecipes.get()).booleanValue() && !((Boolean)PersonalConfig.enableTankMendingJEIRecipes.get()).booleanValue()) {
+-            return;
+-        }
++        FluidStack drain;
++        IFluidHandlerItem fluidHandler;
++        Map<Enchantment, Integer> v4;
+         RecipeWrapperBase.setLevelData(TankRecipeWrapperSimple.class, (IGuiHelper)MachinesPlugin.iGuiHelper, (int)(140 - xOff), (int)(40 - yOff - 5), (String)"textures/blocks/block_tank.png", (String)"textures/blocks/block_tank.png");
+         RecipeWrapperBase.setLevelData(TankRecipeWrapperRecipe.class, (IGuiHelper)MachinesPlugin.iGuiHelper, (int)(140 - xOff), (int)(40 - yOff - 5), (String)"textures/blocks/block_tank.png", (String)"textures/blocks/block_tank.png");
+         MachinesPlugin.iModRegistry.addRecipeCategories(new IRecipeCategory[]{new TankRecipeCategory(MachinesPlugin.iGuiHelper)});
+@@ -115,18 +115,18 @@ extends BlankRecipeCategory<TankRecipeWrapper> {
+             result.add(new TankRecipeWrapperRecipe((TankMachineRecipe)recipe));
+         }
+         if (((Boolean)PersonalConfig.enableTankFluidInOutJEIRecipes.get()).booleanValue()) {
+-            Map fluids = FluidRegistry.getRegisteredFluids();
+-            for (ItemStack stack : validItems) {
++            v4 = FluidRegistry.getRegisteredFluids();
++            for (Object stack : validItems) {
+                 ItemStack drainedStack = stack.func_77946_l();
+-                IFluidHandlerItem fluidHandler = FluidUtil.getFluidHandler((ItemStack)drainedStack);
++                fluidHandler = FluidUtil.getFluidHandler((ItemStack)drainedStack);
+                 if (fluidHandler == null) continue;
+-                FluidStack drain = fluidHandler.drain(16000, true);
++                drain = fluidHandler.drain(16000, true);
+                 drainedStack = fluidHandler.getContainer();
+                 if (drain != null && drain.amount > 0) {
+                     result.add(new TankRecipeWrapperSimple(null, drain, stack.func_77946_l(), drainedStack));
+                     continue;
+                 }
+-                for (Fluid fluid : fluids.values()) {
++                for (Fluid fluid : v4.values()) {
+                     ItemStack filledStack = stack.func_77946_l();
+                     fluidHandler = FluidUtil.getFluidHandler((ItemStack)filledStack);
+                     if (fluidHandler == null) continue;
+@@ -138,24 +138,23 @@ extends BlankRecipeCategory<TankRecipeWrapper> {
+             }
+         }
+         if (((Boolean)TankConfig.allowMending.get()).booleanValue() && ((Boolean)PersonalConfig.enableTankMendingJEIRecipes.get()).booleanValue()) {
+-            Map<Enchantment, Integer> enchMap = Collections.singletonMap(Enchantments.field_185296_A, 1);
++            v4 = Collections.singletonMap(Enchantments.field_185296_A, 1);
+             int maxMendable = TileTank.xpToDurability((int)XpUtil.liquidToExperience((int)16000));
+-            for (ItemStack stack : validItems) {
+-                ItemStack enchantedStack;
+-                if (!stack.func_77984_f()) continue;
+-                if (EnchantmentHelper.func_77506_a((Enchantment)Enchantments.field_185296_A, (ItemStack)stack) > 0) {
+-                    enchantedStack = stack.func_77946_l();
++            for (ItemStack drainedStack : validItems) {
++                if (!drainedStack.func_77984_f()) continue;
++                if (EnchantmentHelper.func_77506_a((Enchantment)Enchantments.field_185296_A, (ItemStack)drainedStack) > 0) {
++                    fluidHandler = drainedStack.func_77946_l();
+                 } else {
+-                    if (!Enchantments.field_185296_A.func_92089_a(stack)) continue;
+-                    enchantedStack = stack.func_77946_l();
+-                    EnchantmentHelper.func_82782_a(enchMap, (ItemStack)enchantedStack);
++                    if (!Enchantments.field_185296_A.func_92089_a(drainedStack)) continue;
++                    fluidHandler = drainedStack.func_77946_l();
++                    EnchantmentHelper.func_82782_a(v4, (ItemStack)fluidHandler);
+                 }
+-                ItemStack damagedStack = enchantedStack.func_77946_l();
+-                damagedStack.func_77964_b(damagedStack.func_77958_k() * 3 / 4);
+-                int damageMendable = Math.min(maxMendable, damagedStack.func_77952_i());
+-                enchantedStack.func_77964_b(damagedStack.func_77952_i() - damageMendable);
+-                if (damagedStack.func_77952_i() == enchantedStack.func_77952_i() || !Prep.isValid((ItemStack)damagedStack) || !Prep.isValid((ItemStack)enchantedStack)) continue;
+-                result.add(new TankRecipeWrapperSimple(new FluidStack(Fluids.XP_JUICE.getFluid(), XpUtil.experienceToLiquid((int)TileTank.durabilityToXp((int)damageMendable))), null, damagedStack, enchantedStack));
++                drain = fluidHandler.func_77946_l();
++                drain.func_77964_b(drain.func_77958_k() * 3 / 4);
++                int damageMendable = Math.min(maxMendable, drain.func_77952_i());
++                fluidHandler.func_77964_b(drain.func_77952_i() - damageMendable);
++                if (drain.func_77952_i() == fluidHandler.func_77952_i() || !Prep.isValid((ItemStack)drain) || !Prep.isValid((ItemStack)fluidHandler)) continue;
++                result.add(new TankRecipeWrapperSimple(new FluidStack(Fluids.XP_JUICE.getFluid(), XpUtil.experienceToLiquid((int)TileTank.durabilityToXp((int)damageMendable))), null, (ItemStack)drain, (ItemStack)fluidHandler));
+             }
+         }
+         long end = System.nanoTime();
