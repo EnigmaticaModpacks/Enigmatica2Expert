@@ -260,7 +260,7 @@
   "oredictinit": "1.12.2-2.2.1.72",
   "armoryexpansion-custommaterials": "2.0.0-alpha",
   "overpoweredarmorbar": "@VERSION@",
-  "tweakedpetroleumgas": "1.1.1",
+  "tweakedpetroleumgas": "1.1.2",
   "eyeofdragons": "0.0.1",
   "smallernetherportals": "1.6",
   "particleculling": "v1.3",
