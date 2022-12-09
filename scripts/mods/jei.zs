@@ -15,8 +15,6 @@ var categoriesToHide as string[] = [
   "mctsmelteryio:fuel_controller",
 	"tcomplement:high_oven_melting",
 	"mekanism.energizedsmelter",
-	"oc.manual",
-	"oc.api",
 ];
 
 for category in categoriesToHide {
