@@ -5,10 +5,7 @@ import crafttweaker.item.IIngredient;
 var categoriesToHide as string[] = [
 	"minecraft.fuel",
 	"thermaldynamics.covers",
-	"jehc.market",
 	"thermalexpansion.furnace",
-	"thermalexpansion.factorizer_combine",
-	"thermalexpansion.factorizer_split",
 	"forestry.bottler",
 	"ic2.scrapbox",
 	"xu2_machine_extrautils2:furnace",
