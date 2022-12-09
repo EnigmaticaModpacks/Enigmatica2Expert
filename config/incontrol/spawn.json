@@ -45,9 +45,8 @@
 	{"mob": "betteranimalsplus:eel_freshwater","mod": "betteranimalsplus","mincount": 20,"result": "deny"},
 	{"mob": "emberroot:dire_wolf","mod": "emberroot","minlight": 7,"result": "deny"},
 
-	{"mob": "quark:stoneling","mod": "quark","mincount": {"amount": 3,"perchunk": true},"result": "deny"},
-  {"mob": "quark:stoneling","mod": "quark","block": "minecraft:stone", "maxlight": 6,"result": "allow"},
-  {"mob": "quark:stoneling","mod": "quark","result": "deny"},
+  {"mob": "quark:stoneling","maxcount": {"amount": 3,"perchunk": true},"block": "minecraft:stone", "maxlight": 6,"result": "allow"},
+  {"mob": "quark:stoneling","result": "deny"},
 
 	{"mob": "rats:rat","mod": "rats","mincount": 15,"result": "deny"},
   {"mob": "rats:rat","mod": "rats","block": "rats:garbage_pile","result": "allow"},
