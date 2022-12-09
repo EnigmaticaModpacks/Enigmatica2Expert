@@ -24,6 +24,12 @@ ERROR. \[Mekanism\]: Invalid BasicBlock. type: 1, meta: \d+
 # This error happen for every slot
 \[MineMenu\]: Menu item in slot .* is 
 
+# Bansoukou normal work
+\[main/WARN\] \[Bansoukou\]: Marking .+
+\[main/WARN\] \[Bansoukou\]: .+ was found in the mods folder. Copying to modify the copied cache.
+\[main/WARN\] \[Bansoukou\]: Patching .+
+\[main/WARN\] \[Bansoukou\]: Removing .+
+
 ERROR. \[(jei|HadEnoughItems)\]: Failed to register mod categories: class lykrast.jetif.JETIFPlugin
 \[FML\]: Overriding existing radiation moderator data for 
 ERROR\] \[reborncore\]: Invalid fingerprint detected for RebornCore

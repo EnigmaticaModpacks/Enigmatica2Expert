@@ -51,6 +51,7 @@
     "name": "Develop",
     "description": "Mods that can be removed in Develop environment",
     "list": [
+      "Seared-Ladder-",
       "EntityCulling-",
       "particleculling-",
       "RenderLib-",
@@ -204,6 +205,7 @@
     "name": "CraftTweaker test",
     "description": "Main mods disabled. Most stuff erroring. Unplayable.",
     "list": [
+      "UniversalTweaks-",
       "armoryexpansion-",
       "ActuallyAdditions-",
       "ActuallyBaubles-",

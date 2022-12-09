@@ -3,8 +3,7 @@
 List of priorities:
 
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
-- [ ] ✏️ Add gold source in peaceful skyblock (probably Sifting Garbage Piles)
-- [ ] ✏️ Add post-space recipe for: `Mana Powder`, `Basic Energy Relay Crystal`
+- [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
 - [ ] 📀 IC2 Terraformer less EU/t consumption
 - [ ] 📀 FoxHound: Add Quest entry, Speed up furnace https://github.com/VazkiiMods/Quark/blob/1.12/src/main/java/vazkii/quark/world/entity/EntityFoxhound.java#L137
@@ -19,13 +18,9 @@ List of priorities:
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
-- [ ] 🟢 Install `seared-ladder-backport`
-- [x] 🧻 JEI: add golem drops to list
 - [ ] 📖 Add any sharpening kit to quest for harvest level
-- [x] 📖 Icon of "Pick Reward" quest can have amounts by `"icon":` prop
 - [ ] 📖 Add notification about finishing mod chapter based on stats
 - [ ] 📖 Remove all `/say @p has begun the `
-- [x] 🌿 Add Patchouli book page with sorted UU values
 
 ---
 
