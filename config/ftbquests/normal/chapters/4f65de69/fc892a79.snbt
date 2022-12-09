@@ -15,15 +15,5 @@
 		uid: "fbd4842f",
 		type: "choice",
 		table: 14
-	},
-	{
-		uid: "47f7a7ec",
-		type: "item",
-		item: {
-			id: "patchouli:guide_book",
-			tag: {
-				"patchouli:book": "patchouli:e2e_e"
-			}
-		}
 	}]
 }

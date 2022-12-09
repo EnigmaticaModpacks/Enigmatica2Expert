@@ -17,7 +17,7 @@
 	tasks: [{
 		uid: "1f9b5d52",
 		type: "xp",
-		value: 30L,
+		value: 10L,
 		points: false
 	}],
 	rewards: [{

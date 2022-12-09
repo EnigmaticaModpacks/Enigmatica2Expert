@@ -17,5 +17,15 @@
 		uid: "5480101f",
 		type: "xp_levels",
 		xp_levels: 2
+	},
+	{
+		uid: "d60a789c",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "patchouli:e2e_e"
+			}
+		}
 	}]
 }
