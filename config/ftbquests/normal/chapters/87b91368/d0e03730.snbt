@@ -1,0 +1,51 @@
+{
+	icon: {
+		id: "draconicevolution:mob_soul",
+		tag: {
+			EntityName: "quark:foxhound"
+		}
+	},
+	x: 4.7d,
+	y: -5.5d,
+	text: [
+		"Tamed Foxhound sitting on vanilla Furnance boost it x10 times.",
+		"",
+		"To tame Foxhound, feed Coal to it.",
+		"You need to be under Fire Resistance potion effect."
+	],
+	dependencies: [
+		"dcb947b4"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "002a7d1c",
+		type: "interaction",
+		title: "Interact with Foxhound",
+		icon: {
+			id: "draconicevolution:mob_soul",
+			tag: {
+				EntityName: "quark:foxhound"
+			}
+		},
+		match_type: "entity_id",
+		match: "quark:foxhound"
+	},
+	{
+		uid: "cf35bacd",
+		type: "item",
+		items: [{
+			item: "minecraft:coal"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "a9408e53",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "food"
+			}
+		}
+	}]
+}
