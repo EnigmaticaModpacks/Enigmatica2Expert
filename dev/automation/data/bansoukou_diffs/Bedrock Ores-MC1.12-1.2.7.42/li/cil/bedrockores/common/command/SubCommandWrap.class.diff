@@ -1,5 +1,5 @@
 diff --git "a/~bansoukou_unpatched\\Bedrock Ores-MC1.12-1.2.7.42\\li\\cil\\bedrockores\\common\\command\\SubCommandWrap.java" "b/bansoukou\\Bedrock Ores-MC1.12-1.2.7.42\\li\\cil\\bedrockores\\common\\command\\SubCommandWrap.java"
-index 26799400f..8bd569926 100644
+index 26799400f..9ac2aa5ce 100644
 --- "a/~bansoukou_unpatched\\Bedrock Ores-MC1.12-1.2.7.42\\li\\cil\\bedrockores\\common\\command\\SubCommandWrap.java"	
 +++ "b/bansoukou\\Bedrock Ores-MC1.12-1.2.7.42\\li\\cil\\bedrockores\\common\\command\\SubCommandWrap.java"	
 @@ -40,7 +40,7 @@ extends AbstractSubCommand {
@@ -7,7 +7,7 @@ index 26799400f..8bd569926 100644
          int amount = args.length > 0 ? SubCommandWrap.func_180528_a((String)args[0], (int)1) : 100;
          World world = sender.func_130014_f_();
 -        BlockPos pos = SubCommandWrap.getLookedAtBlockPos((ICommandSender)sender);
-+        BlockPos pos = args.length > 3 ? new BlockPos(SubCommandWrap.func_180528_a((String)args[1]), SubCommandWrap.func_180528_a((String)args[2]), SubCommandWrap.func_180528_a((String)args[3])) : SubCommandWrap.getLookedAtBlockPos((ICommandSender)sender);
++        BlockPos pos = args.length > 3 ? new BlockPos(SubCommandWrap.func_180528_a((String)args[1], (int)-2000000000), SubCommandWrap.func_180528_a((String)args[2], (int)-2000000000), SubCommandWrap.func_180528_a((String)args[3], (int)-2000000000)) : SubCommandWrap.getLookedAtBlockPos((ICommandSender)sender);
          if (pos == null) {
              throw new WrongUsageException(this.func_71518_a(sender), new Object[0]);
          }
