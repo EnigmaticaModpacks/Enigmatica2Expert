@@ -1,0 +1,13 @@
+diff --git "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\ItemPotionRing.java" "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\ItemPotionRing.java"
+index 4dea7b9c5..2d77a46fb 100644
+--- "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\ItemPotionRing.java"
++++ "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\items\\ItemPotionRing.java"
+@@ -125,7 +125,7 @@ IDisplayStandItem {
+             if (storedBlaze > 0) {
+                 ItemStack equippedStack = thePlayer.func_184614_ca();
+                 ItemStack offhandStack = thePlayer.func_184592_cb();
+-                if (this.effectEntity((EntityLivingBase)thePlayer, stack, StackUtil.isValid((ItemStack)equippedStack) && stack == equippedStack || StackUtil.isValid((ItemStack)offhandStack) && stack == offhandStack) && world.func_82737_E() % 10L == 0L) {
++                if (this.effectEntity((EntityLivingBase)thePlayer, stack, StackUtil.isValid((ItemStack)equippedStack) && stack == equippedStack || StackUtil.isValid((ItemStack)offhandStack) && stack == offhandStack) && world.func_82737_E() % 1000L == 0L) {
+                     ItemPotionRing.setStoredBlaze(stack, storedBlaze - 1);
+                 }
+             }

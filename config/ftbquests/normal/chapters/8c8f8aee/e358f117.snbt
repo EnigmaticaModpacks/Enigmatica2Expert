@@ -1,0 +1,31 @@
+{
+	x: -7.6d,
+	y: 3.3d,
+	text: [
+		"Rings buffed x100.",
+		"1 blaze powder worst 17 minutes of effect."
+	],
+	dependencies: [
+		"03d4419e"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "719589a8",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_potion_ring 1 1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c4a7741b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
