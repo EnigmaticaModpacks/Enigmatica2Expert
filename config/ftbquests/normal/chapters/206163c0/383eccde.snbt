@@ -9,6 +9,7 @@
 	dependencies: [
 		"009a4c27"
 	],
+	size: 1.25d,
 	rewards: [{
 		uid: "c3b3d5ea",
 		type: "item",
