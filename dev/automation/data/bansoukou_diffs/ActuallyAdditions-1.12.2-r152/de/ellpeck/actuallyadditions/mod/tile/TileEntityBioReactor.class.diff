@@ -1,0 +1,29 @@
+diff --git "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java" "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java"
+index 041670fc4..c987a46b5 100644
+--- "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java"
++++ "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java"
+@@ -76,9 +76,10 @@ implements ISharingEnergyProvider {
+     public void updateEntity() {
+         super.updateEntity();
+         if (this.burnTime <= 0) {
++            int i;
+             ArrayList<Item> types = null;
+             if (!this.isRedstonePowered && this.storage.getEnergyStored() < this.storage.getMaxEnergyStored()) {
+-                for (int i = 0; i < this.inv.getSlots(); ++i) {
++                for (i = 0; i < this.inv.getSlots(); ++i) {
+                     ItemStack stack = this.inv.getStackInSlot(i);
+                     if (!StackUtil.isValid((ItemStack)stack)) continue;
+                     Item item = stack.func_77973_b();
+@@ -92,9 +93,9 @@ implements ISharingEnergyProvider {
+                 this.func_70296_d();
+             }
+             if (types != null && !types.isEmpty()) {
+-                int amount = types.size();
+-                this.producePerTick = (int)Math.pow(amount * 2, 2.0);
+-                this.burnTime = this.maxBurnTime = 200 - (int)Math.pow(1.8, amount);
++                i = types.size();
++                this.producePerTick = (int)Math.pow(i * 4, 2.0);
++                this.burnTime = this.maxBurnTime = 200 - (int)Math.pow(1.8, i);
+             } else {
+                 this.burnTime = 0;
+                 this.maxBurnTime = 0;
