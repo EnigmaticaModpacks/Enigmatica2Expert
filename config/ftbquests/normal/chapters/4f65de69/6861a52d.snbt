@@ -1,6 +1,6 @@
 {
 	title: "{q.getting_started.difficulty.name}",
-	icon: "scalinghealth:difficultychanger 1 1",
+	icon: "scalinghealth:heartcontainer",
 	x: 0.625d,
 	y: 6.0d,
 	text: [

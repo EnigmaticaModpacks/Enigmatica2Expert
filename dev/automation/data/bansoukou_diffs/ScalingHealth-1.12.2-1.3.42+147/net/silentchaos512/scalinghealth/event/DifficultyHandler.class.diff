@@ -1,0 +1,15 @@
+public class DifficultyHandler {
+ 
+     private boolean increaseEntityHealth(EntityLivingBase entityLiving) {
+         MobPotionMap.PotionEntry pot;
+         float difficulty;
+         if (Config.Difficulty.maxValue <= 0.0f) {
+             return false;
+         }
+         World world = entityLiving.field_70170_p;
+-        float originalDifficulty = difficulty = (float)Config.Difficulty.AREA_DIFFICULTY_MODE.getAreaDifficulty(world, entityLiving.func_180425_c());
++        float f = (float)Config.Difficulty.AREA_DIFFICULTY_MODE.getAreaDifficulty(world, entityLiving.func_180425_c());
++        float originalDifficulty = difficulty = f * f / Config.Difficulty.maxValue;
+         float originalMaxHealth = entityLiving.func_110138_aP();
+         Random rand = ScalingHealth.random;
+         boolean isHostile = entityLiving instanceof IMob;
