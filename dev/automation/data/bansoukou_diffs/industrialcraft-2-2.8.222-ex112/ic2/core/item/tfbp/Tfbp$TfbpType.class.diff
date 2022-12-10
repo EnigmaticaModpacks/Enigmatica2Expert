@@ -1,0 +1,34 @@
+diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java"
+index 2a000dbb5..6005fe095 100644
+--- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java"
++++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java"
+@@ -22,21 +22,21 @@ import ic2.core.item.tfbp.Irrigation;
+ import ic2.core.item.tfbp.Mushroom;
+ import ic2.core.item.tfbp.TerraformerBase;
+ 
+-public static enum Tfbp.TfbpType implements IIdProvider
++public enum Tfbp$TfbpType implements IIdProvider
+ {
+     blank(0.0, 0, null),
+-    chilling(2000.0, 50, (TerraformerBase)new Chilling()),
+-    cultivation(4000.0, 40, (TerraformerBase)new Cultivation()),
+-    desertification(2500.0, 40, (TerraformerBase)new Desertification()),
+-    flatification(4000.0, 40, (TerraformerBase)new Flatification()),
+-    irrigation(3000.0, 60, (TerraformerBase)new Irrigation()),
+-    mushroom(8000.0, 25, (TerraformerBase)new Mushroom());
++    chilling(100.0, 50, (TerraformerBase)new Chilling()),
++    cultivation(200.0, 40, (TerraformerBase)new Cultivation()),
++    desertification(125.0, 40, (TerraformerBase)new Desertification()),
++    flatification(200.0, 40, (TerraformerBase)new Flatification()),
++    irrigation(150.0, 60, (TerraformerBase)new Irrigation()),
++    mushroom(400.0, 25, (TerraformerBase)new Mushroom());
+ 
+     public final double consume;
+     public final int range;
+     final TerraformerBase logic;
+ 
+-    private Tfbp.TfbpType(double consume, int range, TerraformerBase logic) {
++    private Tfbp$TfbpType(double consume, int range, TerraformerBase logic) {
+         this.consume = consume;
+         this.range = range;
+         this.logic = logic;

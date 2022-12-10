@@ -1,0 +1,38 @@
+{
+	icon: "ic2:te 1 40",
+	x: 11.1d,
+	y: 1.9d,
+	text: [
+		"Morph ground around itself, based on TFBP module.",
+		"",
+		"Buffed - consume x20 less energy (about 300 EU/t)."
+	],
+	dependencies: [
+		"4d36c8e9"
+	],
+	tasks: [{
+		uid: "812116d4",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 40"
+		}]
+	},
+	{
+		uid: "11623947",
+		type: "item",
+		items: [{
+			item: "ic2:tfbp"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2c0e498f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
