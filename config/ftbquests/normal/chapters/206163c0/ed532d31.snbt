@@ -1,0 +1,27 @@
+{
+	x: -8.5d,
+	y: 0.8d,
+	text: [
+		"Buffed, generating 30 buckets / second when raining."
+	],
+	dependencies: [
+		"383eccde"
+	],
+	tasks: [{
+		uid: "3cba9806",
+		type: "item",
+		items: [{
+			item: "forestry:raintank"
+		}]
+	}],
+	rewards: [{
+		uid: "858df7af",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
