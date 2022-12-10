@@ -1,0 +1,15 @@
+diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\basic\\BlockStonePorous.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\basic\\BlockStonePorous.java"
+index 5ff2cf82f..4a0fad84e 100644
+--- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\basic\\BlockStonePorous.java"
++++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\blocks\\basic\\BlockStonePorous.java"
+@@ -55,8 +55,8 @@ extends BlockTC {
+ 
+     public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+         ArrayList<ItemStack> ret = new ArrayList<ItemStack>();
+-        int rr = r.nextInt(15) + fortune;
+-        if (rr > 13) {
++        int rr = r.nextInt(5) + fortune;
++        if (rr > 3) {
+             if (pdrops == null || pdrops.size() <= 0) {
+                 this.createDrops();
+             }
