@@ -50,7 +50,7 @@
   📑 Tips
   📙 AkashicTome
   📭 Storage Drawers
-  🔌 Industrial Craft 2 | IC2
+  🔌 IC2 | Industrial Craft 2
   🔠 MainMenu
   🔨 Tinker's Construct | TCon
   🔩 RFTools
@@ -81,6 +81,7 @@
   🎒 Traveler's Backpack
   🛂 Triumph | Achievments
   🍱 DankNull
+  💗 Scaling Health
 
 🔄 Misc Changes | Misc
   ⚡ Performance

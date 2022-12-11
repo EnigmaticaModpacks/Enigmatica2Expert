@@ -5,16 +5,6 @@ List of priorities:
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
-- [ ] 📀 IC2 Terraformer less EU/t consumption
-- [ ] 📀 FoxHound: Add Quest entry, Speed up furnace https://github.com/VazkiiMods/Quark/blob/1.12/src/main/java/vazkii/quark/world/entity/EntityFoxhound.java#L137
-- [ ] 📀 Buff Porous Stone output
-- [ ] 📀 Buff AA rings to encrease capacity and blaze output
-- [ ] 📀 Remove automatic IE armor recycling to speed up game load
-- [ ] 📀 Remove automatic JEI registry for: `EnderIO tank`, `Forestry Squeezer`, `IC2 Jetpack Attachment`
-- [ ] 📀 Buff AA Bio Reactor
-- [ ] 📀 Return Rain Tank from forestry but make it extremely fast
-- [ ] 📀 Scaling Health should increase health exponentially, not linear
-- [ ] 📀 Fix Bedrock Ore not working command
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
@@ -30,6 +20,7 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📀 Remove automatic IE armor recycling to speed up game load
 - [ ] ✏️ Enthropy stone add usage
 - [ ] ✏️ Compressed Block remove too much aspects - they could be easy used to spawn rifts
 - [ ] ✏️ Add craft mechanic - Mud Ball hit something (humilate)

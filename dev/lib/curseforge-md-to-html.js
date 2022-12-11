@@ -20,11 +20,11 @@ const md = new MarkdownIt({ html: true })
 
 const $ = cheerio.load(md.render(readFileSync(sourcePath, 'utf8')))
 
-// $('img').not('img[width=50]').css('display', 'inline-block') /* .css('float', 'left') */
-
 // 𝑪𝒐𝒏𝒗𝒆𝒓𝒕 𝒂𝒍𝒍 𝒊𝒕𝒆𝒎𝒔 𝒊𝒎𝒂𝒈𝒆𝒔 𝒊𝒏𝒕𝒐 𝒋𝒖𝒔𝒕 𝒕𝒆𝒙𝒕
 $('img')
-  .not('img[width=50]')
+  .filter(function () {
+    return !!this.attribs.src.match(/https:\/\/is\.gd\/.+/) && !!this.attribs.title
+  })
   .each(function () {
     $(this).replaceWith(
       `<strong><span style="font-family: terminal, monaco, monospace;">📦[${$(
@@ -32,9 +32,6 @@ $('img')
       ).attr('title')}]</span></strong>`
     )
   })
-
-// 𝑪𝒉𝒂𝒏𝒈𝒆 𝒔𝒊𝒛𝒆 𝒐𝒇 𝑴𝒐𝒅 𝒑𝒓𝒆𝒗𝒊𝒆𝒘𝒔
-$('img[width=50]').attr('width', '25')
 
 // 𝑩𝒆𝒕𝒕𝒆𝒓 𝒉𝒆𝒂𝒅𝒆𝒓𝒔
 $('h1').before('<br/>').after('<br/>')
