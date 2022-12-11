@@ -68,7 +68,7 @@ Just use *New Instance* feature of your launcher. [GDLauncher example](https://i
 ### Manual installation
 
 1. Download `E2E-Extended_{version}.zip` from Assets of [latest release](https://github.com/Krutoy242/Enigmatica2Expert-Extended/releases) *OR* from [CurseForge page](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended).
-2. Use *Import* feature in your luncher.
+2. Use *Import* feature in your launcher.
 
 ### Skyblock 🌌
 
