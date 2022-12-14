@@ -2,7 +2,7 @@
 	x: -4.1d,
 	y: 6.3d,
 	text: [
-		"RF-powered upgradeable tool"
+		"{q.actually_additions.drill.desc}"
 	],
 	dependencies: [
 		"03d4419e"

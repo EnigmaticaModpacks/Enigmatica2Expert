@@ -1,10 +1,10 @@
 {
-	title: "Getting fire",
+	title: "{q.getting_started.getting_fire.name}",
 	icon: "kirosblocks:default_fire_block",
 	x: -2.375d,
 	y: 6.0d,
 	text: [
-		"If you break the slab with a stick, fire will appear."
+		"{q.getting_started.getting_fire.desc}"
 	],
 	dependencies: [
 		"ca359f03"

@@ -3,11 +3,7 @@
 	y: 0.5d,
 	shape: "square",
 	text: [
-		"The maximum number of §lloaded chunks§r through FTBUtilities increases.",
-		"Your name becomes §lBold§r.",
-		"",
-		"Max claimed chunks: §636§r",
-		"Max loaded chunks:   §63§r"
+		"{q.gates.conflux_i.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

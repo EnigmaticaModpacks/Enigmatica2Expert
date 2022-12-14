@@ -2,7 +2,7 @@
 	x: -8.5d,
 	y: 0.8d,
 	text: [
-		"Buffed, generating 30 buckets / second when raining."
+		"{q.forestry.rain_tank.desc}"
 	],
 	dependencies: [
 		"383eccde"

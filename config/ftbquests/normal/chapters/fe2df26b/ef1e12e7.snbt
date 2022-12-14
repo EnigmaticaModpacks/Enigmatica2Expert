@@ -3,7 +3,7 @@
 	x: 4.0d,
 	y: 5.5d,
 	text: [
-		"You can put a high priority storage bus on MA io port, and set it insert only. When you want insert a pattern, just throw it into your terminal."
+		"{q.applied_energetics.mass_assembler_io_.desc}"
 	],
 	dependencies: [
 		"3e9738a4"

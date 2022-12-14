@@ -1,5 +1,5 @@
 {
-	title: "Dragon Egg",
+	title: "{q.animals.dragon_egg.name}",
 	x: 3.5d,
 	y: 1.25d,
 	text: [

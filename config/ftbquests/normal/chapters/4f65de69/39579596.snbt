@@ -1,10 +1,10 @@
 {
-	title: "§mTechnical quest.",
+	title: "{q.getting_started.technical_quest_.name}",
 	disable_toast: true,
 	x: 7.68d,
 	y: 3.5d,
 	text: [
-		"§0§mPlease ignore. Providing back-dependency."
+		"{q.getting_started.technical_quest_.desc}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

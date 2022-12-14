@@ -1,5 +1,5 @@
 {
-	title: "Iron Golem",
+	title: "{q.animals.iron_golem.name}",
 	icon: {
 		id: "draconicevolution:mob_soul",
 		tag: {
@@ -9,11 +9,7 @@
 	x: -1.1d,
 	y: -4.3d,
 	text: [
-		"When the §nIron Golem§r kills someone, it gets a §6buff§r for 1 minute.",
-		"",
-		"When it kills again without stopping, it gains the §6next§r level of the buff or another buff.",
-		"",
-		"When a golem reaches ~20 level it becomes a §dBlight§r."
+		"{q.animals.iron_golem.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

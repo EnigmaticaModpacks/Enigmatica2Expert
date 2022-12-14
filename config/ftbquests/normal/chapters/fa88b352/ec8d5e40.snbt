@@ -2,7 +2,7 @@
 	x: 12.2d,
 	y: 7.0d,
 	text: [
-		"When you turn on the reactor, a plasma will be created along the loop. You can pump it out remotely (e.g. via RFTools Builder Pump), then simply restart the reactor."
+		"{q.nuclearcraft.bucket.desc}"
 	],
 	dependencies: [
 		"918d1d17"

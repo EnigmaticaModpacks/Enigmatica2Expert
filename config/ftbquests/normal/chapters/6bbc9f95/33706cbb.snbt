@@ -2,7 +2,7 @@
 	x: 5.6d,
 	y: 9.3d,
 	text: [
-		"Turns Ore into Native Clusters"
+		"{q.thaumcraft.alchemist_s_stone.desc}"
 	],
 	dependencies: [
 		"0c6a05c4"

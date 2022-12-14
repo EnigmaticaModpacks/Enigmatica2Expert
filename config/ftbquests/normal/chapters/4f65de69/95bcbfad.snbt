@@ -1,11 +1,9 @@
 {
-	title: "Uncraftable TCon Parts",
+	title: "{q.getting_started.uncraftable_tcon_p.name}",
 	x: 15.6d,
 	y: 6.1d,
 	text: [
-		"Some TCon parts cannot be manufactured. Most often these are extremely strong parts.",
-		"",
-		"For example, it is any core from Supremium, Aethium Trim, Laser Mediums and Battery Cells."
+		"{q.getting_started.uncraftable_tcon_p.desc}"
 	],
 	dependencies: [
 		"5c870b2e"

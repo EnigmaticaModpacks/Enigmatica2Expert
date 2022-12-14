@@ -1,10 +1,10 @@
 {
-	title: "Packaged Ex Crafting",
+	title: "{q.applied_energetics.packaged_ex_crafting.name}",
 	icon: "packagedexcrafting:advanced_crafter",
 	x: 6.8d,
 	y: 1.0d,
 	text: [
-		"Packaged Ex Crafting - addon that add AE + ExtendedCrafting usage capabilities."
+		"{q.applied_energetics.packaged_ex_crafting.desc}"
 	],
 	dependencies: [
 		"d1ac96d8"

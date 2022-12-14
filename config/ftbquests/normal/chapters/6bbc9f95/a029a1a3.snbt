@@ -2,7 +2,7 @@
 	x: 5.3d,
 	y: 3.6d,
 	text: [
-		"Scan Rites and Crimson Portal to advance researches."
+		"{q.thaumcraft.crimson_rites.desc}"
 	],
 	dependencies: [
 		"67773d72"

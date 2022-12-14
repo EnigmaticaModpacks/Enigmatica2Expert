@@ -3,9 +3,7 @@
 	y: 10.3d,
 	shape: "gear",
 	text: [
-		"Placing mechanic changed.",
-		"",
-		"Placing this scaffold would fill 24 blocks of floor with Replaceable Scaffolding in max area 9x9."
+		"{q.utils.scaffolding.desc}"
 	],
 	dependencies: [
 		"9f41b8d8"

@@ -2,7 +2,7 @@
 	x: -3.1d,
 	y: 6.3d,
 	text: [
-		"Most Drill upgrades are cheap and can be used to achieve traits like \"Silk Touch\" earlier than other tools."
+		"{q.actually_additions.drill_silk_touch_a.desc}"
 	],
 	dependencies: [
 		"9857919f"

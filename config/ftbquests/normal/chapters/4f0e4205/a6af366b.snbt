@@ -2,10 +2,7 @@
 	x: 2.55d,
 	y: -0.3d,
 	text: [
-		"Each axe from Twilight Forest cut planks from logs and sticks from planks.",
-		"Better axe output more.",
-		"Furtune accounted.",
-		"Same for Axe TCon trait."
+		"{q.twilight_forest.ironwood_axe.desc}"
 	],
 	dependencies: [
 		"95b739d8"

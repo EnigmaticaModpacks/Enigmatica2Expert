@@ -2,8 +2,7 @@
 	x: -0.6d,
 	y: 7.3d,
 	text: [
-		"Low chance of dropping when Rift closed with Collapser.",
-		"Bigger rifts has better chance of drop."
+		"{q.thaumcraft.primordial_pearl.desc}"
 	],
 	dependencies: [
 		"593b08e5"

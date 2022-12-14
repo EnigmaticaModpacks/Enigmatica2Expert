@@ -2,7 +2,7 @@
 	x: 14.1d,
 	y: 6.1d,
 	text: [
-		"To install DankNull into dock, you need to have special item in offhang. Second item will be consumed."
+		"{q.getting_started._dank_null_docking.desc}"
 	],
 	dependencies: [
 		"224cb929"

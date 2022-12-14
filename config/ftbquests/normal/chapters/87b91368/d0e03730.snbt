@@ -8,10 +8,7 @@
 	x: 4.7d,
 	y: -5.5d,
 	text: [
-		"Tamed Foxhound sitting on vanilla Furnance boost it x10 times.",
-		"",
-		"To tame Foxhound, feed Coal to it.",
-		"You need to be under Fire Resistance potion effect."
+		"{q.animals.interact_with_foxh.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

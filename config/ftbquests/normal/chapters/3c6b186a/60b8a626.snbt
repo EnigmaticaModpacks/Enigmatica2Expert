@@ -2,7 +2,7 @@
 	x: 11.4d,
 	y: 4.8d,
 	text: [
-		"Item info §nmust§r be put into Memory to work with replicator."
+		"{q.industrialcraft.crystal_memory.desc}"
 	],
 	dependencies: [
 		"658445bd"

@@ -2,7 +2,7 @@
 	x: 1.0d,
 	y: -0.5d,
 	text: [
-		"Cheapest Storage Cell container"
+		"{q.applied_energetics.me_chest.desc}"
 	],
 	dependencies: [
 		"2e632fad"

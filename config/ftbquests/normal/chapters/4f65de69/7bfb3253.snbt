@@ -1,12 +1,10 @@
 {
-	title: "Explosions",
+	title: "{q.getting_started.explosions.name}",
 	icon: "minecraft:skull 1 4",
 	x: -4.0d,
 	y: 0.5d,
 	text: [
-		"- FTB chunk claiming §6not save§r from explosions",
-		"- Some mobs §6fight each other§r what cause creepers to explode",
-		"- Use §6blast-resistant§r materials to protect spawners"
+		"{q.getting_started.explosions.desc}"
 	],
 	dependencies: [
 		"628df521"

@@ -2,7 +2,7 @@
 	x: 4.0d,
 	y: 2.5d,
 	text: [
-		"Network Great tool for managing your channels."
+		"{q.applied_energetics.network_visualizat.desc}"
 	],
 	dependencies: [
 		"4bfcd69f"

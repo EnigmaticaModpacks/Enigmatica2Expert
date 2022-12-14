@@ -2,7 +2,7 @@
 	x: 6.6d,
 	y: 4.9d,
 	text: [
-		"Cheaper then regular chest but still can be used in crafts."
+		"{q.thaumcraft.hungry_chest.desc}"
 	],
 	dependencies: [
 		"2e8e4ce7"

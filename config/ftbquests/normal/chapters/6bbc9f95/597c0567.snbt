@@ -2,8 +2,7 @@
 	x: 4.6000000000000005d,
 	y: 10.7d,
 	text: [
-		"Breed animals.",
-		"Consumption reduced to 1 / operation."
+		"{q.thaumcraft.lamp_of_fertility.desc}"
 	],
 	dependencies: [
 		"38a388cd"

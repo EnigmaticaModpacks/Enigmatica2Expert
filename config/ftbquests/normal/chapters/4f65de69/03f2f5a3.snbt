@@ -2,7 +2,7 @@
 	x: 8.125d,
 	y: 6.1d,
 	text: [
-		"You can combine Loot Chests to craft next tiers."
+		"{q.getting_started.loot_crate.desc}"
 	],
 	dependencies: [
 		"b1868c44"

@@ -3,9 +3,7 @@
 	x: 11.1d,
 	y: 1.9d,
 	text: [
-		"Morph ground around itself, based on TFBP module.",
-		"",
-		"Buffed - consume x20 less energy (about 300 EU/t)."
+		"{q.industrialcraft.terraformer.desc}"
 	],
 	dependencies: [
 		"4d36c8e9"

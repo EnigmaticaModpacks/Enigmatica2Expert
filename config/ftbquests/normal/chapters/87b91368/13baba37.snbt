@@ -1,5 +1,5 @@
 {
-	title: "Hippogryphs",
+	title: "{q.animals.hippogryphs.name}",
 	x: -0.5d,
 	y: -1.25d,
 	text: [

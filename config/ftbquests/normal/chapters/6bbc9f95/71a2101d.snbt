@@ -2,7 +2,7 @@
 	x: 2.45d,
 	y: 4.75d,
 	text: [
-		"Lectern is Thaunamicon but in block form."
+		"{q.thaumcraft.thaumonomicon_lect.desc}"
 	],
 	dependencies: [
 		"57594779"

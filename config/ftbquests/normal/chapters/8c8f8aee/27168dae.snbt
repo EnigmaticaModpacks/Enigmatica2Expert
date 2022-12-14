@@ -2,7 +2,7 @@
 	x: -3.1d,
 	y: 4.5d,
 	text: [
-		"Fills area with blocks"
+		"{q.actually_additions.handheld_filler.desc}"
 	],
 	dependencies: [
 		"03d4419e"

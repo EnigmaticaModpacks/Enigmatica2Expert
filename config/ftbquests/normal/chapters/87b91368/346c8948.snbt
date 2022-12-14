@@ -2,8 +2,7 @@
 	x: 4.8d,
 	y: -1.2d,
 	text: [
-		"Animania's pig should be in any Forest, over Grass block and hungry.",
-		"Once in minute it randomly would get truffles."
+		"{q.animals.truffle.desc}"
 	],
 	dependencies: [
 		"dcb947b4"

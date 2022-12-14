@@ -2,9 +2,7 @@
 	x: 1.4d,
 	y: -0.4d,
 	text: [
-		"You can spawn Questing Ram by crafting its Morb.",
-		"",
-		"(Any morb will finish this quest)"
+		"{q.twilight_forest.morb_entity_twilig.desc}"
 	],
 	dependencies: [
 		"14296664"

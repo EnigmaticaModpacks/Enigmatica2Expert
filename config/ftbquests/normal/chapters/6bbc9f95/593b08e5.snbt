@@ -2,7 +2,7 @@
 	x: -0.6d,
 	y: 6.3d,
 	text: [
-		"Scan Rift to open research"
+		"{q.thaumcraft.causality_collapser.desc}"
 	],
 	dependencies: [
 		"c8b6a5ec"

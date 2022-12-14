@@ -2,7 +2,7 @@
 	x: 12.0d,
 	y: 6.0d,
 	text: [
-		"Some data models upgradeable to first level without killing mobs."
+		"{q.gates.zombie_data_model.desc}"
 	],
 	dependencies: [
 		"3c0d3677"

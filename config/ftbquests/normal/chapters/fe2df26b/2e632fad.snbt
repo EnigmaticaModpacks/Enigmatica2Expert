@@ -3,7 +3,7 @@
 	x: 1.0d,
 	y: 1.0d,
 	text: [
-		"Welcome to AE2 chapter!"
+		"{q.applied_energetics.inscriber.desc}"
 	],
 	dependencies: [
 		"48f0d63f"

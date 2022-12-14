@@ -2,7 +2,7 @@
 	x: 4.3d,
 	y: 3.4d,
 	text: [
-		"Eating brains save you from \"Unnatural Hunger\""
+		"{q.thaumcraft.zombie_brain.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

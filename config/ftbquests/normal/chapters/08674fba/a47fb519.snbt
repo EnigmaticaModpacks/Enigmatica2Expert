@@ -2,14 +2,7 @@
 	x: 4.5d,
 	y: 9.8d,
 	text: [
-		"Generates 1M Rf/T when supplied with valid fuel.",
-		"",
-		"Working time for fuels:",
-		"- 0.5s: Block of Iron",
-		"- 1s: Block of Steel",
-		"- 4s: Dark Steel Block",
-		"- 32s: End Steel Block",
-		"- 512s: Block of Fiery Metal"
+		"{q.advanced_rocketry.black_hole_generator.desc}"
 	],
 	dependencies: [
 		"d25f75cc"

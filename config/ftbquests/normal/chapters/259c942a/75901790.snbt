@@ -1,10 +1,10 @@
 {
-	title: "Improved Coke Oven",
+	title: "{q.immersive_engineer.improved_coke_oven.name}",
 	icon: "immersivetech:stone_decoration",
 	x: -2.6999999999999997d,
 	y: 0.3d,
 	text: [
-		"Improved coke oven is disabled, can't be formed."
+		"{q.immersive_engineer.improved_coke_oven.desc}"
 	],
 	dependencies: [
 		"bf09a7ad"

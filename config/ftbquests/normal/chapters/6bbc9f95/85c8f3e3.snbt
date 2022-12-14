@@ -2,7 +2,7 @@
 	x: 6.8d,
 	y: 10.7d,
 	text: [
-		"Meaty orb spawn 300 random raw meat"
+		"{q.thaumcraft.meaty_orb.desc}"
 	],
 	dependencies: [
 		"38a388cd"

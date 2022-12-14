@@ -2,7 +2,7 @@
 	x: 3.6d,
 	y: 9.3d,
 	text: [
-		"Turns ore into Eldrich Clusters."
+		"{q.thaumcraft.alienist_s_stone.desc}"
 	],
 	dependencies: [
 		"1befcde7"

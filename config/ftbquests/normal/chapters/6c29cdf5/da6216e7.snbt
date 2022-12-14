@@ -2,9 +2,7 @@
 	x: 7.0d,
 	y: 2.7d,
 	text: [
-		"Configurable timer / redstone clock.",
-		"",
-		"Way cheaper than other timers."
+		"{q.botania.hovering_hourglass.desc}"
 	],
 	dependencies: [
 		"c8d050c2"

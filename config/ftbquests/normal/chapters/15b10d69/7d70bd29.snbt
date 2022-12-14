@@ -1,12 +1,10 @@
 {
-	title: "IF Upgrades",
+	title: "{q.industrial_foregoing.if_upgrades.name}",
 	icon: "teslacorelib:speed_tier1",
 	x: -2.5d,
 	y: -0.2d,
 	text: [
-		"Upgrades for Industrial Foregoing is @TeslaCoreLib items.",
-		"",
-		"To craft them you need Matter Replicator and Crystal Memory discs."
+		"{q.industrial_foregoing.if_upgrades.desc}"
 	],
 	dependencies: [
 		"da9eef13"

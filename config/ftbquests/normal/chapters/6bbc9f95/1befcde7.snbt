@@ -2,7 +2,7 @@
 	x: 4.6d,
 	y: 9.3d,
 	text: [
-		"Turns one ore into another."
+		"{q.thaumcraft.transmuter_s_stone.desc}"
 	],
 	dependencies: [
 		"33706cbb"

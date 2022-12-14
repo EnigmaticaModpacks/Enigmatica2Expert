@@ -1,10 +1,10 @@
 {
-	title: "Naturally Generated Crystals",
+	title: "{q.thaumcraft.naturally_generate.name}",
 	icon: "thaumcraft:crystal_aer",
 	x: -0.6d,
 	y: 4.3d,
 	text: [
-		"Scan naturally generated Crystal cluster to unlock further researches"
+		"{q.thaumcraft.naturally_generate.desc}"
 	],
 	dependencies: [
 		"82e27a56"

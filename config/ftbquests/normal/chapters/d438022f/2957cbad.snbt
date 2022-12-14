@@ -2,7 +2,7 @@
 	x: -20.2d,
 	y: 23.6d,
 	text: [
-		"Apple trees best early game apple source."
+		"{q.utils.apple_seeds.desc}"
 	],
 	dependencies: [
 		"3ecc3fbe"
