@@ -15,11 +15,13 @@
 		"dcb947b4"
 	],
 	tasks: [{
-		uid: "cf936f24",
-		type: "observation",
-		match_type: "entity_id",
-		match: "emberroot:rootsonespriteboss",
-		timer: 0L
+		uid: "3425eaf7",
+		type: "item",
+		items: [{
+			item: "minecraft:totem_of_undying"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "1b113b21",

@@ -35,7 +35,7 @@
 		items: [{
 			item: "immersiveengineering:sheetmetal 1 8"
 		}],
-		count: 35L
+		count: 15L
 	},
 	{
 		uid: "93d04387",
@@ -51,7 +51,7 @@
 		items: [{
 			item: "immersiveengineering:metal_decoration1 1 1"
 		}],
-		count: 6L
+		count: 26L
 	},
 	{
 		uid: "e1c3d138",

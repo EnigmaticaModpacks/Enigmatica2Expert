@@ -9,65 +9,51 @@
 		"c35399e6"
 	],
 	tasks: [{
-		uid: "0b71378b",
+		uid: "3ef1fa70",
+		type: "item",
+		items: [{
+			item: "minecraft:wooden_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "82cff715",
 		type: "item",
 		items: [{
 			id: "tconstruct:pickaxe",
 			tag: {
-				StatsOriginal: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 3.75f,
-					FreeModifiers: 3,
-					Durability: 143,
-					HarvestLevel: 0,
-					Attack: 2.175f
-				},
-				Special: {
-					Categories: [
-						"harvest",
-						"tool",
-						"aoe"
-					]
-				},
-				Stats: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 3.75f,
-					FreeModifiers: 2,
-					Durability: 143,
-					HarvestLevel: 0,
-					Attack: 2.175f
-				},
-				Modifiers: [{
-					identifier: "ecological",
-					color: -7444965,
-					level: 1
-				},
-				{
-					identifier: "crude",
-					color: -9868951,
-					level: 2,
-					crude2: 1b
-				},
-				{
-					identifier: "toolleveling",
-					color: 16777215,
-					level: 1
-				}],
 				TinkerData: {
 					Materials: [
 						"wood",
-						"flint",
+						"wood",
 						"wood"
 					],
-					Modifiers: [
-						"toolleveling"
-					]
+					Modifiers: []
 				},
-				Traits: [
-					"ecological",
-					"crude2",
-					"toolleveling"
-				]
+				Stats: {
+					Durability: 56,
+					HarvestLevel: 0,
+					Attack: 1.5f,
+					MiningSpeed: 1.5f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				StatsOriginal: {
+					Durability: 56,
+					HarvestLevel: 0,
+					Attack: 1.5f,
+					MiningSpeed: 1.5f,
+					AttackSpeedMultiplier: 1.0f,
+					FreeModifiers: 3
+				},
+				Special: {
+					Categories: [
+						"aoe",
+						"tool",
+						"harvest"
+					]
+				}
 			},
 			ForgeCaps: {
 				"plustic:fruitsalad_cap": {
@@ -84,6 +70,7 @@
 				}
 			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{
