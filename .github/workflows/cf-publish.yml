@@ -23,6 +23,18 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+
+      - name: 🖼️ Generate image from md
+        run: npx mdimg -i latest.md -o latest.png -w 800 --css githubDark
+
+      - name: 🖼️ ➡️ Send discord message
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "./latest.png"
+          message: "🚀 {{ steps.release.outputs.name }}"
+
       - run: npm i --omit=dev
 
       - name: 🖼️ Generate image from md
