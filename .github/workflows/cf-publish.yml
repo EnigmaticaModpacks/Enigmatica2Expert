@@ -25,42 +25,53 @@ jobs:
           node-version: 18
       - run: npm i --omit=dev
 
-      - name: 📋 Generate html instead of markdown
-        run: node dev/lib/curseforge-md-to-html.js latest.md
+      - name: 🖼️ Generate image from md
+        run: npx mdimg -i latest.md -o latest.png -w 720 --css githubDark
 
-      - name: 📋 Get content of changelog html
-        id: latest_html
-        uses: andstor/file-reader-action@v1
+      - name: 🖼️ ➡️ Send discord message
+        uses: appleboy/discord-action@master
         with:
-          path: "latest.html"
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "./latest.png"
+          message: "{{ steps.release.outputs.name }}"
 
-      - name: 💽 Download .zip files from latest release
-        uses: robinraju/release-downloader@v1.4
-        with:
-          latest: true
-          fileName: "*.zip"
+      # - name: 📋 Generate html instead of markdown
+      #   run: node dev/lib/curseforge-md-to-html.js latest.md
 
-      - name: "💻 Upload Client"
-        uses: itsmeow/curseforge-upload@v3
-        id: client
-        with:
-          release_type: beta
-          display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}"
-          file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}.zip"
-          game_endpoint: "minecraft"
-          game_versions: "Minecraft 1.12:1.12.2"
-          project_id: "561105"
-          token: "${{ secrets.CURSEFORGE_API_TOKEN }}"
-          changelog_type: html
-          changelog: "${{ steps.latest_html.outputs.contents }}"
+      # - name: 📋 Get content of changelog html
+      #   id: latest_html
+      #   uses: andstor/file-reader-action@v1
+      #   with:
+      #     path: "latest.html"
 
-      - name: "🖥️ Upload Server"
-        uses: itsmeow/curseforge-upload@v3
-        with:
-          release_type: beta
-          display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server"
-          file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server.zip"
-          game_endpoint: "minecraft"
-          project_id: "561105"
-          parent_file_id: ${{ steps.client.outputs.id }}
-          token: "${{ secrets.CURSEFORGE_API_TOKEN }}"
+      # - name: 💽 Download .zip files from latest release
+      #   uses: robinraju/release-downloader@v1.4
+      #   with:
+      #     latest: true
+      #     fileName: "*.zip"
+
+      # - name: "💻 Upload Client"
+      #   uses: itsmeow/curseforge-upload@v3
+      #   id: client
+      #   with:
+      #     release_type: beta
+      #     display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}"
+      #     file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}.zip"
+      #     game_endpoint: "minecraft"
+      #     game_versions: "Minecraft 1.12:1.12.2"
+      #     project_id: "561105"
+      #     token: "${{ secrets.CURSEFORGE_API_TOKEN }}"
+      #     changelog_type: html
+      #     changelog: "${{ steps.latest_html.outputs.contents }}"
+
+      # - name: "🖥️ Upload Server"
+      #   uses: itsmeow/curseforge-upload@v3
+      #   with:
+      #     release_type: beta
+      #     display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server"
+      #     file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server.zip"
+      #     game_endpoint: "minecraft"
+      #     project_id: "561105"
+      #     parent_file_id: ${{ steps.client.outputs.id }}
+      #     token: "${{ secrets.CURSEFORGE_API_TOKEN }}"
