@@ -7,7 +7,7 @@
 
 // @ts-check
 
-import { fileURLToPath, URL } from 'url' // @ts-ignore
+import { URL, fileURLToPath } from 'url' // @ts-expect-error
 
 import _ from 'lodash'
 import numeral from 'numeral'
@@ -31,7 +31,7 @@ export async function init(h = defaultHelper) {
   // Living Matter
   // ###############################################################################
   const livingmatter = getCSV(relative('./data/living_matter.csv')).map(
-    (l) => ` <
+    l => ` <
           ${isBlock(l.ID) ? 'B' : 'I'}
           ${l.ID}
           ${l.Value}
@@ -45,23 +45,23 @@ export async function init(h = defaultHelper) {
     (m, p1, p2, p3) => {
       const vanillaLM = p2
         .split(/\s*S:living./)
-        .filter((s) => s.includes('minecraft:'))
+        .filter(s => s.includes('minecraft:'))
 
       const highestIndex = _.max(
-        vanillaLM.map((s) => Number(s.match(/^(\d+)[\s\S]*/)[1]))
+        vanillaLM.map(s => Number(s.match(/^(\d+)[\s\S]*/)[1]))
       )
 
       return (
-        p1 +
-        vanillaLM
-          .map((s) => '\n    S:living.' + s)
+        p1
+        + vanillaLM
+          .map(s => `\n    S:living.${s}`)
           .concat(
             livingmatter.map(
-              (s, i) => '\n    S:living.' + (highestIndex + i + 1) + s
+              (s, i) => `\n    S:living.${highestIndex + i + 1}${s}`
             )
           )
-          .join('') +
-        p3
+          .join('')
+        + p3
       )
     }
   )
@@ -71,7 +71,7 @@ export async function init(h = defaultHelper) {
   // ###############################################################################
 
   const mobspawnamounts = getCSV(relative('./data/entities.csv')).map(
-    (l) => `    S:"${l.ID}.spawnamount.0" <
+    l => `    S:"${l.ID}.spawnamount.0" <
           ${isBlock(l.Representation) ? 'B' : 'I'}
           ${l.Representation}
           0
@@ -102,7 +102,7 @@ export async function init(h = defaultHelper) {
           const lines = chunk[0][0].split('\n')
           return lines[0].includes('minecraft:') || !chunk[0][1].includes(':')
         })
-        .map((chunk) => chunk.map((m) => m[0]).join('\n'))
+        .map(chunk => chunk.map(m => m[0]).join('\n'))
 
       return p1 + matchesChunks.concat(mobspawnamounts).join('\n') + p3
     }
@@ -115,7 +115,6 @@ export async function init(h = defaultHelper) {
   )
 }
 
-// @ts-ignore
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )

@@ -5,11 +5,16 @@ List of priorities:
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
 - [ ] ✏️ Make Laser Gun cheaper
+- [ ] ✏️ Fix Tiny Silver disapeared from Grindstone
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
+- [ ] 🧮 update Craft.zs
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
 - [ ] 🟢 Add **Thaumcraft Aspect Creator**
+- [x] 🟢 Add **CraftPresence**
+- [x] 🔴 Remove **Book Display**
+- [x] 📖 Fix enderium quest deps
 - [ ] 📖 Add any sharpening kit to quest for harvest level
 - [ ] 📖 Add notification about finishing mod chapter based on stats
 - [ ] 📖 Remove all `/say @p has begun the `
@@ -49,6 +54,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Nature chests still turn into Lootr
 - [ ] 🤹‍♂️ Change Model for Tinker's Disassembler
 - [ ] 🟢 Install `Steve Carts`
+- [ ] 🟢 Install `OpenGlasses2`
 - [ ] ✏️ Add chaos shards recipe for Skyblock. Probably RFT Syringe in 5 steps => Struck Lightning. Or Add New conglomerate to explode with nuke and get Chaos Shards.
 - [ ] 📖 Fix Conflux cant be finished
 - [ ] 📖 Introduce EIO painting machine
