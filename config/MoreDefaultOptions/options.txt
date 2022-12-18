@@ -52,7 +52,6 @@ enableWeakAttacks:false
 autoJump:false
 narrator:0
 tutorialStep:none
-key_Add info to original tooltip:199
 key_ALT Key:0
 key_bbw.key.fluidmode:0
 key_bbw.key.mode:78
@@ -366,6 +365,7 @@ key_waila.keybind.recipe:0
 key_waila.keybind.usage:0
 key_waila.keybind.wailaconfig:82
 key_waila.keybind.wailadisplay:79
+soundCategory_master:0.10927153
 soundCategory_music:0.0
 soundCategory_record:0.09859155
 soundCategory_weather:0.4084507
