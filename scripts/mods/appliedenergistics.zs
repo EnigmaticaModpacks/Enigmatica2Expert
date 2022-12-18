@@ -24,6 +24,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>,
 
 // Other silver occurances
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);
+mods.appliedenergistics2.Grinder.removeRecipe(<exnihilocreatio:item_ore_gold:1>);
 scripts.process.crush(<minecraft:gold_ore>, <thermalfoundation:material:1>, 'only: AEGrinder', [<contenttweaker:dust_tiny_silver>], [0.9f]);
 
 # Smart Cable -> Dense
