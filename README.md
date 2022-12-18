@@ -117,7 +117,7 @@ If you play on a server on which have already made these changes, the client doe
 
 This is unofficial addon and not supported with **Enigmatica** dev team.
 
-Some of the changes from the `-Extended` version [[1]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1926)[[2]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1773)[[3]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1577) were added to the main modpack as well, so I became a [contributor](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/graphs/contributors).
+Some of the changes from the `Extended` version [[1]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1926)[[2]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1773)[[3]](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/1577) were added to the main modpack as well, so I became a [contributor](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/graphs/contributors).
 
 [Permission to develop and publish from **Enigmatica** owner.
 ](https://github.com/NillerMedDild/Enigmatica2Expert/blob/d80cc094a7fa1dc750071f8848a96e154c2d40f2/LICENSE.md "E2E License")

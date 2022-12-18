@@ -454,7 +454,7 @@ Icon | Summary
 
 # Removed from E2E Mods
 
-Mos that exists in `E2E` but __was removed__ in `E2E-Extended`
+Mods that exists in `E2E` but __was removed__ in `E2E-Extended`
 
 
 <!-- Automatic generated list REMOVED -->
