@@ -40,7 +40,7 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   val z = e.z;
 
   if(e.player.xp < xp_consumption) {
-    server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x~" "~(y+0.5)~" "~z~" 0.1 0.1 0.1 0.1 2");
+    utils.spawnParticles(world, 'fireworksSpark', x, y+0.5, z, 0.1, 0.1, 0.1, 0.1, 2);
     world.playSound("thaumcraft:poof", "ambient", e.position, 0.2f, 3.0f);
     return;
   }
@@ -68,7 +68,7 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
         isNull(e.player) || e.player.xp < xp_consumption
       ) return;
       world.setBlockState(<blockstate:cyclicmagic:block_fragile_weak>, blockPos);
-      server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~blockPos.x~" "~blockPos.y~" "~blockPos.z~" 0.3 0.3 0.3 0.01 1");
+      utils.spawnParticles(world, 'fireworksSpark', blockPos.x, blockPos.y, blockPos.z, 0.3, 0.3, 0.3, 0.01, 1);
       ctx.data = ctx.data.asInt() + 1;
       e.player.sendPlaySoundPacket("minecraft:block.ladder.place", "ambient", blockPos, 0.2f, 1.0f);
       // e.player.xp = max(0, e.player.xp - xp_consumption);

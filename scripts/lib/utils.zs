@@ -7,6 +7,7 @@
 
 #priority 4000
 
+import crafttweaker.command.ICommandSender;
 import crafttweaker.data.IData;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -381,6 +382,27 @@ zenClass Utils {
     return sorted;
   }
 
+  // Spawn particles
+  // Overloaded with world instead of CommandSender
+  function spawnParticles(
+    world as IWorld,
+    type as string,
+    x as float, y as float, z as float,
+    dx as float, dy as float, dz as float,
+    vel as float, amount as int
+  ) as void {
+    val sender as ICommandSender = <minecraft:dirt>.createEntityItem(world, x, y, z);
+    return spawnParticles(sender, type, x, y, z, dx, dy, dz, vel, amount);
+  }
+  function spawnParticles(
+    sender as ICommandSender,
+    type as string,
+    x as float, y as float, z as float,
+    dx as float, dy as float, dz as float,
+    vel as float, amount as int
+  ) as void {
+    server.commandManager.executeCommandSilent(sender, "/particle "~type~" "~x~" "~y~" "~z~" "~dx~" "~dy~" "~dz~" "~vel~" "~amount);
+  }
 
   # Spawn bunch of items like from gayser
   function geyser(
@@ -407,7 +429,7 @@ zenClass Utils {
         world.spawnEntity(itemEntity);
 
         // world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
-        server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
+        server.commandManager.executeCommandSilent(itemEntity, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
       }).start();
 
       i += 1;

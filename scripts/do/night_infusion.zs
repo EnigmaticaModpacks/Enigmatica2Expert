@@ -39,7 +39,7 @@ events.onWorldTick(function(e as crafttweaker.event.WorldTickEvent){
     // Must have appropriate amount
     val p = entityItem.position;
     if(entityItem.item.amount < itemsConsumed) {
-      server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~p.x~" "~(p.y+1.5)~" "~p.z~" 0.05 0.3 0.05 -0.01 "~entityItem.item.amount);
+      server.commandManager.executeCommandSilent(entityItem, "/particle fireworksSpark "~p.x~" "~(p.y+1.5)~" "~p.z~" 0.05 0.3 0.05 -0.01 "~entityItem.item.amount);
       continue;
     }
 
@@ -60,7 +60,7 @@ events.onWorldTick(function(e as crafttweaker.event.WorldTickEvent){
     world.setBlockState(<blockstate:astralsorcery:blockcustomsandore>, blockPos);
 
     // Spawn particles
-    server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~p.x~" "~(p.y+1.5)~" "~p.z~" 0 1 0 -0.01 20");
+    server.commandManager.executeCommandSilent(entityItem, "/particle fireworksSpark "~p.x~" "~(p.y+1.5)~" "~p.z~" 0 1 0 -0.01 20");
 
     for pl in world.getAllPlayers() {
       if(abs(pl.x - p.x) > 20 || abs(pl.y - p.y) > 20 || abs(pl.z - p.z) > 20) continue;

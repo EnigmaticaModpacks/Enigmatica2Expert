@@ -50,8 +50,13 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
 
   world.destroyBlock(e.position, false);
   world.setBlockState(state, e.position);
-  server.commandManager.executeCommandSilent(server, "/bedrockores wrap "~item.amount~" "~e.x~" "~e.y~" "~e.z);
-  server.commandManager.executeCommandSilent(server, "/particle fireworksSpark "~e.x~" "~(e.y+1.0)~" "~e.z~" 0.1 0 0.1 0.01 10");
   item.mutable().shrink(item.amount);
+
+  // To call a command in a certain world, we have to call it on behalf of ICommandSender.
+  // But, the commands will only work if the player has OP permissions.
+  // So we will create an object which is ICommandSender and has OP permissions.
+  val commandSender = <minecraft:dirt>.createEntityItem(world, e.x, e.y, e.z);
+  server.commandManager.executeCommandSilent(commandSender, "/bedrockores wrap "~item.amount~" "~e.x~" "~e.y~" "~e.z);
+  server.commandManager.executeCommandSilent(commandSender, "/particle fireworksSpark "~e.x~" "~(e.y+1.0)~" "~e.z~" 0.1 0 0.1 0.01 10");
 });
 
