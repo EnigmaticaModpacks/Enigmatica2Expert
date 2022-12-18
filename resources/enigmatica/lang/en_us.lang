@@ -22,9 +22,9 @@ e2ee.written_book.Zombie=Zombie
 e2ee.eu2_drum_error=§7You must have at least 1 empty inventory slot to do this
 e2ee.danknull_dock.must_have=§7You need a §f%s§7 in the offhand to insert %s§7 into %s§7. §f%s§7 will be irreversibly consumed.
 e2ee.restrict.vis_seeds=§7§eVis Seeds§7 can only be planted in §nthe Void§7 dimension or on §nplanets§7. They also need Oxygen.
-e2ee.creature_resisted_morb=§8This creature is strong enough to resist capture by the §n%s.
+e2ee.creature_resisted_morb=§8This creature resist capture by the §n§8%s.
 e2ee.creature_uncapturable=§7This creature can't be captured.
-tooltips.lang.morb_resist=Effective against monsters at §4< %s%%§r hearts, or with fewer than §c%s§r hearts total.
+tooltips.lang.morb_resist=Effective against monsters at §4<%s%%§r hearts, or with fewer than §c%s§r hearts total.
 
 # Bugged langs that losed their names
 entity.Villager.shady_merchant=Shady Merchant
