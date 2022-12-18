@@ -4,10 +4,12 @@ List of priorities:
 
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
+- [ ] ✏️ Make Laser Gun cheaper
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
+- [ ] 🟢 Add **Thaumcraft Aspect Creator**
 - [ ] 📖 Add any sharpening kit to quest for harvest level
 - [ ] 📖 Add notification about finishing mod chapter based on stats
 - [ ] 📖 Remove all `/say @p has begun the `
