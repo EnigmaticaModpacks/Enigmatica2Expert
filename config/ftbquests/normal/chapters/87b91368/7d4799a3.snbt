@@ -1,5 +1,6 @@
 {
 	title: "{q.animals.dragon_egg.name}",
+	icon: "iceandfire:dragonegg_red",
 	x: 3.5d,
 	y: 1.25d,
 	text: [
