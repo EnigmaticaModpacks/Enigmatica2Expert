@@ -19,7 +19,7 @@ import mods.requious.MachineVisual;
 import mods.requious.RecipeContainer;
 import mods.requious.SlotVisual;
 import scripts.category.uu.getCost;
-import scripts.lib.D.D_zs;
+import scripts.lib.D.D.D_zs;
 
 static TICK_STEP as int = 1;
 static ENERGY_USAGE as int = 20000;

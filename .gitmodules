@@ -4,3 +4,6 @@
 [submodule "mc-tools"]
 	path = mc-tools
 	url = https://github.com/Krutoy242/mc-tools.git
+[submodule "scripts/lib/D"]
+	path = scripts/lib/D
+	url = https://github.com/Krutoy242/D.zs.git
