@@ -711,3 +711,71 @@ addItems(<ore:workbench>, [
 
 add(<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade:*>);
 add(<ore:logWood>, <ic2:rubber_wood>);
+
+##################
+# Nuclearcraft
+##################
+
+#Reactor Fuels
+addItems(<ore:fuelReactor>, [
+    <nuclearcraft:fuel_thorium:*>,
+	<nuclearcraft:fuel_uranium:*>,
+	<nuclearcraft:fuel_neptunium:*>,
+	<nuclearcraft:fuel_plutonium:*>,
+	<nuclearcraft:fuel_mixed:*>,
+	<nuclearcraft:fuel_americium:*>,
+	<nuclearcraft:fuel_curium:*>,
+	<nuclearcraft:fuel_berkelium:*>,
+	<nuclearcraft:fuel_californium:*>,
+	<qmd:fuel_copernicium:*>,
+]);
+
+#Reactor Depleted Fuels
+addItems(<ore:depletedFuelReactor>, [
+	<nuclearcraft:depleted_fuel_thorium:*>,
+    <nuclearcraft:depleted_fuel_uranium:*>,
+	<nuclearcraft:depleted_fuel_neptunium:*>,
+	<nuclearcraft:depleted_fuel_plutonium:*>,
+	<nuclearcraft:depleted_fuel_mixed:*>,
+	<nuclearcraft:depleted_fuel_americium:*>,
+	<nuclearcraft:depleted_fuel_curium:*>,
+	<nuclearcraft:depleted_fuel_berkelium:*>,
+	<nuclearcraft:depleted_fuel_californium:*>,
+	<qmd:depleted_fuel_copernicium:*>,
+]);
+
+#Fission Reactor
+addItems(<ore:wallReactor>, [
+    <nuclearcraft:fission_casing>,
+    <nuclearcraft:fission_glass>,
+]);
+
+#Salt Reactor
+addItems(<ore:wallTurbine>, [
+    <nuclearcraft:turbine_casing>,
+    <nuclearcraft:turbine_glass>,
+]);
+
+##################
+# QMD
+##################
+
+#Accelerators
+addItems(<ore:wallAccelerator>, [
+    <qmd:accelerator_casing>,
+    <qmd:accelerator_glass>,
+]);
+
+#Chambers
+addItems(<ore:wallTargetChamber>, [
+    <qmd:particle_chamber_casing>,
+    <qmd:particle_chamber_glass>,
+]);
+
+#VacuumChambers
+addItems(<ore:wallVacuumChambers>, [
+    <qmd:containment_casing>,
+    <qmd:containment_glass>,
+]);
+
+
