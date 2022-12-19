@@ -18,10 +18,10 @@
 			id: "mekanism:machineblock2",
 			Damage: 11s,
 			tag: {
-				tier: 4,
-				mekData: {}
+				tier: 4
 			}
-		}]
+		}],
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "b9164859",

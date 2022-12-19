@@ -17,12 +17,10 @@
 		items: [{
 			id: "mekanism:energycube",
 			tag: {
-				tier: 4,
-				mekData: {
-					energyStored: 1.7976931348623157E308d
-				}
+				tier: 4
 			}
-		}]
+		}],
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "9188bef7",

@@ -14,10 +14,9 @@
 		items: [{
 			id: "draconicevolution:draconium_capacitor",
 			Damage: 2s,
-			tag: {
-				Energy: 1073741823
-			}
-		}]
+			tag: {}
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "6ed8266e",

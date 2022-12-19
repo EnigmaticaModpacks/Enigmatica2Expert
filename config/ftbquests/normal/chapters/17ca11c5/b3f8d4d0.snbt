@@ -18,7 +18,8 @@
 			tag: {
 				tier: 4
 			}
-		}]
+		}],
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "df6501f4",
