@@ -1,0 +1,28 @@
+{
+	x: 6.9d,
+	y: 10.9d,
+	text: [
+		"{q.nuclearcraft.melter.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"626f1230"
+	],
+	tasks: [{
+		uid: "0dc547af",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:melter"
+		}]
+	}],
+	rewards: [{
+		uid: "b01a7978",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

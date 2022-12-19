@@ -1,0 +1,28 @@
+{
+	x: 9.1d,
+	y: 5.7d,
+	text: [
+		"{q.nuclearcraft.ingot_former.desc}"
+	],
+	dependencies: [
+		"a7410660",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "9dd9f7cf",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot_former"
+		}]
+	}],
+	rewards: [{
+		uid: "15a875d7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

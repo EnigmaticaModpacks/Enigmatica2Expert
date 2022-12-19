@@ -1,0 +1,23 @@
+{
+	x: 20.3d,
+	y: 7.5d,
+	text: [
+		"Basic Tier QMD"
+	],
+	dependencies: [
+		"0bf36970",
+		"9c8a31e1"
+	],
+	tasks: [{
+		uid: "e04566be",
+		type: "item",
+		items: [{
+			item: "qmd:semiconductor 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "f78b4dff",
+		type: "loot",
+		table: 1
+	}]
+}

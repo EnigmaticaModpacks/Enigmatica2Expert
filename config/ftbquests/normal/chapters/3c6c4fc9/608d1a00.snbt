@@ -1,0 +1,83 @@
+{
+	title: "Solid Fission Reactor",
+	icon: "nuclearcraft:solid_fission_controller",
+	x: 13.3d,
+	y: 11.0d,
+	text: [
+		"MultiBlock structure that constitutes a fission reactor that can have different types of structures and use different fuels.",
+		"",
+		"Example of mono fuel, video by mod creator: https://www.youtube.com/watch?v=F8I7ar3AB0w",
+		"",
+		"Example of mult fuel, video from the creator of the mod: https://www.youtube.com/watch?v=mdfM8obaceQ"
+	],
+	dependencies: [
+		"dc5e8800",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "6c74a77d",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_controller"
+		}]
+	},
+	{
+		uid: "0e4d23de",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_cell"
+		}]
+	},
+	{
+		uid: "3794a7c1",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fission_source"
+		}]
+	},
+	{
+		uid: "31cf04a4",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fission_cell_port"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4863e22f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fission_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "2cd5177b",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallReactor"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallReactor"
+				}
+			}
+		}],
+		count: 92L
+	}],
+	rewards: [{
+		uid: "263dd45a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

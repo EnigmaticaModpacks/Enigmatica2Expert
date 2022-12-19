@@ -1,0 +1,83 @@
+{
+	title: "Neutral Exotic Containment",
+	icon: "qmd:neutral_containment_controller",
+	x: 24.8d,
+	y: 6.2d,
+	text: [
+		"The Neutral Exotic Containment mulitiblock stores neutrally charged exotic materials like antimatter. It not only stores antimatter but is required to make antimatter."
+	],
+	dependencies: [
+		"06b1e561",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "c7abbba7",
+		type: "item",
+		items: [{
+			item: "qmd:neutral_containment_controller"
+		}]
+	},
+	{
+		uid: "ce7972f7",
+		type: "item",
+		items: [{
+			item: "qmd:containment_energy_port"
+		}]
+	},
+	{
+		uid: "e13f5017",
+		type: "item",
+		items: [{
+			item: "qmd:containment_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "f4bc528d",
+		type: "item",
+		items: [{
+			item: "qmd:containment_beam_port"
+		}],
+		count: 2L
+	},
+	{
+		uid: "dc0c8af0",
+		type: "item",
+		items: [{
+			item: "qmd:containment_laser"
+		}],
+		count: 2L
+	},
+	{
+		uid: "3bf890e1",
+		type: "item",
+		items: [{
+			item: "qmd:containment_coil"
+		}],
+		count: 16L
+	},
+	{
+		uid: "87750713",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallVacuumChambers"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallVacuumChambers"
+				}
+			}
+		}],
+		count: 210L
+	}],
+	rewards: [{
+		uid: "2dbbb95a",
+		type: "loot",
+		table: 1
+	}]
+}

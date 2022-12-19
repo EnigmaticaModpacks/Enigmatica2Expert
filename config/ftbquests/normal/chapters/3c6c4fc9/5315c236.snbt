@@ -1,0 +1,91 @@
+{
+	title: "Beam Diverter",
+	icon: "qmd:beam_diverter_controller",
+	x: 23.0d,
+	y: 4.5d,
+	text: [
+		"Beam Diverters can change the direction a charged particle beam goes. Doing so the particle beam losses a small amount of energy to synchrotron radiation."
+	],
+	dependencies: [
+		"ef6bdfaf",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "f2aa1c6d",
+		type: "item",
+		items: [{
+			item: "qmd:beam_diverter_controller"
+		}]
+	},
+	{
+		uid: "93144c2a",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_energy_port"
+		}]
+	},
+	{
+		uid: "e097f760",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "c1a940f3",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam_port"
+		}],
+		count: 2L
+	},
+	{
+		uid: "53c42535",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam"
+		}],
+		count: 3L
+	},
+	{
+		uid: "53dd95f5",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_yoke"
+		}],
+		count: 22L
+	},
+	{
+		uid: "97106e1a",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_magnet 1 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "de48426f",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallAccelerator"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallAccelerator"
+				}
+			}
+		}],
+		count: 92L
+	}],
+	rewards: [{
+		uid: "ea8b2fa3",
+		type: "loot",
+		table: 1
+	}]
+}

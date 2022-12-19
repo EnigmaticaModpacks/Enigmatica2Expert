@@ -1,0 +1,28 @@
+{
+	x: 7.9d,
+	y: 4.8d,
+	text: [
+		"{q.nuclearcraft.salt_mixer.desc}"
+	],
+	dependencies: [
+		"a7410660",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "6cd5e52a",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:salt_mixer"
+		}]
+	}],
+	rewards: [{
+		uid: "9aeb6b1a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

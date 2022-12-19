@@ -1,0 +1,25 @@
+{
+	title: "Extreme Reactors",
+	icon: "bigreactors:reactorcontroller",
+	x: 13.3d,
+	y: 12.4d,
+	text: [
+		"Extreme Reactors is a very simplified and modular reactors mod."
+	],
+	dependencies: [
+		"608d1a00",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "959621df",
+		type: "item",
+		items: [{
+			item: "bigreactors:reactorcontroller"
+		}]
+	}],
+	rewards: [{
+		uid: "10c66bf1",
+		type: "loot",
+		table: 1
+	}]
+}

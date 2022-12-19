@@ -1,0 +1,29 @@
+{
+	x: 13.3d,
+	y: 4.8d,
+	text: [
+		"{q.nuclearcraft.chemical_reactor.desc}"
+	],
+	dependencies: [
+		"3ba07970",
+		"dc5e8800",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "5d2d3d6e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:chemical_reactor"
+		}]
+	}],
+	rewards: [{
+		uid: "ce525de3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

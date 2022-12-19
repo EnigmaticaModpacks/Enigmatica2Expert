@@ -1,0 +1,25 @@
+{
+	x: 25.5d,
+	y: 7.1d,
+	text: [
+		"The Lepton Cannon is a weapon that fires beams of charged lepton anti-lepton pairs. It is a powerful weapon that passes through blocks and armour and irradiates the target. The damage, radiation and range of the weapon is dependent on the ammo used. The ammo for the lepton cannon are cells of positronium, muonium and tauonium."
+	],
+	dependencies: [
+		"06b1e561",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "8d3dc1d8",
+		type: "item",
+		items: [{
+			item: "qmd:lepton_cannon"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ffb9bb35",
+		type: "loot",
+		table: 1
+	}]
+}

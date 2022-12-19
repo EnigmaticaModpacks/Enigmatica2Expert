@@ -1,0 +1,114 @@
+{
+	title: "Nucleosynthesis Chamber",
+	icon: "qmd:nucleosynthesis_chamber_controller",
+	x: 24.8d,
+	y: 8.9d,
+	text: [
+		"Its purpose is to perform muon-catalyzed fusion and the r-process."
+	],
+	dependencies: [
+		"06b1e561",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "1e368871",
+		type: "item",
+		items: [{
+			item: "qmd:nucleosynthesis_chamber_controller"
+		}]
+	},
+	{
+		uid: "eef88a9b",
+		type: "item",
+		items: [{
+			item: "qmd:containment_energy_port"
+		}]
+	},
+	{
+		uid: "0549482e",
+		type: "item",
+		items: [{
+			item: "qmd:containment_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "eb1da043",
+		type: "item",
+		items: [{
+			item: "qmd:vacuum_chamber_fluid_port"
+		}],
+		count: 4L
+	},
+	{
+		uid: "340075d1",
+		type: "item",
+		items: [{
+			item: "qmd:vacuum_chamber_heater_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "341ae9fb",
+		type: "item",
+		items: [{
+			item: "qmd:containment_beam_port"
+		}]
+	},
+	{
+		uid: "66f2cbad",
+		type: "item",
+		items: [{
+			item: "qmd:vacuum_chamber_beam"
+		}],
+		count: 15L
+	},
+	{
+		uid: "410f41f1",
+		type: "item",
+		items: [{
+			item: "qmd:vacuum_chamber_plasma_nozzle"
+		}],
+		count: 2L
+	},
+	{
+		uid: "3368950a",
+		type: "item",
+		items: [{
+			item: "qmd:vacuum_chamber_plasma_glass"
+		}],
+		count: 20L
+	},
+	{
+		uid: "4fc83683",
+		type: "item",
+		items: [{
+			item: "qmd:vacuum_chamber_heater 1 7"
+		}],
+		count: 8L
+	},
+	{
+		uid: "3f4e0787",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallVacuumChambers"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallVacuumChambers"
+				}
+			}
+		}],
+		count: 239L
+	}],
+	rewards: [{
+		uid: "de75dafa",
+		type: "loot",
+		table: 1
+	}]
+}
