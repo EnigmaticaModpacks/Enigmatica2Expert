@@ -7,7 +7,9 @@ List of priorities:
 - [ ] ✏️ Make Laser Gun cheaper
 - [ ] ✏️ Fix Tiny Silver disapeared from Grindstone
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
+- [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
 - [ ] 🧮 update Craft.zs
+- [ ] 🧮 Write deprecation of E2E-E-icons
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
