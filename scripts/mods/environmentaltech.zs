@@ -1,6 +1,5 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
-import scripts.craft.grid.Grid;
 
 #modloaded environmentaltech
 

@@ -12,7 +12,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   200, # Vis cost
   [<aspect:terra>, <aspect:ignis>],
   <thaumicwonders:flux_capacitor>, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "  *  ",
   "F V F",
   "  *  "], {
@@ -29,7 +29,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   750, # Vis cost
   [<aspect:aer> * 8, <aspect:aqua> * 8, <aspect:ordo> * 8],
   <thaumicwonders:flux_distiller>, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "□ F □",
   "C l C",
   "□ c □"], {
@@ -100,7 +100,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   13, # Instability
   [<aspect:metallum> * 50, <aspect:vitium> * 50, <aspect:alkimia> * 50],
   <astralsorcery:itemcraftingcomponent:1>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "  r  ",
   "♦   ◊",
   "  θ  "], {

@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import thaumcraft.aspect.CTAspectStack;
-import scripts.craft.grid.Grid;
 import mods.botaniatweaks.AgglomerationMultiblock;
 import mods.botaniatweaks.AgglomerationRecipe;
 import mods.botaniatweaks.Agglomeration;

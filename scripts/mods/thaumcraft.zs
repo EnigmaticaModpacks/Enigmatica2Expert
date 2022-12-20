@@ -15,7 +15,7 @@ furnace.addRecipe(<thermalfoundation:material:131> * 2, <thaumcraft:cluster:5>);
 
 # Primordial Pearl alt (for some people who dont want to close rifts)
 mods.astralsorcery.Altar.addConstellationAltarRecipe(
-  'Primordial Pearl alt', <thaumcraft:primordial_pearl>, 1500, 250, scripts.craft.grid.Grid([
+  'Primordial Pearl alt', <thaumcraft:primordial_pearl>, 1500, 250, Grid([
   "TVT"+
   "CSC"+
   "TVT"+
@@ -191,7 +191,7 @@ function remakeWorkbench(
 ) as void {
   mods.thaumcraft.ArcaneWorkbench.removeRecipe(output.anyAmount());
   mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
-    name, research, visCost, aspects, output, scripts.craft.grid.Grid(gridMap, ingrMap).shaped()
+    name, research, visCost, aspects, output, Grid(gridMap, ingrMap).shaped()
   );
 }
 
@@ -247,7 +247,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   10, # Vis cost
   [<aspect:ignis>, <aspect:aqua>],
   <thaumcraft:mechanism_simple>, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "‚ ‚ ‚",
   "‚ # ‚",
   "‚ ‚ ‚"], {
@@ -263,7 +263,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   30, # Vis cost
   [<aspect:ignis>, <aspect:aqua>],
   <thaumcraft:mechanism_complex>, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "  S  ",
   "‚ □ ‚",
   "  S  "], {
@@ -280,7 +280,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   50, # Vis cost
   [<aspect:terra>, <aspect:aqua>],
   <thaumcraft:pattern_crafter>, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "  ■  ",
   "S # S"], {
   "■": <ore:hopper>, # Hopper
@@ -296,7 +296,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   150, # Vis cost
   [<aspect:aer>, <aspect:aqua>, <aspect:ordo>, <aspect:perditio>, <aspect:terra>, <aspect:ignis>],
   <thaumcraft:vis_battery> * 8, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "A A A",
   "A V A",
   "A A A"], {
@@ -312,7 +312,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   700, # Vis cost
   [<aspect:ignis> * 2, <aspect:ordo> * 2, <aspect:perditio> * 2, <aspect:aer> * 2],
   <thaumicaugmentation:impetus_generator>, # Output
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "E P E",
   "R V R",
   "E I E"], {
@@ -375,7 +375,7 @@ mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}), 15,
 [<aspect:vitium> * 90, <aspect:mortuus> * 45, <aspect:praecantatio> * 90, <aspect:auram> * 30],
 <randomthings:ingredient:11>,      # Golden Egg
-scripts.craft.grid.Grid(["-K-T-K-T"], {
+Grid(["-K-T-K-T"], {
   "-": <thaumictinkerer:energetic_nitor>, # Energetic Nitor
   "K": <extrautils2:klein>,               # Klein Bottle
   "T": <thaumcraft:taint_log>,            # Taintwood Log
@@ -390,7 +390,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   1, # Instability
   [<aspect:vacuos> * 100, <aspect:praecantatio> * 20],
   <thaumcraft:focus_2>, # CentralItem
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "  ˛  ",
   "q   q",
   "  ‚  "], {
@@ -408,7 +408,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   1, # Instability
   [<aspect:perditio> * 10],
   <thaumcraft:seal>, # Central Item
-  scripts.craft.grid.Grid(["oG"], {
+  Grid(["oG"], {
   "o": <minecraft:golden_pickaxe>.anyDamage(), # Golden Pickaxe
   "G": <minecraft:golden_shovel>.anyDamage(),  # Golden Shovel
 }).spiral(1));
@@ -422,7 +422,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   1, # Instability
   [<aspect:cognitio> * 10],
   <thaumcraft:mind>, # Central Item
-  scripts.craft.grid.Grid(["ZZ"], {
+  Grid(["ZZ"], {
   "Z": <thaumcraft:brain>, # Zombie Brain
 }).spiral(1));
 
@@ -435,7 +435,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   2, # Instability
   [<aspect:alienis> * 20, <aspect:vitium> * 20],
   <thaumictinkerer:energetic_nitor>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "  ▲  ",
   "D   D",
   "  ▲  "], {

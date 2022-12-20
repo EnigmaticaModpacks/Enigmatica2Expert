@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
-import scripts.craft.grid.Grid;
 #modloaded forestry
 
 # Fixing fruit juice amount from tomatos
@@ -19,7 +18,7 @@ for tomato in <ore:cropTomato>.items {
 # Intricate Circuit Board
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
 mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
 	"◊ B ◊",
   "◊ E ◊",
   "◊ R ◊"], {
@@ -41,7 +40,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short})
 # [Hardened Casing] from [Sturdy Casing][+1]
 mods.forestry.Carpenter.removeRecipe(<forestry:hardened_machine>);
 mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, 
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "◊   ◊",
   "  ⌂  ",
   "◊   ◊"], {

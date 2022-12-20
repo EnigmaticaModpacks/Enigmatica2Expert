@@ -4,7 +4,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.world.IVector3d;
-import scripts.craft.grid.Grid;
 
 #priority 900
 

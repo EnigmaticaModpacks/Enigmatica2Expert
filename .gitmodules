@@ -7,3 +7,6 @@
 [submodule "scripts/lib/D"]
 	path = scripts/lib/D
 	url = https://github.com/Krutoy242/D.zs.git
+[submodule "scripts/craft"]
+	path = scripts/craft
+	url = https://github.com/Krutoy242/Craft.zs.git

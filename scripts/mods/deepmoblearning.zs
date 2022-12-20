@@ -143,7 +143,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   10, # Instability
   [<aspect:draco> * 100, <aspect:caeles> * 100, <aspect:victus> * 100],
   <deepmoblearning:data_model_dragon>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "E ▬ E",
   "-   -",
   "E ▬ E"], {

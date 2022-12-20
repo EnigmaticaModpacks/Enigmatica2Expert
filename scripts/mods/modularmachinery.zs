@@ -1,7 +1,6 @@
 #modloaded modularmachinery
 
 import crafttweaker.item.IItemStack;
-import scripts.craft.grid.Grid;
 
 # [Machine Vent] from [Machine Casing][+1]
 craft.remake(<modularmachinery:blockcasing:1>, [
@@ -32,7 +31,7 @@ recipes.addShapedMirrored("Machine Gearbox",
 # Machine Circuitry
 recipes.remove(<modularmachinery:blockcasing:5>);
 mods.forestry.Carpenter.addRecipe(<modularmachinery:blockcasing:5>,
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "P ▬ P",
   "U I U",
   "P ▬ P"], {

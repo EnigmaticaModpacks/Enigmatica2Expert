@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import scripts.craft.grid.Grid;
 
 #modloaded mysticalagriculture
 
@@ -94,7 +93,7 @@ val seedIngrByTier = [
 
 
 for i in 0 .. 6 {
-	val shape = scripts.craft.grid.Grid(["pretty",
+	val shape = Grid(["pretty",
 		"o w o",
 		"w ! w",
 		"o w o"], {

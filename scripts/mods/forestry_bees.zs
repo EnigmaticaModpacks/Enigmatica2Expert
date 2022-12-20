@@ -10,7 +10,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.WeightedItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import scripts.craft.grid.Grid;
 
 // 🟠🟡🟢🟣🟤🟥🟦🟧🟨🟩🟪🟫
 

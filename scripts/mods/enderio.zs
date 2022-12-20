@@ -2,7 +2,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
 import scripts.process.solution;
-import scripts.craft.grid.Grid;
 
 #modloaded enderio
 

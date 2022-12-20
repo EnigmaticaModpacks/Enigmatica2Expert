@@ -5,7 +5,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.recipes.IRecipeFunction;
 import mods.ctutils.utils.Math.sqrt;
-import scripts.craft.grid.Grid;
 
 
 # Sadly, i didnt find dynamic solution to convert Potion_Name -> EffectName -> EffectId

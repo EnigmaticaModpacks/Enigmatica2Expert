@@ -4,7 +4,6 @@ import crafttweaker.liquid.ILiquidStack;
 import mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect;
 import mods.alfinivia.ImmersiveEngineering.addRailgunBullet;
 import crafttweaker.potions.IPotionEffect;
-import scripts.craft.grid.Grid;
 
 
 

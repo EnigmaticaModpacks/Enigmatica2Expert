@@ -21,7 +21,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   15, # Instability
   [<aspect:infernum> * 200, <aspect:draco> * 200, <aspect:visum> * 200, <aspect:spiritus> * 200],
   <thaumadditions:mithrillium_block>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "▬ r ▬",
   "c   c",
   "▬ D ▬"], {

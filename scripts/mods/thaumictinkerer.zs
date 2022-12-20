@@ -19,7 +19,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   8, # Instability
   [<aspect:praecantatio> * 100, <aspect:cognitio> * 100, <aspect:alienis> * 100],
   <thaumadditions:shadow_enchanter>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "▬ S ▬",
   "p   p",
   "▬ S ▬"], {

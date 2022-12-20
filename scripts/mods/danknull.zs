@@ -39,7 +39,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   15, # Instability
   [<aspect:caeles> * 150, <aspect:draco> * 150, <aspect:visum> * 150],
   <ore:ingotTerrasteel>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "C I C",
   "□   □",
   "C I C"], {

@@ -107,7 +107,7 @@ craft.make(<astralsorcery:blockmarble> * 8, ["pretty",
 });
 
 # [Luminous Crafting Table] from [Arcane Workbench][+2]
-recipes.addShaped("Luminous Crafting Table - RecipeAction", <astralsorcery:blockaltar>, scripts.craft.grid.Grid(["pretty",
+recipes.addShaped("Luminous Crafting Table - RecipeAction", <astralsorcery:blockaltar>, Grid(["pretty",
   "M n M",
   "M A M",
   "M   M"], {

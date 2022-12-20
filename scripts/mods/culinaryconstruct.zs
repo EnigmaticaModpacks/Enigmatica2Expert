@@ -4,7 +4,7 @@
 recipes.remove(<culinaryconstruct:sandwich_station>);
 mods.extendedcrafting.TableCrafting.addShaped(0,
   <culinaryconstruct:sandwich_station>, 
-  scripts.craft.grid.Grid(['pretty',
+  Grid(['pretty',
     '  T  ',
     'F C F',
     'K K K'], {

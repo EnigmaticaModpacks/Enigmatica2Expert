@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import scripts.craft.grid.Grid;
 #modloaded draconicevolution
 
 # Debug chest for recipes

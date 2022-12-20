@@ -390,7 +390,7 @@ for item in [
 ] as IItemStack[] {
 	mods.extendedcrafting.TableCrafting.addShaped(0,
 		getCreativeHarvest(item),
-		scripts.craft.grid.Grid(["pretty",
+		Grid(["pretty",
 		"d d d",
 		"d * d",
 		"d d d"], {

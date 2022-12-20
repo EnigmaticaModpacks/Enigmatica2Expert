@@ -138,7 +138,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   10, # Instability
   [<aspect:caeles> * 100, <aspect:draco> * 100, <aspect:rattus> * 100],
   <rats:idol_of_ratlantis>, # Central Item
-  scripts.craft.grid.Grid(["pretty",
+  Grid(["pretty",
   "S ◊ ╳",
   "▬   ▬",
   "* ◊ D"], {

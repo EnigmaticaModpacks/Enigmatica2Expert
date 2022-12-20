@@ -3,7 +3,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.data.IData;
-import scripts.craft.grid.Grid;
 #modloaded thermalexpansion
 
 # Planks/Slabs -> Sticks
@@ -158,7 +157,7 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 # [Machine Frame]*2 from [Device Frame][+6]
 	recipes.remove(<thermalexpansion:frame>);
 	mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
-		scripts.craft.grid.Grid(["pretty",
+		Grid(["pretty",
 			"■ B ■",
 			"M ◙ ⌂",
 			"* ▄ *"], {
