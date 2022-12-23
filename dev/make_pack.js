@@ -205,7 +205,7 @@ const style = {
     doTask(
       `👬 Cloning latest tag to ${tmpOverrides} ... \n`,
       () => {
-        execSyncInherit(`git clone --depth 1 "file://${mcClientPath}" .`)
+        execSyncInherit(`git clone --recurse-submodules -j8 --depth 1 "file://${mcClientPath}" .`)
       },
       tmpOverrides
     )

@@ -52,9 +52,11 @@ enableWeakAttacks:false
 autoJump:false
 narrator:0
 tutorialStep:none
+key_Add info to original tooltip:210
 key_ALT Key:0
 key_bbw.key.fluidmode:0
 key_bbw.key.mode:78
+key_Blacklist Block:48
 key_bloodmagic.keybind.cycle_holding_neg:0
 key_bloodmagic.keybind.cycle_holding_pos:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
@@ -63,6 +65,7 @@ key_Change Caster Focus:34
 key_cos.key.opencosarmorinventory:0
 key_Difficulty Meter - Show Always:49:SHIFT
 key_Difficulty Meter - Show:49
+key_Enable/Disable:0
 key_enderio.keybind.dsu:19:CONTROL
 key_enderio.keybind.fovminus:0
 key_enderio.keybind.fovminusfast:0
@@ -289,6 +292,7 @@ key_keybind.hammercorerenderstack:77
 key_keys.servertabinfo.show:29
 key_keys.servertabinfo.show2:157
 key_keywizard.keybind.openKeyboardWizard:65:CONTROL
+key_Kill Particles:0
 key_mekanism.key.armorMode:34
 key_mekanism.key.feetMode:35
 key_mekanism.key.mode:40
@@ -301,6 +305,7 @@ key_neat.keybind.toggle:0
 key_nei.options.keys.gui.botania_corporea_request:0
 key_nimble.keybind.frontView:63
 key_of.key.zoom:-97
+key_Open Menu:25
 key_Open Rocket GUI:46
 key_openblocks.keybind.vario_switch:0
 key_openblocks.keybind.vario_vol_down:0
@@ -357,6 +362,7 @@ key_schematica.key.save:55
 key_Show Biome Borders:48:CONTROL
 key_Side Inventory Key:77
 key_smoothfont.key.guiOpen:199
+key_Toggle Freeze Effect:0
 key_Toggle Jetpack:45
 key_Toggle Mining Speed Control:43
 key_Toggle RCS:0

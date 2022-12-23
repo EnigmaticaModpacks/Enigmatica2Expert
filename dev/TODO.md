@@ -2,24 +2,12 @@
 
 List of priorities:
 
-- [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
-- [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
-- [ ] ✏️ Make Laser Gun cheaper
 - [ ] ✏️ Fix Tiny Silver disapeared from Grindstone
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
 - [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
-- [ ] 🧮 update Craft.zs
-- [ ] 🧮 Write deprecation of E2E-E-icons
-- [ ] 🟢 Add **quality-tools**
-- [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Bogo Sorter**
-- [ ] 🟢 Add **Thaumcraft Aspect Creator**
-- [x] 🟢 Add **CraftPresence**
-- [x] 🔴 Remove **Book Display**
-- [x] 📖 Fix enderium quest deps
 - [ ] 📖 Add any sharpening kit to quest for harvest level
 - [ ] 📖 Add notification about finishing mod chapter based on stats
-- [ ] 📖 Remove all `/say @p has begun the `
 
 ---
 
@@ -29,6 +17,13 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 🟢 Add **Legendary Tooltips** when fixed: https://github.com/AHilyard/LegendaryTooltips/issues/47
+- [ ] 🟢 Add **Fancier Particles** when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
+- [ ] 🟢 Add **quality-tools**
+- [ ] 🟢 Add **everlastingabilities**
+- [ ] 🟢 Add **Thaumcraft Aspect Creator**
+- [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
+- [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] 📀 Remove automatic IE armor recycling to speed up game load
 - [ ] ✏️ Enthropy stone add usage
 - [ ] ✏️ Compressed Block remove too much aspects - they could be easy used to spawn rifts
@@ -143,6 +138,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔨 Add teleportation trait. 1. Set point, 2. Break special glass-like block to teleport
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
+- [ ] 🧮 Craft.zs fix liquid ingredient not counting amount of items, because (2) means "item as is"
 - [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74)
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
 - [ ] ⛏️ Mining levels rework. There is too much mining levels.
