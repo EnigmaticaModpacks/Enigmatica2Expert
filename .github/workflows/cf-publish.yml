@@ -58,7 +58,7 @@ jobs:
         uses: itsmeow/curseforge-upload@v3
         id: client
         with:
-          release_type: beta
+          release_type: release
           display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}"
           file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}.zip"
           game_endpoint: "minecraft"
@@ -71,7 +71,7 @@ jobs:
       - name: "🖥️ Upload Server"
         uses: itsmeow/curseforge-upload@v3
         with:
-          release_type: beta
+          release_type: release
           display_name: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server"
           file_path: "E2E-Extended-${{ steps.release.outputs.tag_name }}-server.zip"
           game_endpoint: "minecraft"
