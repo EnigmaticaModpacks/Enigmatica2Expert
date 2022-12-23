@@ -205,3 +205,96 @@
 [ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_mid@32767 in void beacon registration; this can result in invalid result blocks
 [ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_end@32767 in void beacon registration; this can result in invalid result blocks
 [ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.cactus@32767 in void beacon registration; this can result in invalid result blocks
+[pool-12-thread-1/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@675da330:
+[pool-12-thread-1/ERROR] [FML]: Index: 2 Listeners:
+[pool-12-thread-1/ERROR] [FML]: 0: HIGHEST
+[pool-12-thread-1/ERROR] [FML]: 1: ASM: class vazkii.botania.client.core.handler.TooltipHandler onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 2: ASM: class crazypants.enderio.base.paint.PaintTooltipUtil addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 3: ASM: com.zeitheron.hammercore.TooltipAPI@45be275f tooltipEvt(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 4: ASM: class youyihj.bilingualname.TooltipEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 5: ASM: vazkii.quark.client.feature.MapTooltip@21fc910d makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 6: ASM: vazkii.quark.client.feature.ShulkerBoxTooltip@3a2f4cdd makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 7: ASM: alexiy.eii.EventHandler@13ee92aa drawtooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 8: ASM: com.glodblock.github.integration.pauto.RecipeEncoderFluidTooltipHandler@72a548d4 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 9: ASM: com.buuz135.industrial.proxy.client.event.IFTooltipEvent@375ea100 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 10: ASM: org.zeith.thaumicadditions.events.ClientEventReactor@22b7e91d tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 11: ASM: com.tfar.lootcapacitortooltips.Tooltips@7af01db4 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 12: ASM: com.tfar.lootcapacitortooltips.EndergyTooltips@31f5180a onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 13: ASM: com.oitsjustjose.tinkers_addons.modifiers.ModAutoRepair@5dafc671 onUpdate(Lnet/minecraftforge/event/entity/player/PlayerEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 14: HIGH
+[pool-12-thread-1/ERROR] [FML]: 15: ASM: ic2.core.item.armor.jetpack.JetpackHandler@6ee09942 tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 16: NORMAL
+[pool-12-thread-1/ERROR] [FML]: 17: ASM: class thaumcraft.client.lib.events.RenderEventHandler tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 18: ASM: class thaumcraft.common.lib.events.PlayerEvents tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 19: ASM: class slimeknights.tconstruct.gadgets.WoodenHopperGUIDrawEvent addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 20: ASM: class mcp.mobius.waila.handlers.VanillaTooltipHandler tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 21: ASM: class WayofTime.bloodmagic.util.handler.event.ClientHandler onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 22: ASM: class quaternary.brokenwings.WingClientEvents tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 23: ASM: class com.feed_the_beast.ftblib.client.FTBLibClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 24: ASM: class invtweaks.forge.ToolTipEvent tTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 25: ASM: class thatguy.mod.miningspeed2.proxy.ClientProxy onShowItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 26: ASM: class landmaster.plustic.modules.ModuleGems tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 27: ASM: class thecodex6824.thaumicaugmentation.client.event.ClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 28: ASM: class jco2641.thaumcomp.events.ItemTooltipEventHandler onEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 29: ASM: class com.cazsius.solcarrot.client.TooltipHandler onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 30: ASM: baubles.client.ClientEventHandler@63568f4f tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 31: ASM: class quaternary.botaniatweaks.modules.botania.handler.TooltipHandler handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 32: ASM: com.brandon3055.draconicevolution.handlers.DEEventHandler@191f6bf0 itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 33: ASM: vazkii.quark.client.feature.EnchantedBooksShowItems@4579676f makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 34: ASM: vazkii.quark.client.feature.VisualStatDisplay@728b72a5 makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 35: ASM: vazkii.quark.vanity.feature.DyeItemNames@40995f43 makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 36: ASM: vazkii.quark.vanity.feature.DyableElytra@2703d18d onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 37: ASM: vazkii.quark.oddities.feature.MatrixEnchanting@780ffd0a onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 38: ASM: vazkii.quark.oddities.feature.Backpacks@37916519 removeCurseTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 39: ASM: net.blay09.mods.excompressum.compat.exnihilocreatio.ExNihiloCreatioAddon@5ef4e792 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 40: ASM: net.bdew.lib.tooltip.TooltipHandler$@6c7e4c11 handleTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 41: ASM: morph.avaritia.handler.AvaritiaEventHandler@2f32f8ab onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 42: ASM: com.rwtema.extrautils2.crafting.PlayerSpecificCrafting$EventHandler@2121e049 tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 43: ASM: com.rwtema.extrautils2.crafting.PlayerSpecificCrafting$EventHandler@172a3e97 tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 44: ASM: class com.rwtema.extrautils2.machine.EnergyBaseRecipe tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 45: ASM: net.blay09.mods.horsetweaks.tweaks.SaddleTooltipHandler@48c1bd2b onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 46: ASM: com.buuz135.industrial.proxy.event.SkullHandler@1a54b6ae onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 47: ASM: lumien.randomthings.handler.RTEventHandler@16885c79 itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 48: ASM: mcjty.lib.tooltips.TooltipRender@467491ea onMakeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 49: ASM: rustic.client.EventHandlerClient@4724dd5 onFoodTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 50: ASM: rustic.client.EventHandlerClient@4724dd5 onBoozeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 51: ASM: class landmaster.plustic.api.Toggle tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 52: ASM: landmaster.plustic.traits.Ignoble@4f871051 tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 53: ASM: landmaster.plustic.traits.Global@698bfb4b tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 54: ASM: class landmaster.plustic.api.Portal tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 55: ASM: landmaster.plustic.traits.Portly@444a39c3 tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 56: ASM: net.darkhax.wawla.Wawla@448087d1 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 57: ASM: openblocks.enchantments.flimflams.LoreFlimFlam$DisplayHandler@56491f94 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 58: ASM: azmalent.potiondescriptions.client.TooltipHandler@4bfe2b62 onPotionTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 59: ASM: xyz.phanta.tconevo.client.handler.EnergyTooltipHandler@4d294387 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 60: ASM: crazypants.enderio.base.machine.recipes.ClearConfigRecipe@4610788d onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 61: ASM: de.ellpeck.actuallyadditions.mod.event.ClientEvents@38466343 onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 62: ASM: class com.enderio.core.client.handlers.EnchantTooltipHandler handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 63: ASM: class com.enderio.core.client.handlers.OreDictTooltipHandler onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 64: ASM: class com.enderio.core.client.handlers.SpecialTooltipHandler addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 65: ASM: tyra314.toolprogression.handlers.TooltipEventHandler@6ba02849 onGetToolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 66: ASM: blusunrize.immersiveengineering.client.ClientEventHandler@f281f5 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 67: ASM: com.lothrazar.cyclicmagic.module.tweaks.TextInfoModule@bf9c545 onItemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 68: ASM: Block{cyclicmagic:imbuer} onItemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 69: ASM: hellfirepvp.astralsorcery.common.event.listener.EventHandlerMisc@30718495 onToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 70: ASM: c4.colytra.client.EventHandlerClient@54bfcbb8 tooltipHandler(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 71: ASM: INSTANCE onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 72: ASM: ca.wescook.nutrition.events.EventTooltip@7a490147 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 73: ASM: net.blay09.mods.tcinventoryscan.client.ClientProxy@2f6657e7 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 74: ASM: ic2.core.item.ElectricItemTooltipHandler@2b3e893a drawTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 75: ASM: c4.conarm.integrations.tinkertoolleveling.ModArmorLeveling@74d10c4c onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 76: ASM: net.blay09.mods.cookingforblockheads.compat.HarvestCraftAddon@6d2c3f40 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 77: ASM: com.rwtema.extrautils2.potion.PotionsHelper$TooltipHandler@37c23373 addPotionTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 78: ASM: crops.IC2CropPlugin@7dfe0674 onItemToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 79: ASM: nc.handler.TooltipHandler@148474c8 addAdditionalTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 80: ASM: com.fuzs.letmesleep.handler.ClientEventHandler@30c5d255 onMakeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 81: ASM: slimeknights.toolleveling.EventHandler@26102edf onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 82: ASM: squeek.wailaharvestability.TooltipHandler@4c1e6cb4 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 83: LOW
+[pool-12-thread-1/ERROR] [FML]: 84: ASM: crafttweaker.mc1120.events.ClientEventHandler@634444d4 onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 85: LOWEST
+[pool-12-thread-1/ERROR] [FML]: 86: ASM: class flaxbeard.immersivepetroleum.common.EventHandler handleItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 87: ASM: class com.buuz135.thaumicjei.gui.AspectTooltipHandler tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 88: ASM: com.rwtema.extrautils2.items.ItemFakeCopy@7bd5b4ba changeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [FML]: 89: ASM: yeelp.scalingfeast.items.IItemDescribable$TooltipHandler@41f1e0ce onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
+[pool-12-thread-1/ERROR] [HadEnoughItems]: Failed to get tooltip: 1xitem.appliedenergistics2.facade@0 appliedenergistics2:facade nbt:{item:"immersiveengineering:stone_decoration",damage:0}
