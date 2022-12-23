@@ -129,7 +129,7 @@ key_key.craftingtweaks.rotate_counter_clockwise:0
 key_key.craftingtweaks.rotate:0
 key_key.craftingtweaks.spread:0
 key_key.craftingtweaks.toggleButtons:0
-key_key.craftpresence.config_keycode.name:69
+key_key.craftpresence.config_keycode.name:40
 key_key.cycle_magnet_mode.desc:0
 key_key.debugDumpNBTBlock:0
 key_key.debugDumpNBTItem:0
