@@ -181,7 +181,11 @@ function calcPowerConsumption(upgrAmount as int) as int {
 // ========================================================
 function getUpgrAmount(m as MachineContainer) as double {
   val upgr = m.getItem(upgrX, upgrY);
-  return isNull(upgr) ? 0.0d : upgr.amount as double;
+  return (
+    isNull(upgr)
+    || upgr.definition.id != 'ic2:upgrade'
+    || upgr.damage != 0
+  ) ? 0.0d : upgr.amount as double;
 }
 
 static facings as IFacing[] = [
