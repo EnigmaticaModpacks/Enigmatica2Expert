@@ -14,11 +14,5 @@
 		type: "item",
 		item: "astralsorcery:blockmarble",
 		count: 32
-	},
-	{
-		uid: "bd9706e8",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Astral Sorcery questline!"
 	}]
 }

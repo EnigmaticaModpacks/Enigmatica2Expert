@@ -13,11 +13,5 @@
 		uid: "6bd6ed93",
 		type: "xp_levels",
 		xp_levels: 30
-	},
-	{
-		uid: "511ac47f",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Environmental Tech questline!"
 	}]
 }

@@ -13,11 +13,5 @@
 		uid: "9b9ade97",
 		type: "item",
 		item: "actuallyadditions:item_laser_wrench"
-	},
-	{
-		uid: "54f7af60",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Actually Additions questline!"
 	}]
 }

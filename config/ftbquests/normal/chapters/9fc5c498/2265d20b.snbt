@@ -13,11 +13,5 @@
 		uid: "29955c13",
 		type: "xp_levels",
 		xp_levels: 30
-	},
-	{
-		uid: "37c612b3",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Ender IO questline!"
 	}]
 }

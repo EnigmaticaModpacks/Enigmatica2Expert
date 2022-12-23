@@ -13,11 +13,5 @@
 		uid: "b609a3ec",
 		type: "item",
 		item: "immersiveengineering:tool"
-	},
-	{
-		uid: "4f2bb80e",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Immersive Engineering questline!"
 	}]
 }

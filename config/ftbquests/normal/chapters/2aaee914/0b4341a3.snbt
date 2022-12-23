@@ -20,11 +20,5 @@
 				}
 			}
 		}
-	},
-	{
-		uid: "92c80612",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Mekanism questline!"
 	}]
 }

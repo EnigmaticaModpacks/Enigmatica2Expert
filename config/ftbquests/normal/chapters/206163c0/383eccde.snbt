@@ -19,11 +19,5 @@
 		uid: "247a7876",
 		type: "item",
 		item: "forestry:scoop"
-	},
-	{
-		uid: "4755c7dc",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Forestry questline!"
 	}]
 }

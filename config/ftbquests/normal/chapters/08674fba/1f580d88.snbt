@@ -13,11 +13,5 @@
 		uid: "1eee5b5d",
 		type: "xp_levels",
 		xp_levels: 10
-	},
-	{
-		uid: "9c3d89f9",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Advanced Rocketry questline!"
 	}]
 }

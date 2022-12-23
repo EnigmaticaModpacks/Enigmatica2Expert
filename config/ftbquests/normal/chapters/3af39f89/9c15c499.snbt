@@ -14,11 +14,5 @@
 		uid: "77c53124",
 		type: "choice",
 		table: 34
-	},
-	{
-		uid: "a39c0160",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Thermal Expansion questline!"
 	}]
 }

@@ -14,11 +14,5 @@
 		uid: "23c3cea5",
 		type: "xp_levels",
 		xp_levels: 50
-	},
-	{
-		uid: "bf3536ad",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Draconic Evolution questline!"
 	}]
 }

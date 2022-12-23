@@ -14,11 +14,5 @@
 		uid: "9af656c4",
 		type: "item",
 		item: "extrautils2:enderlilly"
-	},
-	{
-		uid: "9ebf6172",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Extra Utilities 2 questline!"
 	}]
 }

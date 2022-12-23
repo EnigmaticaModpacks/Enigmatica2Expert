@@ -13,11 +13,5 @@
 		uid: "974b137b",
 		type: "item",
 		item: "ic2:wrench_new"
-	},
-	{
-		uid: "ba82e7ba",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the IndustrialCraft questline!"
 	}]
 }

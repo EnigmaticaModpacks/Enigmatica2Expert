@@ -18,11 +18,5 @@
 		type: "item",
 		item: "botania:fertilizer",
 		count: 16
-	},
-	{
-		uid: "3b4bc1fa",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Botania questline!"
 	}]
 }

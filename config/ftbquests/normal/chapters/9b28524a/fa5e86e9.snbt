@@ -33,11 +33,5 @@
 				Potion: "minecraft:regeneration"
 			}
 		}
-	},
-	{
-		uid: "c1a2a226",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Blood Magic questline!"
 	}]
 }

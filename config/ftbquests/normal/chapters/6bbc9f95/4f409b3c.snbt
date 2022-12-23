@@ -17,12 +17,6 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "106cb215",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the Thaumcraft questline!"
-	},
-	{
 		uid: "63b97aed",
 		type: "item",
 		item: {

@@ -14,11 +14,5 @@
 		uid: "9bf7322f",
 		type: "item",
 		item: "rftools:smartwrench"
-	},
-	{
-		uid: "8a0d4c09",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the RFTools questline!"
 	}]
 }

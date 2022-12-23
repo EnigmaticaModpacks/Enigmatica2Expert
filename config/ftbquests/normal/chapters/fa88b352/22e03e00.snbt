@@ -10,12 +10,6 @@
 		"0bf36970"
 	],
 	rewards: [{
-		uid: "b710d7ac",
-		type: "command",
-		auto: "invisible",
-		command: "/say @p has begun the NuclearCraft questline!"
-	},
-	{
 		uid: "1c77adcc",
 		type: "item",
 		item: "nuclearcraft:radaway",
