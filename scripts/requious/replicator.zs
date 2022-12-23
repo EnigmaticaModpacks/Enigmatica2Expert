@@ -55,6 +55,7 @@ x.setItemSlot(displX, displY, ComponentFace.none(), 1)
   .setBackground(SlotVisual.create(1,1).addPart(replTexture, 4, 2))
   .setAccess(false,false)
   .setHandAccess(false,false)
+  .noDrop()
   .setGroup("display");
 
 static catlX as int = 4;
