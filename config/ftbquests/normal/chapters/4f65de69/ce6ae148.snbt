@@ -1,4 +1,23 @@
 {
+	title: "{q.getting_started.laser_gun.name}",
+	icon: {
+		id: "plustic:laser_gun",
+		tag: {},
+		ForgeCaps: {
+			"plustic:fruitsalad_cap": {
+				Items: [],
+				Size: 5
+			},
+			"plustic:": {
+				Items: [],
+				Size: 1
+			},
+			"plustic:musicofthespheres_cap": {
+				Items: [],
+				Size: 1
+			}
+		}
+	},
 	x: 17.125d,
 	y: 5.041666666666667d,
 	text: [
@@ -8,25 +27,81 @@
 		"14611430"
 	],
 	tasks: [{
-		uid: "7bea9442",
+		uid: "71157ac9",
 		type: "item",
 		items: [{
-			id: "plustic:laser_gun",
-			tag: {},
-			ForgeCaps: {
-				"plustic:fruitsalad_cap": {
-					Items: [],
-					Size: 5
-				},
-				"plustic:": {
-					Items: [],
-					Size: 1
-				},
-				"plustic:musicofthespheres_cap": {
-					Items: [],
-					Size: 1
-				}
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "prismarine"
 			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "blaze"
+			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "endrod"
+			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "psigem"
+			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "starmetal"
+			}
+		}],
+		ignore_nbt: 2b
+	},
+	{
+		uid: "2e3ab41e",
+		type: "item",
+		items: [{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "blaze"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "endrod"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "manyullyn"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "copper"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "silver"
+			}
+		}],
+		ignore_nbt: 2b
+	},
+	{
+		uid: "be507bb6",
+		type: "item",
+		items: [{
+			id: "plustic:pipe_piece",
+			tag: {}
 		}],
 		ignore_nbt: 1b
 	}],

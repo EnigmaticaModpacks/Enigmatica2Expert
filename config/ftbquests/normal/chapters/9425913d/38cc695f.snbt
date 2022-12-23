@@ -26,5 +26,15 @@
 		title: "Give next Conflux tier role",
 		auto: "enabled",
 		command: "/ranks add @p conflux_i"
+	},
+	{
+		uid: "f9ec55d7",
+		type: "item",
+		item: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "petrotheum"
+			}
+		}
 	}]
 }

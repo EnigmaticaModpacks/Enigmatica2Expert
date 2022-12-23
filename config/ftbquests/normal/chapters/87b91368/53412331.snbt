@@ -3,7 +3,7 @@
 	x: -2.3d,
 	y: -3.4d,
 	text: [
-		"Cant capture mobs with 20+ HP if they not damaged at least 80% of their max HP."
+		"{q.animals.monster_ball.desc}"
 	],
 	dependencies: [
 		"235e1eb1"
