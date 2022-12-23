@@ -43,8 +43,10 @@ val laserMediums = {
 
 # [Blazerod Laser Medium] from [Chaos Shard][+3]
 for mat, arr in laserMediums {
-  craft.make(<plustic:laser_medium>.withTag({Material: mat}), ["‚▬*"], {
-    "‚": <draconicevolution:chaos_shard:3>,
+  val item = <plustic:laser_medium>.withTag({Material: mat});
+  mods.jei.JEI.addItem(item);
+  craft.make(item, ["‚▬*"], {
+    "‚": <pointer:pointer>,
     "▬": arr[0],
     "*": arr[1],
   });

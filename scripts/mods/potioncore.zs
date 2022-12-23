@@ -90,9 +90,8 @@ addBrewWithUpgradesFromBase(
   "potioncore:strong_klutz", "potioncore:long_klutz",
   "potioncore:strong_archery", "potioncore:long_archery"
 );
-val lapis = <minecraft:dye:4>;
 addBrewWithUpgrades(
-  awkward, lapis, "potioncore:magic_focus",
+  awkward, <ore:nuggetLapis>, "potioncore:magic_focus",
   "potioncore:strong_magic_focus", "potioncore:long_magic_focus"
 );
 addBrewWithUpgradesFromBase(
