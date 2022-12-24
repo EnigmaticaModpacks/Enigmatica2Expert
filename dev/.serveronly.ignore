@@ -84,6 +84,9 @@ mods/*.jar
 !mods/Nothirium-*
 !mods/SmoothFont-*
 !mods/DefaultWorldGenerator-*
+!mods/betterbiomeblend-*
+!mods/CraftPresence-*
+!mods/JEI-Utilities-*
 
 #Not sure
 # !mods/gendustryjei*

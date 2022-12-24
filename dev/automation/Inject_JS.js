@@ -18,6 +18,7 @@ import humanizeString from 'humanize-string'
 import _ from 'lodash'
 import { getBorderCharacters, table } from 'table'
 import { js2xml, xml2js } from 'xml-js'
+import { getExtra } from '../lib/jaopca.js'
 
 import {
   countBaseOutput,

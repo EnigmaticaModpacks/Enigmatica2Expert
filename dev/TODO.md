@@ -2,12 +2,11 @@
 
 List of priorities:
 
-- [ ] ✏️ Fix Tiny Silver disapeared from Grindstone
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
-- [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
-- [ ] 🟢 Add **Bogo Sorter**
-- [ ] 📖 Add any sharpening kit to quest for harvest level
-- [ ] 📖 Add notification about finishing mod chapter based on stats
+- [ ] 🧮 Craft.zs: Add AS compat
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/dme
+- [ ] ✏️ Fix iridium doesn't have uu
+- [ ] 📖 Ender tether+chaos reaper add note
 
 ---
 
@@ -17,11 +16,14 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
+- [ ] 📖 Obtaining any **sharpening kit** finishes quest for this **mining level**
 - [ ] 🟢 Add **Legendary Tooltips** when fixed: https://github.com/AHilyard/LegendaryTooltips/issues/47
-- [ ] 🟢 Add **Fancier Particles** when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
+- [ ] 🟢 Add **Fancier Particles** (note gitignore) when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Thaumcraft Aspect Creator**
+- [ ] 🟢 Add **Bogo Sorter**
 - [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] 📀 Remove automatic IE armor recycling to speed up game load

@@ -14,19 +14,19 @@ let list
 function getList() {
   return (list ??= _(config('config/JAOPCA.cfg'))
     .map((o, main) =>
-      [main, o.extra, o.extra2, o.extra3].map((mat) =>
+      [main, o.extra, o.extra2, o.extra3].map(mat =>
         _(['ingot', 'gem', 'dust', 'ore'])
-          .map((prefix) =>
+          .map(prefix =>
             getByOredict_first(prefix + mat?.replace(/_(.)/g, '$1'))
           )
-          .find((o) => !!o)
+          .find(o => !!o)
       )
     )
-    .filter((o) => !!o[0])
+    .filter(o => !!o[0])
     .sort(
       (a, b) =>
-        prefferedModSort(a[0], b[0]) ||
-        naturalSort(a[0].commandString, b[0].commandString)
+        prefferedModSort(a[0], b[0])
+        || naturalSort(a[0].commandString, b[0].commandString)
     )
     .value())
 }
@@ -40,16 +40,26 @@ function getList() {
 //   .value()
 // console.log('\nsublist :>>\n', formatOutput(sublist))
 
+/**
+ * Transform ore base to JAOPCA cfg key
+ * QuartzBlack => quartz_black
+ * @param {string} oreBase
+ */
 function oreBaseToJaopcaKey(oreBase) {
   return oreBase.replace(
     /(.)?([A-Z])/g,
-    (m, p1, p2) => (p1 ? p1 + '_' : '') + p2.toLowerCase()
+    (m, p1, p2) => (p1 ? `${p1}_` : '') + p2.toLowerCase()
   )
 }
 
+/**
+ * Return oreBase name for extra
+ * @param {string} oreBase
+ * @returns {string}
+ */
 export function getExtra(oreBase, extraIndex = 0) {
   return ['extra', 'extra2', 'extra3'].map(
-    (key) => config('config/JAOPCA.cfg')[oreBaseToJaopcaKey(oreBase)]?.[key]
+    key => config('config/JAOPCA.cfg')[oreBaseToJaopcaKey(oreBase)]?.[key]
   )[extraIndex]
 }
 export function getExtraTMStack(oreBase, extraIndex = 0) {
@@ -63,14 +73,14 @@ export async function init(h = defaultHelper) {
       '------ | ------',
       '[Furnace] | [Crusher] (AA) [Infernal Furnace] [Sag Mill]',
       ..._(getList())
-        .map((arr) => arr.map((l) => `[${l?.commandString}]`))
-        .map((items) => `${items[0]} | ${items.slice(1).join(' ')}`)
+        .map(arr => arr.map(l => `[${l?.commandString}]`))
+        .map(items => `${items[0]} | ${items.slice(1).join(' ')}`)
         .value(),
     ].join('\n')
   )
 
   const map = {}
-  getList().forEach((arr) =>
+  getList().forEach(arr =>
     arr.forEach((l) => {
       map[l.display] ??= 0
       map[l.display]++
@@ -81,7 +91,7 @@ export async function init(h = defaultHelper) {
   console.log('map :>> ', sorted)
 }
 
-// @ts-ignore
+// @ts-expect-error
 if (
   import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
 )
