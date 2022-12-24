@@ -118,8 +118,11 @@
 	},
 	{
 		uid: "9638a488",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§cImmersive Engineering§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

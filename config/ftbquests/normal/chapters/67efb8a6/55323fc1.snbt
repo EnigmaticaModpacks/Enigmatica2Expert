@@ -88,8 +88,11 @@
 	},
 	{
 		uid: "0db5a0ee",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §nDraconic Evolution§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

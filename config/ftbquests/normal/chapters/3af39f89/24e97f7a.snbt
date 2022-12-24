@@ -97,8 +97,11 @@
 	},
 	{
 		uid: "04628d24",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §nThermal Expansion§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

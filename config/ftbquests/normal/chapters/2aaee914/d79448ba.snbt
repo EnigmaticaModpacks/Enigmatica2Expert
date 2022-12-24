@@ -36,7 +36,6 @@
 		"6856159e",
 		"9eb5e63d",
 		"07fcb3f0",
-		"88fdde2d",
 		"76b824a9",
 		"783e7aaf",
 		"f79e06c9",
@@ -102,8 +101,11 @@
 	},
 	{
 		uid: "284ff24b",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §nMekanism§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

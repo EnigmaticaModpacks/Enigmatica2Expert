@@ -76,8 +76,11 @@
 	},
 	{
 		uid: "506fefc1",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§3Applied Energetics§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

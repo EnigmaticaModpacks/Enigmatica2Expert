@@ -65,9 +65,12 @@
 		}
 	},
 	{
-		uid: "3b9db4d4",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §nTwilight Forest§r chapter!§r ```Congrats!```"
+		uid: "3cd8e7cc",
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

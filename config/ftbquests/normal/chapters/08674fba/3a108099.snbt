@@ -84,8 +84,11 @@
 	},
 	{
 		uid: "4a3dc345",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§bAdvanced Rocketry§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

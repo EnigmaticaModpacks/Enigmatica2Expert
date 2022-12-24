@@ -80,8 +80,11 @@
 	},
 	{
 		uid: "1ed0c931",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§7Industrial Foregoing§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

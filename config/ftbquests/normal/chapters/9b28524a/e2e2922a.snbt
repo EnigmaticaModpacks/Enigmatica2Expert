@@ -95,8 +95,11 @@
 	},
 	{
 		uid: "93889d7c",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§4Blood Magic§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

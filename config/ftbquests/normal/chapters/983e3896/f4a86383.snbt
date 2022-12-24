@@ -85,8 +85,11 @@
 	},
 	{
 		uid: "e360be64",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§1Astral Sorcery§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

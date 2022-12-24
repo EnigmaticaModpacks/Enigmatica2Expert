@@ -77,8 +77,11 @@
 	},
 	{
 		uid: "bb2da07c",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§8RFTools§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

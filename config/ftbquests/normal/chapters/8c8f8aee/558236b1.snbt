@@ -89,8 +89,11 @@
 	},
 	{
 		uid: "cf345fc7",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §n§9Actually Additions§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }

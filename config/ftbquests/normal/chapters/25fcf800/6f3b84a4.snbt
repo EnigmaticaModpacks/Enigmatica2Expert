@@ -83,8 +83,11 @@
 	},
 	{
 		uid: "e07348ea",
-		type: "command",
-		auto: "invisible",
-		command: "/say §l@p§r has fully completed the §nEnvironmental Tech§r chapter!§r ```Congrats!```"
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
 	}]
 }
