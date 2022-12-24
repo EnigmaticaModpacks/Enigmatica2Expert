@@ -1,6 +1,6 @@
 {
-	x: 8.833333333333334d,
-	y: 0.8333333333333333d,
+	x: 10.666666666666668d,
+	y: 1.1d,
 	text: [
 		"{q.mekanism.gas_burning_genera.desc}"
 	],

@@ -1,6 +1,6 @@
 {
-	x: 6.166666666666667d,
-	y: 0.8333333333333333d,
+	x: 8.0d,
+	y: 1.1d,
 	text: [
 		"{q.mekanism.bio_generator.desc}"
 	],

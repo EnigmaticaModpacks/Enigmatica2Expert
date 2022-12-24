@@ -1,6 +1,6 @@
 {
-	x: 7.5d,
-	y: 0.8333333333333333d,
+	x: 9.333333333333332d,
+	y: 1.1d,
 	text: [
 		"{q.mekanism.heat_generator.desc}"
 	],

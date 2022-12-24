@@ -1,6 +1,6 @@
 {
-	x: 13.166666666666666d,
-	y: 6.5d,
+	x: 4.5d,
+	y: 12.5d,
 	text: [
 		"{q.mekanism.atomic_disassembler.desc}"
 	],
@@ -13,6 +13,7 @@
 		items: [{
 			item: "mekanism:atomicdisassembler"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

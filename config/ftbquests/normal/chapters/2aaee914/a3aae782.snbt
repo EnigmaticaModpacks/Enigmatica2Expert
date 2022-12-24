@@ -1,12 +1,13 @@
 {
-	x: 4.833333333333333d,
-	y: 6.5d,
+	x: 1.575d,
+	y: 7.5d,
 	text: [
 		"{q.mekanism.compressed_diamond.desc}"
 	],
 	dependencies: [
 		"307c984a"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "88a1fa9e",
 		type: "item",

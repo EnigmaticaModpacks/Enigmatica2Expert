@@ -1,11 +1,11 @@
 {
-	x: 10.166666666666666d,
-	y: 7.833333333333333d,
+	x: 2.8d,
+	y: 11.7d,
 	text: [
 		"{q.mekanism.quantum_entanglopo.desc}"
 	],
 	dependencies: [
-		"f79e06c9"
+		"b77c7011"
 	],
 	tasks: [{
 		uid: "104c5f8b",

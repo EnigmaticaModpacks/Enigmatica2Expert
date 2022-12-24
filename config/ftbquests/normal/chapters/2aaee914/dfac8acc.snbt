@@ -1,8 +1,8 @@
 {
 	title: "{q.mekanism.induction_energy_s.name}",
 	icon: "mekanism:basicblock2 1 2",
-	x: 10.166666666666666d,
-	y: 6.5d,
+	x: 7.6d,
+	y: 6.7d,
 	text: [
 		"{q.mekanism.induction_energy_s.desc}"
 	],

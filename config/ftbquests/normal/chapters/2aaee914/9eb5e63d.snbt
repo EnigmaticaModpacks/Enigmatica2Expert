@@ -1,11 +1,11 @@
 {
-	x: 7.5d,
-	y: 7.833333333333333d,
+	x: 6.2d,
+	y: 3.5d,
 	text: [
 		"{q.mekanism.osmium_compressor.desc}"
 	],
 	dependencies: [
-		"88fdde2d"
+		"6d298370"
 	],
 	tasks: [{
 		uid: "6659e8ac",

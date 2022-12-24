@@ -1,6 +1,6 @@
 {
-	x: 4.833333333333333d,
-	y: 3.5d,
+	x: 1.6d,
+	y: 4.7d,
 	text: [
 		"{q.mekanism.enrichment_chamber.desc}"
 	],

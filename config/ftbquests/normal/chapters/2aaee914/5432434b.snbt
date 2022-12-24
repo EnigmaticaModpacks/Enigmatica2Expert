@@ -1,10 +1,12 @@
 {
-	x: 11.5d,
-	y: 5.166666666666667d,
+	x: 4.5d,
+	y: 10.0d,
 	text: [
 		"{q.mekanism.elite_tier_installer.desc}"
 	],
 	dependencies: [
+		"7b68c590",
+		"b149be6c",
 		"e28c10ce"
 	],
 	tasks: [{

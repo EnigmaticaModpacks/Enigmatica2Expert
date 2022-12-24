@@ -1,6 +1,6 @@
 {
-	x: 0.8333333333333333d,
-	y: 5.166666666666667d,
+	x: 4.2d,
+	y: 4.6d,
 	text: [
 		"{q.mekanism.fluidic_plenisher.desc}"
 	],

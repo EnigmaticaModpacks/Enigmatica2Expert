@@ -1,6 +1,6 @@
 {
-	x: 4.833333333333333d,
-	y: 2.166666666666667d,
+	x: 0.0d,
+	y: 4.7d,
 	text: [
 		"{q.mekanism.electrolytic_separ.desc}"
 	],

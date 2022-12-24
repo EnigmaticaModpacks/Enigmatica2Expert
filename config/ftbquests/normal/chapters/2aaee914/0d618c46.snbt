@@ -1,7 +1,7 @@
 {
 	title: "{q.mekanism.plastic_road.name}",
-	x: 3.5d,
-	y: 2.166666666666667d,
+	x: -1.3d,
+	y: 4.7d,
 	text: [
 		"{q.mekanism.plastic_road.desc}"
 	],

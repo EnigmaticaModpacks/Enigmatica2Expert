@@ -1,6 +1,7 @@
 {
-	x: 2.166666666666667d,
-	y: 7.833333333333333d,
+	x: 6.2d,
+	y: 7.5d,
+	shape: "square",
 	text: [
 		"{q.mekanism.elite_control_circ.desc}"
 	],

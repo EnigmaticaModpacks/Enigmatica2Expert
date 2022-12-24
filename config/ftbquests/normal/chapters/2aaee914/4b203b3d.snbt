@@ -1,12 +1,13 @@
 {
-	x: 6.166666666666667d,
-	y: 5.166666666666667d,
+	x: 0.0d,
+	y: 5.7749999999999995d,
 	text: [
 		"{q.mekanism.compressed_carbon.desc}"
 	],
 	dependencies: [
 		"d0c5b8a8"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "4db56c1a",
 		type: "item",

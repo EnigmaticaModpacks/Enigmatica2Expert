@@ -1,11 +1,12 @@
 {
-	x: 2.166666666666667d,
-	y: 5.166666666666667d,
+	x: 6.2d,
+	y: 4.6d,
+	shape: "square",
 	text: [
 		"{q.mekanism.basic_control_circ.desc}"
 	],
 	dependencies: [
-		"6d298370"
+		"9eb5e63d"
 	],
 	tasks: [{
 		uid: "9bbcf725",

@@ -19,8 +19,8 @@
 			TrophyName: "Mekanism Master Trophy§r"
 		}
 	},
-	x: 12.75d,
-	y: 8.25d,
+	x: 10.5d,
+	y: 6.75d,
 	text: [
 		"{q.mekanism.the_chapter_is_com.desc}"
 	],

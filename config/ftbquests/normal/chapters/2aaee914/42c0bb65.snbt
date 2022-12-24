@@ -1,8 +1,8 @@
 {
 	title: "{q.mekanism.mekanism_steel.name}",
 	icon: "thermalfoundation:material 1 160",
-	x: 7.5d,
-	y: 5.166666666666667d,
+	x: -1.3d,
+	y: 5.7d,
 	text: [
 		"{q.mekanism.mekanism_steel.desc}"
 	],

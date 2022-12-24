@@ -1,6 +1,7 @@
 {
-	x: 2.8333333333333335d,
-	y: 9.166666666666666d,
+	x: 6.225d,
+	y: 9.3d,
+	shape: "square",
 	text: [
 		"{q.mekanism.ultimate_control_c.desc}"
 	],

@@ -1,0 +1,47 @@
+{
+	icon: {
+		id: "mekanism:machineblock",
+		Damage: 11s,
+		tag: {}
+	},
+	x: 2.8d,
+	y: 10.5d,
+	text: [
+		"{q.mekanism.teleporter.desc}"
+	],
+	dependencies: [
+		"7b68c590"
+	],
+	tasks: [{
+		uid: "90c773cd",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock",
+			Damage: 11s,
+			tag: {
+				mekData: {}
+			}
+		}],
+		count: 2L,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3f195231",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 7"
+		}],
+		count: 18L
+	}],
+	rewards: [{
+		uid: "85cc04e9",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,11 +1,11 @@
 {
-	x: 6.166666666666667d,
-	y: 3.5d,
+	x: 8.0d,
+	y: 3.466666666666667d,
 	text: [
 		"{q.mekanism.crusher.desc}"
 	],
 	dependencies: [
-		"d0c5b8a8"
+		"6d298370"
 	],
 	tasks: [{
 		uid: "45ed7160",

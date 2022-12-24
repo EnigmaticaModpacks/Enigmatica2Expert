@@ -1,6 +1,6 @@
 {
-	x: 8.833333333333334d,
-	y: 7.833333333333333d,
+	x: 6.7d,
+	y: 2.3d,
 	text: [
 		"{q.mekanism.refined_obsidian_i.desc}"
 	],

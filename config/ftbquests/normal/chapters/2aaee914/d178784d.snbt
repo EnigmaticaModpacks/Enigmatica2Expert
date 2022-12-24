@@ -1,7 +1,7 @@
 {
 	title: "{q.mekanism.osgloglas.name}",
-	x: 8.833333333333334d,
-	y: 9.166666666666666d,
+	x: 6.2d,
+	y: 1.4d,
 	text: [
 		"{q.mekanism.osgloglas.desc}"
 	],

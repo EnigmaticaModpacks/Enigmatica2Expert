@@ -1,11 +1,11 @@
 {
-	x: 2.166666666666667d,
-	y: 10.5d,
+	x: 9.9d,
+	y: 9.4d,
 	text: [
 		"{q.mekanism.chemical_washer.desc}"
 	],
 	dependencies: [
-		"b149be6c"
+		"abaec38c"
 	],
 	tasks: [{
 		uid: "75a445ef",

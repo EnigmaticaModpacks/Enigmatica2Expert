@@ -1,11 +1,11 @@
 {
-	x: 7.5d,
-	y: 3.5d,
+	x: 9.333333333333332d,
+	y: 3.466666666666667d,
 	text: [
 		"{q.mekanism.energized_smelter.desc}"
 	],
 	dependencies: [
-		"702f421e"
+		"6d298370"
 	],
 	tasks: [{
 		uid: "79ecbee5",

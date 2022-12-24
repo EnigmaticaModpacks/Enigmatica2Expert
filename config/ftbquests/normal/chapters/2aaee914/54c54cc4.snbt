@@ -1,11 +1,12 @@
 {
-	x: 8.833333333333334d,
-	y: 5.166666666666667d,
+	x: 4.5d,
+	y: 6.7d,
 	text: [
 		"{q.mekanism.basic_tier_installer.desc}"
 	],
 	dependencies: [
-		"42c0bb65"
+		"48923a31",
+		"ddedc94a"
 	],
 	tasks: [{
 		uid: "f68a8d93",

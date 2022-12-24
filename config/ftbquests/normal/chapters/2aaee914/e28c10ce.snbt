@@ -1,11 +1,13 @@
 {
-	x: 10.166666666666666d,
-	y: 5.166666666666667d,
+	x: 4.5d,
+	y: 8.4d,
 	text: [
 		"{q.mekanism.advanced_tier_inst.desc}"
 	],
 	dependencies: [
-		"54c54cc4"
+		"6856159e",
+		"54c54cc4",
+		"eb6f22d4"
 	],
 	tasks: [{
 		uid: "8a920872",

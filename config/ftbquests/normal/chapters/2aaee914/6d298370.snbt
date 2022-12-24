@@ -1,5 +1,5 @@
 {
-	x: 2.8333333333333335d,
+	x: 2.8d,
 	y: 3.5d,
 	text: [
 		"{q.mekanism.metallurgic_infuser.desc}"
@@ -7,6 +7,7 @@
 	dependencies: [
 		"0b4341a3"
 	],
+	size: 1.25d,
 	tasks: [{
 		uid: "7a40c33a",
 		type: "item",

@@ -1,12 +1,12 @@
 {
-	x: 3.5d,
-	y: 7.833333333333333d,
+	x: 2.825d,
+	y: 9.3d,
+	shape: "octagon",
 	text: [
 		"{q.mekanism.atomic_alloy.desc}"
 	],
 	dependencies: [
-		"6856159e",
-		"d905a47e"
+		"6856159e"
 	],
 	tasks: [{
 		uid: "a9c72a15",

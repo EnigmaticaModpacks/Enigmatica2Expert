@@ -1,11 +1,11 @@
 {
-	x: 8.833333333333334d,
-	y: 3.5d,
+	x: 10.666666666666668d,
+	y: 3.466666666666667d,
 	text: [
 		"{q.mekanism.precision_sawmill.desc}"
 	],
 	dependencies: [
-		"b3cb2a49"
+		"6d298370"
 	],
 	tasks: [{
 		uid: "ac190fe2",

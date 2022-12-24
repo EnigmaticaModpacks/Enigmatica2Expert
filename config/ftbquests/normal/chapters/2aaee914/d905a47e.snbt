@@ -1,13 +1,13 @@
 {
-	x: 4.833333333333333d,
-	y: 7.833333333333333d,
+	x: 1.6d,
+	y: 9.325000000000003d,
 	text: [
 		"{q.mekanism.compressed_obsidian.desc}"
 	],
 	dependencies: [
-		"88fdde2d",
 		"a3aae782"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "dc61f67c",
 		type: "item",

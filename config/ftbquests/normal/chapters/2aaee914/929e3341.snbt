@@ -1,13 +1,13 @@
 {
 	title: "{q.mekanism.thermal_evaporatio.name}",
 	icon: "mekanism:basicblock 1 14",
-	x: 0.8333333333333333d,
-	y: 9.166666666666666d,
+	x: 6.2d,
+	y: 11.2d,
 	text: [
 		"{q.mekanism.thermal_evaporatio.desc}"
 	],
 	dependencies: [
-		"b149be6c"
+		"5432434b"
 	],
 	tasks: [{
 		uid: "b2a5eb6d",

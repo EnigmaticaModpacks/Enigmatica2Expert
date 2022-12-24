@@ -1,6 +1,6 @@
 {
-	x: 4.833333333333333d,
-	y: 9.166666666666666d,
+	x: 1.5d,
+	y: 10.5d,
 	text: [
 		"{q.mekanism.electric_pump.desc}"
 	],

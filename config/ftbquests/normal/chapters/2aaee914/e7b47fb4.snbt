@@ -1,6 +1,6 @@
 {
-	x: 13.166666666666666d,
-	y: 5.166666666666667d,
+	x: 4.5d,
+	y: 11.2d,
 	text: [
 		"{q.mekanism.ultimate_tier_inst.desc}"
 	],

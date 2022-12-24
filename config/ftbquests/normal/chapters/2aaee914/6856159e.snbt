@@ -1,6 +1,7 @@
 {
-	x: 3.5d,
-	y: 6.5d,
+	x: 2.8d,
+	y: 7.5d,
+	shape: "octagon",
 	text: [
 		"{q.mekanism.reinforced_alloy.desc}"
 	],

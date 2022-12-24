@@ -1,6 +1,7 @@
 {
-	x: 2.166666666666667d,
-	y: 6.5d,
+	x: 6.2d,
+	y: 5.8d,
+	shape: "square",
 	text: [
 		"{q.mekanism.advanced_control_c.desc}"
 	],
