@@ -1,5 +1,6 @@
 #priority 950
 #modloaded thaumtweaks
+#ignoreBracketErrors
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;

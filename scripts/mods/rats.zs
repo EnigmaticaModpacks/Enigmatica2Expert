@@ -126,7 +126,7 @@ craft.remake(<rats:rat_upgrade_aristocrat>, ["pretty",
   "M R M",
   "S § S"], {
   "R": <rats:rat_upgrade_basic>, # Rat Upgrade: Basic
-  "S": <ore:ingotExhausting>,
+  "S": utils.tryCatch("scalingfeast:exhaustingingot", <tconstruct:ingots:5>),
   "T": <rats:top_hat>.anyDamage(),# Top Hat
   "§": <randomthings:slimecube>, # Slime Cube
   "M": <tconstruct:materials:19> # Mending Moss
@@ -339,7 +339,7 @@ craft.remake(<rats:chunky_cheese_token>, ["pretty",
 # Add additional gemcutter recipes as alternatives
 
 val gemcutterList = [
-  <quark:jasper>                  , <scalingfeast:exhaustingnugget> * 2, # [Exhausting Nugget] from [Jasper]
+  <quark:jasper>                  , itemUtils.getItem("scalingfeast:exhaustingingot"), # [Exhausting Nugget] from [Jasper]
   
   <minecraft:redstone_block>      , <actuallyadditions:block_crystal_cluster_redstone> * 9,
   <minecraft:lapis_block>         , <actuallyadditions:block_crystal_cluster_lapis> * 9,
@@ -351,6 +351,7 @@ val gemcutterList = [
 
 for i, input in gemcutterList {
   if (i%2!=0) continue;
+  if (isNull(input) || isNull(gemcutterList[i+1])) continue;
   mods.rats.recipes.addGemcutterRatRecipe(input, gemcutterList[i+1]);
 }
 

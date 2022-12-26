@@ -49,6 +49,6 @@ craft.remake(<darkutils:trap_tile:6>, ["pretty",
   "▬ - ▬",
   "◊ ◊ ◊"], {
   "▬": <ore:ingotDemonicMetal>, # Demon Ingot
-  "-": <ore:ingotExhausting>,   # Exhausting Ingot
+  "-": utils.tryCatch("scalingfeast:exhaustingingot", <tconstruct:ingots:5>),   # Exhausting Ingot
   "◊": <ore:gemPearl>,          # Shulker Pearl
 });
