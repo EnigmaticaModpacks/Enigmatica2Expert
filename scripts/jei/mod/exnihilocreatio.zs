@@ -56,38 +56,44 @@ x = <assembly:barrel_milking>;
 x.addJEICatalyst(<exnihilocreatio:block_barrel0>);
 x.addJEICatalyst(<exnihilocreatio:block_barrel1>);
 x.setJEIItemSlot(0, 0, 'input0');
-x.setJEIFluidSlot(2, 0, 'fluid_out');
 x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
+x.setJEIItemSlot(2, 0, 'input1');
+x.setJEIDurationSlot(3,0,"duration", SlotVisual.arrowRight());
+x.setJEIFluidSlot(4, 0, 'fluid_out');
 
-function add_barrel_milking(input as IIngredient, output as ILiquidStack, duration as int) as void {
+function add_barrel_milking(input as IIngredient, barrel as IItemStack, output as ILiquidStack, duration as int) as void {
   <assembly:barrel_milking>.addJEIRecipe(AssemblyRecipe.create(function(c) {
       c.addFluidOutput('fluid_out', output);
     })
     .requireItem("input0", input)
+    .requireItem("input1", barrel)
     .requireDuration("duration", max(1, duration))
   );
 }
 
-
-/*Inject_js(
-loadJson("config/exnihilocreatio/MilkEntityRegistry.json")
+val WB = <exnihilocreatio:block_barrel0>;
+val SB = <exnihilocreatio:block_barrel1>;
+/*Inject_js{
+const blacklist = loadJson("config/exnihilocreatio/BarrelLiquidBlacklistRegistry.json")[0]
+return loadJson("config/exnihilocreatio/MilkEntityRegistry.json")
 .map(o=>[
   `add_barrel_milking(Soul("${o.entityOnTop}")`,
+  blacklist.includes(o.result) ? ', SB' : ', WB',
   `, <liquid:${o.result}>`, ` * ${o.amount}`,
   `, ${o.coolDown});`
 ])
-)*/
-add_barrel_milking(Soul("minecraft:cow")                 , <liquid:milk>               * 10 , 20);
-add_barrel_milking(Soul("emberroot:timberwolf")          , <liquid:tree_oil>           * 10 , 20);
-add_barrel_milking(Soul("emberroot:rainbow_golem")       , <liquid:construction_alloy> * 10 , 20);
-add_barrel_milking(Soul("excompressum:angry_chicken")    , <liquid:fiery_essence>      * 10 , 20);
-add_barrel_milking(Soul("emberroot:skeleton_frozen")     , <liquid:ice>                * 10 , 20);
-add_barrel_milking(Soul("betteranimalsplus:walrus")      , <liquid:lubricant>          * 10 , 20);
-add_barrel_milking(Soul("mekanism:robit")                , <liquid:electronics>        * 10 , 20);
-add_barrel_milking(Soul("endreborn:watcher")             , <liquid:obsidian>           * 40 , 20);
-add_barrel_milking(Soul("betteranimalsplus:hirschgeist") , <liquid:platinum>           * 10 , 20);
-add_barrel_milking(Soul("industrialforegoing:pink_slime"), <liquid:if.pink_slime>      * 10 , 20);
-add_barrel_milking(Soul("rats:neo_ratlantean")           , <liquid:crystal_matrix>     * 1  , 20);
-add_barrel_milking(Soul("iceandfire:if_cockatrice")      , <liquid:gelatin>            * 10 , 20);
-add_barrel_milking(Soul("openblocks:mini_me")            , <liquid:blockfluiddirt>     * 100, 20);
+}*/
+add_barrel_milking(Soul("minecraft:cow")                 , WB, <liquid:milk>               * 10 , 20);
+add_barrel_milking(Soul("emberroot:timberwolf")          , WB, <liquid:tree_oil>           * 10 , 20);
+add_barrel_milking(Soul("emberroot:rainbow_golem")       , SB, <liquid:construction_alloy> * 10 , 20);
+add_barrel_milking(Soul("excompressum:angry_chicken")    , SB, <liquid:fiery_essence>      * 10 , 20);
+add_barrel_milking(Soul("emberroot:skeleton_frozen")     , WB, <liquid:ice>                * 10 , 20);
+add_barrel_milking(Soul("betteranimalsplus:walrus")      , WB, <liquid:lubricant>          * 10 , 20);
+add_barrel_milking(Soul("mekanism:robit")                , SB, <liquid:electronics>        * 10 , 20);
+add_barrel_milking(Soul("endreborn:watcher")             , SB, <liquid:obsidian>           * 40 , 20);
+add_barrel_milking(Soul("betteranimalsplus:hirschgeist") , SB, <liquid:platinum>           * 10 , 20);
+add_barrel_milking(Soul("industrialforegoing:pink_slime"), WB, <liquid:if.pink_slime>      * 10 , 20);
+add_barrel_milking(Soul("rats:neo_ratlantean")           , SB, <liquid:crystal_matrix>     * 1  , 20);
+add_barrel_milking(Soul("iceandfire:if_cockatrice")      , SB, <liquid:gelatin>            * 10 , 20);
+add_barrel_milking(Soul("openblocks:mini_me")            , WB, <liquid:blockfluiddirt>     * 100, 20);
 /**/

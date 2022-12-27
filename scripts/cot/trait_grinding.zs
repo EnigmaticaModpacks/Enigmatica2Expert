@@ -121,7 +121,6 @@ return result.map((line) => {
 <item:draconicevolution:draconium_ore:1>      : <item:draconicevolution:draconium_dust>      * 4 ,
 <item:draconicevolution:draconium_ore:2>      : <item:draconicevolution:draconium_dust>      * 4 ,
 <item:endreborn:block_wolframium_ore>         : <item:contenttweaker:item_ore_tungsten:2>    * 4 ,
-<item:bigreactors:oreyellorite>               : <item:bigreactors:dustyellorium>             * 4 ,
 <item:forestry:resources>                     : <item:jaopca:item_dustapatite>               * 40,
 <item:immersiveengineering:ore:1>             : <item:thermalfoundation:material:68>         * 4 ,
 <item:thermalfoundation:ore:4>                : <item:thermalfoundation:material:68>         * 4 ,

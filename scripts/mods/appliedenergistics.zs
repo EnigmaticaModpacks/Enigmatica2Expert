@@ -21,11 +21,6 @@ furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
 mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
 // ---------------------------------
 
-// Other silver occurances
-mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:gold_ore>);
-mods.appliedenergistics2.Grinder.removeRecipe(<exnihilocreatio:item_ore_gold:1>);
-scripts.process.crush(<minecraft:gold_ore>, <thermalfoundation:material:1>, 'only: AEGrinder', [<contenttweaker:dust_tiny_silver>], [0.9f]);
-
 # Smart Cable -> Dense
 	recipes.addShapeless("4 Smart Cables to Dense", 
 	<appliedenergistics2:part:76>, 
@@ -462,71 +457,73 @@ craft.remake(<appliedenergistics2:quartz_vibrant_glass> * 8, ["pretty",
   "▲": <ore:dustGlowstone>,                # Glowstone Dust
 });
 
-function regrind(input as IItemStack, output as IItemStack, isOre as bool = false) as void {
-	scripts.process.crush(input, output, "strict: aegrinder", isOre ? [output] as IItemStack[] : null, [0.9f]);
+function regrind(input as IItemStack, output as IItemStack, isOre as bool = false, extra as IItemStack = null) as void {
+	val extras = (!isOre ? null : isNull(extra) ? [output] : [output, extra]) as IItemStack[];
+	scripts.process.crush(input, output, "strict: aegrinder", extras, [0.75f, 0.9f]);
 }
 
 /*Inject_js(
-[['ore', 'dust'], ['ingot', 'dust']]
-.map((pair, i) =>
+['ore', 'ingot']
+.map((input, i) =>
 	_.uniqBy(
-		getOreBases_byKinds(pair)
-		.map(b=>['regrind('+
-			getByOredict_first(pair[0]+b).commandString, ', ',
-			getByOredict_first(pair[1]+b).commandString+(i==0?', true':'')+');'
-		])
-	, '0')
-  .filter(([input]) => 
-    !'minecraft biomesoplenty appliedenergistics2'
-    .split(' ')
-    .some(p=>input.startsWith(`<${p}:`))
-  )
-	.sort(([a],[b]) => naturalSort(a,b))
+		getOreBases_byKinds([input, 'dust'])
+			.map(base => [
+				`regrind(${getByOredict_first(input + base).commandString}`,
+				', ',
+				`${getByOredict_first(`dust${base}`).commandString + (!i
+					? `, true${(() => {
+							const r = getByOredict_first(`dustTiny${getExtra(base)}`)
+							return !r ? '' : `, ${r.commandString}`
+						})()}`
+					: ''
+				)});`,
+			])
+		, '0')
+		.sort(([a], [b]) => naturalSort(a, b))
 ).flat()
 )*/
-regrind(<actuallyadditions:block_misc:3>        , <actuallyadditions:item_dust:7>, true);
-regrind(<appliedenergistics2:charged_quartz_ore>, <appliedenergistics2:material:2>, true);
-regrind(<astralsorcery:blockcustomore:1>        , <astralsorcery:itemcraftingcomponent:2>, true);
-regrind(<astralsorcery:blockcustomsandore>      , <jaopca:item_dustaquamarine>, true);
-regrind(<bigreactors:oreyellorite>              , <bigreactors:dustyellorium>, true);
-regrind(<biomesoplenty:gem_ore:1>               , <jaopca:item_dustruby>, true);
-regrind(<biomesoplenty:gem_ore:2>               , <jaopca:item_dustperidot>, true);
-regrind(<biomesoplenty:gem_ore:3>               , <jaopca:item_dusttopaz>, true);
-regrind(<biomesoplenty:gem_ore:4>               , <jaopca:item_dusttanzanite>, true);
-regrind(<biomesoplenty:gem_ore:5>               , <jaopca:item_dustmalachite>, true);
-regrind(<biomesoplenty:gem_ore:6>               , <jaopca:item_dustsapphire>, true);
-regrind(<biomesoplenty:gem_ore:7>               , <jaopca:item_dustamber>, true);
-regrind(<biomesoplenty:gem_ore>                 , <jaopca:item_dustamethyst>, true);
-regrind(<draconicevolution:draconium_ore>       , <draconicevolution:draconium_dust>, true);
-regrind(<endreborn:block_wolframium_ore>        , <contenttweaker:item_ore_tungsten:2>, true);
-regrind(<forestry:resources>                    , <jaopca:item_dustapatite>, true);
-regrind(<immersiveengineering:ore:5>            , <immersiveengineering:metal:14>, true);
-regrind(<libvulpes:ore0:8>                      , <libvulpes:productdust:7>, true);
-regrind(<libvulpes:ore0>                        , <libvulpes:productdust>, true);
-regrind(<mekanism:oreblock>                     , <mekanism:dust:2>, true);
-regrind(<minecraft:coal_ore>                    , <thermalfoundation:material:768>, true);
-regrind(<minecraft:diamond_ore>                 , <ic2:dust:5>, true);
-regrind(<minecraft:emerald_ore>                 , <actuallyadditions:item_dust:3>, true);
-regrind(<minecraft:gold_ore>                    , <thermalfoundation:material:1>, true);
-regrind(<minecraft:iron_ore>                    , <thermalfoundation:material>, true);
-regrind(<minecraft:lapis_ore>                   , <ic2:dust:9>, true);
-regrind(<minecraft:quartz_ore>                  , <appliedenergistics2:material:3>, true);
-regrind(<minecraft:redstone_ore>                , <minecraft:redstone>, true);
-regrind(<nuclearcraft:ore:3>                    , <nuclearcraft:dust:3>, true);
-regrind(<nuclearcraft:ore:5>                    , <nuclearcraft:dust:5>, true);
-regrind(<nuclearcraft:ore:6>                    , <ic2:dust:11>, true);
-regrind(<nuclearcraft:ore:7>                    , <nuclearcraft:dust:7>, true);
-regrind(<rftools:dimensional_shard_ore>         , <jaopca:item_dustdimensionalshard>, true);
-regrind(<tconstruct:ore:1>                      , <enderio:item_material:30>, true);
-regrind(<tconstruct:ore>                        , <enderio:item_material:31>, true);
-regrind(<thermalfoundation:ore:1>               , <thermalfoundation:material:65>, true);
-regrind(<thermalfoundation:ore:2>               , <thermalfoundation:material:66>, true);
+regrind(<actuallyadditions:block_misc:3>        , <actuallyadditions:item_dust:7>, true, <jaopca:item_dusttinycoal>);
+regrind(<appliedenergistics2:charged_quartz_ore>, <appliedenergistics2:material:2>, true, <jaopca:item_dusttinyquartz>);
+regrind(<astralsorcery:blockcustomore:1>        , <astralsorcery:itemcraftingcomponent:2>, true, <contenttweaker:dust_tiny_silver>);
+regrind(<astralsorcery:blockcustomsandore>      , <jaopca:item_dustaquamarine>, true, <jaopca:item_dusttinyaluminium>);
+regrind(<biomesoplenty:gem_ore:1>               , <jaopca:item_dustruby>, true, <jaopca:item_dusttinyaluminium>);
+regrind(<biomesoplenty:gem_ore:2>               , <jaopca:item_dustperidot>, true, <jaopca:item_dusttinyemerald>);
+regrind(<biomesoplenty:gem_ore:3>               , <jaopca:item_dusttopaz>, true, <jaopca:item_dusttinyquartzblack>);
+regrind(<biomesoplenty:gem_ore:4>               , <jaopca:item_dusttanzanite>, true, <jaopca:item_dusttinyquartz>);
+regrind(<biomesoplenty:gem_ore:5>               , <jaopca:item_dustmalachite>, true, <ic2:dust:22>);
+regrind(<biomesoplenty:gem_ore:6>               , <jaopca:item_dustsapphire>, true, <jaopca:item_dusttinyaluminium>);
+regrind(<biomesoplenty:gem_ore:7>               , <jaopca:item_dustamber>, true, <rustic:dust_tiny_iron>);
+regrind(<biomesoplenty:gem_ore>                 , <jaopca:item_dustamethyst>, true, <jaopca:item_dusttinycobalt>);
+regrind(<draconicevolution:draconium_ore>       , <draconicevolution:draconium_dust>, true, <jaopca:item_dusttinyardite>);
+regrind(<endreborn:block_wolframium_ore>        , <contenttweaker:item_ore_tungsten:2>, true, <jaopca:item_dusttinymagnesium>);
+regrind(<forestry:resources>                    , <jaopca:item_dustapatite>, true, <jaopca:item_dusttinyaluminium>);
+regrind(<immersiveengineering:ore:5>            , <immersiveengineering:metal:14>, true, <nuclearcraft:tiny_dust_lead>);
+regrind(<libvulpes:ore0:8>                      , <libvulpes:productdust:7>, true, <jaopca:item_dusttinytungsten>);
+regrind(<libvulpes:ore0>                        , <libvulpes:productdust>, true, <ic2:dust:24>);
+regrind(<mekanism:oreblock>                     , <mekanism:dust:2>, true, <jaopca:item_dusttinynickel>);
+regrind(<minecraft:coal_ore>                    , <thermalfoundation:material:768>, true, <jaopca:item_dusttinyquartzblack>);
+regrind(<minecraft:diamond_ore>                 , <ic2:dust:5>, true, <jaopca:item_dusttinycertusquartz>);
+regrind(<minecraft:emerald_ore>                 , <actuallyadditions:item_dust:3>, true, <jaopca:item_dusttinyperidot>);
+regrind(<minecraft:gold_ore>                    , <thermalfoundation:material:1>, true, <contenttweaker:dust_tiny_silver>);
+regrind(<minecraft:iron_ore>                    , <thermalfoundation:material>, true, <jaopca:item_dusttinynickel>);
+regrind(<minecraft:lapis_ore>                   , <ic2:dust:9>, true, <jaopca:item_dusttinyapatite>);
+regrind(<minecraft:quartz_ore>                  , <appliedenergistics2:material:3>, true, <rustic:dust_tiny_iron>);
+regrind(<minecraft:redstone_ore>                , <minecraft:redstone>, true, <jaopca:item_dusttinycoal>);
+regrind(<nuclearcraft:ore:3>                    , <nuclearcraft:dust:3>, true, <jaopca:item_dusttinyuranium>);
+regrind(<nuclearcraft:ore:5>                    , <nuclearcraft:dust:5>, true, <jaopca:item_dusttinymagnesium>);
+regrind(<nuclearcraft:ore:6>                    , <ic2:dust:11>, true, <jaopca:item_dusttinyaluminium>);
+regrind(<nuclearcraft:ore:7>                    , <nuclearcraft:dust:7>, true, <rustic:dust_tiny_iron>);
+regrind(<rftools:dimensional_shard_ore>         , <jaopca:item_dustdimensionalshard>, true, <jaopca:item_dusttinyastralstarmetal>);
+regrind(<tconstruct:ore:1>                      , <enderio:item_material:30>, true, <jaopca:item_dusttinyosmium>);
+regrind(<tconstruct:ore>                        , <enderio:item_material:31>, true, <rustic:dust_tiny_iron>);
+regrind(<thermalfoundation:ore:1>               , <thermalfoundation:material:65>, true, <rustic:dust_tiny_iron>);
+regrind(<thermalfoundation:ore:2>               , <thermalfoundation:material:66>, true, <nuclearcraft:tiny_dust_lead>);
 regrind(<thermalfoundation:ore:3>               , <thermalfoundation:material:67>, true);
-regrind(<thermalfoundation:ore:4>               , <thermalfoundation:material:68>, true);
-regrind(<thermalfoundation:ore:5>               , <thermalfoundation:material:69>, true);
-regrind(<thermalfoundation:ore:6>               , <thermalfoundation:material:70>, true);
-regrind(<thermalfoundation:ore:7>               , <thermalfoundation:material:71>, true);
-regrind(<thermalfoundation:ore:8>               , <thermalfoundation:material:72>, true);
+regrind(<thermalfoundation:ore:4>               , <thermalfoundation:material:68>, true, <rustic:dust_tiny_iron>);
+regrind(<thermalfoundation:ore:5>               , <thermalfoundation:material:69>, true, <jaopca:item_dusttinyplatinum>);
+regrind(<thermalfoundation:ore:6>               , <thermalfoundation:material:70>, true, <jaopca:item_dusttinynickel>);
+regrind(<thermalfoundation:ore:7>               , <thermalfoundation:material:71>, true, <jaopca:item_dusttinyplatinum>);
+regrind(<thermalfoundation:ore:8>               , <thermalfoundation:material:72>, true, <contenttweaker:dust_tiny_gold>);
 regrind(<thermalfoundation:ore>                 , <thermalfoundation:material:64>, true);
 regrind(<advancedrocketry:productingot:1>       , <advancedrocketry:productdust:1>);
 regrind(<advancedrocketry:productingot>         , <advancedrocketry:productdust>);
@@ -534,7 +531,6 @@ regrind(<astralsorcery:itemcraftingcomponent:1> , <astralsorcery:itemcraftingcom
 regrind(<bigreactors:ingotblutonium>            , <bigreactors:dustblutonium>);
 regrind(<bigreactors:ingotcyanite>              , <bigreactors:dustcyanite>);
 regrind(<bigreactors:ingotludicrite>            , <bigreactors:dustludicrite>);
-regrind(<bigreactors:ingotyellorium>            , <bigreactors:dustyellorium>);
 regrind(<draconicevolution:draconium_ingot>     , <draconicevolution:draconium_dust>);
 regrind(<enderio:item_alloy_ingot:7>            , <enderio:item_material:74>);
 regrind(<endreborn:item_ingot_wolframium>       , <contenttweaker:item_ore_tungsten:2>);

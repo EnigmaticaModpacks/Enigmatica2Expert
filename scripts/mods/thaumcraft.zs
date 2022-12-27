@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.WeightedItemStack;
 import thaumcraft.aspect.CTAspectStack;
+import crafttweaker.data.IData;
 
 #modloaded thaumcraft
 
@@ -111,13 +112,18 @@ recipes.addShaped(<thaumcraft:baubles:6>,
 [<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
 
 # Salis Mundus visible recipe (actually not working)
+function getAnyVisCrystal(key as string, col as int) as IItemStack {
+  return <thaumcraft:crystal_essence>
+    .withDisplayName("§"~key~"§lAny Different Vis Crystal")
+    .updateTag(utils.shinigTag(col) + {Aspects: [{key: 'terra', amount: 1}]} as IData);
+}
 craft.shapeless(<thaumcraft:salis_mundus>, "DEFCAB", {
   A: <ore:itemFlint>.reuse(),
   B: <minecraft:bowl>.reuse(),
   C: <ore:dustRedstone>,
-  D: <thaumcraft:crystal_essence>.withDisplayName("§4§lAny Different Vis Crystal").updateTag(utils.shinigTag(0xff0000)),
-  E: <thaumcraft:crystal_essence>.withDisplayName("§2§lAny Different Vis Crystal").updateTag(utils.shinigTag(0x00ff00)),
-  F: <thaumcraft:crystal_essence>.withDisplayName("§b§lAny Different Vis Crystal").updateTag(utils.shinigTag(0x00ffff)),
+  D: getAnyVisCrystal('4', 0xff0000),
+  E: getAnyVisCrystal('2', 0x00ff00),
+  F: getAnyVisCrystal('b', 0x00ffff),
   }
 );
 
