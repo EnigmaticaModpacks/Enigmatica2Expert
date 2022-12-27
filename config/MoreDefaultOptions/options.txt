@@ -191,6 +191,10 @@ key_key.jei.toggleBookmarkOverlay:0
 key_key.jei.toggleCheatMode:0
 key_key.jei.toggleEditMode:0
 key_key.jei.toggleOverlay:24:CONTROL
+key_key.jeiutilities.displayRecipe:29
+key_key.jeiutilities.pickBookmark:-98
+key_key.jeiutilities.transferRecipe:17:CONTROL
+key_key.jeiutilities.transferRecipeMax:20:CONTROL
 key_key.journeymap.create_waypoint:0
 key_key.journeymap.fullscreen_chat_position:0
 key_key.journeymap.fullscreen_create_waypoint:0
