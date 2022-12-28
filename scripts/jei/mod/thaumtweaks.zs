@@ -161,7 +161,7 @@ COMMON: [[
     <mysticalagriculture:prudentium_apple>,
     <bhc:relic_apple> * 4,
     <thaumcraft:curio:5> * 4,
-    <scalingfeast:exhaustingapple> * 5,
+    utils.get('scalingfeast:exhaustingapple', 0, 5),
     <cyclicmagic:apple>,
     <thaumcraft:lamp_arcane>,
   ], [
