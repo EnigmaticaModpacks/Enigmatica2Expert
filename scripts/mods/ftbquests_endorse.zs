@@ -17,17 +17,18 @@ function formatPlayTime(player as IPlayer) as string {
   ).trim();
 }
 
-/**
- * Endorse player with message to whole server as its finished chapter
- */
 events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
-  if(e.reward.quest.tags has 'chapcomplete') return;
 
-  server.commandManager.executeCommand(server,
-    '/say §l' ~ e.player.name ~
-    '§r has fully completed the §n' ~ e.reward.quest.chapter.title ~
-    '§r chapter after §l' ~ formatPlayTime(e.player) ~
-    '§r of play!§r ```Congrats!```'
-  );
+  /**
+  * Endorse player with message to whole server as its finished chapter
+  */
+  if(e.reward.quest.tags has 'chapcomplete') {
+    server.commandManager.executeCommand(server,
+      '/say §l' ~ e.player.name ~
+      '§r has fully completed the §n' ~ e.reward.quest.chapter.title ~
+      '§r chapter after §l' ~ formatPlayTime(e.player) ~
+      '§r of play!§r ```Congrats!```'
+    );
+  }
 });
 
