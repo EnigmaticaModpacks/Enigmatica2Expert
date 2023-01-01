@@ -396,22 +396,3 @@ zenClass Utils {
   }
 }
 global utils as Utils = Utils();
-
-# ########################
-# Get mob soul by its name
-# ########################
-global Soul as function(string)IItemStack = function (name as string) as IItemStack {
-  val soul = itemUtils.getItem("draconicevolution:mob_soul");
-  if (!isNull(soul)) {
-    return soul.withTag({EntityName: name});
-  }
-	return null;
-};
-
-
-# ########################
-# Fluid Cell is like bucket, but stackable
-# ########################
-global FluidCell as function(string)IItemStack = function (name as string) as IItemStack {
-	return <ic2:fluid_cell>.withTag({Fluid: {FluidName: name, Amount: 1000}});
-};
