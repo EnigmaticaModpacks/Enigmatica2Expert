@@ -284,9 +284,9 @@ function beneficiate(
     var extraList = [] as IItemStack[];
     if (!isNull(JA)) {
       var cx as IItemStack = null;
-      cx = utils.getSomething(JA.extraName,       ['dust', 'gem']); if (!isNull(cx)) extraList += cx;
-      cx = utils.getSomething(JA.secondExtraName, ['dust', 'gem']); if (!isNull(cx)) extraList += cx;
-      cx = utils.getSomething(JA.thirdExtraName,  ['dust', 'gem']); if (!isNull(cx)) extraList += cx;
+      cx = utils.getSomething(JA.extraName,       ['dust', 'gem'], 1); if (!isNull(cx)) extraList += cx;
+      cx = utils.getSomething(JA.secondExtraName, ['dust', 'gem'], 1); if (!isNull(cx)) extraList += cx;
+      cx = utils.getSomething(JA.thirdExtraName,  ['dust', 'gem'], 1); if (!isNull(cx)) extraList += cx;
     }
     crush(input, dustOrGem, exceptions ~ 'macerator thermalCentrifuge crushingBlock', extraList, extraChances, { bonusType: 'MULTIPLY_OUTPUT' });
   }

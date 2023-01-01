@@ -1,3 +1,8 @@
+#modloaded ctintegration
+
+#priority 3999
+#loader crafttweaker reloadableevents
+
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import crafttweaker.player.IPlayer;
@@ -5,9 +10,6 @@ import mods.ctintegration.data.DataUtil.parse as sNBT;
 import crafttweaker.block.IBlock;
 import crafttweaker.world.IWorld;
 import crafttweaker.block.IBlockState;
-
-#priority 3999
-#loader crafttweaker reloadableevents
 
 utils.DEBUG = true;
 

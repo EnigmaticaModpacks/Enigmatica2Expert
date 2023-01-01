@@ -1,3 +1,5 @@
+#modloaded requious
+
 #priority 975
 
 import crafttweaker.item.IIngredient;

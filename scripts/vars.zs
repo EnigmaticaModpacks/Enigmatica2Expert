@@ -4,6 +4,8 @@ import crafttweaker.item.IIngredient;
 
 #priority 3000
 
+#ignoreBracketErrors
+
 static meltingExceptions as IData = ['Amber', 'Redstone', 'Coal', 'Diamond'] as IData;
 
 static dimBlocks as IItemStack[int] = {

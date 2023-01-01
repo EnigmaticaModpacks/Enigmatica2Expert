@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
+#ignoreBracketErrors
+
 val desc = scripts.category.tooltip_utils.desc;
 
 // Some Quark tooltips from https://github.com/Level-5-Pidgey/FantasTek/tree/master/mods
@@ -80,7 +82,7 @@ for rod in [
 }
 
 
-<extrautils2:ingredients:13>.addTooltip(format.aqua(desc.local("not_consumed")));
+desc.tooltipRaw(<extrautils2:ingredients:13>, '§b' ~ desc.local("not_consumed"));
 
 
 desc.jei(<extrautils2:bagofholding>, "removed.instability"); # Bag of Holding
@@ -145,8 +147,8 @@ desc.jei(<computercraft:printout>.withTag({pages: 1}), "§fPrint with §eCompute
 desc.jei(<advgenerators:gas_input>, "ethylene_convert");
 
 # Tool Forge
-<tconstruct:toolforge>.anyDamage().addTooltip(desc.local("forge_from_metal"));
-<conarm:armorforge>.anyDamage().addTooltip(desc.local("forge_from_metal"));
+desc.tooltipRaw(<tconstruct:toolforge>.anyDamage(), desc.local("forge_from_metal"));
+desc.tooltipRaw(<conarm:armorforge>.anyDamage(), desc.local("forge_from_metal"));
 
 # Space Ores
 for item in [
@@ -182,9 +184,9 @@ desc.tooltip(<industrialforegoing:mob_relocator>, "industrialforegoing:mob_reloc
 );
 
 # Mystical Agriculture Seeds Tier 6
-<mysticalagriculture:enderium_seeds>.addTooltip(desc.local("tier")~": §56§r");
-<mysticalagriculture:iridium_seeds>.addTooltip(desc.local("tier")~": §56§r");
-<mysticalagriculture:terrasteel_seeds>.addTooltip(desc.local("tier")~": §56§r");
+desc.tooltipRaw(<mysticalagriculture:enderium_seeds>, desc.local("tier")~": §56§r");
+desc.tooltipRaw(<mysticalagriculture:iridium_seeds>, desc.local("tier")~": §56§r");
+desc.tooltipRaw(<mysticalagriculture:terrasteel_seeds>, desc.local("tier")~": §56§r");
 
 # Extreme Reactors Crystals
 <bigreactors:mineralanglesite>.displayName = desc.local("anglesite");
@@ -285,17 +287,17 @@ for i,a in [
 ,format.darkAqua(desc.local("fuel.shift_for_list")));
 
 # Antimatter
-Bucket("blockfluidantimatter").addTooltip(format.aqua(desc.local("strike_with_lightning")));
+desc.tooltipRaw(Bucket("blockfluidantimatter"), '§b' ~ desc.local("strike_with_lightning"));
 
 
 # Thaumcraft Curiocity
 val lp = desc.local("thaum.progress").toLowerCase();
-<thaumcraft:curio:0>.addTooltip("§f+ §5"~desc.local("thaum.auromancy")~"§f " ~ lp);
-<thaumcraft:curio:1>.addTooltip("§f+ §5"~desc.local("thaum.alchemy")~"§f " ~ lp);
-<thaumcraft:curio:2>.addTooltip("§f+ §5"~desc.local("thaum.golemancy")~"§f " ~ lp);
-<thaumcraft:curio:3>.addTooltip("§f+ §5"~desc.local("thaum.eldritch")~"§f " ~ lp);
-<thaumcraft:curio:4>.addTooltip("§f+ §5"~desc.local("thaum.arcane")~"§f " ~ lp);
-<thaumcraft:curio:5>.addTooltip("§f+ §5"~desc.local("thaum.artifice")~"§f " ~ lp);
+desc.tooltipRaw(<thaumcraft:curio:0>, "§f+ §5"~desc.local("thaum.auromancy")~"§f " ~ lp);
+desc.tooltipRaw(<thaumcraft:curio:1>, "§f+ §5"~desc.local("thaum.alchemy")~"§f " ~ lp);
+desc.tooltipRaw(<thaumcraft:curio:2>, "§f+ §5"~desc.local("thaum.golemancy")~"§f " ~ lp);
+desc.tooltipRaw(<thaumcraft:curio:3>, "§f+ §5"~desc.local("thaum.eldritch")~"§f " ~ lp);
+desc.tooltipRaw(<thaumcraft:curio:4>, "§f+ §5"~desc.local("thaum.arcane")~"§f " ~ lp);
+desc.tooltipRaw(<thaumcraft:curio:5>, "§f+ §5"~desc.local("thaum.artifice")~"§f " ~ lp);
 
 desc.tooltip(Bucket("corium"), "fluid.corium");
 desc.tooltip(<actuallyadditions:item_crystal_empowered:2>, 'tcon.diamond');

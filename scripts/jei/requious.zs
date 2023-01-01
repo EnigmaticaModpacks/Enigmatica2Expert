@@ -1,5 +1,6 @@
-#priority 1000
 #modloaded requious
+
+#priority 1000
 #loader crafttweaker reloadable
 
 import mods.requious.Assembly;

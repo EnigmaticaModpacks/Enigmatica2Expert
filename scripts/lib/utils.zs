@@ -20,60 +20,12 @@ import crafttweaker.world.IWorld;
 zenClass Utils {
   var DEBUG as bool = false;
 
-  static modPreference as string[] = [
-    "minecraft",
-    "thermalfoundation",
-    "immersiveengineering",
-    "ic2",
-    "mekanism",
-    "appliedenergistics2",
-    "actuallyadditions",
-    "tconstruct",
-    "chisel",
-  ] as string[];
-
 	zenConstructor() { }
 
-  function getSomething(oreName as string, entryNames as string[], amount as int = 1) as IItemStack {
-    if (isNull(oreName)) return null;
-
-    // Find with JAOPCA
-    val JOREoutput = mods.jaopca.JAOPCA.getOre(oreName);
-    var something as IItemStack = null;
-    if (!isNull(JOREoutput)) {
-      var k = 0;
-      while k < entryNames.length && isNull(something) {
-        something = JOREoutput.getItemStack(entryNames[k]);
-        k += 1;
-      }
-    }
-
-    // Find with Oredict
-    if (isNull(something)) {
-      for str in entryNames {
-        val oreItems = oreDict[str~oreName].items;
-        if (oreItems.length>0) {
-          for preffer in modPreference {
-            for item in oreItems {
-              if(item.definition.id.startsWith(preffer))
-                return countOutput(item * amount, oreName);
-            }
-          }
-          return countOutput(oreDict[str~oreName].firstItem * amount, oreName);
-        }
-      }
-    }
-
-    // Find with smelting
-    if (isNull(something) && entryNames has "any") {
-      val oreItems = oreDict['ore'~oreName].items;
-      if (oreItems.length>0) {
-        something = smelt(oreDict['ore'~oreName]);
-      }
-    }
-
-    return isNull(something) ? null : countOutput(something * amount, oreName);
-  }
+  val getSomething as function(string,string[],int)IItemStack = 
+  function (oreName as string, entryNames as string[], amount as int) as IItemStack {
+    return null;
+  };
 
   # Return result of smelting in vanilla furnace
   function smelt(input as IIngredient) as IItemStack {
@@ -401,17 +353,19 @@ zenClass Utils {
     dx as float, dy as float, dz as float,
     vel as float, amount as int
   ) as void {
-    server.commandManager.executeCommandSilent(sender, "/particle "~type~" "~x~" "~y~" "~z~" "~dx~" "~dy~" "~dz~" "~vel~" "~amount);
+    executeCommandSilent(sender, "/particle "~type~" "~x~" "~y~" "~z~" "~dx~" "~dy~" "~dz~" "~vel~" "~amount);
   }
+  val executeCommandSilent as function(ICommandSender,string)void =
+  function(sender as ICommandSender, command as string) as void {};
 
-  # Spawn bunch of items like from gayser
-  function geyser(
+  val geyser as function(IWorld,IItemStack,float,float,float,int,double,double,double,int)void = 
+  function(
     world as IWorld,                    # World where everything happen
     output as IItemStack,               # Item that would be spawned
     x as float, y as float, z as float, # Position where new items spawned
-    desiredAmount as int = 1,           # Number of new items spawned
-    mx as double = 0.0d, my as double = 0.0d, mz as double = 0.0d, # Motion of spawned items
-    delay as int = 3                    # Delay between spawning
+    desiredAmount as int,               # Number of new items spawned
+    mx as double, my as double, mz as double, # Motion of spawned items
+    delay as int                        # Delay between spawning
   ) as void {
     val rnd = world.getRandom();
     val f = desiredAmount as float / 8.0f;
@@ -421,20 +375,19 @@ zenClass Utils {
     while (total < desiredAmount) {
       val count = max(1, (f * (i + 1) + 0.5f) as int - total);
       total += count;
-      world.catenation().sleep(i * delay + 1).then(function(world, ctx) {
+
         val itemEntity = (output * count).createEntityItem(world, x, y, z);
         itemEntity.motionY = my + 0.4d;
         itemEntity.motionX = mx + rnd.nextDouble(-0.1d, 0.1d);
         itemEntity.motionZ = mz + rnd.nextDouble(-0.1d, 0.1d);
         world.spawnEntity(itemEntity);
 
-        // world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
-        server.commandManager.executeCommandSilent(itemEntity, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
-      }).start();
+      // world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
+      executeCommandSilent(itemEntity, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
 
       i += 1;
     }
-  }
+  };
 
   # Get Shimmer enchant + Random Things colored shining
   val shimmerTag as IData = <enchantment:enderio:shimmer>.makeEnchantment(1).makeTag();

@@ -28,15 +28,16 @@ zenClass Descriptor {
 		Add tooltip
 	*/
 	function tooltip(item as IItemStack) as void { tooltip(item, autoLang(item)); }
-	function tooltip(item as IItemStack, lang as string) as void { tooltipDescribe(item, local(lang)); }
-	function tooltip(item as IItemStack, lang as string, a1 as string) as void { tooltipDescribe(item, I18n.format(local(lang), a1)); }
-	function tooltip(item as IItemStack, lang as string, a1 as string, a2 as string) as void { tooltipDescribe(item, I18n.format(local(lang), a1, a2)); }
+	function tooltip(item as IItemStack, lang as string) as void { tooltipRaw(item, local(lang)); }
+	function tooltip(item as IItemStack, lang as string, a1 as string) as void { tooltipRaw(item, I18n.format(local(lang), a1)); }
+	function tooltip(item as IItemStack, lang as string, a1 as string, a2 as string) as void { tooltipRaw(item, I18n.format(local(lang), a1, a2)); }
 
 	/*
 		Add tooltip helper
 	*/
-	function tooltipDescribe(item as IItemStack, localized as string) as void {
+	function tooltipRaw(item as IIngredient, localized as string) as void {
 		if(localized.startsWith(langPrefix)) return;
+		if(isNull(item)) return;
 		for line in localized.split('\\\\n') {
 			item.addTooltip(line);
 		}

@@ -1,3 +1,5 @@
+#modloaded extendedcrafting
+
 import crafttweaker.item.IItemCondition;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;

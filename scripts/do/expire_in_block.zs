@@ -1,3 +1,5 @@
+#modloaded jei
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.world.IWorld;
@@ -57,5 +59,5 @@ function explodeItem(
   output as IItemStack  # New items
 ) as void {
   val desiredAmount = inputItEnt.item.amount * output.amount;
-  utils.geyser(inputItEnt.world, output, inputItEnt.x, inputItEnt.y, inputItEnt.z, desiredAmount);
+  utils.geyser(inputItEnt.world, output, inputItEnt.x, inputItEnt.y, inputItEnt.z, desiredAmount, 0, 0, 0, 3);
 }
