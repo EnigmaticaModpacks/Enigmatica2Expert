@@ -73,8 +73,8 @@
     {"projectID":229664,"fileID":3496560,"required":true,"___name":"Animus"},
     {"projectID":229876,"fileID":2483393,"required":true,"___name":"BetterFps"},
     {"projectID":230497,"fileID":2450900,"required":true,"___name":"Chameleon"},
-    {"projectID":231275,"fileID":2801170,"required":true,"___name":"Ding"},
     {"projectID":231382,"fileID":3408276,"required":true,"___name":"Brandon's Core"},
+    {"projectID":231453,"fileID":2436360,"required":true,"___name":"ChatFlow"},
     {"projectID":231484,"fileID":2862651,"required":true,"___name":"Cooking for Blockheads"},
     {"projectID":231868,"fileID":2972849,"required":true,"___name":"EnderCore"},
     {"projectID":231951,"fileID":2974106,"required":true,"___name":"Immersive Engineering"},
@@ -175,7 +175,6 @@
     {"projectID":262823,"fileID":2619249,"required":true,"___name":"Tomb Many Graves 2"},
     {"projectID":263590,"fileID":2455920,"required":true,"___name":"Just Enough Pattern Banners"},
     {"projectID":264231,"fileID":2939529,"required":true,"___name":"Ice and Fire: Dragons"},
-    {"projectID":264353,"fileID":2508268,"required":true,"___name":"SwingThroughGrass"},
     {"projectID":265461,"fileID":3591441,"required":true,"___name":"Rocky Tweaks"},
     {"projectID":266515,"fileID":2745321,"required":true,"___name":"Industrial Foregoing"},
     {"projectID":266550,"fileID":3270468,"required":true,"___name":"Tool Progression"},
@@ -257,7 +256,6 @@
     {"projectID":293704,"fileID":3247511,"required":true,"___name":"Broken Wings"},
     {"projectID":293768,"fileID":2777074,"required":true,"___name":"Thaumic Computers"},
     {"projectID":295114,"fileID":3092102,"required":true,"___name":"Botania Tweaks"},
-    {"projectID":295450,"fileID":2570000,"required":true,"___name":"Enable Cheats"},
     {"projectID":295736,"fileID":2683370,"required":true,"___name":"MemoryTester"},
     {"projectID":295910,"fileID":3010622,"required":true,"___name":"Integrated Terminals"},
     {"projectID":296289,"fileID":3581715,"required":true,"___name":"JustEnoughIDs"},
@@ -330,7 +328,6 @@
     {"projectID":324508,"fileID":2830254,"required":true,"___name":"AE2 Wireless Interface Terminal"},
     {"projectID":324717,"fileID":2735905,"required":true,"___name":"Jade 🔍"},
     {"projectID":326155,"fileID":3151006,"required":true,"___name":"Smeltery IO"},
-    {"projectID":327056,"fileID":2922328,"required":true,"___name":"Smooth Scrolling Everywhere (Forge)"},
     {"projectID":330472,"fileID":2779313,"required":true,"___name":"Tinkers' Modifier Modifier"},
     {"projectID":334692,"fileID":2758262,"required":true,"___name":"FindMeAnyDurability"},
     {"projectID":336748,"fileID":3218640,"required":true,"___name":"Requious Frakto"},
@@ -345,7 +342,6 @@
     {"projectID":356646,"fileID":3168863,"required":true,"___name":"GunpowderLib"},
     {"projectID":357178,"fileID":3437402,"required":true,"___name":"MixinBootstrap"},
     {"projectID":357179,"fileID":3021138,"required":true,"___name":"Cloche Profit Peripheral"},
-    {"projectID":358241,"fileID":3269838,"required":true,"___name":"Stupid Horse Stand Still"},
     {"projectID":358711,"fileID":3221155,"required":true,"___name":"Mystical Creations"},
     {"projectID":358821,"fileID":3798288,"required":true,"___name":"Minor Integrations and Additions (MIA)"},
     {"projectID":359407,"fileID":3658279,"required":true,"___name":"Immersive Technology"},
@@ -426,6 +422,7 @@
     {"projectID":687632,"fileID":4036750,"required":true,"___name":"Tweaked Lib"},
     {"projectID":687633,"fileID":4070070,"required":true,"___name":"Forked Proxy"},
     {"projectID":687827,"fileID":4028115,"required":true,"___name":"Seared Ladder (Backport)"},
-    {"projectID":705000,"fileID":4181287,"required":true,"___name":"Universal Tweaks"}
+    {"projectID":705000,"fileID":4285431,"required":true,"___name":"Universal Tweaks"},
+    {"projectID":782070,"fileID":4275356,"required":true,"___name":"Startup Timer"}
   ]
 }

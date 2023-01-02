@@ -84,3 +84,4 @@ config/smoothfont/smoothfont.cfg
 config/fantasticlib/**/*
 config/bogosorter/config.json
 config/FBP/*
+config/startuptimer/startup_times.json

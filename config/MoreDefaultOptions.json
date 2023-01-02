@@ -52,5 +52,11 @@
     "destinationFilePath": "config/bogosorter/config.json",
     "clientSide": true,
     "serverSide": true
+  },
+  {
+    "sourceFilePath": "ChatFlow.dat",
+    "destinationFilePath": "config/ChatFlow.dat",
+    "clientSide": true,
+    "serverSide": false
   }
 ]
