@@ -49,6 +49,14 @@ for aspect, ingr in {
   );
 }
 
+function getAnyVisCrystal(key as string = '8', col as int = 0x333333) as IItemStack {
+  return <thaumcraft:crystal_essence>.withTag(
+    utils.shinigTag(col) + {
+      Aspects: [{key: 'ordo', amount: 1}],
+      display: {Name: "§"~key~"§lAny Different Vis Crystal"}
+    } as IData,
+  false);
+}
 
 /*
 ████████╗ █████╗ ██████╗ ██╗     ███████╗
@@ -58,6 +66,32 @@ for aspect, ingr in {
    ██║   ██║  ██║██████╔╝███████╗███████╗
    ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
 */
+
+# [Arcane Stone]*9 from [Ordo Vis Crystal][+1]
+recipes.removeByRecipeName("thaumcraft:stonearcane");
+craft.shapeless(<thaumcraft:stone_arcane> * 9, "ssss*ssss", {
+  "s": <ore:stone>, # Stone
+  "*": getAnyVisCrystal(),
+});
+
+# [Arcane Stone]*36 from [Single Compressed Stone][+1]
+craft.make(<thaumcraft:stone_arcane> * 36, ["pretty",
+  "* ■ *",
+  "■   ■",
+  "* ■ *"], {
+  "*": getAnyVisCrystal(),
+  "■": <ore:compressedStone1x>, # Single Compressed Stone
+});
+
+# [Arcane Stone]*64 from [Double Compressed Stone][+1]
+craft.make(<thaumcraft:stone_arcane> * 64, ["pretty",
+  "*   *",
+  "* S *",
+  "* * *"], {
+  "*": getAnyVisCrystal(),
+  "S": <ore:compressedStone2x>, # Double Compressed Stone
+});
+
 
 # [Void Seed] from [Insanium Essence][+4]
 craft.remake(<thaumcraft:void_seed> * 4, ["pretty",
@@ -112,11 +146,6 @@ recipes.addShaped(<thaumcraft:baubles:6>,
 [<ore:gemEmerald>, <thaumcraft:baubles:2>, <ore:gemEmerald>]]);
 
 # Salis Mundus visible recipe (actually not working)
-function getAnyVisCrystal(key as string, col as int) as IItemStack {
-  return <thaumcraft:crystal_essence>
-    .withDisplayName("§"~key~"§lAny Different Vis Crystal")
-    .updateTag(utils.shinigTag(col) + {Aspects: [{key: 'terra', amount: 1}]} as IData);
-}
 craft.shapeless(<thaumcraft:salis_mundus>, "DEFCAB", {
   A: <ore:itemFlint>.reuse(),
   B: <minecraft:bowl>.reuse(),

@@ -174,6 +174,17 @@ craft.remake(<mekanism:machineblock2:8>, ["pretty",
 	[<mekanism:basicblock:8>, <mekanism:electrolyticcore>, <mekanism:basicblock:8>], 
 	[<ore:ingotTough>, <ore:alloyElite>, <ore:ingotTough>]]);
 
+# [Heat Generator] from [Treated Wood Planks][+3]
+craft.remake(<mekanismgenerators:generator>, ["pretty",
+  "A ▬ A",
+  "▬ # ▬",
+  "A F A"], {
+  "A": <ore:alloyAdvanced>,    # Enriched Alloy
+  "▬": <ore:ingotOsmium>,      # Osmium Ingot
+  "#": <ore:plankTreatedWood>, # Treated Wood Planks
+  "F": <minecraft:furnace>,    # Furnace
+});
+
 # Factories
 	recipes.remove(<mekanism:machineblock:5>);
 	recipes.remove(<mekanism:machineblock:6>);
@@ -562,7 +573,7 @@ craft.make(<mekanism:machineblock>, ["pretty",
   "A ▬ A",
   "B ⌂ B",
   "A ▬ A"], {
-  "A": <ore:itemEnrichedAlloy>, # Enriched Alloy
+  "A": <ore:alloyAdvanced>, # Enriched Alloy
   "B": <ore:circuitBasic>,      # Basic Control Circuit
   "⌂": <mekanism:basicblock:8>, # Steel Casing
   "▬": <ore:ingotFakeIron>,     # Iron Ingot
@@ -573,7 +584,7 @@ craft.make(<mekanism:machineblock:10>, ["pretty",
   "A ▬ A",
   "▬ ⌂ ▬",
   "A F A"], {
-  "A": <ore:itemEnrichedAlloy>, # Enriched Alloy
+  "A": <ore:alloyAdvanced>, # Enriched Alloy
   "⌂": <mekanism:basicblock:8>, # Steel Casing
   "F": <minecraft:furnace>,     # Furnace
   "▬": <ore:ingotFakeIron>,     # Iron Ingot
