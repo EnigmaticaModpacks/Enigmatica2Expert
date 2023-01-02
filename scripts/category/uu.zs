@@ -20,6 +20,7 @@ import crafttweaker.item.IItemStack;
 ))*/
 
 static values as int[int][string] = {
+  "ic2:misc_resource": { 1: 10000, 2: 1119 },
   "teslacorelib:base_addon": { 0: 100 },
   "minecraft:snowball": { 0: 2 },
   "minecraft:dirt": { 0: 2 },
