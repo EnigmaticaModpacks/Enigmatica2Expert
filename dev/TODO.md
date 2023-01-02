@@ -4,9 +4,19 @@ List of priorities:
 
 - [ ] 🔄 Modular Machinery multiblocks not in JEI
 - [ ] 🧮 Craft.zs: Add AS compat
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/dme
-- [ ] ✏️ Fix iridium doesn't have uu
-- [ ] 📖 Ender tether+chaos reaper add note
+- [ ] 🔴 Remove `Scaling Feast`
+- [ ] 🧩 Teleporting Rails add JEI entry with fuels and quest book tip
+- [ ] 🔄 Fix erroring advancements:
+  > biomesoplenty:recipes/buildingblocks/ethereal_stairs
+  > biomesoplenty:recipes/buildingblocks/ethereal_wooden_slab
+  > biomesoplenty:recipes/decorations/crafting_table_from_bop_wood
+  > biomesoplenty:recipes/decorations/ethereal_fence
+  > biomesoplenty:recipes/misc/mud_from_dirt
+  > biomesoplenty:recipes/redstone/ethereal_door
+  > biomesoplenty:recipes/redstone/ethereal_fence_gate
+  > biomesoplenty:recipes/transportation/boat_ethereal
+  > minecraft:recipes/decorations/crafting_table
+
 
 ---
 
@@ -16,14 +26,18 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📖 Add `Exploration` chapter, where each quest can be repeated, but required non-craftable items
+- [ ] 🔄 Make `scripts/jei` files not loaded on server
 - [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
 - [ ] 📖 Obtaining any **sharpening kit** finishes quest for this **mining level**
+- [ ] 🟢 Add **dme**
 - [ ] 🟢 Add **Legendary Tooltips** when fixed: https://github.com/AHilyard/LegendaryTooltips/issues/47
 - [ ] 🟢 Add **Fancier Particles** (note gitignore) when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
 - [ ] 🟢 Add **Thaumcraft Aspect Creator**
 - [ ] 🟢 Add **Bogo Sorter**
+- [ ] 🟢 Add **Fancier Block Particles**
 - [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] 📀 Remove automatic IE armor recycling to speed up game load
