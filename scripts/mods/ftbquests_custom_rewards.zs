@@ -18,7 +18,6 @@ function formatPlayTime(player as IPlayer) as string {
 }
 
 events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
-
   /**
   * Endorse player with message to whole server as its finished chapter
   */
@@ -28,6 +27,15 @@ events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
       '§r has fully completed the §n' ~ e.reward.quest.chapter.title ~
       '§r chapter after §l' ~ formatPlayTime(e.player) ~
       '§r of play!§r ```Congrats!```'
+    );
+  }
+
+  /**
+  * Conflux rewards
+  */
+  for k in 'i ii iii iv'.split(' ') {
+    if(e.reward.tags has 'conflux_' ~ k) server.commandManager.executeCommand(server,
+      '/ranks add ' ~ e.player.name ~ ' conflux_' ~ k
     );
   }
 });

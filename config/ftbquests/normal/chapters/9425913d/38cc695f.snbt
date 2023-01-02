@@ -21,11 +21,13 @@
 		title: "Conflux I"
 	}],
 	rewards: [{
-		uid: "70b903ac",
-		type: "command",
+		uid: "63777c33",
+		type: "custom",
 		title: "Give next Conflux tier role",
 		auto: "enabled",
-		command: "/ranks add @p conflux_i"
+		tags: [
+			"conflux_i"
+		]
 	},
 	{
 		uid: "f9ec55d7",
