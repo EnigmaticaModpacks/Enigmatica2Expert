@@ -110,16 +110,17 @@ import mods.jei.JEI.removeAndHide as rh;
 	[null, null, <ore:endstone>, <extrautils2:endershard>, <cyclicmagic:ender_eye_orb>, <extrautils2:endershard>, <ore:endstone>, null, null], 
 	[null, null, null, <ore:endstone>, <ore:endstone>, <ore:endstone>, null, null, null]
 	]);
-	
+
 # Skullfire Sword
  	mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
 	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
-	[null, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 68 as short}]}), null, null, <bloodmagic:lava_crystal>], 
+	[null, <tconstruct:shard>.withTag({Material: "refinedobsidian"}), null, null, <bloodmagic:lava_crystal>], 
 	[null, null, null, <randomthings:obsidianskull>, null], 
 	[null, <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), <tconstruct:cleaver>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 3, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 2, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["fierymetal", "fierymetal", "fierymetal", "fierymetal"], Modifiers: ["beheading_cleaver", "toolleveling"]}, Modifiers: [{identifier: "twilit", color: -142243, level: 1}, {identifier: "flammable", color: -142243, level: 1}, {identifier: "autosmelt", color: -142243, level: 1}, {identifier: "superheat", color: -142243, level: 1}, {identifier: "beheading_cleaver", color: 1070923, level: 2}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["twilit", "flammable", "autosmelt", "superheat", "toolleveling"]}), null, null], 
-	[null, <tconstruct:tough_tool_rod>.withTag({Material: "dragonbone"}), <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), null, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 55 as short}]})], 
+	[null, <tconstruct:tough_tool_rod>.withTag({Material: "dragonbone"}), <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), null, <tconstruct:shard>.withTag({Material: "refinedobsidian"})], 
 	[<ore:netherStar>, null, null, null, null]
 ]);
+
 		
 # Ultimate Stew
 	mods.extendedcrafting.TableCrafting.addShaped(4, <avaritia:ultimate_stew>*9, [
