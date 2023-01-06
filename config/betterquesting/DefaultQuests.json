@@ -32246,24 +32246,30 @@
               "OreDict:8": ""
             },
             "2:10": {
-              "id:8": "libvulpes:coil0",
-              "Count:3": 2,
-              "Damage:2": 4,
-              "OreDict:8": "blockCoil"
+              "id:8": "libvulpes:hatch",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
             },
             "3:10": {
+              "id:8": "libvulpes:hatch",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "4:10": {
               "id:8": "libvulpes:forgepowerinput",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "4:10": {
+            "5:10": {
               "id:8": "libvulpes:hatch",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
-            "5:10": {
+            "6:10": {
               "id:8": "libvulpes:hatch",
               "Count:3": 1,
               "Damage:2": 1,
