@@ -61,22 +61,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_overclocker_upgra
 	.addFluidInput(<liquid:ic2coolant> * 1500)
 	.build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_random_animania_spawn_egg_meat", machineName, 10)
-	.addEnergyPerTickInput(5000)
-	.addItemOutput(<animania:entity_egg_random>)
-	.addItemInput(<ore:egg>, 3)
-	.addItemInput(<cyclicmagic:sprout_seed>)
-	.addFluidInput(<liquid:meat> * 125)
-	.build();
-
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_random_animania_spawn_egg_liquiddna", machineName, 10)
-	.addEnergyPerTickInput(5000)
-	.addItemOutput(<animania:entity_egg_random>)
-	.addItemInput(<ore:egg>, 3)
-	.addItemInput(<cyclicmagic:sprout_seed>)
-	.addFluidInput(<liquid:liquiddna> * 250)
-	.build();
-
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_tier_6_crafting_seed", machineName, 20)
 	.addEnergyPerTickInput(25000)
 	.addItemOutput(<mysticalagradditions:insanium:1>)

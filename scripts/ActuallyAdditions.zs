@@ -212,14 +212,6 @@ var weight = 100+2+1+80+60+10+40+60+30+70+40+40+10+6+30+2+20+10+3+40+50+30+4+20;
 # List of items to balls of fur
 # mod:name | meta | weight
 var listCatFur as string[] = [
-"animania:blue_peacock_feather"       ,"0"   , "50" , # Blue Peacock Feather
-"animania:charcoal_peacock_feather"   ,"0"   , "50" , # Charcoal Peacock Feather
-"animania:opal_peacock_feather"       ,"0"   , "50" , # Opal Peacock Feather
-"animania:peach_peacock_feather"      ,"0"   , "50" , # Peach Peacock Feather
-"animania:purple_peacock_feather"     ,"0"   , "50" , # Purple Peacock Feather
-"animania:taupe_peacock_feather"      ,"0"   , "50" , # Taupe Peacock Feather
-"animania:white_peacock_feather"      ,"0"   , "50" , # White Peacock Feather
-"animania:wool"                       ,"3"   , "55" , # Wool (Jacob)
 "appliedenergistics2:material"        ,"3"   , "30" , # Nether Quartz Dust
 "appliedenergistics2:material"        ,"45"  , "40" , # Sky Stone Dust
 "astralsorcery:itemusabledust"        ,"0"   , "25" , # Illumination Powder

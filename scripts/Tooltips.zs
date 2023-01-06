@@ -106,22 +106,6 @@ for item in thaumcraftHintItems {
 	addDescription(<astralsorcery:blockaltar>,
 	"The Luminous Crafting Table has to be crafted near a Floating Crystal, commonly found in Marble structures throughout the world.", 
 	"See the Astral Tome for the recipe.");
-
-#CheeseArray (yes, hashtag)
-	var cheeses as IItemStack[] = [
-	<animania:friesian_cheese_wheel>,
-	<animania:holstein_cheese_wheel>,
-	<animania:jersey_cheese_wheel>,
-	<animania:goat_cheese_wheel>,
-	<animania:sheep_cheese_wheel>
-	];
-	
-# Animania Cheese
-	var cheeseMold = "Made by right clicking Animania Milk into a placed Cheese Mold.";
-	for cheese in cheeses {
-		addDescription(cheese, cheeseMold);
-	}
-	
 	
 # Bag of Holding
 	addDescription(<extrautils2:bagofholding>, "Removed due to instability.");

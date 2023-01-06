@@ -30,7 +30,6 @@ function fluidDict(ins as string[]) {
 	] as string[];
 
 	var honey = [
-		"animania_honey",
 		"for.honey",
 		"honey"
 	] as string[];
