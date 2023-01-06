@@ -42,7 +42,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<draconicevolution:draconic_core>);
 	recipes.addShapedMirrored("Draconic Core", 
 	<draconicevolution:draconic_core>, 
-	[[<ore:blockDraconium>, <ore:ingotBlutonium>, <ore:blockDraconium>],
+	[[<ore:blockDraconium>, <ore:ingotMelodicAlloy>, <ore:blockDraconium>],
 	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>], 
 	[<ore:plateElite>, <draconicevolution:dislocator>, <ore:plateElite>]]);
 
@@ -51,7 +51,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>, 
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:nether_star>, <draconicevolution:draconic_core>], 
-	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]], 
+	[<ore:ingotStellarAlloy>, <environmentaltech:pladium>, <ore:ingotStellarAlloy>]], 
 	40, <liquid:mana> * 1000);
 
 # Draconic Energy Core

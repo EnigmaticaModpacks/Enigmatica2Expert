@@ -6,7 +6,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_wyvern_core", mac
 	.addEnergyPerTickInput(50000)
 	.addItemOutput(<draconicevolution:wyvern_core>)
 	.addItemInput(<ore:shulkerShell>)
-	.addItemInput(<ore:ingotLudicrite>, 2)
+	.addItemInput(<ore:ingotStellarAlloy>, 2)
 	.addItemInput(<environmentaltech:pladium>)
 	.addItemInput(<minecraft:nether_star>)
 	.addItemInput(<draconicevolution:draconic_core> * 3)
@@ -40,11 +40,11 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_pedestal", machin
 	.addFluidInput(<liquid:coal> * 500)
 	.build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_ludicrite_block", machineName, 10)
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_stellar_block", machineName, 10)
 	.addEnergyPerTickInput(25000)
-	.addItemOutput(<bigreactors:blockmetals:4>)
+	.addItemOutput(<enderio:block_alloy_endergy:3>)
 	.addItemInput(<ore:gemAmethyst>)
-	.addItemInput(<ore:blockBlutonium>)
+	.addItemInput(<ore:blockMelodicAlloy>)
 	.addItemInput(<ore:ingotAlumite>)
 	.addItemInput(<ore:blockBlaze>)
 	.addItemInput(<botania:storage:2>)

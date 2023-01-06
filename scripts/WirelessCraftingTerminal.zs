@@ -16,7 +16,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShaped("Infinity Booster Card", 
 	<ae2wtlib:infinity_booster_card>, 
 	[[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>],
-	[<bigreactors:minerals>, <extracells:storage.component:1>, <bigreactors:minerals>], 
+	[<contenttweaker:anglesite>, <extracells:storage.component:1>, <contenttweaker:anglesite>], 
 	[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>]]);
 
 	

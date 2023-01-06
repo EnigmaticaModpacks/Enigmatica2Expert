@@ -95,7 +95,7 @@ craft.make(<astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {creativeK
   "P": <astralsorcery:itemcraftingcomponent:5>, # Parchment
   "■": <ore:blockLuminessence>,                 # Block of Luminessence
   "r": <thaumcraft:curio:1>,                    # Preserved Curiosity
-  "B": <bigreactors:minerals:1>,                # Benitoite
+  "B": <contenttweaker:benitoite>,              # Benitoite
   "#": <astralsorcery:blockinfusedwood:6>,      # Vibrant Infused Wood
   "S": <astralsorcery:itemknowledgeshare>,      # Scroll of Written Expertise
   "T": <thermalfoundation:tome_experience>,     # Tome of Knowledge

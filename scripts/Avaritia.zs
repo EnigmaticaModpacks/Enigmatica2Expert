@@ -83,7 +83,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:ingotCrystalMatrix>, <ore:ingotCosmicNeutronium>, <avaritia:cosmic_meatballs>, 
 	<avaritia:ultimate_stew>, <avaritia:endest_pearl>, <ore:record>, 
 	<draconicevolution:awakened_core>, <ore:blockDraconiumAwakened>, 
-	<ore:blockLudicrite>, <bigreactors:minerals:1>, <bigreactors:minerals>, 
+	<ore:blockStellarAlloy>, <contenttweaker:benitoite>, <contenttweaker:anglesite>, 
 	<ore:dragonEgg>, <extendedcrafting:storage:7>, <ore:blockAethium>, 
 	<ore:plateElite>, <ore:blockTitaniumAluminide>, <ore:blockTitaniumIridium>, 
 	<ore:blockEvilMetal>, <ore:blockDemonicMetal>, <ore:blockMirion>, 

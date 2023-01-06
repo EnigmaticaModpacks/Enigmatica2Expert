@@ -96,13 +96,6 @@ recipes.remove(<extrabitmanipulation:diamond_nugget>);
 # Iridium conversion
 	recipes.addShapeless(<thermalfoundation:material:135>, [<ic2:misc_resource:1>]);
 	recipes.addShapeless(<ic2:misc_resource:1>, [<thermalfoundation:material:135>]);
-	
-# Graphite conversion 
-	recipes.addShapeless("Graphite Conversion 1", <bigreactors:ingotmetals:2>, [<nuclearcraft:ingot:8>]);
-	recipes.addShapeless("Graphite Conversion 2", <nuclearcraft:ingot:8>, [<bigreactors:ingotmetals:2>]);
-	
-	recipes.addShapeless("Graphite Conversion 3", <bigreactors:blockmetals:2> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
-	recipes.addShapeless("Graphite Conversion 4", <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockmetals:2>, <bigreactors:blockmetals:2>]);
 
 # Rustic Slate
 	recipes.addShapeless("slate", 

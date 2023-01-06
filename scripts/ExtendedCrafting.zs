@@ -42,10 +42,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	(<extendedcrafting:material> * 3, 
 	<thermalfoundation:storage_alloy:2>, <nuclearcraft:alloy:3>, 15000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
-	(<extendedcrafting:material> * 3, 
-	<thermalfoundation:storage_alloy:2>, <bigreactors:blockmetals:2>, 15000);	
-	
 # Crafting Core
 	recipes.remove(<extendedcrafting:crafting_core>);
 	mods.forestry.Carpenter.addRecipe(<extendedcrafting:crafting_core>, 
@@ -88,7 +84,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
 	[<advancedrocketry:ic:2>, <draconicevolution:wyvern_core>, <ic2:iridium_reflector>, <avaritia:extreme_crafting_table>, <ic2:iridium_reflector>, <draconicevolution:wyvern_core>, <advancedrocketry:ic:2>], 
 	[<ore:crystalDraconium>, <avaritia:double_compressed_crafting_table>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <avaritia:double_compressed_crafting_table>, <ore:crystalDraconium>], 
-	[<extendedcrafting:trimmed:4>, <ore:blockLudicrite>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
+	[<extendedcrafting:trimmed:4>, <ore:blockStellarAlloy>, <avaritia:double_compressed_crafting_table>, <thermalexpansion:frame:148>, <avaritia:double_compressed_crafting_table>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>]]);
 
 # Pedestal
