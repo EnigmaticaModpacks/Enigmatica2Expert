@@ -85,8 +85,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	<draconicevolution:draconic_core>, 
 	<liquid:redstone> * 10000, 250000);
 
-
-
 # Draconic chest easier
 var dchest = <draconicevolution:draconium_chest>;
 var ingrds as IItemStack[] = [
@@ -97,7 +95,6 @@ var ingrds as IItemStack[] = [
 ] as IItemStack[];
 mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
 mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
-
 
 # Combination Crafting Alternative for Ender Energy Manipulator
 val pearl = <rftools:infused_enderpearl>;
