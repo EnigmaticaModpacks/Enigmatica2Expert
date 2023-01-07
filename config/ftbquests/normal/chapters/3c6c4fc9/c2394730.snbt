@@ -1,0 +1,29 @@
+{
+	x: 8.7d,
+	y: 11.0d,
+	text: [
+		"{q.nuclearcraft.fuel_reprocessor.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"fe3d2d42",
+		"626f1230"
+	],
+	tasks: [{
+		uid: "3f5dccde",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fuel_reprocessor"
+		}]
+	}],
+	rewards: [{
+		uid: "6eb8e4b2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

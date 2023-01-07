@@ -1,0 +1,25 @@
+{
+	x: 25.5d,
+	y: 8.1d,
+	text: [
+		"The Gluon Gun is not just a weapon but can be used as an instant mining tool. It shoots beams of Glueballs which destroy anything in its way. It uses Glueball Cells for ammo."
+	],
+	dependencies: [
+		"06b1e561",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "625c9211",
+		type: "item",
+		items: [{
+			item: "qmd:gluon_gun"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7345da6e",
+		type: "loot",
+		table: 1
+	}]
+}

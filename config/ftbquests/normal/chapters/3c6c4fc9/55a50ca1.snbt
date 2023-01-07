@@ -1,0 +1,75 @@
+{
+	title: "Collision Chamber",
+	icon: "qmd:collision_chamber_controller",
+	x: 23.7d,
+	y: 5.8d,
+	text: [
+		"Collision Chambers are where you smash particle beams into each other to create new and possibly exotic particles."
+	],
+	dependencies: [
+		"06b1e561",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "8475acd3",
+		type: "item",
+		items: [{
+			item: "qmd:collision_chamber_controller"
+		}]
+	},
+	{
+		uid: "12af92d5",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_energy_port"
+		}]
+	},
+	{
+		uid: "8b49451d",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_beam_port"
+		}],
+		count: 6L
+	},
+	{
+		uid: "f297567c",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber"
+		}],
+		count: 15L
+	},
+	{
+		uid: "1521e33a",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_beam"
+		}],
+		count: 4L
+	},
+	{
+		uid: "3a32ca59",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallTargetChamber"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallTargetChamber"
+				}
+			}
+		}],
+		count: 282L
+	}],
+	rewards: [{
+		uid: "4df07ddc",
+		type: "loot",
+		table: 1
+	}]
+}

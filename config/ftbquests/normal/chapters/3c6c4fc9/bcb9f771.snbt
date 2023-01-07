@@ -1,0 +1,28 @@
+{
+	x: 7.9d,
+	y: 12.4d,
+	text: [
+		"{q.nuclearcraft.isotope_separator.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"626f1230"
+	],
+	tasks: [{
+		uid: "87fc8978",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:separator"
+		}]
+	}],
+	rewards: [{
+		uid: "05bff2fd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

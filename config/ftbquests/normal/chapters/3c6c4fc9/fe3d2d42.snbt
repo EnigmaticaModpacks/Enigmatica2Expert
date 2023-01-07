@@ -1,0 +1,37 @@
+{
+	title: "Nuclear Waste",
+	x: 11.9d,
+	y: 11.0d,
+	text: [
+		"At the end of the reaction generated nuclear residue that can be processed to acquire new elements."
+	],
+	dependencies: [
+		"608d1a00",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "53bdfeb3",
+		type: "item",
+		title: "Fuel Waste",
+		icon: "nuclearcraft:depleted_fuel_uranium 1 9",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any depletedFuelReactor"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "depletedFuelReactor"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "6a869698",
+		type: "loot",
+		table: 1
+	}]
+}

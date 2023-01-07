@@ -1,0 +1,7 @@
+{
+	title: "NuclearCraft: Overhauled",
+	icon: "nuclearcraft:solid_fission_controller",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

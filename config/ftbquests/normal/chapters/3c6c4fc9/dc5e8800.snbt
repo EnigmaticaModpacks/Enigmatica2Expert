@@ -1,0 +1,28 @@
+{
+	x: 13.3d,
+	y: 7.5d,
+	text: [
+		"{q.nuclearcraft.du_plating.desc}"
+	],
+	dependencies: [
+		"3814ab80",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "f6b4cf4e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "6b3036d0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

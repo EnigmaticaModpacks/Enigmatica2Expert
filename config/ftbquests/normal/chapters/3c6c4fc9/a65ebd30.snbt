@@ -1,0 +1,88 @@
+{
+	title: "{q.nuclearcraft.the_chapter_is_com.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyColorGreen: 207,
+			TrophyShowsTooltip: 1b,
+			TrophyVariant: "gold",
+			TrophyItem: {
+				Count: 1b,
+				id: "nuclearcraft:rtg_plutonium",
+				Damage: 0s
+			},
+			TrophyColorBlue: 42,
+			TrophyColorRed: 222,
+			TrophyName: "§eNuclear Master Trophy§r"
+		}
+	},
+	x: 14.85d,
+	y: 3.3d,
+	text: [
+		"{q.nuclearcraft.the_chapter_is_com.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"c2394739",
+		"19441b85",
+		"6de26224",
+		"608d1a0a",
+		"bcb9f770",
+		"a67645f8",
+		"34147344",
+		"3ba07972",
+		"dc5e8809",
+		"3814ab8c",
+		"a66d9874",
+		"626f1235",
+		"acab81f7",
+		"17a47ac4",
+		"22e03e00",
+		"4355aff0",
+		"2e199dfe",
+		"78f6571f",
+		"426e6344",
+		"67bacad0",
+		"6071371c",
+		"a741066c",
+		"22336480",
+		"2ca26e11",
+		"516c659f",
+		"adde876d",
+		"da8740b4",
+		"e08f6578",
+		"cd75750d",
+		"7a6e05d3",
+		"b1bc8581",
+		"8eed8d92"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "df22a8a6",
+		type: "item",
+		team_reward: true,
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorGreen: 207,
+				TrophyShowsTooltip: 1b,
+				TrophyVariant: "gold",
+				TrophyItem: {
+					Count: 1b,
+					id: "nuclearcraft:rtg_plutonium",
+					Damage: 0s
+				},
+				TrophyColorBlue: 42,
+				TrophyColorRed: 222,
+				TrophyName: "§eNuclear Master Trophy§r"
+			}
+		}
+	},
+	{
+		uid: "c72a3644",
+		type: "command",
+		auto: "invisible",
+		command: "/say §l@p§r has fully completed the §n§eNuclearCraft§r chapter!§r ```Congrats!```"
+	}]
+}

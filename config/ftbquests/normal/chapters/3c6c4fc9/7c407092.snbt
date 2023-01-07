@@ -1,0 +1,91 @@
+{
+	title: "Decelerator",
+	icon: "qmd:decelerator_controller",
+	x: 23.7d,
+	y: 9.2d,
+	text: [
+		"Decelerators lower the energy of particles that go in them. This is especially useful for creating neutral antimatter."
+	],
+	dependencies: [
+		"06b1e561",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "14790bb6",
+		type: "item",
+		items: [{
+			item: "qmd:decelerator_controller"
+		}]
+	},
+	{
+		uid: "df63e42c",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_energy_port"
+		}]
+	},
+	{
+		uid: "279c4524",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "cb03cf0c",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam_port"
+		}],
+		count: 2L
+	},
+	{
+		uid: "5e0a1700",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam"
+		}],
+		count: 34L
+	},
+	{
+		uid: "0be629ff",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_yoke"
+		}],
+		count: 86L
+	},
+	{
+		uid: "0055d99a",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_magnet 1 2"
+		}],
+		count: 8L
+	},
+	{
+		uid: "283afbac",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallAccelerator"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallAccelerator"
+				}
+			}
+		}],
+		count: 494L
+	}],
+	rewards: [{
+		uid: "c88cdfa8",
+		type: "loot",
+		table: 1
+	}]
+}

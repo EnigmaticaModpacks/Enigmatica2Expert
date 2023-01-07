@@ -1,0 +1,28 @@
+{
+	x: 10.9d,
+	y: 7.5d,
+	text: [
+		"{q.nuclearcraft.advanced_plating.desc}"
+	],
+	dependencies: [
+		"a7410660",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "4b658256",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "fb86b390",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

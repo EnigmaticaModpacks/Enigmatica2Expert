@@ -1,0 +1,23 @@
+{
+	x: 3.2d,
+	y: 7.499999999999999d,
+	text: [
+		"{q.nuclearcraft.manufactory.desc}"
+	],
+	dependencies: [
+		"22e03e01",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "fec74f8a",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:manufactory"
+		}]
+	}],
+	rewards: [{
+		uid: "b8e089c4",
+		type: "xp_levels",
+		xp_levels: 10
+	}]
+}

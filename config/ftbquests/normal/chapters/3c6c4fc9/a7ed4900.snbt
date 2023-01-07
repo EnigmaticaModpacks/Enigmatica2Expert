@@ -1,0 +1,72 @@
+{
+	title: "Target Chamber",
+	icon: "qmd:target_chamber_controller",
+	x: 19.1d,
+	y: 9.9d,
+	text: [
+		"Target Chambers are where you smash particle beams into a fixed target of material to induce nuclear reactions."
+	],
+	dependencies: [
+		"5271b8bd",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "be791ebf",
+		type: "item",
+		items: [{
+			item: "qmd:target_chamber_controller"
+		}]
+	},
+	{
+		uid: "030bf3d3",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_beam_port"
+		}]
+	},
+	{
+		uid: "a86e6ca5",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_energy_port"
+		}]
+	},
+	{
+		uid: "4e2f979b",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_beam"
+		}]
+	},
+	{
+		uid: "32a99957",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber"
+		}]
+	},
+	{
+		uid: "950a8ac9",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallTargetChamber"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallTargetChamber"
+				}
+			}
+		}],
+		count: 95L
+	}],
+	rewards: [{
+		uid: "2956b83b",
+		type: "loot",
+		table: 1
+	}]
+}

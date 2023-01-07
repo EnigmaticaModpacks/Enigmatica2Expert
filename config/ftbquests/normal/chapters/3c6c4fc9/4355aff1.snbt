@@ -1,0 +1,39 @@
+{
+	title: "{q.nuclearcraft.voltatic_pile.name}",
+	x: 7.0d,
+	y: 5.8d,
+	text: [
+		"{q.nuclearcraft.voltatic_pile.desc}"
+	],
+	dependencies: [
+		"a7410660",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "9969e5c3",
+		type: "item",
+		items: [{
+			id: "nuclearcraft:voltaic_pile_basic",
+			tag: {
+				maxTransfer: 80000,
+				capacity: 1600000,
+				energy: 0,
+				energyStorage: {
+					energy: 0L,
+					capacity: 1600000L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3904822d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}
