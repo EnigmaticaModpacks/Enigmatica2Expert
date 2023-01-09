@@ -82,7 +82,7 @@ print("--- loading Endergy.zs ---");
 	<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemshiftingstar>, 
 	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcoloredlens:6>, 
 	<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:10>, <bloodmagic:points_upgrade>,
-	<bloodmagic:slate:4>, #<astralsorcery:itemcelestialcrystal>.anyDamage(),
+	<bloodmagic:slate:4>, <astralsorcery:itemcelestialcrystal>.anyDamage(),
 	#<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}), 
 	<thaumcraft:mechanism_complex>]);
 	
