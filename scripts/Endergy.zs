@@ -79,16 +79,15 @@ print("--- loading Endergy.zs ---");
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:benitoite>, 100000000, 1000000, <botania:manaresource:5>, 
 	[<botania:manaresource:9>, <botania:manaresource:1>, <botania:manaresource:7>, 
 	<botania:pylon:1>, <botania:manaresource:2>, <botania:manaresource:8>, 
-	<astralsorcery:itemcraftingcomponent:2>, #<astralsorcery:itemshiftingstar>.withTag({}), 
+	<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemshiftingstar>, 
 	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcoloredlens:6>, 
 	<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:10>, <bloodmagic:points_upgrade>,
-	<bloodmagic:slate:4>, #<astralsorcery:itemcelestialcrystal>.withTag({}),
+	<bloodmagic:slate:4>, #<astralsorcery:itemcelestialcrystal>.anyDamage(),
 	#<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "vitium"}]}), 
 	<thaumcraft:mechanism_complex>]);
 	
 	
 # Blutonium Block // Melodic Block
-//	recipes.remove(<minecraft:dirt>);
 	recipes.addShapedMirrored("Melodic Block", 
 	<enderio:block_alloy_endergy:2>, 
 	[[<ore:blockMithril>, <ore:blockCobalt>, <ore:blockMithril>],
@@ -96,7 +95,6 @@ print("--- loading Endergy.zs ---");
 	[<ore:depletedFuelLEU235>, <actuallyadditions:block_crystal_empowered:1>, <ore:depletedFuelLEU235>]]);
 
 # Ludicrite Block // Stellar Block
-//	recipes.remove(<minecraft:blockmetals:4>);
 	mods.forestry.Carpenter.addRecipe(<enderio:block_alloy_endergy:3>, 
 	[[<ore:gemAmethyst>, <ore:blockBlaze>, <ore:gemAmethyst>],
 	[<ore:ingotAlumite>, <enderio:block_alloy_endergy:2>, <ore:ingotAlumite>], 
