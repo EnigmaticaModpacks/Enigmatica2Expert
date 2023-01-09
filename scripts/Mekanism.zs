@@ -131,7 +131,7 @@ for input, output in itemsToUnify {
 	<mekanism:machineblock2:8>, 
 	[[ultimateGasTank, <extrautils2:suncrystal>, ultimateGasTank],
 	[<mekanismgenerators:reactor:2>, <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>], 
-	[<ore:circuitUltimate>, <ic2:lapotron_crystal>.anyDamage(), <ore:circuitUltimate>]]);
+	[<ore:circuitUltimate>, <ic2:lapotron_crystal:*>, <ore:circuitUltimate>]]);
 
 # Gas-burning generator
 	recipes.remove(<mekanismgenerators:generator:3>);

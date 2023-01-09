@@ -84,7 +84,7 @@ for slab in <ore:slabWood>.items {
 	100000000, 1000000, 
 	<thermalexpansion:frame:132>, 
 	[<gendustry:genetics_processor>, <extrautils2:ingredients:5>, <ic2:plate:16>,
-	<ic2:lapotron_crystal>.anyDamage(), <forestry:thermionic_tubes:12>, <forestry:crafting_material:1>,
+	<ic2:lapotron_crystal:*>, <forestry:thermionic_tubes:12>, <forestry:crafting_material:1>,
 	<mekanismgenerators:reactor:1>, <environmentaltech:structure_frame_1>, <rftools:infused_diamond>,
 	<mekanism:controlcircuit:3>, <thermalfoundation:material:295>, <environmentaltech:litherite_crystal>,
 	<nuclearcraft:part:6>, <nuclearcraft:gem:1>]);
