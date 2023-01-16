@@ -1,0 +1,11 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#The materials that should not have sagmill material to dust recipes added.
+	materialToDustMaterialBlacklist = []
+	#The materials that should not have sagmill block to dust recipes added.
+	blockToDustMaterialBlacklist = []
+

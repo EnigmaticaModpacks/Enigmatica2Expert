@@ -1,0 +1,11 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#The materials that should not have smelting bonus ore to rare earth recipes added.
+	oreMaterialBlacklist = []
+	#The materials that should not have smelting bonus cluster to rare earth recipes added.
+	clusterMaterialBlacklist = []
+

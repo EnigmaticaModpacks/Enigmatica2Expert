@@ -1,0 +1,62 @@
+
+#Configurations related to materials.
+[materials]
+	#Should the mod find ingot materials with ores.
+	ingot = true
+	#Should the mod find gem materials with ores.
+	gem = true
+	#Should the mod find crystal materials with ores.
+	crystal = true
+	#Should the mod find dust materials with ores.
+	dust = true
+	#Should the mod find ingot materials without ores.
+	ingotPlain = true
+	#Should the mod find gem materials without ores.
+	gemPlain = true
+	#Should the mod find crystal materials without ores.
+	crystalPlain = true
+
+#Configurations related to material overrides.
+[materialOverrides]
+	#List of materials that should be gems.
+	gem = ["Coal", "Diamond", "Emerald", "Lapis", "Prismarine", "Quartz"]
+	#List of materials that should be crystals.
+	crystal = []
+	#List of materials that should be dusts.
+	dust = ["Redstone"]
+
+#Configurations related to item selection.
+[itemSelection]
+	#List of mods that are preferred when selecting items in recipes.
+	preferredMods = ["minecraft","thermalfoundation","immersiveengineering","ic2","mekanism","appliedenergistics2","actuallyadditions","tconstruct","jaopca","chisel"]
+
+#Configurations related to the ore dictionary.
+[oredict]
+	#List of oredict names that should not be added.
+	blacklist = []
+	#List of oredict modules that should not be registered.
+	moduleBlacklist = []
+	#List of custom oredict entries to add. Format: <mod:item@meta=oredict>
+	custom = []
+
+#Configurations related to recipes.
+[recipes]
+	#List of recipes that should not be added.
+	blacklist = []
+	#List of recipes by regex that should not be added.
+	regexBlacklist = []
+
+#Configurations related to color generation.
+[colors]
+	#The gamma value used to blend colors.
+	gammaValue = 2.0
+	#Should colors of all materials be reset on next startup.
+	resetColors = false
+
+#Configurations related to material localization.
+[materialLocalization]
+	#Should the mod check for material localization updates.
+	checkL10nUpdates = true
+	#The update interval of localization files in days.
+	updateInterval = 3.0
+
