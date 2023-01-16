@@ -28,7 +28,7 @@
 #Configurations related to item selection.
 [itemSelection]
 	#List of mods that are preferred when selecting items in recipes.
-	preferredMods = ["minecraft","thermalfoundation","immersiveengineering","ic2","mekanism","appliedenergistics2","actuallyadditions","tconstruct","jaopca","chisel"]
+	preferredMods = ["minecraft", "thermalfoundation", "immersiveengineering", "ic2", "mekanism", "appliedenergistics2", "actuallyadditions", "tconstruct", "jaopca", "chisel"]
 
 #Configurations related to the ore dictionary.
 [oredict]
