@@ -271,7 +271,51 @@ scripts.process.crush(<enderio:item_material:76>, <enderio:block_holy_fog>, "exc
 scripts.process.alloy([<minecraft:glowstone_dust>, <minecraft:clay_ball>], <enderio:item_material:76> * 2, "except: alloySmelter");
 
 # Dark Steel Upgrade Recycling
-	mods.nuclearcraft.decay_hastener.addRecipe([<enderio:item_dark_steel_upgrade:1>.anyDamage(), <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
+var upgradeArray = [
+	"enderio:anvil",
+	"enderio:anvil1",
+	"enderio:anvil2",
+	"enderio:carpet",
+	"enderio:depth",
+	"enderio:direct",
+	"enderio:elytra",
+	"enderio:energyupgrade",
+	"enderio:energyupgrade1",
+	"enderio:energyupgrade2",
+	"enderio:energyupgrade3",
+	"enderio:energyupgrade4",
+	"enderio:glide",
+	"enderio:hoe",
+	"enderio:inv",
+	"enderio:inv1",
+	"enderio:inv2",
+	"enderio:jumpboost1",
+	"enderio:jumpboost2",
+	"enderio:jumpboost3",
+	"enderio:nightvision",
+	"enderio:padding",
+	"enderiomachines:solar",
+	"enderiomachines:solar1",
+	"enderiomachines:solar2",
+	"enderiomachines:solar3",
+	"enderio:sounddetector",
+	"enderio:speedboost1",
+	"enderio:speedboost2",
+	"enderio:speedboost3",
+	"enderio:spoon",
+	"enderio:step_assist",
+	"enderio:swim",
+	"enderio:tnt",
+	"enderio:tnt1",
+	"enderio:tnt2",
+	"enderio:tnt3",
+	"enderio:tntn4",
+	"enderio:travel"] as string[];
+var allUpgrades = <*>.only(function (item) { return false; }); // An ingredient that never matches, used as default to mean "nothing"
+for upgrade in upgradeArray {
+  allUpgrades = allUpgrades | <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu" : (upgrade)}) | <enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu" : (upgrade),"enderio:enabled": 1 as byte});
+}
+	mods.nuclearcraft.decay_hastener.addRecipe([allUpgrades, <enderio:item_dark_steel_upgrade>]);
 
 # Dark Steel Upgrade Expensive, Thermal
 	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
