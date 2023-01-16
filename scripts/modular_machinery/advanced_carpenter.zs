@@ -6,7 +6,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_wyvern_core", mac
 	.addEnergyPerTickInput(50000)
 	.addItemOutput(<draconicevolution:wyvern_core>)
 	.addItemInput(<ore:shulkerShell>)
-	.addItemInput(<ore:ingotLudicrite>, 2)
+	.addItemInput(<ore:ingotStellarAlloy>, 2)
 	.addItemInput(<environmentaltech:pladium>)
 	.addItemInput(<minecraft:nether_star>)
 	.addItemInput(<draconicevolution:draconic_core> * 3)
@@ -40,11 +40,11 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_pedestal", machin
 	.addFluidInput(<liquid:coal> * 500)
 	.build();
 
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_ludicrite_block", machineName, 10)
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_stellar_block", machineName, 10)
 	.addEnergyPerTickInput(25000)
-	.addItemOutput(<bigreactors:blockmetals:4>)
+	.addItemOutput(<enderio:block_alloy_endergy:3>)
 	.addItemInput(<ore:gemAmethyst>)
-	.addItemInput(<ore:blockBlutonium>)
+	.addItemInput(<ore:blockMelodicAlloy>)
 	.addItemInput(<ore:ingotAlumite>)
 	.addItemInput(<ore:blockBlaze>)
 	.addItemInput(<botania:storage:2>)
@@ -59,22 +59,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_overclocker_upgra
 	.addItemInput(<ore:circuitBasic>)
 	.addItemInput(<ic2:cable> * 1)
 	.addFluidInput(<liquid:ic2coolant> * 1500)
-	.build();
-
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_random_animania_spawn_egg_meat", machineName, 10)
-	.addEnergyPerTickInput(5000)
-	.addItemOutput(<animania:entity_egg_random>)
-	.addItemInput(<ore:egg>, 3)
-	.addItemInput(<cyclicmagic:sprout_seed>)
-	.addFluidInput(<liquid:meat> * 125)
-	.build();
-
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_random_animania_spawn_egg_liquiddna", machineName, 10)
-	.addEnergyPerTickInput(5000)
-	.addItemOutput(<animania:entity_egg_random>)
-	.addItemInput(<ore:egg>, 3)
-	.addItemInput(<cyclicmagic:sprout_seed>)
-	.addFluidInput(<liquid:liquiddna> * 250)
 	.build();
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_tier_6_crafting_seed", machineName, 20)

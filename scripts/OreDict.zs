@@ -266,9 +266,6 @@ for item in pressurePlates {
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:quartz_block>);
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:quartz_pillar>);
 	<ore:blockCertusQuartz>.add(<appliedenergistics2:chiseled_quartz_block>);
-	
-# Plutonium
-	//<ore:ingotPlutonium>.remove(<bigreactors:ingotmetals:3>);
 
 # Iridium
 	<ore:ingotIridium>.add(<ic2:misc_resource:1>);
@@ -674,18 +671,6 @@ for item in pressurePlates {
 	recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [Trapdoor]);
 	recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
-
-	
-# Animania peacock feathers
-<ore:peacockFeathers>.add([
-    <animania:blue_peacock_feather>,
-    <animania:white_peacock_feather>,
-    <animania:charcoal_peacock_feather>,
-    <animania:opal_peacock_feather>,
-    <animania:peach_peacock_feather>,
-    <animania:purple_peacock_feather>,
-    <animania:taupe_peacock_feather>
-]);
 
 # Rearrange items in Dye Oredict to better integration
 # with AA [Lens Of Color]

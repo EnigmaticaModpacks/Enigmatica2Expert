@@ -24,7 +24,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 	
 	val caveloot = [
 	<environmentaltech:litherite_crystal>,
-	<bigreactors:ingotmetals:3>,
+	<enderio:item_alloy_endergy_ingot:2>,
 	<ic2:nuclear:7>,
 	<minecraft:gold_block>,
 	<thermalfoundation:material:70>,

@@ -9,7 +9,6 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 	recipes.addShaped("Superwrench", 
 	<morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "morphtool:data": {
 	rftools: { id: "rftools:smartwrench", Count: 1 as byte, Damage: 0 as short}, 
-	bigreactors: { id: "bigreactors:wrench", Count: 1 as byte, Damage: 0 as short}, 
 	botania: { id: "botania:twigwand", Count: 1 as byte, tag: {color1: 9, color2: 9}, Damage: 0 as short}, 
 	enderio: { id: "enderio:item_yeta_wrench", Count: 1 as byte, Damage: 0 as short}, 
 	thermalfoundation: { id: "thermalfoundation:wrench", Count: 1 as byte, Damage: 0 as short}, 

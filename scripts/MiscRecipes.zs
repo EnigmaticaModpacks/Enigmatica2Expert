@@ -72,19 +72,6 @@ recipes.remove(<extrabitmanipulation:diamond_nugget>);
 	recipes.addShapeless("Blood Magic Guide", 
 	<guideapi:bloodmagic-guide>, 
 	[<minecraft:book>,<bloodmagic:soul_snare>]);
-	
-# Animania Random Animal Spawn Egg
-	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
-	[[null , <cyclicmagic:sprout_seed>, null],
-	[<ore:egg>,<ore:egg>,<ore:egg>],
-	[null, <cyclicmagic:sprout_seed>, null]], 
-	40, <liquid:meat> * 500);
-	
-	mods.forestry.Carpenter.addRecipe(<animania:entity_egg_random>, 
-	[[null , <cyclicmagic:sprout_seed>, null],
-	[<ore:egg>,<ore:egg>,<ore:egg>],
-	[null, <cyclicmagic:sprout_seed>, null]], 
-	40, <liquid:liquiddna> * 250);
 
 # OpenBlocks Glider
 	recipes.remove(<openblocks:generic>);
@@ -102,11 +89,6 @@ recipes.remove(<extrabitmanipulation:diamond_nugget>);
 	[<openblocks:generic>, <forestry:oak_stick>, <openblocks:generic>], 
 	[null, null, null]]);
 	
-# Mud conversion
-	recipes.remove(<animania:block_mud>);
-	recipes.addShapeless("BoP Mud", <biomesoplenty:mud>, [<animania:block_mud>]);
-	recipes.addShapeless("Animania Mud", <animania:block_mud>, [<biomesoplenty:mud>]);
-	
 # Silicon conversion
 	recipes.addShapeless(<enderio:item_material:5> * 2, [<libvulpes:productingot:3>, <libvulpes:productingot:3>]);
 	recipes.addShapeless(<libvulpes:productingot:3>, [<enderio:item_material:5>]);
@@ -114,13 +96,6 @@ recipes.remove(<extrabitmanipulation:diamond_nugget>);
 # Iridium conversion
 	recipes.addShapeless(<thermalfoundation:material:135>, [<ic2:misc_resource:1>]);
 	recipes.addShapeless(<ic2:misc_resource:1>, [<thermalfoundation:material:135>]);
-	
-# Graphite conversion 
-	recipes.addShapeless("Graphite Conversion 1", <bigreactors:ingotmetals:2>, [<nuclearcraft:ingot:8>]);
-	recipes.addShapeless("Graphite Conversion 2", <nuclearcraft:ingot:8>, [<bigreactors:ingotmetals:2>]);
-	
-	recipes.addShapeless("Graphite Conversion 3", <bigreactors:blockmetals:2> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
-	recipes.addShapeless("Graphite Conversion 4", <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockmetals:2>, <bigreactors:blockmetals:2>]);
 
 # Rustic Slate
 	recipes.addShapeless("slate", 
