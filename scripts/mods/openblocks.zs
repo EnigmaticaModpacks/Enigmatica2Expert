@@ -7,7 +7,7 @@ scripts.category.tooltip_utils.desc.tooltip(<openblocks:tank>);
 scripts.category.tooltip_utils.desc.tooltip(<openblocks:builder_guide>, 'redstone.need');
 scripts.category.tooltip_utils.desc.tooltip(<openblocks:guide>, 'redstone.need');
 
-val o = utils.tryCatch("scalingfeast:exhaustingingot", <tconstruct:ingots:5>);
+val o = <ore:ingotAlubrass>;
 
 for i in 0 to 16 {
   val item1 = itemUtils.getItem("openblocks:elevator", i);

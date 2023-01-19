@@ -465,15 +465,6 @@
 		count: 16
 	},
 	{
-		item: "scalingfeast:exhaustingapple"
-	},
-	{
-		item: "scalingfeast:heartyshank"
-	},
-	{
-		item: "scalingfeast:ironapple"
-	},
-	{
 		icon: "tconstruct:edible 8 33",
 		item: "tconstruct:edible 1 33",
 		count: 8

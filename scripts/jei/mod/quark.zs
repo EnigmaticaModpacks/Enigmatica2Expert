@@ -49,7 +49,6 @@ add({[              <thaumcraft:metal_brass:*>, glyphs['1']] : [null, <minecraft
 add({[  <endreborn:block_decorative_lormyte:*>, glyphs['1']] : [null, <minecraft:potion>.withTag({Potion: "potioncore:step_up"})]});
 add({[          <tconstruct:slime_congealed:0>, glyphs['2']] : [<minecraft:potion>.withTag({Potion: "potioncore:recoil"})]});
 add({[              <thaumcraft:amber_block:*>, glyphs['2']] : [<minecraft:potion>.withTag({Potion: "potioncore:health_boost"})]});
-add({[        <scalingfeast:exhaustingblock:*>, glyphs['2']] : [<minecraft:potion>.withTag({Potion: "scalingfeast:hungerplus"})]});
 add({[    <twilightforest:knightmetal_block:*>, glyphs['2']] : [null, <minecraft:potion>.withTag({Potion: "potioncore:repair"})]});
 add({[           <twilightforest:huge_stalk:*>, glyphs['2']] : [null, <minecraft:potion>.withTag({Potion: "cyclicmagic:slowfall"})]});
 add({[        <twilightforest:block_storage:4>, glyphs['3']] : [<minecraft:potion>.withTag({Potion: "potioncore:magic_focus"})]});

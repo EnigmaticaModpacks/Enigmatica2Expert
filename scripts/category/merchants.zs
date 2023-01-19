@@ -393,8 +393,6 @@ val merchData = {
   //       [E*14, <conarm:travel_potion>],
   //     ],
   //     4: [
-  //       [E*10, <thermalinnovation:injector>, getInjector("scalingfeast:metabolism")],
-  //       [E*10, <thermalinnovation:injector>, getInjector("scalingfeast:hungerplus")],
   //       [E*10, <thermalinnovation:injector>, getInjector("quark:danger_sight")],
   //       [E*10, <thermalinnovation:injector>, getInjector("quark:haste")],
   //       [E*10, <thermalinnovation:injector>, getInjector("potioncore:slow_fall")],

@@ -118,7 +118,7 @@ COMMON:
 	mysticalagriculture:prudentium_apple // Prudentium Apple
 	bhc:relic_apple 4 // Relic Apple
 	thaumcraft:curio:5 4 // Twisted Curiosity
-	scalingfeast:exhaustingapple 5 // Exhausting Apple
+	tconstruct:materials:19 5 // Mending Moss
 	cyclicmagic:apple // Apple Sprout
 	thaumcraft:lamp_arcane // Arcane Lamp
 	3:
@@ -137,7 +137,7 @@ COMMON:
 	bloodmagic:soul_snare // Rudimentary Snare
 	5:
 	mysticalagriculture:supremium_apple // Supremium Apple
-	scalingfeast:enchantedironapple // Iron Apple
+	tinkersaddons:modifier_item:3 // Diamond Toolkit
 	thaumcraft:curio:3 6 // Eldritch Curiosity
 	thaumadditions:zeith_fur 3 // Blue Wolf Fur
 	minecraft:totem_of_undying 3 // Totem of Undying

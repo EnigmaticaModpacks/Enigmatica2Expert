@@ -975,8 +975,6 @@ infinFurnace(utils.get("rustic:dust_tiny_iron"), utils.get("minecraft:iron_nugge
 infinFurnace(utils.get("rustic:honeycomb"), utils.get("rustic:beeswax"));
 ##infinFurnace(utils.get("rustic:log", 1), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("rustic:log"), utils.get("minecraft:coal", 1));
-infinFurnace(utils.get("scalingfeast:exhaustingore", 1), utils.get("scalingfeast:exhaustingingot"));
-infinFurnace(utils.get("scalingfeast:exhaustingore"), utils.get("scalingfeast:exhaustingingot"));
 infinFurnace(utils.get("scalinghealth:heartdust"), utils.get("bhc:red_heart"));
 infinFurnace(utils.get("tcomplement:scorched_block", 1), utils.get("tcomplement:scorched_block"));
 //infinFurnace(utils.get("tcomplement:scorched_block", 3), utils.get("tcomplement:scorched_block", 4));

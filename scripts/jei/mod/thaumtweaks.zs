@@ -161,7 +161,6 @@ COMMON: [[
     <mysticalagriculture:prudentium_apple>,
     <bhc:relic_apple> * 4,
     <thaumcraft:curio:5> * 4,
-    utils.get('scalingfeast:exhaustingapple', 0, 5),
     <cyclicmagic:apple>,
     <thaumcraft:lamp_arcane>,
   ], [
@@ -180,7 +179,6 @@ COMMON: [[
     <bloodmagic:soul_snare>,
   ], [
     <mysticalagriculture:supremium_apple>,
-    <scalingfeast:enchantedironapple>,
     <thaumcraft:curio:3> * 6,
     <thaumadditions:zeith_fur> * 3,
     <minecraft:totem_of_undying> * 3,

@@ -3,7 +3,7 @@
 # [Relic Apple]*2 from [Exhausting Apple][+2]
 craft.reshapeless(<bhc:relic_apple> * 2, "q§M", {
   "q": <ore:quicksilver>,              # Quicksilver
-  "§": utils.tryCatch("scalingfeast:exhaustingapple", <minecraft:apple>), # Exhausting Apple
+  "§": <ore:nuggetSilver>,
   "M": <extrautils2:magicapple>,       # Magical Apple
 });
 

@@ -78,7 +78,7 @@ craft.make(<quark:backpack>, ["pretty",
   "  ▬  ",
   "J / J",
   "J J J"], {
-  "▬": utils.tryCatch("scalingfeast:exhaustingingot", <tconstruct:ingots:5>), # Exhausting Ingot
+  "▬": <ore:ingotAlubrass>,
   "J": <ore:stoneJasper>,     # Jasper
   "/": <quark:iron_rod>,      # Iron Rod
 });
