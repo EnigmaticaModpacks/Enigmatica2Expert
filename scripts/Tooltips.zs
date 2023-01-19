@@ -241,7 +241,7 @@ for item in thaumcraftHintItems {
 # Thermal Expansion Resonant Machine Frame (Full)
 	addDescription(<thermalexpansion:frame:148>, mil100);
 	
-# Extreme Reactors Crystals
+# Old Extreme Reactors Crystals
 	<contenttweaker:anglesite>.displayName = "Anglesite";
 	<contenttweaker:benitoite>.displayName = "Benitoite";
 	
@@ -594,4 +594,4 @@ for item in thaumcraftHintItems {
 <forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
 
 # Corium Bucket
-<forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.green("Obtainable by melting down a Fission Reactor"));
+<forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.red("Obtainable by melting down a Fission Reactor"));
