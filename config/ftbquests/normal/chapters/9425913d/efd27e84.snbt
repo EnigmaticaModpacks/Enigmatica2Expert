@@ -25,9 +25,9 @@
 		uid: "62619d1a",
 		type: "custom",
 		title: "Give next Conflux tier role",
-		auto: "enabled",
 		tags: [
 			"conflux_ii"
-		]
+		],
+		auto: "enabled"
 	}]
 }

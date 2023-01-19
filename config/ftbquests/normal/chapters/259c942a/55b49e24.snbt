@@ -13,7 +13,9 @@
 		items: [{
 			item: "immersiveengineering:graphite_electrode"
 		}],
-		count: 3L
+		count: 3L,
+		ignore_damage: true,
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "05c233af",

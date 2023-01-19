@@ -242,6 +242,166 @@
 		icon: "engineersdecor:gas_concrete_wall 64",
 		item: "engineersdecor:gas_concrete_wall",
 		count: 64
+	},
+	{
+		item: {
+			id: "appliedenergistics2:color_applicator",
+			tag: {
+				internalCurrentPower: 20000.0d,
+				internalMaxPower: 20000.0d,
+				color: {
+					id: "minecraft:snowball",
+					Count: 1,
+					Damage: 0s
+				},
+				"#0": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 10s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@0": 192,
+				it: 16s,
+				ic: 3072,
+				"#1": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 7s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@1": 192,
+				"#2": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 13s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@2": 192,
+				"#3": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 2s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@3": 192,
+				"#4": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 4s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@4": 192,
+				"#5": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 12s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@5": 192,
+				"#6": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 9s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@6": 192,
+				"#7": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 8s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@7": 192,
+				"#8": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 1s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@8": 192,
+				"#9": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 6s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@9": 192,
+				"#10": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 11s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@10": 192,
+				"#11": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 15s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@11": 192,
+				"#12": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 3s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@12": 192,
+				"#13": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 0s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@13": 192,
+				"#14": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 5s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@14": 192,
+				"#15": {
+					id: "appliedenergistics2:paint_ball",
+					Count: 1,
+					Damage: 14s,
+					Cnt: 192L,
+					Req: 0L,
+					Craft: 0b
+				},
+				"@15": 192
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "decor",

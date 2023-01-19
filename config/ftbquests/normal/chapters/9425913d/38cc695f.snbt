@@ -24,10 +24,10 @@
 		uid: "63777c33",
 		type: "custom",
 		title: "Give next Conflux tier role",
-		auto: "enabled",
 		tags: [
 			"conflux_i"
-		]
+		],
+		auto: "enabled"
 	},
 	{
 		uid: "f9ec55d7",
