@@ -95,6 +95,27 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	[[<ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>],
 	[<enderio:block_solar_panel:2>, <enderio:block_solar_panel:2>, <enderio:block_solar_panel:2>],
 	[<enderio:item_basic_capacitor:2>, <ore:darkFusedQuartz>, <enderio:item_basic_capacitor:2>]]);
+	# Tier 5
+	recipes.remove(<enderio:block_solar_panel:4>);
+	recipes.addShaped("EnderIO Solar Panel4", 
+	<enderio:block_solar_panel:3>, 
+	[[<ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>, <ore:ingotVibrantAlloy>],
+	[<enderio:block_solar_panel:2>, <thermalexpansion:frame:128>, <enderio:block_solar_panel:2>],
+	[<enderio:item_basic_capacitor:2>, <ore:darkFusedQuartz>, <enderio:item_basic_capacitor:2>]]);
+	# Tier 6
+	recipes.remove(<enderio:block_solar_panel:5>);
+	recipes.addShaped("EnderIO Solar Panel5", 
+	<enderio:block_solar_panel:3>, 
+	[[<ore:ingotCrystaltine>, <ore:ingotCrystaltine>, <ore:ingotCrystaltine>],
+	[<enderio:block_solar_panel:2>, <thermalexpansion:frame:129>, <enderio:block_solar_panel:2>],
+	[<enderio:item_capacitor_crystalline>, <ore:darkFusedQuartz>, <enderio:item_capacitor_crystalline>]]);
+	# Tier 7
+	recipes.remove(<enderio:block_solar_panel:6>);
+	recipes.addShaped("EnderIO Solar Panel6", 
+	<enderio:block_solar_panel:3>, 
+	[[<ore:ingotMelodicAlloy>, <ore:ingotMelodicAlloy>, <ore:ingotMelodicAlloy>],
+	[<enderio:block_solar_panel:2>, <thermalexpansion:frame:130>, <enderio:block_solar_panel:2>],
+	[<enderio:item_capacitor_melodic>, <ore:darkFusedQuartz>, <enderio:item_capacitor_melodic>]]);
 
 # Dimensional Transceiver
 	recipes.remove(<enderio:block_transceiver>);
