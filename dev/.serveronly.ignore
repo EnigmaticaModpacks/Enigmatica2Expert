@@ -87,6 +87,8 @@ mods/*.jar
 !mods/betterbiomeblend-*
 !mods/CraftPresence-*
 !mods/JEI-Utilities-*
+!mods/ChatFlow-*
+!mods/startuptimer-*
 
 #Not sure
 # !mods/gendustryjei*
