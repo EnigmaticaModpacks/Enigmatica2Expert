@@ -1,4 +1,4 @@
-#modloaded ltt
+#modloaded lttweaker
 
 #priority 3000
 
