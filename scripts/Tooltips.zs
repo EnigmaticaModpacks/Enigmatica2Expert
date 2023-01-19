@@ -594,4 +594,4 @@ for item in thaumcraftHintItems {
 <forge:bucketfilled>.withTag({FluidName: "blockfluidantimatter", Amount: 1000}).addTooltip(format.aqua("To obtain strike Life Essense with lightning"));
 
 # Corium Bucket
-<forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.green("Obtainable by melting down a Fission Reactor"));
+<forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.red("Obtainable by melting down a Fission Reactor"));
