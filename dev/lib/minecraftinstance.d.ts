@@ -88,7 +88,7 @@ interface InstalledFile {
   gameVersionDateReleased: string;
   gameId: number;
   isServerPack: boolean;
-  FileNameOnDisk: string;
+  fileNameOnDisk: string;
   sortableGameVersion?: SortableGameVersion[];
   renderCacheId?: number;
   packageFingerprintId?: number;

@@ -1,6 +1,8 @@
 [main/ERROR] [mixin]: Critical problem: mixins.tweaks.realmsbutton.json:UTRealmsButtonMixin target net.minecraft.client.gui.GuiMainMenu was loaded too early.
+[CraftPresence/ERROR] [craftpresence]: Asset name "Enigmatica2Expert-Extended" does not exist, using cached icon ""...
+[CraftPresence/ERROR] [craftpresence]: Asset name "Enigmatica2Expert-Extended" does not exist, using cached icon ""...
 [Client thread/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.AttachCapabilitiesEvent@xxxxxxxx:
-[Client thread/ERROR] [FML]: Index: 64 Listeners:
+[Client thread/ERROR] [FML]: Index: 63 Listeners:
 [Client thread/ERROR] [FML]: 0: HIGHEST
 [Client thread/ERROR] [FML]: 1: ASM: INSTANCE onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 2: NORMAL
@@ -15,85 +17,83 @@
 [Client thread/ERROR] [FML]: 11: ASM: class c4.colytra.common.capabilities.CapabilityColytraFlying$EventHandler attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 12: ASM: net.darkhax.darkutils.features.charms.FeatureCharms@xxxxxxxx onItemCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 13: ASM: class xt9.deepmoblearning.common.events.CapabilityHandler attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 14: ASM: class nl.requios.effortlessbuilding.EventHandler attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 15: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToWorld(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 16: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 17: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToVillage(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 18: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 19: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 20: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToTE(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 21: ASM: class me.towdium.jecalculation.JecaCapability onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 22: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachItemCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 23: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachEntityCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 24: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 25: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 14: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 15: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 16: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 17: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToWorld(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 18: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToTE(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 19: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToVillage(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 20: ASM: class me.towdium.jecalculation.JecaCapability onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 21: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachItemCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 22: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachEntityCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 23: ASM: class org.squiddev.plethora.integration.computercraft.IntegrationComputerCraft attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 24: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 25: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 26: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 27: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 28: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 29: ASM: class org.squiddev.plethora.integration.computercraft.IntegrationComputerCraft attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 30: ASM: class yako.portabledrill.proxy.CommonProxy attachItemCapabilites(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 31: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 32: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 33: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 34: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesTiles(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 35: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesGolems(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 36: ASM: class com.tiviacz.travelersbackpack.handlers.PlayerEventHandler attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 27: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 28: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 29: ASM: class yako.portabledrill.proxy.CommonProxy attachItemCapabilites(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 30: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 31: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 32: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 33: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesTiles(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 34: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesGolems(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 35: ASM: class com.tiviacz.travelersbackpack.handlers.PlayerEventHandler attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 36: ASM: class youyihj.zenutils.impl.capability.ZenWorldCapabilityHandler attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 37: ASM: class youyihj.zenutils.impl.capability.ZenWorldCapabilityHandler attachToWorld(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 38: ASM: class youyihj.zenutils.impl.capability.ZenWorldCapabilityHandler attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 39: ASM: class com.cazsius.solcarrot.tracking.CapabilityHandler attachPlayerCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 40: ASM: baubles.common.event.EventHandlerEntity@xxxxxxxx attachCapabilitiesPlayer(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 41: ASM: com.enderio.core.common.tweaks.BottleFluidCapability$BottleTweak@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 42: ASM: class twilightforest.capabilities.CapabilityList attachEntityCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 43: ASM: class com.animania.addons.extra.common.events.CapabilityLoadHandler onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 44: ASM: com.brandon3055.draconicevolution.handlers.DEEventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 45: ASM: vazkii.quark.vanity.feature.BoatSails@xxxxxxxx onBoatGenesis(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 46: ASM: blusunrize.immersiveengineering.common.util.compat.BaublesHelper@xxxxxxxx onCapabilitiesAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 47: ASM: zmaster587.advancedRocketry.capability.CapabilityProtectiveArmor@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 48: ASM: arekkuusu.betterhurttimer.api.capability.HurtCapability$Handler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 49: ASM: net.smileycorp.bloodsmeltery.common.BloodSmelteryEvents@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 50: ASM: tschipp.carryon.common.capabilities.event.PositionCommonEvents@xxxxxxxx onAttachCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 51: ASM: net.darkhax.darkutils.features.shulkerpearl.ShulkerDataHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 52: ASM: xyz.phanta.tconevo.init.TconEvoEntityAttrs@xxxxxxxx onAttachEntityCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 53: ASM: xyz.phanta.fluiddrawers.handler.ControllerFluidCapabilityHandler@xxxxxxxx onTileCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 54: ASM: class git.jbredwards.fluidlogged_api.mod.common.capability.FluidStateCapabilityNormal attach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 55: ASM: com.buuz135.industrial.utils.compat.baubles.MeatFeederBauble$Event@xxxxxxxx onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 56: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 57: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 58: ASM: mcjty.lib.McJtyLib$EventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 59: ASM: mcjty.rftools.ForgeEventHandlers@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 60: ASM: class landmaster.plustic.api.Toggle addToggleArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 61: ASM: class landmaster.plustic.api.Portal addPortalArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 62: ASM: landmaster.plustic.traits.FruitSalad@xxxxxxxx addFruitSaladCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 63: ASM: landmaster.plustic.traits.MusicOfTheSpheres@xxxxxxxx addMOTSCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 64: ASM: ca.wescook.nutrition.events.EventPlayerJoinWorld@xxxxxxxx AttachCapabilitiesEvent(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 65: ASM: openblocks.enchantments.FlimFlamEnchantmentsHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 66: ASM: openblocks.common.PedometerHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 67: ASM: ivorius.reccomplex.events.handlers.RCForgeEventHandler@xxxxxxxx onEntityCapapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 68: ASM: xyz.phanta.tconevo.handler.ToolCapabilityHandler@xxxxxxxx onItemCapAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 69: ASM: thecodex6824.thaumicaugmentation.common.integration.IntegrationBotania@xxxxxxxx onAttachCapabilityItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 70: ASM: ts2k16.handlers.EventHandler@xxxxxxxx onLivingCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 71: ASM: slimeknights.tconstruct.gadgets.item.ItemPiggybackPack@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 72: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 73: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 74: ASM: com.lothrazar.cyclicmagic.event.EventPlayerData@xxxxxxxx onEntityConstruct(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 75: ASM: c4.conarm.lib.capabilities.ArmorAbilityHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 76: ASM: hellfirepvp.astralsorcery.common.event.listener.EventHandlerServer@xxxxxxxx attachPlague(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 77: ASM: hellfirepvp.astralsorcery.common.base.FluidRarityRegistry@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 78: ASM: hellfirepvp.astralsorcery.common.base.RockCrystalHandler@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 79: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 80: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 81: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$EntityEventListener@xxxxxxxx onEntityLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 82: ASM: li.cil.oc.integration.minecraftforge.EventHandlerMinecraftForge$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 38: ASM: class com.cazsius.solcarrot.tracking.CapabilityHandler attachPlayerCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 39: ASM: baubles.common.event.EventHandlerEntity@xxxxxxxx attachCapabilitiesPlayer(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 40: ASM: com.enderio.core.common.tweaks.BottleFluidCapability$BottleTweak@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 41: ASM: class twilightforest.capabilities.CapabilityList attachEntityCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 42: ASM: class com.animania.addons.extra.common.events.CapabilityLoadHandler onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 43: ASM: com.brandon3055.draconicevolution.handlers.DEEventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 44: ASM: vazkii.quark.vanity.feature.BoatSails@xxxxxxxx onBoatGenesis(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 45: ASM: blusunrize.immersiveengineering.common.util.compat.BaublesHelper@xxxxxxxx onCapabilitiesAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 46: ASM: zmaster587.advancedRocketry.capability.CapabilityProtectiveArmor@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 47: ASM: arekkuusu.betterhurttimer.api.capability.HurtCapability$Handler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 48: ASM: net.smileycorp.bloodsmeltery.common.BloodSmelteryEvents@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 49: ASM: tschipp.carryon.common.capabilities.event.PositionCommonEvents@xxxxxxxx onAttachCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 50: ASM: net.darkhax.darkutils.features.shulkerpearl.ShulkerDataHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 51: ASM: xyz.phanta.tconevo.init.TconEvoEntityAttrs@xxxxxxxx onAttachEntityCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 52: ASM: xyz.phanta.fluiddrawers.handler.ControllerFluidCapabilityHandler@xxxxxxxx onTileCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 53: ASM: class git.jbredwards.fluidlogged_api.mod.common.capability.FluidStateCapabilityNormal attach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 54: ASM: com.buuz135.industrial.utils.compat.baubles.MeatFeederBauble$Event@xxxxxxxx onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 55: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 56: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 57: ASM: mcjty.lib.McJtyLib$EventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 58: ASM: mcjty.rftools.ForgeEventHandlers@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 59: ASM: class landmaster.plustic.api.Toggle addToggleArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 60: ASM: class landmaster.plustic.api.Portal addPortalArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 61: ASM: landmaster.plustic.traits.FruitSalad@xxxxxxxx addFruitSaladCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 62: ASM: landmaster.plustic.traits.MusicOfTheSpheres@xxxxxxxx addMOTSCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 63: ASM: ca.wescook.nutrition.events.EventPlayerJoinWorld@xxxxxxxx AttachCapabilitiesEvent(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 64: ASM: openblocks.enchantments.FlimFlamEnchantmentsHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 65: ASM: openblocks.common.PedometerHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 66: ASM: ivorius.reccomplex.events.handlers.RCForgeEventHandler@xxxxxxxx onEntityCapapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 67: ASM: xyz.phanta.tconevo.handler.ToolCapabilityHandler@xxxxxxxx onItemCapAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 68: ASM: thecodex6824.thaumicaugmentation.common.integration.IntegrationBotania@xxxxxxxx onAttachCapabilityItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 69: ASM: ts2k16.handlers.EventHandler@xxxxxxxx onLivingCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 70: ASM: slimeknights.tconstruct.gadgets.item.ItemPiggybackPack@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 71: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 72: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 73: ASM: com.lothrazar.cyclicmagic.event.EventPlayerData@xxxxxxxx onEntityConstruct(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 74: ASM: c4.conarm.lib.capabilities.ArmorAbilityHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 75: ASM: hellfirepvp.astralsorcery.common.event.listener.EventHandlerServer@xxxxxxxx attachPlague(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 76: ASM: hellfirepvp.astralsorcery.common.base.FluidRarityRegistry@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 77: ASM: hellfirepvp.astralsorcery.common.base.RockCrystalHandler@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 78: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 79: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 80: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$EntityEventListener@xxxxxxxx onEntityLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 81: ASM: li.cil.oc.integration.minecraftforge.EventHandlerMinecraftForge$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 82: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 83: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 84: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 85: ASM: com.fuzs.gamblingstyle.capability.CapabilityController@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 86: ASM: yeelp.scalingfeast.handlers.CapabilityHandler@xxxxxxxx onAddCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 87: ASM: astrotibs.villagenames.capabilities.CapabilityAttach@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 88: LOWEST
-[Client thread/ERROR] [FML]: 89: ASM: baubles.common.event.EventHandlerItem@xxxxxxxx itemCapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 90: ASM: INSTANCE onFinishAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 84: ASM: com.fuzs.gamblingstyle.capability.CapabilityController@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 85: ASM: astrotibs.villagenames.capabilities.CapabilityAttach@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 86: LOWEST
+[Client thread/ERROR] [FML]: 87: ASM: baubles.common.event.EventHandlerItem@xxxxxxxx itemCapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 88: ASM: INSTANCE onFinishAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.AttachCapabilitiesEvent@xxxxxxxx:
-[Client thread/ERROR] [FML]: Index: 64 Listeners:
+[Client thread/ERROR] [FML]: Index: 63 Listeners:
 [Client thread/ERROR] [FML]: 0: HIGHEST
 [Client thread/ERROR] [FML]: 1: ASM: INSTANCE onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 2: NORMAL
@@ -108,83 +108,81 @@
 [Client thread/ERROR] [FML]: 11: ASM: class c4.colytra.common.capabilities.CapabilityColytraFlying$EventHandler attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 12: ASM: net.darkhax.darkutils.features.charms.FeatureCharms@xxxxxxxx onItemCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 13: ASM: class xt9.deepmoblearning.common.events.CapabilityHandler attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 14: ASM: class nl.requios.effortlessbuilding.EventHandler attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 15: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToWorld(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 16: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 17: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToVillage(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 18: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 19: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 20: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToTE(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 21: ASM: class me.towdium.jecalculation.JecaCapability onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 22: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachItemCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 23: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachEntityCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 24: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 25: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 14: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 15: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 16: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 17: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToWorld(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 18: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToTE(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 19: ASM: class com.fantasticsource.mctools.nbtcap.NBTCap attachToVillage(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 20: ASM: class me.towdium.jecalculation.JecaCapability onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 21: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachItemCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 22: ASM: class vazkii.psi.common.core.handler.capability.CapabilityHandler attachEntityCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 23: ASM: class org.squiddev.plethora.integration.computercraft.IntegrationComputerCraft attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 24: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 25: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 26: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 27: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 28: ASM: class org.squiddev.plethora.integration.forestry.IntegrationForestry attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 29: ASM: class org.squiddev.plethora.integration.computercraft.IntegrationComputerCraft attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 30: ASM: class yako.portabledrill.proxy.CommonProxy attachItemCapabilites(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 31: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 32: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 33: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 34: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesTiles(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 35: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesGolems(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 36: ASM: class com.tiviacz.travelersbackpack.handlers.PlayerEventHandler attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 27: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 28: ASM: class org.squiddev.plethora.integration.vanilla.IntegrationVanilla attachCapabilitiesTile(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 29: ASM: class yako.portabledrill.proxy.CommonProxy attachItemCapabilites(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 30: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 31: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 32: ASM: class thecodex6824.thaumicaugmentation.init.CapabilityHandler onAttachCapabilitiesChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 33: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesTiles(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 34: ASM: class griglog.thaumtweaks.events.CapabilityEvents attachCapabilitiesGolems(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 35: ASM: class com.tiviacz.travelersbackpack.handlers.PlayerEventHandler attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 36: ASM: class youyihj.zenutils.impl.capability.ZenWorldCapabilityHandler attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 37: ASM: class youyihj.zenutils.impl.capability.ZenWorldCapabilityHandler attachToWorld(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 38: ASM: class youyihj.zenutils.impl.capability.ZenWorldCapabilityHandler attachToChunk(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 39: ASM: class com.cazsius.solcarrot.tracking.CapabilityHandler attachPlayerCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 40: ASM: baubles.common.event.EventHandlerEntity@xxxxxxxx attachCapabilitiesPlayer(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 41: ASM: com.enderio.core.common.tweaks.BottleFluidCapability$BottleTweak@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 42: ASM: class twilightforest.capabilities.CapabilityList attachEntityCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 43: ASM: class com.animania.addons.extra.common.events.CapabilityLoadHandler onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 44: ASM: com.brandon3055.draconicevolution.handlers.DEEventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 45: ASM: vazkii.quark.vanity.feature.BoatSails@xxxxxxxx onBoatGenesis(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 46: ASM: blusunrize.immersiveengineering.common.util.compat.BaublesHelper@xxxxxxxx onCapabilitiesAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 47: ASM: zmaster587.advancedRocketry.capability.CapabilityProtectiveArmor@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 48: ASM: arekkuusu.betterhurttimer.api.capability.HurtCapability$Handler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 49: ASM: net.smileycorp.bloodsmeltery.common.BloodSmelteryEvents@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 50: ASM: tschipp.carryon.common.capabilities.event.PositionCommonEvents@xxxxxxxx onAttachCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 51: ASM: net.darkhax.darkutils.features.shulkerpearl.ShulkerDataHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 52: ASM: xyz.phanta.tconevo.init.TconEvoEntityAttrs@xxxxxxxx onAttachEntityCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 53: ASM: xyz.phanta.fluiddrawers.handler.ControllerFluidCapabilityHandler@xxxxxxxx onTileCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 54: ASM: class git.jbredwards.fluidlogged_api.mod.common.capability.FluidStateCapabilityNormal attach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 55: ASM: com.buuz135.industrial.utils.compat.baubles.MeatFeederBauble$Event@xxxxxxxx onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 56: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 57: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 58: ASM: mcjty.lib.McJtyLib$EventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 59: ASM: mcjty.rftools.ForgeEventHandlers@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 60: ASM: class landmaster.plustic.api.Toggle addToggleArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 61: ASM: class landmaster.plustic.api.Portal addPortalArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 62: ASM: landmaster.plustic.traits.FruitSalad@xxxxxxxx addFruitSaladCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 63: ASM: landmaster.plustic.traits.MusicOfTheSpheres@xxxxxxxx addMOTSCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 64: ASM: ca.wescook.nutrition.events.EventPlayerJoinWorld@xxxxxxxx AttachCapabilitiesEvent(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 65: ASM: openblocks.enchantments.FlimFlamEnchantmentsHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 66: ASM: openblocks.common.PedometerHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 67: ASM: ivorius.reccomplex.events.handlers.RCForgeEventHandler@xxxxxxxx onEntityCapapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 68: ASM: xyz.phanta.tconevo.handler.ToolCapabilityHandler@xxxxxxxx onItemCapAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 69: ASM: thecodex6824.thaumicaugmentation.common.integration.IntegrationBotania@xxxxxxxx onAttachCapabilityItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 70: ASM: ts2k16.handlers.EventHandler@xxxxxxxx onLivingCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 71: ASM: slimeknights.tconstruct.gadgets.item.ItemPiggybackPack@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 72: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 73: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 74: ASM: com.lothrazar.cyclicmagic.event.EventPlayerData@xxxxxxxx onEntityConstruct(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 75: ASM: c4.conarm.lib.capabilities.ArmorAbilityHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 76: ASM: hellfirepvp.astralsorcery.common.event.listener.EventHandlerServer@xxxxxxxx attachPlague(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 77: ASM: hellfirepvp.astralsorcery.common.base.FluidRarityRegistry@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 78: ASM: hellfirepvp.astralsorcery.common.base.RockCrystalHandler@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 79: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 80: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 81: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$EntityEventListener@xxxxxxxx onEntityLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 82: ASM: li.cil.oc.integration.minecraftforge.EventHandlerMinecraftForge$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 38: ASM: class com.cazsius.solcarrot.tracking.CapabilityHandler attachPlayerCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 39: ASM: baubles.common.event.EventHandlerEntity@xxxxxxxx attachCapabilitiesPlayer(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 40: ASM: com.enderio.core.common.tweaks.BottleFluidCapability$BottleTweak@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 41: ASM: class twilightforest.capabilities.CapabilityList attachEntityCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 42: ASM: class com.animania.addons.extra.common.events.CapabilityLoadHandler onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 43: ASM: com.brandon3055.draconicevolution.handlers.DEEventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 44: ASM: vazkii.quark.vanity.feature.BoatSails@xxxxxxxx onBoatGenesis(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 45: ASM: blusunrize.immersiveengineering.common.util.compat.BaublesHelper@xxxxxxxx onCapabilitiesAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 46: ASM: zmaster587.advancedRocketry.capability.CapabilityProtectiveArmor@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 47: ASM: arekkuusu.betterhurttimer.api.capability.HurtCapability$Handler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 48: ASM: net.smileycorp.bloodsmeltery.common.BloodSmelteryEvents@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 49: ASM: tschipp.carryon.common.capabilities.event.PositionCommonEvents@xxxxxxxx onAttachCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 50: ASM: net.darkhax.darkutils.features.shulkerpearl.ShulkerDataHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 51: ASM: xyz.phanta.tconevo.init.TconEvoEntityAttrs@xxxxxxxx onAttachEntityCaps(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 52: ASM: xyz.phanta.fluiddrawers.handler.ControllerFluidCapabilityHandler@xxxxxxxx onTileCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 53: ASM: class git.jbredwards.fluidlogged_api.mod.common.capability.FluidStateCapabilityNormal attach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 54: ASM: com.buuz135.industrial.utils.compat.baubles.MeatFeederBauble$Event@xxxxxxxx onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 55: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 56: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 57: ASM: mcjty.lib.McJtyLib$EventHandler@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 58: ASM: mcjty.rftools.ForgeEventHandlers@xxxxxxxx onEntityConstructing(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 59: ASM: class landmaster.plustic.api.Toggle addToggleArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 60: ASM: class landmaster.plustic.api.Portal addPortalArmorCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 61: ASM: landmaster.plustic.traits.FruitSalad@xxxxxxxx addFruitSaladCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 62: ASM: landmaster.plustic.traits.MusicOfTheSpheres@xxxxxxxx addMOTSCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 63: ASM: ca.wescook.nutrition.events.EventPlayerJoinWorld@xxxxxxxx AttachCapabilitiesEvent(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 64: ASM: openblocks.enchantments.FlimFlamEnchantmentsHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 65: ASM: openblocks.common.PedometerHandler$CapabilityInjector@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 66: ASM: ivorius.reccomplex.events.handlers.RCForgeEventHandler@xxxxxxxx onEntityCapapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 67: ASM: xyz.phanta.tconevo.handler.ToolCapabilityHandler@xxxxxxxx onItemCapAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 68: ASM: thecodex6824.thaumicaugmentation.common.integration.IntegrationBotania@xxxxxxxx onAttachCapabilityItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 69: ASM: ts2k16.handlers.EventHandler@xxxxxxxx onLivingCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 70: ASM: slimeknights.tconstruct.gadgets.item.ItemPiggybackPack@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 71: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachEntity(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 72: ASM: blusunrize.immersiveengineering.common.EventHandler@xxxxxxxx onCapabilitiesAttachItem(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 73: ASM: com.lothrazar.cyclicmagic.event.EventPlayerData@xxxxxxxx onEntityConstruct(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 74: ASM: c4.conarm.lib.capabilities.ArmorAbilityHandler@xxxxxxxx attachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 75: ASM: hellfirepvp.astralsorcery.common.event.listener.EventHandlerServer@xxxxxxxx attachPlague(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 76: ASM: hellfirepvp.astralsorcery.common.base.FluidRarityRegistry@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 77: ASM: hellfirepvp.astralsorcery.common.base.RockCrystalHandler@xxxxxxxx attachChunkCap(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 78: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$TileEventListener@xxxxxxxx onTileLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 79: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$ItemStackEventListener@xxxxxxxx onItemStackLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 80: ASM: org.cyclops.cyclopscore.modcompat.capabilities.CapabilityConstructorRegistry$EntityEventListener@xxxxxxxx onEntityLoad(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 81: ASM: li.cil.oc.integration.minecraftforge.EventHandlerMinecraftForge$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 82: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 83: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 84: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 85: ASM: com.fuzs.gamblingstyle.capability.CapabilityController@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 86: ASM: yeelp.scalingfeast.handlers.CapabilityHandler@xxxxxxxx onAddCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 87: ASM: astrotibs.villagenames.capabilities.CapabilityAttach@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 88: LOWEST
-[Client thread/ERROR] [FML]: 89: ASM: baubles.common.event.EventHandlerItem@xxxxxxxx itemCapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 90: ASM: INSTANCE onFinishAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 84: ASM: com.fuzs.gamblingstyle.capability.CapabilityController@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 85: ASM: astrotibs.villagenames.capabilities.CapabilityAttach@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 86: LOWEST
+[Client thread/ERROR] [FML]: 87: ASM: baubles.common.event.EventHandlerItem@xxxxxxxx itemCapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 88: ASM: INSTANCE onFinishAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'bloodmagic:sentient_specter'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'bloodmagic:corrupted_zombie'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'rats:marbled_cheese_golem'
@@ -196,96 +194,16 @@
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'thaumicwonders:corruption_avatar'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'betteranimalsplus:pheasant'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'betteranimalsplus:turkey'
-[pool-11-thread-1/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.entity.player.ItemTooltipEvent@674e8e3:
-[pool-11-thread-1/ERROR] [FML]: Index: 2 Listeners:
-[pool-11-thread-1/ERROR] [FML]: 0: HIGHEST
-[pool-11-thread-1/ERROR] [FML]: 1: ASM: class vazkii.botania.client.core.handler.TooltipHandler onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 2: ASM: class crazypants.enderio.base.paint.PaintTooltipUtil addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 3: ASM: com.zeitheron.hammercore.TooltipAPI@xxxxxxxx tooltipEvt(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 4: ASM: class youyihj.bilingualname.TooltipEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 5: ASM: vazkii.quark.client.feature.MapTooltip@xxxxxxxx makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 6: ASM: vazkii.quark.client.feature.ShulkerBoxTooltip@xxxxxxxx makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 7: ASM: alexiy.eii.EventHandler@xxxxxxxx drawtooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 8: ASM: com.glodblock.github.integration.pauto.RecipeEncoderFluidTooltipHandler@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 9: ASM: com.buuz135.industrial.proxy.client.event.IFTooltipEvent@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 10: ASM: org.zeith.thaumicadditions.events.ClientEventReactor@xxxxxxxx tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 11: ASM: com.tfar.lootcapacitortooltips.Tooltips@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 12: ASM: com.tfar.lootcapacitortooltips.EndergyTooltips@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 13: ASM: com.oitsjustjose.tinkers_addons.modifiers.ModAutoRepair@xxxxxxxx onUpdate(Lnet/minecraftforge/event/entity/player/PlayerEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 14: HIGH
-[pool-11-thread-1/ERROR] [FML]: 15: ASM: ic2.core.item.armor.jetpack.JetpackHandler@xxxxxxxx tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 16: NORMAL
-[pool-11-thread-1/ERROR] [FML]: 17: ASM: class thaumcraft.client.lib.events.RenderEventHandler tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 18: ASM: class thaumcraft.common.lib.events.PlayerEvents tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 19: ASM: class slimeknights.tconstruct.gadgets.WoodenHopperGUIDrawEvent addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 20: ASM: class mcp.mobius.waila.handlers.VanillaTooltipHandler tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 21: ASM: class WayofTime.bloodmagic.util.handler.event.ClientHandler onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 22: ASM: class quaternary.brokenwings.WingClientEvents tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 23: ASM: class com.feed_the_beast.ftblib.client.FTBLibClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 24: ASM: class invtweaks.forge.ToolTipEvent tTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 25: ASM: class thatguy.mod.miningspeed2.proxy.ClientProxy onShowItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 26: ASM: class landmaster.plustic.modules.ModuleGems tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 27: ASM: class thecodex6824.thaumicaugmentation.client.event.ClientEventHandler onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 28: ASM: class jco2641.thaumcomp.events.ItemTooltipEventHandler onEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 29: ASM: class com.cazsius.solcarrot.client.TooltipHandler onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 30: ASM: baubles.client.ClientEventHandler@xxxxxxxx tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 31: ASM: class quaternary.botaniatweaks.modules.botania.handler.TooltipHandler handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 32: ASM: com.brandon3055.draconicevolution.handlers.DEEventHandler@xxxxxxxx itemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 33: ASM: vazkii.quark.vanity.feature.DyeItemNames@xxxxxxxx makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 34: ASM: vazkii.quark.vanity.feature.DyableElytra@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 35: ASM: vazkii.quark.client.feature.EnchantedBooksShowItems@xxxxxxxx makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 36: ASM: vazkii.quark.client.feature.VisualStatDisplay@xxxxxxxx makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 37: ASM: vazkii.quark.oddities.feature.MatrixEnchanting@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 38: ASM: vazkii.quark.oddities.feature.Backpacks@xxxxxxxx removeCurseTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 39: ASM: net.blay09.mods.excompressum.compat.exnihilocreatio.ExNihiloCreatioAddon@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 40: ASM: net.bdew.lib.tooltip.TooltipHandler$@xxxxxxxx handleTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 41: ASM: morph.avaritia.handler.AvaritiaEventHandler@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 42: ASM: com.rwtema.extrautils2.crafting.PlayerSpecificCrafting$EventHandler@xxxxxxxx tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 43: ASM: com.rwtema.extrautils2.crafting.PlayerSpecificCrafting$EventHandler@xxxxxxxx tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 44: ASM: class com.rwtema.extrautils2.machine.EnergyBaseRecipe tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 45: ASM: net.blay09.mods.horsetweaks.tweaks.SaddleTooltipHandler@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 46: ASM: com.buuz135.industrial.proxy.event.SkullHandler@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 47: ASM: lumien.randomthings.handler.RTEventHandler@xxxxxxxx itemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 48: ASM: mcjty.lib.tooltips.TooltipRender@xxxxxxxx onMakeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 49: ASM: rustic.client.EventHandlerClient@xxxxxxxx onBoozeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 50: ASM: rustic.client.EventHandlerClient@xxxxxxxx onFoodTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 51: ASM: class landmaster.plustic.api.Toggle tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 52: ASM: landmaster.plustic.traits.Ignoble@xxxxxxxx tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 53: ASM: landmaster.plustic.traits.Global@xxxxxxxx tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 54: ASM: class landmaster.plustic.api.Portal tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 55: ASM: landmaster.plustic.traits.Portly@xxxxxxxx tooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 56: ASM: net.darkhax.wawla.Wawla@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 57: ASM: openblocks.enchantments.flimflams.LoreFlimFlam$DisplayHandler@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 58: ASM: azmalent.potiondescriptions.client.TooltipHandler@xxxxxxxx onPotionTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 59: ASM: xyz.phanta.tconevo.client.handler.EnergyTooltipHandler@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 60: ASM: crazypants.enderio.base.machine.recipes.ClearConfigRecipe@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 61: ASM: de.ellpeck.actuallyadditions.mod.event.ClientEvents@xxxxxxxx onTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 62: ASM: class com.enderio.core.client.handlers.EnchantTooltipHandler handleTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 63: ASM: class com.enderio.core.client.handlers.OreDictTooltipHandler onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 64: ASM: class com.enderio.core.client.handlers.SpecialTooltipHandler addTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 65: ASM: tyra314.toolprogression.handlers.TooltipEventHandler@698b42b onGetToolTipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 66: ASM: blusunrize.immersiveengineering.client.ClientEventHandler@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 67: ASM: com.lothrazar.cyclicmagic.module.tweaks.TextInfoModule@xxxxxxxx onItemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 68: ASM: Block{cyclicmagic:imbuer} onItemTooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 69: ASM: hellfirepvp.astralsorcery.common.event.listener.EventHandlerMisc@xxxxxxxx onToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 70: ASM: c4.colytra.client.EventHandlerClient@xxxxxxxx tooltipHandler(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 71: ASM: INSTANCE onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 72: ASM: ca.wescook.nutrition.events.EventTooltip@xxxxxxxx tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 73: ASM: net.blay09.mods.tcinventoryscan.client.ClientProxy@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 74: ASM: ic2.core.item.ElectricItemTooltipHandler@xxxxxxxx drawTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 75: ASM: c4.conarm.integrations.tinkertoolleveling.ModArmorLeveling@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 76: ASM: net.blay09.mods.cookingforblockheads.compat.HarvestCraftAddon@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 77: ASM: com.rwtema.extrautils2.potion.PotionsHelper$TooltipHandler@2c5bab6 addPotionTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 78: ASM: crops.IC2CropPlugin@xxxxxxxx onItemToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 79: ASM: nc.handler.TooltipHandler@xxxxxxxx addAdditionalTooltips(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 80: ASM: com.fuzs.letmesleep.handler.ClientEventHandler@xxxxxxxx onMakeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 81: ASM: slimeknights.toolleveling.EventHandler@xxxxxxxx onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 82: ASM: squeek.wailaharvestability.TooltipHandler@e7e228 tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 83: LOW
-[pool-11-thread-1/ERROR] [FML]: 84: ASM: crafttweaker.mc1120.events.ClientEventHandler@xxxxxxxx onItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 85: LOWEST
-[pool-11-thread-1/ERROR] [FML]: 86: ASM: class flaxbeard.immersivepetroleum.common.EventHandler handleItemTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 87: ASM: class com.buuz135.thaumicjei.gui.AspectTooltipHandler tooltipEvent(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 88: ASM: com.rwtema.extrautils2.items.ItemFakeCopy@4af4658 changeToolTip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [FML]: 89: ASM: yeelp.scalingfeast.items.IItemDescribable$TooltipHandler@b694024 onTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V
-[pool-11-thread-1/ERROR] [HadEnoughItems]: Failed to get tooltip: 1xtile.BiblioCraft:PaintingFrameFlat@4 bibliocraft:paintingframeflat
+[Client thread/WARN] [forestry]: Failed to find item for (chisel:planks) in the Forge registry.
+[Client thread/WARN] [forestry]: Failed to find item for (chisel:sandstone) in the Forge registry.
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.dirt@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.hellrock@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.obsidian@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.vine@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_mid@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_blue_end@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_mid@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.tconstruct.slime_vine_purple_end@32767 in void beacon registration; this can result in invalid result blocks
+[ThaumicSpeedup/AspectThread/WARN] [thaumicwonders]: Wildcard meta detected for 1xtile.cactus@32767 in void beacon registration; this can result in invalid result blocks

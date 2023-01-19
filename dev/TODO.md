@@ -2,20 +2,10 @@
 
 List of priorities:
 
-- [ ] 🔄 Modular Machinery multiblocks not in JEI
-- [ ] 🧮 Craft.zs: Add AS compat
-- [ ] 🔴 Remove `Scaling Feast`
-- [ ] 🧩 Teleporting Rails add JEI entry with fuels and quest book tip
-- [ ] 🔄 Fix erroring advancements:
-  > biomesoplenty:recipes/buildingblocks/ethereal_stairs
-  > biomesoplenty:recipes/buildingblocks/ethereal_wooden_slab
-  > biomesoplenty:recipes/decorations/crafting_table_from_bop_wood
-  > biomesoplenty:recipes/decorations/ethereal_fence
-  > biomesoplenty:recipes/misc/mud_from_dirt
-  > biomesoplenty:recipes/redstone/ethereal_door
-  > biomesoplenty:recipes/redstone/ethereal_fence_gate
-  > biomesoplenty:recipes/transportation/boat_ethereal
-  > minecraft:recipes/decorations/crafting_table
+- [ ] ✏️ Conglomerate of life cheaper
+- [ ] ✏️ Matter Balls craftable without compressor
+- [ ] ✏️ Remove AdvGen Gas intake due gas dupe
+- [ ] 🔄 Modular Machinery multiblocks not in JEI https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/150
 
 
 ---
@@ -26,6 +16,13 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Cant make Bauble => advanced rings. Recipe functions prevent this from happen
+- [ ] 📖 `AnyMeatraw` should cycle in JEI. This usually possible with ore.firstItem, but not working for some reason.
+- [ ] 🔨 Rework Grinding trait
+- [ ] ✏️ Add AS Grindstone recipe that rely on doubling chance mechanic
+- [ ] ✏️ Return Ethereal trees
+- [ ] 📖 Add AS ritual to quest book
+- [ ] 💻 Add info about OC changes like https://www.reddit.com/r/feedthebeast/comments/98phxv/filtering_by_nbt_tag/
 - [ ] 📖 Add `Exploration` chapter, where each quest can be repeated, but required non-craftable items
 - [ ] 🔄 Make `scripts/jei` files not loaded on server
 - [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
@@ -55,7 +52,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
 - [ ] 🐀 Fix rats not spawn on garbage piles
-- [ ] 🟠 Do not update Recurrent Complex to `1.4.8.3` (cause crashes on server)
 - [ ] ✏️ Add craft `Rat hole` + `Salis Mundus` -> `Something`
 - [ ] 📖 List of items that may be add into loot boxes in future: https://i.imgur.com/G0A2KF1.png
 - [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
@@ -77,6 +73,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔄 `/punish` command - players can punish other players on server
 - [ ] ✏️ Multiblock structure that speed up blocks like Time In Bottle, but based on numbers of mobs around https://is.gd/tPPqt2
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
+- [ ] 🟠 Do not update Recurrent Complex to `1.4.8.3` (cause crashes on server)
 - [ ] 🔴 Do not update `JAOPCA`
 - [ ] 🔴 Do not update `Redstone Repository Revolved`
 - [ ] 🔴 Do not update `spark`
@@ -155,6 +152,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔨 Ironwood Add material. Drop Armor from mobs on hit
 - [ ] 🧮 Craft.zs: ![](https://git.io/Jz9qH "Gold Nugget") to make vanilla prefixes
 - [ ] 🧮 Craft.zs fix liquid ingredient not counting amount of items, because (2) means "item as is"
+- [ ] 🧮 Craft.zs: Add AS compat
 - [ ] 🟢 Return Custom Loading Screen when fixed [this](https://github.com/AlexIIL/CustomLoadingScreen/issues/74)
 - [ ] 🟢 Add [Heat And Climate](https://www.curseforge.com/minecraft/mc-mods/heat-and-climate)
 - [ ] ⛏️ Mining levels rework. There is too much mining levels.
@@ -175,6 +173,7 @@ Planned non-urgent changes, or just good ideas:
 - Buff Giant Sword
   > Giant sword somehow cant be buffed with MaterialChanger mod
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
+- [ ] 📖 whenever you have a rewards for a quest containing three items of tinkers, the last item does not show your stats. (Cant be fixed - FTBQ bug)
 
 ---
 

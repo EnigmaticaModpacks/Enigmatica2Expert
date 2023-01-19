@@ -62,6 +62,7 @@ key_bloodmagic.keybind.cycle_holding_pos:0
 key_bloodmagic.keybind.open_holding:53:CONTROL
 key_Boost Key:0
 key_Change Caster Focus:34
+key_ChatFlow:88
 key_cos.key.opencosarmorinventory:0
 key_Difficulty Meter - Show Always:49:SHIFT
 key_Difficulty Meter - Show:49
@@ -132,7 +133,7 @@ key_key.craftingtweaks.rotate_counter_clockwise:0
 key_key.craftingtweaks.rotate:0
 key_key.craftingtweaks.spread:0
 key_key.craftingtweaks.toggleButtons:0
-key_key.craftpresence.config_keycode.name:40
+key_key.craftpresence.config_keycode.name:41
 key_key.cycle_magnet_mode.desc:0
 key_key.debugDumpNBTBlock:0
 key_key.debugDumpNBTItem:0
@@ -231,8 +232,8 @@ key_key.music_player_previous:79
 key_key.music_player_toggle:80
 key_key.narrator:53:CONTROL
 key_key.neenergistics.crafting.helper.noPreview:56
-key_key.neenergistics.crafting.helper.preview:29
-key_key.neenergistics.recipe.ingredient.change:42
+key_key.neenergistics.crafting.helper.noPreview:56
+key_key.neenergistics.ingredient.switch:42
 key_key.neenergistics.stack.count.change:29
 key_key.next_item.desc:0
 key_key.nutrition:49
@@ -307,7 +308,7 @@ key_Move Vehicle Down:45
 key_Move Vehicle Up:0
 key_neat.keybind.toggle:0
 key_nei.options.keys.gui.botania_corporea_request:0
-key_nimble.keybind.frontView:63
+key_nimble.keybind.frontView:63:CONTROL
 key_of.key.zoom:-97
 key_Open Menu:25
 key_Open Rocket GUI:46

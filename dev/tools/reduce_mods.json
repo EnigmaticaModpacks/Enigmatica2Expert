@@ -8,6 +8,7 @@
     "name": "Soft",
     "description": "Remove mods, that has impact on performance. Not server-safe",
     "list": [
+      "SoundFilters-",
       "Fancier-Block-Particles-",
       "JEI-Utilities-",
       "SnowRealMagic-",

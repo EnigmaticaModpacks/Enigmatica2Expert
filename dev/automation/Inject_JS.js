@@ -18,10 +18,12 @@ import humanizeString from 'humanize-string'
 import _ from 'lodash'
 import { getBorderCharacters, table } from 'table'
 import { js2xml, xml2js } from 'xml-js'
+import yargs from 'yargs'
 import { getExtra } from '../lib/jaopca.js'
 
 import {
   countBaseOutput,
+  getByOreBase,
   getByOreKind,
   getByOredict,
   getByOredict_first,
@@ -33,6 +35,7 @@ import {
   getSubMetas,
   getUnchangedFurnaceRecipes,
   getUnchangedTableRecipes,
+  isFluidExist,
   isItemExist,
   isJEIBlacklisted,
   isODExist,
@@ -54,6 +57,10 @@ import {
   saveText,
   setBlockDrops,
 } from '../lib/utils.js'
+
+const argv = yargs(process.argv.slice(2))
+  .alias('t', 'test')
+  .describe('t', 'Only test function').parseSync()
 
 function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
@@ -102,6 +109,7 @@ function formatOutput(injectValue) {
 // ----------------------------------
 
 export async function init(h = defaultHelper) {
+  if (argv.test) return
   const occurences = []
 
   await h.begin('Searching Inject_js blocks in .zs files')
@@ -178,7 +186,7 @@ export async function init(h = defaultHelper) {
   h.result(`Blocks: ${countBlocks}, Changed: ${countChanged}`)
 }
 
-if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
-
 // Test section:
-// ;(async () => console.log('\n', formatOutput((() => {})())))()
+// (async () => console.log('\n', formatOutput((() => {})())))()
+
+if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

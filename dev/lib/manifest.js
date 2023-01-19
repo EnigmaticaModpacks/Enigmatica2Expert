@@ -14,9 +14,9 @@ import parseGitignore from 'parse-gitignore'
 import { getBorderCharacters, table } from 'table'
 
 import { fetchMods } from './curseforge.js'
-import { defaultHelper, loadJson, loadText, saveText } from './utils.js'
+import { loadJson, loadText, saveText } from './utils.js'
 
-export async function init(h = defaultHelper) {
+export async function init() {
   generateManifest()
 }
 
@@ -35,7 +35,7 @@ const getIgnoredModIDs = memoize(() => {
 
   const ignoredByDevonly = mcinstance.installedAddons.filter(addon =>
     ignoredMods.includes(
-      resolve(`mods/${addon?.installedFile?.FileNameOnDisk}`)
+      resolve(`mods/${addon?.installedFile?.fileNameOnDisk}`)
     )
   )
 
@@ -119,7 +119,7 @@ export async function generateManifest(
   const modListUnfiltered = addonsListUnfiltered.map((a, i) => ({
     projectID: a.addonID,
     fileID   : a.installedFile?.id,
-    required : !a.installedFile?.FileNameOnDisk.endsWith('.jar.disabled'),
+    required : !a.installedFile?.fileNameOnDisk.endsWith('.jar.disabled'),
     ___name  : cfModsList[i].name,
   }))
 

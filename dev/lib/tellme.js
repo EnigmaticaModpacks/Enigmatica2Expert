@@ -36,6 +36,17 @@ export function isItemExist(id) {
 }
 
 /** @type {Set<string>} */
+let existFluids
+/**
+ * @param {string} id
+ */
+export function isFluidExist(id) {
+  return (existFluids ??= new Set(
+    getCSV('config/tellme/fluids-csv.csv').map(o => o.Name)
+  )).has(id)
+}
+
+/** @type {Set<string>} */
 let jeiBlacklist
 export function isJEIBlacklisted(def, meta) {
   return (

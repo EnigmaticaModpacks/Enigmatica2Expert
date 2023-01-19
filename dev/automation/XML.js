@@ -49,7 +49,7 @@ export async function init(h = defaultHelper) {
   for (const filePath of curatedFiles) {
     mutateXml(filePath, (xml_obj) => {
       const recipes = xml_obj.elements.find(
-        o => o.name === 'Recipes' || o.name === 'enderio:recipes',
+        o => o.name === 'Recipes' || o.name === 'enderio:recipes'
       )
       if (!recipes) return
 
@@ -102,25 +102,25 @@ function getChanges(h = defaultHelper) {
   const changesText = {}
 
   for (const { groups } of loadText('crafttweaker.log').matchAll(
-    /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] Put this recipe in file \[(\.\/)?(?<filename>[^\]]*?)\] manually.\n\r?(?<recipe>(\s*<!--(.*)-->\n\r?)?([\s\S\n\r]*?<\/[rR]ecipe>))/gm,
+    /^\[INITIALIZATION\]\[CLIENT\]\[INFO\] Put this recipe in file \[(\.\/)?(?<filename>[^\]]*?)\] manually.\n\r?(?<recipe>(\s*<!--(.*)-->\n\r?)?([\s\S\n\r]*?<\/[rR]ecipe>))/gm
   ))
     (changesText[groups.filename] ??= []).push(groups.recipe)
 
   _(getCustomRecipes()).forEach((arr, filePath) =>
-    (changesText[filePath] ??= []).push(...arr),
+    (changesText[filePath] ??= []).push(...arr)
   )
 
   /** @param {XMLElement} a */
   function countInputs(a) {
     const recipe = a.elements.find(
-      o => o.name?.toLowerCase() === 'recipe',
+      o => o.name?.toLowerCase() === 'recipe'
     ).elements
     const inputs
       = recipe.find(o => o.name?.toLowerCase() === 'input')?.elements
       ?? recipe
         .find(o => o.type === 'element')
         ?.elements.filter(
-          e => e.type === 'element' && e.name.includes('input'),
+          e => e.type === 'element' && e.name.includes('input')
         )
 
     return inputs.length
@@ -134,8 +134,8 @@ function getChanges(h = defaultHelper) {
         .sort(
           (a, b) =>
             countInputs(b) - countInputs(a)
-            || naturalSort(JSON.stringify(a), JSON.stringify(b)),
-        ),
+            || naturalSort(JSON.stringify(a), JSON.stringify(b))
+        )
     )
     .value()
 }
@@ -175,7 +175,7 @@ function parseItems(input) {
       .map(s =>
         s.startsWith('<')
           ? s
-          : xmlIngr(...(s.includes(' ') ? s.split(' ') : [s])),
+          : xmlIngr(...(s.includes(' ') ? s.split(' ') : [s]))
       )
       .join('\n')
   )
@@ -207,15 +207,15 @@ function getCustomRecipes() {
         .map(kinds =>
           getOreBases_byKinds(kinds.slice(1))
             .filter(b => b !== 'Aluminum')
-            .map(oreBase => [oreBase, kinds[1], kinds[2], kinds[0]]),
+            .map(oreBase => [oreBase, kinds[1], kinds[2], kinds[0]])
         )
         .flat()
         .map(([oreBase, kind1, kind2, amount]) =>
           makeXMLRecipe(
             `${oreBase} Block`,
             `${kind1}${oreBase}`,
-            `${kind2}${oreBase} ${amount}`,
-          ),
+            `${kind2}${oreBase} ${amount}`
+          )
         ),
       makeXMLRecipe('Stone Sticks', 'cobblestone', 'stickStone 6'),
       makeXMLRecipe('HDPE Sticks', 'mekanism:plasticblock:15', 'stickHDPE 6'),
@@ -235,7 +235,7 @@ function getCustomRecipes() {
           `elementium ${1}`,
         ].map(s => `<fluidStack>${s}</fluidStack>`),
         20,
-        100000,
+        100000
       ),
       makeXMLRecipe(
         'Curio centrifuge',
@@ -249,22 +249,7 @@ function getCustomRecipes() {
           'thaumcraft:curio:5 2',
         ],
         20,
-        100000,
-      ),
-      makeXMLRecipe(
-        'Terrestrial centrifuge',
-        '<fluidStack>terrestrial 432</fluidStack>',
-        [
-          'actuallyadditions:item_crystal_empowered:0 1',
-          'actuallyadditions:item_crystal_empowered:1 1',
-          'actuallyadditions:item_crystal_empowered:2 1',
-          'actuallyadditions:item_crystal_empowered:3 1',
-          'actuallyadditions:item_crystal_empowered:4 1',
-          'actuallyadditions:item_crystal_empowered:5 1',
-          'actuallyadditions:item_solidified_experience:0 3',
-        ],
-        10,
-        100000,
+        100000
       ),
     ],
   }

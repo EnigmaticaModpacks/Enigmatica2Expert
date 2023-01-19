@@ -90,7 +90,7 @@ function getSquare(modName, fileName) {
  */
 export function formatRow(mcAddon, curseAddon, options = {}) {
   const name = curseAddon.name.trim()
-  const fileName = mcAddon?.installedFile?.FileNameOnDisk
+  const fileName = mcAddon?.installedFile?.fileNameOnDisk
   const logo = getLogo(curseAddon.logo) ?? ''
   return (
     `${(options.asList ? '- ' : '')
