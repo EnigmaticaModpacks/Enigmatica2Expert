@@ -6,8 +6,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	
 #priority 1000
 
-<ore:blockYellorium>.add(<immersiveengineering:storage:5>);	
-
 <ore:chipDiamond>.add(<extrabitmanipulation:diamond_nugget>);
 
 # Oredicts for pressure plates

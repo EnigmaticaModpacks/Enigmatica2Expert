@@ -241,7 +241,7 @@ for item in thaumcraftHintItems {
 # Thermal Expansion Resonant Machine Frame (Full)
 	addDescription(<thermalexpansion:frame:148>, mil100);
 	
-# Extreme Reactors Crystals
+# Old Extreme Reactors Crystals
 	<contenttweaker:anglesite>.displayName = "Anglesite";
 	<contenttweaker:benitoite>.displayName = "Benitoite";
 	
