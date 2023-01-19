@@ -18,11 +18,11 @@ function getValue_hardness    (a as IItemStack) as double { return max(0.0d, (sq
 
 function getValue_harvestLevel(a as IItemStack) as double { return !isNull(a.asBlock()) && !isNull(a.asBlock().definition) ? a.asBlock().definition.harvestLevel as double / 10.0d : 0.0d; }
 
-# Wood Log     - 300    = 0.1
-# Coal Block   - 16000  = 0.5
-# Blasted Coal - 120000 = 1.0
-# Trpl. Chrc   - 256000 = 1.3
-function getValue_burnTime    (a as IItemStack) as double { return max(0.0d, sqrt(sqrt(1.0d + a.burnTime as double / 80.0d)) - 1.0d) / 5.0d; }
+# Wood Log     - 300    = 0.05
+# Coal Block   - 16000  = 0.25
+# Blasted Coal - 120000 = 0.5
+# Trpl. Chrc   - 256000 = 0.65
+function getValue_burnTime    (a as IItemStack) as double { return max(0.0d, sqrt(sqrt(1.0d + a.burnTime as double / 80.0d)) - 1.0d) / 10.0d; }
 
 # 1 = 0.2
 # 3 = 0.8
@@ -84,6 +84,6 @@ recipes.addHiddenShapeless("Garbage_function", <rats:garbage_pile>, [
   }
 
   return amount > 64
-    ? <contenttweaker:compressed_garbage_pile> * min(64, (amount as double / 64.0d + 1.0d) as int)
+    ? <contenttweaker:compressed_garbage_pile> * min(64, (amount as double / 9.0d) as int)
     : out * max(1, min(64, amount as int));
 }, null);

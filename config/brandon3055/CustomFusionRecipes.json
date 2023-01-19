@@ -183,8 +183,8 @@
   {
     "mode": "ADD",
     "result": "draconicevolution:chaos_shard,1,3",
-    "catalyst": "requious:positron_unit,1,0,{energy:2000000000}",
-    "energy": 500000000,
+    "catalyst": "enderio:item_alloy_nugget,1,2",
+    "energy": 10000000000,
     "tier": 2,
     "ingredients": [
       "ore:dustWither",
