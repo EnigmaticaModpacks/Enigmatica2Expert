@@ -18,3 +18,23 @@ val userEEPROM = <opencomputers:storage>.withTag({"oc:data": {"oc:readonly": 0 a
 recipes.addShapeless('User recipe', userEEPROM, [<opencomputers:storage>, <appliedenergistics2:crank>]);
 
 mods.jei.JEI.addItem(userEEPROM);
+
+# [Battery Upgrade (Tier 2)] from [Simple Machine Parts][+2]
+craft.remake(<opencomputers:upgrade:2>, ["pretty",
+  ": □ :",
+  "□ S □",
+  ": □ :"], {
+  ":": <ore:oc:capacitor>,          # Capacitor
+  "□": <ore:plateElectrum>,         # Electrum Plate
+  "S": <ore:itemSimpleChassiParts>, # Simple Machine Parts
+});
+
+# [Battery Upgrade (Tier 3)] from [Machine Parts][+2]
+craft.remake(<opencomputers:upgrade:3>, ["pretty",
+  ": □ :",
+  "□ C □",
+  ": □ :"], {
+  ":": <ore:oc:capacitor>,    # Capacitor
+  "□": <ore:plateMithril>,    # Mana Infused Plate
+  "C": <ore:itemChassiParts>, # Machine Parts
+});
