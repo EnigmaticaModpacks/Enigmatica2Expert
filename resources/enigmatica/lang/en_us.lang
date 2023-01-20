@@ -89,6 +89,7 @@ tooltips.lang.obtained.mithril=Only obtainable through §9Primal Mana§r world i
 tooltips.lang.removed.use_market=Disabled. Use the Market from Farming For Blockheads.
 tooltips.lang.ethylene_convert=How can I use Ethylene with Advanced Generators? Use the Rotary Condensentrator to convert the Ethylene to a liquid.
 tooltips.lang.redstone.need=§4Need redstone to function
+tooltips.lang.removed.crash=§4Removed because it crashes the server
 
 tooltips.lang.requires.rf=Requires %s RF to make.
 tooltips.lang.craftable=Craftable.

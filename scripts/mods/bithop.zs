@@ -1,10 +1,8 @@
-# [BitHop] from [Cabinet][+1]
-craft.remake(<bithop:bithop>, ["pretty",
-  "A C A",
-  "  A  "], {
-  "A": <ore:stoneAndesite>, # Andesite
-  "C": <rustic:cabinet>, # Cabinet
-});
+#modloaded bithop
+
+// Remove BitHop due crashes: https://github.com/elytra/BitHop/issues/12
+recipes.remove(<bithop:bithop>);
+scripts.category.tooltip_utils.desc.jei(<bithop:bithop>, "tooltips.lang.removed.crash");
 
 # [PullHop] from [Cabinet][+1]
 craft.remake(<bithop:pullhop>, ["pretty",
@@ -40,7 +38,7 @@ craft.make(<minecraft:hopper>, ["pretty",
   "□ P □",
   "  □  "], {
   "□": <ore:plateIron>,  # Iron Plate
-  "B": <bithop:bithop>,  # BitHop
+  "B": <bithop:screwhop>,
   "P": <bithop:pullhop>, # PullHop
 });
 
@@ -50,6 +48,6 @@ craft.make(<minecraft:hopper>, ["pretty",
   "□ P □",
   "  □  "], {
   "□": <ore:plateAluminium>, # Aluminum Plate
-  "B": <bithop:bithop>,      # BitHop
+  "B": <bithop:screwhop>,
   "P": <bithop:pullhop>,     # PullHop
 });

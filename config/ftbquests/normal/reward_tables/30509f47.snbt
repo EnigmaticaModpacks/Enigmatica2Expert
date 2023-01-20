@@ -46,8 +46,8 @@
 		count: 16
 	},
 	{
-		icon: "bithop:bithop 2",
-		item: "bithop:bithop",
+		icon: "bithop:screwhop 2",
+		item: "bithop:screwhop",
 		count: 2
 	},
 	{
