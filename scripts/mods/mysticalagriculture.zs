@@ -694,19 +694,19 @@ craft.shapeless(<minecraft:ender_pearl> * 6, "AAA", {A: <mysticalagriculture:end
 # Base essence harder to use more magic
 recipes.removeByRecipeName("mysticalagriculture:crafting_16");
 scripts.process.solution(
-	[<ore:shardProsperity>, <ore:powderMana>, <ore:dustAstralStarmetal>],
-	[<liquid:brass> * 16],
-	[<liquid:base_essence> * 16],
-	[0.5, 0.05, 0.05, 3300], "only: highoven"
+	[<ore:blockProsperity>, <ore:nuggetManasteel>, <ore:dustAstralStarmetal>],
+	[<liquid:brass> * 144],
+	[<liquid:base_essence> * 144],
+	[0.5, 0.5, 0.5, 3300], "only: highoven"
 );
 
 # [Base Essence Ingot] from [Stardust][+3]
 scripts.processUtils.avdRockXmlRecipe("ElectricArcFurnace", [
-	<ore:ingotBrass> * 3,       # Alchemical Brass Ingot
-	<ore:shardProsperity> * 10, # Prosperity Shard
-	<ore:powderMana>,           # Mana Powder
-	<ore:dustAstralStarmetal>,  # Stardust
-], null, [<mysticalagriculture:crafting:32> * 3], null);
+	<ore:ingotBrass> * 4,  # Alchemical Brass Ingot
+	<ore:blockProsperity> * 2,
+	<ore:nuggetManasteel> * 4,
+	<ore:dustAstralStarmetal> * 2,  # Stardust
+], null, [<mysticalagriculture:crafting:32> * 4], null);
 
 # [Base Crafting Seed] Harder to encourage Villager Trades
 craft.remake(<mysticalagriculture:crafting:16>, ["pretty",
