@@ -145,6 +145,7 @@ buildItem("blasted_coal");
 # Other
 # -------------------------------
 buildItem("any_different_item");
+buildItem("any_burnable");
 buildItem("ore_phosphor");
 buildItem("nugget_phosphor");
 buildItem("dust_tiny_gold");

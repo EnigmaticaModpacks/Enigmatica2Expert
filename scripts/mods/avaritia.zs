@@ -362,20 +362,83 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<avaritia:resource>, 2000000
 # Somehow infuser craft item/tick after first item
 # mods.thermalexpansion.Infuser.addRecipe(<avaritia:resource>, CD, 50000000);
 
-# [Fuel_Compressor] from [Crushing_Block][+3]
-craft.remake(<avaritiafurnace:fuelcompressor>, ["pretty",
-  "# ▲ #",
-  "▬ □ ▬",
-  "# ▲ #"], {
-  "□": <mechanics:crushing_block>,    # Crushing Block
-  "▲": <ore:compressed3xDustBedrock>, # Double Compressed Infinity Dust Block
-  "#": <forestry:logs.2:1>,           # Ebony Log
-  "▬": <ore:ingotBlackIron>           # Black Iron Ingot
-});
-
 # Oredicting recipe
 # [Compressed Crafting Table] from [Crafting Table]
 recipes.removeByRecipeName("avaritia:blocks/crafting/compressed_crafting_table");
 craft.shapeless(<avaritia:compressed_crafting_table>, "wwwwwwwww", {
   "w": <ore:workbench>, # Crafting Table
 });
+
+// -------------------------------------------------------------------
+# Burn singularity
+// -------------------------------------------------------------------
+
+# [Empty Singularity] from [Block of Black Iron][+2]
+craft.remake(<avaritia:singularity>, ["pretty",
+  "    ▬ ▬  ",
+  "▬ ▲ ▲ ▲  ",
+  "▬ ▲ ■ ▲ ▬",
+  "  ▲ ▲ ▲ ▬",
+  "  ▬ ▬    "], {
+  "▬": <ore:ingotHeavy>,              # Heavy Ingot
+  "▲": <ore:compressed1xDustBedrock>, # Infinity Dust Block
+  "■": <ore:blockBlackIron>,          # Block of Black Iron
+});
+
+val A = <*>.only(function(item) { return item.burnTime > 0; });
+val E = <avaritia:singularity>; // Empty Singularity
+val F = <avaritia:singularity:9>; // Filling Singularity
+val R = <avaritia:singularity:12>; // Result Singularity
+
+F.addAdvancedTooltip(function(item) {
+	val charge = isNull(item.tag.charge) ? 0.0 : item.tag.charge.asDouble();
+  return "§fCharge: §6" ~ charge as int ~ '§r';
+});
+
+val needCharge = pow(10.0, 9.0);
+val maxBonus = 10.0;
+val factor = pow(1.0 / maxBonus, 1.0 / 28.0) + 0.0000000000000001; // about 0.92
+
+furnace.setFuel(R, needCharge);
+scripts.category.tooltip_utils.desc.jei(F, "singularity.heat", maxBonus * 100.0 as int, needCharge as int);
+scripts.category.tooltip_utils.desc.jei(R, "singularity.burn", maxBonus * 100.0 as int, needCharge as int);
+
+// Fake recipe
+val a = <contenttweaker:any_burnable>;
+recipes.addShaped("any burnable", R, [[(E|F),a,a],[a,a,a],[a,a,a]]);
+
+// Actual recipe
+recipes.addHiddenShaped('Burn Singularity', R, [
+	[(E | F).marked('g0'),A.marked('g1'),A.marked('g2')],
+	[A.marked('g3'),A.marked('g4'),A.marked('g5')],
+	[A.marked('g6'),A.marked('g7'),A.marked('g8')],
+],
+function(out, ins, cInfo) {
+	var burnTotal = 0.0d;
+	for i in 1 to 9 {
+		burnTotal += ins["g"~i].burnTime;
+	}
+
+	// Calculate bonus.
+	var bonus = 1.0d;
+	for i in 1 to 8 {
+		for j in (i+1) to 9 {
+			val a = ins["g"~i];
+			val b = ins["g"~j];
+			if (a.burnTime == b.burnTime) {
+				bonus *= factor;
+			}
+		}
+	}
+
+	// Calculate result
+	val charge = D(ins.g0.tag).getDouble('charge', 0.0d) + burnTotal * bonus * maxBonus;
+
+	return charge >= needCharge ? R
+		: charge > 0
+		? F
+			.withLore(["§fLatest efficiency: §b" ~ ((bonus * maxBonus * 100.0) as int) ~ "%"])
+			.updateTag({charge: charge})
+		: E;
+}, null);
+// -------------------------------------------------------------------

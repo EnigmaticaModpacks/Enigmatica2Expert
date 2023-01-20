@@ -436,8 +436,8 @@
 		}
 	},
 	{
-		icon: "avaritiafurnace:infinityfuel 2",
-		item: "avaritiafurnace:infinityfuel",
+		icon: "avaritia:singularity 2 12",
+		item: "avaritia:singularity 1 12",
 		count: 2
 	}],
 	loot_crate: {

@@ -11,7 +11,6 @@ import mods.requious.SlotVisual;
 #priority -150
 
 # [Infinity_Furnace] from [Infinity_Fuel][+4]
-utils.rh(<avaritiafurnace:infinityfurnace>);
 craft.remake(<requious:infinity_furnace>, ["pretty",
   "T R E R T",
   "# ▬ n ▬ #",
@@ -24,7 +23,7 @@ craft.remake(<requious:infinity_furnace>, ["pretty",
   "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
   "r": <rats:idol_of_ratlantis>,
   "H": <scalinghealth:heartcontainer>,            # Heart Container
-  "I": <avaritiafurnace:infinityfuel>,            # Infinity Fuel
+  "I": <avaritia:singularity:12>,
   "▬": <ore:dragonsteelIngot>,
   "n": <randomthings:spectrecoil_ender>,          # Ender Spectre Coil
   "Ϟ": <randomthings:spectreenergyinjector>       # Spectre Energy Injector
