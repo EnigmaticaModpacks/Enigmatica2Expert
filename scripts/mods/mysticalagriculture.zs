@@ -1,5 +1,8 @@
-import crafttweaker.item.IItemStack;
+import crafttweaker.block.IBlockState;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import thaumcraft.aspect.CTAspectStack;
 
 #modloaded mysticalagriculture
 
@@ -15,32 +18,24 @@ craft.remake(<mysticalagriculture:tier1_inferium_seeds>, ["pretty",
   "h": <ore:seed>, # Seeds
 });
 
-# Wither Proof Blocks
-recipes.addShapedMirrored("Wither Proof Block",
-<mysticalagriculture:witherproof_block> * 16,
-[[<enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>],
-[<enderio:block_reinforced_obsidian>, <ore:dyeBlack>, <enderio:block_reinforced_obsidian>],
-[<enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>, <enderio:block_reinforced_obsidian>]]);
+# [Witherproof Block]*16 from [Black Dye][+1]
+craft.remake(<mysticalagriculture:witherproof_block> * 16, ["pretty",
+  "R R R",
+  "R B R",
+  "R R R"], {
+  "R": <enderio:block_reinforced_obsidian>, # Reinforced Obsidian
+  "B": <ore:dyeBlack>,                      # Black Dye
+});
 
-recipes.addShapedMirrored("Wither Proof Glass",
-<mysticalagriculture:witherproof_glass> * 16,
-[[<enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>],
-[<extrautils2:decorativeglass:3>, <ore:dyeBlack>, <extrautils2:decorativeglass:3>],
-[<enderio:block_reinforced_obsidian>, <extrautils2:decorativeglass:3>, <enderio:block_reinforced_obsidian>]]);
-
-# Readding Essence to Ingot recipes because of an unidentified bug - 20-12-2018
-	recipes.addShaped("Lead Essence to Ingot", <thermalfoundation:material:131> * 4, [[<mysticalagriculture:lead_essence>, <mysticalagriculture:lead_essence>, <mysticalagriculture:lead_essence>],[<mysticalagriculture:lead_essence>, null, <mysticalagriculture:lead_essence>], [<mysticalagriculture:lead_essence>, <mysticalagriculture:lead_essence>, <mysticalagriculture:lead_essence>]]);
-	recipes.addShaped("Silver Essence to Ingot", <thermalfoundation:material:130> * 4, [[<mysticalagriculture:silver_essence>, <mysticalagriculture:silver_essence>, <mysticalagriculture:silver_essence>],[<mysticalagriculture:silver_essence>, null, <mysticalagriculture:silver_essence>], [<mysticalagriculture:silver_essence>, <mysticalagriculture:silver_essence>, <mysticalagriculture:silver_essence>]]);
-	recipes.addShaped("Tin Essence to Ingot", <thermalfoundation:material:129> * 8, [[<mysticalagriculture:tin_essence>, <mysticalagriculture:tin_essence>, <mysticalagriculture:tin_essence>],[<mysticalagriculture:tin_essence>, null, <mysticalagriculture:tin_essence>], [<mysticalagriculture:tin_essence>, <mysticalagriculture:tin_essence>, <mysticalagriculture:tin_essence>]]);
-	recipes.addShaped("Copper Essence to Ingot", <thermalfoundation:material:128> * 8, [[<mysticalagriculture:copper_essence>, <mysticalagriculture:copper_essence>, <mysticalagriculture:copper_essence>],[<mysticalagriculture:copper_essence>, null, <mysticalagriculture:copper_essence>], [<mysticalagriculture:copper_essence>, <mysticalagriculture:copper_essence>, <mysticalagriculture:copper_essence>]]);
-
-# Disabling Obsidian recipe, readding Essence recipe
-	recipes.remove(<minecraft:obsidian>);
-	recipes.addShaped("Obsidian From Essence",
-	<minecraft:obsidian> * 8,
-	[[<mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>],
-	[<mysticalagriculture:obsidian_essence>, null, <mysticalagriculture:obsidian_essence>],
-	[<mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>, <mysticalagriculture:obsidian_essence>]]);
+# [Witherproof Glass]*16 from [Black Dye][+2]
+craft.remake(<mysticalagriculture:witherproof_glass> * 16, ["pretty",
+  "R ■ R",
+  "■ B ■",
+  "R ■ R"], {
+  "R": <enderio:block_reinforced_obsidian>, # Reinforced Obsidian
+  "■": <ore:blockGlassBlack>,               # Dark Glass
+  "B": <ore:dyeBlack>,                      # Black Dye
+});
 
 # [Ultimate Furnace] from [Supremium Furnace][+3]
 craft.remake(<mysticalagriculture:ultimate_furnace>, ["pretty",
@@ -53,24 +48,39 @@ craft.remake(<mysticalagriculture:ultimate_furnace>, ["pretty",
   "B": <endreborn:sword_shard>,                 # Broken Sword Part
 });
 
-# Growth Accelerator
-	recipes.remove(<mysticalagriculture:growth_accelerator>);
-	recipes.addShapedMirrored("Growth Accelerator",
-	<mysticalagriculture:growth_accelerator> * 2,
-	[[<ore:blockInferiumEssence>, <ore:blockPrudentiumEssence>, <ore:blockInferiumEssence>],
-	[<ore:manaDiamond>, <appliedenergistics2:quartz_growth_accelerator>, <ore:manaDiamond>],
-	[<ore:blockInferiumEssence>, <ore:blockPrudentiumEssence>, <ore:blockInferiumEssence>]]);
+# [Growth Accelerator] from [Mana Diamond][+2]
+craft.remake(<mysticalagriculture:growth_accelerator>, ["pretty",
+  "■ ‚ ■",
+  "‚ D ‚",
+  "■ ‚ ■"], {
+  "■": <ore:blockInferiumEssence>, # Block of Inferium Essence
+  "‚": <ore:nuggetMithrillium>,    # Mithrillium Nugget
+  "D": <ore:manaDiamond>,          # Mana Diamond
+});
 
-# Master Infusion Crystal
-	recipes.remove(<mysticalagriculture:master_infusion_crystal>);
-	mods.astralsorcery.Altar.addConstellationAltarRecipe("enigmatica2expert:shaped/internal/altar/master_infusion_crystal",
-		<mysticalagriculture:master_infusion_crystal>, 3000, 600,
-	[<botania:rune:12>, <botania:storage:3>, <botania:rune:15>,
-	<botania:storage:2>, <matc:supremiumcrystal>.anyDamage(), <botania:storage>,
-	<botania:rune:11>, <botania:storage:1>, <botania:rune:10>,
-	<botania:spark>, <botania:spark>, <botania:spark>, <botania:spark>,
-	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>, <botania:manaresource:1>, <botania:manaresource:1>,
-	<botania:manaresource:1>, <botania:manaresource:1>, <astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcraftingcomponent:4>]);
+mods.astralsorcery.Altar.addConstellationAltarRecipe(
+  "[Master Infusion Crystal] from [Block of Terrasteel][+11]",
+  <mysticalagriculture:master_infusion_crystal>,
+  3000 /*Starlight*/, 600 /*CraftTickTime*/,
+  Grid([
+  "o▀r"+
+  "B*■"+
+  "G▄l"+
+  "SSSS"+
+  "◊◊PPPP◊◊"], {
+  "o": <ore:runeSlothB>,                        # Rune of Sloth
+  "▀": <botania:storage:3>,                     # Block of Mana Diamond
+  "r": <ore:runePrideB>,                        # Rune of Pride
+  "B": <botania:storage:2>,                     # Block of Elementium
+  "*": <matc:supremiumcrystal>.anyDamage(),     # Supremium Infusion Crystal
+  "■": <botania:storage>,                       # Block of Manasteel
+  "G": <ore:runeGreedB>,                        # Rune of Greed
+  "▄": <botania:storage:1>,                     # Block of Terrasteel
+  "l": <ore:runeGluttonyB>,                     # Rune of Gluttony
+  "S": <botania:spark>,                         # Spark
+  "◊": <astralsorcery:itemcraftingcomponent:4>, # Resonating Gem
+  "P": <ore:manaPearl>,                         # Mana Pearl
+}).shapeless(true));
 
 # *======= Crafting Seeds =======*
 val essenceByTier = [
@@ -329,36 +339,6 @@ addTieredRecipe(<mysticalagradditions:nether_star_seeds>       , [<ore:blockNeth
 addTieredRecipe(<mysticalagradditions:dragon_egg_seeds>        , [<mysticalagradditions:stuff:3>], "aevitas");
 addTieredRecipe(itemUtils.getItem("mysticalcreations:ultimate_seeds") , [<ore:blockUltimate>           ], "horologium");
 
-
-# *======= Remove & Hide =======*
-
-var itemsToRemoveAndHide as IItemStack[] = [
-	<mysticalagriculture:chunk>,
-	<mysticalagriculture:chunk:1>,
-	<mysticalagriculture:chunk:2>,
-	<mysticalagriculture:chunk:3>,
-	<mysticalagriculture:chunk:4>,
-	<mysticalagradditions:insanium:4>
-];
-
-for item in itemsToRemoveAndHide {
-	utils.rh(item);
-}
-
-# *======= Unification =======*
-
-# Sulfur Essence to Dust
-  recipes.removeByRecipeName("mysticalagriculture:dustsulfur");
-  recipes.addShapeless("Mystical Agriculture Sulfur", <thermalfoundation:material:771> * 8, [<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>,<mysticalagriculture:sulfur_essence>]);
-
-# Uranium Essence to Ingot
-  recipes.removeByRecipeName("mysticalagriculture:ingoturanium");
-  recipes.addShaped("Mystical Agriculture Uranium", <immersiveengineering:metal:5> * 3, [[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,null,<mysticalagriculture:uranium_essence>],[<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>,<mysticalagriculture:uranium_essence>]]);
-
-# Changed Amber Essence to the more sensible amber
-  recipes.removeByRecipeName("mysticalagriculture:gemamber");
-  recipes.addShaped("Mystical Agriculture Amber", <thaumcraft:amber> * 6, [[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,null,<mysticalagriculture:amber_essence>],[<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>,<mysticalagriculture:amber_essence>]]);
-
 # Hydroponics Inferium grows
 val inferCount = {
 	<mysticalagriculture:tier1_inferium_seeds>  : 3,
@@ -386,97 +366,98 @@ Object.entries(
 					`: <${rec.output.items[0].stacks[0].name}>,`
 				]
 			})
+			.map(a=>a.map(b=>b.replace(':0>','>')))
 			.sort((a, b) => naturalSort(a[0], b[0]))
 	)
 )
 )*/
-# <mysticalagriculture:tier1_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
-# <mysticalagriculture:tier2_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
-# <mysticalagriculture:tier3_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
-# <mysticalagriculture:tier4_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
-# <mysticalagriculture:tier5_inferium_seeds:0>: <mysticalagriculture:crafting:0>,
-<mysticalagriculture:aluminum_seeds:0>        : <mysticalagriculture:aluminum_essence:0>,
-<mysticalagriculture:amber_seeds:0>           : <mysticalagriculture:amber_essence:0>,
-<mysticalagriculture:apatite_seeds:0>         : <mysticalagriculture:apatite_essence:0>,
-<mysticalagriculture:aquamarine_seeds:0>      : <mysticalagriculture:aquamarine_essence:0>,
-<mysticalagriculture:ardite_seeds:0>          : <mysticalagriculture:ardite_essence:0>,
-<mysticalagriculture:basalt_seeds:0>          : <mysticalagriculture:basalt_essence:0>,
-<mysticalagriculture:black_quartz_seeds:0>    : <mysticalagriculture:black_quartz_essence:0>,
-<mysticalagriculture:blaze_seeds:0>           : <mysticalagriculture:blaze_essence:0>,
-<mysticalagriculture:certus_quartz_seeds:0>   : <mysticalagriculture:certus_quartz_essence:0>,
-<mysticalagriculture:chicken_seeds:0>         : <mysticalagriculture:chicken_essence:0>,
-<mysticalagriculture:coal_seeds:0>            : <mysticalagriculture:coal_essence:0>,
-<mysticalagriculture:cobalt_seeds:0>          : <mysticalagriculture:cobalt_essence:0>,
-<mysticalagriculture:copper_seeds:0>          : <mysticalagriculture:copper_essence:0>,
-<mysticalagriculture:cow_seeds:0>             : <mysticalagriculture:cow_essence:0>,
-<mysticalagriculture:creeper_seeds:0>         : <mysticalagriculture:creeper_essence:0>,
-<mysticalagriculture:diamond_seeds:0>         : <mysticalagriculture:diamond_essence:0>,
-<mysticalagriculture:dirt_seeds:0>            : <mysticalagriculture:dirt_essence:0>,
-<mysticalagriculture:draconium_seeds:0>       : <mysticalagriculture:draconium_essence:0>,
-<mysticalagriculture:dye_seeds:0>             : <mysticalagriculture:dye_essence:0>,
-<mysticalagriculture:emerald_seeds:0>         : <mysticalagriculture:emerald_essence:0>,
-<mysticalagriculture:end_seeds:0>             : <mysticalagriculture:end_essence:0>,
-<mysticalagriculture:ender_amethyst_seeds:0>  : <mysticalagriculture:ender_amethyst_essence:0>,
-<mysticalagriculture:enderium_seeds:0>        : <mysticalagriculture:enderium_essence:0>,
-<mysticalagriculture:enderman_seeds:0>        : <mysticalagriculture:enderman_essence:0>,
-<mysticalagriculture:experience_seeds:0>      : <mysticalagriculture:experience_essence:0>,
-<mysticalagriculture:fiery_ingot_seeds:0>     : <mysticalagriculture:fiery_ingot_essence:0>,
-<mysticalagriculture:fire_seeds:0>            : <mysticalagriculture:fire_essence:0>,
-<mysticalagriculture:fluix_seeds:0>           : <mysticalagriculture:fluix_essence:0>,
-<mysticalagriculture:fluxed_electrum_seeds:0> : <mysticalagriculture:fluxed_electrum_essence:0>,
-<mysticalagriculture:ghast_seeds:0>           : <mysticalagriculture:ghast_essence:0>,
-<mysticalagriculture:glowstone_seeds:0>       : <mysticalagriculture:glowstone_essence:0>,
-<mysticalagriculture:gold_seeds:0>            : <mysticalagriculture:gold_essence:0>,
-<mysticalagriculture:guardian_seeds:0>        : <mysticalagriculture:guardian_essence:0>,
-<mysticalagriculture:ice_seeds:0>             : <mysticalagriculture:ice_essence:0>,
-<mysticalagriculture:iridium_seeds:0>         : <mysticalagriculture:iridium_essence:0>,
-<mysticalagriculture:iron_seeds:0>            : <mysticalagriculture:iron_essence:0>,
-<mysticalagriculture:ironwood_seeds:0>        : <mysticalagriculture:ironwood_essence:0>,
-<mysticalagriculture:knightmetal_seeds:0>     : <mysticalagriculture:knightmetal_essence:0>,
-<mysticalagriculture:knightslime_seeds:0>     : <mysticalagriculture:knightslime_essence:0>,
-<mysticalagriculture:lapis_lazuli_seeds:0>    : <mysticalagriculture:lapis_lazuli_essence:0>,
-<mysticalagriculture:lead_seeds:0>            : <mysticalagriculture:lead_essence:0>,
-<mysticalagriculture:limestone_seeds:0>       : <mysticalagriculture:limestone_essence:0>,
-<mysticalagriculture:malachite_seeds:0>       : <mysticalagriculture:malachite_essence:0>,
-<mysticalagriculture:marble_seeds:0>          : <mysticalagriculture:marble_essence:0>,
-<mysticalagriculture:menril_seeds:0>          : <mysticalagriculture:menril_essence:0>,
-<mysticalagriculture:mystical_flower_seeds:0> : <mysticalagriculture:mystical_flower_essence:0>,
-<mysticalagriculture:nature_seeds:0>          : <mysticalagriculture:nature_essence:0>,
-<mysticalagriculture:nether_quartz_seeds:0>   : <mysticalagriculture:nether_quartz_essence:0>,
-<mysticalagriculture:nether_seeds:0>          : <mysticalagriculture:nether_essence:0>,
-<mysticalagriculture:nickel_seeds:0>          : <mysticalagriculture:nickel_essence:0>,
-<mysticalagriculture:obsidian_seeds:0>        : <mysticalagriculture:obsidian_essence:0>,
-<mysticalagriculture:osmium_seeds:0>          : <mysticalagriculture:osmium_essence:0>,
-<mysticalagriculture:peridot_seeds:0>         : <mysticalagriculture:peridot_essence:0>,
-<mysticalagriculture:pig_seeds:0>             : <mysticalagriculture:pig_essence:0>,
-<mysticalagriculture:platinum_seeds:0>        : <mysticalagriculture:platinum_essence:0>,
-<mysticalagriculture:quicksilver_seeds:0>     : <mysticalagriculture:quicksilver_essence:0>,
-<mysticalagriculture:rabbit_seeds:0>          : <mysticalagriculture:rabbit_essence:0>,
-<mysticalagriculture:redstone_seeds:0>        : <mysticalagriculture:redstone_essence:0>,
-<mysticalagriculture:rock_crystal_seeds:0>    : <mysticalagriculture:rock_crystal_essence:0>,
-<mysticalagriculture:ruby_seeds:0>            : <mysticalagriculture:ruby_essence:0>,
-<mysticalagriculture:saltpeter_seeds:0>       : <mysticalagriculture:saltpeter_essence:0>,
-<mysticalagriculture:sapphire_seeds:0>        : <mysticalagriculture:sapphire_essence:0>,
-<mysticalagriculture:sheep_seeds:0>           : <mysticalagriculture:sheep_essence:0>,
-<mysticalagriculture:silver_seeds:0>          : <mysticalagriculture:silver_essence:0>,
-<mysticalagriculture:skeleton_seeds:0>        : <mysticalagriculture:skeleton_essence:0>,
-<mysticalagriculture:sky_stone_seeds:0>       : <mysticalagriculture:sky_stone_essence:0>,
-<mysticalagriculture:slate_seeds:0>           : <mysticalagriculture:slate_essence:0>,
-<mysticalagriculture:slime_seeds:0>           : <mysticalagriculture:slime_essence:0>,
-<mysticalagriculture:spider_seeds:0>          : <mysticalagriculture:spider_essence:0>,
-<mysticalagriculture:steeleaf_seeds:0>        : <mysticalagriculture:steeleaf_essence:0>,
-<mysticalagriculture:stone_seeds:0>           : <mysticalagriculture:stone_essence:0>,
-<mysticalagriculture:sulfur_seeds:0>          : <mysticalagriculture:sulfur_essence:0>,
-<mysticalagriculture:tanzanite_seeds:0>       : <mysticalagriculture:tanzanite_essence:0>,
-<mysticalagriculture:terrasteel_seeds:0>      : <mysticalagriculture:terrasteel_essence:0>,
-<mysticalagriculture:thaumium_seeds:0>        : <mysticalagriculture:thaumium_essence:0>,
-<mysticalagriculture:tin_seeds:0>             : <mysticalagriculture:tin_essence:0>,
-<mysticalagriculture:topaz_seeds:0>           : <mysticalagriculture:topaz_essence:0>,
-<mysticalagriculture:uranium_seeds:0>         : <mysticalagriculture:uranium_essence:0>,
-<mysticalagriculture:void_metal_seeds:0>      : <mysticalagriculture:void_metal_essence:0>,
-<mysticalagriculture:water_seeds:0>           : <mysticalagriculture:water_essence:0>,
-<mysticalagriculture:wood_seeds:0>            : <mysticalagriculture:wood_essence:0>,
-<mysticalagriculture:zombie_seeds:0>          : <mysticalagriculture:zombie_essence:0>,
+# <mysticalagriculture:tier1_inferium_seeds>: <mysticalagriculture:crafting>,
+# <mysticalagriculture:tier2_inferium_seeds>: <mysticalagriculture:crafting>,
+# <mysticalagriculture:tier3_inferium_seeds>: <mysticalagriculture:crafting>,
+# <mysticalagriculture:tier4_inferium_seeds>: <mysticalagriculture:crafting>,
+# <mysticalagriculture:tier5_inferium_seeds>: <mysticalagriculture:crafting>,
+<mysticalagriculture:aluminum_seeds>        : <mysticalagriculture:aluminum_essence>,
+<mysticalagriculture:amber_seeds>           : <mysticalagriculture:amber_essence>,
+<mysticalagriculture:apatite_seeds>         : <mysticalagriculture:apatite_essence>,
+<mysticalagriculture:aquamarine_seeds>      : <mysticalagriculture:aquamarine_essence>,
+<mysticalagriculture:ardite_seeds>          : <mysticalagriculture:ardite_essence>,
+<mysticalagriculture:basalt_seeds>          : <mysticalagriculture:basalt_essence>,
+<mysticalagriculture:black_quartz_seeds>    : <mysticalagriculture:black_quartz_essence>,
+<mysticalagriculture:blaze_seeds>           : <mysticalagriculture:blaze_essence>,
+<mysticalagriculture:certus_quartz_seeds>   : <mysticalagriculture:certus_quartz_essence>,
+<mysticalagriculture:chicken_seeds>         : <mysticalagriculture:chicken_essence>,
+<mysticalagriculture:coal_seeds>            : <mysticalagriculture:coal_essence>,
+<mysticalagriculture:cobalt_seeds>          : <mysticalagriculture:cobalt_essence>,
+<mysticalagriculture:copper_seeds>          : <mysticalagriculture:copper_essence>,
+<mysticalagriculture:cow_seeds>             : <mysticalagriculture:cow_essence>,
+<mysticalagriculture:creeper_seeds>         : <mysticalagriculture:creeper_essence>,
+<mysticalagriculture:diamond_seeds>         : <mysticalagriculture:diamond_essence>,
+<mysticalagriculture:dirt_seeds>            : <mysticalagriculture:dirt_essence>,
+<mysticalagriculture:draconium_seeds>       : <mysticalagriculture:draconium_essence>,
+<mysticalagriculture:dye_seeds>             : <mysticalagriculture:dye_essence>,
+<mysticalagriculture:emerald_seeds>         : <mysticalagriculture:emerald_essence>,
+<mysticalagriculture:end_seeds>             : <mysticalagriculture:end_essence>,
+<mysticalagriculture:ender_amethyst_seeds>  : <mysticalagriculture:ender_amethyst_essence>,
+<mysticalagriculture:enderium_seeds>        : <mysticalagriculture:enderium_essence>,
+<mysticalagriculture:enderman_seeds>        : <mysticalagriculture:enderman_essence>,
+<mysticalagriculture:experience_seeds>      : <mysticalagriculture:experience_essence>,
+<mysticalagriculture:fiery_ingot_seeds>     : <mysticalagriculture:fiery_ingot_essence>,
+<mysticalagriculture:fire_seeds>            : <mysticalagriculture:fire_essence>,
+<mysticalagriculture:fluix_seeds>           : <mysticalagriculture:fluix_essence>,
+<mysticalagriculture:fluxed_electrum_seeds> : <mysticalagriculture:fluxed_electrum_essence>,
+<mysticalagriculture:ghast_seeds>           : <mysticalagriculture:ghast_essence>,
+<mysticalagriculture:glowstone_seeds>       : <mysticalagriculture:glowstone_essence>,
+<mysticalagriculture:gold_seeds>            : <mysticalagriculture:gold_essence>,
+<mysticalagriculture:guardian_seeds>        : <mysticalagriculture:guardian_essence>,
+<mysticalagriculture:ice_seeds>             : <mysticalagriculture:ice_essence>,
+<mysticalagriculture:iridium_seeds>         : <mysticalagriculture:iridium_essence>,
+<mysticalagriculture:iron_seeds>            : <mysticalagriculture:iron_essence>,
+<mysticalagriculture:ironwood_seeds>        : <mysticalagriculture:ironwood_essence>,
+<mysticalagriculture:knightmetal_seeds>     : <mysticalagriculture:knightmetal_essence>,
+<mysticalagriculture:knightslime_seeds>     : <mysticalagriculture:knightslime_essence>,
+<mysticalagriculture:lapis_lazuli_seeds>    : <mysticalagriculture:lapis_lazuli_essence>,
+<mysticalagriculture:lead_seeds>            : <mysticalagriculture:lead_essence>,
+<mysticalagriculture:limestone_seeds>       : <mysticalagriculture:limestone_essence>,
+<mysticalagriculture:malachite_seeds>       : <mysticalagriculture:malachite_essence>,
+<mysticalagriculture:marble_seeds>          : <mysticalagriculture:marble_essence>,
+<mysticalagriculture:menril_seeds>          : <mysticalagriculture:menril_essence>,
+<mysticalagriculture:mystical_flower_seeds> : <mysticalagriculture:mystical_flower_essence>,
+<mysticalagriculture:nature_seeds>          : <mysticalagriculture:nature_essence>,
+<mysticalagriculture:nether_quartz_seeds>   : <mysticalagriculture:nether_quartz_essence>,
+<mysticalagriculture:nether_seeds>          : <mysticalagriculture:nether_essence>,
+<mysticalagriculture:nickel_seeds>          : <mysticalagriculture:nickel_essence>,
+<mysticalagriculture:obsidian_seeds>        : <mysticalagriculture:obsidian_essence>,
+<mysticalagriculture:osmium_seeds>          : <mysticalagriculture:osmium_essence>,
+<mysticalagriculture:peridot_seeds>         : <mysticalagriculture:peridot_essence>,
+<mysticalagriculture:pig_seeds>             : <mysticalagriculture:pig_essence>,
+<mysticalagriculture:platinum_seeds>        : <mysticalagriculture:platinum_essence>,
+<mysticalagriculture:quicksilver_seeds>     : <mysticalagriculture:quicksilver_essence>,
+<mysticalagriculture:rabbit_seeds>          : <mysticalagriculture:rabbit_essence>,
+<mysticalagriculture:redstone_seeds>        : <mysticalagriculture:redstone_essence>,
+<mysticalagriculture:rock_crystal_seeds>    : <mysticalagriculture:rock_crystal_essence>,
+<mysticalagriculture:ruby_seeds>            : <mysticalagriculture:ruby_essence>,
+<mysticalagriculture:saltpeter_seeds>       : <mysticalagriculture:saltpeter_essence>,
+<mysticalagriculture:sapphire_seeds>        : <mysticalagriculture:sapphire_essence>,
+<mysticalagriculture:sheep_seeds>           : <mysticalagriculture:sheep_essence>,
+<mysticalagriculture:silver_seeds>          : <mysticalagriculture:silver_essence>,
+<mysticalagriculture:skeleton_seeds>        : <mysticalagriculture:skeleton_essence>,
+<mysticalagriculture:sky_stone_seeds>       : <mysticalagriculture:sky_stone_essence>,
+<mysticalagriculture:slate_seeds>           : <mysticalagriculture:slate_essence>,
+<mysticalagriculture:slime_seeds>           : <mysticalagriculture:slime_essence>,
+<mysticalagriculture:spider_seeds>          : <mysticalagriculture:spider_essence>,
+<mysticalagriculture:steeleaf_seeds>        : <mysticalagriculture:steeleaf_essence>,
+<mysticalagriculture:stone_seeds>           : <mysticalagriculture:stone_essence>,
+<mysticalagriculture:sulfur_seeds>          : <mysticalagriculture:sulfur_essence>,
+<mysticalagriculture:tanzanite_seeds>       : <mysticalagriculture:tanzanite_essence>,
+<mysticalagriculture:terrasteel_seeds>      : <mysticalagriculture:terrasteel_essence>,
+<mysticalagriculture:thaumium_seeds>        : <mysticalagriculture:thaumium_essence>,
+<mysticalagriculture:tin_seeds>             : <mysticalagriculture:tin_essence>,
+<mysticalagriculture:topaz_seeds>           : <mysticalagriculture:topaz_essence>,
+<mysticalagriculture:uranium_seeds>         : <mysticalagriculture:uranium_essence>,
+<mysticalagriculture:void_metal_seeds>      : <mysticalagriculture:void_metal_essence>,
+<mysticalagriculture:water_seeds>           : <mysticalagriculture:water_essence>,
+<mysticalagriculture:wood_seeds>            : <mysticalagriculture:wood_essence>,
+<mysticalagriculture:zombie_seeds>          : <mysticalagriculture:zombie_essence>,
 /**/
 } as IItemStack[IItemStack] {
 	scripts.process.grow(input, output * 9, "only: Hydroponics", input);
@@ -696,7 +677,7 @@ recipes.removeByRecipeName("mysticalagriculture:crafting_16");
 scripts.process.solution(
 	[<ore:blockProsperity>, <ore:nuggetManasteel>, <ore:dustAstralStarmetal>],
 	[<liquid:brass> * 144],
-	[<liquid:base_essence> * 144],
+	[<liquid:base_essence> * 1440],
 	[0.5, 0.5, 0.5, 3300], "only: highoven"
 );
 
@@ -706,7 +687,7 @@ scripts.processUtils.avdRockXmlRecipe("ElectricArcFurnace", [
 	<ore:blockProsperity> * 2,
 	<ore:nuggetManasteel> * 4,
 	<ore:dustAstralStarmetal> * 2,  # Stardust
-], null, [<mysticalagriculture:crafting:32> * 4], null);
+], null, [<mysticalagriculture:crafting:32> * 40], null);
 
 # [Base Crafting Seed] Harder to encourage Villager Trades
 craft.remake(<mysticalagriculture:crafting:16>, ["pretty",
@@ -807,18 +788,6 @@ craft.make(<quark:slime_bucket>, ["pretty",
 # "Purification" or [Prosperity Shard Shard] into pure shards
 scripts.do.expire_in_block.set(<tconstruct:shard>.withTag({Material: "ma.prosperity"}),  {"biomesoplenty:blue_fire": <mysticalagriculture:crafting:5>});
 
-function remakeInAltair(oldRecipeName as string, output as IItemStack, gridStr as string[], ingrsMap as IIngredient[string]) as void {
-	recipes.removeByRecipeName(oldRecipeName);
-	mods.astralsorcery.Altar.addDiscoveryAltarRecipe(craft.uniqueRecipeName(output), output, 200, 800, Grid(gridStr, ingrsMap).shapeless(true));
-}
-
-# Remake some essence in other machines rather then in crafting table
-remakeInAltair("mysticalagriculture:blockcustomore", <astralsorcery:blockcustomore>, [
-	"xxx",
-	"x x",
-	"xxx"], {x: <mysticalagriculture:rock_crystal_essence>}
-);
-
 # Adventure way to obtain Prudentium Essence
 scripts.do.entity_kill_entity.add("minecraft:slime", "betteranimalsplus:feralwolf", <mysticalagriculture:crafting:2>);
 
@@ -883,21 +852,344 @@ for i, item in furnaceByTier {
 # ---------------------------------
 
 # --------------------------------------------
-# Essence remake with magic mods
+# Essence remake
 # --------------------------------------------
-recipes.removeByRecipeName("mysticalagriculture:dye_13");
-mods.thaumcraft.Crucible.registerRecipe("ma_lapis", "BASEALCHEMY", <minecraft:dye:4>, <mysticalagriculture:lapis_lazuli_essence>, [<aspect:desiderium>]);
+function remakeBlock(recName as string, output as IBlockState, ingrs as IIngredient[], fluid as string = 'stone') as void {
+	recipes.removeByRecipeName(recName);
+	scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, fluid, output);
+}
 
-recipes.removeByRecipeName("mysticalagriculture:ghast_tear");
-mods.thaumcraft.Crucible.registerRecipe("ma_ghast", "BASEALCHEMY", <minecraft:ghast_tear>, <mysticalagriculture:ghast_essence>, [<aspect:spiritus>, <aspect:exanimis>]);
+function remakeSimple(recName as string, output as IIngredient, ingrs as IIngredient[]) as void {
+	
+}
 
-recipes.removeByRecipeName("mysticalagriculture:glowstone_dust");
-val GE = <mysticalagriculture:glowstone_essence>;
-mods.astralsorcery.Altar.addDiscoveryAltarRecipe(
-  "enigmatica2expert:shaped/internal/altar/glowstone",
-  <minecraft:glowstone_dust> * 12, 150, 50, [
-    GE, GE, GE,
-    GE,null,GE,
-    GE, GE, GE,
-]);
+function remakeFluid(recName as string, output as ILiquidStack, ingrs as IIngredient[]) as void {
+	recipes.removeByRecipeName(recName);
+	mods.inworldcrafting.FluidToFluid.transform(output, <liquid:fluid_quicksilver>, ingrs);
+}
+
+function remakeAltair(recName as string, output as IIngredient, ingrs as IIngredient[]) as void {
+	recipes.removeByRecipeName(recName);
+	val A = ingrs[0];
+	mods.astralsorcery.Altar.addDiscoveryAltarRecipe(
+		"enigmatica2expert:shaped/internal/altar/"~output.items[0].definition.id.split(':')[1],
+		output.items[0], 150, 50, [
+			A, A, A,
+			A,null,A,
+			A, A, A,
+	]);
+}
+
+function remakeCrucible(recName as string, output as IIngredient, ingrs as IIngredient[], aspects as CTAspectStack[]) as void {
+	recipes.removeByRecipeName(recName);
+	mods.thaumcraft.Crucible.registerRecipe(recName, "BASEALCHEMY", output.items[0], ingrs[0], aspects);
+}
+
+function remakeManapool(recName as string, output as IIngredient, ingrs as IIngredient[]) as void {
+	recipes.removeByRecipeName(recName);
+	mods.botania.ManaInfusion.addInfusion(output.items[0], ingrs[0], 100);
+}
+
+function makeArcane(output as IItemStack, grid as string[], ingrs as IIngredient[string], aspects as CTAspectStack[]) as void {
+	mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+		craft.uniqueRecipeName(output),
+		"FIRSTSTEPS", # Research
+		10, # Vis cost
+		aspects,
+		output,
+  	Grid(grid, ingrs).shaped()
+	);
+}
+
+function remakeArcane(recName as string, output as IItemStack, grid as string[], ingrs as IIngredient[string], aspects as CTAspectStack[]) as void {
+	recipes.removeByRecipeName(recName);
+	makeArcane(output, grid, ingrs, aspects);
+}
+
+/*Inject_js{
+if(cmd.block.trim().length > 10) return cmd.block
+return getUnchangedTableRecipes()
+  .filter(r => r.input.match(/<mysticalagr(?:iculture|additions):[^>]+>/))
+  .map(r => ({
+    rec  : r,
+    ingrs: r.input.split(/, /g).map(s => s.replace(/\[|\]/g, '')),
+  }))
+  .filter(({ ingrs }) => ingrs.every(s => s.match(/null|<(mysticalagr(?:iculture|additions):[^>]+)>/)))
+  .map(({ rec, ingrs }) => {
+    const ing = ingrs.filter(s => !s.match('null'))
+    const re = Object.entries(_.countBy(ing))
+    if (!re.every(([item]) => item.includes('essence'))) return null
+
+    const outOres = [...getItemOredictSet(rec.out_id, rec.out_meta)]
+    const outBases = outOres
+      .map(s => s.replace(/^[a-z]+([A-Z].+)/, '$1')).filter(Boolean)
+    const outBaseOreBlocks = outBases.map(b => getByOreBase(b).ore).filter(Boolean)
+
+    const outFluid = outBases.map(s => s.toLowerCase()).find(b => isFluidExist(b))
+
+    const fnc = outBaseOreBlocks.length
+      ? 'remakeBlock'
+      : outFluid
+        ? 'remakeFluid'
+        : 'remakeSimple'
+    const output = outBaseOreBlocks.length
+      ? outBaseOreBlocks[0].commandString
+      : outFluid
+        ? `<fluid:${outFluid}>`
+        : rec.output
+
+    return [
+      fnc, '(',
+      `"${rec.name}"`,
+      ', ',
+      output,
+      ', [',
+      re.map(p => p.filter(o => o != 1).join(' * ')).join(', '),
+      ']);',
+    ]
+  })
+  .filter(Boolean)
+  .sort((a, b) => naturalSort(a[0], b[0]) || naturalSort(a[4], b[4]))
+}*/
+// remakeFluid ("mysticalagriculture:beef"                 , <fluid:meat>                              , [<mysticalagriculture:cow_essence>]);
+// remakeFluid ("mysticalagriculture:chicken"              , <fluid:meat>                              , [<mysticalagriculture:chicken_essence>]); 
+// remakeFluid ("mysticalagriculture:clay_ball"            , <fluid:clay>                              , [<mysticalagriculture:water_essence> * 2, <mysticalagriculture:dirt_essence>]); 
+// remakeFluid ("mysticalagriculture:dirt_1"               , <fluid:dirt>                              , [<mysticalagriculture:dirt_essence>]); 
+// remakeFluid ("mysticalagriculture:dirt_2"               , <fluid:dirt>                              , [<mysticalagriculture:dirt_essence>]); 
+// remakeFluid ("mysticalagriculture:dirt"                 , <fluid:dirt>                              , [<mysticalagriculture:dirt_essence>]);
+remakeAltair("mysticalagriculture:glowstone_dust"       , <minecraft:glowstone_dust> * 12                    , [<mysticalagriculture:glowstone_essence>]);
+// remakeFluid ("mysticalagriculture:ice"                  , <fluid:ice>                               , [<mysticalagriculture:ice_essence>]);
+remakeManapool ("mysticalagriculture:ingotenderium"        , <thermalfoundation:material:231>                          , [<mysticalagriculture:enderium_essence>]);
+remakeFluid ("mysticalagriculture:ingots"               , <fluid:knightslime>                       , [<mysticalagriculture:knightslime_essence> * 10]);
+remakeManapool ("mysticalagriculture:ingotthaumium"        , <thaumcraft:nugget:6>                          , [<mysticalagriculture:thaumium_essence>]);
+remakeManapool ("mysticalagriculture:manaresource"         , <botania:manaresource:18>                        , [<mysticalagriculture:terrasteel_essence>]);
+// remakeFluid ("mysticalagriculture:mutton"               , <fluid:meat>                              , [<mysticalagriculture:sheep_essence>]);
+remakeFluid ("mysticalagriculture:obsidian"             , <fluid:obsidian>                          , [<mysticalagriculture:obsidian_essence> * 2]);
+// remakeFluid ("mysticalagriculture:porkchop"             , <fluid:meat>                              , [<mysticalagriculture:pig_essence>]);
+// remakeFluid ("mysticalagriculture:rabbit"               , <fluid:meat>                              , [<mysticalagriculture:rabbit_essence>]);
+// remakeFluid ("mysticalagriculture:sand_1"               , <fluid:sand>                              , [<mysticalagriculture:dirt_essence> * 2, <mysticalagriculture:fire_essence>]);
+// remakeFluid ("mysticalagriculture:sand"                 , <fluid:sand>                              , [<mysticalagriculture:fire_essence> * 2, <mysticalagriculture:dirt_essence>]);
+// remakeFluid ("mysticalagriculture:soul_sand"            , <fluid:sand>                              , [<mysticalagriculture:nether_essence>]);
+// remakeFluid ("mysticalagriculture:stone"                , <fluid:stone>                             , [<mysticalagriculture:stone_essence>]);
+remakeBlock   ("mysticalagriculture:gemquartzblack"       , <blockstate:actuallyadditions:block_misc:type=ore_black_quartz>          , [<mysticalagriculture:black_quartz_essence> * 7                                      ]);
+remakeBlock   ("mysticalagriculture:crystalcertusquartz"  , <blockstate:appliedenergistics2:quartz_ore>          , [<mysticalagriculture:certus_quartz_essence>]);
+remakeAltair  ("mysticalagriculture:blockcustomore"       , <astralsorcery:blockcustomore>            , [<mysticalagriculture:rock_crystal_essence>]);
+// remakeBlock   ("mysticalagriculture:itemcraftingcomponent", <blockstate:astralsorcery:blockcustomsandore>        , [<mysticalagriculture:aquamarine_essence>]);
+remakeBlock   ("mysticalagriculture:gem"                  , <blockstate:biomesoplenty:gem_ore:variant=amethyst>  , [<mysticalagriculture:ender_amethyst_essence>]);
+remakeBlock   ("mysticalagriculture:gemruby"              , <blockstate:biomesoplenty:gem_ore:variant=ruby>      , [<mysticalagriculture:ruby_essence>]);
+remakeBlock   ("mysticalagriculture:gemperidot"           , <blockstate:biomesoplenty:gem_ore:variant=peridot>   , [<mysticalagriculture:peridot_essence>]);
+remakeBlock   ("mysticalagriculture:gemtopaz"             , <blockstate:biomesoplenty:gem_ore:variant=topaz>     , [<mysticalagriculture:topaz_essence>]);
+remakeBlock   ("mysticalagriculture:gemtanzanite"         , <blockstate:biomesoplenty:gem_ore:variant=tanzanite> , [<mysticalagriculture:tanzanite_essence>]);
+remakeBlock   ("mysticalagriculture:gemmalachite"         , <blockstate:biomesoplenty:gem_ore:variant=malachite> , [<mysticalagriculture:malachite_essence>]);
+remakeBlock   ("mysticalagriculture:gemsapphire"          , <blockstate:biomesoplenty:gem_ore:variant=sapphire>  , [<mysticalagriculture:sapphire_essence>]);
+remakeBlock   ("mysticalagriculture:gemamber"             , <blockstate:biomesoplenty:gem_ore:variant=amber>     , [<mysticalagriculture:amber_essence>]);
+remakeBlock   ("mysticalagriculture:ingotdraconium"       , <blockstate:draconicevolution:draconium_ore>         , [<mysticalagriculture:draconium_essence>]);
+remakeBlock   ("mysticalagriculture:gemapatite"           , <blockstate:forestry:resources>                      , [<mysticalagriculture:apatite_essence>]);
+remakeBlock   ("mysticalagriculture:ingotosmium"          , <blockstate:mekanism:oreblock>                       , [<mysticalagriculture:osmium_essence>]);
+remakeBlock   ("mysticalagriculture:coal"                 , <blockstate:minecraft:coal_ore>                      , [<mysticalagriculture:coal_essence>]);
+remakeBlock   ("mysticalagriculture:diamond"              , <blockstate:minecraft:diamond_ore>                   , [<mysticalagriculture:diamond_essence>]);
+remakeBlock   ("mysticalagriculture:emerald"              , <blockstate:minecraft:emerald_ore>                   , [<mysticalagriculture:emerald_essence>]);
+remakeBlock   ("mysticalagriculture:gold_ingot"           , <blockstate:minecraft:gold_ore>                      , [<mysticalagriculture:gold_essence>]);
+remakeBlock   ("mysticalagriculture:iron_ingot"           , <blockstate:minecraft:iron_ore>                      , [<mysticalagriculture:iron_essence>]);
+remakeBlock   ("mysticalagriculture:dye_13"               , <blockstate:minecraft:lapis_ore>                     , [<mysticalagriculture:lapis_lazuli_essence>]);
+remakeBlock   ("mysticalagriculture:quartz"               , <blockstate:minecraft:quartz_ore>                    , [<mysticalagriculture:nether_quartz_essence>]);
+remakeBlock   ("mysticalagriculture:redstone"             , <blockstate:minecraft:redstone_ore>                  , [<mysticalagriculture:redstone_essence>]);
+remakeBlock   ("mysticalagriculture:ingots_1"             , <blockstate:tconstruct:ore:type=ardite>              , [<mysticalagriculture:ardite_essence>]);
+remakeBlock   ("mysticalagriculture:ingots_2"             , <blockstate:tconstruct:ore>                          , [<mysticalagriculture:cobalt_essence>]);
+remakeBlock   ("mysticalagriculture:ingotcopper"          , <blockstate:thermalfoundation:ore:type=copper>       , [<mysticalagriculture:copper_essence>]);
+remakeBlock   ("mysticalagriculture:ingottin"             , <blockstate:thermalfoundation:ore:type=tin>          , [<mysticalagriculture:tin_essence>]);
+remakeBlock   ("mysticalagriculture:ingotsilver"          , <blockstate:thermalfoundation:ore:type=silver>       , [<mysticalagriculture:silver_essence>]);
+remakeBlock   ("mysticalagriculture:ingotaluminum"        , <blockstate:thermalfoundation:ore:type=aluminum>     , [<mysticalagriculture:aluminum_essence>]);
+remakeBlock   ("mysticalagriculture:ingotnickel"          , <blockstate:thermalfoundation:ore:type=nickel>       , [<mysticalagriculture:nickel_essence>]);
+remakeBlock   ("mysticalagriculture:ingotplatinum"        , <blockstate:thermalfoundation:ore:type=platinum>     , [<mysticalagriculture:platinum_essence>]);
+remakeBlock   ("mysticalagriculture:ingotiridium"         , <blockstate:thermalfoundation:ore:type=iridium>      , [<mysticalagriculture:iridium_essence>]);
+remakeBlock   ("mysticalagriculture:ingoturanium"         , <blockstate:immersiveengineering:ore:type=uranium>   , [<mysticalagriculture:uranium_essence>]);
+remakeManapool("mysticalagriculture:ingotknightmetal", <twilightforest:armor_shard> * 3, [<mysticalagriculture:knightmetal_essence>]);
+remakeCrucible("mysticalagriculture:ingotironwood", <twilightforest:root:1> * 2, [<mysticalagriculture:ironwood_essence>], [<aspect:victus>]);
+// remakeSimple("mysticalagriculture:apple"                , <minecraft:apple> * 8                     , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:arrow"                , <minecraft:arrow> * 8                     , [<mysticalagriculture:skeleton_essence> * 3                                          ]);
+// remakeSimple("mysticalagriculture:basalt2"              , <chisel:basalt2:7> * 24                   , [<mysticalagriculture:basalt_essence> * 8                                            ]);
+// remakeSimple("mysticalagriculture:beetroot"             , <minecraft:beetroot> * 12                 , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:blaze_rod"            , <minecraft:blaze_rod> * 3                 , [<mysticalagriculture:blaze_essence> * 5                                             ]);
+// remakeSimple("mysticalagriculture:blockmarble"          , <astralsorcery:blockmarble> * 16          , [<mysticalagriculture:marble_essence> * 8, <mysticalagriculture:aquamarine_essence>  ]);
+// remakeSimple("mysticalagriculture:bone"                 , <minecraft:bone> * 8                      , [<mysticalagriculture:skeleton_essence> * 5                                          ]);
+// remakeSimple("mysticalagriculture:brown_mushroom"       , <minecraft:brown_mushroom> * 8            , [<mysticalagriculture:nature_essence> * 2, <mysticalagriculture:dirt_essence>        ]);
+// remakeSimple("mysticalagriculture:cactus"               , <minecraft:cactus> * 16                   , [<mysticalagriculture:nature_essence> * 7                                            ]);
+// remakeSimple("mysticalagriculture:carrot"               , <minecraft:carrot> * 12                   , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:chorus_fruit"         , <minecraft:chorus_fruit> * 2              , [<mysticalagriculture:end_essence> * 2, <mysticalagriculture:nature_essence>         ]);
+// remakeSimple("mysticalagriculture:cobblestone"          , <minecraft:cobblestone> * 32              , [<mysticalagriculture:stone_essence> * 8                                             ]);
+remakeAltair("mysticalagriculture:crystalfluix"         , <appliedenergistics2:material:7> * 12      , [<mysticalagriculture:fluix_essence>]);
+remakeAltair("mysticalagriculture:dustsaltpeter"        , <thermalfoundation:material:772> * 12      , [<mysticalagriculture:saltpeter_essence>]);
+remakeAltair("mysticalagriculture:dustsulfur"           , <thermalfoundation:material:771> * 12      , [<mysticalagriculture:sulfur_essence>]);
+// remakeSimple("mysticalagriculture:dye_1"                , <minecraft:dye> * 4                       , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_2"                , <minecraft:dye:1> * 4                     , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_3"                , <minecraft:dye:5> * 4                     , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_4"                , <minecraft:dye:6> * 4                     , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_5"                , <minecraft:dye:7> * 4                     , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_6"                , <minecraft:dye:8> * 4                     , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_7"                , <minecraft:dye:9> * 4                     , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_8"                , <minecraft:dye:10> * 4                    , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_9"                , <minecraft:dye:11> * 4                    , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_10"               , <minecraft:dye:12> * 4                    , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_11"               , <minecraft:dye:13> * 4                    , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye_12"               , <minecraft:dye:14> * 4                    , [<mysticalagriculture:dye_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:dye"                  , <minecraft:dye:3> * 8                     , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:egg"                  , <minecraft:egg> * 8                       , [<mysticalagriculture:chicken_essence> * 3                                           ]);
+// remakeSimple("mysticalagriculture:end_stone"            , <minecraft:end_stone> * 12                , [<mysticalagriculture:end_essence> * 8                                               ]);
+// remakeSimple("mysticalagriculture:ender_pearl"          , <minecraft:ender_pearl> * 3               , [<mysticalagriculture:enderman_essence> * 8                                          ]);
+// remakeSimple("mysticalagriculture:feather"              , <minecraft:feather> * 8                   , [<mysticalagriculture:chicken_essence> * 3                                           ]);
+// remakeSimple("mysticalagriculture:fish"                 , <minecraft:fish> * 4                      , [<mysticalagriculture:guardian_essence> * 3                                          ]);
+// remakeSimple("mysticalagriculture:flint"                , <minecraft:flint> * 8                     , [<mysticalagriculture:stone_essence> * 2, <mysticalagriculture:fire_essence> * 2     ]);
+// remakeSimple("mysticalagriculture:flower_1"             , <botania:flower:1> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_2"             , <botania:flower:2> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_3"             , <botania:flower:3> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_4"             , <botania:flower:4> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_5"             , <botania:flower:5> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_6"             , <botania:flower:6> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_7"             , <botania:flower:7> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_8"             , <botania:flower:8> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_9"             , <botania:flower:9> * 6                    , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_10"            , <botania:flower:10> * 6                   , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_11"            , <botania:flower:11> * 6                   , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_12"            , <botania:flower:12> * 6                   , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_13"            , <botania:flower:13> * 6                   , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_14"            , <botania:flower:14> * 6                   , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower_15"            , <botania:flower:15> * 6                   , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+// remakeSimple("mysticalagriculture:flower"               , <botania:flower> * 6                      , [<mysticalagriculture:mystical_flower_essence> * 3                                   ]);
+remakeCrucible("mysticalagriculture:ghast_tear"         , <minecraft:ghast_tear>                    , [<mysticalagriculture:ghast_essence>], [<aspect:exanimis>]);
+// remakeSimple("mysticalagriculture:grass"                , <minecraft:grass> * 8                     , [<mysticalagriculture:dirt_essence> * 4, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:gravel"               , <minecraft:gravel> * 16                   , [<mysticalagriculture:dirt_essence> * 2, <mysticalagriculture:stone_essence> * 2     ]);
+// remakeSimple("mysticalagriculture:gunpowder"            , <minecraft:gunpowder> * 6                 , [<mysticalagriculture:creeper_essence> * 3                                           ]);
+remakeManapool("mysticalagriculture:ingotelectrumflux"    , <redstonearsenal:material:64>        , [<mysticalagriculture:fluxed_electrum_essence>]);
+remakeBlock("mysticalagriculture:ingotfiery"           , <blockstate:twilightforest:block_storage:variant=fiery>, [<mysticalagriculture:fiery_ingot_essence>], 'base_essence');
+remakeBlock("mysticalagriculture:ingotlead"            , <blockstate:thermalfoundation:ore:type=lead>, [<mysticalagriculture:lead_essence>]);
+remakeBlock("mysticalagriculture:ingotsteeleaf"        , <blockstate:twilightforest:block_storage:variant=steelleaf>, [<mysticalagriculture:steeleaf_essence>], 'base_essence');
+remakeManapool("mysticalagriculture:ingotvoid"            , <thaumcraft:nugget:7>                  , [<mysticalagriculture:void_metal_essence>]);
+// remakeSimple("mysticalagriculture:leather"              , <minecraft:leather> * 8                   , [<mysticalagriculture:cow_essence> * 4                                               ]);
+// remakeSimple("mysticalagriculture:limestone2"           , <chisel:limestone2:7> * 24                , [<mysticalagriculture:limestone_essence> * 8                                         ]);
+remakeArcane("mysticalagriculture:log"                  , <minecraft:log> * 16                      , ["eee"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+remakeArcane("mysticalagriculture:log_1"                , <minecraft:log:1> * 16                    , ["","eee"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+remakeArcane("mysticalagriculture:log_2"                , <minecraft:log:2> * 16                    , ["","","eee"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+remakeArcane("mysticalagriculture:log_3"                , <minecraft:log:3> * 16                    , ["e","e","e"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+remakeArcane("mysticalagriculture:log2"                 , <minecraft:log2> * 16                     , [" e"," e"," e"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+remakeArcane("mysticalagriculture:log2_1"               , <minecraft:log2:1> * 16                   , ["  e","  e","  e"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+// remakeSimple("mysticalagriculture:marble2"              , <chisel:marble2:7> * 16                   , [<mysticalagriculture:marble_essence> * 8                                            ]);
+// remakeSimple("mysticalagriculture:melon_block"          , <minecraft:melon_block> * 8               , [<mysticalagriculture:nature_essence> * 9                                            ]);
+// remakeSimple("mysticalagriculture:menril_berries"       , <integrateddynamics:menril_berries> * 12  , [<mysticalagriculture:menril_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:menril_log"           , <integrateddynamics:menril_log> * 16      , [<mysticalagriculture:menril_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:menril_sapling"       , <integrateddynamics:menril_sapling> * 4   , [<mysticalagriculture:menril_essence> * 2, <mysticalagriculture:nature_essence>      ]);
+// remakeSimple("mysticalagriculture:mossy_cobblestone"    , <minecraft:mossy_cobblestone> * 16        , [<mysticalagriculture:stone_essence> * 4, <mysticalagriculture:nature_essence>       ]);
+// remakeSimple("mysticalagriculture:mycelium"             , <minecraft:mycelium> * 16                 , [<mysticalagriculture:nature_essence> * 3, <mysticalagriculture:dirt_essence> * 5    ]);
+// remakeSimple("mysticalagriculture:nether_brick"         , <minecraft:nether_brick> * 16             , [<mysticalagriculture:nether_essence> * 4                                            ]);
+// remakeSimple("mysticalagriculture:nether_wart"          , <minecraft:nether_wart> * 6               , [<mysticalagriculture:nether_essence> * 2, <mysticalagriculture:nature_essence>      ]);
+// remakeSimple("mysticalagriculture:netherrack"           , <minecraft:netherrack> * 32               , [<mysticalagriculture:nether_essence> * 5                                            ]);
+// remakeSimple("mysticalagriculture:packed_ice"           , <minecraft:packed_ice> * 8                , [<mysticalagriculture:ice_essence> * 4                                               ]);
+// remakeSimple("mysticalagriculture:potato"               , <minecraft:potato> * 12                   , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:prismarine_crystals"  , <minecraft:prismarine_crystals> * 16      , [<mysticalagriculture:guardian_essence> * 4                                          ]);
+// remakeSimple("mysticalagriculture:prismarine_shard"     , <minecraft:prismarine_shard> * 12         , [<mysticalagriculture:guardian_essence> * 3                                          ]);
+// remakeSimple("mysticalagriculture:pumpkin"              , <minecraft:pumpkin> * 16                  , [<mysticalagriculture:nature_essence> * 8                                            ]);
+// remakeSimple("mysticalagriculture:purpur_block"         , <minecraft:purpur_block> * 12             , [<mysticalagriculture:end_essence> * 4                                               ]);
+// remakeSimple("mysticalagriculture:quicksilver"          , <thaumcraft:quicksilver> * 4              , [<mysticalagriculture:quicksilver_essence> * 8                                       ]);
+// remakeSimple("mysticalagriculture:rabbit_foot"          , <minecraft:rabbit_foot>                   , [<mysticalagriculture:rabbit_essence> * 5                                            ]);
+// remakeSimple("mysticalagriculture:rabbit_hide"          , <minecraft:rabbit_hide> * 8               , [<mysticalagriculture:rabbit_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:red_mushroom"         , <minecraft:red_mushroom> * 8              , [<mysticalagriculture:nature_essence> * 2, <mysticalagriculture:dirt_essence>        ]);
+// remakeSimple("mysticalagriculture:reeds"                , <minecraft:reeds> * 16                    , [<mysticalagriculture:nature_essence> * 6                                            ]);
+// remakeSimple("mysticalagriculture:rotten_flesh"         , <minecraft:rotten_flesh> * 12             , [<mysticalagriculture:zombie_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:sapling_1"            , <minecraft:sapling:1> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:sapling_2"            , <minecraft:sapling:2> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:sapling_3"            , <minecraft:sapling:3> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:sapling_4"            , <minecraft:sapling:4> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:sapling_5"            , <minecraft:sapling:5> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:sapling"              , <minecraft:sapling> * 4                   , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
+// remakeSimple("mysticalagriculture:sky_stone_block"      , <appliedenergistics2:sky_stone_block> * 12, [<mysticalagriculture:sky_stone_essence> * 8                                         ]);
+// remakeSimple("mysticalagriculture:slate"                , <rustic:slate> * 24                       , [<mysticalagriculture:slate_essence> * 8                                             ]);
+// remakeSimple("mysticalagriculture:slime_ball"           , <minecraft:slime_ball> * 8                , [<mysticalagriculture:slime_essence> * 5                                             ]);
+// remakeSimple("mysticalagriculture:snow"                 , <minecraft:snow> * 12                     , [<mysticalagriculture:ice_essence> * 3                                               ]);
+// remakeSimple("mysticalagriculture:spider_eye"           , <minecraft:spider_eye> * 3                , [<mysticalagriculture:spider_essence> * 5                                            ]);
+// remakeSimple("mysticalagriculture:stone_1"              , <minecraft:stone:1> * 16                  , [<mysticalagriculture:stone_essence> * 4, <mysticalagriculture:nether_quartz_essence>]);
+// remakeSimple("mysticalagriculture:stone_2"              , <minecraft:stone:3> * 16                  , [<mysticalagriculture:nether_quartz_essence>, <mysticalagriculture:stone_essence> * 4]);
+// remakeSimple("mysticalagriculture:stone_3"              , <minecraft:stone:5> * 16                  , [<mysticalagriculture:stone_essence> * 4, <mysticalagriculture:nether_quartz_essence>]);
+// remakeSimple("mysticalagriculture:stonebrick_2"         , <minecraft:stonebrick:1> * 16             , [<mysticalagriculture:stone_essence> * 4, <mysticalagriculture:nature_essence>       ]);
+// remakeSimple("mysticalagriculture:string"               , <minecraft:string> * 8                    , [<mysticalagriculture:spider_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:tallgrass"            , <minecraft:tallgrass:1> * 8               , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:vine"                 , <minecraft:vine> * 16                     , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:waterlily"            , <minecraft:waterlily> * 8                 , [<mysticalagriculture:nature_essence> * 7                                            ]);
+// remakeSimple("mysticalagriculture:wheat"                , <minecraft:wheat> * 12                    , [<mysticalagriculture:nature_essence> * 3                                            ]);
+// remakeSimple("mysticalagriculture:wool"                 , <minecraft:wool> * 6                      , [<mysticalagriculture:sheep_essence> * 9                                             ]);
+// remakeSimple("mysticalagriculture:xp_droplet"           , <mysticalagriculture:xp_droplet> * 8      , [<mysticalagriculture:experience_essence> * 8                                        ]);
+/**/
+
+
+
+# --------------------
+# Sheep + Cow
+val cowIngrs = {
+  "C": <mysticalagriculture:cow_essence>, # Cow Essence
+  "S": <mysticalagriculture:sheep_essence>, # Sheep Essence
+} as IIngredient[string];
+
+recipes.removeByRecipeName("mysticalagriculture:beef");
+recipes.removeByRecipeName("mysticalagriculture:mutton");
+recipes.removeByRecipeName("mysticalagriculture:leather");
+recipes.removeByRecipeName("mysticalagriculture:wool");
+
+makeArcane(<minecraft:beef> * 8                                      , ["CCC"]               , cowIngrs , []);
+makeArcane(<minecraft:leather> * 16                                  , ["CC", "CC"]          , cowIngrs , []);
+makeArcane(<animania:raw_prime_beef> * 4                             , ["", "CCC"]           , cowIngrs , []);
+makeArcane(<betteranimalsplus:antler> * 8                            , ["CC", "SS"]          , cowIngrs , []);
+makeArcane(<harvestcraft:venisonrawitem> * 8                         , ["CSC"]               , cowIngrs , []);
+makeArcane(<animania:raw_prime_beef> * 4                             , ["CCC","C C","CCC"]   , cowIngrs , []);
+makeArcane(<harvestcraft:freshmilkitem> * 8                          , [" C ", "C C" , " C "], cowIngrs , []);
+makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_holstein"}), ["C","C","C"]         , cowIngrs , [<aspect:aqua>]);
+makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_jersey"})  , [" C"," C"," C"]      , cowIngrs , [<aspect:aqua>]);
+makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_friesian"}), ["  C","  C","  C"]   , cowIngrs , [<aspect:aqua>]);
+makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_sheep"})   , ["S","S","S"]         , cowIngrs , [<aspect:aqua>]);
+makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_goat"})    , ["SCS","S S","SCS"]   , cowIngrs , [<aspect:aqua>]);
+makeArcane(<minecraft:wool> * 16                                     , ["SSS"]               , cowIngrs , []);
+makeArcane(<minecraft:mutton> * 8                                    , ["","SSS"]            , cowIngrs , []);
+makeArcane(<animania:wool:3> * 4                                     , ["","","SSS"]         , cowIngrs , []);
+# --------------------
+# Chickens
+
+recipes.removeByRecipeName("mysticalagriculture:chicken");
+recipes.removeByRecipeName("mysticalagriculture:egg");
+recipes.removeByRecipeName("mysticalagriculture:feather");
+
+function chickEss(ingrs as IIngredient[][], output as IItemStack, visCost as int = 10, aspects as CTAspectStack[] = null) as void {
+	mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+		craft.uniqueRecipeName(output),
+		"FIRSTSTEPS",
+		visCost,
+		isNull(aspects) ? [] : aspects,
+		output,
+  	ingrs
+	);
+}
+
+val CE = <mysticalagriculture:chicken_essence>;
+val uniqChick = scripts.lib.unique.Unique([CE, CE, CE]);
+
+chickEss(uniqChick.next(), <minecraft:egg> * 8);
+chickEss(uniqChick.next(), <minecraft:feather> * 8);
+chickEss(uniqChick.next(), <minecraft:chicken> * 4);
+chickEss(uniqChick.next(), <animania:brown_egg> * 2);
+chickEss(uniqChick.next(), <animania:raw_prime_chicken> * 2);
+chickEss(uniqChick.next(), <animania:blue_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:white_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:charcoal_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:opal_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:peach_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:purple_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:taupe_peacock_feather> * 4, 20);
+chickEss(uniqChick.next(), <animania:peacock_egg_blue> * 2, 20);
+chickEss(uniqChick.next(), <animania:peacock_egg_white> * 2, 20);
+chickEss(uniqChick.next(), <betteranimalsplus:pheasant_egg> * 2, 40, [<aspect:aer>]);
+chickEss(uniqChick.next(), <betteranimalsplus:turkey_egg> * 2, 40, [<aspect:aer>]);
+chickEss(uniqChick.next(), <betteranimalsplus:goose_egg> * 2, 40, [<aspect:aer>]);
+
+chickEss([[CE, <mysticalagriculture:gold_essence>, CE]], <betteranimalsplus:golden_goose_egg>, 20);
+chickEss([[CE, <mysticalagriculture:copper_essence>, CE]], <iceandfire:stymphalian_bird_feather>, 40, [<aspect:aer> * 5]);
+chickEss([[CE, <mysticalagriculture:water_essence>, CE]], <iceandfire:amphithere_feather>, 40, [<aspect:aer> * 5]);
+chickEss([[CE, <mysticalagriculture:coal_essence>, CE]], <twilightforest:raven_feather>, 40, [<aspect:aer> * 5]);
 # --------------------------------------------
+

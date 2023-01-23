@@ -170,6 +170,12 @@ utils.rh(<forestry:gear_tin>);
 utils.rh(<forestry:gear_bronze>);
 utils.rh(<forestry:gear_copper>);
 utils.rh(<appliedenergistics2:material:40>);
+utils.rh(<mysticalagriculture:chunk>);
+utils.rh(<mysticalagriculture:chunk:1>);
+utils.rh(<mysticalagriculture:chunk:2>);
+utils.rh(<mysticalagriculture:chunk:3>);
+utils.rh(<mysticalagriculture:chunk:4>);
+utils.rh(<mysticalagradditions:insanium:4>);
 
 # Pams replacements
 utils.rh(<harvestcraft:chilipepperitem>);
