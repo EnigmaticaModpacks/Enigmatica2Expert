@@ -65,7 +65,8 @@ registerReservoir("Molten Tungsten Reservoir (End)"    , <liquid:tungsten>, 7200
 registerReservoir("Dark Steel Reservoir (Deep Dark)", <liquid:dark_steel>, 12400000, 16400000, 0, 100, 10, I, [], [-11325], [], []);
 
 # Twilight Forest ID=7
-registerReservoir("Flux Goo Reservoir (Twilight Forest)", <liquid:flux_goo>, 35000, 750000, 0, 50, 20, I, [], [7], [], []);
+registerReservoir("Flux Goo Reservoir (Twilight Forest)"    , <liquid:flux_goo>    , 35000, 750000, 0, 50, 20,  I, [], [7], [], []);
+registerReservoir("Primal Metal Reservoir (Twilight Forest)", <liquid:primal_metal>,  5000,  50000, 0, 50, 10, III, [], [7], [], []);
 
 # Vast epltines ID=14676
 registerReservoir("Flux Goo Reservoir (Vast Epltines)", <liquid:flux_goo>, 35000, 750000, 0, 50, 20, I, [], [14676], [], []);
@@ -180,9 +181,9 @@ registerReservoir("IC2 Coolant Reservoir (Neptune)"    , <liquid:ic2coolant>, 15
 		emereld 0.16%
 	
 */
-registerReservoir("Nitrogen Reservoir (Proxima B)"                   , <liquid:nitrogen>   , 1228800000, maxInt, 6400, 12800, 30,  I, [], [111], [], []);
-registerReservoir("Helium Reservoir (Proxima B)"                     , <liquid:helium>     , 1228800000, maxInt, 6400, 12800, 30,  I, [], [111], [], []);
-registerReservoir("Molten Terrestrial Artifact Reservoir (Proxima B)", <liquid:terrestrial>, 15000     , 25000 , 0   , 200  , 5 , II, [], [111], [], []);
+registerReservoir("Nitrogen Reservoir (Proxima B)"                   , <liquid:nitrogen>   , 1228800000,   maxInt, 6400, 12800, 30,  I, [], [111], [], []);
+registerReservoir("Helium Reservoir (Proxima B)"                     , <liquid:helium>     , 1228800000,   maxInt, 6400, 12800, 30,  I, [], [111], [], []);
+registerReservoir("Molten Terrestrial Artifact Reservoir (Proxima B)", <liquid:terrestrial>,    1500000, 25000000, 0   , 200  , 5 , II, [], [111], [], []);
 
 # Terra Nova ID=112
 	/*

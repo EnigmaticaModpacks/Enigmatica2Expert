@@ -133,6 +133,7 @@ add(<ore:listAllmeatraw>, <twilightforest:raw_venison>);
 
 add(<ore:listAllbeefcooked>, <twilightforest:cooked_venison>);
 add(<ore:listAllmeatcooked>, <twilightforest:cooked_venison>);
+add(<ore:listAllmeatcooked>, <twilightforest:cooked_meef>);
 
 # Void Metal Block
 add(<ore:blockVoid>, <thaumcraft:metal_void>);
@@ -646,6 +647,7 @@ addItems(<ore:foodNutrients5>, [
 addItems(<ore:listAllmeatraw>, [
 	<animania:raw_peacock>,
 	<animania:raw_prime_peacock>,
+	<twilightforest:raw_meef>,
 ]);
 
 remove(<ore:dustObsidian>, <endreborn:catalyst>);

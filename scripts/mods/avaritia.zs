@@ -179,6 +179,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(
     <minecraft:rabbit>,
     <rats:raw_rat>,
     <tconevo:edible>,
+    <twilightforest:raw_meef>,
 /**/
 ]);
 		

@@ -46,6 +46,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Acacia Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.vanilla.fireproof.1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.vanilla.fireproof.0 10 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Acacia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -53,6 +63,16 @@
 		</input>
 		<output>
 			<itemStack>minecraft:planks 10 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Balsa Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.2 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 11</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -66,6 +86,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Baobab Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.1 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Baobab Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -73,6 +103,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.0 10 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Birch Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.vanilla.fireproof.0 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.vanilla.fireproof.0 10 2</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -96,6 +136,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Cherry Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.3 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 15</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Cherry Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -116,6 +166,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Chestnut Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Chestnut Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -123,6 +183,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.0 10 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Citrus Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.5 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 7</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -136,6 +206,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Cocobolo Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.6 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 11</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Cocobolo Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -143,6 +223,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.1 10 11</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dark Oak Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.vanilla.fireproof.1 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.vanilla.fireproof.0 10 5</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -183,6 +273,26 @@
 		</input>
 		<output>
 			<itemStack>iceandfire:dreadwood_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dreamwood Planks] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>botania:dreamwood 1</itemStack>
+		</input>
+		<output>
+			<itemStack>botania:dreamwood 10 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ebony Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.2 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 9</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -236,6 +346,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Giant Sequoia Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.6 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Giant Sequoia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -256,6 +376,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Greenheart Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.3 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 14</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Greenheart Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -273,6 +403,26 @@
 		</input>
 		<output>
 			<itemStack>biomesoplenty:planks_0 10 11</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Infused Wood Planks] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>astralsorcery:blockinfusedwood 1</itemStack>
+		</input>
+		<output>
+			<itemStack>astralsorcery:blockinfusedwood 10 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ipe Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.6 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 9</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -306,6 +456,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Jungle Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.vanilla.fireproof.0 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.vanilla.fireproof.0 10 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Jungle Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -336,6 +496,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Kapok Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.2 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Kapok Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -343,6 +513,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.0 10 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Larch Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.0 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -366,6 +546,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lime Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.0 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Lime Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -373,6 +563,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.0 10 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Livingwood Planks] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>botania:livingwood 1</itemStack>
+		</input>
+		<output>
+			<itemStack>botania:livingwood 10 1</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -396,6 +596,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Mahoe Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.4 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Mahoe Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -403,6 +613,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.1 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Mahogany Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.2 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 10</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -446,6 +666,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Maple Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.5 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Maple Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -476,6 +706,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Oak Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.vanilla.fireproof.0 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.vanilla.fireproof.0 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Oak Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -496,6 +736,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Padauk Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.6 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 10</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Padauk Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -503,6 +753,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.1 10 10</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Palm Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.4 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 2</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -526,6 +786,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Papaya Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.4 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Papaya Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -533,6 +803,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.1 10 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Pine Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.5 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 4</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -556,6 +836,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Plum Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.5 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Plum Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -563,6 +853,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.1 10 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Poplar Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.4 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 1</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -636,6 +936,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Sequoia Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.1 1 3</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 7</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Sequoia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -676,6 +986,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Spruce Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.vanilla.fireproof.0 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.vanilla.fireproof.0 10 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Spruce Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -703,6 +1023,16 @@
 		</input>
 		<output>
 			<itemStack>thaumadditions:taintwood_planks 10 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Teak Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.0 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 1</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -776,6 +1106,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Walnut Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.3 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 13</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Walnut Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -786,6 +1126,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Wenge Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.1 1 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Wenge Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -793,6 +1143,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.0 10 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Willow Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.3 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 12</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -813,6 +1173,16 @@
 		</input>
 		<output>
 			<itemStack>forestry:planks.0 10 12</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Zebrawood Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.7 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.1 10 12</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

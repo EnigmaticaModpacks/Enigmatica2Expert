@@ -1,40 +1,51 @@
+#priority 1
+
 import crafttweaker.entity.IEntityItem;
 import crafttweaker.world.IFacing;
 import crafttweaker.block.IBlockState;
 
 #loader crafttweaker reloadable
 
+// Manually add this when adding new liquids
+static fluidToBlock as string[string] = {
+  stone: 'tconstruct:molten_stone',
+  base_essence: 'mysticalagradditions:molten_base_essence',
+} as string[string];
+
 # Item and respective block
-static burntRecipes as IBlockState[string] = {
-  'mysticalagriculture:apatite_essence'     : <blockstate:forestry:resources>,
-  'mysticalagriculture:black_quartz_essence': <blockstate:actuallyadditions:block_misc:type=ore_black_quartz>,
-  'mysticalagriculture:redstone_essence'    : <blockstate:minecraft:redstone_ore>,
-} as IBlockState[string];
+static burntRecipes as IBlockState[string][string] = {} as IBlockState[string][string];
 
-// Dont forget to remove old recipes manually here
-recipes.removeByRecipeName("mysticalagriculture:gemquartzblack");
-recipes.removeByRecipeName("mysticalagriculture:gemapatite");
-recipes.removeByRecipeName("mysticalagriculture:redstone");
+function add(inputId as string, fluidInput as string, blockOutput as IBlockState) as void {
+  if (isNull(burntRecipes[inputId])) burntRecipes[inputId] = {};
+  burntRecipes[inputId][fluidInput] = blockOutput;
+}
 
-for itemId, state in burntRecipes {
-  val item = itemUtils.getItem(itemId);
-  scripts.category.tooltip_utils.desc.both(
-    item,
-    "tooltips.lang.burn_in_fluid",
-    item.displayName,
-    <fluid:stone>.displayName
-  );
-  scripts.jei.crafting_hints.fill(
-    item,
-    <fluid:stone> * 1000,
-    itemUtils.getItem(state.block.definition.id, state.meta)
-  );
+function postInit() as void {
+  for itemId, tuple in burntRecipes {
+    val item = itemUtils.getItem(itemId);
+    for fluid, state in tuple {
+      val f = game.getLiquid(fluid);
+      scripts.category.tooltip_utils.desc.both(
+        item,
+        "burn_in_fluid",
+        item.displayName,
+        f.displayName
+      );
+      scripts.jei.crafting_hints.fill(
+        item,
+        f * 1000,
+        itemUtils.getItem(state.block.definition.id, state.meta)
+      );
+    }
+  }
 }
 
 events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
   val world = e.world;
   if(world.remote) return;
   if(!(e.entity instanceof IEntityItem)) return;
+
+  if(!e.entity.isBurning) return;
 
   val entityItem as IEntityItem = e.entity;
   if(isNull(entityItem.item)) return;
@@ -49,12 +60,15 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
     val blockState = e.world.getBlockState(blockPos);
 
     // Check appropriate liquid
-    if(blockState.block.definition.id != 'tconstruct:molten_stone') continue;
     if(blockState.meta != 0) continue;
 
-    // Replace block
-    world.destroyBlock(blockPos, false);
-    world.setBlockState(result, blockPos);
-    return;
+    for fluid, state in result {
+      if(blockState.block.definition.id != fluidToBlock[fluid]) continue;
+
+      // Replace block
+      world.destroyBlock(blockPos, false);
+      world.setBlockState(state, blockPos);
+      return;
+    }
   }
 });

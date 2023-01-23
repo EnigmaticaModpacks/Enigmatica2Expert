@@ -539,3 +539,4 @@ craft.remake(<randomthings:inventoryrerouter>, ["pretty",
 
 # Magic Bean alt
 furnace.addRecipe(<randomthings:beans:2>, <twilightforest:magic_beans>, 50);
+scripts.jei.crafting_hints.add1to1(<randomthings:beans:2>, <randomthings:beanpod>);

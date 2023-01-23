@@ -58,6 +58,7 @@ craft.remake(<mysticalagriculture:growth_accelerator>, ["pretty",
   "D": <ore:manaDiamond>,          # Mana Diamond
 });
 
+recipes.remove(<mysticalagriculture:master_infusion_crystal>);
 mods.astralsorcery.Altar.addConstellationAltarRecipe(
   "[Master Infusion Crystal] from [Block of Terrasteel][+11]",
   <mysticalagriculture:master_infusion_crystal>,
@@ -266,7 +267,7 @@ addTieredRecipe(<mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,<or
 addTieredRecipe(<mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB>], null);
 addTieredRecipe(<mysticalagriculture:certus_quartz_seeds> , [<ore:blockCertusQuartz> ,<ore:runeEarthB>], null);
-addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseWheels>,<ore:runeSummerB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseAnimania>,<ore:runeSummerB>], null);
 
 
 # *======= Seeds Tier 3 =======*
@@ -595,34 +596,35 @@ recipes.addShaped("sap #3",  <biomesoplenty:sapling_0:3>     * 10, uniq_biomesop
 recipes.addShaped("sap #4",  <biomesoplenty:sapling_0:4>     * 10, uniq_biomesoplenty.next());
 recipes.addShaped("sap #5",  <biomesoplenty:sapling_0:5>     * 10, uniq_biomesoplenty.next());
 recipes.addShaped("sap #6",  <biomesoplenty:sapling_0:6>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #7",  <biomesoplenty:sapling_1>       * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #8",  <biomesoplenty:sapling_1:1>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #9",  <biomesoplenty:sapling_1:2>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #10", <biomesoplenty:sapling_1:3>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #11", <biomesoplenty:sapling_1:4>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #12", <biomesoplenty:sapling_1:5>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #13", <biomesoplenty:sapling_1:6>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #14", <biomesoplenty:sapling_2>       * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #15", <biomesoplenty:sapling_2:1>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #16", <biomesoplenty:sapling_2:2>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #17", <biomesoplenty:sapling_2:3>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #18", <biomesoplenty:sapling_2:4>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #19", <biomesoplenty:sapling_2:5>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #20", <biomesoplenty:sapling_2:6>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #21", <biomesoplenty:sapling_2:7>     * 10, uniq_biomesoplenty.next());
-recipes.addShaped("sap #22", <extrautils2:ironwood_sapling>  * 6 , uniq_other.next());
-recipes.addShaped("sap #23", <extrautils2:ironwood_sapling:1>* 6 , uniq_other.next());
-recipes.addShaped("sap #24", <ic2:sapling>                   * 6 , uniq_other.next());
-recipes.addShaped("sap #25", <quark:variant_sapling>         * 6 , uniq_other.next());
-recipes.addShaped("sap #26", <quark:variant_sapling:1>       * 6 , uniq_other.next());
-recipes.addShaped("sap #27", <rustic:sapling>                * 6 , uniq_other.next());
-recipes.addShaped("sap #28", <rustic:sapling:1>              * 6 , uniq_other.next());
-recipes.addShaped("sap #29", <rustic:sapling_apple>          * 6 , uniq_other.next());
-recipes.addShaped("sap #30", <thaumcraft:sapling_greatwood>  * 6 , uniq_other.next());
-recipes.addShaped("sap #31", <thaumcraft:sapling_silverwood> * 6 , uniq_other.next());
-recipes.addShaped("sap #32", <tconstruct:slime_sapling>      * 6 , uniq_tconstruct.next());
-recipes.addShaped("sap #33", <tconstruct:slime_sapling:1>    * 6 , uniq_tconstruct.next());
-recipes.addShaped("sap #34", <tconstruct:slime_sapling:2>    * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #7",  <biomesoplenty:sapling_0:7>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #8",  <biomesoplenty:sapling_1>       * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #9",  <biomesoplenty:sapling_1:1>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #10", <biomesoplenty:sapling_1:2>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #11", <biomesoplenty:sapling_1:3>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #12", <biomesoplenty:sapling_1:4>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #13", <biomesoplenty:sapling_1:5>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #14", <biomesoplenty:sapling_1:6>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #15", <biomesoplenty:sapling_2>       * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #16", <biomesoplenty:sapling_2:1>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #17", <biomesoplenty:sapling_2:2>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #18", <biomesoplenty:sapling_2:3>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #19", <biomesoplenty:sapling_2:4>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #20", <biomesoplenty:sapling_2:5>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #21", <biomesoplenty:sapling_2:6>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #22", <biomesoplenty:sapling_2:7>     * 10, uniq_biomesoplenty.next());
+recipes.addShaped("sap #23", <extrautils2:ironwood_sapling>  * 6 , uniq_other.next());
+recipes.addShaped("sap #24", <extrautils2:ironwood_sapling:1>* 6 , uniq_other.next());
+recipes.addShaped("sap #25", <ic2:sapling>                   * 6 , uniq_other.next());
+recipes.addShaped("sap #26", <quark:variant_sapling>         * 6 , uniq_other.next());
+recipes.addShaped("sap #27", <quark:variant_sapling:1>       * 6 , uniq_other.next());
+recipes.addShaped("sap #28", <rustic:sapling>                * 6 , uniq_other.next());
+recipes.addShaped("sap #29", <rustic:sapling:1>              * 6 , uniq_other.next());
+recipes.addShaped("sap #30", <rustic:sapling_apple>          * 6 , uniq_other.next());
+recipes.addShaped("sap #31", <thaumcraft:sapling_greatwood>  * 6 , uniq_other.next());
+recipes.addShaped("sap #32", <thaumcraft:sapling_silverwood> * 6 , uniq_other.next());
+recipes.addShaped("sap #33", <tconstruct:slime_sapling>      * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #34", <tconstruct:slime_sapling:1>    * 6 , uniq_tconstruct.next());
+recipes.addShaped("sap #35", <tconstruct:slime_sapling:2>    * 6 , uniq_tconstruct.next());
 /**/
 
 # ----------------------------
@@ -685,7 +687,7 @@ scripts.process.solution(
 scripts.processUtils.avdRockXmlRecipe("ElectricArcFurnace", [
 	<ore:ingotBrass> * 4,  # Alchemical Brass Ingot
 	<ore:blockProsperity> * 2,
-	<ore:nuggetManasteel> * 4,
+	<ore:nuggetManasteel> * 2,
 	<ore:dustAstralStarmetal> * 2,  # Stardust
 ], null, [<mysticalagriculture:crafting:32> * 40], null);
 

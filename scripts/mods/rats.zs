@@ -65,9 +65,9 @@ craft.reshapeless(<rats:rat_breeding_lantern>, "E▲", {
 # Rat upgrade function
 function ratUpgrade(name as string, result as IItemStack, mat as IIngredient){
 	recipes.addShaped(name, result, [
-		[mat, <ore:cheeseWheels>, mat], 
-		[<ore:cheeseWheels>, null, <ore:cheeseWheels>], 
-		[mat, <ore:cheeseWheels>, mat]
+		[mat, <ore:cheeseAnimania>, mat], 
+		[<ore:cheeseAnimania>, null, <ore:cheeseAnimania>], 
+		[mat, <ore:cheeseAnimania>, mat]
 	]);
 }
 
@@ -332,7 +332,7 @@ craft.remake(<rats:chunky_cheese_token>, ["pretty",
   "∩ W ∩",
   "∩ ∩ ∩"], {
   "∩": <rats:token_piece>, # Mysterious Token Chunk
-  "W": <ore:cheeseWheels>, # Cheese Wheel (Friesian)
+  "W": <ore:cheeseAnimania>,
 });
 
 #--------------------------------------------------------------------------------------

@@ -1296,7 +1296,7 @@ static values as int[int][string] = {
   "environmentaltech:solar_cell_ionite": { 0: 1531677 },
   "draconicevolution:draconic_core": { 0: 1839687 },
   "draconicevolution:wyvern_energy_core": { 0: 1862494 },
-  "draconicevolution:generator": { 0: 1878510 },
+  "draconicevolution:generator": { 0: 1878 },
   "environmentaltech:void_ore_miner_cont_6": { 0: 1979472 },
   "draconicevolution:reactor_part": {
     0: 10511182,
@@ -1340,7 +1340,6 @@ static values as int[int][string] = {
   "extrautils2:lawsword": { 0: 20284305 },
   "extendedcrafting:table_ultimate": { 0: 21307565 },
   "draconicevolution:awakened_core": { 0: 28130682 },
-  "mysticalagradditions:stuff": { 69: 51125579 },
   "draconicevolution:chaotic_core": { 0: 105216758 },
   "draconicevolution:reactor_component": { 0: 147007874 },
   "environmentaltech:solar_cont_6": { 0: 352590316 },

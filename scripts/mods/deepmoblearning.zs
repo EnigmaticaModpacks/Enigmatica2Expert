@@ -137,7 +137,7 @@ for model, mob in dataModels {
 # Peaceful Alt
 # [Ender Dragon Data Model] from [Ender Dragon Data Model][+7]
 mods.thaumcraft.Infusion.registerRecipe(
-  "deepmoblearning:data_model_dragon", # Name
+  "data_model_dragon", # Name
   "INFUSION", # Research
   <deepmoblearning:data_model_dragon>.withTag({tier: 1}), # Output
   10, # Instability
@@ -150,4 +150,21 @@ mods.thaumcraft.Infusion.registerRecipe(
   "E": <ore:dragonEgg>,   # Dragon Egg
   "▬": <ore:ingotGlitch>, # Glitch Infused Ingot
   "-": <ore:dragonsteelIngot>, # Ice Dragonsteel Ingot
+}).spiral(1));
+
+# [Ender Dragon Data Model] from [Ender Dragon Data Model][+7]
+mods.thaumcraft.Infusion.registerRecipe(
+  "data_model_wither", # Name
+  "INFUSION", # Research
+  <deepmoblearning:data_model_wither>.withTag({tier: 1}), # Output
+  10, # Instability
+  [<aspect:alienis> * 100, <aspect:caeles> * 100, <aspect:victus> * 100],
+  <deepmoblearning:data_model_wither>, # Central Item
+  Grid(["pretty",
+  "E ▬ E",
+  "-   -",
+  "E ▬ E"], {
+  "E": <draconicevolution:ender_energy_manipulator>,
+  "▬": <ore:ingotGlitch>, # Glitch Infused Ingot
+  "-": <ore:itemInfinityGoop>,
 }).spiral(1));

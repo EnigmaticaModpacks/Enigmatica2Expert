@@ -25,12 +25,6 @@ x.setJEIItemSlot(4, 0, 'input0', scripts.jei.requious.getVisSlots(0,2));
 x.setJEIFluidSlot(1, 3, 'fluid_in');
 x.setJEIFluidSlot(7, 2, 'fluid_out');
 
-function add1to1(input as IIngredient, output as IItemStack, catalyst as IIngredient = null) as void {
-  scripts.jei.requious.add(<assembly:crafting_hints>, {
-    [catalyst, null, null, null, null, input] : [null, output]
-  });
-}
-
 function addInsOutCatl(input as IIngredient[], output as IItemStack, catalyst as IIngredient = null) as void {
   scripts.jei.requious.add(<assembly:crafting_hints>, {
     [catalyst, 
@@ -45,6 +39,10 @@ function addInsOutCatl(input as IIngredient[], output as IItemStack, catalyst as
     input.length > 6 ? input[6] : null,
     ] : [null, output]
   });
+}
+
+function add1to1(input as IIngredient, output as IItemStack, catalyst as IIngredient = null) as void {
+  addInsOutCatl([input], output, catalyst);
 }
 
 function fill(input as IIngredient, fluid as ILiquidStack, output as IItemStack, catalyst as IIngredient = null, duration as int = 0) as void {

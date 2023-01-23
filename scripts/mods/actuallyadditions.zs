@@ -497,6 +497,7 @@ val ringsIngredients = [
 for i in 0 to 10 {
 	val ring         = <actuallyadditions:item_potion_ring>.definition.makeStack(i);
 	val ringAdvanced = <actuallyadditions:item_potion_ring_advanced>.definition.makeStack(i);
+	val ringBauble   = <actuallyadditions:potion_ring_advanced_bauble>.definition.makeStack(i);
 
 	craft.reshapeless(ring, "ABC", {
 		A: <actuallyadditions:item_misc:6>,
@@ -504,10 +505,13 @@ for i in 0 to 10 {
 		C: ringsIngredients[i],
 	});
 
-	craft.reshapeless(ringAdvanced, "AB", {
+  recipes.remove(ringAdvanced);
+	craft.reshapeless(ringBauble, "AB", {
 		A: ring,
 		B: <actuallyadditions:item_crystal_empowered:2>
 	});
+
+	recipes.addShapeless(ringAdvanced, [ringBauble]);
 }
 
 # Simplify because it produce only max 256 RF/T

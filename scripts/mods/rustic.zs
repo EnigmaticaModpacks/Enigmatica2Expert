@@ -99,3 +99,11 @@ craft.remake(<rustic:silver_lantern> * 2, [
   "c": <minecraft:coal:*>, # Charcoal
   "□": <ore:plateSilver>,  # Silver Plate
 });
+
+// Add missing fruit => seed recipes
+recipes.addShapeless(<rustic:tomato_seeds>, [<rustic:tomato>]);
+recipes.addShapeless(<rustic:chili_pepper_seeds>, [<rustic:chili_pepper>]);
+
+// Remove useless seed from grass drop
+vanilla.seeds.removeSeed(<rustic:tomato_seeds>);
+vanilla.seeds.removeSeed(<rustic:chili_pepper_seeds>);

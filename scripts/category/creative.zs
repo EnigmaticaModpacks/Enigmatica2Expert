@@ -97,9 +97,8 @@ var list = {
 	"◘": <ic2:nuclear:10>,
 	"◉": <industrialforegoing:black_hole_tank>,
 	"▣": <industrialforegoing:black_hole_unit>,
-	"▨": <mekanism:basicblock2:3>.withTag({tier: 3}),
+	"▨": <mekanism:basicblock2:3>.withTag({tier: 2}),
 	"▩": <mekanism:basicblock2:4>.withTag({tier: 3}),
-	"ⰷ": <mysticalagradditions:stuff:69>,
 	"▦": <ore:blockDraconiumAwakened>,
 	"▤": <ore:blockMirion>,
 	"▧": <ore:blockOsgloglas>,
@@ -113,20 +112,6 @@ var list = {
 
 	
 # *======= Recipes =======*
-
-# Mystical Agradditions Creative Essence
-	list["α"] = <ore:blockInsaniumEssence>;
-	list["β"] = <ore:ingotVoid>;
-	list["γ"] = <ore:essenceTier6>;
-	list["δ"] = <ore:blockBaseEssence>;
-	list["ε"] = <ore:blockInsanium>;
-
-	craft.make( <mysticalagradditions:stuff:69>, ["pretty",
-	"α β α β α",
-	"β γ δ γ β",
-	"α δ ε δ α",
-	"β γ δ γ β",
-	"α β α β α"], list);
 
 # Ultimate Ingot
 	mods.extendedcrafting.TableCrafting.addShapeless(0, <extendedcrafting:material:32>, 
@@ -172,7 +157,7 @@ var list = {
 		<ore:ingotGraphite>,
 		<ore:ingotEbonyPsi>,
 		<ore:ingotBlackIron>,
-		<ore:ingotInsanium>,
+		<ore:ingotPrimordial>,
 		<ore:ingotKnightslime>,
 		<ore:ingotUUMatter>,
 		<ore:ingotAlumite>,
@@ -259,7 +244,7 @@ var list = {
 		<ore:blockGraphite>,
 		<psi:psi_decorative:7>,
 		<ore:blockBlackIron>,
-		<ore:blockInsanium>,
+		<ore:blockPrimordial>,
 		<ore:blockKnightslime>,
 		<ore:blockUUMatter>,
 		<ore:blockAlumite>,
@@ -331,7 +316,7 @@ craft.remake(<rats:rat_upgrade_creative>, ["pretty",
   "▲": <scalinghealth:heartdust>,      # Heart Dust
   "C": <rats:chunky_cheese_token>,     # Chunky Cheese Token
   "F": <botania:brewflask>.withTag({brewKey: "overload"}), # Flask of Overload (6)
-  "W": <ore:cheeseWheels>,             # Cheese Wheel (Sheep)
+  "W": <ore:cheeseAnimania>,
   "§": <rats:rat_upgrade_nonbeliever>, # Rat Upgrade: Nonbeliever
   "H": <scalinghealth:heartcontainer>, # Heart Container
   "▬": <ore:ingotCrystaltine>,         # Crystaltine Ingot
@@ -500,19 +485,24 @@ craft.remake(<tconstruct:materials:50>, ["pretty",
 	"        ◱        "], list);
 	
 
-# Draconic Evolution Creative Flux Capacitor
-	list["σ"] = <avaritia:resource:5>;
-	craft.make(<draconicevolution:draconium_capacitor:2>.withTag({Energy: 1073741823}), ["pretty",
-	"        ▦        ",
-	"    ▬ ▬ ▦ ▬ ▬    ",
-	"  ▬ ⰷ ⰷ ▦ ⰷ ⰷ ▬  ",
-	"  ▬ ⰷ Ж Ж Ж ⰷ ▬  ",
-	"▦ ▦ ▦ Ж σ Ж ▦ ▦ ▦",
-	"  ▬ ⰷ Ж Ж Ж ⰷ ▬  ",
-	"  ▬ ⰷ ⰷ ▦ ⰷ ⰷ ▬  ",
-	"    ▬ ▬ ▦ ▬ ▬    ",
-	"        ▦        "], list);
-	
+# [Creative Flux Capacitor] from [Infinity Catalyst][+4]
+craft.remake(<draconicevolution:draconium_capacitor:2>.withTag({Energy: 1073741823}), ["pretty",
+  "        ■        ",
+  "    ▬ ▬ ■ ▬ ▬    ",
+  "  ▬ □ □ ■ □ □ ▬  ",
+  "  ▬ □ D D D □ ▬  ",
+  "■ ■ ■ D I D ■ ■ ■",
+  "  ▬ □ D D D □ ▬  ",
+  "  ▬ □ □ ■ □ □ ▬  ",
+  "    ▬ ▬ ■ ▬ ▬    ",
+  "        ■        "], {
+  "■": <ore:blockDraconiumAwakened>,              # Awakened Draconium Block
+  "▬": <ore:ingotUltimate>,                       # The Ultimate Ingot
+  "□": <tconstruct:large_plate>.withTag({Material: "red_matter"}), # Red Matter Large Plate
+  "D": <draconicevolution:draconium_capacitor:1>, # Draconic Flux Capacitor
+  "I": <avaritia:resource:5>,                     # Infinity Catalyst
+});
+
 
 # [Creative Mill] from [Deep Dark Portal][+11]
 craft.remake(<extrautils2:passivegenerator:6>, ["pretty",
@@ -564,8 +554,7 @@ craft.make(creativeCube, ["pretty",
 	". . . . . . . . .",
 	". . . . . . . . ."], list);
 
-# Recharging cube
-craft.shapeless(creativeCube, "A", {A: <mekanism:energycube>.withTag({tier:4,mekData:{}})});
+recipes.addHiddenShapeless('Recharging cube', creativeCube, [<mekanism:energycube>.withTag({tier:4,mekData:{}})]);
 
 # [Creative Wireless Ultimate Terminal] from [Creative Energy Cube][+4]
 craft.make(<ae2wtlib:wut_creative>, ["pretty",
@@ -600,7 +589,7 @@ craft.make(<storagedrawers:upgrade_creative:1>, ["pretty",
   "■": <ore:blockAethium>,                    # Aethium
   "C": <draconicevolution:chaotic_core>,      # Chaotic Core
   "◊": <ore:gemBenitoite>,                    # Benitoite
-  "r": <mysticalagradditions:stuff:69>,       # Creative Essence
+  "r": <tconstruct:large_plate>.withTag({Material: "red_matter"}),
   "▬": <ore:ingotInfinity>,                   # Infinity Ingot
   "D": <draconicevolution:reactor_core>,      # Draconic Reactor Core
   "o": <environmentaltech:solar_cont_6>,      # Solar Array Controller Tier 6

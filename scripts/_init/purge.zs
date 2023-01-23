@@ -46,18 +46,6 @@ utils.rh(<bhc:wither_bone>);
 utils.rh(<avaritia:compressed_crafting_table>);
 utils.rh(<avaritia:double_compressed_crafting_table>);
 
-// BoP Ethereal wood (unobtainable)
-utils.rh(<biomesoplenty:log_1:4>);
-utils.rh(<biomesoplenty:leaves_1:11>);
-utils.rh(<biomesoplenty:planks_0:4>);
-utils.rh(<biomesoplenty:ethereal_stairs>);
-utils.rh(<biomesoplenty:wood_slab_0:4>);
-utils.rh(<biomesoplenty:ethereal_fence>);
-utils.rh(<biomesoplenty:ethereal_fence_gate>);
-utils.rh(<biomesoplenty:ethereal_door:*>);
-utils.rh(<biomesoplenty:sapling_0:7>);
-utils.rh(<biomesoplenty:boat_ethereal:*>);
-
 # Purge saltpeter and sulfur
 utils.rh(<bloodmagic:component:24>);
 utils.rh(<bloodmagic:component:23>);
@@ -176,6 +164,7 @@ utils.rh(<mysticalagriculture:chunk:2>);
 utils.rh(<mysticalagriculture:chunk:3>);
 utils.rh(<mysticalagriculture:chunk:4>);
 utils.rh(<mysticalagradditions:insanium:4>);
+utils.rh(<mysticalagradditions:stuff:69>);
 
 # Pams replacements
 utils.rh(<harvestcraft:chilipepperitem>);

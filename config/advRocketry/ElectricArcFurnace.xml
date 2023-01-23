@@ -77,13 +77,13 @@
 	<!-- [Base Essence Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<oreDict>ingotBrass 3</oreDict>
-			<oreDict>shardProsperity 10</oreDict>
-			<oreDict>powderMana 1</oreDict>
-			<oreDict>dustAstralStarmetal 1</oreDict>
+			<oreDict>ingotBrass 4</oreDict>
+			<oreDict>blockProsperity 2</oreDict>
+			<oreDict>nuggetManasteel 2</oreDict>
+			<oreDict>dustAstralStarmetal 2</oreDict>
 		</input>
 		<output>
-			<itemStack>mysticalagriculture:crafting 3 32</itemStack>
+			<itemStack>mysticalagriculture:crafting 40 32</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -265,6 +265,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Fire Dragonsteel Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotThermoconducting 1</oreDict>
+			<itemStack>iceandfire:fire_dragon_blood 1</itemStack>
+		</input>
+		<output>
+			<itemStack>iceandfire:dragonsteel_fire_ingot 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Flux Crystal Block] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -284,6 +295,17 @@
 		</input>
 		<output>
 			<itemStack>nuclearcraft:alloy 16 15</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ice Dragonsteel Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotThermoconducting 1</oreDict>
+			<itemStack>iceandfire:ice_dragon_blood 1</itemStack>
+		</input>
+		<output>
+			<itemStack>iceandfire:dragonsteel_ice_ingot 1 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

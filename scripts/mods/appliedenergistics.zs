@@ -486,6 +486,7 @@ regrind(<actuallyadditions:block_misc:3>        , <actuallyadditions:item_dust:7
 regrind(<appliedenergistics2:charged_quartz_ore>, <appliedenergistics2:material:2>, true, <jaopca:item_dusttinyquartz>);
 regrind(<astralsorcery:blockcustomore:1>        , <astralsorcery:itemcraftingcomponent:2>, true, <contenttweaker:dust_tiny_silver>);
 regrind(<astralsorcery:blockcustomsandore>      , <jaopca:item_dustaquamarine>, true, <jaopca:item_dusttinyaluminium>);
+regrind(<bigreactors:oreyellorite>              , <bigreactors:dustyellorium>, true);
 regrind(<biomesoplenty:gem_ore:1>               , <jaopca:item_dustruby>, true, <jaopca:item_dusttinyaluminium>);
 regrind(<biomesoplenty:gem_ore:2>               , <jaopca:item_dustperidot>, true, <jaopca:item_dusttinyemerald>);
 regrind(<biomesoplenty:gem_ore:3>               , <jaopca:item_dusttopaz>, true, <jaopca:item_dusttinyquartzblack>);
@@ -531,6 +532,7 @@ regrind(<astralsorcery:itemcraftingcomponent:1> , <astralsorcery:itemcraftingcom
 regrind(<bigreactors:ingotblutonium>            , <bigreactors:dustblutonium>);
 regrind(<bigreactors:ingotcyanite>              , <bigreactors:dustcyanite>);
 regrind(<bigreactors:ingotludicrite>            , <bigreactors:dustludicrite>);
+regrind(<bigreactors:ingotyellorium>            , <bigreactors:dustyellorium>);
 regrind(<draconicevolution:draconium_ingot>     , <draconicevolution:draconium_dust>);
 regrind(<enderio:item_alloy_ingot:7>            , <enderio:item_material:74>);
 regrind(<endreborn:item_ingot_wolframium>       , <contenttweaker:item_ore_tungsten:2>);
@@ -637,3 +639,14 @@ for i, inputs in storCompIngrs {
 
 // Clear singularity tags
 recipes.addShapeless('Clear singularity tags', <appliedenergistics2:material:48> * 2, [<ore:singularityEntangled>, <ore:singularityEntangled>]);
+
+# [ME Crafting Terminal] from [ME Terminal][+3]
+craft.remake(<appliedenergistics2:part:360>, ["pretty",
+  "  N  ",
+  "¤ M ¤",
+  "  V  "], {
+  "N": <thermallogistics:manager>,     # Network Manager
+  "¤": <ore:gearVibrant>,              # Vibrant Bimetal Gear
+  "M": <appliedenergistics2:part:380>, # ME Terminal
+  "V": <vaultopic:vice>,               # V.I.C.E. (Vaultopic Item Crafting Entity)
+});

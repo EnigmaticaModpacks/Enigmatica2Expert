@@ -24,7 +24,17 @@ craft.remake(<psi:cad_assembler>, ["pretty",
   "-": <ore:ingotManasteel>, # Manasteel Ingot
 });
 
+# [Ivory Substance] from [Nether Quartz][+1]
+scripts.process.alloy([
+  <gendustry:honey_drop:15>, # Selfish Honey Drop
+  <ore:gemQuartz>, # Nether Quartz
+], <psi:material:6>, 'Only: Kiln');
 
+# [Ebony Substance] from [Coal][+1]
+scripts.process.alloy([
+  <gendustry:honey_drop:15>, # Selfish Honey Drop
+  <ore:coal>, # Coal
+], <psi:material:5>, 'Only: Kiln');
 
 # --------------------------------------------------
 # Remake All CADs

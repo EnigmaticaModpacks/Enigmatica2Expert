@@ -44,7 +44,7 @@ craft.make(<contenttweaker:conglomerate_of_life> * 2, ['pretty',
   '▲': <scalinghealth:heartdust>,           // Heart Dust
   'B': <randomthings:rezstone>,             // Blood Stone
   'D': <iceandfire:dragon_meal>,            // Dragon Meal
-  'W': <ore:cheeseWheels>,                  // Cheese Wheel
+  'W': <ore:cheeseAnimania>,
   'C': <cyclicmagic:crystallized_obsidian>, // Crystallized Obsidian
 });
 

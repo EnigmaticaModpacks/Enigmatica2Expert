@@ -22,4 +22,5 @@
   ,{"key": "TWOND_ALIENIST_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:alienist_stone"}]}
 
   ,{"key": "IMPETUS_GENERATOR","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:impetus_generator"}]}
+  ,{"key": "INFUSIONPROVIDER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:infusion_provider"}]}
 ]

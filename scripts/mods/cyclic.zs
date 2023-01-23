@@ -90,7 +90,7 @@ craft.remake(<cyclicmagic:storage_bag>, ["pretty",
 
 # [Ender Orb] from [Redstone][+3]
 craft.reshapeless(<cyclicmagic:ender_pearl_reuse>, "W▲▬♥", {
-  "W": <ore:cheeseWheels>,       # Cheese Wheel (Friesian)
+  "W": <ore:cheeseAnimania>,
   "▲": <ore:dustDimensional>,    # Dimensional Blend
   "▬": <ore:ingotPulsatingIron>, # Pulsating Iron Ingot
   "♥": <ore:dustRedstone>,       # Redstone
@@ -98,7 +98,7 @@ craft.reshapeless(<cyclicmagic:ender_pearl_reuse>, "W▲▬♥", {
 
 # [Ender Orb Translocator] from [Lapis Lazuli][+3]
 craft.reshapeless(<cyclicmagic:ender_pearl_mounted>, "W▲▬◊", {
-  "W": <ore:cheeseWheels>,       # Cheese Wheel (Friesian)
+  "W": <ore:cheeseAnimania>,
   "▲": <ore:dustDimensional>,    # Dimensional Blend
   "▬": <ore:ingotPulsatingIron>, # Pulsating Iron Ingot
   "◊": <ore:gemLapis>,           # Lapis Lazuli

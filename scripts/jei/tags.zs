@@ -286,6 +286,7 @@ for lang, items in {
     <randomthings:itemcollector>,
     <randomthings:plate_collection>,
     <tconstruct:wooden_hopper>,
+    <thaumadditions:seal_symbol>.withTag({Aspect: "vacuos"}),
     <thaumcraft:hungry_chest>,
     <thermalexpansion:device:12>,
   ],

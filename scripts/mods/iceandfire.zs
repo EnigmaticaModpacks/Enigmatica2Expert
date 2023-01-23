@@ -560,6 +560,18 @@ scripts.processUtils.avdRockXmlRecipeEx("Crystallizer", [<cyclicmagic:heart_toxi
 # [Crystal Matrix Ingot] from [Diamond Lattice][+1]
 scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [<ore:netherStar>, <avaritia:resource>], null, [<avaritia:resource:1>], null, {power: 100000, timeRequired: 20});
 
+# [Fire Dragonsteel Ingot] from [Fire Dragon Blood][+1]
+scripts.process.alloy([
+	<ore:ingotThermoconducting>,    # Thermoconducting Alloy
+	<iceandfire:fire_dragon_blood>, # Fire Dragon Blood
+], <iceandfire:dragonsteel_fire_ingot>, 'Only: AdvRockArc');
+
+# [Ice Dragonsteel Ingot] from [Ice Dragon Blood][+1]
+scripts.process.alloy([
+  <ore:ingotThermoconducting>,   # Thermoconducting Alloy
+  <iceandfire:ice_dragon_blood>, # Ice Dragon Blood
+], <iceandfire:dragonsteel_ice_ingot>, 'Only: AdvRockArc');
+
 ##################
 # Other
 envelopCheese("amphithereMorb",  <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:amphithere"}) * 3, <minecraft:cookie>);

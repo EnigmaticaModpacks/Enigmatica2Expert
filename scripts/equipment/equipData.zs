@@ -180,11 +180,11 @@ val defaultArmorMats as IData = [
   "scalegreenseaserpent"   , # 61
   "sponge"                 , # 62
   "sunnarium"              , # 62
+  "amethyst"               , # 64
   "conductive_iron"        , # 68
   "ma.prudentium"          , # 69
   "starmetal"              , # 71
   "redstone_alloy"         , # 71
-  "amethyst"               , # 73
   "energetic_alloy"        , # 74
   "boron_nitride"          , # 76
   "terrasteel"             , # 77
@@ -244,6 +244,7 @@ val defaultWeaponMats as IData = [
   "netherrack"        , # 66
   "livingrock"        , # 66
   "tin"               , # 67
+  "livingwood"        , # 69
   "bone"              , # 71
   "cheese"            , # 73
   "dragonbone"        , # 73
@@ -256,7 +257,6 @@ val defaultWeaponMats as IData = [
   "slime"             , # 81
   "treatedwood"       , # 82
   "magmaslime"        , # 85
-  "livingwood"        , # 86
   "copper"            , # 88
   "void_crystal"      , # 88
   "palis_crystal"     , # 89

@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.WeightedItemStack;
 #modloaded biomesoplenty
 
@@ -17,9 +18,6 @@ scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>);
 	recipes.remove(Bucket("poison"));
 	recipes.addShapeless("biomesoplenty_forge_bucketfilled_poison_dupefix", Bucket("poison"), 
 	[<minecraft:water_bucket>.noReturn(), <minecraft:spider_eye:*>, <minecraft:poisonous_potato:*>, <minecraft:sugar:*>]);
-
-# Terrestrial Artifact
-	<biomesoplenty:terrestrial_artifact>.maxStackSize = 64;
 
 # Honey
 	recipes.addShapeless(<biomesoplenty:honey_block> * 3, [<biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>, <biomesoplenty:hive:3>]);
@@ -53,32 +51,28 @@ scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>);
 	[<ore:ingotElvenElementium>, <biomesoplenty:terrestrial_artifact>, <ore:ingotElvenElementium>], 
 	[<ore:ingotElvenElementium>, <ore:ingotElvenElementium>, <ore:ingotElvenElementium>]]);
 
-# [Terrestrial Artifact] from [Empowered Palis Crystal][+6]
-craft.remake(<biomesoplenty:terrestrial_artifact> * 3, ["pretty",
-  "S S S",
-  "p * o",
-  "E ☼ m"], {
+val terrIngrs = {
   "S": <ore:itemXP>,																   # Solidified Experience
-  "p": <actuallyadditions:item_crystal_empowered>,     # Empowered Restonia Crystal
-  "E": <actuallyadditions:item_crystal_empowered:3>,   # Empowered Void Crystal
-  "*": <actuallyadditions:item_crystal_empowered:1>,   # Empowered Palis Crystal
-  "☼": <actuallyadditions:item_crystal_empowered:4>,   # Empowered Emeradic Crystal
-  "m": <actuallyadditions:item_crystal_empowered:5>,   # Empowered Enori Crystal
-  "o": <actuallyadditions:item_crystal_empowered:2>,   # Empowered Diamatine Crystal
-});
+  "0": <actuallyadditions:item_crystal_empowered>,     # Empowered Restonia Crystal
+  "1": <actuallyadditions:item_crystal_empowered:1>,   # Empowered Palis Crystal
+  "2": <actuallyadditions:item_crystal_empowered:2>,   # Empowered Diamatine Crystal
+  "3": <actuallyadditions:item_crystal_empowered:3>,   # Empowered Void Crystal
+  "4": <actuallyadditions:item_crystal_empowered:4>,   # Empowered Emeradic Crystal
+  "5": <actuallyadditions:item_crystal_empowered:5>,   # Empowered Enori Crystal
+} as IIngredient[string];
+
+# [Terrestrial Artifact] from [Empowered Palis Crystal][+6]
+craft.reshapeless(<biomesoplenty:terrestrial_artifact> * 3, "SSS012345", terrIngrs);
 
 # [Terrestrial Artifact Block] from [Empowered Palis Crystal Block][+6]
-craft.remake(<contenttweaker:terrestrial_artifact_block> * 3, ["pretty",
-  "S S S",
-  "◘ ◙ *",
-  "■ □ ☼"], {
+craft.reshapeless(<contenttweaker:terrestrial_artifact_block> * 3, "SSS012345", {
   "S": <ore:itemXP>,																   # Solidified Experience
-  "■": <actuallyadditions:block_crystal_empowered:3>,  # Empowered Void Crystal Block
-  "□": <actuallyadditions:block_crystal_empowered:4>,  # Empowered Emeradic Crystal Block
-  "◘": <actuallyadditions:block_crystal_empowered>,    # Empowered Restonia Crystal Block
-  "◙": <actuallyadditions:block_crystal_empowered:1>,  # Empowered Palis Crystal Block
-  "*": <actuallyadditions:block_crystal_empowered:2>,  # Empowered Diamatine Crystal Block
-  "☼": <actuallyadditions:block_crystal_empowered:5>,  # Empowered Enori Crystal Block
+  "0": <actuallyadditions:block_crystal_empowered>,    # Restonia
+  "1": <actuallyadditions:block_crystal_empowered:1>,  # Palis
+  "2": <actuallyadditions:block_crystal_empowered:2>,  # Diamatine
+  "3": <actuallyadditions:block_crystal_empowered:3>,  # Void
+  "4": <actuallyadditions:block_crystal_empowered:4>,  # Emeradic
+  "5": <actuallyadditions:block_crystal_empowered:5>,  # Enori
 });
 
 # BoP Grass, Dirt, and Netherrack.
@@ -101,6 +95,9 @@ craft.remake(<contenttweaker:terrestrial_artifact_block> * 3, ["pretty",
 	
 # Amber Block
 	utils.rh(<biomesoplenty:gem_block:7>);
+
+# Terrestrial Artifact
+<biomesoplenty:terrestrial_artifact>.maxStackSize = 64;
 	
 # Terrestrial Artifact block
 craft.shapeless(<contenttweaker:terrestrial_artifact_block>, "AAAAAAAAA", {A: <biomesoplenty:terrestrial_artifact>});
@@ -112,6 +109,14 @@ scripts.process.melt(<contenttweaker:terrestrial_artifact_block>, <liquid:terres
 mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:terrestrial_artifact_block>, null, <liquid:terrestrial>, 1296);
 mods.tconstruct.Casting.addTableRecipe(<biomesoplenty:terrestrial_artifact>, <tconstruct:cast_custom:2>, <liquid:terrestrial>, 144, false);
 mods.nuclearcraft.ingot_former.addRecipe([<liquid:terrestrial>*144, <biomesoplenty:terrestrial_artifact>, 1.0, 1.0]);
+mods.forestry.Centrifuge.addRecipe([
+	terrIngrs['0'].items[0] % 100,
+	terrIngrs['1'].items[0] % 100,
+	terrIngrs['2'].items[0] % 100,
+	terrIngrs['3'].items[0] % 100,
+	terrIngrs['4'].items[0] % 100,
+	terrIngrs['5'].items[0] % 100,
+], <biomesoplenty:terrestrial_artifact>, 10);
 
 # To easy manage in inventory
 <biomesoplenty:jar_filled:1>.maxStackSize = 64;

@@ -61,20 +61,4 @@
 			<fluidStack>elementium 1</fluidStack>
 		</output>
 	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Terrestrial centrifuge] -->
-	<Recipe timeRequired="10" power="100000">
-		<input>
-			<fluidStack>terrestrial 432</fluidStack>
-		</input>
-		<output>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 0</itemStack>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 1</itemStack>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 2</itemStack>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 3</itemStack>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 4</itemStack>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 5</itemStack>
-			<itemStack>actuallyadditions:item_solidified_experience 3 0</itemStack>
-		</output>
-	</Recipe>
 </Recipes>

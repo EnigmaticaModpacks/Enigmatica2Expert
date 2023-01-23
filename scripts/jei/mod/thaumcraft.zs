@@ -101,7 +101,7 @@ addInfFur(<jaopca:item_clusterdiamond>             , [RE % 2, <thermalfoundation
 addInfFur(<jaopca:item_clusterdilithium>           , [RE % 2, <jaopca:item_nuggetdilithium> % 33, <jaopca:item_nuggetdimensionalshard> * 9 % 32]);
 addInfFur(<jaopca:item_clusterdimensionalshard>    , [RE % 2, <jaopca:item_nuggetperidot> * 6 % 32, <jaopca:item_nuggetdimensionalshard> % 33]);
 addInfFur(<jaopca:item_clusterdraconium>           , [RE % 2, <draconicevolution:nugget> % 33, <jaopca:item_nuggetastralstarmetal> * 4 % 32]);
-addInfFur(<jaopca:item_clusteremerald>             , [RE % 2, <thermalfoundation:material:17> % 33, <jaopca:item_nuggetmalachite> * 6 % 32]);
+addInfFur(<jaopca:item_clusteremerald>             , [RE % 2, <thermalfoundation:material:17> % 33, <jaopca:item_nuggettanzanite> * 6 % 32]);
 addInfFur(<jaopca:item_clusteriridium>             , [RE % 2, <mekanism:nugget:1> * 4 % 32, <thermalfoundation:material:199> % 33]);
 addInfFur(<jaopca:item_clusterlapis>               , [RE % 2, <jaopca:item_nuggetlapis> % 33, <jaopca:item_nuggetsapphire> * 6 % 32]);
 addInfFur(<jaopca:item_clusterlithium>             , [RE % 2, <jaopca:item_nuggetlithium> % 33, <jaopca:item_nuggetapatite> * 32 % 32]);
@@ -139,7 +139,7 @@ addInfFur(<jaopca:item_dirtygemdiamond>            , [<jaopca:item_nuggetmalachi
 addInfFur(<jaopca:item_dirtygemdilithium>          , [<jaopca:item_nuggetdimensionalshard> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemdimensionalshard>   , [<jaopca:item_nuggetperidot> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemdraconium>          , [<jaopca:item_nuggetastralstarmetal> * 64 % 100]);
-addInfFur(<jaopca:item_dirtygememerald>            , [<jaopca:item_nuggetmalachite> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygememerald>            , [<jaopca:item_nuggettanzanite> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemgold>               , [<thermalfoundation:material:196> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemiridium>            , [<mekanism:nugget:1> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemiron>               , [<minecraft:gold_nugget> * 64 % 100]);

@@ -20,12 +20,18 @@ for log, plank in scripts.category.wood.logPlank {
   val exceptions = 
     mod == 'forestry'
       || mod == 'iceandfire'
+      || mod == 'botania'
+      || mod == 'astralsorcery'
       || id == 'extrautils2:decorativesolidwood'
       || id == 'thaumcraft:taint_log'
       ? "no exceptions"
     : "strict: manufactory mekSawmill";
   saw(log, plank, exceptions);
 }
+
+// Remove since its not removed automatically by saw() func
+recipes.removeByRecipeName("astralsorcery:shapeless/infused_wood_planks");
+
 
 # Magical wood special
 scripts.process.sawWood(<extrautils2:decorativesolidwood:1>, <extrautils2:decorativesolidwood>, "only: TESawmill");

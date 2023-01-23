@@ -126,6 +126,46 @@ scripts.process.fill(<nuclearcraft:part:11>, <fluid:water> * 2000, <nuclearcraft
 	//Elementium Ingot
 	mods.nuclearcraft.ingot_former.addRecipe([<liquid:elementium>*144, <botania:manaresource:7>, 1.0, 1.0]);
 
+for fluid, ingot in {
+/*Inject_js{
+if(cmd.block) return cmd.block
+const existIngotRecipes = loadJson('exports/recipes/nuclearcraft_ingot_former.json')
+  .recipes.map(r => r.output.items[0].stacks[0].name)
+return loadJson('exports/recipes/tconstruct__casting_table.json')
+  .recipes.map((r) => {
+    if (r.output.items.some(i => i.stacks.some(s => existIngotRecipes.includes(s.name)))) return undefined
+    if (!r.input.items.some(i => i.stacks.some(s => s.name === 'tconstruct:cast_custom:0'))) return undefined
+    return [
+      '  '+r.input.items.find(i => i.stacks.some(s => s.type === 'fluid')).stacks[0].name,
+      `: <${r.output.items[0].stacks[0].name.replace(/:0$/, '')}>,`,
+    ]
+  })
+  .filter(Boolean)
+  .sort((a, b) => naturalSort(a[1], b[1]))
+}*/
+	crystal_matrix  : <avaritia:resource:1>,
+	neutronium      : <avaritia:resource:4>,
+	tungsten        : <endreborn:item_ingot_wolframium>,
+	heavy_metal     : <mechanics:heavy_ingot>,
+	electronics     : <opencomputers:material:8>,
+	spectre         : <randomthings:ingredient:3>,
+	fluxed_electrum : <redstonearsenal:material:32>,
+	gelid_enderium  : <redstonerepository:material:1>,
+	draconic_metal  : <tconevo:metal:5>,
+	chaotic_metal   : <tconevo:metal:10>,
+	essence_metal   : <tconevo:metal:15>,
+	primal_metal    : <tconevo:metal:20>,
+	bound_metal     : <tconevo:metal:25>,
+	sentient_metal  : <tconevo:metal:30>,
+	energetic_metal : <tconevo:metal:35>,
+	universal_metal : <tconevo:metal:40>,
+	wyvern_metal    : <tconevo:metal>,
+	void_metal      : <thaumcraft:ingot:1>,
+/**/
+} as IItemStack[string] {
+	mods.nuclearcraft.ingot_former.addRecipe([game.getLiquid(fluid) * 144, ingot, 1.0, 1.0]);
+}
+
 # *======= Remove & Hide =======*
 	
 	utils.rh(<nuclearcraft:ore>);

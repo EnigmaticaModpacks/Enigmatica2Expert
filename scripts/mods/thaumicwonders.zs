@@ -155,3 +155,9 @@ events.onPlayerPickupItem(function(e as crafttweaker.event.PlayerPickupItemEvent
 });
 
 # ---------------------------------------------------------
+
+scripts.jei.crafting_hints.addInsOutCatl([
+  <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "aqua"}]}),
+  <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "victus"}]}),
+  <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "alienis"}]}),
+], <ore:listAllmeatraw>.firstItem * 500, <thaumicwonders:meaty_orb>);

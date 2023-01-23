@@ -70,3 +70,21 @@ craft.make(<thaumicenergistics:essentia_cell_64k>, ["pretty",
   "♥ k ♥",
   "□ I □"], cellIngrs
 );
+
+# [Essentia Infusion Provider] from [ME Interface][+7]
+mods.thaumcraft.Infusion.removeRecipe(<thaumicenergistics:infusion_provider>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "infusion_provider", # Name
+  "INFUSION", # Research
+  <thaumicenergistics:infusion_provider>, # Output
+  7, # Instability
+  [<aspect:fabrico> * 100, <aspect:imperium> * 100, <aspect:praecantatio> * 100],
+  <appliedenergistics2:interface>, # Central Item
+  Grid(["pretty",
+  "▬ ‚ ▬",
+  "C   C",
+  "▬ ‚ ▬"], {
+  "▬": <ore:ingotFluixSteel>,                 # Fluix Steel Ingot
+  "‚": <ore:nuggetPrimordial>,                # Primal Metal Nugget
+  "C": <thaumicenergistics:coalescence_core>, # Coalescence Core
+}).spiral(1));

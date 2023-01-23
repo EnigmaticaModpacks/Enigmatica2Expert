@@ -38,3 +38,23 @@ craft.remake(<opencomputers:upgrade:3>, ["pretty",
   "□": <ore:plateMithril>,    # Mana Infused Plate
   "C": <ore:itemChassiParts>, # Machine Parts
 });
+
+# [Geolyzer] from [Microchip (Tier 2)][+2]
+craft.remake(<opencomputers:geolyzer>, ["pretty",
+  "B : B",
+  "B c B",
+  "B : B"], {
+  "B": <ore:stoneBasalt>, # Basalt
+  ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+  "c": <ore:oc:circuitChip2>,                # Microchip (Tier 2)
+});
+
+# [Tractor Beam Upgrade] from [Sticky Piston][+2]
+craft.remake(<opencomputers:upgrade:25>, [
+  "I",
+  "P",
+  ":"], {
+  "I": <cyclicmagic:magnet_block>,           # Item Magnet
+  "P": <ore:craftingPiston>,                 # Sticky Piston
+  ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+});
