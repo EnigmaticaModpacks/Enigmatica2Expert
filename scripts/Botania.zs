@@ -193,9 +193,6 @@ import crafttweaker.item.IIngredient as IIngredient;
 	recipes.addShapeless("Petal Duplication14", <botania:petal:14> * 4, [<botania:petal:14>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 	recipes.addShapeless("Petal Duplication15", <botania:petal:15> * 4, [<botania:petal:15>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>, <ore:fertilizer>]);
 
-# Remove unused ORE
-mods.botania.Orechid.removeOre("oreYellorite");
-
 # Add missed ORE
 mods.botania.Orechid.addOre("oreThorium", 1285);
 mods.botania.Orechid.addOre("oreMagnesium", 1285);
@@ -265,9 +262,6 @@ mods.botania.PureDaisy.addRecipe(<ore:blockGlassBlack>,  <quark:crystal:8>);
 	//mods.botania.RuneAltar.addRecipe(<minecraft:stonebrick:2>, [<minecraft:stonebrick>, <minecraft:gunpowder>], 5);
 	//OutputStack
 	//mods.botania.RuneAltar.removeRecipe(<botania:rune>);
-
-# Remove unused ORE
-	mods.botania.Orechid.removeOre("oreYellorite");
 
 # Add missed ORE
 	mods.botania.Orechid.addOre("oreThorium", 1285);
