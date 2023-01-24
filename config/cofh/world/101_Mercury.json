@@ -1,0 +1,21 @@
+{
+  "dependencies": "advancedrocketry",
+  "populate": {
+		
+		"mercury_lakes": {
+			"distribution": "surface",
+			"generator": {
+				"type": "lake",
+				"block": "astralsorcery:fluidblockliquidstarlight",
+				"solid-outline": true,
+				"outline-block": "mekanism:saltblock"
+			},
+			"cluster-count": 16,
+			"follow-terrain": false,
+			"biome": {"restriction": "whitelist","value": [{"type": "id","entry": ["biometweaker:mercury_beach"]}]}
+		}
+		
+  }
+}
+
+

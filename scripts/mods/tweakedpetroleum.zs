@@ -89,7 +89,8 @@ registerReservoir("Helium 3 Reservoir (Luna)", <liquid:helium3>, 2000000000, max
 		lava
 		White sand
 */
-registerReservoir("Liquid Mica (Mercury)"                     , <liquid:mica>        , 14400     , 72000 , 0, 10, 30, I , [], [101], [], []);
+registerReservoir("Liquid Mica (Mercury)"                     , <liquid:mica>        ,      14400,  72000, 0, 10, 30, I , [], [101], [], []);
+registerReservoir("Liquid Starlight (Mercury)", <liquid:astralsorcery.liquidstarlight>,maxInt/500,maxInt/100, 0, 10, 30, I , [], [101], [], []);
 registerGasReservoir("Aluminium Slurry Reservoir (Terra Nova)", <gas:slurryAluminium>, 1228800000, maxInt, 0, 50, 30, II, [], [101], [], []);
 
 # Venus ID=102
