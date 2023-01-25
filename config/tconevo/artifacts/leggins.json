@@ -1,0 +1,22 @@
+{
+  "weight": 120,
+  "type": "tconevo:armour",
+  "name": "Supremacy",
+  "lore": "Leggins of Divine Supremacy",
+  "armour": "leggings",
+  "materials": [
+    "spectre",
+    "spectre",
+    "spectre"
+  ],
+  "free_mods": 6,
+  "mods": [
+    "emerald_armor",
+    "polished_armorgelid_enderium",
+    {
+      "id": "mending_armor",
+      "level": 2
+    },
+    "diamond_armor"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "weight": 220,
+  "type": "tconevo:armour",
+  "name": "Transcendence",
+  "lore": "The Helmet of Mind Transcendence",
+  "armour": "helmet",
+  "materials": [
+    "spectre",
+    "xu_evil_metal",
+    "lumium"
+  ],
+  "free_mods": 4,
+  "mods": [
+    "amphibious_armor",
+    "parasitic_armor",
+    "diamond_armor"
+  ]
+}
