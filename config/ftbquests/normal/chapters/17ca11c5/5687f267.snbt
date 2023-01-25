@@ -25,5 +25,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Scroll Of Massive Knowledge!"
+	},
+	{
+		uid: "9dc113a3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }

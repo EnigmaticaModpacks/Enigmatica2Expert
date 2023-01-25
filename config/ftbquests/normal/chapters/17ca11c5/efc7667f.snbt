@@ -21,5 +21,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Invincible Rat!"
+	},
+	{
+		uid: "c2cd6102",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }

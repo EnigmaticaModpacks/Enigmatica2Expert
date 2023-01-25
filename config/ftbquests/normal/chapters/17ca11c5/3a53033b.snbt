@@ -20,5 +20,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Cheese!"
+	},
+	{
+		uid: "07528952",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }

@@ -26,5 +26,16 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Gas Tank!"
+	},
+	{
+		uid: "ec375d5b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		},
+		count: 3
 	}]
 }

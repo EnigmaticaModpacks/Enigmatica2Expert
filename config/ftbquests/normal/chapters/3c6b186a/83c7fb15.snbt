@@ -31,7 +31,7 @@
 		type: "item",
 		items: [{
 			id: "ic2:cable",
-			Count: 6b,
+			Count: 6,
 			Damage: 4s,
 			tag: {
 				type: 4b,

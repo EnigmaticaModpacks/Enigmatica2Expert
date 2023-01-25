@@ -1,6 +1,7 @@
 {
 	title: "Rare",
 	loot_size: 1,
+	use_title: true,
 	rewards: [{
 		item: {
 			id: "ftbquests:lootcrate",
@@ -53,7 +54,7 @@
 	{
 		icon: {
 			id: "forestry:chipsets",
-			Count: 3b,
+			Count: 3,
 			Damage: 2s,
 			tag: {
 				T: 2s,
@@ -303,6 +304,39 @@
 		icon: "xnet:connector_upgrade 16",
 		item: "xnet:connector_upgrade",
 		count: 16
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "materials"
+			}
+		},
+		weight: 25
+	},
+	{
+		item: {
+			id: "deepmoblearning:data_model_blaze",
+			tag: {
+				tier: 4
+			}
+		}
+	},
+	{
+		item: {
+			id: "deepmoblearning:data_model_wither_skeleton",
+			tag: {
+				tier: 4
+			}
+		}
+	},
+	{
+		item: {
+			id: "deepmoblearning:data_model_thermal_elemental",
+			tag: {
+				tier: 4
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "rare",

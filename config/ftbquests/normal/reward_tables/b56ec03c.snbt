@@ -6,7 +6,7 @@
 	{
 		icon: {
 			id: "thermalexpansion:florb",
-			Count: 5b,
+			Count: 5,
 			Damage: 1s,
 			tag: {
 				Fluid: "lava"

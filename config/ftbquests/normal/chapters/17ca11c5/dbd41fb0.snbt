@@ -19,5 +19,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Mill!"
+	},
+	{
+		uid: "d3ffaa21",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }

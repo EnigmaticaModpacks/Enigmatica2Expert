@@ -400,7 +400,7 @@
 	{
 		icon: {
 			id: "mekanism:basicblock2",
-			Count: 4b,
+			Count: 4,
 			Damage: 3s,
 			tag: {
 				tier: 3,

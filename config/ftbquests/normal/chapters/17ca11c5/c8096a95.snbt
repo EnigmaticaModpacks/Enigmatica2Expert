@@ -1,28 +1,28 @@
 {
-	x: 5.2d,
-	y: 0.5d,
+	x: 2.3d,
+	y: -0.6d,
 	text: [
-		"{q.bragging_rights.star_of_psi.desc}"
+		"{q.bragging_rights.burn_singularity.desc}"
 	],
 	dependencies: [
 		"fbbabf40"
 	],
 	tasks: [{
-		uid: "0d64eeee",
+		uid: "d82de6df",
 		type: "item",
 		items: [{
-			item: "psicosts:creative_cell"
-		}],
-		ignore_nbt: 1b
+			item: "avaritia:singularity 1 12"
+		}]
 	}],
 	rewards: [{
-		uid: "6f566d11",
+		uid: "d7750ebd",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
 				type: "legendary"
 			}
-		}
+		},
+		count: 2
 	}]
 }

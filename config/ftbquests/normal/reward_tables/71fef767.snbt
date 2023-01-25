@@ -3,7 +3,7 @@
 	rewards: [{
 		icon: {
 			id: "immersiveengineering:bullet",
-			Count: 64b,
+			Count: 64,
 			Damage: 2s,
 			tag: {
 				bullet: "silver"

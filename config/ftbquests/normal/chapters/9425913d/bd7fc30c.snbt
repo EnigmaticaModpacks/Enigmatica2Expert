@@ -8,8 +8,7 @@
 	dependencies: [
 		"a626e5ea",
 		"bd2ed1f2",
-		"cabe63d2",
-		"d1308656"
+		"cabe63d2"
 	],
 	tasks: [{
 		uid: "71a4f336",

@@ -21,5 +21,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the (non-guilty) Creative Mana Pool!"
+	},
+	{
+		uid: "604cc116",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		}
 	}]
 }

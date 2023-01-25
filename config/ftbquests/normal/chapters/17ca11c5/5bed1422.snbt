@@ -28,5 +28,16 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Tank!"
+	},
+	{
+		uid: "25737947",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		},
+		count: 3
 	}]
 }

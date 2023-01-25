@@ -27,5 +27,16 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Energy Cube!"
+	},
+	{
+		uid: "11e22089",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		},
+		count: 3
 	}]
 }

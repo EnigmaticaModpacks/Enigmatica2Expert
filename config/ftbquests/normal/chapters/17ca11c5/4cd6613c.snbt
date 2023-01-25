@@ -29,5 +29,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Sacrifice Dagger!"
+	},
+	{
+		uid: "489a4bd0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }

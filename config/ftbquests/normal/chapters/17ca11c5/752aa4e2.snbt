@@ -1,11 +1,11 @@
 {
-	x: 2.375d,
-	y: -0.625d,
+	x: 1.0d,
+	y: -0.6d,
 	text: [
 		"{q.bragging_rights.infinity_furnace.desc}"
 	],
 	dependencies: [
-		"fbbabf40"
+		"c8096a95"
 	],
 	tasks: [{
 		uid: "6694bd2a",

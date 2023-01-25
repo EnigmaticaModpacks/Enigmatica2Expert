@@ -3,7 +3,7 @@
 	rewards: [{
 		icon: {
 			id: "bibliocraft:framedchest",
-			Count: 6b,
+			Count: 6,
 			Damage: 6s,
 			tag: {
 				renderTexture: "quark:blocks/iron_plate_rusted"
@@ -21,7 +21,7 @@
 	{
 		icon: {
 			id: "bibliocraft:framedchest",
-			Count: 4b,
+			Count: 4,
 			Damage: 6s,
 			tag: {
 				renderTexture: "chisel:blocks/metals/cobalt/badgreggy"
@@ -39,7 +39,7 @@
 	{
 		icon: {
 			id: "bibliocraft:framedchest",
-			Count: 4b,
+			Count: 4,
 			Damage: 6s,
 			tag: {
 				renderTexture: "chisel:blocks/factory/goldplate"
@@ -57,7 +57,7 @@
 	{
 		icon: {
 			id: "bibliocraft:framedchest",
-			Count: 4b,
+			Count: 4,
 			Damage: 6s,
 			tag: {
 				renderTexture: "sonarcore:blocks/connected/stablestonerimmedblack_green"

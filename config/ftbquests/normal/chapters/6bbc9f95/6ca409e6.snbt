@@ -1,0 +1,48 @@
+{
+	icon: "thaumadditions:seal",
+	x: 7.9d,
+	y: 10.7d,
+	text: [
+		"{q.thaumcraft.arcane_seal.desc}"
+	],
+	dependencies: [
+		"38a388cd"
+	],
+	tasks: [{
+		uid: "055dbe7a",
+		type: "item",
+		items: [{
+			item: "thaumadditions:seal"
+		}]
+	},
+	{
+		uid: "17706aae",
+		type: "item",
+		items: [{
+			id: "thaumadditions:seal_symbol",
+			tag: {
+				Aspect: "victus"
+			}
+		}]
+	},
+	{
+		uid: "b99a61b3",
+		type: "item",
+		items: [{
+			id: "thaumadditions:seal_symbol",
+			tag: {
+				Aspect: "herba"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "a795fecf",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

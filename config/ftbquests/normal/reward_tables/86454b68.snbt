@@ -2,15 +2,6 @@
 	title: "Legendary",
 	loot_size: 1,
 	rewards: [{
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "materials"
-			}
-		},
-		weight: 25
-	},
-	{
 		item: "thermalexpansion:frame 1 148"
 	},
 	{
@@ -126,7 +117,7 @@
 	{
 		icon: {
 			id: "extrautils2:drum",
-			Count: 4b,
+			Count: 4,
 			Damage: 2s,
 			tag: {
 				Fluid: {
@@ -211,11 +202,6 @@
 				}
 			}
 		}
-	},
-	{
-		icon: "mysticalagradditions:stuff 3 69",
-		item: "mysticalagradditions:stuff 1 69",
-		count: 3
 	},
 	{
 		icon: "appliedenergistics2:material 16 47",
@@ -306,6 +292,14 @@
 		icon: "minecraft:dragon_egg 2",
 		item: "minecraft:dragon_egg",
 		count: 2
+	},
+	{
+		item: {
+			id: "deepmoblearning:data_model_dragon",
+			tag: {
+				tier: 4
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "legendary",

@@ -1,0 +1,25 @@
+{
+	title: "{q.getting_started.ftb_chunks.name}",
+	x: -2.4d,
+	y: 0.5d,
+	text: [
+		"{q.getting_started.ftb_chunks.desc}"
+	],
+	dependencies: [
+		"7bfb3253"
+	],
+	tasks: [{
+		uid: "d25a8761",
+		type: "observation",
+		title: "Look at",
+		icon: "minecraft:grass",
+		match_type: "block_id",
+		match: "minecraft:grass",
+		timer: 0L
+	}],
+	rewards: [{
+		uid: "156e63bf",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}
