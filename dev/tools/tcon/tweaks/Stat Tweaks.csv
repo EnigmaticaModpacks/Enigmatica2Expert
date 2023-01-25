@@ -82,7 +82,7 @@ kyronite,*3,*3,*3,9,*3,*3,*3,*3,*3,*3
 lead,,,,4,,,,,,
 litherite,*3,*3,*3,7,*3,*3,*3,*3,*3,*3
 livingrock,,,,,,,,,,
-livingwood,*1.5,*1.5,*1.5,4,2,*3.5,,,,
+livingwood,,/2,/2,4,2,*3.5,,,,
 lonsdaleite,,,,,,,,,,
 lumium,,,,6,,,,,,
 ma.base_essence,,,,4,*2,,,,,+2.5
