@@ -10,7 +10,7 @@ craft.remake(<modularmachinery:blockcasing:1>, [
 });
 
 # [Machine Controller] removal (replaced with modular controllers)
-utils.rh(<modularmachinery:blockcontroller>);
+recipes.remove(<modularmachinery:blockcontroller>);
 
 # Machine Casing
 recipes.remove(<modularmachinery:blockcasing>);
