@@ -1,0 +1,28 @@
+{
+	title: "{q.nuclearcraft.nuclearcraft.name}",
+	icon: "nuclearcraft:manufactory",
+	x: 5.4d,
+	y: 7.5d,
+	text: [
+		"{q.nuclearcraft.nuclearcraft.desc}"
+	],
+	dependencies: [
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "00000000",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "00000000",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the NuclearCraft questline!"
+	},
+	{
+		uid: "00000000",
+		type: "item",
+		item: "nuclearcraft:radaway",
+		count: 3
+	}]
+}

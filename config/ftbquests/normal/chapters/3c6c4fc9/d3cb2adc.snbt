@@ -1,0 +1,23 @@
+{
+	x: 18.6d,
+	y: 5.8d,
+	text: [
+		"The ore leacher is an advanced ore processor where you put various ores in with some fluids and you get multiple items out."
+	],
+	dependencies: [
+		"0bf36970",
+		"9c8a31e1"
+	],
+	tasks: [{
+		uid: "a3b0e014",
+		type: "item",
+		items: [{
+			item: "qmd:ore_leacher"
+		}]
+	}],
+	rewards: [{
+		uid: "1ea84fb1",
+		type: "loot",
+		table: 1
+	}]
+}

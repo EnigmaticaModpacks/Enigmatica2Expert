@@ -1,0 +1,28 @@
+{
+	x: 5.6d,
+	y: 9.0d,
+	text: [
+		"{q.nuclearcraft.fluid_extractor.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"626f1230"
+	],
+	tasks: [{
+		uid: "14f8386a",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:extractor"
+		}]
+	}],
+	rewards: [{
+		uid: "e74d70a7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	x: 3.2d,
+	y: 6.1d,
+	text: [
+		"{q.nuclearcraft.speed_upgrade.desc}"
+	],
+	dependencies: [
+		"0bf36970",
+		"da8740b0"
+	],
+	tasks: [{
+		uid: "43991b9e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:upgrade"
+		}]
+	}],
+	rewards: [{
+		uid: "3680027e",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

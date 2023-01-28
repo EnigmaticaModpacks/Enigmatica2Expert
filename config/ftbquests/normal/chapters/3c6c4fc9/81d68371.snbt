@@ -1,0 +1,72 @@
+{
+	title: "Beam Dump",
+	icon: "qmd:beam_dump_controller",
+	x: 20.3d,
+	y: 10.7d,
+	text: [
+		"Beam Dumps collect stray particles like protons and turn them into their respective fluids like Hydrogen."
+	],
+	dependencies: [
+		"5271b8bd",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "a1a6ffbf",
+		type: "item",
+		items: [{
+			item: "qmd:beam_dump_controller"
+		}]
+	},
+	{
+		uid: "6448568a",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_energy_port"
+		}]
+	},
+	{
+		uid: "0ae1d768",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_beam_port"
+		}]
+	},
+	{
+		uid: "4eefb339",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber_fluid_port"
+		}]
+	},
+	{
+		uid: "6d424c0a",
+		type: "item",
+		items: [{
+			item: "qmd:particle_chamber"
+		}]
+	},
+	{
+		uid: "cbcf5d0a",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallTargetChamber"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallTargetChamber"
+				}
+			}
+		}],
+		count: 22L
+	}],
+	rewards: [{
+		uid: "75622ab4",
+		type: "loot",
+		table: 1
+	}]
+}

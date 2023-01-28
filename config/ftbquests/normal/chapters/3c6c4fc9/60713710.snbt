@@ -1,0 +1,29 @@
+{
+	x: 10.9d,
+	y: 5.7d,
+	text: [
+		"{q.nuclearcraft.crystallizer.desc}"
+	],
+	dependencies: [
+		"3814ab80",
+		"22336481",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "82ad0453",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:crystallizer"
+		}]
+	}],
+	rewards: [{
+		uid: "e85b9366",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

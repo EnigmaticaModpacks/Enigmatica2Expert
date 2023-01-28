@@ -1,0 +1,28 @@
+{
+	x: 6.1d,
+	y: 6.4d,
+	text: [
+		"{q.nuclearcraft.nuclear_furnace.desc}"
+	],
+	dependencies: [
+		"a7410660",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "2602792c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:nuclear_furnace"
+		}]
+	}],
+	rewards: [{
+		uid: "7f149657",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

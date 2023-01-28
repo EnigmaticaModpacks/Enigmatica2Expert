@@ -1,0 +1,48 @@
+{
+	title: "{q.nuclearcraft.fission_fuels.name}",
+	icon: "nuclearcraft:pellet_uranium",
+	x: 11.9d,
+	y: 12.4d,
+	text: [
+		"Choose the best fuel to use in a reactor according to your cooling and desired energy.",
+		"",
+		"Each fuel has an energy generation factor and a heating factor that can be seen in its description or on the wiki"
+	],
+	dependencies: [
+		"bcb9f771",
+		"608d1a00",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "7c3326f4",
+		type: "item",
+		title: "Reactor Fuels",
+		icon: "nuclearcraft:fuel_uranium 1 9",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any fuelReactor"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "fuelReactor"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "524b3fa3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

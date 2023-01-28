@@ -1,0 +1,28 @@
+{
+	x: 6.7d,
+	y: 3.8d,
+	text: [
+		"{q.nuclearcraft.supercooler.desc}"
+	],
+	dependencies: [
+		"3ba07970",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "4c0ac5a8",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:supercooler"
+		}]
+	}],
+	rewards: [{
+		uid: "8f545eca",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

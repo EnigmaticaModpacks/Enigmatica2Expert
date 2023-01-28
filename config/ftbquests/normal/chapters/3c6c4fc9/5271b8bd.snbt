@@ -1,0 +1,81 @@
+{
+	title: "Linear Accelerator",
+	icon: "qmd:linear_accelerator_controller",
+	x: 20.3d,
+	y: 9.2d,
+	text: [
+		"Linear Accelerators are used to either create particle beams and increase their energy and focus or to increase the energy and focus of an existing particle beam."
+	],
+	dependencies: [
+		"ca80be66",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "8140f49c",
+		type: "item",
+		items: [{
+			item: "qmd:linear_accelerator_controller"
+		}]
+	},
+	{
+		uid: "805ea52a",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_source"
+		}]
+	},
+	{
+		uid: "ab8fd2ce",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "54089fcc",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam_port"
+		}]
+	},
+	{
+		uid: "8c3ffa7f",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam"
+		}],
+		count: 4L
+	},
+	{
+		uid: "348d0b57",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_energy_port"
+		}]
+	},
+	{
+		uid: "d1e2ca25",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallAccelerator"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallAccelerator"
+				}
+			}
+		}],
+		count: 108L
+	}],
+	rewards: [{
+		uid: "246fad38",
+		type: "loot",
+		table: 1
+	}]
+}

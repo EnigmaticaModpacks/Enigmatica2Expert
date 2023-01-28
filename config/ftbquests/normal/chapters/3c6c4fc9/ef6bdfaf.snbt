@@ -1,0 +1,91 @@
+{
+	title: "Synchrotron Accelerator",
+	icon: "qmd:ring_accelerator_controller",
+	x: 22.0d,
+	y: 5.8d,
+	text: [
+		"Synchrotron Accelerators accelerate particles put into them to much higher energies."
+	],
+	dependencies: [
+		"7ee73aa1",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "60e12dca",
+		type: "item",
+		items: [{
+			item: "qmd:ring_accelerator_controller"
+		}]
+	},
+	{
+		uid: "2e02a685",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_energy_port"
+		}]
+	},
+	{
+		uid: "65e06916",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "61aa6c1f",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam_port"
+		}],
+		count: 2L
+	},
+	{
+		uid: "09c72497",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam"
+		}],
+		count: 34L
+	},
+	{
+		uid: "e06f1666",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_yoke"
+		}],
+		count: 86L
+	},
+	{
+		uid: "3cad13ca",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_magnet 1 2"
+		}],
+		count: 8L
+	},
+	{
+		uid: "d59c3a61",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallAccelerator"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallAccelerator"
+				}
+			}
+		}],
+		count: 494L
+	}],
+	rewards: [{
+		uid: "6951dded",
+		type: "loot",
+		table: 1
+	}]
+}

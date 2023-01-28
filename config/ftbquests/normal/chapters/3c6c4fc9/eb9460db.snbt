@@ -1,0 +1,91 @@
+{
+	title: "Beam Splitter",
+	icon: "qmd:beam_splitter_controller",
+	x: 21.2d,
+	y: 4.5d,
+	text: [
+		"Its purpose is to split an incoming beam of charged particles into two beams of half the pu/t of the original beam."
+	],
+	dependencies: [
+		"ef6bdfaf",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "31f44419",
+		type: "item",
+		items: [{
+			item: "qmd:beam_splitter_controller"
+		}]
+	},
+	{
+		uid: "688b56df",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_energy_port"
+		}]
+	},
+	{
+		uid: "291df956",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_vent"
+		}],
+		count: 2L
+	},
+	{
+		uid: "997f9553",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam_port"
+		}],
+		count: 3L
+	},
+	{
+		uid: "5c5c364a",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_beam"
+		}],
+		count: 4L
+	},
+	{
+		uid: "a6358f36",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_yoke"
+		}],
+		count: 21L
+	},
+	{
+		uid: "b98ed348",
+		type: "item",
+		items: [{
+			item: "qmd:accelerator_magnet 1 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "d6b1acb9",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wallAccelerator"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "wallAccelerator"
+				}
+			}
+		}],
+		count: 91L
+	}],
+	rewards: [{
+		uid: "16db5049",
+		type: "loot",
+		table: 1
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	x: 9.2d,
+	y: 3.8d,
+	text: [
+		"The Irradiator is a machine that Uses radioactive sources to irradiate Items with Gamma rays. Currently the 2 sources usable in it are Co-60 for a normal speed and Ir-192 for x10 speed. "
+	],
+	dependencies: [
+		"3ba07970",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "59da7924",
+		type: "item",
+		items: [{
+			item: "qmd:irradiator"
+		}]
+	}],
+	rewards: [{
+		uid: "3a1d8ada",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}
