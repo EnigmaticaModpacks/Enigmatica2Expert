@@ -438,12 +438,12 @@ addItems(<ore:listAllmilk>, [<ic2:dust:33>]);
 addItems(<ore:bitumen>, [<thermalfoundation:material:892>, <immersivepetroleum:material>]);
 
 # Additional essence added with mysticalcreations
-add(<ore:essenceTier2>, <mysticalcreations:creosolite_essence>);
-addItems(<ore:essenceTier3>, [<mysticalcreations:cheese_essence>, <mysticalcreations:astral_starmetal_essence>]);
+addItems(<ore:essenceTier2>, [<mysticalcreations:cheese_essence>, <mysticalcreations:creosolite_essence>]);
+addItems(<ore:essenceTier3>, [<mysticalagriculture:starmetal_essence>]);
 add(<ore:essenceTier6>, <mysticalcreations:ultimate_essence>);
 
-add(<ore:seedsTier2>, <mysticalcreations:creosolite_seeds>);
-addItems(<ore:seedsTier3>, [<mysticalcreations:cheese_seeds>, <mysticalcreations:astral_starmetal_seeds>]);
+addItems(<ore:seedsTier2>, [<mysticalcreations:cheese_seeds>, <mysticalcreations:creosolite_seeds>]);
+addItems(<ore:seedsTier3>, [<mysticalagriculture:starmetal_seeds>]);
 add(<ore:seedsTier6>, <mysticalcreations:ultimate_seeds>);
 
 # IC2 ashes to the dustAsh

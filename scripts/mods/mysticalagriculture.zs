@@ -284,7 +284,7 @@ addTieredRecipe(<mysticalagriculture:steeleaf_seeds> ,      [<ore:blockSteel>, <
 addTieredRecipe(<mysticalagriculture:ironwood_seeds> ,      [<twilightforest:block_storage>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:black_quartz_seeds> ,  [<ore:blockQuartzBlack> , <ore:runeAutumnB>], null);
 addTieredRecipe(<mysticalagriculture:end_seeds>,            [<excompressum:compressed_block:10> ,<ore:runeWinterB>], null);
-addTieredRecipe(itemUtils.getItem("mysticalcreations:astral_starmetal_seeds"), [<ore:blockAstralStarmetal> ,<ore:runeAutumnB>], null);
+addTieredRecipe(itemUtils.getItem("mysticalagriculture:starmetal_seeds"), [<ore:blockAstralStarmetal> ,<ore:runeAutumnB>], null);
 
 # *======= Seeds Tier 4 =======*
 curr_tier = 4;

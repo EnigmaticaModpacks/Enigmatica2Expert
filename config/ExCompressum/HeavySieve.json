@@ -40,7 +40,7 @@
         "rewards": [
           {
             "meshLevel": 2,
-            "name": "mysticalcreations:astral_starmetal_essence",
+            "name": "mysticalagriculture:starmetal_essence",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -103,7 +103,7 @@
           },
           {
             "meshLevel": 3,
-            "name": "mysticalcreations:astral_starmetal_essence",
+            "name": "mysticalagriculture:starmetal_essence",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -184,7 +184,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "mysticalcreations:astral_starmetal_essence",
+            "name": "mysticalagriculture:starmetal_essence",
             "metadata": 0,
             "count": 1,
             "luck": 0,
