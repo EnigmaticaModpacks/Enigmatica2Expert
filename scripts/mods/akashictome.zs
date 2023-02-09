@@ -14,7 +14,7 @@
 	rftools2:              {id: "rftoolsdim:rftoolsdim_manual",         Count: 1 as byte, tag: {"akashictome:definedMod": "rftools2"},              Damage: 0 as short},
 	extendedcrafting:      {id: "extendedcrafting:guide",               Count: 1 as byte, tag: {"akashictome:definedMod": "extendedcrafting"},      Damage: 0 as short},
 	guideapi:              {id: "guideapi:cyclicmagic-guide",           Count: 1 as byte, tag: {"akashictome:definedMod": "guideapi"},              Damage: 0 as short},
-	botania:               {id: "botania:lexicon",                      Count: 1 as byte, tag: {"akashictome:definedMod": "botania"},               Damage: 0 as short},
+	botania:               {id: "botania:lexicon",                      Count: 1 as byte, tag: {"akashictome:definedMod": "botania", "knowledge.minecraft": 1 as byte, "knowledge.alfheim": 1 as byte, "knowledge.relic": 1 as byte}, Damage: 0 as short},
 	thermalfoundation:     {id: "thermalfoundation:tome_lexicon",       Count: 1 as byte, tag: {"akashictome:definedMod": "thermalfoundation"},     Damage: 0 as short},
 	extrautils2:           {id: "extrautils2:book",                     Count: 1 as byte, tag: {"akashictome:definedMod": "extrautils2"},           Damage: 0 as short},
 	actuallyadditions:     {id: "actuallyadditions:item_booklet",       Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"},     Damage: 0 as short},
