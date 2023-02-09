@@ -1,3 +1,6 @@
+# Various fixes
+modifier.excompressum:smashingii.desc=Забивание сжатых блоков молотком
+
 itemGroup.other=ContentTweaker
 fluid.heavy_metal=Тяжёлый Метал
 fluid.cheese=Сыр

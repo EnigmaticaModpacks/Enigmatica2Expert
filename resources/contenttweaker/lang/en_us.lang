@@ -1,3 +1,6 @@
+# Various fixes
+modifier.excompressum:smashingii.desc=Hammering compressed blocks
+
 itemGroup.other=ContentTweaker
 fluid.heavy_metal=Heavy Metal
 fluid.cheese=Cheese
