@@ -6,7 +6,8 @@
 !scripts/
 !config/
 !resources/
-!schematics/**/
+!schematics/
+schematics/*.*
 !resourcepacks/bq_lootchests/
 !dev/
 !server/
