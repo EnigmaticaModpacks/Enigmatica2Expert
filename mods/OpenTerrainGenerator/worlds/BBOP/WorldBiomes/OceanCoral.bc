@@ -1,0 +1,275 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 8
+
+BiomeRarity: 82
+
+BiomeColor: #000070
+
+ReplaceToBiomeName: biomesoplenty:coral_reef
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: Ocean
+
+BiomeSizeWhenIsle: 4
+
+BiomeRarityWhenIsle: 80
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 4
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -2.46
+
+BiomeVolatility: 0.15
+
+SmoothRadius: 2
+
+CustomHeightControlSmoothRadius: 2
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: -0.7
+
+Volatility1: -2.0
+
+Volatility2: -1.0
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: STONE
+
+SurfaceBlock: SAND
+
+GroundBlock: SANDSTONE
+
+SurfaceAndGroundControl: DIRT, DIRT, -1.1, PRISMARINE, PRISMARINE, -0.8 
+
+ReplacedBlocks: (SAND,STONE,65,255),(DIRT,STONE,65,255),(GRAVEL,STONE,65,255),(AIR,LAVA,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+
+WaterLevelMax: 63
+
+WaterLevelMin: 0
+
+WaterBlock: STATIONARY_WATER
+
+IceBlock: ICE
+
+CooledLavaBlock: STATIONARY_LAVA
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.5
+
+BiomeWetness: 0.5
+
+SkyColor: #7BA5FF
+
+WaterColor: #FFFFFF
+
+GrassColor: #FFFFFF
+
+GrassColor2: #FFFFFF
+
+GrassColorIsMultiplier: true
+
+FoliageColor: #FFFFFF
+
+FoliageColor2: #FFFFFF
+
+FoliageColorIsMultiplier: true
+
+FogColor: #000000
+
+FogDensity: 0.5
+
+FogTimeWeight: 0.1
+
+FogRainWeight: 0.25
+
+FogThunderWeight: 0.5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(COAL_ORE,17,20,100.0,0,127,STONE:0)
+Ore(IRON_ORE,9,20,100.0,0,63,STONE:0)
+Ore(GOLD_ORE,9,2,100.0,0,31,STONE:0)
+Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE:0)
+Ore(DIAMOND_ORE,8,1,100.0,0,15,STONE:0)
+Ore(LAPIS_ORE,7,1,100.0,0,15,STONE:0)
+Ore(EMERALD_ORE,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:1,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:2,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:3,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:4,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:5,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:6,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:7,7,1,75.0,4,32,STONE:0)
+Ore(DIRT,32,20,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(GRAVEL,32,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(CLAY,8,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(SAND,8,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(STONE:5,32,20,100.0,0,69,STONE:0)
+Ore(STONE:3,32,20,100.0,0,69,STONE:0)
+Ore(STONE:1,32,20,100.0,0,69,STONE:0)
+Ore(PRISMARINE,12,80,66.0,0,56,SAND)
+SmallLake(LAVA,6,33.0,1,8)
+CustomObject(CoralClutter1,CoralClutter2,CoralClutter3)
+CustomObject(CoralSmall1,CoralSmall2,CoralSmall3,CoralSmall4,CoralSmall5,CoralSmall6,CoralClutter1,CoralClutter2,CoralClutter3)
+CustomObject(CoralSmall1,CoralSmall2,CoralSmall3,CoralSmall4,CoralSmall5,CoralSmall6,CoralPlant1,CoralPlant2,CoralPlant3,CoralPlant4,CoralCave1,CoralClutter1,CoralClutter2,CoralClutter3)
+UnderWaterOre(SAND,7,3,33.0,DIRT,GRASS,GRAVEL)
+UnderWaterOre(CLAY,4,1,33.0,DIRT,CLAY,SAND,GRAVEL)
+UnderWaterOre(GRAVEL,6,1,33.0,DIRT,GRASS,SAND,GRAVEL)
+CustomObject(BigStoneRock3,BigStoneRock2,BigStoneRock1)
+CustomStructure(GravelOreOceanT1,1.0,SeaBranching,0.2,SeaTemple2,0.1)
+CustomObject(BOPAlgae,BOPCoral0,BOPCoral1,BOPCoral2,BOPCoral3)
+CustomObject(BOPAlgae,BOPCoral0,BOPCoral1,BOPCoral2,BOPCoral3)
+CustomObject(BOPAlgae,BOPCoral0,BOPCoral1,BOPCoral2,BOPCoral3)
+CustomObject(BOPAlgae,BOPCoral0,BOPCoral1,BOPCoral2,BOPCoral3)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+InheritSaplingResource: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+WoodLandMansionsEnabled: false
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+VillageType: disabled
+
+MineshaftType: disabled
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: []
+
+SpawnCreatures: []
+
+SpawnWaterCreatures: []
+
+SpawnAmbientCreatures: []
+
+BiomeDictId: OCEAN
+
+InheritMobsBiomeName: Deep Ocean
+

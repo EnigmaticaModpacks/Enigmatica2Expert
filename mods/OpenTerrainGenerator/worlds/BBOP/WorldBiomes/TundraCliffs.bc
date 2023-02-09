@@ -1,0 +1,283 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 8
+
+BiomeRarity: 98
+
+BiomeColor: #C2FFAE
+
+ReplaceToBiomeName: biomesoplenty:tundra
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: 
+
+BiomeSizeWhenIsle: 10
+
+BiomeRarityWhenIsle: 98
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: IcyMountains
+
+NotBorderNear: IcyMountainPeak1, IcyMountainPeak2, SnowyMesa, Cold Plains, Arctic, Ice Plains, SnowyMountains, ColdForestFirThicket, Cold Taiga, Frozen Forest, SnowyPlainsM, SnowyLonePeak, Glacier
+
+BiomeSizeWhenBorder: 10
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -0.66
+
+BiomeVolatility: 0.4
+
+SmoothRadius: 6
+
+CustomHeightControlSmoothRadius: 2
+
+MaxAverageHeight: 0.2
+
+MaxAverageDepth: 0.0
+
+Volatility1: -1.0
+
+Volatility2: -1.0
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: RiverTundra
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: STONE
+
+SurfaceBlock: biomesoplenty:grass:4
+
+GroundBlock: STONE
+
+SurfaceAndGroundControl: 
+
+ReplacedBlocks: (AIR,LAVA,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: true
+
+WaterLevelMax: 87
+
+WaterLevelMin: 0
+
+WaterBlock: STATIONARY_WATER
+
+IceBlock: ICE
+
+CooledLavaBlock: STATIONARY_LAVA
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.2
+
+BiomeWetness: 0.3
+
+SkyColor: #7BA5FF
+
+WaterColor: #AFC280
+
+GrassColor: #8F824A
+
+GrassColor2: #FFFFFF
+
+GrassColorIsMultiplier: false
+
+FoliageColor: #947637
+
+FoliageColor2: #FFFFFF
+
+FoliageColorIsMultiplier: false
+
+FogColor: #000000
+
+FogDensity: 0.5
+
+FogTimeWeight: 0.1
+
+FogRainWeight: 0.25
+
+FogThunderWeight: 0.5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(COAL_ORE,17,20,100.0,0,127,STONE:0)
+Ore(IRON_ORE,9,20,100.0,0,63,STONE:0)
+Ore(GOLD_ORE,9,2,100.0,0,31,STONE:0)
+Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE:0)
+Ore(DIAMOND_ORE,8,1,100.0,0,15,STONE:0)
+Ore(LAPIS_ORE,7,1,100.0,0,15,STONE:0)
+Ore(EMERALD_ORE,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:1,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:2,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:3,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:4,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:5,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:6,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:7,7,1,75.0,4,32,STONE:0)
+Ore(DIRT,32,20,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(GRAVEL,32,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(CLAY,8,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(SAND,8,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(STONE:5,32,20,100.0,0,69,STONE:0)
+Ore(STONE:3,32,20,100.0,0,69,STONE:0)
+Ore(STONE:1,32,20,100.0,0,69,STONE:0)
+Ore(GRAVEL,25,35,100.0,75,139,GRASS,biomesoplenty:grass:4)
+Ore(STONE,25,25,100.0,75,139,GRASS,biomesoplenty:grass:4)
+Ore(SNOW_BLOCK,4,35,50.0,61,85,GRASS,biomesoplenty:grass:4)
+Ore(SNOW_BLOCK,5,45,50.0,86,101,GRASS,biomesoplenty:grass:4)
+Ore(SNOW_BLOCK,10,55,50.0,101,161,GRASS,biomesoplenty:grass:4)
+Boulder(STONE,2,10.0,71,111,GRASS,biomesoplenty:grass:4)
+Boulder(GRAVEL,2,10.0,71,111,GRASS,biomesoplenty:grass:4)
+UnderGroundLake(25,60,2,5.0,0,61)
+CustomObject(cavepocket1Copy,cavepocket2Copy,cavepocket3Copy,cavepocket9Copy,cavepocket4,cavepocket5,cavepocket6,cavepocket7,cavepocket8,cavepocket10,cavepocket11,cavepocket12,cavepocket13,cavepocket14,cavepocket15,cavepocket16,cavepocket17)
+SmallLake(LAVA,6,33.0,1,8)
+UnderWaterOre(SAND,7,4,100.0,DIRT,GRASS,biomesoplenty:grass:4)
+UnderWaterOre(GRAVEL,8,1,100.0,DIRT,STONE:0)
+Grass(LONG_GRASS,NotGrouped,10,10.0,GRASS,DIRT,biomesoplenty:grass:4)
+CustomStructure(GravelOreT1,1.0)
+CustomObject(Geode1,Geode2,Geode3,Geode4,Geode5,Geode6)
+CustomObject(UndergroundDungeon1,UndergroundDungeon2,UndergroundDungeon3,UndergroundDungeon4,UndergroundDungeon5)
+Tree(2,GroundBush,95,Tree,5)
+Plant(SNOW:0,80,90.0,41,139,GRASS,DIRT,LEAVES,biomesoplenty:grass:4)
+Plant(SNOW:0,80,45.0,41,139,GRASS,DIRT,LEAVES,biomesoplenty:grass:4)
+Grass(LONG_GRASS,Grouped,10,50.0,GRASS,DIRT,biomesoplenty:grass:4)
+Plant(LargeFern,20,75.0,41,139,GRASS,DIRT,biomesoplenty:grass:4)
+Plant(Fern,20,75.0,41,139,GRASS,DIRT,biomesoplenty:grass:4)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+InheritSaplingResource: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+WoodLandMansionsEnabled: false
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+VillageType: taiga
+
+MineshaftType: normal
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: []
+
+SpawnCreatures: []
+
+SpawnWaterCreatures: []
+
+SpawnAmbientCreatures: []
+
+BiomeDictId: 
+
+InheritMobsBiomeName: Tundra
+

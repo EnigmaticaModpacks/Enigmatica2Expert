@@ -1,0 +1,265 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 11
+
+BiomeRarity: 100
+
+BiomeColor: #FADE55
+
+ReplaceToBiomeName: minecraft:beaches
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: 
+
+BiomeSizeWhenIsle: 10
+
+BiomeRarityWhenIsle: 100
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: Ocean
+
+NotBorderNear: RoofedForestEnchanted, ForestSakura, FloatingJungle, ForestPlateauThicket, MesaWhite, MonumentMountains, DioriteCliffs, SwamplandSpooky, ForestLarch, ForestHighlands, RockyHills, ForestFir, JungleAncient, TaigaSmall, RedwoodSmall, ForestGrandFirSmall, ForestDry, UplandsBlackSpruce, Mesa Sandstone, Drylands, Alpine, Alps, Autumnal Woods, Birch Forest, Birch Meadow, BirchForestHighlands, BirchForestMountainRange, BirchForestRocky, Caverns, Dry Plains, Extreme Hills, Extreme Hills Jungle, FloatingPlains, Flower Forest, Forest, Forest M, Forest Wetland, ForestBaldCypress, ForestConifer, ForestEnchanted, ForestEnder, ForestFirThicket, ForestGrandFir, ForestHills, ForestMountainRange, ForestPlateauRoofed, High Cliffs, Highlands, Jungle, JungleCliffs, JungleHighlands, JungleHills, Mangrove Forest, Marsh, Mega Taiga, Mega Taiga Hills, Mesa, Mesa (Bryce), Mesa Small, Mesa Verde, MonumentValley, Mountain Range, MountainSteps, MountainStepsGlacier, PlainsCliffM, Pumpkin Plains, Rainforest, Redwood Forest, RockyMountains, RockyPlains, Roofed Forest, Savanna, SavannaSmall, Steppe, Sunflower Plains, Swampland, Swampland M, SwamplandLarge, Taiga, TaigaHighlands, TemperateHills, TemperateLonePeak, TemperateLowlands, TemperatePlains, TemperatePlainsDarkMeadow, TemperatePlainsHeathland, TemperatePlainsM, TemperatePlainsMeadow, TemperatePlainsMeadowM, TropicalPillars, Tundra, Uplands, Webbed Forest, RainforestTropical, SnowyMesa, Cold Plains, Arctic, SnowyPlains, IcyMountains, Ice Plains, SnowyMountains, ColdForestFirThicket, Cold Taiga, Frozen Forest, Glacier, Birch Forest Peak, ForestSakuraHills, FloatingJungleHole, SpookyGrove, MesaWhiteLow, MesaWhitePeak, MonumentMountainsPeak1, MonumentMountainsPeak2, OceanCoral, ForestLarchPeak, DioriteCliffsPeak, DioriteCliffsM, OceanForestHighlands, MountainSteps, OceanRocksDiorite, TaigaPlateau, FloatingIslands, Mesa Verde Mountain, TaigaHighlandsPeak, RainforestTropicalMountainPeak, RainforestTropicalMountain, ForestCliffsLowlands, ForestCliffsMountain, ForestEnchantedCaves, RockyPlainsSmall, Mountain Peak3, Mountain Peak2, Mountain Peak, CliffsSmallForest, CliffsSmallForest2, CliffsSmallMountain, CliffsSmallPlateau, CliffsSmallPlateau2, CliffsSmallPlateau3, BirchForestTropicalIsle, BirchForestTropicalIsle2, BirchForestTropicalIsle3, JungleSwampy, JungleCliffsVolcano, RainforestBog, RockyHillsCliff, ForestFirMountain, BirchGrove, ForestConiferSnow2, JungleAncientRocks, JungleAncientMountainTall, JungleAncientMountain, JungleAncientMushrooms, MesaPaintedCanyon, ForestBaldCypressSmall, AlpineConiferSnow, AlpineConiferMountain, HighCliffsThicket, HighCliffsThicketMountain, RiverTaiga, Mesa Sandstone M, Mesa Sandstone Peak, TemperateHillsForest, RiverAlpine, DrylandsIsle, Mesa Verde Forest, Cold Taiga Hills, Cold Taiga M, Mesa Small M, Plains, GiantMushroomIsland, TemperatePlainsDarkMeadow, FrozenRiver, GlacierM, Glacier, BirchForestMountain, OceanPlateauLow, Rainforest Plateau Low, Rainforest Plateau M, Rainforest Plateau, Tropical Savanna Summit, Tropical Savanna Canyon, Tropical Savanna Canyon High, Tropical Savanna Canyon Mid, SwamplandSmall, SnowyMesaRocks, SnowyMesaForest, ColdForestFirThicket, HighCliffsSummit, Webbed Forest Grove, RockyPlainsM, OceanRockyIslandPeak, OceanRockyIsland, OceanForestIsland, AlpsMountain1, AlpsMountainPeak, AlpsMountainPeak2, AlpsForest, AlpsMountain2, AlpsMountain3, AlpsMountainHighlands, IceWall, JungleLonePeak, TropicalPillarSmall, TropicalPillarLarge, SteppeHill, SteppeHeathland, SteppeRocks, OceanRocks, OceanPlateau, OceanRocksM, Mesa (Bryce) Rocks, Mesa (Bryce) Forest, IcyMountainPeak1, IcyMountainPeak2, RockyMountainPeak1, RockyMountainPeak2, MonumentValleyFir, MonumentSmall, JungleCliffsCanyon, JungleCliffsCanyonMid, JungleCliffsCanyonHigh, Monument, MonumentM, TemperatePlainsMeadowM, Mega Taiga Mountains, JungleMountainPeak, JungleMountainRange, Roofed Fungi Forest, JungleLowlands, AlpineForest, AlpineM, ForestWoodland, OceanIslandRoofedForest, OceanIslandForest, Ocean Island, MesaPeak, ForestConiferMountain, Autumnal Woods Hills, Autumnal Woods M, RedMountain, TundraForest, ForestEnderValley, SnowyPlainsM, ForestPeak, Mesa Rock, MesaCanyon, Mesa Plateau F, Mesa Plateau M, SnowyLonePeak, RiverTropical, TemperateLonePeak, DryPlainsM, TropicalMountain, PlainsCliff, PlainsCliffM, Birch Forest M, FlyingForest, Mesa Plateau, Mesa Plateau F M, ForestWetlandM, Ice Plains Spikes, Deep Ocean, Webbed Hills, TaigaHills, MushroomIsland, MesaVerdeCanyon, MesaVerdeCanyonMid, MesaVerdeCanyonHigh, ForestConiferSnow, Canyon, CanyonHigh, CanyonMid, ArchipelagoMid, ArchipelagoHigh, Archipelago, Mega Spruce Taiga, Caverns M, Caverns+, Caverns+ M, Roofed Forest M, ForestMountain, Jungle M, Birch Forest Hills, Birch Forest Hills M, Savanna M, Rocks, ForestEnderMountain, ForestEnchantedGrove, HighlandsPeaks, SwamplandRuins, FloatingHole, IsleRiver, JunglePlateau, JunglePlateauLow, JungleHills, TemperatePlainsCypresshill, TemperatePlainsMeadow, TemperatePlainsOakgrove, TemperatePlainsHeathland, SavannaHills, Rainforest Plateau M, RiverForestConifer, Ice Mountains, Swampland Bushes, Extreme Hills M, Extreme Hills+, Frozen Forest Edge, FloatingJungleEdge, SpookyGroveEdge, MesaWhiteEdge1, MesaWhiteEdge2, SnowyPlainsEdge, RiverVerde, RiverDiorite, ForestCliffsBorder, OceanForestHighlandsBorder, TaigaPlateauEdge, MarshBorder, RainforestTropicalEdge, ForestCliffsMountainEdge, CliffsSmallMountainEdge, CliffsSmallEdge, BirchForestTropicalIsle, RockyHillsEdge, ForestFirMountainEdge1, ForestFirMountainEdge2, BirchGroveBorder, UplandsEdge, MonumentValleyEdge, ForestDryEdge, ForestMountainRangeEdge, Mesa Sandstone Edge, DrylandsEdge1, DrylandsEdge2, Mesa Small Edge, Extreme Hills Edge, FrozenRiver, MountainStepsGlacierEdge1, MountainStepsGlacierEdge2, Rainforest M, Tropical Savanna Edge, ColdTaigaBorder, MountainStepsEdge1, MountainStepsEdge2, RockyMountainsPeakEdge, SnowyMesaEdge, TundraCliffs, ColdForestFirThicketEdge, ForestFirThicketEdge, AlpsEdge, AlpsMountainEdge, AlpsMountainEdge2, OceanPlateauM, RiverRoofedForest, JungleCliffsEdge, RiverWetland, Cold Beach, TundraEdge, Mesa River, Mesa (Bryce) Edge, ArcticEdge, ForestPlateau, TundraCliffs, RiverTropical, TemperateHillsBorder, Savanna Plateau, TaigaHills, JungleEdge, ForestConiferEdge, Webbed Hills Edge, Taiga M, RiverClay, MushroomIslandShore, Mesa Verde Edge, Stone Beach, SavannaEdge, HighCliffsEdge, TemperateLowlandsEdge, Caverns Edge, RiverForest, ForestEnchantedBorder, WoodlandBorder, DrySavanna, FloatingEdge, SwamplandBorder, River, TemperatePlainsMeadowBorder, SwamplandBorder, TemperatePlainsOakgroveBorder, TemperateHillsBorder, Extreme Hills Jungle Edge, Beach, TemperatePlainsAutumnal
+
+BiomeSizeWhenBorder: 10
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -1.72
+
+BiomeVolatility: -0.1
+
+SmoothRadius: 4
+
+CustomHeightControlSmoothRadius: 2
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: -0.1
+
+Volatility1: -1.0
+
+Volatility2: -1.0
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: RiverSandy
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: SANDSTONE
+
+SurfaceBlock: SAND
+
+GroundBlock: SAND
+
+SurfaceAndGroundControl: 
+
+ReplacedBlocks: (AIR,LAVA,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+
+WaterLevelMax: 63
+
+WaterLevelMin: 0
+
+WaterBlock: STATIONARY_WATER
+
+IceBlock: ICE
+
+CooledLavaBlock: STATIONARY_LAVA
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.8
+
+BiomeWetness: 0.4
+
+SkyColor: #7BA5FF
+
+WaterColor: #FFFFFF
+
+GrassColor: #FFFFFF
+
+GrassColor2: #FFFFFF
+
+GrassColorIsMultiplier: true
+
+FoliageColor: #FFFFFF
+
+FoliageColor2: #FFFFFF
+
+FoliageColorIsMultiplier: true
+
+FogColor: #000000
+
+FogDensity: 0.5
+
+FogTimeWeight: 0.1
+
+FogRainWeight: 0.25
+
+FogThunderWeight: 0.5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(COAL_ORE,17,20,100.0,0,127,STONE:0)
+Ore(IRON_ORE,9,20,100.0,0,63,STONE:0)
+Ore(GOLD_ORE,9,2,100.0,0,31,STONE:0)
+Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE:0)
+Ore(DIAMOND_ORE,8,1,100.0,0,15,STONE:0)
+Ore(LAPIS_ORE,7,1,100.0,0,15,STONE:0)
+Ore(EMERALD_ORE,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:1,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:2,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:3,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:4,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:5,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:6,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:7,7,1,75.0,4,32,STONE:0)
+Ore(DIRT,32,20,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(GRAVEL,32,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(CLAY,8,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(SAND,8,10,50.0,0,255,STONE:0,HARD_CLAY)
+Ore(STONE:5,32,20,100.0,0,69,STONE:0)
+Ore(STONE:3,32,20,100.0,0,69,STONE:0)
+Ore(STONE:1,32,20,100.0,0,69,STONE:0)
+SmallLake(LAVA,6,33.0,1,8)
+CustomObject(ShrubPalm1,ShrubPalm2)
+CustomObject(DesertRockSmall1,DesertRockSmall2,DesertRockSmall3,DesertRockSmall4)
+CustomStructure(Beachbranching,0.4,DngStart,0.03)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+InheritSaplingResource: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+WoodLandMansionsEnabled: false
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+VillageType: disabled
+
+MineshaftType: normal
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: [{"mob": "minecraft:spider", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:zombie", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:skeleton", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:creeper", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:slime", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:enderman", "weight": 10, "min": 1, "max": 4}, {"mob": "minecraft:witch", "weight": 5, "min": 1, "max": 1}]
+
+SpawnCreatures: []
+
+SpawnWaterCreatures: [{"mob": "minecraft:squid", "weight": 10, "min": 4, "max": 4}]
+
+SpawnAmbientCreatures: [{"mob": "minecraft:bat", "weight": 10, "min": 8, "max": 8}]
+
+BiomeDictId: 
+
+InheritMobsBiomeName: Beach
+

@@ -1,0 +1,260 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 8
+
+BiomeRarity: 50
+
+BiomeColor: #FA9418
+
+ReplaceToBiomeName: minecraft:extreme_hills
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: Ocean, Deep Ocean
+
+BiomeSizeWhenIsle: 8
+
+BiomeRarityWhenIsle: 10
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 8
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -0.66
+
+BiomeVolatility: 0.8
+
+SmoothRadius: 4
+
+CustomHeightControlSmoothRadius: 2
+
+MaxAverageHeight: -1.0
+
+MaxAverageDepth: -1.0
+
+Volatility1: -1.5
+
+Volatility2: -1.5
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: STONE:3
+
+SurfaceBlock: STONE:3
+
+GroundBlock: STONE:3
+
+SurfaceAndGroundControl: STONE:3, STONE:3, -3.0, PRISMARINE, PRISMARINE, -2.0, STONE:3, STONE:3, -1.0, PRISMARINE, PRISMARINE, 0.0, STONE:3, STONE:3, 1.0, PRISMARINE, PRISMARINE, 2.0, STONE:3, STONE:3, 3.0 
+
+ReplacedBlocks: (DIRT,STONE:3,63,211),(SAND,STONE:3,66,211),(STONE,PRISMARINE,41,71),(AIR,LAVA,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+
+WaterLevelMax: 63
+
+WaterLevelMin: 0
+
+WaterBlock: STATIONARY_WATER
+
+IceBlock: ICE
+
+CooledLavaBlock: STATIONARY_LAVA
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 2.0
+
+BiomeWetness: 0.0
+
+SkyColor: #7BA5FF
+
+WaterColor: #FFFFFF
+
+GrassColor: #FFFFFF
+
+GrassColor2: #FFFFFF
+
+GrassColorIsMultiplier: true
+
+FoliageColor: #FFFFFF
+
+FoliageColor2: #FFFFFF
+
+FoliageColorIsMultiplier: true
+
+FogColor: #000000
+
+FogDensity: 0.5
+
+FogTimeWeight: 0.1
+
+FogRainWeight: 0.25
+
+FogThunderWeight: 0.5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+Ore(COAL_ORE,17,20,100.0,0,127,STONE:0)
+Ore(IRON_ORE,9,20,100.0,0,63,STONE:0)
+Ore(GOLD_ORE,9,2,100.0,0,31,STONE:0)
+Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE:0)
+Ore(DIAMOND_ORE,8,1,100.0,0,15,STONE:0)
+Ore(LAPIS_ORE,7,1,100.0,0,15,STONE:0)
+Ore(EMERALD_ORE,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:1,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:2,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:3,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:4,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:5,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:6,7,1,75.0,4,32,STONE:0)
+Ore(biomesoplenty:gem_ore:7,7,1,75.0,4,32,STONE:0)
+CustomStructure(RiverRocks,0.5)
+CustomStructure(RiverRocks,0.5)
+SmallLake(LAVA,6,33.0,1,8)
+UnderGroundLake(25,60,2,5.0,0,50)
+Liquid(WATER,20,100.0,19,255,STONE:0,DIRT,HARD_CLAY,STAINED_CLAY)
+Liquid(LAVA,10,100.0,19,65,STONE:0,DIRT,HARD_CLAY,STAINED_CLAY)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+InheritSaplingResource: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+WoodLandMansionsEnabled: false
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+VillageType: disabled
+
+MineshaftType: normal
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: [{"mob": "minecraft:spider", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:zombie", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:skeleton", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:creeper", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:slime", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:enderman", "weight": 10, "min": 1, "max": 4}, {"mob": "minecraft:witch", "weight": 5, "min": 1, "max": 1}]
+
+SpawnCreatures: [{"mob": "minecraft:sheep", "weight": 12, "min": 4, "max": 4}, {"mob": "minecraft:pig", "weight": 10, "min": 4, "max": 4}, {"mob": "minecraft:chicken", "weight": 10, "min": 4, "max": 4}, {"mob": "minecraft:cow", "weight": 8, "min": 4, "max": 4}]
+
+SpawnWaterCreatures: [{"mob": "minecraft:squid", "weight": 10, "min": 4, "max": 4}]
+
+SpawnAmbientCreatures: [{"mob": "minecraft:bat", "weight": 10, "min": 8, "max": 8}]
+
+BiomeDictId: 
+
+InheritMobsBiomeName: Extreme Hills
+

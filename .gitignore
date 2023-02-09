@@ -27,6 +27,13 @@ structures/inactive
 !.github/
 !.imgbotconfig
 
+# OTG configs
+!mods
+mods/*
+!mods/OpenTerrainGenerator
+mods/OpenTerrainGenerator/worlds/BBOP/WorldObjects
+mods/OpenTerrainGenerator/worlds/BBOP/Fallbacks.ini
+
 # 3d party mods
 !mods/thaumicenergistics-*.jar
 
