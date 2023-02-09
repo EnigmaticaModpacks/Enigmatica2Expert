@@ -130,3 +130,5 @@ x.addJEIRecipe(AssemblyRecipe.create(function(c) {
   c.addItemOutput('output1', <ic2:resource>);})
   .requireFluid("fluid_in", <fluid:ic2pahoehoe_lava> * 1000)
 );
+
+add1to1(null, <avaritia:resource:2>, <avaritia:neutron_collector>);

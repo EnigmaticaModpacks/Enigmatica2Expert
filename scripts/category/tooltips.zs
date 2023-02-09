@@ -94,7 +94,6 @@ desc.jei(<guideapi:bloodmagic-guide>, "right_click_blood_altair"); # BM Guide
 desc.jei(<thaumcraft:thaumonomicon>, "click.bookshelf"); # Thaumonomicon
 desc.jei(<thaumcraft:arcane_workbench>, "click.crafting"); # Arcane Workbench
 desc.jei(<thaumcraft:crucible>, "click.cauldron"); # Crucible
-desc.jei(<avaritia:resource:2>, "obtained.neutron"); # Neutronium
 desc.jei(Bucket("xpjuice"), "obtained.fluid_transposer"); # XP Bucket
 desc.jei(<bigreactors:ingotludicrite>, "craftable.ludictite"); # Uncraftable ingots
 desc.jei(<thermalfoundation:material:136>, "obtained.mithril"); # Mana Infused Ingot

@@ -196,6 +196,18 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Neodymium Magnet] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotFerroboron 1</oreDict>
+			<oreDict>ingotNeodymium 1</oreDict>
+			<oreDict>ingotFerroboron 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:part 1 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Osgloglas Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -205,6 +217,18 @@
 		</input>
 		<output>
 			<itemStack>plustic:osgloglasingot 2 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Plastic Scintillator] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>bioplastic 1</oreDict>
+			<oreDict>dyeBlue 1</oreDict>
+			<oreDict>bioplastic 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:part 1 3</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -309,7 +333,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Magnesium Diboride Alloy] -->
+	<!-- [Magnesium Diboride Alloy Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>ingotMagnesium 3</oreDict>
@@ -342,7 +366,7 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [SiC-SiC Ceramic Matrix Composite] -->
+	<!-- [SiC-SiC Ceramic Matrix Composite Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
 			<oreDict>bouleSilicon 1</oreDict>
@@ -350,6 +374,17 @@
 		</input>
 		<output>
 			<itemStack>nuclearcraft:alloy 1 14</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tungsten Filament] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>qmd:ingot 1</itemStack>
+			<itemStack>qmd:ingot 1</itemStack>
+		</input>
+		<output>
+			<itemStack>qmd:source 1 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
