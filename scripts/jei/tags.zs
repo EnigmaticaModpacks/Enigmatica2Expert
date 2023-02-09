@@ -122,6 +122,7 @@ for lang, items in {
     <actuallyadditions:block_item_repairer>,
     <cyclicmagic:block_anvil_magma>,
     <cyclicmagic:block_anvil>,
+    <thaumictinkerer:repairer>,
     <thermalexpansion:augment:401>,
   ],
 
