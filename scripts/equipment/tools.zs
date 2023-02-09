@@ -5,7 +5,6 @@ import mods.zentoolforge.Toolforge;
 
 val toolsToRemove = [
 	<botania:glasspick>,
-	<forestry:bronze_pickaxe>,
 	<ic2:bronze_pickaxe>,
 	<ic2:bronze_sword>,
 	<ic2:bronze_chestplate>,

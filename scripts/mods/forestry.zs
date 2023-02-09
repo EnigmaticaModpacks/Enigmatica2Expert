@@ -3,6 +3,10 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 #modloaded forestry
 
+// Remove Crafting Table recipes but keep carpenter's
+recipes.remove(<forestry:bronze_shovel>);
+recipes.remove(<forestry:bronze_pickaxe>);
+
 # Fixing fruit juice amount from tomatos
 for tomato in <ore:cropTomato>.items {
 	mods.forestry.Squeezer.removeRecipe(<liquid:juice>, [tomato]);	
