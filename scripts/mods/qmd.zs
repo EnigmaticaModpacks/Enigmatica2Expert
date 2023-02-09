@@ -84,6 +84,16 @@ craft.remake(<qmd:containment_casing> * 64, ["pretty",
   "◙": <ore:steelFrame>,          # Steel Chassis
 });
 
+# [Strontium RTG] from [Strontium-90 Block][+2]
+craft.remake(<qmd:rtg_strontium>, ["pretty",
+  "□ P □",
+  "P ■ P",
+  "□ P □"], {
+  "□": <ore:plateElite>,       # Elite Plating
+  "P": <ore:siliconPDoped>,    # P-Type Doped Silicon
+  "■": <ore:blockStrontium90>, # Strontium-90 Block
+});
+
 # [Tungsten Filament] from [Tungsten Ingot]
 scripts.process.alloy([<qmd:ingot>, <qmd:ingot>],
   <qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}), "except: AlloyFurnace"
