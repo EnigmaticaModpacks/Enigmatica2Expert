@@ -180,6 +180,7 @@
   "harvestcraft": "1.12.2zb",
   "foamfixcore": "7.7.4",
   "villagermarket": "1.0.2",
+  "soundphysics": "1.0.10-1",
   "integrateddynamicscompat": "1.0.0",
   "packagedexcrafting": "1.12.2-1.0.2.5",
   "toastcontrol": "1.8.1",
@@ -446,6 +447,5 @@
   "solcarrot": "1.8.4",
   "foamfix": "@VERSION@",
   "dynamistics": "1.0.2",
-  "tinkersjei": "1.2",
-  "soundfilters": "0.12.1_for_1.12"
+  "tinkersjei": "1.2"
 }
