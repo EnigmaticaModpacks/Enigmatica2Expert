@@ -467,6 +467,16 @@
 				"oc:charge": 15000.0d
 			}
 		}
+	},
+	{
+		icon: "forestry:kit_shovel 24",
+		item: "forestry:kit_shovel",
+		count: 24
+	},
+	{
+		icon: "forestry:kit_pickaxe 24",
+		item: "forestry:kit_pickaxe",
+		count: 24
 	}],
 	loot_crate: {
 		string_id: "uncommon",
