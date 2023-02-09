@@ -13,49 +13,29 @@
 	tasks: [{
 		uid: "25b95556",
 		type: "item",
-		disable_toast: true,
 		items: [{
 			item: "contenttweaker:dust_tiny_silver"
-		}]
-	},
-	{
-		uid: "e0c3afae",
-		type: "item",
-		disable_toast: true,
-		items: [{
+		},
+		{
+			item: "thermalfoundation:material 1 194"
+		},
+		{
 			item: "thermalfoundation:material 1 66"
-		}]
-	},
-	{
-		uid: "7c494be6",
-		type: "item",
-		disable_toast: true,
-		items: [{
-			item: "thaumcraft:cluster 1 4"
-		}]
-	},
-	{
-		uid: "bc2091b1",
-		type: "item",
-		disable_toast: true,
-		items: [{
-			item: "nuclearcraft:compound 1 10"
-		}]
-	},
-	{
-		uid: "ea2d0e79",
-		type: "item",
-		disable_toast: true,
-		items: [{
-			item: "iceandfire:silverpile"
-		}]
-	},
-	{
-		uid: "66053453",
-		type: "item",
-		disable_toast: true,
-		items: [{
+		},
+		{
 			item: "ic2:dust 1 26"
+		},
+		{
+			item: "thaumcraft:cluster 1 4"
+		},
+		{
+			item: "thermalfoundation:material 1 130"
+		},
+		{
+			item: "iceandfire:silverpile"
+		},
+		{
+			item: "iceandfire:silver_nugget"
 		}]
 	}],
 	rewards: [{

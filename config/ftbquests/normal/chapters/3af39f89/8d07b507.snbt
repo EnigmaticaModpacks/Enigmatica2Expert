@@ -1,6 +1,6 @@
 {
-	x: 8.0d,
-	y: 2.6666666666666665d,
+	x: 6.9d,
+	y: 2.7d,
 	text: [
 		"{q.thermal_expansion.hardened_upgrade_kit.desc}"
 	],

@@ -214,7 +214,7 @@
 			Damage: 134s,
 			tag: {
 				FluidName: "calcium_sulfate_solution",
-				Amount: 1000
+				Amount: 1024000
 			}
 		}
 	},

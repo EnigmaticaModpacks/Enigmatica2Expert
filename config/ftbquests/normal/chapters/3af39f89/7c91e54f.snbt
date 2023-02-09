@@ -1,0 +1,35 @@
+{
+	x: 8.7d,
+	y: 3.5d,
+	text: [
+		"Stores a large amount of a single item.",
+		"",
+		"Note:",
+		"When Item Interface connected to Cache and Item Exporter pulls items from this Cache, it ignores Lock state of Cache."
+	],
+	dependencies: [
+		"aa982aad"
+	],
+	tasks: [{
+		uid: "de529bc5",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:cache",
+			tag: {
+				Level: 0b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "07b58322",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

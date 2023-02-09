@@ -25,13 +25,8 @@
 					collectorType: 0
 				}
 			}
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "a9f9ce31",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "astralsorcery:blockcelestialcollectorcrystal",
 			tag: {
 				astralsorcery: {
@@ -47,6 +42,7 @@
 				}
 			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

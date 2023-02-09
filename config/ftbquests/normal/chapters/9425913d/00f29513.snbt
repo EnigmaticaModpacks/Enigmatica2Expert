@@ -21,7 +21,6 @@
 		item: {
 			id: "thermalexpansion:tank",
 			tag: {
-				RSControl: 0b,
 				Level: 0b
 			}
 		}
