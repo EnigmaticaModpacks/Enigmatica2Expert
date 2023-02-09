@@ -22,7 +22,7 @@ craft.shapeless(<immersivetech:stone_decoration> * 8, "CCCC⌂CCCC", {
 
 #------------------------------------------------------------------------
 # Harder Electolyze
-mods.nuclearcraft.electrolyser.removeRecipeWithInput([<fluid:water> * 1000]);
+// mods.nuclearcraft.Electrolyser.removeRecipeWithInput(<fluid:water> * 1000);
 mods.mekanism.separator.removeRecipe(<liquid:water>);
 mods.mekanism.separator.addRecipe(<liquid:water> * 10, 800, <gas:hydrogen> * 2, <gas:oxygen>);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.removeRecipe(<fluid:water> * 500);
@@ -33,7 +33,7 @@ mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
 
 #------------------------------------------------------------------------
 # Harder Chlorine and Sodium
-mods.nuclearcraft.electrolyser.removeRecipeWithInput([<liquid:naoh> * 666]);
+// mods.nuclearcraft.Electrolyser.removeRecipeWithInput(<liquid:naoh> * 666);
 mods.mekanism.separator.removeRecipe(<liquid:brine>);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
   <liquid:liquidchlorine> * 3750, <liquid:liquidsodium> * 3750, null,
@@ -51,10 +51,10 @@ FluidDictionary.add("moltensodium", "liquidsodium", 0.15);
 #------------------------------------------------------------------------
 # Harder Diamond Melting
 mods.tconstruct.Melting.removeRecipe(<liquid:diamond>);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:diamond> *   74]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:diamond> *  666]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:diamond> * 1665]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:diamond> * 5994]);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:diamond> *   74);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:diamond> *  666);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:diamond> * 1332);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:diamond> * 5994);
 mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:diamond> *   74, <ore:nuggetDiamond>, 960, 4);
 mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:diamond> *  165, <rats:rat_diamond>, 2400, 10);
 mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:diamond> *  666, <ore:gemDiamond>, 9600, 40);

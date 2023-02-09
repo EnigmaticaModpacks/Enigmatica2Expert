@@ -302,8 +302,7 @@ craft.reshapeless(<ic2:containment_plating>, "п□□□", {
 });
 
 # Reprocess plutonium
-mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:3>, <nuclearcraft:uranium:4>, 2.0, 2.0]);
-mods.nuclearcraft.decay_hastener.addRecipe([<ic2:nuclear:7>, <nuclearcraft:uranium:6>, 2.0, 2.0]);
+mods.nuclearcraft.DecayHastener.addRecipe(<ic2:nuclear:3>, <nuclearcraft:uranium:5>, 2.0, 2.0);
 
 # Batch crafting recipe for reflector, skipping microcraftings
 scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler", [
@@ -441,16 +440,16 @@ mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:coal>);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:coal_ore>);
 mods.mekanism.crusher.removeRecipe(<ic2:dust:2>);
 mods.mekanism.enrichment.removeRecipe(<ic2:dust:2>);
-mods.nuclearcraft.manufactory.removeRecipeWithInput([<ic2:dust:2>]);
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([<thermalfoundation:material:160>]);
-mods.nuclearcraft.melter.removeRecipeWithInput([<ic2:dust:2>]);
+mods.nuclearcraft.Manufactory.removeRecipeWithInput(<ic2:dust:2>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<thermalfoundation:material:160>);
+mods.nuclearcraft.Melter.removeRecipeWithInput(<ic2:dust:2>);
 mods.mekanism.reaction.removeRecipe(<ore:dustSulfur>, <gas:hydrogen>, <ic2:dust:2>);
 # Sulfur
 furnace.setFuel(<ic2:dust:16>, 0);
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:sulfurdioxide>, <ic2:dust:16>);
 mods.mekanism.enrichment.removeRecipe(<ic2:dust:16>);
-mods.nuclearcraft.melter.removeRecipeWithInput([<ic2:dust:16>]);
-mods.nuclearcraft.melter.addRecipe(<ore:dustSulfur>, <liquid:sulfur> * 100);
+mods.nuclearcraft.Melter.removeRecipeWithInput(<ic2:dust:16>);
+mods.nuclearcraft.Melter.addRecipe(<ore:dustSulfur>, <liquid:sulfur> * 100);
 
 # -----------------------------------------
 # Other new recipes for crop res

@@ -281,7 +281,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:26>, <
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <rats:rat_diamond>, <immersiveengineering:mold:1>, 16000, 4);
 recipes.addShapeless("gem_crystal_flux from rat", <redstonearsenal:material:160> * 2, [<rats:rat_diamond>, <rats:rat_diamond>, Bucket('redstone')]);
 mods.thermalexpansion.Transposer.addFillRecipe(<redstonearsenal:material:160>, <rats:rat_diamond>, <fluid:redstone> * 500, 2000);
-mods.nuclearcraft.infuser.addRecipe(<ore:gemDiamondRat>, <fluid:redstone> * 500, <redstonearsenal:material:160>);
+mods.nuclearcraft.Infuser.addRecipe(<ore:gemDiamondRat>, <fluid:redstone> * 500, <redstonearsenal:material:160>);
 # ################################################################################
 
 # Harder little balls recipe (was from coal)

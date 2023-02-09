@@ -68,8 +68,6 @@ for lang, items in {
     <mekanismgenerators:generator:6>,
     <mekanismgenerators:generator>,
     <nuclearcraft:decay_generator>,
-    <nuclearcraft:fission_controller_new_fixed>,
-    <nuclearcraft:fusion_core>,
     <nuclearcraft:turbine_controller>,
     <randomthings:spectrecoil_number>,
     <rftools:coalgenerator>,

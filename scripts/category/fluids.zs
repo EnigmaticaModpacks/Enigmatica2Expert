@@ -1,7 +1,6 @@
 import mods.thermalexpansion.Crucible;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
-import mods.nuclearcraft.melter;
 
 #modloaded nuclearcraft thermalexpansion
 
@@ -38,35 +37,6 @@ import mods.nuclearcraft.melter;
 	Crucible.addRecipe(<liquid:purpleslime> * 250, <tconstruct:edible:2>, 2500);
 	Crucible.addRecipe(<liquid:blood> * 40, <minecraft:rotten_flesh>, 2500);
 	
-	melter.addRecipe(<ore:nuggetAlumite>, <liquid:alumite> * 16);
-	melter.addRecipe(<ore:ingotAlumite>, <liquid:alumite> * 144);
-	melter.addRecipe(<ore:blockAlumite>, <liquid:alumite> * 1296);
-	melter.addRecipe(<ore:nuggetOsgloglas>, <liquid:osgloglas> * 16);
-	melter.addRecipe(<ore:ingotOsgloglas>, <liquid:osgloglas> * 144);
-	melter.addRecipe(<ore:blockOsgloglas>, <liquid:osgloglas> * 1296);
-	melter.addRecipe(<ore:nuggetOsmiridium>, <liquid:osmiridium> * 16);
-	melter.addRecipe(<ore:ingotOsmiridium>, <liquid:osmiridium> * 144);
-	melter.addRecipe(<ore:blockOsmiridium>, <liquid:osmiridium> * 1296);
-	melter.addRecipe(<ore:nuggetElvenElementium>, <liquid:elementium> * 16);
-	melter.addRecipe(<ore:ingotElvenElementium>, <liquid:elementium> * 144);
-	melter.addRecipe(<botania:storage:2>, <liquid:elementium> * 1296);
-	melter.addRecipe(<ore:nuggetMirion>, <liquid:mirion> * 16);
-	melter.addRecipe(<ore:ingotMirion>, <liquid:mirion> * 144);
-	melter.addRecipe(<ore:blockMirion>, <liquid:mirion> * 1296);
-	melter.addRecipe(<psi:material:1>, <liquid:psimetal> * 144);
-	melter.addRecipe(<psi:material:0>, <liquid:psimetal> * 144);
-	melter.addRecipe(<psi:psi_decorative:1>, <liquid:psimetal> * 1296);
-	melter.addRecipe(<psi:psi_decorative:0>, <liquid:psimetal> * 1296);
-	melter.addRecipe(<ore:ingotInfinity>, <liquid:infinity> * 144);
-	melter.addRecipe(<ore:blockInfinity>, <liquid:infinity> * 1296);
-	melter.addRecipe(<ore:nuggetThaumium>, <liquid:thaumium> * 16);
-	melter.addRecipe(<ore:ingotThaumium>, <liquid:thaumium> * 144);
-	melter.addRecipe(<ore:blockThaumium>, <liquid:thaumium> * 1296);
-	melter.addRecipe(<botania:storage:0>, <liquid:manasteel> * 1296);
-	melter.addRecipe(<botania:storage:1>, <liquid:terrasteel> * 1296);
-	melter.addRecipe(<ore:slimeballPurple>, <liquid:purpleslime> * 250);
-	melter.addRecipe(<minecraft:rotten_flesh>, <liquid:blood> * 40);
-	
 #Make Rustic Honeycomb produce forestry honey
 	mods.thermalexpansion.Centrifuge.removeRecipe(<rustic:honeycomb>);
 	mods.thermalexpansion.Centrifuge.addRecipe([<rustic:beeswax> % 100], <rustic:honeycomb>, <liquid:for.honey> * 250, 2000);
@@ -102,7 +72,7 @@ val chaliceGrid = {
 [<liquid:ic2uu_matter>           *10,<liquid:water>                        *90]:[<quark:crystal:0>                           ,<quark:crystal:6>                             ,<actuallyadditions:block_crystal:2>             ],
 [<liquid:ic2uu_matter>           *10,<liquid:lava>                         *90]:[<advancedrocketry:basalt>                   ,<draconicevolution:infused_obsidian>          ,<draconicevolution:draconium_block>             ],
 [<liquid:ic2uu_matter>           *10,<liquid:astralsorcery.liquidstarlight>*90]:[<quark:marble>                              ,<minecraft:quartz_block>                      ,<thermalfoundation:storage:7>                   ],
-[<liquid:ic2uu_matter>           *10,<liquid:cloud_seed_concentrated>      *90]:[<randomthings:superlubricentice>            ,<nuclearcraft:block_ice>                      ,<enderio:block_alloy:6>                         ],
+[<liquid:ic2uu_matter>           *10,<liquid:cloud_seed_concentrated>      *90]:[<randomthings:superlubricentice>            ,<nuclearcraft:supercold_ice>                  ,<enderio:block_alloy:6>                         ],
 [<liquid:ic2uu_matter>           *10,<liquid:lifeessence>                  *90]:[<additionalcompression:meatbeef_compressed> ,<minecraft:nether_wart_block>                 ,<tconevo:metal_block:5>                         ],
 [<liquid:ic2uu_matter>           *10,<liquid:plasma>                       *90]:[<enderio:block_infinity>                    ,<minecraft:obsidian>                          ,<tconevo:metal_block:7>                         ],
 } as IItemStack[][ILiquidStack[]];
@@ -211,7 +181,7 @@ for pos, names in utils.graph([
 	j: ["pyrotheum"],
 	m: ["rocketfuel"],
 	k: ["ic2uu_matter", "enrichedlava"],
-	l: ["neutron"],
+	l: [],
 	n: ["empoweredoil"],
 	o: ["plasma", "perfect_fuel"],
 	p: ["infinity_metal"],
@@ -319,6 +289,3 @@ mods.tconstruct.Alloy.addRecipe(<liquid:perfect_fuel>, [
 # Usage for Perfect Fuel
 mods.enderio.CombustionGen.addFuel(<fluid:perfect_fuel>, 20000, 1500000);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<fluid:perfect_fuel>, 2000000000);
-
-val PF = <fluid:perfect_fuel>;
-mods.nuclearcraft.fusion.addRecipe([PF * 1000, PF * 1000, PF * 1000, PF * 999, <fluid:flux_goo> * 1000, <fluid:blockfluidantimatter> * 1000, 2000.0, 350000.0, 16500.0]);

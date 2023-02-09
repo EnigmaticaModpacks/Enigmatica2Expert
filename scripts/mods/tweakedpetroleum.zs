@@ -79,7 +79,7 @@ registerReservoir("Flux Goo Reservoir (Vast Epltines)", <liquid:flux_goo>, 35000
 /*
 	Helium3
 */
-registerReservoir("Helium 3 Reservoir (Luna)", <liquid:helium3>, 2000000000, maxInt, 15, 40, 30, I, [], [100], [], []);
+registerReservoir("Helium 3 Reservoir (Luna)", <liquid:helium_3>, 2000000000, maxInt, 15, 40, 30, I, [], [100], [], []);
 
 # Mercury ID=101
 	/*

@@ -40,7 +40,7 @@ val rockRecycleTable as IItemStack[][IIngredient] = {
 <twilightforest:maze_stone:4>        |
 <twilightforest:maze_stone:5>        |
 <twilightforest:maze_stone:6>        |
-<twilightforest:maze_stone:7>        : [<mekanism:dust:2>, <nuclearcraft:dust_oxide:1>, <mekanism:otherdust:5>],
+<twilightforest:maze_stone:7>        : [<mekanism:dust:2>, <nuclearcraft:dust:14>, <mekanism:otherdust:5>],
 <twilightforest:underbrick>          |
 <twilightforest:underbrick:1>        |
 <twilightforest:underbrick:2>        |

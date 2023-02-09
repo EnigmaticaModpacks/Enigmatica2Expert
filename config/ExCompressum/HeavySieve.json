@@ -965,15 +965,6 @@
             "rolls": 1
           },
           {
-            "meshLevel": 2,
-            "name": "nuclearcraft:gem_dust",
-            "metadata": 8,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.2,
-            "rolls": 1
-          },
-          {
             "meshLevel": 3,
             "name": "deepmoblearning:soot_covered_redstone",
             "metadata": 0,
@@ -1007,15 +998,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.2,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "nuclearcraft:gem_dust",
-            "metadata": 8,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.3,
             "rolls": 1
           },
           {
@@ -1061,15 +1043,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.25,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 4,
-            "name": "nuclearcraft:gem_dust",
-            "metadata": 8,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.4,
             "rolls": 1
           }
         ]

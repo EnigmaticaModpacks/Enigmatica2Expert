@@ -1,5 +1,5 @@
 import crafttweaker.liquid.ILiquidDefinition;
-import mods.nuclearcraft.melter;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -16,11 +16,19 @@ for s in [
   }
 }
 
-for n in [144, 16, 144*9] as int[] {
-  mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:crude_steel> * n]);
-  mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:vivid_alloy> * n]);
-  mods.nuclearcraft.melter.removeRecipeWithOutput([<liquid:energetic_silver> * n]);
+for fluid in [<liquid:crude_steel>, <liquid:vivid_alloy>, <liquid:energetic_silver>] as ILiquidStack[] {
+  mods.nuclearcraft.IngotFormer.removeRecipeWithInput(fluid * 144);
+  for n in [144, 16, 144*9] as int[] {
+    mods.nuclearcraft.Melter.removeRecipeWithOutput(fluid * n);
+  }
 }
+
+# Remove Unused alloy recipes
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:1>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:2>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:3>*2);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:5>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_endergy_ingot:6>);
 
 utils.rh(<enderio:item_endergy_conduit>);
 utils.rh(<enderio:item_endergy_conduit:1>);

@@ -187,8 +187,8 @@ scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "E
 	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
 
 # Add recipes from liquids
-	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotblutonium>, <tconstruct:cast_custom>, <liquid:plutonium>, 144, false);
-	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium>, 1296);
+	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotblutonium>, <tconstruct:cast_custom>, <liquid:plutonium_242>, 144, false);
+	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium_242>, 1296);
 	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockcyanite>, null, <liquid:cyanite>, 1296);
 	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotcyanite>, <tconstruct:cast_custom>, <liquid:cyanite>, 144, false);
 
@@ -222,9 +222,6 @@ mods.mechanics.addTubeRecipe([<biomesoplenty:crystal>] as IItemStack[], <liquid:
 mods.cyclicmagic.Melter.removeShapedRecipe("amber", 100);
 mods.cyclicmagic.Melter.removeShapedRecipe("amber", 1000);
 mods.cyclicmagic.Melter.removeShapedRecipe("crystal", 1000);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:amber> * 1665]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:amber> * 666]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:amber> * 74]);
 
 # Liquid blue slimy items
 scripts.process.squeeze([<tconstruct:slime_dirt:1>],        <liquid:blueslime>*2000, null,  <biomesoplenty:mudball>);
@@ -320,13 +317,6 @@ recipes.addShaped(<biomesoplenty:mud_brick_block> * 2, [
 # Molten Quartz and Lapis to blocks
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:quartz_block>, null, <liquid:quartz>, 2664);
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:lapis_block> , null, <liquid:lapis> , 5994);
-
-# Replace Plustick's Infinity -> TConEvo
-mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:infinity> * 144]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([<fluid:infinity> * (144*9)]);
-mods.nuclearcraft.melter.addRecipe(<ore:ingotInfinity>, <fluid:infinity_metal> * 144);
-mods.nuclearcraft.melter.addRecipe(<ore:blockInfinity>, <fluid:infinity_metal> * (144*9));
-mods.nuclearcraft.ingot_former.addRecipe([<liquid:infinity_metal>*144, <avaritia:resource:6>]);
 
 # Clearing
 utils.clearFluid(<tconstruct:seared_tank:0>);
@@ -451,10 +441,6 @@ craft.remake(<tconstruct:brownstone:1> * 64, ["pretty",
   "s": <ore:sandstone>,    # Sandstone
   "♥": <ore:dustRedstone>, # Redstone
 });
-
-# Alloy furnace missed Alum Brass recipe
-mods.nuclearcraft.alloy_furnace.addRecipe(<ore:ingotCopper>, <ore:ingotAluminum> * 3, <tconstruct:ingots:5> * 4);# [Aluminum Brass Ingot]
-mods.nuclearcraft.alloy_furnace.addRecipe(<ore:blockCopper>, <ore:blockAluminum> * 3, <tconstruct:metal:5> * 4); # [Block of Aluminum Brass]
 
 # Simple Seared bricks
 furnace.addRecipe(<tconstruct:materials>, <forestry:ash>, 0.5);

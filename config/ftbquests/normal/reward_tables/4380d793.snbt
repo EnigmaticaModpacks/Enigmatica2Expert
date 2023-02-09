@@ -2,7 +2,7 @@
 	title: "Generators",
 	loot_size: 1,
 	rewards: [{
-		item: "nuclearcraft:fission_controller_new_fixed"
+		item: "nuclearcraft:salt_fission_controller"
 	},
 	{
 		item: "nuclearcraft:rtg_uranium"
@@ -245,12 +245,9 @@
 		item: "nuclearcraft:cobblestone_generator_dense"
 	},
 	{
-		icon: "nuclearcraft:helium_collector_compact 3",
-		item: "nuclearcraft:helium_collector_compact",
+		icon: "qmd:atmosphere_collector 3",
+		item: "qmd:atmosphere_collector",
 		count: 3
-	},
-	{
-		item: "nuclearcraft:helium_collector_dense"
 	},
 	{
 		icon: "nuclearcraft:nitrogen_collector_compact 3",

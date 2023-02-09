@@ -186,13 +186,13 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "manufactory") {
-      if (strict) { mods.nuclearcraft.manufactory.removeRecipeWithInput([inputIngr0]); }
-      mods.nuclearcraft.manufactory.addRecipe(inputIngr0, outputItem0);
+      if (strict) { mods.nuclearcraft.Manufactory.removeRecipeWithInput(inputIngr0); }
+      mods.nuclearcraft.Manufactory.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
     if (machineName == "pressurizer") {
-      mods.nuclearcraft.pressurizer.addRecipe(inputIngr0, outputItem0);
+      mods.nuclearcraft.Pressurizer.addRecipe(inputIngr0, outputItem0);
       return machineName;
     }
 
@@ -331,12 +331,12 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   if (inputIsSingle) {
   
     if (machineName == "rockcrusher") {
-      # mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
-      mods.nuclearcraft.rock_crusher.addRecipe([inputIngr0, 
-        arrN_item(combinedOutput, 0), (combinedChances[0] * 100) as int,
-        arrN_item(combinedOutput, 1), (combinedChances[1] * 100) as int,
-        arrN_item(combinedOutput, 2), (combinedChances[2] * 100) as int,
-        2.0d, 1.5d]);
+      # mods.nuclearcraft.RockCrusher.addRecipe(itemInput, itemOutput1, itemOutput2, itemOutput3, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+      mods.nuclearcraft.RockCrusher.addRecipe(inputIngr0, 
+        mods.nuclearcraft.ChanceItemIngredient.create(arrN_item(combinedOutput, 0), (combinedChances[0] * 100) as int),
+        mods.nuclearcraft.ChanceItemIngredient.create(arrN_item(combinedOutput, 1), (combinedChances[1] * 100) as int),
+        mods.nuclearcraft.ChanceItemIngredient.create(arrN_item(combinedOutput, 2), (combinedChances[2] * 100) as int),
+        2.0d, 1.5d);
       return machineName;
     }
   
@@ -513,9 +513,9 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "alloyfurnace") {
-      if (strict) { mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(outputItem0); }
+      if (strict) { mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(outputItem0); }
       if (inputItems.length == 2) {
-        mods.nuclearcraft.alloy_furnace.addRecipe(inputItems[0], inputItems[1], outputItem0);
+        mods.nuclearcraft.AlloyFurnace.addRecipe(inputItems[0], inputItems[1], outputItem0);
       } else {
         return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but number of inputs != 2");
       }
@@ -658,13 +658,13 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "melter") {
-      mods.nuclearcraft.melter.addRecipe(inputIngr0, outputLiquid0);
+      mods.nuclearcraft.Melter.addRecipe(inputIngr0, outputLiquid0);
       return machineName;
     }
 
     if (machineName == "fluidextractor") {
-      # mods.nuclearcraft.extractor.addRecipe([itemInput, itemOutput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
-      mods.nuclearcraft.extractor.addRecipe(inputIngr0, outputItem0, outputLiquid0);
+      # mods.nuclearcraft.Extractor.addRecipe(itemInput, itemOutput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+      mods.nuclearcraft.Extractor.addRecipe(inputIngr0, outputItem0, outputLiquid0);
       return machineName;
     }
   }
@@ -690,7 +690,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
 
     if (machineName == "ncinfuser") { 
-      mods.nuclearcraft.infuser.addRecipe(inputIngr0, inputLiquid0, outputItem0);
+      mods.nuclearcraft.Infuser.addRecipe(inputIngr0, inputLiquid0, outputItem0);
       return machineName;
     }
 
@@ -715,8 +715,8 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
     
     if (machineName == "fluidenricher") {
-      # mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
-      mods.nuclearcraft.dissolver.addRecipe(inputIngr0, inputLiquid0, outputLiquid0);
+      # mods.nuclearcraft.Enricher.addRecipe(itemInput, fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+      mods.nuclearcraft.Enricher.addRecipe(inputIngr0, inputLiquid0, outputLiquid0);
       return machineName;
     }
 
@@ -735,8 +735,8 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     }
     
     if (machineName == "ncelectrolyzer") {
-      # mods.nuclearcraft.electrolyser.addRecipe([fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
-      mods.nuclearcraft.electrolyser.addRecipe(inputLiquid0, arrN_liq(outputLiquids, 0), arrN_liq(outputLiquids, 1), arrN_liq(outputLiquids, 2), arrN_liq(outputLiquids, 3), 40);
+      # mods.nuclearcraft.Electrolyser.addRecipe(fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+      mods.nuclearcraft.Electrolyzer.addRecipe(inputLiquid0, arrN_liq(outputLiquids, 0), arrN_liq(outputLiquids, 1), arrN_liq(outputLiquids, 2), arrN_liq(outputLiquids, 3), 40);
       return machineName;
     }
   }

@@ -7,9 +7,6 @@ scripts.lib.dropt.addDrop(<advancedrocketry:geode>, <thermalfoundation:geode>);
 # Rename basalt as it not oredicted and have different uses
 <advancedrocketry:basalt>.displayName = game.localize("e2ee.tile.basalt_sediment");
 
-# Vulpes Library Silicon dust Manufactory* Recipe Removal (Credit TheShadoWZYE2)
-	mods.nuclearcraft.manufactory.removeRecipeWithOutput(<libvulpes:productdust:3>);
-	
 # Airtight Seal Enchant
 	recipes.addShaped("Airtight Seal Enchant", 
 	Book(<enchantment:advancedrocketry:spacebreathing>), 

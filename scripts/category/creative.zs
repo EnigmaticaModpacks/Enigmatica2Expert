@@ -387,7 +387,7 @@ craft.remake(<mekanism:gastank>.withTag({tier: 4}), ["pretty",
   "C": <plustic:centrifuge>,              # Centrifuge Tank
   "n": FluidCell("aerotheum"),            # Universal Fluid Cell
   "i": FluidCell("exhauststeam"),         # Universal Fluid Cell
-  "U": FluidCell("helium3"),              # Universal Fluid Cell
+  "U": FluidCell("helium_3"),             # Universal Fluid Cell
   "v": FluidCell("tritium"),              # Universal Fluid Cell
   "◘": FluidCell("vapor_of_levity"),      # Universal Fluid Cell
 });

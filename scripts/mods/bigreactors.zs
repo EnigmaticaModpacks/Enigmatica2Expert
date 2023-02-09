@@ -2,20 +2,17 @@
 	
 # *======= Recipes =======*
 
-// Graphite conversion
-recipes.addShapeless('Graphite Conversion 3', <bigreactors:blockgraphite> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
-recipes.addShapeless('Graphite Conversion 4', <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockgraphite>, <bigreactors:blockgraphite>]);
-
-# Cyanite in NuclearCraft Fission Reactor
-	mods.nuclearcraft.fission.addRecipe([<immersiveengineering:metal:5>, <bigreactors:ingotcyanite>, 4800.0, 100.0, 40.0, "URANIUM"]);
+// // Graphite conversion
+// recipes.addShapeless('Graphite Conversion 3', <bigreactors:blockgraphite> * 2, [<nuclearcraft:ingot_block:8>, <nuclearcraft:ingot_block:8>]);
+// recipes.addShapeless('Graphite Conversion 4', <nuclearcraft:ingot_block:8> * 2, [<bigreactors:blockgraphite>, <bigreactors:blockgraphite>]);
 
 # Reactor Controller
 	recipes.remove(<bigreactors:reactorcontroller>);
 	mods.extendedcrafting.TableCrafting.addShaped(0, 
 	<bigreactors:reactorcontroller>, 
-	[[<nuclearcraft:fission_block>, <tconstruct:large_plate>.withTag({Material: "lead"}), <nuclearcraft:fission_block>],
+	[[<nuclearcraft:fission_conductor>, <tconstruct:large_plate>.withTag({Material: "lead"}), <nuclearcraft:fission_conductor>],
 	[<opencomputers:print>, <ic2:te:22>, <opencomputers:print>], 
-	[<nuclearcraft:fission_block>, <nuclearcraft:fission_controller_new_fixed>, <nuclearcraft:fission_block>]]);
+	[<nuclearcraft:fission_conductor>, <nuclearcraft:solid_fission_controller>, <nuclearcraft:fission_conductor>]]);
 
 # Reactor Casing
 	recipes.remove(<bigreactors:reactorcasing>);
@@ -154,4 +151,12 @@ scripts.process.beneficiate(<bigreactors:orebenitoite>, "Benitoite", 1, {excepti
 # Conflicts
 utils.rh(<bigreactors:ingotgraphite>);
 recipes.removeByRecipeName("bigreactors:block_graphite");
-recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.ingot_block.graphite_1");
+// recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.IngotBlock.graphite_1");
+
+# [Blutonium Ingot]*5 from [Cyanite Block][+3]
+craft.reshapeless(<bigreactors:ingotblutonium> * 5, "▄■*TT", {
+  "▄": <ore:blockPlatinum>, # Block of Platinum
+  "■": <ore:blockCyanite>,  # Cyanite Block
+  "*": <actuallyadditions:block_crystal_empowered:1>, # Empowered Palis Crystal Block
+  "T": <ic2:nuclear:7>,     # Tiny Pile of Plutonium
+});

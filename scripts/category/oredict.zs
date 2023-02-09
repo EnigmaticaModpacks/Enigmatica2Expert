@@ -650,6 +650,7 @@ addItems(<ore:listAllmeatraw>, [
 	<twilightforest:raw_meef>,
 ]);
 
+remove(<ore:plateadvancedAlloy>, <ic2:crafting:3>);
 remove(<ore:dustObsidian>, <endreborn:catalyst>);
 remove(<ore:tungstenIngot>, <endreborn:item_ingot_wolframium>);
 add(<ore:oreXorcite>, <endreborn:dragon_essence>);
@@ -713,7 +714,6 @@ addItems(<ore:workbench>, [
 
 add(<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade:*>);
 add(<ore:logWood>, <ic2:rubber_wood>);
-add(<ore:dustTinyLead>, <nuclearcraft:tiny_dust_lead>);
 
 ##################
 # Nuclearcraft

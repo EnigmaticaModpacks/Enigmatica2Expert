@@ -7,17 +7,13 @@ var crystalCertus = <ore:crystalCertus>;
 
 // ------ Silicon unification ------
 var trueSilicon = <appliedenergistics2:material:5>;
-<ore:itemSilicon>.remove([<nuclearcraft:gem:6>, <libvulpes:productingot:3>, <enderio:item_material:5>]);
+<ore:itemSilicon>.remove([<libvulpes:productingot:3>, <enderio:item_material:5>]);
 <ore:ingotSilicon>.add(trueSilicon);
 
 // Removing
-furnace.remove(<appliedenergistics2:material:5>); // Furnance quartz dusts -> AE silicon
-mods.nuclearcraft.manufactory.removeRecipeWithOutput(<appliedenergistics2:material:5>); // Ingot->AE
 mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem:6>); // Sand -> silicon
 
 // Addition
-furnace.addRecipe(trueSilicon, <ore:dustCertusQuartz>, 4.0d);
-furnace.addRecipe(trueSilicon, <ore:dustNetherQuartz>, 4.0d);
 mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>, 4000);
 // ---------------------------------
 
@@ -280,58 +276,6 @@ val itemMass as double[IItemStack] = {
 <deepmoblearning:pristine_matter_twilight_swamp>     : 200.0d,
 <deepmoblearning:pristine_matter_twilight_darkwood>  : 200.0d,
 <deepmoblearning:pristine_matter_twilight_glacier>   : 200.0d,
-<nuclearcraft:thorium:2>     												 : 230.0d,
-<nuclearcraft:thorium:3>     												 : 230.0d,
-<nuclearcraft:thorium:6>     												 : 232.0d,
-<nuclearcraft:thorium:7>     												 : 232.0d,
-<nuclearcraft:uranium:2>     												 : 233.0d,
-<nuclearcraft:uranium:3>     												 : 234.0d,
-<nuclearcraft:uranium:6>     												 : 235.0d,
-<nuclearcraft:uranium:7>     												 : 235.0d,
-<nuclearcraft:uranium:10>    												 : 238.0d,
-<nuclearcraft:uranium:11>    												 : 238.0d,
-<nuclearcraft:neptunium:2>   												 : 236.0d,
-<nuclearcraft:neptunium:3>   												 : 236.0d,
-<nuclearcraft:neptunium:6>   												 : 237.0d,
-<nuclearcraft:neptunium:7>   												 : 237.0d,
-<nuclearcraft:plutonium:2>   												 : 238.0d,
-<nuclearcraft:plutonium:3>   												 : 238.0d,
-<nuclearcraft:plutonium:6>   												 : 239.0d,
-<nuclearcraft:plutonium:7>   												 : 239.0d,
-<nuclearcraft:plutonium:10>  												 : 241.0d,
-<nuclearcraft:plutonium:11>  												 : 241.0d,
-<nuclearcraft:plutonium:14>  												 : 242.0d,
-<nuclearcraft:plutonium:15>  												 : 242.0d,
-<nuclearcraft:americium:2>   												 : 241.0d,
-<nuclearcraft:americium:3>   												 : 241.0d,
-<nuclearcraft:americium:6>   												 : 242.0d,
-<nuclearcraft:americium:7>   												 : 242.0d,
-<nuclearcraft:americium:10>  												 : 243.0d,
-<nuclearcraft:americium:11>  												 : 244.0d,
-<nuclearcraft:curium:2>      												 : 243.0d,
-<nuclearcraft:curium:3>      												 : 243.0d,
-<nuclearcraft:curium:6>      												 : 245.0d,
-<nuclearcraft:curium:7>      												 : 245.0d,
-<nuclearcraft:curium:10>     												 : 246.0d,
-<nuclearcraft:curium:11>     												 : 246.0d,
-<nuclearcraft:curium:14>     												 : 247.0d,
-<nuclearcraft:curium:15>     												 : 247.0d,
-<nuclearcraft:berkelium:2>   												 : 247.0d,
-<nuclearcraft:berkelium:3>   												 : 247.0d,
-<nuclearcraft:berkelium:6>   												 : 248.0d,
-<nuclearcraft:berkelium:7>   												 : 248.0d,
-<nuclearcraft:californium:2> 												 : 249.0d,
-<nuclearcraft:californium:3> 												 : 249.0d,
-<nuclearcraft:californium:6> 												 : 250.0d,
-<nuclearcraft:californium:7> 												 : 250.0d,
-<nuclearcraft:californium:10>												 : 251.0d,
-<nuclearcraft:californium:11>												 : 251.0d,
-<nuclearcraft:californium:14>												 : 252.0d,
-<nuclearcraft:californium:15>												 : 252.0d,
-<nuclearcraft:boron:1>       												 : 10.0d,
-<nuclearcraft:boron:3>       												 : 11.0d,
-<nuclearcraft:lithium:1>     												 : 6.0d,
-<nuclearcraft:lithium:3>     												 : 7.0d,
 } as double[IItemStack];
 
 for item, mass in itemMass {
@@ -498,7 +442,6 @@ regrind(<biomesoplenty:gem_ore>                 , <jaopca:item_dustamethyst>, tr
 regrind(<draconicevolution:draconium_ore>       , <draconicevolution:draconium_dust>, true, <jaopca:item_dusttinyardite>);
 regrind(<endreborn:block_wolframium_ore>        , <contenttweaker:item_ore_tungsten:2>, true, <jaopca:item_dusttinymagnesium>);
 regrind(<forestry:resources>                    , <jaopca:item_dustapatite>, true, <jaopca:item_dusttinyaluminium>);
-regrind(<immersiveengineering:ore:5>            , <immersiveengineering:metal:14>, true, <nuclearcraft:tiny_dust_lead>);
 regrind(<libvulpes:ore0:8>                      , <libvulpes:productdust:7>, true, <jaopca:item_dusttinytungsten>);
 regrind(<libvulpes:ore0>                        , <libvulpes:productdust>, true, <ic2:dust:24>);
 regrind(<mekanism:oreblock>                     , <mekanism:dust:2>, true, <jaopca:item_dusttinynickel>);
@@ -510,15 +453,10 @@ regrind(<minecraft:iron_ore>                    , <thermalfoundation:material>, 
 regrind(<minecraft:lapis_ore>                   , <ic2:dust:9>, true, <jaopca:item_dusttinyapatite>);
 regrind(<minecraft:quartz_ore>                  , <appliedenergistics2:material:3>, true, <rustic:dust_tiny_iron>);
 regrind(<minecraft:redstone_ore>                , <minecraft:redstone>, true, <jaopca:item_dusttinycoal>);
-regrind(<nuclearcraft:ore:3>                    , <nuclearcraft:dust:3>, true, <jaopca:item_dusttinyuranium>);
-regrind(<nuclearcraft:ore:5>                    , <nuclearcraft:dust:5>, true, <jaopca:item_dusttinymagnesium>);
-regrind(<nuclearcraft:ore:6>                    , <ic2:dust:11>, true, <jaopca:item_dusttinyaluminium>);
-regrind(<nuclearcraft:ore:7>                    , <nuclearcraft:dust:7>, true, <rustic:dust_tiny_iron>);
 regrind(<rftools:dimensional_shard_ore>         , <jaopca:item_dustdimensionalshard>, true, <jaopca:item_dusttinyastralstarmetal>);
 regrind(<tconstruct:ore:1>                      , <enderio:item_material:30>, true, <jaopca:item_dusttinyosmium>);
 regrind(<tconstruct:ore>                        , <enderio:item_material:31>, true, <rustic:dust_tiny_iron>);
 regrind(<thermalfoundation:ore:1>               , <thermalfoundation:material:65>, true, <rustic:dust_tiny_iron>);
-regrind(<thermalfoundation:ore:2>               , <thermalfoundation:material:66>, true, <nuclearcraft:tiny_dust_lead>);
 regrind(<thermalfoundation:ore:3>               , <thermalfoundation:material:67>, true);
 regrind(<thermalfoundation:ore:4>               , <thermalfoundation:material:68>, true, <rustic:dust_tiny_iron>);
 regrind(<thermalfoundation:ore:5>               , <thermalfoundation:material:69>, true, <jaopca:item_dusttinyplatinum>);
@@ -543,18 +481,6 @@ regrind(<mekanism:ingot:1>                      , <mekanism:dust:2>);
 regrind(<mekanism:ingot>                        , <mekanism:otherdust:5>);
 regrind(<minecraft:gold_ingot>                  , <thermalfoundation:material:1>);
 regrind(<minecraft:iron_ingot>                  , <thermalfoundation:material>);
-regrind(<nuclearcraft:ingot_oxide:1>            , <nuclearcraft:dust_oxide:1>);
-regrind(<nuclearcraft:ingot_oxide:2>            , <nuclearcraft:dust_oxide:2>);
-regrind(<nuclearcraft:ingot_oxide:3>            , <nuclearcraft:dust_oxide:3>);
-regrind(<nuclearcraft:ingot_oxide>              , <nuclearcraft:dust_oxide>);
-regrind(<nuclearcraft:ingot:3>                  , <nuclearcraft:dust:3>);
-regrind(<nuclearcraft:ingot:5>                  , <nuclearcraft:dust:5>);
-regrind(<nuclearcraft:ingot:6>                  , <ic2:dust:11>);
-regrind(<nuclearcraft:ingot:7>                  , <nuclearcraft:dust:7>);
-regrind(<nuclearcraft:ingot:8>                  , <nuclearcraft:dust:8>);
-regrind(<nuclearcraft:ingot:9>                  , <nuclearcraft:dust:9>);
-regrind(<nuclearcraft:ingot:10>                 , <nuclearcraft:dust:10>);
-regrind(<nuclearcraft:ingot:11>                 , <nuclearcraft:dust:11>);
 regrind(<psi:material:1>                        , <psi:material>);
 regrind(<redstonearsenal:material:32>           , <redstonearsenal:material>);
 regrind(<redstonerepository:material:1>         , <redstonerepository:material>);

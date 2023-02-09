@@ -83,7 +83,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 		<plustic:osmiridiumblock>,
 		<plustic:osgloglasblock>,
 		<actuallyadditions:block_empowerer>,
-		<nuclearcraft:fusion_core>,
+		<nuclearcraft:salt_fission_controller>,
 		<environmentaltech:aethium>,
 		<extendedcrafting:storage:3>,
 		<biomesoplenty:terrestrial_artifact>,

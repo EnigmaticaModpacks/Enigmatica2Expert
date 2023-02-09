@@ -114,6 +114,15 @@ furnace.remove(<*>, <immersiveengineering:ore:2>);
 furnace.remove(<*>, <immersiveengineering:ore:3>);
 furnace.remove(<*>, <immersiveengineering:ore:4>);
 furnace.remove(<*>, <immersiveengineering:ore>);
+furnace.remove(<*>, <nuclearcraft:dust:1>);
+furnace.remove(<*>, <nuclearcraft:dust:2>);
+furnace.remove(<*>, <nuclearcraft:dust:4>);
+furnace.remove(<*>, <nuclearcraft:dust>);
+furnace.remove(<*>, <nuclearcraft:gem_dust:2>);
+furnace.remove(<*>, <nuclearcraft:ore:1>);
+furnace.remove(<*>, <nuclearcraft:ore:2>);
+furnace.remove(<*>, <nuclearcraft:ore:4>);
+furnace.remove(<*>, <nuclearcraft:ore>);
 furnace.remove(<*>, <twilightforest:raw_venison:*>);
 /**/
 

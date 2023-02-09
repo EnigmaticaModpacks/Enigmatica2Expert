@@ -24,7 +24,7 @@
   ⬛ Bedrock Ore
   🌠 Astral Sorcery
   🌡️ Thermal Expansion
-  🌱 Mystical Agriculture
+  🌱 Mystical Agriculture | MA
   🌳 Twilight Forest
   🌴 BiomesOPlenty
   🌸 Industrial Foregoing

@@ -3,19 +3,6 @@ import crafttweaker.item.IItemStack;
 
 # *======= Recipes =======*
 
-# Neutronium Ingots with Neutron Fluid
-	mods.nuclearcraft.infuser.addRecipe(<advancedrocketry:productingot:1>, <liquid:neutron> * 1000, <avaritia:resource:4>, 4500);
-	mods.thermalexpansion.Transposer.addFillRecipe(<avaritia:resource:4>, <advancedrocketry:productingot:1>, <liquid:neutron> * 1000, 250000);
-
-# Neutron block fix
-	recipes.remove(<avaritia:resource:4>);
-	recipes.addShaped("Neutron Ingots from Nuggets",
-	<avaritia:resource:4>, 
-	[[<avaritia:resource:3>, <avaritia:resource:3>, <avaritia:resource:3>],
-	[<avaritia:resource:3>, <avaritia:resource:3>, <avaritia:resource:3>], 
-	[<avaritia:resource:3>, <avaritia:resource:3>, <avaritia:resource:3>]]);
-	recipes.addShapeless("Neutron Ingots from Block", <avaritia:resource:4> * 9, [<avaritia:block_resource>]);
-
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:ultimate_stew>);
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:cosmic_meatballs>);
 	mods.avaritia.ExtremeCrafting.remove(<avaritia:infinity_helmet>);

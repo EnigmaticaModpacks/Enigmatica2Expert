@@ -19,7 +19,7 @@
   {"id": "minecraft:stone:5"                  , "weight": 30 , "target": "gray" }       ,
   {"id": "rustic:slate"                       , "weight": 30 , "target": "gray" }       ,
   
-  {"id": "nuclearcraft:dry_earth"            , "weight": 20  , "target": "black" }  ,
+  {"id": "nuclearcraft:wasteland_earth"      , "weight": 20  , "target": "black" }  ,
   {"id": "quark:jasper"                      , "weight": 30  , "target": "red" }  ,
   {"id": "quark:limestone"                   , "weight": 30  , "target": "silver" }  ,
   {"id": "quark:slate"                       , "weight": 30  , "target": "light_blue" }

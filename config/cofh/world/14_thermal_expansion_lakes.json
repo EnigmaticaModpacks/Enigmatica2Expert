@@ -102,7 +102,7 @@
 				"use-material": true,
 				"outline-block": [
 					"minecraft:packed_ice",
-					"nuclearcraft:block_ice"
+					"nuclearcraft:supercold_ice"
 				]
 			},
 				"cluster-count": 1,

@@ -401,7 +401,7 @@ recipes.remove(<mekanismgenerators:reactor>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
 	[<ore:plateElite>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <ore:plateElite>], 
 	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
-	[<nuclearcraft:electromagnet_supercooler_idle>, <advancedrocketry:intake>, <nuclearcraft:fusion_core>, <advancedrocketry:intake>, <nuclearcraft:electromagnet_supercooler_idle>], 
+	[<qmd:particle_chamber_detector:3>, <advancedrocketry:intake>, <nuclearcraft:salt_fission_controller>, <advancedrocketry:intake>, <qmd:particle_chamber_detector:3>], 
 	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
 	[<ore:plateElite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <ore:plateElite>]
 ]);
@@ -522,9 +522,9 @@ craft.remake(<mekanismgenerators:generator:10> * 6, ["pretty",
   "T ⌂ T",
   "⌂ S ⌂",
   "T ⌂ T"], {
-  "⌂": <nuclearcraft:fission_block>, # Fission Reactor Casing
+  "⌂": <nuclearcraft:solid_fission_controller>, # Fission Reactor Casing
   "S": <mekanism:basicblock:8>,      # Steel Casing
-  "T": <nuclearcraft:turbine_wall>,  # Turbine Wall
+  "T": <ore:wallTurbine>,
 });
 
 # Conflicts

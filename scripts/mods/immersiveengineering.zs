@@ -316,7 +316,7 @@ addChemthrowerEffect(<liquid:ic2hot_coolant>      ,false, false, "chemicals", 11
 addChemthrowerEffect(<liquid:crystal>             ,false, false, "chemicals", 20);
 addChemthrowerEffect(<liquid:plasma>              ,true , false, "chemicals", 28);
 addChemthrowerEffect(<liquid:liquid_death>        ,false, false, "chemicals", 30);
-addChemthrowerEffect(<liquid:neutron>             ,false, false, "chemicals", 36);
+addChemthrowerEffect(<liquid:neutronium>          ,false, false, "chemicals", 360);
 
 
 # ----------------------------------------
@@ -405,7 +405,7 @@ addChemthrowerEffect(<liquid:milk_chocolate>         , false, false, "chemicals"
 // );
 
 # Thermoelectric generator
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(<nuclearcraft:block_ice>,   50);
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(<nuclearcraft:supercold_ice>,   50);
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockFiery>,         5000);
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockLudicrite>,     9900);
 

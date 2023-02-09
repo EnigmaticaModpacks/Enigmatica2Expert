@@ -81,12 +81,12 @@ craft.remake(<mechanics:empty_rod>, ["pretty",
 # ----------------------------------
 
 # Remove melting in NC Melter
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 144);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 144);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
-mods.nuclearcraft.melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 144);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 144);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 16);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 16);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:refinedobsidian> * 1296);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<liquid:refinedglowstone> * 1296);
 
 # Add IE Melting Crucible recipes
 mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:refined_obsidian>  *   16, <ore:nuggetRefinedObsidian>,  1600, 4);

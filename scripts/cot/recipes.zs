@@ -10,10 +10,6 @@ scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, 
 scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
 scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280);
 
-// Remove Tungsten from other places
-mods.immersiveengineering.ArcFurnace.removeRecipe(<contenttweaker:item_ore_tungsten:3>);
-mods.nuclearcraft.ingot_former.removeRecipeWithOutput([<contenttweaker:item_ore_tungsten:3>]);
-
 # Add missed furnace recipe
 furnace.addRecipe(<endreborn:item_ingot_wolframium>, <contenttweaker:item_ore_tungsten:2>, 4.0d);
 
@@ -33,8 +29,9 @@ mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_sun>], <liquid:liq
 mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_life>], <liquid:lifeessence> * 1000);
 
 // Silicon Block
+<ore:blockSilicon>.add(<contenttweaker:silicon_block>);
 craft.shapeless(<contenttweaker:silicon_block>, 'AAAAAAAAA', { A: <ore:ingotSilicon> });
-craft.shapeless(<libvulpes:productingot:3> * 9,   'A', { A: <contenttweaker:silicon_block> });
+craft.shapeless(<libvulpes:productingot:3> * 9,   'A', { A: <ore:blockSilicon> });
 
 // [Conglomerate Of Life]*2 from [Cheese Wheel][+4]
 craft.make(<contenttweaker:conglomerate_of_life> * 2, ['pretty',

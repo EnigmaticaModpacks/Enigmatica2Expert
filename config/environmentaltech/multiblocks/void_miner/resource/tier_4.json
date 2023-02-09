@@ -35,7 +35,7 @@
   {"id": "iceandfire:frozen_grass"           , "weight": 15  , "target": "light_blue" }  ,
   {"id": "iceandfire:frozen_gravel"          , "weight": 15  , "target": "light_blue" }  ,
   {"id": "iceandfire:frozen_stone"           , "weight": 15  , "target": "light_blue" }  ,
-  {"id": "nuclearcraft:dry_earth"            , "weight": 20  , "target": "black" }  ,
+  {"id": "nuclearcraft:wasteland_earth"      , "weight": 20  , "target": "black" }  ,
   {"id": "quark:biome_cobblestone:1"         , "weight": 20  , "target": "light_blue" }  ,
   {"id": "quark:biome_cobblestone:2"         , "weight": 20  , "target": "white" }  ,
   {"id": "quark:biome_cobblestone"           , "weight": 20  , "target": "red" }  ,

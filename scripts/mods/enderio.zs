@@ -1,6 +1,5 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput as ncAlloyRm;
 import scripts.process.solution;
 
 #modloaded enderio
@@ -43,7 +42,7 @@ craft.remake(<enderio:block_painter>, ["pretty",
 });
 
 # Fused Quartz (before Alloy Smelter)
-	mods.nuclearcraft.alloy_furnace.addRecipe(<minecraft:quartz> * 4, <minecraft:quartz_block>, <enderio:block_fused_quartz> * 2);
+	mods.nuclearcraft.AlloyFurnace.addRecipe(<minecraft:quartz> * 4, <minecraft:quartz_block>, <enderio:block_fused_quartz> * 2);
 
 # Clear Glass (before Alloy Smelter)
 	recipes.addShaped("Quite Clear Glass", 
@@ -219,7 +218,7 @@ craft.remake(<enderio:item_basic_capacitor>, ["pretty",
 		[<ore:ingotElectricalSteel>, <enderio:item_power_conduit>, <ore:ingotElectricalSteel>]]);
 
 # Dark Steel Upgrade Recycling
-	mods.nuclearcraft.decay_hastener.addRecipe([<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade>, 2.0, 2.0]);
+	mods.nuclearcraft.DecayHastener.addRecipe(<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade>, 2.0, 2.0);
 
 # Dark Steel Upgrade Expensive, Thermal
 	mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
@@ -272,16 +271,16 @@ scripts.process.alloy([<enderio:block_alloy:1>, <extendedcrafting:material:48>],
 scripts.process.alloy([<minecraft:redstone_block>, <minecraft:glowstone_dust> * 9, <minecraft:gold_block>], <enderio:block_alloy:1>, "only: AdvRockArc");
 
 # Remove alloy recipes made in High Oven
-ncAlloyRm(<enderio:item_alloy_ingot>);
-ncAlloyRm(<enderio:item_alloy_ingot:1>);
-ncAlloyRm(<enderio:item_alloy_ingot:2>);
-ncAlloyRm(<enderio:item_alloy_ingot:3>);
-ncAlloyRm(<enderio:item_alloy_ingot:4>); # conductive Iron
-ncAlloyRm(<enderio:item_alloy_ingot:5>);
-ncAlloyRm(<enderio:item_alloy_ingot:6>);
-ncAlloyRm(<enderio:item_alloy_ingot:7>);
-ncAlloyRm(<enderio:item_alloy_ingot:8>);
-ncAlloyRm(<enderio:item_alloy_ingot:9>*3);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:1>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:2>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:3>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:4>); # conductive Iron
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:5>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:6>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:7>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:8>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:9>*3);
 
 
 
@@ -461,7 +460,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 );
 
 # [Pulsating Crystal] from [Biome Essence][+1]
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_material:14>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_material:14>);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:14>);
 craft.remake(<enderio:item_material:14>, ["pretty",
   "‚ ‚ ‚",
@@ -500,7 +499,7 @@ craft.remake(<enderio:block_experience_obelisk>, ["pretty",
 });
 
 # [Vibrant Crystal] from [Vibrant Alloy Ingot][+1]
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<enderio:item_material:15>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<enderio:item_material:15>);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:15>);
 craft.remake(<enderio:item_material:15>, ["pretty",
   "  M  ",

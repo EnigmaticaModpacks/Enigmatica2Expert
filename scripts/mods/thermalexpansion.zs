@@ -246,7 +246,7 @@ scripts.process.fill(<thermaldynamics:duct_64>,   <liquid:biomass>*300,   <therm
 
 # More TE coolants
 # mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
-mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,   3500000, 65);
+mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_helium>,   3500000, 65);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:liquid_nitrogen>, 2500000, 55);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:ender_distillation>, 4000000, 70);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:vapor_of_levity>, 4500000, 75);
@@ -258,11 +258,8 @@ mods.thermalexpansion.Coolant.addCoolant(<liquid:blockfluidantimatter>, 5000000,
 
 recipes.remove(<ore:dustEnderium>.firstItem * 4);
 
-# EnderIO Remove enderium and enderium base recipes
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:9> * 4);
-
 # Remove Lead platinum alloy -> Enderium (used only to two-step craft for enderium)
-mods.nuclearcraft.infuser.removeRecipeWithOutput(<ore:ingotEnderium>.firstItem);
+mods.nuclearcraft.Infuser.removeRecipeWithOutput(<ore:ingotEnderium>.firstItem);
 
 # Remake ender ingot recipe
 val enderIngot = <extendedcrafting:material:36>;
@@ -704,7 +701,7 @@ craft.reshapeless(<thermalfoundation:material:101> * 4, "▲▲▲♠♥", {
   "♠": <ore:dustCopper>, # Pulverized Copper
   "♥": Bucket("redstone"), # Destabilized Redstone Bucket
 });
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput(<nuclearcraft:alloy:7> * 4);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7> * 4);
 scripts.process.alloy([<ore:ingotSilver> * 3, <ore:ingotCopper>], <nuclearcraft:alloy:7> * 4, "only: alloyFurnace induction");
 
 # Stone Gear recipe

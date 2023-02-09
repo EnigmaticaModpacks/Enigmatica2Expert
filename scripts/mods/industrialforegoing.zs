@@ -357,8 +357,8 @@ function cleanupBenification(item as IItemStack, ingot as IItemStack, dust as II
 	mods.mekanism.chemical.injection.removeRecipe(<*>, item);
 	mods.mekanism.enrichment.removeRecipe(item);
 	mods.mekanism.purification.removeRecipe(<*>, item);
-	mods.nuclearcraft.manufactory.removeRecipeWithInput([item]);
-	mods.nuclearcraft.melter.removeRecipeWithInput([item]);
+	mods.nuclearcraft.Manufactory.removeRecipeWithInput(item);
+	mods.nuclearcraft.Melter.removeRecipeWithInput(item);
 	mods.tconstruct.Melting.removeRecipe(fluid, item);
 	mods.thermalexpansion.Crucible.removeRecipe(item);
 	mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, item);

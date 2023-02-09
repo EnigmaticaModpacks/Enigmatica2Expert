@@ -58,9 +58,9 @@ recipes.addShaped("EnergyOutHatch2", <modularmachinery:blockenergyoutputhatch:2>
 
 recipes.addShaped("EnergyInHatch2", <modularmachinery:blockenergyinputhatch:2>, [[null, <actuallyadditions:block_laser_relay>, null],[<modularmachinery:blockcasing>, <enderio:block_buffer:1>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
 
-recipes.addShaped("FluidOutHatch2", <modularmachinery:blockfluidoutputhatch:2>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <nuclearcraft:buffer>, <modularmachinery:blockcasing>], [null, <advgenerators:fluid_output_select>, null]]);
+recipes.addShaped("FluidOutHatch2", <modularmachinery:blockfluidoutputhatch:2>, [[null, <modularmachinery:blockcasing>, null],[<modularmachinery:blockcasing>, <nuclearcraft:fission_power_port>, <modularmachinery:blockcasing>], [null, <advgenerators:fluid_output_select>, null]]);
 
-recipes.addShaped("FluidInHatch2", <modularmachinery:blockfluidinputhatch:2>, [[null, <advgenerators:fluid_input>, null],[<modularmachinery:blockcasing>, <nuclearcraft:buffer>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
+recipes.addShaped("FluidInHatch2", <modularmachinery:blockfluidinputhatch:2>, [[null, <advgenerators:fluid_input>, null],[<modularmachinery:blockcasing>, <nuclearcraft:fission_power_port>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
 recipes.addShaped("FluidInHatch3", <modularmachinery:blockfluidinputhatch:3>, [[null, <actuallyadditions:block_laser_relay_fluids>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidinputhatch:2>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
 recipes.addShaped("FluidInHatch4", <modularmachinery:blockfluidinputhatch:4>, [[null, <actuallyadditions:block_laser_relay_fluids>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidinputhatch:3>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);
 recipes.addShaped("FluidInHatch5", <modularmachinery:blockfluidinputhatch:5>, [[null, <actuallyadditions:block_laser_relay_fluids>, null],[<modularmachinery:blockcasing>, <modularmachinery:blockfluidinputhatch:4>, <modularmachinery:blockcasing>], [null, <modularmachinery:blockcasing>, null]]);

@@ -83,12 +83,12 @@
 
   "exnihilocreatio:block_endstone_crushed": [
     { "meshLevel": 1, "drop": {"name": "minecraft:chorus_fruit"        , "meta": 0}  , "chance": 0.4},
-    { "meshLevel": 1, "drop": {"name": "nuclearcraft:compound"         , "meta": 8}  , "chance": 0.20},
+    { "meshLevel": 1, "drop": {"name": "nuclearcraft:compound"         , "meta": 9}  , "chance": 0.20},
     { "meshLevel": 1, "drop": {"name": "endreborn:item_lormyte_crystal", "meta": 0}  , "chance": 0.3 },
     { "meshLevel": 1, "drop": {"name": "jaopca:item_pieceuranium"      , "meta": 0}  , "chance": 0.3 },
 
     { "meshLevel": 2, "drop": {"name": "minecraft:chorus_fruit"       , "meta": 0}  , "chance": 0.6},
-    { "meshLevel": 2, "drop": {"name": "nuclearcraft:compound"        , "meta": 8}  , "chance": 0.4},
+    { "meshLevel": 2, "drop": {"name": "nuclearcraft:compound"        , "meta": 9}  , "chance": 0.4},
     { "meshLevel": 2, "drop": {"name": "appliedenergistics2:material" , "meta": 46} , "chance": 0.3},
     { "meshLevel": 2, "drop": {"name": "darkutils:shulker_pearl"      , "meta": 0}  , "chance": 0.1},
     { "meshLevel": 2, "drop": {"name": "endreborn:item_lormyte_crystal","meta": 0}  , "chance": 0.4},
@@ -98,7 +98,7 @@
 
     { "meshLevel": 3, "drop": {"name": "minecraft:chorus_fruit"       , "meta": 0}  , "chance": 1.0},
     { "meshLevel": 3, "drop": {"name": "minecraft:chorus_fruit"       , "meta": 0}  , "chance": 0.5},
-    { "meshLevel": 3, "drop": {"name": "nuclearcraft:compound"        , "meta": 8}  , "chance": 0.8},
+    { "meshLevel": 3, "drop": {"name": "nuclearcraft:compound"        , "meta": 9}  , "chance": 0.8},
     { "meshLevel": 3, "drop": {"name": "appliedenergistics2:material" , "meta": 46} , "chance": 0.4},
     { "meshLevel": 3, "drop": {"name": "darkutils:shulker_pearl"      , "meta": 0}  , "chance": 0.2},
     { "meshLevel": 3, "drop": {"name": "jaopca:item_pieceuranium"     , "meta": 0}  , "chance": 0.5},
@@ -107,8 +107,8 @@
     { "meshLevel": 3, "drop": {"name": "biomesoplenty:crystal_shard"  , "meta": 0}  , "chance": 0.3},
     { "meshLevel": 3, "drop": {"name": "tconstruct:shard"              , "meta": 0, "nbt": "{Material:\"wolframium\"}"}, "chance": 0.6},
 
-    { "meshLevel": 4, "drop": {"name": "nuclearcraft:compound"        , "meta": 8}  , "chance": 1.0},
-    { "meshLevel": 4, "drop": {"name": "nuclearcraft:compound"        , "meta": 8}  , "chance": 0.2},
+    { "meshLevel": 4, "drop": {"name": "nuclearcraft:compound"        , "meta": 9}  , "chance": 1.0},
+    { "meshLevel": 4, "drop": {"name": "nuclearcraft:compound"        , "meta": 9}  , "chance": 0.2},
     { "meshLevel": 4, "drop": {"name": "appliedenergistics2:material" , "meta": 46} , "chance": 0.5},
     { "meshLevel": 4, "drop": {"name": "darkutils:shulker_pearl"      , "meta": 0}  , "chance": 0.3},
     { "meshLevel": 4, "drop": {"name": "jaopca:item_pieceuranium"     , "meta": 0}  , "chance": 0.6},
@@ -215,7 +215,6 @@
 
   "advancedrocketry:hotturf:0": [
     {"meshLevel": 3, "drop": {"name": "ic2:dust"                             , "meta": 13}   , "chance": 0.8} ,
-    {"meshLevel": 3, "drop": {"name": "nuclearcraft:dust_oxide"              , "meta": 3}    , "chance": 0.4} ,
     {"meshLevel": 3, "drop": {"name": "environmentaltech:lonsdaleite_crystal", "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "jaopca:item_pieceastralstarmetal"     , "meta": 0}    , "chance": 0.1} ,
     {"meshLevel": 3, "drop": {"name": "jaopca:item_piecedraconium"           , "meta": 0}    , "chance": 0.05} ,
@@ -291,20 +290,17 @@
     {"meshLevel": 2, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.4} ,
     {"meshLevel": 2, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.15} ,
     {"meshLevel": 2, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.4} ,
-    {"meshLevel": 2, "drop": {"name": "nuclearcraft:gem_dust"                , "meta": 8}    , "chance": 0.2} ,
 
     {"meshLevel": 3, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.5} ,
     {"meshLevel": 3, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.5} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_iron"        , "meta": 0}    , "chance": 0.2} ,
-    {"meshLevel": 3, "drop": {"name": "nuclearcraft:gem_dust"                , "meta": 8}    , "chance": 0.3} ,
 
     {"meshLevel": 4, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.6} ,
     {"meshLevel": 4, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.25} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.6} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_iron"        , "meta": 0}    , "chance": 0.25} ,
-    {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_gold"        , "meta": 0}    , "chance": 0.25},
-    {"meshLevel": 4, "drop": {"name": "nuclearcraft:gem_dust"                , "meta": 8}    , "chance": 0.4}
+    {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_gold"        , "meta": 0}    , "chance": 0.25}
   ],
 
   "quark:gravisand:0": [

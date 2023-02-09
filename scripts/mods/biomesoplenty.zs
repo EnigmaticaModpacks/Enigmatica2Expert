@@ -108,7 +108,7 @@ scripts.process.melt(<biomesoplenty:terrestrial_artifact>, <liquid:terrestrial> 
 scripts.process.melt(<contenttweaker:terrestrial_artifact_block>, <liquid:terrestrial> * 1296);
 mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:terrestrial_artifact_block>, null, <liquid:terrestrial>, 1296);
 mods.tconstruct.Casting.addTableRecipe(<biomesoplenty:terrestrial_artifact>, <tconstruct:cast_custom:2>, <liquid:terrestrial>, 144, false);
-mods.nuclearcraft.ingot_former.addRecipe([<liquid:terrestrial>*144, <biomesoplenty:terrestrial_artifact>, 1.0, 1.0]);
+mods.nuclearcraft.IngotFormer.addRecipe(<liquid:terrestrial>*144, <biomesoplenty:terrestrial_artifact>, 1.0, 1.0);
 mods.forestry.Centrifuge.addRecipe([
 	terrIngrs['0'].items[0] % 100,
 	terrIngrs['1'].items[0] % 100,

@@ -23,7 +23,7 @@
 			id: "aeadditions:certustank",
 			tag: {
 				Fluid: {
-					FluidName: "neutron",
+					FluidName: "antihydrogen",
 					Amount: 32000
 				}
 			}
@@ -253,7 +253,7 @@
 			id: "ic2:fluid_cell",
 			tag: {
 				Fluid: {
-					FluidName: "plutonium",
+					FluidName: "plutonium_242",
 					Amount: 1000
 				}
 			}

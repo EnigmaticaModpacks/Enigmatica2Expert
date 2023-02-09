@@ -234,7 +234,7 @@
 						"size-variance": 8
 					}, {
 						"type": "stalagmite",
-						"block": "nuclearcraft:block_ice",
+						"block": "nuclearcraft:supercold_ice",
 						"material": "packed_ice",
 						"gen-body": ["snow_layer", "air"],
 						"min-height": 10,
