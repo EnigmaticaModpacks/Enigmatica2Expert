@@ -430,6 +430,227 @@ scripts.process.electrolyze(<fluid:nitric_oxide> * 100, [<fluid:nitrogen> * 500,
 // Remove worthless recipes
 // ------------------------------------------------------------
 
+// Unimplemented multiblocks
+utils.rh(<nuclearcraft:heat_exchanger_controller>);
+utils.rh(<nuclearcraft:condenser_controller>);
+utils.rh(<nuclearcraft:fission_monitor>);
+utils.rh(<nuclearcraft:fission_computer_port>);
+utils.rh(<nuclearcraft:fission_shield_manager>);
+utils.rh(<nuclearcraft:turbine_computer_port>);
+utils.rh(<nuclearcraft:heat_exchanger_casing>);
+utils.rh(<nuclearcraft:heat_exchanger_glass>);
+utils.rh(<nuclearcraft:heat_exchanger_vent>);
+utils.rh(<nuclearcraft:heat_exchanger_tube_copper>);
+utils.rh(<nuclearcraft:heat_exchanger_tube_hard_carbon>);
+utils.rh(<nuclearcraft:heat_exchanger_tube_thermoconducting>);
+utils.rh(<nuclearcraft:heat_exchanger_computer_port>);
+utils.rh(<nuclearcraft:condenser_tube_copper>);
+utils.rh(<nuclearcraft:condenser_tube_hard_carbon>);
+utils.rh(<nuclearcraft:condenser_tube_thermoconducting>);
+
+// Alloy furnace meant to be only for blocks
+// Remove all ingot and nugget recipes that have blocks
+for alloy in [
+  <thermalfoundation:material:163> * 4,
+  <thermalfoundation:material:227> * 4,
+  <tconstruct:ingots:2>,
+  <tconstruct:nuggets:2>,
+  <thermalfoundation:material:161> * 2,
+  <thermalfoundation:material:225> * 2,
+  <thermalfoundation:material:162> * 3,
+  <thermalfoundation:material:226> * 3,
+  <thermalfoundation:material:164> * 2,
+  <thermalfoundation:material:228> * 2,
+  <advancedrocketry:productingot> * 3,
+  <advancedrocketry:productnugget> * 3,
+  <thaumcraft:ingot:2> * 4,
+  <advancedrocketry:productingot:1> * 2,
+  <advancedrocketry:productnugget:1> * 2,
+  <plustic:osmiridiumingot> * 2,
+  <plustic:osmiridiumnugget> * 2,
+  <immersiveengineering:metal:5> * 10,
+  <nuclearcraft:ingot:5> * 12,
+  <nuclearcraft:ingot:6> * 10,
+  <nuclearcraft:ingot:7> * 9,
+  <tconstruct:ingots:5> * 4,
+] as IItemStack[] {
+  mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(alloy);
+}
+
+// Pebble ingredients
+utils.rh(<nuclearcraft:part:15>);
+utils.rh(<nuclearcraft:alloy:13>);
+
+// [mod][data_type][name][count]
+val nuclearData = {
+  nuclearcraft: {
+    americium: 3,
+    berkelium: 2,
+    californium: 4,
+    curium: 6,
+    mixed: 2,
+    neptunium: 2,
+    plutonium: 4,
+    thorium: 1,
+    uranium: 4,
+  },
+  qmd: {
+    copernicium: 1,
+  }
+} as int[string][string];
+
+function get(mod as string, pfx as string, key as string, i as int) as IItemStack {
+  val j = i * (pfx==''?5:pfx.endsWith('fuel_')?4:2);
+  val item = itemUtils.getItem(mod+':'+pfx+key, j);
+  if(isNull(item)) print('~~ this item doesnt exist: '+mod+':'+key+':'+j);
+  return item;
+}
+
+for mod, types in nuclearData {
+  for key, value in types {
+    for i in 0 .. value {
+      val isotope         = itemUtils.getItem(mod+':'+key, i*5);
+      val isotope_carbide = itemUtils.getItem(mod+':'+key, i*5+1);
+      val isotope_oxide   = itemUtils.getItem(mod+':'+key, i*5+2);
+      val isotope_nitride = itemUtils.getItem(mod+':'+key, i*5+3);
+      val isotope_zirc    = itemUtils.getItem(mod+':'+key, i*5+4);
+      val  pellet         = itemUtils.getItem(mod+':pellet_'+key, i*2);
+      val  pellet_carbide = itemUtils.getItem(mod+':pellet_'+key, i*2+1);
+      val    fuel         = itemUtils.getItem(mod+':fuel_'+key, i*4);
+      val    fuel_carbide = itemUtils.getItem(mod+':fuel_'+key, i*4+1);
+      val    fuel_oxide   = itemUtils.getItem(mod+':fuel_'+key, i*4+2);
+      val    fuel_nitride = itemUtils.getItem(mod+':fuel_'+key, i*4+3);
+
+      // Remove unoxidation and unnitridation recipes
+      if(!isNull(isotope)) furnace.remove(isotope);
+      if(!isNull(pellet)) furnace.remove(pellet);
+      if(!isNull(fuel)) furnace.remove(fuel);
+
+      // Pebbles in fuel reprocessor
+      if(key!='americium' && i!=2) {
+        val pebble = itemUtils.getItem(mod+':depleted_fuel_'+key, i*4);
+        mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(pebble * 9);
+        utils.rh(pebble);
+        mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
+        utils.rh(pellet_carbide);
+      }
+
+      if(key!='mixed' && key!='thorium'
+        && !(key=='curium' && i >= 4)
+        && !(key=='uranium' && i >= 3)
+      ) {
+        mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(isotope_carbide);
+        if ((key=='americium' && i == 2)
+          ||(key=='curium'    && (i == 1 || i == 2 || i == 3))
+          ||(key=='neptunium' && (i == 1))
+          ||(key=='plutonium' && (i == 1 || i == 2 || i == 3))
+          ||(key=='uranium'   && (i == 0 || i == 1 || i == 2))
+        ) {
+          mods.nuclearcraft.DecayHastener.removeRecipeWithOutput(isotope_carbide);
+        }
+        utils.rh(isotope_carbide);
+      }
+    }
+  }
+}
+
+// Concrete watering
+for i in 0 .. 16 {
+  mods.nuclearcraft.Infuser.removeRecipeWithOutput(<minecraft:concrete>.definition.makeStack(i));
+}
+
+val coolants = {
+  // water       : 55,
+  iron           : 50,
+  redstone       : 85,
+  quartz         : 80,
+  obsidian       : 70,
+  nether_brick   : 105,
+  glowstone      : 90,
+  lapis          : 100,
+  gold           : 110,
+  prismarine     : 115,
+  slime          : 145,
+  end_stone      : 65,
+  purpur         : 95,
+  diamond        : 200,
+  emerald        : 195,
+  copper         : 75,
+  tin            : 120,
+  lead           : 60,
+  boron          : 160,
+  lithium        : 130,
+  magnesium      : 125,
+  manganese      : 150,
+  aluminum       : 175,
+  silver         : 170,
+  fluorite       : 165,
+  villiaumite    : 180,
+  carobbiite     : 140,
+  arsenic        : 135,
+  liquid_nitrogen: 185,
+  liquid_helium  : 190,
+  enderium       : 155,
+  cryotheum      : 205,
+} as int[string];
+
+for coolant, cooling in coolants {
+  mods.nuclearcraft.Centrifuge.removeRecipeWithInput(game.getLiquid(coolant+'_nak') * 144);
+  val f = game.getLiquid(coolant+'_nak_fluoride_flibe');
+  if(!isNull(f)) mods.nuclearcraft.Centrifuge.removeRecipeWithInput(f * 72);
+}
+
+for fluid in [
+  'hea_242' , 'heb_248' , 'hecf_249', 'hecf_251',
+  'hecm_243', 'hecm_245', 'hecm_247', 'hen_236',
+  'hep_239' , 'hep_241' , 'heu_233' , 'heu_235',
+  'lea_242' , 'leb_248' , 'lecf_249', 'lecf_251',
+  'lecm_243', 'lecm_245', 'lecm_247', 'len_236',
+  'lep_239' , 'lep_241' , 'leu_233' , 'leu_235',
+  'mix_239' , 'mix_241' , 'tbu',
+] as string[] {
+  if(fluid != 'tbu')
+    mods.nuclearcraft.Centrifuge.removeRecipeWithInput(game.getLiquid(fluid) * 144);
+  
+  // Add Electolyze recipes
+  scripts.process.electrolyze(
+    game.getLiquid('depleted_'+fluid+'_fluoride') * 72, [
+      game.getLiquid('depleted_'+fluid) * 72,
+      <fluid:fluorine> * 500
+    ], null, elOpts);
+}
+
+// ------------------------------------------------------------
+// HeatExchanger replacement
+// ------------------------------------------------------------
+mods.nuclearcraft.HeatExchanger.removeAllRecipes();
+
+val waterRequired = {
+  water             : 100,
+  preheated_water   : 50,
+  ic2hot_water      : 30,
+  hot_spring_water  : 20,
+  ic2distilled_water: 25,
+  distwater         : 25,
+} as int[string];
+
+for coolant, cooling in coolants {
+  val cold= game.getLiquid(coolant+'_nak');
+  val hot = game.getLiquid(coolant+'_nak_hot');
+  val HPS = <fluid:high_pressure_steam>;
+  for fluid, amount in waterRequired {
+    mods.immersivetechnology.HeatExchanger.addRecipe(
+      cold * amount, HPS * (400 * cooling), hot * amount, game.getLiquid(fluid) * (100 * cooling), 32000, 2
+    );
+  }
+}
+
+// ------------------------------------------------------------
+// Condenser replacement
+// ------------------------------------------------------------
+mods.nuclearcraft.Condenser.removeAllRecipes();
+mods.immersivetechnology.Radiator.addRecipe(<liquid:condensate_water> * 100, <liquid:exhaust_steam> * 100, 4);
+mods.immersivetechnology.Radiator.addRecipe(<liquid:condensate_water> * 100, <liquid:low_quality_steam> * 100, 4);
 
 // ------------------------------------------------------------
 // Piles and Batteries rework
