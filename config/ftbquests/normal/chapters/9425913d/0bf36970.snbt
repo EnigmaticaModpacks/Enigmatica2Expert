@@ -2,7 +2,7 @@
 	title: "{q.gates.gate_nuclearcraft.name}",
 	icon: "nuclearcraft:solid_fission_controller",
 	x: -0.5d,
-	y: 2.166666666666667d,
+	y: 3.83d,
 	text: [
 		"{q.gates.gate_nuclearcraft.desc}"
 	],

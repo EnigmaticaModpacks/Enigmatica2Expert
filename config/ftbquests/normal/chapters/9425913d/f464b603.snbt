@@ -7,11 +7,12 @@
 	],
 	hide_dependency_lines: true,
 	dependencies: [
-		"5672d99b",
 		"bd7fc30c",
-		"cabe63d2",
+		"0bf36970",
 		"1bd15ee4",
 		"d1308656",
+		"5672d99b",
+		"cabe63d2",
 		"48f0d63f"
 	],
 	size: 0.75d,
