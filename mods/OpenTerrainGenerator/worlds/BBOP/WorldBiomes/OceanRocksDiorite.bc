@@ -178,13 +178,6 @@ FogThunderWeight: 0.5
 #######################################################################
 
 Dungeon(8,100.0,0,160)
-Ore(COAL_ORE,17,20,100.0,0,127,STONE:0)
-Ore(IRON_ORE,9,20,100.0,0,63,STONE:0)
-Ore(GOLD_ORE,9,2,100.0,0,31,STONE:0)
-Ore(REDSTONE_ORE,8,8,100.0,0,15,STONE:0)
-Ore(DIAMOND_ORE,8,1,100.0,0,15,STONE:0)
-Ore(LAPIS_ORE,7,1,100.0,0,15,STONE:0)
-Ore(EMERALD_ORE,7,1,75.0,4,32,STONE:0)
 CustomStructure(RiverRocks,0.5)
 CustomStructure(RiverRocks,0.5)
 SmallLake(LAVA,6,33.0,1,8)
