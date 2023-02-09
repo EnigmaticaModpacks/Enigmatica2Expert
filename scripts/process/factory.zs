@@ -20,6 +20,11 @@
 import scripts.process.work.Work;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.WeightedItemStack;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.data.IData;
 
 #priority 2000
 #norun
@@ -40,4 +45,21 @@ zenClass Process {
   #------------------------------------------------------------------
 
 }
-global process as Process = Process();
+global Process as Process = Process();
+
+
+zenClass Factory {
+	zenConstructor() {}
+
+  #------------------------------------------------------------------
+  # Public Methods
+  #------------------------------------------------------------------
+  function register() as void {
+    
+  }
+
+  #------------------------------------------------------------------
+  # Private Methods
+  #------------------------------------------------------------------
+
+}

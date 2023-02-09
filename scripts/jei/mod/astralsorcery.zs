@@ -107,3 +107,94 @@ for _y in 0 .. (mineralisList.length / 9 + 1) as int {
 }
 
 addRecipe(x, {[] : mineralisList});
+
+
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+
+// Taken from https://github.com/Filostorm/Multiblock-Madness/blob/19659008c64234f96d5607df3f9ca6df7adee778/scripts/Non%20Mod%20Scripts/jei_requious.zs
+
+// // --== Stellar Refraction Table ==-- //
+// // TODO Can consider replacing books with items representing enchants for better readability?
+// var refraction_table = <assembly:refraction_table>;
+// refraction_table.addJEICatalyst(<astralsorcery:blockmapdrawingtable>);
+// refraction_table.addJEICatalyst(<astralsorcery:iteminfusedglass>);
+// refraction_table.setJEIItemSlot(0, 0, "constellation");
+// refraction_table.setJEIDurationSlot(1, 0, "duration", getVisSlots(1,7));
+// refraction_table.setJEIItemSlot(2, 0, "enchantment");
+// refraction_table.setJEIItemSlot(3, 0, "potion");
+
+
+// // Doesn't work because CT can't cast IData[] to IData
+// // function enchantedBook(enchantments as int[][]) as IItemStack {
+// //   var enchantmentList = [] as IData[];
+// //   for enchantment in enchantments {
+// //     var enchantment_nbt = {
+// //       lvl: enchantment[1],
+// //       id: enchantment[0]
+// //     } as IData;
+// //     enchantmentList += enchantment_nbt;
+// //   }
+// //   return <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantmentList});
+// // }
+
+// // Returns an enchanted book given a 2D array of enchantment ids to levels. Can only accept up to 4 enchants
+
+// function enchantedBook(enchantments as IEnchantment[]) as IItemStack {
+//   var enchant_count = enchantments.length;
+
+//   if (enchant_count == 1) {
+//     return <minecraft:enchanted_book>.withTag({StoredEnchantments: enchantments[0].makeTag().ench});
+//   }
+//   else if (enchant_count == 2) {
+//     return <minecraft:enchanted_book>.withTag({StoredEnchantments: [enchantments[0].makeTag().ench[0], 
+//     enchantments[1].makeTag().ench[0]]});
+//   }
+//   else if (enchant_count == 3) {
+//     return <minecraft:enchanted_book>.withTag({StoredEnchantments: [enchantments[0].makeTag().ench[0], 
+//     enchantments[1].makeTag().ench[0], enchantments[2].makeTag().ench[0]]});
+//   }
+//   else if (enchant_count == 4) {
+//     return <minecraft:enchanted_book>.withTag({StoredEnchantments: [enchantments[0].makeTag().ench[0], 
+//     enchantments[1].makeTag().ench[0], enchantments[2].makeTag().ench[0], enchantments[3].makeTag().ench[0]]});    
+//   }
+// }
+
+// // Adds Refraction Table outputs to the RQ JEI Page.
+
+// function addRefractionRecipe(info as string, enchantments as IEnchantment[], potions as IPotionEffect[]) {
+//     val assRec = AssemblyRecipe.create(function(container) {
+//       container.addItemOutput("enchantment", enchantedBook(enchantments));
+//       container.addItemOutput("potion", itemUtils.createPotion(potions).withDisplayName("§fStardew"));
+//     });
+//     assRec.requireItem("constellation", <astralsorcery:itemconstellationpaper>.withTag(
+//       {astralsorcery: {constellationName: "astralsorcery.constellation." ~ info}}
+//       ).withDisplayName("§f" ~ info));
+//     <assembly:refraction_table>.addJEIRecipe(assRec);
+// }
+
+// addRefractionRecipe("discidia", [<enchantment:minecraft:sharpness> * 7, <enchantment:minecraft:power> * 7], [<potion:minecraft:strength>.makePotionEffect(7200, 3)]);
+// addRefractionRecipe("armara", [<enchantment:minecraft:protection> * 5], [<potion:minecraft:resistance>.makePotionEffect(7200, 2)]);
+// addRefractionRecipe("vicio", [<enchantment:minecraft:feather_falling> * 5], [<potion:minecraft:speed>.makePotionEffect(7200, 3)]);
+// addRefractionRecipe("aevitas", [<enchantment:minecraft:mending> * 3], [<potion:minecraft:regeneration>.makePotionEffect(7200, 3)]);
+// addRefractionRecipe("evorsio", [<enchantment:minecraft:efficiency> * 5], [<potion:minecraft:haste>.makePotionEffect(7200, 3)]);
+// addRefractionRecipe("lucerna", [<enchantment:astralsorcery:enchantment.as.nightvision> * 1], [<potion:minecraft:night_vision>.makePotionEffect(7200, 2)]);
+// addRefractionRecipe("mineralis", [<enchantment:minecraft:fortune> * 3], [<potion:minecraft:haste>.makePotionEffect(7200, 3)]);
+// addRefractionRecipe("horologium", [<enchantment:minecraft:fortune> * 6, <enchantment:minecraft:looting> * 6], 
+// [<potion:minecraft:speed>.makePotionEffect(7200, 4), <potion:minecraft:haste>.makePotionEffect(7200, 8)]);
+// addRefractionRecipe("octans", [<enchantment:minecraft:respiration> * 4], [<potion:minecraft:water_breathing>.makePotionEffect(7200, 4)]);
+// addRefractionRecipe("bootes", [<enchantment:minecraft:silk_touch> * 1], [<potion:minecraft:saturation>.makePotionEffect(7200, 5)]);
+// addRefractionRecipe("fornax", [<enchantment:minecraft:fire_aspect> * 3, <enchantment:minecraft:flame> * 2, 
+// <enchantment:astralsorcery:enchantment.as.smelting> * 1], [<potion:minecraft:fire_resistance>.makePotionEffect(7200, 0)]);
+// addRefractionRecipe("pelotrio", [<enchantment:minecraft:infinity> * 1, <enchantment:minecraft:lure> * 6], 
+// [<potion:minecraft:regeneration>.makePotionEffect(7200, 4), <potion:minecraft:absorption>.makePotionEffect(7200, 4)]);
+// addRefractionRecipe("gelu", [<enchantment:minecraft:frost_walker> * 2, <enchantment:minecraft:feather_falling> * 4, <enchantment:minecraft:unbreaking> * 4], 
+// [<potion:minecraft:resistance>.makePotionEffect(7200, 2), <potion:minecraft:fire_resistance>.makePotionEffect(7200, 0), <potion:minecraft:slowness>.makePotionEffect(7200, 1)]);
+// addRefractionRecipe("ulteria", [<enchantment:minecraft:unbreaking> * 3, <enchantment:minecraft:fire_protection> * 6, 
+// <enchantment:minecraft:blast_protection> * 6, <enchantment:minecraft:projectile_protection> * 6], 
+// [<potion:minecraft:absorption>.makePotionEffect(7200, 2), <potion:minecraft:regeneration>.makePotionEffect(7200, 1), <potion:minecraft:weakness>.makePotionEffect(7200, 2)]);
+// addRefractionRecipe("alcara", [<enchantment:minecraft:sweeping> * 7, <enchantment:minecraft:lure> * 5, <enchantment:minecraft:luck_of_the_sea> * 6], 
+// [<potion:minecraft:luck>.makePotionEffect(7200, 4), <potion:minecraft:invisibility>.makePotionEffect(7200, 1),<potion:minecraft:hunger>.makePotionEffect(7200, 2)]);
+// addRefractionRecipe("vorux", [<enchantment:minecraft:smite> * 7, <enchantment:minecraft:bane_of_arthropods> * 7, 
+// <enchantment:minecraft:sharpness> * 4, <enchantment:minecraft:power> * 4], 
+// [<potion:minecraft:strength>.makePotionEffect(7200, 3), <potion:minecraft:resistance>.makePotionEffect(7200, 1),<potion:minecraft:mining_fatigue>.makePotionEffect(7200, 3)]);
