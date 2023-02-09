@@ -414,6 +414,19 @@ mods.industrialforegoing.Extractor.add(<advancedrocketry:moonturf_dark>, <fluid:
 mods.industrialforegoing.Extractor.add(<advancedrocketry:moonturf>, <fluid:helium_3> * 5);
 
 // ------------------------------------------------------------
+// Electrolyzer replacement
+// ------------------------------------------------------------
+val elOpts = {energy: 20000, time: 2} as crafttweaker.data.IData;
+scripts.process.electrolyze(<fluid:heavy_water> * 500, [<fluid:deuterium> * 500, <fluid:oxygen> * 250], null, elOpts);
+scripts.process.electrolyze(<fluid:ic2heavy_water> * 500, [<fluid:deuterium> * 500, <fluid:oxygen> * 250], null, elOpts);
+scripts.process.electrolyze(<fluid:hydrofluoric_acid> * 250, [<fluid:hydrogen> * 250, <fluid:fluorine> * 250], null, elOpts);
+scripts.process.electrolyze(<fluid:naoh> * 333, [<fluid:sodium> * 72, <fluid:water> * 250, <fluid:oxygen> * 125], null, elOpts);
+scripts.process.electrolyze(<fluid:koh> * 333, [<fluid:potassium> * 72, <fluid:water> * 250, <fluid:oxygen> * 125], null, elOpts);
+scripts.process.electrolyze(<fluid:alumina> * 72, [<fluid:aluminum> * 144, <fluid:oxygen> * 750], null, elOpts);
+scripts.process.electrolyze(<fluid:sodium_chloride_solution> * 1332, [<fluid:hydrogen> * 1000, <fluid:chlorine> * 1000, <fluid:sodium_hydroxide_solution> * 1332], null, elOpts);
+scripts.process.electrolyze(<fluid:nitric_oxide> * 100, [<fluid:nitrogen> * 500, <fluid:oxygen> * 500], null, elOpts);
+
+// ------------------------------------------------------------
 // Remove worthless recipes
 // ------------------------------------------------------------
 

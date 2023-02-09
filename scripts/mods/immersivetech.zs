@@ -22,22 +22,26 @@ craft.shapeless(<immersivetech:stone_decoration> * 8, "CCCC⌂CCCC", {
 
 #------------------------------------------------------------------------
 # Harder Electolyze
-// mods.nuclearcraft.Electrolyser.removeRecipeWithInput(<fluid:water> * 1000);
 mods.mekanism.separator.removeRecipe(<liquid:water>);
 mods.mekanism.separator.addRecipe(<liquid:water> * 10, 800, <gas:hydrogen> * 2, <gas:oxygen>);
-mods.immersivetechnology.ElectrolyticCrucibleBattery.removeRecipe(<fluid:water> * 500);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
   <liquid:hydrogen> * 1000, <liquid:oxygen> * 500, <liquid:deuterium> * 50,
-  null, <fluid:water> * 500, 50000, 100
+  null, <fluid:water> * 500, 50000, 2
 );
 
 #------------------------------------------------------------------------
 # Harder Chlorine and Sodium
-// mods.nuclearcraft.Electrolyser.removeRecipeWithInput(<liquid:naoh> * 666);
 mods.mekanism.separator.removeRecipe(<liquid:brine>);
 mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
-  <liquid:liquidchlorine> * 3750, <liquid:liquidsodium> * 3750, null,
-  null, <liquid:brine> * 37500, 60000, 20
+  <liquid:liquidchlorine> * 375, <liquid:liquidsodium> * 375, null,
+  null, <liquid:brine> * 3750, 6000, 1
+);
+
+#------------------------------------------------------------------------
+# Restore Chlorine craft (since default recipes disabled)
+mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
+  <liquid:chlorine> * 1000, <liquid:moltensodium> * 1000, null,
+  null, <liquid:moltensalt> * 1000, 6000, 5
 );
 
 FluidDictionary.add("brine", "moltensalt", 6.6);

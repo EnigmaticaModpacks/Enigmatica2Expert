@@ -11,6 +11,8 @@ import scripts.jei.mod.ic2.addCrop as addCrop;
 <ic2:dynamite>.maxStackSize = 64;
 <ic2:dynamite_sticky>.maxStackSize = 64;
 
+utils.rh(<ic2:te:76>); // Electrolyzer
+
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
 	recipes.remove(<ic2:dust:3>);
 	recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", <ic2:dust:3>, [<ore:dustCoal>, <liquid:water> * 1000]);

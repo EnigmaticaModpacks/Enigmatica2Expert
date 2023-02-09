@@ -5,7 +5,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
-import mods.mekanism.MekanismHelper.getGas as getGas;
+import mods.mekanism.MekanismHelper.getGas;
 
 import scripts.processUtils.I;
 import scripts.processUtils.isNotException;
@@ -43,6 +43,14 @@ function getOption(options as IData, field as string) as IData {
       ? staticOpts.memberGet(field)
       : null
     );
+}
+
+function getOptionEnergy(options as IData, default as int) as int {
+  return (!isNull(options) && !isNull(options.energy)) ? options.energy as int : default;
+}
+
+function getOptionTime(options as IData, default as int) as int {
+  return (!isNull(options) && !isNull(options.time)) ? options.time as int : default;
 }
 
 # Picks one machine to inject recipe in it
@@ -540,7 +548,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "insolator") {
       #mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-      val energy = (!isNull(options) && !isNull(options.energy)) ? options.energy as int : 4800;
+      val energy = getOptionEnergy(options, 4800);
 
       if (inputItems.length == 2) {
         for ii in inputItems[0].itemArray {
@@ -633,7 +641,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
 
     if (machineName == "crucible") {
       # mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
-      val energy = (!isNull(options) && !isNull(options.energy)) ? options.energy as int : 5600;
+      val energy = getOptionEnergy(options, 5600);
       for ii in inputIngr0.itemArray {
         mods.thermalexpansion.Crucible.addRecipe(outputLiquid0, ii, energy);
       }
@@ -709,17 +717,37 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   # 💧 → [💧+]
   if (inputLiquidIsSingle && haveLiquidOutput) {
     
-    if (machineName == "ic2electrolyzer") {
-      # mods.ic2.Electrolyzer.addRecipe(ILiquidStack[] outputs, ILiquidStack input, int power, @Optional int time);
-      # mods.ic2.Electrolyzer.addRecipe(outputLiquids, inputLiquid0, 40);
-      return warning(machineNameAnyCase, inputLiquid0.name,
-      "process.work: IC2 Tweaker have bug for adding Electrolyzer recipe. Would be fixed if PR would merged");
+    if (machineName == "electrolyticcrucible") {
+      if (inputLiquids.length == 1 && outputLiquids.length > 0 && outputLiquids.length <= 3) {
+        mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(
+          outputLiquids[0],
+          outputLiquids.length >= 2 ? outputLiquids[1] : null,
+          outputLiquids.length >= 3 ? outputLiquids[2] : null,
+          null, // Output item
+          inputLiquid0,
+          getOptionEnergy(options, 60000), // Total energy for 1 run
+          getOptionTime(options, 20) // Time
+        );
+      } else {
+        return info(machineNameAnyCase, inputLiquid0.name, "received work, but not match inputs and outputs amount");
+      }
       return machineName;
     }
     
-    if (machineName == "ncelectrolyzer") {
-      # mods.nuclearcraft.Electrolyser.addRecipe(fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
-      mods.nuclearcraft.Electrolyzer.addRecipe(inputLiquid0, arrN_liq(outputLiquids, 0), arrN_liq(outputLiquids, 1), arrN_liq(outputLiquids, 2), arrN_liq(outputLiquids, 3), 40);
+    if (machineName == "electrolyticseparator") {
+      if (inputLiquids.length == 1 && outputLiquids.length == 2) {
+        val gas1 = getGas(outputLiquids[0].name);
+        val gas2 = getGas(outputLiquids[1].name);
+        if(isNull(gas1) || isNull(gas2))
+          return info(machineNameAnyCase, inputLiquid0.name, "unable to turn outputs into gases");
+        mods.mekanism.separator.addRecipe(
+          inputLiquid0 * (inputLiquid0.amount / 10), 800,
+          gas1 * (outputLiquids[0].amount / 10),
+          gas2 * (outputLiquids[1].amount / 10)
+        );
+      } else {
+        return info(machineNameAnyCase, inputLiquid0.name, "received work, but not match inputs and outputs amount");
+      }
       return machineName;
     }
   }

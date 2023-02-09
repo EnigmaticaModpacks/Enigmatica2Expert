@@ -187,11 +187,12 @@ function solution(inputItems as IIngredient[], inputLiquids as ILiquidStack[], o
 
 // Electrolyze
 // 💧 → [💧+]
-function electrolyze(inputLiquid as ILiquidStack, outputLiquids as ILiquidStack[], exceptions as string = null) {
-  work(['NCelectrolyzer', 'AdvRockElectrolyzer'], exceptions, null, [inputLiquid], null, outputLiquids, null, null);
-
-  // Temporary disabled during IC2 Tweaker bug
-  // work(["ic2electrolyzer"],    exceptions, null, [inputLiquid], null, outputLiquids, null, null);
+function electrolyze(inputLiquid as ILiquidStack, outputLiquids as ILiquidStack[], exceptions as string = null, options as IData = null) {
+  work([
+    'ElectrolytiCcrucible',
+    'ElectrolyticSeparator',
+    'AdvRockElectrolyzer'
+  ], exceptions, null, [inputLiquid], null, outputLiquids, null, null, options);
 }
 
 // Evaporate (dry) liquid to leave precipitate
