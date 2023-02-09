@@ -133,7 +133,7 @@ key_key.craftingtweaks.rotate_counter_clockwise:0
 key_key.craftingtweaks.rotate:0
 key_key.craftingtweaks.spread:0
 key_key.craftingtweaks.toggleButtons:0
-key_key.craftpresence.config_keycode.name:41
+key_key.craftpresence.config_keycode.name:40
 key_key.cycle_magnet_mode.desc:0
 key_key.debugDumpNBTBlock:0
 key_key.debugDumpNBTItem:0
@@ -243,6 +243,7 @@ key_key.open_wct.desc:58
 key_key.open_wft.desc:0
 key_key.open_wit.desc:0
 key_key.open_wpt.desc:0
+key_key.otghud.desc:24
 key_key.pickItem:-98
 key_key.ping:62
 key_key.playerlist:15
