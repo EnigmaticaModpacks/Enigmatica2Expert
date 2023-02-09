@@ -156,6 +156,7 @@ return result.map((line) => {
 <item:thermalfoundation:ore:6>                : <item:thermalfoundation:material:70>         * 4 ,
 <item:thermalfoundation:ore:7>                : <item:thermalfoundation:material:71>         * 4 ,
 <item:thermalfoundation:ore:8>                : <item:thermalfoundation:material:72>         * 4 ,
+<item:trinity:trinitite>                      : <item:jaopca:item_dusttrinitite>             * 4 ,
 <item:libvulpes:ore0>                         : <item:libvulpes:productdust>                 * 4 ,
 <item:libvulpes:ore0:8>                       : <item:libvulpes:productdust:7>               * 4 ,
 <item:biomesoplenty:dirt>                     : <item:biomesoplenty:mudball>                 * 4 ,

@@ -389,6 +389,11 @@ scripts.process.crush(<nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:ground_c
 # Bioplastic process
 scripts.process.extract(<ore:sugarcane> * 2, <ore:bioplastic>.firstItem);
 
+scripts.process.extract(<ore:dustVilliaumite>, <ore:dustSodiumFluoride>.firstItem);
+scripts.process.extract(<ore:dustCarobbiite>, <ore:dustPotassiumFluoride>.firstItem);
+scripts.process.extract(<ore:listAllporkraw>, <nuclearcraft:gelatin> * 8);
+scripts.process.extract(<ore:listAllfishraw>, <nuclearcraft:gelatin> * 4);
+
 // ------------------------------------------------------------
 // Remove worthless recipes
 // ------------------------------------------------------------

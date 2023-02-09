@@ -469,7 +469,7 @@ val itemsToRecycle as string[] = [
 ];
 
 # Exceptions for machines that can saw
-val sawExcs = "except: shapeless BlockCutter manufactory AdvRockCutter";
+val sawExcs = "except: shapeless BlockCutter AdvRockCutter";
 
 # Iterate list and call appropriate functions
 for i in 0 to itemsToRecycle.length {

@@ -185,12 +185,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       return machineName;
     }
 
-    if (machineName == "manufactory") {
-      if (strict) { mods.nuclearcraft.Manufactory.removeRecipeWithInput(inputIngr0); }
-      mods.nuclearcraft.Manufactory.addRecipe(inputIngr0, outputItem0);
-      return machineName;
-    }
-
     if (machineName == "pressurizer") {
       mods.nuclearcraft.Pressurizer.addRecipe(inputIngr0, outputItem0);
       return machineName;

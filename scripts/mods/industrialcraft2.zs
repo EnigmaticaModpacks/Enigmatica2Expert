@@ -440,7 +440,6 @@ mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:coal>);
 mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:coal_ore>);
 mods.mekanism.crusher.removeRecipe(<ic2:dust:2>);
 mods.mekanism.enrichment.removeRecipe(<ic2:dust:2>);
-mods.nuclearcraft.Manufactory.removeRecipeWithInput(<ic2:dust:2>);
 mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<thermalfoundation:material:160>);
 mods.nuclearcraft.Melter.removeRecipeWithInput(<ic2:dust:2>);
 mods.mekanism.reaction.removeRecipe(<ore:dustSulfur>, <gas:hydrogen>, <ic2:dust:2>);

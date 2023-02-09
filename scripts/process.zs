@@ -19,7 +19,7 @@
 // "macerator, SagMill"       - recipe will me added in all machines except Macerator and SagMill
 // "only: Macerator"          - recipe will be added to Macerator only
 // "only: Macerator SagMill"  - recipe will be added to Macerator and SagMill only
-// "strict: manufactory"      - recipe will be added to Manufactory only, but removed old recipe first
+// "strict: Macerator"        - recipe will be added to Macerator only, but removed old recipe first
 // "maceratorSagMill"         - wrong, words should be delimited with word boundrys
 // "only: blockCutter strict: shapeless" - added to blockCutter and shapeless,
 //    but shapeless would be removed first
@@ -79,7 +79,7 @@ function lF(output as ILiquidStack, mult as double) as ILiquidStack  {
 // Use sawblade to split item into pieces
 // 📦 → 📦
 function saw(input as IIngredient, output as IItemStack, exceptions as string = null, extra as IItemStack = null, extraChance as float = 0.0f) {
-  work(['shapeless', 'BlockCutter', 'mekSawmill', 'manufactory', 'TESawmill', 'AdvRockCutter'],
+  work(['shapeless', 'BlockCutter', 'mekSawmill', 'TESawmill', 'AdvRockCutter'],
     exceptions, [input], null, [output], null, [extra], [extraChance]);
 }
 
@@ -93,7 +93,6 @@ function sawWood(input as IIngredient, output as IItemStack, exceptions as strin
   work(['shapeless'],    exceptions, [input], null, [output * 2], null, [pulp], null);
   work(['BlockCutter'],  exceptions, [input], null, [output * 4], null, [pulp], null);
   work(['mekSawmill'],   exceptions, [input], null, [output * 4], null, [pulp], null);
-  work(['manufactory'],  exceptions, [input], null, [output * 5], null, [pulp], null);
   work(['TESawmill'],    exceptions, [input], null, [output * 6], null, [pulp], null);
   work(['AdvRockCutter'], exceptions, [input], null, [output * 10], null, [pulp], null);
 }
@@ -102,7 +101,7 @@ function sawWood(input as IIngredient, output as IItemStack, exceptions as strin
 // 📦 → 📦 + [📦]?
 function crush(input as IIngredient, output as IItemStack, exceptions as string = null, extra as IItemStack[] = null, extraChance as float[] = null, opts as IData = null) {
   for machine in [
-    'manufactory', 'Macerator', 'eu2Crusher',
+    'Macerator', 'eu2Crusher',
     'AACrusher', 'IECrusher', 'SagMill',
     'Grindstone', 'AEGrinder', 'ThermalCentrifuge',
     'Pulverizer', 'mekCrusher', 'crushingBlock',

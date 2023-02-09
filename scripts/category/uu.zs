@@ -865,7 +865,6 @@ static values as int[int][string] = {
   "opencomputers:printer": { 0: 810 },
   "industrialforegoing:tinydryrubber": { 0: 852 },
   "integrateddynamics:energy_battery": { 0: 871 },
-  "nuclearcraft:manufactory_idle": { 0: 887 },
   "enderio:block_fused_quartz": { 0: 892 },
   "bigreactors:ingotcyanite": { 0: 898 },
   "thaumcraft:nitor_yellow": { 0: 900 },

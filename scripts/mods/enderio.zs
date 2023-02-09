@@ -699,3 +699,15 @@ craft.remake(<enderio:block_enhanced_wired_charger>, ["pretty",
   "C": <ore:itemChassiParts>,        # Machine Parts
   "∩": <rats:charged_creeper_chunk>, # Charged Creeper Chunk
 });
+
+# [Grains of Prescience] from [Prescient Crystal]
+scripts.process.crush(<ore:itemPrecientCrystal>, <enderio:item_material:34>, 'only: eu2Crusher AACrusher');
+
+# [Grains of Vibrancy] from [Vibrant Crystal]
+scripts.process.crush(<ore:itemVibrantCrystal>, <enderio:item_material:35>, 'only: eu2Crusher AACrusher');
+
+# [Grains of Piezallity] from [Pulsating Crystal]
+scripts.process.crush(<ore:itemPulsatingCrystal>, <enderio:item_material:36>, 'only: eu2Crusher AACrusher');
+
+# [Grains of the End] from [Ender Crystal]
+scripts.process.crush(<ore:itemEnderCrystal>, <enderio:item_material:37>, 'only: eu2Crusher AACrusher');
