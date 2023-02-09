@@ -24,3 +24,13 @@ craft.shapeless(<sonarcore:reinforcedstoneblock> * 36, "░#", {
   "░": <ore:compressed1xCobblestone>, # Compressed Cobblestone
   "#": <ore:compressedLogWood1x>, # Single Compressed Wood
 });
+
+// Same resistance as Obsidian
+<sonarcore:reinforcedstoneblock>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonestairs>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonefence>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonegate>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonebrick>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonebrickstairs>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonebrickfence>.asBlock().definition.resistance = 180;
+<sonarcore:reinforcedstonebrickgate>.asBlock().definition.resistance = 180;
