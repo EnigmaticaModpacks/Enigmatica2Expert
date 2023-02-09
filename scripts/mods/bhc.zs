@@ -1,5 +1,7 @@
 #modloaded bhc
 
+utils.rh(<bhc:wither_bone>);
+
 # [Relic Apple]*2 from [Exhausting Apple][+2]
 craft.reshapeless(<bhc:relic_apple> * 2, "q§M", {
   "q": <ore:quicksilver>,              # Quicksilver

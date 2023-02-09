@@ -159,7 +159,7 @@ COMMON: [[
     <rustic:fluid_bottle>.withTag(sNBT('{Fluid: {FluidName: "mead", Amount: 1000, Tag: {Quality: 1.0f}}}')),
   ], [
     <mysticalagriculture:prudentium_apple>,
-    <bhc:relic_apple> * 4,
+    <thaumicenergistics:blank_knowledge_core> * 2,
     <thaumcraft:curio:5> * 4,
     <tconstruct:materials:19> * 5,
     <cyclicmagic:apple>,

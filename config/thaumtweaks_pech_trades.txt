@@ -116,7 +116,7 @@ COMMON:
 	rustic:fluid_bottle {Fluid: {FluidName: "mead", Amount: 1000, Tag: {Quality: 1.0f}}} // Bottle of Mead
 	2:
 	mysticalagriculture:prudentium_apple // Prudentium Apple
-	bhc:relic_apple 4 // Relic Apple
+	thaumicenergistics:blank_knowledge_core 2 // Relic Apple
 	thaumcraft:curio:5 4 // Twisted Curiosity
 	tconstruct:materials:19 5 // Mending Moss
 	cyclicmagic:apple // Apple Sprout

@@ -97,7 +97,6 @@
   "spectral_edge": "1.0",
   "ftbbackups": "1.1.0.1",
   "rats": "3.2.14",
-  "bhc": "2.0.3",
   "integratedterminalscompat": "1.0.0",
   "gendustryjei": "1.0.2",
   "botania_tweaks_core": "-100",
