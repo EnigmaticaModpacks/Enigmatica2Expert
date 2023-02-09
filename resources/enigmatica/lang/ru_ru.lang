@@ -182,6 +182,12 @@ tooltips.lang.kill.slime.by.zombie=§aПадает когда Зомби уби�
 tooltips.lang.kill.slime.by.enderman=§aПадает когда §nЭндермен§r убивает §nСлайма§r
 tooltips.lang.kill.slime.by.marbled_cheese_golem=§2Падает когда §nРатландский Автоматон§2 убивает §nСлайма
 tooltips.lang.kill.slime.by.cockatrice=§2Падает когда §nКокатрикс§2 убивает §nСлайма
+tooltips.lang.excavate.overrides=§6Экскаватор встроен.\n%s
+tooltips.lang.speed=Скорость
+tooltips.lang.limit=Предел
+tooltips.lang.range=Дальность
+tooltips.lang.exaustion=Усталость
+tooltips.lang.experience=Опыт
 
 tooltips.dim_stages.healthy=§4Вам нужно иметь хотя бы §6%s HP§4 (%s сердец) что бы посетить §cНезер
 tooltips.dim_stages.healthy_grant=Вы набрали §6%s HP§r (%s сердец)!§r Теперь вы можете посетить §cНезер

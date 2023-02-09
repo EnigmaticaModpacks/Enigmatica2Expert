@@ -1,12 +1,12 @@
 {
   "overrides": [
-    {
-      "itemID": "examplemod:nerfed_pickaxe:0",
-      "speed": 1,
-      "limit": 0,
-      "range": 0,
-      "exaustion": 0.1,
-      "experience": 0
-    }
+     {"itemID": "oeintegration:excavatemodifier", "speed":  1, "limit":  16, "range": 10, "exaustion": 0.1, "experience": 0}
+    ,{"itemID": "tconstruct:moms_spaghetti"     , "speed":  1, "limit": 256, "range":  5, "exaustion": 1.0, "experience": 0}
+    ,{"itemID": "forestry:bronze_pickaxe"       , "speed":  5, "limit":  64, "range": 24, "exaustion": 0.1, "experience": 1}
+    ,{"itemID": "forestry:bronze_shovel"        , "speed":  5, "limit":  64, "range": 24, "exaustion": 0.1, "experience": 1}
+    ,{"itemID": "immersiveengineering:drill"    , "speed": 32, "limit": 128, "range": 24, "exaustion": 0.0, "experience": 0}
+    ,{"itemID": "ic2:drill"                     , "speed": 32, "limit": 256, "range": 24, "exaustion": 0.1, "experience": 0}
+    ,{"itemID": "ic2:diamond_drill"             , "speed": 64, "limit": 256, "range": 24, "exaustion": 0.1, "experience": 0}
+    ,{"itemID": "ic2:iridium_drill"             , "speed":128, "limit": 512, "range": 24, "exaustion": 0.1, "experience": 0}
   ]
 }
