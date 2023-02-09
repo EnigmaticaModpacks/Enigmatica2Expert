@@ -7,7 +7,6 @@ var categoriesToHide as string[] = [
 	"thermaldynamics.covers",
 	"thermalexpansion.furnace",
 	"forestry.bottler",
-	"ic2.scrapbox",
 	"xu2_machine_extrautils2:furnace",
 	"xu2_machine_extrautils2:generator_survival",
 	"xu2_machine_extrautils2:generator",
