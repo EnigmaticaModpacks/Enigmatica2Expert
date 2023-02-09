@@ -58,9 +58,9 @@ import {
   setBlockDrops,
 } from '../lib/utils.js'
 
-const argv = yargs(process.argv.slice(2))
-  .alias('t', 'test')
-  .describe('t', 'Only test function').parseSync()
+// const argv = yargs(process.argv.slice(2))
+//   .alias('t', 'test')
+//   .describe('t', 'Only test function').parseSync()
 
 function saveObjAsJson(obj, filename) {
   saveText(JSON.stringify(obj, null, 2), filename)
@@ -109,7 +109,6 @@ function formatOutput(injectValue) {
 // ----------------------------------
 
 export async function init(h = defaultHelper) {
-  if (argv.test) return
   const occurences = []
 
   await h.begin('Searching Inject_js blocks in .zs files')
@@ -187,6 +186,6 @@ export async function init(h = defaultHelper) {
 }
 
 // Test section:
-// (async () => console.log('\n', formatOutput((() => {})())))()
+// (async () => { console.log('\n', formatOutput((() => {})())); process.exit(0) })()
 
 if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()

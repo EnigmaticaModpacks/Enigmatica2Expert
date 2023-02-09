@@ -2,11 +2,20 @@
 
 List of priorities:
 
-- [ ] ✏️ Conglomerate of life cheaper
-- [ ] ✏️ Matter Balls craftable without compressor
-- [ ] ✏️ Remove AdvGen Gas intake due gas dupe
-- [ ] 🔄 Modular Machinery multiblocks not in JEI https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/150
+- [ ] ✏️ Better Integrate `QMD`
+- [ ] ✏️ Better Integrate `Trinity`
+- [ ] ✏️ Add usage of `Perfect Fuel` in NCO (with `flux goo` as sub-product)
+- [ ] ✏️ Remove `Fuel Pebbles`
+- [ ] ✏️ Unify `Mercury`
+- [ ] ✏️ Unify `Sodium Chloride`
+- [ ] ✏️ Add more `Mutagen` recipes
+- [ ] ✏️ Fix Quark Roots spawned mid air https://github.com/Rebirth-of-the-Night/Quark/issues/16
+- [ ] ✏️ Change recipes of *Enchanted* and *Evil Infused* metals from modded alloys instead of vanilla
+- [ ] 🔄 Disable Mob spawn on bedrock ore
+- [ ] 📖 Add note about Multiblock Madness modpack
 
+Tests required
+- Check BOP generation
 
 ---
 
@@ -16,8 +25,29 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Add Tier6 Blood Magic Altair
+- [ ] 🔄 Move FTB ranks to default configs
+- [ ] ✏️ Some QBD / NCO craft MUST use <opencomputers:print>
+- [ ] ✏️ Remove Fiery fruit from Target Chamber recipe
+- [ ] 🔄 Inspect crash when placing Replicator near energy and break it
+- [ ] 🔄 Shooting Flamed arrows into IceAndFire dragon caused client crash. Checked - Quark not a reason. `"Spreading Fire"=false` and `burningArrowsSetBlocksOnFire=false` not helps too. 
+- [ ] 🟢 add **Villager Trade Tables**
+- [ ] 📖 Add quest book chapter about built-in excavators
+- [ ] 📖 Add message about mining Ores in Nether that aggro Pigman. Use whitelist, ignore if Peaceful.
+- [ ] 📖 Give player `Tier1 box` instead of putting Decor into Common boxes
+- [ ] 🔨 All casts should be made from same material (probably stone) to avoid crowding JEI
+- [ ] ✏️ Completely remove Ore Pieces and replace them to essense
+- [ ] ✏️ Add hand framing from Nomifactory
+- [ ] ✏️ Re-integrate `Amber`. But why?
+- [ ] ✏️ Add Nether *Portal Spread Amplifier* - machine that increase speed of Nether spreading
+- [ ] ✏️ Creative Vending uncraftable because Mek blocks have tags. Through, they can be cleared first.
+- [ ] ✏️ Matter Balls craftable without compressor (they still obtainable through scrap boxes)
+- [ ] ✏️ Re-integrate NCO `Melter`. All things meltable in Melter should be meltable in Smeltery
+- [ ] ✏️ Remove recipes from `config\mysticalagriculture_recipes.cfg`
+- [ ] 🔄 TF textures for doors/trapdoors can be taken from Multiblock Madness
 - [ ] ✏️ Cant make Bauble => advanced rings. Recipe functions prevent this from happen
 - [ ] 📖 `AnyMeatraw` should cycle in JEI. This usually possible with ore.firstItem, but not working for some reason.
+- [ ] 🔨 Add trait that auto-consume Sharpening Kits to repair TCon Tools
 - [ ] 🔨 Rework Grinding trait
 - [ ] ✏️ Add AS Grindstone recipe that rely on doubling chance mechanic
 - [ ] ✏️ Return Ethereal trees
@@ -41,7 +71,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Enthropy stone add usage
 - [ ] ✏️ Compressed Block remove too much aspects - they could be easy used to spawn rifts
 - [ ] ✏️ Add craft mechanic - Mud Ball hit something (humilate)
-- [ ] 📀 Buff dev/null/ to hold more then 64 blocks
+- [ ] 📀 Buff dev/null/ to hold more then 64 blocks. Can be done with CT and events
 - [ ] 📖 Add little tiles fancy chest with lot of space
 - [ ] 📖 Fix "5.12E11d" strings in .ts code
 - [ ] 📖 Add mobs in Mek's gear
