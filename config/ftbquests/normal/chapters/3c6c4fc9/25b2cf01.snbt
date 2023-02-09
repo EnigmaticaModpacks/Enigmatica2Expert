@@ -1,0 +1,50 @@
+{
+	title: "Heat Sink",
+	icon: "nuclearcraft:solid_fission_sink",
+	x: 11.9d,
+	y: 13.7d,
+	text: [
+		"§9§rThis quest will teach you the intricacies of how to keep §9Heat Sinks§r activated, §7Conductors§r, and about §bActive Moderator Blocks§r.",
+		"",
+		"§9Heat Sinks §rcome in many different varieties, and each one has its own set of rules to be valid. ",
+		"",
+		"",
+		"Now the rules required to ensure active §9Heat Sinks. §r",
+		"",
+		"1. They must start connected to a§6 Fuel Cell§r to be considered active. ",
+		"",
+		"2. Any §9Heat Sinks§r that are not connected by a face to another §9Heat Sink§r or a §6Fuel Cell§r will not be active. This can be bypassed by using a §7Fission Reactor Conductor§r to connect valid §9Heat Sinks§r.",
+		"",
+		"3. Active §bModerator Blocks§r are those directly adjacent to a §6Fuel Cell§r.",
+		"",
+		"",
+		"§cEach §6Fuel Cell§r§r §cmust have enough heatsinks providing cooling for itself or it will melt down!§r",
+		"",
+		"",
+		"If building a reactor for power, you'll want to match the heat as close as possible to prevent loss of Steam."
+	],
+	dependencies: [
+		"cad91dd8",
+		"0bf36970"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "5f2d3303",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_sink 1 7"
+		}]
+	},
+	{
+		uid: "ce0d8936",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_sink 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "b97ebc60",
+		type: "loot",
+		table: 1
+	}]
+}

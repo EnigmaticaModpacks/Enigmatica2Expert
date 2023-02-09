@@ -2,7 +2,9 @@
 	x: 18.6d,
 	y: 5.8d,
 	text: [
-		"The ore leacher is an advanced ore processor where you put various ores in with some fluids and you get multiple items out."
+		"The ore leacher is an advanced ore processor where you put various ores in with some fluids and you get multiple items out.",
+		"",
+		"In each this case nitric, hydrochloric and sulfuric acid is use to extract 2.5 (on average) of the ores dust with the possibility of various trace dusts such as nickel, cobalt, thorium and niobium."
 	],
 	dependencies: [
 		"0bf36970",

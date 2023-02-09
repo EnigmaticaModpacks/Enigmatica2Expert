@@ -2,7 +2,9 @@
 	x: 25.5d,
 	y: 8.1d,
 	text: [
-		"The Gluon Gun is not just a weapon but can be used as an instant mining tool. It shoots beams of Glueballs which destroy anything in its way. It uses Glueball Cells for ammo."
+		"Contrary to the title of this quest, the §eGluon Gun§r is not actually a weapon! This handheld cannon is an extremely powerful §cmining tool§r, capable of digging massive tunnels in seconds. Of course, this comes at a cost: it runs off of §5Glueballs§r! Don't let the ordinary name fool you; you will need §7numerous particle collision steps§r in order to make this type of matter.",
+		"",
+		"§cGlueballs require the second highest collision energy in the mod; you will need to accelerate protons and antiprotons to 100GeV to make glueballs. Good luck."
 	],
 	dependencies: [
 		"06b1e561",

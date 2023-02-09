@@ -1,5 +1,6 @@
 {
 	title: "{q.gates.gate_nuclearcraft.name}",
+	icon: "nuclearcraft:solid_fission_controller",
 	x: -0.5d,
 	y: 2.166666666666667d,
 	text: [
@@ -9,10 +10,10 @@
 		"e07d1afe"
 	],
 	tasks: [{
-		uid: "d2494995",
+		uid: "39d75c10",
 		type: "item",
 		items: [{
-			item: "nuclearcraft:manufactory_idle"
+			item: "nuclearcraft:manufactory"
 		}]
 	}],
 	rewards: [{

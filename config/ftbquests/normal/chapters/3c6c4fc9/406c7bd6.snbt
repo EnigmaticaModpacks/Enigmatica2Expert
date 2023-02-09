@@ -1,0 +1,24 @@
+{
+	title: "Reflector",
+	x: 13.3d,
+	y: 15.2d,
+	text: [
+		"A §6Fuel Cell§r can also reach §cCriticality Factor§r by reflecting §aFlux Factor§r back onto itself by using a §9Reflector§r at the end of a §bModerator Line§r."
+	],
+	dependencies: [
+		"3ccd3b95",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "0489f6e8",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:fission_reflector"
+		}]
+	}],
+	rewards: [{
+		uid: "e0a5c85d",
+		type: "loot",
+		table: 1
+	}]
+}

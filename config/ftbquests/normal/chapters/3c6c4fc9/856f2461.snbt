@@ -4,7 +4,21 @@
 	x: 21.6d,
 	y: 10.0d,
 	text: [
-		"Decay Chambers are where unstable particles decay into other particles."
+		"The §aDecay Chamber§r allows you to decompose the particles§f in a beam into their constituent particles§r. This can be very important for turning huge particles like §5Alpha Particles§r into smaller components for refining.",
+		"",
+		"",
+		"§nConstruction§r",
+		"",
+		"A preview of a §3Decay Chamber§r can be found at §2QMD§f §2Github Wiki§f.",
+		"",
+		"",
+		"§nRequirements and Recipes§r",
+		"",
+		"The Decay Chamber§f requires §6power§r and a §5particle beam§f. The resulting particles§f and their particle stack properties can be seen in the §2Decay Chamber GUI§r.",
+		"",
+		"Decay Chamber§f output beam calculations are exactly the same as Target Chamber output beam calculations. More details on the calculation for output particle stacks can be found in the \"Target Chamber Particle Properties\" quest.",
+		"",
+		"Decay Chambers§f can also have detectors installed in them to increase §eefficiency§r. Although efficiency won't increase the speed of the recipe in Decay Chambers§f, it will increase the §4amount§f of particles§f in the resulting particle stacks, although the amount§f may never be higher than that stated in §2JEI§f. "
 	],
 	dependencies: [
 		"5271b8bd",

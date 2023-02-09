@@ -1,9 +1,9 @@
 {
-	title: "{q.nuclearcraft.molten_salt_two_st.name}",
-	x: 16.466666666666665d,
+	title: "High Pressure Steam",
+	x: 16.4d,
 	y: 12.4d,
 	text: [
-		"{q.nuclearcraft.molten_salt_two_st.desc}"
+		"§5High Pressure Steam§r is an extremely useful product to generate energy and can be obtained from a process in the §3Solid Fuel Fission Reactor§r as shown in §2JEI§r"
 	],
 	dependencies: [
 		"516c6590",

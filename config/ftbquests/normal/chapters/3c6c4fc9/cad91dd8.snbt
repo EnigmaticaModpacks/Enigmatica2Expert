@@ -1,0 +1,31 @@
+{
+	title: "Inside the Reactor",
+	icon: "nuclearcraft:solid_fission_controller",
+	x: 13.3d,
+	y: 12.4d,
+	text: [
+		"§1After assembling the entire reactor housing, it is time to assemble its functional part, which is its interior§r.",
+		"",
+		"Let's start by assembling the §9internal part of your reactor§r, but for that you first need to understand what each internal component does to assemble your ideal model according to the chosen fuel.",
+		"",
+		"Take a look at the chosen fuel. Let's use §a§2L(ow) E(nriched) U(Rhanium)-235 Zirconium Alloy Fuel§r for this walkthrough.",
+		"",
+		"Pay close attention to §eBase heat gen: 150 H/t, §rand §cCriticality factor: 87 N/t§r",
+		"",
+		"Now see the descriptions of each component in the quests below, taking as an example the fuel chosen for example."
+	],
+	dependencies: [
+		"608d1a00",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "690b7975",
+		type: "checkmark",
+		title: "Reactor"
+	}],
+	rewards: [{
+		uid: "bf0ee216",
+		type: "loot",
+		table: 1
+	}]
+}

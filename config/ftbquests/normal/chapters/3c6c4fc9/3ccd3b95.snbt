@@ -1,0 +1,45 @@
+{
+	title: "Moderator Lines",
+	icon: "nuclearcraft:solid_fission_cell",
+	x: 13.3d,
+	y: 13.7d,
+	text: [
+		"This quest will teach you how to assemble §bModerator Lines§r, reach the §c§cCriticality Factor§r, and how §eHeat§r is caculated.",
+		"",
+		"First place a §6Fuel Cell§r, with a line of §bModerators§r (max length of 4) containing a sum §aFlux Factor§r equal to or higher than the §cCriticality Factor§r of your fuel, extending away from it. Then place a second §6Fuel Cell §rat the other end of the §bModerator Line§r. ",
+		"",
+		"Each §6Fuel Cell§r will be able to keep the other activated, because of the §aFlux Factor§r meeting or excceding the §cCriticality Factor§r of the fuel in the opposite §6Cell§r.",
+		"",
+		"Each §bModerator Line§r extending off of a §6Fuel Cell§r causes one instance of §eHeat§r. For example, in the above build we have two connections, one coming from each §6Fuel Cell§r, so we have a total of §e300 H/t§r."
+	],
+	dependencies: [
+		"cad91dd8",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "eee515fa",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:solid_fission_cell"
+		}]
+	},
+	{
+		uid: "ddad318e",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot_block 1 9"
+		}]
+	},
+	{
+		uid: "5e3c98ad",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:heavy_water_moderator"
+		}]
+	}],
+	rewards: [{
+		uid: "61130cce",
+		type: "loot",
+		table: 1
+	}]
+}

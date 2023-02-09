@@ -4,9 +4,15 @@
 	x: 11.9d,
 	y: 12.4d,
 	text: [
-		"Choose the best fuel to use in a reactor according to your cooling and desired energy.",
+		"Using §e§risotopes§r, you can make §a§2LEU-235§r or §2HEU-235§r. Both fuels have differences in the amount of heat they produce, how long they last, and much more. These differences will be important when designing your reactor.",
 		"",
-		"Each fuel has an energy generation factor and a heating factor that can be seen in its description or on the wiki"
+		"Before using them to fuel your reactor, however, they need to go through one last processing step. There are three different types of fuel you can make from §2§rBase Fuel§r: a §9Oxide§r, a §aNitride§r, or a §eZirconium Alloy§r. There is no \"best\" among these three types of fuel; each has its own benefits over the other. You can check the differences in your stats in the tooltips for each fuel. When building your reactor, be sure to choose the best fuel for your purposes.",
+		"",
+		"§9Oxygen§r and §aNitrogen§r can be obtained by processing compressed air, which is detailed in the quests above. These can also come from running Rockhounding gases through a transposer.",
+		"",
+		"Its data such as power generation factor and heating factor can be seen in its description in §2JEI§r or §2wiki§r",
+		"",
+		"Any fuel can be used to complete the quest."
 	],
 	dependencies: [
 		"bcb9f771",
