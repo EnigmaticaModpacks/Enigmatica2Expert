@@ -1,6 +1,5 @@
 #modloaded qmd
 
-utils.rh(<qmd:semiconductor:2>); // Silicon boule
 utils.rh(<qmd:ingot:3>); // Titanium Ingot
 
 # [BSCCO Wire]*6 from [Silver Plate][+1]
@@ -77,7 +76,6 @@ mods.qmd.target_chamber.addRecipe(IIngredient inputItem,
 );
 */
 
-// ⚠️ This recipe remove all QMD recipes without error
 // mods.qmd.target_chamber.addRecipe(<ore:nuggetTitaniumIridium>,
 //   <particle:neutron>,
 //   <avaritia:resource:2>,
