@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.nuclearcraft.decay_generator.addRecipe as addDecayRecipe;
 import crafttweaker.recipes.IRecipeFunction;
 #modloaded nuclearcraft
+#norun
 
 # Removing an Obsidian dupe
 mods.nuclearcraft.melter.removeRecipeWithInput(<ore:obsidian>);
