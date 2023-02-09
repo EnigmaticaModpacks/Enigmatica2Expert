@@ -174,7 +174,6 @@ function squeeze(input as IIngredient[], fluidOutput as ILiquidStack, exceptions
   work(['ForestrySqueezer'],    exceptions, input, null, [iF(itemOutput, 0.5d)],  [lF(fluidOutput, 0.9d)],      null, null);
   work(['TECentrifuge'],        exceptions, input, null, [iF(itemOutput, 0.75d)], [fluidOutput], null, null);
   work(['IndustrialSqueezer'],  exceptions, input, null, [itemOutput], [fluidOutput], null, null);
-  work(['FluidExtractor'],      exceptions, input, null, [itemOutput], [fluidOutput], null, null);
 }
 
 // Solute (mix, dissolve) 1+ items in 1+ liquids to get new 1+ liquids

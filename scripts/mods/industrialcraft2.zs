@@ -466,7 +466,7 @@ mods.nuclearcraft.Melter.addRecipe(<ore:dustSulfur>, <liquid:sulfur> * 100);
 mods.actuallyadditions.Compost.addRecipe(<farmingforblockheads:fertilizer:1>, <quark:quilted_wool:5>, <ic2:crop_res:5>, <biomesoplenty:log_4:4>);
 
 # [Biogas Bucket] from [Hops]
-scripts.process.squeeze([<ic2:crop_res:4>], <fluid:ic2biogas> * 200, "only: IndustrialSqueezer FluidExtractor");
+scripts.process.squeeze([<ic2:crop_res:4>], <fluid:ic2biogas> * 200, "only: IndustrialSqueezer");
 
 # [Gelid Cryotheum Bucket] from [Terra Wart]
 scripts.process.squeeze([<ic2:terra_wart>], <fluid:cryotheum> * 400, "only: CrushingTub IndustrialSqueezer");

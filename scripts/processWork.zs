@@ -650,12 +650,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       mods.nuclearcraft.Melter.addRecipe(inputIngr0, outputLiquid0);
       return machineName;
     }
-
-    if (machineName == "fluidextractor") {
-      # mods.nuclearcraft.Extractor.addRecipe(itemInput, itemOutput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
-      mods.nuclearcraft.Extractor.addRecipe(inputIngr0, outputItem0, outputLiquid0);
-      return machineName;
-    }
   }
 
   # ONE item to one liquid

@@ -406,6 +406,14 @@ scripts.process.compress(<ore:dustStrontium90>*9, <qmd:strontium_90_block>); # [
 scripts.process.compress(<ore:dustWitherite>    , <trinity:gem_witherite>); # [Witherite]
 
 // ------------------------------------------------------------
+// Fluid Extractor replacement
+// ------------------------------------------------------------
+# [Helium-3 Bucket] from [Gravel][+1]
+scripts.process.squeeze([<ore:turfMoon>], <fluid:helium_3> * 250, "only: TECentrifuge");
+mods.industrialforegoing.Extractor.add(<advancedrocketry:moonturf_dark>, <fluid:helium_3> * 5);
+mods.industrialforegoing.Extractor.add(<advancedrocketry:moonturf>, <fluid:helium_3> * 5);
+
+// ------------------------------------------------------------
 // Remove worthless recipes
 // ------------------------------------------------------------
 
