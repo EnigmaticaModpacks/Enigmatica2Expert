@@ -24,8 +24,8 @@ craft.remake(<bithop:screwhop>, ["pretty",
 
 # [FluxHop] from [Cabinet][+2]
 craft.remake(<bithop:fluxhop>, ["pretty",
-  "⌂ ♥ ⌂",
-  "⌂ C ⌂",
+  "  ♥  ",
+  "  C  ",
   "♥ ⌂ ♥"], {
   "⌂": <ic2:casing:3>,     # Iron Item Casing
   "♥": <ore:dustRedstone>, # Redstone
