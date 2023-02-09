@@ -48,3 +48,20 @@ tile.contenttweaker.terrestrial_artifact_block.name=Блок Артефакта 
 contenttweaker.part.fluid=%s
 
 item.contenttweaker.bee_diversity.name=Хранилище Пчелиного Разнообразия
+
+e2ee.tconstruct.material.spectre.name=Призрачный
+e2ee.tconstruct.material.spectre.description=§bПризрачный\nКаждая деталь удлиняет руки
+e2ee.tconstruct.material.mentor.name=Наставник
+e2ee.tconstruct.material.mentor.description=§oСила знания\n§rКаждый удар требует опыта, но наносит больше урона в зависимости от уровня опыта.
+e2ee.tconstruct.material.apprentice.name=Ученик
+e2ee.tconstruct.material.apprentice.description=§oСила исследования\n§rКаждый удар добавляет опыт, но увеличивает объем урона, который вы получаете на 10%
+e2ee.tconstruct.material.spectre_string.name=Призрачная Нить
+e2ee.tconstruct.material.alpha_fur.name=Альфа-мех
+e2ee.tconstruct.material.alpha_fur.description=§bОхлаждение\n§rТормозит цель или нападающих
+e2ee.tconstruct.material.grinding.name=Шлифование
+e2ee.tconstruct.material.grinding.description=§oПрыгай!\n§rПрыгайте на рудные блоки, чтобы разбить их в пыль.
+e2ee.tconstruct.material.heavy.name=Тяжеловатый
+e2ee.tconstruct.material.axing.name=Топор
+e2ee.tconstruct.material.axing.description=§oТопориный чад\n§rРазбить деревянные бревна, чтобы получить доски x4.
+e2ee.tconstruct.material.axing2.name=Топор II
+e2ee.tconstruct.material.axing2.description=§oТопориный гигачад\n§rРазбить деревянные бревна, чтобы получить x6 досок.

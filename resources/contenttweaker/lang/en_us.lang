@@ -48,3 +48,20 @@ tile.contenttweaker.terrestrial_artifact_block.name=Terrestrial Artifact Block
 contenttweaker.part.fluid=%s
 
 item.contenttweaker.bee_diversity.name=Bee Diversity Store
+
+e2ee.tconstruct.material.spectre.name=Spectre
+e2ee.tconstruct.material.spectre.description=§bSpectral\nEach part gives additional Reach potion effect
+e2ee.tconstruct.material.mentor.name=Mentor
+e2ee.tconstruct.material.mentor.description=§oPower of knowledge\n§rEach hit consumes 1 XP level (for each part) but deals additional √(XP * parts) damage
+e2ee.tconstruct.material.apprentice.name=Apprentice
+e2ee.tconstruct.material.apprentice.description=§oPower of study\n§r1/10 of incoming damage becomes experience but hurts you 10% more
+e2ee.tconstruct.material.spectre_string.name=Spectre String
+e2ee.tconstruct.material.alpha_fur.name=Alpha Fur
+e2ee.tconstruct.material.alpha_fur.description=§bChilling\n§rChills targets or attackers
+e2ee.tconstruct.material.grinding.name=Grinding
+e2ee.tconstruct.material.grinding.description=§oJump!\n§rJump on Ore blocks to crush them into dust.
+e2ee.tconstruct.material.heavy.name=Heavy
+e2ee.tconstruct.material.axing.name=Axing
+e2ee.tconstruct.material.axing.description=§oAxing chad\n§rBreak wood logs to get x4 planks.
+e2ee.tconstruct.material.axing2.name=Axing II
+e2ee.tconstruct.material.axing2.description=§oAxing gigachad\n§rBreak wood logs to get x6 planks.
