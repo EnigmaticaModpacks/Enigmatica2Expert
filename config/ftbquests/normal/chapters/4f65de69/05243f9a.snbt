@@ -25,13 +25,11 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "56be870d",
+		uid: "b71d724e",
 		type: "item",
 		items: [{
-			item: "minecraft:snowball 8"
-		}],
-		count: 8L,
-		ignore_nbt: 1b
+			item: "mctsmelteryio:iceball"
+		}]
 	}],
 	rewards: [{
 		uid: "6bac4165",

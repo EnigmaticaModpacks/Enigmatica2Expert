@@ -1,25 +1,45 @@
 
 #modloaded mctsmelteryio
 
+// Remove unused upgrades
+utils.rh(<mctsmelteryio:upgrade:1>);
+utils.rh(<mctsmelteryio:upgrade:2>);
+utils.rh(<mctsmelteryio:upgrade:3>);
+
+<mctsmelteryio:upgrade:4>.maxStackSize = 16;
+<mctsmelteryio:upgrade:6>.maxStackSize = 64;
+
 # Recipes to remove 
 utils.rh(<mctsmelteryio:powdered_fuel>);
 
 # Ice balls
 scripts.process.mash(<biomesoplenty:hard_ice>, <mctsmelteryio:iceball> * 8, "No Exceptions");
 
-# Remake upgrades match Tinkers/IO crafts
-remakeEx(<mctsmelteryio:upgrade:0>, [[<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>], [<ore:ingotAluminum> | <ore:ingotLead>, <minecraft:paper>, <ore:ingotAluminum> | <ore:ingotLead>], [<minecraft:dye:4>, <minecraft:dye:4>, <minecraft:dye:4>]]);
-remakeEx(<mctsmelteryio:upgrade:1>, [[<ore:ingotCopper>, <ore:chest>, <ore:ingotCopper>], [<ore:chest>, <mctsmelteryio:upgrade>, <ore:chest>], [<ore:ingotCopper>, <ore:chest>, <ore:ingotCopper>]]);
-remakeEx(<mctsmelteryio:upgrade:2>, [[<ore:ingotAluminum>, <ore:ingotFakeIron>, <ore:ingotAluminum>], [<ore:ingotFakeIron>, <mctsmelteryio:upgrade:1>, <ore:ingotFakeIron>], [<ore:ingotAluminum>, <ore:ingotFakeIron>, <ore:ingotAluminum>]]);
-remakeEx(<mctsmelteryio:upgrade:3>, [[<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>], [<ore:ingotGold>, <mctsmelteryio:upgrade:2>, <ore:ingotGold>], [<ore:nuggetKnightslime>, <ore:ingotGold>, <ore:nuggetKnightslime>]]);
-remakeEx(<mctsmelteryio:upgrade:4>, [[<ore:nuggetManyullyn>, <ore:gemDiamondRat>, <ore:nuggetManyullyn>], [<ore:gemDiamondRat>, <mctsmelteryio:upgrade:3>, <ore:gemDiamondRat>], [<ore:nuggetManyullyn>, <ore:gemDiamondRat>, <ore:nuggetManyullyn>]]);
+# [Base Upgrade]*10 from [Elixir of ][+2]
+craft.remake(<mctsmelteryio:upgrade> * 10, ["pretty",
+  "□ □ □",
+  "п E п",
+  "□ □ □"], {
+  "□": <ore:plateLapis>,    # Lapis Lazuli Plate
+  "п": <ore:plateAluminum>, # Aluminum Plate
+  "E": <rustic:elixir>,     # Elixir
+});
 
-# Speed upgrade
-remakeEx(<mctsmelteryio:upgrade:6>, [
-	[<ore:gemEmerald>, <ore:listAllsugar>, <ore:gemEmerald>], 
-	[<ic2:upgrade>, <mctsmelteryio:upgrade>, <ic2:upgrade>], 
-	[<ore:gemEmerald>, <ore:listAllsugar>, <ore:gemEmerald>]
-]);
+# [Speed Upgrade] from [Base Upgrade][+1]
+craft.reshapeless(<mctsmelteryio:upgrade:6>, "BAA", {
+  "B": <mctsmelteryio:upgrade>, # Base Upgrade
+  "A": <ore:listAllsugar>,      # Sugar
+});
+
+# [Slot Size Upgrade 4] from [Base Upgrade][+2]
+craft.remake(<mctsmelteryio:upgrade:4>, ["pretty",
+  "  c  ",
+  "‚ B ‚",
+  "  ‚  "], {
+  "c": <ore:chest>, # Oak Chest
+  "‚": <ore:nuggetKnightslime>, # Knightslime Nugget
+  "B": <mctsmelteryio:upgrade>, # Base Upgrade
+});
 
 # [Casting_Machine] from [Casting_Table][+3]
 craft.remake(<mctsmelteryio:machine:1>, ["pretty",
