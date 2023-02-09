@@ -32,9 +32,9 @@ craft.remake(<cyclicmagic:clock>, ["pretty",
 # Lower durab of glowes (default is 6000)
 <cyclicmagic:glove_climb>.maxDamage = 3000;
 <cyclicmagic:charm_air>.maxDamage = 1000;
-<cyclicmagic:sword_weakness>.maxDamage = 150;
-<cyclicmagic:sword_slowness>.maxDamage = 150;
-<cyclicmagic:sword_ender>.maxDamage = 150;
+<cyclicmagic:sword_weakness>.maxDamage = 600;
+<cyclicmagic:sword_slowness>.maxDamage = 600;
+<cyclicmagic:sword_ender>.maxDamage = 600;
 
 # Harder shears
 recipes.remove(<cyclicmagic:shears_obsidian>);
