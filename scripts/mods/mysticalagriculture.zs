@@ -6,9 +6,6 @@ import thaumcraft.aspect.CTAspectStack;
 
 #modloaded mysticalagriculture
 
-# Enderman Chunks -> Ender Pearls
-mods.nuclearcraft.Pressurizer.addRecipe(<mysticalagriculture:chunk:19> * 2, <minecraft:ender_pearl>);
-
 # [Inferium Seeds] from [Seeds][+1]
 craft.remake(<mysticalagriculture:tier1_inferium_seeds>, ["pretty",
   "W W W",

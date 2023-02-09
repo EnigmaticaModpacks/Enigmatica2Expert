@@ -210,7 +210,7 @@ scripts.process.alloy([<ore:ingotIron> * 15, <ore:dustCarbonManganese>], <ore:in
 # Ground Cocoa
 recipes.addShapeless("Crush Cocoa", <nuclearcraft:ground_cocoa_nibs>, [<ore:pestleAndMortar>, <nuclearcraft:roasted_cocoa_beans>, <nuclearcraft:roasted_cocoa_beans>]);
 scripts.process.squeeze([<nuclearcraft:ground_cocoa_nibs>], <liquid:cocoa_butter> * 144, "except: FluidExtractor", <nuclearcraft:cocoa_solids>);
-scripts.process.compress(<harvestcraft:flouritem> * 2, <nuclearcraft:graham_cracker>, "except: Pressurizer");
+scripts.process.compress(<harvestcraft:flouritem> * 2, <nuclearcraft:graham_cracker>);
 
 # IC2 Steam -> Water in turbine
 # mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double turbine_power_per_mb, double turbine_expansion_level, double turbine_spin_up_multiplier, @Optional String particleEffect, @Optional double particleSpeedMultiplier);
@@ -393,6 +393,17 @@ scripts.process.extract(<ore:dustVilliaumite>, <ore:dustSodiumFluoride>.firstIte
 scripts.process.extract(<ore:dustCarobbiite>, <ore:dustPotassiumFluoride>.firstItem);
 scripts.process.extract(<ore:listAllporkraw>, <nuclearcraft:gelatin> * 8);
 scripts.process.extract(<ore:listAllfishraw>, <nuclearcraft:gelatin> * 4);
+
+// ------------------------------------------------------------
+// Pressurizer replacements
+// ------------------------------------------------------------
+scripts.process.compress(<ore:dustRhodochrosite>, <nuclearcraft:gem>); # [Rhodochrosite]
+scripts.process.compress(<ore:dustBoronNitride> , <nuclearcraft:gem:1>); # [Cubic Boron Nitride]
+scripts.process.compress(<ore:dustFluorite>     , <nuclearcraft:gem:2>); # [Fluorite]
+scripts.process.compress(<ore:dustVilliaumite>  , <nuclearcraft:gem:3>); # [Villiaumite]
+scripts.process.compress(<ore:dustCarobbiite>   , <nuclearcraft:gem:4>); # [Carobbiite]
+scripts.process.compress(<ore:dustStrontium90>*9, <qmd:strontium_90_block>); # [Strontium-90 Block]
+scripts.process.compress(<ore:dustWitherite>    , <trinity:gem_witherite>); # [Witherite]
 
 // ------------------------------------------------------------
 // Remove worthless recipes

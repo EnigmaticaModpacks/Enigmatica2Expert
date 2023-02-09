@@ -1118,7 +1118,6 @@ static values as int[int][string] = {
   "nuclearcraft:supercooler_idle": { 0: 22534 },
   "extendedcrafting:trimmed": { 2: 22643, 4: 323740 },
   "appliedenergistics2:storage_cell_1k": { 0: 22807 },
-  "nuclearcraft:pressurizer_idle": { 0: 23198 },
   "mysticalagriculture:inferium_helmet": { 0: 23291 },
   "mysticalagriculture:ingot_storage": { 0: 25650 },
   "advancedrocketry:productplate": { 1: 25658 },

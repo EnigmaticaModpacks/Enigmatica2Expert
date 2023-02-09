@@ -98,7 +98,6 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   mods.inworldcrafting.FluidToItem.transform(currItem, <fluid:astralsorcery.liquidstarlight>, [prevItem * 4], true);
   craft.shapeless(currItem,   'cccc',     { c: crystalShard });
   craft.shapeless(currItem * 2, 'cccccccc', { c: crystalShard });
-  scripts.process.compress(crystalShard * 8, currItem * 2, 'only: Pressurizer');
   scripts.process.compress(crystalShard * 7, currItem * 2, 'only: Compactor');
 
   // ██████╗

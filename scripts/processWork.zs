@@ -185,11 +185,6 @@ function workEx(machineNameAnyCase as string, exceptions as string,
       return machineName;
     }
 
-    if (machineName == "pressurizer") {
-      mods.nuclearcraft.Pressurizer.addRecipe(inputIngr0, outputItem0);
-      return machineName;
-    }
-
     if (machineName == "mekenrichment") {
       if(inputHasTag) return info(machineNameAnyCase, getItemName(inputIngr0.itemArray[0]), "received work, but this machine can not work with input contain NBT tags");
       // # mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);

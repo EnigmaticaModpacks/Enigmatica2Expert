@@ -114,7 +114,7 @@ function crush(input as IIngredient, output as IItemStack, exceptions as string 
 // Compress item to another
 // 📦 → 📦
 function compress(input as IIngredient, output as IItemStack, exceptions as string = null) {
-  work(['Pressurizer', 'Compressor', 'Compactor'], exceptions, [input], null, [output], null, null, null);
+  work(['Compressor', 'Compactor'], exceptions, [input], null, [output], null, null, null);
 }
 
 // Enrich or Extract item from another
