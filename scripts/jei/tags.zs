@@ -146,6 +146,7 @@ for lang, items in {
     <industrialforegoing:petrified_fuel_generator>,
     <industrialforegoing:pitiful_fuel_generator>,
     <industrialforegoing:protein_generator>,
+    <integrateddynamics:energy_battery>,
     <mekanism:energycube>.withTag({tier: 0}),
     <mekanism:energycube>.withTag({tier: 1}),
     <mekanism:energycube>.withTag({tier: 2}),
