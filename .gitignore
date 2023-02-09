@@ -26,6 +26,9 @@ structures/inactive
 !.github/
 !.imgbotconfig
 
+# 3d party mods
+!mods/thaumicenergistics-*.jar
+
 # Devonly configs
 config/gliby_vc/
 config/simplelogin.cfg
