@@ -553,10 +553,13 @@ craft.make(<biomesoplenty:white_dye> * 4, ["pretty",
 	"  x  "], dyeEssence);
 
 # Squeeze cow essence
-scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250, "no exceptions", null);
+scripts.process.squeeze([<mysticalagriculture:cow_essence>], <liquid:milk> * 250);
 
 # Squeeze water essence
-scripts.process.squeeze([<mysticalagriculture:water_essence>], <liquid:water> * 250, "no exceptions", null);
+scripts.process.squeeze([<mysticalagriculture:water_essence>], <liquid:water> * 250);
+
+# Melt fire
+scripts.process.melt(<mysticalagriculture:fire_essence>, <liquid:lava> * 250);
 
 # Saplings from essence
 # ----------------------------
@@ -858,6 +861,10 @@ function remakeBlock(recName as string, output as IBlockState, ingrs as IIngredi
 	scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, fluid, output);
 }
 
+function makeSmelt(recName as string, output as ILiquidStack, ingrs as IIngredient[]) as void {
+	mods.tconstruct.Melting.addRecipe(output, ingrs[0]);
+}
+
 function remakeSimple(recName as string, output as IIngredient, ingrs as IIngredient[]) as void {
 	
 }
@@ -1088,7 +1095,7 @@ remakeArcane("mysticalagriculture:log2_1"               , <minecraft:log2:1> * 1
 // remakeSimple("mysticalagriculture:prismarine_shard"     , <minecraft:prismarine_shard> * 12         , [<mysticalagriculture:guardian_essence> * 3                                          ]);
 // remakeSimple("mysticalagriculture:pumpkin"              , <minecraft:pumpkin> * 16                  , [<mysticalagriculture:nature_essence> * 8                                            ]);
 // remakeSimple("mysticalagriculture:purpur_block"         , <minecraft:purpur_block> * 12             , [<mysticalagriculture:end_essence> * 4                                               ]);
-// remakeSimple("mysticalagriculture:quicksilver"          , <thaumcraft:quicksilver> * 4              , [<mysticalagriculture:quicksilver_essence> * 8                                       ]);
+makeSmelt("mysticalagriculture:quicksilver", <fluid:fluid_quicksilver> * 250, [<mysticalagriculture:quicksilver_essence>]);
 // remakeSimple("mysticalagriculture:rabbit_foot"          , <minecraft:rabbit_foot>                   , [<mysticalagriculture:rabbit_essence> * 5                                            ]);
 // remakeSimple("mysticalagriculture:rabbit_hide"          , <minecraft:rabbit_hide> * 8               , [<mysticalagriculture:rabbit_essence> * 3                                            ]);
 // remakeSimple("mysticalagriculture:red_mushroom"         , <minecraft:red_mushroom> * 8              , [<mysticalagriculture:nature_essence> * 2, <mysticalagriculture:dirt_essence>        ]);
@@ -1100,7 +1107,7 @@ remakeArcane("mysticalagriculture:log2_1"               , <minecraft:log2:1> * 1
 // remakeSimple("mysticalagriculture:sapling_4"            , <minecraft:sapling:4> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
 // remakeSimple("mysticalagriculture:sapling_5"            , <minecraft:sapling:5> * 4                 , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
 // remakeSimple("mysticalagriculture:sapling"              , <minecraft:sapling> * 4                   , [<mysticalagriculture:wood_essence> * 2, <mysticalagriculture:nature_essence>        ]);
-// remakeSimple("mysticalagriculture:sky_stone_block"      , <appliedenergistics2:sky_stone_block> * 12, [<mysticalagriculture:sky_stone_essence> * 8                                         ]);
+makeSmelt("mysticalagriculture:sky_stone_block", <fluid:sky_stone> * 288, [<mysticalagriculture:sky_stone_essence>]);
 // remakeSimple("mysticalagriculture:slate"                , <rustic:slate> * 24                       , [<mysticalagriculture:slate_essence> * 8                                             ]);
 // remakeSimple("mysticalagriculture:slime_ball"           , <minecraft:slime_ball> * 8                , [<mysticalagriculture:slime_essence> * 5                                             ]);
 // remakeSimple("mysticalagriculture:snow"                 , <minecraft:snow> * 12                     , [<mysticalagriculture:ice_essence> * 3                                               ]);

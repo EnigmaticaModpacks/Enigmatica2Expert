@@ -370,6 +370,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Silicon Block] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>blockSilicon</oreDict>
+		</input>
+		<output>
+			<oreDict>plateSilicon 6</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Silver Block] -->
 	<Recipe timeRequired="0" power="0">
 		<input>

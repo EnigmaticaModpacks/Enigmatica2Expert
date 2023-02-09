@@ -241,6 +241,25 @@ add(<ore:stoneDiorite>, <quark:world_stone_bricks:1>);
 add(<ore:stoneAndesite>, <quark:world_stone_bricks:2>);
 add(<ore:stoneBasalt>, <quark:world_stone_bricks:3>);
 
+addItems(<ore:grassTall>, [
+  <biomesoplenty:plant_0>,
+  <biomesoplenty:plant_0:1>,
+  <biomesoplenty:plant_0:7>,
+  <biomesoplenty:plant_0:8>,
+  <biomesoplenty:plant_0:13>,
+  <biomesoplenty:plant_0:14>,
+  <biomesoplenty:plant_1>,
+  <minecraft:tallgrass:1>,
+  <twilightforest:twilight_plant:5>,
+  <tconstruct:slime_grass_tall>,
+  <tconstruct:slime_grass_tall:4>,
+  <tconstruct:slime_grass_tall:8>,
+  <biomesoplenty:plant_0:11>,
+  <biomesoplenty:plant_1:7>,
+  <biomesoplenty:ivy>,
+  <biomesoplenty:willow_vine>,
+]);
+
 # *======= This section was Made by Ordinator & the AllTheMods team =======*
 # All credit for this script goes to Ordinator and the ATM team
 # This script is borrowed from All The Mods 3 with permission. I have removed

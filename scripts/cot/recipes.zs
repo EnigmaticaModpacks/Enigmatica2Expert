@@ -34,24 +34,23 @@ craft.shapeless(<contenttweaker:silicon_block>, 'AAAAAAAAA', { A: <ore:ingotSili
 craft.shapeless(<libvulpes:productingot:3> * 9,   'A', { A: <ore:blockSilicon> });
 
 // [Conglomerate Of Life]*2 from [Cheese Wheel][+4]
-craft.make(<contenttweaker:conglomerate_of_life> * 2, ['pretty',
+craft.make(<contenttweaker:conglomerate_of_life> * 4, ['pretty',
   '▲ B ▲',
   'D W D',
-  '▲ C ▲'], {
-  '▲': <scalinghealth:heartdust>,           // Heart Dust
-  'B': <randomthings:rezstone>,             // Blood Stone
-  'D': <iceandfire:dragon_meal>,            // Dragon Meal
+  '▲ B ▲'], {
+  '▲': <scalinghealth:heartdust>, // Heart Dust
+  'B': <randomthings:rezstone>,   // Blood Stone
+  'D': <iceandfire:dragon_meal>,  // Dragon Meal
   'W': <ore:cheeseAnimania>,
-  'C': <cyclicmagic:crystallized_obsidian>, // Crystallized Obsidian
 });
 
 // [Conglomerate_Of_Sun*8] from [Totem_of_Undying][+3]
-craft.make(<contenttweaker:conglomerate_of_sun> * 8, ['pretty',
+craft.make(<contenttweaker:conglomerate_of_sun> * 12, ['pretty',
   'R o R',
   'C T C',
   'R o R'], {
   R: <ore:myrmexResin>,                // Desert Myrmex Resin Chunk
-  C: <cyclicmagic:crystallized_amber>, // Crystallized Amber
+  C: <exnihilocreatio:hive:1>,
   T: <minecraft:totem_of_undying>,     // Totem of Undying
   o: <ore:dropRoyalJelly>,              // Royal Jelly
 });

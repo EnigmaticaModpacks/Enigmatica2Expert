@@ -40,7 +40,7 @@ static turbineFuel as int[string][] = [
   {empoweredoil    : 120},
   {fire_water      : 120},
   {rocketfuel      : 410},
-  {perfect_fuel    : 32800},
+  {perfect_fuel    : 3280000},
 /**/
 ];
 

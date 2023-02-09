@@ -199,8 +199,8 @@
 	<!-- [Neodymium Magnet] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<oreDict>ingotFerroboron 1</oreDict>
 			<oreDict>ingotNeodymium 1</oreDict>
+			<oreDict>ingotFerroboron 1</oreDict>
 			<oreDict>ingotFerroboron 1</oreDict>
 		</input>
 		<output>
@@ -223,8 +223,8 @@
 	<!-- [Plastic Scintillator] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<oreDict>bioplastic 1</oreDict>
 			<oreDict>dyeBlue 1</oreDict>
+			<oreDict>bioplastic 1</oreDict>
 			<oreDict>bioplastic 1</oreDict>
 		</input>
 		<output>
@@ -252,7 +252,7 @@
 			<oreDict>plateCarbon 1</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productingot 1 7</itemStack>
+			<itemStack>qmd:ingot 1 3</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -396,6 +396,28 @@
 		</input>
 		<output>
 			<itemStack>enderio:block_alloy 2 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Zircaloy Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotZirconium 7</oreDict>
+			<oreDict>ingotTin 1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy 8 12</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Zirconium-Molybdenum Alloy Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotZirconium 1</oreDict>
+			<oreDict>dustMolybdenum 15</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy 16 16</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

@@ -153,4 +153,12 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_machine_frame", m
 	.addItemInput(<ore:blockOsmium>, 2)                        # Osmium Block
 	.addItemInput(<actuallyadditions:block_crystal:3> * 2)     # Void Crystal Block
 	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_device_frame", machineName, 30)
+	.addItemOutput(<thermalexpansion:frame:64>)
+	.addEnergyPerTickInput(50000)
+	.addFluidInput(<liquid:glass> * 1000)
+	.addItemInput(<ore:gearCopper>, 1)
+	.addItemInput(<ore:ingotTin>, 4)
+	.build();
 	

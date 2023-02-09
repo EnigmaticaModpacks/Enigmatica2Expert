@@ -598,6 +598,18 @@ craft.remake(<thermalexpansion:augment:401>, ["pretty",
   "▼": <ore:clathrateRedstone>,          # Destabilized Clathrate
 });
 
+# [Augment_ Clastic Deposition] from [Redstone Conductance Coil][+4]
+craft.remake(<thermalexpansion:augment:497>, ["pretty",
+  "Q ¤ Q",
+  "□ ♥ □",
+  "Q ▲ Q"], {
+  "Q": <immersiveengineering:stone_decoration:9>, # Quickdry Concrete
+  "¤": <ore:gearNickel>,                          # Nickel Gear
+  "□": <tconstruct:large_plate>.withTag({Material: "osgloglas"}), # Osgloglas Large Plate
+  "♥": <thermalfoundation:material:515>,          # Redstone Conductance Coil
+  "▲": <ore:dustAerotheum>,                       # Aerotheum Dust
+});
+
 # [Tool Casing] from [Block of Black Quartz][+2]
 craft.remake(<thermalfoundation:material:640>, ["pretty",
   "R   R",

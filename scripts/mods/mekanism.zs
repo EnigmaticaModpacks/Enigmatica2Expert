@@ -454,6 +454,10 @@ mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:7>, <applied
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:10>);
 mods.mekanism.enrichment.removeRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:10>);
 
+// Industrial Diamond
+mods.mekanism.enrichment.removeRecipe(<*>, <ic2:crafting:19>);
+mods.mekanism.enrichment.addRecipe(<ic2:dust:5>, <minecraft:diamond>);
+
 // Fix Some dusts
 mods.mekanism.enrichment.removeRecipe(<*>, <nuclearcraft:dust:4>);
 mods.mekanism.enrichment.addRecipe(<ore:oreUranium>, <immersiveengineering:metal:14> * 2);

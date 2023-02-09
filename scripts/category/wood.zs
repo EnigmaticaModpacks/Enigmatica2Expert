@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
+#priority 100
 #loader crafttweaker reloadableevents
 
 # Logs to planks recipes

@@ -116,3 +116,6 @@ craft.shapeless(<quark:monster_box>, "MT", {
 
 # Recipe added with another mod
 recipes.remove(<quark:gravisand>);
+
+recipes.removeByRecipeName("quark:turf");
+recipes.addShapeless('turf any grass', <quark:turf>, [<ore:grassTall>, <ore:grassTall>, <ore:grassTall>, <ore:grassTall>]);

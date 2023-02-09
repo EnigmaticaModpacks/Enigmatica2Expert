@@ -140,7 +140,16 @@ for tool in toolsToNerf {
 	val toolTcon = Toolforge.buildTool(tconDef.definition, [woodMat, Toolforge.getMaterialFromID(matTcon), woodMat]);
 	if(isNull(toolTcon)) continue;
 
-	recipes.addShapeless('convert_'~tool.definition.id.replaceAll(":", "_"), toolTcon, [tool]);
+	recipes.addShapeless(
+		'convert_'~tool.definition.id.replaceAll(":", "_"),
+		toolTcon.withTag(toolTcon.tag + {
+			Stats: { FreeModifiers: 2 }, 
+			TinkerData: { Modifiers: ['toolleveling'] },
+			Modifiers: [{ identifier: 'toolleveling', color: 16777215, level: 1 }],
+			Traits: ['toolleveling'],
+		} as crafttweaker.data.IData),
+		[tool]
+	);
 }
 
 <minecraft:stone_sword>.maxDamage = 2;

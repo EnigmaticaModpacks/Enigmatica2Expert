@@ -317,3 +317,10 @@ recipes.removeByRecipeName("forestry:pam_wax_capsule");
 craft.make(<forestry:capsule> * 2, ["PPP"], {
   "P": <ore:materialPressedwax>, # Pressed Wax
 });
+
+# Remove all fireproof recipes. Fireproof only obtainable through breeding.
+for log, plank in scripts.category.wood.logPlank {
+  if(!log.definition.id.matches('.*fireproof.*')) continue;
+  mods.forestry.ThermionicFabricator.removeCast(log);
+  mods.forestry.ThermionicFabricator.removeCast(plank * 5);
+}

@@ -14,10 +14,12 @@ import scripts.jei.mod.ic2.addCrop as addCrop;
 utils.rh(<ic2:te:76>); // Electrolyzer
 
 # Hydrated Coal Dust recipe consumes containers that can store 1000mB + liquid, this fixes that
-	recipes.remove(<ic2:dust:3>);
-	recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", <ic2:dust:3>, [<ore:dustCoal>, <liquid:water> * 1000]);
-  furnace.remove(<ic2:dust:2>);
-  furnace.addRecipe(<thermalfoundation:material:768>, <ic2:dust:3>);
+recipes.addShapeless("ic2_hydrated_coal_dust_liquid_fix", <ic2:dust:3>, [<ore:dustCoal>, <liquid:water> * 1000]);
+recipes.addShapeless("ic2_hydrated_tin_fix", <ic2:dust:29>, [<ore:dustTin>, <liquid:water> * 1000]);
+recipes.addShapeless("ic2_coffee_fix", <ic2:mug:1>, [<ic2:mug>, <ic2:crop_res:1>, <fluid:water> * 1000]);
+recipes.addShapeless("ic2_heat_storage_fix", <ic2:heat_storage>, [<ore:plateTin>, <ore:plateTin>, <fluid:ic2coolant> * 1000, <ore:plateTin>, <ore:plateTin>]);
+furnace.remove(<ic2:dust:2>);
+furnace.addRecipe(<thermalfoundation:material:768>, <ic2:dust:3>);
 
 # Missed ingot smeltings
 furnace.addRecipe(<thermalfoundation:material:131>, <ic2:crushed:3>);
@@ -144,13 +146,11 @@ craft.remake(<ic2:te:89>, ["pretty",
 	recipes.remove(<ic2:dust:5>);
 
 # IC2 Block Cutting blades
-val envelop = ["aaa","aBa","aaa"] as string[];
-craft.remake(<ic2:block_cutting_blade>,   envelop, {B:<ore:stone>,         a:<tconstruct:large_sword_blade>.withTag({Material: "iron"})});
-craft.remake(<ic2:block_cutting_blade:1>, envelop, {B:<ore:blockFakeIron>, a:<tconstruct:large_sword_blade>.withTag({Material: "steel"})});
-craft.remake(<ic2:block_cutting_blade:2>, envelop, {B:<ore:blockDiamond>,  a:<tconstruct:large_sword_blade>.withTag({Material: "alumite"})});
-mods.tconstruct.Melting.addRecipe(<liquid:iron>    * 9216, <ic2:block_cutting_blade>);
-mods.tconstruct.Melting.addRecipe(<liquid:steel>   * 9216, <ic2:block_cutting_blade:1>);
-mods.tconstruct.Melting.addRecipe(<liquid:alumite> * 9216, <ic2:block_cutting_blade:2>);
+mods.tconstruct.Casting.addTableRecipe(<ic2:block_cutting_blade>,   <architecturecraft:sawblade>, <fluid:iron>, 1152, true);
+mods.tconstruct.Casting.addTableRecipe(<ic2:block_cutting_blade:1>, <architecturecraft:sawblade>, <fluid:steel>, 1152, true);
+mods.tconstruct.Casting.addTableRecipe(<ic2:block_cutting_blade:2>, <architecturecraft:sawblade>, <fluid:diamond>, 5328, true);
+mods.tconstruct.Melting.addRecipe(<liquid:iron>  * 1152, <ic2:block_cutting_blade>);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 1152, <ic2:block_cutting_blade:1>);
 
 # New Scraps
 ScrapBox.addDrop(<ic2:crafting:24>                            , 0.00000001F); // First entry there would always be outputted, like, x1000 times more often

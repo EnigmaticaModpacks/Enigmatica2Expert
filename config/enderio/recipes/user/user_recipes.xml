@@ -610,8 +610,8 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Neodymium Magnet">
     <alloying energy="10000">
-      <input name="ingotFerroboron"/>
       <input name="ingotNeodymium"/>
+      <input name="ingotFerroboron"/>
       <input name="ingotFerroboron"/>
       <output name="qmd:part:8"/>
     </alloying>
@@ -619,8 +619,8 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Plastic Scintillator">
     <alloying energy="10000">
-      <input name="bioplastic"/>
       <input name="dyeBlue"/>
+      <input name="bioplastic"/>
       <input name="bioplastic"/>
       <output name="qmd:part:3"/>
     </alloying>
@@ -702,6 +702,22 @@
       <input name="ingotEnergeticAlloy"/>
       <input name="extendedcrafting:material:49"/>
       <output name="enderio:item_alloy_ingot:2" amount="2"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Zircaloy Ingot">
+    <alloying energy="10000">
+      <input name="ingotZirconium" amount="7"/>
+      <input name="ingotTin"/>
+      <output name="nuclearcraft:alloy:12" amount="8"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Zirconium-Molybdenum Alloy Ingot">
+    <alloying energy="10000">
+      <input name="ingotZirconium"/>
+      <input name="dustMolybdenum" amount="15"/>
+      <output name="nuclearcraft:alloy:16" amount="16"/>
     </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

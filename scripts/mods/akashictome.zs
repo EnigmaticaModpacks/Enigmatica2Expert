@@ -34,6 +34,9 @@
 	deepmoblearning:       {id: "patchouli:guide_book",                 Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short},
 	conarm:                {id: "conarm:book",                          Count: 1 as byte, tag: {"akashictome:definedMod": "conarm"},                                                    Damage: 0 as short},
 	endreborn: 						 {id: "patchouli:guide_book", 								Count: 1 as byte, tag: {"akashictome:definedMod": "endreborn", "patchouli:book": "endreborn:book"}, 						Damage: 0 as short}, 
+	engineersdecor: 			 {id: "patchouli:guide_book", 								Count: 1 as byte, tag: {"akashictome:definedMod": "engineersdecor", "patchouli:book": "engineersdecor:engineersdecor_manual"}, Damage: 0 as short}, 
+	nuclearcraft: 				 {id: "patchouli:guide_book", 								Count: 1 as byte, tag: {"akashictome:definedMod": "nuclearcraft"  , "patchouli:book": "nuclearcraft:guide"}, 						       Damage: 0 as short}, 
+	qmd: 						       {id: "patchouli:guide_book", 								Count: 1 as byte, tag: {"akashictome:definedMod": "qmd"           , "patchouli:book": "qmd:guide"}, 						               Damage: 0 as short}, 
 	}});
 	
 	recipes.addShaped("SuperTome", superTome, [

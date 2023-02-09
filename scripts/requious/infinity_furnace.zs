@@ -79,7 +79,6 @@ iceandfire:dread_stone_bricks
 minecraft:stonebrick
 minecraft:sponge:1
 mysticalagriculture:soulstone:1
-nuclearcraft:ingot_oxide:3
 rats:marbled_cheese_brick
 tcomplement:scorched_block:3
 tcomplement:scorched_slab:3
@@ -135,10 +134,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 923
+# Total Furnace recipes registered: 839
 # Filtered by JEI blacklist: 49
-# Filtered manuallly (antidupe): 15
-# Filtered by oredict: 200
+# Filtered manuallly (antidupe): 14
+# Filtered by oredict: 113
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -405,6 +404,7 @@ infinFurnace(utils.get("jaopca:item_clustertanzanite"), utils.get("biomesoplenty
 infinFurnace(utils.get("jaopca:item_clusterthorium"), utils.get("nuclearcraft:dust", 3, 2));
 infinFurnace(utils.get("jaopca:item_clustertitanium"), utils.get("libvulpes:productdust", 7, 2));
 infinFurnace(utils.get("jaopca:item_clustertopaz"), utils.get("biomesoplenty:gem", 3, 3));
+infinFurnace(utils.get("jaopca:item_clustertrinitite"), utils.get("trinity:trinitite_shard", 0, 2));
 infinFurnace(utils.get("jaopca:item_clustertungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 2));
 infinFurnace(utils.get("jaopca:item_clusteruranium"), utils.get("immersiveengineering:metal", 14, 2));
 #infinFurnace(utils.get("jaopca:item_clusteryellorium"), utils.get("immersiveengineering:metal", 14, 2));
@@ -480,6 +480,7 @@ infinFurnace(utils.get("jaopca:item_crystalabyssthorium"), utils.get("jaopca:ite
 infinFurnace(utils.get("jaopca:item_crystalabysstin"), utils.get("jaopca:item_dirtygemtin"));
 infinFurnace(utils.get("jaopca:item_crystalabysstitanium"), utils.get("jaopca:item_dirtygemtitanium"));
 infinFurnace(utils.get("jaopca:item_crystalabysstopaz"), utils.get("jaopca:item_dirtygemtopaz"));
+infinFurnace(utils.get("jaopca:item_crystalabysstrinitite"), utils.get("jaopca:item_dirtygemtrinitite"));
 infinFurnace(utils.get("jaopca:item_crystalabysstungsten"), utils.get("jaopca:item_dirtygemtungsten"));
 infinFurnace(utils.get("jaopca:item_crystalabyssuranium"), utils.get("jaopca:item_dirtygemuranium"));
 #infinFurnace(utils.get("jaopca:item_crystalabyssyellorium"), utils.get("jaopca:item_dirtygemyellorium"));
@@ -525,6 +526,7 @@ infinFurnace(utils.get("jaopca:item_dirtygemthorium"), utils.get("nuclearcraft:i
 infinFurnace(utils.get("jaopca:item_dirtygemtin"), utils.get("thermalfoundation:material", 129, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtitanium"), utils.get("libvulpes:productingot", 7, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtopaz"), utils.get("biomesoplenty:gem", 3, 18));
+infinFurnace(utils.get("jaopca:item_dirtygemtrinitite"), utils.get("trinity:trinitite_shard", 0, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemuranium"), utils.get("immersiveengineering:metal", 5, 12));
 #infinFurnace(utils.get("jaopca:item_dirtygemyellorium"), utils.get("immersiveengineering:metal", 5, 12));
@@ -609,6 +611,7 @@ infinFurnace(utils.get("jaopca:item_rockychunkthorium"), utils.get("jaopca:item_
 infinFurnace(utils.get("jaopca:item_rockychunktin"), utils.get("jaopca:item_dirtygemtin", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktitanium"), utils.get("jaopca:item_dirtygemtitanium", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktopaz"), utils.get("jaopca:item_dirtygemtopaz", 0, 4));
+infinFurnace(utils.get("jaopca:item_rockychunktrinitite"), utils.get("jaopca:item_dirtygemtrinitite", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 4));
 #infinFurnace(utils.get("jaopca:item_rockychunkyellorium"), utils.get("jaopca:item_dirtygemyellorium", 0, 4));
@@ -767,60 +770,6 @@ infinFurnace(utils.get("netherendingores:ore_other_1", 3), utils.get("tconstruct
 infinFurnace(utils.get("netherendingores:ore_other_1", 4), utils.get("tconstruct:ingots"));
 infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct:ore", 0, 2));
 #infinFurnace(utils.get("netherendingores:ore_other_1"), utils.get("minecraft:quartz"));
-##infinFurnace(utils.get("nuclearcraft:americium", 1), utils.get("nuclearcraft:americium"));
-##infinFurnace(utils.get("nuclearcraft:americium", 3), utils.get("nuclearcraft:americium", 2));
-##infinFurnace(utils.get("nuclearcraft:americium", 5), utils.get("nuclearcraft:americium", 4));
-##infinFurnace(utils.get("nuclearcraft:americium", 7), utils.get("nuclearcraft:americium", 6));
-##infinFurnace(utils.get("nuclearcraft:americium", 9), utils.get("nuclearcraft:americium", 8));
-##infinFurnace(utils.get("nuclearcraft:americium", 11), utils.get("nuclearcraft:americium", 10));
-##infinFurnace(utils.get("nuclearcraft:berkelium", 1), utils.get("nuclearcraft:berkelium"));
-##infinFurnace(utils.get("nuclearcraft:berkelium", 3), utils.get("nuclearcraft:berkelium", 2));
-##infinFurnace(utils.get("nuclearcraft:berkelium", 5), utils.get("nuclearcraft:berkelium", 4));
-##infinFurnace(utils.get("nuclearcraft:berkelium", 7), utils.get("nuclearcraft:berkelium", 6));
-##infinFurnace(utils.get("nuclearcraft:californium", 1), utils.get("nuclearcraft:californium"));
-##infinFurnace(utils.get("nuclearcraft:californium", 3), utils.get("nuclearcraft:californium", 2));
-##infinFurnace(utils.get("nuclearcraft:californium", 5), utils.get("nuclearcraft:californium", 4));
-##infinFurnace(utils.get("nuclearcraft:californium", 7), utils.get("nuclearcraft:californium", 6));
-##infinFurnace(utils.get("nuclearcraft:californium", 9), utils.get("nuclearcraft:californium", 8));
-##infinFurnace(utils.get("nuclearcraft:californium", 11), utils.get("nuclearcraft:californium", 10));
-##infinFurnace(utils.get("nuclearcraft:californium", 13), utils.get("nuclearcraft:californium", 12));
-##infinFurnace(utils.get("nuclearcraft:californium", 15), utils.get("nuclearcraft:californium", 14));
-##infinFurnace(utils.get("nuclearcraft:curium", 1), utils.get("nuclearcraft:curium"));
-##infinFurnace(utils.get("nuclearcraft:curium", 3), utils.get("nuclearcraft:curium", 2));
-##infinFurnace(utils.get("nuclearcraft:curium", 5), utils.get("nuclearcraft:curium", 4));
-##infinFurnace(utils.get("nuclearcraft:curium", 7), utils.get("nuclearcraft:curium", 6));
-##infinFurnace(utils.get("nuclearcraft:curium", 9), utils.get("nuclearcraft:curium", 8));
-##infinFurnace(utils.get("nuclearcraft:curium", 11), utils.get("nuclearcraft:curium", 10));
-##infinFurnace(utils.get("nuclearcraft:curium", 13), utils.get("nuclearcraft:curium", 12));
-##infinFurnace(utils.get("nuclearcraft:curium", 15), utils.get("nuclearcraft:curium", 14));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_americium", 1), utils.get("nuclearcraft:depleted_fuel_americium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_americium", 3), utils.get("nuclearcraft:depleted_fuel_americium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_berkelium", 1), utils.get("nuclearcraft:depleted_fuel_berkelium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_berkelium", 3), utils.get("nuclearcraft:depleted_fuel_berkelium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_californium", 1), utils.get("nuclearcraft:depleted_fuel_californium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_californium", 3), utils.get("nuclearcraft:depleted_fuel_californium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_californium", 5), utils.get("nuclearcraft:depleted_fuel_californium", 4));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_californium", 7), utils.get("nuclearcraft:depleted_fuel_californium", 6));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_curium", 1), utils.get("nuclearcraft:depleted_fuel_curium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_curium", 3), utils.get("nuclearcraft:depleted_fuel_curium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_curium", 5), utils.get("nuclearcraft:depleted_fuel_curium", 4));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_curium", 7), utils.get("nuclearcraft:depleted_fuel_curium", 6));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_curium", 9), utils.get("nuclearcraft:depleted_fuel_curium", 8));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_curium", 11), utils.get("nuclearcraft:depleted_fuel_curium", 10));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_neptunium", 1), utils.get("nuclearcraft:depleted_fuel_neptunium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_neptunium", 3), utils.get("nuclearcraft:depleted_fuel_neptunium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_plutonium", 1), utils.get("nuclearcraft:depleted_fuel_plutonium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_plutonium", 3), utils.get("nuclearcraft:depleted_fuel_plutonium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_plutonium", 5), utils.get("nuclearcraft:depleted_fuel_plutonium", 4));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_plutonium", 7), utils.get("nuclearcraft:depleted_fuel_plutonium", 6));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_thorium", 1), utils.get("nuclearcraft:depleted_fuel_thorium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_uranium", 1), utils.get("nuclearcraft:depleted_fuel_uranium"));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_uranium", 3), utils.get("nuclearcraft:depleted_fuel_uranium", 2));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_uranium", 5), utils.get("nuclearcraft:depleted_fuel_uranium", 4));
-##infinFurnace(utils.get("nuclearcraft:depleted_fuel_uranium", 7), utils.get("nuclearcraft:depleted_fuel_uranium", 6));
-##infinFurnace(utils.get("nuclearcraft:dust_oxide", 1), utils.get("nuclearcraft:ingot_oxide", 1));
-##infinFurnace(utils.get("nuclearcraft:dust_oxide", 2), utils.get("nuclearcraft:ingot_oxide", 2));
-##infinFurnace(utils.get("nuclearcraft:dust_oxide"), utils.get("nuclearcraft:ingot_oxide"));
 ##infinFurnace(utils.get("nuclearcraft:dust", 3), utils.get("nuclearcraft:ingot", 3));
 ##infinFurnace(utils.get("nuclearcraft:dust", 5), utils.get("nuclearcraft:ingot", 5));
 ##infinFurnace(utils.get("nuclearcraft:dust", 6), utils.get("nuclearcraft:ingot", 6));
@@ -832,63 +781,29 @@ infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct
 ##infinFurnace(utils.get("nuclearcraft:dust", 12), utils.get("thermalfoundation:material", 132));
 ##infinFurnace(utils.get("nuclearcraft:dust", 13), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("nuclearcraft:flour"), utils.get("minecraft:bread"));
-##infinFurnace(utils.get("nuclearcraft:fuel_americium", 1), utils.get("nuclearcraft:fuel_americium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_americium", 3), utils.get("nuclearcraft:fuel_americium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_berkelium", 1), utils.get("nuclearcraft:fuel_berkelium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_berkelium", 3), utils.get("nuclearcraft:fuel_berkelium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_californium", 1), utils.get("nuclearcraft:fuel_californium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_californium", 3), utils.get("nuclearcraft:fuel_californium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_californium", 5), utils.get("nuclearcraft:fuel_californium", 4));
-##infinFurnace(utils.get("nuclearcraft:fuel_californium", 7), utils.get("nuclearcraft:fuel_californium", 6));
-##infinFurnace(utils.get("nuclearcraft:fuel_curium", 1), utils.get("nuclearcraft:fuel_curium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_curium", 3), utils.get("nuclearcraft:fuel_curium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_curium", 5), utils.get("nuclearcraft:fuel_curium", 4));
-##infinFurnace(utils.get("nuclearcraft:fuel_curium", 7), utils.get("nuclearcraft:fuel_curium", 6));
-##infinFurnace(utils.get("nuclearcraft:fuel_curium", 9), utils.get("nuclearcraft:fuel_curium", 8));
-##infinFurnace(utils.get("nuclearcraft:fuel_curium", 11), utils.get("nuclearcraft:fuel_curium", 10));
-##infinFurnace(utils.get("nuclearcraft:fuel_neptunium", 1), utils.get("nuclearcraft:fuel_neptunium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_neptunium", 3), utils.get("nuclearcraft:fuel_neptunium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_plutonium", 1), utils.get("nuclearcraft:fuel_plutonium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_plutonium", 3), utils.get("nuclearcraft:fuel_plutonium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_plutonium", 5), utils.get("nuclearcraft:fuel_plutonium", 4));
-##infinFurnace(utils.get("nuclearcraft:fuel_plutonium", 7), utils.get("nuclearcraft:fuel_plutonium", 6));
-##infinFurnace(utils.get("nuclearcraft:fuel_thorium", 1), utils.get("nuclearcraft:fuel_thorium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_uranium", 1), utils.get("nuclearcraft:fuel_uranium"));
-##infinFurnace(utils.get("nuclearcraft:fuel_uranium", 3), utils.get("nuclearcraft:fuel_uranium", 2));
-##infinFurnace(utils.get("nuclearcraft:fuel_uranium", 5), utils.get("nuclearcraft:fuel_uranium", 4));
-##infinFurnace(utils.get("nuclearcraft:fuel_uranium", 7), utils.get("nuclearcraft:fuel_uranium", 6));
-infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust_oxide", 2));
-##infinFurnace(utils.get("nuclearcraft:ingot_oxide", 1), utils.get("immersiveengineering:metal", 5));
-##infinFurnace(utils.get("nuclearcraft:ingot_oxide", 2), utils.get("nuclearcraft:ingot", 11));
-//infinFurnace(utils.get("nuclearcraft:ingot_oxide", 3), utils.get("nuclearcraft:ingot_oxide", 2));
-##infinFurnace(utils.get("nuclearcraft:ingot_oxide"), utils.get("nuclearcraft:ingot", 3));
-##infinFurnace(utils.get("nuclearcraft:neptunium", 1), utils.get("nuclearcraft:neptunium"));
-##infinFurnace(utils.get("nuclearcraft:neptunium", 3), utils.get("nuclearcraft:neptunium", 2));
-##infinFurnace(utils.get("nuclearcraft:neptunium", 5), utils.get("nuclearcraft:neptunium", 4));
-##infinFurnace(utils.get("nuclearcraft:neptunium", 7), utils.get("nuclearcraft:neptunium", 6));
+infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust", 14));
+##infinFurnace(utils.get("nuclearcraft:ingot", 14), utils.get("nuclearcraft:ingot", 11));
+infinFurnace(utils.get("nuclearcraft:ingot", 15), utils.get("nuclearcraft:ingot", 14));
 infinFurnace(utils.get("nuclearcraft:ore", 3), utils.get("nuclearcraft:ingot", 3));
 infinFurnace(utils.get("nuclearcraft:ore", 5), utils.get("nuclearcraft:ingot", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 6), utils.get("nuclearcraft:ingot", 6));
 infinFurnace(utils.get("nuclearcraft:ore", 7), utils.get("nuclearcraft:ingot", 7));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 1), utils.get("nuclearcraft:plutonium"));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 3), utils.get("nuclearcraft:plutonium", 2));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 5), utils.get("nuclearcraft:plutonium", 4));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 7), utils.get("nuclearcraft:plutonium", 6));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 9), utils.get("nuclearcraft:plutonium", 8));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 11), utils.get("nuclearcraft:plutonium", 10));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 13), utils.get("nuclearcraft:plutonium", 12));
-##infinFurnace(utils.get("nuclearcraft:plutonium", 15), utils.get("nuclearcraft:plutonium", 14));
-##infinFurnace(utils.get("nuclearcraft:thorium", 1), utils.get("nuclearcraft:thorium"));
-##infinFurnace(utils.get("nuclearcraft:thorium", 3), utils.get("nuclearcraft:thorium", 2));
-##infinFurnace(utils.get("nuclearcraft:thorium", 5), utils.get("nuclearcraft:thorium", 4));
-##infinFurnace(utils.get("nuclearcraft:thorium", 7), utils.get("nuclearcraft:thorium", 6));
-##infinFurnace(utils.get("nuclearcraft:uranium", 1), utils.get("nuclearcraft:uranium"));
-##infinFurnace(utils.get("nuclearcraft:uranium", 3), utils.get("nuclearcraft:uranium", 2));
-##infinFurnace(utils.get("nuclearcraft:uranium", 5), utils.get("nuclearcraft:uranium", 4));
-##infinFurnace(utils.get("nuclearcraft:uranium", 7), utils.get("nuclearcraft:uranium", 6));
-##infinFurnace(utils.get("nuclearcraft:uranium", 9), utils.get("nuclearcraft:uranium", 8));
-##infinFurnace(utils.get("nuclearcraft:uranium", 11), utils.get("nuclearcraft:uranium", 10));
 infinFurnace(utils.get("opencomputers:material", 2), utils.get("opencomputers:material", 4));
+##infinFurnace(utils.get("qmd:dust", 1), utils.get("qmd:ingot", 1));
+##infinFurnace(utils.get("qmd:dust", 2), utils.get("qmd:ingot", 2));
+##infinFurnace(utils.get("qmd:dust", 3), utils.get("libvulpes:productingot", 7));
+##infinFurnace(utils.get("qmd:dust", 5), utils.get("thermalfoundation:material", 133));
+##infinFurnace(utils.get("qmd:dust", 6), utils.get("qmd:ingot", 6));
+##infinFurnace(utils.get("qmd:dust", 7), utils.get("qmd:ingot", 7));
+##infinFurnace(utils.get("qmd:dust", 8), utils.get("mekanism:ingot", 1));
+##infinFurnace(utils.get("qmd:dust", 9), utils.get("thermalfoundation:material", 135));
+##infinFurnace(utils.get("qmd:dust", 10), utils.get("thermalfoundation:material", 134));
+##infinFurnace(utils.get("qmd:dust", 11), utils.get("qmd:ingot", 11));
+##infinFurnace(utils.get("qmd:dust", 12), utils.get("qmd:ingot", 12));
+##infinFurnace(utils.get("qmd:dust", 13), utils.get("qmd:ingot", 13));
+##infinFurnace(utils.get("qmd:dust", 14), utils.get("qmd:ingot", 14));
+##infinFurnace(utils.get("qmd:dust2", 1), utils.get("qmd:ingot2", 1));
+##infinFurnace(utils.get("qmd:dust2"), utils.get("qmd:ingot2"));
 infinFurnace(utils.get("quark:biome_cobblestone", 2), utils.get("minecraft:stone"));
 #infinFurnace(utils.get("quark:crab_leg", W), utils.get("quark:cooked_crab_leg"));
 infinFurnace(utils.get("quark:frog_leg", W), utils.get("quark:cooked_frog_leg"));
@@ -975,7 +890,6 @@ infinFurnace(utils.get("rustic:dust_tiny_iron"), utils.get("minecraft:iron_nugge
 infinFurnace(utils.get("rustic:honeycomb"), utils.get("rustic:beeswax"));
 ##infinFurnace(utils.get("rustic:log", 1), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("rustic:log"), utils.get("minecraft:coal", 1));
-infinFurnace(utils.get("scalinghealth:heartdust"), utils.get("bhc:red_heart"));
 infinFurnace(utils.get("tcomplement:scorched_block", 1), utils.get("tcomplement:scorched_block"));
 //infinFurnace(utils.get("tcomplement:scorched_block", 3), utils.get("tcomplement:scorched_block", 4));
 //infinFurnace(utils.get("tcomplement:scorched_slab", 3), utils.get("tcomplement:scorched_slab", 4));
@@ -1056,6 +970,7 @@ infinFurnace(utils.get("thermalfoundation:ore", 7), utils.get("thermalfoundation
 infinFurnace(utils.get("thermalfoundation:ore", 8), utils.get("thermalfoundation:material", 136));
 infinFurnace(utils.get("thermalfoundation:ore"), utils.get("thermalfoundation:material", 128));
 infinFurnace(utils.get("threng:material", 2), utils.get("threng:material"));
+##infinFurnace(utils.get("trinity:dust_au_198", W), utils.get("trinity:ingot_au_198"));
 infinFurnace(utils.get("twilightforest:armor_shard_cluster", W), utils.get("twilightforest:knightmetal_ingot"));
 infinFurnace(utils.get("twilightforest:ironwood_raw", W), utils.get("twilightforest:ironwood_ingot", 0, 2));
 infinFurnace(utils.get("twilightforest:magic_beans"), utils.get("randomthings:beans", 2));

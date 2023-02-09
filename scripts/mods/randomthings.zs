@@ -393,7 +393,7 @@ craft.remake(<randomthings:soundbox>, ["pretty",
   "◊ ◊ ◊",
   "◊ # ◊",
   "◊ ◊ ◊"], {
-  "#": <ore:plankWood> * 6, # Citrus Wood Planks
+  "#": <ore:plankWood>, # Citrus Wood Planks
   "◊": <ore:gemLapis>, # Lapis Lazuli
 });
 

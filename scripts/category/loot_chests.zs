@@ -107,7 +107,7 @@ addLootList(
 	<randomthings:lotusseeds>               : 5,
 	<randomthings:spectreanchor>            : 1,
 	<enderio:block_enderman_skull:2>        : 10,
-	<ic2:nuclear:1>                         : 10,
+	<ic2:nuclear:5>                         : 10,
 	<hole_filler_mod:throwable_hole_filler> : 70,
 	<cyclicmagic:corrupted_chorus>          : 5,
 	<cyclicmagic:glowing_chorus>            : 5,
