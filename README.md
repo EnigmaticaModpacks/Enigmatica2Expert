@@ -4,24 +4,31 @@
 
 ![](https://i.imgur.com/afnpdXm.png)
 
-**Enigmatica 2: Expert - Extended** is an addon for [Enigmatica 2: Expert](https://www.curseforge.com/minecraft/modpacks/enigmatica2expert)
+**Enigmatica 2: Expert - Extended** is unofficial continuation of [Enigmatica 2: Expert](https://www.curseforge.com/minecraft/modpacks/enigmatica2expert)
 
 The aim of the addon is to make `E2E` even **more interesting** and **challenging**. Balance it out as much as possible, but leave the most interesting stuff untouched.
 
 ## Mods
 
-Here are `+200` up-to-date 1.12.2 mods (about 400 total). Despite this, the modpack **only takes 30% longer** to load than the original E2E. And the **FPS** in the game is **even higher**.
+Here are `+200` up-to-date 1.12.2 mods (about 400 total).  
+Despite this, the modpack **only takes 30% longer** to load than the original E2E. And the **FPS** in the game is **even higher**.
 
-10+ additional major mods and +200 tweaking and Quality of Life addons. Most important of them:
+10+ additional major mods and +200 tweaking and Quality of Life addons. Some notable of them:
 
-- ❤️ `Scaling Health`
-- 🛡️ `Construct's Armory`
-- ⛏️ `Harder Branch Mining`
-- 🍱 `Little Tiles`
-- 🐀 `Rats`
-- 🐉 `Tinker's Evolution`
+- <img src="https://media.forgecdn.net/avatars/thumbnails/46/167/30/30/636051421390084410.png"> [**Scaling Health**](https://www.curseforge.com/minecraft/mc-mods/scaling-health)
+- <img src="https://media.forgecdn.net/avatars/thumbnails/153/560/30/30/636619290357325647.png"> [**Construct's Armory**](https://www.curseforge.com/minecraft/mc-mods/constructs-armory)
+- <img src="https://media.forgecdn.net/avatars/thumbnails/86/235/30/30/636207507685344289.png"> [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles)
+- <img src="https://media.forgecdn.net/avatars/thumbnails/206/15/30/30/636953619080869513.png"> [**Rats**](https://www.curseforge.com/minecraft/mc-mods/rats)
+- <img src="https://media.forgecdn.net/avatars/thumbnails/273/618/30/30/637255642042590715.png"> [**Tinkers' Evolution**](https://www.curseforge.com/minecraft/mc-mods/tinkers-evolution)
+- <img src="https://media.forgecdn.net/avatars/thumbnails/247/735/30/30/637164776217531839.png"> [**Harder Branch Mining**](https://www.curseforge.com/minecraft/mc-mods/harder-branch-mining)
 
 See full list in [MODS.md](MODS.md)
+
+<!--
+Generated with:
+> puppeteer screenshot --omit-background ".\Mods Sprite.html" mods.png --viewport 780x240
+-->
+[![Mods spritesheet](https://i.imgur.com/d3Gcnmc.png)](MODS.md)
 
 ## Principles
 
@@ -32,10 +39,6 @@ See full list in [MODS.md](MODS.md)
   *![](https://git.io/JOv9z "Angel Ring") The Angel Ring is harder to give way to all other flight options.*  
   *![](https://git.io/JOv92 "Terrasteel") Сan no longer be easily cheesed through the mob stripping farm..*
 
-- ### Less miners -> more manual mining + processing  
-
-  *![](https://git.io/JOv90 "Sieve") Gave you Stack/Second of ore. Got nerf. But new x7 ore processing line comes in.*
-
 - ### Tinker's Hegemony  
 
   Material balance was reworked, OP traits remapped. Mobs spawn with random TCon's weapons.  
@@ -45,6 +48,10 @@ See full list in [MODS.md](MODS.md)
 
   Better caves, additional structures, more loot, reworked planets.  
   *![](https://git.io/Jze1z "Rocket Assembling Machine") Added a variety of new resources and unique terrain on planets and other dimensions.*
+
+- ### Less void miners -> more processing  
+
+  *![](https://git.io/JOv90 "Sieve") Reworked. New x7 ore processing line comes in.*
 
 - ### Clear guide  
 
@@ -105,11 +112,11 @@ If you play on a server on which have already made these changes, the client doe
 
 -----------------
 
-## Optional mods
-
-- [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings) - better sounds and environmental, but increaing load time and lower FPS a bit
+## Recommended mods
 
 - [**Entity Culling**](https://www.curseforge.com/minecraft/mc-mods/entityculling) - increase performance, but can cause crashes on some machines
+
+- [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings) - better sounds and environmental, but increaing load time and lower FPS a bit
 
 -----------------
 
@@ -126,3 +133,17 @@ Some of the changes from the `Extended` version [[1]](https://github.com/Enigmat
 
 - [CurseForge](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended)
 - [Discord](https://discord.gg/P2MTyxHZtw)
+
+## Media
+
+### Reddit
+
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/feedthebeast/comments/10p6uva/the_whole_modpack_beaten_in_only_peaceful_mode/?ref_source=embed&amp;ref=share&amp;embed=true&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="268" width="640" scrolling="no"></iframe>
+
+### Modpack Review
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NAmwHIhZ6yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Playthrough Series (Portuguese)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2RFv7HHV_jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
