@@ -48,7 +48,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	recipes.remove(<draconicevolution:draconic_core>);
 	recipes.addShapedMirrored("Draconic Core",
 	<draconicevolution:draconic_core>,
-	[[<ore:gearDraconium>, <ore:ingotBlutonium>, <ore:gearDraconium>],
+	[[<ore:gearDraconium>, <ore:ingotCobalt60>, <ore:gearDraconium>],
 	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>],
 	[<ore:plateElite>, <draconicevolution:energy_crystal>, <ore:plateElite>]]);
 
@@ -57,7 +57,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>],
-	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]],
+	[<ore:ingotVividAlloy>, <environmentaltech:pladium>, <ore:ingotVividAlloy>]],
 	40, <liquid:ic2hot_coolant> * 2000);
 
 # Draconic Energy Core
@@ -107,10 +107,10 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 # [Basic Energy Relay Crystal] from [Fluix Steel Ingot][+3]
 recipes.removeShaped(<draconicevolution:energy_crystal>);
 mods.bloodmagic.AlchemyTable.addRecipe(<draconicevolution:energy_crystal> * 4, [
-	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <bigreactors:ingotcyanite>, utils.tryCatch("threng:material", <nuclearcraft:alloy:15>),
+	<astralsorcery:blocklens>, <thermalfoundation:material:136>, <ore:ingotPlutonium242All>, utils.tryCatch("threng:material", <nuclearcraft:alloy:15>),
 ], 2000, 200, 2);
 scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
-	<advancedrocketry:vacuumlaser>, <ore:ingotMithril>, <ore:ingotCyanite>, <ore:ingotFluixSteel>,
+	<advancedrocketry:vacuumlaser>, <ore:ingotMithril>, <ore:ingotPlutonium242All>, <ore:ingotFluixSteel>,
 ], null, [<draconicevolution:energy_crystal> * 4], null, {power: 8000000, timeRequired: 20});
 
 

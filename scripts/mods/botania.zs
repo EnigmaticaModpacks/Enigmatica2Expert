@@ -6,7 +6,6 @@ import crafttweaker.item.IIngredient;
 #----- Orechid progression -----#
 
 # Remove unused ORE
-mods.botania.Orechid.removeOre("oreYellorite");
 mods.botania.Orechid.removeOre("oreTungsten");
 
 # Remove orechid advanced ore (only leave basic ones)

@@ -30,7 +30,7 @@ static dimBlocks as IItemStack[int] = {
   109        : <minecraft:packed_ice>,
   110        : <biomesoplenty:hard_ice>,
   111        : <nuclearcraft:supercold_ice>,
-  112        : <bigreactors:blockcyanite>,
+  112        : <nuclearcraft:fertile_isotope:2>,
   113        : <nuclearcraft:ingot_block:8>,
   114        : <biomesoplenty:leaves_3:11>,
   115        : <advancedrocketry:charcoallog>,

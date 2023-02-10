@@ -61,8 +61,8 @@ function addBurstSeedRecipe(input as IItemStack, additive as IItemStack, output 
   });
 }
 
-addBurstSeedRecipe(<enderio:block_infinity>, <bigreactors:dustcyanite>, <mechanics:burst_seed_grainsofinfinity>);
-addBurstSeedRecipe(<enderio:block_infinity>, <forestry:phosphor>      , <mechanics:burst_seed_grainsofinfinity>);
+addBurstSeedRecipe(<enderio:block_infinity>, <nuclearcraft:plutonium:15>, <mechanics:burst_seed_grainsofinfinity>);
+addBurstSeedRecipe(<enderio:block_infinity>, <forestry:phosphor>        , <mechanics:burst_seed_grainsofinfinity>);
 addBurstSeedRecipe(<contenttweaker:blasted_coal>, <thermalfoundation:material:162>, <mechanics:burst_seed_black_iron>);
 
 # [Empty Rod] from [Glass][+1]

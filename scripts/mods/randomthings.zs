@@ -116,7 +116,7 @@ recipes.addShapeless("Spectre Ingot Harder alt", <randomthings:ingredient:3>, [
 	<ore:ingotUnstable>,
 	<randomthings:ingredient:2>,
 	<thermalfoundation:material:134>,
-	<ore:dustCyanite>,
+	<ore:ingotPlutonium242All>,
 ]);
 
 

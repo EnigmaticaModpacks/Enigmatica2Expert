@@ -7,7 +7,7 @@ import crafttweaker.item.IIngredient;
 	recipes.addShaped("Infinity Booster Card", 
 	<ae2wtlib:infinity_booster_card>, 
 	[[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>],
-	[<bigreactors:mineralanglesite>, <aeadditions:storage.component:1>, <bigreactors:mineralanglesite>], 
+	[<ore:gemAnglesite>, <aeadditions:storage.component:1>, <ore:gemAnglesite>], 
 	[<appliedenergistics2:quantum_link>, <appliedenergistics2:material:47>, <appliedenergistics2:quantum_link>]]);
 
 val wctIngrs = {

@@ -84,8 +84,6 @@ if(isNull(loadedMods["refinedstorage"])) {
 .map(({input})=>[`furnace.remove(<*>, ${input});`])
 )*/
 furnace.remove(<*>, <actuallyadditions:item_dust:5>);
-furnace.remove(<*>, <bigreactors:dustgraphite>);
-furnace.remove(<*>, <bigreactors:oreyellorite>);
 furnace.remove(<*>, <biomesoplenty:gem_ore:7>);
 furnace.remove(<*>, <enderio:item_material:33>);
 furnace.remove(<*>, <forestry:resources:1>);

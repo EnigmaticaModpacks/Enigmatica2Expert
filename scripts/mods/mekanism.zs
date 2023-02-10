@@ -52,9 +52,6 @@ mods.mekanism.combiner.addRecipe(<ore:blockUranium>,         <jaopca:item_pieceu
 /**/
 
 
-# Unifying Graphite ingots, seems the crusher was overlooked
-mods.mekanism.crusher.removeRecipe(<bigreactors:dustgraphite>, <bigreactors:ingotgraphite>);
-
 for ingot in <ore:ingotGraphite>.items {
 	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
@@ -307,8 +304,8 @@ val mekTiers = [
 	# Primary           , Secondary                      , Additional         , Induction Cell Capacitors
 	[<ore:alloyAdvanced>,<ore:circuitAdvanced>           ,<ore:ingotOsmium>   , <enderio:item_basic_capacitor:0>],
 	[<ore:alloyElite>   ,<ore:circuitElite>              ,<ore:ingotZirconium>, <enderio:item_basic_capacitor:1>],
-	[<ore:alloyUltimate>,<ore:circuitUltimate>           ,<ore:ingotBlutonium>, <enderio:item_basic_capacitor:2>],
-	[<ic2:crafting:4>   ,<modularmachinery:blockcasing:5>,<ore:ingotLudicrite>, <enderio:item_capacitor_melodic>],
+	[<ore:alloyUltimate>,<ore:circuitUltimate>           ,<ore:ingotPlutonium242All>, <enderio:item_basic_capacitor:2>],
+	[<ic2:crafting:4>   ,<modularmachinery:blockcasing:5>,<ore:ingotVividAlloy>, <enderio:item_capacitor_melodic>],
 ] as IIngredient[][];
 
 function mekStorage(i as int, item as IItemStack, storageIngrs as IIngredient[string], strGrid as string[]) {

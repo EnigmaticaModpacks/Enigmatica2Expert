@@ -84,6 +84,62 @@ mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:5>, <tconstruct:c
 mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({ PartType: 'tconstruct:hammer_head' }), <liquid:electronics>, 144 * 8);
 mods.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>, null, <liquid:electronics>, 144 * 9);
 
+# Anglesite - Highest tier of Tech mods crystals
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_anglesite>, 100000000, 1000000, 
+<additionalcompression:gravelend_compressed:2>, [
+	<ore:singularityEntangled>,
+	<biomesoplenty:terrestrial_artifact>,
+	<ore:clathrateGlowstone>,
+	<ore:clathrateRedstone>,
+	<ore:clathrateEnder>,
+	<ore:crystalSlagRich>,
+	<ore:itemAttractorCrystal>,
+	<ore:itemWeatherCrystal>,
+	<ore:itemPrecientCrystal>,
+	<ore:crystalLitherite>,
+	<ore:crystalErodium>,
+	<ore:crystalKyronite>,
+	<ore:crystalPladium>,
+	<ore:crystalIonite>,
+	<ore:crystalAethium>,
+	<ore:skullSentientEnder>,
+	<enderio:item_basic_capacitor:2>,
+	<ore:crystalPureFluix>,
+	<ore:gemDilithium>,
+	<ore:slimecrystalPink>,
+]);	  
+
+
+# Benitoite - Highest tier of non-Tech mods crystals
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_benitoite>, 100000000, 1000000,
+<additionalcompression:gravelnether_compressed:2>, [
+	<ore:eternalLifeEssence>,
+	<thaumcraft:mechanism_complex>,
+	<ore:elvenDragonstone>,
+	<ore:manaPearl>,
+	<ore:ingotElvenElementium>,
+	<botania:pylon:1>,
+	<ore:manaDiamond>,
+	<ore:elvenPixieDust>,
+	<astralsorcery:itemcraftingcomponent:4>,
+	<astralsorcery:itemcoloredlens:6>,
+	<bloodmagic:blood_rune:9>,
+	<bloodmagic:blood_rune:10>,
+	<bloodmagic:points_upgrade>,
+	<bloodmagic:slate:4>,
+	<rats:gem_of_ratlantis>,
+	<ore:carminite>,
+	<randomthings:ingredient:2>,
+	<randomthings:rezstone>,
+	<cyclicmagic:soulstone>,
+	<astralsorcery:itemperkgem:1>,
+]);
+
+# Benefication of Anglesite and Benitoite
+scripts.process.beneficiate(<contenttweaker:ore_anglesite>, "Anglesite", 1, {exceptions: "only: Grindstone"});
+scripts.process.beneficiate(<contenttweaker:ore_benitoite>, "Benitoite", 1, {exceptions: "only: Grindstone"});
+
+
 /*
 # Knowledge absorber craft
 # [Golden eye] from [Ender Orb Translocator][+3]

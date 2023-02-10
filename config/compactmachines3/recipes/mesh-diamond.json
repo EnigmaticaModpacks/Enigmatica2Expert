@@ -8,7 +8,7 @@
     "duration": 1200,
     "symmetrical": true,
   
-    "catalyst": "bigreactors:mineralbenitoite",
+    "catalyst": "contenttweaker:benitoite",
     "catalyst-meta": 0,
   
     "input-types": {

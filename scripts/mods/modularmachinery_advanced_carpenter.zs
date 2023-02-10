@@ -6,7 +6,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_wyvern_core", mac
 	.addEnergyPerTickInput(50000)
 	.addItemOutput(<draconicevolution:wyvern_core>)
 	.addItemInput(<ore:shulkerShell>)
-	.addItemInput(<ore:ingotLudicrite>, 2)
+	.addItemInput(<ore:ingotVividAlloy>, 2)
 	.addItemInput(<environmentaltech:pladium>)
 	.addItemInput(<minecraft:sponge>)
 	.addItemInput(<draconicevolution:draconic_core> * 3)
@@ -38,18 +38,6 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_pedestal", machin
 	.addItemInput(<extendedcrafting:storage>)
 	.addItemInput(<ore:ingotBlackIron>, 2)
 	.addFluidInput(<liquid:coal> * 500)
-	.build();
-
-mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_ludicrite_block", machineName, 10)
-	.addEnergyPerTickInput(25000)
-	.addItemOutput(<bigreactors:blockludicrite>)
-	.addItemInput(<ore:gemAmethyst>)
-	.addItemInput(<ore:blockBlutonium>)
-	.addItemInput(<ore:ingotAlumite>)
-	.addItemInput(<ore:blockBlaze>)
-	.addItemInput(<botania:storage:2>)
-	.addItemInput(<ore:blockEnderium>, 2)
-	.addFluidInput(<liquid:liquiddna> * 500)
 	.build();
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_overclocker_upgrade", machineName, 10)

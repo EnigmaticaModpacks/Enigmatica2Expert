@@ -1,9 +1,9 @@
 {
 	loot_size: 1,
 	rewards: [{
-		item: "bigreactors:mineralanglesite"
+		item: "contenttweaker:anglesite"
 	},
 	{
-		item: "bigreactors:mineralbenitoite"
+		item: "contenttweaker:benitoite"
 	}]
 }

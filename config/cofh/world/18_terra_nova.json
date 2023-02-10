@@ -16,7 +16,10 @@
 						"metadata": 6,
 						"weight": 50
 					},{
-						"name": "bigreactors:blockcyanite",
+						"name": "nuclearcraft:fertile_isotope",
+						"properties": {
+							"type":"plutonium"
+						},
 						"weight": 5
 					}
 				],
@@ -34,11 +37,16 @@
 			"biome": "biomesoplenty:crag", "dimension": {"restriction": "whitelist","value": [112]}
 		},
 
-		"cyanite_stalactite": {
+		"plutonium_stalactite": {
 			"distribution": "cave",
 			"generator": {
 				"type": "stalactite",
-				"block": "bigreactors:blockcyanite",
+				"block": {
+					"name": "nuclearcraft:fertile_isotope",
+					"properties": {
+						"type":"plutonium"
+					}
+				},
 				"height-variance": 15,
 				"gen-size": 1
 			},

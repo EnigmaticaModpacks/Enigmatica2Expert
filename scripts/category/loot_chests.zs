@@ -15,7 +15,7 @@ val ice_dragon_male_cave_pool    = loottweaker.LootTweaker.getTable("iceandfire:
 
 val caveloot = [
 	<environmentaltech:litherite_crystal>,
-	<bigreactors:ingotblutonium>,
+	<ore:dustIrradiatedBorax>.firstItem,
 	<ic2:nuclear:7>,
 	<minecraft:gold_block>,
 	<thermalfoundation:material:70>,

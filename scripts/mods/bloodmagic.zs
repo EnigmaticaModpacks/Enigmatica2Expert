@@ -196,7 +196,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, crDgr, [
 	[null, capRune, <bloodmagic:slate:4>, <bloodmagic:sacrificial_dagger>, <ore:nuggetDraconicMetal>, null, null], 
 	[null, capRune, bldTnk, <bloodmagic:slate:4>, null, null, null], 
 	[antBck, <animus:sigil_consumption>, capRune, capRune, capRune, null, null], 
-	[<bigreactors:mineralbenitoite>, antBck, null, null, null, null, null]
+	[<ore:gemBenitoite>, antBck, null, null, null, null, null]
 ]);
 
 # Remove weak saltpater recipe
@@ -209,7 +209,6 @@ val alcTableOres = [
 	<appliedenergistics2:quartz_ore>,
 	<astralsorcery:blockcustomore:1>,
 	<astralsorcery:blockcustomsandore>,
-	<bigreactors:oreyellorite>,
 	<biomesoplenty:gem_ore:1>,
 	<biomesoplenty:gem_ore:2>,
 	<biomesoplenty:gem_ore:3>,

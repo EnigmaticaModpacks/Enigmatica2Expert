@@ -71,9 +71,8 @@ null);
 var list = {
 	"ⰱ": <advancedrocketry:oxygencharger>,
 	"ⱎ": <appliedenergistics2:chest>,
-	"◫": <bigreactors:blockludicrite>,
-	"◊": <bigreactors:mineralanglesite>,
-	"♦": <bigreactors:mineralbenitoite>,
+	"◊": <ore:gemAnglesite>,
+	"♦": <ore:gemBenitoite>,
 	"◰": <botania:manatablet>.withTag({mana: 500000}),
 	"◙": <compactsolars:compact_solar_block:2>,
 	"ж": <draconicevolution:awakened_core>,
@@ -149,7 +148,7 @@ var list = {
 		<ore:ingotThorium>,
 		<ore:ingotHeavy>,
 		<ore:ingotArdite>,
-		<ore:ingotLudicrite>,
+		<ore:ingotVividAlloy>,
 		<ore:ingotElvenElementium>,
 		<ore:ingotMagnesium>,
 		<ore:ingotLithium>,
@@ -236,7 +235,7 @@ var list = {
 		<ore:blockThorium>,
 		<ore:blockHeavy>,
 		<ore:blockArdite>,
-		<ore:blockLudicrite>,
+		<ore:blockVividAlloy>,
 		<botania:storage:2>,
 		<ore:blockMagnesium>,
 		<ore:blockLithium>,
@@ -373,7 +372,7 @@ craft.remake(<mekanism:gastank>.withTag({tier: 4}), ["pretty",
   "▬ R ▄ ♦ ◘ ♦ ▄ R ▬",
   "▬ ▬ ▬ ■ ◘ ■ ▬ ▬ ▬"], {
   "▬": <ore:ingotUltimate>,               # The Ultimate Ingot
-  "■": <ore:blockLudicrite>,              # Ludicrite Block
+  "■": <ore:blockVividAlloy>,              # VividAlloy Block
   "R": <extrautils2:drum:2>,              # Reinforced Large Drum
   "▄": <ore:blockOsgloglas>,              # Osgloglas Block
   "♦": <ore:gemAnglesite>,                # Anglesite
@@ -515,8 +514,8 @@ craft.remake(<extrautils2:passivegenerator:6>, ["pretty",
   "C ■ ⌃ W ⌃ ■ C"], {
   "■": <ore:blockDraconiumCharged>,      # Charged Draconium Block
   "a": <extrautils2:passivegenerator:3>, # Water Mill
-  "A": <bigreactors:mineralanglesite>,   # Anglesite
-  "B": <bigreactors:mineralbenitoite>,   # Benitoite
+  "A": <ore:gemAnglesite>,
+  "B": <ore:gemBenitoite>,
   "⌃": <extrautils2:decorativesolid:6>,  # Blue Quartz
   "C": <extendedcrafting:material:12>,   # Crystaltine Catalyst
   "D": <extrautils2:teleporter:1>,       # Deep Dark Portal

@@ -95,7 +95,6 @@ desc.jei(<thaumcraft:thaumonomicon>, "click.bookshelf"); # Thaumonomicon
 desc.jei(<thaumcraft:arcane_workbench>, "click.crafting"); # Arcane Workbench
 desc.jei(<thaumcraft:crucible>, "click.cauldron"); # Crucible
 desc.jei(Bucket("xpjuice"), "obtained.fluid_transposer"); # XP Bucket
-desc.jei(<bigreactors:ingotludicrite>, "craftable.ludictite"); # Uncraftable ingots
 desc.jei(<thermalfoundation:material:136>, "obtained.mithril"); # Mana Infused Ingot
 desc.jei(<thermalexpansion:frame:129>, "requires.rf", "10.000.000"); # Thermal Expansion Casings
 desc.jei(<actuallyadditions:block_crystal_empowered>,   "requires.rf", "1.000.000");  # Restonia
@@ -140,8 +139,6 @@ desc.jei(<ic2:wrench>, "ic2wrench");
 
 # Thermal Expansion Resonant Machine Frame (Full)
 desc.jei(<thermalexpansion:frame:148>, "requires.rf", "100.000.000");
-desc.jei(<bigreactors:mineralanglesite>, "craftable");
-desc.jei(<bigreactors:mineralbenitoite>, "craftable");
 desc.jei(<computercraft:printout>.withTag({pages: 1}), "§fPrint with §eComputer Craft§r's §bPrinter");
 desc.jei(<advgenerators:gas_input>, "ethylene_convert");
 
@@ -186,10 +183,6 @@ desc.tooltip(<industrialforegoing:mob_relocator>, "industrialforegoing:mob_reloc
 desc.tooltipRaw(<mysticalagriculture:enderium_seeds>, desc.local("tier")~": §56§r");
 desc.tooltipRaw(<mysticalagriculture:iridium_seeds>, desc.local("tier")~": §56§r");
 desc.tooltipRaw(<mysticalagriculture:terrasteel_seeds>, desc.local("tier")~": §56§r");
-
-# Extreme Reactors Crystals
-<bigreactors:mineralanglesite>.displayName = desc.local("anglesite");
-<bigreactors:mineralbenitoite>.displayName = desc.local("benitoite");
 <modularmachinery:itemmodularium>.displayName = desc.local("modularium_alloy");
 
 # Solar Panels

@@ -316,18 +316,6 @@ scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler", [
 	[<ic2:iridium_reflector>], null, {power: 160000, timeRequired: 80}
 );
 
-# [Quad Fuel Rod (Uranium)] from [Enriched Uranium Nuclear Fuel]*4[+1]
-mods.cyclicmagic.Packager.addRecipe(<ic2:quad_uranium_fuel_rod>, [
-	<ic2:nuclear> * 4,            # Enriched Uranium Nuclear Fuel
-	<bigreactors:reactorfuelrod>, # Reactor Fuel Rod (Legacy)
-]);
-
-# [Quad Fuel Rod (MOX)] from [MOX Nuclear Fuel]*4[+1]
-mods.cyclicmagic.Packager.addRecipe(<ic2:quad_mox_fuel_rod>, [
-	<ic2:nuclear:4> * 4,          # MOX Nuclear Fuel
-	<bigreactors:reactorfuelrod>, # Reactor Fuel Rod (Legacy)
-]);
-
 # Milk Powder
 scripts.process.evaporate(<fluid:milk> * 250, <ic2:dust:33>, "No exceptions");
 scripts.process.solution([<ic2:dust:33>], [<fluid:water> * 250], [<fluid:milk> * 250], null, "Except: highoven");

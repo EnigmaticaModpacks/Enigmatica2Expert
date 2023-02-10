@@ -148,17 +148,12 @@ scripts.process.compress(<ore:blockQuartzBlack>, <tconstruct:large_plate>.withTa
 
 # Removing the ability to melt coal
 val coals as IItemStack[] = [
-
-	<bigreactors:ingotgraphite>,
-	<bigreactors:dustgraphite>,
 	<minecraft:coal>,
 	<minecraft:coal_block>,
 	<thermalfoundation:material:768>,
-	<bigreactors:blockgraphite>,
 	<nuclearcraft:ingot_block:8>,
 	<nuclearcraft:ingot:8>,
 	<nuclearcraft:dust:8>
-	
 ];
 
 for item in coals {
@@ -181,17 +176,6 @@ scripts.process.melt(<actuallyadditions:block_misc:6>, <liquid:ender> * 1000, "E
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:gold>, 288, true);
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:alubrass>, 144, true);
 	mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast_custom:4>, <thermalfoundation:material:23>, <liquid:brass>, 144, true);
-
-# Add Cyanite melting recipe
-	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * (144*9), <ore:blockCyanite>, 700);
-	mods.tconstruct.Melting.addRecipe(<liquid:cyanite> * 144, <ore:ingotCyanite> | <ore:dustCyanite>, 450);
-
-# Add recipes from liquids
-	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotblutonium>, <tconstruct:cast_custom>, <liquid:plutonium_242>, 144, false);
-	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockblutonium>, null, <liquid:plutonium_242>, 1296);
-	mods.tconstruct.Casting.addBasinRecipe(<bigreactors:blockcyanite>, null, <liquid:cyanite>, 1296);
-	mods.tconstruct.Casting.addTableRecipe(<bigreactors:ingotcyanite>, <tconstruct:cast_custom>, <liquid:cyanite>, 144, false);
-
 
 # Slime Boots remove and hide (replaced by Conarm)
 	for i in 0 to 6 {

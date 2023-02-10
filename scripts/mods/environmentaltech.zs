@@ -240,7 +240,7 @@ for i in 0 .. 6 {
 		D: <environmentaltech:diode>,
 		R: <ic2:iridium_reflector>,
 		E: <ic2:nuclear:10>,
-		L: <ore:blockLudicrite>,
+		L: <ore:blockVividAlloy>,
 	"╱": <tconstruct:clear_glass:*>,
 	} as IIngredient[string];
 

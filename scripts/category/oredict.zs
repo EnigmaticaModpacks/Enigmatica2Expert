@@ -408,7 +408,6 @@ addItems(<ore:hatArcheologist>, [<quark:archaeologist_hat>, <rats:archeologist_h
 addItems(<ore:hatPirate>, [<quark:pirate_hat>, <rats:pirat_hat>]);
 
 # Some dusts
-remove(<ore:dustGraphite>, <bigreactors:dustgraphite>);
 remove(<ore:dustEnderPearl>, <ic2:dust:31>);
 removeItems(<ore:dustQuartz>, [<actuallyadditions:item_dust:5>, <nuclearcraft:gem_dust:2>]);
 removeItems(<ore:dustNetherQuartz>, [<actuallyadditions:item_dust:5>, <enderio:item_material:33>, <nuclearcraft:gem_dust:2>]);
@@ -611,8 +610,8 @@ addItems(<ore:itemXP>, [
 ]);
 
 # Add oredict for benefication
-add(<ore:gemBenitoite>, <bigreactors:mineralbenitoite>);
-add(<ore:gemAnglesite>, <bigreactors:mineralanglesite>);
+add(<ore:gemBenitoite>, <contenttweaker:benitoite>);
+add(<ore:gemAnglesite>, <contenttweaker:anglesite>);
 
 # Alien Crystals for benefication
 add(<ore:aliencrystalViolet>, <advancedrocketry:crystal>);

@@ -4,19 +4,24 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 # Remove Weak Conduits and unused alloys
+/*
+0 - Crude Steel
+5 - Energetic Silver
+6 - Vivid alloy
+*/
 for s in [
   "block_alloy_endergy",
   "item_alloy_endergy_nugget",
   "item_alloy_endergy_ingot",
   "item_alloy_endergy_ball"
 ] as string[] {
-  for i in [0, 5, 6] as int[] {
+  for i in [0, 5] as int[] {
     val it = itemUtils.getItem("enderio:"~s,i);
     if (!isNull(it)) utils.rh(it, false);
   }
 }
 
-for fluid in [<liquid:crude_steel>, <liquid:vivid_alloy>, <liquid:energetic_silver>] as ILiquidStack[] {
+for fluid in [<liquid:crude_steel>, <liquid:energetic_silver>] as ILiquidStack[] {
   mods.nuclearcraft.IngotFormer.removeRecipeWithInput(fluid * 144);
   for n in [144, 16, 144*9] as int[] {
     mods.nuclearcraft.Melter.removeRecipeWithOutput(fluid * n);
@@ -47,7 +52,6 @@ recipes.removeByRecipeName("enderio:capacitor_crystalline_alt");
 # Remove liquids of removed alloys
 mods.tconstruct.Melting.removeRecipe(<liquid:crude_steel>);
 mods.tconstruct.Melting.removeRecipe(<liquid:energetic_silver>);
-mods.tconstruct.Melting.removeRecipe(<liquid:vivid_alloy>);
 
 # Add harder stepped alloys
 scripts.process.alloy([<ore:itemPulsatingPowder>   , <ore:ingotVibrantAlloy>        , <ore:ingotSentientMetal>], <ore:ingotCrystallineAlloy>.firstItem    , "no exceptions");
@@ -86,3 +90,24 @@ val eCndts  = [
 for i in 0 to eAlloys.length {
   recipes.addShaped("Cheaper " ~ getItemName(eCndts[i+1]), eCndts[i+1] * 8, [[BDR, i==3?GP:BDR, BDR], [eAlloys[i], eCndts[i], eAlloys[i]], [BDR, i==3?GP:BDR, BDR]]);
 }
+
+//////////////////////////////////////////////////
+//            Ludicrite replacement             //
+//////////////////////////////////////////////////
+// Liquids recipe
+mods.tconstruct.Alloy.addRecipe(<liquid:vivid_alloy> * 144, [
+  <fluid:alumite> * 144,
+  <fluid:enrichedlava> * 144,
+  <fluid:plutonium_242> * 144,
+  <fluid:mutagen> * 144,
+  <fluid:enderium> * 144,
+]);
+
+// Multiblock Machine recipe
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
+  <ore:blockEnderium>,                  # Block of Enderium
+  <ore:blockAlumite>,                   # Alumite Block
+  <draconicevolution:infused_obsidian>, # Draconium Infused Obsidian
+  <ore:blockPlutonium242>,              # Plutonium-242 Block
+], [<fluid:mutagen> * 1000], [<enderio:block_alloy_endergy:6>], null, {power: 160000, timeRequired: 20});
+//////////////////////////////////////////////////

@@ -134,10 +134,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 839
-# Filtered by JEI blacklist: 49
+# Total Furnace recipes registered: 825
+# Filtered by JEI blacklist: 42
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 113
+# Filtered by oredict: 108
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -171,11 +171,6 @@ infinFurnace(utils.get("betteranimalsplus:turkey_egg"), utils.get("betteranimals
 infinFurnace(utils.get("betteranimalsplus:turkey_leg_raw"), utils.get("betteranimalsplus:turkey_leg_cooked"));
 infinFurnace(utils.get("betteranimalsplus:turkey_raw"), utils.get("betteranimalsplus:turkey_cooked"));
 infinFurnace(utils.get("betteranimalsplus:venisonraw"), utils.get("betteranimalsplus:venisoncooked"));
-##infinFurnace(utils.get("bigreactors:dustblutonium"), utils.get("bigreactors:ingotblutonium"));
-##infinFurnace(utils.get("bigreactors:dustcyanite"), utils.get("bigreactors:ingotcyanite"));
-##infinFurnace(utils.get("bigreactors:dustludicrite"), utils.get("bigreactors:ingotludicrite"));
-##infinFurnace(utils.get("bigreactors:duststeel"), utils.get("thermalfoundation:material", 160));
-##infinFurnace(utils.get("bigreactors:dustyellorium"), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("biomesoplenty:gem_ore", 1), utils.get("biomesoplenty:gem", 1));
 infinFurnace(utils.get("biomesoplenty:gem_ore", 2), utils.get("biomesoplenty:gem", 2));
 infinFurnace(utils.get("biomesoplenty:gem_ore", 3), utils.get("biomesoplenty:gem", 3));
@@ -407,7 +402,6 @@ infinFurnace(utils.get("jaopca:item_clustertopaz"), utils.get("biomesoplenty:gem
 infinFurnace(utils.get("jaopca:item_clustertrinitite"), utils.get("trinity:trinitite_shard", 0, 2));
 infinFurnace(utils.get("jaopca:item_clustertungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 2));
 infinFurnace(utils.get("jaopca:item_clusteruranium"), utils.get("immersiveengineering:metal", 14, 2));
-#infinFurnace(utils.get("jaopca:item_clusteryellorium"), utils.get("immersiveengineering:metal", 14, 2));
 infinFurnace(utils.get("jaopca:item_crushedaluminium"), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("jaopca:item_crushedardite"), utils.get("tconstruct:ingots", 1));
 infinFurnace(utils.get("jaopca:item_crushedastralstarmetal"), utils.get("astralsorcery:itemcraftingcomponent", 1));
@@ -483,7 +477,6 @@ infinFurnace(utils.get("jaopca:item_crystalabysstopaz"), utils.get("jaopca:item_
 infinFurnace(utils.get("jaopca:item_crystalabysstrinitite"), utils.get("jaopca:item_dirtygemtrinitite"));
 infinFurnace(utils.get("jaopca:item_crystalabysstungsten"), utils.get("jaopca:item_dirtygemtungsten"));
 infinFurnace(utils.get("jaopca:item_crystalabyssuranium"), utils.get("jaopca:item_dirtygemuranium"));
-#infinFurnace(utils.get("jaopca:item_crystalabyssyellorium"), utils.get("jaopca:item_dirtygemyellorium"));
 infinFurnace(utils.get("jaopca:item_dirtygemaluminium"), utils.get("thermalfoundation:material", 132, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemamber"), utils.get("thaumcraft:amber", 0, 18));
 infinFurnace(utils.get("jaopca:item_dirtygemamethyst"), utils.get("biomesoplenty:gem", 0, 18));
@@ -529,7 +522,6 @@ infinFurnace(utils.get("jaopca:item_dirtygemtopaz"), utils.get("biomesoplenty:ge
 infinFurnace(utils.get("jaopca:item_dirtygemtrinitite"), utils.get("trinity:trinitite_shard", 0, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemuranium"), utils.get("immersiveengineering:metal", 5, 12));
-#infinFurnace(utils.get("jaopca:item_dirtygemyellorium"), utils.get("immersiveengineering:metal", 5, 12));
 infinFurnace(utils.get("jaopca:item_dustalchaluminium"), utils.get("jaopca:item_dirtygemaluminium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchamethyst"), utils.get("jaopca:item_dirtygemamethyst", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchapatite"), utils.get("jaopca:item_dirtygemapatite", 0, 48));
@@ -614,7 +606,6 @@ infinFurnace(utils.get("jaopca:item_rockychunktopaz"), utils.get("jaopca:item_di
 infinFurnace(utils.get("jaopca:item_rockychunktrinitite"), utils.get("jaopca:item_dirtygemtrinitite", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 4));
-#infinFurnace(utils.get("jaopca:item_rockychunkyellorium"), utils.get("jaopca:item_dirtygemyellorium", 0, 4));
 ##infinFurnace(utils.get("libvulpes:productdust", 7), utils.get("libvulpes:productingot", 7));
 infinFurnace(utils.get("mechanics:heavy_mesh", W), utils.get("mechanics:heavy_ingot", 0, 2));
 ##infinFurnace(utils.get("mekanism:dust", 1), utils.get("minecraft:gold_ingot"));
@@ -639,8 +630,6 @@ infinFurnace(utils.get("minecraft:chorus_fruit", W), utils.get("minecraft:chorus
 infinFurnace(utils.get("minecraft:clay_ball", W), utils.get("minecraft:brick"));
 infinFurnace(utils.get("minecraft:clay", W), utils.get("minecraft:hardened_clay"));
 infinFurnace(utils.get("minecraft:coal_ore", W), utils.get("minecraft:coal"));
-infinFurnace(utils.get("minecraft:coal", 1), utils.get("nuclearcraft:ingot", 8));
-infinFurnace(utils.get("minecraft:coal"), utils.get("nuclearcraft:ingot", 8));
 infinFurnace(utils.get("minecraft:cobblestone", W), utils.get("minecraft:stone"));
 infinFurnace(utils.get("minecraft:diamond_ore", W), utils.get("minecraft:diamond"));
 infinFurnace(utils.get("minecraft:dye", 3), utils.get("nuclearcraft:roasted_cocoa_beans"));
@@ -717,7 +706,6 @@ infinFurnace(utils.get("netherendingores:ore_end_modded_1", 9), utils.get("appli
 #infinFurnace(utils.get("netherendingores:ore_end_modded_1", 10), utils.get("appliedenergistics2:charged_quartz_ore", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_1", 11), utils.get("mekanism:oreblock", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_1", 12), utils.get("immersiveengineering:ore", 5, 2));
-#infinFurnace(utils.get("netherendingores:ore_end_modded_1", 13), utils.get("bigreactors:oreyellorite", 0, 2));
 #infinFurnace(utils.get("netherendingores:ore_end_modded_1", 14), utils.get("libvulpes:ore0", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_1"), utils.get("thermalfoundation:ore", 4, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_2", 1), utils.get("biomesoplenty:gem_ore", 1, 2));
@@ -747,7 +735,6 @@ infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 9), utils.get("ap
 infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 10), utils.get("appliedenergistics2:charged_quartz_ore", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 11), utils.get("mekanism:oreblock", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 12), utils.get("immersiveengineering:ore", 5, 2));
-#infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 13), utils.get("bigreactors:oreyellorite", 0, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 14), utils.get("libvulpes:ore0", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_nether_modded_1"), utils.get("thermalfoundation:ore", 4, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 1), utils.get("biomesoplenty:gem_ore", 1, 2));
@@ -854,36 +841,35 @@ infinFurnace(utils.get("rats:rat_nugget_ore", 41, 1, {OreItem: {id: "netherendin
 infinFurnace(utils.get("rats:rat_nugget_ore", 42, 1, {OreItem: {id: "netherendingores:ore_end_modded_1", Count: 1, Damage: 7 as short}, IngotItem: {id: "thermalfoundation:ore", Count: 2, Damage: 2 as short}}), utils.get("thermalfoundation:ore", 2, 2));
 infinFurnace(utils.get("rats:rat_nugget_ore", 43, 1, {OreItem: {id: "netherendingores:ore_end_modded_1", Count: 1, Damage: 8 as short}, IngotItem: {id: "thermalfoundation:ore", Count: 2, Damage: 1 as short}}), utils.get("thermalfoundation:ore", 1, 2));
 infinFurnace(utils.get("rats:rat_nugget_ore", 44, 1, {OreItem: {id: "netherendingores:ore_end_modded_1", Count: 1, Damage: 12 as short}, IngotItem: {id: "immersiveengineering:ore", Count: 2, Damage: 5 as short}}), utils.get("immersiveengineering:ore", 5, 2));
-#infinFurnace(utils.get("rats:rat_nugget_ore", 45, 1, {OreItem: {id: "netherendingores:ore_end_modded_1", Count: 1, Damage: 13 as short}, IngotItem: {id: "bigreactors:oreyellorite", Count: 2, Damage: 0 as short}}), utils.get("bigreactors:oreyellorite", 0, 2));
-#infinFurnace(utils.get("rats:rat_nugget_ore", 46, 1, {OreItem: {id: "netherendingores:ore_end_modded_2", Count: 1, Damage: 7 as short}, IngotItem: {id: "netherendingores:ore_other_1", Count: 2, Damage: 8 as short}}), utils.get("netherendingores:ore_other_1", 8, 2));
-infinFurnace(utils.get("rats:rat_nugget_ore", 47, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 0 as short}}), utils.get("biomesoplenty:gem"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 48, 1, {OreItem: {id: "minecraft:gold_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:gold_ingot", Count: 1, Damage: 0 as short}}), utils.get("minecraft:gold_ingot"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 49, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 7 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 135 as short}}), utils.get("thermalfoundation:material", 135));
-infinFurnace(utils.get("rats:rat_nugget_ore", 50, 1, {OreItem: {id: "minecraft:iron_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:iron_ingot", Count: 1, Damage: 0 as short}}), utils.get("minecraft:iron_ingot"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 51, 1, {OreItem: {id: "minecraft:lapis_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:dye", Count: 1, Damage: 4 as short}}), utils.get("minecraft:dye", 4));
-infinFurnace(utils.get("rats:rat_nugget_ore", 52, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 3 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 131 as short}}), utils.get("thermalfoundation:material", 131));
-infinFurnace(utils.get("rats:rat_nugget_ore", 53, 1, {OreItem: {id: "nuclearcraft:ore", Count: 1, Damage: 6 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1, Damage: 6 as short}}), utils.get("nuclearcraft:ingot", 6));
-infinFurnace(utils.get("rats:rat_nugget_ore", 54, 1, {OreItem: {id: "nuclearcraft:ore", Count: 1, Damage: 7 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1, Damage: 7 as short}}), utils.get("nuclearcraft:ingot", 7));
-infinFurnace(utils.get("rats:rat_nugget_ore", 55, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 5 as short}}), utils.get("biomesoplenty:gem", 5));
-infinFurnace(utils.get("rats:rat_nugget_ore", 56, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 8 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 136 as short}}), utils.get("thermalfoundation:material", 136));
-infinFurnace(utils.get("rats:rat_nugget_ore", 79, 1, {OreItem: {id: "minecraft:quartz_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:quartz", Count: 1, Damage: 0 as short}}), utils.get("minecraft:quartz"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 88, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 133 as short}}), utils.get("thermalfoundation:material", 133));
-infinFurnace(utils.get("rats:rat_nugget_ore", 89, 1, {OreItem: {id: "mekanism:oreblock", Count: 1, Damage: 0 as short}, IngotItem: {id: "mekanism:ingot", Count: 1, Damage: 1 as short}}), utils.get("mekanism:ingot", 1));
-infinFurnace(utils.get("rats:rat_nugget_ore", 90, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 2 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 2 as short}}), utils.get("biomesoplenty:gem", 2));
-infinFurnace(utils.get("rats:rat_nugget_ore", 91, 1, {OreItem: {id: "contenttweaker:ore_phosphor", Count: 1, Damage: 0 as short}, IngotItem: {id: "contenttweaker:nugget_phosphor", Count: 1, Damage: 0 as short}}), utils.get("contenttweaker:nugget_phosphor"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 92, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 6 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 134 as short}}), utils.get("thermalfoundation:material", 134));
-infinFurnace(utils.get("rats:rat_nugget_ore", 93, 1, {OreItem: {id: "twilightforest:ironwood_raw", Count: 1, Damage: 0 as short}, IngotItem: {id: "twilightforest:ironwood_ingot", Count: 2, Damage: 0 as short}}), utils.get("twilightforest:ironwood_ingot", 0, 2));
-infinFurnace(utils.get("rats:rat_nugget_ore", 94, 1, {OreItem: {id: "minecraft:redstone_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:redstone", Count: 1, Damage: 0 as short}}), utils.get("minecraft:redstone"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 95, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 1 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 1 as short}}), utils.get("biomesoplenty:gem", 1));
-infinFurnace(utils.get("rats:rat_nugget_ore", 96, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 6 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 6 as short}}), utils.get("biomesoplenty:gem", 6));
-infinFurnace(utils.get("rats:rat_nugget_ore", 97, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 2 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 130 as short}}), utils.get("thermalfoundation:material", 130));
-infinFurnace(utils.get("rats:rat_nugget_ore", 98, 1, {OreItem: {id: "astralsorcery:blockcustomore", Count: 1, Damage: 1 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 1, Damage: 1 as short}}), utils.get("astralsorcery:itemcraftingcomponent", 1));
-infinFurnace(utils.get("rats:rat_nugget_ore", 99, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 4 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 4 as short}}), utils.get("biomesoplenty:gem", 4));
-infinFurnace(utils.get("rats:rat_nugget_ore", 100, 1, {OreItem: {id: "nuclearcraft:ore", Count: 1, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1, Damage: 3 as short}}), utils.get("nuclearcraft:ingot", 3));
-infinFurnace(utils.get("rats:rat_nugget_ore", 101, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 1 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 129 as short}}), utils.get("thermalfoundation:material", 129));
-infinFurnace(utils.get("rats:rat_nugget_ore", 102, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 3 as short}}), utils.get("biomesoplenty:gem", 3));
-infinFurnace(utils.get("rats:rat_nugget_ore", 103, 1, {OreItem: {id: "endreborn:block_wolframium_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "endreborn:item_ingot_wolframium", Count: 1, Damage: 0 as short}}), utils.get("endreborn:item_ingot_wolframium"));
-infinFurnace(utils.get("rats:rat_nugget_ore", 104, 1, {OreItem: {id: "immersiveengineering:ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1, Damage: 5 as short}}), utils.get("immersiveengineering:metal", 5));
+#infinFurnace(utils.get("rats:rat_nugget_ore", 45, 1, {OreItem: {id: "netherendingores:ore_end_modded_2", Count: 1, Damage: 7 as short}, IngotItem: {id: "netherendingores:ore_other_1", Count: 2, Damage: 8 as short}}), utils.get("netherendingores:ore_other_1", 8, 2));
+infinFurnace(utils.get("rats:rat_nugget_ore", 46, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 0 as short}}), utils.get("biomesoplenty:gem"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 47, 1, {OreItem: {id: "minecraft:gold_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:gold_ingot", Count: 1, Damage: 0 as short}}), utils.get("minecraft:gold_ingot"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 48, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 7 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 135 as short}}), utils.get("thermalfoundation:material", 135));
+infinFurnace(utils.get("rats:rat_nugget_ore", 49, 1, {OreItem: {id: "minecraft:iron_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:iron_ingot", Count: 1, Damage: 0 as short}}), utils.get("minecraft:iron_ingot"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 50, 1, {OreItem: {id: "minecraft:lapis_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:dye", Count: 1, Damage: 4 as short}}), utils.get("minecraft:dye", 4));
+infinFurnace(utils.get("rats:rat_nugget_ore", 51, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 3 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 131 as short}}), utils.get("thermalfoundation:material", 131));
+infinFurnace(utils.get("rats:rat_nugget_ore", 52, 1, {OreItem: {id: "nuclearcraft:ore", Count: 1, Damage: 6 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1, Damage: 6 as short}}), utils.get("nuclearcraft:ingot", 6));
+infinFurnace(utils.get("rats:rat_nugget_ore", 53, 1, {OreItem: {id: "nuclearcraft:ore", Count: 1, Damage: 7 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1, Damage: 7 as short}}), utils.get("nuclearcraft:ingot", 7));
+infinFurnace(utils.get("rats:rat_nugget_ore", 54, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 5 as short}}), utils.get("biomesoplenty:gem", 5));
+infinFurnace(utils.get("rats:rat_nugget_ore", 55, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 8 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 136 as short}}), utils.get("thermalfoundation:material", 136));
+infinFurnace(utils.get("rats:rat_nugget_ore", 78, 1, {OreItem: {id: "minecraft:quartz_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:quartz", Count: 1, Damage: 0 as short}}), utils.get("minecraft:quartz"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 86, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 133 as short}}), utils.get("thermalfoundation:material", 133));
+infinFurnace(utils.get("rats:rat_nugget_ore", 87, 1, {OreItem: {id: "mekanism:oreblock", Count: 1, Damage: 0 as short}, IngotItem: {id: "mekanism:ingot", Count: 1, Damage: 1 as short}}), utils.get("mekanism:ingot", 1));
+infinFurnace(utils.get("rats:rat_nugget_ore", 88, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 2 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 2 as short}}), utils.get("biomesoplenty:gem", 2));
+infinFurnace(utils.get("rats:rat_nugget_ore", 89, 1, {OreItem: {id: "contenttweaker:ore_phosphor", Count: 1, Damage: 0 as short}, IngotItem: {id: "contenttweaker:nugget_phosphor", Count: 1, Damage: 0 as short}}), utils.get("contenttweaker:nugget_phosphor"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 90, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 6 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 134 as short}}), utils.get("thermalfoundation:material", 134));
+infinFurnace(utils.get("rats:rat_nugget_ore", 91, 1, {OreItem: {id: "twilightforest:ironwood_raw", Count: 1, Damage: 0 as short}, IngotItem: {id: "twilightforest:ironwood_ingot", Count: 2, Damage: 0 as short}}), utils.get("twilightforest:ironwood_ingot", 0, 2));
+infinFurnace(utils.get("rats:rat_nugget_ore", 92, 1, {OreItem: {id: "minecraft:redstone_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "minecraft:redstone", Count: 1, Damage: 0 as short}}), utils.get("minecraft:redstone"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 93, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 1 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 1 as short}}), utils.get("biomesoplenty:gem", 1));
+infinFurnace(utils.get("rats:rat_nugget_ore", 94, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 6 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 6 as short}}), utils.get("biomesoplenty:gem", 6));
+infinFurnace(utils.get("rats:rat_nugget_ore", 95, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 2 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 130 as short}}), utils.get("thermalfoundation:material", 130));
+infinFurnace(utils.get("rats:rat_nugget_ore", 96, 1, {OreItem: {id: "astralsorcery:blockcustomore", Count: 1, Damage: 1 as short}, IngotItem: {id: "astralsorcery:itemcraftingcomponent", Count: 1, Damage: 1 as short}}), utils.get("astralsorcery:itemcraftingcomponent", 1));
+infinFurnace(utils.get("rats:rat_nugget_ore", 97, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 4 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 4 as short}}), utils.get("biomesoplenty:gem", 4));
+infinFurnace(utils.get("rats:rat_nugget_ore", 98, 1, {OreItem: {id: "nuclearcraft:ore", Count: 1, Damage: 3 as short}, IngotItem: {id: "nuclearcraft:ingot", Count: 1, Damage: 3 as short}}), utils.get("nuclearcraft:ingot", 3));
+infinFurnace(utils.get("rats:rat_nugget_ore", 99, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 1 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 129 as short}}), utils.get("thermalfoundation:material", 129));
+infinFurnace(utils.get("rats:rat_nugget_ore", 100, 1, {OreItem: {id: "biomesoplenty:gem_ore", Count: 1, Damage: 3 as short}, IngotItem: {id: "biomesoplenty:gem", Count: 1, Damage: 3 as short}}), utils.get("biomesoplenty:gem", 3));
+infinFurnace(utils.get("rats:rat_nugget_ore", 101, 1, {OreItem: {id: "endreborn:block_wolframium_ore", Count: 1, Damage: 0 as short}, IngotItem: {id: "endreborn:item_ingot_wolframium", Count: 1, Damage: 0 as short}}), utils.get("endreborn:item_ingot_wolframium"));
+infinFurnace(utils.get("rats:rat_nugget_ore", 102, 1, {OreItem: {id: "immersiveengineering:ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1, Damage: 5 as short}}), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("rats:rat_nugget_ore", 0, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 132 as short}}), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("rats:raw_rat", W), utils.get("rats:cooked_rat"));
 infinFurnace(utils.get("rustic:dust_tiny_iron"), utils.get("minecraft:iron_nugget"));

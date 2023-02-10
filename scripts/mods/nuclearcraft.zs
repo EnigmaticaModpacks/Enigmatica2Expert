@@ -176,7 +176,6 @@ mods.nuclearcraft.Melter.addRecipe(<ore:obsidian>, <liquid:obsidian> * 144);
 
 # Remove charcoal to coal conversion
 mods.nuclearcraft.Melter.removeRecipeWithInput(<nuclearcraft:dust:8>);
-mods.nuclearcraft.Melter.removeRecipeWithInput(<bigreactors:blockgraphite>);
 
 # Only leave Fluid fill recipe for Infinite water source
 recipes.remove(<nuclearcraft:water_source>);

@@ -407,7 +407,7 @@ addChemthrowerEffect(<liquid:milk_chocolate>         , false, false, "chemicals"
 # Thermoelectric generator
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<nuclearcraft:supercold_ice>,   50);
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockFiery>,         5000);
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockLudicrite>,     9900);
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ore:blockVividAlloy>,     9900);
 
 
 # ----------------------------------------

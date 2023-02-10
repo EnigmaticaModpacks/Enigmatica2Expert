@@ -45,7 +45,7 @@ import crafttweaker.item.IItemStack;
 	
 	mods.thermalexpansion.InductionSmelter.addRecipe
 	(<extendedcrafting:material> * 3, 
-	<thermalfoundation:storage_alloy:2>, <bigreactors:blockgraphite>, 15000);	
+	<thermalfoundation:storage_alloy:2>, <nuclearcraft:ingot_block:8>, 15000);	
 	
 # Crafting Core
 	recipes.remove(<extendedcrafting:crafting_core>);
@@ -94,7 +94,7 @@ import crafttweaker.item.IItemStack;
 	[<ore:crystalDraconium>, <vaultopic:vice>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <vaultopic:vice>, <ore:crystalDraconium>], 
 	[<advancedrocketry:ic:2>, <draconicevolution:wyvern_core>, <ic2:iridium_reflector>, <avaritia:extreme_crafting_table>, <ic2:iridium_reflector>, <draconicevolution:wyvern_core>, <advancedrocketry:ic:2>], 
 	[<ore:crystalDraconium>, <vaultopic:vice>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <vaultopic:vice>, <ore:crystalDraconium>], 
-	[<extendedcrafting:trimmed:4>, <ore:blockLudicrite>, <vaultopic:vice>, <thermalexpansion:frame:148>, <vaultopic:vice>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
+	[<extendedcrafting:trimmed:4>, <ore:blockVividAlloy>, <vaultopic:vice>, <thermalexpansion:frame:148>, <vaultopic:vice>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
 	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>]]);
 
 # Pedestal

@@ -86,7 +86,7 @@ val PC = <astralsorcery:itemcraftingcomponent:5>;
 val CO = <thaumcraft:curio:1>;
 val EI = <ore:ingotEssenceMetal>;
 val TE = <thermalfoundation:tome_experience>.withTag({Experience: 10000});
-val BT = <bigreactors:mineralbenitoite>;
+val BT = <ore:gemBenitoite>;
 mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {creativeKnowledge: 1 as byte}}), [
 	[IW, IW, PC, PC, null, null, null], 
 	[IW, IW, CO, CO, BT, BT, null], 

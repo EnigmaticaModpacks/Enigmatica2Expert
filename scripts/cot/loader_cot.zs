@@ -80,6 +80,10 @@ createBlockStone("compressed_white_sand"      , 3, <blockmaterial:rock>);
 
 createBlockStone("terrestrial_artifact_block", 9, <blockmaterial:rock>);
 createBlockStone("silicon_block", 4, <blockmaterial:rock>);
+createBlockStone("benitoite", 10, <blockmaterial:rock>);
+createBlockStone("anglesite", 10, <blockmaterial:rock>);
+createBlockStone("ore_benitoite", 11, <blockmaterial:rock>);
+createBlockStone("ore_anglesite", 11, <blockmaterial:rock>);
 
 
 

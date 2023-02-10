@@ -10,7 +10,6 @@ recipes.addShaped("Morphing Tool", <morphtool:tool>, [
 # Super Morph-O-Tool
 val superMOT = <morphtool:tool>.withTag({"morphtool:is_morphing": 1 as byte, "morphtool:data": {
 	rftools:             {id:"rftools:smartwrench",                         Count: 1 as byte, Damage: 0 as short},
-	bigreactors:         {id:"bigreactors:wrench",                          Count: 1 as byte, Damage: 0 as short},
 	botania:             {id:"botania:twigwand",                            Count: 1 as byte, Damage: 0 as short, tag: {color1: 9, color2: 9}},
 	enderio:             {id:"enderio:item_yeta_wrench",                    Count: 1 as byte, Damage: 0 as short},
 	thermalfoundation:   {id:"thermalfoundation:wrench",                    Count: 1 as byte, Damage: 0 as short},

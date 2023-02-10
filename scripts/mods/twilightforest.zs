@@ -49,8 +49,8 @@ val rockRecycleTable as IItemStack[][IIngredient] = {
 <twilightforest:castle_rune_brick:3> : [<randomthings:runedust:10>, <thermalfoundation:material:72>, <nuclearcraft:compound>],
 <twilightforest:castle_rune_brick:1> : [<randomthings:runedust:11>, <thermalfoundation:material:72>, <nuclearcraft:compound>],
 <twilightforest:castle_rune_brick:2> : [<randomthings:runedust:4>, <thermalfoundation:material:72>, <nuclearcraft:compound>],
-<twilightforest:aurora_block>        : [<nuclearcraft:compound:7>, <botania:manaresource:23>, <bigreactors:dustcyanite>],
-<twilightforest:aurora_pillar>       : [<nuclearcraft:compound:7>, <ic2:dust:5>, <bigreactors:dustcyanite>],
+<twilightforest:aurora_block>        : [<nuclearcraft:compound:7>, <botania:manaresource:23>, <nuclearcraft:plutonium:15>],
+<twilightforest:aurora_pillar>       : [<nuclearcraft:compound:7>, <ic2:dust:5>, <nuclearcraft:plutonium:15>],
 };
 
 for input, output in rockRecycleTable{
