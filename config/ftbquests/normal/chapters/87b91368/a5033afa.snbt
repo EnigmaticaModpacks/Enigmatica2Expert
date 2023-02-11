@@ -27,7 +27,7 @@
 		uid: "c678ca62",
 		type: "item",
 		items: [{
-			item: "rats:rat_nugget_ore 1 50"
+			item: "rats:rat_nugget_ore 1 49"
 		}],
 		ignore_nbt: 1b
 	}],
