@@ -1,24 +1,47 @@
-# v0.89.0
+# v0.90.0
 
-This update fix three important bugs:
-- No Modular Machinery JEI tab
-- Animania animals and Rats not working
-- Too much thrash items in exploration loot chests
+# ⚠️ Update with caution
 
-More info below.
+This is the **alpha** version of a future update. It is designed to **test big changes** in the modpack.
+
+Remember that while the Major version of the modpack starts with `v0.xx.x`, big breaking changes will sometimes happen.
+
+In this version several big mods, such as `Nuclearcraft` or `Extreme Reacors` **have been removed** altogether, or replaced by other versions.
+
+This will **remove your reactor builds** in the old world and may also cause irreparable world saving failures, so I recommend making a backup.
+
+Please report bugs to the discord server:  
+<a title="Join us on Discord!" href="https://discord.gg/VcmyHdNNQP"><img src="https://img.shields.io/discord/911676461050642432?label=E2E-E%20Discord&amp;logo=Discord&amp;style=?flat" alt="Discord"/></a>
+
+> ✅ If you are a regular E2EE enjoyer and do not want to suffer from crashes, bugs, uncraftable items - keep playing on version `v0.89.0`.
+
+------
 
 ## 🟢 New Mods
 
 Icon | Summary | Reason
 ----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/9/85/30/30/635420114303795239.png"              > | 🟨                          [**Sound Filters**](https://www.curseforge.com/minecraft/mc-mods/sound-filters)                 <sup><sub>SoundFilters-0.12.1_for_1.12.jar</sub></sup> <br> A client-side mod that adds reverb to caves, and mutes sounds when you're underwater or when the sound is behind a wall. | To replace Sound Physics mod that previous downloaded by Mod Director
+<img src="https://media.forgecdn.net/avatars/thumbnails/220/544/30/30/637020855283796863.jpeg"          > | 🟥               [**NuclearCraft: Overhauled**](https://www.curseforge.com/minecraft/mc-mods/nuclearcraft-overhauled)       <sup><sub>NuclearCraft-2o.6.2-1.12.2.jar</sub></sup> <br> Brings complex nuclear engineering to Minecraft! | Huge move to newer updated NC version
+<img src="https://media.forgecdn.net/avatars/thumbnails/248/435/30/30/637168261428598002.png"           > | 🟧                                    [**QMD**](https://www.curseforge.com/minecraft/mc-mods/qmd)                           <sup><sub>QMD-1.1.5-1.12.2.jar</sub></sup> <br> A Nuclearcraft Addon that adds particle accelerators and particle physics | NC:O addon about particles
+<img src="https://media.forgecdn.net/avatars/thumbnails/240/433/30/30/637120769373275944.png"           > | 🟧                                [**Trinity**](https://www.curseforge.com/minecraft/mc-mods/trinity)                       <sup><sub>Trinity-1.4.b.jar</sub></sup> <br> Adds nuclear bombs to NuclearCraft. | Addon for NC:O
+<img src="https://media.forgecdn.net/avatars/thumbnails/575/511/30/30/637939158412812679.png"           > | 🟩                        [**Birds On A Wire**](https://www.curseforge.com/minecraft/mc-mods/birds-on-a-wire)               <sup><sub>bow-0.1.jar</sub></sup> <br> Allows the viewing of Immersive Engineering electric network in Journeymap. | Addon for IE
+<img src="https://media.forgecdn.net/avatars/thumbnails/402/539/30/30/637610420057870216.png"           > | 🟧           [**Open Terrain Generator (OTG)**](https://www.curseforge.com/minecraft/mc-mods/open-terrain-generator)        <sup><sub>OpenTerrainGenerator-1.12.2-v9.4.jar</sub></sup> <br> A data-driven world generation tool for Forge and Spigot that gives you full control over Minecraft’s world generation. | New world generator instead of Biomes O' Plenty
+<img src="https://media.forgecdn.net/avatars/thumbnails/759/528/30/30/638095905122883877.png"           > | 🟧                         [**PackagedAstral**](https://www.curseforge.com/minecraft/mc-mods/packagedastral)                <sup><sub>PackagedAstral-1.12.2-1.0.0.2.jar</sub></sup> <br> Astral Sorcery Autocrafting with PackagedAuto | Improves autocraftings and maybe make **Starlight Crafting Engine** controller obsolete
+<img src="https://media.forgecdn.net/avatars/thumbnails/764/990/30/30/638100426103222637.png"           > | 🟧                         [**WarpApocalypse**](https://www.curseforge.com/minecraft/mc-mods/warpapocalypse)                <sup><sub>WarpTheory1.12.2-0.0.3.1.jar</sub></sup> <br> Added some new warp related event and items. | Adds ways to remove permanent warp
+<img src="https://media.forgecdn.net/avatars/thumbnails/274/686/30/30/637259328129546340.png"           > | 🟩                  [**Biome Bundle O Plenty**](https://www.curseforge.com/minecraft/mc-mods/biome-bundle-o-plenty)         <sup><sub>Biome_Bundle_O_Plenty-1.12.2_v1.0.jar</sub></sup> <br> The latest version of Biome Bundle with Biomes O Plenty integrated | OTG+BOP integration
 
 ## 🔴 Removed Mods
 
 Icon | Summary | Reason
 ----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/309/925/30/30/637396785928177718_animated.gif"  > | 🟥                       [**Avaritia Furnace**](https://www.curseforge.com/minecraft/mc-mods/avaritia-furnace)              <sup><sub>undefined</sub></sup> <br> An incredible furnace in Avaritia Style | Functionality replaced with custom items and machines
-<img src="https://media.forgecdn.net/avatars/thumbnails/258/376/30/30/637207865258153609.png"           > | 🟥                          [**Scaling Feast**](https://www.curseforge.com/minecraft/mc-mods/scaling-feast)                 <sup><sub>undefined</sub></sup> <br> A simple, balanced way to increase your maximum hunger | Unfortunately, this mod caused a lot of problems. Futher explanation below.
+<img src="https://media.forgecdn.net/avatars/thumbnails/24/599/30/30/635759942381657270.jpeg"           > | 🟥                           [**NuclearCraft**](https://www.curseforge.com/minecraft/mc-mods/nuclearcraft-mod)              <sup><sub>NuclearCraft-2.18zzz-1.12.2.jar</sub></sup> <br> Brings complex nuclear engineering to Minecraft! | Replaced by **Overhauled** version
+<img src="https://media.forgecdn.net/avatars/thumbnails/188/194/30/30/636843753479977741.png"           > | 🟫                        [**Not Enough RTGs**](https://www.curseforge.com/minecraft/mc-mods/not-enough-rtgs)               <sup><sub>notenoughrtgs-1.3.jar</sub></sup> <br> Adds additional RTGs to Nuclearcraft | NC:O not supported 😞
+<img src="https://media.forgecdn.net/avatars/thumbnails/310/376/30/30/637398551210975973.png"           > | 🟫                       [**Extreme Reactors**](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors)              <sup><sub>ExtremeReactors-1.12.2-0.4.5.68.jar</sub></sup> <br> This is a port of the Big Reactors mod by Erogenous Beef to the current Minecraft versions  | Morally obsolete. Removal of this mod is also planned by the developers of the original E2E.
+<img src=""                                                                                             > | 🟫                             [**ZeroCore 2**](https://www.curseforge.com/minecraft/mc-mods/zerocore)                      <sup><sub>zerocore-1.12.2-0.1.2.9.jar</sub></sup> <br> Utility mod and multiblock API | Lib of Extreme Reactors
+<img src="https://media.forgecdn.net/avatars/thumbnails/151/646/30/30/636605503893623438.png"           > | 🟫                   [**Just Enough Reactors**](https://www.curseforge.com/minecraft/mc-mods/just-enough-reactors)          <sup><sub>JustEnoughReactors-1.12.2-1.1.3.61.jar</sub></sup> <br> A JEI addon for Extreme Reactors | Addon for ER
+<img src="https://media.forgecdn.net/avatars/thumbnails/9/85/30/30/635420114303795239.png"              > | 🟫                          [**Sound Filters**](https://www.curseforge.com/minecraft/mc-mods/sound-filters)                 <sup><sub>SoundFilters-0.12.1_for_1.12.jar</sub></sup> <br> A client-side mod that adds reverb to caves, and mutes sounds when you're underwater or when the sound is behind a wall. | Caused crash on old Java versions (when using CF Launcher)
+<img src="https://media.forgecdn.net/avatars/thumbnails/132/859/30/30/636478744657081536.png"           > | 🟫                [**Baubley Heart Canisters**](https://www.curseforge.com/minecraft/mc-mods/baubley-heart-canisters)       <sup><sub>baubley-heart-canisters-1.12.2-2.0.3.jar</sub></sup> <br> Bauble Heart Canisters  | Increasing the amount of health through eating different foods makes this mod useless.
+<img src="https://media.forgecdn.net/avatars/thumbnails/164/244/30/30/636686097718417988.png"           > | 🟫                          [**FastWorkbench**](https://www.curseforge.com/minecraft/mc-mods/fastworkbench)                 <sup><sub>FastWorkbench-1.12.2-1.7.4.jar</sub></sup> <br> A performance upgrade for the crafting table. | Replaced by **Universal Tweaks**
 
 ## 🟡 Updated Mods
 
@@ -27,203 +50,204 @@ Icon | Summary | Reason
 - **AE2 Fluid Crafting Rework**
 - **CraftTweaker**
 - **CraftPresence**
-- **JEI Utilities**
+- **LittleTiles**
+- **PackagedExCrafting**
+- **Snow! Real Magic! ⛄ (Forge)**
+- **Zen Utils**
 - **PackagedAuto**
-- **ArchitectureCraft - TridentMC Version**
+- **Universal Tweaks**
 - **Not Enough Energistics**
-- **Pointer**
+
+## New worldgen
+
+To enable new world generation type, follow this buttons:
+
+<img src="https://i.imgur.com/6lSdY8g.png" width=217>
+<img src="https://i.imgur.com/sqUpyxN.png" width=217>
+<img src="https://i.imgur.com/J87n2Jv.png" width=217>
+
+Some screenshots of new worldgen:
+
+
+<img src="https://i.imgur.com/lcazzdg.jpeg" width=300>
+<img src="https://i.imgur.com/FtTcSUd.jpeg" width=300>
+<img src="https://i.imgur.com/Qh6dKPb.jpeg" width=300>
+<img src="https://i.imgur.com/DPle4t8.jpeg" width=300>
 
 
 ## ✏️ **Recipes**
-  
-  - Remove ![](https://is.gd/Ss61tC "BitHop") due server crash bug
-    > More info https://github.com/elytra/BitHop/issues/12  
-    > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/153
+  - Buff ![](https://is.gd/9DnG5O "Casting Machine") and ![](https://is.gd/mnaagd "Iceball")
+    > - ![](https://is.gd/mnaagd "Iceball") only 1 consumed for 8 blocks or 16 ingots
+    > - ![](https://is.gd/9DnG5O "Casting Machine") x2 faster working
+    > - ![](https://is.gd/vvJIo7 "Base Upgrade") recipe changed to require elixirs
+    > - ![](https://is.gd/fPpYiw "Speed Upgrade")![](https://is.gd/xVw5QZ "Slot Size Upgrade 4") way cheaper
+  - **Gas Intake (advGenerators)** remove recipe, hide in JEI
+    > Gas Intake aloowed AdvGenerators to dupe gas
+  - <img src="https://i.imgur.com/bf2dcUG.png" align=right> ![](https://is.gd/EcZhNB "Akashic Tome") change to upgraded ![](https://is.gd/qQw21N "Lexica Botania")
+  - ![](https://is.gd/DlQM4R "Silicon Boule") unify
+  - ![](https://is.gd/EZZlxz "Perfect Fuel") buff ![](https://is.gd/Zy3lWU "Gas Turbine controller") output x100
+    > Now 3.28M RF / mb
+  - ![](https://is.gd/XXwke6 "Survivalist's Shovel") remove recipe
+  - ![](https://is.gd/dqsuaD "Sword of Decay")![](https://is.gd/synqrR "Sword of Atrophy")![](https://is.gd/RUMSf8 "Sword of Evasion") buff durab x4
+  - <img src="https://i.imgur.com/4f5J3pG.png" align=right> Buff ![](https://is.gd/BqIrd1 "FluxHop") transfer, cheaper recipe
   - ### 🖉 **New Recipes**
-    - <img src="https://i.imgur.com/RID2MuU.png" width=50% align=right> ![](https://is.gd/MY4WZ5 "Fire Dragonsteel Ingot")![](https://is.gd/c3f0r8 "Ice Dragonsteel Ingot") Add no-dragon alt recipe
-    - ![](https://is.gd/OQRUlI "Tomato") => ![](https://is.gd/Xq5uPU "Tomato Seeds")
-    - ![](https://is.gd/QgWBUc "Chili Pepper") => ![](https://is.gd/gQKzcD "Chili Pepper Seeds")
-    - ![](https://is.gd/nsk8b9 "Ivory Substance")![](https://is.gd/2EH5N9 "Ebony Substance") from ![](https://is.gd/ZIdXpm "Selfish Honey Drop") skyblock alt
-    - ![](https://is.gd/NeIgqm "Ingot Former") add +18 missed metals => ingots recipes
+    - ![](https://is.gd/4QWZJv "Quicksilver") now meltable and castable
+    - ![](https://is.gd/B8vNAb "Fire Essence") now meltable straight to ![](https://is.gd/oWrbsH "Lava")
+    - ![](https://is.gd/4ixxRJ "Sky Stone Essence") now meltable into ![](https://is.gd/47Z0pQ "Molten Sky Stone")
+    - ![](https://is.gd/dlcDPW "Turf Block") from any grass, even from BOP
 
   - ### ✐ **Cheaper**
-    - <img src="https://i.imgur.com/yGprx1i.png" width=50% align=right> ![](https://is.gd/b6rpCb "Base Essence Ingot") x10 times cheaper, change recipe from nuggets to ingots
-    - ![](https://is.gd/aoGKrg "Tanzanite") now Extra2 byproduct of Emerald, can be obtained in ![](https://is.gd/1ZpXCt "Quartz Grindstone") by ![](https://is.gd/AjTD1I "Native Emerald Cluster") => ![](https://is.gd/lFOTGa "Tanzanite Dust")
-    - ![](https://is.gd/OXhcUG "Cheese Wheel (Goat)")![](https://is.gd/TS43RC "Cheese Wheel (Holstein)")![](https://is.gd/72pu2O "Cheese Wheel (Jersey)")![](https://is.gd/kWVODK "Cheese Wheel (Sheep)")![](https://is.gd/Lv9ey9 "Cheese Wheel (Friesian)") replaced by ![](https://is.gd/xoKZ9T "Cheese Wedge (Friesian)")![](https://is.gd/uxMABl "Cheese Wedge (Goat)")![](https://is.gd/GnytEg "Cheese Wedge (Holstein)")![](https://is.gd/y0vw89 "Cheese Wedge (Jersey)")![](https://is.gd/65boZG "Cheese Wedge (Sheep)") in every recipe
-    - ![](https://is.gd/H1UCF2 "Ultimate Induction Cell") replaced by ![](https://is.gd/2iqYOc "Elite Induction Cell") in ![](https://is.gd/DDPWVX "Creative Energy Cube")
-    - ![](https://is.gd/8Mebwb "Insanium Ingot") replaced by ![](https://is.gd/EB9UkV "Primal Metal Ingot") in ![](https://is.gd/0bdatN "The Ultimate Ingot")
-    - ![](https://is.gd/lgZhFU "Saturated Phosphor") x2 less syngas
-    - ![](https://is.gd/NDmr8t "Empowered Phosphor") x2 output
-    - Just cheaper: ![](https://is.gd/4lgP17 "Pointer")![](https://is.gd/zquEgd "Geolyzer")![](https://is.gd/nmUaxL "Tractor Beam Upgrade")
+    - <img src="https://i.imgur.com/vPyVR3d.png" align=right> ![](https://is.gd/yvY4ZE "Conglomerate Of Life")![](https://is.gd/3tpCvL "Conglomerate Of Sun")
+    - [Bucket of Perfect Fuel] in ![](https://is.gd/Zy3lWU "Gas Turbine controller") output x100 more RF
+    - <img src="https://i.imgur.com/oIAVpXH.png" align=right> ![](https://is.gd/Yk0G37 "Block Cutting Blade (Iron)")![](https://is.gd/1U3ojT "Block Cutting Blade (Steel)")![](https://is.gd/P7N9GE "Block Cutting Blade (Diamond)") now require less metals
 
-  - ### ✎ **Harder**
-    - ![](https://is.gd/9lbEqz "ME Crafting Terminal")
-      ![](https://is.gd/YG0FVa "Essentia Infusion Provider")
+  - ### ✎ **Harder**: ![](https://is.gd/U9SAkT "Augment: Clastic Deposition")
 
   - ### ✏ **Misc Changes**
-    - ![](https://is.gd/Qhrxfp "Ender Dragon Data Model") add peaceful upgrade recipe <img src="https://i.imgur.com/bU6OhuC.png" width=25% align=right>
-    - ![](https://is.gd/YRi4GQ "Generator") x1000 less UU cost
-    - ![](https://is.gd/qwBmoP "Wool (Dorset, Brown)") now chiselable
-    - ![](https://is.gd/CkEE7m "Ethereal Wood") return all Ehtereal items back to JEI (they was removed with recipes since its unobtainable) because i want to implement Ethereal trees soon
-    - ![](https://is.gd/8GG28e "Terrestrial Artifact") fix unable to process in ![](https://is.gd/B4hvFT "Essentia Centrifuge"). Now can be recycled in other machine.
-    - ![](https://is.gd/uvplrH "Compressed Crushed Skystone") now output MA Essence instead of gems, like ![](https://is.gd/GnCwZF "Peridot") => ![](https://is.gd/7Bvubv "Peridot Essence")
-    - <img src="https://i.imgur.com/TYkRZIV.png" width=25% align=right> ![](https://is.gd/lh3fJx "Raw Meef") now part of `ore:listAllmeatraw`, that means its spawned by ![](https://is.gd/bLjcAW "Meaty Orb") and used in ![](https://is.gd/eOh6Rx "Cosmic Meatballs")
-    - ![](https://is.gd/TkFMgS "Industrial Hemp Seeds")![](https://is.gd/tRAokm "Chili Pepper Seeds")![](https://is.gd/5kPDJ2 "Tomato Seeds") not drops from [Tall Grass] anymore, added new sources
-    - ![](https://is.gd/rKU7LB "Chorus Flower") now provide 600 charge (was 200) for ![](https://is.gd/HAnbpl "Teleport Rail")
-    - ![](https://is.gd/l13ihE "Creative Essence") remove craft and usages
-    - ![](https://is.gd/PkRQL8 "Livingwood Planks")![](https://is.gd/VWr4N1 "Infused Wood Planks")![](https://is.gd/4zcenD "Dreamwood Planks") unify planks sawing
-    - ![](https://is.gd/sHN7jo "Sequoia Wood (Fireproof)") unify all Fireproof logs=>planks recipes
-    - <img src="https://i.imgur.com/Ejkq1wD.png" width=25% align=right> ![](https://is.gd/f8kTxi "Tiny Chaos Fragment") cheater, but require 20G rf
-    - ![](https://is.gd/8GG28e "Terrestrial Artifact")![](https://is.gd/ECUEr3 "Terrestrial Artifact Block") order of ingredients changed
-    - ![](https://is.gd/CjG5GZ "Molten Primal Metal Tank") add Twilight Forest reservoir (require 1M RF/T to pump)
-    - ![](https://is.gd/IAmUZn "Molten Terrestrial Artifact") buff `Proxima B (111)` reservoir size x500
-    - ![](https://is.gd/hmmAgl "Tiny Potato") fix bomb recipe that caused infinity tyny potatoes
-    - ![](https://is.gd/rPA60I "Advanced Ring of Speed") fix Bable rings uncraftable
-    - Fix wrong ![](https://is.gd/gSqSOc "Wool (Jacob)") in **Shepherd** merchant
-    - <img src="https://i.imgur.com/dM64atH.png" width=25% align=right> ![](https://is.gd/SCXKlq "Garbage Pile") fix compressed output, x2 less bonus from Burn Time value
-      > So now +5% from [Wood Log], +25% from ![](https://is.gd/Lp9wqd "Block of Charcoal"), +65% from ![](https://is.gd/dNujrA "Triple Compressed Charcoal")
+    - Unhide ![](https://is.gd/E2fWNY "Sticky Piston") hidden IC2 recipe
+    - Remove ![](https://is.gd/ZY8dZU "Obsidian") IC2 recipe from 2 Lava and Water buckets
+    - ![](https://is.gd/ZKFdFH "Hydrated Tin Dust") Replace IC2 liquid recipes with another versions - old "Any reserviour of X" was bugged and consumed whole reserviour with liquid.
+    - ![](https://is.gd/mvIjVp "Industrial Diamond") make uncraftable
+    - ![](https://is.gd/dRXF3U "Device Frame") make craftable in Advanced Fabricator
+    - ![](https://is.gd/kDmiKd "Sound Box") fix craft ingredients
+    - ![](https://is.gd/vI4Lqs "Wooden Pickaxe") fix converted to TCon tools has no Tool Levelling trait
+    - Any **Fireproof** wood logs now uncraftable (you can still gather them from tree breeding)
+    - ![](https://is.gd/12gPgd "Uranium 235") unify
+    - Fix ![](https://is.gd/GiCspG "Terrestrial Artifact") dupe
 
 
 
 ## 🔵 **Mods updates**
   - ### 🔴 **Removed Mods**
-    - <img src="https://i.imgur.com/DCtPSXK.png" width=25% align=right> Remove `Avaritia Furnace` mod
-      > All mod functionality was replaced by custom machines and items.
-      > Now instead of ![](https://is.gd/tWfgEW "Infinity Fuel") there would be "Burn Singularity" that should contain 1M burn time.
-      > 
-      > <img src="https://i.imgur.com/LemarRn.png" width=25% align=right>
-    - Remove `Scaling Feast` mod
-      > Unfortunately, this mod caused a lot of problems.
-      > - Some types of non-forge servers cannot be run with it.
-      > - It often causes desynchronization when playing on the server.
-      > - Some other minor problems
-      > 
-      > All recipes that used items from this mod was changed
+    - Remove `Extreme Reactors` mod
+      > - <img src="https://i.imgur.com/ODa4dHn.png" align=right> ![](https://is.gd/crOV0R "Cyanite Ingot") replaced to Plutonium-242
+      > - ![](https://is.gd/coiauj "Blutonium Ingot") replaced by Cobalt-60
+      > - ![](https://is.gd/plxCQo "Ludicrite Ingot") replaced to ![](https://is.gd/KLGzLa "Vivid Alloy Ingot")
+    - Remove `Sound Filters` and replace it back with `Sound Physics` dowloaded by **Mod Director**
 
-  - ### 🐮🐀 Animania & Rats: Fix AI only partially work
-    > Fix error, that caused Rats not working or working on a whim.  
-    > Also fixes Animania animals not feeding from ![](https://is.gd/zHY7fj "Trough") or not lay eggs.  
-    > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/155
+  - ### ☢️ **NuclearCraft**
+    - <img src="https://i.imgur.com/nEXY0dK.png" width=250 align=right> Mostly all configuration was copied from non-Overhauled version, but some changes may occur:
+      > - Reactor provide x6 heat compared to default
+      > - RTG Powergen changed to: 25, 100, 350, 700
+      > - Default and changed ![](https://is.gd/REBtTC "Decay Generator") values changed
+      > - Some machines time and power consumption changed nonsignif.
+      > - ![](https://is.gd/YJ0TIS "Cobblestone Generator")![](https://is.gd/EsaLM0 "Infinite Water Source")
+      > ![](https://is.gd/ZVPjYf "Nitrogen Collector") may change their work speed
+      > - Player Radiation Decay rate x10 slower
+      > - Geiger tick x10 lower volume
+      > - Turbine RF/T may be different
+    - QMD: Buff ![](https://is.gd/DMDu7V "Strontium RTG") up to 1500 rf/t
+    - <img src="https://i.imgur.com/DsR6UZY.png" align=right> ![](https://is.gd/9CzxYo "Isotope Separator") remove, replace by ![](https://is.gd/y2aIe3 "Thermal Centrifuge")
+    - ![](https://is.gd/4bvwdI "Fluid Extractor") remove from game
+    - <img src="https://i.imgur.com/HvzScqr.png" align=right> ![](https://is.gd/oS2l8b "Electrolyzer") remove from game, rework electolyze processes
+      > Now Immersive Tech Electrolytic Crucible Battery works about x20 times faster
+      > Also removed ![](https://is.gd/blrer0 "Electrolyzer")
+    - ![](https://is.gd/PeNlat "Pressurizer") remove from game
+      > All unique recipes replaced by ![](https://is.gd/D1jC3G "Compactor (Basic)") and ![](https://is.gd/ltUlZq "Compressor")
+    - <img src="https://i.imgur.com/UuPPn9W.png" align=right> ![](https://is.gd/XQomxz "Manufactory") remove from game
+      > All unique recipes replaced by ![](https://is.gd/oUMGvR "Enrichment Chamber") and ![](https://is.gd/H8EuwJ "Extractor")
+    - <img src="https://i.imgur.com/JwYSBNS.gif" align=right> ![](https://is.gd/zc7z4h "Speed Upgrade") buff x10 times speed
+    - Scripts and recipes changes related to NCO migration
+      > Mostly no changes to actual recipes.
+      > Some exceptions:
+      > - ![](https://is.gd/aAj8LJ "Speed Upgrade")![](https://is.gd/nhm9A3 "Energy Upgrade")
 
-  - ### ▦ **Ex Nihilo**: Fake Players now can use ![](https://is.gd/zl5FhW "Sieve")
-      > All users in modpack gated and hard to craft anyway.
-      > Remember, that you can still use ![](https://is.gd/Y3W8xO "Auto Sifter")
+  - ### 🧻 **JEI**
+    - <img src="https://i.imgur.com/PV00fwj.png" align=right> Unhide ![](https://is.gd/xr4dmQ "Scrap Box") tab
+    - Add ![](https://is.gd/XKVRlc "Thaumic Restorer") to **##Repairer**
+    - Add ![](https://is.gd/gb4yI0 "Energy Battery") to **##Charger**
 
-  - ### 🌱 **Mystical Agriculture**: Rework some essence crafts <img src="https://i.imgur.com/sr7xxNF.gif" width=50% align=right>
-      > - Many essense types now can be converted only by Magic crafting methods
-      > - Mostly all essences that have ores now turn into Ore
-      > - Cow and Sheep essence have new usages
+  - ### 🌡️ **Thermal Expansion**: Remove ![](https://is.gd/kwPmYD "Factorizer"), its unused anyway
 
-  - ### 🐝 **Forestry**: ![](https://is.gd/jSFh02 "Building Backpack") add XTones and Chisel blocks
+  - ### 🌱 **Mystical Agriculture**
+    - Starmetal Essence now made by mod Mystical Creations
+    - ![](https://is.gd/8DsqBQ "Inferium Apple") buff duration to 5m (was 1)
 
-  - ### 🔨 **Tinker's Construct**
-    - <img src="https://i.imgur.com/5yQrZJc.png" align=right> Add two new artifacts - `Helmet` and `Leggins`
-    - Nerf ![](https://is.gd/Qhvih2 "Livingwood") durability and mining speed
-    - <img src="https://i.imgur.com/JoJr4My.png" width=50% align=right> Add several traits to ![](https://is.gd/O7LMP2 "Mirion Ingot")
-    - Nerf ![](https://is.gd/1I7IMr "Ender Amethyst") armory stats
-    - Enable `listAllPartMaterials` in JEI for Tcon
-      > Sadly, but this would take about ~10 seconds in game load. But its really unhandy to search for tool parts, especially for Bolts or Arcane Focuses.
+  - ### 🐝 **Forestry**: ![](https://is.gd/vXNvAi "Building Backpack") fix chiseled palnks and sandstone list
 
-  - ### 🖥 **OpenComputers**
-    - Significant Buffs
-      > - Enable `Pass along IDs of items and fluids when converting them to a table representation for Lua.`
-      > - Enable `allowItemStackNBTTags`
-      > 
-      > Whether to allow the item stack converter to push NBT data in
-      > compressed format (GZIP'ed). This can be useful for pushing this
-      > data back to other callbacks. However, given a sophisticated
-      > enough software (Lua script) it is possible to decode this data,
-      > and get access to things that should be considered implementation
-      > detail / private (mods may keep "secret" data in such NBT tags).
-      > The recommended method is to use the database component instead.
-      > 
-      > - Enable `enableInventoryDriver` and `enableTankDriver`
-      > 
-      > Whether to enable the inventory driver. This driver allows interacting
-      > with inventories adjacent to adapters in a way similar to what the
-      > inventory controller upgrade allows when built into a robot or placed
-      > inside an adapter. It is therefore considered to be somewhat cheaty by
-      > some, and disabled by default. If you don't care about that, feel free
-      > to enable this driver.
-      > 
-      > - Set `Radius the MFU is able to operate in` to `30` (was 3)
-      > 
-      > - Batteries buffed significantly
-      > 
-      >   > - ![](https://is.gd/Qh1o04 "Battery Upgrade (Tier 1)") - 20,000 RF
-      >   > - ![](https://is.gd/nolDMq "Battery Upgrade (Tier 2)") - 4,000,000 RF, harder recipe
-      >   > - ![](https://is.gd/6QSkk3 "Battery Upgrade (Tier 3)") - 600,000,000 RF, way harder recipe
-      > 
-      > - ![](https://is.gd/zquEgd "Geolyzer") consume x2 less (5RF/ use)
-      > 
-      > - x10 buff `bufferPerLevel`, now 50,000 RF
-      > 
-      > This is the amount of additional energy that fits into a robots
-      > internal buffer for each level it gains.
-      > 
-      > - Buff `harvestSpeedBoostPerLevel` `0.02` => `0.033`
-      > 
-      > The increase in block harvest speed a robot gains per level. The time
-      > it takes to break a block is computed as actualTime * (1 - bonus).
-      > For example at level 20, with a bonus of 0.4 instead of taking 0.3
-      > seconds to break a stone block with a diamond pick axe it only takes
-      > 0.12 seconds.
-      > 
-    - Update `LostUser` to v3.0
-      > See guide here: https://github.com/Krutoy242/lostuser
+  - ### 💼 **Actually Additions**: x10 buff batteries ![](https://is.gd/bBlOYd "Quintuple Battery")
 
-  - ### 🦯 **Thaumcraft**: Disable Vis charge for Fortress and void armor
-      > Possible fix solution to https://github.com/GrigLog/ThaumTweaks/issues/40
+  - ### 🔨 **Tinker's Construct**: Remove Wolframium material
+      > Its trait now in ![](https://is.gd/yTXWik "Endorium Ingot") material
 
-  - ### <img src="https://i.imgur.com/ttEBF43.png" width=25% align=right> 🧻 **JEI**: Fix [Modular Controller] structures was hidden
-      > I spent six hours looking for the bug and it turned out to be `:0`.
-      > 
-      > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/150
+  - ### 🛸 **EnderIO**: Shimmer ench. make inacquirable
+
+  - ### <img src="https://i.imgur.com/Q98GYnV.png" width=300 align=right> New blocks and gems: **Anglesite** and **Benitoite**
 
 
 
 ## 🔄 **Misc Changes**
-  - <img src="https://i.imgur.com/vjaP294.gif" align=right> Fix shader problem with portal ![](https://is.gd/0rxBcA "Arcane Seal")
-  - Fix ![](https://is.gd/Aq7mwd "Flügel Tiara") bar placement
-  - ![](https://is.gd/4lgP17 "Pointer") now uses durability
-  - ![](https://is.gd/wfZrxG "Egg") now can be trown
-  - Change sound of item toss to *chicken step*
-  - <img src="https://i.imgur.com/MGIYnNs.gif" width=40% align=right> Add [tip about Milk in Nether](https://github.com/Krutoy242/Enigmatica2Expert-Extended/wiki/English-tips)
-  - Add ![](https://is.gd/HIkfHd "Red Candle") to FluidLogging
-  - Fix ![](https://is.gd/Yh6KLy "Windy Garden") and other gardens spread rate. Related: https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2088
-  - Hide **Enchanted Book** item previews to prevent crashes on some clients
-  - Tweak `Sound Filters` a bit
-  - ### 🧩 **Configs**: Jeiutilities: make Bokmarks added as items by default
-      > Instead of adding recipes to bookmarks.
-      > Recipes still can be added by Shift+A
+  - Add modpack name in Craftpresence config
+  - Optifine: Enable `Animated Terrain` by default
+    > This optifine can descrease your FPS, but its not changing anything on some PCs.  
+    > Also, disable Snooper by default and remove EU2 hotkey to search inventories (not working anyway, use "Find Me" mod)
+  - Carryon: ![](https://is.gd/ChhBpZ "Entity Summoner") add to blacklist
+    > To prevent dupe of Entity Cells
+  - ![](https://is.gd/1pfSfW "Reinforced Stone") now same Blast Resistant as ![](https://is.gd/MLfvFw "Obsidian")
+  - Fix lang entries for custom TCon materials on server side
+  - Remove `Arcane Crafting Engine` shematica
+  - ![](https://is.gd/gH52F6 "Mining Drill") add built-in ![](https://is.gd/lnDwdt "Excavate Modifier")
+    > Full list of tools with Built-in Excavator:
+    > - ![](https://is.gd/BkW4gs "Diamond Minotaur Axe")![](https://is.gd/BgDuA3 "Mazebreaker")![](https://is.gd/T0fZHe "Grafter")![](https://is.gd/XjYIg0 "Proven Grafter")![](https://is.gd/xD0NtD "Industrial Grafter")
+    > 
+    > List of excvators with additional options such as lower speed or mining blocks limit:
+    > - ![](https://is.gd/M1k2g3 "Excavate Modifier")![](https://is.gd/GcDPiz "Mom's Spaghetti")![](https://is.gd/UAbS01 "Survivalist's Pickaxe")![](https://is.gd/XXwke6 "Survivalist's Shovel")![](https://is.gd/gH52F6 "Mining Drill")![](https://is.gd/L2dRBO "Mining Drill")![](https://is.gd/kI0sxn "Diamond Drill")![](https://is.gd/Rnki92 "Iridium Drill")
+    > 
+    > Idea by **Hky**.
+  - Fix Controls GUI couldnt fit screen
+  - Disable debug logging of AE, BiomeTweaker, EnderIO
+  - Rename all schematics - remove uninformative mod name
+  - Jeiutilities: make Recipe Preview without adaptive GUI scale
+  - Copy some options from DJ2 modpack
+    > I actually dont know what that options do, but i set their values same as in **Divine Journey 2**.
+    > 
+    > New options:
+    > Thaumcraft:
+    > - regenStructure=false
+    > - regenTrees=false
+    > 
+    > Quark:
+    > - "Tile Entity Movement Blacklist" + 200 entries from thaum, botania and several other mods
+    > - greener grass => Extra blocks += thaumcraft:grass_ambient
+    > - chest buttons => Forced GUIs += WardedChest, EnderItemStorage
+    > - "Allow crafting stone tools using flint"=false
+    > - "Realistic world type"=false
+    > 
+    > Forge:
+    > - allowEmissiveItems=true
+    > - dimensionUnloadQueueDelay=0
+    > 
+    > FoamFix:
+    > - deduplicateModelsMaxRecursion=9
+    > 
+    > Tool Progression
+    > - compat.tconstruct=false
+    > - compat.TheOneProbe=false
+  - ⚡ Enable `Chunk Gen Limit` in UniversalTweaks
+    > Limits maximum chunk generation per tick for improved server performance
 
   - ### 🌍 **World Generation**
-    - <img src="https://i.imgur.com/wM3do2v.jpeg" width=50% align=right> Replace burnable blocks in Village Mine structure
-      > No more burning mines
-    - **TconEvo** artifacts spawn x2 less
-    - Fix broken / unused items in loot chests (since `v0.88.0`)
-      > In the last version, there was an embarrassing bug that caused deleted and meaningless items to spawn in the loot chests.  
-      > Items like Copper / Aluminium ingots from IC2, IceAndFire armor and stuff like this.
-    - <img src="https://i.imgur.com/kUCmYys.png" width=50% align=right> Add lakes of ![](https://is.gd/IqcCDB "Liquid Starlight Tank") on Mercury (101)
+    - All aquatic animals from BetterAnimalsPlus now only in Ratlantis
+      > Sadly, but BAP aquatic animals cause hight TPS and FPS issues. Now they only spawns in Ratlantis dimension
+    - Default water reserviours buffed to 9 bucket / tick replenish rate
+    - Disable Snow mod ability to change worldgen
+      > Sometimes this caused "lines" of no snow in planes covered in snow
 
-  - ### 📖 **Quests**
-    - Quest Book improvments:
-      > - ![](https://is.gd/DBOAq5 "Mythic") add reward to most ceative items
-      > - Fix ![](https://is.gd/CyyFke "Awakened Core") desc
-      > - Fix ![](https://is.gd/HSigFy "Ring of Haste") typo
-      > - Add DML data to loot crate
-      > - Fix ![](https://is.gd/Gh1sGK "Spectre Coil") quest typo
-      > - Move "Materials" crate from **Legendary** to **Rare**
-      > - ![](https://is.gd/IrfER3 "Black Hole Generator") add note "need to orbit Black Hole"
-      > - Infinity fuel add quest
-      > - Add hint in ![](https://is.gd/Xl0NLn "Machine Frame") quest about ![](https://is.gd/Hvrdb0 "Basalt Sediment")
-      > - Add ![](https://is.gd/0rxBcA "Arcane Seal") quest
-      > - `Conflux III` and higher - note about offline chunk loading
-      > - Fix Wrong **Void Resource Miner** icon
-      > - Fix ![](https://is.gd/GEIczo "Graphite Electrode") quest ask for pure electrode
-      > - ![](https://is.gd/3oCU2s "Color Applicator - Empty") add to Decor rewards
+  - ### <img src="https://i.imgur.com/gITH38y.png" align=right> 📖 **Quests**
+    - ☢️ Remove old NC chapter and replace by brand new one. Made with help of https://github.com/CrisBid
+    - <img src="https://i.imgur.com/W4li3Hs.png" align=right> Half of NC questlines taken from [Multiblock Madness](https://www.curseforge.com/minecraft/modpacks/multiblock-madness) modpack
+    - Fix deps of Questing Ram 🐏
+    - ![](https://is.gd/kAxKdl "Silver Ingot") quest now have only 1 task
+    - Legendary loot chest with ![](https://is.gd/tbHNSy "Iridium Tank") now have 1024 buckets of ![](https://is.gd/OFDp7e "Calcium Sulfate Solution")
+    - ![](https://is.gd/5SsPtI "Cache (Basic)") add quest
+    - ![](https://is.gd/diKumJ "Cropnalyzer") fix any damage
+    - **Collector Crystal** fix need both items to complete
+    - ![](https://is.gd/A5pHkQ "Portable Tank (Basic)") fix unable to upgrade it taken from quest reward
+    - ![](https://is.gd/zNIqHA "Pickaxe Kit")![](https://is.gd/4kqrTX "Shovel Kit") add to Uncommon rewards
 
-
+  - ### 📜 **Text**
+    - Add few more tips from `Multiblock Madness` modpack
+    - Fix Excompressum `Smaching II` tooltip in ![](https://is.gd/wyftj0 "Tool Forge")
 
 
 
