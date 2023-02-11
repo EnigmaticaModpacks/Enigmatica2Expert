@@ -24,7 +24,7 @@ chatColors:true
 chatLinks:true
 chatLinksPrompt:true
 chatOpacity:1.0
-snooperEnabled:true
+snooperEnabled:false
 fullscreen:false
 enableVsync:false
 useVbo:true
@@ -133,7 +133,7 @@ key_key.craftingtweaks.rotate_counter_clockwise:0
 key_key.craftingtweaks.rotate:0
 key_key.craftingtweaks.spread:0
 key_key.craftingtweaks.toggleButtons:0
-key_key.craftpresence.config_keycode.name:40
+key_key.craftpresence.config_keycode.name:0
 key_key.cycle_magnet_mode.desc:0
 key_key.debugDumpNBTBlock:0
 key_key.debugDumpNBTItem:0
@@ -292,7 +292,7 @@ key_key.use:-99
 key_key.vaultopic.vice:18:SHIFT
 key_key.vaultopic.view:33:CONTROL
 key_key.xtones.scroll:42
-key_key.xu2.searchforitems:21
+key_key.xu2.searchforitems:0
 key_keybind.baublesinventory:0
 key_keybind.hammercorerenderstack:77
 key_keys.servertabinfo.show:29
