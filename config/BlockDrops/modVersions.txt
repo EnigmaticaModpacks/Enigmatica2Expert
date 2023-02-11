@@ -3,7 +3,7 @@
   "thaumtweaks": "0.3.5.3",
   "bilingualname": "1.2",
   "integratedterminals": "1.0.14",
-  "universaltweaks": "1.12.2-1.3.0",
+  "universaltweaks": "1.12.2-1.3.2",
   "draconicevolution": "2.3.28",
   "vaultopic": "2.2",
   "endercore": "1.12.2-0.5.76",
