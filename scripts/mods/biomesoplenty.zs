@@ -110,12 +110,12 @@ mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:terrestrial_artifact_bloc
 mods.tconstruct.Casting.addTableRecipe(<biomesoplenty:terrestrial_artifact>, <tconstruct:cast_custom:2>, <liquid:terrestrial>, 144, false);
 mods.nuclearcraft.IngotFormer.addRecipe(<liquid:terrestrial>*144, <biomesoplenty:terrestrial_artifact>, 1.0, 1.0);
 mods.forestry.Centrifuge.addRecipe([
-	terrIngrs['0'].items[0] % 100,
-	terrIngrs['1'].items[0] % 100,
-	terrIngrs['2'].items[0] % 100,
-	terrIngrs['3'].items[0] % 100,
-	terrIngrs['4'].items[0] % 100,
-	terrIngrs['5'].items[0] % 100,
+	terrIngrs['0'].items[0] % 33,
+	terrIngrs['1'].items[0] % 33,
+	terrIngrs['2'].items[0] % 33,
+	terrIngrs['3'].items[0] % 33,
+	terrIngrs['4'].items[0] % 33,
+	terrIngrs['5'].items[0] % 33,
 ], <biomesoplenty:terrestrial_artifact>, 10);
 
 # To easy manage in inventory
