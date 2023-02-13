@@ -116,7 +116,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
 	[null, <tconstruct:shard>.withTag({Material: "refinedobsidian"}), null, null, <bloodmagic:lava_crystal>], 
 	[null, null, null, <randomthings:obsidianskull>, null], 
-	[null, <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), <tconstruct:cleaver>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 3, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 7.2 as float, FreeModifiers: 2, Durability: 2088, HarvestLevel: 3, Attack: 11.58 as float}, Special: {Categories: ["tool", "weapon"]}, TinkerData: {Materials: ["fierymetal", "fierymetal", "fierymetal", "fierymetal"], Modifiers: ["beheading_cleaver", "toolleveling"]}, Modifiers: [{identifier: "twilit", color: -142243, level: 1}, {identifier: "flammable", color: -142243, level: 1}, {identifier: "autosmelt", color: -142243, level: 1}, {identifier: "superheat", color: -142243, level: 1}, {identifier: "beheading_cleaver", color: 1070923, level: 2}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["twilit", "flammable", "autosmelt", "superheat", "toolleveling"]}), null, null], 
+	[null, <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), <tconstruct:cleaver>.withTag({TinkerData: {Materials: ["fierymetal", "fierymetal", "fierymetal", "fierymetal"]}}), null, null], 
 	[null, <tconstruct:tough_tool_rod>.withTag({Material: "dragonbone"}), <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), null, <tconstruct:shard>.withTag({Material: "refinedobsidian"})], 
 	[<ore:netherStar>, null, null, null, null]
 ]);
@@ -141,7 +141,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	[null, null, <ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>, null, null], 
 	[null, null, <ore:dustAstralStarmetal>, <thaumcraft:triple_meat_treat>, <ore:ingotCosmicNeutronium>, <thaumcraft:triple_meat_treat>, <ore:dustAstralStarmetal>, null, null], 
 	[null, null, <ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, null], 
-	[null, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:ingotCrystalMatrix>, <astralsorcery:itemshiftingstar>, <ore:ingotCrystalMatrix>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>], 
+	[null, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:ingotCrystalMatrix>, <astralsorcery:itemshiftingstar>.withTag({astralsorcery:{}}), <ore:ingotCrystalMatrix>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>], 
 	[<ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:ingotCrystalMatrix>, <thaumcraft:triple_meat_treat>, <ore:ingotCosmicNeutronium>, <thaumcraft:triple_meat_treat>, <ore:dustAstralStarmetal>], 
 	[<ore:dustAstralStarmetal>, <thaumcraft:triple_meat_treat>, <ore:ingotCosmicNeutronium>, <thaumcraft:triple_meat_treat>, <ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>], 
 	[<ore:dustAstralStarmetal>, <ore:foodPorkrinds>, <thaumcraft:triple_meat_treat>, <ore:foodPorkrinds>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, <ore:dustAstralStarmetal>, null], 
