@@ -595,3 +595,6 @@ for item in thaumcraftHintItems {
 
 # Corium Bucket
 <forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000}).addTooltip(format.red("Obtainable by melting down a Fission Reactor"));
+
+# Unbreakable Graphite Electrode
+	addDescription(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}),"Reinforced Graphite Eletrode. Repaired Graphite Electrodes are insufficient for this process");
