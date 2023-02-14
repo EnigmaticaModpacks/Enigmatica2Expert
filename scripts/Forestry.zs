@@ -210,4 +210,9 @@ for name in bagNames {
 //mods.forestry.ThermionicFabricator.removeSmelting(IIngredient itemInput);
 #mods.forestry.ThermionicFabricator.removeSmelting(<minecraft:sand>);
 
-
+recipes.remove(<forestry:capsule>);
+recipes.addShaped("Wax Capsules",
+	<forestry:capsule> * 4,
+	[[null,null,null],
+	[<ore:itemBeeswax>,<ore:itemBeeswax>,<ore:itemBeeswax>],
+	[null,null,null]]);

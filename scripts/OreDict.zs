@@ -674,3 +674,7 @@ for item in pressurePlates {
 # with AA [Lens Of Color]
 <ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
 <ore:dyeGreen>.remove(<enderio:item_material:48>);
+
+# Wax unification
+	<ore:itemBeeswax>.add(<harvestcraft:beeswaxitem>);
+	<ore:itemBeeswax>.add(<rustic:beeswax>);
