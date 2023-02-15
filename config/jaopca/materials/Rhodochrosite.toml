@@ -12,4 +12,6 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "crystal"
+	#The color of this material.
+	color = 12280682
 
