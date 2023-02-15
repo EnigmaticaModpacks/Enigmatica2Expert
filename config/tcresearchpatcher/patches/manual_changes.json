@@ -1,26 +1,88 @@
 [
-   {"key": "FOCUSBREAK","ops": [{"op": "replace","path": "stages/0/required_item","value": ["minecraft:enchanted_book"]}]}
-  ,{"key": "HUNGRYCHEST","ops": [{"op": "replace","path": "stages/0/required_item","value": ["oredict:chest"]}]}
+   {"key": "FOCUSBREAK","ops": [
+    {"op": "replace",
+    "path": "stages/0/required_item",
+    "value": ["minecraft:enchanted_book"]}
+  ]}
+
+  ,{"key": "HUNGRYCHEST","ops": [
+    {"op": "replace",
+    "path": "stages/0/required_item",
+    "value": ["oredict:chest"]}
+  ]}
 
   ,{"key": "ESSENTIASMELTER","ops": [
-     {"op": "replace","path": "stages/0/required_item","value": ["thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}","thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}"]}
-    ,{"op": "replace","path": "stages/1/required_item","value": ["thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}","thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}"]}
+     {"op": "replace",
+     "path": "stages/0/required_item",
+     "value": ["thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aqua'}]}","thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'perditio'}]}"]}
+    ,{"op": "replace",
+    "path": "stages/1/required_item",
+    "value": ["thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}","thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}"]}
   ]}
+
   ,{"key": "HEDGEALCHEMY","ops": [
-     {"op": "replace","path": "stages/1/required_craft","value": ["minecraft:gunpowder", "minecraft:dye", "minecraft:glowstone_dust"]}
-    ,{"op": "replace","path": "stages/2/required_craft","value": ["minecraft:clay_ball", "minecraft:lava_bucket"]}
-    ,{"op":     "add","path": "stages/2/recipes/-"     ,"value": ["thaumcraft:ash_block"]}
+     {"op": "replace",
+     "path": "stages/1/required_craft",
+     "value": ["minecraft:gunpowder", "minecraft:dye", "minecraft:glowstone_dust"]}
+    ,{"op": "replace",
+    "path": "stages/2/required_craft",
+    "value": ["minecraft:clay_ball", "minecraft:lava_bucket"]}
+    ,{"op": "add",
+    "path": "stages/2/recipes/-",
+    "value": ["thaumcraft:ash_block"]}
   ]}
 
-  ,{"key": "TT_ENCHANTER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:osmotic_enchanter"}]}
+  ,{"key": "TT_ENCHANTER","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:osmotic_enchanter"}
+  ]}
 
-  ,{"key": "TWOND_FLUX_CAPACITOR","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:flux_capacitor"}]}
-  ,{"key": "TWOND_FLUX_DISTILLER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:flux_distiller"}]}
-  ,{"key": "TWOND_MYSTIC_GARDENING","ops": [{"op": "replace","path": "stages/1/recipes","value": ["thaumcraft:shimmerleaf_seed","thaumcraft:cinderpearl_seed","thaumcraft:vishroom_spore"]}]}
-  ,{"key": "TWOND_CATALYZATION_CHAMBER","ops": [{"op": "replace","path": "stages/2/recipes/2","value": "thaumcraft:alchemist_stone"}]}
-  ,{"key": "TWOND_TRANSMUTER_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:transmuter_stone"}]}
-  ,{"key": "TWOND_ALIENIST_STONE","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:alienist_stone"}]}
+  ,{"key": "TWOND_FLUX_CAPACITOR","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:flux_capacitor"}
+  ]}
 
-  ,{"key": "IMPETUS_GENERATOR","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:impetus_generator"}]}
-  ,{"key": "INFUSIONPROVIDER","ops": [{"op": "replace","path": "stages/1/recipes/0","value": "thaumcraft:infusion_provider"}]}
+  ,{"key": "TWOND_FLUX_DISTILLER","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:flux_distiller"}
+  ]}
+
+  ,{"key": "TWOND_MYSTIC_GARDENING","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes",
+    "value": ["thaumcraft:shimmerleaf_seed","thaumcraft:cinderpearl_seed","thaumcraft:vishroom_spore"]}
+  ]}
+
+  ,{"key": "TWOND_CATALYZATION_CHAMBER","ops": [
+    {"op": "replace",
+    "path": "stages/2/recipes/2",
+    "value": "thaumcraft:alchemist_stone"}
+  ]}
+
+  ,{"key": "TWOND_TRANSMUTER_STONE","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:transmuter_stone"}
+  ]}
+
+  ,{"key": "TWOND_ALIENIST_STONE","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:alienist_stone"}
+  ]}
+
+  ,{"key": "IMPETUS_GENERATOR","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:impetus_generator"}
+  ]}
+
+  ,{"key": "INFUSIONPROVIDER","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:infusion_provider"}
+  ]}
 ]
