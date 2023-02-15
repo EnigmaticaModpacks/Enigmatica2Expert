@@ -12,6 +12,8 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "crystal"
+	#The color of this material.
+	color = 7556249
 
 [molten]
 	#The temperature of this molten fluid.

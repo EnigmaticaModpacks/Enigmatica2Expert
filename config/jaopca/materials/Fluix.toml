@@ -5,21 +5,11 @@
 	#The byproducts of this material.
 	extras = []
 	#Is the storage block of this material small (2x2).
-	isSmallStorageBlock = true
+	isSmallStorageBlock = false
 	#The module blacklist of this material.
 	moduleBlacklist = []
 	#Should items of this material have the enchanted glow.
 	hasEffect = false
 	#The model type of the material.
 	modelType = "crystal"
-	#The color of this material.
-	color = 1118223
-
-[molten]
-	#The temperature of this molten fluid.
-	temperature = 1000
-
-[mekanism]
-	#The default base to use in Mekanism's Combiner to recreate ores.
-	oreBase = "minecraft:cobblestone"
 
