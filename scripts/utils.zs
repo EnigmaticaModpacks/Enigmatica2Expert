@@ -29,48 +29,6 @@ zenClass Utils {
 
 	zenConstructor() { }
 
-  function getSomething(oreName as string, entryNames as string[]) as IItemStack { return getSomething(oreName, entryNames, 1); }
-  function getSomething(oreName as string, entryNames as string[], amount as int) as IItemStack {
-    if (isNull(oreName)) return null;
-
-    // Find with JAOPCA
-    val JOREoutput = mods.jaopca.JAOPCA.getOre(oreName);
-    var something as IItemStack = null;
-    if (!isNull(JOREoutput)) {
-      var k = 0;
-      while k < entryNames.length && isNull(something) {
-        something = JOREoutput.getItemStack(entryNames[k]);
-        k += 1;
-      }
-    }
-
-    // Find with Oredict
-    if (isNull(something)) {
-      for str in entryNames {
-        val oreItems = oreDict[str~oreName].items;
-        if (oreItems.length>0) {
-          for preffer in modPreference {
-            for item in oreItems {
-              if(item.definition.id.startsWith(preffer))
-                return countOutput(item * amount, oreName);
-            }
-          }
-          return countOutput(oreDict[str~oreName].firstItem * amount, oreName);
-        }
-      }
-    }
-
-    // Find with smelting
-    if (isNull(something) && entryNames has "any") {
-      val oreItems = oreDict['ore'~oreName].items;
-      if (oreItems.length>0) {
-        something = smelt(oreDict['ore'~oreName]);
-      }
-    }
-
-    return isNull(something) ? null : countOutput(something * amount, oreName);
-  }
-
   # Return result of smelting in vanilla furnace
   function smelt(input as IIngredient) as IItemStack {
     for r in furnace.all {
