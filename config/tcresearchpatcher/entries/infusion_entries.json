@@ -1,0 +1,99 @@
+{
+    "entries":[
+        {
+            "key": "TRAVELLERBELT",    
+            "name": "research_name.thaumadditions:traveller_belt",
+            "icons": [ "thaumadditions:traveller_belt" ],
+            "category": "INFUSION", "location": [ -2,0 ], 
+            "parents": [ "BOOTSTRAVELLER" ],
+            "meta":["HIDDEN"],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:traveller_belt.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1","THEORY;INFUSION;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:traveller_belt.2",
+                    "recipes":["thaumcraft:traveller_belt"]
+                }
+            ]
+        },
+        {
+            "key": "STRIDINGBELT",    
+            "name": "research_name.thaumadditions:striding_belt",
+            "icons": [ "thaumadditions:striding_belt" ],
+            "category": "INFUSION", "location": [ -2,-2 ], 
+            "parents": [ "TRAVELLERBELT" ],
+            "meta":["HIDDEN"],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:striding_belt.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;2","THEORY;INFUSION;2"]                    
+                },
+                {
+                    "text": "research_stage.thaumadditions:striding_belt.2",
+                    "recipes":["thaumcraft:striding_belt"]
+                }
+            ]
+        },
+        {
+            "key": "METEORBELT",    
+            "name": "research_name.thaumadditions:meteor_belt",
+            "icons": [ "thaumadditions:meteor_belt" ],
+            "category": "INFUSION", "location": [ -2,-4 ], 
+            "parents": [ "STRIDINGBELT" ],
+            "meta":["HIDDEN"],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:meteor_belt.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1","THEORY;INFUSION;1","OBSERVATION;ELDRITCH;1","THEORY;ELDRITCH;1"],
+                    "warp":2
+                },
+                {
+                    "text": "research_stage.thaumadditions:meteor_belt.2",
+                    "recipes":["thaumcraft:meteor_belt"]
+                }
+            ]
+        },
+        {
+            "key": "VISCHARM",    
+            "name": "Recharge Charm",
+            "icons": [ "thaumadditions:recharge_charm" ],
+            "category": "INFUSION", "location": [ 6,3 ], 
+            "parents": [ "VERDANTCHARMS","VISAMULET" ],
+            "meta":["HIDDEN"],     
+            "stages": [
+                {
+                    "text": "There are so many usefull amulets and i'm stuck using this Vis Amulet as an only way to automaticaly recharge my stuff. There must be some way to get rid of it!", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1","THEORY;INFUSION;1"]
+                },
+                {
+                    "text": "As i thought! Verdant charms can also drawn vis from aura to my stuff, it just needed some adjustments.",
+                    "recipes":["thaumcraft:recharge_charm"]
+                }
+            ]
+        },
+        {
+            "key": "SPAWNER",    
+            "name": "research_name.thaumadditions:mob_summoning",
+            "icons": [ "thaumadditions:entity_summoner" ],
+            "category": "INFUSION", "location": [ 2,6 ], 
+            "parents": [ "INFUSIONSTABLE" ],
+            "meta":["HIDDEN"],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mob_summoning.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1","THEORY;INFUSION;1","OBSERVATION;ELDRITCH;1","THEORY;ELDRITCH;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mob_summoning.2",
+                    "recipes":["thaumcraft:meteor_belt"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mob_summoning.3",
+                    "recipes":["thaumcraft:dna_sample","thaumcraft:entity_summoner"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+{
+    "entries" :[
+        {
+            "key": "ACANECAKE",    
+            "name": "research_name.thaumadditions:arcane_cake",
+            "icons": [ "thaumadditions:textures/items/cake.png" ],
+            "category": "ARTIFICE", "location": [ -2,-1 ], 
+            "meta":["ROUND","HIDDEN"],
+            "parents": [ "BASEARTIFICE","PRIMPEARL" ],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:arcane_cake.1", 
+                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1"],
+                    "required_item":["minecraft:cake"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:arcane_cake.2",
+                    "recipes": ["thaumcraft:arcanecake"]
+                }
+            ]
+        },
+        {
+            "key": "AURADISPENSER",    
+            "name": "research_name.thaumadditions:aura_disperser",
+            "icons": [ "thaumadditions:aura_disperser" ],
+            "category": "ARTIFICE", "location": [ -3,-3 ], 
+            "parents": [ "VISSALT","REDSTONERELAY" ],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:aura_disperser.1",
+                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1","THEORY;ARTIFICE;1"],
+                    "required_item":["thaumadditions:salt_essence"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:aura_disperser.2",
+                    "recipes": ["thaumcraft:aura_disperser"]
+                }
+            ]
+        },
+        {
+            "key": "ESSENTIAPISTOL",    
+            "name": "research_name.thaumadditions:essentia_pistol",
+            "icons": [ "thaumadditions:essentia_pistol" ],
+            "category": "ARTIFICE", "location": [ -5,-3 ], 
+            "parents": [ "AURADISPENSER" ],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:essentia_pistol.1",
+                    "required_knowledge":["OBSERVATION;ARTIFICE;1","THEORY;ARTIFICE;1"],
+                    "required_item":["minecraft:bow"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:essentia_pistol.2",
+                    "recipes": ["thaumcraft:essentia_pistol"]
+                }
+            ]
+        },
+        {
+            "key": "SEAL",    
+            "name": "research_name.thaumadditions:seal",
+            "icons": [ "thaumadditions:seal" ],
+            "category": "ARTIFICE", "location": [ 5,0 ], 
+            "parents": [ "BASEARTIFICE" ],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:seal.1",
+                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1"],
+                    "required_item":["minecraft:gold_ingot;1","minecraft:wool;1;0"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:seal.2",
+                    "recipes": ["thaumcraft:seal"]
+                }
+            ]
+        },
+        {
+            "key": "TAR_SEAL_SYMBOLS",    
+            "name": "research_name.thaumadditions:seal_symbols",
+            "icons": [ "thaumadditions:seal_symbol" ],
+            "category": "ARTIFICE", "location": [ 7,0 ], 
+            "parents": [ "SEAL" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:seal_symbols.1",
+                    "required_knowledge":["THEORY;ARTIFICE;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:seal_symbols.2",
+                    "recipes": ["thaumadditions:seal_symbol_recipes_all"]
+                }
+            ]
+        },
+        {
+            "key": "CHESTER",    
+            "name": "research_name.thaumadditions:chester",
+            "icons": [ "thaumadditions:chester" ],
+            "category": "ARTIFICE", "location": [ 6,2 ], 
+            "parents": [ "HUNGRYCHEST" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:chester.1",
+                    "required_knowledge":["THEORY;ARTIFICE;1"],
+                    "required_craft":["thaumcraft:golem_bell"],
+                    "required_item":["thaumcraft:log_greatwood;8"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:chester.2",
+                    "recipes": ["thaumcraft:chester","thaumcraft:bone_eye"]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTALBORE",    
+            "name": "research_name.thaumadditions:crystal_bore",
+            "icons": [ "thaumadditions:crystal_bore" ],
+            "category": "ARTIFICE", "location": [ 0,4 ], 
+            "parents": [ "BASEARTIFICE","CRYSTALFARMER" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_bore.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;GOLEMANCY;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:crystal_bore.2",
+                    "recipes": ["thaumcraft:crystal_bore"]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTALLAMP",    
+            "name": "research_name.thaumadditions:crystal_lamp",
+            "icons": [ "thaumadditions:crystal_lamp" ],
+            "category": "ARTIFICE", "location": [ -3,2 ], 
+            "parents": [ "ARCANELAMP" ],
+            "meta":["ROUND"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_lamp.1",
+                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;THAUMADDITIONS;1"],
+                    "require_item":["thaumcraft:plank_greatwood","thaumcraft:crystal_essence;1;{Aspects: [{amount: 1, key: 'lux'}]}"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:crystal_lamp.2",
+                    "recipes": ["thaumcraft:crystal_lamp"]
+                }
+            ]
+        },
+        {
+            "key": "SEALGLOBE",    
+            "name": "research_name.thaumadditions:seal_globe",
+            "icons": [ "thaumadditions:seal_globe" ],
+            "category": "ARTIFICE", "location": [ 7,-2 ], 
+            "parents": [ "TAR_SEAL_SYMBOLS" ],
+            "meta":["ROUND"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:seal_globe.1",
+                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;THAUMADDITIONS;1"],
+                    "require_craft":["thaumcraft:seal"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:seal_globe.2",
+                    "recipes": ["thaumcraft:seal_globe"]
+                }
+            ]
+        }
+    ]
+}
