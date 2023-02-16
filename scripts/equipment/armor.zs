@@ -512,3 +512,157 @@ recipes.addShapeless("Disassemble troll column_forest", <additionalcompression:c
 recipes.addShapeless("Disassemble troll column_frost" , <quark:biome_cobblestone:1> * 36                        , [<iceandfire:troll_weapon.column_frost>]);
 recipes.addShapeless("Disassemble troll trunk"        , <twilightforest:giant_log>                              , [<iceandfire:troll_weapon.trunk>]);
 recipes.addShapeless("Disassemble troll trunk_frost"  , <integrateddynamics:menril_log> * 36                    , [<iceandfire:troll_weapon.trunk_frost>]);
+
+# ######################################################################
+#
+# Thaumcraft (with addons) armor crafting recipes changes
+#
+# ######################################################################
+
+#[Void robe armor set]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_helm>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "VoidRobeHelm", # Name
+  "VOIDROBEARMOR", # Research
+  <thaumcraft:void_robe_helm>, # Output
+  3, # Instability
+  [<aspect:metallum>*25,<aspect:praecantatio>*25,<aspect:vacuos>*25,<aspect:potentia>*25,<aspect:alienis>*25,<aspect:sensus>*25,<aspect:visum>*25],
+  <thaumicaugmentation:thaumium_robes_hood:*>, # CentralItem
+  [<thaumcraft:salis_mundus>,<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_chest>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "VoidRobeChest", # Name
+  "VOIDROBEARMOR", # Research
+  <thaumcraft:void_robe_chest>, # Output
+  3, # Instability
+  [<aspect:metallum>*35,<aspect:praecantatio>*35,<aspect:vacuos>*35,<aspect:potentia>*25,<aspect:alienis>*25],
+  <thaumicaugmentation:thaumium_robes_chestplate:*>, # CentralItem
+ [<thaumcraft:salis_mundus>,<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_legs>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "VoidRobeLegs", # Name
+  "VOIDROBEARMOR", # Research
+  <thaumcraft:void_robe_legs>, # Output
+  3, # Instability
+  [<aspect:metallum>*25,<aspect:praecantatio>*25,<aspect:vacuos>*25,<aspect:potentia>*25,<aspect:alienis>*25],
+  <thaumicaugmentation:thaumium_robes_leggings:*>, # CentralItem
+  [<thaumcraft:salis_mundus>,<thaumcraft:fabric>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>,<thaumcraft:plate:3>]
+);
+
+#[Void fortress armor set]
+mods.thaumcraft.Infusion.removeRecipe(<thaumicwonders:void_fortress_helm>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "void_fortress_helm", # Name
+  "TWOND_VOID_FORTRESS_ARMOR", # Research
+  <thaumicwonders:void_fortress_helm>, # Output
+  3, # Instability
+  [<aspect:infernum>*50,<aspect:victus>*30,<aspect:vacuos>*50],
+  <thaumcraft:fortress_helm:*>, # CentralItem
+  [<thaumcraft:void_helm:*>,<minecraft:ghast_tear>,<thaumcraft:salis_mundus>,<harvestcraft:hardenedleatheritem>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumicwonders:void_fortress_chest>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "void_fortress_chest", # Name
+  "TWOND_VOID_FORTRESS_ARMOR", # Research
+  <thaumicwonders:void_fortress_chest>, # Output
+  3, # Instability
+  [<aspect:infernum>*50,<aspect:victus>*30,<aspect:vacuos>*50],
+  <thaumcraft:fortress_chest:*>, # CentralItem
+ [<thaumcraft:void_chest:*>,<thaumcraft:salis_mundus>,<harvestcraft:hardenedleatheritem>,<harvestcraft:hardenedleatheritem>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumicwonders:void_fortress_legs>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "void_fortress_legs", # Name
+  "TWOND_VOID_FORTRESS_ARMOR", # Research
+  <thaumicwonders:void_fortress_legs>, # Output
+  3, # Instability
+  [<aspect:infernum>*50,<aspect:victus>*30,<aspect:vacuos>*50],
+  <thaumcraft:fortress_legs:*>, # CentralItem
+  [<thaumcraft:void_legs:*>,<thaumcraft:salis_mundus>,<harvestcraft:hardenedleatheritem>,<harvestcraft:hardenedleatheritem>]
+);
+
+#[Adaminite armor set]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:adaminite_hood>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "adaminite_hood", # Name
+  "ADAMINITEFABRIC", # Research
+  <thaumadditions:adaminite_hood>, # Output
+  6, # Instability
+  [<aspect:infernum>*100,<aspect:sanguis>*100,<aspect:spiritus>*50],
+  <thaumcraft:void_robe_helm:*>, # CentralItem
+  [<thaumicwonders:void_fortress_helm:*>,<bloodmagic:item_demon_crystal>,<bloodmagic:slate:3>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>]
+);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:adaminite_robe>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "adaminite_robe", # Name
+  "ADAMINITEFABRIC", # Research
+  <thaumadditions:adaminite_robe>, # Output
+  6, # Instability
+  [<aspect:infernum>*100,<aspect:sanguis>*100,<aspect:mortuus>*50],
+  <thaumcraft:void_robe_chest:*>, # CentralItem
+  [<thaumicwonders:void_fortress_chest:*>,<bloodmagic:item_demon_crystal>,<bloodmagic:slate:3>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>]
+);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:adaminite_belt>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "adaminite_belt", # Name
+  "ADAMINITEFABRIC", # Research
+  <thaumadditions:adaminite_belt>, # Output
+  6, # Instability
+  [<aspect:infernum>*100,<aspect:sanguis>*100,<aspect:ordo>*50],
+  <thaumcraft:void_robe_legs:*>, # CentralItem
+ [<thaumicwonders:void_fortress_legs:*>,<bloodmagic:item_demon_crystal>,<bloodmagic:slate:3>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>]
+);
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:adaminite_boots>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "adaminite_boots", # Name
+  "ADAMINITEFABRIC", # Research
+  <thaumadditions:adaminite_boots>, # Output
+  6, # Instability
+  [<aspect:infernum>*100,<aspect:sanguis>*100,<aspect:motus>*50],
+  <thaumicaugmentation:void_boots:*>, # CentralItem
+  [<thaumcraft:void_boots:*>,<bloodmagic:item_demon_crystal>,<bloodmagic:slate:3>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>]
+);
+
+#[Mithminite armor set]
+mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_hood>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "mithminite_hood", # Name
+  "HOOD", # Research
+  <thaumadditions:mithminite_hood>, # Output
+  10, # Instability
+  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:visum>*200,<aspect:sensus>*200,<aspect:amogus>*42],
+  <thaumadditions:adaminite_hood:*>, # CentralItem
+  [<thaumcraft:sanity_checker>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumadditions:mithminite_fabric>,<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:fragnant_pendant>,<thaumadditions:seal_globe>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_robe>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "mithminite_robe", # Name
+  "ROBE", # Research
+  <thaumadditions:mithminite_robe>, # Output
+  10, # Instability
+  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:victus>*200,<aspect:draco>*200,<aspect:amogus>*42],
+  <thaumadditions:adaminite_robe:*>, # CentralItem
+  [<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicaugmentation:thaumostatic_harness:*>,<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicwonders:panacea:1>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_belt>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "mithminite_belt", # Name
+  "BELT", # Research
+  <thaumadditions:mithminite_belt>, # Output
+  10, # Instability
+  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:volatus>*200,<aspect:ventus>*200,<aspect:amogus>*42],
+  <thaumadditions:adaminite_belt:*>, # CentralItem
+ [<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicwonders:flying_carpet:*>,<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>]
+);
+mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_boots>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "mithminite_boots", # Name
+  "BOOTS", # Research
+  <thaumadditions:mithminite_boots>, # Output
+  10, # Instability
+  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:sonus>*200,<aspect:exitium>*200,<aspect:amogus>*42],
+  <thaumadditions:adaminite_boots:*>, # CentralItem
+  [<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicaugmentation:research_notes>]
+);
