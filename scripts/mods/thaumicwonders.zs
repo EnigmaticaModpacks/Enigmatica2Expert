@@ -167,3 +167,15 @@ scripts.jei.crafting_hints.addInsOutCatl([
   <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "victus"}]}),
   <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "alienis"}]}),
 ], <ore:listAllmeatraw>.firstItem * 500, <thaumicwonders:meaty_orb>);
+
+#[Alkahest vat]
+mods.thaumcraft.Crucible.removeRecipe(<thaumicwonders:alkahest_vat>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "alkahest_vat", # Name
+  "TWOND_ALKAHEST", # Research
+  <thaumicwonders:alkahest_vat>, # Output
+  5, # Instability
+  [<aspect:alkimia>*100,<aspect:caeles>*25,<aspect:infernum>*100,<aspect:fluctus>*50,<aspect:auram>*200],
+  <thaumcraft:crucible>, # CentralItem
+  [<thaumicaugmentation:material:5>,<thaumadditions:aura_disperser>,<thaumicaugmentation:material:5>,<thaumadditions:crystal_block>.withTag({Aspect: "visum"}),<thaumicaugmentation:material:5>,<thaumadditions:aura_disperser>,<thaumicaugmentation:material:5>,<thaumadditions:aura_charger>]
+);
