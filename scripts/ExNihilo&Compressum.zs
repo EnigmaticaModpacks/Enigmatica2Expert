@@ -114,12 +114,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	rh(<exnihilocreatio:item_ore_nickel:1>);
 	rh(<exnihilocreatio:item_ore_ardite:1>);
 	rh(<exnihilocreatio:item_ore_cobalt:1>);
-	rh(<jaopca:item_hunkosmium>);
-	rh(<jaopca:item_hunkboron>);
-	rh(<jaopca:item_hunklithium>);
-	rh(<jaopca:item_hunkmagnesium>);
-	rh(<jaopca:item_hunkthorium>);
-	rh(<jaopca:item_hunkuranium>);
 	
 # Ex Nihilo Dusts
 	rh(<exnihilocreatio:item_ore_gold:2>);

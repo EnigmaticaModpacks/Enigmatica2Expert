@@ -1,0 +1,35 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#Should the module only add recipes for materials with JAOPCA molten fluids.
+	jaopcaOnly = true
+	#The materials that should not have material melting recipes added.
+	materialToMoltenMaterialBlacklist = []
+	#The materials that should not have block melting recipes added.
+	blockToMoltenMaterialBlacklist = []
+	#The materials that should not have nugget melting recipes added.
+	nuggetToMoltenMaterialBlacklist = []
+	#The materials that should not have dust melting recipes added.
+	dustToMoltenMaterialBlacklist = []
+	#The materials that should not have plate melting recipes added.
+	plateToMoltenMaterialBlacklist = []
+	#The materials that should not have gear melting recipes added.
+	gearToMoltenMaterialBlacklist = []
+	#The materials that should not have material casting recipes added.
+	toMaterialMaterialBlacklist = []
+	#The materials that should not have block casting recipes added.
+	toBlockMaterialBlacklist = []
+	#The materials that should not have nugget casting recipes added.
+	toNuggetMaterialBlacklist = []
+	#The materials that should not have plate casting recipes added.
+	toPlateMaterialBlacklist = []
+	#The materials that should not have gear casting recipes added.
+	toGearMaterialBlacklist = []
+	#The materials that should not have gear cast recipes added.
+	materialCastMaterialBlacklist = []
+	#The materials that should not have nugget cast recipes added.
+	nuggetCastMaterialBlacklist = []
+

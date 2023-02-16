@@ -1,0 +1,11 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+	#The materials to force generate passive forms for this module.
+	passiveMaterialWhitelist = []
+
+[oredict]
+	#Should the module register rod oredict for sticks.
+	registerRodOredict = true
+

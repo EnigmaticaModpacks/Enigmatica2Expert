@@ -45,4 +45,8 @@ import mods.jei.JEI.removeAndHide as rh;
 	[<ore:alloyBasic>, <mekanism:energycube>, <ore:alloyBasic>], 
 	[<ore:gearBronze>, <ore:alloyBasic>, <ore:gearBronze>]]);
 
-	
+# Remove invalid honey combs from TE Centrifugal Separator. Who knows why they even exist in the first place
+for i in 17 to 25 {
+	val comb as IItemStack = <gendustry:honey_comb>.definition.makeStack(i) as IItemStack;
+	mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+}

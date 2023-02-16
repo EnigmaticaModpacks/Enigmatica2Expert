@@ -35,7 +35,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.data.IData;
 import mods.jaopca.JAOPCA;
-import mods.jaopca.OreEntry;
 
 import scripts.processWork.work;
 import scripts.processWork.workEx;

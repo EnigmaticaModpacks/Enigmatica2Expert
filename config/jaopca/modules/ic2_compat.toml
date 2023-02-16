@@ -1,0 +1,25 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+[recipes]
+	#The materials that should not have macerator material to dust recipes added.
+	materialToDustMaterialBlacklist = []
+	#The materials that should not have metal former rolling to plate recipes added.
+	ingotToPlateMaterialBlacklist = []
+	#The materials that should not have compressor to plate recipes added.
+	dustToPlateMaterialBlacklist = []
+	#The materials that should not have metal cutting machine to plate recipes added.
+	blockToPlateMaterialBlacklist = []
+	#The materials that should not have macerator plate to dust recipes added.
+	plateToDustMaterialBlacklist = []
+	#The materials that should not have compressor to dense plate recipes added.
+	toDensePlateMaterialBlacklist = []
+	#The materials that should not have macerator dense plate to dust recipes added.
+	densePlateToDustMaterialBlacklist = []
+	#The materials that should not have compressor to block recipes added.
+	toBlockMaterialBlacklist = []
+	#The materials that should not have compressor to dust recipes added.
+	tinyDustToDustMaterialBlacklist = []
+
