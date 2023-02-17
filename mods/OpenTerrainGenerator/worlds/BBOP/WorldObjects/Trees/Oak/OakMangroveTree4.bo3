@@ -1,0 +1,262 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Unknown
+
+Description: Converted version of the BO2 OakMangroveTree4
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 10.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 59
+
+MaxHeight: 67
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: STONE:1,STONE:3,STONE:5,DIRT:1,DIRT,SAND,GRASS,DIRT:2,STATIONARY_WATER,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,AIR,STONE,GRAVEL,LONG_GRASS,LONG_GRASS:1,LONG_GRASS:2,DEAD_BUSH,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,WATER_LILY,WATER
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-2,-3,0,biomesoplenty:log_1:6)
+Block(-2,-2,0,biomesoplenty:log_1:6)
+Block(0,5,-4,biomesoplenty:leaves_4:0)
+Block(1,5,4,biomesoplenty:leaves_4:0)
+Block(-2,-5,0,biomesoplenty:log_1:6)
+Block(0,5,2,biomesoplenty:leaves_4:0)
+Block(-2,-4,0,biomesoplenty:log_1:6)
+Block(0,4,2,biomesoplenty:leaves_4:0)
+Block(-2,-1,0,biomesoplenty:log_1:6)
+Block(-4,5,2,biomesoplenty:leaves_4:0)
+Block(-3,5,4,biomesoplenty:leaves_4:0)
+Block(-2,5,-3,biomesoplenty:leaves_4:0)
+Block(-3,5,0,biomesoplenty:leaves_4:0)
+Block(-1,5,-3,biomesoplenty:leaves_4:0)
+Block(-1,5,0,biomesoplenty:log_1:6)
+Block(-6,5,1,biomesoplenty:leaves_4:0)
+Block(-1,4,0,biomesoplenty:log_1:6)
+Block(-1,6,0,biomesoplenty:leaves_4:0)
+Block(-1,5,4,biomesoplenty:leaves_4:0)
+Block(-1,4,4,biomesoplenty:leaves_4:0)
+Block(-2,6,2,biomesoplenty:leaves_4:0)
+Block(-2,5,2,biomesoplenty:leaves_4:0)
+Block(-2,4,2,biomesoplenty:leaves_4:0)
+Block(-3,5,-2,biomesoplenty:leaves_4:0)
+Block(0,6,3,biomesoplenty:leaves_4:0)
+Block(0,5,3,biomesoplenty:log_1:6)
+Block(2,5,-3,biomesoplenty:leaves_4:0)
+Block(-1,1,0,biomesoplenty:log_1:6)
+Block(-1,0,0,biomesoplenty:log_1:6)
+Block(-1,3,0,biomesoplenty:log_1:6)
+Block(-1,2,0,biomesoplenty:log_1:6)
+Block(0,-3,-2,biomesoplenty:log_1:6)
+Block(0,5,-1,biomesoplenty:leaves_4:0)
+Block(0,4,-1,biomesoplenty:leaves_4:0)
+Block(0,-5,-2,biomesoplenty:log_1:6)
+Block(0,-4,-2,biomesoplenty:log_1:6)
+Block(0,6,-1,biomesoplenty:leaves_4:0)
+Block(1,5,5,biomesoplenty:leaves_4:0)
+Block(0,5,1,biomesoplenty:leaves_4:0)
+Block(0,1,-1,biomesoplenty:log_1:6)
+Block(0,0,-1,biomesoplenty:log_1:6)
+Block(-4,5,1,biomesoplenty:leaves_4:0)
+Block(-4,4,1,biomesoplenty:leaves_4:0)
+Block(3,5,-2,biomesoplenty:leaves_4:0)
+Block(1,5,-3,biomesoplenty:leaves_4:0)
+Block(-3,4,3,biomesoplenty:leaves_4:0)
+Block(-3,6,3,biomesoplenty:leaves_4:0)
+Block(-3,5,3,biomesoplenty:leaves_4:0)
+Block(-1,6,-2,biomesoplenty:leaves_4:0)
+Block(-1,5,-2,biomesoplenty:log_1:6)
+Block(-1,4,-2,biomesoplenty:leaves_4:0)
+Block(-1,4,3,biomesoplenty:leaves_4:0)
+Block(-1,6,3,biomesoplenty:leaves_4:0)
+Block(-1,5,3,biomesoplenty:log_1:6)
+Block(-2,6,1,biomesoplenty:leaves_4:0)
+Block(-2,5,1,biomesoplenty:log_1:6)
+Block(-2,4,1,biomesoplenty:leaves_4:0)
+Block(-3,5,-1,biomesoplenty:leaves_4:0)
+Block(1,5,0,biomesoplenty:leaves_4:0)
+Block(0,6,2,biomesoplenty:leaves_4:0)
+Block(0,5,6,biomesoplenty:leaves_4:0)
+Block(0,1,0,biomesoplenty:log_1:6)
+Block(0,4,-2,biomesoplenty:leaves_4:0)
+Block(0,6,-2,biomesoplenty:leaves_4:0)
+Block(0,2,0,biomesoplenty:log_1:6)
+Block(0,5,-2,biomesoplenty:log_1:6)
+Block(0,5,0,biomesoplenty:leaves_4:0)
+Block(1,5,2,biomesoplenty:leaves_4:0)
+Block(-4,5,0,biomesoplenty:leaves_4:0)
+Block(-1,-2,1,biomesoplenty:log_1:6)
+Block(-1,-3,1,biomesoplenty:log_1:6)
+Block(-1,-4,1,biomesoplenty:log_1:6)
+Block(-1,-5,1,biomesoplenty:log_1:6)
+Block(0,-5,1,biomesoplenty:log_1:6)
+Block(1,6,-2,biomesoplenty:leaves_4:0)
+Block(0,-4,1,biomesoplenty:log_1:6)
+Block(0,-3,1,biomesoplenty:log_1:6)
+Block(1,4,-2,biomesoplenty:leaves_4:0)
+Block(1,5,-2,biomesoplenty:leaves_4:0)
+Block(-3,5,2,biomesoplenty:log_1:6)
+Block(-3,4,2,biomesoplenty:leaves_4:0)
+Block(-3,6,2,biomesoplenty:leaves_4:0)
+Block(-2,6,-1,biomesoplenty:leaves_4:0)
+Block(-1,-1,1,biomesoplenty:log_1:6)
+Block(-2,5,-1,biomesoplenty:leaves_4:0)
+Block(-1,6,-1,biomesoplenty:leaves_4:0)
+Block(-1,5,-1,biomesoplenty:log_1:6)
+Block(-1,5,2,biomesoplenty:log_1:6)
+Block(-1,4,-1,biomesoplenty:leaves_4:0)
+Block(-1,4,2,biomesoplenty:leaves_4:0)
+Block(-1,6,2,biomesoplenty:leaves_4:0)
+Block(-2,5,4,biomesoplenty:leaves_4:0)
+Block(-2,6,0,biomesoplenty:leaves_4:0)
+Block(-2,5,0,biomesoplenty:leaves_4:0)
+Block(-2,4,0,biomesoplenty:leaves_4:0)
+Block(-1,5,-5,biomesoplenty:leaves_4:0)
+Block(2,5,-1,biomesoplenty:leaves_4:0)
+Block(1,5,1,biomesoplenty:leaves_4:0)
+Block(0,5,5,biomesoplenty:leaves_4:0)
+Block(-5,5,1,biomesoplenty:leaves_4:0)
+Block(1,-5,-1,biomesoplenty:log_1:6)
+Block(0,5,-3,biomesoplenty:leaves_4:0)
+Block(1,-4,-1,biomesoplenty:log_1:6)
+Block(0,4,-3,biomesoplenty:leaves_4:0)
+Block(1,-3,-1,biomesoplenty:log_1:6)
+Block(0,4,3,biomesoplenty:leaves_4:0)
+Block(1,5,3,biomesoplenty:leaves_4:0)
+Block(-4,5,3,biomesoplenty:leaves_4:0)
+Block(-2,-3,-1,biomesoplenty:log_1:6)
+Block(1,5,-1,biomesoplenty:leaves_4:0)
+Block(-3,6,1,biomesoplenty:leaves_4:0)
+Block(-3,5,1,biomesoplenty:log_1:6)
+Block(-2,-4,-1,biomesoplenty:log_1:6)
+Block(-2,-5,-1,biomesoplenty:log_1:6)
+Block(-3,4,1,biomesoplenty:leaves_4:0)
+Block(-2,5,-2,biomesoplenty:leaves_4:0)
+Block(0,-2,-1,biomesoplenty:log_1:6)
+Block(-1,4,1,biomesoplenty:leaves_4:0)
+Block(0,-1,-1,biomesoplenty:log_1:6)
+Block(0,-4,-1,biomesoplenty:log_1:6)
+Block(-1,6,1,biomesoplenty:leaves_4:0)
+Block(0,-3,-1,biomesoplenty:log_1:6)
+Block(-1,5,1,biomesoplenty:log_1:6)
+Block(0,-5,-1,biomesoplenty:log_1:6)
+Block(-1,5,5,biomesoplenty:leaves_4:0)
+Block(-3,-5,0,biomesoplenty:log_1:6)
+Block(-3,-3,0,biomesoplenty:log_1:6)
+Block(2,5,0,biomesoplenty:leaves_4:0)
+Block(-2,5,3,biomesoplenty:leaves_4:0)
+Block(-3,-4,0,biomesoplenty:log_1:6)
+Block(-2,4,3,biomesoplenty:leaves_4:0)
+Block(-1,5,-4,biomesoplenty:leaves_4:0)
+Block(-1,-4,2,biomesoplenty:log_1:6)
+Block(-1,-3,2,biomesoplenty:log_1:6)
+Block(-1,-5,2,biomesoplenty:log_1:6)
+Block(0,5,4,biomesoplenty:leaves_4:0)
+Block(0,4,4,biomesoplenty:leaves_4:0)
+Block(2,5,-2,biomesoplenty:leaves_4:0)
+Block(-1,0,1,biomesoplenty:log_1:6)
+Block(-5,5,2,biomesoplenty:leaves_4:0)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

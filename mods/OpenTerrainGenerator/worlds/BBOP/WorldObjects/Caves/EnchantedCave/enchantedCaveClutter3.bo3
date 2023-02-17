@@ -1,0 +1,235 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: false
+
+Frequency: 1
+
+Rarity: 0.5
+
+RotateRandomly: false
+
+SpawnHeight: randomY
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 21
+
+MaxHeight: 41
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 50
+
+OutsideSourceBlock: placeAnyway
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+B(-3,-3,-1,COBBLESTONE)
+B(-3,-3,0,COBBLESTONE)
+B(-3,-3,1,COBBLESTONE)
+B(-3,-2,-1,COBBLESTONE)
+B(-3,-2,0,COBBLESTONE)
+B(-3,-2,1,COBBLESTONE)
+B(-3,-1,-1,COBBLESTONE)
+B(-3,-1,0,COBBLESTONE)
+B(-3,-1,1,COBBLESTONE)
+B(-3,0,-1,COBBLESTONE)
+B(-3,0,0,MOSSY_COBBLESTONE)
+B(-3,0,1,COBBLESTONE)
+B(-3,1,-1,AIR)
+B(-3,1,0,COBBLESTONE_STAIRS:1)
+B(-3,1,1,COBBLESTONE_STAIRS:1)
+B(-3,2,0,AIR)
+B(-3,2,1,AIR)
+B(-3,3,0,AIR)
+B(-3,3,1,AIR)
+B(-2,-3,-2,COBBLESTONE)
+B(-2,-3,-1,COBBLESTONE)
+B(-2,-3,0,COBBLESTONE)
+B(-2,-3,1,COBBLESTONE)
+B(-2,-2,-2,COBBLESTONE)
+B(-2,-2,-1,COBBLESTONE)
+B(-2,-2,0,COBBLESTONE)
+B(-2,-2,1,COBBLESTONE)
+B(-2,-1,-2,COBBLESTONE)
+B(-2,-1,-1,COBBLESTONE)
+B(-2,-1,0,COBBLESTONE)
+B(-2,-1,1,COBBLESTONE)
+B(-2,0,-2,COBBLESTONE)
+B(-2,0,-1,COBBLESTONE)
+B(-2,0,0,COBBLESTONE)
+B(-2,0,1,MOSSY_COBBLESTONE)
+B(-2,1,-2,AIR)
+B(-2,1,-1,AIR)
+B(-2,1,0,AIR)
+B(-2,1,1,AIR)
+B(-2,2,-1,AIR)
+B(-2,2,0,AIR)
+B(-2,2,1,AIR)
+B(-2,3,0,AIR)
+B(-2,3,1,AIR)
+B(-1,-3,-2,COBBLESTONE)
+B(-1,-3,-1,COBBLESTONE)
+B(-1,-3,0,COBBLESTONE)
+B(-1,-3,1,COBBLESTONE)
+B(-1,-3,2,COBBLESTONE)
+B(-1,-2,-2,COBBLESTONE)
+B(-1,-2,-1,COBBLESTONE)
+B(-1,-2,0,COBBLESTONE)
+B(-1,-2,1,COBBLESTONE)
+B(-1,-2,2,COBBLESTONE)
+B(-1,-1,-2,COBBLESTONE)
+B(-1,-1,-1,COBBLESTONE)
+B(-1,-1,0,COBBLESTONE)
+B(-1,-1,1,COBBLESTONE)
+B(-1,-1,2,COBBLESTONE)
+B(-1,0,-2,COBBLESTONE)
+B(-1,0,-1,COBBLESTONE)
+B(-1,0,0,MOSSY_COBBLESTONE)
+B(-1,0,1,MOSSY_COBBLESTONE)
+B(-1,0,2,MOSSY_COBBLESTONE)
+B(-1,1,-2,COBBLESTONE_STAIRS)
+B(-1,1,-1,AIR)
+B(-1,1,0,AIR)
+B(-1,1,1,STEP:3)
+B(-1,1,2,AIR)
+B(-1,2,-2,AIR)
+B(-1,2,-1,AIR)
+B(-1,2,0,AIR)
+B(-1,2,1,AIR)
+B(-1,2,2,AIR)
+B(-1,3,-1,AIR)
+B(-1,3,0,AIR)
+B(-1,3,1,AIR)
+B(-1,3,2,AIR)
+B(0,-3,-2,COBBLESTONE)
+B(0,-3,-1,COBBLESTONE)
+B(0,-3,0,COBBLESTONE)
+B(0,-3,1,COBBLESTONE)
+B(0,-3,2,COBBLESTONE)
+B(0,-2,-2,COBBLESTONE)
+B(0,-2,-1,COBBLESTONE)
+B(0,-2,0,COBBLESTONE)
+B(0,-2,1,COBBLESTONE)
+B(0,-2,2,COBBLESTONE)
+B(0,-1,-2,COBBLESTONE)
+B(0,-1,-1,COBBLESTONE)
+B(0,-1,0,COBBLESTONE)
+B(0,-1,1,COBBLESTONE)
+B(0,-1,2,COBBLESTONE)
+B(0,0,-2,MOSSY_COBBLESTONE)
+B(0,0,-1,MOSSY_COBBLESTONE)
+B(0,0,0,COBBLESTONE)
+B(0,0,1,NETHERRACK)
+B(0,0,2,COBBLESTONE)
+B(0,1,-2,AIR)
+B(0,1,-1,AIR)
+B(0,1,0,STEP:3)
+B(0,1,1,FIRE:15)
+B(0,1,2,STEP:3)
+B(0,2,-2,AIR)
+B(0,2,-1,AIR)
+B(0,2,0,AIR)
+B(0,2,1,AIR)
+B(0,2,2,AIR)
+B(0,3,-1,AIR)
+B(0,3,0,AIR)
+B(0,3,1,AIR)
+B(0,3,2,AIR)
+B(1,-3,-1,COBBLESTONE)
+B(1,-3,0,COBBLESTONE)
+B(1,-3,1,COBBLESTONE)
+B(1,-2,-1,COBBLESTONE)
+B(1,-2,0,COBBLESTONE)
+B(1,-2,1,COBBLESTONE)
+B(1,-1,-1,COBBLESTONE)
+B(1,-1,0,COBBLESTONE)
+B(1,-1,1,COBBLESTONE)
+B(1,0,-1,MOSSY_COBBLESTONE)
+B(1,0,0,MOSSY_COBBLESTONE)
+B(1,0,1,MOSSY_COBBLESTONE)
+B(1,1,-1,AIR)
+B(1,1,0,AIR)
+B(1,1,1,STEP:3)
+B(1,2,-1,AIR)
+B(1,2,0,AIR)
+B(1,2,1,AIR)
+B(1,3,0,AIR)
+B(1,3,1,AIR)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,1,0,AIR)
+BlockCheck(0,0,0,AIR)
+BlockCheck(0,-1,0,STONE,DIRT,DIRT:1,DIRT:2,MYCEL,GRAVEL,GRASS)
+BlockCheck(0,-2,0,STONE,DIRT,DIRT:1,DIRT:2,MYCEL,GRAVEL,GRASS)
+BlockCheck(0,-3,0,STONE,DIRT,DIRT:1,DIRT:2,MYCEL,GRAVEL,GRASS)
+LightCheck(0,0,0,0,2)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         EntityFunctions                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

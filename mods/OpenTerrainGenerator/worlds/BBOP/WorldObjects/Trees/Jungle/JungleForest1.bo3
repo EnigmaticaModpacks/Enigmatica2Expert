@@ -1,0 +1,537 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Unknown
+
+Description: Converted version of the BO2 JungleForest1
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 10.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 62
+
+MaxHeight: 210
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(2,11,4,LEAVES:3)
+Block(4,11,-3,LEAVES:3)
+Block(5,11,2,LEAVES:3)
+Block(2,12,4,LEAVES:3)
+Block(4,10,-3,LEAVES:3)
+Block(2,19,4,LEAVES:3)
+Block(5,19,2,LEAVES:3)
+Block(-2,20,-3,LEAVES:3)
+Block(1,9,-4,LEAVES:3)
+Block(-2,19,-3,LEAVES:3)
+Block(-4,19,-1,LEAVES:3)
+Block(1,20,1,LEAVES:3)
+Block(-4,14,-1,LEAVES:3)
+Block(-4,13,-1,LEAVES:3)
+Block(-4,12,-1,LEAVES:3)
+Block(4,19,-3,LEAVES:3)
+Block(-3,13,2,LEAVES:3)
+Block(-3,18,2,VINE:4)
+Block(-3,19,2,LEAVES:3)
+Block(2,19,-5,LEAVES:3)
+Block(2,11,-5,LEAVES:3)
+Block(2,10,-5,LEAVES:3)
+Block(1,18,1,LEAVES:3)
+Block(-3,20,2,LEAVES:3)
+Block(1,19,1,LEAVES:3)
+Block(1,19,-1,LEAVES:3)
+Block(1,18,-1,LEAVES:3)
+Block(1,17,-1,LOG:3)
+Block(4,20,-2,LEAVES:3)
+Block(2,20,3,LEAVES:3)
+Block(1,9,-3,LEAVES:3)
+Block(1,7,-3,LOG:3)
+Block(1,8,-3,LOG:3)
+Block(1,11,2,LEAVES:3)
+Block(1,18,2,LOG:3)
+Block(0,19,-6,LEAVES:3)
+Block(1,19,2,LEAVES:3)
+Block(-6,13,0,LEAVES:3)
+Block(4,10,-2,LEAVES:3)
+Block(4,19,-2,LEAVES:3)
+Block(0,1,0,LOG:3)
+Block(0,0,0,LOG:3)
+Block(-6,13,1,LEAVES:3)
+Block(0,3,0,LOG:3)
+Block(0,2,0,LOG:3)
+Block(0,5,0,LOG:3)
+Block(-3,19,3,LEAVES:3)
+Block(0,4,0,LOG:3)
+Block(0,7,0,LOG:3)
+Block(-2,19,0,LEAVES:3)
+Block(0,6,0,LOG:3)
+Block(-2,18,0,LEAVES:3)
+Block(-2,13,0,LEAVES:3)
+Block(-2,14,0,LEAVES:3)
+Block(-2,11,0,LOG:7)
+Block(-2,10,0,LOG:7)
+Block(4,9,-5,LEAVES:3)
+Block(2,20,-3,LEAVES:3)
+Block(1,5,-2,LEAVES:3)
+Block(-4,13,3,LEAVES:3)
+Block(-4,19,3,LEAVES:3)
+Block(2,12,3,LEAVES:3)
+Block(4,19,0,LEAVES:3)
+Block(3,11,6,LEAVES:3)
+Block(-4,13,-3,LEAVES:3)
+Block(2,10,3,LEAVES:3)
+Block(2,11,3,LEAVES:3)
+Block(4,11,-4,LEAVES:3)
+Block(4,10,-4,LEAVES:3)
+Block(-4,19,-3,LEAVES:3)
+Block(-2,20,0,LEAVES:3)
+Block(2,18,3,VINE:4)
+Block(2,19,3,LEAVES:3)
+Block(6,19,-2,LEAVES:3)
+Block(-2,19,-4,LEAVES:3)
+Block(1,20,2,LEAVES:3)
+Block(2,5,-1,LEAVES:3)
+Block(4,19,-4,LEAVES:3)
+Block(2,12,2,LEAVES:3)
+Block(2,11,2,LEAVES:3)
+Block(4,19,1,LEAVES:3)
+Block(2,10,2,LEAVES:3)
+Block(2,19,2,LOG:3)
+Block(2,19,-4,LEAVES:3)
+Block(4,11,1,LEAVES:3)
+Block(2,18,2,LEAVES:3)
+Block(4,9,-4,LEAVES:3)
+Block(-2,19,-5,LEAVES:3)
+Block(2,11,-4,LEAVES:3)
+Block(2,10,-4,LEAVES:3)
+Block(1,5,-1,LEAVES:3)
+Block(1,6,-1,LEAVES:3)
+Block(6,10,-3,LEAVES:3)
+Block(0,19,-5,LEAVES:3)
+Block(-3,19,4,LEAVES:3)
+Block(2,20,2,LEAVES:3)
+Block(1,10,3,LEAVES:3)
+Block(0,10,-5,LEAVES:3)
+Block(1,11,3,LEAVES:3)
+Block(0,9,0,LOG:3)
+Block(0,8,0,LOG:3)
+Block(1,18,3,LEAVES:3)
+Block(1,19,3,LEAVES:3)
+Block(-6,19,-2,LEAVES:3)
+Block(2,20,1,LEAVES:3)
+Block(-5,19,-3,LEAVES:3)
+Block(-2,20,1,LEAVES:3)
+Block(1,11,4,LEAVES:3)
+Block(0,19,1,LEAVES:3)
+Block(0,18,1,LOG:3)
+Block(0,17,1,COCOA:10)
+Block(1,19,4,LEAVES:3)
+Block(3,10,-7,LEAVES:3)
+Block(2,9,-3,LEAVES:3)
+Block(5,10,-5,LEAVES:3)
+Block(4,11,-5,LEAVES:3)
+Block(4,10,-5,LEAVES:3)
+Block(0,19,0,LOG:3)
+Block(-2,20,-1,LEAVES:3)
+Block(-2,13,-1,LEAVES:3)
+Block(5,11,4,LEAVES:3)
+Block(-2,18,-1,LOG:3)
+Block(3,11,5,LEAVES:3)
+Block(-2,19,-1,LEAVES:3)
+Block(5,10,-4,LEAVES:3)
+Block(0,21,0,LEAVES:3)
+Block(0,20,0,LEAVES:3)
+Block(5,11,-4,LEAVES:3)
+Block(2,11,1,LEAVES:3)
+Block(-5,13,-2,LEAVES:3)
+Block(-2,18,1,LEAVES:3)
+Block(-1,19,-1,LEAVES:3)
+Block(-2,19,1,LEAVES:3)
+Block(2,19,1,LEAVES:3)
+Block(-2,13,1,LEAVES:3)
+Block(-1,17,-1,LOG:3)
+Block(-1,18,-1,LEAVES:3)
+Block(-5,19,-2,LEAVES:3)
+Block(0,14,0,LOG:3)
+Block(-4,19,2,LEAVES:3)
+Block(0,13,0,LOG:3)
+Block(0,12,0,LOG:3)
+Block(-1,20,-1,LEAVES:3)
+Block(0,11,0,LOG:3)
+Block(-1,21,-1,LEAVES:3)
+Block(0,18,0,LOG:3)
+Block(0,17,0,LOG:3)
+Block(6,10,-4,LEAVES:3)
+Block(-4,13,2,LEAVES:3)
+Block(0,16,0,LOG:3)
+Block(0,15,0,LOG:3)
+Block(0,10,0,LOG:3)
+Block(2,9,-4,LOG:3)
+Block(2,8,-4,LOG:3)
+Block(0,7,-2,LOG:3)
+Block(2,19,0,LEAVES:3)
+Block(3,19,3,LEAVES:3)
+Block(6,10,-5,LEAVES:3)
+Block(3,12,3,LEAVES:3)
+Block(0,20,2,LEAVES:3)
+Block(5,10,-6,LEAVES:3)
+Block(3,11,3,LOG:3)
+Block(3,10,3,LOG:3)
+Block(-4,20,-2,LEAVES:3)
+Block(2,20,0,LEAVES:3)
+Block(5,11,3,LEAVES:3)
+Block(-2,19,3,LEAVES:3)
+Block(2,10,-6,LEAVES:3)
+Block(-1,18,-3,LEAVES:3)
+Block(-1,19,-3,LOG:3)
+Block(-6,13,-1,LEAVES:3)
+Block(-2,20,3,LEAVES:3)
+Block(-4,16,0,VINE:8)
+Block(0,17,2,VINE)
+Block(-3,18,-1,LEAVES:3)
+Block(0,18,2,LEAVES:3)
+Block(-1,20,-3,LEAVES:3)
+Block(-4,17,0,VINE:8)
+Block(-4,14,0,LEAVES:3)
+Block(-3,19,-1,LEAVES:3)
+Block(0,19,2,LEAVES:3)
+Block(-4,15,0,VINE:8)
+Block(-4,12,0,LEAVES:3)
+Block(-4,13,0,LOG:3)
+Block(-4,19,-2,LEAVES:3)
+Block(-3,11,-1,VINE:1)
+Block(-3,12,-1,LEAVES:3)
+Block(-4,13,-2,LEAVES:3)
+Block(2,9,-5,LEAVES:3)
+Block(-3,13,-1,LEAVES:3)
+Block(-3,14,-1,LEAVES:3)
+Block(-4,18,0,VINE:8)
+Block(-4,19,0,LEAVES:3)
+Block(-5,13,-1,LEAVES:3)
+Block(-2,18,2,LEAVES:3)
+Block(2,10,-7,LEAVES:3)
+Block(-2,19,2,LOG:3)
+Block(-5,19,-1,LEAVES:3)
+Block(-1,18,-2,LEAVES:3)
+Block(-1,19,-2,LEAVES:3)
+Block(3,10,-6,LEAVES:3)
+Block(-1,20,-2,LEAVES:3)
+Block(-2,20,2,LEAVES:3)
+Block(-4,14,1,LEAVES:3)
+Block(-4,13,1,LEAVES:3)
+Block(-4,12,1,LEAVES:3)
+Block(-3,20,-1,LEAVES:3)
+Block(-4,19,1,LEAVES:3)
+Block(4,10,-6,LEAVES:3)
+Block(-2,20,-2,LEAVES:3)
+Block(3,19,4,LEAVES:3)
+Block(-2,18,-2,LEAVES:3)
+Block(3,12,4,LEAVES:3)
+Block(3,11,4,LEAVES:3)
+Block(3,10,4,LEAVES:3)
+Block(-2,19,-2,LEAVES:3)
+Block(0,21,1,LEAVES:3)
+Block(0,20,1,LEAVES:3)
+Block(3,9,-3,LEAVES:3)
+Block(-3,20,-2,LEAVES:3)
+Block(-1,19,-4,LEAVES:3)
+Block(-2,19,4,LEAVES:3)
+Block(3,11,-4,LEAVES:3)
+Block(5,19,-2,LEAVES:3)
+Block(-5,19,2,LEAVES:3)
+Block(-5,13,2,LEAVES:3)
+Block(3,10,-4,LEAVES:3)
+Block(2,9,2,LOG:3)
+Block(-3,19,-2,LOG:3)
+Block(2,8,2,LOG:3)
+Block(-3,18,-2,LEAVES:3)
+Block(3,19,-4,LEAVES:3)
+Block(-1,18,1,LOG:3)
+Block(-1,19,1,LEAVES:3)
+Block(-1,20,-4,LEAVES:3)
+Block(-3,13,-2,LEAVES:3)
+Block(0,21,-1,LEAVES:3)
+Block(0,20,-1,LEAVES:3)
+Block(5,10,-2,LEAVES:3)
+Block(-1,5,0,LEAVES:3)
+Block(-1,4,0,LEAVES:3)
+Block(-1,6,0,LEAVES:3)
+Block(4,11,5,LEAVES:3)
+Block(3,18,2,VINE:2)
+Block(3,19,2,LEAVES:3)
+Block(3,10,2,LEAVES:3)
+Block(3,11,2,LEAVES:3)
+Block(-1,20,1,LEAVES:3)
+Block(3,12,2,LEAVES:3)
+Block(0,5,-1,LEAVES:3)
+Block(0,7,-1,LOG:3)
+Block(0,6,-1,LEAVES:3)
+Block(3,9,-2,LEAVES:3)
+Block(4,11,4,LEAVES:3)
+Block(0,19,3,LEAVES:3)
+Block(0,11,3,LEAVES:3)
+Block(3,20,2,LEAVES:3)
+Block(0,18,-1,LEAVES:3)
+Block(0,17,-1,COCOA:8)
+Block(0,19,-1,LEAVES:3)
+Block(1,19,-6,LEAVES:3)
+Block(-5,13,1,LEAVES:3)
+Block(3,11,-5,LEAVES:3)
+Block(3,10,-5,LOG:3)
+Block(-1,18,2,LEAVES:3)
+Block(-3,19,-3,LEAVES:3)
+Block(-1,19,2,LEAVES:3)
+Block(3,19,-5,LEAVES:3)
+Block(1,10,-6,LEAVES:3)
+Block(3,9,-5,LEAVES:3)
+Block(1,20,-4,LEAVES:3)
+Block(3,20,0,LEAVES:3)
+Block(-1,5,2,LEAVES:3)
+Block(3,9,2,VINE:2)
+Block(3,11,-3,LEAVES:3)
+Block(1,18,-4,VINE:1)
+Block(3,10,-3,LOG:3)
+Block(1,19,-4,LEAVES:3)
+Block(-2,5,0,LEAVES:3)
+Block(1,10,-4,LOG:3)
+Block(3,19,-3,LEAVES:3)
+Block(-1,15,0,VINE:8)
+Block(3,18,-3,VINE:2)
+Block(-1,17,0,COCOA:11)
+Block(1,11,-4,LEAVES:3)
+Block(-1,18,0,LEAVES:3)
+Block(-1,19,0,LEAVES:3)
+Block(-1,10,0,LOG:7)
+Block(-1,13,0,LEAVES:3)
+Block(-1,14,0,VINE:8)
+Block(3,8,-4,VINE:2)
+Block(3,9,-4,LEAVES:3)
+Block(1,19,-5,LEAVES:3)
+Block(3,20,-3,LEAVES:3)
+Block(1,10,-5,LEAVES:3)
+Block(3,19,1,LEAVES:3)
+Block(-1,20,0,LEAVES:3)
+Block(-1,21,0,LEAVES:3)
+Block(-3,19,-4,LEAVES:3)
+Block(3,11,1,LEAVES:3)
+Block(-1,5,1,LEAVES:3)
+Block(3,9,3,LOG:3)
+Block(5,19,-3,LEAVES:3)
+Block(-2,19,5,LEAVES:3)
+Block(-1,19,-5,LEAVES:3)
+Block(3,20,1,LEAVES:3)
+Block(5,10,-3,LEAVES:3)
+Block(0,18,-4,LEAVES:3)
+Block(0,19,-4,LEAVES:3)
+Block(1,9,0,VINE:2)
+Block(0,5,2,LEAVES:3)
+Block(-4,19,-4,LEAVES:3)
+Block(3,20,-1,LEAVES:3)
+Block(1,18,-3,LEAVES:3)
+Block(2,18,-2,LOG:3)
+Block(1,19,-3,LOG:3)
+Block(2,19,-2,LEAVES:3)
+Block(1,10,-3,LEAVES:3)
+Block(2,10,-2,LEAVES:3)
+Block(4,9,-3,LEAVES:3)
+Block(0,10,-4,LEAVES:3)
+Block(-1,19,4,LEAVES:3)
+Block(2,21,-2,LEAVES:3)
+Block(-7,13,0,LEAVES:3)
+Block(0,20,-4,LEAVES:3)
+Block(2,20,-2,LEAVES:3)
+Block(-3,19,-5,LEAVES:3)
+Block(0,4,1,LEAVES:3)
+Block(1,8,1,LOG:3)
+Block(0,6,1,LEAVES:3)
+Block(6,11,3,LEAVES:3)
+Block(0,5,1,LEAVES:3)
+Block(3,10,-2,LEAVES:3)
+Block(3,11,-2,LEAVES:3)
+Block(-1,19,-6,LEAVES:3)
+Block(3,17,-2,VINE)
+Block(3,18,-2,LEAVES:3)
+Block(3,19,-2,LOG:3)
+Block(0,20,-3,LEAVES:3)
+Block(-3,11,0,LOG:7)
+Block(-3,12,0,LOG:3)
+Block(4,19,2,LEAVES:3)
+Block(-3,13,0,LEAVES:3)
+Block(-3,14,0,LEAVES:3)
+Block(-3,19,0,LEAVES:3)
+Block(3,20,-2,LEAVES:3)
+Block(2,19,-3,LEAVES:3)
+Block(-3,18,0,LEAVES:3)
+Block(-2,5,1,LEAVES:3)
+Block(4,11,2,LEAVES:3)
+Block(2,18,-3,LEAVES:3)
+Block(1,20,-3,LEAVES:3)
+Block(2,11,-3,LEAVES:3)
+Block(3,19,0,LEAVES:3)
+Block(2,10,-3,LEAVES:3)
+Block(1,6,0,LEAVES:3)
+Block(1,5,0,LEAVES:3)
+Block(1,4,0,VINE:2)
+Block(3,11,0,LEAVES:3)
+Block(-3,20,0,LEAVES:3)
+Block(4,19,3,LEAVES:3)
+Block(4,12,3,LEAVES:3)
+Block(4,11,3,LEAVES:3)
+Block(4,10,3,LEAVES:3)
+Block(-1,20,2,LEAVES:3)
+Block(0,19,-3,LEAVES:3)
+Block(1,19,0,LEAVES:3)
+Block(1,18,0,LEAVES:3)
+Block(-1,5,-1,LEAVES:3)
+Block(1,17,0,LEAVES:3)
+Block(0,18,-3,LEAVES:3)
+Block(1,16,0,VINE:2)
+Block(1,15,0,VINE:2)
+Block(1,14,0,VINE:2)
+Block(1,13,0,VINE:2)
+Block(1,12,0,VINE:2)
+Block(2,18,-1,LEAVES:3)
+Block(1,11,0,VINE:2)
+Block(5,19,-1,LEAVES:3)
+Block(1,10,0,VINE:2)
+Block(2,19,-1,LEAVES:3)
+Block(2,10,-1,LEAVES:3)
+Block(1,5,1,LEAVES:3)
+Block(0,10,-3,LEAVES:3)
+Block(1,21,-1,LEAVES:3)
+Block(1,20,-1,LEAVES:3)
+Block(-3,12,1,LEAVES:3)
+Block(-3,13,1,LEAVES:3)
+Block(0,19,-2,LEAVES:3)
+Block(0,18,-2,LOG:3)
+Block(4,10,-1,LEAVES:3)
+Block(-5,14,0,LEAVES:3)
+Block(-5,13,0,LEAVES:3)
+Block(1,21,0,LEAVES:3)
+Block(-5,12,0,LEAVES:3)
+Block(-3,18,1,LEAVES:3)
+Block(1,20,0,LEAVES:3)
+Block(-3,19,1,LEAVES:3)
+Block(-1,19,3,LEAVES:3)
+Block(2,20,-1,LEAVES:3)
+Block(4,19,-1,LEAVES:3)
+Block(1,20,-2,LEAVES:3)
+Block(1,21,-2,LEAVES:3)
+Block(-3,20,1,LEAVES:3)
+Block(2,11,5,LEAVES:3)
+Block(2,5,0,LEAVES:3)
+Block(3,10,-1,LEAVES:3)
+Block(1,18,-2,LEAVES:3)
+Block(1,19,-2,LEAVES:3)
+Block(2,19,5,LEAVES:3)
+Block(1,10,-2,LEAVES:3)
+Block(3,19,-1,LEAVES:3)
+Block(0,20,-2,LEAVES:3)
+Block(0,21,-2,LEAVES:3)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT,DIRT:2,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,SAND,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

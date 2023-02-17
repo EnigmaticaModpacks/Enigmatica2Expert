@@ -1,0 +1,220 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: 
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 30.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 62
+
+MaxHeight: 210
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(2,8,0,LEAVES:2)
+Block(3,4,2,LEAVES:2)
+Block(-1,4,2,LEAVES:2)
+Block(2,7,0,LEAVES:2)
+Block(-1,7,2,LEAVES:2)
+Block(0,2,0,LOG:2)
+Block(-1,8,1,LEAVES:2)
+Block(0,3,0,LOG:2)
+Block(0,0,0,LOG:2)
+Block(0,1,0,LOG:2)
+Block(2,7,2,LEAVES:2)
+Block(0,6,0,LOG:2)
+Block(0,7,0,LEAVES:2)
+Block(0,4,0,LOG:2)
+Block(-1,5,1,LEAVES:2)
+Block(0,5,0,LOG:2)
+Block(1,8,2,LEAVES:2)
+Block(0,5,-3,LEAVES:2)
+Block(1,5,1,LEAVES:2)
+Block(0,4,-3,LEAVES:2)
+Block(1,4,1,LEAVES:2)
+Block(1,3,1,LEAVES:2)
+Block(0,3,-3,LEAVES:2)
+Block(1,2,1,LEAVES:2)
+Block(-3,3,-1,LEAVES:2)
+Block(0,6,-3,LEAVES:2)
+Block(1,4,3,LEAVES:2)
+Block(0,5,2,LEAVES:2)
+Block(0,4,2,LEAVES:2)
+Block(1,10,-1,LEAVES:2)
+Block(-1,5,0,LEAVES:2)
+Block(3,6,0,LEAVES:2)
+Block(-1,9,0,LEAVES:2)
+Block(0,10,0,LEAVES:2)
+Block(3,4,0,LEAVES:2)
+Block(-3,3,1,LEAVES:2)
+Block(0,11,0,LEAVES:2)
+Block(0,5,3,LEAVES:2)
+Block(0,8,2,LEAVES:2)
+Block(0,6,2,LEAVES:2)
+Block(0,8,-1,LEAVES:2)
+Block(0,6,-1,LEAVES:2)
+Block(0,9,0,LEAVES:2)
+Block(-2,7,-2,LEAVES:2)
+Block(-2,5,-2,LEAVES:2)
+Block(-2,4,-2,LEAVES:2)
+Block(0,8,1,LEAVES:2)
+Block(3,3,-1,LEAVES:2)
+Block(0,7,1,LEAVES:2)
+Block(0,9,1,LEAVES:2)
+Block(1,3,-1,LEAVES:2)
+Block(1,4,-2,LEAVES:2)
+Block(-2,2,2,LEAVES:2)
+Block(1,2,-1,LEAVES:2)
+Block(-2,7,0,LEAVES:2)
+Block(-2,8,0,LEAVES:2)
+Block(1,8,-1,LEAVES:2)
+Block(-2,4,1,LEAVES:2)
+Block(1,6,-1,LEAVES:2)
+Block(-2,4,0,LEAVES:2)
+Block(1,9,-1,LEAVES:2)
+Block(-2,5,0,LEAVES:2)
+Block(-2,6,1,LEAVES:2)
+Block(1,6,-3,LEAVES:2)
+Block(1,2,0,LEAVES:2)
+Block(-1,3,-2,LEAVES:2)
+Block(-1,6,-3,LEAVES:2)
+Block(-1,4,-2,LEAVES:2)
+Block(0,10,1,LEAVES:2)
+Block(1,5,0,LEAVES:2)
+Block(-1,2,-2,LEAVES:2)
+Block(-1,5,-3,LEAVES:2)
+Block(-1,7,-2,LEAVES:2)
+Block(-1,8,-2,LEAVES:2)
+Block(-3,6,0,LEAVES:2)
+Block(0,2,1,LEAVES:2)
+Block(0,3,1,LEAVES:2)
+Block(0,6,1,LEAVES:2)
+Block(1,6,1,LEAVES:2)
+Block(1,8,1,LEAVES:2)
+Block(0,8,-2,LEAVES:2)
+Block(-2,6,-1,LEAVES:2)
+Block(-2,4,-1,LEAVES:2)
+Block(0,4,-2,LEAVES:2)
+Block(2,3,1,LEAVES:2)
+Block(-2,3,-1,LEAVES:2)
+Block(2,2,1,LEAVES:2)
+Block(2,3,-1,LEAVES:2)
+Block(2,6,-2,LEAVES:2)
+Block(-1,6,-1,LEAVES:2)
+Block(-1,4,-1,LEAVES:2)
+Block(2,5,-1,LEAVES:2)
+Block(2,4,-1,LEAVES:2)
+Block(2,7,-2,LEAVES:2)
+Block(2,7,-1,LEAVES:2)
+Block(2,6,-1,LEAVES:2)
+Block(-1,9,-1,LEAVES:2)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT:0,DIRT:1,DIRT:2,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand,biomesoplenty:hard_ice,biomesoplenty:white_sand,biomesoplenty:white_sandstone,biomesoplenty:mud,biomesoplenty:ash_block)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

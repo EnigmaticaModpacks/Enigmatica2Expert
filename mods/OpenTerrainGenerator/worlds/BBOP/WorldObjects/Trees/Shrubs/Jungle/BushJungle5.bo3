@@ -1,0 +1,111 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Unknown
+
+Description: Converted version of the BO2 ShrubOak10
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 5.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 63
+
+MaxHeight: 256
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: STONE:1,STONE:3,STONE:5,DIRT:1,DIRT,SAND,GRASS,DIRT:2,STATIONARY_WATER,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,AIR,STONE,GRAVEL,LONG_GRASS,LONG_GRASS:1,LONG_GRASS:2,DEAD_BUSH,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,biomesoplenty:plant_0:1,biomesoplenty:plant_0:2,biomesoplenty:plant_0:3,biomesoplenty:plant_0:4,biomesoplenty:plant_0:5,biomesoplenty:plant_0:6,biomesoplenty:plant_0:7,biomesoplenty:plant_0:8,biomesoplenty:plant_0:9,biomesoplenty:plant_0:10,biomesoplenty:plant_0:11,biomesoplenty:plant_0:12,biomesoplenty:plant_0:13,biomesoplenty:plant_0:14,biomesoplenty:flower_0:1,biomesoplenty:flower_0:2,biomesoplenty:flower_0:3,biomesoplenty:flower_0:4,biomesoplenty:flower_0:5,biomesoplenty:flower_0:6,biomesoplenty:flower_0:7,biomesoplenty:flower_0:8,biomesoplenty:flower_0:9,biomesoplenty:flower_0:10,biomesoplenty:flower_0:11,biomesoplenty:flower_0:12,biomesoplenty:flower_0:13,biomesoplenty:flower_0:14,biomesoplenty:plant_1:0,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass:2,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt:0,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:3,biomesoplenty:dirt:4,biomesoplenty:dirt:5,biomesoplenty:dirt:6,biomesoplenty:dirt:7,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand:0,biomesoplenty:hard_ice:0,biomesoplenty:white_sand:0,biomesoplenty:white_sandstone:0,biomesoplenty:mud:0,biomesoplenty:ash_block:0
+MaxPercentageOutsideSourceBlock: 2
+
+OutsideSourceBlock: placeAnyway
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+B(0,0,1,LEAVES:3)
+B(0,1,0,LEAVES:3)
+B(0,0,0,LOG:3)
+B(0,3,0,LEAVES:3)
+B(0,2,0,LEAVES:3)
+B(0,1,-1,LEAVES:3)
+B(0,0,-1,LEAVES:3)
+B(1,0,-1,LEAVES:3)
+B(-1,0,-1,LEAVES:3)
+B(-1,0,1,LEAVES:3)
+B(-1,0,0,LEAVES:3)
+B(1,0,1,LEAVES:3)
+B(1,1,0,LEAVES:3)
+B(1,0,0,LEAVES:3)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT,DIRT:2,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,SAND,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass:2,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         EntityFunctions                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

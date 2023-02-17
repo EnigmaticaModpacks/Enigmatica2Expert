@@ -1,0 +1,450 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: MC_Pitman
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 3.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 61
+
+MaxHeight: 71
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: STONE:1,STONE:3,STONE:5,DIRT:1,DIRT,SAND,GRASS,DIRT:2,STATIONARY_WATER,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,AIR,STONE,GRAVEL,LONG_GRASS,LONG_GRASS:1,LONG_GRASS:2,DEAD_BUSH,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,biomesoplenty:plant_0:1,biomesoplenty:plant_0:2,biomesoplenty:plant_0:3,biomesoplenty:plant_0:4,biomesoplenty:plant_0:5,biomesoplenty:plant_0:6,biomesoplenty:plant_0:7,biomesoplenty:plant_0:8,biomesoplenty:plant_0:9,biomesoplenty:plant_0:10,biomesoplenty:plant_0:11,biomesoplenty:plant_0:12,biomesoplenty:plant_0:13,biomesoplenty:plant_0:14,biomesoplenty:flower_0:1,biomesoplenty:flower_0:2,biomesoplenty:flower_0:3,biomesoplenty:flower_0:4,biomesoplenty:flower_0:5,biomesoplenty:flower_0:6,biomesoplenty:flower_0:7,biomesoplenty:flower_0:8,biomesoplenty:flower_0:9,biomesoplenty:flower_0:10,biomesoplenty:flower_0:11,biomesoplenty:flower_0:12,biomesoplenty:flower_0:13,biomesoplenty:flower_0:14,biomesoplenty:plant_1,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand,biomesoplenty:hard_ice,biomesoplenty:white_sand,biomesoplenty:white_sandstone,biomesoplenty:mud,biomesoplenty:ash_block
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-6,-1,-2,LOG)
+Block(-6,-1,0,LOG:12)
+Block(-6,-1,1,DIRT:1)
+Block(-5,-1,-1,LOG)
+Block(-5,-1,0,LOG:12)
+Block(-5,-1,1,LOG:12)
+Block(-5,-1,2,DIRT)
+Block(-5,-1,3,DIRT:1)
+Block(-5,0,1,LOG:12)
+Block(-5,0,2,GRASS)
+Block(-4,-1,-4,LOG)
+Block(-4,-1,-2,DIRT:1)
+Block(-4,-1,-1,GRASS)
+Block(-4,-1,0,DIRT)
+Block(-4,-1,1,LOG:12)
+Block(-4,-1,2,LOG:12)
+Block(-4,-1,3,LOG)
+Block(-4,-1,4,GRASS)
+Block(-4,0,0,DIRT:1)
+Block(-4,0,1,LOG:12)
+Block(-4,0,2,LOG:12)
+Block(-4,0,3,DIRT:1)
+Block(-4,0,4,LONG_GRASS:1)
+Block(-4,1,1,LOG:12)
+Block(-4,1,2,GRASS)
+Block(-3,-1,-3,LOG:12)
+Block(-3,-1,-2,GRASS)
+Block(-3,-1,-1,LOG:12)
+Block(-3,-1,2,LOG:12)
+Block(-3,-1,3,LOG)
+Block(-3,-1,4,LOG)
+Block(-3,0,0,LOG:12)
+Block(-3,0,1,LOG:12)
+Block(-3,0,2,LOG:12)
+Block(-3,0,3,LOG:12)
+Block(-3,1,0,LOG:12)
+Block(-3,1,1,LOG:12)
+Block(-3,1,2,LOG:12)
+Block(-3,2,1,LOG:12)
+Block(-3,2,2,LOG:12)
+Block(-3,3,1,LOG:12)
+Block(-3,3,2,LOG:12)
+Block(-3,4,1,LOG:12)
+Block(-3,5,1,LOG)
+Block(-2,-1,-5,LOG:12)
+Block(-2,-1,-4,DIRT:1)
+Block(-2,-1,-3,LOG:12)
+Block(-2,-1,-2,LOG:12)
+Block(-2,-1,3,LOG:12)
+Block(-2,-1,4,LOG:12)
+Block(-2,-1,6,LOG:12)
+Block(-2,-1,7,LOG)
+Block(-2,0,-2,GRASS)
+Block(-2,0,-1,GRASS)
+Block(-2,0,0,LOG:12)
+Block(-2,0,2,LOG:12)
+Block(-2,0,3,LOG:12)
+Block(-2,0,4,LOG)
+Block(-2,1,0,LOG)
+Block(-2,1,1,LOG:12)
+Block(-2,1,2,LOG:12)
+Block(-2,1,3,LOG:12)
+Block(-2,2,2,LOG:12)
+Block(-2,2,3,LOG)
+Block(-2,3,1,LOG:12)
+Block(-2,3,2,LOG:12)
+Block(-2,3,3,LOG)
+Block(-2,4,1,LOG:12)
+Block(-2,4,2,LOG:12)
+Block(-2,4,3,LOG)
+Block(-2,5,1,LOG)
+Block(-2,5,2,LOG:12)
+Block(-2,6,1,LOG)
+Block(-2,6,2,LOG:12)
+Block(-2,7,2,LOG)
+Block(-1,-1,-4,LOG)
+Block(-1,-1,-3,LOG:12)
+Block(-1,-1,5,LOG:12)
+Block(-1,-1,6,LOG:12)
+Block(-1,0,-4,DIRT:1)
+Block(-1,0,-3,LOG:12)
+Block(-1,0,-2,LOG:12)
+Block(-1,0,-1,GRASS)
+Block(-1,0,0,DIRT:1)
+Block(-1,0,1,DIRT:1)
+Block(-1,0,2,LOG)
+Block(-1,0,3,LOG:12)
+Block(-1,0,4,LOG:12)
+Block(-1,1,1,GRASS)
+Block(-1,1,2,DIRT)
+Block(-1,1,3,LOG:12)
+Block(-1,1,4,LOG:12)
+Block(-1,2,1,LONG_GRASS:1)
+Block(-1,2,2,LOG:12)
+Block(-1,2,3,LOG:12)
+Block(-1,2,4,LOG:12)
+Block(-1,3,2,LOG:12)
+Block(-1,3,3,LOG:12)
+Block(-1,3,4,LOG:12)
+Block(-1,4,1,LOG:12)
+Block(-1,4,2,LOG:12)
+Block(-1,4,3,LOG:12)
+Block(-1,4,4,LOG:12)
+Block(-1,5,1,LOG:12)
+Block(-1,5,2,LOG:12)
+Block(-1,5,3,LOG:12)
+Block(-1,5,4,LOG)
+Block(-1,6,2,LOG:12)
+Block(-1,6,3,LOG:12)
+Block(-1,7,3,LOG:12)
+Block(-1,8,3,LOG)
+Block(0,-1,-5,DIRT:1)
+Block(0,-1,-4,LOG:12)
+Block(0,-1,-3,LOG:12)
+Block(0,-1,5,LOG:12)
+Block(0,-1,6,LOG:12)
+Block(0,-1,7,LOG:12)
+Block(0,0,-4,LOG:12)
+Block(0,0,-3,LOG:12)
+Block(0,0,-2,LOG:12)
+Block(0,0,-1,LOG)
+Block(0,0,0,LOG)
+Block(0,0,1,LOG)
+Block(0,0,4,LOG:12)
+Block(0,0,5,LOG:12)
+Block(0,0,6,LOG:12)
+Block(0,1,-3,LOG:12)
+Block(0,1,-2,LOG:12)
+Block(0,1,0,DIRT:1)
+Block(0,1,1,GRASS)
+Block(0,1,2,LOG:12)
+Block(0,1,3,LOG:12)
+Block(0,1,4,LOG:12)
+Block(0,1,5,LOG:12)
+Block(0,2,-3,LOG:12)
+Block(0,2,-2,LOG:12)
+Block(0,2,1,LONG_GRASS:1)
+Block(0,2,2,LOG:12)
+Block(0,2,3,LOG:12)
+Block(0,2,4,LOG:12)
+Block(0,2,5,LOG:12)
+Block(0,3,-2,LOG:12)
+Block(0,3,3,LOG:12)
+Block(0,3,4,LOG:12)
+Block(0,4,-2,LOG:12)
+Block(0,4,2,LOG:12)
+Block(0,4,3,LOG:12)
+Block(0,4,4,LOG:12)
+Block(0,5,-2,LOG)
+Block(0,5,2,LOG:12)
+Block(0,5,3,LOG:12)
+Block(0,5,4,LOG:12)
+Block(0,6,2,LOG:12)
+Block(0,6,3,LOG:12)
+Block(0,6,4,LOG:12)
+Block(0,7,2,LOG:12)
+Block(0,7,3,LOG:12)
+Block(1,-1,-5,LOG:12)
+Block(1,-1,-3,LOG:12)
+Block(1,-1,-2,LOG)
+Block(1,-1,-1,LOG:12)
+Block(1,-1,5,LOG:12)
+Block(1,-1,6,LOG:12)
+Block(1,0,-4,LOG:12)
+Block(1,0,-3,LOG:12)
+Block(1,0,-2,LOG)
+Block(1,0,-1,LOG)
+Block(1,0,0,LOG)
+Block(1,0,1,LOG)
+Block(1,0,2,DIRT:1)
+Block(1,0,3,DIRT:1)
+Block(1,0,4,LOG:12)
+Block(1,0,5,LOG:12)
+Block(1,1,-3,LOG:12)
+Block(1,1,-2,LOG)
+Block(1,1,-1,GRASS)
+Block(1,1,0,LOG)
+Block(1,1,1,LOG)
+Block(1,1,2,DIRT)
+Block(1,1,3,LOG:12)
+Block(1,1,4,LOG:12)
+Block(1,2,-3,LOG:12)
+Block(1,2,-2,GRASS)
+Block(1,2,-1,LONG_GRASS:1)
+Block(1,2,1,GRASS)
+Block(1,2,2,GRASS)
+Block(1,2,3,LOG:12)
+Block(1,2,4,LOG:12)
+Block(1,3,-3,LOG:12)
+Block(1,3,2,LONG_GRASS:1)
+Block(1,3,3,LOG:12)
+Block(1,3,4,LOG:12)
+Block(1,4,-3,LOG:12)
+Block(1,4,-2,LOG)
+Block(1,4,3,LOG:12)
+Block(1,4,4,LOG:12)
+Block(1,5,-3,LOG:12)
+Block(1,5,-2,LOG:12)
+Block(1,5,3,LOG:12)
+Block(1,5,4,LOG:12)
+Block(1,6,-3,LOG)
+Block(1,6,-2,LOG:12)
+Block(1,6,3,LOG:12)
+Block(1,6,4,LOG:12)
+Block(1,7,3,LOG:12)
+Block(1,7,4,LOG:12)
+Block(1,8,3,LOG:12)
+Block(1,9,3,LOG)
+Block(2,-1,-4,LOG:12)
+Block(2,-1,-3,LOG:12)
+Block(2,-1,-2,LOG:12)
+Block(2,-1,-1,LOG)
+Block(2,-1,0,LOG:12)
+Block(2,-1,1,LOG)
+Block(2,-1,2,LOG:12)
+Block(2,-1,5,LOG)
+Block(2,0,-3,LOG:12)
+Block(2,0,-2,LOG:12)
+Block(2,0,-1,LOG)
+Block(2,0,0,LOG)
+Block(2,0,1,LOG)
+Block(2,0,2,LOG:12)
+Block(2,0,3,LOG:12)
+Block(2,0,4,LOG:12)
+Block(2,1,-3,LOG:12)
+Block(2,1,-2,LOG:12)
+Block(2,1,-1,LOG:12)
+Block(2,1,0,LOG)
+Block(2,1,1,LOG)
+Block(2,1,3,LOG:12)
+Block(2,2,-2,LOG:12)
+Block(2,2,-1,LOG)
+Block(2,2,1,LOG)
+Block(2,2,2,LOG:12)
+Block(2,2,3,LOG:12)
+Block(2,3,-2,LOG:12)
+Block(2,3,-1,LOG)
+Block(2,3,1,LOG)
+Block(2,3,2,LOG:12)
+Block(2,3,3,LOG:12)
+Block(2,4,-2,LOG:12)
+Block(2,4,1,LOG)
+Block(2,4,2,LOG:12)
+Block(2,4,3,LOG:12)
+Block(2,5,-2,LOG:12)
+Block(2,5,2,LOG:12)
+Block(2,5,3,LOG:12)
+Block(2,6,-2,LOG:12)
+Block(2,6,2,LOG:12)
+Block(2,6,3,LOG:12)
+Block(2,7,-2,LOG:12)
+Block(2,7,2,LOG)
+Block(2,7,3,LOG:12)
+Block(2,8,-2,LOG:12)
+Block(2,8,3,LOG:12)
+Block(2,9,-2,LOG)
+Block(3,-1,-5,LOG)
+Block(3,-1,-4,LOG)
+Block(3,-1,-3,LOG:12)
+Block(3,-1,-2,LOG:12)
+Block(3,-1,-1,LOG:12)
+Block(3,-1,0,LOG:12)
+Block(3,-1,1,LOG:12)
+Block(3,-1,2,LOG:12)
+Block(3,-1,3,LOG:12)
+Block(3,-1,4,LOG:12)
+Block(3,0,-3,LOG:12)
+Block(3,0,-2,LOG:12)
+Block(3,0,-1,LOG:12)
+Block(3,0,0,LOG)
+Block(3,0,1,LOG)
+Block(3,0,2,LOG:12)
+Block(3,0,3,LOG:12)
+Block(3,1,-2,LOG:12)
+Block(3,1,-1,LOG:12)
+Block(3,1,0,LOG)
+Block(3,1,1,LOG)
+Block(3,1,2,LOG:12)
+Block(3,1,3,LOG:12)
+Block(3,2,-2,LOG:12)
+Block(3,2,-1,LOG:12)
+Block(3,2,0,LOG)
+Block(3,2,1,LOG)
+Block(3,2,2,LOG:12)
+Block(3,3,-1,LOG:12)
+Block(3,3,0,LOG)
+Block(3,3,1,LOG)
+Block(3,3,2,LOG:12)
+Block(3,4,-1,LOG:12)
+Block(3,4,0,LOG:12)
+Block(3,4,1,LOG:12)
+Block(3,4,2,LOG:12)
+Block(3,5,-1,LOG:12)
+Block(3,5,0,LOG:12)
+Block(3,5,1,LOG:12)
+Block(3,6,-1,LOG)
+Block(3,6,0,LOG:12)
+Block(3,6,1,LOG:12)
+Block(3,7,0,LOG)
+Block(3,7,1,LOG:12)
+Block(3,8,1,LOG:12)
+Block(3,9,1,LOG)
+Block(4,-1,-3,LOG:12)
+Block(4,-1,-2,LOG:12)
+Block(4,-1,-1,LOG:12)
+Block(4,-1,0,LOG:12)
+Block(4,-1,1,LOG:12)
+Block(4,-1,2,LOG)
+Block(4,0,-2,LOG:12)
+Block(4,0,-1,LOG:12)
+Block(4,0,0,LOG:12)
+Block(4,0,1,LOG:12)
+Block(4,0,2,LOG:12)
+Block(4,1,-1,LOG:12)
+Block(4,1,0,LOG:12)
+Block(4,1,1,LOG:12)
+Block(4,2,0,LOG:12)
+Block(4,2,1,LOG:12)
+Block(4,3,0,LOG:12)
+Block(4,3,1,LOG:12)
+Block(4,4,0,LOG)
+Block(4,5,0,LOG)
+Block(5,-1,-1,LOG:12)
+Block(5,-1,0,LOG:12)
+Block(5,-1,2,LOG:12)
+Block(5,0,-1,LOG:12)
+Block(6,-1,-2,LOG)
+Block(6,-1,-1,LOG:12)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

@@ -1,0 +1,146 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Unknown
+
+Description: Converted version of the BO2 OakDead6
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 5.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 62
+
+MaxHeight: 210
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: STONE:1,STONE:3,STONE:5,DIRT:1,DIRT,SAND,GRASS,DIRT:2,STATIONARY_WATER,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,AIR,STONE,GRAVEL,LONG_GRASS,LONG_GRASS:1,LONG_GRASS:2,DEAD_BUSH,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,biomesoplenty:plant_0:1,biomesoplenty:plant_0:2,biomesoplenty:plant_0:3,biomesoplenty:plant_0:4,biomesoplenty:plant_0:5,biomesoplenty:plant_0:6,biomesoplenty:plant_0:7,biomesoplenty:plant_0:8,biomesoplenty:plant_0:9,biomesoplenty:plant_0:10,biomesoplenty:plant_0:11,biomesoplenty:plant_0:12,biomesoplenty:plant_0:13,biomesoplenty:plant_0:14,biomesoplenty:flower_0:1,biomesoplenty:flower_0:2,biomesoplenty:flower_0:3,biomesoplenty:flower_0:4,biomesoplenty:flower_0:5,biomesoplenty:flower_0:6,biomesoplenty:flower_0:7,biomesoplenty:flower_0:8,biomesoplenty:flower_0:9,biomesoplenty:flower_0:10,biomesoplenty:flower_0:11,biomesoplenty:flower_0:12,biomesoplenty:flower_0:13,biomesoplenty:flower_0:14,biomesoplenty:plant_1,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand,biomesoplenty:hard_ice,biomesoplenty:white_sand,biomesoplenty:white_sandstone,biomesoplenty:mud,biomesoplenty:ash_block
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-1,13,-2,biomesoplenty:log_4:9)
+Block(-1,12,1,biomesoplenty:log_4:9)
+Block(-1,5,0,biomesoplenty:log_4:5)
+Block(-1,4,0,biomesoplenty:log_4:5)
+Block(-1,7,0,biomesoplenty:log_4:5)
+Block(-1,6,0,biomesoplenty:log_4:5)
+Block(-1,7,2,biomesoplenty:log_4:9)
+Block(-1,9,0,biomesoplenty:log_4:5)
+Block(-1,7,1,biomesoplenty:log_4:9)
+Block(-1,8,0,biomesoplenty:log_4:5)
+Block(-2,9,0,biomesoplenty:log_4:1)
+Block(1,10,0,biomesoplenty:log_4:1)
+Block(-1,13,-1,biomesoplenty:log_4:9)
+Block(-1,10,0,biomesoplenty:log_4:5)
+Block(-1,1,0,biomesoplenty:log_4:5)
+Block(0,10,0,biomesoplenty:log_4:1)
+Block(-1,11,0,biomesoplenty:log_4:5)
+Block(-1,0,0,biomesoplenty:log_4:5)
+Block(-1,12,0,biomesoplenty:log_4:5)
+Block(-1,3,0,biomesoplenty:log_4:5)
+Block(-1,13,0,biomesoplenty:log_4:5)
+Block(-1,2,0,biomesoplenty:log_4:5)
+Block(-1,14,0,biomesoplenty:log_4:5)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT:0,DIRT:1,DIRT:2,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand,biomesoplenty:hard_ice,biomesoplenty:white_sand,biomesoplenty:white_sandstone,biomesoplenty:mud,biomesoplenty:ash_block)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

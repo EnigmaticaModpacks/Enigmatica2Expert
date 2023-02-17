@@ -1,0 +1,294 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: false
+
+Frequency: 1
+
+Rarity: 10.0
+
+RotateRandomly: false
+
+SpawnHeight: randomY
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 30
+
+MaxHeight: 33
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 50
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(0,-1,-2,SANDSTONE)
+Block(0,-1,-1,SANDSTONE)
+Block(0,-1,0,SANDSTONE)
+Block(0,-1,1,SANDSTONE)
+Block(0,-1,2,SANDSTONE)
+Block(0,-1,3,SANDSTONE)
+Block(0,0,-2,SANDSTONE)
+Block(0,0,-1,AIR)
+Block(0,0,0,AIR)
+Block(0,0,1,AIR)
+Block(0,0,2,AIR)
+Block(0,0,3,SANDSTONE)
+Block(0,1,-2,SANDSTONE)
+Block(0,1,-1,AIR)
+Block(0,1,0,AIR)
+Block(0,1,1,AIR)
+Block(0,1,2,AIR)
+Block(0,1,3,SANDSTONE)
+Block(0,2,-2,SANDSTONE)
+Block(0,2,-1,AIR)
+Block(0,2,0,AIR)
+Block(0,2,1,AIR)
+Block(0,2,2,AIR)
+Block(0,2,3,SANDSTONE)
+Block(0,3,-2,STAINED_CLAY:1)
+Block(0,3,-1,SANDSTONE_STAIRS:7)
+Block(0,3,0,STEP:9)
+Block(0,3,1,STEP:9)
+Block(0,3,2,SANDSTONE_STAIRS:6)
+Block(0,3,3,STAINED_CLAY:1)
+Block(1,-1,-2,SANDSTONE)
+Block(1,-1,-1,SANDSTONE)
+Block(1,-1,0,SANDSTONE)
+Block(1,-1,1,SANDSTONE)
+Block(1,-1,2,SANDSTONE)
+Block(1,-1,3,SANDSTONE)
+Block(1,0,-2,SANDSTONE)
+Block(1,0,-1,AIR)
+Block(1,0,0,AIR)
+RandomBlock(1,0,1,MOB_SPAWNER,../../Structures/nbt/Spawner/Skeleton.nbt,50,MOB_SPAWNER,../../Structures/nbt/Spawner/Zombie.nbt,100)
+Block(1,0,2,AIR)
+Block(1,0,3,SANDSTONE)
+Block(1,1,-2,AIR)
+Block(1,1,-1,AIR)
+Block(1,1,0,AIR)
+Block(1,1,1,AIR)
+Block(1,1,2,AIR)
+Block(1,1,3,AIR)
+Block(1,2,-2,AIR)
+Block(1,2,-1,AIR)
+Block(1,2,0,AIR)
+Block(1,2,1,AIR)
+Block(1,2,2,AIR)
+Block(1,2,3,AIR)
+Block(1,3,-2,SANDSTONE_STAIRS:5)
+Block(1,3,-1,SANDSTONE)
+Block(1,3,0,STAINED_CLAY:1)
+Block(1,3,1,STAINED_CLAY:1)
+Block(1,3,2,SANDSTONE)
+Block(1,3,3,SANDSTONE_STAIRS:5)
+Block(2,-1,-2,SANDSTONE)
+Block(2,-1,-1,SANDSTONE)
+Block(2,-1,0,SANDSTONE)
+Block(2,-1,1,SANDSTONE)
+Block(2,-1,2,SANDSTONE)
+Block(2,-1,3,SANDSTONE)
+Block(2,0,-2,SANDSTONE)
+Block(2,0,-1,AIR)
+Block(2,0,0,AIR)
+Block(2,0,1,AIR)
+Block(2,0,2,AIR)
+Block(2,0,3,SANDSTONE)
+Block(2,1,-2,STEP:1)
+Block(2,1,-1,AIR)
+Block(2,1,0,AIR)
+Block(2,1,1,AIR)
+Block(2,1,2,AIR)
+Block(2,1,3,STEP:1)
+Block(2,2,-2,AIR)
+Block(2,2,-1,AIR)
+Block(2,2,0,AIR)
+Block(2,2,1,AIR)
+Block(2,2,2,AIR)
+Block(2,2,3,AIR)
+Block(2,3,-2,SANDSTONE_STAIRS:4)
+Block(2,3,-1,SANDSTONE)
+Block(2,3,0,STAINED_CLAY:1)
+Block(2,3,1,STAINED_CLAY:1)
+Block(2,3,2,SANDSTONE)
+Block(2,3,3,SANDSTONE_STAIRS:4)
+Block(3,-1,-2,SANDSTONE)
+Block(3,-1,-1,SANDSTONE)
+Block(3,-1,0,SANDSTONE)
+Block(3,-1,1,SANDSTONE)
+Block(3,-1,2,SANDSTONE)
+Block(3,-1,3,SANDSTONE)
+Block(3,0,-2,SANDSTONE)
+Block(3,0,-1,AIR)
+Block(3,0,0,AIR)
+Block(3,0,1,AIR)
+Block(3,0,2,AIR)
+Block(3,0,3,SANDSTONE)
+Block(3,1,-2,SANDSTONE)
+Block(3,1,-1,AIR)
+Block(3,1,0,AIR)
+Block(3,1,1,AIR)
+Block(3,1,2,AIR)
+Block(3,1,3,SANDSTONE)
+Block(3,2,-2,STEP:1)
+Block(3,2,-1,AIR)
+Block(3,2,0,AIR)
+Block(3,2,1,AIR)
+Block(3,2,2,AIR)
+Block(3,2,3,STEP:1)
+Block(3,3,-2,STAINED_CLAY:1)
+Block(3,3,-1,STAINED_CLAY:1)
+Block(3,3,0,STAINED_CLAY:1)
+Block(3,3,1,STAINED_CLAY:1)
+Block(3,3,2,STAINED_CLAY:1)
+Block(3,3,3,STAINED_CLAY:1)
+Block(4,-1,-2,SANDSTONE)
+Block(4,-1,-1,SANDSTONE)
+Block(4,-1,0,SANDSTONE)
+Block(4,-1,1,SANDSTONE)
+Block(4,-1,2,SANDSTONE)
+Block(4,-1,3,SANDSTONE)
+Block(4,0,-2,SANDSTONE)
+Block(4,0,-1,STEP:9)
+Block(4,0,0,STEP:9)
+Block(4,0,1,STEP:9)
+Block(4,0,2,STEP:9)
+Block(4,0,3,SANDSTONE)
+Block(4,1,-2,SANDSTONE)
+RandomBlock(4,1,-1,CHEST,../../Structures/nbt/VanillaLoot/simple_dungeon.nbt,50,CHEST,../../Structures/nbt/VanillaLoot/desert_pyramid.nbt,100)
+Block(4,1,0,AIR)
+Block(4,1,1,AIR)
+Block(4,1,2,SKULL:1)
+Block(4,1,3,SANDSTONE)
+Block(4,2,-2,SANDSTONE)
+Block(4,2,-1,AIR)
+Block(4,2,0,AIR)
+Block(4,2,1,AIR)
+Block(4,2,2,AIR)
+Block(4,2,3,SANDSTONE)
+Block(4,3,-2,SANDSTONE)
+Block(4,3,-1,SANDSTONE)
+Block(4,3,0,STAINED_CLAY:1)
+Block(4,3,1,STAINED_CLAY:1)
+Block(4,3,2,SANDSTONE)
+Block(4,3,3,SANDSTONE)
+Block(5,-1,-1,SANDSTONE)
+Block(5,-1,0,SANDSTONE)
+Block(5,-1,1,SANDSTONE)
+Block(5,-1,2,SANDSTONE)
+Block(5,0,-1,SANDSTONE)
+Block(5,0,0,SANDSTONE)
+Block(5,0,1,SANDSTONE)
+Block(5,0,2,SANDSTONE)
+Block(5,1,-1,SANDSTONE)
+Block(5,1,0,SANDSTONE)
+Block(5,1,1,SANDSTONE)
+Block(5,1,2,SANDSTONE)
+Block(5,2,-1,SANDSTONE)
+Block(5,2,0,STEP:9)
+Block(5,2,1,STEP:9)
+Block(5,2,2,SANDSTONE)
+Block(5,3,-1,SANDSTONE)
+Block(5,3,0,STAINED_CLAY:1)
+Block(5,3,1,STAINED_CLAY:1)
+Block(5,3,2,SANDSTONE)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,SAND,SANDSTONE)
+BlockCheck(0,1,0,AIR)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

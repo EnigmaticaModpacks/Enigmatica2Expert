@@ -1,0 +1,1 @@
+{ShowArms:1,ArmorItems:[{},{},{},{id:leather_helmet,Count:1}],HandItems:[{id:wooden_sword,Count:1},{}]}

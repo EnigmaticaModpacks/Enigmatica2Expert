@@ -1,0 +1,461 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: false
+
+Frequency: 1
+
+Rarity: 100.0
+
+RotateRandomly: true
+
+SpawnHeight: randomY
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 146
+
+MaxHeight: 146
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: STONE:1,STONE:3,STONE:5,DIRT:1,STONE,DIRT,SAND,GRAVEL,CLAY,GRASS,OBSIDIAN,STATIONARY_LAVA,STATIONARY_WATER,COAL_ORE,IRON_ORE,GOLD_ORE,REDSTONE_ORE,DIAMOND_ORE,LAPIS_ORE,EMERALD_ORE,VINE,HARD_CLAY,STAINED_CLAY
+
+MaxPercentageOutsideSourceBlock: 100
+
+OutsideSourceBlock: dontPlace
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-6,0,0,AIR)
+Block(-6,0,1,AIR)
+Block(-6,0,2,AIR)
+Block(-6,0,3,AIR)
+Block(-6,0,4,AIR)
+Block(-6,1,0,AIR)
+Block(-6,1,1,AIR)
+Block(-6,1,2,AIR)
+Block(-6,1,3,AIR)
+Block(-6,1,4,AIR)
+Block(-6,2,0,AIR)
+Block(-6,2,1,AIR)
+Block(-6,2,2,AIR)
+Block(-6,2,3,AIR)
+Block(-6,2,4,AIR)
+Block(-5,0,-1,AIR)
+Block(-5,0,0,AIR)
+Block(-5,0,1,AIR)
+Block(-5,0,2,AIR)
+Block(-5,0,3,AIR)
+Block(-5,0,4,AIR)
+Block(-5,0,5,AIR)
+Block(-5,1,-1,AIR)
+Block(-5,1,0,AIR)
+Block(-5,1,1,AIR)
+Block(-5,1,2,AIR)
+Block(-5,1,3,AIR)
+Block(-5,1,4,AIR)
+Block(-5,1,5,AIR)
+Block(-5,2,-1,AIR)
+Block(-5,2,0,AIR)
+Block(-5,2,1,AIR)
+Block(-5,2,2,AIR)
+Block(-5,2,3,AIR)
+Block(-5,2,4,AIR)
+Block(-5,2,5,AIR)
+Block(-5,3,0,AIR)
+Block(-5,3,1,AIR)
+Block(-5,3,2,AIR)
+Block(-5,3,3,AIR)
+Block(-5,3,4,AIR)
+Block(-4,0,-2,AIR)
+Block(-4,0,-1,AIR)
+Block(-4,0,0,AIR)
+Block(-4,0,1,AIR)
+Block(-4,0,2,AIR)
+Block(-4,0,3,AIR)
+Block(-4,0,4,AIR)
+Block(-4,0,5,AIR)
+Block(-4,1,-2,AIR)
+Block(-4,1,-1,AIR)
+Block(-4,1,0,AIR)
+Block(-4,1,1,AIR)
+Block(-4,1,2,AIR)
+Block(-4,1,3,AIR)
+Block(-4,1,4,AIR)
+Block(-4,1,5,AIR)
+Block(-4,2,-2,AIR)
+Block(-4,2,-1,AIR)
+Block(-4,2,0,AIR)
+Block(-4,2,1,AIR)
+Block(-4,2,2,AIR)
+Block(-4,2,3,AIR)
+Block(-4,2,4,AIR)
+Block(-4,2,5,AIR)
+Block(-4,3,-1,AIR)
+Block(-4,3,0,AIR)
+Block(-4,3,1,AIR)
+Block(-4,3,2,AIR)
+Block(-4,3,3,AIR)
+Block(-4,3,4,AIR)
+Block(-4,4,0,AIR)
+Block(-4,4,1,AIR)
+Block(-4,4,2,AIR)
+Block(-4,4,3,AIR)
+Block(-3,0,-3,AIR)
+Block(-3,0,-2,AIR)
+Block(-3,0,-1,AIR)
+Block(-3,0,0,AIR)
+Block(-3,0,1,AIR)
+Block(-3,0,2,AIR)
+Block(-3,0,3,AIR)
+Block(-3,0,4,AIR)
+Block(-3,1,-3,AIR)
+Block(-3,1,-2,AIR)
+Block(-3,1,-1,AIR)
+Block(-3,1,0,AIR)
+Block(-3,1,1,AIR)
+Block(-3,1,2,AIR)
+Block(-3,1,3,AIR)
+Block(-3,1,4,AIR)
+Block(-3,2,-3,AIR)
+Block(-3,2,-2,AIR)
+Block(-3,2,-1,AIR)
+Block(-3,2,0,AIR)
+Block(-3,2,1,AIR)
+Block(-3,2,2,AIR)
+Block(-3,2,3,AIR)
+Block(-3,2,4,AIR)
+Block(-3,3,-2,AIR)
+Block(-3,3,-1,AIR)
+Block(-3,3,0,AIR)
+Block(-3,3,1,AIR)
+Block(-3,3,2,AIR)
+Block(-3,3,3,AIR)
+Block(-3,4,-1,AIR)
+Block(-3,4,0,AIR)
+Block(-3,4,1,AIR)
+Block(-3,4,2,AIR)
+Block(-3,4,3,AIR)
+Block(-3,5,0,AIR)
+Block(-3,5,1,AIR)
+Block(-3,5,2,AIR)
+Block(-2,0,-4,AIR)
+Block(-2,0,-3,AIR)
+Block(-2,0,-2,AIR)
+Block(-2,0,-1,AIR)
+Block(-2,0,0,AIR)
+Block(-2,0,1,AIR)
+Block(-2,0,2,AIR)
+Block(-2,0,3,AIR)
+Block(-2,0,4,AIR)
+Block(-2,1,-4,AIR)
+Block(-2,1,-3,AIR)
+Block(-2,1,-2,AIR)
+Block(-2,1,-1,AIR)
+Block(-2,1,0,AIR)
+Block(-2,1,1,AIR)
+Block(-2,1,2,AIR)
+Block(-2,1,3,AIR)
+Block(-2,1,4,AIR)
+Block(-2,2,-4,AIR)
+Block(-2,2,-3,AIR)
+Block(-2,2,-2,AIR)
+Block(-2,2,-1,AIR)
+Block(-2,2,0,AIR)
+Block(-2,2,1,AIR)
+Block(-2,2,2,AIR)
+Block(-2,2,3,AIR)
+Block(-2,2,4,AIR)
+Block(-2,3,-3,AIR)
+Block(-2,3,-2,AIR)
+Block(-2,3,-1,AIR)
+Block(-2,3,0,AIR)
+Block(-2,3,1,AIR)
+Block(-2,3,2,AIR)
+Block(-2,3,3,AIR)
+Block(-2,4,-2,AIR)
+Block(-2,4,-1,AIR)
+Block(-2,4,0,AIR)
+Block(-2,4,1,AIR)
+Block(-2,4,2,AIR)
+Block(-2,5,-1,AIR)
+Block(-2,5,0,AIR)
+Block(-2,5,1,AIR)
+Block(-2,5,2,AIR)
+Block(-1,0,-5,AIR)
+Block(-1,0,-4,AIR)
+Block(-1,0,-3,AIR)
+Block(-1,0,-2,AIR)
+Block(-1,0,-1,AIR)
+Block(-1,0,0,AIR)
+Block(-1,0,1,AIR)
+Block(-1,0,2,AIR)
+Block(-1,0,3,AIR)
+Block(-1,1,-5,AIR)
+Block(-1,1,-4,AIR)
+Block(-1,1,-3,AIR)
+Block(-1,1,-2,AIR)
+Block(-1,1,-1,AIR)
+Block(-1,1,0,AIR)
+Block(-1,1,1,AIR)
+Block(-1,1,2,AIR)
+Block(-1,1,3,AIR)
+Block(-1,2,-5,AIR)
+Block(-1,2,-4,AIR)
+Block(-1,2,-3,AIR)
+Block(-1,2,-2,AIR)
+Block(-1,2,-1,AIR)
+Block(-1,2,0,AIR)
+Block(-1,2,1,AIR)
+Block(-1,2,2,AIR)
+Block(-1,2,3,AIR)
+Block(-1,3,-4,AIR)
+Block(-1,3,-3,AIR)
+Block(-1,3,-2,AIR)
+Block(-1,3,-1,AIR)
+Block(-1,3,0,AIR)
+Block(-1,3,1,AIR)
+Block(-1,3,2,AIR)
+Block(-1,3,3,AIR)
+Block(-1,4,-3,AIR)
+Block(-1,4,-2,AIR)
+Block(-1,4,-1,AIR)
+Block(-1,4,0,AIR)
+Block(-1,4,1,AIR)
+Block(-1,4,2,AIR)
+Block(-1,5,-2,AIR)
+Block(-1,5,-1,AIR)
+Block(-1,5,0,AIR)
+Block(-1,5,1,AIR)
+Block(0,0,-5,AIR)
+Block(0,0,-4,AIR)
+Block(0,0,-3,AIR)
+Block(0,0,-2,AIR)
+Block(0,0,-1,AIR)
+Block(0,0,0,AIR)
+Block(0,0,1,AIR)
+Block(0,0,2,AIR)
+Block(0,0,3,AIR)
+Block(0,1,-5,AIR)
+Block(0,1,-4,AIR)
+Block(0,1,-3,AIR)
+Block(0,1,-2,AIR)
+Block(0,1,-1,AIR)
+Block(0,1,0,AIR)
+Block(0,1,1,AIR)
+Block(0,1,2,AIR)
+Block(0,1,3,AIR)
+Block(0,2,-5,AIR)
+Block(0,2,-4,AIR)
+Block(0,2,-3,AIR)
+Block(0,2,-2,AIR)
+Block(0,2,-1,AIR)
+Block(0,2,0,AIR)
+Block(0,2,1,AIR)
+Block(0,2,2,AIR)
+Block(0,2,3,AIR)
+Block(0,3,-5,AIR)
+Block(0,3,-4,AIR)
+Block(0,3,-3,AIR)
+Block(0,3,-2,AIR)
+Block(0,3,-1,AIR)
+Block(0,3,0,AIR)
+Block(0,3,1,AIR)
+Block(0,3,2,AIR)
+Block(0,4,-4,AIR)
+Block(0,4,-3,AIR)
+Block(0,4,-2,AIR)
+Block(0,4,-1,AIR)
+Block(0,4,0,AIR)
+Block(0,4,1,AIR)
+Block(0,5,-3,AIR)
+Block(0,5,-2,AIR)
+Block(0,5,-1,AIR)
+Block(0,5,0,AIR)
+Block(1,0,-5,AIR)
+Block(1,0,-4,AIR)
+Block(1,0,-3,AIR)
+Block(1,0,-2,AIR)
+Block(1,0,-1,AIR)
+Block(1,0,0,AIR)
+Block(1,0,1,AIR)
+Block(1,0,2,AIR)
+Block(1,1,-5,AIR)
+Block(1,1,-4,AIR)
+Block(1,1,-3,AIR)
+Block(1,1,-2,AIR)
+Block(1,1,-1,AIR)
+Block(1,1,0,AIR)
+Block(1,1,1,AIR)
+Block(1,1,2,AIR)
+Block(1,2,-5,AIR)
+Block(1,2,-4,AIR)
+Block(1,2,-3,AIR)
+Block(1,2,-2,AIR)
+Block(1,2,-1,AIR)
+Block(1,2,0,AIR)
+Block(1,2,1,AIR)
+Block(1,2,2,AIR)
+Block(1,3,-5,AIR)
+Block(1,3,-4,AIR)
+Block(1,3,-3,AIR)
+Block(1,3,-2,AIR)
+Block(1,3,-1,AIR)
+Block(1,3,0,AIR)
+Block(1,3,1,AIR)
+Block(1,4,-4,AIR)
+Block(1,4,-3,AIR)
+Block(1,4,-2,AIR)
+Block(1,4,-1,AIR)
+Block(1,4,0,AIR)
+Block(1,5,-3,AIR)
+Block(1,5,-2,AIR)
+Block(1,5,-1,AIR)
+Block(2,0,-5,AIR)
+Block(2,0,-4,AIR)
+Block(2,0,-3,AIR)
+Block(2,0,-2,AIR)
+Block(2,0,-1,AIR)
+Block(2,0,0,AIR)
+Block(2,0,1,AIR)
+Block(2,1,-5,AIR)
+Block(2,1,-4,AIR)
+Block(2,1,-3,AIR)
+Block(2,1,-2,AIR)
+Block(2,1,-1,AIR)
+Block(2,1,0,AIR)
+Block(2,1,1,AIR)
+Block(2,2,-5,AIR)
+Block(2,2,-4,AIR)
+Block(2,2,-3,AIR)
+Block(2,2,-2,AIR)
+Block(2,2,-1,AIR)
+Block(2,2,0,AIR)
+Block(2,2,1,AIR)
+Block(2,3,-4,AIR)
+Block(2,3,-3,AIR)
+Block(2,3,-2,AIR)
+Block(2,3,-1,AIR)
+Block(2,3,0,AIR)
+Block(2,4,-3,AIR)
+Block(2,4,-2,AIR)
+Block(2,4,-1,AIR)
+Block(3,0,-4,AIR)
+Block(3,0,-3,AIR)
+Block(3,0,-2,AIR)
+Block(3,0,-1,AIR)
+Block(3,0,0,AIR)
+Block(3,1,-4,AIR)
+Block(3,1,-3,AIR)
+Block(3,1,-2,AIR)
+Block(3,1,-1,AIR)
+Block(3,1,0,AIR)
+Block(3,2,-4,AIR)
+Block(3,2,-3,AIR)
+Block(3,2,-2,AIR)
+Block(3,2,-1,AIR)
+Block(3,2,0,AIR)
+Block(3,3,-3,AIR)
+Block(3,3,-2,AIR)
+Block(3,3,-1,AIR)
+Block(4,0,-3,AIR)
+Block(4,0,-2,AIR)
+Block(4,0,-1,AIR)
+Block(4,1,-3,AIR)
+Block(4,1,-2,AIR)
+Block(4,1,-1,AIR)
+Block(4,2,-3,AIR)
+Block(4,2,-2,AIR)
+Block(4,2,-1,AIR)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

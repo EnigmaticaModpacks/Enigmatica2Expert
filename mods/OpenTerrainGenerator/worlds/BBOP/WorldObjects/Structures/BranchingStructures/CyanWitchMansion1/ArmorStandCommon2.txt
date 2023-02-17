@@ -1,0 +1,1 @@
+{ShowArms:1,ArmorItems:[{},{},{id:leather_chestplate,Damage:5,Count:1},{}]}

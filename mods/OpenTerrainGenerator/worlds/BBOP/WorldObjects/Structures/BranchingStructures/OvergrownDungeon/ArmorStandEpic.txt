@@ -1,0 +1,1 @@
+{ArmorItems:[{},{},{},{id:chainmail_helmet,Damage:56,Count:1,tag:{ench:[{id:7,lvl:1}]}}]}

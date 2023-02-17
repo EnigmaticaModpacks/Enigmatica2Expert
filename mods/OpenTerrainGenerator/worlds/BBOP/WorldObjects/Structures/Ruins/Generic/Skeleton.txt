@@ -1,0 +1,1 @@
+{ArmorItems:[{},{},{},{id:leather_helmet,Count:1b}],ArmorDropChances:[0.085F,0.085F,0.085F,0.0F],PersistenceRequired:1}

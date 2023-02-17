@@ -1,0 +1,1 @@
+{ShowArms:1,ArmorItems:[{},{id:iron_leggings,Damage:50,Count:1b},{},{}],HandItems:[{},{id:shield,Damage:25,Count:1b}]}

@@ -1,0 +1,1 @@
+{CustomName:"Aspiring Witch",CustomNameVisible:1,Profession:2,Career:1,CareerLevel:1,Offers:{Recipes:[{rewardExp:0b,maxUses:2147483647,uses:0,buy:{id:glowstone_dust,Count:32},sell:{id:emerald,Count:1}}]},PersistenceRequired:1}

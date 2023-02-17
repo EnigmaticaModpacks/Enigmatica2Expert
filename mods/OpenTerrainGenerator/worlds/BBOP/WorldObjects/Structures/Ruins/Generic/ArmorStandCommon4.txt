@@ -1,0 +1,1 @@
+{ShowArms:1,HandItems:[{id:iron_shovel,Damage:75,Count:1b},{}]}

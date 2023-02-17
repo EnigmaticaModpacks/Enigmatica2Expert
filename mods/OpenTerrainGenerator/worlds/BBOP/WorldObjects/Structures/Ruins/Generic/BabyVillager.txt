@@ -1,0 +1,1 @@
+{Profession:5,Age:-5,PersistenceRequired:1}

@@ -1,0 +1,282 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This is the config file of a custom object.
+# If you add this object correctly to your BiomeConfigs, it will spawn in the world.
+
+# This is the creator of this BO3 object
+Author: LordSmellyPants
+
+# A short description of this BO3 object
+Description: No description given
+
+# The BO3 version, don't change this! It can be used by external applications to do a version check.
+Version: 3
+
+# The settings mode, WriteAll, WriteWithoutComments or WriteDisable. See WorldConfig.
+SettingsMode: WriteAll
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This needs to be set to true to spawn the object in the Tree and Sapling resources.
+Tree: false
+
+# The frequency of the BO3 from 1 to 200. Tries this many times to spawn this BO3 when using the CustomObject(...) resource.
+# Ignored by Tree(..), Sapling(..) and CustomStructure(..)
+Frequency: 1
+
+# The rarity of the BO3 from 0 to 100. Each spawn attempt has rarity% chance to succeed when using the CustomObject(...) resource.
+# Ignored by Tree(..), Sapling(..) and CustomStructure(..)
+Rarity: 50.0
+
+# If you set this to true, the BO3 will be placed with a random rotation.
+RotateRandomly: false
+
+# The spawn height of the BO3: randomY, highestBlock or highestSolidBlock.
+SpawnHeight: highestSolidBlock
+
+# The offset from the spawn height to spawn this BO3
+# Ex. SpawnHeight = highestSolidBlock, SpawnHeightOffset = 3; This object will spawn 3 blocks above the highest solid block
+SpawnHeightOffset: 0
+
+# A random amount to offset the spawn location from the spawn offset height
+# Ex. SpawnHeightOffset = 3, SpawnHeightVariance = 3; This object will spawn 3 to 6 blocks above the original spot it would have spawned
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+# When in randomY mode used as the minimum Y or in atMinY mode as the actual Y to spawn this BO3 at.
+MinHeight: 0
+
+# When in randomY mode used as the maximum Y to spawn this BO3 at.
+MaxHeight: 255
+
+######################
+# Extrusion settings #
+######################
+
+# The style of extrusion you wish to use - BottomDown, TopUp, None (Default)
+ExtrudeMode: None
+
+# The blocks to extrude your BO3 through
+ExtrudeThroughBlocks: AIR
+
+# Objects can have other objects attacthed to it: branches. Branches can also
+# have branches attached to it, which can also have branches, etc. This is the
+# maximum branch depth for this objects.
+MaxBranchDepth: 10
+
+# When spawned with the UseWorld keyword, this BO3 should NOT spawn in the following biomes.
+# If you write the BO3 name directly in the BiomeConfigs, this will be ignored.
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# The block(s) the BO3 should spawn in.
+SourceBlocks: STATIONARY_WATER
+
+# The maximum percentage of the BO3 that can be outside the SourceBlock.
+# The BO3 won't be placed on a location with more blocks outside the SourceBlock than this percentage.
+MaxPercentageOutsideSourceBlock: 100
+
+# What to do when a block is about to be placed outside the SourceBlock? (dontPlace, placeAnyway)
+OutsideSourceBlock: dontPlace
+
+# Disable doReplaceBlocks to make this BO3 ignore any ReplacedBlocks settings in biome configs, improves performance.
+DoReplaceBlocks: true
+
+# OTG+ settings #
+# Legacy setting, rename this file to .BO4 instead. Set this to true to enable the advanced customstructure features of OTG+.
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# All the blocks used in the BO3 are listed here. Possible blocks:
+# Block(x,y,z,id[.data][,nbtfile.nbt)
+# RandomBlock(x,y,z,id[:data][,nbtfile.nbt],chance[,id[:data][,nbtfile.nbt],chance[,...]])
+#  So RandomBlock(0,0,0,CHEST,chest.nbt,50,CHEST,anotherchest.nbt,100) will spawn a chest at
+#  the BO3 origin, and give it a 50% chance to have the contents of chest.nbt, or, if that
+#  fails, a 100% percent chance to have the contents of anotherchest.nbt.
+# *Note: Unlike Entity() and Spawner(), for Block() .txt files don't work, only .nbt files work.
+# MinecraftObject(x,y,z,name) (TODO: This may not work anymore and needs to be tested.
+#  Spawns an object in the Mojang NBT structure format. For example, 
+#  MinecraftObject(0,0,0,minecraft:igloo/igloo_bottom)
+#  spawns the bottom part of an igloo.
+Block(0,0,0,COBBLESTONE)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Require a condition at a certain location in order for the BO3 to be spawned.
+# BlockCheck(x,y,z,BlockName[,BlockName[,...]]) - one of the blocks must be at the location
+# BlockCheckNot(x,y,z,BlockName[,BlockName[,...]]) - all the blocks must not be at the location
+# LightCheck(x,y,z,minLightLevel,maxLightLevel) - light must be between min and max (inclusive)
+# ModCheck(ModName[,ModName[,...]]) - all the mods listed must be loaded
+# ModCheckNot(ModName[,ModName[,...]]) - all the mods listed must not be loaded
+
+# You can use "Solid" as a BlockName for matching all solid blocks or "All" to match all blocks that aren't air.
+
+# Examples:
+#   BlockCheck(0,-1,0,GRASS,DIRT)  Require grass or dirt just below the object
+#   BlockCheck(0,-1,0,Solid)       Require any solid block just below the object
+#   BlockCheck(0,-1,0,WOOL)        Require any type of wool just below the object
+#   BlockCheck(0,-1,0,WOOL:0)      Require white wool just below the object
+#   BlockCheckNot(0,-1,0,WOOL:0)   Require that there is no white wool below the object
+#   LightCheck(0,0,0,0,1)          Require almost complete darkness just below the object
+BlockCheckNot(0,-1,0,LOG,LOG:1,LOG:2,LOG:3,LOG_2,LOG_2:1,LEAVES,LEAVES:1,LEAVES:2,LEAVES:3,LEAVES_2,LEAVES_2:1)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Branches are child-BO3's that spawn if this BO3 is configured to spawn as a
+# CustomStructure resource in a biome config. Branches can have branches,
+# making complex structures possible. See the wiki for more details.
+
+# Regular Branches spawn each branch with an independent chance of spawning.
+# Branch(x,y,z,branchName,rotation,chance[,anotherBranchName,rotation,chance[,...]][IndividualChance])
+# branchName - name of the object to spawn.
+# rotation - NORTH, SOUTH, EAST or WEST.
+# IndividualChance - The chance each branch has to spawn, assumed to be 100 when left blank
+# isRequiredBranch - If this is set to true then at least one of the branches in this BO3 must spawn at these x,y,z coordinates. If no branch can spawn there then this BO3 fails to spawn and its branch is rolled back.
+# isRequiredBranch:true branches must spawn or the current branch is rolled back entirely. This is useful for grouping BO3's that must spawn together, for instance a single room made of multiple BO3's/branches.
+# If all parts of the room are connected together via isRequiredBranch:true branches then either the entire room will spawns or no part of it will spawn.
+# *Note: When isRequiredBranch:true only one BO3 can be added per Branch() and it will automatically have a rarity of 100.0.
+# isRequiredBranch:false branches are used to make optional parts of structures, for instance the middle section of a tunnel that has a beginning, middle and end BO3/branch and can have a variable length by repeating the middle BO3/branch.
+# By making the start and end branches isRequiredBranch:true and the middle branch isRequiredbranch:false you can make it so that either:
+# A. A tunnel spawns with at least a beginning and end branch
+# B. A tunnel spawns with a beginning and end branch and as many middle branches as will fit in the available space.
+# C. No tunnel spawns at all because there wasn't enough space to spawn at least a beginning and end branch.
+# branchDepth - When creating a chain of branches that contains optional (isRequiredBranch:false) branches branch depth is configured for the first BO3 in the chain to determine the maximum length of the chain.
+# branchDepth - 1 is inherited by each isRequiredBranch:false branch in the chain. When branchDepth is zero isRequiredBranch:false branches cannot spawn and the chain ends. In the case of the tunnel this means the last middle branch would be
+# rolled back and an IsRequiredBranch:true end branch could be spawned in its place to make sure the tunnel has a proper ending.
+# Instead of inheriting branchDepth - 1 from the parent branchDepth can be overridden by child branches if it is set higher than 0 (the default value).
+# isRequiredBranch:true branches do inherit branchDepth and pass it on to their own branches, however they cannot be prevented from spawning by it and also don't subtract 1 from branchDepth when inheriting it.
+
+# Weighted Branches spawn branches with a dependent chance of spawning.
+# WeightedBranch(x,y,z,branchName,rotation,chance[,anotherBranchName,rotation,chance[,...]][MaxChanceOutOf])
+# *Note: isRequiredBranch must be set to false. It is not possible to use isRequiredBranch:true with WeightedBranch() since isRequired:true branches must spawn and automatically have a rarity of 100.0.
+# MaxChanceOutOf - The chance all branches have to spawn out of, assumed to be 100 when left blank
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Forge only (this may have changed, check for updates).
+# An EntityFunction spawns an entity instead of a block. The entity is spawned only once when the BO3 is spawned.
+# Entities are persistent by default so they don't de-spawn when no player is near, they are only unloaded.
+# Usage: Entity(x,y,z,entityName,groupSize,NameTagOrNBTFileName) or Entity(x,y,z,mobName,groupSize)
+# Use /otg entities to get a list of entities that can be used as entityName, this includes entities added by other mods and non-living entities.
+# NameTagOrNBTFileName can be either a nametag for the mob or an .txt file with nbt data (such as myentityinfo.txt).
+# In the text file you can use the same mob spawning parameters used with the /summon command to equip the
+# entity and give it custom attributes etc. You can copy the DATA part of a summon command including surrounding 
+# curly braces to a .txt file, for instance for: "/summon Skeleton x y z {DATA}"
+# *Note: Unlike Block(), for Entity() .nbt files don't work, only .txt files work.
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Forge only (this may have changed, check for updates).
+# Creates an invisible particle spawner at the given location that spawns particles every x milliseconds.
+# Usage: Particle(x,y,z,particleName,interval,velocityX,velocityY,velocityZ)
+# velocityX, velocityY and velocityZ are optional.
+# Only vanilla particle names can be used, for 1.11.2 these are;
+# explode, largeexplode, hugeexplosion, fireworksSpark, bubble, splash, wake, suspended
+# depthsuspend, crit, magicCrit, smoke, largesmoke, spell, instantSpell, mobSpell
+# mobSpellAmbient, witchMagic, dripWater, dripLava, angryVillager, happyVillager
+# townaura, note, portal, enchantmenttable, flame, lava, footstep, cloud, reddust
+# snowballpoof,  snowshovel, slime, heart, barrier, iconcrack, blockcrack, blockdust
+# droplet, take, mobappearance, dragonbreath, endRod, damageIndicator, sweepAttack
+# fallingdust, totem, spit.
+# velocityX,velocityY,velocityZ - Spawn the enemy with the given velocity. If this is not filled in then a small random velocity is applied.
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Forge only (this may have changed, check for updates).
+# Creates an invisible entity spawner at the given location that spawns entities every x seconds.
+# Entities can only spawn if their spawn requirements are met (zombies/skeletons only spawn in the dark etc). Max entity count for the server is ignored, each spawner has its own maxCount setting.
+# Usage: Spawner(x,y,z,entityName,nbtFileName,groupSize,interval,spawnChance,maxCount,despawnTime,velocityX,velocityY,velocityZ,yaw,pitch)
+# nbtFileName, despawnTime, velocityX, velocityY, velocityZ, yaw and pitch are optional
+# Example Spawner(0, 0, 0, Villager, 1, 5, 100, 5) or Spawner(0, 0, 0, Villager, villager1.txt, 1, 5, 100, 5) or Spawner(0, 0, 0, Villager, 1, 5, 100, 5, 30, 1, 1, 1, 0, 0)
+# entityName - Name of the entity to spawn, use /otg entities to get a list of entities that can be used as entityName, this includes entities added by other mods and non-living entities.
+# nbtFileName - A .txt file with nbt data (such as myentityinfo.txt).
+# In the text file you can use the same mob spawning parameters used with the /summon command to equip the
+# entity and give it custom attributes etc. You can copy the DATA part of a summon command including surrounding 
+# curly braces to a .txt file, for instance for: "/summon Skeleton x y z {DATA}"
+# *Note: Unlike Block(), for Spawner() .nbt files don't work, only .txt files work.
+# groupSize - Number of entities that should spawn for each successful spawn attempt.
+# interval - Time in seconds between each spawn attempt.
+# spawnChance - For each spawn attempt, the chance between 0-100 that the spawn attempt will succeed.
+# maxCount - The maximum amount of this kind of entity that can exist within 32 blocks. If there are already maxCount or more entities of this type in a 32 radius this spawner will not spawn anything.
+# despawnTime - After despawnTime seconds, if there is no player within 32 blocks of the entity it will despawn..
+# velocityX,velocityY,velocityZ,yaw,pitch - Spawn the enemy with the given velocity and angle, handy for making traps and launchers (shooting arrows and fireballs etc).
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Forge only.
+# Use the ModData() tag to include data that other mods can use
+# Mod makers can use ModData and the /otg GetModData command to test IMC communications between OTG
+# and their mod.
+# Normal users can use it to spawn some mobs and blocks on command.
+# ModData(x,y,z,"ModName", "MyModDataAsText"
+# Example: ModData(x,y,z,MyCystomNPCMod,SpawnBobHere/WithAPotato/And50Health)
+# Try not to use exotic/reserved characters, like brackets and comma's etc, this stuff isn't fool-proof.
+# Also, use this only to store IDs/object names etc for your mod, DO NOT include things like character dialogue,
+# messages on signs, loot lists etc in this file. As much as possible just store id's/names here and store all the data related to those id's/names in your own mod.
+# OTG has some built in ModData commands for basic mob and block spawning.
+# These are mostly just a demonstration for mod makers to show how ModData.
+# can be used by other mods.
+# For mob spawning in OTG use: ModData(x,y,z,OTG,mob/MobType/Count/Persistent/Name)
+# mob: Makes OTG recognise this as a mob spawning command.
+# MobType: Lower-case, no spaces. Any vanilla mob like dragon, skeleton, wither, villager etc
+# Count: The number of mobs to spawn
+# Persistent (true/false): Should the mobs never de-spawn? If set to true the mob will get a
+# name-tag ingame so you can recognise it.
+# Name: A name-tag for the monster/npc.
+# Example: ModData(0,0,0,OTG,villager/1/true/Bob)
+# To spawn blocks using ModData use: ModData(x,y,z,OTG,block/material)
+# block: Makes OTG recognise this as a block spawning command.
+# material: id or text, custom blocks can be added using ModName:MaterialName.
+# To send all ModData within a radius in chunks around the player to the specified mod
+# use this console command: /otg GetModData ModName Radius
+# ModName: name of the mod, for OTG commands use OTG 
+# Radius (optional): Radius in chunks around the player.

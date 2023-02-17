@@ -1,0 +1,136 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This is the config file of a custom object.
+# If you add this object correctly to your BiomeConfigs, it will spawn in the world.
+
+# This is the creator of this BO3 object
+Author: MC_Pitman
+
+# A short description of this BO3 object
+Description: No description given
+
+# The BO3 version, don't change this! It can be used by external applications to do a version check.
+Version: 3
+
+# The settings mode, WriteAll, WriteWithoutComments or WriteDisable. See WorldConfig.
+SettingsMode: WriteDisable
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This needs to be set to true to spawn the object in the Tree and Sapling resources.
+Tree: false
+
+# The frequency of the BO3 from 1 to 200. Tries this many times to spawn this BO3 when using the CustomObject(...) resource.
+# Ignored by Tree(..), Sapling(..) and CustomStructure(..)
+Frequency: 1
+
+# The rarity of the BO3 from 0 to 100. Each spawn attempt has rarity% chance to succeed when using the CustomObject(...) resource.
+# Ignored by Tree(..), Sapling(..) and CustomStructure(..)
+Rarity: 100.0
+
+# If you set this to true, the BO3 will be placed with a random rotation.
+RotateRandomly: false
+
+# The spawn height of the BO3 - randomY, highestBlock or highestSolidBlock.
+SpawnHeight: randomY
+
+# The height limits for the BO3.
+MinHeight: 0
+
+MaxHeight: 101
+
+# Objects can have other objects attacthed to it: branches. Branches can also
+# have branches attached to it, which can also have branches, etc. This is the
+# maximum branch depth for this objects.
+MaxBranchDepth: 20
+
+# When spawned with the UseWorld keyword, this BO3 should NOT spawn in the following biomes.
+# If you writer.write the BO3 name directly in the BiomeConfigs, this will be ignored.
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# The B(s) the BO3 should spawn in.
+SourceBlocks: AIR,1,1:1,1:2,1:3,1:4,1:5,1:6,2,3,3:1,3:2,4,5,5:1,5:2,5:3,5:4,5:5,6,6:1,6:2,6:3,6:4,6:5,7,8,9,10,11,12,12:1,13,14,15,16,17,17:1,17:2,17:3,18,18:1,18:2,18:3,19,19:1,20,21,22,24,24:1,24:2,25,26,27,28,29,30,31,31:1,31:2,32,33,34,35,35:1,35:2,35:3,35:4,35:5,35:6,35:7,35:8,35:9,35:10,35:11,35:12,35:13,35:14,35:15,37,38,38:1,38:2,38:3,38:4,38:5,38:6,38:7,38:8,39,40,41,42,43,43:1,43:2,43:3,43:4,43:5,43:6,43:7,44,44:1,44:2,44:3,44:4,44:5,44:6,44:7,45,46,48,49,50,51,52,53,56,57,58,59,60,62,63,64,65,66,67,68,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,95,95:1,95:2,95:3,95:4,95:5,95:6,95:7,95:8,95:9,95:10,95:11,95:12,95:13,95:14,95:15,96,98,98:1,98:2,98:3,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,121,122,123,124,125,125:1,125:2,125:3,125:4,125:5,126,126:1,126:2,126:3,126:4,126:5,127,128,129,130,131,132,133,134,135,136,137,138,139,139:1,143,144,146,147,148,149,150,151,152,153,154,155,155:1,155:2,156,157,158,159,159:1,159:2,159:3,159:4,159:5,159:6,159:7,159:8,159:9,159:10,159:11,159:12,159:13,159:14,159:15,160,160:1,160:2,160:3,160:4,160:5,160:6,160:7,160:8,160:9,160:10,160:11,160:12,160:13,160:14,160:15,161,161:1,162,162:1,163,164,165,166,167,168,168:1,168:2,169,170,171,171:1,171:2,171:3,171:4,171:5,171:6,171:7,171:8,171:9,171:10,171:11,171:12,171:13,171:14,171:15,172,173,174,179,179:1,179:2,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,208,210,211,212,213,214,215,216,342,343,397,397:1,397:2,397:3,397:4,397:5,404,405,427,428,429,430
+
+# The maximum percentage of the BO3 that can be outside the SourceBlock.
+# The BO3 won't be placed on a location with more blocks outside the SourceBlock than this percentage.
+MaxPercentageOutsideSourceBlock: 100
+
+# What to do when a block is about to be placed outside the SourceBlock? (dontPlace, placeAnyway)
+OutsideSourceBlock: dontPlace
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# All the blocks used in the BO3 are listed here. Possible blocks:
+# B(x,y,z,id[.data][,nbtfile.nbt)
+# RB(x,y,z,id[:data][,nbtfile.nbt],chance[,id[:data][,nbtfile.nbt],chance[,...]])
+# So RB(0,0,0,CHEST,chest.nbt,30,CHEST,anotherchest.nbt,100) will spawn a chest at
+# the BO3 origin, and give it a 50% chance to have the contents of chest.nbt, or, if that
+# fails, a 100% percent chance to have the contents of anotherchest.nbt.
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Require a condition at a certain location in order for the BO3 to be spawned.
+# BlockCheck(x,y,z,BlockName[,BlockName[,...]]) - one of the blocks must be at the location
+# BlockCheckNot(x,y,z,BlockName[,BlockName[,...]]) - all the blocks must not be at the location
+# LightCheck(x,y,z,minLightLevel,maxLightLevel) - light must be between min and max (inclusive)
+
+# You can use "Solid" as a BlockName for matching all solid blocks or "All" to match all blocks that aren't air.
+
+# Examples:
+#   BlockCheck(0,-1,0,GRASS,DIRT,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass:2,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt:0,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:3,biomesoplenty:dirt:4,biomesoplenty:dirt:5,biomesoplenty:dirt:6,biomesoplenty:dirt:7,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand:0,biomesoplenty:hard_ice:0,biomesoplenty:white_sand:0,biomesoplenty:white_sandstone:0,biomesoplenty:mud:0,biomesoplenty:ash_block:0)  Require grass or dirt just below the object
+#   BlockCheck(0,-1,0,Solid)       Require any solid block just below the object
+#   BlockCheck(0,-1,0,WOOL)        Require any type of wool just below the object
+#   BlockCheck(0,-1,0,WOOL:0)      Require white wool just below the object
+#   BlockCheckNot(0,-1,0,WOOL:0)   Require that there is no white wool below the object
+#   LightCheck(0,0,0,0,1)          Require almost complete darkness just below the object
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Branches are objects that will spawn when this object spawns when it is used in
+# the CustomStructure resource. Branches can also have branches, making complex
+# structures possible. See the wiki for more details.
+
+# Regular Branches spawn each branch with an independent chance of spawning.
+# Branch(x,y,z,branchName,rotation,chance[,anotherBranchName,rotation,chance[,...]][IndividualChance])
+# branchName - name of the object to spawn.
+# rotation - NORTH, SOUTH, EAST or WEST.
+# IndividualChance - The chance each branch has to spawn, assumed to be 100 when left blank
+
+# Weighted Branches spawn branches with a dependent chance of spawning.
+# WBR(x,y,z,branchName,rotation,chance[,anotherBranchName,rotation,chance[,...]][MaxChanceOutOf])
+# MaxChanceOutOf - The chance all branches have to spawn out of, assumed to be 100 when left blank
+
+Branch(0,0,0,DngE2-1,NORTH,100)
+WBR(16,0,0,DngE1-Copy,NORTH,10,DngE4,NORTH,20,30)
+WBR(0,0,16,DngS1-Copy,NORTH,10,DngS4,NORTH,10,20)
+WBR(0,0,-16,DngN1-Copy,NORTH,10,DngN4,NORTH,10,20)

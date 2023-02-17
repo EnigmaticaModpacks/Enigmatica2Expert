@@ -1,0 +1,391 @@
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This BO3 is made for use with the Minecraft Worlds mod
+# Minecraft Worlds completely reimplemented BO3s, check the MCW documentation on the mc/mctcp forums for how to use BO3s with MCW
+# or watch the video's on my YT channel at https://www.youtube.com/user/PeeGee85. You can check out the "Editing and importing schematics & BO3s" 
+# series of video's, in part 2 I explain BO3s. 
+
+# This is the config file of a custom object.
+# If you add this object correctly to your BiomeConfigs, it will spawn in the world.
+
+# This is the creator of this BO3 object
+Author: Unknown
+
+# A short description of this BO3 object
+Description: No description
+
+# The BO3 version, don't change this! It can be used by external applications to do a version check.
+Version: MCW104
+
+# The settings mode, WriteAll, WriteWithoutComments or WriteDisable. See WorldConfig.
+SettingsMode: WriteDisable
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This settings is currently unavailable for MCW (1.0.4).
+Tree: false
+
+# Minimum distance in chunks between structures with the same filename.
+Frequency: 1
+Rarity: 30.0
+
+# This settings is currently unavailable for MCW (1.0.4).
+RotateRandomly: true
+
+# The spawn height of the BO3 - randomY or highestBlock.
+SpawnHeight: randomY
+
+# The height limits for the BO3. Can be combined with randomY to spawn the BO3 at a random height
+# between MinHeight and MaxHeight. Can be combined with highestBlock to make sure that the BO3 spawns
+# only between MinHeight and MaxHeight.
+MinHeight: 58
+
+MaxHeight: 58
+
+# This settings is disabled for MCW.
+ExcludedBiomes: All
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This settings is disabled for MCW.
+SourceBlocks: AIR
+
+# This settings is disabled for MCW.
+MaxPercentageOutsideSourceBlock: 100
+
+# This settings is disabled for MCW.
+OutsideSourceBlock: placeAnyway
+
+# MineCraft Worlds mod settings #
+# NOTE: you can delete any of these settings if you're not using them, the default values will automatically be used! #
+
+# Copies the blocks and branches of an existing BO3 into this BO3.
+#InheritBO3:
+
+
+# If this is set to true then this BO3 can spawn on top of or inside an existing BO3.
+#CanOverride: false
+
+# If this is set to true then this BO3 can only spawn underneath an existing BO3. Used to make sure that dungeons only appear underneath buildings
+#MustBeBelowOther: false
+
+# Defaults to true. Set to false if the BO3 is not allowed to spawn on a water block
+#CanSpawnOnWater: true
+
+# Defaults to false. Set to true if the BO3 is allowed to spawn only on a water block
+#SpawnOnWaterOnly: false
+
+# Defaults to false. Set to true if the BO3 and its smoothing area should ignore water when looking for the highest block to spawn on. Defaults to false (things spawn on top of water)
+#SpawnUnderWater: false
+
+# Defaults to false. Set to true if the BO3 should spawn at water level
+#SpawnAtWaterLevel: false
+
+
+# Spawns the BO3 at a Y offset of this value. Handy when using highestBlock for lowering BO3s into the surrounding terrain when there are layers of ground included in the BO3, also handy when using SpawnAtWaterLevel to lower objects like ships into the water.
+#HeightOffset: 0
+
+# If set to true removes all AIR blocks from the BO3 so that it can be flooded or buried.
+#RemoveAir: true
+
+# Replaces all the non-air blocks that are above this BO3 or its smoothing area with the given block material (should be WATER or AIR or NONE), also applies to smoothing areas although it intentionally leaves some of the terrain above them intact. WATER can be used in combination with SpawnUnderWater to fill any air blocks underneath waterlevel with water (and any above waterlevel with air).
+#ReplaceAbove: AIR
+
+# Replaces all air blocks underneath the BO3 (but not its smoothing area) with the designated material until a solid block is found.
+#ReplaceBelow:
+
+# Defaults to true. If set to true then every block in the BO3 of the materials defined in ReplaceWithGroundBlock or ReplaceWithSurfaceBlock will be replaced by the GroundBlock or SurfaceBlock materials configured for the biome the block is spawned in.
+#ReplaceWithBiomeBlocks: true
+
+# Defaults to DIRT, Replaces all the blocks of the given material in the BO3 with the GroundBlock configured for the biome it spawns in
+#ReplaceWithGroundBlock: DIRT
+
+# Defaults to GRASS, Replaces all the blocks of the given material in the BO3 with the SurfaceBlock configured for the biome it spawns in
+#ReplaceWithSurfaceBlock: GRASS
+
+
+# Makes the terrain around the BO3 slope gradually towards the edges of the BO3. The given value is the distance in blocks around the BO3 from where the slope should start and can be any positive number.
+#SmoothRadius: 0
+
+# Moves the smoothing area up or down relative to the BO3 (at the points where the smoothing area is connected to the BO3). Handy when using SmoothStartTop: false and the BO3 has some layers of ground included, in that case we can set the HeightOffset to a negative value to lower the BO3 into the ground and we can set the SmoothHeightOffset to a positive value to move the smoothing area starting height up
+#SmoothHeightOffset: 0
+
+# Should the smoothing area be attached at the bottom or the top of the edges of the BO3? Defaults to false (bottom). Using this setting can make things slower so try to avoid using it and use SmoothHeightOffset instead if for instance you have a BO3 with some ground layers included. The only reason you should need to use this setting is if you have a BO3 with edges that have an irregular height (like some hills).
+#SmoothStartTop: false
+
+# Should the smoothing area attach itself to "log" block or ignore them? Defaults to false (ignore logs).
+#SmoothStartWood: false
+
+# The block used for smoothing area surface blocks, defaults to biome SurfaceBlock
+#SmoothingSurfaceBlock:
+
+# The block used for smoothing area ground blocks, defaults to biome GroundBlock
+#SmoothingGroundBlock:
+
+
+# Define groups that this BO3 belongs to along with a minimum range in chunks that this BO3 must have between it and any other members of this group if it is to be allowed to spawn. Syntax is "GroupName:Frequency, GoupName2:Frequency2" etc so for example a BO3 that belongs to 3 groups: "BO3Group: Ships:10, Vehicles:5, FloatingThings:3"
+#BO3Group:
+
+# Defaults to false. Set to true if this BO3 should spawn at the player spawn point. When the server starts the spawn point is determined and the BO3's for the biome it is in are loaded, one of these BO3s that has IsSpawnPoint set to true (if any) is selected randomly and is spawned at the spawn point regardless of its rarity (so even Rarity:0, IsSpawnPoint: true BO3's can get spawned as the spawn point!).
+#IsSpawnPoint: false
+
+# Defaults to 8, if SpawnPointY > -1 and this BO3 is spawned at the spawn point then the player spawn point is placed within this BO3 at x y and z offsets (spawnPointX, spawnPointY, spawnPointZ) relative to x0y0z0 in this BO3.
+#SpawnPointX: 8
+
+# Defaults to highestBlock, if this is defined and this BO3 is spawned at the spawn point then the player spawn point is placed at a y offset of this value relative to y = 0 in this BO3.)
+#SpawnPointY: -1
+
+# Defaults to 7, if spawnPointY > -1 and this BO3 is spawned at the spawn point then the player spawn point is placed within this BO3 at a x y and z offsets (spawnPointX, spawnPointY, spawnPointZ) relative to x0y0z0 in this BO3.
+#SpawnPointZ: 7
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# All the blocks used in the BO3 are listed here. Possible blocks:
+# B(x,y,z,id[.data][,nbtfile.nbt)
+# RB(x,y,z,id[:data][,nbtfile.nbt],chance[,id[:data][,nbtfile.nbt],chance[,...]])
+# So RB(0,0,0,CHEST,chest.nbt,50,CHEST,anotherchest.nbt,100) will spawn a chest at
+# the BO3 origin, and give it a 50% chance to have the contents of chest.nbt, or, if that
+# fails, a 100% percent chance to have the contents of anotherchest.nbt.
+
+B(-8,0,-3,STONE)
+B(-8,1,-3,STONE)
+B(-8,1,-2,STONE)
+B(-8,2,-4,STONE)
+B(-8,2,-3,STONE)
+B(-8,2,-2,STONE)
+B(-8,2,-1,STONE)
+B(-8,3,-6,STONE)
+B(-8,3,-5,STONE)
+B(-8,3,-4,STONE)
+B(-8,3,-3,STONE)
+B(-8,3,-2,STONE)
+B(-8,3,-1,STONE)
+B(-8,4,-4,STONE)
+B(-8,4,-3,STONE)
+B(-8,4,-2,STONE)
+B(-8,4,-1,STONE)
+B(-8,5,-3,STONE)
+B(-8,5,-2,STONE)
+B(-8,6,-3,STONE)
+B(-7,0,-3,STONE)
+B(-7,0,-2,STONE)
+B(-7,1,-3,STONE)
+B(-7,1,-2,STONE)
+B(-7,1,-1,STONE)
+B(-7,2,-4,STONE)
+B(-7,2,-3,STONE)
+B(-7,2,-2,STONE)
+B(-7,2,-1,STONE)
+B(-7,3,-7,STONE)
+B(-7,3,-6,STONE)
+B(-7,3,-5,STONE)
+B(-7,3,-4,STONE)
+B(-7,3,-3,STONE)
+B(-7,3,-2,STONE)
+B(-7,3,-1,STONE)
+B(-7,3,0,STONE)
+B(-7,4,-4,STONE)
+B(-7,4,-3,STONE)
+B(-7,4,-2,STONE)
+B(-7,4,-1,STONE)
+B(-7,5,-3,STONE)
+B(-7,5,-2,STONE)
+B(-7,5,-1,STONE)
+B(-7,6,-3,STONE)
+B(-7,6,-2,STONE)
+B(-6,0,-3,STONE)
+B(-6,0,-2,STONE)
+B(-6,1,-4,STONE)
+B(-6,1,-3,STONE)
+B(-6,1,-2,STONE)
+B(-6,1,-1,STONE)
+B(-6,2,-5,STONE)
+B(-6,2,-4,STONE)
+B(-6,2,-3,STONE)
+B(-6,2,-2,STONE)
+B(-6,2,-1,STONE)
+B(-6,3,-7,STONE)
+B(-6,3,-6,STONE)
+B(-6,3,-5,STONE)
+B(-6,3,-4,STONE)
+B(-6,3,-3,STONE)
+B(-6,3,-2,STONE)
+B(-6,3,-1,STONE)
+B(-6,3,0,STONE)
+B(-6,4,-5,STONE)
+B(-6,4,-4,STONE)
+B(-6,4,-3,STONE)
+B(-6,4,-2,STONE)
+B(-6,4,-1,STONE)
+B(-6,5,-4,STONE)
+B(-6,5,-3,STONE)
+B(-6,5,-2,STONE)
+B(-6,5,-1,STONE)
+B(-6,6,-3,STONE)
+B(-6,6,-2,STONE)
+B(-5,0,-4,STONE)
+B(-5,0,-3,STONE)
+B(-5,0,-2,STONE)
+B(-5,1,-4,STONE)
+B(-5,1,-3,STONE)
+B(-5,1,-2,STONE)
+B(-5,1,-1,STONE)
+B(-5,2,-5,STONE)
+B(-5,2,-4,STONE)
+B(-5,2,-3,STONE)
+B(-5,2,-2,STONE)
+B(-5,2,-1,STONE)
+B(-5,3,-7,STONE)
+B(-5,3,-6,STONE)
+B(-5,3,-5,STONE)
+B(-5,3,-4,STONE)
+B(-5,3,-3,STONE)
+B(-5,3,-2,STONE)
+B(-5,3,-1,STONE)
+B(-5,3,0,STONE)
+B(-5,4,-5,STONE)
+B(-5,4,-4,STONE)
+B(-5,4,-3,STONE)
+B(-5,4,-2,STONE)
+B(-5,4,-1,STONE)
+B(-5,5,-4,STONE)
+B(-5,5,-3,STONE)
+B(-5,5,-2,STONE)
+B(-5,5,-1,STONE)
+B(-5,6,-4,STONE)
+B(-5,6,-3,STONE)
+B(-5,6,-2,STONE)
+B(-4,0,-4,STONE)
+B(-4,0,-3,STONE)
+B(-4,1,-5,STONE)
+B(-4,1,-4,STONE)
+B(-4,1,-3,STONE)
+B(-4,1,-2,STONE)
+B(-4,1,-1,STONE)
+B(-4,2,-6,STONE)
+B(-4,2,-5,STONE)
+B(-4,2,-4,STONE)
+B(-4,2,-3,STONE)
+B(-4,2,-2,STONE)
+B(-4,2,-1,STONE)
+B(-4,3,-7,STONE)
+B(-4,3,-6,STONE)
+B(-4,3,-5,STONE)
+B(-4,3,-4,STONE)
+B(-4,3,-3,STONE)
+B(-4,3,-2,STONE)
+B(-4,3,-1,STONE)
+B(-4,3,0,STONE)
+B(-4,4,-6,STONE)
+B(-4,4,-5,STONE)
+B(-4,4,-4,STONE)
+B(-4,4,-3,STONE)
+B(-4,4,-2,STONE)
+B(-4,4,-1,STONE)
+B(-4,5,-5,STONE)
+B(-4,5,-4,STONE)
+B(-4,5,-3,STONE)
+B(-4,5,-2,STONE)
+B(-4,5,-1,STONE)
+B(-4,6,-4,STONE)
+B(-4,6,-3,STONE)
+B(-3,1,-3,STONE)
+B(-3,2,-5,STONE)
+B(-3,2,-4,STONE)
+B(-3,2,-3,STONE)
+B(-3,2,-2,STONE)
+B(-3,3,-6,STONE)
+B(-3,3,-5,STONE)
+B(-3,3,-4,STONE)
+B(-3,3,-3,STONE)
+B(-3,3,-2,STONE)
+B(-3,3,-1,STONE)
+B(-3,3,0,STONE)
+B(-3,4,-5,STONE)
+B(-3,4,-4,STONE)
+B(-3,4,-3,STONE)
+B(-3,4,-2,STONE)
+B(-3,5,-3,STONE)
+B(-2,2,-4,STONE)
+B(-2,2,-3,STONE)
+B(-2,2,-2,STONE)
+B(-2,3,-5,STONE)
+B(-2,3,-4,STONE)
+B(-2,3,-3,STONE)
+B(-2,3,-2,STONE)
+B(-2,3,-1,STONE)
+B(-2,3,0,STONE)
+B(-2,4,-4,STONE)
+B(-2,4,-3,STONE)
+B(-2,4,-2,STONE)
+B(-1,3,-2,STONE)
+B(-1,3,-1,STONE)
+
+# Use the ModData() tag to include data that other mods can use
+# ModData(x,y,z,ModName,DataText)
+# Example: ModData(x,y,z,MyCystomNPCMod,SpawnBobHere/WithAPotato/And50Health)
+# MCW has some built in ModData commands for basic mob and block spawning.
+# These are mostly just a demonstration for mod makers to show how ModData.
+# can be used by other mods.
+# For mob spawning in MCW use: ModData(x,y,z,TC/MCW,mob/MobType/Count/Persistent/Name)
+# mob: Makes MCW recognise this as a mob spawning command.
+# MobType: Lower-case, no spaces. Any vanilla mob like dragon, skeleton, wither, villager etc
+# Count: The number of mobs to spawn
+# Persistent (true/false): Should the mobs never de-spawn? If set to true the mob will get a
+# name-tag ingame so you can recognise it.
+# Name: A name-tag for the monster/npc.
+# Example: ModData(0,0,0,TC/MCW,villager/1/true/Bob)
+# For a complete list of possible creatures check the mc forums or the mctcp forums.
+# To spawn blocks using ModData use: ModData(x,y,z,TC/MCW,block/material)
+# block: Makes MCW recognise this as a block spawning command.
+# material: id or text, custom blocks can be added using ModName:MaterialName.
+# To send all ModData within a radius in chunks around the player to the specified mod
+# use this console command: /mcw GetModData ModName Radius
+# ModName: name of the mod, for MCW commands use TC/MCW 
+# Radius (optional): Radius in chunks around the player.
+# Mod makers can use ModData and the /mcw GetModData command to test IMC communications between MCW
+# and their mod.
+# Normal users can use it to spawn some mobs and blocks on command!
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# This settings is disabled for MCW.
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+# Check the mctcp forums, the mc forums and PeeGee85 YT channel for.
+# Documentation and tutorials for the branching features.
+# Branch(x,y,z,isBranchEnding,branchName,rotation,chance,branchLength)
+# branchName - filename of the object to spawn (without extension).
+# rotation - NORTH, SOUTH, EAST or WEST.
+# chance - Chance to spawn between 0 and 100
+
+# WBR(x,y,z,isBranchEnding,branchName,rotation,chance,branchLength,[anotherBranchName,rotation,chance,branchLenght[,...]],maxChanceOutOf)
+# maxChanceOutOf - The chance all branches have to spawn out of, assumed to be 100 when left blank
+# Example: WBR(0,0,0,true,RandomInterior1,NORTH,20,0,RandomInterior2,NORTH,20,0,RandomInterior3,NORTH,20,0,RandomInterior4,NORTH,20,0)
+

@@ -1,0 +1,256 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 100.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 255
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: STONE:1,STONE:3,STONE:5,DIRT:1,DIRT,SAND,GRASS,DIRT:2,HARD_CLAY,STAINED_CLAY,CLAY,SANDSTONE,SAND:1,AIR,STONE,GRAVEL,LONG_GRASS,LONG_GRASS:1,LONG_GRASS:2,DEAD_BUSH,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-3,6,-3,LEAVES_2:5)
+Block(-3,6,-2,LEAVES_2:9)
+Block(-3,6,-1,LEAVES_2:9)
+Block(-3,7,-3,LEAVES_2:5)
+Block(-3,7,-2,LEAVES_2:13)
+Block(-3,7,-1,LEAVES_2:9)
+Block(-3,7,0,LEAVES_2:9)
+Block(-2,6,-3,LEAVES_2:9)
+Block(-2,6,-2,LEAVES_2:9)
+Block(-2,6,-1,LEAVES_2:9)
+Block(-2,6,0,LEAVES_2:9)
+Block(-2,6,1,LEAVES_2:9)
+Block(-2,7,-4,LEAVES_2:13)
+Block(-2,7,-3,LEAVES_2:9)
+Block(-2,7,-2,LEAVES_2:9)
+Block(-2,7,-1,LEAVES_2:9)
+Block(-2,7,0,LEAVES_2:9)
+Block(-2,7,1,LEAVES_2:9)
+Block(-2,8,-2,LEAVES_2:5)
+Block(-2,8,-1,LEAVES_2:9)
+Block(-1,6,-5,LEAVES_2:5)
+Block(-1,6,-4,LEAVES_2:13)
+Block(-1,6,-3,LEAVES_2:9)
+Block(-1,6,-2,LEAVES_2:9)
+Block(-1,6,-1,LEAVES_2:13)
+Block(-1,6,0,LEAVES_2:9)
+Block(-1,6,2,LEAVES_2:9)
+Block(-1,7,-5,LEAVES_2:13)
+Block(-1,7,-4,LEAVES_2:9)
+Block(-1,7,-3,LEAVES_2:9)
+Block(-1,7,-2,LEAVES_2:9)
+Block(-1,7,-1,LEAVES_2:9)
+Block(-1,7,0,LEAVES_2:9)
+Block(-1,7,1,LEAVES_2:9)
+Block(-1,7,2,LEAVES_2:13)
+Block(-1,8,-3,LEAVES_2:13)
+Block(-1,8,-2,LEAVES_2:9)
+Block(-1,8,-1,LEAVES_2:9)
+Block(-1,8,0,LEAVES_2:9)
+Block(0,4,0,LOG_2:1)
+Block(0,3,0,LOG_2:1)
+Block(0,2,0,LOG_2:1)
+Block(0,1,0,LOG_2:1)
+Block(0,0,0,LOG_2:1)
+Block(0,5,-1,LOG_2:1)
+Block(0,5,0,LOG_2:1)
+Block(0,6,-5,LEAVES_2:5)
+Block(0,6,-4,LEAVES_2:13)
+Block(0,6,-3,LEAVES_2:9)
+Block(0,6,-2,LEAVES_2:9)
+Block(0,6,-1,LOG_2:1)
+Block(0,6,0,LOG_2:1)
+Block(0,6,1,LEAVES_2:9)
+Block(0,6,2,LEAVES_2:9)
+Block(0,7,-5,LEAVES_2:13)
+Block(0,7,-4,LEAVES_2:9)
+Block(0,7,-3,LEAVES_2:9)
+Block(0,7,-2,LEAVES_2:9)
+Block(0,7,-1,LOG_2:1)
+Block(0,7,0,LOG_2:1)
+Block(0,7,1,LEAVES_2:9)
+Block(0,7,2,LEAVES_2:9)
+Block(0,8,-4,LEAVES_2:5)
+Block(0,8,-3,LEAVES_2:9)
+Block(0,8,-2,LEAVES_2:9)
+Block(0,8,-1,LEAVES_2:9)
+Block(0,8,0,LEAVES_2:9)
+Block(0,8,1,LEAVES_2:9)
+Block(0,9,-2,LEAVES_2:5)
+Block(0,9,-1,LEAVES_2:5)
+Block(1,6,-5,LEAVES_2:5)
+Block(1,6,-4,LEAVES_2:9)
+Block(1,6,-3,LEAVES_2:9)
+Block(1,6,-2,LEAVES_2:9)
+Block(1,6,-1,LEAVES_2:13)
+Block(1,6,0,LEAVES_2:13)
+Block(1,6,1,LEAVES_2:13)
+Block(1,6,2,LEAVES_2:9)
+Block(1,7,-5,LEAVES_2:13)
+Block(1,7,-4,LEAVES_2:9)
+Block(1,7,-3,LEAVES_2:9)
+Block(1,7,-2,LEAVES_2:9)
+Block(1,7,-1,LEAVES_2:13)
+Block(1,7,0,LEAVES_2:13)
+Block(1,7,1,LEAVES_2:9)
+Block(1,7,2,LEAVES_2:9)
+Block(1,8,-4,LEAVES_2:13)
+Block(1,8,-3,LEAVES_2:9)
+Block(1,8,-2,LEAVES_2:9)
+Block(1,8,-1,LEAVES_2:9)
+Block(1,8,0,LEAVES_2:9)
+Block(1,8,1,LEAVES_2:9)
+Block(1,9,-2,LEAVES_2:5)
+Block(1,9,-1,LEAVES_2:5)
+Block(2,6,-4,LEAVES_2:9)
+Block(2,6,-3,LEAVES_2:9)
+Block(2,6,-2,LEAVES_2:5)
+Block(2,6,-1,LEAVES_2:13)
+Block(2,6,0,LEAVES_2:9)
+Block(2,6,1,LEAVES_2:9)
+Block(2,7,-5,LEAVES_2:13)
+Block(2,7,-4,LEAVES_2:9)
+Block(2,7,-3,LEAVES_2:9)
+Block(2,7,-2,LEAVES_2:9)
+Block(2,7,-1,LEAVES_2:9)
+Block(2,7,0,LEAVES_2:9)
+Block(2,7,1,LEAVES_2:9)
+Block(2,7,2,LEAVES_2:13)
+Block(2,8,-3,LEAVES_2:13)
+Block(2,8,-2,LEAVES_2:9)
+Block(2,8,-1,LEAVES_2:9)
+Block(2,8,0,LEAVES_2:9)
+Block(3,6,-4,LEAVES_2:5)
+Block(3,6,-3,LEAVES_2:9)
+Block(3,6,-2,LEAVES_2:9)
+Block(3,6,-1,LEAVES_2:9)
+Block(3,6,0,LEAVES_2:9)
+Block(3,6,1,LEAVES_2:9)
+Block(3,7,-4,LEAVES_2:13)
+Block(3,7,-3,LEAVES_2:9)
+Block(3,7,-2,LEAVES_2:9)
+Block(3,7,-1,LEAVES_2:9)
+Block(3,7,0,LEAVES_2:9)
+Block(3,7,1,LEAVES_2:9)
+Block(3,8,-2,LEAVES_2:13)
+Block(3,8,-1,LEAVES_2:9)
+Block(4,6,-2,LEAVES_2:9)
+Block(4,6,-1,LEAVES_2:9)
+Block(4,6,0,LEAVES_2:13)
+Block(4,7,-3,LEAVES_2:13)
+Block(4,7,-2,LEAVES_2:13)
+Block(4,7,-1,LEAVES_2:13)
+Block(4,7,0,LEAVES_2:13)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand,biomesoplenty:hard_ice,biomesoplenty:white_sand,biomesoplenty:white_sandstone,biomesoplenty:mud,biomesoplenty:ash_block)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
