@@ -36,6 +36,8 @@ mods/OpenTerrainGenerator/worlds/BBOP/Fallbacks.ini
 
 # 3d party mods
 !mods/thaumicenergistics-*.jar
+!mods/Sound-Physics-*.jar
+!mods/Nutrition-*.jar
 
 # Devonly configs
 config/gliby_vc/
