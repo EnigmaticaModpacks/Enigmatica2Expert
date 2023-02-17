@@ -10,23 +10,29 @@ scripts.category.tooltip_utils.desc.tooltip(<openblocks:guide>, 'redstone.need')
 val o = <ore:ingotAlubrass>;
 
 for i in 0 to 16 {
-  val item1 = itemUtils.getItem("openblocks:elevator", i);
+  val elevator = itemUtils.getItem("openblocks:elevator", i);
   val wool = <minecraft:wool>.definition.makeStack(i);
-  if (!isNull(item1)) {
-    recipes.remove(item1);
-    recipes.addShaped(item1, [
+  if (!isNull(elevator)) {
+    recipes.remove(elevator);
+    recipes.addShaped(elevator, [
       [wool  , wool  , wool],
       [wool  , o     , wool],
       [wool  , wool  , wool]]);
+    recipes.addShapeless('elevator coloring '~i, elevator, [
+      <openblocks:elevator:*>, scripts.vars.oreDye[i]
+    ]);
   }
 
-  val item2 = itemUtils.getItem("openblocks:elevator_rotating", i);
-  if (!isNull(item2)) {
-    recipes.remove(item2);
-    recipes.addShaped(item2, [
+  val rotating = itemUtils.getItem("openblocks:elevator_rotating", i);
+  if (!isNull(rotating)) {
+    recipes.remove(rotating);
+    recipes.addShaped(rotating, [
       [wool  , <ore:ingotFakeIron>  , wool],
       [wool  , o     , wool],
       [wool  , wool  , wool]]);
+    recipes.addShapeless('rotating coloring '~i, rotating, [
+      <openblocks:elevator_rotating:*>, scripts.vars.oreDye[i]
+    ]);
   }
 }
 

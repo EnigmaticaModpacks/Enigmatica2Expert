@@ -266,9 +266,6 @@ craft.shapeless(<endreborn:item_ingot_endorium>, "‚‚‚‚‚‚‚‚‚", 
   "‚": <endreborn:item_raw_endorium>, # Endorium Nugget
 });
 
-# "Purification" of shards into nuggets
-scripts.do.expire_in_block.set(<tconstruct:shard>.withTag({Material: "wolframium"}),  {"biomesoplenty:blue_fire": <endreborn:wolframium_nugget>});
-
 #----------------------------------------------------------------------------
 # Tungsten
 #----------------------------------------------------------------------------

@@ -316,6 +316,7 @@ addChemthrowerEffect(<liquid:ic2hot_coolant>      ,false, false, "chemicals", 11
 addChemthrowerEffect(<liquid:crystal>             ,false, false, "chemicals", 20);
 addChemthrowerEffect(<liquid:plasma>              ,true , false, "chemicals", 28);
 addChemthrowerEffect(<liquid:liquid_death>        ,false, false, "chemicals", 30);
+addChemthrowerEffect(<liquid:hot_mercury>         ,true , false, "chemicals", 68);
 addChemthrowerEffect(<liquid:neutronium>          ,false, false, "chemicals", 360);
 
 

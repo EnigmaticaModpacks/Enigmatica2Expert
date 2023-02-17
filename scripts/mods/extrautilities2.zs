@@ -183,15 +183,15 @@ craft.remake(<extrautils2:playerchest>, ["pretty",
 	C: <enderstorage:ender_storage>,
 });
 
-# [Deep_Dark_Portal] from [Black_Iron_Lamp][+3]
+# [Deep Dark Portal] from [Block of Evil Infused Iron][+3]
 craft.remake(<extrautils2:teleporter:1>, ["pretty",
-  "░ ☺ ░",
-  "◊ B ◊",
-  "░ ☺ ░"], {
-  "░": <ore:compressed5xCobblestone>, # Sextuple Compressed Cobblestone
-  "B": <extendedcrafting:lamp:1>,     # Black Iron Lamp
-  "◊": <extrautils2:decorativesolid:6>, # Blue Quartz
-  "☺": <contenttweaker:blasted_coal>  # Blasted Coal
+  "░ Q ░",
+  "⌃ ■ ⌃",
+  "░ Q ░"], {
+  "░": <ore:compressed5xCobblestone>,   # Quintuple Compressed Cobblestone
+  "Q": <extrautils2:decorativesolid:7>, # Quartzburnt
+  "⌃": <extrautils2:decorativesolid:6>, # Blue Quartz
+  "■": <ore:blockEvilMetal>,            # Block of Evil Infused Iron
 });
 
 # [Ender_Porcupine] from [Indexer][+2]
@@ -509,3 +509,22 @@ craft.reshapeless(<extrautils2:decorativesolid:4> * 6, "sGGG", {
   "s": <ore:sand>, # Sand
   "G": <quark:glass_shards:*>, # Glass Shard
 });
+
+function remakeEnchanterRecipe(
+  oldInput as IItemStack,
+  oldLapis as IItemStack,
+  input as IIngredient,
+  input_lapis as IIngredient,
+  output as IItemStack,
+  energy as int,
+  time as int
+) as void {
+  val enchanter = extrautilities2.Tweaker.IMachineRegistry.getMachine("extrautils2:enchanter");
+  enchanter.removeRecipe({input: oldInput, input_lapis: oldLapis});
+  enchanter.addRecipe({input: input, input_lapis: input_lapis}, {output: output}, energy, time);
+}
+
+remakeEnchanterRecipe(<minecraft:gold_block>, <minecraft:dye:4> * 9      , <ore:blockElectrum>, <ore:blockLapis>      , <extrautils2:simpledecorative>  ,  50000, 20*30);
+remakeEnchanterRecipe(<minecraft:gold_ingot>, <minecraft:dye:4>          , <ore:ingotElectrum>, <ore:gemLapis>        , <extrautils2:ingredients:12>    ,   8000, 20*10);
+remakeEnchanterRecipe(<minecraft:iron_block> * 8, <minecraft:nether_star> * 9, <ore:blockPigiron> , <ore:netherStar>      , <extrautils2:simpledecorative:2>, 500000, 4800);
+remakeEnchanterRecipe(<minecraft:iron_ingot> * 8, <minecraft:nether_star>    , <ore:ingotPigiron> , <ore:nuggetNetherStar>, <extrautils2:ingredients:17>    ,  80000, 480);

@@ -214,21 +214,6 @@ craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
 	mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:block_crystal_empowered:5>);
 	mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:block_crystal_empowered:5>, <actuallyadditions:block_crystal:5>, <minecraft:quartz_block>, <minecraft:bone_block>, <mekanism:ingot:1>, <nuclearcraft:gem:2>, 250000, 200, [1.0, 1.0, 1.0]);
 
-
-# *======= Grinder =======*
-	#BoP Gems -> Dyes
-	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:9> * 2, <biomesoplenty:gem_block:1>, <minecraft:dye:9> * 2, 50);
-	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:2> * 2, <biomesoplenty:gem_block:2>, <minecraft:dye:2> * 2, 50);
-	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:14> * 2, <biomesoplenty:gem_block:3>, <minecraft:dye:14> * 2, 50);
-	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:10> * 2, <biomesoplenty:gem_block:5>, <minecraft:dye:10> * 2, 50);
-	mods.actuallyadditions.Crusher.addRecipe(<minecraft:dye:12> * 2, <biomesoplenty:gem_block:6>, <minecraft:dye:6> * 2, 50);
-	
-	# Certus Quartz compatibility
-	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:1> * 2, <appliedenergistics2:charged_quartz_ore>);
-	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material:1>);
-	mods.actuallyadditions.Crusher.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
-
-
 # *======= TreasureChest =======*
 	#mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
 	#mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
@@ -373,6 +358,10 @@ scripts.process.crush(<ore:blockQuartzBlack>, <actuallyadditions:item_dust:7> * 
 
 # Missed Crushed Emerald recipe
 scripts.process.crush(<ore:gemEmerald>, <actuallyadditions:item_dust:3>, "Only: Grindstone AEGrinder", null, null);
+
+# Manually add silver secondary output
+scripts.process.crush(<ore:oreGold>, <thermalfoundation:material:1> * 2, "strict: AACrusher", [<contenttweaker:dust_tiny_silver>], [1.0f]);
+scripts.process.crush(<ore:oreLead>, <thermalfoundation:material:67> * 2, "strict: AACrusher", [<contenttweaker:dust_tiny_silver>], [0.5f]);
 
 # Recycle Quark crystals
 function recycleCrystal(input as IItemStack, output as IItemStack) {

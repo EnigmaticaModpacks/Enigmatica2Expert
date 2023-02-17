@@ -64,17 +64,17 @@ val chaliceGrid = {
 [<liquid:lifeessence>            *10,<liquid:lava>                         *90]:[<tconstruct:slime:3>                        ,<thaumcraft:flesh_block>                      ,<minecraft:nether_wart_block>                   ],
 [<liquid:lifeessence>            *10,<liquid:astralsorcery.liquidstarlight>*90]:[<harvestcraft:honey>                        ,<harvestcraft:honeycomb>                      ,<biomesoplenty:honey_block>                     ],
 [<liquid:lifeessence>            *10,<liquid:cloud_seed_concentrated>      *90]:[utils.tryCatch("animania:wool", 4, <minecraft:wool>), utils.tryCatch("animania:wool",2, <minecraft:wool>), utils.tryCatch("animania:wool", <minecraft:wool>)],
-[<liquid:plasma>                 *10,<liquid:water>                        *90]:[<mekanism:saltblock>                        ,<additionalcompression:dustsugar_compressed:1>,<additionalcompression:dustgunpowder_compressed>],
-[<liquid:plasma>                 *10,<liquid:lava>                         *90]:[<minecraft:magma>                           ,<additionalcompression:flint_compressed:1>    ,<additionalcompression:coal_compressed:2>       ],
-[<liquid:plasma>                 *10,<liquid:astralsorcery.liquidstarlight>*90]:[<quark:sugar_block>                         ,<biomesoplenty:white_sand>                    ,<astralsorcery:blockmarble>                     ],
-[<liquid:plasma>                 *10,<liquid:cloud_seed_concentrated>      *90]:[<enderio:block_fused_quartz>                ,<mysticalagriculture:storage:5>               ,<biomesoplenty:crystal>                         ],
-[<liquid:plasma>                 *10,<liquid:lifeessence>                  *90]:[<excompressum:compressed_block:6>           ,<minecraft:bone_block>                        ,<iceandfire:dragon_bone_block>                  ],
+[<liquid:hot_mercury>            *10,<liquid:water>                        *90]:[<mekanism:saltblock>                        ,<additionalcompression:dustsugar_compressed:1>,<additionalcompression:dustgunpowder_compressed>],
+[<liquid:hot_mercury>            *10,<liquid:lava>                         *90]:[<minecraft:magma>                           ,<additionalcompression:flint_compressed:1>    ,<additionalcompression:coal_compressed:2>       ],
+[<liquid:hot_mercury>            *10,<liquid:astralsorcery.liquidstarlight>*90]:[<quark:sugar_block>                         ,<biomesoplenty:white_sand>                    ,<astralsorcery:blockmarble>                     ],
+[<liquid:hot_mercury>            *10,<liquid:cloud_seed_concentrated>      *90]:[<enderio:block_fused_quartz>                ,<mysticalagriculture:storage:5>               ,<biomesoplenty:crystal>                         ],
+[<liquid:hot_mercury>            *10,<liquid:lifeessence>                  *90]:[<excompressum:compressed_block:6>           ,<minecraft:bone_block>                        ,<iceandfire:dragon_bone_block>                  ],
 [<liquid:ic2uu_matter>           *10,<liquid:water>                        *90]:[<quark:crystal:0>                           ,<quark:crystal:6>                             ,<actuallyadditions:block_crystal:2>             ],
 [<liquid:ic2uu_matter>           *10,<liquid:lava>                         *90]:[<advancedrocketry:basalt>                   ,<draconicevolution:infused_obsidian>          ,<draconicevolution:draconium_block>             ],
 [<liquid:ic2uu_matter>           *10,<liquid:astralsorcery.liquidstarlight>*90]:[<quark:marble>                              ,<minecraft:quartz_block>                      ,<thermalfoundation:storage:7>                   ],
 [<liquid:ic2uu_matter>           *10,<liquid:cloud_seed_concentrated>      *90]:[<randomthings:superlubricentice>            ,<nuclearcraft:supercold_ice>                  ,<enderio:block_alloy:6>                         ],
 [<liquid:ic2uu_matter>           *10,<liquid:lifeessence>                  *90]:[<additionalcompression:meatbeef_compressed> ,<minecraft:nether_wart_block>                 ,<tconevo:metal_block:5>                         ],
-[<liquid:ic2uu_matter>           *10,<liquid:plasma>                       *90]:[<enderio:block_infinity>                    ,<minecraft:obsidian>                          ,<tconevo:metal_block:7>                         ],
+[<liquid:ic2uu_matter>           *10,<liquid:hot_mercury>                  *90]:[<enderio:block_infinity>                    ,<minecraft:obsidian>                          ,<tconevo:metal_block:7>                         ],
 } as IItemStack[][ILiquidStack[]];
 
 #### Honorable mentions: ####
@@ -119,8 +119,8 @@ for lList, itList in chaliceGrid {
 for lList, itList in chaliceGrid {
 	val b1 = Bucket(lList[0].name);
 	val b2 = Bucket(lList[1].name);
-	scripts.jei.mod.astralsorcery.add_everflow_chalice(b2, b1, itList);
-	scripts.jei.liquids.interact(b1, b2, itList[0]);
+	scripts.jei.mod.astralsorcery.add_everflow_chalice(lList[0], lList[1], itList);
+	scripts.jei.liquids.interact(lList[0], lList[1], null, itList[0]);
 }
 
 
@@ -183,7 +183,7 @@ for pos, names in utils.graph([
 	k: ["ic2uu_matter", "enrichedlava"],
 	l: [],
 	n: ["empoweredoil"],
-	o: ["plasma", "perfect_fuel"],
+	o: ["plasma", "hot_mercury", "perfect_fuel"],
 	p: ["infinity_metal"],
 
 	# Non-fuel Metals
