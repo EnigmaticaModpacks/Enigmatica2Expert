@@ -1,0 +1,55 @@
+{
+	title: "Sharpness Modifier",
+	x: 6.7d,
+	y: 2.0d,
+	text: [
+		"Each level of §fSharpness§r adds:",
+		"+ §a1§r bare damage",
+		"+ §a10%§r from base damage",
+		"+ §abase*lvl⁴/20000§r as high-level bonus",
+		"",
+		"Whole formula is:",
+		"§7base+lvl+",
+		"0.1*lvl*base+",
+		"base*lvl^4/20000§r",
+		"",
+		"For example, if your weapon deals 10 damage, there is",
+		"§2Sharpness level§r : §atotal damage§r",
+		"§21§r :§a 12§r",
+		"§25§r :§a 20§r",
+		"§210§r :§a 35§r",
+		"§220§r :§a 130§r",
+		"",
+		"§6For 20 base damage§r",
+		"§21§r :§a 23§r",
+		"§25§r :§a 35§r",
+		"§210§r :§a 60§r",
+		"§220§r :§a 240§r",
+		"",
+		"§cFor base = 40§r",
+		"§21§r :§a 45§r",
+		"§25§r :§a 66§r",
+		"§210§r :§a 110§r",
+		"§220§r :§a 460§r"
+	],
+	dependencies: [
+		"4fc58528"
+	],
+	tasks: [{
+		uid: "ff64fe3b",
+		type: "item",
+		items: [{
+			item: "minecraft:quartz"
+		}]
+	}],
+	rewards: [{
+		uid: "132cc5fd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "food"
+			}
+		}
+	}]
+}

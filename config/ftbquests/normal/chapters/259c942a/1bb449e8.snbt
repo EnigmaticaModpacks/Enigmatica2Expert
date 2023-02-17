@@ -1,4 +1,10 @@
 {
+	icon: {
+		id: "portabledrill:portable_drill",
+		ForgeCaps: {
+			"portabledrill:energy": 0
+		}
+	},
 	x: 4.5d,
 	y: 6.0d,
 	text: [
@@ -13,6 +19,15 @@
 		items: [{
 			item: "portabledrill:portable_drill"
 		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "32f1247f",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:coresample"
+		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{
