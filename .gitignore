@@ -31,8 +31,10 @@ structures/inactive
 !mods
 mods/*
 !mods/OpenTerrainGenerator
-mods/OpenTerrainGenerator/worlds/BBOP/WorldObjects
-mods/OpenTerrainGenerator/worlds/BBOP/Fallbacks.ini
+!mods/OpenTerrainGenerator/worlds/BBOP-Extended/**
+mods/OpenTerrainGenerator/worlds/BBOP-Extended/WorldObjects/_Copies
+!mods/OpenTerrainGenerator/worlds/Void/**
+mods/OpenTerrainGenerator/worlds/Void/WorldObjects/_Copies
 
 # 3d party mods
 !mods/thaumicenergistics-*.jar
@@ -46,21 +48,15 @@ config/simplelogin.cfg
 # Files created by client
 config/InvTweaks.cfg
 config/MouseTweaks.cfg
-
 config/jei/worldSettings.cfg
 config/jei/lookupHistory.zip
 config/jei/bookmarks.ini
-
 config/InvTweaks/InvTweaks.cfg
 config/scavenge/IResourceProperty.txt
 config/codechicken/supporters.json
-
 config/AppliedEnergistics2/items.csv
-
 config/brandon3055/ResourceCache/
-
 config/armoryexpansion/*
-
 config/cd4017be/compiled.dat
 config/brandon3055/contributors.json
 config/brandon3055/ProjectIntelligence/
@@ -83,12 +79,10 @@ dev/default_configs/default_config_outdated
 config/JustEnoughCalculation/data/groups.json
 config/activity.json
 config/customloadingscreen_timings.nbt
-
 config/enderio/recipes/*.pdf
 config/enderio/recipes/**/*.xsd
 config/enderio/recipes/examples/*
 config/biomesoplenty/biomes/*
-
 config/triumph/documentation/*
 config/tinker_ore_dict_melting_cache.dat
 config/jeiexporter

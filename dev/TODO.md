@@ -15,11 +15,14 @@ List of priorities:
 - [ ] ✏️ Add recipe for Tungsten Seed
 - [ ] ✏️ Add recipes for T6 Blood Magic Altair
 - [ ] ✏️ TerraWart should Remove Radiation
+- [ ] ✏️ Alchemy Table fix coal dupe
+- [ ] ✏️ Remove Desiderium from podium
 - [ ] 🔨 Nerf Mirion stats
 - [ ] 🔄 bow On Dragon Causing Crash
 - [ ] 🔄 Move langs to CoT files
 - [ ] 🔄 fix Thaumic Energistics Mod Version On Server
 - [ ] 🔄 add Bbop Configs To Package
+- [ ] 🌍 AbandonedWoodTower less spawn
 - [ ] 🧱 Automation not run automatically
 - [ ] 🔴 Remove Void Island Control (void island created by hand)
 - [ ] 📖 lava Sigil In Geothermal Quest Hint
