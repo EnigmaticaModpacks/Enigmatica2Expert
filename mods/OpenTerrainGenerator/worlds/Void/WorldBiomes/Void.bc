@@ -50,7 +50,7 @@ BiomeColor: #B6D0FF
 # Replace this biome to specified after the terrain is generated.
 # This will make the world files contain the id of the specified biome, instead of the id of this biome.
 # This will cause saplings, colors and mob spawning work as in specified biome.To replace to minecraft biomes use resourcelocation notation, for instance: minecraft:plains.
-ReplaceToBiomeName: minecraft:void
+ReplaceToBiomeName: minecraft:plains
 
 ####################
 # Isle biomes only #
@@ -533,5 +533,5 @@ BiomeDictId:
 # and SpawnAmbientCreatures settings. Any mob type defined using those settings
 # will override inherited mob settings for the same mob.
 # Use this setting to inherit modded mobs from vanilla biomes (see also: BiomeDictId)
-InheritMobsBiomeName: The Void
+InheritMobsBiomeName: Plains
 
