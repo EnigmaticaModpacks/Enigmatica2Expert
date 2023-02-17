@@ -9,13 +9,24 @@ List of priorities:
 - [ ] ✏️ Unify `Mercury`
 - [ ] ✏️ Unify `Sodium Chloride`
 - [ ] ✏️ Add more `Mutagen` recipes
-- [ ] ✏️ Fix Quark Roots spawned mid air https://github.com/Rebirth-of-the-Night/Quark/issues/16
-- [ ] ✏️ Change recipes of *Enchanted* and *Evil Infused* metals from modded alloys instead of vanilla
-- [ ] 🔄 Disable Mob spawn on bedrock ore
-- [ ] 📖 Add note about Multiblock Madness modpack
+- [ ] ✏️ Tiny Potato add back conversion recipe
+- [ ] ✏️ Fix Creosote seed wrong seed tier
+- [x] ✏️ Change recipes of *Enchanted* and *Evil Infused* metals from modded alloys instead of vanilla
+- [ ] ✏️ Add recipe for Tungsten Seed
+- [ ] ✏️ Add recipes for T6 Blood Magic Altair
+- [ ] ✏️ TerraWart should Remove Radiation
+- [ ] 🔨 Nerf Mirion stats
+- [ ] 🔄 bow On Dragon Causing Crash
+- [ ] 🔄 Move langs to CoT files
+- [ ] 🔄 fix Thaumic Energistics Mod Version On Server
+- [ ] 🔄 add Bbop Configs To Package
+- [ ] 🧱 Automation not run automatically
+- [ ] 🔴 Remove Void Island Control (void island created by hand)
+- [ ] 📖 lava Sigil In Geothermal Quest Hint
+- [ ] 📖 Add amount of blocks for Blood Magic altairs
 
-Tests required
-- Check BOP generation
+### v0.89.0 -> Next
+- Turn off Fusion reactors since plasma
 
 ---
 
@@ -25,13 +36,18 @@ Tests required
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Fix Quark Roots spawned mid air https://github.com/Rebirth-of-the-Night/Quark/issues/16
+- [ ] 📀 Make ic2 crops scanned by default
+- [ ] ✏️ Make Replicator Accept Mem Crystals
+- [ ] ✏️ Add Item to auto-repair TCon tools with sharpening kits in inventory
 - [ ] ✏️ Add Tier6 Blood Magic Altair
 - [ ] 🔄 Move FTB ranks to default configs
 - [ ] ✏️ Some QBD / NCO craft MUST use <opencomputers:print>
 - [ ] ✏️ Remove Fiery fruit from Target Chamber recipe
 - [ ] 🔄 Inspect crash when placing Replicator near energy and break it
 - [ ] 🔄 Shooting Flamed arrows into IceAndFire dragon caused client crash. Checked - Quark not a reason. `"Spreading Fire"=false` and `burningArrowsSetBlocksOnFire=false` not helps too. 
-- [ ] 🟢 add **Villager Trade Tables**
+- [ ] 🟢 Add **Villager Trade Tables**
+- [ ] 🟢 Add `birdsonawaire` when fixed https://github.com/BananaFructa/birdsonawaire/issues/5
 - [ ] 📖 Add quest book chapter about built-in excavators
 - [ ] 📖 Add message about mining Ores in Nether that aggro Pigman. Use whitelist, ignore if Peaceful.
 - [ ] 📖 Give player `Tier1 box` instead of putting Decor into Common boxes

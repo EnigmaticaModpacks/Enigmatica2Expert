@@ -119,7 +119,10 @@ events.onPlayerLeftClickBlock(function(e as crafttweaker.event.PlayerLeftClickBl
 
   e.player.sendMessage("§eLeft Clicked§r");
   // dumpLightSources(e.player);
-  dumpOreBlocks();
+  // dumpOreBlocks();
+  for slot in extrautilities2.Tweaker.IMachineRegistry.getMachine("extrautils2:enchanter").getOutputSlots() {
+    server.commandManager.executeCommand(server, '/say §aslot: '~slot.name);
+  }
   e.player.sendMessage("§8Done!§r");
 });
 

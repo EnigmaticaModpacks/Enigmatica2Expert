@@ -18,8 +18,8 @@ schematics/*.*
 !.gitattributes
 !minecraftinstance.json
 !patchouli_books/
-!structures/
 !bansoukou/
+!structures/
 structures/inactive
 !manifest.json
 !.gitignore
