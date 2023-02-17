@@ -167,11 +167,8 @@ const style = {
   )?.trim()
   const nextVersion = inputVersion || oldVersion || 'v???'
 
-  if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
+  if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`))
     execSyncInherit(`node ./dev/changelog.js --next=${nextVersion}`)
-    await pressEnterOrEsc(`[${STEP++}] Manually fix LATEST.md and press ENTER.`)
-    execSyncInherit('node ./dev/changelog.js --append')
-  }
 
   await pressEnterOrEsc(
     `[${STEP++}] Clear your working tree, rebase, and press ENTER. Press ESC to skip.`,
