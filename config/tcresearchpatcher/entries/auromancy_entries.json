@@ -1,0 +1,41 @@
+{
+    "entries" :[
+        {
+            "key": "FOCUSANCIENT",    
+            "name": "Ancient Foci",
+            "icons": [ "thaumicaugmentation:focus_ancient" ],
+            "category": "AUROMANCY", "location": [ 2,-3 ], 
+            "parents": [ "FOCUSADVANCED","!EldritchGuardian" ], 
+            "stages": [
+                {
+                    "text": "I wonder what those Eldritch beings use to cast spells... I must investigate that...", 
+                    "required_knowledge":["THEORY;AUROMANCY;1","THEORY;ELDRITCH;1"],
+                    "required_craft":["thaumcraft:focus_2"]
+                },
+                {
+                    "text": "That's something navite to the void, but have a properties of advanced focus or even better! However something evil glare from the deeps of this focus...",
+                    "recipes": ["thaumcraft:focus_ancient"],
+                    "warp": 1
+                }
+            ]
+        },
+        {
+            "key": "CRYSTALBAG",    
+            "name": "research_name.thaumadditions:crystal_bag",
+            "icons": [ "thaumadditions:crystal_bag" ],
+            "category": "AUROMANCY", "location": [ -2,-3 ], 
+            "parents": [ "FOCUSPOUCH" ], 
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_bag.1", 
+                    "required_knowledge":["OBSERVATION;AUROMANCY;1","OBSERVATION;BASIC;1","THEORY;ALCHEMY;1"],
+                    "required_craft":["thaumcraft:focus_pouch"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:crystal_bag.2",
+                    "recipes": ["thaumcraft:crystal_bag"]
+                }
+            ]
+        }
+    ]
+}

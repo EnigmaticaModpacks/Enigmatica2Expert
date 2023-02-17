@@ -39,4 +39,43 @@ import thaumcraft.aspect.CTAspectStack;
 <biomesoplenty:hard_ice>                       .setAspects(<aspect:gelum>*21);
 <appliedenergistics2:sky_stone_block>          .setAspects(<aspect:alienis>*2     , <aspect:tenebrae>*7);
 <minecraft:sugar>                              .setAspects(<aspect:desiderium>    , <aspect:aqua>);
+<thaumcraft:alumentum>                         .setAspects(<aspect:ignis>*2       , <aspect:potentia>*2);
+<thaumcraft:condenser_lattice_dirty>           .setAspects(<aspect:vitium>*10); #that one is an interesting item
+<thaumcraft:ingot:2>                           .setAspects(<aspect:metallum>*5    , <aspect:instrumentum>*2);
 
+val nitor = [
+<thaumcraft:nitor_white>,
+<thaumcraft:nitor_orange>,
+<thaumcraft:nitor_magenta>,
+<thaumcraft:nitor_lightblue>,
+<thaumcraft:nitor_yellow>,
+<thaumcraft:nitor_lime>,
+<thaumcraft:nitor_pink>,
+<thaumcraft:nitor_gray>,
+<thaumcraft:nitor_silver>,
+<thaumcraft:nitor_cyan>,
+<thaumcraft:nitor_purple>,
+<thaumcraft:nitor_blue>,
+<thaumcraft:nitor_brown>,
+<thaumcraft:nitor_green>,
+<thaumcraft:nitor_red>,
+<thaumcraft:nitor_black>
+ ] as IItemStack[];
+for nitor in nitor{
+  nitor.setAspects(<aspect:lux>*2,<aspect:sensus>);
+}
+
+
+
+# New aspects support
+#[Sanguis aspect] source
+mods.bloodmagic.BloodAltar.addRecipe(
+<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "sanguis"}]}), #output
+<thaumcraft:phial>, #input
+1, #tier
+1000, #blood_essence_drain (how much essence crafting recipe require)
+20, #consume_rate (how fast it will take essence from altar)
+0); #drain_rate (how fast crafting process will decay if there is no blood in altar, 0 means no loss)
+
+#[Mana aspect] source
+mods.botania.ManaInfusion.addAlchemy(<thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "mana"}]}),<thaumcraft:phial>,5000);

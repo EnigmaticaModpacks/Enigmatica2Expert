@@ -18,6 +18,9 @@
     ,{"op": "replace",
     "path": "stages/1/required_item",
     "value": ["thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'mortuus'}]}","thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'permutatio'}]}"]}
+    ,{"op": "replace",
+    "path": "location",
+    "value": [4,2]}
   ]}
 
   ,{"key": "HEDGEALCHEMY","ops": [
@@ -85,4 +88,146 @@
     "path": "stages/1/recipes/0",
     "value": "thaumcraft:infusion_provider"}
   ]}
+  
+  ,{"key": "GLASS_TUBE","ops": [
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": "thaumcraft:glass_tube"}
+  ]}
+  
+  ,{"key": "BATHSALTS", "ops":[
+    {"op": "replace",
+    "path": "location",
+    "value": [-4,-4]},
+    {"op": "replace",
+    "path": "parents",
+    "value": ["VISSALT"]},
+    {"op": "replace",
+    "path": "stages/1/recipes/0",
+    "value": ["thaumcraft:bathsalts"]}
+  ]}
+
+  ,{"key": "ARCANESPA", "ops":[
+    {"op": "replace",
+    "path": "location",
+    "value": [-5,-5]}
+  ]}
+
+  ,{"key": "SANESOAP", "ops":[
+    {"op": "replace",
+    "path": "location",
+    "value": [-3,-5]},
+    {"op":"remove",
+    "path":"stages/0"}
+  ]}
+
+  ,{"key": "LEVITATOR", "ops":[
+    {"op": "add",
+    "path": "stages/1/recipes/-",
+    "value": "thaumcraft:flightdevice"}
+  ]}
+
+ ,{"key":"VOIDROBEARMOR", "ops":[
+  {"op":"replace",
+   "path":"location",
+   "value": [2,-2]} 
+ ]}
+
+ ,{"key":"VOIDSEERPEARL", "ops":[
+   {"op":"replace",
+    "path":"location",
+    "value": [-3,-1]} 
+ ]}
+ 
+ ,{"key":"TT_SHARE_TOME", "ops":[
+   {"op":"replace",
+    "path":"name",
+    "value": "research_name.thaumadditions:knowledge_tome"},
+  {"op":"replace",
+    "path":"icons",
+    "value": ["thaumadditions:knowledge_tome"]}
+  ,{"op":"replace",
+   "path":"stages/0/text",
+   "value": "research_stage.thaumadditions:knowledge_tome.2"}
+  ,{"op":"replace",
+   "path":"stages/0/recipes",
+   "value": ["thaumcraft:knowledge_tome"]} 
+ ]}
+ 
+ ,{"key": "BASEALCHEMY","ops": [
+   {"op": "add",
+   "path": "stages/0/recipes/-",
+   "value": ["thaumcraft:blue_bone"]}
+ ]}
+ 
+ ,{"key": "PURE_TEAR","ops": [
+   {"op": "replace",
+   "path": "stages/1/recipes/0",
+   "value": ["thaumcraft:pure_tear"]}
+ ]}
+ 
+ ,{"key": "CLEANSING_AMULET","ops": [
+   {"op": "replace",
+   "path": "stages/1/recipes/0",
+   "value": ["thaumcraft:cleansing_amulet"]}
+ ]}
+ 
+ ,{"key": "TWOND_ALKAHEST","ops": [
+   {"op": "replace",
+   "path": "stages/1/recipes/0",
+   "value": ["thaumcraft:alkahest_vat"]}
+   ,{"op": "add",
+   "path": "parents/-",
+   "value": "AURACHARGER"}
+ ]}
+ 
+ ,{"key": "IMPURE_TEAR","ops": [
+   {"op": "remove",
+   "path": "key"}
+ ]}
+
+ ,{"key":"ESSENTIASMELTERTHAUMIUM", "ops":[
+   {"op":"replace",
+    "path":"location",
+    "value": [6,2]},
+  {"op":"replace",
+  "path":"parents/1",
+  "value":"ESSENTIASMELTER"} 
+ ]}
+ 
+ ,{"key":"ESSENTIASMELTERVOID", "ops":[
+   {"op":"replace",
+    "path":"location",
+    "value": [8,2]} 
+ ]}
+ 
+ ,{"key":"THAUMATORIUM", "ops":[
+   {"op":"replace",
+    "path":"location",
+    "value": [8,-1]} 
+ ]}
+ 
+ ,{"key":"ESSENTIATRANSPORT", "ops":[
+   {"op":"replace",
+    "path":"location",
+    "value": [10,-1]} 
+  ]}
+ 
+ ,{"key":"FIRSTSTEPS","ops":[
+   {"op":"add",
+   "path": "stages/2/recipes/-",
+   "value":["crafttweaker:[thaumonomicon lectern] from [lectern][+2]"]}
+ ]}
+
+ ,{"key":"TWOND_VOID_FORTRESS_ARMOR","ops":[
+   {"op":"replace",
+   "path":"stages/1/recipes",
+   "value":["thaumcraft:void_fortress_helm", "thaumcraft:void_fortress_chest", "thaumcraft:void_fortress_legs"]}
+ ]}
+
+ ,{"key":"TCONEVO_PRIMALMETAL","ops":[
+   {"op":"replace",
+   "path":"stages/1/recipes",
+   "value":["thaumcraft:primal_metal"]}
+ ]}
 ]

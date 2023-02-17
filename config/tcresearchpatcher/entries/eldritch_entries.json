@@ -1,0 +1,446 @@
+{
+    "entries" :[
+        {
+            "key": "VOIDPICKAXE",    
+            "name": "research_name.thaumadditions:void_elemental_pickaxe",
+            "icons": [ "thaumadditions:void_elemental_pickaxe" ],
+            "category": "ELDRITCH", "location": [ -2,-4 ], 
+            "parents": [ "PRIMALCRUSHER" ], 
+            "meta": ["HIDDEN"],    
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_pickaxe.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "warp": 2
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_pickaxe.2",
+                    "recipes": ["thaumcraft:void_pickaxe"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDAXE",    
+            "name": "research_name.thaumadditions:void_elemental_axe",
+            "icons": [ "thaumadditions:void_elemental_axe" ],
+            "category": "ELDRITCH", "location": [ -1,-5 ], 
+            "parents": [ "PRIMALCRUSHER" ], 
+            "meta": ["HIDDEN"],    
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_axe.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "warp":2
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_axe.2",
+                    "recipes": ["thaumcraft:void_axe"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDSHOVEL",    
+            "name": "research_name.thaumadditions:void_elemental_shovel",
+            "icons": [ "thaumadditions:void_elemental_shovel" ],
+            "category": "ELDRITCH", "location": [ 1,-5 ], 
+            "parents": [ "PRIMALCRUSHER" ], 
+            "meta": ["HIDDEN"],    
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_shovel.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "warp":2
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_shovel.2",
+                    "recipes": ["thaumcraft:void_shovel"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDHOE",    
+            "name": "research_name.thaumadditions:void_elemental_hoe",
+            "icons": [ "thaumadditions:void_elemental_hoe" ],
+            "category": "ELDRITCH", "location": [ 2,-4 ], 
+            "parents": [ "PRIMALCRUSHER" ], 
+            "meta": ["HIDDEN"],    
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_hoe.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "warp":2
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_elemental_hoe.2",
+                    "recipes": ["thaumcraft:void_hoe"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDTHAUMOMETER",    
+            "name": "research_name.thaumadditions:void_thaumometer",
+            "icons": [ "thaumadditions:void_thaumometer" ],
+            "category": "ELDRITCH", "location": [ 2,2 ], 
+            "parents": [ "BASEELDRITCH" ], 
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_thaumometer.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "warp":1
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_thaumometer.2",
+                    "recipes": ["thaumcraft:void_thaumometer"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDCROP",    
+            "name": "research_name.thaumadditions:void_crop",
+            "icons": [ "thaumadditions:void_seed" ],
+            "category": "ELDRITCH", "location": [6,0 ], 
+            "parents": [ "VOIDSIPHON" ], 
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_crop.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "required_item":["thaumcraft:void_seed;13"],
+                    "warp":4
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_crop.2",
+                    "recipes": ["thaumcraft:void_crop"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDANVIL",    
+            "name": "research_name.thaumadditions:void_anvil",
+            "icons": [ "thaumadditions:void_anvil" ],
+            "category": "ELDRITCH", "location": [-3,1 ], 
+            "parents": [ "BASEELDRITCH" ], 
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:void_anvil.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "required_craft":["cyclicmagic:block_anvil_magma"],
+                    "warp":3
+                },
+                {
+                    "text": "research_stage.thaumadditions:void_anvil.2",
+                    "recipes": ["thaumcraft:void_anvil"]
+                }
+            ]
+        },
+        {
+            "key": "VOIDMIRROR",    
+            "name": "research_name.thaumadditions:wormhole_mirror",
+            "icons": [ "thaumadditions:wormhole_mirror" ],
+            "category": "ELDRITCH", "location": [4,2 ], 
+            "parents": [ "VOIDTHAUMOMETER", "MIRROR" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:wormhole_mirror.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","THEORY;ELDRITCH;1"],
+                    "required_craft":["thaumcraft:mirrored_glass"],
+                    "warp":2
+                },
+                {
+                    "text": "research_stage.thaumadditions:wormhole_mirror.2",
+                    "recipes": ["thaumcraft:void_mirror"]
+                }
+            ]
+        },
+        {
+            "key": "MITHRILLIUM",    
+            "name": "research_name.thaumadditions:mithrillium",
+            "icons": [ "thaumadditions:mithrillium_ingot" ],
+            "category": "ELDRITCH", "location": [0,3 ], 
+            "parents": [ "BASEELDRITCH","IMPETUS" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithrillium.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithrillium.2",
+                    "recipes": ["thaumcraft:mithrillium_ingot","thaumcraft:mithrillium_resonator"]
+                }
+            ]
+        },
+        {
+            "key": "ADAMINITE",    
+            "name": "research_name.thaumadditions:adaminite",
+            "icons": [ "thaumadditions:adaminite_ingot" ],
+            "category": "ELDRITCH", "location": [0,6 ], 
+            "parents": [ "MITHRILLIUM" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:adaminite.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;3","THEORY;ELDRITCH;3"],
+                    "warp":5
+                },
+                {
+                    "text": "research_stage.thaumadditions:adaminite.2",
+                    "recipes": ["thaumcraft:adaminite_ingot"]
+                }
+            ]
+        },
+        {
+            "key": "MITHMINITE",    
+            "name": "research_name.thaumadditions:mithminite",
+            "icons": [ "thaumadditions:mithminite_ingot" ],
+            "category": "ELDRITCH", "location": [0,9 ], 
+            "parents": [ "ADAMINITE" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;4","THEORY;ELDRITCH;4"],
+                    "warp":10
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite.2",
+                    "recipes": ["thaumcraft:mithminite_ingot"]
+                }
+            ]
+        },
+        {
+            "key": "SHADOWENCHANTER",    
+            "name": "research_name.thaumadditions:shadow_enchanter",
+            "icons": [ "thaumadditions:shadow_enchanter" ],
+            "category": "ELDRITCH", "location": [-2,4 ], 
+            "parents": [ "MITHRILLIUM" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:shadow_enchanter.1", 
+                    "required_item":["minecraft:enchanting_table"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:shadow_enchanter.2",
+                    "recipes": ["thaumcraft:shadow_enchanter"]
+                }
+            ]
+        },
+        {
+            "key": "SHADOWBEAM",    
+            "name": "research_name.thaumadditions:shadow_beam_staff",
+            "icons": [ "thaumadditions:shadow_beam_staff" ],
+            "category": "ELDRITCH", "location": [4,4 ], 
+            "parents": [ "MITHRILLIUM" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:shadow_beam_staff.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;1","OBSERVATION;THAYMADDITIONS;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:shadow_beam_staff.2",
+                    "recipes": ["thaumcraft:shadow_beam_staff","thaumcraft:essentia_sink"]
+                }
+            ]
+        },
+        {
+            "key": "BEHEADER",    
+            "name": "research_name.thaumadditions:the_beheader",
+            "icons": [ "thaumadditions:the_beheader" ],
+            "category": "ELDRITCH", "location": [2,4 ], 
+            "parents": [ "MITHRILLIUM" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:the_beheader.1", 
+                    "required_item":["minecraft:skull;1;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:the_beheader.2",
+                    "recipes": ["thaumcraft:the_beheader"]
+                }
+            ]
+        },
+        {
+            "key": "ADAMINITESWORD",    
+            "name": "research_name.thaumadditions:adaminite_sword",
+            "icons": [ "thaumadditions:adaminite_sword" ],
+            "category": "ELDRITCH", "location": [2,7 ], 
+            "parents": [ "ADAMINITE" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:adaminite_sword.1", 
+                    "required_craft":["thaumcraft:void_sword"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:adaminite_sword.2",
+                    "recipes": ["thaumcraft:adaminite_sword"]
+                }
+            ]
+        },
+        {
+            "key": "ADAMINITEFABRIC",    
+            "name": "research_name.thaumadditions:adaminite_fabric",
+            "icons": [ "thaumadditions:adaminite_fabric" ],
+            "category": "ELDRITCH", "location": [-2,7 ], 
+            "parents": [ "ADAMINITE" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:adaminite_fabric.1", 
+                    "required_item":["thaumcraft:fabric;8"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:adaminite_fabric.2",
+                    "recipes": ["thaumcraft:adaminite_fabric","thaumcraft:adaminite_hood","thaumcraft:adaminite_robe","thaumcraft:adaminite_belt","thaumcraft:adaminite_boots"]
+                }
+            ]
+        },
+        {
+            "key": "MITHMINITESCYTHE",    
+            "name": "research_name.thaumadditions:mithminite_scythe",
+            "icons": [ "thaumadditions:mithminite_scythe" ],
+            "category": "ELDRITCH", "location": [2,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_scythe.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","OBSERVATION;THAYMADDITIONS;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_scythe.2",
+                    "recipes": ["thaumcraft:mithminite_blade","thaumcraft:mithminite_handle","thaumcraft:mithminite_scythe"]
+                }
+            ]
+        },
+        {
+            "key": "MITHMINITEFABRIC",    
+            "name": "research_name.thaumadditions:mithminite_fabric",
+            "icons": [ "thaumadditions:mithminite_fabric" ],
+            "category": "ELDRITCH", "location": [-2,10 ], 
+            "parents": [ "MITHMINITE","ADAMINITEFABRIC" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_fabric.1", 
+                    "required_craft":["thaumcraft:adaminite_fabric"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_fabric.2",
+                    "recipes": ["thaumcraft:mithminite_fabric"]
+                }
+            ]
+        },
+        {
+            "key": "HOOD",    
+            "name": "research_name.thaumadditions:mithminite_hood",
+            "icons": [ "thaumadditions:mithminite_hood" ],
+            "category": "ELDRITCH", "location": [-6,8 ], 
+            "parents": [ "MITHMINITEFABRIC" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_hood.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_hood.2",
+                    "recipes": ["thaumcraft:mithminite_hood"]
+                }
+            ]
+        },
+        {
+            "key": "ROBE",    
+            "name": "research_name.thaumadditions:mithminite_robe",
+            "icons": [ "thaumadditions:mithminite_robe" ],
+            "category": "ELDRITCH", "location": [-4,8 ], 
+            "parents": [ "MITHMINITEFABRIC" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_robe.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_robe.2",
+                    "recipes": ["thaumcraft:mithminite_robe"]
+                }
+            ]
+        },
+        {
+            "key": "BELT",    
+            "name": "research_name.thaumadditions:mithminite_belt",
+            "icons": [ "thaumadditions:mithminite_belt" ],
+            "category": "ELDRITCH", "location": [-4,12 ], 
+            "parents": [ "MITHMINITEFABRIC" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_belt.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_belt.2",
+                    "recipes": ["thaumcraft:mithminite_belt"]
+                }
+            ]
+        },
+        {
+            "key": "BOOTS",    
+            "name": "research_name.thaumadditions:mithminite_boots",
+            "icons": [ "thaumadditions:mithminite_boots" ],
+            "category": "ELDRITCH", "location": [-6,12 ], 
+            "parents": [ "MITHMINITEFABRIC" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_boots.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_boots.2",
+                    "recipes": ["thaumcraft:mithminite_boots"]
+                }
+            ]
+        },
+        {
+            "key": "COMBINER",    
+            "name": "research_name.thaumadditions:aspect_combiner",
+            "icons": [ "thaumadditions:aspect_combiner" ],
+            "category": "ELDRITCH", "location": [-2,2 ], 
+            "parents": [ "MITHRILLIUM" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:aspect_combiner.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:aspect_combiner.2",
+                    "recipes": ["thaumcraft:aspect_combiner"]
+                }
+            ]
+        },
+        {
+            "key": "AURACHARGER",    
+            "name": "research_name.thaumadditions:aura_charger",
+            "icons": [ "thaumadditions:aura_charger" ],
+            "category": "ELDRITCH", "location": [-2,5 ], 
+            "parents": [ "ADAMINITE" ], 
+            "meta": ["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:aura_charger.1", 
+                    "required_knowledge":["THEORY;THAUMADDITIONS;2","THEORY;ELDRITCH;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:aura_charger.2",
+                    "recipes": ["thaumcraft:aura_charger"]
+                }
+            ]
+        }
+    ]
+}

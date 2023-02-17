@@ -1,0 +1,262 @@
+{
+    "entries" :[
+        {
+            "key": "VISSALT",    
+            "name": "research_name.thaumadditions:essence_salt",
+            "icons": [ "thaumadditions:textures/items/salt_essence.png" ],
+            "category": "ALCHEMY", "location": [ -4,-2 ], 
+            "parents": [ "HEDGEALCHEMY" ],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:essence_salt.1", 
+                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:essence_salt.2",
+                    "required_item": ["thaumadditions:salt_essence"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:essence_salt.3",
+                    "recipes": ["crafttweaker:bathsalts"]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTALCRUSHER",    
+            "name": "research_name.thaumadditions:crystal_crusher",
+            "icons": [ "thaumadditions:crystal_crusher" ],
+            "category": "ALCHEMY", "location": [ -6,-2 ], 
+            "parents": [ "VISSALT" ],     
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_crusher.1", 
+                    "required_item":["thaumcraft:mechanism_simple"],
+                    "required_knowledge":["THEORY;ALCHEMY;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:crystal_crusher.2",
+                    "recipes": ["thaumcraft:crystal_crusher"]
+                }
+            ]
+        },
+        {
+            "key": "FRAGNANTPENDANT",    
+            "name": "research_name.thaumadditions:fragnant_pendant",
+            "icons": [ "thaumadditions:fragnant_pendant" ],
+            "category": "ALCHEMY", "location": [ -2,-4 ], 
+            "parents": [ "BATHSALTS" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:fragnant_pendant.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1"],
+                    "required_craft":["thaumcraft:bath_salts","thaumcraft:baubles:4"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:fragnant_pendant.2",
+                    "recipes": ["thaumcraft:fragnant_pendant","thaumcraft:odour"]
+                }
+            ]
+        },
+        {
+            "key": "CRYSTALWATER",    
+            "name": "research_name.thaumadditions:crystal_water",
+            "icons": [ "thaumcraft:crystal_essence;1;0;{Aspects:[{amount:1,key:'aer'}]}"],
+            "category": "ALCHEMY", "location": [ 0,2 ], 
+            "parents": [ "HEDGEALCHEMY" ],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:crystal_water.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:crystal_water.2",
+                    "recipes": ["thaumcraft:crystal_water","thaumadditions:mb.crystal_acceleration"]
+                }
+            ]
+        },
+        {
+            "key": "FLUXCONCENTRATOR",    
+            "name": "research_name.thaumadditions:flux_concentrator",
+            "icons": [ "thaumadditions:flux_concentrator"],
+            "category": "ALCHEMY", "location": [ -6,2 ], 
+            "parents": [ "HEDGEALCHEMY", "TOTEMANCY" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:flux_concentrator.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1","THEORY;THAUMADDITIONS;1"],
+                    "required_item":["thaumcraft:vishroom"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:flux_concentrator.2",
+                    "recipes": ["thaumcraft:flux_concentrator"]
+                }
+            ]
+        },
+        {
+            "key": "JARBRASS",    
+            "name": "research_name.thaumadditions:brass_jar",
+            "icons": [ "thaumadditions:jar_brass"],
+            "category": "ALCHEMY", "location": [ 4,4 ], 
+            "parents": [ "METALLURGY@1" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:brass_jar.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;THAUMADDITIONS;1"],
+                    "required_craft":["thaumcraft:ingot;1;2"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:brass_jar.2",
+                    "recipes": ["thaumcraft:jar_brass"]
+                }
+            ]
+        },
+        {
+            "key": "JARTHAUMIUM",    
+            "name": "research_name.thaumadditions:thaumium_jar",
+            "icons": [ "thaumadditions:jar_thaumium"],
+            "category": "ALCHEMY", "location": [ 6,4 ], 
+            "parents": [ "JARBRASS" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:thaumium_jar.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;THAUMADDITIONS;1"],
+                    "required_craft":["thaumcraft:ingot;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:thaumium_jar.2",
+                    "recipes": ["thaumcraft:jar_thaumium","thaumcraft:jar_thaumium_alt"]
+                }
+            ]
+        },
+        {
+            "key": "JARVOID",    
+            "name": "research_name.thaumadditions:eldritch_jar",
+            "icons": [ "thaumadditions:jar_eldritch"],
+            "category": "ALCHEMY", "location": [ 8,4 ], 
+            "parents": [ "JARTHAUMIUM", "BASEELDRITCH" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:eldritch_jar.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;THAUMADDITIONS;1"],
+                    "required_craft":["thaumcraft:ingot;1;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:eldritch_jar.2",
+                    "recipes": ["thaumcraft:jar_eldritch","thaumcraft:jar_eldritch_alt"]
+                }
+            ]
+        },
+        {
+            "key": "JARMITHRILLIUM",    
+            "name": "research_name.thaumadditions:mithrillium_jar",
+            "icons": [ "thaumadditions:jar_mithrillium"],
+            "category": "ALCHEMY", "location": [ 10,4 ], 
+            "parents": [ "JARVOID", "MITHRILLIUM" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithrillium_jar.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithrillium_jar.2",
+                    "recipes": ["thaumcraft:jar_mithrillium","thaumcraft:jar_mithrillium_alt"]
+                }
+            ]
+        },
+        {
+            "key": "JARADAMINITE",    
+            "name": "research_name.thaumadditions:adaminite_jar",
+            "icons": [ "thaumadditions:jar_adaminite"],
+            "category": "ALCHEMY", "location": [ 12,4 ], 
+            "parents": [ "JARMITHRILLIUM", "ADAMINITE" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:adaminite_jar.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:adaminite_jar.3",
+                    "recipes": ["thaumcraft:jar_adaminite","thaumcraft:jar_adaminite_alt"]
+                }
+            ]
+        },
+        {
+            "key": "JARMITHMINITE",    
+            "name": "research_name.thaumadditions:mithminite_jar",
+            "icons": [ "thaumadditions:jar_mithminite"],
+            "category": "ALCHEMY", "location": [ 14,4 ], 
+            "parents": [ "JARADAMINITE", "MITHMINITE" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_jar.1",
+                    "required_knowledge":["OBSERVATION;ALCHEMY;1","OBSERVATION;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_jar.2",
+                    "recipes": ["thaumcraft:jar_mithminite","thaumcraft:jar_mithminite_alt"]
+                }
+            ]
+        },
+        {
+            "key": "SMELTERMITHRILLIUM",    
+            "name": "research_name.thaumadditions:mithrillium_smelter",
+            "icons": [ "thaumadditions:mithrillium_smelter"],
+            "category": "ALCHEMY", "location": [ 10,2 ], 
+            "parents": [ "ESSENTIASMELTERVOID", "MITHMINITE" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithrillium_smelter.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1","THEORY;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithrillium_smelter.2",
+                    "recipes": ["thaumcraft:mithrillium_smelter"]
+                }
+            ]
+        },
+        {
+            "key": "SMELTERADAMINITE",    
+            "name": "research_name.thaumadditions:adaminite_smelter",
+            "icons": [ "thaumadditions:adaminite_smelter"],
+            "category": "ALCHEMY", "location": [ 12,2 ], 
+            "parents": [ "SMELTERMITHRILLIUM", "MITHMINITE" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:adaminite_smelter.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1","THEORY;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:adaminite_smelter.2",
+                    "recipes": ["thaumcraft:adaminite_smelter"]
+                }
+            ]
+        },
+        {
+            "key": "SMELTERMITHMINITE",    
+            "name": "research_name.thaumadditions:mithminite_smelter",
+            "icons": [ "thaumadditions:mithminite_smelter"],
+            "category": "ALCHEMY", "location": [ 14,2 ], 
+            "parents": [ "SMELTERADAMINITE", "MITHMINITE" ],
+            "meta":["HIDDEN"],
+            "stages": [
+                {
+                    "text": "research_stage.thaumadditions:mithminite_smelter.1",
+                    "required_knowledge":["THEORY;ALCHEMY;1","THEORY;THAUMADDITIONS;1"]
+                },
+                {
+                    "text": "research_stage.thaumadditions:mithminite_smelter.2",
+                    "recipes": ["thaumcraft:mithminite_smelter"]
+                }
+            ]
+        }
+    ]
+}

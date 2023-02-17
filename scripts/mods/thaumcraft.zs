@@ -58,6 +58,15 @@ function getAnyVisCrystal(key as string = '8', col as int = 0x333333) as IItemSt
   false);
 }
 
+function getAnyVisSalt(key as string = '8', col as int = 0x333333) as IItemStack {
+  return <thaumadditions:salt_essence>.withTag(
+    utils.shinigTag(col) + {
+      Aspects: [{key: 'ordo', amount: 1}],
+      display: {Name: "§"~key~"§lAny Different Vis Salt"}
+    } as IData,
+  false);
+}
+
 /*
 ████████╗ █████╗ ██████╗ ██╗     ███████╗
 ╚══██╔══╝██╔══██╗██╔══██╗██║     ██╔════╝
@@ -205,6 +214,13 @@ craft.remake(<thaumadditions:thaumic_lectern>, ["pretty",
   "#": <thaumcraft:slab_greatwood>, # Greatwood Slab
   "L": <iceandfire:lectern>,        # Lectern
 });
+
+# Bath salt recipe (this one works)
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:bath_salts>);
+recipes.addShapeless("bathsalts",<thaumcraft:bath_salts> * 8,
+[getAnyVisSalt(),getAnyVisSalt(),getAnyVisSalt(),
+getAnyVisSalt(),<thaumcraft:salis_mundus>,getAnyVisSalt(),
+getAnyVisSalt(),getAnyVisSalt(),getAnyVisSalt()]);
 
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗
@@ -358,6 +374,262 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   "I": <thaumicaugmentation:material:5>,          # Impetus Jewel
 }).shaped());
 
+# [Thaumometer]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:thaumometer");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometer", 
+"FIRSTSTEPS@2", 
+20,
+[<aspect:aer>,<aspect:ignis>,<aspect:aqua>,<aspect:terra>,<aspect:ordo>,<aspect:perditio>], 
+<thaumcraft:thaumometer>, 
+  Grid(["pretty",
+  "  C  ",
+  "C P C",
+  "  C  "], {
+  "C": <ore:ingotCopper>, #Copper ingot
+  "P": <ore:paneGlass>, #Glass pane
+}).shaped());
+
+# [Thaumometer]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:thaumometer");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("thaumometer", 
+"FIRSTSTEPS@2", 
+20,
+[<aspect:aer>,<aspect:ignis>,<aspect:aqua>,<aspect:terra>,<aspect:ordo>,<aspect:perditio>], 
+<thaumcraft:thaumometer>, 
+  Grid(["pretty",
+  "  C  ",
+  "C P C",
+  "  C  "], {
+  "C": <ore:ingotCopper>, #Copper ingot
+  "P": <ore:paneGlass>, #Glass pane
+}).shaped());
+
+# [Vis resonator]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:vis_resonator");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("vis_resonator", 
+"UNLOCKAUROMANCY@1", 
+20,
+[<aspect:aer>,<aspect:terra>], 
+<thaumcraft:vis_resonator>, 
+  Grid(["pretty",
+  "A A A",
+  "A C A",
+  "A A A"], {
+  "C": <ore:crystalCertus>, #Copper ingot
+  "A": <ore:nuggetAluminium>, #Glass pane
+}).shaped());
+
+# [Essentia tubes]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:tube");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("tube", 
+"TUBES@2", 
+10,
+[], 
+<thaumcraft:tube> * 16, 
+  Grid(["pretty",
+  "Q Q Q",
+  "S S S",
+  "Q Q Q"], {
+  "S": <ore:nuggetQuicksilver>, #Quick silver nugget
+  "Q": <ore:nuggetQuartzBlack>, #Black quartz nugget
+}).shaped());
+
+# [glass tube] recipe use normal tubes
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumicaugmentation:glass_tube");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("glass_tube", 
+"GLASS_TUBE", 
+5,
+[], 
+<thaumicaugmentation:glass_tube>*8, 
+  Grid(["pretty",
+  "T T T",
+  "T G T",
+  "T T T"], {
+  "T": <thaumcraft:tube>, #
+  "G": <ore:blockGlass>, #
+}).shaped());
+
+#and reverse crafting recipe for [glass tube]
+recipes.addShapeless("glass_tube_reverse",<thaumcraft:tube>,[<thaumicaugmentation:glass_tube>]);
+
+# [Essentia filter]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:filter");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("filter", 
+"BASEALCHEMY", 
+15,
+[<aspect:aqua>], 
+<thaumcraft:filter>*2, 
+  Grid(["pretty",
+  "C S C"], {
+  "C": <ore:ingotCopper>, #Copper ingot
+  "S": <thaumcraft:plank_silverwood>, #Silver wood plank
+}).shaped());
+
+# [Alchemical construct]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:alchemicalconstruct");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("alchemicalconstruct", 
+"TUBES", 
+50,
+[<aspect:aer>*2,<aspect:ignis>*2,<aspect:aqua>*2,<aspect:terra>*2,<aspect:ordo>*2,<aspect:perditio>*2], 
+<thaumcraft:metal_alchemical>*2, 
+  Grid(["pretty",
+  "G T G",
+  "T F T",
+  "G T G"], {
+  "G": <thaumcraft:plank_greatwood>, #Greatwood plank
+  "T": <thaumcraft:tube>, #Essentia tube
+  "F": <thaumcraft:filter>, #Essentia filter
+}).shaped());
+
+# [Void smeltery] recipe require now thaumium smelter 
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:essentiasmeltervoid");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiasmeltervoid", 
+"ESSENTIASMELTERVOID", 
+750,
+[<aspect:ignis>*3], 
+<thaumcraft:smelter_void>, 
+  Grid(["pretty",
+  "B S B",
+  "V A V",
+  "V V V"], {
+  "V": <ore:plateVoid>, #Void plate
+  "A": <thaumcraft:metal_alchemical_advanced>, #Advanced alchemical construct
+  "B": <ore:plateBrass>, #Brass plate
+  "S": <thaumcraft:smelter_thaumium>, #Thaumium smelter
+}).shaped());
+
+# [Redstone inlay]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:redstoneinlay");
+mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("redstoneinlay", 
+"INFUSIONSTABLE", 
+25,
+[<aspect:aqua>], 
+<thaumcraft:inlay>*8, 
+Grid(["CR"], {
+  "C": <ore:ingotCopper>, #Copper ingot
+  "R": <ore:dustRedstone>, #Redstone dust
+}).shapeless());
+
+# [Flux condenser] cheaper clearing machine
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:condenser");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("condenser", 
+"FLUXCLEANUP", 
+100,
+[<aspect:ignis>*3], 
+<thaumcraft:condenser>, 
+  Grid(["pretty",
+  "G F G",
+  "B M B",
+  "G T G"], {
+  "G": <thaumcraft:plank_greatwood>, #Greatwood plank
+  "F": <thaumcraft:filter>, #Essentia filter
+  "M": <thaumcraft:mechanism_simple>, #Simple mechanism
+  "T": <thaumcraft:tube>, #Essentia Tube
+  "B": <thaumcraft:ingot:2>, #Brass ingot
+}).shaped());
+
+# [Condenser Lattice] cheaper flux condenser component
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:condenserlattice");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("condenserlattice", 
+"FLUXCLEANUP", 
+25,
+[<aspect:aer>,<aspect:terra>], 
+<thaumcraft:condenser_lattice>*8, 
+  Grid(["pretty",
+  "S Q S",
+  "S F S",
+  "S Q S"], {
+  "S": <thaumcraft:plank_silverwood>, #Silverwood plank
+  "Q": <ore:nuggetQuicksilver>, #Quicksilver nugget
+  "F": <thaumcraft:filter>, #Essentia filter
+}).shaped());
+
+# [Arcane Bellows]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:bellows");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("bellows", 
+"BELLOWS", 
+25,
+[<aspect:aer>,<aspect:terra>], 
+<thaumcraft:bellows>, 
+  Grid(["pretty",
+  "W W  ",
+  "L L A",
+  "W W  "], {
+  "L": <minecraft:leather>, #Leather
+  "W": <ore:plankWood>, #Any plank
+  "A": <ore:ingotAluminum>, #Aluminum ingot
+}).shaped());
+
+# [Auxiliary Venting Port]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:smeltervent");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("smeltervent", 
+"IMPROVEDSMELTING2", 
+150,
+[<aspect:aer>], 
+<thaumcraft:smelter_vent>, 
+  Grid(["pretty",
+  "B F B",
+  "P A P",
+  "B T B"], {
+  "B": <ore:gemQuartzBlack>, #Black quartz
+  "F": <thaumcraft:filter>, #Essentia filter
+  "A": <thaumcraft:metal_alchemical>, #Alchemical construct
+  "T": <thaumcraft:tube>, #Essentia tube
+  "P": <ore:plateBrass>, #Brass plate
+}).shaped());
+
+# [Auxiliary Slurry Pump]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:smelteraux");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("smelteraux", 
+"IMPROVEDSMELTING", 
+100,
+[<aspect:aer>,<aspect:terra>], 
+<thaumcraft:smelter_aux>, 
+  Grid(["pretty",
+  "B T B",
+  "P A P",
+  "B F B"], {
+  "B": <ore:gemQuartzBlack>, #Black quartz
+  "F": <thaumcraft:bellows>, #Arcane bellows
+  "A": <thaumcraft:metal_alchemical>, #Alchemical construct
+  "T": <thaumcraft:tube>, #Essentia tube
+  "P": <ore:plateBrass>, #Brass plate
+}).shaped());
+
+# [Emptying Essentia Transfuser]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:essentiatransportout");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiatransportout", 
+"ESSENTIATRANSPORT", 
+100,
+[<aspect:aer>,<aspect:aqua>], 
+<thaumcraft:essentia_output>, 
+  Grid(["pretty",
+  "     ",
+  "B H B",
+  "Q A Q"], {
+  "B": <ore:plateBrass>, #Brass plate
+  "H": <minecraft:hopper>, #Hopper
+  "A": <thaumcraft:metal_alchemical>, #Alchemical construct
+  "Q": <ore:gemQuartzBlack>, #Black quartz
+}).shaped());
+
+# [Filling Essentia Transfuser]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:essentiatransportin");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiatransportin", 
+"ESSENTIATRANSPORT", 
+100,
+[<aspect:aer>,<aspect:aqua>], 
+<thaumcraft:essentia_input>, 
+  Grid(["pretty",
+  "     ",
+  "B D B",
+  "Q A Q"], {
+  "B": <ore:plateBrass>, #Brass plate
+  "D": <minecraft:dispenser>, #Dispenser
+  "A": <thaumcraft:metal_alchemical>, #Alchemical construct
+  "Q": <ore:gemQuartzBlack>, #Black quartz
+}).shaped());
+
 /*
 ██╗███╗   ██╗███████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗
 ██║████╗  ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║
@@ -508,6 +780,53 @@ mods.thaumcraft.Crucible.registerRecipe(
   [<aspect:praecantatio> * 60]
 );
 
+# [Focus tier 2]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "focus_2", # Name
+  "FOCUSADVANCED@1", # Research
+  <thaumcraft:focus_2>, # Output
+  2, # Instability
+  [<aspect:ordo> * 50, <aspect:praecantatio> * 25],
+  <thaumcraft:focus_1>, # CentralItem
+  [<thaumcraft:quicksilver>,<astralsorcery:itemcraftingcomponent>,<thaumcraft:quicksilver>,<botania:spark>]
+);
+
+# [Focus tier 3]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_3>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "focus_3", # Name
+  "FOCUSGREATER@1", # Research
+  <thaumcraft:focus_3>, # Output
+  4, # Instability
+  [<aspect:vacuos> * 50,<aspect:mana> * 100, <aspect:ordo> * 50, <aspect:praecantatio> * 25],
+  <thaumcraft:focus_2>, # CentralItem
+  [<ore:manaPearl>,<thaumcraft:quicksilver>,<iceandfire:pixie_dust>,<thaumcraft:quicksilver>,<ore:manaDiamond>,<thaumcraft:quicksilver>,<iceandfire:pixie_dust>,<thaumcraft:quicksilver>]
+);
+
+# [Focus ancient]
+mods.thaumcraft.Infusion.registerRecipe(
+  "focus_ancient", # Name
+  "FOCUSANCIENT", # Research
+  <thaumicaugmentation:focus_ancient>, # Output
+  3, # Instability
+  [<aspect:vacuos> * 100, <aspect:alienis> * 25],
+  <thaumcraft:focus_2>, # CentralItem
+  [<ore:crystalVoid>,<thaumcraft:quicksilver>,<ore:crystalVoid>,<ore:nuggetVoid>,<ore:crystalVoid>,<thaumcraft:quicksilver>,<ore:crystalVoid>,<ore:nuggetVoid>]
+);
+
+#[Primal metal]
+mods.thaumcraft.Infusion.removeRecipe(<tconevo:metal:20>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "primal_metal", # Name
+  "TCONEVO_PRIMALMETAL", # Research
+  <tconevo:metal:20>, # Output
+  2, # Instability
+  [<aspect:aer>*10,<aspect:ignis>*10,<aspect:ordo>*10,<aspect:aqua>*10,<aspect:terra>*10,<aspect:perditio>*10,<aspect:metallum>*30],
+  <tconevo:material>, # CentralItem
+  [<thaumicwonders:primordial_grain>,<thaumcraft:salis_mundus>]
+);
+
 /*
  ██████╗██████╗ ██╗   ██╗ ██████╗██╗██████╗ ██╗     ███████╗
 ██╔════╝██╔══██╗██║   ██║██╔════╝██║██╔══██╗██║     ██╔════╝
@@ -632,6 +951,62 @@ mods.thaumcraft.Crucible.registerRecipe(
   <ore:blockFlesh>, # Input
   [<aspect:cognitio> * 60, <aspect:victus> * 60]
 );
+
+# [Sanity soap]
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:sanity_soap>);
+mods.thaumcraft.Crucible.registerRecipe(
+  "SaneSoap", # Name
+  "SANESOAP", # Research
+  <thaumcraft:sanity_soap>, # Output
+  <thaumcraft:bath_salts>, # Input
+  [<aspect:mana> * 5]
+);
+# [Sanity soap] alternative
+mods.botania.ManaInfusion.addAlchemy(<thaumcraft:sanity_soap>,<thaumcraft:bath_salts>,2500);
+
+# [Focus tier 1]
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:focus_1>);
+mods.thaumcraft.Crucible.registerRecipe(
+  "focus_1", # Name
+  "BASEAUROMANCY@1", # Research
+  <thaumcraft:focus_1>, # Output
+  <thaumcraft:quicksilver>, # Input
+  [<aspect:auram> * 5,<aspect:praecantatio>*10,<aspect:vitreus>*20]
+);
+
+# [Alumentum]
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:alumentum>);
+mods.thaumcraft.Crucible.registerRecipe(
+  "alumentum", # Name
+  "ALUMENTUM", # Research
+  <thaumcraft:alumentum>*10, # Output
+  <minecraft:coal>, # Input
+  [<aspect:potentia> * 10,<aspect:ignis>*10,<aspect:perditio>*5]
+);
+
+/*
+ ██████╗ ████████╗██╗  ██╗███████╗██████╗ 
+██╔═══██║╚══██╔══╝██║  ██║██╔════╝██╔══██╗
+██║   ██║   ██║   ███████║█████╗  ██████╔╝
+██║   ██║   ██║   ██╔══██║██╔══╝  ██╔══██╗
+╚██████╔╝   ██║   ██║  ██║███████╗██║  ██║
+ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+*/
+
+scripts.process.crushRock(<thaumicaugmentation:stone>, 
+[<jaopca:item_dusttanzanite>,<jaopca:item_dustdimensionalshard>,<actuallyadditions:item_dust:7>], 
+[0.8, 0.2, 0.1], 
+"No exceptions"); 
+
+scripts.process.crushRock(<thaumicaugmentation:stone:1>, 
+[<jaopca:item_dusttanzanite>,<jaopca:item_dustdimensionalshard>,<thaumadditions:salt_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})], 
+[0.8, 0.2, 0.1], 
+"No exceptions"); 
+
+scripts.process.crushRock(<thaumicaugmentation:stone:2>, 
+[<jaopca:item_dusttanzanite>,<jaopca:item_dustdimensionalshard>,<thaumadditions:salt_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]})], 
+[0.8, 0.3, 0.1], 
+"No exceptions"); 
 
 # Skyblock alt
 mods.thaumcraft.SalisMundus.addSingleConversion(<ore:plankWood>, <thaumcraft:plank_silverwood>);
