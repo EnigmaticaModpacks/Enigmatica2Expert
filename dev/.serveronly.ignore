@@ -89,6 +89,7 @@ mods/*.jar
 !mods/JEI-Utilities-*
 !mods/ChatFlow-*
 !mods/startuptimer-*
+!mods/bow-*
 
 #Not sure
 # !mods/gendustryjei*
