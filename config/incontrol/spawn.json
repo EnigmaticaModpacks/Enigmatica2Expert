@@ -67,5 +67,5 @@
 		"endreborn:block_rune"
 	],"result": "allow"},
   {"mob": "endreborn:endguard","mod": "endreborn", "result": "deny"},
-  {"block":["ore:logWood","minecraft:brown_mushroom_block","minecraft:red_mushroom_block"],"result": "deny"}
+  {"block":["ore:logWood","minecraft:brown_mushroom_block","minecraft:red_mushroom_block","bedrockores:bedrock_ore"],"result": "deny"}
 ]
