@@ -217,6 +217,7 @@ key_key.keyExtraCraftin:0
 key_key.keyExtraInvo:0
 key_key.keyWheel:0
 key_key.left:30
+key_key.little.config:46:CONTROL
 key_key.little.config.item:46
 key_key.little.flip:34
 key_key.little.mark:50
