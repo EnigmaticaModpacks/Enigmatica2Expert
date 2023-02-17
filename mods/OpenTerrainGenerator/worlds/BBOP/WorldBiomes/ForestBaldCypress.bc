@@ -185,13 +185,11 @@ CustomObject(SmallLake1,SmallLake2,SmallLake3,SmallLake4,SmallLake5,SmallLake6,S
 CustomObject(SmallLake1,SmallLake2,SmallLake3,SmallLake4,SmallLake5,SmallLake6,SmallLake7,SmallLake8,SmallLake9,SmallLake10,SmallLake11,SmallLake12)
 SmallLake(biomesoplenty:poison,2,33.0,62,255)
 SmallLake(LAVA,6,33.0,1,8)
-## INVALID UNDERWATERUNDERWATERORE - Resource type UnderWaterUnderWaterOre not found ##
-UnderWaterUnderWaterOre(SAND,7,4,100.0,DIRT,GRASS)
+UnderWaterOre(SAND,7,4,100.0,DIRT,GRASS)
 UnderWaterOre(GRAVEL,8,1,100.0,DIRT,STONE:0)
 UnderWaterOre(CLAY,7,3,100.0,DIRT,STONE:0,GRAVEL)
 UnderWaterOre(DIRT,7,20,100.0,DIRT,GRASS,HARD_CLAY,CLAY)
-## INVALID UNDERWATERGRASS - Resource type UnderWaterGrass not found ##
-UnderWaterGrass(LONG_GRASS:1,NotGrouped,20,100.0,GRASS,DIRT)
+SeaGrass(LONG_GRASS:1,NotGrouped,20,100.0,GRASS,DIRT)
 Plant(PUMPKIN,1,3.0,0,139,GRASS)
 Tree(25,BigTree,1,GroundBush,10,Tree,10)
 CustomObject(giantboulder1,giantboulder2,giantboulder3,giantboulder4,giantboulder5,giantboulder6,giantboulder7,giantboulder8,giantboulder9)

@@ -177,8 +177,7 @@ FogThunderWeight: 0.5
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-## INVALID UNDERWATERUNDERWATERDUNGEON - Resource type UnderWaterUnderWaterDungeon not found ##
-UnderWaterUnderWaterDungeon(8,100.0,0,160)
+Dungeon(8,100.0,0,160)
 Grass(LONG_GRASS:1,NotGrouped,8,50.0,GRASS,DIRT)
 Grass(biomesoplenty:double_plant:3,NotGrouped,8,50.0,SAND)
 CustomObject(BigStoneRock1,BigStoneRock2,BigStoneRock3)
