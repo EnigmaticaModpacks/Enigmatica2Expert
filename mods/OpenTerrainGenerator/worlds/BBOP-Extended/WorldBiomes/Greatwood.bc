@@ -189,7 +189,7 @@ Tree(10,greatwood,5,greatwood2,5,silverwood,3,silverwood2,3)
 Tree(20,HugeMushroom,4,bigoaktree11,40,bigoaktree12,40,bigoaktree13,40,bigoaktree14,40,bigoaktree15,40,bigoaktree16,40)
 Tree(20,bigoaktree11,40,bigoaktree12,40,bigoaktree13,40,bigoaktree14,40,bigoaktree15,40,bigoaktree16,40)
 Tree(5,bush3,10,bush4,10,trunk1,10)
-Tree(5,vishroom,10)
+Tree(100,vishroom,50)
 Tree(5,shimmerleaf,10)
 Vines(60,100.0,65,128)
 Grass(Tallgrass,NotGrouped,70,100.0,GRASS,DIRT,DIRT:2)
@@ -256,9 +256,9 @@ RareBuildingType: disabled
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-SpawnMonsters: [{"mob": "thaumcraft:wisp", "weight": 30, "min": 1, "max": 1}, {"mob": "thaumcraft:pech", "weight": 7, "min": 1, "max": 1}]
+SpawnMonsters: [{"mob": "thaumcraft:wisp", "weight": 60, "min": 1, "max": 1}]
 
-SpawnCreatures: []
+SpawnCreatures: [{"mob": "thaumcraft:pech", "weight": 40, "min": 1, "max": 1}]
 
 SpawnWaterCreatures: []
 
