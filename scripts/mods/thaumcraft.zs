@@ -62,7 +62,7 @@ function getAnyVisSalt(key as string = '8', col as int = 0x333333) as IItemStack
   return <thaumadditions:salt_essence>.withTag(
     utils.shinigTag(col) + {
       Aspects: [{key: 'ordo', amount: 1}],
-      display: {Name: "§"~key~"§lAny Different Vis Salt"}
+      display: {Name: "§"~key~"§lAny Vis Salt"}
     } as IData,
   false);
 }
@@ -216,11 +216,12 @@ craft.remake(<thaumadditions:thaumic_lectern>, ["pretty",
 });
 
 # Bath salt recipe (this one works)
+val VS = getAnyVisSalt();
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:bath_salts>);
 recipes.addShapeless("bathsalts",<thaumcraft:bath_salts> * 8,
-[getAnyVisSalt(),getAnyVisSalt(),getAnyVisSalt(),
-getAnyVisSalt(),<thaumcraft:salis_mundus>,getAnyVisSalt(),
-getAnyVisSalt(),getAnyVisSalt(),getAnyVisSalt()]);
+[VS,VS,VS,
+VS,<thaumcraft:salis_mundus>,VS,
+VS,VS,VS]);
 
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗
@@ -604,7 +605,6 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiatransportout",
 [<aspect:aer>,<aspect:aqua>], 
 <thaumcraft:essentia_output>, 
   Grid(["pretty",
-  "     ",
   "B H B",
   "Q A Q"], {
   "B": <ore:plateBrass>, #Brass plate
@@ -621,7 +621,6 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiatransportin",
 [<aspect:aer>,<aspect:aqua>], 
 <thaumcraft:essentia_input>, 
   Grid(["pretty",
-  "     ",
   "B D B",
   "Q A Q"], {
   "B": <ore:plateBrass>, #Brass plate

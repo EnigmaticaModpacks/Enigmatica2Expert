@@ -177,5 +177,14 @@ mods.thaumcraft.Infusion.registerRecipe(
   5, # Instability
   [<aspect:alkimia>*100,<aspect:caeles>*25,<aspect:infernum>*100,<aspect:fluctus>*50,<aspect:auram>*200],
   <thaumcraft:crucible>, # CentralItem
-  [<thaumicaugmentation:material:5>,<thaumadditions:aura_disperser>,<thaumicaugmentation:material:5>,<thaumadditions:crystal_block>.withTag({Aspect: "visum"}),<thaumicaugmentation:material:5>,<thaumadditions:aura_disperser>,<thaumicaugmentation:material:5>,<thaumadditions:aura_charger>]
+  [
+    <thaumicaugmentation:material:5>,
+    <thaumadditions:aura_disperser>,
+    <thaumicaugmentation:material:5>,
+    <thaumadditions:crystal_block>.withTag({Aspect: "visum"}),
+    <thaumicaugmentation:material:5>,
+    <thaumadditions:aura_disperser>,
+    <thaumicaugmentation:material:5>,
+    <thaumadditions:aura_charger>,
+  ]
 );

@@ -1,5 +1,4 @@
 #modloaded thaumictinkerer
-import mods.jei.JEI.removeAndHide as rh;
 
 # Fix conflict
 # [Black Quartz Block] from [Smokey Quartz]
@@ -33,4 +32,4 @@ mods.thaumcraft.Infusion.registerRecipe(
 recipes.addShapeless(<botania:quartztypedark>, [<thaumictinkerer:black_quartz_block>]);
 recipes.addShapeless(<thaumictinkerer:black_quartz_block>, [<botania:quartztypedark>]);
 
-rh(<thaumictinkerer:share_book>);
+utils.rh(<thaumictinkerer:share_book>);

@@ -1,9 +1,8 @@
 #modloaded warptheory
-import mods.jei.JEI.removeAndHide as rh;
 
 # Remove [Inpure tear]
 mods.thaumcraft.Infusion.removeRecipe(<warptheory:item_cleanser_minor>);
-rh(<warptheory:item_cleanser_minor>);
+utils.rh(<warptheory:item_cleanser_minor>);
 
 #[Pure tear]
 mods.thaumcraft.Infusion.removeRecipe(<warptheory:item_cleanser>);

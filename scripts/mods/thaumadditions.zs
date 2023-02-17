@@ -1,11 +1,10 @@
 #modloaded thaumadditions
-import mods.jei.JEI.removeAndHide as rh;
 
 mods.thaumcraft.Crucible.removeRecipe(<thaumadditions:phantom_ink_phial>);
-rh(<thaumadditions:phantom_ink_phial>);
+utils.rh(<thaumadditions:phantom_ink_phial>);
 
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:phantom_ink_phial>);
-rh(<thaumadditions:levitation_device>);
+utils.rh(<thaumadditions:levitation_device>);
 
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗
