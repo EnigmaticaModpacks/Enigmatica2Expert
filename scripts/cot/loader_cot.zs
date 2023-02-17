@@ -8,12 +8,13 @@ import crafttweaker.event.EntityLivingFallEvent;
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.world.IWorld;
+import mods.contenttweaker.AxisAlignedBB;
 import mods.contenttweaker.BlockMaterial;
 import mods.contenttweaker.Color;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.MaterialSystem;
-import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.SoundType;
+import mods.contenttweaker.VanillaFactory;
 import mods.ctutils.utils.Math.abs;
 import mods.ctutils.utils.Math.floor;
 import mods.ctutils.utils.Math.max;
@@ -28,13 +29,14 @@ function buildItem(name as string) {
 	item.register();
 }
 
-function createBlock(name as string, level as int, blockMaterial as BlockMaterial, blockSoundType as SoundType) {
+function createBlock(name as string, level as int, blockMaterial as BlockMaterial, blockSoundType as SoundType, lightValue as int = 0) as void {
 	val c = VanillaFactory.createBlock(name, blockMaterial);
 	c.toolClass = "pickaxe";
 	c.toolLevel = level;
 	c.blockHardness = level * 1.6;
 	c.blockResistance = level * 1.4;
 	c.blockSoundType = blockSoundType;
+	c.lightValue = (lightValue as double / 15.0 + 0.00001) as int;
 	c.register();
 }
 
@@ -80,11 +82,66 @@ createBlockStone("compressed_white_sand"      , 3, <blockmaterial:rock>);
 
 createBlockStone("terrestrial_artifact_block", 9, <blockmaterial:rock>);
 createBlockStone("silicon_block", 4, <blockmaterial:rock>);
-createBlockStone("benitoite", 10, <blockmaterial:rock>);
-createBlockStone("anglesite", 10, <blockmaterial:rock>);
-createBlockStone("ore_benitoite", 11, <blockmaterial:rock>);
-createBlockStone("ore_anglesite", 11, <blockmaterial:rock>);
 
+val gemABB = AxisAlignedBB.create(0.3, 0, 0.3, 0.7, 0.9, 0.7);
+var
+b = VanillaFactory.createBlock("anglesite", <blockmaterial:glass>);
+b.toolClass = "pickaxe";
+b.toolLevel = 10;
+b.blockHardness = 16;
+b.blockResistance = 14;
+b.blockSoundType = <soundtype:glass>;
+b.lightValue = 1;
+b.axisAlignedBB = gemABB;
+b.entitySpawnable = false;
+b.fullBlock = false;
+b.lightOpacity = 27;
+b.translucent = true;
+b.register();
+
+b = VanillaFactory.createBlock("benitoite", <blockmaterial:glass>);
+b.toolClass = "pickaxe";
+b.toolLevel = 10;
+b.blockHardness = 16;
+b.blockResistance = 14;
+b.blockSoundType = <soundtype:glass>;
+b.lightValue = 1;
+b.axisAlignedBB = gemABB;
+b.entitySpawnable = false;
+b.fullBlock = false;
+b.lightOpacity = 27;
+b.translucent = true;
+b.register();
+
+b = VanillaFactory.createBlock("ore_anglesite", <blockmaterial:rock>);
+b.toolClass = "pickaxe";
+b.toolLevel = 11;
+b.blockHardness = 20;
+b.blockResistance = 18;
+b.blockSoundType = <soundtype:stone>;
+b.lightValue = 14.0 / 15.0 + 0.00001;
+b.dropHandler = function(drops, world, position, state, fortune) {
+	drops.clear();
+	drops.add(<item:contenttweaker:anglesite>);
+	for i in 0 .. fortune { drops.add(<item:contenttweaker:anglesite> % 50); }
+	return;
+};
+b.register();
+
+b = VanillaFactory.createBlock("ore_benitoite", <blockmaterial:rock>);
+b.toolClass = "pickaxe";
+b.toolLevel = 11;
+b.blockHardness = 20;
+b.blockResistance = 18;
+b.blockSoundType = <soundtype:stone>;
+b.lightValue = 14.0 / 15.0 + 0.00001;
+b.dropHandler = function(drops, world, position, state, fortune) {
+	drops.clear();
+	drops.add(<item:contenttweaker:benitoite>);
+	for i in 0 .. fortune { drops.add(<item:contenttweaker:benitoite> % 50); }
+	return;
+};
+b.register();
 
 
 # -------------------------------
