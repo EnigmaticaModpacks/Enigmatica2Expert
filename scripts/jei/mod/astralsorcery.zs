@@ -13,10 +13,18 @@ import scripts.jei.requious.add as addRecipe;
 var x = <assembly:everflow_chalice>;
 x.addJEICatalyst(<astralsorcery:blockchalice>);
 x.setJEIDurationSlot(1,0,"duration", scripts.jei.requious.getVisGauge(0,6));
-scripts.jei.requious.addInsOuts(x, [[0,0],[2,0]], [[1,1], [0,2], [2,2]]);
+x.setJEIFluidSlot(0, 0, 'input');
+x.setJEIFluidSlot(2, 0, 'input');
+scripts.jei.requious.addInsOuts(x, [], [[1,1], [0,2], [2,2]]);
 
-function add_everflow_chalice(input1 as IIngredient, input2 as IIngredient, out as IItemStack[]) {
-  addRecipe(<assembly:everflow_chalice>, {[input1, input2] : out});
+function add_everflow_chalice(input0 as ILiquidStack, input1 as ILiquidStack, out as IItemStack[]) {
+  <assembly:everflow_chalice>.addJEIRecipe(AssemblyRecipe.create(function(c) {
+    for i in 0 .. 3 { c.addItemOutput('output'~i, out[i]); }
+  })
+  .requireFluid('input', input0)
+  .requireFluid('input', input1)
+  .requireDuration("duration", 10)
+  );
 }
 
 // -----------------------------------------------------------------------
