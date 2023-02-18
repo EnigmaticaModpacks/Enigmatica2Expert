@@ -16,7 +16,7 @@ ResourceInheritance: true
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeSize: 3
+BiomeSize: 6
 
 BiomeRarity: 100
 
@@ -185,7 +185,7 @@ UnderWaterOre(SAND,7,3,100.0,DIRT,GRASS)
 UnderWaterOre(CLAY,4,1,100.0,DIRT,CLAY)
 UnderWaterOre(GRAVEL,6,1,100.0,DIRT,GRASS)
 Dungeon(8,100.0,0,128)
-Tree(10,greatwood,5,greatwood2,5,silverwood,3,silverwood2,3)
+Tree(20,greatwood,10,greatwood2,10,silverwood,6,silverwood2,6)
 Tree(20,HugeMushroom,4,bigoaktree11,40,bigoaktree12,40,bigoaktree13,40,bigoaktree14,40,bigoaktree15,40,bigoaktree16,40)
 Tree(20,bigoaktree11,40,bigoaktree12,40,bigoaktree13,40,bigoaktree14,40,bigoaktree15,40,bigoaktree16,40)
 Tree(5,bush3,10,bush4,10,trunk1,10)
