@@ -1,6 +1,6 @@
 {
-	x: 9.6d,
-	y: 10.0d,
+	x: 9.7d,
+	y: 8.9d,
 	text: [
 		"{q.nuclearcraft.decay_hastener.desc}"
 	],

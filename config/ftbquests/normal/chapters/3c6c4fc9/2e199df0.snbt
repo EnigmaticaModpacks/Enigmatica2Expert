@@ -1,12 +1,12 @@
 {
-	x: 1.4d,
-	y: 7.499999999999999d,
+	x: 3.8d,
+	y: 7.5d,
 	text: [
 		"{q.nuclearcraft.machine_interface.desc}"
 	],
 	dependencies: [
-		"0bf36970",
-		"da8740b0"
+		"22e03e01",
+		"0bf36970"
 	],
 	tasks: [{
 		uid: "4734edf4",

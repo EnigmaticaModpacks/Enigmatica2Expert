@@ -1,6 +1,6 @@
 {
-	x: 6.9d,
-	y: 10.9d,
+	x: 6.7d,
+	y: 11.0d,
 	text: [
 		"{q.nuclearcraft.melter.desc}"
 	],

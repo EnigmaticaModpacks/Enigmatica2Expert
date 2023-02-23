@@ -1,7 +1,7 @@
 {
 	title: "{q.nuclearcraft.lithium_ion_battery.name}",
-	x: 10.1d,
-	y: 6.4d,
+	x: 9.8d,
+	y: 6.5d,
 	text: [
 		"{q.nuclearcraft.lithium_ion_battery.desc}"
 	],

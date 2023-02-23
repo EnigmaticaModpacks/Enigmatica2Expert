@@ -1,19 +1,18 @@
 {
+	title: "Isotope Separator",
+	icon: "nuclearcraft:uranium 1 5",
 	x: 7.9d,
 	y: 12.4d,
 	text: [
-		"{q.nuclearcraft.isotope_separator.desc}"
+		"§5Isotope Separator§r has been disabled use §9Thermal Centrifuge§r from §2IC2§r to craft §5Isotope Separator§r"
 	],
 	dependencies: [
 		"0bf36970",
 		"626f1230"
 	],
 	tasks: [{
-		uid: "87fc8978",
-		type: "item",
-		items: [{
-			item: "nuclearcraft:separator"
-		}]
+		uid: "48cdad53",
+		type: "checkmark"
 	}],
 	rewards: [{
 		uid: "05bff2fd",

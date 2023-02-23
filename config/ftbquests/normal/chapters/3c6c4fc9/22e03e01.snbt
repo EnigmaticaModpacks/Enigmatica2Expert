@@ -1,6 +1,6 @@
 {
 	title: "{q.nuclearcraft.nuclearcraft.name}",
-	icon: "nuclearcraft:manufactory",
+	icon: "nuclearcraft:radaway",
 	x: 5.4d,
 	y: 7.5d,
 	text: [

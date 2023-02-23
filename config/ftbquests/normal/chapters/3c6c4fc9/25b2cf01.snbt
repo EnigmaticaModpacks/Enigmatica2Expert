@@ -27,7 +27,6 @@
 		"cad91dd8",
 		"0bf36970"
 	],
-	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "5f2d3303",
 		type: "item",

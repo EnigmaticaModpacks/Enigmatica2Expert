@@ -1,12 +1,12 @@
 {
 	x: 6.1d,
-	y: 10.2d,
+	y: 8.9d,
 	text: [
 		"{q.nuclearcraft.fluid_infuser.desc}"
 	],
 	dependencies: [
-		"a67645f0",
-		"0bf36970"
+		"0bf36970",
+		"626f1230"
 	],
 	tasks: [{
 		uid: "2509463a",

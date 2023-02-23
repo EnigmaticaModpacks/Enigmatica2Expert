@@ -1,6 +1,6 @@
 {
-	x: 9.2d,
-	y: 3.8d,
+	x: 8.7d,
+	y: 3.7d,
 	text: [
 		"The Irradiator is a machine that Uses radioactive sources to irradiate Items with Gamma rays. Currently the 2 sources usable in it are Co-60 for a normal speed and Ir-192 for x10 speed. "
 	],
