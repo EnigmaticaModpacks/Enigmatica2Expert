@@ -176,6 +176,7 @@ utils.rh(<forestry:climatiser:1>);
 utils.rh(<forestry:climatiser:2>);
 utils.rh(<forestry:climatiser:3>);
 utils.rh(<forestry:climatiser:4>);
+recipes.remove(<forestry:thermionic_tubes:*>); // Remove Greenhouse -> tube conversion
 
 # Buff light level of lit candles
 <forestry:candle:1>.asBlock().definition.lightLevel = 0.95;

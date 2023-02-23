@@ -30,3 +30,12 @@ for name, ingrs in modIngrs {
     "I": <advancedrocketry:ic:4>,          # Item IO Circuit Board
   });
 }
+
+# [Machine Projector] from [Silicon Plate][+1]
+craft.make(<modularcontroller:machine_projector>, ["pretty",
+  "    □",
+  "  /  ",
+  "/    "], {
+  "□": <ore:plateSilicon>,                # Silicon Plate
+  "/": <ore:rodStone> | <ore:stickStone>, # Stone Rod
+});

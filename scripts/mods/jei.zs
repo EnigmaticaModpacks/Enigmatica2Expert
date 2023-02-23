@@ -6,7 +6,6 @@ var categoriesToHide as string[] = [
 	"minecraft.fuel",
 	"thermaldynamics.covers",
 	"thermalexpansion.furnace",
-	"forestry.bottler",
 	"xu2_machine_extrautils2:furnace",
 	"xu2_machine_extrautils2:generator_survival",
 	"xu2_machine_extrautils2:generator",

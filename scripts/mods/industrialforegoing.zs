@@ -222,6 +222,8 @@ mods.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
 
 # Fluid Extractor
 mods.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, <fluid:menrilresin> * 5);
+mods.industrialforegoing.Extractor.remove(<thaumcraft:log_silverwood>);
+mods.industrialforegoing.Extractor.add(<thaumcraft:log_silverwood>, <fluid:fluid_quicksilver> * 5);
 
 # Stackable black hole tanks
 <industrialforegoing:black_hole_unit>.maxStackSize = 64;

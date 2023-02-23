@@ -49,15 +49,6 @@ craft.remake(<nuclearcraft:alloy_furnace>, ["pretty",
   "|": <ic2:crafting:42>,    # Shaft (Bronze)
 });
 
-# [Universal Bin] from [Boron Ingot][+1]
-craft.remake(<nuclearcraft:bin>, ["pretty",
-  "□ ▬ □",
-  "▬   ▬",
-  "□ ▬ □"], {
-  "□": <ore:plateBasic>, # Basic Plating
-  "▬": <ore:ingotBoron>, # Boron Ingot
-});
-
 # [Speed Upgrade] from [Base Upgrade][+2]
 craft.remake(<nuclearcraft:upgrade>, ["pretty",
   "T ⌂ T",
@@ -169,6 +160,19 @@ craft.remake(<nuclearcraft:turbine_casing> * 64, ["pretty",
   "◙": <ore:steelFrame>,     # Steel Chassis
 });
 
+# [Universal Bin]*3 from [Trash Can (Fluid)][+2]
+craft.reshapeless(<nuclearcraft:bin> * 3, "aTr", {
+  "a": <extrautils2:trashcan>,       # Trash Can
+  "T": <extrautils2:trashcanfluid>,  # Trash Can (Fluid)
+  "r": <extrautils2:trashcanenergy>, # Trash Can (Energy)
+});
+
+# Graphite from coal
+furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:*>);
+
+# Diamond from 64 graphite
+scripts.process.compress(<ore:dustGraphite> * 64, <minecraft:diamond>, "except: Compressor");
+
 # Removing an Obsidian dupe
 mods.nuclearcraft.Melter.removeRecipeWithOutput(<fluid:obsidian> * 288);
 mods.nuclearcraft.Melter.removeRecipeWithOutput(<fluid:obsidian> * 72);
@@ -255,6 +259,15 @@ mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:quartz>);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:quartz_ore>, <bloodmagic:cutting_fluid>]);
 mods.mekanism.crusher.removeRecipe(<nuclearcraft:gem_dust:2>);
 scripts.process.crush(<ore:gemQuartz>, <appliedenergistics2:material:3>, "only: aegrinder mekcrusher", null, null);
+
+# Remove Lead-platinum alloy as redundant
+mods.tconstruct.Melting.removeRecipe(<fluid:lead_platinum>);
+mods.tconstruct.Alloy.removeRecipe(<fluid:lead_platinum>);
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<fluid:lead_platinum> * 144);
+mods.tconstruct.Casting.removeTableRecipe(<nuclearcraft:alloy:9>);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:9> * 4);
+mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:9>);
+utils.rh(<nuclearcraft:alloy:9>);
 
 # More melting compat
 for ingr, fluid in {
@@ -519,19 +532,24 @@ for mod, types in nuclearData {
       val    fuel_carbide = itemUtils.getItem(mod+':fuel_'+key, i*4+1);
       val    fuel_oxide   = itemUtils.getItem(mod+':fuel_'+key, i*4+2);
       val    fuel_nitride = itemUtils.getItem(mod+':fuel_'+key, i*4+3);
+      val   depleted_fuel = itemUtils.getItem(mod+':depleted_fuel_'+key, i*4);
 
       // Remove unoxidation and unnitridation recipes
-      if(!isNull(isotope)) furnace.remove(isotope);
+      // if(!isNull(isotope)) furnace.remove(isotope);
       if(!isNull(pellet)) furnace.remove(pellet);
       if(!isNull(fuel)) furnace.remove(fuel);
 
+      // Pebbles
+      utils.rh(fuel);
+
       // Pebbles in fuel reprocessor
-      if(key!='americium' && i!=2) {
-        val pebble = itemUtils.getItem(mod+':depleted_fuel_'+key, i*4);
-        mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(pebble * 9);
-        utils.rh(pebble);
-        mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
-        utils.rh(pellet_carbide);
+      if(key!='americium' || i==0) {
+        mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(depleted_fuel * 9);
+        utils.rh(depleted_fuel);
+        if(i!=2) {
+          mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
+          utils.rh(pellet_carbide);
+        }
       }
 
       if(key!='mixed' && key!='thorium'

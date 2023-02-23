@@ -2,7 +2,7 @@
 
 <entity:emberroot:fairies>.addPlayerOnlyDrop(<astralsorcery:itemusabledust>, 1, 6);
 
-scripts.lib.loot.tweak("emberroot:entity/golem_blue"     ,"main","minecraft:iron_nugget" , null, [<mysticalagriculture:diamond_essence>]  , [1,4]);
+scripts.lib.loot.tweak("emberroot:entity/golem_blue"     ,"main","minecraft:iron_nugget" , null, [<extrautils2:unstableingots:1>]         , [2,4]);
 scripts.lib.loot.tweak("emberroot:entity/golem_green"    ,"main","minecraft:gunpowder"   , null, [<mysticalagriculture:crafting:39>]      , [2,8]);
 scripts.lib.loot.tweak("emberroot:entity/golem_orange"   ,"main","minecraft:coal"        , null, [<mekanism:nugget:3>]                    , [3,14]);
 scripts.lib.loot.tweak("emberroot:entity/golem_purple"   ,"main","minecraft:spider_eye"  , null, [<mechanics:heavy_nugget>]               , [5,24]);

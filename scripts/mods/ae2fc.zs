@@ -1,5 +1,8 @@
 #modloaded ae2fc
 
+# Replaced by natie AE2 Fluid Assembler
+utils.rh(<ae2fc:fluid_assembler>);
+
 # [ME Fluid Discretizer] from [64k ME Fluid Storage Component][+4]
 craft.remake(<ae2fc:fluid_discretizer>, ["pretty",
   "▬ E ▬",

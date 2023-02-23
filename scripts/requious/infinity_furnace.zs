@@ -99,7 +99,11 @@ const filters = [
         const mat = o.match(/^dust([A-Z].+)/)?.[1]
         return mat && out_ore.some(o=>o.replace(/^(ingot|gem)/, '') === mat)
       })
-      || in_ore.some(o=>o.match(/.+Oxide/)) && !out_ore.some(o=>o.match(/.+Oxide/))
+      // Blacklist input
+      || [
+        'Oxide',
+        'Nitride'
+      ].some(key => in_ore.some(o=>o.match(new RegExp('.+'+key))))
   }],
 ]
 
@@ -134,10 +138,10 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 825
+# Total Furnace recipes registered: 872
 # Filtered by JEI blacklist: 42
 # Filtered manuallly (antidupe): 14
-# Filtered by oredict: 108
+# Filtered by oredict: 154
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
@@ -630,6 +634,7 @@ infinFurnace(utils.get("minecraft:chorus_fruit", W), utils.get("minecraft:chorus
 infinFurnace(utils.get("minecraft:clay_ball", W), utils.get("minecraft:brick"));
 infinFurnace(utils.get("minecraft:clay", W), utils.get("minecraft:hardened_clay"));
 infinFurnace(utils.get("minecraft:coal_ore", W), utils.get("minecraft:coal"));
+infinFurnace(utils.get("minecraft:coal", W), utils.get("nuclearcraft:ingot", 8));
 infinFurnace(utils.get("minecraft:cobblestone", W), utils.get("minecraft:stone"));
 infinFurnace(utils.get("minecraft:diamond_ore", W), utils.get("minecraft:diamond"));
 infinFurnace(utils.get("minecraft:dye", 3), utils.get("nuclearcraft:roasted_cocoa_beans"));
@@ -757,6 +762,32 @@ infinFurnace(utils.get("netherendingores:ore_other_1", 3), utils.get("tconstruct
 infinFurnace(utils.get("netherendingores:ore_other_1", 4), utils.get("tconstruct:ingots"));
 infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct:ore", 0, 2));
 #infinFurnace(utils.get("netherendingores:ore_other_1"), utils.get("minecraft:quartz"));
+##infinFurnace(utils.get("nuclearcraft:americium", 2), utils.get("nuclearcraft:americium"));
+##infinFurnace(utils.get("nuclearcraft:americium", 3), utils.get("nuclearcraft:americium"));
+##infinFurnace(utils.get("nuclearcraft:americium", 7), utils.get("nuclearcraft:americium", 5));
+##infinFurnace(utils.get("nuclearcraft:americium", 8), utils.get("nuclearcraft:americium", 5));
+##infinFurnace(utils.get("nuclearcraft:americium", 12), utils.get("nuclearcraft:americium", 10));
+##infinFurnace(utils.get("nuclearcraft:americium", 13), utils.get("nuclearcraft:americium", 10));
+##infinFurnace(utils.get("nuclearcraft:berkelium", 2), utils.get("nuclearcraft:berkelium"));
+##infinFurnace(utils.get("nuclearcraft:berkelium", 3), utils.get("nuclearcraft:berkelium"));
+##infinFurnace(utils.get("nuclearcraft:berkelium", 7), utils.get("nuclearcraft:berkelium", 5));
+##infinFurnace(utils.get("nuclearcraft:berkelium", 8), utils.get("nuclearcraft:berkelium", 5));
+##infinFurnace(utils.get("nuclearcraft:californium", 2), utils.get("nuclearcraft:californium"));
+##infinFurnace(utils.get("nuclearcraft:californium", 3), utils.get("nuclearcraft:californium"));
+##infinFurnace(utils.get("nuclearcraft:californium", 7), utils.get("nuclearcraft:californium", 5));
+##infinFurnace(utils.get("nuclearcraft:californium", 8), utils.get("nuclearcraft:californium", 5));
+##infinFurnace(utils.get("nuclearcraft:californium", 12), utils.get("nuclearcraft:californium", 10));
+##infinFurnace(utils.get("nuclearcraft:californium", 13), utils.get("nuclearcraft:californium", 10));
+##infinFurnace(utils.get("nuclearcraft:californium", 17), utils.get("nuclearcraft:californium", 15));
+##infinFurnace(utils.get("nuclearcraft:californium", 18), utils.get("nuclearcraft:californium", 15));
+##infinFurnace(utils.get("nuclearcraft:curium", 2), utils.get("nuclearcraft:curium"));
+##infinFurnace(utils.get("nuclearcraft:curium", 3), utils.get("nuclearcraft:curium"));
+##infinFurnace(utils.get("nuclearcraft:curium", 7), utils.get("nuclearcraft:curium", 5));
+##infinFurnace(utils.get("nuclearcraft:curium", 8), utils.get("nuclearcraft:curium", 5));
+##infinFurnace(utils.get("nuclearcraft:curium", 12), utils.get("nuclearcraft:curium", 10));
+##infinFurnace(utils.get("nuclearcraft:curium", 13), utils.get("nuclearcraft:curium", 10));
+##infinFurnace(utils.get("nuclearcraft:curium", 17), utils.get("nuclearcraft:curium", 15));
+##infinFurnace(utils.get("nuclearcraft:curium", 18), utils.get("nuclearcraft:curium", 15));
 ##infinFurnace(utils.get("nuclearcraft:dust", 3), utils.get("nuclearcraft:ingot", 3));
 ##infinFurnace(utils.get("nuclearcraft:dust", 5), utils.get("nuclearcraft:ingot", 5));
 ##infinFurnace(utils.get("nuclearcraft:dust", 6), utils.get("nuclearcraft:ingot", 6));
@@ -771,11 +802,31 @@ infinFurnace(utils.get("nuclearcraft:flour"), utils.get("minecraft:bread"));
 infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust", 14));
 ##infinFurnace(utils.get("nuclearcraft:ingot", 14), utils.get("nuclearcraft:ingot", 11));
 infinFurnace(utils.get("nuclearcraft:ingot", 15), utils.get("nuclearcraft:ingot", 14));
+##infinFurnace(utils.get("nuclearcraft:neptunium", 2), utils.get("nuclearcraft:neptunium"));
+##infinFurnace(utils.get("nuclearcraft:neptunium", 3), utils.get("nuclearcraft:neptunium"));
+##infinFurnace(utils.get("nuclearcraft:neptunium", 7), utils.get("nuclearcraft:neptunium", 5));
+##infinFurnace(utils.get("nuclearcraft:neptunium", 8), utils.get("nuclearcraft:neptunium", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 3), utils.get("nuclearcraft:ingot", 3));
 infinFurnace(utils.get("nuclearcraft:ore", 5), utils.get("nuclearcraft:ingot", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 6), utils.get("nuclearcraft:ingot", 6));
 infinFurnace(utils.get("nuclearcraft:ore", 7), utils.get("nuclearcraft:ingot", 7));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 2), utils.get("nuclearcraft:plutonium"));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 3), utils.get("nuclearcraft:plutonium"));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 7), utils.get("nuclearcraft:plutonium", 5));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 8), utils.get("nuclearcraft:plutonium", 5));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 12), utils.get("nuclearcraft:plutonium", 10));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 13), utils.get("nuclearcraft:plutonium", 10));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 17), utils.get("nuclearcraft:plutonium", 15));
+##infinFurnace(utils.get("nuclearcraft:plutonium", 18), utils.get("nuclearcraft:plutonium", 15));
+##infinFurnace(utils.get("nuclearcraft:uranium", 2), utils.get("nuclearcraft:uranium"));
+##infinFurnace(utils.get("nuclearcraft:uranium", 3), utils.get("nuclearcraft:uranium"));
+##infinFurnace(utils.get("nuclearcraft:uranium", 7), utils.get("nuclearcraft:uranium", 5));
+##infinFurnace(utils.get("nuclearcraft:uranium", 8), utils.get("nuclearcraft:uranium", 5));
+##infinFurnace(utils.get("nuclearcraft:uranium", 12), utils.get("nuclearcraft:uranium", 10));
+##infinFurnace(utils.get("nuclearcraft:uranium", 13), utils.get("nuclearcraft:uranium", 10));
 infinFurnace(utils.get("opencomputers:material", 2), utils.get("opencomputers:material", 4));
+##infinFurnace(utils.get("qmd:copernicium", 2), utils.get("qmd:copernicium"));
+##infinFurnace(utils.get("qmd:copernicium", 3), utils.get("qmd:copernicium"));
 ##infinFurnace(utils.get("qmd:dust", 1), utils.get("qmd:ingot", 1));
 ##infinFurnace(utils.get("qmd:dust", 2), utils.get("qmd:ingot", 2));
 ##infinFurnace(utils.get("qmd:dust", 3), utils.get("libvulpes:productingot", 7));

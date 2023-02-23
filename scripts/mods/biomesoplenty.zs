@@ -173,3 +173,14 @@ craft.shapeless(<biomesoplenty:mud>, "Ad", {
 recipes.addShapeless("Biome Essence clear tag", <biomesoplenty:biome_essence>, [<biomesoplenty:biome_essence>]);
 
 <entity:biomesoplenty:wasp>.addPlayerOnlyDrop(<extrautils2:spike_gold> % 30, 1, 1);
+
+# Higher efficient stick conversion
+# [Framed Trim] from [Bamboo]
+craft.shapeless(<storagedrawers:customtrim>, "#########", {
+  "#": <biomesoplenty:bamboo>, # Bamboo
+});
+
+# [Framed Trim] from [River Cane]
+craft.shapeless(<storagedrawers:customtrim>, "#########", {
+  "#": <biomesoplenty:plant_1:5>, # River Cane
+});

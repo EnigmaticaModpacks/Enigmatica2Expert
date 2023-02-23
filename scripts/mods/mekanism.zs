@@ -96,7 +96,7 @@ for ingot in <ore:ingotGraphite>.items {
 	<mekanism:jetpack>, 
 	[[<ore:ingotSteel>, <minecraft:web>, <ore:ingotSteel>],
 	[<ore:plateBronze>, <mekanism:gastank>, <ore:plateBronze>], 
-	[<ore:plateBronze>, <ore:circuitElite>, <ore:plateBronze>]]);
+	[<ore:plateBronze>, <mekanism:reinforcedalloy>, <ore:plateBronze>]]);
 
 # Thermal Evaporator Controller
 	recipes.remove(<mekanism:basicblock:14>);

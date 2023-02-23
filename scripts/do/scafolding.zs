@@ -23,7 +23,7 @@ return arr
 /**/
 ] as int[];
 
-static xp_consumption as int = 1;
+static xp_consumption as int = 0;
 
 events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
   val world = e.world;
@@ -80,7 +80,7 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
 
   e.cancel();
   if(!e.player.creative) item.mutable().shrink(1);
-  e.player.removeXP(xp_consumption);
+  if(xp_consumption > 0) e.player.removeXP(xp_consumption);
 
   if(world.remote) return;
   cat.start();

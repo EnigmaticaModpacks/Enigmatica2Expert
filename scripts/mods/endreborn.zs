@@ -252,6 +252,12 @@ craft.reshapeless(<endreborn:crop_ender_flower>, "C‚", {
   "‚": <ore:itemEnderFragment>,
 });
 
+# [Advanced Ender Pearl]*8 from [Dimensional Blend][+1]
+craft.reshapeless(<endreborn:item_advanced_ender_pearl> * 8, "eeee▲eeee", {
+  "e": <ore:enderpearl>, # Ender Pearl
+  "▲": <ore:dustDimensional>, # Dimensional Blend
+});
+
 
 # Purpur guards are disables, so make Purpur Shards craftable
 mods.rustic.EvaporatingBasin.addRecipe(<endreborn:item_end_shard>, <liquid:liquidchorus> * 1000, 20*20);

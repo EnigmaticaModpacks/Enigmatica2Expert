@@ -83,6 +83,9 @@ for item in <ore:toolHoe>.items {
 add(<ore:cropApple>, <harvestcraft:pamapple>);
 add(<ore:listAllfruit>, <harvestcraft:pamapple>);
 
+# Remove annoying sticks
+removeItems(<ore:stickWood>, [<biomesoplenty:bamboo>, <biomesoplenty:plant_1:5>]);
+
 # Boat Oredict
 addItems(<ore:boat>, [
 	<minecraft:boat>,
@@ -209,6 +212,9 @@ add(<ore:chipDiamond>, <thermalfoundation:material:16>);
 add(<ore:heartDragon>, <draconicevolution:dragon_heart>);
 add(<ore:heartDragon>, <iceandfire:fire_dragon_heart>);
 add(<ore:heartDragon>, <iceandfire:ice_dragon_heart>);
+
+# Hippogryphs
+add(<ore:hippogryphEgg>, <iceandfire:hippogryph_egg:*>);
 
 # Crafting hammers
 add(<ore:craftingToolForgeHammer>, <immersiveengineering:tool>);
@@ -456,7 +462,8 @@ addItems(<ore:listAllmilk>, [<ic2:dust:33>]);
 addItems(<ore:bitumen>, [<thermalfoundation:material:892>, <immersivepetroleum:material>]);
 
 # Additional essence added with mysticalcreations
-addItems(<ore:essenceTier2>, [<mysticalcreations:cheese_essence>, <mysticalcreations:creosolite_essence>]);
+addItems(<ore:essenceTier1>, [<mysticalcreations:creosolite_essence>]);
+addItems(<ore:essenceTier2>, [<mysticalcreations:cheese_essence>]);
 addItems(<ore:essenceTier3>, [<mysticalagriculture:starmetal_essence>]);
 add(<ore:essenceTier6>, <mysticalcreations:ultimate_essence>);
 

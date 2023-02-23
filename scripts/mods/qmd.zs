@@ -122,9 +122,9 @@ mods.qmd.target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*100
 null, null, null, 
 1000, 1.0, 0, 0);
 
-//qmd bugged recipe fix
-mods.qmd.target_chamber.removeRecipeWithInput(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000);
-mods.qmd.target_chamber.addRecipe(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000, <ore:ingotUranium235>, null, <particle:neutron>*4, null, 34000, 0.55, -17800);
+// //qmd bugged recipe fix
+// mods.qmd.target_chamber.removeRecipeWithInput(<ore:ingotUranium238>, (<particle:neutron>*1818000)^26000);
+// mods.qmd.target_chamber.addRecipe(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000, <ore:ingotUranium235>, null, <particle:neutron>*4, null, 34000, 0.55, -17800);
 
 //mods.qmd.nucleosynthesis_chamber.addRecipe(IIngredient inputFluid1, IIngredient inputFluid2, IIngredient inputParticle, IIngredient outputFluid1, IIngredient outputFluid2, {long maxEnergy}, {long heatRelased})
 mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:sky_stone>*52, <liquid:enrichedlava>*20, <particle:neutron>*1000000, <liquid:neutronium>*72, null, 10000, 874000);

@@ -263,3 +263,17 @@ mods.thaumcraft.Crucible.registerRecipe(
   <ore:nuggetAdaminite>, # Input
   [<aspect:aversio> * 10]
 );
+
+# [Crystal Cluster]*64 from [Benitoite][+3]
+# mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
+mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:decorative_brick:2> * 64, [
+<draconicevolution:infused_obsidian>,   # Draconium Infused Obsidian
+<thaumcraft:crimson_blade>,             # Crimson Blade
+<thaumcraft:banner_crimson_cult>,       # Crimson Cult Banner
+<ore:gemBenitoite>,                     # Benitoite
+], 100000, 300, 4);
+
+# [Crystal Cluster Brick]*4 from [Crystal Cluster]
+craft.shapeless(<bloodmagic:decorative_brick:3> * 4, "****", {
+  "*": <bloodmagic:decorative_brick:2>, # Crystal Cluster
+});

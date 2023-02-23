@@ -88,21 +88,18 @@ craft.remake(<cyclicmagic:storage_bag>, ["pretty",
 });
 
 
-# [Ender Orb] from [Redstone][+3]
-craft.reshapeless(<cyclicmagic:ender_pearl_reuse>, "W▲▬♥", {
-  "W": <ore:cheeseAnimania>,
-  "▲": <ore:dustDimensional>,    # Dimensional Blend
-  "▬": <ore:ingotPulsatingIron>, # Pulsating Iron Ingot
-  "♥": <ore:dustRedstone>,       # Redstone
-});
+# [Ender Orb] from [Molten Demon Metal Bucket][+1]
+recipes.remove(<cyclicmagic:ender_pearl_reuse>);
+mods.tconstruct.Casting.addTableRecipe(<cyclicmagic:ender_pearl_reuse>  , <endreborn:item_advanced_ender_pearl>, <liquid:xu_demonic_metal>, 144*4, true);
 
-# [Ender Orb Translocator] from [Lapis Lazuli][+3]
-craft.reshapeless(<cyclicmagic:ender_pearl_mounted>, "W▲▬◊", {
-  "W": <ore:cheeseAnimania>,
-  "▲": <ore:dustDimensional>,    # Dimensional Blend
-  "▬": <ore:ingotPulsatingIron>, # Pulsating Iron Ingot
-  "◊": <ore:gemLapis>,           # Lapis Lazuli
-});
+# [Ender Orb Translocator] from [Molten Lapis Bucket][+1]
+recipes.remove(<cyclicmagic:ender_pearl_mounted>);
+mods.tconstruct.Casting.addTableRecipe(<cyclicmagic:ender_pearl_mounted>, <endreborn:item_advanced_ender_pearl>, <liquid:lapis>, 666*4, true);
+
+# Soul stone as T3 crafting ingredient
+recipes.remove(<cyclicmagic:soulstone>);
+mods.rockytweaks.Anvil.addRecipe(<cyclicmagic:ender_pearl_reuse>  , <cyclicmagic:crystallized_obsidian>, <cyclicmagic:soulstone>, 45);
+mods.rockytweaks.Anvil.addRecipe(<cyclicmagic:ender_pearl_mounted>, <cyclicmagic:crystallized_obsidian>, <cyclicmagic:soulstone>, 45);
 
 # [Crystallized Amber] from [Chorus Glass][+3]
 craft.remake(<cyclicmagic:crystallized_amber>, ["pretty",

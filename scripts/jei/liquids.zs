@@ -52,10 +52,10 @@ interact(<fluid:pyrotheum>, null, <minecraft:sand:*>, <minecraft:glass>);
 interact(<fluid:pyrotheum>, null, <minecraft:clay:*>, <minecraft:hardened_clay>);
 interact(<fluid:pyrotheum>, null, <minecraft:stone_stairs:*>, <minecraft:stone_brick_stairs>);
 
-interact(<fluid:cryotheum>, null, <fluid:water>, <minecraft:ice>);
-interact(<fluid:cryotheum>, null, <fluid:water>, <minecraft:snow>);
-interact(<fluid:cryotheum>, null, <fluid:lava>, <minecraft:obsidian>);
-interact(<fluid:cryotheum>, null, <fluid:lava>, <minecraft:stone>);
+interact(<fluid:cryotheum>, <fluid:water>, null, <minecraft:ice>);
+interact(<fluid:cryotheum>, <fluid:water>, null, <minecraft:snow>);
+interact(<fluid:cryotheum>, <fluid:lava>, null, <minecraft:obsidian>);
+interact(<fluid:cryotheum>, <fluid:lava>, null, <minecraft:stone>);
 interact(<fluid:cryotheum>, null, Soul('minecraft:creeper') | Soul('minecraft:zombie'), Soul('minecraft:snowman'));
 
 interact(<fluid:petrotheum>, null, <minecraft:stone:*>, <minecraft:gravel>);

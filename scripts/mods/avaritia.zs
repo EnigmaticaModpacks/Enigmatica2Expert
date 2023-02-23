@@ -64,7 +64,7 @@ craft.make(<avaritia:neutron_collector>, ["pretty",
 	<contenttweaker:terrestrial_artifact_block>, <extrautils2:decorativesolid:6>, <appliedenergistics2:fluix_block>,
 	<draconicevolution:draconium_block:1>, <ore:blockMyrmexResin>, 
 	<advancedrocketry:hotturf>, <forestry:bee_combs_0>, <ore:blockBoundMetal>,
-	<ore:blockAstralStarmetal>, <ore:blockOsgloglas>, <ore:blockMirion>]);
+	<ore:blockAstralStarmetal>, <ore:blockOsgloglas>, <ore:blockMirion>, <ore:blockTrinitite>]);
 	
 # [Endest Pearl] from [Pristine Enderman Matter][+5]
 mods.avaritia.ExtremeCrafting.remove(<avaritia:endest_pearl>);

@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
 import scripts.process.solution;
 
 #modloaded enderio
@@ -585,15 +586,15 @@ craft.remake(<enderio:block_inventory_chest_tiny>, ["pretty",
   "c": <ore:chest>,                      # Oak Chest
 });
 
-# [Inventory Panel] from [Grains of Vibrancy][+3]
+# [Inventory Panel] from [Storage Terminal][+3]
 craft.remake(<enderio:block_inventory_panel>, ["pretty",
-  "R * R",
-  "* V *",
+  "R M R",
+  "M S M",
   "R P R"], {
-  "P": <enderio:block_tank:1>,           # Pressurized Fluid Tank
   "R": <ore:itemRemoteAwarenessUpgrade>, # Remote Awareness Upgrade
-  "V": <ore:itemVibrantPowder>,          # Grains of Vibrancy
-  "*": <ore:itemPulsatingCrystal>,       # Pulsating Crystal
+  "M": <tconstruct:materials:19>,        # Mending Moss
+  "S": <integratedterminals:part_terminal_storage_item>, # Storage Terminal
+  "P": <enderio:block_tank:1>,           # Pressurized Fluid Tank
 });
 
 # [Inventory Panel Remote] from [Inventory Panel][+2]
@@ -711,3 +712,16 @@ scripts.process.crush(<ore:itemPulsatingCrystal>, <enderio:item_material:36>, 'o
 
 # [Grains of the End] from [Ender Crystal]
 scripts.process.crush(<ore:itemEnderCrystal>, <enderio:item_material:37>, 'only: eu2Crusher AACrusher');
+
+# The Vat early alternatives
+function addBrewAlt(fluid as ILiquidStack, ingrs as IIngredient[], output as string) as void {
+  mods.rustic.Condenser.addRecipe(
+    <rustic:fluid_bottle>.withTag({Fluid: {FluidName: output, Amount: 1000}}),
+    ingrs, null, <minecraft:glass_bottle>, fluid, 40
+  );
+}
+
+addBrewAlt(<fluid:mead>       * 2000, [<minecraft:porkchop>, <minecraft:sugar>], 'nutrient_distillation');
+addBrewAlt(<fluid:short.mead> * 2000, [<minecraft:porkchop>, <minecraft:sugar>], 'nutrient_distillation');
+addBrewAlt(<fluid:milk_goat>  * 2000, [<minecraft:beetroot_seeds>, <minecraft:sugar>], 'hootch');
+addBrewAlt(<fluid:hootch>     * 2000, [<minecraft:blaze_powder>, <minecraft:redstone>], 'fire_water');

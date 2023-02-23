@@ -4,6 +4,14 @@ import crafttweaker.item.IItemStack;
 
 # *======= Recipes =======*
 
+# Remove too powerful aspects
+<iceandfire:podium>.removeAspects(<aspect:desiderium>);
+<iceandfire:podium:1>.removeAspects(<aspect:desiderium>);
+<iceandfire:podium:2>.removeAspects(<aspect:desiderium>);
+<iceandfire:podium:3>.removeAspects(<aspect:desiderium>);
+<iceandfire:podium:4>.removeAspects(<aspect:desiderium>);
+<iceandfire:podium:5>.removeAspects(<aspect:desiderium>);
+
 // Disk Platter / Iron Chain Link
 craft.remake(<iceandfire:chain_link> * 2, ['AAA', 'A A', 'AAA'], {
   A: <ore:nuggetFakeIron>,
@@ -441,61 +449,6 @@ for i in 0 to dragonCrafIngredients.length {
 }
 
 ##################
-# Hippogryphs
-val hippCrafIngredients as IItemStack[] = [
-	<animania:wool:1>,
-	<animania:wool>,
-	<animania:wool:2>,
-	<animania:wool:4>,
-	<animania:wool:3>,
-	<animania:wool:6>,
-	<animania:wool:5>,
-];
-val hippCraftEggs as IItemStack[] = [
-	<iceandfire:hippogryph_egg>,
-	<iceandfire:hippogryph_egg:1>,
-	<iceandfire:hippogryph_egg:2>,
-	<iceandfire:hippogryph_egg:3>,
-	<iceandfire:hippogryph_egg:4>,
-	<iceandfire:hippogryph_egg:5>,
-	<iceandfire:hippogryph_egg:6>,
-];
-<ore:hippogryphEgg>.add(hippCraftEggs);
-
-for i in 0 to hippCrafIngredients.length {
-	envelopCheese("hippEgg_"~i, hippCraftEggs[i], hippCrafIngredients[i]);
-}
-
-
-##################
-# WORMS
-
-# Small worm
-recipes.addShaped("iceandfire_deathworm_egg", <iceandfire:iceandfire.deathworm_egg>*3, [
-	[<ore:animaniaEggs>, <twilightforest:moonworm>, <ore:animaniaEggs>], 
-	[<ore:animaniaEggs>, <rats:chunky_cheese_token>, <ore:animaniaEggs>], 
-	[<ore:animaniaEggs>, <twilightforest:moonworm>, <ore:animaniaEggs>]
-]);
-
-# Big Worm
-mods.inworldcrafting.FluidToItem.transform(<iceandfire:iceandfire.deathworm_egg:1>, <liquid:blueslime>, [<iceandfire:iceandfire.deathworm_egg>]);
-
-##################
-# MYRMEX
-var desertIng = <minecraft:stained_hardened_clay:1>;
-recipes.addShaped("myrmexDesertEgg", <iceandfire:myrmex_desert_egg:4>, [
-	[desertIng, <twilightforest:cicada>, desertIng], 
-	[desertIng, <rats:chunky_cheese_token>, desertIng], 
-	[desertIng, <twilightforest:cicada>, desertIng]
-]);
-var jungleIng = <minecraft:stained_hardened_clay:11>;
-recipes.addShaped("myrmexJungleEgg", <iceandfire:myrmex_jungle_egg:4>, [
-	[jungleIng, <twilightforest:cicada>, jungleIng], 
-	[jungleIng, <rats:chunky_cheese_token>, jungleIng], 
-	[jungleIng, <twilightforest:cicada>, jungleIng]
-]);
-
-##################
 # Pixies
 var pixieJars as IItemStack[] = [
     <iceandfire:jar_pixie>,
@@ -646,21 +599,6 @@ for i, input in listConversionScales {
 	# [Dragon Scales] from [Dragon Scale]
 	recipes.addShapeless(output, [<mysticalagradditions:stuff:3>, input]);
 }
-
-# Add crafts before Rat's coins
-# [Jungle Myrmex Egg] from [Cicada][+1]
-craft.remake(<iceandfire:myrmex_jungle_egg>, [
-  "WC"], {
-  "W": <randomthings:weatheregg:1>, # Weather Egg <Rain>
-  "C": <twilightforest:cicada>,     # Cicada
-});
-
-# [Desert Myrmex Egg] from [Cicada][+1]
-craft.remake(<iceandfire:myrmex_desert_egg>, [
-  "WC"], {
-  "W": <randomthings:weatheregg>, # Weather Egg <Sun>
-  "C": <twilightforest:cicada>,   # Cicada
-});
 
 # Peaceful Skyblock alt
 # [Fire Dragon Blood]*8 from [Imbued Slate][+1]

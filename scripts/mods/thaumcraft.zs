@@ -49,13 +49,13 @@ for aspect, ingr in {
   );
 }
 
-function getAnyVisCrystal(key as string = '8', col as int = 0x333333) as IItemStack {
+function getAnyVisCrystal(key as string = '8', col as int = 0x333333, matchNBTCheck as bool = false) as IItemStack {
   return <thaumcraft:crystal_essence>.withTag(
     utils.shinigTag(col) + {
       Aspects: [{key: 'ordo', amount: 1}],
       display: {Name: "§"~key~"§lAny Different Vis Crystal"}
     } as IData,
-  false);
+  matchNBTCheck);
 }
 
 function getAnyVisSalt(key as string = '8', col as int = 0x333333) as IItemStack {
@@ -159,9 +159,9 @@ craft.shapeless(<thaumcraft:salis_mundus>, "DEFCAB", {
   A: <ore:itemFlint>.reuse(),
   B: <minecraft:bowl>.reuse(),
   C: <ore:dustRedstone>,
-  D: getAnyVisCrystal('4', 0xff0000),
-  E: getAnyVisCrystal('2', 0x00ff00),
-  F: getAnyVisCrystal('b', 0x00ffff),
+  D: getAnyVisCrystal('4', 0xff0000, true),
+  E: getAnyVisCrystal('2', 0x00ff00, true),
+  F: getAnyVisCrystal('b', 0x00ffff, true),
   }
 );
 

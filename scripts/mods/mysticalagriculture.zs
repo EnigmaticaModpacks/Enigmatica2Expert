@@ -1007,7 +1007,7 @@ remakeBlock   ("mysticalagriculture:ingottin"             , <blockstate:thermalf
 remakeBlock   ("mysticalagriculture:ingotsilver"          , <blockstate:thermalfoundation:ore:type=silver>       , [<mysticalagriculture:silver_essence>]);
 remakeBlock   ("mysticalagriculture:ingotaluminum"        , <blockstate:thermalfoundation:ore:type=aluminum>     , [<mysticalagriculture:aluminum_essence>]);
 remakeBlock   ("mysticalagriculture:ingotnickel"          , <blockstate:thermalfoundation:ore:type=nickel>       , [<mysticalagriculture:nickel_essence>]);
-remakeBlock   ("mysticalagriculture:ingotplatinum"        , <blockstate:thermalfoundation:ore:type=platinum>     , [<mysticalagriculture:platinum_essence>]);
+remakeBlock   ("mysticalagriculture:ingotplatinum"        , <blockstate:thermalfoundation:ore:type=platinum>     , [<mysticalagriculture:platinum_essence>], 'base_essence');
 remakeBlock   ("mysticalagriculture:ingotiridium"         , <blockstate:thermalfoundation:ore:type=iridium>      , [<mysticalagriculture:iridium_essence>]);
 remakeBlock   ("mysticalagriculture:ingoturanium"         , <blockstate:immersiveengineering:ore:type=uranium>   , [<mysticalagriculture:uranium_essence>]);
 remakeManapool("mysticalagriculture:ingotknightmetal", <twilightforest:armor_shard> * 3, [<mysticalagriculture:knightmetal_essence>]);

@@ -66,42 +66,6 @@
             "rolls": 1
           },
           {
-            "meshLevel": 2,
-            "name": "mysticalagriculture:ruby_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.04,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 2,
-            "name": "mysticalagriculture:peridot_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.03,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 2,
-            "name": "mysticalagriculture:malachite_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.02,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 2,
-            "name": "mysticalagriculture:sapphire_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.06,
-            "rolls": 1
-          },
-          {
             "meshLevel": 3,
             "name": "mysticalagriculture:starmetal_essence",
             "metadata": 0,
@@ -134,7 +98,7 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.2,
+            "chance": 0.04,
             "rolls": 1
           },
           {
@@ -143,25 +107,7 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.15,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "mysticalagriculture:topaz_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.3,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "mysticalagriculture:tanzanite_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.2,
+            "chance": 0.03,
             "rolls": 1
           },
           {
@@ -170,7 +116,7 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.1,
+            "chance": 0.02,
             "rolls": 1
           },
           {
@@ -179,7 +125,7 @@
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.3,
+            "chance": 0.06,
             "rolls": 1
           },
           {

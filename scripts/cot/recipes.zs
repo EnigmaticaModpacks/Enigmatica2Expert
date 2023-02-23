@@ -1,4 +1,6 @@
 
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 furnace.setFuel(<contenttweaker:conglomerate_of_coal>, 60000);
 furnace.setFuel(<contenttweaker:blasted_coal>, 120000);
@@ -111,8 +113,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_anglesit
 
 
 # Benitoite - Highest tier of non-Tech mods crystals
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_benitoite>, 100000000, 1000000,
-<additionalcompression:gravelnether_compressed:2>, [
+val benitoiteIngrs = [
 	<ore:eternalLifeEssence>,
 	<thaumcraft:mechanism_complex>,
 	<ore:elvenDragonstone>,
@@ -133,7 +134,23 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_benitoit
 	<randomthings:rezstone>,
 	<cyclicmagic:soulstone>,
 	<astralsorcery:itemperkgem:1>,
-]);
+] as IIngredient[];
+
+mods.extendedcrafting.CombinationCrafting.addRecipe(
+  <contenttweaker:ore_benitoite>, 100000000, 1000000,
+  <additionalcompression:gravelnether_compressed:2>,
+  benitoiteIngrs
+);
+
+mods.thaumcraft.Infusion.registerRecipe(
+  "benitoite", # Name
+  "INFUSION", # Research
+  <contenttweaker:ore_benitoite>, # Output
+  15, # Instability
+  [<aspect:sanguis> * 1000, <aspect:mana> * 1000, <aspect:draco> * 1000],
+  <additionalcompression:gravelnether_compressed:2>, # CentralItem
+  benitoiteIngrs
+);
 
 # Benefication of Anglesite and Benitoite
 scripts.process.beneficiate(<contenttweaker:ore_anglesite>, "Anglesite", 1, {exceptions: "only: Grindstone"});

@@ -57,7 +57,7 @@ for i, arr in chestIngrs {
   craft.reshapeless(<colossalchests:interface>.definition.makeStack(i), 
     "C■", {
     "C": currWall,
-    "■": <endreborn:block_decorative_lormyte>, # Lormyte Block
+    "■": <ore:shardLormyte>,
   });
 
   # [Colossal Chest Wall] from [Chest Upgrade Tool][+4]
