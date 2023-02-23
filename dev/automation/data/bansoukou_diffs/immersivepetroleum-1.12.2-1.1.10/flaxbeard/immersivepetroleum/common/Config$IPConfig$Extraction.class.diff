@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java"
-index 8dd573bc..ca6836c2 100644
---- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java"
-+++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\Config$IPConfig$Extraction.java"
 @@ -9,14 +9,10 @@ package flaxbeard.immersivepetroleum.common;
  import net.minecraftforge.common.config.Config;
  

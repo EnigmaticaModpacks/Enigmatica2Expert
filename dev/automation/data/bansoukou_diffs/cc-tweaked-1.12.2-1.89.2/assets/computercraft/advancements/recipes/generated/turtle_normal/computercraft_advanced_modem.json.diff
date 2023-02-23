@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_advanced_modem.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_advanced_modem.json"
-index d07d0d51..79df44cd 100644
---- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_advanced_modem.json"
-+++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\computercraft_advanced_modem.json"
 @@ -1 +1,19 @@
 -{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:generated/turtle_normal/computercraft_advanced_modem"]},"criteria":{"has_items":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:turtle_expanded","data":0},{"item":"computercraft:advanced_modem"}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:generated/turtle_normal/computercraft_advanced_modem"}}},"requirements":[["has_items","has_the_recipe"]]}
 \ No newline at end of file

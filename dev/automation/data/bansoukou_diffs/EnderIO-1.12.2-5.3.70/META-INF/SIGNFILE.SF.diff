@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\EnderIO-1.12.2-5.3.70\\META-INF\\SIGNFILE.SF" "b/bansoukou\\EnderIO-1.12.2-5.3.70\\META-INF\\SIGNFILE.SF"
-index 81d25e073..e69de29bb 100644
---- "a/~bansoukou_unpatched\\EnderIO-1.12.2-5.3.70\\META-INF\\SIGNFILE.SF"
-+++ "b/bansoukou\\EnderIO-1.12.2-5.3.70\\META-INF\\SIGNFILE.SF"
 @@ -1,13840 +0,0 @@
 -Signature-Version: 1.0
 -SHA-256-Digest-Manifest-Main-Attributes: HYXyfZ4o2DM/RJUGryC9+1eoe8C3s

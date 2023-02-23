@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\betteranimalsplus-1.12.2-9.0.1\\assets\\betteranimalsplus\\advancements\\root.json" "b/bansoukou\\betteranimalsplus-1.12.2-9.0.1\\assets\\betteranimalsplus\\advancements\\root.json"
-index 8e5652c4a..015f45895 100644
---- "a/~bansoukou_unpatched\\betteranimalsplus-1.12.2-9.0.1\\assets\\betteranimalsplus\\advancements\\root.json"
-+++ "b/bansoukou\\betteranimalsplus-1.12.2-9.0.1\\assets\\betteranimalsplus\\advancements\\root.json"
 @@ -1 +1,29 @@
 -{"display":{"title":{"text":"Better Animals Plus","color":"gold","bold":true,"italic":false},"description":{"text":"Start the game with Better Animals Plus installed","color":"yellow","bold":false,"italic":true},"icon":{"item":"betteranimalsplus:antler"},"frame":"task","show_toast":true,"announce_to_chat":false,"hidden":false,"background":"minecraft:textures/blocks/planks_big_oak.png"},"criteria":{"tick":{"trigger":"minecraft:tick"}},"requirements":[["tick"]]}
 \ No newline at end of file

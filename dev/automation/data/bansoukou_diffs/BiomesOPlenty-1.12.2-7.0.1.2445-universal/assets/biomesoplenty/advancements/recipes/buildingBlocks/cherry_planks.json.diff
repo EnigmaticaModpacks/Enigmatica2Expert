@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\cherry_planks.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\cherry_planks.json"
-index b5953c7e..fa15a9fe 100644
---- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\cherry_planks.json"
-+++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\cherry_planks.json"
 @@ -1,9 +1,4 @@
  {
 -  "rewards": {

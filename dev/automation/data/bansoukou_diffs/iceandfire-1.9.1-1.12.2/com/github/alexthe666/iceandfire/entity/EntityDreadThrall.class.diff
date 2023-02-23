@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java" "b/bansoukou\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java"
-index 24ed3012..37ad645f 100644
---- "a/~bansoukou_unpatched\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java"
-+++ "b/bansoukou\\iceandfire-1.9.1-1.12.2\\com\\github\\alexthe666\\iceandfire\\entity\\EntityDreadThrall.java"
 @@ -242,7 +242,7 @@ IAnimalFear {
      }
  

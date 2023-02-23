@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java"
-index a84d2626..3cc7ae53 100644
---- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java"
-+++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\ImmersivePetroleum.java"
 @@ -84,7 +84,6 @@ public class ImmersivePetroleum {
          PumpjackHandler.oilChance = Config.IPConfig.Extraction.reservoir_chance;
          Config.manual_int.put("distillationTower_operationCost", (int)(2048.0f * Config.IPConfig.Refining.distillationTower_energyModifier));

@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java" "b/bansoukou\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java"
-index 2dc7f453..4ca2a011 100644
---- "a/~bansoukou_unpatched\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java"
-+++ "b/bansoukou\\ImmersiveEngineering-0.12-98\\blusunrize\\immersiveengineering\\common\\blocks\\metal\\TileEntitySilo.java"
 @@ -62,7 +62,7 @@ extends TileEntityMultiblockPart<TileEntitySilo>
  implements IEBlockInterfaces.IComparatorOverride {
      public ItemStack identStack = ItemStack.field_190927_a;

@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\crop\\TileEntityCrop.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\crop\\TileEntityCrop.java"
-index 744c6ad1..b0994d2b 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\crop\\TileEntityCrop.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\crop\\TileEntityCrop.java"
 @@ -305,7 +305,7 @@ implements ICropTile {
              if (this.crop == null) {
                  return;

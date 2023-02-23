@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java" "b/bansoukou\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java"
-index 34ba1d99..f2ec067c 100644
---- "a/~bansoukou_unpatched\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java"	
-+++ "b/bansoukou\\Botania r1.10-364.4\\vazkii\\botania\\client\\integration\\jei\\runicaltar\\RunicAltarRecipeWrapper.java"	
 @@ -55,6 +55,14 @@ implements IRecipeWrapper {
          ingredients.setOutput(VanillaTypes.ITEM, (Object)this.output);
      }

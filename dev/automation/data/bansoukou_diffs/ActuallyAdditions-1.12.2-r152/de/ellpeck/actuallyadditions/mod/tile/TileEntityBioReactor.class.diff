@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java" "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java"
-index 041670fc4..c987a46b5 100644
---- "a/~bansoukou_unpatched\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java"
-+++ "b/bansoukou\\ActuallyAdditions-1.12.2-r152\\de\\ellpeck\\actuallyadditions\\mod\\tile\\TileEntityBioReactor.java"
 @@ -76,9 +76,10 @@ implements ISharingEnergyProvider {
      public void updateEntity() {
          super.updateEntity();

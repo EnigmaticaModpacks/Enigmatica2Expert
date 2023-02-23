@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java" "b/bansoukou\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java"
-index 957858f1..9b315361 100644
---- "a/~bansoukou_unpatched\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java"
-+++ "b/bansoukou\\xnet-1.12-1.8.2\\mcjty\\xnet\\apiimpl\\energy\\EnergyConnectorSettings.java"
 @@ -90,20 +90,14 @@ extends AbstractConnectorSettings {
          this.sideGui(gui);
          this.colorsGui(gui);

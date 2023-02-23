@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java"
-index 63723611..e95fcc9d 100644
---- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java"
-+++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler$ReservoirType.java"
 @@ -30,18 +30,22 @@ public static class PumpjackHandler.ReservoirType {
      public int minSize;
      public int maxSize;

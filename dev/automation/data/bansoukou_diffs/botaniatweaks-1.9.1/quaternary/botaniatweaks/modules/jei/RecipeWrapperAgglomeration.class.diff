@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\botaniatweaks-1.9.1\\quaternary\\botaniatweaks\\modules\\jei\\RecipeWrapperAgglomeration.java" "b/bansoukou\\botaniatweaks-1.9.1\\quaternary\\botaniatweaks\\modules\\jei\\RecipeWrapperAgglomeration.java"
-index 7cf2878f..6f46f7d7 100644
---- "a/~bansoukou_unpatched\\botaniatweaks-1.9.1\\quaternary\\botaniatweaks\\modules\\jei\\RecipeWrapperAgglomeration.java"
-+++ "b/bansoukou\\botaniatweaks-1.9.1\\quaternary\\botaniatweaks\\modules\\jei\\RecipeWrapperAgglomeration.java"
 @@ -99,4 +99,11 @@ implements IRecipeWrapper {
          }
          GlStateManager.func_179118_c();

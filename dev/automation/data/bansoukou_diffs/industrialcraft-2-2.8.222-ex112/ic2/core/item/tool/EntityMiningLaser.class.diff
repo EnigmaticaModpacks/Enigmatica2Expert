@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java"
-index 510feb71..935b0b5f 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\EntityMiningLaser.java"
 @@ -196,7 +196,7 @@ lbl36:
  
      private void explode() {

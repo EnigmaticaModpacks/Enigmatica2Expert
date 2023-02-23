@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\redwood_planks.json" "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\redwood_planks.json"
-index ed104957..f38ad4cd 100644
---- "a/~bansoukou_unpatched\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\redwood_planks.json"
-+++ "b/bansoukou\\BiomesOPlenty-1.12.2-7.0.1.2445-universal\\assets\\biomesoplenty\\advancements\\recipes\\buildingBlocks\\redwood_planks.json"
 @@ -1,9 +1,4 @@
  {
 -  "rewards": {

@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java" "b/bansoukou\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java"
-index 8ac2ef56..2319e82c 100644
---- "a/~bansoukou_unpatched\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java"
-+++ "b/bansoukou\\netherportalspread_1.12.2-5.4\\com\\natamus\\netherportalspread\\events\\SpreadEvent.java"
 @@ -40,7 +40,6 @@ public class SpreadEvent {
  
      @SubscribeEvent

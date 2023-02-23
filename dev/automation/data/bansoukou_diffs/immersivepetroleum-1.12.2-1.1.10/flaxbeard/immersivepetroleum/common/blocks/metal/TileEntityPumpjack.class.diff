@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityPumpjack.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityPumpjack.java"
-index 9ec62635..30862a67 100644
---- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityPumpjack.java"
-+++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityPumpjack.java"
 @@ -88,7 +88,18 @@ IEBlockInterfaces.IGuiTile {
      public IBlockState state = null;
  

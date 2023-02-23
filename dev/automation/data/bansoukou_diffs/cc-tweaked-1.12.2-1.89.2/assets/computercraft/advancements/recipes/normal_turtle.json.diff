@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_turtle.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_turtle.json"
-index 8236c993..8dd158e3 100644
---- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_turtle.json"
-+++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\normal_turtle.json"
 @@ -1 +1,16 @@
 -{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:normal_turtle"]},"criteria":{"has_normal":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:computer","data":0}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:normal_turtle"}}},"requirements":[["has_normal","has_the_recipe"]]}
 \ No newline at end of file

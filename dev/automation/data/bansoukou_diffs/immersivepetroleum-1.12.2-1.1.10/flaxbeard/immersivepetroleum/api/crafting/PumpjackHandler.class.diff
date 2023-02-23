@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java"
-index 6a23f74f..7aef0521 100644
---- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java"
-+++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\api\\crafting\\PumpjackHandler.java"
 @@ -54,10 +54,32 @@ public class PumpjackHandler {
      private static Map<Integer, HashMap<String, Integer>> totalWeightMap = new HashMap<Integer, HashMap<String, Integer>>();
      public static HashMap<DimensionChunkCoords, Long> timeCache = new HashMap();

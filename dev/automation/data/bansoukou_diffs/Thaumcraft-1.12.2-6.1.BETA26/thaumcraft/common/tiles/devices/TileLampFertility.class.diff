@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java"
-index 6b982c89..fd9bdfcd 100644
---- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java"
-+++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileLampFertility.java"
 @@ -3,7 +3,6 @@
   * 
   * Could not load the following classes:

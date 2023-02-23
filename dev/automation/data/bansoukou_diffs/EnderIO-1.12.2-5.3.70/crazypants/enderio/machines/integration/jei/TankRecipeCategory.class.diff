@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java" "b/bansoukou\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java"
-index 7a7ec0fb1..8b54edbca 100644
---- "a/~bansoukou_unpatched\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java"
-+++ "b/bansoukou\\EnderIO-1.12.2-5.3.70\\crazypants\\enderio\\machines\\integration\\jei\\TankRecipeCategory.java"
 @@ -94,9 +94,9 @@ extends BlankRecipeCategory<TankRecipeWrapper> {
      private final IDrawable background;
  

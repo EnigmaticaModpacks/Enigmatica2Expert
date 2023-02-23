@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java"
-index 713a2a15..e737a0bf 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\uu\\UuIndex.java"
 @@ -2,8 +2,6 @@
   * Decompiled with CFR 0.152.
   * 

@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java" "b/bansoukou\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java"
-index e21dbc71..95184b68 100644
---- "a/~bansoukou_unpatched\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java"
-+++ "b/bansoukou\\RandomThings-MC1.12.2-4.2.7.4\\lumien\\randomthings\\entitys\\EntityGoldenChicken.java"
 @@ -130,12 +130,12 @@ extends EntityAnimal {
              this.field_70181_x *= 0.6;
          }

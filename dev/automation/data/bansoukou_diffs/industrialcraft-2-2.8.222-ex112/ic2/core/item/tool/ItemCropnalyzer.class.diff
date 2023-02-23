@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java"
-index c530f642..5ea514b7 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tool\\ItemCropnalyzer.java"
 @@ -106,7 +106,7 @@ implements IHandHeldInventory {
                  IC2.platform.messagePlayer(player, "Nutrient storage: " + crop.getStorageNutrients() + "/100", new Object[0]);
                  IC2.platform.messagePlayer(player, "Water storage: " + crop.getStorageWater() + "/200", new Object[0]);

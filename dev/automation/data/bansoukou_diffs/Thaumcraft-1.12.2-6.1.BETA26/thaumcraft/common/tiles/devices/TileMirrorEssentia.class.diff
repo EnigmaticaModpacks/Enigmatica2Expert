@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileMirrorEssentia.java" "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileMirrorEssentia.java"
-index a5b4f17c..141b5528 100644
---- "a/~bansoukou_unpatched\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileMirrorEssentia.java"
-+++ "b/bansoukou\\Thaumcraft-1.12.2-6.1.BETA26\\thaumcraft\\common\\tiles\\devices\\TileMirrorEssentia.java"
 @@ -303,7 +303,7 @@ ITickable {
              this.instability -= 64;
              this.func_70296_d();

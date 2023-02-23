@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\ItemBatteryChargeHotbar.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\ItemBatteryChargeHotbar.java"
-index 566ecb90..f2cd1499 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\ItemBatteryChargeHotbar.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\ItemBatteryChargeHotbar.java"
 @@ -67,6 +67,8 @@ extends ItemBattery
  implements IBoxable {
      public ItemBatteryChargeHotbar(ItemName name, double maxCharge, double transferLimit, int tier) {

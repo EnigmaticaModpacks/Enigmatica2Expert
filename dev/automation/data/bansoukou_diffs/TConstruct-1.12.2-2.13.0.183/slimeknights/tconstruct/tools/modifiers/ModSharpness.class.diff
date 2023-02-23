@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java" "b/bansoukou\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java"
-index 4c1377e5b..f09a9734a 100644
---- "a/~bansoukou_unpatched\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java"
-+++ "b/bansoukou\\TConstruct-1.12.2-2.13.0.183\\slimeknights\\tconstruct\\tools\\modifiers\\ModSharpness.java"
 @@ -36,18 +36,11 @@ extends ToolModifier {
          ModifierNBT.IntegerNBT data = ModifierNBT.readInteger((NBTTagCompound)modifierTag);
          ToolNBT toolData = TagUtil.getOriginalToolStats((NBTTagCompound)rootCompound);

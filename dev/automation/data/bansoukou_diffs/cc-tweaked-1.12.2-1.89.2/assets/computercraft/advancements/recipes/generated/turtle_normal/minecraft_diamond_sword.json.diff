@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_diamond_sword.json" "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_diamond_sword.json"
-index 98f7b18d..bef340be 100644
---- "a/~bansoukou_unpatched\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_diamond_sword.json"
-+++ "b/bansoukou\\cc-tweaked-1.12.2-1.89.2\\assets\\computercraft\\advancements\\recipes\\generated\\turtle_normal\\minecraft_diamond_sword.json"
 @@ -1 +1,19 @@
 -{"parent":"minecraft:recipes/root","rewards":{"recipes":["computercraft:generated/turtle_normal/minecraft_diamond_sword"]},"criteria":{"has_items":{"trigger":"minecraft:inventory_changed","conditions":{"items":[{"item":"computercraft:turtle_expanded","data":0},{"item":"minecraft:diamond_sword"}]}},"has_the_recipe":{"trigger":"minecraft:recipe_unlocked","conditions":{"recipe":"computercraft:generated/turtle_normal/minecraft_diamond_sword"}}},"requirements":[["has_items","has_the_recipe"]]}
 \ No newline at end of file

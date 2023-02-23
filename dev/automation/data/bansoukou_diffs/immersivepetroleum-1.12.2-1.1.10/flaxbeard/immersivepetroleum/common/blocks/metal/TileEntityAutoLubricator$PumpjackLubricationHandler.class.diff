@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityAutoLubricator$PumpjackLubricationHandler.java" "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityAutoLubricator$PumpjackLubricationHandler.java"
-index 0b774e20..b224c67d 100644
---- "a/~bansoukou_unpatched\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityAutoLubricator$PumpjackLubricationHandler.java"
-+++ "b/bansoukou\\immersivepetroleum-1.12.2-1.1.10\\flaxbeard\\immersivepetroleum\\common\\blocks\\metal\\TileEntityAutoLubricator$PumpjackLubricationHandler.java"
 @@ -72,7 +72,7 @@ implements LubricatedHandler.ILubricationHandler<TileEntityPumpjack> {
      public void lubricate(World world, int ticks, TileEntityPumpjack master) {
          if (!world.field_72995_K) {

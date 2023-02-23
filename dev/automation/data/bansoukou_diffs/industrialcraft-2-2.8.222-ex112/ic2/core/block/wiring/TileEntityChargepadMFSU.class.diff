@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFSU.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFSU.java"
-index 9b974867..3f6a5ec9 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFSU.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\block\\wiring\\TileEntityChargepadMFSU.java"
 @@ -18,7 +18,7 @@ import net.minecraft.item.ItemStack;
  public class TileEntityChargepadMFSU
  extends TileEntityChargepadBlock {

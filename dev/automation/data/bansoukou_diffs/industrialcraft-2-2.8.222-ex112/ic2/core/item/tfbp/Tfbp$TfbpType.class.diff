@@ -1,7 +1,3 @@
-diff --git "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java" "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java"
-index 2a000dbb5..6005fe095 100644
---- "a/~bansoukou_unpatched\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java"
-+++ "b/bansoukou\\industrialcraft-2-2.8.222-ex112\\ic2\\core\\item\\tfbp\\Tfbp$TfbpType.java"
 @@ -22,21 +22,21 @@ import ic2.core.item.tfbp.Irrigation;
  import ic2.core.item.tfbp.Mushroom;
  import ic2.core.item.tfbp.TerraformerBase;
