@@ -1,0 +1,30 @@
+{
+	title: "Welcome Trinity",
+	x: 6.7d,
+	y: 12.4d,
+	text: [
+		"§2Trinity§r is an add-on for §2NuclearCraft§r that adds various §5Nuclear Bombs§r to the game, as well as semi-realistic ways to create them.",
+		"",
+		"These bombs have a §chigh level of destruction§r and increase the §cradiation§r of the places.",
+		"",
+		"§4Warnig: Use with caution§r"
+	],
+	dependencies: [
+		"bcb9f771",
+		"0bf36970"
+	],
+	tasks: [{
+		uid: "e8c8247a",
+		type: "item",
+		items: [{
+			item: "trinity:detonator"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "777199c7",
+		type: "loot",
+		table: 1
+	}]
+}

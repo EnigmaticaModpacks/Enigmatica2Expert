@@ -1,0 +1,32 @@
+{
+	title: "Thermonuclear Bomb",
+	x: 6.7d,
+	y: 15.2d,
+	text: [
+		"The §5Thermonuclear Bomb§r has a much greater destructive power than normal nuclear bombs, it is made by following a few steps to transform your normal nuclear bomb into a §5Thermonuclear Bomb§r",
+		"",
+		"§9Step 1:§r Place down any nuclear bomb. Note that the larger the blast radius, the larger the blast radius of the thermonuclear bomb will be.",
+		"",
+		"§9Step 2:§r Place a column of three thermonuclear bomb cores above the nuclear bomb. They must all be vertically aligned, so that the plutonium rods within them connect.",
+		"",
+		"§9Step 3:§r Surround the thermonuclear cores with a \"tamper\" made of reflective, fissionable, or salting blocks. Reflective blocks are effectively inert, and only increase the explosion power by a little bit. Fissionable blocks greatly amplify the explosion. Salting blocks will absorb some of the explosion's energy, and convert it into extremely radioactive fallout.",
+		"",
+		"§9Step 4:§r Link the nuclear detonator to the nuclear bomb and detonate it. If the above steps were done correctly, you should have a very large thermonuclear explosion take place."
+	],
+	dependencies: [
+		"0bf36970",
+		"3f6fd17c"
+	],
+	tasks: [{
+		uid: "0d4090bf",
+		type: "item",
+		items: [{
+			item: "trinity:thermonuclear_core_pu239"
+		}]
+	}],
+	rewards: [{
+		uid: "3cd011ec",
+		type: "loot",
+		table: 1
+	}]
+}
