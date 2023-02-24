@@ -1,10 +1,10 @@
 {
-	title: "Isotope Separator",
+	title: "{q.nuclearcraft_overh.isotope_separator.name}",
 	icon: "nuclearcraft:uranium 1 5",
 	x: 7.9d,
 	y: 12.4d,
 	text: [
-		"§5Isotope Separator§r has been disabled use §9Thermal Centrifuge§r from §2IC2§r to craft §5Isotope Separator§r"
+		"{q.nuclearcraft_overh.isotope_separator.desc}"
 	],
 	dependencies: [
 		"0bf36970",

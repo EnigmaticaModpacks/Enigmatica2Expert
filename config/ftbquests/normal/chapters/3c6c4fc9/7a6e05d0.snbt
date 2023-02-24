@@ -4,9 +4,7 @@
 	x: 16.4d,
 	y: 4.8d,
 	text: [
-		"MultiBlock structure that constitutes a Reactor driven by salts.",
-		"",
-		"An example of the structure can be seen in the mod creator's video: https://www.youtube.com/watch?v=-PH3SWor4Yc"
+		"{q.nuclearcraft_overh.molten_salt_reactor.desc}"
 	],
 	dependencies: [
 		"8eed8d90",

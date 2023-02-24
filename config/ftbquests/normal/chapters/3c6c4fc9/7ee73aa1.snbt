@@ -2,7 +2,7 @@
 	x: 22.0d,
 	y: 7.5d,
 	text: [
-		"Advanced Tier QMD"
+		"{q.nuclearcraft_overh.advanced_processor.desc}"
 	],
 	dependencies: [
 		"ca80be66",

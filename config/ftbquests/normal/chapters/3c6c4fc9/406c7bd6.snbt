@@ -1,9 +1,9 @@
 {
-	title: "Reflector",
+	title: "{q.nuclearcraft_overh.reflector.name}",
 	x: 13.3d,
 	y: 15.2d,
 	text: [
-		"A §6Fuel Cell§r can also reach §cCriticality Factor§r by reflecting §aFlux Factor§r back onto itself by using a §9Reflector§r at the end of a §bModerator Line§r."
+		"{q.nuclearcraft_overh.reflector.desc}"
 	],
 	dependencies: [
 		"3ccd3b95",

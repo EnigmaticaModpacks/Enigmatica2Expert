@@ -1,9 +1,9 @@
 {
-	title: "High Pressure Steam",
+	title: "{q.nuclearcraft_overh.high_pressure_steam.name}",
 	x: 16.4d,
 	y: 12.4d,
 	text: [
-		"§5High Pressure Steam§r is an extremely useful product to generate energy and can be obtained from a process in the §3Solid Fuel Fission Reactor§r as shown in §2JEI§r"
+		"{q.nuclearcraft_overh.high_pressure_steam.desc}"
 	],
 	dependencies: [
 		"516c6590",

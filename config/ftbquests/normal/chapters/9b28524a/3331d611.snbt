@@ -13,8 +13,20 @@
 		uid: "bf95641a",
 		type: "item",
 		items: [{
-			item: "bloodmagic:blood_rune 52"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any runeBlood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "runeBlood"
+				}
+			}
 		}],
+		count: 52L,
 		ignore_nbt: 1b
 	},
 	{

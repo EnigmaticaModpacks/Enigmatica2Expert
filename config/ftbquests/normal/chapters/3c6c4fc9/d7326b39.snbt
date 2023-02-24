@@ -1,16 +1,9 @@
 {
-	title: "Irradiator",
+	title: "{q.nuclearcraft_overh.irradiator_1.name}",
 	x: 14.7d,
 	y: 13.7d,
 	text: [
-		"This quest will help you understand how to process §dIrradiator§r recipes.",
-		"",
-		"After each §6Fuel Cell§r is receiving enough §aFlux Factor§r to activate, you can create additional §bModerator Lines§r extending out from your §6Fuel Cells§r capped by an §dIrradiator§r. ",
-		"",
-		"Adding up the total §aFlux Factor§r in the §bModerator Line§r between the §6Cell§r and §dIrradiator§r will give us the amount of Radiation per tick used in processing recipes such as §7N-Type Doped Silicon§r.",
-		"",
-		"",
-		"Remember, each §bModerator Line§r extending from a §6Cell§r will increase the §eHeat§r."
+		"{q.nuclearcraft_overh.irradiator_1.desc}"
 	],
 	dependencies: [
 		"cad91dd8",

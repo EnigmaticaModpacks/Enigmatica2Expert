@@ -1,0 +1,21 @@
+{
+	title: "{q.blood_magic.blood_altar_tier_6.name}",
+	icon: "bloodmagic:decorative_brick 1 3",
+	x: 12.5d,
+	y: 3.16d,
+	text: [
+		"{q.blood_magic.blood_altar_tier_6.desc}"
+	],
+	dependencies: [
+		"3331d611"
+	],
+	tasks: [{
+		uid: "e0e2ab16",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "e2d9e952",
+		type: "xp_levels",
+		xp_levels: 10
+	}]
+}

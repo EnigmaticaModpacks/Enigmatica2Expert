@@ -2,7 +2,7 @@
 	x: 23.7d,
 	y: 7.5d,
 	text: [
-		"Elite Tier QMD"
+		"{q.nuclearcraft_overh.elite_processor.desc}"
 	],
 	dependencies: [
 		"7ee73aa1",

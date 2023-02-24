@@ -2,7 +2,7 @@
 	x: 20.3d,
 	y: 7.5d,
 	text: [
-		"Basic Tier QMD"
+		"{q.nuclearcraft_overh.basic_processor.desc}"
 	],
 	dependencies: [
 		"0bf36970",

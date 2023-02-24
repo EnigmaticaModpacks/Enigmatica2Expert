@@ -1,0 +1,52 @@
+{
+	title: "{q.industrialcraft.pahoehoe_lava.name}",
+	icon: "ic2:pahoehoe_lava",
+	x: -0.5d,
+	y: 2.2d,
+	text: [
+		"{q.industrialcraft.pahoehoe_lava.desc}"
+	],
+	dependencies: [
+		"83c7fb15",
+		"a6052a32"
+	],
+	tasks: [{
+		uid: "980b1f22",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 31"
+		}]
+	},
+	{
+		uid: "33e85023",
+		type: "item",
+		items: [{
+			item: "ic2:crafting 1 7"
+		}],
+		count: 10L
+	},
+	{
+		uid: "ca620018",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 9"
+		},
+		{
+			item: "ic2:te 1 50"
+		},
+		{
+			item: "ic2:te 1 53"
+		}]
+	},
+	{
+		uid: "ac5eb01a",
+		type: "fluid",
+		fluid: "ic2pahoehoe_lava"
+	}],
+	rewards: [{
+		uid: "55953a6b",
+		type: "item",
+		item: "ic2:resource",
+		count: 8
+	}]
+}

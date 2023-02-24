@@ -14,8 +14,20 @@
 		uid: "7f98fc0a",
 		type: "item",
 		items: [{
-			item: "bloodmagic:blood_rune 28"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any runeBlood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "runeBlood"
+				}
+			}
 		}],
+		count: 28L,
 		ignore_nbt: 1b
 	},
 	{
@@ -27,6 +39,7 @@
 		{
 			item: "bloodmagic:decorative_brick"
 		}],
+		count: 4L,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

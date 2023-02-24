@@ -1,5 +1,6 @@
 {
 	title: "{q.blood_magic.blood_altar_tier_2.name}",
+	icon: "bloodmagic:blood_rune",
 	x: 5.833333333333333d,
 	y: 3.1666666666666665d,
 	text: [
@@ -12,8 +13,20 @@
 		uid: "b54ff04b",
 		type: "item",
 		items: [{
-			item: "bloodmagic:blood_rune 8"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any runeBlood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "runeBlood"
+				}
+			}
 		}],
+		count: 8L,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

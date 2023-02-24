@@ -2,9 +2,7 @@
 	x: 4.5d,
 	y: 8.6d,
 	text: [
-		"This upgrade reduces the energy cost of processing machines.",
-		"",
-		"With lower costs it will be easier to keep the machine running."
+		"{q.nuclearcraft_overh.energy_upgrade.desc}"
 	],
 	dependencies: [
 		"22e03e01",

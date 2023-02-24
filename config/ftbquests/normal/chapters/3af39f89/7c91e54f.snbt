@@ -2,10 +2,7 @@
 	x: 8.7d,
 	y: 3.5d,
 	text: [
-		"Stores a large amount of a single item.",
-		"",
-		"Note:",
-		"When Item Interface connected to Cache and Item Exporter pulls items from this Cache, it ignores Lock state of Cache."
+		"{q.thermal_expansion.cache_basic_.desc}"
 	],
 	dependencies: [
 		"aa982aad"

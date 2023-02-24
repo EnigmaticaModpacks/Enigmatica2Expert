@@ -1,5 +1,5 @@
 {
-	title: "NuclearCraft: Overhauled",
+	title: "{q.nuclearcraft_overh.name}",
 	icon: "nuclearcraft:solid_fission_controller",
 	always_invisible: false,
 	group: 0,

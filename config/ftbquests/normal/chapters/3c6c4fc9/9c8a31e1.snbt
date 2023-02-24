@@ -2,9 +2,7 @@
 	x: 18.6d,
 	y: 7.5d,
 	text: [
-		"Quantum Minecraft Dynamics (QMD) is a mod that brings some real (and some fictional) Particle Physics to minecraft.",
-		"",
-		"More info in Wiki: https://github.com/Lach01298/QMD/wiki"
+		"{q.nuclearcraft_overh.welcome_qmd.desc}"
 	],
 	dependencies: [
 		"8eed8d90",

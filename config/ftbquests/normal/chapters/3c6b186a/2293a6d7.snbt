@@ -6,7 +6,7 @@
 		}
 	},
 	x: -0.5d,
-	y: 2.166666666666667d,
+	y: 3.5d,
 	text: [
 		"{q.industrialcraft.electric_jetpack.desc}"
 	],

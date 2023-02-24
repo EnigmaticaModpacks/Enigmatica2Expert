@@ -1,9 +1,9 @@
 {
-	title: "Nuclear Waste",
+	title: "{q.nuclearcraft_overh.nuclear_waste.name}",
 	x: 11.9d,
 	y: 11.0d,
 	text: [
-		"At the end of the reaction generated nuclear residue that can be processed to acquire new elements."
+		"{q.nuclearcraft_overh.nuclear_waste.desc}"
 	],
 	dependencies: [
 		"608d1a00",

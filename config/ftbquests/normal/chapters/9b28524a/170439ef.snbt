@@ -13,8 +13,20 @@
 		uid: "5df3f9cc",
 		type: "item",
 		items: [{
-			item: "bloodmagic:blood_rune 20"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any runeBlood"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "runeBlood"
+				}
+			}
 		}],
+		count: 20L,
 		ignore_nbt: 1b
 	},
 	{

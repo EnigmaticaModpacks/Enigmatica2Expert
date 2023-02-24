@@ -2,11 +2,7 @@
 	x: 25.5d,
 	y: 7.1d,
 	text: [
-		"Particle physics isn't §oall§r big, dangerous structures for making things go fast and then explode; it's also big, dangerous §cguns§r for making things go fast and then explode!",
-		"",
-		"The §eLepton Cannon§r is an extremely advanced particle weapon that uses various leptons such as §6Tauonium§r as ammunition to annihilate those pesky mobs trying to steal your trade secrets! Refinement of this material§r will require some pretty advanced multiblocks§f; check §2JEI§f to see what steps of particle collision you need to create the §5Tau§o§r and §5Anti-Tau§r particles, before putting them into a §7Neutral Containment Unit§r for storage in cells!",
-		"",
-		"§cTauonium requires the highest collision energy in the mod; you will need to accelerate protons to 150GeV to make Tauonium via Higgs decay. Good luck.§f"
+		"{q.nuclearcraft_overh.lepton_cannon.desc}"
 	],
 	dependencies: [
 		"06b1e561",

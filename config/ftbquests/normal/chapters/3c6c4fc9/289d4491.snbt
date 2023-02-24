@@ -2,9 +2,7 @@
 	x: 25.5d,
 	y: 8.1d,
 	text: [
-		"Contrary to the title of this quest, the §eGluon Gun§r is not actually a weapon! This handheld cannon is an extremely powerful §cmining tool§r, capable of digging massive tunnels in seconds. Of course, this comes at a cost: it runs off of §5Glueballs§r! Don't let the ordinary name fool you; you will need §7numerous particle collision steps§r in order to make this type of matter.",
-		"",
-		"§cGlueballs require the second highest collision energy in the mod; you will need to accelerate protons and antiprotons to 100GeV to make glueballs. Good luck."
+		"{q.nuclearcraft_overh.gluon_gun.desc}"
 	],
 	dependencies: [
 		"06b1e561",
