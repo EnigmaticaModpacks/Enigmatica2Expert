@@ -181,6 +181,7 @@ val defaultArmorMats as IData = [
   "sponge"                 , # 62
   "sunnarium"              , # 62
   "amethyst"               , # 64
+  "mirion"                 , # 66
   "conductive_iron"        , # 68
   "ma.prudentium"          , # 69
   "starmetal"              , # 71
@@ -198,7 +199,6 @@ val defaultArmorMats as IData = [
   "dragonsteel_ice"        , # 87
   "wyvern_metal"           , # 97
   "knightmetal"            , # 98
-  "mirion"                 , # 100
   "soularium"              , # 104
   "osmiridium"             , # 108
   "primal_metal"           , # 111
@@ -352,6 +352,7 @@ val defaultWeaponMats as IData = [
   "thaumium"          , # 193
   "tough"             , # 199
   "enderium"          , # 200
+  "mirion"            , # 201
   "terrasteel"        , # 203
   "cobalt"            , # 204
   "hard_carbon"       , # 204
@@ -378,7 +379,6 @@ val defaultWeaponMats as IData = [
   "litherite"         , # 402
   "gelid_gem"         , # 432
   "erodium"           , # 453
-  "mirion"            , # 479
   "gelid_enderium"    , # 481
   "kyronite"          , # 508
   "red_matter"        , # 532
