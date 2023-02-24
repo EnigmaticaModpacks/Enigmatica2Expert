@@ -1,0 +1,175 @@
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Bo3 BulkEdit
+
+Description: Converted Schematic - Modified by Bo3BulkEdit
+
+Version: 3
+
+SettingsMode: WriteDisable
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+IsOTGPlus: false
+Tree: true
+Frequency: 1
+Rarity: 100
+RotateRandomly: true
+SpawnHeight: highestSolidBlock
+SpawnHeightOffset: 0
+SpawnHeightVariance: 0
+MaxBranchDepth: 10
+ExcludedBiomes: All
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+MaxHeight: 255
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+MaxPercentageOutsideSourceBlock: 0
+OutsideSourceBlock: placeAnyway
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+RandomBlock(0,0,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,0,-1,integrateddynamics:menril_log:3,90,integrateddynamics:menril_log_filled:15,100)
+RandomBlock(-1,0,0,integrateddynamics:menril_log:3,90,integrateddynamics:menril_log_filled:15,100)
+RandomBlock(1,0,0,integrateddynamics:menril_log:3,90,integrateddynamics:menril_log_filled:15,100)
+RandomBlock(0,0,1,integrateddynamics:menril_log:3,90,integrateddynamics:menril_log_filled:15,100)
+RandomBlock(0,1,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,2,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,3,-1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(-1,3,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,3,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(1,3,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,3,1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,4,-1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(-1,4,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,4,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(1,4,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,4,1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,5,-1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(-1,5,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,5,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(1,5,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,5,1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,6,-1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(-1,6,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,6,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(1,6,0,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+RandomBlock(0,6,1,integrateddynamics:menril_log:1,90,integrateddynamics:menril_log_filled:5,100)
+B(-1,2,-1,integrateddynamics:menril_leaves)
+B(0,2,-1,integrateddynamics:menril_leaves)
+B(1,2,-1,integrateddynamics:menril_leaves)
+B(-1,2,0,integrateddynamics:menril_leaves)
+B(1,2,0,integrateddynamics:menril_leaves)
+B(-1,2,1,integrateddynamics:menril_leaves)
+B(0,2,1,integrateddynamics:menril_leaves)
+B(1,2,1,integrateddynamics:menril_leaves)
+B(-1,3,-2,integrateddynamics:menril_leaves)
+B(0,3,-2,integrateddynamics:menril_leaves)
+B(1,3,-2,integrateddynamics:menril_leaves)
+B(-2,3,-1,integrateddynamics:menril_leaves)
+B(-1,3,-1,integrateddynamics:menril_leaves)
+B(1,3,-1,integrateddynamics:menril_leaves)
+B(2,3,-1,integrateddynamics:menril_leaves)
+B(-2,3,0,integrateddynamics:menril_leaves)
+B(2,3,0,integrateddynamics:menril_leaves)
+B(-2,3,1,integrateddynamics:menril_leaves)
+B(-1,3,1,integrateddynamics:menril_leaves)
+B(1,3,1,integrateddynamics:menril_leaves)
+B(2,3,1,integrateddynamics:menril_leaves)
+B(-1,3,2,integrateddynamics:menril_leaves)
+B(0,3,2,integrateddynamics:menril_leaves)
+B(1,3,2,integrateddynamics:menril_leaves)
+B(-1,4,-2,integrateddynamics:menril_leaves)
+B(0,4,-2,integrateddynamics:menril_leaves)
+B(1,4,-2,integrateddynamics:menril_leaves)
+B(-2,4,-1,integrateddynamics:menril_leaves)
+B(-1,4,-1,integrateddynamics:menril_leaves)
+B(1,4,-1,integrateddynamics:menril_leaves)
+B(2,4,-1,integrateddynamics:menril_leaves)
+B(-2,4,0,integrateddynamics:menril_leaves)
+B(2,4,0,integrateddynamics:menril_leaves)
+B(-2,4,1,integrateddynamics:menril_leaves)
+B(-1,4,1,integrateddynamics:menril_leaves)
+B(1,4,1,integrateddynamics:menril_leaves)
+B(2,4,1,integrateddynamics:menril_leaves)
+B(-1,4,2,integrateddynamics:menril_leaves)
+B(0,4,2,integrateddynamics:menril_leaves)
+B(1,4,2,integrateddynamics:menril_leaves)
+B(-1,5,-2,integrateddynamics:menril_leaves)
+B(0,5,-2,integrateddynamics:menril_leaves)
+B(1,5,-2,integrateddynamics:menril_leaves)
+B(-2,5,-1,integrateddynamics:menril_leaves)
+B(-1,5,-1,integrateddynamics:menril_leaves)
+B(1,5,-1,integrateddynamics:menril_leaves)
+B(2,5,-1,integrateddynamics:menril_leaves)
+B(-2,5,0,integrateddynamics:menril_leaves)
+B(2,5,0,integrateddynamics:menril_leaves)
+B(-2,5,1,integrateddynamics:menril_leaves)
+B(-1,5,1,integrateddynamics:menril_leaves)
+B(1,5,1,integrateddynamics:menril_leaves)
+B(2,5,1,integrateddynamics:menril_leaves)
+B(-1,5,2,integrateddynamics:menril_leaves)
+B(0,5,2,integrateddynamics:menril_leaves)
+B(1,5,2,integrateddynamics:menril_leaves)
+B(-1,6,-2,integrateddynamics:menril_leaves)
+B(0,6,-2,integrateddynamics:menril_leaves)
+B(1,6,-2,integrateddynamics:menril_leaves)
+B(-2,6,-1,integrateddynamics:menril_leaves)
+B(-1,6,-1,integrateddynamics:menril_leaves)
+B(1,6,-1,integrateddynamics:menril_leaves)
+B(2,6,-1,integrateddynamics:menril_leaves)
+B(-2,6,0,integrateddynamics:menril_leaves)
+B(2,6,0,integrateddynamics:menril_leaves)
+B(-2,6,1,integrateddynamics:menril_leaves)
+B(-1,6,1,integrateddynamics:menril_leaves)
+B(1,6,1,integrateddynamics:menril_leaves)
+B(2,6,1,integrateddynamics:menril_leaves)
+B(-1,6,2,integrateddynamics:menril_leaves)
+B(0,6,2,integrateddynamics:menril_leaves)
+B(1,6,2,integrateddynamics:menril_leaves)
+B(-1,7,-1,integrateddynamics:menril_leaves)
+B(0,7,-1,integrateddynamics:menril_leaves)
+B(1,7,-1,integrateddynamics:menril_leaves)
+B(-1,7,0,integrateddynamics:menril_leaves)
+B(0,7,0,integrateddynamics:menril_leaves)
+B(1,7,0,integrateddynamics:menril_leaves)
+B(-1,7,1,integrateddynamics:menril_leaves)
+B(0,7,1,integrateddynamics:menril_leaves)
+B(1,7,1,integrateddynamics:menril_leaves)
+
+
+
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT:0,DIRT:1,DIRT:2,biomesoplenty:grass:0,biomesoplenty:grass:1,biomesoplenty:grass,biomesoplenty:grass:3,biomesoplenty:grass:4,biomesoplenty:grass:5,biomesoplenty:grass:6,biomesoplenty:grass:7,biomesoplenty:dirt,biomesoplenty:dirt:1,biomesoplenty:dirt:2,biomesoplenty:dirt:8,biomesoplenty:dirt:9,biomesoplenty:dirt:10,biomesoplenty:dried_sand,biomesoplenty:hard_ice,biomesoplenty:white_sand,biomesoplenty:white_sandstone,biomesoplenty:mud,biomesoplenty:ash_block)
+
