@@ -86,10 +86,11 @@
 [Client thread/ERROR] [FML]: 82: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 83: ASM: li.cil.oc.common.EventHandler$@xxxxxxxx onAttachCapabilitiesItemStack(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: 84: ASM: com.fuzs.gamblingstyle.capability.CapabilityController@xxxxxxxx onAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 85: ASM: astrotibs.villagenames.capabilities.CapabilityAttach@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 86: LOWEST
-[Client thread/ERROR] [FML]: 87: ASM: baubles.common.event.EventHandlerItem@xxxxxxxx itemCapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
-[Client thread/ERROR] [FML]: 88: ASM: INSTANCE onFinishAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 85: ASM: squeek.spiceoflife.foodtracker.FoodTracker@xxxxxxxx onAttachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 86: ASM: astrotibs.villagenames.capabilities.CapabilityAttach@xxxxxxxx attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 87: LOWEST
+[Client thread/ERROR] [FML]: 88: ASM: baubles.common.event.EventHandlerItem@xxxxxxxx itemCapabilityAttach(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
+[Client thread/ERROR] [FML]: 89: ASM: INSTANCE onFinishAttachCapabilities(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V
 [Client thread/ERROR] [FML]: Exception caught during firing event net.minecraftforge.event.AttachCapabilitiesEvent@xxxxxxxx:
 [Client thread/ERROR] [FML]: Index: 63 Listeners:
 [Client thread/ERROR] [FML]: 0: HIGHEST
@@ -192,4 +193,3 @@
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'thaumicwonders:corruption_avatar'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'betteranimalsplus:pheasant'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'betteranimalsplus:turkey'
-[Client thread/ERROR] [FML]: A critical error occurred instantiating the gui factory for mod warptheory

@@ -15,6 +15,7 @@ import AdmZip from 'adm-zip'
 import fast_glob from 'fast-glob'
 import levenshtein from 'fast-levenshtein'
 import _ from 'lodash'
+import replace_in_file from 'replace-in-file'
 
 import {
   defaultHelper,
@@ -166,6 +167,13 @@ async function showDiffs(/** @type {typeof defaultHelper} */ h) {
         )
       }
       catch (error) {}
+
+      // Remove diff technical info
+      replace_in_file.sync({
+        files: diffOut,
+        from : /^diff --git .+\nindex .+\n--- .+\n\+\+\+ .+\n/m,
+        to   : '',
+      })
 
       // Remove tempFiles
       if (unpatchedFilePath !== oldF) unlinkSync(oldF)

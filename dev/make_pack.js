@@ -11,7 +11,7 @@
  */
 
 // @ts-check
-import { join, resolve } from 'path'
+import { join, relative, resolve } from 'path'
 
 import chalk from 'chalk'
 import * as del from 'del'
@@ -220,9 +220,12 @@ const style = {
 
     doTask(
       '🧹 Removing non-release files and folders ... ',
-      () =>
-        `removed: ${del.deleteSync(globs(devonlyIgnore), { dryRun: false }).length}`,
-      tmpOverrides
+      () => {
+        const removed = del.deleteSync(globs(devonlyIgnore), { dryRun: false })
+        return `removed: ${removed.length}\n${
+          removed.map(s => chalk.gray(relative(tmpOverrides, s))).join('\n')
+        }`
+      }, tmpOverrides
     )
   }
 
@@ -317,7 +320,7 @@ const style = {
   const serveronlyIgnore = parseGitignore(loadText('dev/.serveronly.ignore'))
   const serverFilesList = globs(serveronlyIgnore, { cwd: tmpOverrides })
   const serverModsListEvery = globs(serveronlyIgnore, {
-    ignore: devonlyIgnore,
+    ignore: devonlyIgnore.filter(f => !f.startsWith('!')),
   }).filter(f => f.startsWith('mods/'))
   const serverModsList = serverModsListEvery.filter(
     f => !f.endsWith('-patched.jar')

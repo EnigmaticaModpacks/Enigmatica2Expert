@@ -4,29 +4,28 @@ List of priorities:
 
 - [ ] ✏️ Better Integrate `QMD`
 - [ ] ✏️ Better Integrate `Trinity`
-- [ ] ✏️ Add usage of `Perfect Fuel` in NCO (with `flux goo` as sub-product)
-- [ ] ✏️ Remove `Fuel Pebbles`
+- [ ] ✏️ More Cocoa Usages
 - [ ] ✏️ Unify `Mercury`
 - [ ] ✏️ Unify `Sodium Chloride`
-- [ ] ✏️ Add more `Mutagen` recipes
-- [ ] ✏️ Tiny Potato add back conversion recipe
-- [ ] ✏️ Fix Creosote seed wrong seed tier
-- [x] ✏️ Change recipes of *Enchanted* and *Evil Infused* metals from modded alloys instead of vanilla
-- [ ] ✏️ Add recipe for Tungsten Seed
-- [ ] ✏️ Add recipes for T6 Blood Magic Altair
-- [ ] ✏️ TerraWart should Remove Radiation
-- [ ] ✏️ Alchemy Table fix coal dupe
-- [ ] ✏️ Remove Desiderium from podium
-- [ ] 🔨 Nerf Mirion stats
-- [ ] 🔄 bow On Dragon Causing Crash
-- [ ] 🔄 Move langs to CoT files
-- [ ] 🔄 fix Thaumic Energistics Mod Version On Server
-- [ ] 🔄 add Bbop Configs To Package
+- [ ] ✏️ Find a peaceful way for `scan crimson cultists` `get dimensional fracture` `get to emptyness dimension` https://discord.com/channels/911676461050642432/1064813931966779392/1078266283910496409
+- [ ] ✏️ Remove Excess Carbide recipes in AlloyFurnace
+- [ ] ✏️ Compressed Garbage Piles spawn rats sometimes
+- [ ] ✏️ Integrate Spice of Life recipes
+- [ ] ✏️ Add Greater Crymson Portal recipe
+- [ ] ✏️ Change ME controller recipe
+- [ ] ✏️ Make Seared Stone + Essence alternative in adv. machines
+- [ ] ✏️ Remove excess Magnet crafts from Inscriber
+- [ ] ✏️ Fix Cconflict between Wireless Fluid Terminal
 - [ ] 🌍 AbandonedWoodTower less spawn
+- [ ] 📀 Rain Tank buff even more
+- [ ] 📖 Add all tips to E2EE book
+- [ ] 📖 add Alt Storage Terminals Quests
+- [ ] 📖 add Quesr About Animania Milking
+- [ ] 🧱 TCon .ts tool not changing stats
+- [ ] 🔄 bow On Dragon Causing Crash
+- [ ] 🔄 Placing something on Rustic's slabs crashing game
+- [ ] 🔴 Remove `Void Island Control` (void island created by hand)
 - [ ] 🧱 Automation not run automatically
-- [ ] 🔴 Remove Void Island Control (void island created by hand)
-- [ ] 📖 lava Sigil In Geothermal Quest Hint
-- [ ] 📖 Add amount of blocks for Blood Magic altairs
 
 ### v0.89.0 -> Next
 - Turn off Fusion reactors since plasma
@@ -39,6 +38,10 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 🌍 Some OTG biomes have no Ore spawn because they use not Stone. (Biome serach: `StoneBlock: (?!STONE)\w+`)
+- [ ] ✏️ Add usage of `Perfect Fuel` in NCO (with `flux goo` as sub-product)
+- [ ] ✏️ Add recipes for T6 Blood Magic Altair
+- [ ] 🔴 `CraftPresence-2.0.0-beta.1+1.12.2.jar` causing log spam
 - [ ] ✏️ Fix Quark Roots spawned mid air https://github.com/Rebirth-of-the-Night/Quark/issues/16
 - [ ] 📀 Make ic2 crops scanned by default
 - [ ] ✏️ Make Replicator Accept Mem Crystals

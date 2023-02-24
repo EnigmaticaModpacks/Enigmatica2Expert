@@ -675,6 +675,36 @@
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   },
   {
+    "name": "contenttweaker:ore_anglesite",
+    "meta": 0,
+    "length": 1,
+    "name0": "contenttweaker:anglesite",
+    "meta0": 0,
+    "0chance0": 150.0,
+    "1chance0": 150.0,
+    "2chance0": 200.0,
+    "3chance0": 250.0,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
+  },
+  {
+    "name": "contenttweaker:ore_benitoite",
+    "meta": 0,
+    "length": 1,
+    "name0": "contenttweaker:benitoite",
+    "meta0": 0,
+    "0chance0": 150.0,
+    "1chance0": 150.0,
+    "2chance0": 200.0,
+    "3chance0": 250.0,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
+  },
+  {
     "name": "enderio:block_dark_paper_anvil",
     "meta": 0,
     "length": 1,
@@ -5093,35 +5123,5 @@
     "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
-  },
-  {
-    "name": "contenttweaker:ore_anglesite",
-    "meta": 0,
-    "length": 1,
-    "name0": "contenttweaker:anglesite",
-    "meta0": 0,
-    "0chance0": 149.5875,
-    "1chance0": 149.7625,
-    "2chance0": 199.925,
-    "3chance0": 250.1875,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
-  },
-  {
-    "name": "contenttweaker:ore_benitoite",
-    "meta": 0,
-    "length": 1,
-    "name0": "contenttweaker:benitoite",
-    "meta0": 0,
-    "0chance0": 149.8,
-    "1chance0": 149.125,
-    "2chance0": 200.0875,
-    "3chance0": 251.2875,
-    "0pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "1pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}",
-    "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
-    "3pair0": "{\n  \"left\": 1,\n  \"right\": 4\n}"
   }
 ]

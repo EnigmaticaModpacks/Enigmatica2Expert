@@ -12,17 +12,18 @@ config/advancementscreenshot.cfg
 config/sampler.ini
 
 # Files and Folders to keep
-!manifest.json
 !bansoukou
 !config
+!local
+!manifest.json
+!mods
 !patchouli_books
-!shaderpacks
+!resourcepacks/bq_lootchests
 !resources
 !schematics
 !scripts
+!shaderpacks
 !structures
-!local
-!resourcepacks/bq_lootchests
 
 # Mods to ignore
 mods/Extended Item Information*
