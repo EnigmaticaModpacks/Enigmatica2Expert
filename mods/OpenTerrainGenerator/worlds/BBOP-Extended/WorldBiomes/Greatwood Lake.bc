@@ -16,11 +16,11 @@ ResourceInheritance: true
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeSize: 3
+BiomeSize: 7
 
 BiomeRarity: 70
 
-BiomeColor: #FFFFFF
+BiomeColor: #38D966
 
 ReplaceToBiomeName: Greatwood
 

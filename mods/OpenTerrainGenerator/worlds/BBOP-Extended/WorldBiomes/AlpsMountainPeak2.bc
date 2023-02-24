@@ -16,7 +16,7 @@ ResourceInheritance: true
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeSize: 13
+BiomeSize: 12
 
 BiomeRarity: 99
 
@@ -30,7 +30,7 @@ ReplaceToBiomeName: biomesoplenty:alps
 
 IsleInBiome: AlpsMountainPeak
 
-BiomeSizeWhenIsle: 13
+BiomeSizeWhenIsle: 12
 
 BiomeRarityWhenIsle: 99
 
@@ -42,7 +42,7 @@ BiomeIsBorder:
 
 NotBorderNear: 
 
-BiomeSizeWhenBorder: 13
+BiomeSizeWhenBorder: 12
 
 
 #######################################################################

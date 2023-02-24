@@ -42,7 +42,7 @@ BiomeIsBorder: ForestPlateauThicket
 
 NotBorderNear: 
 
-BiomeSizeWhenBorder: 13
+BiomeSizeWhenBorder: 12
 
 
 #######################################################################

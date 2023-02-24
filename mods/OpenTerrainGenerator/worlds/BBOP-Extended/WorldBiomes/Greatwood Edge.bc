@@ -16,13 +16,13 @@ ResourceInheritance: true
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-BiomeSize: 4
+BiomeSize: 8
 
 BiomeRarity: 100
 
-BiomeColor: #FFFFFF
+BiomeColor: #38D966
 
-ReplaceToBiomeName: 
+ReplaceToBiomeName: thaumcraft:magical_forest
 
 ####################
 # Isle biomes only #
