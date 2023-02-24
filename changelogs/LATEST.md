@@ -1,4 +1,4 @@
-# v0.91.0
+# v0.92.0
 
 # ⚠️ Update with caution
 
@@ -6,7 +6,7 @@ This is the **alpha** version of a future update. It is designed to **test big c
 
 Remember that while the Major version of the modpack starts with `v0.xx.x`, big breaking changes will sometimes happen.
 
-In this version several big mods, such as `Nuclearcraft` or `Extreme Reacors` **have been removed** altogether, or replaced by other versions.
+Comparing with latest __stable__ `v0.89.0` version,  several big mods, such as `Nuclearcraft` or `Extreme Reacors` **have been removed** altogether, or replaced by other versions.
 
 If you update from `v0.89.0`, this version will **remove your reactor builds** in the old world and may also cause irreparable world saving failures, so I recommend making a backup.
 
@@ -21,111 +21,106 @@ Please report bugs to the discord server:
 
 Icon | Summary | Reason
 ----:|:--------| ------
-<img src="https://media.forgecdn.net/avatars/thumbnails/664/207/30/30/638061098346462850.png"           > | 🟩              [**Thaumcraft Aspect Creator**](https://www.curseforge.com/minecraft/mc-mods/thaumcraft-aspect-creator)     <sup><sub>thaumcraftaspectcreator-1.12.2-1.1.jar</sub></sup> <br> A Minecraft mod that allows modpack makers to define and add to Thaumcraft custom aspects | 
+<img src="https://media.forgecdn.net/avatars/thumbnails/10/893/30/30/635470330077756031.png"            > | 🟧                        [**Hunger Overhaul**](https://www.curseforge.com/minecraft/mc-mods/hunger-overhaul)               <sup><sub>HungerOverhaul-1.12.2-1.3.3.jenkins148.jar</sub></sup> <br> Ever thought hunger should be more integral to surviving? Harvest vanilla crops without having to replant? Tooltips on food items And more...! | Configured to actually buff food mechanics. Now saturation lasts x2 longer.
+<img src="https://media.forgecdn.net/avatars/thumbnails/6/739/30/30/635367511211652368.png"             > | 🟧                      [**The Spice of Life**](https://www.curseforge.com/minecraft/mc-mods/the-spice-of-life)             <sup><sub>SpiceOfLife-mc1.12-1.3.12.jar</sub></sup> <br> Encourages dietary variety through diminishing returns | Added nice food bags
 
 ## 🟡 Updated Mods
 
 - **AE2 Unofficial Extended Life**
-- **WarpApocalypse**
 - **LittleTiles**
-- **Aqua Acrobatics [Forge]**
-- **Zen Utils**
-- **Recurrent Complex**
- 
+- **Snow! Real Magic! ⛄ (Forge)**
+- **ReAuth**
+- **PackagedAuto**
+
 
 ## ✏️ **Recipes**
-  - <img src="https://i.imgur.com/tE3kPxK.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/gold_ore__0.png "Gold Ore")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermalfoundation/ore__3.png "Lead Ore") now output ![](https://github.com/Krutoy242/mc-icons/raw/master/i/contenttweaker/material_part__439.png "Tiny Silver Dust") in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/actuallyadditions/block_grinder_double__0.png "Double Crusher")
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/plasma.png "Plasma") replaced by Hot Mercury in recipes
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/openblocks/elevator__0.png "Elevator") add dyeing recipe
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/simpledecorative__0.png "Block of Enchanted Metal")![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/ingredients__12.png "Enchanted Ingot")![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/simpledecorative__2.png "Block of Evil Infused Iron")![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/ingredients__17.png "Evil Infused Iron Ingot") recipes use alloys instead of vanilla metals
-  - Remove UU values of all Mek machines
+  - ### 🖉 **New Recipes**
+    - <img src="https://i.imgur.com/f7d3G2y.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/decorative_brick__2.png "Crystal Cluster") for Tier6 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/altar__0.png "Blood Altar")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bigreactors/dustgraphite__0.png "Graphite Dust")x64 => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/diamond__0.png "Diamond") new recipe
+    - <img src="https://i.imgur.com/EZ1c9Uw.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/log_silverwood__0.png "Silverwood Log") => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/fluid_quicksilver.png "Quicksilver") in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialforegoing/tree_fluid_extractor__0__71667bfb.png "Tree Fluid Extractor")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/bamboo__0.png "Bamboo") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/plant_1__5.png "River Cane") now can be converted into 9 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/stick__0.png "Stick")
+    - <img src="https://i.imgur.com/vY2eeRu.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/mutagen.png "Mutagen") added +5 new sources in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/gendustry/mutagen_producer__0.png "Mutagen Producer")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/modularcontroller/machine_projector__0.png "Machine Projector")
 
-  - Fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/block_endstone_crushed__0.png "Crushed Endstone") output empty TCon shard (was tungsten)
+  - ### ✐ **Cheaper**
+    - <img src="https://i.imgur.com/aGq7jDA.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/nutrient_distillation.png "Nutrient Distillation")![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/hootch.png "Hootch")![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/fire_water.png "Fire Water") now have ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rustic/condenser_advanced__0.png "Advanced Alchemic Condenser") alt recipes
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/harvestcraft/windygarden__0.png "Windy Garden") and other gardens x5 time more from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/quark/turf__0.png "Turf Block")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/bin__0.png "Universal Bin")![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/jetpack__13__74a252ef.png "Jetpack") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/mekanism/jetpack__0.png "Jetpack")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/iceandfire.deathworm_egg__0.png "Death Worm Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/iceandfire.deathworm_egg__1.png "Giant Death Worm Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/hippogryph_egg__1.png "Hippogryph Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/myrmex_jungle_egg__0.png "Jungle Myrmex Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/myrmex_desert_egg__0.png "Desert Myrmex Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/myrmex_jungle_egg__4.png "Jungle Myrmex Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/myrmex_desert_egg__4.png "Desert Myrmex Egg")![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/ender_pearl_reuse__0.png "Ender Orb")![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/ender_pearl_mounted__0.png "Ender Orb Translocator")![](https://github.com/Krutoy242/mc-icons/raw/master/i/colossalchests/interface__0.png "Colossal Chest Interface")![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/block_inventory_panel__0.png "Inventory Panel")![](https://github.com/Krutoy242/mc-icons/raw/master/i/endreborn/item_advanced_ender_pearl__0.png "Advanced Ender Pearl")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermallogistics/manager__0.png "Network Manager")
 
-  - ### ✐ **Cheaper**: ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/teleporter__1.png "Deep Dark Portal")
+  - ### ✎ **Harder**
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/platinum_essence__0.png "Platinum Essence") now require ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/base_essence.png "Molten Base Essence") to turn
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/avaritia/resource__5.png "Infinity Catalyst") now require [Trinitite]
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/diamond_drill__0.png "Diamond Drill")
+
+  - ### ✏ **Misc Changes**
+    - <img src="https://i.imgur.com/x2BOCBF.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/diamond_essence__0.png "Diamond Essence") not dropping from Golems anymore
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/ingot__8.png "Graphite Ingot") craftable from Coal as before
+    - <img src="https://i.imgur.com/C6PVfRg.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bigreactors/mineralbenitoite__0.png "Benitoite") now craftable on ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/infusion_matrix__0.png "Runic Matrix")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/alloy__9.png "Lead Platinum Alloy Ingot") remove and hide as redundant
+    - Return back Isotope de-Nitride and de-Oxide recipes
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/bottler__0.png "Bottler") remove from game
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/stone_decoration__5.png "Concrete") now accept any liquid tank
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/thermionic_tubes__1.png "Tin Electron Tube") remove redundant recipes from removed blocks
+    - <img src="https://i.imgur.com/ZB0MoyM.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/botania_tweaks/compressed_tiny_potato_8__0.png "Galactic Potato") can be downcrafted
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/podium__0.png "Oak Podium") remove `Desiderium` aspect
+    - [Fluid Assembler]  (ae2fc) removed from game
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/plant_1__6.png "Tiny Cactus") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/agricraft/agri_seed__0.png "Cactus Seeds") now siften from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/sand__0.png "Sand")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/contenttweaker/compressed_crushed_skystone__0.png "Compressed Crushed Skystone") with ![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/item_mesh__1.png "String Mesh") not output anymore ![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/ruby_essence__0.png "Ruby Essence")![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/peridot_essence__0.png "Peridot Essence")![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/malachite_essence__0.png "Malachite Essence")![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/sapphire_essence__0.png "Sapphire Essence")
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalcreations/creosolite_seeds__0.png "Creosolite Seeds") now Tier1 as intended
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/openblocks/scaffolding__0.png "Scaffolding") not require experience levels to use anymore
+    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/salis_mundus__0.png "Salis Mundus") fix craftable from same crystals
 
 
 
 ## 🔵 **Mods updates**
-  - ### ☢️ **NuclearCraft**: ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/upgrade__0.png "Speed Upgrade") debuff to x4 speed (vanilla is x2)
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/oeintegration/excavatemodifier__0.png "Excavate Modifier") change built-up excavation
+    > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/tconstruct/moms_spaghetti__0.png "Mom's Spaghetti") x10 blocks / tick
+    > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/twilightforest/minotaur_axe_gold__0.png "Golden Minotaur Axe") now have built-up one
+    > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/bronze_pickaxe__0.png "Survivalist's Pickaxe")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/bronze_shovel__0.png "Survivalist's Shovel") now not exhaust player
+    > - IC2 drills have lover block mining count now
+  - ### 🔨 **Tinker's Construct**
+    - Fix TCon tools tooltip shows wrong mining level names
+    - Tools: nerf ![](https://github.com/Krutoy242/mc-icons/raw/master/i/plustic/mirioningot__0.png "Mirion Ingot") stats
+      > Mirion should be used for traits, not stats
+    - Fix Previous [Ender Amethyst] and [Livingwood] nerfs wasnt applied
 
-  - ### <img src="https://i.imgur.com/FpGE4Kj.png" align=right> 🧻 **JEI**: `Liquid Interaction` now show fluids instead of buckets
-      > ![](https://github.com/Krutoy242/mc-icons/raw/master/i/astralsorcery/blockchalice__0.png "Containment Chalice") too
-
-  - ### 🩸 **Blood Magic**: Enable `Tier VI` altair
-      > No actual recipes added yet.
+  - ### 🛸 **EnderIO**: Shimmer ench. return back (revert)
 
 
 
 ## 🔄 **Misc Changes**
-  - Fix Benitoite and Anglesite models, add light, change drops
-  - Blacklist **Dopperganger** from `Warptheory` in CarryOn, due to crash and corrupting world while picking it up in creative
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/twilightforest/lamp_of_cinders__0.png "Lamp of Cinders") now disable Broken Wings in Twilight Forest
+  - [Floo brick] add to CarryOn blacklist
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/quark/bark_oak_stairs__0.png "Oak Bark Stairs") disable vertical **Fluidlogging** to prevent stairs become water sources
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/terra_wart__0.png "Terra Wart") now clearing radiation ☢
+  - Remove unused tooltip about ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/te__61.png "Matter Fabricator") explosion
+  - Fix typo in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/twilightforest/steeleaf_ingot__0.png "Steeleaf") tip
+  - Swap Benitoite and Anglesite colors
+  - ### 🌍 **World Generation**: OTG: better manage world generation
+      > - Make all biomes smaller
+      > - Make [some](https://github.com/Krutoy242/Enigmatica2Expert-Extended/pull/168) [tweaks](https://github.com/Krutoy242/Enigmatica2Expert-Extended/pull/167) of generation
+      > - Return ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/log_silverwood__0.png "Silverwood Log") trees into Greatwood biome
 
-## 🌍 **World Generation**
-  - Disable mob spawning on Bedrock Ore
-  - OTG: Add `Void` world for future skyblock feature (not implemented completely yet)
-  - OTG: Add artificial `Magical Forest` biome from Thaumcraft
-    > Taken from OTG preset `ThaumicTravelersDreamCompact`
+  - ### 📜 **Text**: Fix some lang entries has different text on server and client
 
-  - ### 📖 **Quests**
-    - <img src="https://i.imgur.com/fAWg8xF.png" align=right> Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/quartz__0.png "Nether Quartz") quest as Tcon Modifier
-    - Add note about `Multiblock Madness` quests
-    - Add note about ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/coresample__0.png "Core Sample") + Journey Map
-    - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/decorative_brick__0.png "Large Bloodstone Tile") add another Bloodstone variant in task
-    - Research entries update - ThAdd rework
-      > Reworked ThAdd cetegory splited between all basic categories
-      > Also added patches to new crafting recipes in [manual_changes.json]
+  - ### 🍖 Rework HungwerOverhaul and Spice of Life
+    > Changes made by Hky.
 
-## 🦯 Thaumcraft: Thaumic addtions rewritten + integrations
+  - #
 
-  Changes made by https://github.com/TabakaSIM
-  
-  General:
-  - <img src="https://i.imgur.com/ppC7CJg.png" align=right> Removed Thaumic Additions ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/thaumonomicon__0.png "Thaumonomicon") category
-  - Rewriten most of Thaumic Additions recipes
-
-  Cheaper
-  - Flux and warp control; ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/sanity_soap__0.png "Sanitizing Soap") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/bath_salts__0.png "Purifying Bath Salts") are easier to get in early; Much cheaper ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/condenser__0.png "Flux Condenser")
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/crystal_crusher__0.png "Crystal Crusher")
-  - Tiered ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/jar_brass__0.png "Brass Warded Jar")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/jar_thaumium__0.png "Thaumium Reinforced Jar")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/jar_eldritch__0.png "Void Reinforced Jar")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/jar_mithrillium__0.png "Mithrillium Reinforced Jar")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/jar_adaminite__0.png "Adaminite Foritified Jar")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/jar_mithminite__0.png "Mithminite Fortified Jar")
-
-  Adjusted:
-  - Early thaumcraft items require more non-vanilla items
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/focus_1__0.png "Blank Lesser Focus")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/focus_2__0.png "Blank Advanced Focus")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/focus_3__0.png "Blank Greater Focus") require now basic other magic mods items
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/smelter_void__0.png "Void Metal Essentia Smeltery") require ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/smelter_thaumium__0.png "Thaumium Essentia Smeltery")
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/tconevo/metal__20.png "Primal Metal Ingot") require ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicwonders/primordial_grain__0.png "Primordial Grain") insted of ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/primordial_pearl__0.png "Primordial Pearl")
-  - <img src="https://i.imgur.com/VL3SsZ6.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/mithrillium_ingot__0.png "Mithrillium Ingot"), ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/adaminite_ingot__0.png "Adaminite Ingot"), ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/mithminite_ingot__0.png "Mithminite Ingot") and material realated items in ThAdd
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/mithrillium_smelter__0.png "Mithrillium Smeltery"), ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/adaminite_smelter__0.png "Adaminite Smeltery"), ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/mithminite_smelter__0.png "Mithminite Smeltery") smelters
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/dawn_totem__0.png "Totem of Dawn") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/twilight_totem__0.png "Twilight Totem")
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/blood_shard__0.png "Weak Blood Shard")
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/puriflower__0.png "Puriflower") have now botania related crafting recipe
-  - Thaumcraft like armor
-
-  Harder:
-  - <img src="https://i.imgur.com/QKIC3vw.png" align=right> ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicwonders/alkahest_vat__0.png "Alkahest Vat")
-  - [Pure tear] <- removes PERMAMENT warp
-  - [Cleansing amulet] (warp theory) <- removes PERMAMENT warp
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/striding_belt__0.png "Striding Belt") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/meteor_belt__0.png "Belt of the Meteor")
-
-  New recipes:
-  - Added ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicaugmentation/focus_ancient__0.png "Ancient Focus") recipe
-  - Added ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/recharge_charm__0.png "Recharge Charm") recipe
-  - Added support for ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicaugmentation/stone__0.png "Void Stone") in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/rock_crusher_idle__0.png "Rock Crusher")
-  - Added 3 new essentia:
-    > - <img src="https://i.imgur.com/N1Lqdkz.png" align=right> Amogus - not obtainable in "normal" way, only with aspect combinator
-    > - Mana - obtained via botania mana pool
-    > - Sanguis - obtained via blood magic
-
-  Removed:
-  - removed and hidden ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumictinkerer/share_book__0.png "Tome of Knowledge Sharing")
-  - removed and hidden [Impure tear] (Warp theory); reason: sanity soap is already cheaper
-  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/botania/phantomink__0.png "Phantom Ink") makes armor invisible
-  - [Levitation device] (no uses for now, crafting material)
-
-  Fixes:
-  - Fixed aspect for ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/nitor_yellow__0.png "Yellow Nitor"), ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/ingot__2.png "Alchemical Brass Ingot") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/alumentum__0.png "Alumentum")
-  - Updated ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/knowledge_tome__0.png "Tome of Sharing") with all knowledge
-
+## 📖 **Quests**: Quest Book improvments:
+  - Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/aeadditions/fluid.item__0__ab0a2d14.png "Pahoehoe Lava") quest
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/altar__0.png "Blood Altar") tiers now have amounts of runes required
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/altar__0.png "Blood Altar") tier 6 quest
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/sigil_lava__0.png "Lava Sigil") quest
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/hippogryph_egg__1.png "Hippogryph Egg") fix uncomplitable
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/bottler__0.png "Bottler") remove quest
+  - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/twilightforest/lamp_of_cinders__0.png "Lamp of Cinders") add note about flight unlock
+  - Fix NuclearCraft Quests ([#169](https://github.com/Krutoy242/Enigmatica2Expert-Extended/pull/169))
+    > - Removal of quests from NuclearCraft machines removed in update v0.90.0
+    > - Isotope Separator quest update adding new description guiding the use of the Thermal Centrifuge
+    > - NuclearCraft chapter base quests icon update
+    > - Reorganization of quests position due to the removal of some quests
 
 
 
