@@ -1,0 +1,29 @@
+{
+	title: "First Nuclear Bomb",
+	x: 6.7d,
+	y: 13.7d,
+	text: [
+		"§2Your first nuclear bomb§r",
+		"",
+		"These bombs have a §cgreat destructive power§r.",
+		"",
+		"According to the §9material of its construction§r, it presents different degrees of §5destruction§r and §5radiation§r."
+	],
+	dependencies: [
+		"0bf36970",
+		"fdcd6b4e"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "fedd25e9",
+		type: "item",
+		items: [{
+			item: "trinity:bomb_u233"
+		}]
+	}],
+	rewards: [{
+		uid: "88a3a0d5",
+		type: "loot",
+		table: 1
+	}]
+}
