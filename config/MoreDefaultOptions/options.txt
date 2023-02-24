@@ -242,6 +242,10 @@ key_key.open_danknull.desc:0
 key_key.open_menu:19
 key_key.open_wct.desc:58
 key_key.open_wft.desc:0
+key_key.open_wireless_crafting_terminal.desc:18:SHIFT
+key_key.open_wireless_fluid_terminal.desc:33:SHIFT
+key_key.open_wireless_pattern_terminal.desc:19:SHIFT
+key_key.open_wireless_terminal.desc:20:SHIFT
 key_key.open_wit.desc:0
 key_key.open_wpt.desc:0
 key_key.otghud.desc:24
