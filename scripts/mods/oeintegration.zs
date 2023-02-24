@@ -49,13 +49,13 @@ return overridn
   ])
 }*/
 desc.tooltip(<oeintegration:excavatemodifier>    , 'excavate.overrides', '§7'+desc.local('speed')+': §61' +' '+ '§7'+desc.local('limit')+': §616' +' '+ '§7'+desc.local('range')+': §610');
-desc.tooltip(<tconstruct:moms_spaghetti>         , 'excavate.overrides', '§7'+desc.local('speed')+': §61' +' '+ '§7'+desc.local('range')+': §65' +' '+ '§7'+desc.local('exaustion')+': §61');
-desc.tooltip(<forestry:bronze_pickaxe>           , 'excavate.overrides', '§7'+desc.local('speed')+': §65' +' '+ '§7'+desc.local('limit')+': §664' +' '+ '§7'+desc.local('experience')+': §61');
-desc.tooltip(<forestry:bronze_shovel>            , 'excavate.overrides', '§7'+desc.local('speed')+': §65' +' '+ '§7'+desc.local('limit')+': §664' +' '+ '§7'+desc.local('experience')+': §61');
+desc.tooltip(<tconstruct:moms_spaghetti>         , 'excavate.overrides', '§7'+desc.local('speed')+': §610' +' '+ '§7'+desc.local('range')+': §65' +' '+ '§7'+desc.local('exaustion')+': §61');
+desc.tooltip(<forestry:bronze_pickaxe>           , 'excavate.overrides', '§7'+desc.local('speed')+': §65' +' '+ '§7'+desc.local('limit')+': §664' +' '+ '§7'+desc.local('exaustion')+': §60' +' '+ '§7'+desc.local('experience')+': §61');
+desc.tooltip(<forestry:bronze_shovel>            , 'excavate.overrides', '§7'+desc.local('speed')+': §65' +' '+ '§7'+desc.local('limit')+': §664' +' '+ '§7'+desc.local('exaustion')+': §60' +' '+ '§7'+desc.local('experience')+': §61');
 desc.tooltip(<immersiveengineering:drill>        , 'excavate.overrides', '§7'+desc.local('speed')+': §632' +' '+ '§7'+desc.local('limit')+': §6128' +' '+ '§7'+desc.local('exaustion')+': §60');
-desc.tooltip(<ic2:drill>                         , 'excavate.overrides', '§7'+desc.local('speed')+': §632');
-desc.tooltip(<ic2:diamond_drill>                 , 'excavate.overrides', '');
-desc.tooltip(<ic2:iridium_drill>                 , 'excavate.overrides', '§7'+desc.local('speed')+': §6128' +' '+ '§7'+desc.local('limit')+': §6512');
+desc.tooltip(<ic2:drill>                         , 'excavate.overrides', '§7'+desc.local('speed')+': §632' +' '+ '§7'+desc.local('limit')+': §632');
+desc.tooltip(<ic2:diamond_drill>                 , 'excavate.overrides', '§7'+desc.local('limit')+': §664');
+desc.tooltip(<ic2:iridium_drill>                 , 'excavate.overrides', '§7'+desc.local('speed')+': §6128' +' '+ '§7'+desc.local('limit')+': §6128');
 desc.tooltip(<forestry:grafter>                  , 'excavate.overrides', '');
 desc.tooltip(<forestry:grafter_proven>           , 'excavate.overrides', '');
 desc.tooltip(<gendustry:industrial_grafter>      , 'excavate.overrides', '');
@@ -64,5 +64,6 @@ desc.tooltip(<thermalinnovation:drill>           , 'excavate.overrides', '');
 desc.tooltip(<thermalinnovation:saw>             , 'excavate.overrides', '');
 desc.tooltip(<twilightforest:mazebreaker_pickaxe>, 'excavate.overrides', '');
 desc.tooltip(<twilightforest:minotaur_axe>       , 'excavate.overrides', '');
+desc.tooltip(<twilightforest:minotaur_axe_gold>  , 'excavate.overrides', '');
 /**/
 // --------------------------------------------------------------
