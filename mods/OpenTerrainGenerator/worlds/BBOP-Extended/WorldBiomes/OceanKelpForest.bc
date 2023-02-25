@@ -1,0 +1,291 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 8
+
+BiomeRarity: 80
+
+BiomeColor: #000070
+
+ReplaceToBiomeName: minecraft:ocean
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: Ocean
+
+BiomeSizeWhenIsle: 8
+
+BiomeRarityWhenIsle: 75
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 4
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -2.4
+
+BiomeVolatility: 0.1
+
+SmoothRadius: 4
+
+CustomHeightControlSmoothRadius: 2
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: -0.7
+
+Volatility1: -2.0
+
+Volatility2: -2.0
+
+VolatilityWeight1: 2.5
+
+VolatilityWeight2: 2.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -2.0
+
+RiverVolatility: 0.1
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: STONE
+
+SurfaceBlock: SAND
+
+GroundBlock: DIRT
+
+SurfaceAndGroundControl: DIRT, DIRT, 0.0, GRAVEL, DIRT, 1.5 
+
+ReplacedBlocks: (SAND,STONE,65,255),(DIRT,STONE,65,255),(GRAVEL,STONE,65,255),(AIR,LAVA,1,10)
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: false
+
+WaterLevelMax: 63
+
+WaterLevelMin: 0
+
+WaterBlock: STATIONARY_WATER
+
+IceBlock: ICE
+
+CooledLavaBlock: STATIONARY_LAVA
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.5
+
+BiomeWetness: 0.5
+
+SkyColor: #7BA5FF
+
+WaterColor: #FFFFFF
+
+GrassColor: #FFFFFF
+
+GrassColor2: #FFFFFF
+
+GrassColorIsMultiplier: true
+
+FoliageColor: #FFFFFF
+
+FoliageColor2: #FFFFFF
+
+FoliageColorIsMultiplier: true
+
+FogColor: #000000
+
+FogDensity: 0.5
+
+FogTimeWeight: 0.1
+
+FogRainWeight: 0.25
+
+FogThunderWeight: 0.5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Dungeon(8,100.0,0,160)
+SmallLake(LAVA,6,33.0,1,8)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+CustomObject(BOPKelp4)
+CustomObject(BOPKelp3)
+CustomObject(BOPKelp2)
+CustomObject(BOPKelp1)
+CustomObject(BOPKelp0)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+InheritSaplingResource: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+WoodLandMansionsEnabled: false
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: false
+
+VillageType: disabled
+
+MineshaftType: disabled
+
+MineshaftRarity: 0.3
+
+RareBuildingType: disabled
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: []
+
+SpawnCreatures: []
+
+SpawnWaterCreatures: []
+
+SpawnAmbientCreatures: []
+
+BiomeDictId: OCEAN
+
+InheritMobsBiomeName: Ocean
+
