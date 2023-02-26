@@ -1078,3 +1078,25 @@ scripts.jei.crafting_hints.addInsOutCatl([<thaumicwonders:primordial_grain>], <t
 
 <entity:thaumcraft:firebat>.addDrop(<randomthings:flootoken>, 1, 3);
 <entity:thaumcraft:thaumslime>.addPlayerOnlyDrop(<thermalexpansion:florb>.withTag({Fluid: "liquiddna"}) % 30, 1, 1);
+
+# Tattered scrolls alt recipe
+mods.astralsorcery.Altar.addConstellationAltarRecipe(
+  'Tattered Scrolls alt', <thaumicaugmentation:research_notes>, 1500, 250, Grid([
+  "KCK"+
+  "NIN"+
+  "KVK"+
+  "LERP"+
+  "HHGGGGHH"], {
+  "K": <astralsorcery:itemknowledgeshare>,  # Scroll of written expertise
+  "V": <thaumadditions:void_fruit>,         # Void fruit
+  "C": <thaumcraft:curiosity_band>,         # Curiosity band
+  "I": <thaumicaugmentation:material:3>,    # Impetus Cell
+  "G": <thaumicwonders:primordial_grain>,   # Primordial grain
+  "H": <warptheory:item_something>,         # Hunk of Somethink
+  "N": <enderio:item_material:75>,          # Infinity reagent
+  "L": <botania:rune:9>,                    # Rune of Lust
+  "E": <botania:rune:14>,                   # Rune of Envy
+  "R": <botania:rune:11>,                   # Rune of Greed
+  "P": <botania:rune:15>,                   # Rune of Pride
+  }).shapeless()
+);
