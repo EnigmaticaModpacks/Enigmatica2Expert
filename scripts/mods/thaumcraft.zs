@@ -629,21 +629,6 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiatransportin",
   "Q": <ore:gemQuartzBlack>, #Black quartz
 }).shaped());
 
-#[Hungry chest]
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:HungryChest");
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("HungryChest", 
-"HUNGRYCHEST", 
-15,
-[], 
-<thaumcraft:hungry_chest>, 
-  Grid(["pretty",
-  "G T G",
-  "G   G",
-  "G G G"], {
-  "G": <thaumcraft:plank_greatwood>, #Greatwood plank
-  "T": <ore:trapdoorWood>, #Trap door
-}).shaped());
-
 /*
 ██╗███╗   ██╗███████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗
 ██║████╗  ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║
@@ -998,68 +983,6 @@ mods.thaumcraft.Crucible.registerRecipe(
   [<aspect:potentia>*10, <aspect:ignis>*10, <aspect:perditio>*5]
 );
 
-# [Energetic nitor]
-mods.thaumcraft.Crucible.removeRecipe(<thaumictinkerer:energetic_nitor>);
-mods.thaumcraft.Crucible.registerRecipe(
-  "energetic_nitor", # Name
-  "TT_ENERGETIC_NITOR", # Research
-  <thaumictinkerer:energetic_nitor>, # Output
-  <ore:nitor>, # Input
-  [<aspect:lux>*25, <aspect:potentia>*25, <aspect:ignis>*10, <aspect:aer>*10]
-);
-
-# Native cluster fix
-function NativeClusterRecipe(name as string, native as IItemStack, ore as IItemStack) as void {
-	mods.thaumcraft.Crucible.removeRecipe(native);
-  mods.thaumcraft.Crucible.registerRecipe(
-  name, # Name
-  "METALPURIFICATION", # Research
-  native, # Output
-  ore, # Input
-  [<aspect:ordo>*5, <aspect:metallum>*5]
-  );
-}
-
-NativeClusterRecipe("metal_purification_aluminium"            , <jaopca:item_clusteraluminium>            , <thermalfoundation:ore:4>);
-NativeClusterRecipe("metal_purification_nickel"               , <jaopca:item_clusternickel>               , <thermalfoundation:ore:5>);
-NativeClusterRecipe("metal_purification_iridium"              , <jaopca:item_clusteriridium>              , <thermalfoundation:ore:7>);
-NativeClusterRecipe("metal_purification_platinum"             , <jaopca:item_clusterplatinum>             , <thermalfoundation:ore:6>);
-NativeClusterRecipe("metal_purification_uranium"              , <jaopca:item_clusteruranium>              , <immersiveengineering:ore:5>);
-NativeClusterRecipe("metal_purification_osmium"               , <jaopca:item_clusterosmium>               , <mekanism:oreblock>);
-NativeClusterRecipe("metal_purification_ardite"               , <jaopca:item_clusterardite>               , <tconstruct:ore:1>);
-NativeClusterRecipe("metal_purification_cobalt"               , <jaopca:item_clustercobalt>               , <tconstruct:ore>);
-NativeClusterRecipe("metal_purification_tungsten"             , <jaopca:item_clustertungsten>             , <endreborn:block_wolframium_ore>);
-NativeClusterRecipe("metal_purification_starmetal"            , <jaopca:item_clusterastralstarmetal>      , <astralsorcery:blockcustomore:1>);
-NativeClusterRecipe("metal_purification_boron"                , <jaopca:item_clusterboron>                , <nuclearcraft:ore:5>);
-NativeClusterRecipe("metal_purification_lithium"              , <jaopca:item_clusterlithium>              , <nuclearcraft:ore:6>);
-NativeClusterRecipe("metal_purification_magnesium"            , <jaopca:item_clustermagnesium>            , <nuclearcraft:ore:7>);
-NativeClusterRecipe("metal_purification_thorium"              , <jaopca:item_clusterthorium>              , <nuclearcraft:ore:3>);
-NativeClusterRecipe("metal_purification_manainfusedingot"     , <jaopca:item_clustermithril>              , <thermalfoundation:ore:8>);
-NativeClusterRecipe("metal_purification_blackquartz"          , <jaopca:item_clusterquartzblack>          , <actuallyadditions:block_misc:3>);
-NativeClusterRecipe("metal_purification_draconium"            , <jaopca:item_clusterdraconium>            , <draconicevolution:draconium_ore>);
-NativeClusterRecipe("metal_purification_titanium"             , <jaopca:item_clustertitanium>             , <libvulpes:ore0:8>);
-NativeClusterRecipe("metal_purification_coal"                 , <jaopca:item_clustercoal>                 , <minecraft:coal_ore>);
-NativeClusterRecipe("metal_purification_emerald"              , <jaopca:item_clusteremerald>              , <minecraft:emerald_ore>);
-NativeClusterRecipe("metal_purification_lapis"                , <jaopca:item_clusterlapis>                , <minecraft:lapis_ore>);
-NativeClusterRecipe("metal_purification_redstone"             , <jaopca:item_clusterredstone>             , <minecraft:redstone_ore>);
-NativeClusterRecipe("metal_purification_diamond"              , <jaopca:item_clusterdiamond>              , <minecraft:diamond_ore>);
-NativeClusterRecipe("metal_purification_dimensionalshard"     , <jaopca:item_clusterdimensionalshard>     , <rftools:dimensional_shard_ore>);
-NativeClusterRecipe("metal_purification_dilithium"            , <jaopca:item_clusterdilithium>            , <libvulpes:ore0>);
-NativeClusterRecipe("metal_purification_certusquartz"         , <jaopca:item_clustercertusquartz>         , <appliedenergistics2:quartz_ore>);
-NativeClusterRecipe("metal_purification_chargedcertusquartz"  , <jaopca:item_clusterchargedcertusquartz>  , <appliedenergistics2:charged_quartz_ore>);
-NativeClusterRecipe("metal_purification_aquamarine"           , <jaopca:item_clusteraquamarine>           , <astralsorcery:blockcustomsandore>);
-NativeClusterRecipe("metal_purification_apatite"              , <jaopca:item_clusterapatite>              , <forestry:resources>);
-NativeClusterRecipe("metal_purification_amber"                , <jaopca:item_clusteramber>                , <biomesoplenty:gem_ore:7>);
-NativeClusterRecipe("metal_purification_amberthaumcraft"      , <jaopca:item_clusteramber>                , <thaumcraft:ore_amber>);
-NativeClusterRecipe("metal_purification_trinitite"            , <jaopca:item_clustertrinitite>            , <trinity:trinitite>);
-NativeClusterRecipe("metal_purification_malachite"            , <jaopca:item_clustermalachite>            , <biomesoplenty:gem_ore:5>);
-NativeClusterRecipe("metal_purification_topaz"                , <jaopca:item_clustertopaz>                , <biomesoplenty:gem_ore:3>);
-NativeClusterRecipe("metal_purification_tanzanite"            , <jaopca:item_clustertanzanite>            , <biomesoplenty:gem_ore:4>);
-NativeClusterRecipe("metal_purification_sapphire"             , <jaopca:item_clustersapphire>             , <biomesoplenty:gem_ore:6>);
-NativeClusterRecipe("metal_purification_ruby"                 , <jaopca:item_clusterruby>                 , <biomesoplenty:gem_ore:1>);
-NativeClusterRecipe("metal_purification_peridot"              , <jaopca:item_clusterperidot>              , <biomesoplenty:gem_ore:2>);
-NativeClusterRecipe("metal_purification_amethyst"             , <jaopca:item_clusteramethyst>             , <biomesoplenty:gem_ore>);
-
 /*
  ██████╗ ████████╗██╗  ██╗███████╗██████╗ 
 ██╔═══██║╚══██╔══╝██║  ██║██╔════╝██╔══██╗
@@ -1093,25 +1016,3 @@ scripts.jei.crafting_hints.addInsOutCatl([<thaumicwonders:primordial_grain>], <t
 
 <entity:thaumcraft:firebat>.addDrop(<randomthings:flootoken>, 1, 3);
 <entity:thaumcraft:thaumslime>.addPlayerOnlyDrop(<thermalexpansion:florb>.withTag({Fluid: "liquiddna"}) % 30, 1, 1);
-
-# Tattered scrolls alt recipe
-mods.astralsorcery.Altar.addConstellationAltarRecipe(
-  'Tattered Scrolls alt', <thaumicaugmentation:research_notes>, 1500, 250, Grid([
-  "KCK"+
-  "NIN"+
-  "KVK"+
-  "LERP"+
-  "HHGGGGHH"], {
-  "K": <astralsorcery:itemknowledgeshare>,  # Scroll of written expertise
-  "V": <thaumadditions:void_fruit>,         # Void fruit
-  "C": <thaumcraft:curiosity_band>,         # Curiosity band
-  "I": <thaumicaugmentation:material:3>,    # Impetus Cell
-  "G": <thaumicwonders:primordial_grain>,   # Primordial grain
-  "H": <warptheory:item_something>,         # Hunk of Somethink
-  "N": <enderio:item_material:75>,          # Infinity reagent
-  "L": <botania:rune:9>,                    # Rune of Lust
-  "E": <botania:rune:14>,                   # Rune of Envy
-  "R": <botania:rune:11>,                   # Rune of Greed
-  "P": <botania:rune:15>,                   # Rune of Pride
-  }).shapeless()
-);
