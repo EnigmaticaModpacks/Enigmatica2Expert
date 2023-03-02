@@ -10,7 +10,7 @@
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:arcane_cake.1", 
-                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1"],
+                    "required_knowledge":["OBSERVATION;ARTIFICE;1"],
                     "required_item":["minecraft:cake"]
                 },
                 {
@@ -28,7 +28,7 @@
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:aura_disperser.1",
-                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1","THEORY;ARTIFICE;1"],
+                    "required_knowledge":["THEORY;ARTIFICE;1"],
                     "required_item":["thaumadditions:salt_essence"]
                 },
                 {
@@ -64,7 +64,7 @@
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:seal.1",
-                    "required_knowledge":["OBSERVATION;THAUMADDITIONS;1"],
+                    "required_knowledge":["OBSERVATION;ARTIFICE;1"],
                     "required_item":["minecraft:gold_ingot;1","minecraft:wool;1;0"]
                 },
                 {
@@ -137,7 +137,7 @@
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:crystal_lamp.1",
-                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;THAUMADDITIONS;1"],
+                    "required_knowledge":["THEORY;ARTIFICE;1"],
                     "require_item":["thaumcraft:plank_greatwood","thaumcraft:crystal_essence;1;{Aspects: [{amount: 1, key: 'lux'}]}"]
                 },
                 {
@@ -156,7 +156,7 @@
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:seal_globe.1",
-                    "required_knowledge":["THEORY;ARTIFICE;1","THEORY;THAUMADDITIONS;1"],
+                    "required_knowledge":["THEORY;ARTIFICE;1"],
                     "require_craft":["thaumcraft:seal"]
                 },
                 {

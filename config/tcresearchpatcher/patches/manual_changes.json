@@ -230,4 +230,10 @@
    "path":"stages/1/recipes",
    "value":["thaumcraft:primal_metal"]}
  ]}
+
+ ,{"key":"TT_ENERGETIC_NITOR","ops":[
+  {"op":"replace",
+  "path":"stages/1/recipes",
+  "value":["thaumcraft:energetic_nitor"]}
+]}
 ]
