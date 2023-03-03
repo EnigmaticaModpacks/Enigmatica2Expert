@@ -306,7 +306,7 @@ key_keywizard.keybind.openKeyboardWizard:65:CONTROL
 key_Kill Particles:0
 key_mekanism.key.armorMode:34
 key_mekanism.key.feetMode:35
-key_mekanism.key.mode:40
+key_mekanism.key.mode:47
 key_mekanism.key.voice:22
 key_Misc Caster Toggle:35
 key_Mode Switch Key:47
