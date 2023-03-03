@@ -47,10 +47,10 @@ item.contenttweaker.dust_tiny_gold.name=Кучка золотой пыли
 item.contenttweaker.dust_tiny_silver.name=Кучка серебряной пыли
 
 tile.contenttweaker.terrestrial_artifact_block.name=Блок Артефакта Земли
-tile.contenttweaker.benitoite.name=§6Бенитоит
-tile.contenttweaker.anglesite.name=§bАнглезит
-tile.contenttweaker.ore_benitoite.name=§6Бенитоитовая Руда
-tile.contenttweaker.ore_anglesite.name=§bАнглезитовая Руда
+tile.contenttweaker.benitoite.name=§bБенитоит
+tile.contenttweaker.anglesite.name=§6Англезит
+tile.contenttweaker.ore_benitoite.name=§bБенитоитовая Руда
+tile.contenttweaker.ore_anglesite.name=§6Англезитовая Руда
 
 contenttweaker.part.fluid=%s
 

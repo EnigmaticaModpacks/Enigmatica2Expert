@@ -47,10 +47,10 @@ item.contenttweaker.dust_tiny_gold.name=Tiny Pile of Gold Dust
 item.contenttweaker.dust_tiny_silver.name=Tiny Pile of Silver Dust
 
 tile.contenttweaker.terrestrial_artifact_block.name=Terrestrial Artifact Block
-tile.contenttweaker.benitoite.name=§6Benitoite
-tile.contenttweaker.anglesite.name=§bAnglesite
-tile.contenttweaker.ore_benitoite.name=§6Benitoite Ore
-tile.contenttweaker.ore_anglesite.name=§bAnglesite Ore
+tile.contenttweaker.benitoite.name=§bBenitoite
+tile.contenttweaker.anglesite.name=§6Anglesite
+tile.contenttweaker.ore_benitoite.name=§bBenitoite Ore
+tile.contenttweaker.ore_anglesite.name=§6Anglesite Ore
 
 contenttweaker.part.fluid=%s
 
