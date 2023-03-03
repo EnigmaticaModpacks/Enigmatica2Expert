@@ -158,7 +158,7 @@ for pos, names in utils.graph([
 	"                   e         h   i                                              ",
 	"         b c    d                                                               ",
 	"                                                                                ",
-	"*    q                               j                                          ",
+	"*  r q                               j                                          ",
 	"1 2      3            4                     5                         6         ",
 # ┣━━━━─━━━━┷━━━━─━━━━┻━━━━─━━━━┷━━━━─━━━━╋╋━━━━─━━━━┷━━━━─━━━━┻━━━━─━━━━┷━━━━─━━━━┫
 # |500     2300      4100      5900      7800      9600      11400     13200  15000| Temp --->
@@ -168,7 +168,8 @@ for pos, names in utils.graph([
 },{
 	# Fuels
 "*": ["steam"],
-	q: ["canolaoil", "creosote"],
+	r: ["canolaoil"],
+	q: ["creosote"],
 	a: ["ic2pahoehoe_lava"],
 	b: ["biodiesel", "biofuel"],
 	c: ["diesel", "ic2biogas", "refinedcanolaoil"],

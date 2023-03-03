@@ -78,12 +78,12 @@
       "text2": "2100°К, 400 ticks",
       "item3": "forge:bucketfilled{FluidName:\"pyrotheum\",Amount:1000}",
       "text3": "7200°К, 100 ticks",
-      "item4": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
+      "item4": "forge:bucketfilled{FluidName:\"creosote\",Amount:1000}",
       "text4": "1400°К, 100 ticks",
-      "item5": "forge:bucketfilled{FluidName:\"creosote\",Amount:1000}",
-      "text5": "1400°К, 100 ticks",
-      "item6": "forge:bucketfilled{FluidName:\"lava\",Amount:1000}",
-      "text6": "1300°К, 80 ticks",
+      "item5": "forge:bucketfilled{FluidName:\"lava\",Amount:1000}",
+      "text5": "1300°К, 80 ticks",
+      "item6": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
+      "text6": "1000°К, 100 ticks",
       "title": "Smeltery Fuels"
     },
     {
