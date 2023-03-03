@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Enigmatica2Expert-Extended",
-  "version": "v0.92.0",
+  "version": "v0.93.0",
   "author": "krutoy242",
   "overrides": "overrides",
   "files": [
@@ -317,7 +317,7 @@
     {"projectID":322347,"fileID":3254160,"required":true,"___name":"Lazy AE2"},
     {"projectID":322730,"fileID":2858289,"required":true,"___name":"Vaultopic - Early Inventory Management"},
     {"projectID":322764,"fileID":3491956,"required":true,"___name":"Let Me Sleep"},
-    {"projectID":322861,"fileID":4374436,"required":true,"___name":"PackagedExCrafting"},
+    {"projectID":322861,"fileID":4415275,"required":true,"___name":"PackagedExCrafting"},
     {"projectID":323533,"fileID":2937303,"required":true,"___name":"Mechanics - Crafting Ways"},
     {"projectID":323596,"fileID":3028671,"required":true,"___name":"Rats"},
     {"projectID":324495,"fileID":2830255,"required":true,"___name":"Wireless Pattern Terminal"},
@@ -401,7 +401,7 @@
     {"projectID":488116,"fileID":3330925,"required":true,"___name":"ContentTweaker Registry Orderer"},
     {"projectID":493962,"fileID":3814371,"required":true,"___name":"AE Additions - ExtraCells2 Fork"},
     {"projectID":515565,"fileID":4382001,"required":true,"___name":"Not Enough Energistics"},
-    {"projectID":525389,"fileID":3786965,"required":true,"___name":"Modular Controller"},
+    {"projectID":525389,"fileID":4410958,"required":true,"___name":"Modular Controller"},
     {"projectID":538092,"fileID":3817892,"required":true,"___name":"Better P2P"},
     {"projectID":545353,"fileID":3519479,"required":true,"___name":"Tinkers OreDict Cache"},
     {"projectID":554387,"fileID":3556105,"required":true,"___name":"Persistency"},
@@ -409,7 +409,7 @@
     {"projectID":557549,"fileID":4109510,"required":true,"___name":"Had Enough Items"},
     {"projectID":570458,"fileID":4406629,"required":true,"___name":"AE2 Unofficial Extended Life"},
     {"projectID":616190,"fileID":4318448,"required":true,"___name":"JEI Utilities"},
-    {"projectID":623955,"fileID":4389790,"required":true,"___name":"AE2 Fluid Crafting Rework"},
+    {"projectID":623955,"fileID":4417951,"required":true,"___name":"AE2 Fluid Crafting Rework"},
     {"projectID":627303,"fileID":3846860,"required":true,"___name":"Spectral Edge"},
     {"projectID":633720,"fileID":3852709,"required":true,"___name":"dan's Crafting Tweaks"},
     {"projectID":644875,"fileID":4307985,"required":true,"___name":"Pointer"},
@@ -420,10 +420,10 @@
     {"projectID":687632,"fileID":4036750,"required":true,"___name":"Tweaked Lib"},
     {"projectID":687633,"fileID":4070070,"required":true,"___name":"Forked Proxy"},
     {"projectID":687827,"fileID":4028115,"required":true,"___name":"Seared Ladder (Backport)"},
-    {"projectID":705000,"fileID":4390552,"required":true,"___name":"Universal Tweaks"},
+    {"projectID":705000,"fileID":4414385,"required":true,"___name":"Universal Tweaks"},
     {"projectID":725764,"fileID":4174562,"required":true,"___name":"Thaumcraft Aspect Creator"},
     {"projectID":782070,"fileID":4275356,"required":true,"___name":"Startup Timer"},
-    {"projectID":811828,"fileID":4374521,"required":true,"___name":"PackagedAstral"},
+    {"projectID":811828,"fileID":4415294,"required":true,"___name":"PackagedAstral"},
     {"projectID":817000,"fileID":4392411,"required":true,"___name":"WarpApocalypse"}
   ]
 }
