@@ -133,7 +133,7 @@ export async function init(h = defaultHelper) {
 
   try {
     await runProcess(
-      `npx mc-icons@latest --silent --modpack=e2ee --treshold=2 --input="${changelogLatest}"`,
+      `esno E:/dev/mc-icons/src/cli.ts "${changelogLatest}" --silent --no-short --modpack=e2ee --treshold=2`,
       () => h.step()
     )
   }

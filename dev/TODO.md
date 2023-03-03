@@ -5,25 +5,30 @@ List of priorities:
 - [ ] ✏️ Better Integrate `QMD`
 - [ ] ✏️ Better Integrate `Trinity`
 - [ ] ✏️ More Cocoa Usages
-- [ ] ✏️ Unify `Mercury`
 - [ ] ✏️ Unify `Sodium Chloride`
-- [ ] ✏️ Find a peaceful way for `scan crimson cultists` `get dimensional fracture` `get to emptyness dimension` https://discord.com/channels/911676461050642432/1064813931966779392/1078266283910496409
-- [ ] ✏️ Remove Excess Carbide recipes in AlloyFurnace
 - [ ] ✏️ Compressed Garbage Piles spawn rats sometimes
 - [ ] ✏️ Integrate Spice of Life recipes
 - [ ] ✏️ Add Greater Crymson Portal recipe
-- [ ] ✏️ Change ME controller recipe
 - [ ] ✏️ Make Seared Stone + Essence alternative in adv. machines
-- [ ] ✏️ Remove excess Magnet crafts from Inscriber
-- [ ] ✏️ Fix Cconflict between Wireless Fluid Terminal
+- [ ] ✏️ Better Tier6 recipe https://discord.com/channels/911676461050642432/1064813931966779392/1078776934546296894
+- [ ] ✏️ Fix Robots have wrong power values
+- [ ] ✏️ Add compressed `pumkins`, `firecharge`, `Charged Creeper chunk`, `Iceballs`, `String mesh uncraft`, `Sulfur`, `Zombie Brain`
+- [ ] ✏️ Add modifiers removals for Jetpack
+- [ ] ✏️ Fuelwood heater x2 harder to prevent spam for steam.
+- [ ] ✏️ Mek turbine blocks harder to prevent using before NC
+- [ ] ✏️ Glass fiber harder (clear glass maybe)
+- [ ] ✏️ Pocket Computer alt recipes
+- [ ] ✏️ Fix Creative mana pool not crafting
+- [ ] ✏️ Salt reactor or Gelid Enderium should have more uses
+- [ ] ✏️ AdvRocketry add more recipes
+- [ ] ✏️ Creative CAD cheaper
 - [ ] 🌍 AbandonedWoodTower less spawn
 - [ ] 📀 Rain Tank buff even more
-- [ ] 📖 Add all tips to E2EE book
-- [ ] 📖 add Alt Storage Terminals Quests
-- [ ] 📖 add Quesr About Animania Milking
-- [ ] 🧱 TCon .ts tool not changing stats
+- [ ] 🔄 Better Hurt Timer may prevent Robots to hit monsters
 - [ ] 🔄 bow On Dragon Causing Crash
 - [ ] 🔄 Placing something on Rustic's slabs crashing game
+- [ ] 🔄 fixReadmeYoutubeEmbeds
+- [ ] 🔴 remove Portal Sizes Since Its Not Working With Any Fire
 - [ ] 🔴 Remove `Void Island Control` (void island created by hand)
 - [ ] 🧱 Automation not run automatically
 
@@ -38,6 +43,7 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Find a peaceful way for `scan crimson cultists` `get dimensional fracture` `get to emptyness dimension`. Could be skipped with Tome. https://discord.com/channels/911676461050642432/1064813931966779392/1078266283910496409
 - [ ] 🌍 Some OTG biomes have no Ore spawn because they use not Stone. (Biome serach: `StoneBlock: (?!STONE)\w+`)
 - [ ] ✏️ Add usage of `Perfect Fuel` in NCO (with `flux goo` as sub-product)
 - [ ] ✏️ Add recipes for T6 Blood Magic Altair
@@ -84,9 +90,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🟢 Add **Fancier Particles** (note gitignore) when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
 - [ ] 🟢 Add **quality-tools**
 - [ ] 🟢 Add **everlastingabilities**
-- [ ] 🟢 Add **Thaumcraft Aspect Creator**
 - [ ] 🟢 Add **Bogo Sorter**
-- [ ] 🟢 Add **Fancier Block Particles**
 - [ ] ✏️ Add Gold `Conflux I` source in peaceful skyblock (probably Sifting Garbage Piles)
 - [ ] ✏️ Petrotheum `Conflux I` craft, probably Quicksand => Tube => Petrotheum
 - [ ] 📀 Remove automatic IE armor recycling to speed up game load
@@ -143,7 +147,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Fix main Vis Crystals doubled in JEI
 - [ ] 🟢 Add Nothirium when fixed https://github.com/Meldexun/Nothirium/issues/9
 - [ ] 🔄 Forbid exploding in chunks, but claim only few chunks
-- [ ] 🔄 Colossal Chests bigger interface via Bansoukou
+- [ ] 📀 Colossal Chests bigger interface via Bansoukou
 - [ ] ✏️ Magical Snow Globe add usage
 - [ ] ✏️ Add Flux Sponge recipe
 - [ ] ✏️ Add Greater Crimson Portal craft

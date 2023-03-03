@@ -138,12 +138,12 @@ Some of the changes from the `Extended` version [[1]](https://github.com/Enigmat
 
 ### Reddit
 
-<iframe id="reddit-embed" src="https://www.redditmedia.com/r/feedthebeast/comments/10p6uva/the_whole_modpack_beaten_in_only_peaceful_mode/?ref_source=embed&amp;ref=share&amp;embed=true&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="268" width="640" scrolling="no"></iframe>
+- [The whole modpack beaten in only peaceful mode!](https://www.reddit.com/r/feedthebeast/comments/10p6uva/the_whole_modpack_beaten_in_only_peaceful_mode/?utm_source=share&utm_medium=web2x&context=3)
 
 ### Modpack Review
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NAmwHIhZ6yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/embed/NAmwHIhZ6yM
 
 ### Playthrough Series (Portuguese)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2RFv7HHV_jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/embed/2RFv7HHV_jk

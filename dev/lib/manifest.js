@@ -23,10 +23,11 @@ export async function init() {
 /** @typedef {import('./minecraftinstance').InstalledAddon} InstalledAddon */
 
 const getIgnoredModIDs = memoize(() => {
-  const ignoredMods = fast_glob.sync(parseGitignore(loadText('dev/.devonly.ignore')), {
+  const ignoredFiles = fast_glob.sync(parseGitignore(loadText('dev/.devonly.ignore')), {
     dot      : true,
     onlyFiles: false,
   })
+  const ignoredMods = ignoredFiles
     .filter(f => f.match(/^mods\/.+\.jar/))
     .map(f => resolve(f))
 
