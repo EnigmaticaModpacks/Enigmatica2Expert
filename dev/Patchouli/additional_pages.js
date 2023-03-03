@@ -7,7 +7,7 @@
 
 // @ts-check
 
-import { loadJson, renameDeep } from '../lib/utils.js'
+import { loadText } from '../lib/utils.js'
 
 export function init(Patchouli_js, helpers) {
   // ----------------------------------------------------
@@ -101,4 +101,22 @@ export function init(Patchouli_js, helpers) {
         Essence amount depends on damage dealt.`,
     },
   ])
+
+  Patchouli_js('World/Tips', loadText('resources/tips/lang/en_us.lang')
+    .split('\n')
+    .map(l => l.replace(/^[^=]+=/, ''))
+    .reduce((acc, line) => {
+      const i = acc.length - 1
+      const height = s => s.length
+      if (acc[i] && height(acc[i]) + height(line) < 15 * 21)
+        acc[i] += `\n${line}`
+      else acc.push(line)
+      return acc
+    }, [])
+    .map(lines => ({
+      item: 'thaumicaugmentation:research_notes',
+      type: 'text',
+      text: lines.replace(/^(.+)/gm, '$(li)$1').replace(/\n/gm, ''),
+    }))
+  )
 }

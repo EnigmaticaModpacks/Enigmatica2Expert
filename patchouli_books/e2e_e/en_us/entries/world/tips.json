@@ -1,0 +1,146 @@
+{
+  "__comment": "This file generated automatically with Patchouli.js. All changes will be rewritten",
+  "name": "Tips",
+  "icon": "thaumicaugmentation:research_notes",
+  "category": "World",
+  "pages": [
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§aAutomation is key!§r$(li)§aAlways craft extras.§r$(li)No more capturing Ghasts for the §nAngel Ring§r!$(li)Go through the Controls. Lots of mods have features that need to be bound to a key.$(li)§aNever spend 6 minutes doing something by hand when you can spend 6 hours to automate it.§r",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§3Mekanism Cables§r tend to cause lag, be careful not to overuse them.$(li)Press §lBackspace§r to go to the previous recipe in JEI.$(li)Instead of using filled §nbuckets§r in recipes, you can use filled §nPortable Tanks§r for batch crafting.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Beware the effects of poor §2nutrition§r (Hotkey N). Seemingly random debuffs can stem from a bad diet.$(li)To loot a dragon, §lright-click§r it with an empty hand.$(li)Keep your §nitem cables§r short. Not only does it speed up the overall transfer, it is also easier on the server.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Use §lF7§r to see the light levels, §lF9§r to see the chunk borders, and §lCtrl+B§r to see the biome borders.$(li)Press §lShift/Sneak§r over your grave to retrieve your items.$(li)Holding the §oDrawer Key§r in your off-hand will automatically lock a newly placed Storage Drawer.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)The Immersive Petroleum §nPumpjack§r needs an Immersive Engineering §nFluid Pipe§r to bedrock to function.$(li)§nMob Spawners§r can be moved by using a §nDrop Of Evil§r on them, or by carrying them. (§lRight-shift + Click§r by default)",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§lStarlight Transmutation§r gives you access to §nEnd Stone§r without ever going to The End.$(li)You can put the Astral Sorcery §nLinking Wand§r in your offhand, and it won't stop linking.$(li)§e/xu_powersharing§r allows you to share Extra Utilities §4Grid Power§r with anyone on your server.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§e/foodlist size§r shows you how many different foods you already ate.$(li)§e/undo_excavation§r can undo §6Ore Excavator§r$(li)§e/wandOops§r can undo the §6Better Builder's Wand§r$(li)§lAstral Sorcery Rituals§r (and linked Ritual Anchors) act as §lChunkloaders§r.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§lHorologium§r only appears every 36 days, the next night after a §lSolar Eclipse§r.$(li)§5Mystical Agriculture§r plants have a 5%% chance of dropping §52 seeds§r when harvested with left click.$(li)There are many different valid fuels for the Tinkers' Construct §nSmeltery§r, all with different attributes.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§nPile of Ashes§r from the Nether are a great early game fuel source.$(li)The §nAkashic Tome§r is a portable bookshelf capable of holding all of your informational books and guides.$(li)A 13x13x13 §nCompact Machine§r is large enough for all of your §dThaumcraft§r needs, and will prevent flux from spreading to your base.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Growing §nSugar Cane§r on §oFertile Soil§r or §oFertilized Dirt§r does not require an adjacent water source.$(li)Under NO circumstances activate §lVeinminer§r while working around §lAE2 networks§r!$(li)§lMob Farms§r will lag less if spread out over a large area. The main load comes from mobs pathing away from each other.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§2NuclearCraft§r machines automatically convert Mekanism §6gasses§r into their fluid forms, and vice-versa.$(li)Utilize the §lQuark chest buttons§r in your inventory! They help a lot with early game storage management.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Applied Energistics §nInterfaces§r are grouped together by their name in the §nInterface Terminal§r (can be named in an anvil).$(li)The §nAdvanced Morphing Tool§r (Morphing Tool crafted with 4 gears) is a good way to get all wrenches early. It also helps to keep your inventory neat.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)The Cyclic §nSack of Holding§r can move Collector Crystals from Astral Sorcery §8(only for decoration purposes)§r.$(li)§nDrawers§r can be accessed via the Cooking For Blockheads §nFloor§r.$(li)A §nSkeleton§r that falls in Witch Water becomes a §nWither Skeleton§r. §nSquid§r -> §nGhast§r.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§nCursed Earth§r spawns §nWither Skeletons§r in §lNether Fortress§res.$(li)§nEnder Lily§r grows faster on End Stone. Get it in §nStone Barrel§rs.$(li)Hover over an item and press §lY§r to show it in nearby §nChest§rs.$(li)A stack of §nSteeleaves§r in your hotbar will dramatically fast repair with the §aSynergy§r trait",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§nBuilding Gadgets§r can take items from ME network. Just §lshift-right-click§r on a §nSecurity Terminal§r with the gadget.$(li)The §nMaim Trap§r from Dark Utilities is the best way to kill mobs on high §5difficulty§r.$(li)Higher §oHigh Oven§rs output more §lheat§r.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)When you pick up a §nCore Sample§r, it's automatically added to your map. Change your map (default key \"J\") to §ltopography§r mode to see Mineral Deposits.$(li)The Ice Bomb from Twilight Forest turns even flowing §nLava§r into §nObsidian§r.$(li)Press §lShift+F§r to lock stairs rotation.$(li)You can §lshear§r Creepers.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)6+ mods support §2JEI dragging§r for item filters, just like §lEnderIO§r.$(li)Stop killing Ghasts to make §bGhast Tears§r. They cry every 60 seconds if you stay near.$(li)§5Nether Portals§r can be classical §l2x3§r, but also §l1x2§r, §l1x3§r and §l2x2§r.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)[MP] Hover over an item in a GUI and press §lShift+T§r to show it in chat.$(li)[MP] §lCrouch + right-click§r another player to give them an item.$(li)[MP] Hold §lF4§r to ping a block.$(li)§bPSI Energy§r restores when you gather §aXP§r.$(li)Calm down the fastest tool by press \"§l\\§r\".",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Press \"§lShift+F8§r\" to refresh your sound device.$(li)§nFluid Tank§r from Ender IO - When trashing items in §elava§r, a tiny amount of more §elava§r will be produced.$(li)§nCarry on§r mob spawner trigger more mobs to spawn.$(li)Game stages don't actually prohibit anything.",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Full §nBackpacks§r in AE2 system cause lags, or even §5cant be taken out§r.$(li)§nIndustrial Wires§r - cheapest way to convert between RF and EU.$(li)§nCtrl+Delete§r thrashes item from inventory.$(li)§nInventory System Storage§r can't be accessed directly, but work with hoppers and VAULTOPIC",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)Right-Click §nOpenblock's Tank§r with Liquid XP to receive experience.$(li)Want §8/home§r command? Craft §nStable Ender Pearl§r + §nChat Detector§r!$(li)Putting Fluid Bus on a IE Fluid Tank §4cause lag§r$(li)Use §5Horologrium§r stasis to kill the §8Chaos Guardian§r$(li)You can spill §nMilk§r in §4The Nether§r",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§0Nocturnal Powder§r can be used to spawn rare mobs such as §oBlizz§r$(li)Blood Magic §nTeleposers§r allow for easy long-range transportation of Botania §bMana Pools§r and Astral Temple §bCrystals§r. Even works with Sparks!",
+      "title": "Tips"
+    },
+    {
+      "item": "thaumicaugmentation:research_notes",
+      "type": "text",
+      "text": "$(li)§n/integrateddyanmics networkdiagnostics§r is great to find out what exactly you did with ID that's destroying §4TPS§r$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!",
+      "title": "Tips"
+    }
+  ]
+}
