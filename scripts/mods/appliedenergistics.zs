@@ -22,6 +22,16 @@ mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>,
 	<appliedenergistics2:part:76>, 
 	[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<ore:dustRedstone>,<ore:dustGlowstone>]);
 
+# [Portable Cell] from [Energy Cell][+3]
+craft.remake(<appliedenergistics2:portable_cell>, ["pretty",
+  "  *  ",
+  "∩ Ϟ ∩",
+  "⌃   ⌃"], {
+  "*": <ic2:energy_crystal>.withTag({charge: 1000000.0}), # Energy Crystal
+  "∩": <rats:charged_creeper_chunk>,     # Charged Creeper Chunk
+  "Ϟ": <appliedenergistics2:energy_cell:*>, # Energy Cell
+  "⌃": <appliedenergistics2:material:1>, # Charged Certus Quartz Crystal
+});
 
 # ---=== Storage Cell Helpers ===---
   function newCellRecipe(input as IIngredient, output as IItemStack) {
@@ -35,34 +45,8 @@ mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>,
 		}
 	}
 
-  function newAdvCellRecipe(input as IIngredient, output as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output.displayName, output,
-		[[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-		[<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
-		[<ironchest:iron_chest:2>, <ironchest:iron_chest:2>, <ironchest:iron_chest:2>]]);
-
-    if(!isNull(input)) {
-      recipes.addShapeless("Shapeless - "~output.displayName, output, [<aeadditions:storage.casing>, input]);
-		}
-	}
-
-  function newGasCellRecipe(input as IIngredient, output as IItemStack) {
-	recipes.remove(output);
-	recipes.addShaped(output.displayName, output,
-		[[<appliedenergistics2:quartz_glass>, <appliedenergistics2:material:8>, <appliedenergistics2:quartz_glass>],
-		[<appliedenergistics2:material:8>, input, <appliedenergistics2:material:8>], 
-		[<ore:plateGold>, <ironchest:iron_chest:1>, <ore:plateGold>]]);
-    if(!isNull(input)) {
-      recipes.addShapeless("Shapeless - "~output.displayName, output, [<aeadditions:storage.casing:2>, input]);
-		}
-	}
-
-# ---=== Storage Housings ===---
 
   newCellRecipe(null, <appliedenergistics2:material:39>);
-  newAdvCellRecipe(null, <aeadditions:storage.casing>);
-  newGasCellRecipe(null, <aeadditions:storage.casing:2>);
 
 # ---=== Basic Cells ===---
   val cellRecipes = {
@@ -88,16 +72,6 @@ mods.thermalexpansion.Compactor.addMintRecipe(trueSilicon * 2, <minecraft:sand>,
 	for input, output in cellRecipes {
 		newCellRecipe(input,output);
 	}
-
-# ---=== Advanced Cells ===---
-  for i in 0 .. 4 {
-    newAdvCellRecipe(<aeadditions:storage.component>.definition.makeStack(i), <aeadditions:storage.physical>.definition.makeStack(i));
-  }
-
-# ---=== Gas Cells ===---
-  for i in 0 .. 7 {
-    newGasCellRecipe(<aeadditions:storage.component>.definition.makeStack(i+7), <aeadditions:storage.gas>.definition.makeStack(i));
-  }
 
 # Quantum Link Chamber
 	recipes.remove(<appliedenergistics2:quantum_link>);
@@ -195,17 +169,16 @@ craft.remake(<appliedenergistics2:energy_acceptor>, ["pretty",
 		[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
 		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
 
-		# [ME Controller] from [Energy Acceptor][+5]
+		# [ME Controller] from [Industrial Machine Chassis][+4]
 		craft.remake(<appliedenergistics2:controller>, ["pretty",
-			"C o C",
-			"F Ϟ F",
-			"M A M"], {
-			"A": <appliedenergistics2:material:28>,     # Advanced Card
+			"C I C",
+			"Ϟ M Ϟ",
+			"C A C"], {
 			"C": <contenttweaker:compressed_crushed_skystone>, # Compressed Crushed Skystone
-			"F": <ore:pearlFluix>,                      # Fluix Pearl
-			"M": <thermalexpansion:frame>,              # Machine Frame
+			"I": <enderio:block_inventory_panel>,       # Inventory Panel
 			"Ϟ": <appliedenergistics2:energy_acceptor>, # Energy Acceptor
-			"o": <ore:controllerModular>,
+			"M": <ore:itemMachineChassi>,               # Industrial Machine Chassis
+			"A": <appliedenergistics2:material:28>,     # Advanced Card
 		});
 	}
 
@@ -353,12 +326,6 @@ recipes.addShaped("ME Storage Bus", <appliedenergistics2:part:220>, [
 	[<actuallyadditions:block_giant_chest>], # Small Storage Crate
 	[<appliedenergistics2:interface>],       # ME Interface
 ]);
-
-# [Certus Quartz Tank] from [Tank][+1]
-craft.reshapeless(<aeadditions:certustank>, 'ABB', {
-  "A": <enderio:block_omni_reservoir>,                  # Tank
-  "B": <appliedenergistics2:quartz_glass>, # Quartz Glass
-});
 
 
 # ---------------------------------------------------------
@@ -599,3 +566,7 @@ craft.remake(<appliedenergistics2:part:360>, ["pretty",
   "M": <appliedenergistics2:part:380>, # ME Terminal
   "V": <vaultopic:vice>,               # V.I.C.E. (Vaultopic Item Crafting Entity)
 });
+
+# Remake recipe that making hundred of its copies
+mods.appliedenergistics2.Inscriber.removeRecipe(<appliedenergistics2:material:60>);
+mods.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:60>, <appliedenergistics2:material:25>, false, <minecraft:redstone_block>, <minecraft:lapis_block>);

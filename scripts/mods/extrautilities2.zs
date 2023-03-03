@@ -2,6 +2,10 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 #modloaded extrautils2
+
+function getCreativeHarvest(item as IItemStack) as IItemStack{
+	return <extrautils2:creativeharvest>.withTag({creative_block: {meta: item.damage, block: item.definition.id}, display_stack: {id: item.definition.id, Count: 1 as byte, Damage: item.damage as short}});
+}
 	
 # Bag of Holding
 	recipes.remove(<extrautils2:bagofholding>);
@@ -235,12 +239,16 @@ remake("Ring Of The Flying Squid",
 for i in 0 to 6 {
 	recipes.removeByRecipeName("extrautils2:angel_ring_" ~ i); # Remove shaped
 }
-recipes.addShaped("Angel Ring", 
-	<extrautils2:angelring>, [
-	[<ore:plateDenseGold>, <botania:flighttiara:*>, <ore:plateDenseGold>], 
-	[<environmentaltech:modifier_creative_flight>, <extendedcrafting:material:40>, <environmentaltech:modifier_creative_flight>], 
-	[<ore:plateDenseGold>, <extrautils2:chickenring:1>, <ore:plateDenseGold>]
-]);
+
+# [Angel Ring] from [Ring of the Flying Squid][+2]
+craft.make(<extrautils2:angelring>, ["pretty",
+  "▬ C ▬",
+  "▬ R ▬",
+  "▬ ▬ ▬"], {
+  "▬": <ore:ingotGold198>,          # Gold-198
+  "C": getCreativeHarvest(<extrautils2:decorativesolid:6>), # Creative Harvest
+  "R": <extrautils2:chickenring:1>, # Ring of the Flying Squid
+});
 
 # [Dragon Egg Mill] from [Redstone Gear][+3]
 craft.remake(<extrautils2:passivegenerator:8>, ["pretty",
@@ -375,10 +383,6 @@ craft.make(<extrautils2:drum:3>, ["pretty",
   "K": <extrautils2:klein>,             # Klein Bottle
   "~": Bucket("high_pressure_steam"), # High Pressure Steam Bucket
 });
-
-function getCreativeHarvest(item as IItemStack) as IItemStack{
-	return <extrautils2:creativeharvest>.withTag({creative_block: {meta: item.damage, block: item.definition.id}, display_stack: {id: item.definition.id, Count: 1 as byte, Damage: item.damage as short}});
-}
 
 # Infinity item sources
 val BQ = <extrautils2:decorativesolid:6>; # Blue Quartz

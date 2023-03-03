@@ -64,7 +64,7 @@ addRecipe(x, {[<minecraft:log:*>, <minecraft:log2:*>] : [<advancedrocketry:charc
 addRecipe(x, {[<minecraft:melon_block:*>, <minecraft:hay_block:*>] : [<minecraft:nether_wart_block>]});
 addRecipe(x, {[<minecraft:mossy_cobblestone:*>] : [<minecraft:magma>]});
 addRecipe(x, {[<minecraft:mycelium:*>] : [<extrautils2:cursedearth>]});
-addRecipe(x, {[<minecraft:planks:*>] : [<tconstruct:firewood>]});
+addRecipe(x, {[<minecraft:planks:*>] : [<rustic:painted_wood_black>]});
 addRecipe(x, {[<minecraft:prismarine:*>, <minecraft:piston:*>] : [<minecraft:glowstone>]});
 addRecipe(x, {[<minecraft:redstone_block:*>] : [<quark:smoker>]});
 addRecipe(x, {[<minecraft:ice:*>] : [<minecraft:obsidian>]});

@@ -71,7 +71,7 @@ for ingot in <ore:ingotGraphite>.items {
 # Basic Mekanism Pipe/Tube/Cables
 	recipes.remove(<mekanism:transmitter>.withTag({tier: 0}));
 	recipes.remove(<mekanism:transmitter:1>.withTag({tier: 0}));
-	recipes.remove(<mekanism:transmitter:2>.withTag({tier: 0}));
+	// recipes.remove(<mekanism:transmitter:2>.withTag({tier: 0}));
 	recipes.remove(<mekanism:transmitter:3>.withTag({tier: 0}));
 	recipes.remove(<mekanism:transmitter:4>.withTag({tier: 0}));
 	recipes.addShapedMirrored("MekanismCable1", 
@@ -80,9 +80,9 @@ for ingot in <ore:ingotGraphite>.items {
 	recipes.addShapedMirrored("MekanismCable2", 
 	<mekanism:transmitter:1>.withTag({tier: 0}) * 8, 
 	[[<ore:ingotElectricalSteel>, <flopper:flopper>, <ore:ingotElectricalSteel>]]);
-	recipes.addShapedMirrored("MekanismCable3", 
-	<mekanism:transmitter:2>.withTag({tier: 0}) * 8, 
-	[[<ore:ingotElectricalSteel>, <appliedenergistics2:quartz_vibrant_glass>, <ore:ingotElectricalSteel>]]);
+	// recipes.addShapedMirrored("MekanismCable3", 
+	// <mekanism:transmitter:2>.withTag({tier: 0}) * 8, 
+	// [[<ore:ingotElectricalSteel>, <appliedenergistics2:quartz_vibrant_glass>, <ore:ingotElectricalSteel>]]);
 	recipes.addShapedMirrored("MekanismCable4", 
 	<mekanism:transmitter:3>.withTag({tier: 0}) * 8, 
 	[[<ore:ingotElectricalSteel>, <ore:circuitBoard>, <ore:ingotElectricalSteel>]]);

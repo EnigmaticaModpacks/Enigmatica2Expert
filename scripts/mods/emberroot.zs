@@ -6,7 +6,7 @@ scripts.lib.loot.tweak("emberroot:entity/golem_blue"     ,"main","minecraft:iron
 scripts.lib.loot.tweak("emberroot:entity/golem_green"    ,"main","minecraft:gunpowder"   , null, [<mysticalagriculture:crafting:39>]      , [2,8]);
 scripts.lib.loot.tweak("emberroot:entity/golem_orange"   ,"main","minecraft:coal"        , null, [<mekanism:nugget:3>]                    , [3,14]);
 scripts.lib.loot.tweak("emberroot:entity/golem_purple"   ,"main","minecraft:spider_eye"  , null, [<mechanics:heavy_nugget>]               , [5,24]);
-scripts.lib.loot.tweak("emberroot:entity/golem_red"      ,"main","minecraft:redstone"    , null, [<mysticalagriculture:redstone_essence>] , [1,4]);
+scripts.lib.loot.tweak("emberroot:entity/golem_red"      ,"main","minecraft:redstone"    , null, [<enderio:item_alloy_nugget:4>]          , [1,4]);
 scripts.lib.loot.tweak("emberroot:entity/golem_yellow"   ,"main","minecraft:gold_nugget" , null, [<thermalfoundation:material:228>]       , [8,18]);
 scripts.lib.loot.tweak("emberroot:entity/skeleton_frozen","main","minecraft:ice"         , null, [<mctsmelteryio:iceball>]                , [1,6]);
 scripts.lib.loot.tweak("emberroot:entity/sprite_mini"    ,"main","minecraft:rotten_flesh", null, [<mysticalagriculture:nature_essence>]   , [1,3]);

@@ -202,6 +202,7 @@ scripts.process.alloy([<ore:bouleSilicon>, <ore:fiberSiliconCarbide>], <nuclearc
 // Unify Silicon
 <ore:itemSilicon>.remove(<nuclearcraft:gem:6>);
 furnace.remove(<appliedenergistics2:material:5>, <nuclearcraft:gem_dust:2>); // Furnance quartz dusts -> AE silicon
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(<appliedenergistics2:material:5>, <nuclearcraft:dust:8>);
 
 # Boron arsenid simplify recipe
 scripts.process.solution([<ore:dustArsenic>], [<liquid:boron>*144], [<liquid:bas> * 666], [1, 6000], "only: highoven");
@@ -546,10 +547,10 @@ for mod, types in nuclearData {
       if(key!='americium' || i==0) {
         mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(depleted_fuel * 9);
         utils.rh(depleted_fuel);
-        if(i!=2) {
-          mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
-          utils.rh(pellet_carbide);
-        }
+      }
+      if(key!='americium' && i==2) {
+        mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
+        utils.rh(pellet_carbide);
       }
 
       if(key!='mixed' && key!='thorium'

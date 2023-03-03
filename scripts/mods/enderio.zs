@@ -152,6 +152,16 @@ craft.remake(<enderio:item_basic_capacitor>, ["pretty",
   "I": <ore:itemInfinityGoop>,                 # Infinity Reagent
 });
 
+
+# [Fluid Tank] from [Clear Glass][+1]
+recipes.remove(<enderio:block_tank>);
+mods.tconstruct.Casting.addBasinRecipe(<enderio:block_tank>, <tconstruct:clear_glass>, <liquid:construction_alloy>, 144*4, true);
+mods.tconstruct.Casting.addBasinRecipe(<enderio:block_tank>, <tconstruct:clear_glass>, <liquid:iron>, 144*4, true);
+
+# [Pressurized Fluid Tank] from [Fused Quartz][+1]
+recipes.remove(<enderio:block_tank:1>);
+mods.tconstruct.Casting.addBasinRecipe(<enderio:block_tank:1>, <ore:fusedQuartz>, <liquid:dark_steel>, 144*4, true);
+
 # Double-Layer Capacitor
 	recipes.remove(<enderio:item_basic_capacitor:1>);
 	recipes.addShapedMirrored("Double-Layer Capacitor", 
@@ -375,15 +385,16 @@ craft.remake(<enderio:item_fluid_filter>, ["pretty",
 });
 
 # [Omnivoir] from [Black Quartz][+1]
-craft.remake(<enderio:block_omni_reservoir>, ["pretty",
-  "⌃ S",
-  "S ⌃"], {
+craft.remake(<enderio:block_omni_reservoir> * 4, ["pretty",
+  "S S S",
+  "S ⌃ S",
+  "S S S"], {
   "⌃": <ore:gemQuartzBlack>,
   "S": <tconstruct:materials>,
 });
 
 # Omnivoir fast alt
-scripts.process.alloy([<ore:gemQuartzBlack> * 2], <enderio:block_omni_reservoir>, "only: alloySmelter");
+scripts.process.alloy([<ore:gemQuartzBlack>], <enderio:block_omni_reservoir> * 4, "only: alloySmelter");
 
 # [Energy Gauge] from [Omnivoir][+2]
 craft.remake(<enderio:block_gauge>, ["pretty",
@@ -724,4 +735,6 @@ function addBrewAlt(fluid as ILiquidStack, ingrs as IIngredient[], output as str
 addBrewAlt(<fluid:mead>       * 2000, [<minecraft:porkchop>, <minecraft:sugar>], 'nutrient_distillation');
 addBrewAlt(<fluid:short.mead> * 2000, [<minecraft:porkchop>, <minecraft:sugar>], 'nutrient_distillation');
 addBrewAlt(<fluid:milk_goat>  * 2000, [<minecraft:beetroot_seeds>, <minecraft:sugar>], 'hootch');
+addBrewAlt(<fluid:milk_sheep> * 2000, [<minecraft:beetroot_seeds>, <minecraft:sugar>], 'hootch');
+addBrewAlt(<fluid:milk>       * 8000, [<rats:assorted_vegetables>, <additionalcompression:dustsugar_compressed:1>], 'hootch');
 addBrewAlt(<fluid:hootch>     * 2000, [<minecraft:blaze_powder>, <minecraft:redstone>], 'fire_water');

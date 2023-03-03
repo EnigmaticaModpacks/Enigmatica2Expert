@@ -172,17 +172,6 @@ craft.remake(<appliedenergistics2:fluid_interface>, ["pretty",
   "▬": <ore:ingotTungsten>, # Tungsten Ingot
 });
 
-# [ME Gas Interface] from [Annihilation Core][+3]
-craft.remake(<aeadditions:gas_interface>, ["pretty",
-  "▬ d ▬",
-  "A   F",
-  "▬ d ▬"], {
-  "A": <appliedenergistics2:material:44>, # Annihilation Core
-  "F": <appliedenergistics2:material:43>, # Formation Core
-  "d": <ore:dyeYellow>, # Dandelion Yellow
-  "▬": <ore:ingotTungsten>, # Tungsten Ingot
-});
-
 # [End-Mage Barclay Sword] from [String of Life][+2]
 craft.remake(<endreborn:ender_sword>, ["pretty",
   "  ▬ ▬",

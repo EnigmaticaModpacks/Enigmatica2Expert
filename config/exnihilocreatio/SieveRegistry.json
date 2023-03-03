@@ -442,5 +442,10 @@
     {"meshLevel": 4, "drop": {"name": "jaopca:item_piecemagnesium"              , "meta": 0} , "chance": 0.6},
     {"meshLevel": 4, "drop": {"name": "jaopca:item_piecedraconium"              , "meta": 0} , "chance": 0.3},
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_silver"         , "meta": 0} , "chance": 0.3}
+  ],
+
+  "thaumcraft:taint_soil": [
+    {"meshLevel": 2, "drop": {"name": "thaumicwonders:vishroom_spore", "meta": 0} , "chance": 1.0},
+    {"meshLevel": 2, "drop": {"name": "thaumicwonders:vishroom_spore", "meta": 0} , "chance": 0.5}
   ]
 }

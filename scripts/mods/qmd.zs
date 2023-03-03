@@ -158,7 +158,18 @@ utils.rh(<qmd:ingot>);
 // Replacing Mercury with Quicksilver //
 ////////////////////////////////////////
 
-// Taken from Multiblock-Madness
+mods.nuclearcraft.Melter.removeRecipeWithOutput(<fluid:mercury> * 144);
+mods.nuclearcraft.IngotFormer.removeRecipeWithInput(<fluid:mercury> * 144);
+mods.qmd.nucleosynthesis_chamber.removeRecipeWithInput(<fluid:gold> * 144, null, (<particle:neutron>*13980000)~1);
+mods.qmd.nucleosynthesis_chamber.addRecipe(<fluid:gold> * 144, null, (<particle:neutron>*13980000)~1, <liquid:fluid_quicksilver>*144, null, 10000000, 3610);
+mods.qmd.nucleosynthesis_chamber.removeRecipeWithInput(<fluid:mercury> * 144, null, (<particle:neutron>*16940000)~1);
+mods.qmd.nucleosynthesis_chamber.addRecipe(<fluid:fluid_quicksilver> * 144, null, (<particle:neutron>*16940000)~1, <liquid:lead>*144, null, 10000000, 4180);
+mods.nuclearcraft.Turbine.removeRecipeWithOutput(<fluid:mercury>);
+mods.nuclearcraft.Turbine.addRecipe(<liquid:hot_mercury>, <liquid:fluid_quicksilver> * 2, 8192.0, 4.0, 1.0);
+mods.nuclearcraft.Infuser.removeRecipeWithOutput(<qmd:discharge_lamp2:1>);
+mods.nuclearcraft.Infuser.addRecipe(<qmd:discharge_lamp:6>, <liquid:fluid_quicksilver>*144, <qmd:discharge_lamp2:1>);
+
+// Below, taken from Multiblock-Madness
 // https://github.com/Filostorm/Multiblock-Madness/blob/19659008c64234f96d5607df3f9ca6df7adee778/scripts/Non%20Mod%20Scripts/unification.zs#L150-L301
 
 // New Ore Leacher Recipes

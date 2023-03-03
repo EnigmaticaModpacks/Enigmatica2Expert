@@ -186,6 +186,12 @@ recipes.remove(<storagedrawers:customtrim>);
 utils.compact(<ore:stickWood>, <openblocks:scaffolding>);
 utils.compact(<openblocks:scaffolding>, <storagedrawers:customtrim>);
 
+// Compress Arrows
+recipes.remove(<extrautils2:spike_wood>);
+recipes.remove(<extrautils2:spike_stone>);
+utils.compact(<minecraft:arrow>, <extrautils2:spike_wood>);
+utils.compact(<extrautils2:spike_wood>, <extrautils2:spike_stone>);
+
 // ------------------------------------
 // Crafting tables rework
 // ------------------------------------

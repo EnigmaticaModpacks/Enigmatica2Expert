@@ -160,3 +160,17 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   e.cancel();
 });
 
+
+
+// events.onEntityLivingAttacked(function(e as crafttweaker.event.EntityLivingAttackedEvent){
+//   server.commandManager.executeCommand(server,
+//     '/say §atype:§r '~e.damageSource.damageType
+//     ~' §ahas inmmediate:§r '~!isNull(e.damageSource.immediateSource)
+//     ~' §ahas true:§r '~!isNull(e.damageSource.trueSource)
+//     ~' §atrue:§r '~!isNull(e.damageSource.trueSource.)
+//   );
+//   if(isNull(e.damageSource) || isNull(e.damageSource.trueSource)) return;
+//   val source = isNull(e.damageSource.trueSource.definition) ? '' : '§asource_id:§r '~e.damageSource.trueSource.definition.id;
+//   server.commandManager.executeCommand(server, '/say '~source);
+  
+// });

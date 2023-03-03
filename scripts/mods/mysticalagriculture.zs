@@ -660,6 +660,7 @@ for i, ess in essesnses {
 
 # New Crystals entry
 mods.rats.recipes.addChefRatRecipe(<ore:quartzMana>.firstItem, <mysticalagriculture:infusion_crystal>);
+mods.botania.ManaInfusion.addConjuration(<mysticalagriculture:infusion_crystal>, <astralsorcery:blockcelestialcollectorcrystal:*>, 25000); 
 
 # [Fertilized Essence] from [Phyto-Gro]*2[+4]
 craft.reshapeless(<mysticalagriculture:fertilized_essence>, "rF*ef", {
