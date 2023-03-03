@@ -85,6 +85,7 @@ config/enderio/recipes/examples/*
 config/biomesoplenty/biomes/*
 config/triumph/documentation/*
 config/tinker_ore_dict_melting_cache.dat
+config/tconstruct_oredictcache.dat
 config/jeiexporter
 config/jei/jei.cfg
 config/smoothfont/smoothfont.cfg
