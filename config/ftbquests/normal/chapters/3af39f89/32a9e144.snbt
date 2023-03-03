@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.hypoinfuser.name}",
-	x: 11.333333333333334d,
-	y: 4.166666666666667d,
+	x: 5.033333333333333d,
+	y: 5.300000000000001d,
 	text: [
 		"{q.thermal_expansion.hypoinfuser.desc}"
 	],

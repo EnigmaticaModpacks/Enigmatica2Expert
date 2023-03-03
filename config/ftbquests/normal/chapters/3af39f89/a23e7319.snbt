@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.disjunctive_extrac.name}",
-	x: 6.166666666666667d,
-	y: 5.666666666666667d,
+	x: 8.8d,
+	y: 8.266666666666667d,
 	text: [
 		"{q.thermal_expansion.disjunctive_extrac.desc}"
 	],

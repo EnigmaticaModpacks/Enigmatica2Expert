@@ -1,6 +1,6 @@
 {
-	x: 8.7d,
-	y: 3.5d,
+	x: 6.0d,
+	y: 4.3d,
 	text: [
 		"{q.thermal_expansion.cache_basic_.desc}"
 	],

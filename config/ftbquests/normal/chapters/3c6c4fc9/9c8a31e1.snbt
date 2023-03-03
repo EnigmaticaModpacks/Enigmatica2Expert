@@ -5,8 +5,7 @@
 		"{q.nuclearcraft_overh.welcome_qmd.desc}"
 	],
 	dependencies: [
-		"8eed8d90",
-		"0bf36970"
+		"8eed8d90"
 	],
 	tasks: [{
 		uid: "13b71a68",

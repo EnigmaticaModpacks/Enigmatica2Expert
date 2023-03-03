@@ -11,14 +11,59 @@
 		"ca359f03"
 	],
 	size: 0.1d,
+	or_tasks: true,
 	tasks: [{
-		uid: "d172695b",
+		uid: "c9da9bf7",
 		type: "item",
+		disable_toast: true,
 		items: [{
-			id: "tconstruct:sharpening_kit",
+			id: "itemfilters:filter",
 			tag: {
-				Material: "ardite"
+				display: {
+					Name: "Any oreCobalt"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreCobalt"
+				}
 			}
+		}]
+	},
+	{
+		uid: "3c2adf16",
+		type: "item",
+		disable_toast: true,
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreArdite"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "oreArdite"
+				}
+			}
+		}]
+	},
+	{
+		uid: "e7e7a9b0",
+		type: "item",
+		disable_toast: true,
+		items: [{
+			item: "tconstruct:ingots"
+		}]
+	},
+	{
+		uid: "efebc235",
+		type: "item",
+		disable_toast: true,
+		items: [{
+			item: "tconstruct:ingots 1 1"
 		}]
 	}]
 }

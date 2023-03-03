@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.synchrotron_accele.desc}"
 	],
 	dependencies: [
-		"7ee73aa1",
-		"0bf36970"
+		"7ee73aa1"
 	],
 	tasks: [{
 		uid: "60e12dca",

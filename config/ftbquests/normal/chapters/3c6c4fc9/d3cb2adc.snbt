@@ -5,7 +5,6 @@
 		"{q.nuclearcraft_overh.ore_leacher.desc}"
 	],
 	dependencies: [
-		"0bf36970",
 		"9c8a31e1"
 	],
 	tasks: [{

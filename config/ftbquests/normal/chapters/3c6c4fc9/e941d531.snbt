@@ -5,8 +5,7 @@
 		"{q.nuclearcraft_overh.lepton_cannon.desc}"
 	],
 	dependencies: [
-		"06b1e561",
-		"0bf36970"
+		"06b1e561"
 	],
 	tasks: [{
 		uid: "8d3dc1d8",

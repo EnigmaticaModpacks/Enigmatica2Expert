@@ -1,5 +1,5 @@
 {
-	x: 10.0d,
+	x: 11.3d,
 	y: 6.9d,
 	text: [
 		"{q.thermal_expansion.augment_clastic_d.desc}"

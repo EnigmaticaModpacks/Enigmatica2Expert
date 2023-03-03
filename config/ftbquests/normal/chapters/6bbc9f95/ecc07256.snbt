@@ -1,0 +1,23 @@
+{
+	x: 7.5d,
+	y: 5.3d,
+	text: [
+		"{q.thaumcraft.arcane_crafter.desc}"
+	],
+	dependencies: [
+		"2e8e4ce7"
+	],
+	tasks: [{
+		uid: "4c4c247e",
+		type: "item",
+		items: [{
+			item: "thaumtweaks:crafter"
+		}]
+	}],
+	rewards: [{
+		uid: "e1501ae0",
+		type: "item",
+		item: "mysticalagriculture:wood_essence",
+		count: 16
+	}]
+}

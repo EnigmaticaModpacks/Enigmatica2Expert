@@ -1,6 +1,6 @@
 {
-	x: 10.7d,
-	y: 5.3d,
+	x: 8.3d,
+	y: 5.9d,
 	text: [
 		"{q.thermal_expansion.aqueous_accumulator.desc}"
 	],

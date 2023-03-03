@@ -1,0 +1,25 @@
+{
+	title: "{q.gates.mini_gate_eio_stor.name}",
+	x: 2.0460000000000003d,
+	y: 3.366d,
+	text: [
+		"{q.gates.mini_gate_eio_stor.desc}"
+	],
+	dependencies: [
+		"48f0d63f"
+	],
+	dependency_requirement: "one_started",
+	size: 0.66d,
+	tasks: [{
+		uid: "4d078fd5",
+		type: "item",
+		items: [{
+			item: "enderio:block_inventory_panel"
+		}]
+	}],
+	rewards: [{
+		uid: "b44f0389",
+		type: "item",
+		item: "enderio:block_inventory_chest_big"
+	}]
+}

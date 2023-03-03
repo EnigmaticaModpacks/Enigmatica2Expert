@@ -6,8 +6,7 @@
 		"{q.nuclearcraft_overh.high_pressure_steam.desc}"
 	],
 	dependencies: [
-		"516c6590",
-		"0bf36970"
+		"516c6590"
 	],
 	size: 1.3333333333333333d,
 	tasks: [{

@@ -1,6 +1,6 @@
 {
 	title: "{q.thermal_expansion.igneous_extruder.name}",
-	x: 10.0d,
+	x: 11.3d,
 	y: 5.9d,
 	text: [
 		"{q.thermal_expansion.igneous_extruder.desc}"

@@ -1,0 +1,26 @@
+{
+	title: "{q.getting_started.food_tweaks.name}",
+	x: -4.0d,
+	y: 6.1d,
+	text: [
+		"{q.getting_started.food_tweaks.desc}"
+	],
+	dependencies: [
+		"c35399e6"
+	],
+	tasks: [{
+		uid: "e8cb0553",
+		type: "item",
+		items: [{
+			item: "spiceoflife:lunchbag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a6c83485",
+		type: "item",
+		item: "rustic:apple_seeds",
+		count: 2
+	}]
+}

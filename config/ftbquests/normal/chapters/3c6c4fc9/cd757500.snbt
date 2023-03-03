@@ -1,12 +1,11 @@
 {
-	x: 4.5d,
-	y: 6.4d,
+	x: 5.3d,
+	y: 6.8d,
 	text: [
 		"{q.nuclearcraft.speed_upgrade.desc}"
 	],
 	dependencies: [
-		"22e03e01",
-		"0bf36970"
+		"a7410660"
 	],
 	tasks: [{
 		uid: "43991b9e",

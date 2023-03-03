@@ -5,8 +5,7 @@
 		"{q.nuclearcraft_overh.gluon_gun.desc}"
 	],
 	dependencies: [
-		"06b1e561",
-		"0bf36970"
+		"06b1e561"
 	],
 	tasks: [{
 		uid: "625c9211",

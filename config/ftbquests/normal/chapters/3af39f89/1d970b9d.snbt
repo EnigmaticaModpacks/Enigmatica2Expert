@@ -1,6 +1,6 @@
 {
-	x: 9.3d,
-	y: 5.3d,
+	x: 7.3d,
+	y: 5.9d,
 	text: [
 		"{q.thermal_expansion.nullifier.desc}"
 	],

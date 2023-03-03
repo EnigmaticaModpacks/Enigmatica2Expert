@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.decay_chamber.desc}"
 	],
 	dependencies: [
-		"5271b8bd",
-		"0bf36970"
+		"5271b8bd"
 	],
 	tasks: [{
 		uid: "8e13da86",

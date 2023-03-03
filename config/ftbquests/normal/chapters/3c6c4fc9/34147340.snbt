@@ -5,8 +5,7 @@
 		"{q.nuclearcraft_overh.irradiator.desc}"
 	],
 	dependencies: [
-		"3ba07970",
-		"0bf36970"
+		"3ba07970"
 	],
 	tasks: [{
 		uid: "59da7924",

@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.molten_salt_reactor.desc}"
 	],
 	dependencies: [
-		"8eed8d90",
-		"0bf36970"
+		"8eed8d90"
 	],
 	tasks: [{
 		uid: "845cc931",

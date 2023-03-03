@@ -2,10 +2,9 @@
 	x: 7.9d,
 	y: 7.5d,
 	text: [
-		"{q.nuclearcraft.basic_plating.desc}"
+		"{q.nuclearcraft.nuclearcraft.desc}"
 	],
 	dependencies: [
-		"22e03e01",
 		"0bf36970"
 	],
 	tasks: [{
@@ -16,13 +15,15 @@
 		}]
 	}],
 	rewards: [{
-		uid: "dfeed335",
+		uid: "d048a380",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "uncommon"
-			}
-		}
+		item: "nuclearcraft:radaway",
+		count: 3
+	},
+	{
+		uid: "dc34d6c6",
+		type: "command",
+		auto: "invisible",
+		command: "/say @p has begun the NuclearCraft questline!"
 	}]
 }

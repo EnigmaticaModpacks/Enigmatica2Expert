@@ -7,7 +7,6 @@
 		"{q.nuclearcraft_overh.isotope_separator.desc}"
 	],
 	dependencies: [
-		"0bf36970",
 		"626f1230"
 	],
 	tasks: [{

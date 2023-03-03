@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.target_chamber.desc}"
 	],
 	dependencies: [
-		"5271b8bd",
-		"0bf36970"
+		"5271b8bd"
 	],
 	tasks: [{
 		uid: "be791ebf",

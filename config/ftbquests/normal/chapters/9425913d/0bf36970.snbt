@@ -10,10 +10,10 @@
 		"e07d1afe"
 	],
 	tasks: [{
-		uid: "39d75c10",
+		uid: "812914a1",
 		type: "item",
 		items: [{
-			item: "nuclearcraft:manufactory"
+			item: "nuclearcraft:part"
 		}]
 	}],
 	rewards: [{

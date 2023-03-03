@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.isentropic_reservoir.name}",
-	x: 3.1666666666666665d,
-	y: 5.666666666666667d,
+	x: 5.8d,
+	y: 8.266666666666667d,
 	text: [
 		"{q.thermal_expansion.isentropic_reservoir.desc}"
 	],

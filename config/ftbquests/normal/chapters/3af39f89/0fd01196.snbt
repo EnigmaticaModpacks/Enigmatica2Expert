@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.turbine_conversion.name}",
-	x: 2.166666666666667d,
-	y: 5.666666666666667d,
+	x: 4.8d,
+	y: 8.266666666666667d,
 	text: [
 		"{q.thermal_expansion.turbine_conversion.desc}"
 	],

@@ -5,8 +5,7 @@
 		"{q.nuclearcraft.elite_plating.desc}"
 	],
 	dependencies: [
-		"dc5e8800",
-		"0bf36970"
+		"dc5e8800"
 	],
 	tasks: [{
 		uid: "ff95802f",

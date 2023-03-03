@@ -5,8 +5,7 @@
 		"{q.nuclearcraft.nuclear_furnace.desc}"
 	],
 	dependencies: [
-		"a7410660",
-		"0bf36970"
+		"a7410660"
 	],
 	tasks: [{
 		uid: "2602792c",

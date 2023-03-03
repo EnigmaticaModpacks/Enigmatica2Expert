@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.ignition_plugs.name}",
-	x: 4.166666666666666d,
-	y: 5.666666666666667d,
+	x: 6.799999999999999d,
+	y: 8.266666666666667d,
 	text: [
 		"{q.thermal_expansion.ignition_plugs.desc}"
 	],

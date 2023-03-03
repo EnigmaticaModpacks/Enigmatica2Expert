@@ -1,0 +1,28 @@
+{
+	x: -1.2d,
+	y: 1.575d,
+	text: [
+		"{q.immersive_engineer.factory_block_placer.desc}"
+	],
+	dependencies: [
+		"3e86795a"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "b2f80493",
+		type: "item",
+		items: [{
+			item: "engineersdecor:factory_placer"
+		}]
+	}],
+	rewards: [{
+		uid: "bf6a6edd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.beam_diverter.desc}"
 	],
 	dependencies: [
-		"ef6bdfaf",
-		"0bf36970"
+		"ef6bdfaf"
 	],
 	tasks: [{
 		uid: "f2aa1c6d",

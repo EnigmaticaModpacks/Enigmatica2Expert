@@ -5,8 +5,7 @@
 		"{q.nuclearcraft.du_plating.desc}"
 	],
 	dependencies: [
-		"3814ab80",
-		"0bf36970"
+		"3814ab80"
 	],
 	tasks: [{
 		uid: "f6b4cf4e",

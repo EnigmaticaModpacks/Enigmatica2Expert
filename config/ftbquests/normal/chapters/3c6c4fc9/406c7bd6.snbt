@@ -6,8 +6,7 @@
 		"{q.nuclearcraft_overh.reflector.desc}"
 	],
 	dependencies: [
-		"3ccd3b95",
-		"0bf36970"
+		"3ccd3b95"
 	],
 	tasks: [{
 		uid: "0489f6e8",

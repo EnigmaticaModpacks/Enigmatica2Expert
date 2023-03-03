@@ -2,12 +2,14 @@
 	title: "{q.immersive_engineer.treated_wood.name}",
 	x: -1.8333333333333335d,
 	y: 2.166666666666667d,
+	shape: "hexagon",
 	text: [
 		"{q.immersive_engineer.treated_wood.desc}"
 	],
 	dependencies: [
 		"bf09a7ad"
 	],
+	size: 1.25d,
 	tasks: [{
 		uid: "673e5978",
 		type: "item",

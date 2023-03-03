@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.heat_sink.desc}"
 	],
 	dependencies: [
-		"cad91dd8",
-		"0bf36970"
+		"cad91dd8"
 	],
 	tasks: [{
 		uid: "5f2d3303",

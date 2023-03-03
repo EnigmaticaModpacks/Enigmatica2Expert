@@ -1,16 +1,11 @@
 {
-	title: "First Nuclear Bomb",
+	title: "{q.nuclearcraft_overh.first_nuclear_bomb.name}",
 	x: 6.7d,
 	y: 13.7d,
 	text: [
-		"§2Your first nuclear bomb§r",
-		"",
-		"These bombs have a §cgreat destructive power§r.",
-		"",
-		"According to the §9material of its construction§r, it presents different degrees of §5destruction§r and §5radiation§r."
+		"{q.nuclearcraft_overh.first_nuclear_bomb.desc}"
 	],
 	dependencies: [
-		"0bf36970",
 		"fdcd6b4e"
 	],
 	dependency_requirement: "one_completed",

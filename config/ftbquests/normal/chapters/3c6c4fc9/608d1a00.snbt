@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.solid_fission_reac.desc}"
 	],
 	dependencies: [
-		"dc5e8800",
-		"0bf36970"
+		"dc5e8800"
 	],
 	tasks: [{
 		uid: "6c74a77d",

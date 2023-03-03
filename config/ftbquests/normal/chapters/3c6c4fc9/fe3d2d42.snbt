@@ -6,8 +6,7 @@
 		"{q.nuclearcraft_overh.nuclear_waste.desc}"
 	],
 	dependencies: [
-		"608d1a00",
-		"0bf36970"
+		"608d1a00"
 	],
 	tasks: [{
 		uid: "53bdfeb3",

@@ -1,4 +1,6 @@
 {
+	title: "{q.applied_energetics.ae2.name}",
+	icon: "appliedenergistics2:inscriber",
 	disable_toast: true,
 	x: 1.0d,
 	y: 1.0d,
@@ -9,13 +11,6 @@
 		"48f0d63f"
 	],
 	size: 1.25d,
-	tasks: [{
-		uid: "b08c1bb5",
-		type: "item",
-		items: [{
-			item: "appliedenergistics2:inscriber"
-		}]
-	}],
 	rewards: [{
 		uid: "96486a31",
 		type: "item",

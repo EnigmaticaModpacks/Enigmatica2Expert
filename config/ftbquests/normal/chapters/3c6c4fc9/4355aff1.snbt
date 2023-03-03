@@ -6,8 +6,7 @@
 		"{q.nuclearcraft.voltatic_pile.desc}"
 	],
 	dependencies: [
-		"a7410660",
-		"0bf36970"
+		"a7410660"
 	],
 	tasks: [{
 		uid: "9969e5c3",

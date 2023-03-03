@@ -1,6 +1,6 @@
 {
-	x: 10.8d,
-	y: 6.4d,
+	x: 10.3d,
+	y: 5.9d,
 	text: [
 		"{q.thermal_expansion.arboreal_extractor.desc}"
 	],

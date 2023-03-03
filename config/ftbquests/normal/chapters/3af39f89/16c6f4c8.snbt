@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.thermal_logistics.name}",
-	x: 8.7d,
-	y: 4.5d,
+	x: 5.0d,
+	y: 4.3d,
 	text: [
 		"{q.thermal_expansion.thermal_logistics.desc}"
 	],

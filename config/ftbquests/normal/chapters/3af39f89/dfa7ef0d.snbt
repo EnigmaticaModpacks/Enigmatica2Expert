@@ -1,5 +1,4 @@
 {
-	title: "{q.thermal_expansion.mini_gate_dynamos.name}",
 	icon: {
 		id: "thermalexpansion:dynamo",
 		tag: {
@@ -9,22 +8,32 @@
 			Level: 0b
 		}
 	},
-	x: 2.166666666666667d,
-	y: 4.5d,
+	x: 4.8d,
+	y: 7.1d,
 	text: [
 		"{q.thermal_expansion.mini_gate_dynamos.desc}"
 	],
 	dependencies: [
-		"7db33a99"
+		"aa982aad"
 	],
-	rewards: [{
-		uid: "4f76ede0",
+	tasks: [{
+		uid: "e37c0ac1",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
+		items: [{
+			id: "thermalexpansion:dynamo",
 			tag: {
-				type: "uncommon"
+				Facing: 1b,
+				RSControl: 0b,
+				Energy: 0,
+				Level: 0b
 			}
-		}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f240635d",
+		type: "item",
+		item: "thermalexpansion:augment 1 512",
+		count: 3
 	}]
 }

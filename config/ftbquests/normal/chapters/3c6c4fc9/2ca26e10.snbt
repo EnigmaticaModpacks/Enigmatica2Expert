@@ -5,8 +5,7 @@
 		"{q.nuclearcraft.supercooler.desc}"
 	],
 	dependencies: [
-		"3ba07970",
-		"0bf36970"
+		"3ba07970"
 	],
 	tasks: [{
 		uid: "4c0ac5a8",

@@ -5,8 +5,7 @@
 		"{q.nuclearcraft_overh.elite_processor.desc}"
 	],
 	dependencies: [
-		"7ee73aa1",
-		"0bf36970"
+		"7ee73aa1"
 	],
 	tasks: [{
 		uid: "086c3977",

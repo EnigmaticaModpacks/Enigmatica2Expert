@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.boiler_conversion.name}",
-	x: 3.1666666666666665d,
-	y: 6.666666666666667d,
+	x: 5.8d,
+	y: 9.266666666666666d,
 	text: [
 		"{q.thermal_expansion.boiler_conversion.desc}"
 	],

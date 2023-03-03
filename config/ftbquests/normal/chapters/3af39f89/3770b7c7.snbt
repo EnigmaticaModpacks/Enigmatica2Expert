@@ -1,7 +1,7 @@
 {
 	title: "{q.thermal_expansion.reactant_dynamo.name}",
-	x: 5.166666666666667d,
-	y: 4.5d,
+	x: 7.8d,
+	y: 7.1d,
 	text: [
 		"{q.thermal_expansion.reactant_dynamo.desc}"
 	],

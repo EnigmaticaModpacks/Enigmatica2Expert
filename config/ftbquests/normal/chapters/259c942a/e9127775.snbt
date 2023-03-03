@@ -1,0 +1,28 @@
+{
+	x: -1.2d,
+	y: 2.6999999999999997d,
+	text: [
+		"{q.immersive_engineer.small_tree_cutter.desc}"
+	],
+	dependencies: [
+		"3e86795a"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "860b4b47",
+		type: "item",
+		items: [{
+			item: "engineersdecor:small_tree_cutter"
+		}]
+	}],
+	rewards: [{
+		uid: "10bfd2d4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

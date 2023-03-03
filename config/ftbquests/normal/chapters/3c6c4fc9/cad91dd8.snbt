@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.inside_the_reactor.desc}"
 	],
 	dependencies: [
-		"608d1a00",
-		"0bf36970"
+		"608d1a00"
 	],
 	tasks: [{
 		uid: "690b7975",

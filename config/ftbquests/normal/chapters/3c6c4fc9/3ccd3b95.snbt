@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.moderator_lines.desc}"
 	],
 	dependencies: [
-		"cad91dd8",
-		"0bf36970"
+		"cad91dd8"
 	],
 	tasks: [{
 		uid: "eee515fa",

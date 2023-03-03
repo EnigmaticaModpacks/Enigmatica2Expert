@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.linear_accelerator.desc}"
 	],
 	dependencies: [
-		"ca80be66",
-		"0bf36970"
+		"ca80be66"
 	],
 	tasks: [{
 		uid: "8140f49c",

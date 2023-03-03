@@ -7,8 +7,7 @@
 		"{q.nuclearcraft_overh.beam_dump.desc}"
 	],
 	dependencies: [
-		"5271b8bd",
-		"0bf36970"
+		"5271b8bd"
 	],
 	tasks: [{
 		uid: "a1a6ffbf",

@@ -5,7 +5,6 @@
 		"{q.nuclearcraft.fluid_infuser.desc}"
 	],
 	dependencies: [
-		"0bf36970",
 		"626f1230"
 	],
 	tasks: [{
