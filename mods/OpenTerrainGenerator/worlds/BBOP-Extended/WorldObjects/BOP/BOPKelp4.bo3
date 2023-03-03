@@ -40,7 +40,7 @@ SpawnHeightVariance: 0
 
 MinHeight: 0
 
-MaxHeight: 61
+MaxHeight: 54
 
 ######################
 # Extrusion settings #
@@ -79,6 +79,13 @@ IsOTGPlus: false
 #######################################################################
 
 Block(0,0,0,biomesoplenty:seaweed)
+Block(0,1,0,biomesoplenty:seaweed)
+Block(0,2,0,biomesoplenty:seaweed)
+Block(0,3,0,biomesoplenty:seaweed)
+Block(0,4,0,biomesoplenty:seaweed)
+Block(0,5,0,biomesoplenty:seaweed)
+Block(0,6,0,biomesoplenty:seaweed)
+Block(0,7,0,biomesoplenty:seaweed)
 Block(0,-1,0,DIRT)
 
 #######################################################################
