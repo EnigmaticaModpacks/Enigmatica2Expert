@@ -346,3 +346,7 @@ mods.appliedenergistics2.Grinder.removeRecipe(<minecraft:ender_pearl>);
 mods.appliedenergistics2.Grinder.removeRecipe(<thermalfoundation:material:895>);
 scripts.process.crush(<ore:enderpearl>, <appliedenergistics2:material:46>, "Except: Pulverizer PulseCentrifuge", null, null);
 
+recipes.addShapedMirrored("Simple Furnace Upgrade",<enderio:block_alloy_smelter>,[[null,<enderio:block_simple_furnace>,null],[null,<enderio:item_material:1>,null],[null,<enderio:item_material:73>,null]]);
+recipes.addShapedMirrored("Simple SAG Upgrade",<enderio:block_sag_mill>,[[null,<enderio:block_simple_sag_mill>,null],[null,<enderio:item_material:1>,null],[null,<enderio:item_material:73>,null]]);
+recipes.addShapedMirrored("Simple Alloy Upgrade",<enderio:block_alloy_smelter>,[[null,<enderio:block_simple_alloy_smelter>,null],[null,<enderio:item_material:1>,null],[null,<enderio:item_material:73>,null]]);
+recipes.addShapedMirrored("Simple Crafter Upgrade",<enderio:block_crafter>,[[null,null,null],[<enderio:item_material:11>,<enderio:block_simple_crafter>,<enderio:item_material:11>],[null,null,null]]);
