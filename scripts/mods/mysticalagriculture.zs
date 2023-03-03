@@ -1073,12 +1073,12 @@ remakeBlock("mysticalagriculture:ingotsteeleaf"        , <blockstate:twilightfor
 remakeManapool("mysticalagriculture:ingotvoid"            , <thaumcraft:nugget:7>                  , [<mysticalagriculture:void_metal_essence>]);
 // remakeSimple("mysticalagriculture:leather"              , <minecraft:leather> * 8                   , [<mysticalagriculture:cow_essence> * 4                                               ]);
 // remakeSimple("mysticalagriculture:limestone2"           , <chisel:limestone2:7> * 24                , [<mysticalagriculture:limestone_essence> * 8                                         ]);
-remakeArcane("mysticalagriculture:log"                  , <minecraft:log> * 16                      , ["eee"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
-remakeArcane("mysticalagriculture:log_1"                , <minecraft:log:1> * 16                    , ["","eee"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
-remakeArcane("mysticalagriculture:log_2"                , <minecraft:log:2> * 16                    , ["","","eee"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
-remakeArcane("mysticalagriculture:log_3"                , <minecraft:log:3> * 16                    , ["e","e","e"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
-remakeArcane("mysticalagriculture:log2"                 , <minecraft:log2> * 16                     , [" e"," e"," e"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
-remakeArcane("mysticalagriculture:log2_1"               , <minecraft:log2:1> * 16                   , ["  e","  e","  e"], {e: <mysticalagriculture:wood_essence>}, [<aspect:terra>]);
+remakeArcane("mysticalagriculture:log"                  , <minecraft:log> * 16                      , ["eee"], {e: <mysticalagriculture:wood_essence>}, []);
+remakeArcane("mysticalagriculture:log_1"                , <minecraft:log:1> * 16                    , ["","eee"], {e: <mysticalagriculture:wood_essence>}, []);
+remakeArcane("mysticalagriculture:log_2"                , <minecraft:log:2> * 16                    , ["","","eee"], {e: <mysticalagriculture:wood_essence>}, []);
+remakeArcane("mysticalagriculture:log_3"                , <minecraft:log:3> * 16                    , ["e","e","e"], {e: <mysticalagriculture:wood_essence>}, []);
+remakeArcane("mysticalagriculture:log2"                 , <minecraft:log2> * 16                     , [" e"," e"," e"], {e: <mysticalagriculture:wood_essence>}, []);
+remakeArcane("mysticalagriculture:log2_1"               , <minecraft:log2:1> * 16                   , ["  e","  e","  e"], {e: <mysticalagriculture:wood_essence>}, []);
 // remakeSimple("mysticalagriculture:marble2"              , <chisel:marble2:7> * 16                   , [<mysticalagriculture:marble_essence> * 8                                            ]);
 // remakeSimple("mysticalagriculture:melon_block"          , <minecraft:melon_block> * 8               , [<mysticalagriculture:nature_essence> * 9                                            ]);
 // remakeSimple("mysticalagriculture:menril_berries"       , <integrateddynamics:menril_berries> * 12  , [<mysticalagriculture:menril_essence> * 3                                            ]);
