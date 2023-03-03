@@ -67,6 +67,8 @@ MaxPercentageOutsideSourceBlock: 100
 
 OutsideSourceBlock: dontPlace
 
+DoReplaceBlocks: true
+
 IsOTGPlus: false
 
 
