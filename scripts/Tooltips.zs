@@ -98,10 +98,6 @@ for item in thaumcraftHintItems {
 	addDescription(<extrautils2:ingredients:13>, "Not consumed when used in crafting recipes.");
 	<extrautils2:ingredients:13>.addTooltip(format.aqua("Not consumed when used in crafting recipes"));
 
-# Creative Wireless Crafting Terminal
-	addDescription(<wct:wct_creative>,
-	"The recipe is Wireless Crafting Terminal + Creative Powercell.");
-
 # Luminous Crafting Table
 	addDescription(<astralsorcery:blockaltar>,
 	"The Luminous Crafting Table has to be crafted near a Floating Crystal, commonly found in Marble structures throughout the world.", 

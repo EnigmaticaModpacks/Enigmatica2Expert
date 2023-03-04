@@ -59,7 +59,6 @@ OpenComputersMod-1.7.3.146-lua53-native.64.dll
 OpenComputersMod-1.7.3.146-lua52-native.64.dll
 ModpackFileId.json
 LICENSE.md
-manifest.json
 config/AppliedEnergistics2/aerecipes/
 config/AppliedEnergistics2/recipes/
 valkyrielib/cache/supporters.json
@@ -102,3 +101,4 @@ config/AppliedEnergistics2/VersionChecker.cfg
 config/astralsorcery/amulet_enchantments.cfg
 config/brandon3055/contributors.json
 config/brandon3055/Custom Fusion Recipe Info.txt
+config/IC2.ini

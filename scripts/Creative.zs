@@ -263,11 +263,6 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[null, null, null, null, null, null, ultCatalyst, ultCatalyst, null], 
 	[null, null, null, null, null, null, null, null, anglesite]]);
 	
-# Creative Wireless Crafting Terminal
-	recipes.addShapeless("Creative Wireless Crafting Terminal", 
-	<wct:wct_creative>, 
-	[<wct:wct>.withTag({}),<rftools:powercell_creative>.anyDamage()]);
-
 # TIC Creative Modifier
 	mods.extendedcrafting.TableCrafting.addShaped(4, <tconstruct:materials:50>,
 	[[<ore:blockPigiron>, <ore:blockAlubrass>, <tconstruct:materials:19>, <tconstruct:materials:19>, <tconstruct:materials:19>, <tconstruct:materials:19>, <tconstruct:materials:19>, <ore:blockAlubrass>, <ore:blockPigiron>], 
