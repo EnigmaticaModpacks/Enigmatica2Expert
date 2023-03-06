@@ -1,5 +1,4 @@
 {
-  "build:8": "4.1.0",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -112,7 +111,7 @@
       "rewards:9": {
         "0:10": {
           "asScript:1": 1,
-          "command:8": "/say VAR_NAME has completed Enigmatica 2: Expert, congratulations!",
+          "command:8": "/say VAR_NAME has completed Enigmatica 2: Expert Unofficial, congratulations!",
           "description:8": "Run a command script",
           "hideBlockIcon:1": 1,
           "index:3": 0,
@@ -218,7 +217,9 @@
       }
     },
     "3:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -504,9 +505,6 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "thermalexpansion:tank",
               "tag:10": {
@@ -1155,7 +1153,9 @@
       }
     },
     "14:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -1678,7 +1678,9 @@
       }
     },
     "20:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -1741,7 +1743,9 @@
       }
     },
     "21:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -1810,7 +1814,9 @@
       }
     },
     "22:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -1879,7 +1885,9 @@
       }
     },
     "23:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -2928,14 +2936,11 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome to Enigmatica 2: Expert! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nI suggest you make a Backpack out of the Tanned Leather \u0026 Wooden Frame.\n\nGood luck!§0",
+          "desc:8": "Welcome to Enigmatica 2: Expert Unoffical! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nGood luck!§0",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
             "OreDict:8": "",
             "id:8": "ironbackpacks:backpack",
             "tag:10": {
@@ -3006,19 +3011,17 @@
               "id:8": "minecraft:leather_boots"
             },
             "4:10": {
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "backpack:tanned_leather"
-            },
-            "5:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
-              "id:8": "backpack:backpack_frame"
+              "id:8": "ironbackpacks:backpack",
+              "tag:10": {
+                "packInfo:10": {
+                  "spec:8": "NONE",
+                  "type:8": "ironbackpacks:basic",
+                  "upgrade:9": {}
+                }
+              }
             }
           }
         }
@@ -3037,13 +3040,14 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "While there is no proper AE2 chapter, some standout (and new) features can be found in the Storage Options questline.\n\nE2Eu uses AE2 Unofficial Extended Life (aka PAE2), and along with it some new features have been brought with it. \n\nIf you want detail on the new features and changes that PAE2 has, refer to the video link that will be whispered to you.\n",
+          "desc:8": "While there is no proper AE2 chapter, some standout and new features can be found in the Storage Options questline.\n\nE2Eu uses AE2 Unofficial Extended Life (aka PAE2), and along with it some new features have been brought with it. \n\nIf you want detail on the new features and changes that PAE2 has, refer to the video link that will be whispered to you.\n\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "appliedenergistics2:controller"
+            "id:8": "appliedenergistics2:storage_cell_1k",
+            "tag:10": {}
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
@@ -3094,7 +3098,7 @@
           "rewards:9": {
             "0:10": {
               "Count:3": 32,
-              "Damage:2": 56,
+              "Damage:2": 16,
               "OreDict:8": "",
               "id:8": "appliedenergistics2:part"
             }
@@ -3124,7 +3128,7 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "appliedenergistics2:controller"
+              "id:8": "appliedenergistics2:drive"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -3367,39 +3371,6 @@
       "questID:3": 41,
       "rewards:9": {
         "0:10": {
-          "choices:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "bq_standard:loot_chest"
-            },
-            "1:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "bq_standard:loot_chest"
-            },
-            "2:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "bq_standard:loot_chest"
-            }
-          },
-          "index:3": 0,
-          "rewardID:8": "bq_standard:choice"
-        },
-        "1:10": {
           "index:3": 1,
           "rewardID:8": "bq_standard:item",
           "rewards:9": {
@@ -3583,7 +3554,9 @@
       }
     },
     "44:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -3656,7 +3629,9 @@
       }
     },
     "45:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -4037,9 +4012,6 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 2,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "claybucket:claybucket"
             }
@@ -5434,7 +5406,7 @@
               "id:8": "extendedcrafting:material"
             },
             "1:10": {
-              "Count:3": 1,
+              "Count:3": 3,
               "Damage:2": 0,
               "ForgeCaps:10": {
                 "astralsorcery:cap_item_amulet_holder:10": {}
@@ -27391,7 +27363,9 @@
       }
     },
     "359:10": {
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        65
+      ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
@@ -53308,7 +53282,7 @@
           "rewards:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 101,
               "OreDict:8": "",
               "id:8": "bq_standard:loot_chest",
               "tag:10": {
@@ -53461,7 +53435,7 @@
           "rewards:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 101,
               "OreDict:8": "",
               "id:8": "bq_standard:loot_chest",
               "tag:10": {
@@ -53802,7 +53776,7 @@
           "rewards:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 101,
               "OreDict:8": "",
               "id:8": "bq_standard:loot_chest",
               "tag:10": {
@@ -54017,7 +53991,12 @@
           "viaPlayer:1": 0
         }
       },
-      "tasks:9": {}
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      }
     },
     "716:10": {
       "preRequisites:11": [
@@ -54321,6 +54300,80 @@
       "questID:3": 723,
       "rewards:9": {},
       "tasks:9": {}
+    },
+    "724:10": {
+      "preRequisites:11": [
+        49
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "This \"backpack\" can be used to delete specific items when they enter your inventory, this can be used to prevent cobblestone from cluttering your inventory while mining.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 100,
+            "OreDict:8": "",
+            "id:8": "thermalexpansion:satchel",
+            "tag:10": {
+              "Accessible:1": 1
+            }
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Void Satchal",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 724,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 100,
+              "OreDict:8": "",
+              "id:8": "thermalexpansion:satchel",
+              "tag:10": {
+                "Accessible:1": 1
+              }
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -54376,14 +54429,14 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 56,
-          "y:3": 80
+          "y:3": 112
         },
         "5:10": {
           "id:3": 48,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 56,
-          "y:3": 112
+          "y:3": 80
         },
         "6:10": {
           "id:3": 49,
@@ -54432,28 +54485,28 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 136,
-          "y:3": 80
+          "y:3": 176
         },
         "13:10": {
           "id:3": 56,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 136,
-          "y:3": 112
+          "y:3": 144
         },
         "14:10": {
           "id:3": 57,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 136,
-          "y:3": 144
+          "y:3": 112
         },
         "15:10": {
           "id:3": 58,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 136,
-          "y:3": 176
+          "y:3": 80
         },
         "16:10": {
           "id:3": 59,
@@ -54508,14 +54561,14 @@
           "id:3": 696,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 96,
+          "x:3": 136,
           "y:3": 48
         },
         "24:10": {
           "id:3": 697,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 136,
+          "x:3": 176,
           "y:3": 48
         },
         "25:10": {
@@ -54545,6 +54598,13 @@
           "sizeY:3": 24,
           "x:3": -32,
           "y:3": 0
+        },
+        "29:10": {
+          "id:3": 724,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 96,
+          "y:3": 48
         }
       }
     },
@@ -59879,7 +59939,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "editMode:8": "false",
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 3.0,
