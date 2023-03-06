@@ -144,4 +144,4 @@ furnace.setFuel(<exnihilocreatio:hive:1>, 0);
 
 # Re-add Sawdust to Hammered logs
 //mods.exnihilocreatio.Hammer.addRecipe(IIngredient input, IItemStack output, Int tool level, Float chance, Float fortune chance);
-mods.exnihilocreatio.Hammer.addRecipe(<ore:logWood>, <thermalfoundation:material:800>, 0, 1, 0.5);
+//mods.exnihilocreatio.Hammer.addRecipe(<ore:logWood>, <thermalfoundation:material:800>, 0, 1, 0.5); Change not going through
