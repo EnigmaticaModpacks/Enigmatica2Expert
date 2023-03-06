@@ -1,0 +1,14 @@
+{
+  "canShared": true,
+  "location": "mbd:base_casing",
+  "traits": {},
+  "allowRotate": false,
+  "showInJei": true,
+  "baseRenderer": {
+    "baseTexture": "multiblocked:blocks/casing/base_casing",
+    "frontTexture": "multiblocked:blocks/overlay/overlay_blank",
+    "formedAsController": true,
+    "type": "gregtech"
+  },
+  "isOpaqueCube": true
+}

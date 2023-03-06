@@ -1,0 +1,171 @@
+{
+  "version": 2,
+  "location": "mbd:acarp",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/acarp_casing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/acarp_casing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "acarp",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        " AAA ",
+        " AAA ",
+        " AAA "
+      ],
+      [
+        "AAAAA",
+        "A   A",
+        "AAAAA"
+      ],
+      [
+        "AAAAA",
+        "@   A",
+        "AAAAA"
+      ],
+      [
+        "AAAAA",
+        "A   A",
+        "AAAAA"
+      ],
+      [
+        " AAA ",
+        " AAA ",
+        " AAA "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "mbd:base_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:acarp",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "minecraft:glass",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "item_i": {
+        "location": "mbd:item_bus_input",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
+      },
+      "item_o": {
+        "location": "mbd:item_bus_output",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
+      },
+      "fluid": {
+        "location": "mbd:fluid_hatch",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "energy": {
+        "location": "mbd:energy_hatch",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "A": [
+        "A",
+        "item_i",
+        "item_o",
+        "fluid",
+        "energy"
+      ],
+      "B": [
+        "B"
+      ]
+    }
+  }
+}

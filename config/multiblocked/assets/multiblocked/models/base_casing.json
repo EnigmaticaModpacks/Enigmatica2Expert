@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "multiblocked:blocks/casing/base_casing",
+        "down": "multiblocked:blocks/casing/base_casing",
+        "up": "multiblocked:blocks/casing/base_casing",
+        "north": "multiblocked:blocks/casing/base_casing",
+        "east": "multiblocked:blocks/casing/base_casing",
+        "south": "multiblocked:blocks/casing/base_casing",
+        "west": "multiblocked:blocks/casing/base_casing"
+    }
+}
