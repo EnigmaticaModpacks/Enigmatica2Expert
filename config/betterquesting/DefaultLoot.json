@@ -2976,17 +2976,6 @@
                         }
                     }
                 },
-                "33:10": {
-                    "weight:3": 1,
-                    "items:9": {
-                        "0:10": {
-                            "id:8": "bigreactors:reactorcasing",
-                            "Count:3": 24,
-                            "OreDict:8": "",
-                            "Damage:3": 0
-                        }
-                    }
-                },
                 "34:10": {
                     "weight:3": 1,
                     "items:9": {
@@ -4074,7 +4063,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "bigreactors:minerals",
+                            "id:8": "crafttweaker:anglesite",
                             "Count:3": 1,
                             "OreDict:8": "",
                             "Damage:3": 0
@@ -4085,7 +4074,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "bigreactors:minerals",
+                            "id:8": "crafttweaker:benitoite",
                             "Count:3": 1,
                             "OreDict:8": "",
                             "Damage:3": 1
