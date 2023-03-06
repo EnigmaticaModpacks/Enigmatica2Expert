@@ -57709,7 +57709,7 @@
     "betterquesting:10": {
       "pack_name:8": "Enigmatica 2: Expert",
       "hardcore:1": 0,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "livesMax:4": 10,
       "livesdef:3": 3,
       "home_anchor_y:5": 3.0,
