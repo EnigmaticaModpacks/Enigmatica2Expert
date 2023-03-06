@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "location": "mbd:arcane",
+  "location": "mbd:ctr",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -16,7 +16,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/arcane_casing",
+        "baseTexture": "multiblocked:blocks/casing/ctr_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "type": "gregtech"
       }
@@ -26,7 +26,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/arcane_casing",
+        "baseTexture": "multiblocked:blocks/casing/ctr_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech"
       },
@@ -36,7 +36,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "arcane",
+  "recipeMap": "ctr",
   "basePattern": {
     "structureDir": [
       "BACK",
@@ -46,21 +46,32 @@
     "pattern": [
       [
         "AAA",
-        "BBB",
+        "AAA",
+        "AAA",
         "AAA"
       ],
       [
         "AAA",
-        "@CB",
+        "@ A",
+        "A A",
         "AAA"
       ],
       [
         "AAA",
-        "BBB",
+        "AAA",
+        "AAA",
         "AAA"
       ]
     ],
     "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
       [
         1,
         1
@@ -85,17 +96,8 @@
         "type": "states"
       },
       "controller": {
-        "location": "mbd:arcane",
+        "location": "mbd:ctr",
         "type": "component"
-      },
-      "B": {
-        "states": [
-          {
-            "id": "minecraft:glass",
-            "meta": 0
-          }
-        ],
-        "type": "states"
       },
       "item_i": {
         "location": "mbd:item_bus_input",
@@ -111,6 +113,9 @@
         "maxCount": 1,
         "previewCount": 1
       },
+      "any": {
+        "type": "any"
+      },
       "energy": {
         "location": "mbd:energy_hatch",
         "type": "component",
@@ -124,14 +129,14 @@
       "@": [
         "controller"
       ],
+      " ": [
+        "any"
+      ],
       "A": [
         "A",
         "item_i",
         "item_o",
         "energy"
-      ],
-      "B": [
-        "B"
       ]
     }
   }

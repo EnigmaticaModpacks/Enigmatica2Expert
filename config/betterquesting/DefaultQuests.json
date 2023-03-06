@@ -143,24 +143,22 @@
     },
     "2:10": {
       "preRequisites:11": [
-        43
+        65
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Infinite Fluids!\n \nIn order to change fluid, you will need to use a Gauge Dropper.\n\nTo clear the tank, shift-right click the internal buffer with an empty Gauge Dropper.",
+          "desc:8": "Infinite Fluids!\n \nYou can clear the tank by placing it in a crafting grid.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 11,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
+            "Damage:2": 0,
             "OreDict:8": "",
-            "id:8": "mekanism:machineblock2",
+            "id:8": "thermalexpansion:tank",
             "tag:10": {
-              "mekData:10": {},
-              "tier:3": 4
+              "Creative:1": 1,
+              "Level:1": 4,
+              "RSControl:1": 0
             }
           },
           "ignoresview:1": 0,
@@ -204,12 +202,14 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 11,
+              "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "mekanism:machineblock2",
+              "id:8": "thermalexpansion:tank",
               "tag:10": {
-                "mekData:10": {},
-                "tier:3": 4
+                "Creative:1": 1,
+                "Level:1": 4,
+                "Lock:1": 0,
+                "RSControl:1": 0
               }
             }
           },
@@ -3519,7 +3519,7 @@
     },
     "43:10": {
       "preRequisites:11": [
-        0
+        65
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -54157,6 +54157,71 @@
     },
     "720:10": {
       "preRequisites:11": [
+        2
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Creative Tank Replicator Multiblock can be used to turn buckets into even more creative tanks!",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "mbd:ctr"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 1,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Creative Tank Replication",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 720,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "minecraft:bucket"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "mbd:ctr"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "721:10": {
+      "preRequisites:11": [
         716
       ],
       "properties:10": {
@@ -54189,7 +54254,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "721:10": {
+    "722:10": {
       "preRequisites:11": [
         716
       ],
@@ -54223,7 +54288,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "722:10": {
+    "723:10": {
       "preRequisites:11": [
         717
       ],
@@ -59371,7 +59436,7 @@
           "id:3": 0,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 8,
+          "x:3": 104,
           "y:3": 8
         },
         "1:10": {
@@ -59385,7 +59450,7 @@
           "id:3": 2,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 72,
+          "x:3": 8,
           "y:3": 8
         },
         "3:10": {
@@ -59406,7 +59471,7 @@
           "id:3": 19,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 104,
+          "x:3": 40,
           "y:3": 8
         },
         "6:10": {
@@ -59511,7 +59576,7 @@
           "id:3": 43,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 40,
+          "x:3": 72,
           "y:3": 8
         },
         "21:10": {
@@ -59534,6 +59599,13 @@
           "sizeY:3": 24,
           "x:3": 272,
           "y:3": 72
+        },
+        "24:10": {
+          "id:3": 720,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 8,
+          "y:3": 52
         }
       }
     },

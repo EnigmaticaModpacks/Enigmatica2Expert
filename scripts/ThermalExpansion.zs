@@ -227,6 +227,8 @@ mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Leve
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 2 as byte}));
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 3 as byte}));
 mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 4 as byte}));
+mods.jei.JEI.addItem(<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}));
 
 # More TE coolants
 mods.thermalexpansion.Coolant.addCoolant(<liquid:liquidhelium>,         3500000, 65);

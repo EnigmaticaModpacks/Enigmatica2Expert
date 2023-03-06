@@ -1,0 +1,43 @@
+{
+  "name": "ctr",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "95c87339-d1cc-422c-838f-dc455ea1f347",
+      "duration": 200,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"minecraft:bucket\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 1000000
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"thermalexpansion:tank\",Count:1,Damage:0s,tag:{RSControl:0b,Creative:1b,Level:4b}}"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

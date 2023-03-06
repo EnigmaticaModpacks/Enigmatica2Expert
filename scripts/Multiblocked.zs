@@ -1,15 +1,14 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
 
-val oreDictModularium = <ore:modularium>;
-oreDictModularium.add(<contenttweaker:modularium>);
+var creativeTank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte});
 
 # Arcane Crafting Engine
     recipes.addShapedMirrored("Arcane Crafting Engine", 
     <mbd:arcane>, 
-    [[<ore:modularium>, <thaumcraft:mechanism_complex>, <ore:modularium>],
+    [[<contenttweaker:modularium>, <thaumcraft:mechanism_complex>, <contenttweaker:modularium>],
     [<thaumcraft:salis_mundus>, <mbd:base_casing>, <thaumcraft:salis_mundus>], 
-    [<ore:modularium>, <thaumcraft:salis_mundus>, <ore:modularium>]]);
+    [<contenttweaker:modularium>, <thaumcraft:salis_mundus>, <contenttweaker:modularium>]]);
 
 # Advanced Thermionic Fabricator
 	recipes.addShapedMirrored("Advanced Thermionic Fabricator", 
@@ -28,16 +27,23 @@ oreDictModularium.add(<contenttweaker:modularium>);
 # Advanced Metallurgic Fabricator
 	recipes.addShapedMirrored("Advanced Metallurgic Fabricator", 
 	<mbd:amf>, 
-	[[<ore:modularium>, <ore:circuitAdvanced>, <ore:modularium>],
+	[[<contenttweaker:modularium>, <ore:circuitAdvanced>, <contenttweaker:modularium>],
 	[<ore:circuitAdvanced>, <mbd:base_casing>, <ore:circuitAdvanced>], 
-	[<ore:modularium>, <ore:circuitAdvanced>, <ore:modularium>]]);
+	[<contenttweaker:modularium>, <ore:circuitAdvanced>, <contenttweaker:modularium>]]);
+	
+# Creative Tank Replicator 
+	recipes.addShapedMirrored("Creative Tank Replicator", 
+	<mbd:ctr>, 
+	[[<mbd:base_casing>, <thermalexpansion:frame:148>, <mbd:base_casing>],
+	[<thermalexpansion:frame:148>, creativeTank, <thermalexpansion:frame:148>], 
+	[<mbd:base_casing>, <thermalexpansion:frame:148>, <mbd:base_casing>]]);
 
 # Base Casing
     recipes.addShapedMirrored("Base Casing", 
     <mbd:base_casing> * 2, 
-    [[null, <ore:modularium>, null],
-    [<ore:modularium>, <immersiveengineering:metal_decoration0:3>, <ore:modularium>], 
-    [null, <ore:modularium>, null]]);
+    [[null, <contenttweaker:modularium>, null],
+    [<contenttweaker:modularium>, <immersiveengineering:metal_decoration0:3>, <contenttweaker:modularium>], 
+    [null, <contenttweaker:modularium>, null]]);
 
 # Modularium
     recipes.addShapedMirrored("Modularium", 

@@ -1,6 +1,7 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemStack;
 
+// Modular Machinery
 
 recipes.removeByMod("modularmachinery");  
 
@@ -34,7 +35,11 @@ for item in loadedMods["modularmachinery"].items {
 <modularmachinery:blockenergyoutputhatch:1>] as IItemStack[];
 
 for i, item in modmech{
-    recipes.addShapeless("mmrefund" ~ i,<mbd:base_casing>,[item]);
+    recipes.addHiddenShapeless("mmrefund" ~ i,<mbd:base_casing>,[item]);
 }
 
-recipes.addShapeless("mmingotrefund",<contenttweaker:modularium>,[<modularmachinery:itemmodularium>]);
+recipes.addHiddenShapeless("mmingotrefund",<contenttweaker:modularium>,[<modularmachinery:itemmodularium>]);
+
+// Misc
+<mekanism:machineblock2:11>.withTag({tier: 4}).addTooltip(format.red("Deprecated, place in crafting grid to receive resources."));
+recipes.addHiddenShapeless("tankconvert",<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}),[<mekanism:machineblock2:11>.withTag({tier: 4})]);

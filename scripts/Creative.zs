@@ -47,7 +47,7 @@ import crafttweaker.item.IItemCondition;
 	var cobble8x = <extrautils2:compressedcobblestone:7>;
 	var storage16m = <extracells:storage.component:3>;
 	var meChest = <appliedenergistics2:chest>;
-	var creativeTank = <mekanism:machineblock2:11>.withTag({tier: 4});
+	var creativeTank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte});
 	var creativeGasTank = <mekanism:gastank>.withTag({tier: 4});
 
 var creativeGasTankFrame = <simple_trophies:trophy>.withTag({
@@ -169,8 +169,8 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[ingotMirion, <botania:laputashard>, benitoite, benitoite, benitoite, benitoite, benitoite, <botania:laputashard>, ingotMirion], 
 	[<botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>, ingotMirion, ingotMirion, ingotMirion, <botania:pool:3>]]);
 
-# Mekanism Creative Tank
-	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:machineblock2:11>.withTag({tier: 4, mekData:{}}), 
+# Thermal Creative Tank
+	mods.extendedcrafting.TableCrafting.addShaped(4, creativeTank, 
 	[[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "milk_goat", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
 	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000})], 
@@ -180,9 +180,6 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[<forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "tritium", Amount: 1000})], 
 	[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mirion", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "neutron", Amount: 1000}), <industrialforegoing:black_hole_tank>]]); 
-	recipes.addShapeless("Creative Tank Reset", 
-	<mekanism:machineblock2:11>.withTag({tier: 4, mekData: {}}), 
-	[<mekanism:machineblock2:11>.withTag({tier: 4})]);
 
 # Storage Drawers Unlimited Withdrawel Upgrade
 	mods.extendedcrafting.TableCrafting.addShaped(4, <storagedrawers:upgrade_creative:1> * 2, 
