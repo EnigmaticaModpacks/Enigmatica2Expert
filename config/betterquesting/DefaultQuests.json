@@ -53359,6 +53359,74 @@
     },
     "704:10": {
       "preRequisites:11": [
+        440
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The Orbitial Laser Drill is used to mine ores from the other planets, allowing for automated gathering of extraplantary ores. The laser drill has had it\u0027s power cost quintupled, but can now mine up those afterforementoned ores, as well as all of the common ores.\n\nBy default, the Orbitial Laser Drill will not actually mine the planet below, but if one wishes to change this, set §alaserDrillPlanet§r to true.\n\n ",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "advancedrocketry:spacelaser"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Orbitial Laser Drill",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 704,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "advancedrocketry:spacelaser"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "705:10": {
+      "preRequisites:11": [
         139
       ],
       "properties:10": {
@@ -53432,7 +53500,7 @@
         }
       }
     },
-    "705:10": {
+    "706:10": {
       "preRequisites:11": [
         139
       ],
@@ -53501,7 +53569,7 @@
         }
       }
     },
-    "706:10": {
+    "707:10": {
       "preRequisites:11": [
         18
       ],
@@ -53579,7 +53647,7 @@
         }
       }
     },
-    "707:10": {
+    "708:10": {
       "preRequisites:11": [
         18
       ],
@@ -53664,7 +53732,7 @@
         }
       }
     },
-    "708:10": {
+    "709:10": {
       "preRequisites:11": [
         37
       ],
@@ -53716,7 +53784,7 @@
         }
       }
     },
-    "709:10": {
+    "710:10": {
       "preRequisites:11": [
         37
       ],
@@ -53778,7 +53846,7 @@
         }
       }
     },
-    "710:10": {
+    "711:10": {
       "preRequisites:11": [
         682
       ],
@@ -53812,7 +53880,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "711:10": {
+    "712:10": {
       "preRequisites:11": [
         716
       ],
@@ -53846,7 +53914,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "712:10": {
+    "713:10": {
       "preRequisites:11": [
         716
       ],
@@ -53880,7 +53948,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "713:10": {
+    "714:10": {
       "preRequisites:11": [
         716
       ],
@@ -53914,7 +53982,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "714:10": {
+    "715:10": {
       "preRequisites:11": [
         2
       ],
@@ -53979,7 +54047,7 @@
         }
       }
     },
-    "715:10": {
+    "716:10": {
       "preRequisites:11": [
         716
       ],
@@ -54013,7 +54081,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "716:10": {
+    "717:10": {
       "preRequisites:11": [
         716
       ],
@@ -54047,7 +54115,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "717:10": {
+    "718:10": {
       "preRequisites:11": [
         717
       ],
@@ -54081,7 +54149,7 @@
       "rewards:9": {},
       "tasks:9": {}
     },
-    "718:10": {
+    "719:10": {
       "preRequisites:11": [
         49
       ],
@@ -54155,7 +54223,7 @@
         }
       }
     },
-    "719:10": {
+    "720:10": {
       "preRequisites:11": [
         735
       ],
@@ -54223,7 +54291,7 @@
         }
       }
     },
-    "720:10": {
+    "721:10": {
       "preRequisites:11": [
         735
       ],
@@ -54291,7 +54359,7 @@
         }
       }
     },
-    "721:10": {
+    "722:10": {
       "preRequisites:11": [
         726
       ],
@@ -54355,7 +54423,7 @@
         }
       }
     },
-    "722:10": {
+    "723:10": {
       "preRequisites:11": [
         725
       ],
@@ -54423,7 +54491,7 @@
         }
       }
     },
-    "723:10": {
+    "724:10": {
       "preRequisiteTypes:7": [
         0,
         1
@@ -54496,7 +54564,7 @@
         }
       }
     },
-    "724:10": {
+    "725:10": {
       "preRequisites:11": [
         729
       ],
@@ -54564,7 +54632,7 @@
         }
       }
     },
-    "725:10": {
+    "726:10": {
       "preRequisites:11": [
         732
       ],
@@ -54632,7 +54700,7 @@
         }
       }
     },
-    "726:10": {
+    "727:10": {
       "preRequisites:11": [
         730
       ],
@@ -54717,7 +54785,7 @@
         }
       }
     },
-    "727:10": {
+    "728:10": {
       "preRequisites:11": [
         752
       ],
@@ -54785,7 +54853,7 @@
         }
       }
     },
-    "728:10": {
+    "729:10": {
       "preRequisites:11": [
         742
       ],
@@ -54853,7 +54921,7 @@
         }
       }
     },
-    "729:10": {
+    "730:10": {
       "preRequisites:11": [
         742
       ],
@@ -54921,7 +54989,7 @@
         }
       }
     },
-    "730:10": {
+    "731:10": {
       "preRequisites:11": [
         738
       ],
@@ -54989,7 +55057,7 @@
         }
       }
     },
-    "731:10": {
+    "732:10": {
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -55055,7 +55123,7 @@
         }
       }
     },
-    "732:10": {
+    "733:10": {
       "preRequisites:11": [
         738
       ],
@@ -55123,7 +55191,7 @@
         }
       }
     },
-    "733:10": {
+    "734:10": {
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -55189,7 +55257,7 @@
         }
       }
     },
-    "734:10": {
+    "735:10": {
       "preRequisites:11": [
         38
       ],
@@ -55257,7 +55325,7 @@
         }
       }
     },
-    "735:10": {
+    "736:10": {
       "preRequisites:11": [
         744
       ],
@@ -55325,7 +55393,7 @@
         }
       }
     },
-    "736:10": {
+    "737:10": {
       "preRequisites:11": [
         746
       ],
@@ -55410,7 +55478,7 @@
         }
       }
     },
-    "737:10": {
+    "738:10": {
       "preRequisiteTypes:7": [
         0,
         0,
@@ -55485,7 +55553,7 @@
         }
       }
     },
-    "738:10": {
+    "739:10": {
       "preRequisites:11": [
         748
       ],
@@ -55553,7 +55621,7 @@
         }
       }
     },
-    "739:10": {
+    "740:10": {
       "preRequisites:11": [
         746
       ],
@@ -55621,7 +55689,7 @@
         }
       }
     },
-    "740:10": {
+    "741:10": {
       "preRequisites:11": [
         742
       ],
@@ -55689,7 +55757,7 @@
         }
       }
     },
-    "741:10": {
+    "742:10": {
       "preRequisites:11": [
         748
       ],
@@ -55757,7 +55825,7 @@
         }
       }
     },
-    "742:10": {
+    "743:10": {
       "preRequisites:11": [
         747,
         745
@@ -55828,7 +55896,7 @@
         }
       }
     },
-    "743:10": {
+    "744:10": {
       "preRequisites:11": [
         745
       ],
@@ -55896,7 +55964,7 @@
         }
       }
     },
-    "744:10": {
+    "745:10": {
       "preRequisites:11": [
         753
       ],
@@ -55964,7 +56032,7 @@
         }
       }
     },
-    "745:10": {
+    "746:10": {
       "preRequisites:11": [
         750
       ],
@@ -56032,7 +56100,7 @@
         }
       }
     },
-    "746:10": {
+    "747:10": {
       "preRequisites:11": [
         759
       ],
@@ -56100,7 +56168,7 @@
         }
       }
     },
-    "747:10": {
+    "748:10": {
       "preRequisiteTypes:7": [
         0,
         1
@@ -56190,7 +56258,7 @@
         }
       }
     },
-    "748:10": {
+    "749:10": {
       "preRequisites:11": [
         757
       ],
@@ -56229,7 +56297,7 @@
         }
       }
     },
-    "749:10": {
+    "750:10": {
       "preRequisites:11": [
         758
       ],
@@ -56268,7 +56336,7 @@
         }
       }
     },
-    "750:10": {
+    "751:10": {
       "preRequisites:11": [
         759
       ],
@@ -56338,7 +56406,7 @@
         }
       }
     },
-    "751:10": {
+    "752:10": {
       "preRequisites:11": [
         753,
         755,
@@ -56408,7 +56476,7 @@
         }
       }
     },
-    "752:10": {
+    "753:10": {
       "preRequisiteTypes:7": [
         1
       ],
@@ -56479,7 +56547,7 @@
         }
       }
     },
-    "753:10": {
+    "754:10": {
       "preRequisites:11": [
         760
       ],
@@ -57064,6 +57132,13 @@
           "sizeY:3": 24,
           "x:3": 8,
           "y:3": 224
+        },
+        "38:10": {
+          "id:3": 704,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 136,
+          "y:3": 128
         }
       }
     },
