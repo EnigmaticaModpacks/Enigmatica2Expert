@@ -31,10 +31,10 @@ import mods.chisel.Carving.addVariation;
 
 # Environmental Materials
 for i in 0 to 16 {
-	addVariation("alabaster " ~ i, <environmentalmaterials:alabaster>.definition.makeStack(i));
-	addVariation("alabaster " ~ i, <environmentalmaterials:alabaster_paver>.definition.makeStack(i));
-	addVariation("alabaster " ~ i, <environmentalmaterials:alabaster_bricks>.definition.makeStack(i));
-	addVariation("alabaster " ~ i, <environmentalmaterials:alabaster_tiles>.definition.makeStack(i));
+	addVariation("environmentalmaterials:alabaster_bricks_" ~ i, <environmentalmaterials:alabaster>.definition.makeStack(i));
+	addVariation("environmentalmaterials:alabaster_bricks_" ~ i, <environmentalmaterials:alabaster_paver>.definition.makeStack(i));
+	addVariation("environmentalmaterials:alabaster_bricks_" ~ i, <environmentalmaterials:alabaster_bricks>.definition.makeStack(i));
+	addVariation("environmentalmaterials:alabaster_bricks_" ~ i, <environmentalmaterials:alabaster_tiles>.definition.makeStack(i));
 }
 
 addVariation("hardened_stone", <environmentalmaterials:hardened_stone>);
