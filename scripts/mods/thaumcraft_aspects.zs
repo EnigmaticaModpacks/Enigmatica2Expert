@@ -141,6 +141,7 @@ Bloodmagic
 <bloodmagic:activation_crystal>                 .setAspects(<aspect:praecantatio>*10,<aspect:desiderium>*20  ,<aspect:sanguis>*20); #weak activation crystal
 <bloodmagic:activation_crystal:1>               .setAspects(<aspect:praecantatio>*40,<aspect:desiderium>*30  ,<aspect:sanguis>*50); #awekaned activation crystal
 
+<bloodmagic:blood_orb:*>                                        .setAspects(<aspect:spiritus>*40); #soulbinded orbs
 <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"})        .setAspects(<aspect:praecantatio>*10  ,<aspect:desiderium>*10   ,<aspect:sanguis>*10); #orb tier 1
 <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice"})  .setAspects(<aspect:praecantatio>*20  ,<aspect:victus>*10       ,<aspect:sanguis>*25); #orb tier 2
 <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"})    .setAspects(<aspect:praecantatio>*30  ,<aspect:metallum>*50     ,<aspect:sanguis>*50); #orb tier 3
@@ -549,6 +550,23 @@ Tinker's construct
 */
 
 <tconstruct:materials:17>                       .setAspects(<aspect:mortuus>*10      ,<aspect:infernum>*10    ,<aspect:tenebrae>*5       ,<aspect:perditio>*5); #wither bone
+
+/*
+#######################################################
+
+Thaumcraft
+
+#######################################################
+*/
+
+<tconevo:metal:20>                              .setAspects(<aspect:metallum>*15  ,<aspect:aer>*5 ,<aspect:aqua>*5 ,<aspect:ordo>*5 ,<aspect:perditio>*5      ,<aspect:terra>*5 ,<aspect:ignis>*5);
+<thaumadditions:mithrillium_ingot>              .setAspects(<aspect:metallum>*15  ,<aspect:mana>*10           ,<aspect:praecantatio>*10 ,<aspect:ordo>*2      ,<aspect:vitreus>*3);
+<thaumadditions:mithrillium_block>              .setAspects(<aspect:metallum>*150 ,<aspect:mana>*100          ,<aspect:praecantatio>*100,<aspect:ordo>*20     ,<aspect:vitreus>*30);
+<thaumadditions:adaminite_ingot>                .setAspects(<aspect:metallum>*15  ,<aspect:infernum>*66       ,<aspect:sanguis>*10      ,<aspect:spiritus>*10 ,<aspect:vitium>*3);
+<thaumadditions:adaminite_block>                .setAspects(<aspect:metallum>*150 ,<aspect:infernum>*666      ,<aspect:sanguis>*100     ,<aspect:spiritus>*100,<aspect:vitium>*30);
+<thaumadditions:mithminite_ingot>               .setAspects(<aspect:metallum>*15  ,<aspect:draco>*10          ,<aspect:mythus>*10       ,<aspect:caeles>*10   ,<aspect:auram>*20);
+<thaumadditions:mithminite_block>               .setAspects(<aspect:metallum>*150 ,<aspect:draco>*100         ,<aspect:mythus>*100      ,<aspect:caeles>*100  ,<aspect:auram>*200);
+<thaumadditions:puriflower>                     .setAspects(<aspect:auram>*10     ,<aspect:herba>*20          ,<aspect:praecantatio>*10 ,<aspect:sensus>*20);
 
 /*
 #######################################################

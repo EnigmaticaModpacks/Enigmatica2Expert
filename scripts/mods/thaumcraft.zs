@@ -629,6 +629,21 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("essentiatransportin",
   "Q": <ore:gemQuartzBlack>, #Black quartz
 }).shaped());
 
+#[Hungry chest]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:HungryChest");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("HungryChest", 
+"HUNGRYCHEST", 
+15,
+[], 
+<thaumcraft:hungry_chest>, 
+  Grid(["pretty",
+  "G T G",
+  "G   G",
+  "G G G"], {
+  "G": <thaumcraft:plank_greatwood>, #Greatwood plank
+  "T": <ore:trapdoorWood>, #Trap door
+}).shaped());
+
 /*
 ██╗███╗   ██╗███████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗
 ██║████╗  ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║

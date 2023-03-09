@@ -101,7 +101,7 @@
     "value": [-4,-4]},
     {"op": "replace",
     "path": "parents",
-    "value": ["VISSALT"]},
+    "value": ["TAR_ESSENCE_SALT"]},
     {"op": "replace",
     "path": "stages/1/recipes/0",
     "value": ["thaumcraft:bathsalts"]}
@@ -235,5 +235,11 @@
   {"op":"replace",
   "path":"stages/1/recipes",
   "value":["thaumcraft:energetic_nitor"]}
+]}
+
+,{"key":"IMPETUS_GENERATOR","ops":[
+  {"op":"replace",
+  "path":"stages/1/text",
+  "value": "thaumicaugmentation.research.impetus_generatorfix.1"}
 ]}
 ]

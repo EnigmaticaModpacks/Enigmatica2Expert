@@ -13,7 +13,7 @@
                     "required_item":["thaumcraft:scribing_tools"]
                 },
                 {
-                    "text": "research_stage.thaumadditions:vis_scribing_tools.1",
+                    "text": "research_stage.thaumadditions:vis_scribing_tools.2",
                     "recipes": ["thaumcraft:vis_scribing_tools"]
                 }
             ]

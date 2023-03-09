@@ -57,18 +57,18 @@
         },
         {
             "key": "VISCHARM",    
-            "name": "Recharge Charm",
+            "name": "item.thaumadditions:recharge_charm.name",
             "icons": [ "thaumadditions:recharge_charm" ],
             "category": "INFUSION", "location": [ 6,3 ], 
             "parents": [ "VERDANTCHARMS","VISAMULET" ],
             "meta":["HIDDEN"],     
             "stages": [
                 {
-                    "text": "There are so many usefull amulets and i'm stuck using this Vis Amulet as an only way to automaticaly recharge my stuff. There must be some way to get rid of it!", 
+                    "text": "research.recharge_charm.1", 
                     "required_knowledge":["OBSERVATION;INFUSION;1","THEORY;INFUSION;1"]
                 },
                 {
-                    "text": "As i thought! Verdant charms can also drawn vis from aura to my stuff, it just needed some adjustments.",
+                    "text": "research.recharge_charm.2",
                     "recipes":["thaumcraft:recharge_charm"]
                 }
             ]

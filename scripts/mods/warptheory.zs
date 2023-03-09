@@ -1,4 +1,24 @@
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.EntityLivingUseItemEvent.Finish;
+import crafttweaker.world.IWorld;
+import crafttweaker.util.IRandom;
+
 #modloaded warptheory
+
+# [Hunk of something] gives random amount of curioses (exept alchemy and auromancy progress) and 1/100 chance for pech wand
+events.onEntityLivingUseItemFinish(function(event as crafttweaker.event.EntityLivingUseItemEvent.Finish) {    
+  if (event.item.name == <warptheory:item_something>.name) {
+    val world = event.player.world as IWorld;
+    event.player.give(<thaumcraft:curio:3>* world.random.nextInt(2,9));    
+    event.player.give(<thaumcraft:curio:2>* world.random.nextInt(2,9));    
+    event.player.give(<thaumcraft:curio:4>* world.random.nextInt(2,9));    
+    event.player.give(<thaumcraft:curio:5>* world.random.nextInt(2,9));
+    if(world.random.nextInt(100)==0){
+      event.player.give(<thaumcraft:pech_wand>);
+    }
+    }
+  }
+);
 
 # Remove [Inpure tear]
 mods.thaumcraft.Infusion.removeRecipe(<warptheory:item_cleanser_minor>);

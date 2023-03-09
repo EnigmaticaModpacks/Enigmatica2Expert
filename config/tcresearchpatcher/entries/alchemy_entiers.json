@@ -1,7 +1,7 @@
 {
     "entries" :[
         {
-            "key": "VISSALT",    
+            "key": "TAR_ESSENCE_SALT",    
             "name": "research_name.thaumadditions:essence_salt",
             "icons": [ "thaumadditions:textures/items/salt_essence.png" ],
             "category": "ALCHEMY", "location": [ -4,-2 ], 
@@ -26,7 +26,7 @@
             "name": "research_name.thaumadditions:crystal_crusher",
             "icons": [ "thaumadditions:crystal_crusher" ],
             "category": "ALCHEMY", "location": [ -6,-2 ], 
-            "parents": [ "VISSALT" ],     
+            "parents": [ "TAR_ESSENCE_SALT" ],     
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:crystal_crusher.1", 

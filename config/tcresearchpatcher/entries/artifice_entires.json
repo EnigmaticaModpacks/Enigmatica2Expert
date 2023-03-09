@@ -24,7 +24,7 @@
             "name": "research_name.thaumadditions:aura_disperser",
             "icons": [ "thaumadditions:aura_disperser" ],
             "category": "ARTIFICE", "location": [ -3,-3 ], 
-            "parents": [ "VISSALT","REDSTONERELAY" ],     
+            "parents": [ "TAR_ESSENCE_SALT","REDSTONERELAY" ],     
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:aura_disperser.1",
