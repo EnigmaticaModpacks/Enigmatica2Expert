@@ -7,7 +7,7 @@
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 2,
+        "mIO": 1,
         "x": 70,
         "y": 62,
         "autoIO": true
@@ -15,7 +15,7 @@
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 2,
+        "mIO": 1,
         "x": 88,
         "y": 62,
         "autoIO": true
@@ -23,7 +23,7 @@
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 2,
+        "mIO": 1,
         "x": 70,
         "y": 80,
         "autoIO": true
@@ -31,7 +31,7 @@
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 2,
+        "mIO": 1,
         "x": 88,
         "y": 80,
         "autoIO": true
