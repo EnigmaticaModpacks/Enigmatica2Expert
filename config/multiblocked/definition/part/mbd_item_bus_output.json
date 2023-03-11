@@ -7,34 +7,34 @@
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 1,
+        "mIO": 2,
         "x": 70,
         "y": 62,
-        "autoIO": false
+        "autoIO": true
       },
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 1,
+        "mIO": 2,
         "x": 88,
         "y": 62,
-        "autoIO": false
+        "autoIO": true
       },
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 1,
+        "mIO": 2,
         "x": 70,
         "y": 80,
-        "autoIO": false
+        "autoIO": true
       },
       {
         "cIO": 1,
         "gIO": 1,
-        "mIO": 1,
+        "mIO": 2,
         "x": 88,
         "y": 80,
-        "autoIO": false
+        "autoIO": true
       }
     ]
   },

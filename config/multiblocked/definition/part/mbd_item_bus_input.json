@@ -34,7 +34,7 @@
         "mIO": 0,
         "x": 79,
         "y": 80,
-        "autoIO": false
+        "autoIO": true
       },
       {
         "cIO": 0,

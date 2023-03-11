@@ -208,7 +208,6 @@
               "tag:10": {
                 "Creative:1": 1,
                 "Level:1": 4,
-                "Lock:1": 0,
                 "RSControl:1": 0
               }
             }
@@ -2948,7 +2947,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome to Enigmatica 2: Expert Unoffical! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nCheck the checkbox to get your starterkit.§d§d§0 \n\nGood luck!§0",
+          "desc:8": "Welcome to §9Enigmatica 2: Expert Unoffical§r! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nAs a heads up, if you enable view mode (click the eyeball), you can view quests that are not unlocked. Also, make sure to form a party if your are playing with friends, so your questing progress is synchronized.\n\nCheck the checkbox to get your starter kit.§d§d§0 §r\n\nGood luck!§0",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -33149,7 +33148,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "PAE2 comes with it\u0027s own wireless terminals, allowing the player to wirelessly craft, create patterns, and access fluids. Terminals can be placed in baubles slots, and can be accessed via a keybind. Like the other wireless terminal mod, you need to add it to your network via a security terminal.",
+          "desc:8": "§bPAE2§r comes with it\u0027s own wireless terminals, allowing the player to wirelessly craft, create patterns, and access fluids. Terminals can be placed in baubles slots, and can be accessed via a keybind. Like the other wireless terminal mod, you need to add it to your network via a §6security terminal§r.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -34397,6 +34396,7 @@
     },
     "450:10": {
       "preRequisites:11": [
+        717,
         402
       ],
       "properties:10": {
@@ -34411,7 +34411,7 @@
             "id:8": "libvulpes:productingot"
           },
           "ignoresview:1": 0,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 1,
           "name:8": "Titanium",
@@ -51743,7 +51743,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A crafting component.",
+          "desc:8": "A crafting component, also needed to start Multiblocked.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53502,6 +53502,91 @@
     },
     "706:10": {
       "preRequisites:11": [
+        729
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Ingredient buffer§r is what allows easy management for Multiblocks. It accepts the items the §aDual Interface§r sends to it and stores it in its internal buffer. There is a default and a large version. The normal one can store 9 items and 4 fluids, the large buffer can store 27 items and 7 fluids.\n\n\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "ae2fc:ingredient_buffer"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Ingredient Buffer",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 706,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "ae2fc:ingredient_buffer"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "ae2fc:large_ingredient_buffer"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        }
+      }
+    },
+    "707:10": {
+      "preRequisites:11": [
         139
       ],
       "properties:10": {
@@ -53569,7 +53654,7 @@
         }
       }
     },
-    "707:10": {
+    "708:10": {
       "preRequisites:11": [
         18
       ],
@@ -53647,7 +53732,7 @@
         }
       }
     },
-    "708:10": {
+    "709:10": {
       "preRequisites:11": [
         18
       ],
@@ -53732,7 +53817,7 @@
         }
       }
     },
-    "709:10": {
+    "710:10": {
       "preRequisites:11": [
         37
       ],
@@ -53784,7 +53869,7 @@
         }
       }
     },
-    "710:10": {
+    "711:10": {
       "preRequisites:11": [
         37
       ],
@@ -53846,14 +53931,14 @@
         }
       }
     },
-    "711:10": {
+    "712:10": {
       "preRequisites:11": [
         682
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "§bMultiblocked§r replaces Modular Machinary in E2EU, featuring some cool new features, such as being able to place hatches where ever you want, wallsharing, and item buses being able to pull/push items into connected inventories like gregtech item hatches.\n\nYou are currently able to convert existing MM items into Multiblocked items, so make sure to do that if you need to.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53865,7 +53950,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Modularium",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -53877,17 +53962,51 @@
         }
       },
       "questID:3": 716,
-      "rewards:9": {},
-      "tasks:9": {}
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "contenttweaker:modularium"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "712:10": {
+    "713:10": {
       "preRequisites:11": [
         716
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "The §eAMF§r is the multiblock you will probably make first, being used to craft titanium early on, as well as having a couple of other recipes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53899,7 +54018,7 @@
           "ismain:1": 1,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Advanced Metallurgic Fabricator",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -53911,17 +54030,51 @@
         }
       },
       "questID:3": 717,
-      "rewards:9": {},
-      "tasks:9": {}
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "mbd:amf"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "713:10": {
+    "714:10": {
       "preRequisites:11": [
         716
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "The §eAcarp§r is used to create Carpenter recipes without needing to needing to set them beforehand, and is also needed for various lategame recipes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53933,7 +54086,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Advanced Carpenter",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -53945,17 +54098,51 @@
         }
       },
       "questID:3": 718,
-      "rewards:9": {},
-      "tasks:9": {}
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "mbd:acarp"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "714:10": {
+    "715:10": {
       "preRequisites:11": [
         716
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "The §eATF§r is used to create Thermionic Fabricator recipes faster and without needing to set the recipe beforehand.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53967,7 +54154,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Advanced Thermionic Fabricator",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -53979,10 +54166,44 @@
         }
       },
       "questID:3": 719,
-      "rewards:9": {},
-      "tasks:9": {}
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "mbd:atf"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "715:10": {
+    "716:10": {
       "preRequisites:11": [
         2
       ],
@@ -54047,14 +54268,14 @@
         }
       }
     },
-    "716:10": {
+    "717:10": {
       "preRequisites:11": [
         716
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "The §eACE §ris used to craft various thaumcraft recipes without requiring the player.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54066,7 +54287,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Arcane Crafting Engine",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -54078,17 +54299,51 @@
         }
       },
       "questID:3": 721,
-      "rewards:9": {},
-      "tasks:9": {}
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "mbd:arcane"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     },
-    "717:10": {
+    "718:10": {
       "preRequisites:11": [
         716
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Item hatches are able to pull and push items, so you can place an interface by an output hatch, and it will push items into the interface",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54100,7 +54355,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Hatches ",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -54113,41 +54368,12 @@
       },
       "questID:3": 722,
       "rewards:9": {},
-      "tasks:9": {}
-    },
-    "718:10": {
-      "preRequisites:11": [
-        717
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "autoclaim:1": 0,
-          "desc:8": "No Description",
-          "globalshare:1": 0,
-          "icon:10": {
-            "Count:3": 1,
-            "Damage:2": 7,
-            "OreDict:8": "",
-            "id:8": "libvulpes:productingot"
-          },
-          "ignoresview:1": 0,
-          "ismain:1": 1,
-          "issilent:1": 0,
-          "lockedprogress:1": 0,
-          "name:8": "New Quest",
-          "questlogic:8": "AND",
-          "repeat_relative:1": 1,
-          "repeattime:3": -1,
-          "simultaneous:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "tasklogic:8": "AND",
-          "visibility:8": "NORMAL"
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
         }
-      },
-      "questID:3": 723,
-      "rewards:9": {},
-      "tasks:9": {}
+      }
     },
     "719:10": {
       "preRequisites:11": [
@@ -54493,17 +54719,17 @@
     },
     "724:10": {
       "preRequisiteTypes:7": [
-        0,
-        1
+        1,
+        0
       ],
       "preRequisites:11": [
-        725,
-        753
+        753,
+        732
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Used in Fluidcrafting. ",
+          "desc:8": "The §6Dual Interface§r works as you might think. Insert the purple pattern into it and it will start extracting both items and fluids.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54566,12 +54792,12 @@
     },
     "725:10": {
       "preRequisites:11": [
-        729
+        725
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "§bAE2 Fluid Crafting Reworked§r is a rework of the AE2 Fluidcrafting mod, allowing players to autocraft with items and fluids. \n\nWhen the §6ME Fluid Discretizer§r is attached to your ME System, it will represent the Fluids that are stored in your ME Fluid Storage Cells (Or Storage bus) as drops. They will be the item equivalent of fluids. §eIts just another way to show fluids, it won\u0027t actually convert your fluids to items.\n§r\nEach fluid drop is equivalent to one millibucket of the respective fluid. (1000ml \u003d 1 Bucket)\n\nEvery ME System should only have one ME Fluid Discretizer, as more will cause visual bugs. \n\nThe information from this section is transcribed from the §eGregtech New Horizons§r wiki.\n\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54634,12 +54860,12 @@
     },
     "726:10": {
       "preRequisites:11": [
-        732
+        729
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "Used to automate crafting recipes that involve buckets.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54701,13 +54927,18 @@
       }
     },
     "727:10": {
+      "preRequisiteTypes:7": [
+        1,
+        0
+      ],
       "preRequisites:11": [
+        759,
         730
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "No Description",
+          "desc:8": "As the name suggests, it is simply the §aPattern Terminal§r\u0027s functionality with fluids. When using HEI\u0027s built in §6[+]§r feature for creating patterns immediately, it will also contain the fluid. You can insert fluid manually with any fluid container such as buckets, cells, flasks. If you insert the Pattern into a §aDual Interface§r it will try to output both fluids and items. \n\nAlso comes in a extended flavor as well, if your recipes require it.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54719,7 +54950,7 @@
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 0,
-          "name:8": "New Quest",
+          "name:8": "Fluid Pattern Interface",
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
           "repeattime:3": -1,
@@ -55264,7 +55495,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome to §bApplied Energistics 2§r! This is the go to mod for all things storage and automation related. Like mentioned before, this pack uses PAE2, so feel free to refer to the previously posted video on what new features it brings.\n\n§3\n§rTo get started, §3Inscribers§r are machines used to make §6inscribed circuits§r for §bApplied Energistics§r.\n\n\nA decent number of the quests in this chapter are transcribed from §5Nomifactory§r, and is also where PAE2 orginated from, so go check it out!",
+          "desc:8": "Welcome to §bApplied Energistics 2§r! This is the go to mod for all things storage and automation related. Like mentioned before, this pack uses PAE2, so feel free to refer to the previously posted video on what new features it brings. Some of the quest requirements in this questline has been hidden by default to reduce clutter, you can hover over a given quest to see if it has any hidden requirements (if any).\n\n§3\n§rTo get started, §3Inscribers§r are machines used to make §6inscribed circuits§r for §bApplied Energistics§r.\n\n\nA decent number of the quests in this chapter are transcribed from §5Nomifactory§r, and is also where PAE2 orginated from, so go check it out!",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -60859,7 +61090,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "No Description",
+          "desc:8": "Quests for Applied Energistics 2, the storage and automation mod.\n\nAlso has quests for AE2FCR, pauto, pex, and pastrial.",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -60879,244 +61110,251 @@
           "y:3": -164
         },
         "1:10": {
+          "id:3": 706,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -84,
+          "y:3": -68
+        },
+        "2:10": {
           "id:3": 725,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -260
         },
-        "2:10": {
+        "3:10": {
           "id:3": 726,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -308
         },
-        "3:10": {
+        "4:10": {
           "id:3": 727,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -308
         },
-        "4:10": {
+        "5:10": {
           "id:3": 728,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -260
         },
-        "5:10": {
+        "6:10": {
           "id:3": 729,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -84,
+          "y:3": -164
+        },
+        "7:10": {
+          "id:3": 730,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -216
         },
-        "6:10": {
-          "id:3": 730,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": -84,
-          "y:3": -216
-        },
-        "7:10": {
+        "8:10": {
           "id:3": 731,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -116
         },
-        "8:10": {
+        "9:10": {
           "id:3": 732,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
-          "y:3": -164
+          "y:3": -216
         },
-        "9:10": {
+        "10:10": {
           "id:3": 733,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -116
         },
-        "10:10": {
+        "11:10": {
           "id:3": 735,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -260
         },
-        "11:10": {
+        "12:10": {
           "id:3": 736,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -308
         },
-        "12:10": {
+        "13:10": {
           "id:3": 737,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -348
         },
-        "13:10": {
+        "14:10": {
           "id:3": 738,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -208,
           "y:3": -348
         },
-        "14:10": {
+        "15:10": {
           "id:3": 739,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -244,
           "y:3": -348
         },
-        "15:10": {
+        "16:10": {
           "id:3": 741,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -280,
           "y:3": -348
         },
-        "16:10": {
+        "17:10": {
           "id:3": 742,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -256,
           "y:3": -320
         },
-        "17:10": {
+        "18:10": {
           "id:3": 743,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -316,
           "y:3": -308
         },
-        "18:10": {
+        "19:10": {
           "id:3": 744,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -316,
           "y:3": -260
         },
-        "19:10": {
+        "20:10": {
           "id:3": 745,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -172,
           "y:3": -220
         },
-        "20:10": {
+        "21:10": {
           "id:3": 746,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -248,
           "y:3": -220
         },
-        "21:10": {
+        "22:10": {
           "id:3": 747,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -320,
           "y:3": -220
         },
-        "22:10": {
+        "23:10": {
           "id:3": 748,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -244,
           "y:3": -260
         },
-        "23:10": {
+        "24:10": {
           "id:3": 749,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -204,
           "y:3": -260
         },
-        "24:10": {
+        "25:10": {
           "id:3": 750,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -256,
           "y:3": -176
         },
-        "25:10": {
+        "26:10": {
           "id:3": 751,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -164
         },
-        "26:10": {
+        "27:10": {
           "id:3": 752,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -116
         },
-        "27:10": {
+        "28:10": {
           "id:3": 753,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -208,
           "y:3": -116
         },
-        "28:10": {
+        "29:10": {
           "id:3": 754,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -244,
           "y:3": -116
         },
-        "29:10": {
+        "30:10": {
           "id:3": 755,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -284,
           "y:3": -116
         },
-        "30:10": {
+        "31:10": {
           "id:3": 756,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -320,
           "y:3": -116
         },
-        "31:10": {
+        "32:10": {
           "id:3": 757,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -320,
           "y:3": -68
         },
-        "32:10": {
+        "33:10": {
           "id:3": 758,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -284,
           "y:3": -68
         },
-        "33:10": {
+        "34:10": {
           "id:3": 759,
           "sizeX:3": 40,
           "sizeY:3": 40,
           "x:3": -252,
           "y:3": -76
         },
-        "34:10": {
+        "35:10": {
           "id:3": 760,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -68
         },
-        "35:10": {
+        "36:10": {
           "id:3": 761,
           "sizeX:3": 24,
           "sizeY:3": 24,
@@ -62335,53 +62573,53 @@
       },
       "quests:9": {
         "0:10": {
+          "id:3": 450,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 108,
+          "y:3": -12
+        },
+        "1:10": {
           "id:3": 716,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -24,
           "y:3": -24
         },
-        "1:10": {
+        "2:10": {
           "id:3": 717,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 60,
           "y:3": -12
         },
-        "2:10": {
+        "3:10": {
           "id:3": 718,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 24,
           "y:3": -76
         },
-        "3:10": {
+        "4:10": {
           "id:3": 719,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 44,
           "y:3": -44
         },
-        "4:10": {
+        "5:10": {
           "id:3": 721,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 44,
           "y:3": 20
         },
-        "5:10": {
+        "6:10": {
           "id:3": 722,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 32,
+          "x:3": 24,
           "y:3": 52
-        },
-        "6:10": {
-          "id:3": 723,
-          "sizeX:3": 24,
-          "sizeY:3": 24,
-          "x:3": 104,
-          "y:3": -12
         }
       }
     }
