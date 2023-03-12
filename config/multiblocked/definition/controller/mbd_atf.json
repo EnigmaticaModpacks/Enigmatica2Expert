@@ -114,7 +114,7 @@
       "B": {
         "states": [
           {
-            "id": "minecraft:glass",
+            "id": "thermalfoundation:glass_alloy",
             "meta": 0
           }
         ],
@@ -122,13 +122,6 @@
       },
       "item_i": {
         "location": "mbd:item_bus_input",
-        "type": "component",
-        "minCount": 1,
-        "maxCount": 1,
-        "previewCount": 1
-      },
-      "item_o": {
-        "location": "mbd:item_bus_output",
         "type": "component",
         "minCount": 1,
         "maxCount": 1,
@@ -142,6 +135,16 @@
         "previewCount": 1,
         "io": "IN"
       },
+      "item_o": {
+        "location": "mbd:item_bus_output",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
+      },
+      "any": {
+        "type": "any"
+      },
       "energy": {
         "location": "mbd:energy_hatch",
         "type": "component",
@@ -149,9 +152,6 @@
         "maxCount": 1,
         "previewCount": 1,
         "io": "IN"
-      },
-      "any": {
-        "type": "any"
       }
     },
     "symbolMap": {
@@ -164,8 +164,8 @@
       "A": [
         "A",
         "item_i",
-        "item_o",
         "fluid",
+        "item_o",
         "energy"
       ],
       "B": [

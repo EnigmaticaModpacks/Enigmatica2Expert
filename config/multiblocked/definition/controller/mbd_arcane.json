@@ -91,7 +91,7 @@
       "B": {
         "states": [
           {
-            "id": "minecraft:glass",
+            "id": "thermalfoundation:glass_alloy",
             "meta": 0
           }
         ],
