@@ -12,4 +12,6 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "dust"
+	#The color of this material.
+	color = 13088939
 
