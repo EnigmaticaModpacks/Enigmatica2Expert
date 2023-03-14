@@ -157,9 +157,6 @@ for item in pressurePlates {
 # Circuit Board
 	<ore:circuitBoard>.add(<immersiveengineering:material:27>);
 
-# Modularium
-	<ore:ingotModularium>.add(<modularmachinery:itemmodularium>);
-
 # Amber Oredict
 	<ore:blockAmber>.add(<biomesoplenty:gem_block:7>);
 	<ore:blockAmber>.add(<thaumcraft:amber_block>);

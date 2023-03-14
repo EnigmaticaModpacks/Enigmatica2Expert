@@ -583,8 +583,6 @@ for item in thaumcraftHintItems {
 	.addTooltip(format.darkPurple("Can be replicated with ") ~ 
 					format.lightPurple(((450 as float) / 100) as string) ~ format.darkPurple(" mB UU"));
 
-	<modularmachinery:itemmodularium>.displayName = "Modularium Alloy";
-	
 
 # Turbine Fuel description
 <advgenerators:turbine_controller>.addShiftTooltip(
