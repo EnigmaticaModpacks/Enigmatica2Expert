@@ -40,6 +40,19 @@ for i, item in modmech{
 
 recipes.addHiddenShapeless("mmingotrefund",<contenttweaker:modularium>,[<modularmachinery:itemmodularium>]);
 
-// Misc
+// WCT
+
+recipes.removeByMod("wct");  
+
+for item in loadedMods["wct"].items {
+    item.addTooltip(format.red("Deprecated, place in crafting grid to receive resources."));
+}
+
+recipes.addHiddenShapeless("mmingotrefund",<appliedenergistics2:wireless_crafting_terminal>,[<wct:wct>]);
+recipes.addHiddenShapeless("mmingotrefund",<appliedenergistics2:wireless_crafting_terminal>,[<wct:wct_creative>]);
+recipes.addHiddenShapeless("mmingotrefund",<appliedenergistics2:material:60>,[<wct:magnet_card>]);
+
+// Creative tank
 <mekanism:machineblock2:11>.withTag({tier: 4}).addTooltip(format.red("Deprecated, place in crafting grid to receive resources."));
 recipes.addHiddenShapeless("tankconvert",<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 1 as byte, Level: 4 as byte}),[<mekanism:machineblock2:11>.withTag({tier: 4})]);
+
