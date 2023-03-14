@@ -13,16 +13,16 @@ var creativeTank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creati
 # Advanced Thermionic Fabricator
 	recipes.addShapedMirrored("Advanced Thermionic Fabricator", 
 	<mbd:atf>, 
-	[[<mbd:base_casing>, <extracells:storage.component:8>, <mbd:base_casing>],
+	[[<mbd:base_casing>, <aeadditions:storage.component:8>, <mbd:base_casing>],
 	[<forestry:fabricator>, <mbd:base_casing>, <forestry:fabricator>], 
-	[<mbd:base_casing>, <extracells:fluidcrafter>, <mbd:base_casing>]]);
+	[<mbd:base_casing>, <ae2fc:fluid_assembler>, <mbd:base_casing>]]);
 
 # Advanced Carpenter
     recipes.addShapedMirrored("Advanced Carpenter", 
     <mbd:acarp>, 
     [[<mbd:base_casing>, <appliedenergistics2:material:57>, <mbd:base_casing>],
     [<forestry:carpenter>, <mbd:base_casing>, <forestry:carpenter>], 
-    [<mbd:base_casing>, <extracells:fluidcrafter>, <mbd:base_casing>]]);
+    [<mbd:base_casing>, <ae2fc:fluid_assembler>, <mbd:base_casing>]]);
     
 # Advanced Metallurgic Fabricator
 	recipes.addShapedMirrored("Advanced Metallurgic Fabricator", 
@@ -82,3 +82,4 @@ recipes.addShapeless("Outputbusconvert",<mbd:item_bus_input>,[<mbd:item_bus_outp
       [[<actuallyadditions:item_battery>, null, null],
       [<mbd:base_casing>, null, null], 
       [null, null, null]]);
+
