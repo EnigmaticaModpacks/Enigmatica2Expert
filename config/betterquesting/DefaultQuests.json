@@ -11574,7 +11574,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Luminous Crafting Table is used to craft various things in Astral Sorcery.\nThe recipe can be found in the Astral Tome. \nCraft it in a Crafting Table, near one of the Floating Crystals found below some Astral Sorcery structures.\n\nAs a side note, if you wish to automate the Astral Sorecery table, check out the \"Automating Astral Sorcery\" quest in the the AE2 chapter.",
+          "desc:8": "The Luminous Crafting Table is used to craft various things in Astral Sorcery.\nThe recipe can be found in the Astral Tome. \nCraft it in a Crafting Table, near one of the Floating Crystals found below some Astral Sorcery structures.\n\nAs a side note, if you wish to automate the Astral Sorcery table, check out the \"Automating Astral Sorcery\" quest in the the AE2 chapter.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -40126,7 +40126,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "This is the center device of Draconic Evolution fusion crafting. \n\nYou supply the Fusion Crafting Core with a catalyst item, and surround it with 5-10 Fusion Crafting Injectors, which will need energy and the items corresponding to the catalyst.\n\nAutomating it can be done fairly simply with some",
+          "desc:8": "This is the center device of Draconic Evolution fusion crafting. \n\nYou supply the Fusion Crafting Core with a catalyst item, and surround it with 5-10 Fusion Crafting Injectors, which will need energy and the items corresponding to the catalyst.\n\nAutomating it can be done fairly simply with some AA lasers.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -40166,6 +40166,16 @@
               "id:8": "bq_standard:loot_chest"
             }
           }
+        },
+        "1:10": {
+          "asScript:1": 1,
+          "command:8": "/tell @p https://youtu.be/1umXkafwsEE",
+          "description:8": "Automating Draconic Evolution\u0027s Fusion",
+          "hideBlockIcon:1": 1,
+          "index:3": 1,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "Link a guide",
+          "viaPlayer:1": 0
         }
       },
       "tasks:9": {

@@ -1,0 +1,9 @@
+# > git config filter.ic2_config_date_update.clean "sed '/; created /d'"
+config/IC2.ini filter=ic2_config_date_update
+
+# > git config filter.as_config_cleanup.clean "sed '/default: /d'"
+config/astralsorcery/amulet_enchantments.cfg filter=as_config_cleanup
+
+# > git config filter.remove_date.clean "sed 's/#... ... .*$//'"
+config/splash.properties filter=remove_date
+config/craftpresence.properties filter=remove_date
