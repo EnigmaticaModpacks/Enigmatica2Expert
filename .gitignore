@@ -113,3 +113,4 @@ config/replaymod.cfg
 ffmpeg.exe
 replay_videos/
 replay_recordings/
+hei_bookmarks.ini
