@@ -136,7 +136,7 @@
             "chance": 1.0,
             "content": {
               "amount": 4,
-              "ore": "salt"
+              "ore": "dustSalt"
             }
           },
           {

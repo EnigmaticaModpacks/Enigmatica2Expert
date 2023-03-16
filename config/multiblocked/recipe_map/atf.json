@@ -66,6 +66,19 @@
             "content": 1500000
           }
         ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"thermalexpansion:frame\",Count:2,Damage:0s}"
+              ]
+            }
+          }
+        ]
       }
     },
     {
