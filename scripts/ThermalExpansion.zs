@@ -17,6 +17,7 @@ for slab in <ore:slabWood>.items {
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:empoweredoil>);
 
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refinedcanolaoil>, 250000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:biofuel>, 500000);
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:crystaloil>, 1000000);
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:empoweredoil>, 1750000);
 
