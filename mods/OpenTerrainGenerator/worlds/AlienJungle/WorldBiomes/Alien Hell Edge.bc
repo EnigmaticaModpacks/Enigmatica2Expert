@@ -1,0 +1,261 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                        Biome Inheritance                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeExtends: 
+
+ResourceInheritance: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Biome placement                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeSize: 4
+
+BiomeRarity: 100
+
+BiomeColor: #537B09
+
+ReplaceToBiomeName: 
+
+####################
+# Isle biomes only #
+####################
+
+IsleInBiome: Alien Jungle
+
+BiomeSizeWhenIsle: 9
+
+BiomeRarityWhenIsle: 95
+
+######################
+# Border biomes only #
+######################
+
+BiomeIsBorder: 
+
+NotBorderNear: 
+
+BiomeSizeWhenBorder: 6
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                  Terrain height and volatility                  | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeHeight: -1.5
+
+BiomeVolatility: 0.5
+
+SmoothRadius: 2
+
+CustomHeightControlSmoothRadius: 2
+
+MaxAverageHeight: 0.0
+
+MaxAverageDepth: 0.0
+
+Volatility1: 2.0
+
+Volatility2: 2.0
+
+VolatilityWeight1: 1.5
+
+VolatilityWeight2: 1.45
+
+DisableBiomeHeight: false
+
+CustomHeightControl: 300.0, 300.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -20.0, -40.0, -40.0, -56.0, -56.0, -80.0, -80.0, -160.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Rivers                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+########################
+# ImprovedRivers:false #
+########################
+
+RiverBiome: 
+
+#######################
+# ImprovedRivers:true #
+#######################
+
+RiverHeight: -1.0
+
+RiverVolatility: 0.3
+
+RiverWaterLevel: 63
+
+RiverCustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StoneBlock: STONE:0
+
+SurfaceBlock: GRASS:0
+
+GroundBlock: DIRT:0
+
+SurfaceAndGroundControl: 
+
+ReplacedBlocks: None
+
+################################
+# Water / Lava & Frozen States #
+################################
+
+UseWorldWaterLevel: true
+
+WaterLevelMax: 63
+
+WaterLevelMin: 0
+
+WaterBlock: STATIONARY_WATER:0
+
+IceBlock: ICE
+
+CooledLavaBlock: STATIONARY_LAVA:0
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                       Visuals and weather                       | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeTemperature: 0.95
+
+BiomeWetness: 0.9
+
+SkyColor: #7BA5FF
+
+WaterColor: #33FF33
+
+GrassColor: #31242A
+
+GrassColor2: #FFFFFF
+
+GrassColorIsMultiplier: false
+
+FoliageColor: #8B0000
+
+FoliageColor2: #FFFFFF
+
+FoliageColorIsMultiplier: false
+
+FogColor: #400000
+
+FogDensity: 0.6
+
+FogTimeWeight: 0.1
+
+FogRainWeight: 0.25
+
+FogThunderWeight: 0.5
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Resource queue                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Ore(DIRT:0,33,10,100.0,0,255,STONE:0)
+Ore(CLAY,17,8,100.0,0,255,STONE:0)
+Ore(STAINED_CLAY:13,33,10,100.0,0,79,STONE:0)
+Ore(STONE:1,33,10,100.0,0,79,STONE:0)
+Ore(STONE:3,33,10,100.0,0,79,STONE:0)
+Ore(STONE:5,33,10,100.0,0,79,STONE:0)
+Ore(COAL_ORE,17,20,100.0,0,250,STONE:0)
+Ore(IRON_ORE,9,20,100.0,0,250,STONE:0)
+Ore(GOLD_ORE,9,4,100.0,0,250,STONE:0)
+Ore(REDSTONE_ORE,8,8,100.0,0,250,STONE:0)
+Ore(DIAMOND_ORE,8,2,100.0,0,250,STONE:0)
+Ore(LAPIS_ORE,7,2,100.0,0,250,STONE:0)
+Liquid(STATIONARY_LAVA:0,15,100.0,8,250,STONE:0)
+Liquid(STATIONARY_LAVA:0,4,100.0,8,128,STONE:0)
+SmallLake(STATIONARY_LAVA:0,4,7.0,8,255)
+UnderWaterOre(SAND:0,7,3,100.0,DIRT:0,GRASS:0)
+UnderWaterOre(CLAY,4,1,100.0,DIRT:0,CLAY)
+UnderWaterOre(GRAVEL,6,1,100.0,DIRT:0,GRASS:0)
+Dungeon(8,100.0,0,255)
+Tree(1,RedFlower4,10,RedFlower3,10,RedFlower2,10,RedFlower1,10,GroundBush,100)
+Grass(Fern,NotGrouped,20,100.0,GRASS:0,DIRT:0)
+Grass(Tallgrass,NotGrouped,60,100.0,GRASS:0,DIRT:0)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                         Sapling resource                        | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+InheritSaplingResource: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Custom objects                         | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BiomeObjects: 
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Structures                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+StrongholdsEnabled: true
+
+WoodLandMansionsEnabled: false
+
+OceanMonumentsEnabled: false
+
+NetherFortressesEnabled: true
+
+VillageType: disabled
+
+MineshaftType: normal
+
+MineshaftRarity: 1.0
+
+RareBuildingType: jungleTemple
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                           Mob spawning                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SpawnMonsters: [{"mob": "minecraft:zombie_pigman", "weight": 4, "min": 1, "max": 6}]
+
+SpawnCreatures: []
+
+SpawnWaterCreatures: []
+
+SpawnAmbientCreatures: []
+
+BiomeDictId: HOT, WET, DENSE, JUNGLE
+
+InheritMobsBiomeName: 
+

@@ -1,0 +1,241 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 0
+
+Rarity: 100.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 255
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 100
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-3,21,0,CONCRETE:10)
+Block(-3,22,0,CONCRETE:10)
+Block(-3,23,0,CONCRETE:10)
+Block(-2,20,-1,STAINED_CLAY:11)
+Block(-2,20,0,STAINED_CLAY:11)
+Block(-2,20,1,STAINED_CLAY:11)
+Block(-2,21,-1,CONCRETE:10)
+Block(-2,21,0,CONCRETE:10)
+Block(-2,21,1,CONCRETE:10)
+Block(-2,22,-2,CONCRETE:10)
+Block(-2,22,-1,CONCRETE:5)
+Block(-2,22,1,CONCRETE:5)
+Block(-2,22,2,CONCRETE:10)
+Block(-2,23,-2,CONCRETE:10)
+Block(-2,23,2,CONCRETE:10)
+Block(-1,2,0,STAINED_CLAY:11)
+Block(-1,5,0,STAINED_CLAY:11)
+Block(-1,8,0,STAINED_CLAY:11)
+Block(-1,11,0,STAINED_CLAY:11)
+Block(-1,14,0,STAINED_CLAY:11)
+Block(-1,17,0,STAINED_CLAY:11)
+Block(-1,19,0,STAINED_CLAY:11)
+Block(-1,20,-2,STAINED_CLAY:11)
+Block(-1,20,-1,STAINED_CLAY:11)
+Block(-1,20,0,STAINED_CLAY:11)
+Block(-1,20,1,STAINED_CLAY:11)
+Block(-1,20,2,STAINED_CLAY:11)
+Block(-1,21,-2,CONCRETE:10)
+Block(-1,21,-1,SLIME_BLOCK)
+Block(-1,21,0,SLIME_BLOCK)
+Block(-1,21,1,SLIME_BLOCK)
+Block(-1,21,2,CONCRETE:10)
+Block(-1,22,-2,CONCRETE:5)
+Block(-1,22,2,CONCRETE:5)
+Block(0,0,0,STAINED_CLAY:2)
+Block(0,1,0,STAINED_CLAY:2)
+Block(0,2,-1,STAINED_CLAY:11)
+Block(0,2,0,STAINED_CLAY:2)
+Block(0,2,1,STAINED_CLAY:11)
+Block(0,3,0,STAINED_CLAY:2)
+Block(0,4,0,STAINED_CLAY:2)
+Block(0,5,-1,STAINED_CLAY:11)
+Block(0,5,0,STAINED_CLAY:2)
+Block(0,5,1,STAINED_CLAY:11)
+Block(0,6,0,STAINED_CLAY:2)
+Block(0,7,0,STAINED_CLAY:2)
+Block(0,8,-1,STAINED_CLAY:11)
+Block(0,8,0,STAINED_CLAY:2)
+Block(0,8,1,STAINED_CLAY:11)
+Block(0,9,0,STAINED_CLAY:2)
+Block(0,10,0,STAINED_CLAY:2)
+Block(0,11,-1,STAINED_CLAY:11)
+Block(0,11,0,STAINED_CLAY:2)
+Block(0,11,1,STAINED_CLAY:11)
+Block(0,12,0,STAINED_CLAY:2)
+Block(0,13,0,STAINED_CLAY:2)
+Block(0,14,-1,STAINED_CLAY:11)
+Block(0,14,0,STAINED_CLAY:2)
+Block(0,14,1,STAINED_CLAY:11)
+Block(0,15,0,STAINED_CLAY:2)
+Block(0,16,0,STAINED_CLAY:2)
+Block(0,17,-1,STAINED_CLAY:11)
+Block(0,17,0,STAINED_CLAY:2)
+Block(0,17,1,STAINED_CLAY:11)
+Block(0,18,0,STAINED_CLAY:2)
+Block(0,19,-1,STAINED_CLAY:11)
+Block(0,19,0,STAINED_CLAY:2)
+Block(0,19,1,STAINED_CLAY:11)
+Block(0,20,-2,STAINED_CLAY:11)
+Block(0,20,-1,STAINED_CLAY:11)
+Block(0,20,0,STAINED_CLAY:2)
+Block(0,20,1,STAINED_CLAY:11)
+Block(0,20,2,STAINED_CLAY:11)
+Block(0,21,-3,CONCRETE:10)
+Block(0,21,-2,CONCRETE:10)
+Block(0,21,-1,SLIME_BLOCK)
+Block(0,21,0,SLIME_BLOCK)
+Block(0,21,1,SLIME_BLOCK)
+Block(0,21,2,CONCRETE:10)
+Block(0,21,3,CONCRETE:10)
+Block(0,22,-3,CONCRETE:10)
+Block(0,22,3,CONCRETE:10)
+Block(0,23,-3,CONCRETE:10)
+Block(0,23,3,CONCRETE:10)
+Block(1,2,0,STAINED_CLAY:11)
+Block(1,5,0,STAINED_CLAY:11)
+Block(1,8,0,STAINED_CLAY:11)
+Block(1,11,0,STAINED_CLAY:11)
+Block(1,14,0,STAINED_CLAY:11)
+Block(1,17,0,STAINED_CLAY:11)
+Block(1,19,0,STAINED_CLAY:11)
+Block(1,20,-2,STAINED_CLAY:11)
+Block(1,20,-1,STAINED_CLAY:11)
+Block(1,20,0,STAINED_CLAY:11)
+Block(1,20,1,STAINED_CLAY:11)
+Block(1,20,2,STAINED_CLAY:11)
+Block(1,21,-2,CONCRETE:10)
+Block(1,21,-1,SLIME_BLOCK)
+Block(1,21,0,SLIME_BLOCK)
+Block(1,21,1,SLIME_BLOCK)
+Block(1,21,2,CONCRETE:10)
+Block(1,22,-2,CONCRETE:5)
+Block(1,22,2,CONCRETE:5)
+Block(2,20,-1,STAINED_CLAY:11)
+Block(2,20,0,STAINED_CLAY:11)
+Block(2,20,1,STAINED_CLAY:11)
+Block(2,21,-1,CONCRETE:10)
+Block(2,21,0,CONCRETE:10)
+Block(2,21,1,CONCRETE:10)
+Block(2,22,-2,CONCRETE:10)
+Block(2,22,-1,CONCRETE:5)
+Block(2,22,1,CONCRETE:5)
+Block(2,22,2,CONCRETE:10)
+Block(2,23,-2,CONCRETE:10)
+Block(2,23,2,CONCRETE:10)
+Block(3,21,0,CONCRETE:10)
+Block(3,22,0,CONCRETE:10)
+Block(3,23,0,CONCRETE:10)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

@@ -1,0 +1,261 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 0
+
+Rarity: 100.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 30
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: BottomDown
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 100
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-5,4,2,CONCRETE:15)
+Block(-5,4,3,CONCRETE:15)
+Block(-5,5,-1,NETHER_WART_BLOCK)
+Block(-5,5,2,CONCRETE:15)
+Block(-5,5,3,CONCRETE:15)
+Block(-5,5,4,CONCRETE:15)
+Block(-5,7,7,NETHER_WART_BLOCK)
+Block(-5,8,6,NETHER_WART_BLOCK)
+Block(-4,3,2,CONCRETE:15)
+Block(-4,4,-1,NETHER_WART_BLOCK)
+Block(-4,4,0,CONCRETE:15)
+Block(-4,4,1,CONCRETE:15)
+Block(-4,4,2,CONCRETE:15)
+Block(-4,5,-1,NETHER_WART_BLOCK)
+Block(-4,5,1,CONCRETE:15)
+Block(-4,5,2,CONCRETE:15)
+Block(-4,5,3,CONCRETE:15)
+Block(-4,5,4,CONCRETE:15)
+Block(-4,6,3,CONCRETE:15)
+Block(-4,6,4,CONCRETE:15)
+Block(-4,8,6,NETHER_WART_BLOCK)
+Block(-4,8,7,NETHER_WART_BLOCK)
+Block(-4,9,5,NETHER_WART_BLOCK)
+Block(-3,2,1,CONCRETE:15)
+Block(-3,3,0,CONCRETE:15)
+Block(-3,3,1,CONCRETE:15)
+Block(-3,3,2,CONCRETE:15)
+Block(-3,4,0,CONCRETE:15)
+Block(-3,4,1,CONCRETE:15)
+Block(-3,4,2,CONCRETE:15)
+Block(-3,5,2,CONCRETE:15)
+Block(-3,5,3,CONCRETE:15)
+Block(-3,5,4,CONCRETE:15)
+Block(-3,6,2,CONCRETE:15)
+Block(-3,6,3,CONCRETE:15)
+Block(-3,6,4,CONCRETE:15)
+Block(-3,7,3,CONCRETE:15)
+Block(-3,7,4,CONCRETE:15)
+Block(-3,8,-1,NETHER_WART_BLOCK)
+Block(-3,8,5,NETHER_WART_BLOCK)
+Block(-3,9,0,NETHER_WART_BLOCK)
+Block(-3,9,5,NETHER_WART_BLOCK)
+Block(-3,9,6,NETHER_WART_BLOCK)
+Block(-2,1,0,CONCRETE:15)
+Block(-2,1,1,CONCRETE:15)
+Block(-2,2,0,CONCRETE:15)
+Block(-2,2,1,CONCRETE:15)
+Block(-2,3,0,CONCRETE:15)
+Block(-2,3,1,CONCRETE:15)
+Block(-2,6,3,CONCRETE:15)
+Block(-2,6,4,CONCRETE:15)
+Block(-2,7,3,CONCRETE:15)
+Block(-2,7,4,CONCRETE:15)
+Block(-2,8,3,CONCRETE:15)
+Block(-2,8,4,CONCRETE:15)
+Block(-2,8,5,NETHER_WART_BLOCK)
+Block(-2,9,-1,NETHER_WART_BLOCK)
+Block(-2,9,0,NETHER_WART_BLOCK)
+Block(-2,10,1,NETHER_WART_BLOCK)
+Block(-2,12,4,NETHER_WART_BLOCK)
+Block(-2,13,3,NETHER_WART_BLOCK)
+Block(-1,1,-1,CONCRETE:15)
+Block(-1,1,0,CONCRETE:15)
+Block(-1,1,1,CONCRETE:15)
+Block(-1,1,2,CONCRETE:15)
+Block(-1,2,0,CONCRETE:15)
+Block(-1,2,1,CONCRETE:15)
+Block(-1,6,4,CONCRETE:15)
+Block(-1,7,3,CONCRETE:15)
+Block(-1,7,4,CONCRETE:15)
+Block(-1,8,2,CONCRETE:15)
+Block(-1,8,3,CONCRETE:15)
+Block(-1,8,4,CONCRETE:15)
+Block(-1,9,1,NETHER_WART_BLOCK)
+Block(-1,9,2,CONCRETE:15)
+Block(-1,9,3,CONCRETE:15)
+Block(-1,9,4,CONCRETE:15)
+Block(-1,10,0,NETHER_WART_BLOCK)
+Block(-1,10,1,NETHER_WART_BLOCK)
+Block(-1,13,2,NETHER_WART_BLOCK)
+Block(-1,13,3,NETHER_WART_BLOCK)
+Block(-1,13,4,NETHER_WART_BLOCK)
+Block(-1,14,2,NETHER_WART_BLOCK)
+Block(-1,14,3,NETHER_WART_BLOCK)
+Block(0,1,-1,CONCRETE:15)
+Block(0,1,0,CONCRETE:15)
+Block(0,1,1,CONCRETE:15)
+Block(0,2,-1,CONCRETE:15)
+Block(0,2,1,CONCRETE:15)
+Block(0,6,3,CONCRETE:15)
+Block(0,7,3,CONCRETE:15)
+Block(0,7,4,CONCRETE:15)
+Block(0,9,2,CONCRETE:15)
+Block(0,11,2,CONCRETE:15)
+Block(0,12,1,NETHER_WART_BLOCK)
+Block(0,12,2,CONCRETE:15)
+Block(0,13,1,NETHER_WART_BLOCK)
+Block(0,13,2,NETHER_WART_BLOCK)
+Block(0,14,3,NETHER_WART_BLOCK)
+Block(1,1,0,CONCRETE:15)
+Block(1,2,-1,CONCRETE:15)
+Block(1,2,1,CONCRETE:15)
+Block(1,6,2,CONCRETE:15)
+Block(1,6,3,CONCRETE:15)
+Block(1,7,2,CONCRETE:15)
+Block(1,9,1,CONCRETE:15)
+Block(1,9,2,CONCRETE:15)
+Block(1,10,1,CONCRETE:15)
+Block(1,10,2,CONCRETE:15)
+Block(1,11,2,CONCRETE:15)
+Block(1,13,1,NETHER_WART_BLOCK)
+Block(1,14,-1,NETHER_WART_BLOCK)
+Block(1,14,1,NETHER_WART_BLOCK)
+Block(1,15,0,NETHER_WART_BLOCK)
+Block(1,15,1,NETHER_WART_BLOCK)
+Block(2,2,1,CONCRETE:15)
+Block(2,2,2,CONCRETE:15)
+Block(2,7,1,CONCRETE:15)
+Block(2,7,2,CONCRETE:15)
+Block(2,8,1,CONCRETE:15)
+Block(2,9,0,NETHER_WART_BLOCK)
+Block(2,9,1,CONCRETE:15)
+Block(2,10,1,CONCRETE:15)
+Block(2,14,-1,NETHER_WART_BLOCK)
+Block(2,14,0,NETHER_WART_BLOCK)
+Block(2,15,1,NETHER_WART_BLOCK)
+Block(3,2,2,CONCRETE:15)
+Block(3,9,0,NETHER_WART_BLOCK)
+Block(3,10,-1,NETHER_WART_BLOCK)
+Block(3,10,0,NETHER_WART_BLOCK)
+Block(3,13,-1,NETHER_WART_BLOCK)
+Block(3,14,0,NETHER_WART_BLOCK)
+Block(3,14,1,NETHER_WART_BLOCK)
+Block(4,1,2,CONCRETE:15)
+Block(4,2,2,CONCRETE:15)
+Block(4,9,-1,NETHER_WART_BLOCK)
+Block(4,10,0,NETHER_WART_BLOCK)
+Block(4,13,-1,NETHER_WART_BLOCK)
+Block(5,1,2,CONCRETE:15)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

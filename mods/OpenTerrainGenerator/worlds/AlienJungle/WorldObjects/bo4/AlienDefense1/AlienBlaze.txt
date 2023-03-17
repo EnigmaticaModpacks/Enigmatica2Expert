@@ -1,0 +1,1 @@
+/summon blaze ~ ~1 ~ {HandItems:[{id:"minecraft:gunpowder",Count:1b},{}],HandDropChances:[1.0F,0.085F],PersistenceRequired:1,Glowing:1b,ActiveEffects:[{Id:14,Amplifier:0,Duration:19999980}]}

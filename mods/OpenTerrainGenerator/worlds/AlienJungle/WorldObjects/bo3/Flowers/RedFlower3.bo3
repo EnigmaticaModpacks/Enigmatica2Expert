@@ -1,0 +1,389 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 0
+
+Rarity: 100.0
+
+RotateRandomly: false
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 30
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: BottomDown
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 100
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-3,30,6,minecraft:red_glazed_terracotta:0)
+Block(-3,31,5,minecraft:red_glazed_terracotta:0)
+Block(-3,31,6,minecraft:red_glazed_terracotta:0)
+Block(-3,31,7,minecraft:red_glazed_terracotta:0)
+Block(-3,32,6,minecraft:red_glazed_terracotta:0)
+Block(-2,29,6,minecraft:red_glazed_terracotta:0)
+Block(-2,30,5,minecraft:red_glazed_terracotta:0)
+Block(-2,30,6,minecraft:red_glazed_terracotta:0)
+Block(-2,30,7,minecraft:red_glazed_terracotta:0)
+Block(-2,31,4,minecraft:red_glazed_terracotta:0)
+Block(-2,31,5,minecraft:red_glazed_terracotta:0)
+Block(-2,31,6,minecraft:red_glazed_terracotta:0)
+Block(-2,31,7,minecraft:red_glazed_terracotta:0)
+Block(-2,31,8,minecraft:red_glazed_terracotta:0)
+Block(-2,32,5,minecraft:red_glazed_terracotta:0)
+Block(-2,32,6,minecraft:red_glazed_terracotta:0)
+Block(-2,32,7,minecraft:red_glazed_terracotta:0)
+Block(-2,33,6,minecraft:red_glazed_terracotta:0)
+Block(-1,11,4,minecraft:red_glazed_terracotta:0)
+Block(-1,12,3,minecraft:red_glazed_terracotta:0)
+Block(-1,12,4,minecraft:red_glazed_terracotta:0)
+Block(-1,12,5,minecraft:red_glazed_terracotta:0)
+Block(-1,13,4,minecraft:red_glazed_terracotta:0)
+Block(-1,28,5,CONCRETE:15)
+Block(-1,28,6,CONCRETE:15)
+Block(-1,29,5,minecraft:red_glazed_terracotta:0)
+Block(-1,29,6,CONCRETE:15)
+Block(-1,29,7,minecraft:red_glazed_terracotta:0)
+Block(-1,30,4,minecraft:red_glazed_terracotta:0)
+Block(-1,30,5,minecraft:red_glazed_terracotta:0)
+Block(-1,30,6,CONCRETE:15)
+Block(-1,30,7,minecraft:red_glazed_terracotta:0)
+Block(-1,30,8,minecraft:red_glazed_terracotta:0)
+Block(-1,31,4,minecraft:red_glazed_terracotta:0)
+Block(-1,31,5,minecraft:red_glazed_terracotta:0)
+Block(-1,31,7,minecraft:red_glazed_terracotta:0)
+Block(-1,31,8,minecraft:red_glazed_terracotta:0)
+Block(-1,32,4,minecraft:red_glazed_terracotta:0)
+Block(-1,32,5,minecraft:red_glazed_terracotta:0)
+Block(-1,32,6,minecraft:red_glazed_terracotta:0)
+Block(-1,32,7,minecraft:red_glazed_terracotta:0)
+Block(-1,32,8,minecraft:red_glazed_terracotta:0)
+Block(-1,33,1,minecraft:red_glazed_terracotta:0)
+Block(-1,33,5,minecraft:red_glazed_terracotta:0)
+Block(-1,33,6,minecraft:red_glazed_terracotta:0)
+Block(-1,33,7,minecraft:red_glazed_terracotta:0)
+Block(-1,34,0,minecraft:red_glazed_terracotta:0)
+Block(-1,34,1,minecraft:red_glazed_terracotta:0)
+Block(-1,34,2,minecraft:red_glazed_terracotta:0)
+Block(-1,35,1,minecraft:red_glazed_terracotta:0)
+Block(0,9,4,CONCRETE:15)
+Block(0,10,4,CONCRETE:15)
+Block(0,11,3,minecraft:red_glazed_terracotta:0)
+Block(0,11,4,CONCRETE:15)
+Block(0,11,5,minecraft:red_glazed_terracotta:0)
+Block(0,12,3,minecraft:red_glazed_terracotta:0)
+Block(0,12,5,minecraft:red_glazed_terracotta:0)
+Block(0,13,3,minecraft:red_glazed_terracotta:0)
+Block(0,13,4,minecraft:red_glazed_terracotta:0)
+Block(0,13,5,minecraft:red_glazed_terracotta:0)
+Block(0,27,4,CONCRETE:15)
+Block(0,27,5,CONCRETE:15)
+Block(0,28,5,CONCRETE:15)
+Block(0,29,6,minecraft:red_glazed_terracotta:0)
+Block(0,30,5,minecraft:red_glazed_terracotta:0)
+Block(0,30,6,minecraft:red_glazed_terracotta:0)
+Block(0,30,7,minecraft:red_glazed_terracotta:0)
+Block(0,31,4,minecraft:red_glazed_terracotta:0)
+Block(0,31,5,minecraft:red_glazed_terracotta:0)
+Block(0,31,6,minecraft:red_glazed_terracotta:0)
+Block(0,31,7,minecraft:red_glazed_terracotta:0)
+Block(0,31,8,minecraft:red_glazed_terracotta:0)
+Block(0,32,1,minecraft:red_glazed_terracotta:0)
+Block(0,32,5,minecraft:red_glazed_terracotta:0)
+Block(0,32,6,minecraft:red_glazed_terracotta:0)
+Block(0,32,7,minecraft:red_glazed_terracotta:0)
+Block(0,33,0,minecraft:red_glazed_terracotta:0)
+Block(0,33,1,minecraft:red_glazed_terracotta:0)
+Block(0,33,2,minecraft:red_glazed_terracotta:0)
+Block(0,33,6,minecraft:red_glazed_terracotta:0)
+Block(0,34,-1,minecraft:red_glazed_terracotta:0)
+Block(0,34,0,minecraft:red_glazed_terracotta:0)
+Block(0,34,1,minecraft:red_glazed_terracotta:0)
+Block(0,34,2,minecraft:red_glazed_terracotta:0)
+Block(0,34,3,minecraft:red_glazed_terracotta:0)
+Block(0,35,0,minecraft:red_glazed_terracotta:0)
+Block(0,35,1,minecraft:red_glazed_terracotta:0)
+Block(0,35,2,minecraft:red_glazed_terracotta:0)
+Block(0,36,1,minecraft:red_glazed_terracotta:0)
+Block(1,8,3,CONCRETE:15)
+Block(1,9,3,CONCRETE:15)
+Block(1,10,3,CONCRETE:15)
+Block(1,11,4,minecraft:red_glazed_terracotta:0)
+Block(1,12,3,minecraft:red_glazed_terracotta:0)
+Block(1,12,4,minecraft:red_glazed_terracotta:0)
+Block(1,12,5,minecraft:red_glazed_terracotta:0)
+Block(1,13,4,minecraft:red_glazed_terracotta:0)
+Block(1,27,3,CONCRETE:15)
+Block(1,27,4,CONCRETE:15)
+Block(1,28,2,CONCRETE:15)
+Block(1,28,3,CONCRETE:15)
+Block(1,29,2,CONCRETE:15)
+Block(1,30,1,CONCRETE:15)
+Block(1,30,2,CONCRETE:15)
+Block(1,30,6,minecraft:red_glazed_terracotta:0)
+Block(1,31,1,CONCRETE:15)
+Block(1,31,5,minecraft:red_glazed_terracotta:0)
+Block(1,31,6,minecraft:red_glazed_terracotta:0)
+Block(1,31,7,minecraft:red_glazed_terracotta:0)
+Block(1,32,0,minecraft:red_glazed_terracotta:0)
+Block(1,32,1,CONCRETE:15)
+Block(1,32,2,minecraft:red_glazed_terracotta:0)
+Block(1,32,6,minecraft:red_glazed_terracotta:0)
+Block(1,33,-1,minecraft:red_glazed_terracotta:0)
+Block(1,33,0,minecraft:red_glazed_terracotta:0)
+Block(1,33,1,CONCRETE:15)
+Block(1,33,2,minecraft:red_glazed_terracotta:0)
+Block(1,33,3,minecraft:red_glazed_terracotta:0)
+Block(1,34,-1,minecraft:red_glazed_terracotta:0)
+Block(1,34,0,minecraft:red_glazed_terracotta:0)
+Block(1,34,1,minecraft:red_glazed_terracotta:0)
+Block(1,34,2,minecraft:red_glazed_terracotta:0)
+Block(1,34,3,minecraft:red_glazed_terracotta:0)
+Block(1,35,-1,minecraft:red_glazed_terracotta:0)
+Block(1,35,0,minecraft:red_glazed_terracotta:0)
+Block(1,35,1,minecraft:red_glazed_terracotta:0)
+Block(1,35,2,minecraft:red_glazed_terracotta:0)
+Block(1,35,3,minecraft:red_glazed_terracotta:0)
+Block(1,36,0,minecraft:red_glazed_terracotta:0)
+Block(1,36,1,minecraft:red_glazed_terracotta:0)
+Block(1,36,2,minecraft:red_glazed_terracotta:0)
+Block(2,2,2,CONCRETE:15)
+Block(2,3,2,CONCRETE:15)
+Block(2,4,2,CONCRETE:15)
+Block(2,5,2,CONCRETE:15)
+Block(2,6,2,CONCRETE:15)
+Block(2,7,2,CONCRETE:15)
+Block(2,12,2,CONCRETE:15)
+Block(2,13,2,CONCRETE:15)
+Block(2,14,2,CONCRETE:15)
+Block(2,15,2,CONCRETE:15)
+Block(2,16,2,CONCRETE:15)
+Block(2,17,2,CONCRETE:15)
+Block(2,17,3,minecraft:red_glazed_terracotta:0)
+Block(2,18,3,minecraft:red_glazed_terracotta:0)
+Block(2,21,6,minecraft:red_glazed_terracotta:0)
+Block(2,22,5,minecraft:red_glazed_terracotta:0)
+Block(2,22,6,minecraft:red_glazed_terracotta:0)
+Block(2,22,7,minecraft:red_glazed_terracotta:0)
+Block(2,23,3,CONCRETE:15)
+Block(2,23,6,minecraft:red_glazed_terracotta:0)
+Block(2,24,3,CONCRETE:15)
+Block(2,25,3,CONCRETE:15)
+Block(2,26,3,CONCRETE:15)
+Block(2,27,3,CONCRETE:15)
+Block(2,32,1,minecraft:red_glazed_terracotta:0)
+Block(2,33,0,minecraft:red_glazed_terracotta:0)
+Block(2,33,1,minecraft:red_glazed_terracotta:0)
+Block(2,33,2,minecraft:red_glazed_terracotta:0)
+Block(2,34,-1,minecraft:red_glazed_terracotta:0)
+Block(2,34,0,minecraft:red_glazed_terracotta:0)
+Block(2,34,1,minecraft:red_glazed_terracotta:0)
+Block(2,34,2,minecraft:red_glazed_terracotta:0)
+Block(2,34,3,minecraft:red_glazed_terracotta:0)
+Block(2,35,0,minecraft:red_glazed_terracotta:0)
+Block(2,35,1,minecraft:red_glazed_terracotta:0)
+Block(2,35,2,minecraft:red_glazed_terracotta:0)
+Block(2,36,1,minecraft:red_glazed_terracotta:0)
+Block(3,7,2,CONCRETE:15)
+Block(3,8,1,CONCRETE:15)
+Block(3,9,1,CONCRETE:15)
+Block(3,10,1,CONCRETE:15)
+Block(3,11,1,CONCRETE:15)
+Block(3,12,1,CONCRETE:15)
+Block(3,12,2,CONCRETE:15)
+Block(3,13,0,CONCRETE:15)
+Block(3,13,1,CONCRETE:15)
+Block(3,16,-1,minecraft:red_glazed_terracotta:0)
+Block(3,17,-2,minecraft:red_glazed_terracotta:0)
+Block(3,17,-1,minecraft:red_glazed_terracotta:0)
+Block(3,17,0,minecraft:red_glazed_terracotta:0)
+Block(3,18,-1,minecraft:red_glazed_terracotta:0)
+Block(3,18,3,minecraft:red_glazed_terracotta:0)
+Block(3,18,4,CONCRETE:15)
+Block(3,19,3,minecraft:red_glazed_terracotta:0)
+Block(3,19,5,CONCRETE:15)
+Block(3,20,3,minecraft:red_glazed_terracotta:0)
+Block(3,20,6,minecraft:red_glazed_terracotta:0)
+Block(3,21,3,CONCRETE:15)
+Block(3,21,5,minecraft:red_glazed_terracotta:0)
+Block(3,21,6,minecraft:red_glazed_terracotta:0)
+Block(3,21,7,minecraft:red_glazed_terracotta:0)
+Block(3,22,3,CONCRETE:15)
+Block(3,22,4,minecraft:red_glazed_terracotta:0)
+Block(3,22,5,minecraft:red_glazed_terracotta:0)
+Block(3,22,6,minecraft:red_glazed_terracotta:0)
+Block(3,22,7,minecraft:red_glazed_terracotta:0)
+Block(3,22,8,minecraft:red_glazed_terracotta:0)
+Block(3,23,3,CONCRETE:15)
+Block(3,23,5,minecraft:red_glazed_terracotta:0)
+Block(3,23,6,minecraft:red_glazed_terracotta:0)
+Block(3,23,7,minecraft:red_glazed_terracotta:0)
+Block(3,24,6,minecraft:red_glazed_terracotta:0)
+Block(3,33,1,minecraft:red_glazed_terracotta:0)
+Block(3,34,0,minecraft:red_glazed_terracotta:0)
+Block(3,34,1,minecraft:red_glazed_terracotta:0)
+Block(3,34,2,minecraft:red_glazed_terracotta:0)
+Block(3,35,1,minecraft:red_glazed_terracotta:0)
+Block(4,9,1,CONCRETE:15)
+Block(4,10,1,CONCRETE:15)
+Block(4,13,0,CONCRETE:15)
+Block(4,14,-1,CONCRETE:15)
+Block(4,14,0,CONCRETE:15)
+Block(4,15,-1,CONCRETE:15)
+Block(4,16,-2,minecraft:red_glazed_terracotta:0)
+Block(4,16,-1,CONCRETE:15)
+Block(4,16,0,minecraft:red_glazed_terracotta:0)
+Block(4,17,-2,minecraft:red_glazed_terracotta:0)
+Block(4,17,0,minecraft:red_glazed_terracotta:0)
+Block(4,18,-2,minecraft:red_glazed_terracotta:0)
+Block(4,18,-1,minecraft:red_glazed_terracotta:0)
+Block(4,18,0,minecraft:red_glazed_terracotta:0)
+Block(4,19,5,CONCRETE:15)
+Block(4,20,5,minecraft:red_glazed_terracotta:0)
+Block(4,20,6,CONCRETE:15)
+Block(4,20,7,minecraft:red_glazed_terracotta:0)
+Block(4,21,4,minecraft:red_glazed_terracotta:0)
+Block(4,21,5,minecraft:red_glazed_terracotta:0)
+Block(4,21,6,CONCRETE:15)
+Block(4,21,7,minecraft:red_glazed_terracotta:0)
+Block(4,21,8,minecraft:red_glazed_terracotta:0)
+Block(4,22,4,minecraft:red_glazed_terracotta:0)
+Block(4,22,5,minecraft:red_glazed_terracotta:0)
+Block(4,22,6,minecraft:red_glazed_terracotta:0)
+Block(4,22,7,minecraft:red_glazed_terracotta:0)
+Block(4,22,8,minecraft:red_glazed_terracotta:0)
+Block(4,23,4,minecraft:red_glazed_terracotta:0)
+Block(4,23,5,minecraft:red_glazed_terracotta:0)
+Block(4,23,6,minecraft:red_glazed_terracotta:0)
+Block(4,23,7,minecraft:red_glazed_terracotta:0)
+Block(4,23,8,minecraft:red_glazed_terracotta:0)
+Block(4,24,5,minecraft:red_glazed_terracotta:0)
+Block(4,24,6,minecraft:red_glazed_terracotta:0)
+Block(4,24,7,minecraft:red_glazed_terracotta:0)
+Block(5,16,-1,minecraft:red_glazed_terracotta:0)
+Block(5,17,-2,minecraft:red_glazed_terracotta:0)
+Block(5,17,-1,minecraft:red_glazed_terracotta:0)
+Block(5,17,0,minecraft:red_glazed_terracotta:0)
+Block(5,18,-1,minecraft:red_glazed_terracotta:0)
+Block(5,20,6,minecraft:red_glazed_terracotta:0)
+Block(5,21,5,minecraft:red_glazed_terracotta:0)
+Block(5,21,6,minecraft:red_glazed_terracotta:0)
+Block(5,21,7,minecraft:red_glazed_terracotta:0)
+Block(5,22,4,minecraft:red_glazed_terracotta:0)
+Block(5,22,5,minecraft:red_glazed_terracotta:0)
+Block(5,22,6,minecraft:red_glazed_terracotta:0)
+Block(5,22,7,minecraft:red_glazed_terracotta:0)
+Block(5,22,8,minecraft:red_glazed_terracotta:0)
+Block(5,23,5,minecraft:red_glazed_terracotta:0)
+Block(5,23,6,minecraft:red_glazed_terracotta:0)
+Block(5,23,7,minecraft:red_glazed_terracotta:0)
+Block(5,24,6,minecraft:red_glazed_terracotta:0)
+Block(6,21,6,minecraft:red_glazed_terracotta:0)
+Block(6,22,5,minecraft:red_glazed_terracotta:0)
+Block(6,22,6,minecraft:red_glazed_terracotta:0)
+Block(6,22,7,minecraft:red_glazed_terracotta:0)
+Block(6,23,6,minecraft:red_glazed_terracotta:0)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

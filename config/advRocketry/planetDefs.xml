@@ -133,6 +133,14 @@
 			<orbitalDistance>60</orbitalDistance>
 			<rotationalPeriod>12000</rotationalPeriod>
 		</planet>
+		<planet name="Alien Jungle" DIMID="200" dimMapping="" customIcon="earthlike">
+			<skyColor>1,0,1</skyColor>
+			<fogColor>1,0,0.5</fogColor>
+			<atmosphereDensity>100</atmosphereDensity>
+			<gravitationalMultiplier>95</gravitationalMultiplier>
+			<orbitalDistance>60</orbitalDistance>
+			<rotationalPeriod>12000</rotationalPeriod>
+		</planet>
 		<planet name="Terra Nova" DIMID="112" customIcon="earthlike">
 			<biomeIds>biomesoplenty:crag,biomesoplenty:quagmire</biomeIds>
 			<skyColor>1,0,1</skyColor>

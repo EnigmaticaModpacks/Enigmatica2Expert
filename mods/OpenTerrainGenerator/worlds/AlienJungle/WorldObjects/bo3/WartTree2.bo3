@@ -1,0 +1,301 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 0
+
+Rarity: 100.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 30
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: BottomDown
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 100
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-7,7,2,NETHER_WART_BLOCK)
+Block(-7,8,2,NETHER_WART_BLOCK)
+Block(-7,9,2,NETHER_WART_BLOCK)
+Block(-7,10,2,NETHER_WART_BLOCK)
+Block(-6,8,-1,NETHER_WART_BLOCK)
+Block(-6,9,-1,NETHER_WART_BLOCK)
+Block(-6,9,0,NETHER_WART_BLOCK)
+Block(-6,9,3,NETHER_WART_BLOCK)
+Block(-6,10,-1,NETHER_WART_BLOCK)
+Block(-6,10,0,NETHER_WART_BLOCK)
+Block(-6,10,1,NETHER_WART_BLOCK)
+Block(-6,10,2,NETHER_WART_BLOCK)
+Block(-6,10,3,NETHER_WART_BLOCK)
+Block(-5,7,4,NETHER_WART_BLOCK)
+Block(-5,8,4,NETHER_WART_BLOCK)
+Block(-5,9,1,GLOWSTONE)
+Block(-5,9,4,NETHER_WART_BLOCK)
+Block(-5,10,-1,NETHER_WART_BLOCK)
+Block(-5,10,0,NETHER_WART_BLOCK)
+Block(-5,10,1,NETHER_WART_BLOCK)
+Block(-5,10,2,NETHER_WART_BLOCK)
+Block(-5,10,3,NETHER_WART_BLOCK)
+Block(-5,10,4,NETHER_WART_BLOCK)
+Block(-5,11,0,NETHER_WART_BLOCK)
+Block(-5,11,1,NETHER_WART_BLOCK)
+Block(-5,11,2,NETHER_WART_BLOCK)
+Block(-4,8,1,GLOWSTONE)
+Block(-4,9,0,GLOWSTONE)
+Block(-4,9,1,GLOWSTONE)
+Block(-4,10,-1,NETHER_WART_BLOCK)
+Block(-4,10,0,NETHER_WART_BLOCK)
+Block(-4,10,1,NETHER_WART_BLOCK)
+Block(-4,10,2,NETHER_WART_BLOCK)
+Block(-4,10,3,NETHER_WART_BLOCK)
+Block(-4,11,0,NETHER_WART_BLOCK)
+Block(-4,11,1,NETHER_WART_BLOCK)
+Block(-4,11,2,NETHER_WART_BLOCK)
+Block(-3,0,1,CONCRETE:15)
+Block(-3,1,1,CONCRETE:15)
+Block(-3,2,1,CONCRETE:15)
+Block(-3,3,1,CONCRETE:15)
+Block(-3,4,1,CONCRETE:15)
+Block(-3,5,1,CONCRETE:15)
+Block(-3,6,1,CONCRETE:15)
+Block(-3,7,1,CONCRETE:15)
+Block(-3,8,1,CONCRETE:15)
+Block(-3,9,0,GLOWSTONE)
+Block(-3,9,1,CONCRETE:15)
+Block(-3,9,3,NETHER_WART_BLOCK)
+Block(-3,10,-1,NETHER_WART_BLOCK)
+Block(-3,10,0,NETHER_WART_BLOCK)
+Block(-3,10,1,CONCRETE:15)
+Block(-3,10,2,NETHER_WART_BLOCK)
+Block(-3,10,3,NETHER_WART_BLOCK)
+Block(-3,11,0,NETHER_WART_BLOCK)
+Block(-3,11,1,NETHER_WART_BLOCK)
+Block(-3,11,2,NETHER_WART_BLOCK)
+Block(-3,13,-1,NETHER_WART_BLOCK)
+Block(-3,13,3,NETHER_WART_BLOCK)
+Block(-3,14,-1,NETHER_WART_BLOCK)
+Block(-3,14,0,NETHER_WART_BLOCK)
+Block(-3,14,1,NETHER_WART_BLOCK)
+Block(-3,14,2,NETHER_WART_BLOCK)
+Block(-3,14,3,NETHER_WART_BLOCK)
+Block(-3,15,0,NETHER_WART_BLOCK)
+Block(-3,15,1,NETHER_WART_BLOCK)
+Block(-2,6,-1,NETHER_WART_BLOCK)
+Block(-2,7,-1,NETHER_WART_BLOCK)
+Block(-2,8,-1,NETHER_WART_BLOCK)
+Block(-2,8,2,NETHER_WART_BLOCK)
+Block(-2,9,-1,NETHER_WART_BLOCK)
+Block(-2,9,2,NETHER_WART_BLOCK)
+Block(-2,10,-1,NETHER_WART_BLOCK)
+Block(-2,10,0,NETHER_WART_BLOCK)
+Block(-2,10,1,CONCRETE:15)
+Block(-2,10,2,NETHER_WART_BLOCK)
+Block(-2,11,1,NETHER_WART_BLOCK)
+Block(-2,13,-2,NETHER_WART_BLOCK)
+Block(-2,13,1,NETHER_WART_BLOCK)
+Block(-2,14,-1,NETHER_WART_BLOCK)
+Block(-2,14,0,NETHER_WART_BLOCK)
+Block(-2,14,1,NETHER_WART_BLOCK)
+Block(-2,14,2,NETHER_WART_BLOCK)
+Block(-2,14,3,NETHER_WART_BLOCK)
+Block(-2,14,4,NETHER_WART_BLOCK)
+Block(-2,15,-1,NETHER_WART_BLOCK)
+Block(-2,15,0,NETHER_WART_BLOCK)
+Block(-2,15,1,NETHER_WART_BLOCK)
+Block(-2,15,2,NETHER_WART_BLOCK)
+Block(-1,11,1,CONCRETE:15)
+Block(-1,11,4,NETHER_WART_BLOCK)
+Block(-1,12,-2,NETHER_WART_BLOCK)
+Block(-1,12,1,CONCRETE:15)
+Block(-1,12,4,NETHER_WART_BLOCK)
+Block(-1,13,-2,NETHER_WART_BLOCK)
+Block(-1,13,0,NETHER_WART_BLOCK)
+Block(-1,13,1,CONCRETE:15)
+Block(-1,13,4,NETHER_WART_BLOCK)
+Block(-1,14,-2,NETHER_WART_BLOCK)
+Block(-1,14,-1,NETHER_WART_BLOCK)
+Block(-1,14,0,NETHER_WART_BLOCK)
+Block(-1,14,1,NETHER_WART_BLOCK)
+Block(-1,14,2,NETHER_WART_BLOCK)
+Block(-1,14,3,NETHER_WART_BLOCK)
+Block(-1,14,4,NETHER_WART_BLOCK)
+Block(-1,15,-1,NETHER_WART_BLOCK)
+Block(-1,15,0,NETHER_WART_BLOCK)
+Block(-1,15,1,NETHER_WART_BLOCK)
+Block(-1,15,2,NETHER_WART_BLOCK)
+Block(-1,15,3,NETHER_WART_BLOCK)
+Block(-1,15,4,NETHER_WART_BLOCK)
+Block(0,10,-2,NETHER_WART_BLOCK)
+Block(0,11,-2,NETHER_WART_BLOCK)
+Block(0,12,-2,NETHER_WART_BLOCK)
+Block(0,12,1,GLOWSTONE)
+Block(0,12,4,NETHER_WART_BLOCK)
+Block(0,13,-2,NETHER_WART_BLOCK)
+Block(0,13,-1,GLOWSTONE)
+Block(0,13,0,NETHER_WART_BLOCK)
+Block(0,13,1,CONCRETE:15)
+Block(0,13,4,NETHER_WART_BLOCK)
+Block(0,14,-2,NETHER_WART_BLOCK)
+Block(0,14,-1,NETHER_WART_BLOCK)
+Block(0,14,0,NETHER_WART_BLOCK)
+Block(0,14,1,NETHER_WART_BLOCK)
+Block(0,14,2,NETHER_WART_BLOCK)
+Block(0,14,3,NETHER_WART_BLOCK)
+Block(0,14,4,NETHER_WART_BLOCK)
+Block(0,14,5,NETHER_WART_BLOCK)
+Block(0,15,-1,NETHER_WART_BLOCK)
+Block(0,15,0,NETHER_WART_BLOCK)
+Block(0,15,1,NETHER_WART_BLOCK)
+Block(0,15,2,NETHER_WART_BLOCK)
+Block(0,15,3,NETHER_WART_BLOCK)
+Block(1,8,4,NETHER_WART_BLOCK)
+Block(1,9,4,NETHER_WART_BLOCK)
+Block(1,10,4,NETHER_WART_BLOCK)
+Block(1,11,4,NETHER_WART_BLOCK)
+Block(1,12,4,NETHER_WART_BLOCK)
+Block(1,13,-2,NETHER_WART_BLOCK)
+Block(1,13,-1,GLOWSTONE)
+Block(1,13,4,NETHER_WART_BLOCK)
+Block(1,14,-2,NETHER_WART_BLOCK)
+Block(1,14,-1,NETHER_WART_BLOCK)
+Block(1,14,0,NETHER_WART_BLOCK)
+Block(1,14,1,NETHER_WART_BLOCK)
+Block(1,14,2,NETHER_WART_BLOCK)
+Block(1,14,3,NETHER_WART_BLOCK)
+Block(1,14,4,NETHER_WART_BLOCK)
+Block(1,14,5,NETHER_WART_BLOCK)
+Block(1,15,-1,NETHER_WART_BLOCK)
+Block(1,15,0,NETHER_WART_BLOCK)
+Block(1,15,1,NETHER_WART_BLOCK)
+Block(1,15,2,NETHER_WART_BLOCK)
+Block(2,9,-2,NETHER_WART_BLOCK)
+Block(2,10,-2,NETHER_WART_BLOCK)
+Block(2,11,-2,NETHER_WART_BLOCK)
+Block(2,12,-2,NETHER_WART_BLOCK)
+Block(2,13,-2,NETHER_WART_BLOCK)
+Block(2,14,-1,NETHER_WART_BLOCK)
+Block(2,14,0,NETHER_WART_BLOCK)
+Block(2,14,1,NETHER_WART_BLOCK)
+Block(2,14,2,NETHER_WART_BLOCK)
+Block(2,14,3,NETHER_WART_BLOCK)
+Block(2,14,4,NETHER_WART_BLOCK)
+Block(2,15,1,NETHER_WART_BLOCK)
+Block(3,10,0,NETHER_WART_BLOCK)
+Block(3,11,0,NETHER_WART_BLOCK)
+Block(3,11,2,NETHER_WART_BLOCK)
+Block(3,12,0,NETHER_WART_BLOCK)
+Block(3,12,2,NETHER_WART_BLOCK)
+Block(3,12,3,NETHER_WART_BLOCK)
+Block(3,13,0,NETHER_WART_BLOCK)
+Block(3,13,1,NETHER_WART_BLOCK)
+Block(3,13,2,NETHER_WART_BLOCK)
+Block(3,13,3,NETHER_WART_BLOCK)
+Block(3,14,0,NETHER_WART_BLOCK)
+Block(3,14,1,NETHER_WART_BLOCK)
+Block(3,14,2,NETHER_WART_BLOCK)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
