@@ -114,5 +114,18 @@
 	[<extrautils2:analogcrafter>, <rftools:crafter2>, <extrautils2:analogcrafter>], 
 	[null, <ore:gearRedstone>, null]]);
 	
-	
-	
+# Elevator
+	recipes.remove(<rftools:elevator>);
+	recipes.addShapedMirrored("RFTools Elevator",
+	<rftools:elevator>,
+	[[<ore:dustRedstone>,<openblocks:elevator:*>,<ore:dustRedstone>],
+	[<ore:blockGlass>,<extrautils2:machine:0>,<ore:blockGlass>],
+	[<ore:dustRedstone>,<ore:blockGlass>,<ore:dustRedstone>]]);
+
+# Screen Controller
+	recipes.remove(<rftools:screen_controller>);
+	recipes.addShapedMirrored("RFTools Screen Controller",
+	<rftools:screen_controller>,
+	[[<ore:dustRedstone>,<ore:materialEnderPearl>,<ore:dustRedstone>],
+	[<ore:dustRedstone>,<extrautils2:machine:0>,<ore:dustRedstone>],
+	[<ore:dustRedstone>,<ore:torchRedstoneActive>,<ore:dustRedstone>]]);
