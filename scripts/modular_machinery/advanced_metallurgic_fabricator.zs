@@ -69,3 +69,11 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_alumite_ingot", m
 	.addItemInput(<ore:ingotIron>, 2)
 	.addItemInput(<ore:obsidian>, 2)
 	.build();
+
+mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_pigiron_ingot", machineName, 10)
+	.addEnergyPerTickInput(100000)
+	.addItemOutput(<ore:ingotPigiron>, 2)
+	.addItemInput(<ore:itemClay>, 1)
+	.addItemInput(<ore:ingotIron>, 2)
+	.addItemInput(<minecraft:rotten_flesh>, 2)
+	.build();
