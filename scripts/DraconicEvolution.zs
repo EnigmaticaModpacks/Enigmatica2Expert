@@ -127,3 +127,19 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 	[[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>],
 	[<appliedenergistics2:material:41>,<draconicevolution:energy_crystal:0>,<appliedenergistics2:material:41>],
 	[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>]]);
+
+# Flux Gate
+	recipes.remove(<draconicevolution:flow_gate:0>);
+	recipes.addShapedMirrored("Flux Gate", 
+	<draconicevolution:flow_gate:0>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<ore:blockRedstone>,<nuclearcraft:part:10>,<ore:blockRedstone>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);
+
+# Fluid Gate
+	recipes.remove(<draconicevolution:flow_gate:8>);
+	recipes.addShapedMirrored("Fluid Gate", 
+	<draconicevolution:flow_gate:8>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<minecraft:bucket>,<nuclearcraft:part:10>,<minecraft:bucket>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);
