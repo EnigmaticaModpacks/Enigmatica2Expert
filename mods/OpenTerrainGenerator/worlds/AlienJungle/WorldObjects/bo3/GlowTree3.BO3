@@ -1,0 +1,393 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Unknown
+
+Description: This BO3 was converted from a schematic using OTGEdit. The author and description information of the schematic could not be found. If you know who the author of the schematic is then please add this information.
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: false
+
+Frequency: 1
+
+Rarity: 10.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 255
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 100
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-5,28,3,GLOWSTONE)
+Block(-5,29,2,GLOWSTONE)
+Block(-5,29,3,GLOWSTONE)
+Block(-5,29,4,GLOWSTONE)
+Block(-5,30,3,GLOWSTONE)
+Block(-4,27,3,GLOWSTONE)
+Block(-4,28,2,GLOWSTONE)
+Block(-4,28,3,GLOWSTONE)
+Block(-4,28,4,GLOWSTONE)
+Block(-4,29,1,GLOWSTONE)
+Block(-4,29,2,GLOWSTONE)
+Block(-4,29,3,GLOWSTONE)
+Block(-4,29,4,GLOWSTONE)
+Block(-4,29,5,GLOWSTONE)
+Block(-4,30,2,GLOWSTONE)
+Block(-4,30,3,GLOWSTONE)
+Block(-4,30,4,GLOWSTONE)
+Block(-4,31,3,GLOWSTONE)
+Block(-3,9,1,GLOWSTONE)
+Block(-3,10,0,GLOWSTONE)
+Block(-3,10,1,GLOWSTONE)
+Block(-3,10,2,GLOWSTONE)
+Block(-3,11,1,GLOWSTONE)
+Block(-3,26,2,PRISMARINE:0)
+Block(-3,26,3,PRISMARINE:0)
+Block(-3,27,2,GLOWSTONE)
+Block(-3,27,3,PRISMARINE:0)
+Block(-3,27,4,GLOWSTONE)
+Block(-3,28,1,GLOWSTONE)
+Block(-3,28,2,GLOWSTONE)
+Block(-3,28,3,PRISMARINE:0)
+Block(-3,28,4,GLOWSTONE)
+Block(-3,28,5,GLOWSTONE)
+Block(-3,29,1,GLOWSTONE)
+Block(-3,29,2,GLOWSTONE)
+Block(-3,29,4,GLOWSTONE)
+Block(-3,29,5,GLOWSTONE)
+Block(-3,30,1,GLOWSTONE)
+Block(-3,30,2,GLOWSTONE)
+Block(-3,30,3,GLOWSTONE)
+Block(-3,30,4,GLOWSTONE)
+Block(-3,30,5,GLOWSTONE)
+Block(-3,31,-2,GLOWSTONE)
+Block(-3,31,2,GLOWSTONE)
+Block(-3,31,3,GLOWSTONE)
+Block(-3,31,4,GLOWSTONE)
+Block(-3,32,-3,GLOWSTONE)
+Block(-3,32,-2,GLOWSTONE)
+Block(-3,32,-1,GLOWSTONE)
+Block(-3,33,-2,GLOWSTONE)
+Block(-2,7,1,PRISMARINE:0)
+Block(-2,8,1,PRISMARINE:0)
+Block(-2,9,0,GLOWSTONE)
+Block(-2,9,1,PRISMARINE:0)
+Block(-2,9,2,GLOWSTONE)
+Block(-2,10,0,GLOWSTONE)
+Block(-2,10,2,GLOWSTONE)
+Block(-2,11,0,GLOWSTONE)
+Block(-2,11,1,GLOWSTONE)
+Block(-2,11,2,GLOWSTONE)
+Block(-2,25,1,PRISMARINE:0)
+Block(-2,25,2,PRISMARINE:0)
+Block(-2,26,2,PRISMARINE:0)
+Block(-2,27,3,GLOWSTONE)
+Block(-2,28,2,GLOWSTONE)
+Block(-2,28,3,GLOWSTONE)
+Block(-2,28,4,GLOWSTONE)
+Block(-2,29,1,GLOWSTONE)
+Block(-2,29,2,GLOWSTONE)
+Block(-2,29,3,GLOWSTONE)
+Block(-2,29,4,GLOWSTONE)
+Block(-2,29,5,GLOWSTONE)
+Block(-2,30,-2,GLOWSTONE)
+Block(-2,30,2,GLOWSTONE)
+Block(-2,30,3,GLOWSTONE)
+Block(-2,30,4,GLOWSTONE)
+Block(-2,31,-3,GLOWSTONE)
+Block(-2,31,-2,GLOWSTONE)
+Block(-2,31,-1,GLOWSTONE)
+Block(-2,31,3,GLOWSTONE)
+Block(-2,32,-4,GLOWSTONE)
+Block(-2,32,-3,GLOWSTONE)
+Block(-2,32,-2,GLOWSTONE)
+Block(-2,32,-1,GLOWSTONE)
+Block(-2,32,0,GLOWSTONE)
+Block(-2,33,-3,GLOWSTONE)
+Block(-2,33,-2,GLOWSTONE)
+Block(-2,33,-1,GLOWSTONE)
+Block(-2,34,-2,GLOWSTONE)
+Block(-1,6,0,PRISMARINE:0)
+Block(-1,7,0,PRISMARINE:0)
+Block(-1,8,0,PRISMARINE:0)
+Block(-1,9,1,GLOWSTONE)
+Block(-1,10,0,GLOWSTONE)
+Block(-1,10,1,GLOWSTONE)
+Block(-1,10,2,GLOWSTONE)
+Block(-1,11,1,GLOWSTONE)
+Block(-1,25,0,PRISMARINE:0)
+Block(-1,25,1,PRISMARINE:0)
+Block(-1,26,-1,PRISMARINE:0)
+Block(-1,26,0,PRISMARINE:0)
+Block(-1,27,-1,PRISMARINE:0)
+Block(-1,28,-2,PRISMARINE:0)
+Block(-1,28,-1,PRISMARINE:0)
+Block(-1,28,3,GLOWSTONE)
+Block(-1,29,-2,PRISMARINE:0)
+Block(-1,29,2,GLOWSTONE)
+Block(-1,29,3,GLOWSTONE)
+Block(-1,29,4,GLOWSTONE)
+Block(-1,30,-3,GLOWSTONE)
+Block(-1,30,-2,PRISMARINE:0)
+Block(-1,30,-1,GLOWSTONE)
+Block(-1,30,3,GLOWSTONE)
+Block(-1,31,-4,GLOWSTONE)
+Block(-1,31,-3,GLOWSTONE)
+Block(-1,31,-2,PRISMARINE:0)
+Block(-1,31,-1,GLOWSTONE)
+Block(-1,31,0,GLOWSTONE)
+Block(-1,32,-4,GLOWSTONE)
+Block(-1,32,-3,GLOWSTONE)
+Block(-1,32,-2,GLOWSTONE)
+Block(-1,32,-1,GLOWSTONE)
+Block(-1,32,0,GLOWSTONE)
+Block(-1,33,-4,GLOWSTONE)
+Block(-1,33,-3,GLOWSTONE)
+Block(-1,33,-2,GLOWSTONE)
+Block(-1,33,-1,GLOWSTONE)
+Block(-1,33,0,GLOWSTONE)
+Block(-1,34,-3,GLOWSTONE)
+Block(-1,34,-2,GLOWSTONE)
+Block(-1,34,-1,GLOWSTONE)
+Block(0,0,-1,PRISMARINE:0)
+Block(0,0,0,PRISMARINE:0)
+Block(0,1,-1,PRISMARINE:0)
+Block(0,1,0,PRISMARINE:0)
+Block(0,2,-1,PRISMARINE:0)
+Block(0,3,-1,PRISMARINE:0)
+Block(0,4,-1,PRISMARINE:0)
+Block(0,5,-1,PRISMARINE:0)
+Block(0,10,-1,PRISMARINE:0)
+Block(0,11,-1,PRISMARINE:0)
+Block(0,12,-1,PRISMARINE:0)
+Block(0,13,-1,PRISMARINE:0)
+Block(0,14,-1,PRISMARINE:0)
+Block(0,15,-1,PRISMARINE:0)
+Block(0,15,0,PRISMARINE:0)
+Block(0,16,0,PRISMARINE:0)
+Block(0,19,3,GLOWSTONE)
+Block(0,20,2,GLOWSTONE)
+Block(0,20,3,GLOWSTONE)
+Block(0,20,4,GLOWSTONE)
+Block(0,21,0,PRISMARINE:0)
+Block(0,21,3,GLOWSTONE)
+Block(0,22,0,PRISMARINE:0)
+Block(0,23,0,PRISMARINE:0)
+Block(0,24,0,PRISMARINE:0)
+Block(0,25,0,PRISMARINE:0)
+Block(0,30,-2,GLOWSTONE)
+Block(0,31,-3,GLOWSTONE)
+Block(0,31,-2,GLOWSTONE)
+Block(0,31,-1,GLOWSTONE)
+Block(0,32,-4,GLOWSTONE)
+Block(0,32,-3,GLOWSTONE)
+Block(0,32,-2,GLOWSTONE)
+Block(0,32,-1,GLOWSTONE)
+Block(0,32,0,GLOWSTONE)
+Block(0,33,-3,GLOWSTONE)
+Block(0,33,-2,GLOWSTONE)
+Block(0,33,-1,GLOWSTONE)
+Block(0,34,-2,GLOWSTONE)
+Block(1,5,-1,PRISMARINE:0)
+Block(1,6,-2,PRISMARINE:0)
+Block(1,7,-2,PRISMARINE:0)
+Block(1,8,-2,PRISMARINE:0)
+Block(1,9,-2,PRISMARINE:0)
+Block(1,10,-2,PRISMARINE:0)
+Block(1,10,-1,PRISMARINE:0)
+Block(1,11,-3,PRISMARINE:0)
+Block(1,11,-2,PRISMARINE:0)
+Block(1,14,-4,GLOWSTONE)
+Block(1,15,-5,GLOWSTONE)
+Block(1,15,-4,GLOWSTONE)
+Block(1,15,-3,GLOWSTONE)
+Block(1,16,-4,GLOWSTONE)
+Block(1,16,0,PRISMARINE:0)
+Block(1,16,1,PRISMARINE:0)
+Block(1,17,0,PRISMARINE:0)
+Block(1,17,2,PRISMARINE:0)
+Block(1,18,0,PRISMARINE:0)
+Block(1,18,3,GLOWSTONE)
+Block(1,19,0,PRISMARINE:0)
+Block(1,19,2,GLOWSTONE)
+Block(1,19,3,GLOWSTONE)
+Block(1,19,4,GLOWSTONE)
+Block(1,20,0,PRISMARINE:0)
+Block(1,20,1,GLOWSTONE)
+Block(1,20,2,GLOWSTONE)
+Block(1,20,3,GLOWSTONE)
+Block(1,20,4,GLOWSTONE)
+Block(1,20,5,GLOWSTONE)
+Block(1,21,0,PRISMARINE:0)
+Block(1,21,2,GLOWSTONE)
+Block(1,21,3,GLOWSTONE)
+Block(1,21,4,GLOWSTONE)
+Block(1,22,3,GLOWSTONE)
+Block(1,31,-2,GLOWSTONE)
+Block(1,32,-3,GLOWSTONE)
+Block(1,32,-2,GLOWSTONE)
+Block(1,32,-1,GLOWSTONE)
+Block(1,33,-2,GLOWSTONE)
+Block(2,7,-2,PRISMARINE:0)
+Block(2,8,-2,PRISMARINE:0)
+Block(2,11,-3,PRISMARINE:0)
+Block(2,12,-4,PRISMARINE:0)
+Block(2,12,-3,PRISMARINE:0)
+Block(2,13,-4,PRISMARINE:0)
+Block(2,14,-5,GLOWSTONE)
+Block(2,14,-4,PRISMARINE:0)
+Block(2,14,-3,GLOWSTONE)
+Block(2,15,-5,GLOWSTONE)
+Block(2,15,-3,GLOWSTONE)
+Block(2,16,-5,GLOWSTONE)
+Block(2,16,-4,GLOWSTONE)
+Block(2,16,-3,GLOWSTONE)
+Block(2,17,2,PRISMARINE:0)
+Block(2,18,2,GLOWSTONE)
+Block(2,18,3,PRISMARINE:0)
+Block(2,18,4,GLOWSTONE)
+Block(2,19,1,GLOWSTONE)
+Block(2,19,2,GLOWSTONE)
+Block(2,19,3,PRISMARINE:0)
+Block(2,19,4,GLOWSTONE)
+Block(2,19,5,GLOWSTONE)
+Block(2,20,1,GLOWSTONE)
+Block(2,20,2,GLOWSTONE)
+Block(2,20,3,GLOWSTONE)
+Block(2,20,4,GLOWSTONE)
+Block(2,20,5,GLOWSTONE)
+Block(2,21,1,GLOWSTONE)
+Block(2,21,2,GLOWSTONE)
+Block(2,21,3,GLOWSTONE)
+Block(2,21,4,GLOWSTONE)
+Block(2,21,5,GLOWSTONE)
+Block(2,22,2,GLOWSTONE)
+Block(2,22,3,GLOWSTONE)
+Block(2,22,4,GLOWSTONE)
+Block(3,14,-4,GLOWSTONE)
+Block(3,15,-5,GLOWSTONE)
+Block(3,15,-4,GLOWSTONE)
+Block(3,15,-3,GLOWSTONE)
+Block(3,16,-4,GLOWSTONE)
+Block(3,18,3,GLOWSTONE)
+Block(3,19,2,GLOWSTONE)
+Block(3,19,3,GLOWSTONE)
+Block(3,19,4,GLOWSTONE)
+Block(3,20,1,GLOWSTONE)
+Block(3,20,2,GLOWSTONE)
+Block(3,20,3,GLOWSTONE)
+Block(3,20,4,GLOWSTONE)
+Block(3,20,5,GLOWSTONE)
+Block(3,21,2,GLOWSTONE)
+Block(3,21,3,GLOWSTONE)
+Block(3,21,4,GLOWSTONE)
+Block(3,22,3,GLOWSTONE)
+Block(4,19,3,GLOWSTONE)
+Block(4,20,2,GLOWSTONE)
+Block(4,20,3,GLOWSTONE)
+Block(4,20,4,GLOWSTONE)
+Block(4,21,3,GLOWSTONE)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS:0,DIRT:0)
+BlockCheck(0,-1,-1,GRASS:0,DIRT:0)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

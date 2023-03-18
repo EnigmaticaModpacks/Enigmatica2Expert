@@ -1,0 +1,497 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: LordSmellyPants
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 0
+
+Rarity: 100.0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 40
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: BottomDown
+
+ExtrudeThroughBlocks: AIR
+
+MaxBranchDepth: 10
+
+ExcludedBiomes: All
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: AIR
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Block(-4,20,0,CONCRETE:3)
+Block(-4,21,0,CONCRETE:3)
+Block(-4,26,0,CONCRETE:3)
+Block(-4,27,0,CONCRETE:3)
+Block(-4,32,-1,CONCRETE:3)
+Block(-4,39,-1,CONCRETE:3)
+Block(-4,40,-1,CONCRETE:3)
+Block(-4,46,0,CONCRETE:3)
+Block(-4,47,0,CONCRETE:3)
+Block(-4,55,2,CONCRETE:3)
+Block(-4,56,2,CONCRETE:3)
+Block(-4,61,1,CONCRETE:3)
+Block(-4,62,1,CONCRETE:3)
+Block(-4,63,1,CONCRETE:3)
+Block(-3,14,-1,CONCRETE:3)
+Block(-3,14,0,CONCRETE:3)
+Block(-3,15,0,CONCRETE:3)
+Block(-3,19,0,CONCRETE:3)
+Block(-3,20,-1,CONCRETE:3)
+Block(-3,20,0,CONCRETE:3)
+Block(-3,20,1,CONCRETE:3)
+Block(-3,21,-1,CONCRETE:3)
+Block(-3,21,0,CONCRETE:3)
+Block(-3,21,1,CONCRETE:3)
+Block(-3,22,0,CONCRETE:3)
+Block(-3,25,0,CONCRETE:3)
+Block(-3,26,-1,CONCRETE:3)
+Block(-3,26,0,CONCRETE:3)
+Block(-3,26,1,CONCRETE:3)
+Block(-3,27,-1,CONCRETE:3)
+Block(-3,27,0,CONCRETE:3)
+Block(-3,27,1,CONCRETE:3)
+Block(-3,28,0,CONCRETE:3)
+Block(-3,31,-1,CONCRETE:3)
+Block(-3,32,-2,CONCRETE:3)
+Block(-3,32,-1,CONCRETE:3)
+Block(-3,32,0,CONCRETE:3)
+Block(-3,33,-2,CONCRETE:3)
+Block(-3,33,-1,CONCRETE:3)
+Block(-3,33,0,CONCRETE:3)
+Block(-3,38,-1,CONCRETE:3)
+Block(-3,39,-2,CONCRETE:3)
+Block(-3,39,-1,CONCRETE:3)
+Block(-3,39,0,CONCRETE:3)
+Block(-3,40,-2,CONCRETE:3)
+Block(-3,40,-1,CONCRETE:3)
+Block(-3,40,0,CONCRETE:3)
+Block(-3,41,-2,CONCRETE:3)
+Block(-3,41,-1,CONCRETE:3)
+Block(-3,45,0,CONCRETE:3)
+Block(-3,46,-1,CONCRETE:3)
+Block(-3,46,0,CONCRETE:3)
+Block(-3,46,1,CONCRETE:3)
+Block(-3,47,-1,CONCRETE:3)
+Block(-3,47,0,CONCRETE:3)
+Block(-3,47,1,CONCRETE:3)
+Block(-3,48,0,CONCRETE:3)
+Block(-3,54,2,CONCRETE:3)
+Block(-3,54,3,CONCRETE:3)
+Block(-3,55,1,CONCRETE:3)
+Block(-3,55,2,CONCRETE:3)
+Block(-3,55,3,CONCRETE:3)
+Block(-3,56,1,CONCRETE:3)
+Block(-3,56,2,CONCRETE:3)
+Block(-3,56,3,CONCRETE:3)
+Block(-3,57,2,CONCRETE:3)
+Block(-3,60,1,CONCRETE:3)
+Block(-3,61,0,CONCRETE:3)
+Block(-3,61,1,CONCRETE:3)
+Block(-3,61,2,CONCRETE:3)
+Block(-3,62,0,CONCRETE:3)
+Block(-3,62,1,CONCRETE:3)
+Block(-3,62,2,CONCRETE:3)
+Block(-3,63,0,CONCRETE:3)
+Block(-3,63,1,CONCRETE:3)
+Block(-3,63,2,CONCRETE:3)
+Block(-3,64,1,CONCRETE:3)
+Block(-3,65,1,CONCRETE:3)
+Block(-2,7,-1,CONCRETE:3)
+Block(-2,7,0,CONCRETE:3)
+Block(-2,8,0,CONCRETE:3)
+Block(-2,8,1,CONCRETE:3)
+Block(-2,8,2,CONCRETE:3)
+Block(-2,13,-1,CONCRETE:3)
+Block(-2,13,0,CONCRETE:3)
+Block(-2,14,-2,CONCRETE:3)
+Block(-2,14,-1,CONCRETE:3)
+Block(-2,14,0,CONCRETE:3)
+Block(-2,14,1,CONCRETE:3)
+Block(-2,15,-1,CONCRETE:3)
+Block(-2,15,0,CONCRETE:3)
+Block(-2,15,1,CONCRETE:3)
+Block(-2,16,0,CONCRETE:3)
+Block(-2,19,-1,CONCRETE:3)
+Block(-2,20,-2,CONCRETE:3)
+Block(-2,20,-1,CONCRETE:3)
+Block(-2,20,0,CONCRETE:9)
+Block(-2,20,1,CONCRETE:3)
+Block(-2,21,-2,CONCRETE:3)
+Block(-2,21,-1,CONCRETE:3)
+Block(-2,21,0,CONCRETE:9)
+Block(-2,21,1,CONCRETE:3)
+Block(-2,21,2,CONCRETE:3)
+Block(-2,22,-1,CONCRETE:3)
+Block(-2,22,0,CONCRETE:9)
+Block(-2,22,1,CONCRETE:3)
+Block(-2,23,0,CONCRETE:9)
+Block(-2,24,0,CONCRETE:9)
+Block(-2,25,-1,CONCRETE:3)
+Block(-2,25,0,CONCRETE:9)
+Block(-2,25,1,CONCRETE:3)
+Block(-2,26,-2,CONCRETE:3)
+Block(-2,26,-1,CONCRETE:3)
+Block(-2,26,0,CONCRETE:9)
+Block(-2,26,1,CONCRETE:3)
+Block(-2,26,2,CONCRETE:3)
+Block(-2,27,-1,CONCRETE:3)
+Block(-2,27,0,CONCRETE:9)
+Block(-2,27,1,CONCRETE:3)
+Block(-2,27,2,CONCRETE:3)
+Block(-2,28,-1,CONCRETE:9)
+Block(-2,28,0,CONCRETE:3)
+Block(-2,28,1,CONCRETE:3)
+Block(-2,29,-1,CONCRETE:9)
+Block(-2,29,0,CONCRETE:3)
+Block(-2,30,-1,CONCRETE:9)
+Block(-2,31,-2,CONCRETE:3)
+Block(-2,31,-1,CONCRETE:9)
+Block(-2,31,0,CONCRETE:3)
+Block(-2,32,-3,CONCRETE:3)
+Block(-2,32,-2,CONCRETE:3)
+Block(-2,32,-1,CONCRETE:9)
+Block(-2,32,0,CONCRETE:3)
+Block(-2,32,1,CONCRETE:3)
+Block(-2,33,-3,CONCRETE:3)
+Block(-2,33,-2,CONCRETE:3)
+Block(-2,33,-1,CONCRETE:9)
+Block(-2,33,0,CONCRETE:3)
+Block(-2,33,1,CONCRETE:3)
+Block(-2,34,-2,CONCRETE:9)
+Block(-2,34,0,CONCRETE:3)
+Block(-2,35,-2,CONCRETE:9)
+Block(-2,36,-2,CONCRETE:9)
+Block(-2,37,-2,CONCRETE:9)
+Block(-2,38,-2,CONCRETE:9)
+Block(-2,39,-2,CONCRETE:3)
+Block(-2,39,-1,CONCRETE:9)
+Block(-2,39,0,CONCRETE:3)
+Block(-2,40,-3,CONCRETE:3)
+Block(-2,40,-2,CONCRETE:3)
+Block(-2,40,-1,CONCRETE:9)
+Block(-2,40,0,CONCRETE:3)
+Block(-2,40,1,CONCRETE:3)
+Block(-2,41,-3,CONCRETE:3)
+Block(-2,41,-2,CONCRETE:3)
+Block(-2,41,-1,CONCRETE:9)
+Block(-2,41,0,CONCRETE:3)
+Block(-2,42,-2,CONCRETE:3)
+Block(-2,42,-1,CONCRETE:9)
+Block(-2,43,-1,CONCRETE:9)
+Block(-2,44,0,CONCRETE:9)
+Block(-2,45,-1,CONCRETE:3)
+Block(-2,45,0,CONCRETE:9)
+Block(-2,45,1,CONCRETE:3)
+Block(-2,46,-2,CONCRETE:3)
+Block(-2,46,-1,CONCRETE:3)
+Block(-2,46,0,CONCRETE:9)
+Block(-2,46,1,CONCRETE:3)
+Block(-2,46,2,CONCRETE:3)
+Block(-2,47,-1,CONCRETE:3)
+Block(-2,47,0,CONCRETE:9)
+Block(-2,47,1,CONCRETE:3)
+Block(-2,47,2,CONCRETE:3)
+Block(-2,48,1,CONCRETE:9)
+Block(-2,49,1,CONCRETE:9)
+Block(-2,50,1,CONCRETE:9)
+Block(-2,51,1,CONCRETE:9)
+Block(-2,52,2,CONCRETE:9)
+Block(-2,53,2,CONCRETE:9)
+Block(-2,53,3,CONCRETE:3)
+Block(-2,54,1,CONCRETE:3)
+Block(-2,54,2,CONCRETE:9)
+Block(-2,54,3,CONCRETE:3)
+Block(-2,54,4,CONCRETE:3)
+Block(-2,55,0,CONCRETE:3)
+Block(-2,55,1,CONCRETE:3)
+Block(-2,55,2,CONCRETE:9)
+Block(-2,55,3,CONCRETE:3)
+Block(-2,55,4,CONCRETE:3)
+Block(-2,56,0,CONCRETE:3)
+Block(-2,56,1,CONCRETE:3)
+Block(-2,56,2,CONCRETE:9)
+Block(-2,56,3,CONCRETE:3)
+Block(-2,57,1,CONCRETE:3)
+Block(-2,57,2,CONCRETE:9)
+Block(-2,58,1,CONCRETE:9)
+Block(-2,59,1,CONCRETE:9)
+Block(-2,60,0,CONCRETE:3)
+Block(-2,60,1,CONCRETE:9)
+Block(-2,60,2,CONCRETE:3)
+Block(-2,61,-1,CONCRETE:3)
+Block(-2,61,0,CONCRETE:3)
+Block(-2,61,1,CONCRETE:9)
+Block(-2,61,2,CONCRETE:3)
+Block(-2,61,3,CONCRETE:3)
+Block(-2,62,-1,CONCRETE:3)
+Block(-2,62,0,CONCRETE:3)
+Block(-2,62,1,CONCRETE:3)
+Block(-2,62,2,CONCRETE:3)
+Block(-2,62,3,CONCRETE:3)
+Block(-2,63,0,CONCRETE:3)
+Block(-2,63,1,CONCRETE:3)
+Block(-2,63,2,CONCRETE:3)
+Block(-2,64,0,CONCRETE:3)
+Block(-2,64,1,CONCRETE:3)
+Block(-2,64,2,CONCRETE:3)
+Block(-2,65,0,CONCRETE:3)
+Block(-2,65,1,CONCRETE:3)
+Block(-2,65,2,CONCRETE:3)
+Block(-2,66,1,CONCRETE:3)
+Block(-2,67,1,CONCRETE:3)
+Block(-1,6,-1,CONCRETE:3)
+Block(-1,6,0,CONCRETE:3)
+Block(-1,7,-2,CONCRETE:3)
+Block(-1,7,-1,CONCRETE:3)
+Block(-1,7,0,CONCRETE:3)
+Block(-1,7,1,CONCRETE:3)
+Block(-1,7,2,CONCRETE:3)
+Block(-1,8,-1,CONCRETE:3)
+Block(-1,8,0,CONCRETE:3)
+Block(-1,8,1,CONCRETE:3)
+Block(-1,8,2,CONCRETE:3)
+Block(-1,8,3,CONCRETE:3)
+Block(-1,9,0,CONCRETE:3)
+Block(-1,9,1,CONCRETE:3)
+Block(-1,9,2,CONCRETE:3)
+Block(-1,12,-1,CONCRETE:3)
+Block(-1,12,0,CONCRETE:9)
+Block(-1,13,-2,CONCRETE:3)
+Block(-1,13,-1,CONCRETE:3)
+Block(-1,13,0,CONCRETE:9)
+Block(-1,13,1,CONCRETE:3)
+Block(-1,14,-2,CONCRETE:3)
+Block(-1,14,-1,CONCRETE:3)
+Block(-1,14,0,CONCRETE:9)
+Block(-1,14,1,CONCRETE:3)
+Block(-1,14,2,CONCRETE:3)
+Block(-1,15,-1,CONCRETE:3)
+Block(-1,15,0,CONCRETE:9)
+Block(-1,15,1,CONCRETE:3)
+Block(-1,15,2,CONCRETE:3)
+Block(-1,16,0,CONCRETE:9)
+Block(-1,16,1,CONCRETE:3)
+Block(-1,17,0,CONCRETE:9)
+Block(-1,18,0,CONCRETE:9)
+Block(-1,19,0,CONCRETE:9)
+Block(-1,20,-1,CONCRETE:3)
+Block(-1,20,0,CONCRETE:3)
+Block(-1,20,1,CONCRETE:3)
+Block(-1,21,-1,CONCRETE:3)
+Block(-1,21,0,CONCRETE:3)
+Block(-1,21,1,CONCRETE:3)
+Block(-1,21,2,CONCRETE:3)
+Block(-1,22,0,CONCRETE:3)
+Block(-1,22,1,CONCRETE:3)
+Block(-1,25,0,CONCRETE:3)
+Block(-1,26,-1,CONCRETE:3)
+Block(-1,26,0,CONCRETE:3)
+Block(-1,26,1,CONCRETE:3)
+Block(-1,27,0,CONCRETE:3)
+Block(-1,27,1,CONCRETE:3)
+Block(-1,28,0,CONCRETE:3)
+Block(-1,31,-1,CONCRETE:3)
+Block(-1,32,-2,CONCRETE:3)
+Block(-1,32,-1,CONCRETE:3)
+Block(-1,32,0,CONCRETE:3)
+Block(-1,33,-2,CONCRETE:3)
+Block(-1,33,-1,CONCRETE:3)
+Block(-1,33,0,CONCRETE:3)
+Block(-1,34,-1,CONCRETE:3)
+Block(-1,38,-1,CONCRETE:3)
+Block(-1,39,-2,CONCRETE:3)
+Block(-1,39,-1,CONCRETE:3)
+Block(-1,39,0,CONCRETE:3)
+Block(-1,40,-2,CONCRETE:3)
+Block(-1,40,-1,CONCRETE:3)
+Block(-1,40,0,CONCRETE:3)
+Block(-1,41,-2,CONCRETE:3)
+Block(-1,41,-1,CONCRETE:3)
+Block(-1,44,0,CONCRETE:3)
+Block(-1,45,-1,CONCRETE:3)
+Block(-1,45,0,CONCRETE:3)
+Block(-1,45,1,CONCRETE:3)
+Block(-1,46,-1,CONCRETE:3)
+Block(-1,46,0,CONCRETE:3)
+Block(-1,46,1,CONCRETE:3)
+Block(-1,47,0,CONCRETE:3)
+Block(-1,47,1,CONCRETE:3)
+Block(-1,53,2,CONCRETE:3)
+Block(-1,54,1,CONCRETE:3)
+Block(-1,54,2,CONCRETE:3)
+Block(-1,54,3,CONCRETE:3)
+Block(-1,55,1,CONCRETE:3)
+Block(-1,55,2,CONCRETE:3)
+Block(-1,55,3,CONCRETE:3)
+Block(-1,56,1,CONCRETE:3)
+Block(-1,56,2,CONCRETE:3)
+Block(-1,60,1,CONCRETE:3)
+Block(-1,61,0,CONCRETE:3)
+Block(-1,61,1,CONCRETE:3)
+Block(-1,61,2,CONCRETE:3)
+Block(-1,62,0,CONCRETE:3)
+Block(-1,62,1,CONCRETE:3)
+Block(-1,62,2,CONCRETE:3)
+Block(-1,63,1,CONCRETE:3)
+Block(-1,64,1,CONCRETE:3)
+Block(-1,65,1,CONCRETE:3)
+Block(0,0,0,CONCRETE:9)
+Block(0,1,0,CONCRETE:9)
+Block(0,2,0,CONCRETE:9)
+Block(0,3,0,CONCRETE:9)
+Block(0,4,0,CONCRETE:9)
+Block(0,5,0,CONCRETE:9)
+Block(0,6,-1,CONCRETE:3)
+Block(0,6,0,CONCRETE:9)
+Block(0,6,1,CONCRETE:3)
+Block(0,7,-2,CONCRETE:3)
+Block(0,7,-1,CONCRETE:3)
+Block(0,7,0,CONCRETE:9)
+Block(0,7,1,CONCRETE:3)
+Block(0,7,2,CONCRETE:3)
+Block(0,8,-1,CONCRETE:3)
+Block(0,8,0,CONCRETE:9)
+Block(0,8,1,CONCRETE:3)
+Block(0,8,2,CONCRETE:3)
+Block(0,9,0,CONCRETE:9)
+Block(0,9,1,CONCRETE:3)
+Block(0,10,0,CONCRETE:9)
+Block(0,11,0,CONCRETE:9)
+Block(0,13,-1,CONCRETE:3)
+Block(0,13,0,CONCRETE:3)
+Block(0,13,1,CONCRETE:3)
+Block(0,14,-1,CONCRETE:3)
+Block(0,14,0,CONCRETE:3)
+Block(0,14,1,CONCRETE:3)
+Block(0,14,2,CONCRETE:3)
+Block(0,15,0,CONCRETE:3)
+Block(0,15,1,CONCRETE:3)
+Block(0,21,0,CONCRETE:3)
+Block(0,21,1,CONCRETE:3)
+Block(0,26,0,CONCRETE:3)
+Block(0,32,-1,CONCRETE:3)
+Block(0,33,-1,CONCRETE:3)
+Block(0,39,-1,CONCRETE:3)
+Block(0,40,-1,CONCRETE:3)
+Block(0,45,0,CONCRETE:3)
+Block(0,46,0,CONCRETE:3)
+Block(0,54,2,CONCRETE:3)
+Block(0,55,2,CONCRETE:3)
+Block(0,61,1,CONCRETE:3)
+Block(0,62,1,CONCRETE:3)
+Block(1,6,1,CONCRETE:3)
+Block(1,7,-1,CONCRETE:3)
+Block(1,7,0,CONCRETE:3)
+Block(1,7,1,CONCRETE:3)
+Block(1,7,2,CONCRETE:3)
+Block(1,8,-1,CONCRETE:3)
+Block(1,8,0,CONCRETE:3)
+Block(1,8,1,CONCRETE:3)
+Block(1,9,0,CONCRETE:3)
+Block(1,14,0,CONCRETE:3)
+Block(1,14,1,CONCRETE:3)
+Block(2,7,1,CONCRETE:3)
+Block(2,8,0,CONCRETE:3)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,GRASS,DIRT)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Particles                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Spawners                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             ModData                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
