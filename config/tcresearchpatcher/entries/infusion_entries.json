@@ -87,11 +87,148 @@
                 },
                 {
                     "text": "research_stage.thaumadditions:mob_summoning.2",
-                    "recipes":["thaumcraft:meteor_belt"]
+                    "required_crafts" : ["thaumcraft:dna_sample"],
+                    "recipes":["thaumcraft:dna_sample"]
                 },
                 {
                     "text": "research_stage.thaumadditions:mob_summoning.3",
                     "recipes":["thaumcraft:dna_sample","thaumcraft:entity_summoner"]
+                }
+            ]
+        },
+        {
+            "key": "CREATION_PASSIVE_VANILLA",    
+            "name": "research_name.CREATION_PASSIVE_VANILLA",
+            "icons": [ "minecraft:egg" ],
+            "category": "INFUSION", "location": [ 4,6 ], 
+            "parents": [ "INFUSIONSTABLE" ], 
+            "stages": [
+                {
+                    "text": "research.CREATION_PASSIVE_VANILLA.1", 
+                    "required_knowledge":["THEORY;ALCHEMY;1","OBSERVATION;INFUSION;1"]
+                },
+                {
+                    "text": "research.CREATION_PASSIVE_VANILLA.2",
+                    "recipes":[
+                        "thaumcraft:minecraft:cow",
+                        "thaumcraft:minecraft:sheep",
+                        "thaumcraft:minecraft:pig",
+                        "thaumcraft:minecraft:chicken",
+                        "thaumcraft:minecraft:rabbit",
+                        "thaumcraft:minecraft:wolf",
+                        "thaumcraft:minecraft:ocelot",
+                        "thaumcraft:minecraft:parrot",
+                        "thaumcraft:minecraft:horse",
+                        "thaumcraft:minecraft:donkey",
+                        "thaumcraft:minecraft:mule",
+                        "thaumcraft:minecraft:llama",
+                        "thaumcraft:minecraft:squid",
+                        "thaumcraft:minecraft:bat",
+                        "thaumcraft:minecraft:mooshroom",
+                        "thaumcraft:minecraft:polar_bear"]
+                }
+            ]
+        },
+        {
+            "key": "CREATION_HOSTILE_VANILLA",    
+            "name": "research_name.CREATION_HOSTILE_VANILLA",
+            "icons": [ "minecraft:bone","minecraft:gunpowder","minecraft:rotten_flesh","minecraft:spider_eye" ],
+            "category": "INFUSION", "location": [ 4,8 ], 
+            "parents": [ "CREATION_PASSIVE_VANILLA" ], 
+            "stages": [
+                {
+                    "text": "research.CREATION_HOSTILE_VANILLA.1", 
+                    "required_knowledge":["THEORY;INFUSION;1","OBSERVATION;INFUSION;1"]
+                },
+                {
+                    "text": "research.CREATION_HOSTILE_VANILLA.2",
+                    "recipes":[
+                        "thaumcraft:minecraft:zombie",
+                        "thaumcraft:minecraft:husk",
+                        "thaumcraft:minecraft:skeleton",
+                        "thaumcraft:minecraft:stray",
+                        "thaumcraft:minecraft:creeper",
+                        "thaumcraft:minecraft:spider",
+                        "thaumcraft:minecraft:cave_spider",
+                        "thaumcraft:minecraft:witch",
+                        "thaumcraft:minecraft:slime",
+                        "thaumcraft:minecraft:guardian",
+                        "thaumcraft:minecraft:silverfish",
+                        "thaumcraft:minecraft:zombie_horse",
+                        "thaumcraft:minecraft:skeleton_horse",
+                        "thaumcraft:minecraft:giant"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "CREATION_HOSTILE_VANILLA_NETHER",    
+            "name": "research_name.CREATION_HOSTILE_VANILLA_NETHER",
+            "icons": [ "minecraft:skull;1;1","minecraft:magma_cream","minecraft:ghast_tear" ],
+            "category": "INFUSION", "location": [ 3,9 ], 
+            "parents": [ "CREATION_HOSTILE_VANILLA" ],
+            "meta":["ROUND"],     
+            "stages": [
+                {
+                    "text": "research.CREATION_HOSTILE_VANILLA_NETHER.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1"],
+                    "required_item":["minecraft:obsidian;10"]
+                },
+                {
+                    "text": "research.CREATION_HOSTILE_VANILLA_NETHER.2",
+                    "recipes":[
+                        "thaumcraft:minecraft:zombie_pigman",
+                        "thaumcraft:minecraft:magma_cube",
+                        "thaumcraft:minecraft:wither_skeleton",
+                        "thaumcraft:minecraft:ghast"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "CREATION_HOSTILE_VANILLA_END",    
+            "name": "research_name.CREATION_HOSTILE_VANILLA_END",
+            "icons": [ "endreborn:food_ender_flesh","minecraft:ender_pearl","minecraft:shulker_shell" ],
+            "category": "INFUSION", "location": [ 2,9 ], 
+            "parents": [ "CREATION_HOSTILE_VANILLA" ],
+            "meta":["ROUND"],     
+            "stages": [
+                {
+                    "text": "research.CREATION_HOSTILE_VANILLA_END.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1"],
+                    "required_item":["endreborn:item_end_essence;4"]
+                },
+                {
+                    "text": "research.CREATION_HOSTILE_VANILLA_END.2",
+                    "recipes":[
+                        "thaumcraft:minecraft:enderman",
+                        "thaumcraft:minecraft:endermite",
+                        "thaumcraft:minecraft:shulker"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "CREATION_HOSTILE_ELEMENTALS",    
+            "name": "research_name.CREATION_HOSTILE_ELEMENTALS",
+            "icons": [ "minecraft:blaze_rod","thermalfoundation:material;1;2048","thermalfoundation:material;1;2050","thermalfoundation:material;1;2052" ],
+            "category": "INFUSION", "location": [ 1,9 ], 
+            "parents": [ "CREATION_HOSTILE_VANILLA" ],
+            "meta":["ROUND"],     
+            "stages": [
+                {
+                    "text": "research.CREATION_HOSTILE_ELEMENTALS.1", 
+                    "required_knowledge":["OBSERVATION;INFUSION;1"],
+                    "required_item":["additionalcompression:stone_compressed","additionalcompression:feather_compressed","minecraft:snow","minecraft:magma"]
+                },
+                {
+                    "text": "research.CREATION_HOSTILE_ELEMENTALS.2",
+                    "recipes":[
+                        "thaumcraft:minecraft:blaze",
+                        "thaumcraft:thermalfoundation:blizz",
+                        "thaumcraft:thermalfoundation:basalz",
+                        "thaumcraft:thermalfoundation:blitz"
+                    ]
                 }
             ]
         }
