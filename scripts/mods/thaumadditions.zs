@@ -339,7 +339,7 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:jar_thaumium>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:jar_eldritch>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:jar_mithrillium>);
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:jar_adaminite>);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:jar_mithminite>);
+mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:jar_mithminite>);
 
 #[Brass jar]
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("jar_brass", 
@@ -530,7 +530,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("mithminite_fabric",
 #[Entity cell]
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:dna_sample>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("dna_sample", 
-"SPAWNER", 
+"SPAWNER@1", 
 100,
 [], 
 <thaumadditions:dna_sample>, 
@@ -1312,7 +1312,12 @@ val bookWithAllKnowledge = <thaumadditions:knowledge_tome>.withTag({
     {C: 1 as byte, K: "RIFT_MONITOR"}, 
     {C: 1 as byte, K: "GOLEMCOMBATADV"}, 
     {C: 1 as byte, K: "ITEM_GRATE"}, 
-    {C: 1 as byte, K: "WARP_PAPER"}
+    {C: 1 as byte, K: "WARP_PAPER"},
+    {C: 1 as byte, K: "CREATION_PASSIVE_VANILLA"}, 
+    {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA"}, 
+    {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA_NETHER"}, 
+    {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA_END"}, 
+    {C: 1 as byte, K: "CREATION_HOSTILE_ELEMENTALS"}
   ]
 });
 
