@@ -891,55 +891,55 @@ function eggRecipe(entityId as string, research as string ,aspects as CTAspectSt
 }
 
 #Passive Vanilla
-eggRecipe("minecraft:cow"               ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:praemunio>*5]);
-eggRecipe("minecraft:sheep"             ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:fabrico>*5]);
-eggRecipe("minecraft:pig"               ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5]);
-eggRecipe("minecraft:chicken"           ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:volatus>*10        ,<aspect:ventus>*5]);
-eggRecipe("minecraft:rabbit"            ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:visum>*5]);
-eggRecipe("minecraft:wolf"              ,"vanilla"         , [<aspect:bestia>*20    ,<aspect:terra>*10          ,<aspect:aversio>*5]);
-eggRecipe("minecraft:ocelot"            ,"vanilla"         , [<aspect:bestia>*20    ,<aspect:terra>*10          ,<aspect:desiderium>*5]);
-eggRecipe("minecraft:parrot"            ,"vanilla"         , [<aspect:bestia>*20    ,<aspect:volatus>*10        ,<aspect:sonus>*5]);
-eggRecipe("minecraft:horse"             ,"vanilla"         , [<aspect:bestia>*40    ,<aspect:terra>*10          ,<aspect:motus>*5]);
-eggRecipe("minecraft:donkey"            ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:vinculum>*5]);
-eggRecipe("minecraft:mule"              ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:imperium>*5]);
-eggRecipe("minecraft:llama"             ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:permutatio>*5]);
-eggRecipe("minecraft:squid"             ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:aqua>*10           ,<aspect:tenebrae>*5]);
-eggRecipe("minecraft:bat"               ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:volatus>*10        ,<aspect:tenebrae>*5]);
-#eggRecipe("minecraft:mooshroom"         ,"vanilla"         , [<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:vitium>*5]);
-eggRecipe("minecraft:polar_bear"        ,"vanilla"         , [<aspect:bestia>*50    ,<aspect:terra>*10          ,<aspect:gelum>*20]);
+eggRecipe("minecraft:cow"               ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*30          ,<aspect:praemunio>*15]);
+eggRecipe("minecraft:sheep"             ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*30          ,<aspect:fabrico>*15]);
+eggRecipe("minecraft:pig"               ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*30          ,<aspect:victus>*15]);
+eggRecipe("minecraft:chicken"           ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:volatus>*30        ,<aspect:ventus>*15]);
+eggRecipe("minecraft:rabbit"            ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*30          ,<aspect:visum>*15]);
+eggRecipe("minecraft:wolf"              ,"vanilla"         , [<aspect:bestia>*60    ,<aspect:terra>*30          ,<aspect:aversio>*15]);
+eggRecipe("minecraft:ocelot"            ,"vanilla"         , [<aspect:bestia>*60    ,<aspect:terra>*30          ,<aspect:desiderium>*15]);
+eggRecipe("minecraft:parrot"            ,"vanilla"         , [<aspect:bestia>*60    ,<aspect:volatus>*30        ,<aspect:sonus>*15]);
+eggRecipe("minecraft:horse"             ,"vanilla"         , [<aspect:bestia>*120   ,<aspect:terra>*30          ,<aspect:motus>*15]);
+eggRecipe("minecraft:donkey"            ,"vanilla"         , [<aspect:bestia>*90    ,<aspect:terra>*30          ,<aspect:vinculum>*15]);
+eggRecipe("minecraft:mule"              ,"vanilla"         , [<aspect:bestia>*90    ,<aspect:terra>*30          ,<aspect:imperium>*15]);
+eggRecipe("minecraft:llama"             ,"vanilla"         , [<aspect:bestia>*90    ,<aspect:terra>*30          ,<aspect:permutatio>*15]);
+eggRecipe("minecraft:squid"             ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:aqua>*30           ,<aspect:tenebrae>*15]);
+eggRecipe("minecraft:bat"               ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:volatus>*30        ,<aspect:tenebrae>*15]);
+#eggRecipe("minecraft:mooshroom"         ,"vanilla"         , [<aspect:bestia>*30    ,<aspect:terra>*30          ,<aspect:vitium>*15]);
+eggRecipe("minecraft:polar_bear"        ,"vanilla"         , [<aspect:bestia>*150   ,<aspect:terra>*30          ,<aspect:gelum>*60]);
 
 #Hostile Vanilla Overworld
-soulRecipe("minecraft:zombie"           ,"vanilla"         , [<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:humanus>*20]);
-soulRecipe("minecraft:husk"             ,"vanilla"         , [<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:humanus>*20        ,<aspect:perditio>*10]);
-soulRecipe("minecraft:skeleton"         ,"vanilla"         , [<aspect:mortuus>*10   ,<aspect:perditio>*10       ,<aspect:aversio>*20]);
-soulRecipe("minecraft:stray"            ,"vanilla"         , [<aspect:mortuus>*10   ,<aspect:perditio>*10       ,<aspect:aversio>*20        ,<aspect:gelum>*10]);
-soulRecipe("minecraft:creeper"          ,"vanilla"         , [<aspect:exitium>*20   ,<aspect:ignis>*10          ,<aspect:alkimia>*5         ,<aspect:perditio>*10]);
-soulRecipe("minecraft:spider"           ,"vanilla"         , [<aspect:bestia>*20    ,<aspect:vinculum>*10       ,<aspect:sensus>*10]);
-soulRecipe("minecraft:cave_spider"      ,"vanilla"         , [<aspect:bestia>*15    ,<aspect:vinculum>*10       ,<aspect:sensus>*10         ,<aspect:alkimia>*5]);
-soulRecipe("minecraft:witch"            ,"vanilla"         , [<aspect:humanus>*20   ,<aspect:praecantatio>*10   ,<aspect:alkimia>*10]);
-soulRecipe("minecraft:slime"            ,"vanilla"         , [<aspect:aqua>*10      ,<aspect:victus>*10]);
-soulRecipe("minecraft:guardian"         ,"vanilla"         , [<aspect:aqua>*20      ,<aspect:praemunio>*10      ,<aspect:sensus>*10]);
-soulRecipe("minecraft:silverfish"       ,"vanilla"         , [<aspect:perditio>*20  ,<aspect:vacuos>*10         ,<aspect:vinculum>*10]);
-soulRecipe("minecraft:zombie_horse"     ,"vanilla"         , [<aspect:bestia>*20    ,<aspect:exanimis>*10       ,<aspect:motus>*10]);
-soulRecipe("minecraft:skeleton_horse"   ,"vanilla"         , [<aspect:bestia>*20    ,<aspect:mortuus>*10        ,<aspect:motus>*10]);
+soulRecipe("minecraft:zombie"           ,"vanilla"         , [<aspect:exanimis>*50  ,<aspect:mortuus>*50        ,<aspect:humanus>*100]);
+soulRecipe("minecraft:husk"             ,"vanilla"         , [<aspect:exanimis>*50  ,<aspect:mortuus>*50        ,<aspect:humanus>*100       ,<aspect:perditio>*50]);
+soulRecipe("minecraft:skeleton"         ,"vanilla"         , [<aspect:mortuus>*50   ,<aspect:perditio>*50       ,<aspect:aversio>*100]);
+soulRecipe("minecraft:stray"            ,"vanilla"         , [<aspect:mortuus>*50   ,<aspect:perditio>*50       ,<aspect:aversio>*100       ,<aspect:gelum>*50]);
+soulRecipe("minecraft:creeper"          ,"vanilla"         , [<aspect:exitium>*100  ,<aspect:ignis>*50          ,<aspect:alkimia>*25        ,<aspect:perditio>*50]);
+soulRecipe("minecraft:spider"           ,"vanilla"         , [<aspect:bestia>*100   ,<aspect:vinculum>*50       ,<aspect:sensus>*50]);
+soulRecipe("minecraft:cave_spider"      ,"vanilla"         , [<aspect:bestia>*75    ,<aspect:vinculum>*50       ,<aspect:sensus>*50         ,<aspect:alkimia>*25]);
+soulRecipe("minecraft:witch"            ,"vanilla"         , [<aspect:humanus>*100  ,<aspect:praecantatio>*50   ,<aspect:alkimia>*50]);
+soulRecipe("minecraft:slime"            ,"vanilla"         , [<aspect:aqua>*50      ,<aspect:victus>*50]);
+soulRecipe("minecraft:guardian"         ,"vanilla"         , [<aspect:aqua>*100     ,<aspect:praemunio>*50      ,<aspect:sensus>*50]);
+soulRecipe("minecraft:silverfish"       ,"vanilla"         , [<aspect:perditio>*100 ,<aspect:vacuos>*50         ,<aspect:vinculum>*50]);
+soulRecipe("minecraft:zombie_horse"     ,"vanilla"         , [<aspect:bestia>*100   ,<aspect:exanimis>*50       ,<aspect:motus>*50]);
+soulRecipe("minecraft:skeleton_horse"   ,"vanilla"         , [<aspect:bestia>*100   ,<aspect:mortuus>*50        ,<aspect:motus>*50]);
 soulRecipe("minecraft:giant"            ,"vanilla"         , [<aspect:exanimis>*500 ,<aspect:praemunio>*500     ,<aspect:mythus>*500]); #Probably recipe to delete
 
 #Hostile Vanilla Nether
-soulRecipe("minecraft:zombie_pigman"    ,"vanilla_nether"  , [<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:bestia>*20]);
-soulRecipe("minecraft:magma_cube"       ,"vanilla_nether"  , [<aspect:aqua>*10      ,<aspect:victus>*10         ,<aspect:infernum>*5]);
-soulRecipe("minecraft:wither_skeleton"  ,"vanilla_nether"  , [<aspect:mortuus>*10   ,<aspect:perditio>*20       ,<aspect:aversio>*20        ,<aspect:spiritus>*20]);
-soulRecipe("minecraft:ghast"            ,"vanilla_nether"  , [<aspect:spiritus>*50  ,<aspect:volatus>*10        ,<aspect:fluctus>*20]);
+soulRecipe("minecraft:zombie_pigman"    ,"vanilla_nether"  , [<aspect:exanimis>*50  ,<aspect:mortuus>*50        ,<aspect:bestia>*100]);
+soulRecipe("minecraft:magma_cube"       ,"vanilla_nether"  , [<aspect:aqua>*50      ,<aspect:victus>*50         ,<aspect:infernum>*25]);
+soulRecipe("minecraft:wither_skeleton"  ,"vanilla_nether"  , [<aspect:mortuus>*50   ,<aspect:perditio>*100      ,<aspect:aversio>*100       ,<aspect:spiritus>*100]);
+soulRecipe("minecraft:ghast"            ,"vanilla_nether"  , [<aspect:spiritus>*250 ,<aspect:volatus>*50        ,<aspect:fluctus>*100]);
 
 #Hostile Vanilla End
-soulRecipe("minecraft:enderman"         ,"vanilla_end"     , [<aspect:alienis>*40   ,<aspect:tenebrae>*20]);
-soulRecipe("minecraft:endermite"        ,"vanilla_end"     , [<aspect:alienis>*20  ,<aspect:vacuos>*10         ,<aspect:vinculum>*10]);
-soulRecipe("minecraft:shulker"          ,"vanilla_end"     , [<aspect:alienis>*40   ,<aspect:volatus>*20        ,<aspect:sonus>*10]);
+soulRecipe("minecraft:enderman"         ,"vanilla_end"     , [<aspect:alienis>*200  ,<aspect:tenebrae>*100]);
+soulRecipe("minecraft:endermite"        ,"vanilla_end"     , [<aspect:alienis>*100  ,<aspect:vacuos>*50         ,<aspect:vinculum>*50]);
+soulRecipe("minecraft:shulker"          ,"vanilla_end"     , [<aspect:alienis>*200  ,<aspect:volatus>*100       ,<aspect:sonus>*50]);
 
 #Elementals
-soulRecipe("minecraft:blaze"            ,"elementals"      , [<aspect:ignis>*20     ,<aspect:infernum>*20]);
-soulRecipe("thermalfoundation:blizz"    ,"elementals"      , [<aspect:aqua>*20      ,<aspect:gelum>*20]);
-soulRecipe("thermalfoundation:basalz"   ,"elementals"      , [<aspect:terra>*20     ,<aspect:metallum>*20]);
-soulRecipe("thermalfoundation:blitz"    ,"elementals"      , [<aspect:aer>*20       ,<aspect:ventus>*20]);
+soulRecipe("minecraft:blaze"            ,"elementals"      , [<aspect:ignis>*60     ,<aspect:infernum>*60]);
+soulRecipe("thermalfoundation:blizz"    ,"elementals"      , [<aspect:aqua>*60      ,<aspect:gelum>*60]);
+soulRecipe("thermalfoundation:basalz"   ,"elementals"      , [<aspect:terra>*60     ,<aspect:metallum>*60]);
+soulRecipe("thermalfoundation:blitz"    ,"elementals"      , [<aspect:aer>*60       ,<aspect:ventus>*60]);
 
 /*
 soulRecipe("tconstruct:blueslime"        , [<aspect:caeles> * 100, <aspect:alkimia>    * 100]);
