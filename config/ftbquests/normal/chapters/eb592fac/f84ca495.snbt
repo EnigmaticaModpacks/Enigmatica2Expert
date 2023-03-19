@@ -2,7 +2,7 @@
 	x: -5.5d,
 	y: 3.1d,
 	text: [
-		"Emit Redstone signal depnding on fluid level."
+		"{q.rftools.liquid_monitor.desc}"
 	],
 	dependencies: [
 		"094a95d2"

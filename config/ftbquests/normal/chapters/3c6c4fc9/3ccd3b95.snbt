@@ -32,7 +32,12 @@
 	}],
 	rewards: [{
 		uid: "61130cce",
-		type: "loot",
-		table: 1
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

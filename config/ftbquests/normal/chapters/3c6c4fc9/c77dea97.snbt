@@ -107,7 +107,12 @@
 	}],
 	rewards: [{
 		uid: "de75dafa",
-		type: "loot",
-		table: 1
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

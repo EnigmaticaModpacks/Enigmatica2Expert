@@ -1,0 +1,25 @@
+{
+	x: 1.0d,
+	y: 0.5d,
+	dependencies: [
+		"fbbabf40"
+	],
+	tasks: [{
+		uid: "cbac13cd",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:creative_essentia_jar"
+		}]
+	}],
+	rewards: [{
+		uid: "88709fa0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		},
+		count: 3
+	}]
+}
