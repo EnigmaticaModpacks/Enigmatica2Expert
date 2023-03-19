@@ -239,8 +239,8 @@ for i, output in compressed {
 
 # Decay generator as crafting method
 # mods.nuclearcraft.DecayGenerator.addRecipe(IIngredient blockInput, IIngredient blockOutput, double meanLifetime, double power, double radiation);
-mods.nuclearcraft.DecayGenerator.addRecipe(<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 100.0, 8000000.0, 1.0);
-mods.nuclearcraft.DecayGenerator.addRecipe(<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>,  50.0,  400000.0, 1.0);
+mods.nuclearcraft.DecayGenerator.addRecipe(<contenttweaker:terrestrial_artifact_block>, <environmentaltech:litherite>  , 100.0, 8000000.0, 0.1);
+mods.nuclearcraft.DecayGenerator.addRecipe(<environmentaltech:litherite>             , <actuallyadditions:block_misc:6>,  50.0,  400000.0, 0.1);
 
 # Supercooled Ice compat
 scripts.process.fill(<ore:ice>, <fluid:liquid_helium> * 50, <nuclearcraft:supercold_ice>, "only: Transposer");
