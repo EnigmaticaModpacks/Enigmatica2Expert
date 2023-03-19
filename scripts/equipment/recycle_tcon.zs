@@ -466,16 +466,11 @@ o.addRecipe(AssemblyRecipe.create(function(c) {
 # ╚█████╔╝███████╗██║
 #  ╚════╝ ╚══════╝╚═╝
 # -----------------------------------------------------------------------
-function constructTool(base as IItemStack, mat1 as string, mat2 as string, mat3 as string, mat4 as string) as IItemStack {
-  return Toolforge.buildTool(base.definition, [
-    Toolforge.getMaterialFromID(mat1),
-    Toolforge.getMaterialFromID(mat2),
-    Toolforge.getMaterialFromID(mat3),
-    Toolforge.getMaterialFromID(mat4),
-  ]);
-}
 
-val example_tool = constructTool(<tconstruct:lumberaxe>, "wood", "manyullyn", "iron", "paper");
+
+val example_tool = scripts.equipment.utils_tcon.constructTool(
+  <tconstruct:lumberaxe>, "wood", "manyullyn", "iron", "paper"
+);
 
 val toolExamples = [
   example_tool,
@@ -496,12 +491,8 @@ val modifiersExamples = [
 for tool in toolExamples {
   for modifiers in modifiersExamples {
     for mats in materialExamples {
-      var a = constructTool(getGhostItem(tool, 0), mats[0], mats[1], mats[2], mats[3]);
-      var b = constructTool(getGhostItem(tool, 1), mats[0], mats[1], mats[2], mats[3]);
-      for modif in modifiers {
-        a = scripts.equipment.utils_tcon.addModifier(a, modif);
-        b = scripts.equipment.utils_tcon.addModifier(b, modif);
-      }
+      val a = scripts.equipment.utils_tcon.constructTool(getGhostItem(tool, 0), mats[0], mats[1], mats[2], mats[3], modifiers);
+      val b = scripts.equipment.utils_tcon.constructTool(getGhostItem(tool, 1), mats[0], mats[1], mats[2], mats[3], modifiers);
       // utils.log(["♻ Adding JEI recipe:", tool.commandString]);
       // utils.log(["♻ A:", a.commandString]);
       // utils.log(["♻ B:", b.commandString]);

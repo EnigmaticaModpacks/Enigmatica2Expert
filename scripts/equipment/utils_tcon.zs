@@ -313,3 +313,24 @@ function addModifier(_item as IItemStack, name as string) as IItemStack {
   return item.withTag(addSingleModifier(item.tag, name));
 }
 
+function constructTool(
+  base as IItemStack,
+  mat1 as string,
+  mat2 as string,
+  mat3 as string,
+  mat4 as string,
+  modifiers as string[] = null
+) as IItemStack {
+  var tool = mods.zentoolforge.Toolforge.buildTool(base.definition, [
+    mods.zentoolforge.Toolforge.getMaterialFromID(mat1),
+    mods.zentoolforge.Toolforge.getMaterialFromID(mat2),
+    mods.zentoolforge.Toolforge.getMaterialFromID(mat3),
+    mods.zentoolforge.Toolforge.getMaterialFromID(mat4),
+  ]);
+  if(!isNull(modifiers)) {
+    for modif in modifiers {
+      tool = addModifier(tool, modif);
+    }
+  }
+  return tool;
+}
