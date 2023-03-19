@@ -58,5 +58,11 @@
     "destinationFilePath": "config/ChatFlow.dat",
     "clientSide": true,
     "serverSide": false
+  },
+  {
+    "sourceFilePath": "ftblib.cfg",
+    "destinationFilePath": "local/client/ftblib.cfg",
+    "clientSide": true,
+    "serverSide": false
   }
 ]
