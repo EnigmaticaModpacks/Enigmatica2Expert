@@ -138,7 +138,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 872
+# Total Furnace recipes registered: 864
 # Filtered by JEI blacklist: 42
 # Filtered manuallly (antidupe): 14
 # Filtered by oredict: 154
@@ -971,14 +971,6 @@ infinFurnace(utils.get("thaumcraft:cluster"), utils.get("thermalfoundation:mater
 infinFurnace(utils.get("thaumcraft:ore_amber", W), utils.get("thaumcraft:amber"));
 infinFurnace(utils.get("thaumcraft:ore_cinnabar", W), utils.get("thaumcraft:quicksilver"));
 #infinFurnace(utils.get("thaumcraft:ore_quartz", W), utils.get("minecraft:quartz"));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 1), utils.get("minecraft:gold_ingot", 0, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 2), utils.get("thermalfoundation:material", 128, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 3), utils.get("thermalfoundation:material", 129, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 4), utils.get("thermalfoundation:material", 130, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 6), utils.get("thaumcraft:quicksilver", 0, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 7), utils.get("minecraft:quartz", 0, 3));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 8), utils.get("thaumcraft:ingot", 1, 2));
-infinFurnace(utils.get("thaumicwonders:eldritch_cluster"), utils.get("minecraft:iron_ingot", 0, 3));
 ##infinFurnace(utils.get("thermalfoundation:material", 1), utils.get("minecraft:gold_ingot"));
 ##infinFurnace(utils.get("thermalfoundation:material", 64), utils.get("thermalfoundation:material", 128));
 ##infinFurnace(utils.get("thermalfoundation:material", 65), utils.get("thermalfoundation:material", 129));

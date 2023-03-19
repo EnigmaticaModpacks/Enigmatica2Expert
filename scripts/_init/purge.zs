@@ -191,6 +191,16 @@ utils.rh(<harvestcraft:tomatoseeditem>);
 utils.rh(<harvestcraft:beanseeditem>);
 utils.rh(<harvestcraft:beanitem>);
 
+utils.rh(<thaumicwonders:eldritch_cluster:0>);
+utils.rh(<thaumicwonders:eldritch_cluster:1>);
+utils.rh(<thaumicwonders:eldritch_cluster:2>);
+utils.rh(<thaumicwonders:eldritch_cluster:3>);
+utils.rh(<thaumicwonders:eldritch_cluster:4>);
+utils.rh(<thaumicwonders:eldritch_cluster:5>);
+utils.rh(<thaumicwonders:eldritch_cluster:6>);
+utils.rh(<thaumicwonders:eldritch_cluster:7>);
+utils.rh(<thaumicwonders:eldritch_cluster:8>);
+
 # Purge removed items from furnace
 for item in itemUtils.getItemsByRegexRegistryName("thermalfoundation:((tool|armor)\\.|horse_armor_).*") {
 	furnace.remove(<*>, item);

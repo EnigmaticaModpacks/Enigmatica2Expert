@@ -268,6 +268,8 @@ tooltips.dim_stages.enter_skyblock=§eYou started a §bSkyblock §eworld. You ca
 tooltips.dim_stages.remind_skyblock=§eYou have entered a §bSkyblock §eworld again. Remember: you cannot visit any other dimension §8(except Space and personal ones)§r.
 
 requious.jei.recipe.adv_bee_analyzer=Advanced Analyzer
+requious.jei.recipe.alchemists_stone=Alchemists Stone
+requious.jei.recipe.alienists_stone=Alienists Stone
 requious.jei.recipe.asteroids=Asteroids
 requious.jei.recipe.barrel_milking=Barrel Milking
 requious.jei.recipe.beacon_effects=Beacon Effects
@@ -297,6 +299,7 @@ requious.jei.recipe.petro_petunia=Petro Petunia
 requious.jei.recipe.scented_hive=Scented Hive
 requious.jei.recipe.syngas_producer=Syngas Producer
 requious.jei.recipe.tinkers_disassembler=Tinkers' Disassembler
+requious.jei.recipe.transmuters_stone=Transmuters Stone
 requious.jei.recipe.turbine=Turbine
 requious.jei.recipe.typewriter=Typewriter
 requious.jei.recipe.witch_water=Witch Water

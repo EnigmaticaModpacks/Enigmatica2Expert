@@ -275,6 +275,8 @@ tooltips.dim_stages.enter_skyblock=§eВы запустили мир-§bСкай
 tooltips.dim_stages.remind_skyblock=§eВы снова запустили мир-§bСкайблок §e. Помните: вы не можете посетить другие измерения §8(кроме личных и Космоса)§r.
 
 requious.jei.recipe.adv_bee_analyzer=Расширенный Анализатор
+requious.jei.recipe.alchemists_stone=Камень Алхимиов
+requious.jei.recipe.alienists_stone=Камень Чужеродностей
 requious.jei.recipe.asteroids=Астероиды
 requious.jei.recipe.barrel_milking=Доение Бочкой
 requious.jei.recipe.beacon_effects=Эффекты Маяка
@@ -304,6 +306,7 @@ requious.jei.recipe.petro_petunia=Петро Петуния
 requious.jei.recipe.scented_hive=Ароматный улей
 requious.jei.recipe.syngas_producer=Производитель Сингаза
 requious.jei.recipe.tinkers_disassembler=Разборщик Плотника
+requious.jei.recipe.transmuters_stone=Камень Трансмутаций
 requious.jei.recipe.turbine=Турбина
 requious.jei.recipe.typewriter=Печатная машинка
 requious.jei.recipe.witch_water=Ведьмина Вода

@@ -72,8 +72,8 @@ MINER: [[
     <actuallyadditions:quartz_paxel>,
   ], [
     <bloodmagic:demon_crystal>,
-    <thaumicwonders:eldritch_cluster:4>,
-    <thaumicwonders:eldritch_cluster:6>,
+    <jaopca:item_crystalshardsilver>,
+    <jaopca:item_crystalshardmithril>,
     <astralsorcery:blockgemcrystals:2>,
     <astralsorcery:blockgemcrystals:3>,
     <astralsorcery:blockgemcrystals:4>,

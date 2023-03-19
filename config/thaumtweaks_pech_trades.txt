@@ -29,8 +29,8 @@ MINER:
 	actuallyadditions:quartz_paxel // Black Quartz AIOT
 	5:
 	bloodmagic:demon_crystal // Demon Will Crystal Cluster
-	thaumicwonders:eldritch_cluster:4 // Eldritch Silver Cluster
-	thaumicwonders:eldritch_cluster:6 // Eldritch Cinnabar Cluster
+	jaopca:item_crystalshardsilver
+	jaopca:item_crystalshardmithril
 	astralsorcery:blockgemcrystals:2 // Gem Crystal Cluster
 	astralsorcery:blockgemcrystals:3 // Gem Crystal Cluster
 	astralsorcery:blockgemcrystals:4 // Gem Crystal Cluster
