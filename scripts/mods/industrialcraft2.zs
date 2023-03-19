@@ -574,3 +574,73 @@ craft.remake(<ic2:mining_pipe> * 64, ["pretty",
   "/   /"], {
   "/": <ore:stickStone>, # Stone Rod
 });
+
+# --------------------------
+# Coil rework
+# replace IC2 coil with Copper Wires
+# --------------------------
+utils.rh(<ic2:crafting:5>);
+
+static copperCoil as IIngredient = <industrialwires:ic2_wire_coil:1>
+.withTag({wireLength: 9}, false)
+.only(function(item) { return item.hasTag && !isNull(item.tag) && !isNull(item.tag.wireLength) && item.tag.wireLength.asInt() >= 9; })
+.transformNew(function (item) {
+	if(isNull(item.tag) || isNull(item.tag.wireLength)) return null;
+	val len = item.tag.wireLength.asInt();
+	if(len <= 9) return null;
+	return item.updateTag({ wireLength: len - 9 });
+}) as IIngredient;
+
+# [LV-Transformer] from [Copper Wire Coil][+2]
+craft.remake(<ic2:te:77>, ["pretty",
+  "# T #",
+  "# C #",
+  "# T #"], {
+  "#": <ore:plankWood>, # Zebrawood Wood Planks (Fireproof)
+  "T": <ore:itemInsulatedTinCable>, # Insulated Tin Cable
+  "C": copperCoil,
+});
+
+# [Metal Former] from [Copper Wire Coil][+4]
+craft.remake(<ic2:te:55>, ["pretty",
+  "  B  ",
+  "o C T",
+  "  ■  "], {
+  "B": <ore:circuitBasic>, # Electronic Circuit
+  "o": <ic2:tool_box:*>,   # Tool Box
+  "C": copperCoil,
+  "T": <ic2:tool_box>,     # Tool Box
+  "■": <ore:machineBlockCasing>, # Basic Machine Casing
+});
+
+# [Electric Motor] from [Copper Wire Coil][+2]
+craft.remake(<ic2:crafting:6>, ["pretty",
+  "  ▬  ",
+  "⌂ C ⌂",
+  "  ▬  "], {
+  "▬": <ore:ingotFakeIron>, # Iron Ingot
+  "⌂": <ic2:casing:6>,      # Tin Item Casing
+  "C": copperCoil,
+});
+
+# [Variac®] from [HOP Graphite Ingot][+2]
+craft.remake(<industrialwires:panel_component:4>, [
+  "R",
+  "▬",
+  "C"], {
+  "R": <ore:itemRubber>,       # Plastic
+  "▬": <ore:ingotHOPGraphite>, # HOP Graphite Ingot
+  "C": copperCoil,
+});
+
+# [Low Voltage Emitter] from [Copper Wire Coil][+3]
+craft.remake(<advgenerators:eu_output_lv>, ["pretty",
+  "  L  ",
+  "◙ C ◙",
+  "  R  "], {
+  "L": <advgenerators:eu_output_lv>, # Low Voltage Emitter
+  "◙": <advgenerators:iron_frame>,   # Iron Frame
+  "C": copperCoil,
+  "R": <advgenerators:iron_wiring>,  # Redstone-Iron Wiring
+});
+# --------------------------
