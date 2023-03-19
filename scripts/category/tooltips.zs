@@ -374,7 +374,6 @@ for lang, items in {
 		<forestry:miner_bag_t2>,
 		<forestry:miner_bag>,
 		<minecraft:written_book>,
-		<minecraft:skull:*>,
 	], 
 	dont_put_into_ae: [
 		<danknull:dank_null_0>,
