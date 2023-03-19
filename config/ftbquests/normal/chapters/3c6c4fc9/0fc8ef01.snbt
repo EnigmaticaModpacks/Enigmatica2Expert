@@ -1,0 +1,107 @@
+{
+	title: "{q.nuclearcraft_overh.hev_armor.name}",
+	icon: "qmd:chest_hev",
+	x: 18.6d,
+	y: 8.5d,
+	text: [
+		"{q.nuclearcraft_overh.hev_armor.desc}"
+	],
+	dependencies: [
+		"9c8a31e1"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "8235471e",
+		type: "item",
+		items: [{
+			id: "qmd:helm_hev",
+			tag: {
+				energyStorage: {
+					energy: 0L,
+					capacity: 1000000L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eab7f672",
+		type: "item",
+		items: [{
+			id: "qmd:chest_hev",
+			tag: {
+				energyStorage: {
+					energy: 0L,
+					capacity: 1000000L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4b994e16",
+		type: "item",
+		items: [{
+			id: "qmd:legs_hev",
+			tag: {
+				energyStorage: {
+					energy: 0L,
+					capacity: 1000000L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d72a5733",
+		type: "item",
+		items: [{
+			id: "qmd:boots_hev",
+			tag: {
+				energyStorage: {
+					energy: 0L,
+					capacity: 1000000L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f7a8b86f",
+		type: "item",
+		item: "qmd:luminous_paint 1 2",
+		count: 64
+	},
+	{
+		uid: "eac481fb",
+		type: "item",
+		item: "qmd:luminous_paint",
+		count: 64
+	},
+	{
+		uid: "48ed1917",
+		type: "item",
+		item: "qmd:luminous_paint 1 1",
+		count: 64
+	},
+	{
+		uid: "8763d3d4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	},
+	{
+		uid: "db1f68f6",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_hev"
+	}]
+}

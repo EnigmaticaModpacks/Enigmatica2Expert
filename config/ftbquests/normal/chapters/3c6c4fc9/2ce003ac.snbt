@@ -1,0 +1,75 @@
+{
+	title: "{q.nuclearcraft_overh.hazmat_armor.name}",
+	icon: "nuclearcraft:chest_hazmat",
+	x: 7.125d,
+	y: 8.25d,
+	text: [
+		"{q.nuclearcraft_overh.hazmat_armor.desc}"
+	],
+	dependencies: [
+		"a7410660"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "a752807f",
+		type: "item",
+		items: [{
+			id: "nuclearcraft:helm_hazmat",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f0e8b3ef",
+		type: "item",
+		items: [{
+			id: "nuclearcraft:chest_hazmat",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "27681c9b",
+		type: "item",
+		items: [{
+			id: "nuclearcraft:legs_hazmat",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ce3c630b",
+		type: "item",
+		items: [{
+			id: "nuclearcraft:boots_hazmat",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e8f0784e",
+		type: "item",
+		item: "nuclearcraft:rad_shielding 1 2",
+		count: 2
+	},
+	{
+		uid: "ca3339c2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	},
+	{
+		uid: "8dcc27e3",
+		type: "command",
+		auto: "invisible",
+		command: "gamestage silentadd @p armor_nc_hazmat"
+	}]
+}
