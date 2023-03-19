@@ -491,7 +491,7 @@ craft.remake(<thermalexpansion:strongbox>.withTag({/* Facing: 3 as byte,  */Leve
 	"  ▬  ",
 	"i ♥ i",
 	"  ▬  "], {
-	"♥": <ore:chest>,
+	"♥": <rustic:cabinet>,
 	"▬": <ore:nuggetTin>,
 	"i": <ore:nuggetCopper>,
 });

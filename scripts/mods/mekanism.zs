@@ -229,11 +229,7 @@ craft.remake(<mekanism:basicblock:8> * 2, ["pretty",
 	[<ore:plateElectrum>, <ore:circuitBasic>, <ore:plateElectrum>]]);
 
 # [Solar Panel] from [Osmium Ingot][+2]
-craft.reshapeless(<mekanismgenerators:solarpanel>, "□▬A", {
-  "A": <ore:alloyAdvanced>, # Enriched Alloy
-  "□": <ore:itemPlatePhotovoltaic>, # Photovoltaic Plate
-  "▬": <ore:ingotOsmium>,           # Osmium Ingot
-});
+mods.mekanism.compressor.addRecipe(<ore:itemPlatePhotovoltaic>, <mekanismgenerators:solarpanel>);
 
 # [Solar Generator] from [Osmium Dust][+2]
 craft.remake(<mekanismgenerators:generator:1>, [
@@ -518,14 +514,66 @@ craft.remake(<mekanismgenerators:generator:7>, ["pretty",
   "U": <ore:alloyUltimate>,   # Atomic Alloy
 });
 
-# [Turbine Casing*6] from [Steel Casing][+2]
+# [Turbine Casing]*6 from [Steel Casing][+2]
 craft.remake(<mekanismgenerators:generator:10> * 6, ["pretty",
-  "T ⌂ T",
-  "⌂ S ⌂",
-  "T ⌂ T"], {
-  "⌂": <nuclearcraft:solid_fission_controller>, # Fission Reactor Casing
-  "S": <mekanism:basicblock:8>,      # Steel Casing
-  "T": <ore:wallTurbine>,
+  "◙ H ◙",
+  "H ⌂ H",
+  "◙ H ◙"], {
+  "◙": <ore:steelFrame>,        # Steel Chassis
+  "H": <ore:sheetHDPE>,         # HDPE Sheet
+  "⌂": <mekanism:basicblock:8>, # Steel Casing
+});
+
+# [Turbine Vent] from [Turbine Casing][+2]
+craft.remake(<mekanismgenerators:generator:12>, ["pretty",
+  "□ S □",
+  "S ⌂ S",
+  "□ S □"], {
+  "□": <ore:plateTitaniumAluminide>,      # Titanium Aluminide Plate
+  "S": <ore:fanSteel>,                    # Steel Fan
+  "⌂": <mekanismgenerators:generator:10>, # Turbine Casing
+});
+
+# [Turbine Valve] from [Turbine Casing][+3]
+craft.remake(<mekanismgenerators:generator:11>, ["pretty",
+  "□ ▬ □",
+  "A ⌂ A",
+  "□ ▬ □"], {
+  "□": <ore:plateTitaniumAluminide>,            # Titanium Aluminide Plate
+  "▬": <ore:ingotOsgloglas>,                    # Osgloglas Ingot
+  "A": <advgenerators:advanced_pressure_valve>, # Advanced Pressure Valve
+  "⌂": <mekanismgenerators:generator:10>,       # Turbine Casing
+});
+
+# [Pressure Disperser] from [Turbine Casing][+2]
+craft.remake(<mekanism:basicblock2:6>, ["pretty",
+  "□ D □",
+  "D ⌂ D",
+  "□ D □"], {
+  "□": <ore:plateTitaniumAluminide>,      # Titanium Aluminide Plate
+  "D": <enderio:block_dark_steel_door>,   # Dark Steel Door
+  "⌂": <mekanismgenerators:generator:10>, # Turbine Casing
+});
+
+# [Electromagnetic Coil] from [Turbine Valve][+3]
+craft.remake(<mekanismgenerators:generator:9>, ["pretty",
+  "B U B",
+  "C T C",
+  "B U B"], {
+  "B": <advancedrocketry:basalt>,            # Basalt Sediment
+  "U": <ore:circuitUltimate>,                # Ultimate Control Circuit
+  "C": <nuclearcraft:turbine_dynamo_coil:4>, # Copper Turbine Dynamo Coil
+  "T": <mekanismgenerators:generator:11>,    # Turbine Valve
+});
+
+# [Rotational Complex] from [Turbine Casing][+2]
+craft.remake(<mekanismgenerators:generator:8>, ["pretty",
+  "▬ ⌂ ▬",
+  "G G G",
+  "▬ ⌂ ▬"], {
+  "▬": <ore:ingotOsgloglas>,              # Osgloglas Ingot
+  "⌂": <mekanismgenerators:generator:10>, # Turbine Casing
+  "G": <ore:wireGoldTungsten>,            # Gold Plated Tungsten Wire
 });
 
 # Conflicts
@@ -699,4 +747,17 @@ craft.remake(<mekanism:machineblock3:5>, ["pretty",
   "w": <ore:workbench>, # Crafting Table
   ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
   "S": <immersiveengineering:material:9>, # Steel Mechanical Component
+});
+
+# Harder to prevent spamming
+# [Fuelwood Heater] from [Steel Casing][+4]
+craft.remake(<mekanism:machineblock3:6>, ["pretty",
+  "⌂ t ⌂",
+  "L S L",
+  "⌂ ♥ ⌂"], {
+  "⌂": <ic2:casing:5>,          # Steel Item Casing
+  "t": <ore:fanSteel>,          # Steel Fan
+  "L": <tconstruct:firewood>,   # Lavawood
+  "S": <mekanism:basicblock:8>, # Steel Casing
+  "♥": <ore:xuRedstoneCoil>,    # Wireless RF Heating Coil
 });

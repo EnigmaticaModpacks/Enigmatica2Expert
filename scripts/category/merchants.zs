@@ -212,6 +212,9 @@ val merchData = {
         [E*55, <plustic:osmiridiumingot>, <littletiles:hammer>],
         [E*35, <littletiles:saw>],
       ],
+      7: [
+        [<thaumcraft:banner_red>, <thaumcraft:crimson_blade>, <thaumcraft:banner_crimson_cult>],
+      ],
     },
   },
   "minecraft:butcher": {

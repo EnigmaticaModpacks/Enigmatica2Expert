@@ -97,23 +97,23 @@ for i, stone in transStones {
   );
 }
 
-# [Alienist's Stone] from [Starmetal Ingot][+8]
+# [Alienist's Stone] from [Starmetal Ingot][+7]
 mods.thaumcraft.Infusion.removeRecipe(<thaumicwonders:alienist_stone>);
 mods.thaumcraft.Infusion.registerRecipe(
   "alienist_stone", # Name
   "TWOND_ALIENIST_STONE@1", # Research
   <thaumicwonders:alienist_stone>.withDamage(transStoneMaxDamage - 128), # Output
-  13, # Instability
-  [<aspect:metallum> * 50, <aspect:vitium> * 50, <aspect:alkimia> * 50],
+  3, # Instability
+  [<aspect:alkimia> * 10, <aspect:vitium> * 10],
   <astralsorcery:itemcraftingcomponent:1>, # Central Item
   Grid(["pretty",
-  "  r  ",
-  "♦   ◊",
-  "  θ  "], {
-  "r": <thaumcraft:primordial_pearl>.anyDamage(), # Primordial Pearl
-  "♦": <ore:dirtyGemMalachite>,                   # Dirty Malachite
-  "◊": <ore:dirtyGemTopaz>,                       # Dirty Topaz
-  "θ": <ore:dirtyGemDraconium>,                   # Dirty Draconium
+  "  ˛  ",
+  "ͺ   ‚",
+  "  ͵  "], {
+  "˛": <ore:nuggetVoid>,      # Void Metal Nugget
+  "ͺ": <ore:nuggetMalachite>, # Malachite Nugget
+  "‚": <ore:nuggetTopaz>,     # Topaz Nugget
+  "͵": <ore:nuggetDraconium>, # Draconium Nugget
 }).spiral(1));
 
 # [Alchemist's Stone] from [Phial of Ordo Essentia]*5[+2]
@@ -161,6 +161,64 @@ events.onPlayerPickupItem(function(e as crafttweaker.event.PlayerPickupItemEvent
 });
 
 # ---------------------------------------------------------
+# Unbreakable stones
+# ---------------------------------------------------------
+
+# [Alchemist's Stone] from [Alchemist's Stone][+7]
+mods.thaumcraft.Infusion.registerRecipe(
+  "unbreakable_alchemist_stone", # Name
+  "INFUSION", # Research
+  <thaumicwonders:alchemist_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), # Output
+  5, # Instability
+  [<aspect:caeles> * 100, <aspect:sanguis> * 40],
+  <thaumicwonders:alchemist_stone>, # Central Item
+  Grid(["pretty",
+  "▬ e ▬",
+  "□   □",
+  "▬ ▲ ▬"], {
+  "▬": <ore:ingotGlitch>,      # Glitch Infused Ingot
+  "e": <thaumcraft:pech_wand>, # Pech Wand
+  "□": <ore:plateMithrillium>, # Mithrillium Plate
+  "▲": <ore:dustMana>,         # Mana Dust
+}).spiral(1));
+
+# [Transmuter's Stone] from [Transmuter's Stone][+7]
+mods.thaumcraft.Infusion.registerRecipe(
+  "unbreakable_transmuter_stone", # Name
+  "INFUSION", # Research
+  <thaumicwonders:transmuter_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), # Output
+  5, # Instability
+  [<aspect:caeles> * 100, <aspect:sanguis> * 40],
+  <thaumicwonders:transmuter_stone>, # Central Item
+  Grid(["pretty",
+  "▬ e ▬",
+  "□   □",
+  "▬ ▲ ▬"], {
+  "▬": <ore:ingotGlitch>,      # Glitch Infused Ingot
+  "e": <thaumcraft:pech_wand>, # Pech Wand
+  "□": <ore:plateMithrillium>, # Mithrillium Plate
+  "▲": <ore:dustMana>,         # Mana Dust
+}).spiral(1));
+
+# [Alienist's Stone] from [Alienist's Stone][+7]
+mods.thaumcraft.Infusion.registerRecipe(
+  "unbreakable_alienist_stone", # Name
+  "INFUSION", # Research
+  <thaumicwonders:alienist_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), # Output
+  5, # Instability
+  [<aspect:caeles> * 100, <aspect:sanguis> * 40],
+  <thaumicwonders:alienist_stone>, # Central Item
+  Grid(["pretty",
+  "▬ e ▬",
+  "□   □",
+  "▬ ▲ ▬"], {
+  "▬": <ore:ingotGlitch>,      # Glitch Infused Ingot
+  "e": <thaumcraft:pech_wand>, # Pech Wand
+  "□": <ore:plateMithrillium>, # Mithrillium Plate
+  "▲": <ore:dustMana>,         # Mana Dust
+}).spiral(1));
+
+# ---------------------------------------------------------
 
 scripts.jei.crafting_hints.addInsOutCatl([
   <thaumcraft:jar_normal>.withTag({Aspects: [{amount: 250, key: "aqua"}]}),
@@ -188,3 +246,20 @@ mods.thaumcraft.Infusion.registerRecipe(
     <thaumadditions:aura_charger>,
   ]
 );
+
+# [Creative Essentia Jar] from [Black Hole Talisman][+7]
+craft.remake(<thaumicwonders:creative_essentia_jar>, ["pretty",
+  "B D V D B",
+  "S I M I S",
+  "S M l M S",
+  "S I M I S",
+  "B D A D B"], {
+  "B": <bloodmagic:decorative_brick:1>,         # Bloodstone Brick
+  "D": <bloodmagic:points_upgrade>,             # Draft of Angelus
+  "V": <thaumicwonders:void_beacon>,            # Void Beacon
+  "S": <thaumicaugmentation:starfield_glass:1>, # Starfield Glass (Dimensional Fracture)
+  "I": <thaumicaugmentation:impetus_mirror>,    # Impetus Mirror
+  "M": <thaumadditions:jar_mithminite>,         # Mithminite Fortified Jar
+  "l": <botania:blackholetalisman>,             # Black Hole Talisman
+  "A": <thaumicwonders:alkahest_vat>,           # Alkahest Vat
+});

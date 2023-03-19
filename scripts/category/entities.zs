@@ -62,6 +62,20 @@ for output, ingrs in {
     <animania:hamster_ball_clear>,
   ],
 
+  # Frog
+  <animania:entity_egg_frog> : [
+    <quark:golden_frog_leg>,    # Golden Frog Leg
+    <ore:ballMud>,              # Mud Ball
+    <harvestcraft:frograwitem>, # Raw Frog
+  ],
+
+  # Dart Frog
+  <animania:entity_egg_dart_frog> : [
+    <quark:golden_frog_leg>,    # Golden Frog Leg
+    <ore:plantPoisonivy>,       # Poison Ivy
+    <harvestcraft:frograwitem>, # Raw Frog
+  ],
+
   # Small worm
   <iceandfire:iceandfire.deathworm_egg> : [
     <twilightforest:moonworm>,

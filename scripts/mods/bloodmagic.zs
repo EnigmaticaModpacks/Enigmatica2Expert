@@ -261,9 +261,11 @@ mods.bloodmagic.BloodAltar.addRecipe(<animus:blockbloodwood>, <randomthings:spec
 # mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
 mods.bloodmagic.AlchemyTable.addRecipe(<bloodmagic:decorative_brick:2> * 64, [
 <draconicevolution:infused_obsidian>,   # Draconium Infused Obsidian
-<thaumcraft:crimson_blade>,             # Crimson Blade
-<thaumcraft:banner_crimson_cult>,       # Crimson Cult Banner
-<ore:gemBenitoite>,                     # Benitoite
+<thaumicaugmentation:research_notes>,
+<thaumcraft:banner_crimson_cult>,     # Crimson Cult Banner
+<bloodmagic:item_demon_crystal:*>,    # Demon Will Crystal
+<bloodmagic:item_demon_crystal:*>,    # Demon Will Crystal
+<bloodmagic:item_demon_crystal:*>,    # Demon Will Crystal
 ], 100000, 300, 4);
 
 # [Crystal Cluster Brick]*4 from [Crystal Cluster]

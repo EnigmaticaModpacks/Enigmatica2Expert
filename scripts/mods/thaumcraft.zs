@@ -666,7 +666,6 @@ for i, oreBase in "Copper Tin Silver Lead".split(' ') {
   val nugget = oreDict["nugget"~oreBase].firstItem;
   swapBonus(oreDict["ore"~oreBase], wrong, nugget % 33);
   swapBonus(<thaumcraft:cluster>.definition.makeStack(i+2), wrong, nugget * 2 % 33);
-  swapBonus(<thaumicwonders:eldritch_cluster>.definition.makeStack(i+2), wrong, nugget * 4 % 33);
 }
 
 
@@ -690,6 +689,24 @@ mods.thaumcraft.Infusion.registerRecipe("crimson_rites", "INFUSION",
 [<aspect:vitium> * 30, <aspect:mortuus> * 15, <aspect:praecantatio> * 30, <aspect:auram> * 10],
 <thaumcraft:thaumonomicon>,
 [<thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:salis_mundus>, <thaumictinkerer:energetic_nitor>, <thaumcraft:ingot>, <thaumictinkerer:energetic_nitor>]);
+
+# [Crimson Blade] from [Skullfire Sword][+6]
+craft.remake(<thaumcraft:crimson_blade>, ["pretty",
+  "          □ T",
+  "        □ T □",
+  "      □ T □  ",
+  "п п B S □    ",
+  "  C B B      ",
+  "п F C п      ",
+  "F п   п      "], {
+  "□": <ore:plateMithminite>,                  # Mithminite Plate
+  "T": <thaumadditions:taintkin>,              # Taintkin
+  "п": <ore:plateVoid>,                        # Void Metal Plate
+  "B": <bloodmagic:bound_sword>.withTag({Unbreakable: 1 as byte, activated: 1 as byte}, false), # Bound Blade
+  "S": <avaritia:skullfire_sword>.anyDamage(), # Skullfire Sword
+  "C": <thaumcraft:curio:6>,                   # Crimson Rites
+  "F": <botania:brewflask>.withTag({brewKey: "bloodthirst"}), # Flask of Crimson Shade (6)
+});
 
 # [Spawn Lesser Crimson Portal] from [Golden Egg][+3]
 mods.thaumcraft.Infusion.registerRecipe("spawn_lesser_crimson_portal", "INFUSION",
@@ -1137,3 +1154,8 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe(
   "P": <botania:rune:15>,                   # Rune of Pride
   }).shapeless()
 );
+
+# Add rare drop to loot crates
+# TODO: Seems like this tweak not working
+loottweaker.LootTweaker.getTable("thaumicaugmentation:block/loot_common").getPool("loot_common").addItemEntry(<qmd:semiconductor:1>, 1);
+loottweaker.LootTweaker.getTable("thaumicaugmentation:block/loot_uncommon").getPool("loot_uncommon").addItemEntry(<qmd:semiconductor>, 1);

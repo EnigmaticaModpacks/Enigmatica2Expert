@@ -252,5 +252,23 @@ function getCustomRecipes() {
         100000
       ),
     ],
+
+    'config/advRocketry/Lathe.xml': [
+      ...[
+        ['ingotCopper', 'immersiveengineering:material:20', 5],
+        ['ingotElectrum', 'immersiveengineering:material:21', 5],
+        ['ingotAluminium', 'immersiveengineering:material:22', 5],
+        ['ingotSteel', 'immersiveengineering:material:23', 5],
+        ['plateCopper', 'ic2:cable', 6],
+        ['plateGold', 'ic2:cable:2', 6],
+        ['plateIron', 'ic2:cable:3', 6],
+        ['plateTin', 'ic2:cable:4', 6],
+        ['integrateddynamics:crystalized_menril_chunk', 'integrateddynamics:cable', 2],
+        ['crystalPureFluix', 'appliedenergistics2:part:16', 4],
+      ]
+        .map(([input, output, amount]) =>
+          makeXMLRecipe(`Wires ${input}`, input, `${output} ${amount}`, 10, 100000)
+        ),
+    ],
   }
 }

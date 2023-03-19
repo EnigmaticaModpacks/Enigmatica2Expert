@@ -256,6 +256,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Desert Acacia Wood Planks (Fireproof)] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:logs.fireproof.0 1 2</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:planks.fireproof.0 10 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Desert Acacia Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

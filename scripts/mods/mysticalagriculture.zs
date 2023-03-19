@@ -113,7 +113,7 @@ for i in 0 .. 6 {
 		? <mysticalagradditions:insanium:1>
 		: <mysticalagriculture:crafting>.definition.makeStack(i + 17);
 	recipes.remove(output);
-	if(i==5) mods.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
+	if(i==5) scripts.mods.forestry.Carpenter.addRecipe(output, shape, 40, <liquid:sewage> * 1000);
 	else recipes.addShaped(output, shape);
 }
 
@@ -736,6 +736,7 @@ for i, item in furnaceByTier {
 function remakeBlock(recName as string, output as IBlockState, ingrs as IIngredient[], fluid as string = 'stone') as void {
 	recipes.removeByRecipeName(recName);
 	scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, fluid, output);
+	// scripts.processUtils.avdRockXmlRecipe("Crystallizer", [ingrs[0]], [game.getLiquid(fluid) * 1000], [output.block.item], null);
 }
 
 function makeSmelt(recName as string, output as ILiquidStack, ingrs as IIngredient[]) as void {
@@ -840,7 +841,7 @@ return getUnchangedTableRecipes()
 // remakeFluid ("mysticalagriculture:dirt_1"               , <fluid:dirt>                              , [<mysticalagriculture:dirt_essence>]); 
 // remakeFluid ("mysticalagriculture:dirt_2"               , <fluid:dirt>                              , [<mysticalagriculture:dirt_essence>]); 
 // remakeFluid ("mysticalagriculture:dirt"                 , <fluid:dirt>                              , [<mysticalagriculture:dirt_essence>]);
-remakeAltair("mysticalagriculture:glowstone_dust"       , <minecraft:glowstone_dust> * 12                    , [<mysticalagriculture:glowstone_essence>]);
+remakeAltair("mysticalagriculture:glowstone_dust"       , <minecraft:glowstone_dust> * 48                    , [<mysticalagriculture:glowstone_essence>]);
 // remakeFluid ("mysticalagriculture:ice"                  , <fluid:ice>                               , [<mysticalagriculture:ice_essence>]);
 remakeManapool ("mysticalagriculture:ingotenderium"        , <thermalfoundation:material:231>                          , [<mysticalagriculture:enderium_essence>]);
 remakeFluid ("mysticalagriculture:ingots"               , <fluid:knightslime>                       , [<mysticalagriculture:knightslime_essence> * 10]);

@@ -175,7 +175,7 @@ craft.remake(<excompressum:mana_sieve>, ["pretty",
   "A": <exnihilocreatio:item_material:3>, # Ancient Spores
   "■": <botania:storage>,                 # Block of Manasteel
   "S": <exnihilocreatio:block_sieve>,     # Sieve
-  "◊": <ore:gemTanzanite>,                # Tanzanite
+  "◊": <ore:gemEmerald>,
   "▄": <libvulpes:advancedmotor>,         # Advanced Motor
 });
 

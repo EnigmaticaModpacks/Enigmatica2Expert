@@ -428,3 +428,32 @@ craft.remake(<tconstruct:brownstone:1> * 64, ["pretty",
 
 # Simple Seared bricks
 furnace.addRecipe(<tconstruct:materials>, <forestry:ash>, 0.5);
+
+# ---------------------------------
+# Conversion between block and brick
+# ---------------------------------
+
+# [Dried Bricks]*2 from [Dried Brick]
+recipes.removeByRecipeName("tconstruct:gadgets/dried/dried_bricks");
+craft.make(<tconstruct:dried_clay:1> * 2, ["pretty",
+  "D D D",
+  "D   D",
+  "D D D"], {
+  "D": <tconstruct:materials:2>, # Dried Brick
+});
+
+# [Dried Clay] from [Dried Brick]
+craft.reshapeless(<tconstruct:dried_clay>, "DDDD", {
+  "D": <tconstruct:materials:2>, # Dried Brick
+});
+
+# Conversion between block and brick [Dried Brick]*4 from [Dried Clay]
+craft.reshapeless(<tconstruct:materials:2> * 4, "D", {
+  "D": <tconstruct:dried_clay>, # Dried Clay
+});
+
+# ---------------------------------
+
+# Unefficient Seared stone alt
+mods.mechanics.addTubeRecipe([<extrautils2:compressedcobblestone:1>], <liquid:stone> * 1000);
+mods.mechanics.addTubeRecipe([<additionalcompression:stone_compressed:1>], <liquid:stone> * 1000);

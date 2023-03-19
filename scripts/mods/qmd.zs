@@ -94,6 +94,48 @@ craft.remake(<qmd:rtg_strontium>, ["pretty",
   "■": <ore:blockStrontium90>, # Strontium-90 Block
 });
 
+val ingrs = {
+  "O": <qmd:luminous_paint:2>,                      # Orange Radioluminescent Paint
+  "H": <nuclearcraft:rad_shielding:2>,              # Heavy Radiation Shielding
+  "R": <industrialforegoing:plastic>,               # Plastic
+  "a": <nuclearcraft:helm_hazmat>.withTag({}),      # Hazmat Suit Headwear
+  "z": <nuclearcraft:chest_hazmat>.withTag({}),     # Hazmat Suit Chestpiece
+  "●": <nuclearcraft:legs_hazmat>.withTag({}),      # Hazmat Suit Leggings
+  "m": <nuclearcraft:boots_hazmat>.withTag({}),     # Hazmat Suit Boots
+  "S": <ic2:hazmat_helmet>.withTag({}).anyDamage(), # Scuba Helmet
+  "⌀": <ic2:hazmat_chestplate>.withTag({}).anyDamage(), # Hazmat Suit
+  "○": <ic2:hazmat_leggings>.withTag({}).anyDamage(), # Hazmat Suit Leggings
+  "u": <ic2:rubber_boots>.withTag({}).anyDamage(),  # Rubber Boots
+} as IIngredient[string];
+
+# [HEV Helmet] from [Hazmat Suit Headwear][+4]
+craft.make(<qmd:helm_hev>, ["pretty",
+  "O O O",
+  "H a H",
+  "R S R"], ingrs
+);
+
+# [HEV Chestplate] from [Hazmat Suit Chestpiece][+4]
+craft.make(<qmd:chest_hev>, ["pretty",
+  "O O O",
+  "H z H",
+  "R ⌀ R"], ingrs
+);
+
+# [HEV Leggings] from [Hazmat Suit Leggings][+4]
+craft.make(<qmd:legs_hev>, ["pretty",
+  "O O O",
+  "H ● H",
+  "R ○ R"], ingrs
+);
+
+# [HEV Boots] from [Hazmat Suit Boots][+4]
+craft.make(<qmd:boots_hev>, ["pretty",
+  "O O O",
+  "H m H",
+  "R u R"], ingrs
+);
+
 # [Tungsten Filament] from [Tungsten Ingot]
 scripts.process.alloy([<qmd:ingot>, <qmd:ingot>],
   <qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}), "except: AlloyFurnace"
@@ -116,15 +158,19 @@ utils.rh(<qmd:semiconductor:2>); // Silicon boule
 mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(<qmd:semiconductor:1>);
 mods.nuclearcraft.FissionIrradiator.addRecipe(<ore:waferSilicon>, <qmd:semiconductor:1>, 120000, 0, 0, 0);
 
+// Molten Silicon from pre-AR sources
+scripts.process.melt(<ore:ingotSilicon>, <fluid:silicon> * 144, "except: melter");
+scripts.process.melt(<ore:blockSilicon>, <fluid:silicon> * 1296, "except: melter");
+mods.tconstruct.Casting.addTableRecipe(<appliedenergistics2:material:5>, <tconstruct:cast_custom:2>, <liquid:silicon>, 144, false);
+mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:silicon_block>, null, <liquid:silicon>, 1296, false);
+mods.inworldcrafting.FluidToItem.transform(<libvulpes:productboule:3>, <fluid:silicon>, [<contenttweaker:silicon_block>], true);
+scripts.process.saw(<ore:bouleSilicon>, <advancedrocketry:wafer>, "except: shapeless mekSawmill AdvRockCutter", null, 0, {hardness: 9});
+
 // Unify P-Type Doped Silicon
 mods.qmd.target_chamber.removeRecipeWithInput(<qmd:semiconductor:3>, ((<particle:boron_ion>*1000000)^600)~2.0);
 mods.qmd.target_chamber.addRecipe(<ore:waferSilicon>, ((<particle:boron_ion>*1000000)^600)~2.0, <qmd:semiconductor>, 
 null, null, null, 
 1000, 1.0, 0, 0);
-
-// //qmd bugged recipe fix
-// mods.qmd.target_chamber.removeRecipeWithInput(<ore:ingotUranium238>, (<particle:neutron>*1818000)^26000);
-// mods.qmd.target_chamber.addRecipe(<ore:ingotUranium238>, (<particle:neutron>*1000000)^26000, <ore:ingotUranium235>, null, <particle:neutron>*4, null, 34000, 0.55, -17800);
 
 //mods.qmd.nucleosynthesis_chamber.addRecipe(IIngredient inputFluid1, IIngredient inputFluid2, IIngredient inputParticle, IIngredient outputFluid1, IIngredient outputFluid2, {long maxEnergy}, {long heatRelased})
 mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:sky_stone>*52, <liquid:enrichedlava>*20, <particle:neutron>*1000000, <liquid:neutronium>*72, null, 10000, 874000);
@@ -143,16 +189,24 @@ utils.rh(<qmd:axe_tungsten_carbide>);
 utils.rh(<qmd:hoe_tungsten_carbide>);
 
 ////////////////////////////////////////
-//           Unify Cobalt             //
+//               Unify                //
 ////////////////////////////////////////
-utils.rh(<qmd:dust:4>);
-utils.rh(<qmd:ingot:4>);
+utils.rh(<qmd:dust:4>); // Cobalt
+utils.rh(<qmd:ingot:4>); // Cobalt
+utils.rh(<qmd:dust>); // Tungsten
+utils.rh(<qmd:ingot>); // Tungsten
+utils.rh(<qmd:ingot:10>); // Platinum
+utils.rh(<qmd:ingot_alloy:4>); // Osmiridium
 
-////////////////////////////////////////
-//           Unify Tungsten           //
-////////////////////////////////////////
-utils.rh(<qmd:dust>);
-utils.rh(<qmd:ingot>);
+# Sodium Chlorde (salt)
+mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:chemical_dust:3>);
+mods.nuclearcraft.Crystallizer.addRecipe(<fluid:sodium_chloride_solution> * 666, <mekanism:salt>);
+utils.rh(<qmd:chemical_dust:3>);
+
+# Sodium Nitrate (niter)
+mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:chemical_dust:2>);
+mods.nuclearcraft.Crystallizer.addRecipe(<fluid:sodium_nitrate_solution> * 666, <thermalfoundation:material:772> * 20);
+utils.rh(<qmd:chemical_dust:2>);
 
 ////////////////////////////////////////
 // Replacing Mercury with Quicksilver //
@@ -168,6 +222,8 @@ mods.nuclearcraft.Turbine.removeRecipeWithOutput(<fluid:mercury>);
 mods.nuclearcraft.Turbine.addRecipe(<liquid:hot_mercury>, <liquid:fluid_quicksilver> * 2, 8192.0, 4.0, 1.0);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(<qmd:discharge_lamp2:1>);
 mods.nuclearcraft.Infuser.addRecipe(<qmd:discharge_lamp:6>, <liquid:fluid_quicksilver>*144, <qmd:discharge_lamp2:1>);
+mods.qmd.nucleosynthesis_chamber_heater.removeRecipeWithOutput(<fluid:hot_mercury>);
+mods.qmd.nucleosynthesis_chamber_heater.addRecipe(<liquid:fluid_quicksilver>, <fluid:hot_mercury>, 1);
 
 // Below, taken from Multiblock-Madness
 // https://github.com/Filostorm/Multiblock-Madness/blob/19659008c64234f96d5607df3f9ca6df7adee778/scripts/Non%20Mod%20Scripts/unification.zs#L150-L301
@@ -325,3 +381,15 @@ mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antideuter
 
 utils.rh(<qmd:ingot2:2>);
 ////////////////////////////////////////
+
+// mods.qmd.target_chamber.addRecipe(
+//   IIngredient inputItem,
+//   IIngredient inputParticle,
+//   IIngredient outputItem,
+//   IIngredient outputParticle1,
+//   IIngredient outputParticle2,
+//   IIngredient outputParticle3,
+//   long maxEnergy,
+//   double crossSection,
+//   {long energyReleased, double processRadiation}
+// )

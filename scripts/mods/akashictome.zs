@@ -22,6 +22,7 @@
 	cookingforblockheads:  {id: "cookingforblockheads:recipe_book",     Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads"},  Damage: 1 as short},
 	xnet:                  {id: "xnet:xnet_manual",                     Count: 1 as byte, tag: {"akashictome:definedMod": "xnet"},                  Damage: 0 as short},
 	tconstruct:            {id: "tconstruct:book",                      Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"},            Damage: 0 as short},
+	spiceoflife:           {id: "spiceoflife:bookfoodjournal",          Count: 1 as byte, tag: {"akashictome:definedMod": "spiceoflife"},           Damage: 0 as short},
 	solcarrot:             {id: "solcarrot:food_book",                  Count: 1 as byte, tag: {"akashictome:definedMod": "solcarrot"},             Damage: 0 as short},
 	rustic:                {id: "rustic:book",                          Count: 1 as byte, tag: {"akashictome:definedMod": "rustic"},                Damage: 0 as short},
 	bloodmagic:            {id: "guideapi:bloodmagic-guide",            Count: 1 as byte, tag: {"akashictome:definedMod": "bloodmagic"},            Damage: 0 as short},

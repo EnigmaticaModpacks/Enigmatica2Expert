@@ -151,6 +151,7 @@ addLootList(
 	<enderio:item_material:2>          : 70,
 	<enderio:item_material:35>         : 30,
 	<enderio:item_material:68>         : 10,
+	<qmd:semiconductor:1>              : 8,
 	<rftools:storage_module:1>         : 6,
 	<rftools:storage_module:2>         : 2,
 	FluidCell("nutrient_distillation") : 20,

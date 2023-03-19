@@ -94,7 +94,7 @@ addInfFur(<jaopca:item_clusterardite>              , [RE % 2, <tconstruct:nugget
 addInfFur(<jaopca:item_clusterastralstarmetal>     , [RE % 2, <jaopca:item_nuggettungsten> * 4 % 32, <jaopca:item_nuggetastralstarmetal> % 33]);
 addInfFur(<jaopca:item_clusterboron>               , [RE % 2, <jaopca:item_nuggetboron> % 33, <jaopca:item_nuggetlithium> * 4 % 32]);
 addInfFur(<jaopca:item_clustercertusquartz>        , [RE % 2, <jaopca:item_nuggetcertusquartz> % 33, <thermalfoundation:material:16> * 6 % 32]);
-addInfFur(<jaopca:item_clusterchargedcertusquartz> , [RE % 2, <jaopca:item_nuggetlapis> * 32 % 32, <jaopca:item_nuggetchargedcertusquartz> % 33]);
+addInfFur(<jaopca:item_clusterchargedcertusquartz> , [RE % 2, <jaopca:item_nuggettopaz> * 6 % 32, <jaopca:item_nuggetchargedcertusquartz> % 33]);
 addInfFur(<jaopca:item_clustercoal>                , [RE % 2, <thaumcraft:nugget:9> * 9 % 32]);
 addInfFur(<jaopca:item_clustercobalt>              , [RE % 2, <tconstruct:nuggets> % 33, <thermalfoundation:material:197> * 4 % 32]);
 addInfFur(<jaopca:item_clusterdiamond>             , [RE % 2, <thermalfoundation:material:16> % 33, <jaopca:item_nuggetmalachite> * 6 % 32]);
@@ -104,7 +104,7 @@ addInfFur(<jaopca:item_clusterdraconium>           , [RE % 2, <draconicevolution
 addInfFur(<jaopca:item_clusteremerald>             , [RE % 2, <thermalfoundation:material:17> % 33, <jaopca:item_nuggettanzanite> * 6 % 32]);
 addInfFur(<jaopca:item_clusteriridium>             , [RE % 2, <mekanism:nugget:1> * 4 % 32, <thermalfoundation:material:199> % 33]);
 addInfFur(<jaopca:item_clusterlapis>               , [RE % 2, <jaopca:item_nuggetlapis> % 33, <jaopca:item_nuggetsapphire> * 6 % 32]);
-addInfFur(<jaopca:item_clusterlithium>             , [RE % 2, <jaopca:item_nuggetlithium> % 33, <jaopca:item_nuggetapatite> * 32 % 32]);
+addInfFur(<jaopca:item_clusterlithium>             , [RE % 2, <jaopca:item_nuggetlithium> % 33, <jaopca:item_nuggettopaz> * 6 % 32]);
 addInfFur(<jaopca:item_clustermagnesium>           , [RE % 2, <jaopca:item_nuggetmagnesium> % 33, <thermalfoundation:material:192> * 4 % 32]);
 addInfFur(<jaopca:item_clustermalachite>           , [RE % 2, <jaopca:item_nuggetmalachite> % 33, <thermalfoundation:material:192> * 4 % 32]);
 addInfFur(<jaopca:item_clustermithril>             , [RE % 2, <thermalfoundation:material:200> % 33, <jaopca:item_nuggetastralstarmetal> * 4 % 32]);
@@ -132,7 +132,7 @@ addInfFur(<jaopca:item_dirtygemardite>             , [<minecraft:gold_nugget> * 
 addInfFur(<jaopca:item_dirtygemastralstarmetal>    , [<jaopca:item_nuggettungsten> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemboron>              , [<jaopca:item_nuggetlithium> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemcertusquartz>       , [<thermalfoundation:material:16> * 64 % 100]);
-addInfFur(<jaopca:item_dirtygemchargedcertusquartz>, [<jaopca:item_nuggetlapis> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemchargedcertusquartz>, [<jaopca:item_nuggettopaz> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemcoal>               , [<thaumcraft:nugget:9> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemcobalt>             , [<thermalfoundation:material:197> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemcopper>             , [<minecraft:gold_nugget> * 64 % 100]);
@@ -146,7 +146,7 @@ addInfFur(<jaopca:item_dirtygemiridium>            , [<mekanism:nugget:1> * 64 %
 addInfFur(<jaopca:item_dirtygemiron>               , [<minecraft:gold_nugget> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemlapis>              , [<jaopca:item_nuggetsapphire> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemlead>               , [<thermalfoundation:material:194> * 64 % 100]);
-addInfFur(<jaopca:item_dirtygemlithium>            , [<jaopca:item_nuggetapatite> * 64 % 100]);
+addInfFur(<jaopca:item_dirtygemlithium>            , [<jaopca:item_nuggettopaz> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemmagnesium>          , [<thermalfoundation:material:192> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemmalachite>          , [<thermalfoundation:material:192> * 64 % 100]);
 addInfFur(<jaopca:item_dirtygemmithril>            , [<jaopca:item_nuggetastralstarmetal> * 64 % 100]);
@@ -228,10 +228,10 @@ addInfFur(<thaumcraft:cluster:7>                   , [RE % 2, <thaumcraft:nugget
 addInfFur(<thaumcraft:cluster>                     , [<minecraft:iron_nugget> % 33, <minecraft:gold_nugget> * 4 % 32]);
 addInfFur(<thaumicwonders:eldritch_cluster:0>      , [RE % 2, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
 addInfFur(<thaumicwonders:eldritch_cluster:1>      , [RE % 2, <minecraft:gold_nugget> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
-addInfFur(<thaumicwonders:eldritch_cluster:2>      , [RE % 2, <thaumcraft:nugget:1> % 33, <thermalfoundation:material:192> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
-addInfFur(<thaumicwonders:eldritch_cluster:3>      , [RE % 2, <thaumcraft:nugget:2> % 33, <thermalfoundation:material:193> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
-addInfFur(<thaumicwonders:eldritch_cluster:4>      , [RE % 2, <thaumcraft:nugget:3> % 33, <thermalfoundation:material:194> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
-addInfFur(<thaumicwonders:eldritch_cluster:5>      , [RE % 2, <thaumcraft:nugget:4> % 33, <thermalfoundation:material:195> * 4 % 32, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:2>      , [RE % 2, <thaumcraft:nugget:1> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:3>      , [RE % 2, <thaumcraft:nugget:2> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:4>      , [RE % 2, <thaumcraft:nugget:3> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
+addInfFur(<thaumicwonders:eldritch_cluster:5>      , [RE % 2, <thaumcraft:nugget:4> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
 addInfFur(<thaumicwonders:eldritch_cluster:6>      , [RE % 2, <thaumcraft:nugget:5> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
 addInfFur(<thaumicwonders:eldritch_cluster:7>      , [RE % 2, <thaumcraft:nugget:9> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);
 addInfFur(<thaumicwonders:eldritch_cluster:8>      , [RE % 2, <thaumcraft:nugget:7> % 33, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "vitium"}]}) % 10]);

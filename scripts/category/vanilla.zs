@@ -345,5 +345,11 @@ utils.compact(<ore:chest>, <extrautils2:largishchest>);
 // Arrows recycle
 scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, 'no exceptions', [<ore:dustWood>.firstItem], [0.2f]);
 
+// Fire charge recycle
+scripts.process.crush(<minecraft:fire_charge>, <thermalfoundation:material:768>,
+  'only: eu2Crusher AACrusher crushingBlock', [
+    <minecraft:gunpowder>, <minecraft:blaze_powder>
+  ], [0.5f, 0.2f]
+);
 
 // ------------------------------------

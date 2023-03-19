@@ -278,3 +278,78 @@ function avdRockXmlRecipe(filename as string,
   outputItems as IItemStack[], outputLiquids as ILiquidStack[]) as void {
   avdRockXmlRecipeEx(filename, inputItems, inputLiquids, outputItems, outputLiquids, null);
 }
+
+function avdRockXmlRecipeFlatten(
+  filename as string,
+  output as IItemStack,
+  ingredients as IIngredient[][],
+  fluidInput as ILiquidStack = null,
+  box as IItemStack = null,
+  altMaxMult as int = 64
+) as void {
+  # How much we reduce ingredients count
+  val devider = 2.0;
+
+  # Flatten ingredients
+  var ingrs = [] as IIngredient[];
+  var countRaw = [] as int[];
+
+  # Iterate the grid
+  for y, row in ingredients {
+    for x, ingr in row {
+      if(isNull(ingr)) continue;
+
+      # Merge if we already have same ingredient
+      var merged = false;
+      for i, exist in ingrs {
+        if(merged) continue;
+        if((exist has ingr) && (ingr has exist)) {
+          countRaw[i] = countRaw[i] + ingr.amount;
+          merged = true;
+        }
+      }
+
+      # Push new exist entry
+      if(!merged) {
+        ingrs += ingr;
+        countRaw += ingr.amount;
+      }
+    }
+  }
+
+  if (!isNull(box)) {
+    ingrs += box as IIngredient;
+    countRaw += box.amount;
+  }
+
+  # Compute discount
+  var count = [] as int[];
+  for i, amount in countRaw {
+    count += max(1, (amount as double / devider + 0.5) as int);
+  }
+
+  # Max stack size of every stack in inputs / outputs
+  var maxAmount = output.amount;
+  for i, amount in count {
+    maxAmount = max(maxAmount, amount);
+  }
+
+  # Get multiplier - how many times we can make recipe
+  # with even input and output
+  val multiplier = min(altMaxMult, max(1, (64.0 / maxAmount as double) as int));
+
+  # Reassemble ingredients with another amount
+  var trueIngrs = [] as IIngredient[];
+  for i, ingr in ingrs {
+    trueIngrs += ingr * (count[i] * multiplier);
+  }
+
+  avdRockXmlRecipeEx(
+    filename,
+    trueIngrs,
+    !isNull(fluidInput) ? [fluidInput * (fluidInput.amount * multiplier)] as ILiquidStack[] : null,
+    [output * (output.amount * multiplier)],
+    null,
+    { power: 20000 * multiplier, timeRequired: 5 * multiplier }
+  );
+}

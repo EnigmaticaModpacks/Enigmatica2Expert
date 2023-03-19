@@ -344,12 +344,8 @@ craft.remake(<actuallyadditions:block_phantomface>, ["pretty",
   "A": <actuallyadditions:item_misc:8>,  # Advanced Coil
 });
 
-# Harder greenhouse glass
-recipes.remove(<actuallyadditions:block_greenhouse_glass> * 2);
-recipes.addShaped(<actuallyadditions:block_greenhouse_glass> * 3, [
-	[<actuallyadditions:item_fertilizer>, <actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_fertilizer>],
-	[<actuallyadditions:item_crystal_empowered:1>, <ore:ingotModularium>, <actuallyadditions:item_crystal_empowered:1>],
-	[<actuallyadditions:item_fertilizer>, <liquid:crystal>, <actuallyadditions:item_fertilizer>]]);
+# Harder greenhouse glass (defined in Barrel craft)
+recipes.remove(<actuallyadditions:block_greenhouse_glass>);
 
 # Black quartz
 val crushExceptions = "except: IECrusher SagMill Pulverizer AACrusher MekCrusher";
@@ -660,14 +656,13 @@ craft.reshapeless(<actuallyadditions:item_resonant_rice> * 6, "REg", {
   "g": <ore:gunpowder>,                  # Gunpowder
 });
 
-# [Shock Absorber] from [Advanced Coil][+2]
+# [Shock Absorber] from [Sky Stone][+1]
 craft.remake(<actuallyadditions:block_shock_suppressor>, ["pretty",
-  "■ * ■",
-  "* A *",
-  "■ * ■"], {
-  "■": <ore:blockSkyStone>,             # Sky Stone
-  "*": <ore:crystalVoid>,               # Void Crystal
-  "A": <ore:crystalEnori>,
+  "* * *",
+  "* ■ *",
+  "* * *"], {
+  "*": <actuallyadditions:item_crystal_shard:3>, # Black Crystal Shard
+  "■": <ore:blockSkyStone>,                      # Sky Stone
 });
 
 ###################################################

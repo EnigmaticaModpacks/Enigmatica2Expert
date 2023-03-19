@@ -162,6 +162,18 @@ for crystalName, ingrs in alienCrystals {
 	scripts.process.fill(input, <liquid:ic2hot_water> * 250, <ore:nuggetCrystaltine>.firstItem, "only: NCInfuser Transposer");
 }
 
+# Crystals creation - just photoning Dilithium with different power
+for i in 0 .. 6 {
+  val energy = 5000000 * (i+1);
+  mods.qmd.target_chamber.addRecipe(
+    <ore:gemDilithium>,
+    (<particle:proton>*2000000)^(5000000 * (i+1)),
+    <advancedrocketry:crystal>.definition.makeStack(i),
+    null, null, null,
+    5000000 * (i+2), 1.0, 0, 0
+  );
+}
+
 scripts.process.compress(<ore:blockCharcoal>, <advancedrocketry:misc:1>, "No Exceptions");
 
 # Generator was too cheap compared to other coal gens
@@ -367,6 +379,82 @@ craft.shapeless(<advancedrocketry:atmanalyser>,
   "U": <advancedrocketry:misc>, # User Interface
 });
 
+# [Input Hatch] from [Machine Structure][+3]
+craft.remake(<libvulpes:hatch>, ["pretty",
+  "  I  ",
+  "S M S",
+  "  ♥  "], {
+  "I": <enderio:block_buffer>,       # Item Buffer
+  "S": <ore:itemSimpleChassiParts>,  # Simple Machine Parts
+  "M": <libvulpes:structuremachine>, # Machine Structure
+  "♥": <ore:gearRedstone>,           # Redstone Gear
+});
+
+# [Output Hatch] from [Machine Structure][+3]
+craft.remake(<libvulpes:hatch:1>, ["pretty",
+  "  I  ",
+  "S M S",
+  "  ♥  "], {
+  "I": <actuallyadditions:block_laser_relay_item>, # Item Laser Relay
+  "S": <ore:itemSimpleChassiParts>,                # Simple Machine Parts
+  "M": <libvulpes:structuremachine>,               # Machine Structure
+  "♥": <ore:gearRedstone>,                         # Redstone Gear
+});
+
+# [Fluid Input Hatch] from [Machine Structure][+3]
+craft.remake(<libvulpes:hatch:2>, ["pretty",
+  "  F  ",
+  "S M S",
+  "  ¤  "], {
+  "F": <actuallyadditions:block_laser_relay_fluids>, # Fluid Laser Relay
+  "S": <ore:itemSimpleChassiParts>,  # Simple Machine Parts
+  "M": <libvulpes:structuremachine>, # Machine Structure
+  "¤": <ore:gearVibrant>,            # Vibrant Bimetal Gear
+});
+
+# [Fluid Output Hatch] from [Machine Structure][+3]
+craft.remake(<libvulpes:hatch:3>, ["pretty",
+  "  F  ",
+  "S M S",
+  "  ¤  "], {
+  "F": <extrautils2:flattransfernode:1>, # Flat Transfer Node (Fluids)
+  "S": <ore:itemSimpleChassiParts>,      # Simple Machine Parts
+  "M": <libvulpes:structuremachine>,     # Machine Structure
+  "¤": <ore:gearVibrant>,                # Vibrant Bimetal Gear
+});
+
+# [Power Input Plug] from [Machine Structure][+3]
+recipes.removeByRecipeName("libvulpes:forgepowerinput");
+craft.make(<libvulpes:forgepowerinput>, ["pretty",
+  "  Σ  ",
+  "S M S",
+  "B B B"], {
+  "Σ": <enderio:block_buffer:1>, # Power Buffer
+  "S": <ore:itemSimpleChassiParts>,  # Simple Machine Parts
+  "M": <libvulpes:structuremachine>, # Machine Structure
+  "B": <ore:itemBattery>,            # Single Battery
+});
+
+# [Single Battery] from [Iridium Rod][+2]
+craft.remake(<libvulpes:battery>, ["pretty",
+  "  ╱  ",
+  "⌂ : ⌂",
+  "⌂ : ⌂"], {
+  "╱": <ore:stickIridium>, # Iridium Rod
+  "⌂": <ic2:casing:5>,     # Steel Item Casing
+  ":": <ore:oc:capacitor>, # Capacitor
+});
+
+# [Steel Fan] from [Steel Rod][+2]
+craft.remake(<libvulpes:productfan:6>, ["pretty",
+  "⌂ S ⌂",
+  "S ╱ S",
+  "⌂ S ⌂"], {
+  "⌂": <ic2:casing:5>,   # Steel Item Casing
+  "S": <ore:wireSteel>,  # Steel Wire
+  "╱": <ore:stickSteel>, # Steel Rod
+});
+
 # Some Alts with advanced machines
 scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", [<ore:dustSulfur> * 30], [<fluid:oxygen> * 1500], null, [<fluid:sulfuric_acid> * 3000], {power: 140000, timeRequired: 15});
 scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:dustFluorite> * 6], [<fluid:sulfuric_acid> * 6000], [<nuclearcraft:compound> * 6], null);
@@ -426,3 +514,37 @@ craft.remake(<advancedrocketry:vacuumlaser>, ["pretty",
   "⌂": <ore:casingCentrifuge>,       # Advanced Machine Structure
   "T": <ore:sheetTitaniumIridium>,   # Titanium Iridium Alloy Sheet
 });
+
+#####################################
+# Remake coils harder
+#####################################
+# [Copper Coil] from [Copper Turbine Dynamo Coil]
+recipes.remove(<libvulpes:coil0:4>);
+recipes.addShapeless(<libvulpes:coil0:4>, [<nuclearcraft:turbine_dynamo_coil:4>]);
+
+# [Gold Coil] from [Gold Turbine Dynamo Coil]
+recipes.remove(<libvulpes:coil0:2>);
+recipes.addShapeless(<libvulpes:coil0:2>, [<nuclearcraft:turbine_dynamo_coil:3>]);
+
+# [Aluminum Coil] from [Aluminum Turbine Dynamo Coil]
+recipes.remove(<libvulpes:coil0:9>);
+recipes.addShapeless(<libvulpes:coil0:9>, [<nuclearcraft:turbine_dynamo_coil:2>]);
+
+# [Iridium Coil] from [Beryllium Turbine Dynamo Coil][+1]
+craft.remake(<libvulpes:coil0:10>, ["pretty",
+  "□ □ □",
+  "□ B □",
+  "□ □ □"], {
+  "□": <ore:plateTitaniumIridium>,           # Titanium Iridium Alloy Plate
+  "B": <nuclearcraft:turbine_dynamo_coil:1>, # Beryllium Turbine Dynamo Coil
+});
+
+# [Titanium Coil] from [Beryllium Turbine Dynamo Coil][+1]
+craft.remake(<libvulpes:coil0:7>, ["pretty",
+  "□ □ □",
+  "□ B □",
+  "□ □ □"], {
+  "□": <ore:plateTitanium>,                  # Titanium Plate
+  "B": <nuclearcraft:turbine_dynamo_coil:1>, # Beryllium Turbine Dynamo Coil
+});
+#####################################

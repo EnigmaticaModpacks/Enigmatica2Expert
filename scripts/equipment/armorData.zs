@@ -173,6 +173,48 @@ static armorStaged as IData[string] =
       {id:"advancedrocketry:basiclasergun"},
       {id:"advancedrocketry:misc:1"}
   ]},
+  armor_hazmat:{
+    prev: "armor_leather", 
+    tier: 2,
+    material: "ic2:crafting",
+    recycle:  "ic2:crafting",
+    recipe: {manual: true},
+    list: [
+      {id:"ic2:hazmat_helmet"},
+      {id:"ic2:hazmat_chestplate"},
+      {id:"ic2:hazmat_leggings"},
+      {id:"ic2:rubber_boots"},
+      {id:"ic2:wrench_new"},
+      {id:"ic2:tool_box"}
+  ]},
+  armor_nc_hazmat:{
+    prev: "armor_leather", 
+    tier: 3,
+    material: "nuclearcraft:part",
+    recycle:  "nuclearcraft:part",
+    recipe: {manual: true},
+    list: [
+      {id:"nuclearcraft:helm_hazmat"},
+      {id:"nuclearcraft:chest_hazmat"},
+      {id:"nuclearcraft:legs_hazmat"},
+      {id:"nuclearcraft:boots_hazmat"},
+      {id:"nuclearcraft:multitool"},
+      {id:"nuclearcraft:rad_x"}
+  ]},
+  armor_hev:{
+    prev: "armor_leather", 
+    tier: 5,
+    material: "nuclearcraft:rad_shielding:2",
+    recycle:  "nuclearcraft:rad_shielding:2",
+    recipe: {manual: true},
+    list: [
+      {id:"qmd:helm_hev", tag:{energyStorage: {energy: 1000000 as long, capacity: 1000000 as long}}},
+      {id:"qmd:chest_hev", tag:{energyStorage: {energy: 1000000 as long, capacity: 1000000 as long}}},
+      {id:"qmd:legs_hev", tag:{energyStorage: {energy: 1000000 as long, capacity: 1000000 as long}}},
+      {id:"qmd:boots_hev", tag:{energyStorage: {energy: 1000000 as long, capacity: 1000000 as long}}},
+      {id:"qmd:lepton_cannon"},
+      {id:"qmd:potassium_iodine_tablet"}
+  ]},
   armor_nano:{
     prev: "armor_leather", 
     tier: 5,

@@ -56,10 +56,6 @@ furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:purified:6>);
 	recipes.addShapeless("Clay Dust", 
 	<ic2:dust:1>, [<minecraft:clay>, <ore:craftingToolForgeHammer>]);
 
-# Bronze
-	recipes.remove(<ic2:resource:5>);
-	recipes.remove(<ic2:ingot:1>);
-
 # Oredicting recipe
 # [Industrial Workbench] from [Basic Machine Casing][+3]
 craft.remake(<ic2:te:88>, ["Two"], {
@@ -87,7 +83,7 @@ craft.remake(<ic2:te:89>, ["pretty",
 	
 #  Overclocker Upgrade
 	recipes.remove(<ic2:upgrade>);
-	mods.forestry.Carpenter.addRecipe(<ic2:upgrade> * 2, 
+	scripts.mods.forestry.Carpenter.addRecipe(<ic2:upgrade> * 2, 
 	[[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>],
 	[<ic2:cable>, <ore:circuitBasic>, <ic2:cable>],
 	[<ore:plateTin>, <ore:plateTin>, <ore:plateTin>]], 40, <liquid:ic2coolant> * 3000);
@@ -342,6 +338,11 @@ craft.shapeless(<ic2:crop_res:2> * 3, "eFFF", {
 # Scrap making from seed bags
 scripts.process.crush(<ic2:crop_seed_bag>, <ic2:crafting:23>, "only: Macerator", null, null);
 
+# [Scrap]*64 from [Condensate Water Bucket][+1]
+craft.shapeless(<ic2:crafting:23> * 64, "G~", {
+  "G": <rats:garbage_pile>, # Garbage Pile
+  "~": <fluid:condensate_water> * 1000, # Condensate Water
+});
 
 # --------------------------------------------------------------------------------------------
 # CROPS
@@ -561,4 +562,15 @@ craft.remake(<ic2:scaffold> * 20, ["pretty",
   "#   #"], {
   "≢": <ore:plankWood>, # Oak Wood Planks
   "#": <ore:stickWood>, # Stick
+});
+
+# Advanced Alloy in other machines
+scripts.process.compress(<ic2:ingot>, <ic2:crafting:3>, "except: Compressor");
+
+# [mining pipe]*64 from [Stone Rod]
+craft.remake(<ic2:mining_pipe> * 64, ["pretty",
+  "/   /",
+  "/   /",
+  "/   /"], {
+  "/": <ore:stickStone>, # Stone Rod
 });

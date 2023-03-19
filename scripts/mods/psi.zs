@@ -56,26 +56,21 @@ for out, inps in cads {
 }
 # --------------------------------------------------
 
-
-# [Creative Rod Frame] from [Benitoite][+9]
+# [Creative CAD Assembly] from [Benitoite][+5]
 craft.remake(<psi:cad_assembly:5>, ["pretty",
-  "  п □            ",
-  "D S п □ □        ",
-  "  D S * □ □      ",
-  "    D S * □ D    ",
-  "      D S ◘ ▲ D  ",
-  "        ◊ ■ ◘ F D",
-  "      D ■ ■ ■ F  ",
+  "    □ п          ",
+  "D D п □ □        ",
+  "  D D S □ □      ",
+  "    D D S □ D    ",
+  "      D D S ■ D  ",
+  "        ◊ ■ S ■ D",
+  "      D ■ ■ ■ ■  ",
   "      ■ ■ ■ D    ",
   "      D ■ D      "], {
-  "S": utils.tryCatch("psicosts:creative_cell", <psi:cad_assembly:4>), # Star of PSI
-  "F": utils.tryCatch("psicosts:flux_resonator", <enderio:item_basic_capacitor:2>), # Flux Resonator
-  "◘": utils.tryCatch("psicosts:psi_cell", 3, <cyclicmagic:soulstone>), # PSI-Force Cell
-  "■": <psi:psi_decorative:7>,                    # Ebony Psimetal Block
-  "□": <psi:psi_decorative:6>,                    # Bright Psimetal Flow Plate
-  "▲": <ore:dustAlchAmethyst>,                    # Amethyst Alchemical Ore Dust
-  "D": <draconicevolution:infused_obsidian>,      # Draconium Infused Obsidian
-  "*": <extendedcrafting:singularity_custom:107>, # Flux Crystal Singularity
-  "◊": <ore:gemBenitoite>,                        # Benitoite
-  "п": <psi:psi_decorative:4>,                    # Dark Psimetal Flow Plate
+  "□": <psi:psi_decorative:6>,               # Bright Psimetal Flow Plate
+  "п": <psi:psi_decorative:4>,               # Dark Psimetal Flow Plate
+  "D": <draconicevolution:infused_obsidian>, # Draconium Infused Obsidian
+  "S": <psicosts:creative_cell>,             # Star of PSI
+  "■": <psi:psi_decorative:7>,               # Ebony Psimetal Block
+  "◊": <ore:gemBenitoite>,                   # Benitoite
 });

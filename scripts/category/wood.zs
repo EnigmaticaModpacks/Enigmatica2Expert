@@ -74,6 +74,7 @@ static logPlank as IItemStack[IItemStack] = {
 
 # Forestry fireproof
   <forestry:logs.fireproof.0:1>        : <forestry:planks.fireproof.0:1>,
+  <forestry:logs.fireproof.0:2>        : <forestry:planks.fireproof.0:2>,
   <forestry:logs.fireproof.0:3>        : <forestry:planks.fireproof.0:3>,
   <forestry:logs.fireproof.0>          : <forestry:planks.fireproof.0>,
   <forestry:logs.fireproof.1:1>        : <forestry:planks.fireproof.0:5>,

@@ -159,6 +159,76 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Dissipation Charge] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>forestry:honeydew 32</itemStack>
+			<itemStack>forestry:royal_jelly 64</itemStack>
+			<itemStack>forestry:can 32</itemStack>
+			<itemStack>minecraft:gunpowder 32</itemStack>
+			<fluidStack>water 32000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:crafting_material 32 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Habitat Screen] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>ingotBronze 64</oreDict>
+			<itemStack>minecraft:glass_pane 32</itemStack>
+			<itemStack>thermalfoundation:material 32 291</itemStack>
+			<itemStack>minecraft:diamond 32</itemStack>
+			<fluidStack>water 64000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:habitat_screen 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Intricate Circuit Board] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<oreDict>gemAmber 63</oreDict>
+			<itemStack>forestry:chipsets 21</itemStack>
+			<itemStack>forestry:chipsets 21 1</itemStack>
+			<itemStack>forestry:chipsets 21 2</itemStack>
+			<fluidStack>water 21000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:chipsets 21 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iodine Capsule] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>forestry:honey_drop 32</itemStack>
+			<itemStack>forestry:pollen 64</itemStack>
+			<itemStack>forestry:can 32</itemStack>
+			<itemStack>minecraft:gunpowder 32</itemStack>
+			<fluidStack>water 32000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:iodine_capsule 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Wyvern Core] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>draconicevolution:draconic_core 4</itemStack>
+			<itemStack>minecraft:sponge 2</itemStack>
+			<oreDict>ingotVividAlloy 2</oreDict>
+			<itemStack>environmentaltech:pladium 2</itemStack>
+			<fluidStack>ic2hot_coolant 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>draconicevolution:wyvern_core 2 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Coil] -->
 	<Recipe timeRequired="40" power="140000">
 		<input>
@@ -185,6 +255,58 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Bog Earth] -->
+	<Recipe timeRequired="40" power="160000">
+		<input>
+			<oreDict>dirt 16</oreDict>
+			<oreDict>sand 16</oreDict>
+			<itemStack>forestry:mulch 8</itemStack>
+			<fluidStack>water 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:bog_earth 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Crafting Core] -->
+	<Recipe timeRequired="5" power="20000">
+		<input>
+			<itemStack>extendedcrafting:material 2 18</itemStack>
+			<itemStack>plustic:osmiridiumingot 1</itemStack>
+			<itemStack>extendedcrafting:pedestal 2</itemStack>
+			<fluidStack>coal 5000</fluidStack>
+		</input>
+		<output>
+			<itemStack>extendedcrafting:crafting_core 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Draconic Energy Core] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotDraconiumAwakened 4</oreDict>
+			<itemStack>draconicevolution:wyvern_energy_core 4</itemStack>
+			<itemStack>draconicevolution:wyvern_core 2</itemStack>
+			<fluidStack>ic2hot_coolant 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>draconicevolution:draconic_energy_core 2 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Flexible Casing] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>gemEmerald 32</oreDict>
+			<oreDict>slimeball 32</oreDict>
+			<fluidStack>glass 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:flexible_casing 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Iridium Neutron Reflector] -->
 	<Recipe timeRequired="80" power="160000">
 		<input>
@@ -195,6 +317,97 @@
 		</input>
 		<output>
 			<itemStack>ic2:iridium_reflector 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Overclocker Upgrade] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<oreDict>plateTin 63</oreDict>
+			<itemStack>ic2:cable 21</itemStack>
+			<oreDict>circuitBasic 21</oreDict>
+			<fluidStack>ic2coolant 63000</fluidStack>
+		</input>
+		<output>
+			<itemStack>ic2:upgrade 42 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Pedestal] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>extendedcrafting:material 32 2</itemStack>
+			<itemStack>extendedcrafting:material 64</itemStack>
+			<itemStack>extendedcrafting:storage 32</itemStack>
+			<fluidStack>coal 32000</fluidStack>
+		</input>
+		<output>
+			<itemStack>extendedcrafting:pedestal 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Pedestal] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>extendedcrafting:material 32 2</itemStack>
+			<oreDict>ingotBlackIron 64</oreDict>
+			<itemStack>extendedcrafting:storage 32</itemStack>
+			<fluidStack>coal 32000</fluidStack>
+		</input>
+		<output>
+			<itemStack>extendedcrafting:pedestal 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Scented Paneling] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>forestry:honeydew 32</itemStack>
+			<oreDict>plankWood 64</oreDict>
+			<itemStack>forestry:beeswax 32</itemStack>
+			<fluidStack>for.honey 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:crafting_material 32 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Scented Paneling] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>forestry:honeydew 32</itemStack>
+			<oreDict>plankWood 64</oreDict>
+			<itemStack>forestry:beeswax 32</itemStack>
+			<fluidStack>honey 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:crafting_material 32 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Scented Paneling] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>dropHoneydew 32</oreDict>
+			<oreDict>plankWood 64</oreDict>
+			<oreDict>itemBeeswax 32</oreDict>
+			<fluidStack>for.honey 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:crafting_material 32 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Scented Paneling] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>dropHoneydew 32</oreDict>
+			<oreDict>plankWood 64</oreDict>
+			<oreDict>itemBeeswax 32</oreDict>
+			<fluidStack>honey 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:crafting_material 32 6</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -211,6 +424,43 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tier 6 Crafting Seed] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>actuallyadditions:item_misc 64 24</itemStack>
+			<oreDict>essenceInsanium 64</oreDict>
+			<itemStack>mysticalagriculture:crafting 32 21</itemStack>
+			<fluidStack>sewage 32000</fluidStack>
+		</input>
+		<output>
+			<itemStack>mysticalagradditions:insanium 32 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Apatine Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>gemApatite 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 10</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Circuit Board] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<itemStack>minecraft:redstone 63</itemStack>
+			<oreDict>ingotTin 21</oreDict>
+			<fluidStack>water 21000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:chipsets 21 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Basic Coil] -->
 	<Recipe timeRequired="20" power="70000">
 		<input>
@@ -220,6 +470,30 @@
 		</input>
 		<output>
 			<itemStack>actuallyadditions:item_misc 12 7</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Blazing Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>dustBlaze 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 7</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Bronze Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>ingotBronze 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 2</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -235,6 +509,42 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Copper Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>ingotCopper 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Diamantine Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>gemDiamondRat 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Emerald Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>gemEmerald 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 9</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Engineering Processor] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -247,6 +557,78 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Enhanced Circuit Board] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<itemStack>minecraft:redstone 63</itemStack>
+			<oreDict>ingotBronze 42</oreDict>
+			<fluidStack>water 21000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:chipsets 21 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Golden Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>ingotGold 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 4</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Hardened Casing] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>gemDiamondRat 64</oreDict>
+			<itemStack>forestry:sturdy_machine 32</itemStack>
+			<fluidStack>water 160000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:hardened_machine 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Humus] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<oreDict>dirt 28</oreDict>
+			<itemStack>forestry:mulch 7</itemStack>
+			<fluidStack>water 7000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:humus 63 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Iron Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>ingotFakeIron 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Lapis Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>gemLapis 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 11</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Logic Processor] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -256,6 +638,221 @@
 		</input>
 		<output>
 			<itemStack>appliedenergistics2:material 1 22</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Obsidian Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>obsidian 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Orchid Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>oreRedstone 48</oreDict>
+			<itemStack>minecraft:repeater 16</itemStack>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 13</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Random Animal] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>cyclicmagic:sprout_seed 32</itemStack>
+			<oreDict>egg 64</oreDict>
+			<fluidStack>liquiddna 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>animania:entity_egg_random 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Random Animal] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>cyclicmagic:sprout_seed 32</itemStack>
+			<oreDict>egg 64</oreDict>
+			<fluidStack>meat 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>animania:entity_egg_random 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Refined Circuit Board] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<itemStack>minecraft:redstone 63</itemStack>
+			<itemStack>minecraft:iron_ingot 42</itemStack>
+			<fluidStack>water 21000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:chipsets 21 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Rubberised Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>itemRubber 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 8</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (1n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<itemStack>forestry:apatite 14</itemStack>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>oliveoil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (1n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<itemStack>forestry:apatite 14</itemStack>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>seed.oil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (2n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<oreDict>ingotCopper 14</oreDict>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>oliveoil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (2n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<oreDict>ingotCopper 14</oreDict>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>seed.oil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (5n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<oreDict>ingotTin 14</oreDict>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>oliveoil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (5n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<oreDict>ingotTin 14</oreDict>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>seed.oil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (10n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<itemStack>minecraft:gold_ingot 14</itemStack>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>oliveoil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stamp (10n)] -->
+	<Recipe timeRequired="35" power="140000">
+		<input>
+			<itemStack>minecraft:gold_ingot 14</itemStack>
+			<itemStack>minecraft:paper 14</itemStack>
+			<fluidStack>seed.oil 2100</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:stamps 63 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tin Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>ingotTin 48</oreDict>
+			<oreDict>dustRedstone 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Unlit Candle] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>minecraft:string 2</itemStack>
+			<itemStack>forestry:beeswax 6</itemStack>
+			<fluidStack>water 1200</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:candle 48 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Unlit Candle] -->
+	<Recipe timeRequired="50" power="200000">
+		<input>
+			<itemStack>forestry:beeswax 10</itemStack>
+			<itemStack>forestry:crafting_material 10 2</itemStack>
+			<fluidStack>water 2000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:candle 60 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Carton] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>thermalfoundation:material 64 800</itemStack>
+			<fluidStack>water 32000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:carton 64 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -278,6 +875,232 @@
 		</input>
 		<output>
 			<itemStack>rftdimtweak:dimlet_type_controller_energy 1 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ender Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>oc:stoneEndstone 48</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 12</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Escritoire] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<oreDict>plankWood 63</oreDict>
+			<fluidStack>oliveoil 10500</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:escritoire 21 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Escritoire] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<oreDict>plankWood 63</oreDict>
+			<fluidStack>seed.oil 10500</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:escritoire 21 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Casing] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>logWood 64</oreDict>
+			<fluidStack>oliveoil 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:impregnated_casing 16 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Casing] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>logWood 64</oreDict>
+			<fluidStack>oliveoil 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:impregnated_casing 16 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Casing] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>logWood 64</oreDict>
+			<fluidStack>seed.oil 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:impregnated_casing 16 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Casing] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>logWood 64</oreDict>
+			<fluidStack>seed.oil 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:impregnated_casing 16 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Stick] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>logWood 32</oreDict>
+			<fluidStack>oliveoil 3200</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:oak_stick 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Stick] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>logWood 32</oreDict>
+			<fluidStack>seed.oil 3200</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:oak_stick 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Stick] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>logWood 32</oreDict>
+			<fluidStack>seed.oil 3200</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:oak_stick 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Letter] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<itemStack>thermalfoundation:material 63 800</itemStack>
+			<fluidStack>water 5250</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:letters 21 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Letter] -->
+	<Recipe timeRequired="105" power="420000">
+		<input>
+			<itemStack>thermalfoundation:material 63 800</itemStack>
+			<fluidStack>water 5250</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:letters 21 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Paper] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<itemStack>thermalfoundation:material 64 800</itemStack>
+			<fluidStack>water 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>minecraft:paper 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Sawdust] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<oreDict>logWood 64</oreDict>
+			<fluidStack>water 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 64 800</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Sawdust] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<oreDict>logWood 64</oreDict>
+			<fluidStack>water 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 64 800</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Woven Silk] -->
+	<Recipe timeRequired="60" power="240000">
+		<input>
+			<itemStack>forestry:crafting_material 60 2</itemStack>
+			<fluidStack>water 6000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:crafting_material 12 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Block of Enderpearl] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<itemStack>forestry:crafting_material 32 1</itemStack>
+		</input>
+		<output>
+			<itemStack>actuallyadditions:block_misc 64 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Bronze Ingot] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<itemStack>forestry:broken_bronze_pickaxe 32</itemStack>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 64 163</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Bronze Ingot] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<itemStack>forestry:broken_bronze_shovel 64</itemStack>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 64 163</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Pickaxe Kit] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>ingotBronze 64</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:kit_pickaxe 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Shovel Kit] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<oreDict>ingotBronze 64</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:kit_shovel 64 0</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

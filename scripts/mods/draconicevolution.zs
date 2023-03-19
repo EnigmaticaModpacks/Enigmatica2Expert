@@ -54,19 +54,19 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # Wyvern Core
 	recipes.remove(<draconicevolution:wyvern_core>);
-	mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
+	scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>],
 	[<ore:ingotVividAlloy>, <environmentaltech:pladium>, <ore:ingotVividAlloy>]],
-	40, <liquid:ic2hot_coolant> * 2000);
+	40, <liquid:ic2hot_coolant> * 2000, null, 2);
 
 # Draconic Energy Core
 	recipes.remove(<draconicevolution:draconic_energy_core>);
-	mods.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>,
+	scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>,
 	[[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>],
 	[<draconicevolution:wyvern_energy_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_energy_core>],
 	[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>]],
-	40, <liquid:ic2hot_coolant> * 2000);
+	40, <liquid:ic2hot_coolant> * 2000, null, 2);
 
 # Fusion Crafting Core
 	recipes.remove(<draconicevolution:fusion_crafting_core>);

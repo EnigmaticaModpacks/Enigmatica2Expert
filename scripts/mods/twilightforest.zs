@@ -22,7 +22,7 @@ recipes.addShaped(<twilightforest:peacock_fan>, [
 val rockRecycleTable as IItemStack[][IIngredient] = {
 <twilightforest:castle_brick:3>      |
 <twilightforest:castle_pillar>       |
-<twilightforest:castle_pillar:1>     : [<harvestcraft:saltitem>, <appliedenergistics2:material:3>, <astralsorcery:itemusabledust:1>],
+<twilightforest:castle_pillar:1>     : [<mekanism:salt>, <appliedenergistics2:material:3>, <astralsorcery:itemusabledust:1>],
 <twilightforest:deadrock>            |
 <twilightforest:deadrock:1>          |
 <twilightforest:deadrock:2>          : [<ic2:dust:1>, <nuclearcraft:dust:8>, <jaopca:item_dustdimensionalshard>],
@@ -32,7 +32,7 @@ val rockRecycleTable as IItemStack[][IIngredient] = {
 <twilightforest:castle_brick:4>      |
 <twilightforest:castle_brick:5>      |
 <twilightforest:castle_pillar:3>     |
-<twilightforest:castle_pillar:2>     : [<harvestcraft:saltitem>, <appliedenergistics2:material:3>, <thermalfoundation:material:69>],
+<twilightforest:castle_pillar:2>     : [<mekanism:salt>, <appliedenergistics2:material:3>, <thermalfoundation:material:69>],
 <twilightforest:maze_stone>          |
 <twilightforest:maze_stone:1>        |
 <twilightforest:maze_stone:2>        |

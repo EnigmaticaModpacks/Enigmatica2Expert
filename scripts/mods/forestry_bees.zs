@@ -69,7 +69,7 @@ craft.make(<minecraft:web> * 16, ["pretty",
 
 # Buff Pulsating mesh output
 mods.forestry.Carpenter.removeRecipe(<minecraft:ender_pearl>);
-mods.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
+scripts.mods.forestry.Carpenter.addRecipe(<actuallyadditions:block_misc:6> * 4,
 	Grid(["AA","AA"], {A:<forestry:crafting_material:1>}).shaped(), 60);
 
 # Buff propolis to slime (was 1 poor slime ball)
@@ -104,12 +104,23 @@ val scentPanelGrid = Grid(["pretty",
 	"H": <ore:dropHoneydew>, # Honeydew
 }).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
-mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
-mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
 
 
 # ---------------------------
 # Remake old combs
+function crushComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
+	// Crushing block as shortcut for non-forestry way
+  var chances = [] as float[];
+	var summ = 0;
+	var outputsStacks = [] as IItemStack[];
+  for wOut in outputs { chances += wOut.percent as float; summ += wOut.percent; outputsStacks += wOut.stack; }
+	mods.mechanics.addCrushingBlockRecipe(
+		comb, outputsStacks + <rustic:honeycomb>, // Honeycomb as penalty for using crushing block
+		scripts.processUtils.normalizeChances(chances + (summ / 2) as float)
+	);
+}
 function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as void {
 	mods.forestry.Centrifuge.removeRecipe(comb);
 	mods.forestry.Centrifuge.addRecipe(outputs, comb, 40);
@@ -118,22 +129,26 @@ function reprocessComb(comb as IItemStack, outputs as WeightedItemStack[]) as vo
 		mods.thermalexpansion.Centrifuge.removeRecipe(comb);
 	mods.thermalexpansion.Centrifuge.addRecipe(outputs, comb, null, 2000);
 
-	// Crushing block as shortcut for non-forestry way
-  var chances = [] as float[];
-	var summ = 0;
-	var outputsStacks = [] as IItemStack[];
-  for wOut in outputs { chances += wOut.percent as float; summ += wOut.percent; outputsStacks += wOut.stack; }
-	mods.mechanics.addCrushingBlockRecipe(
-		comb, outputsStacks + <rustic:honeycomb>,
-		scripts.processUtils.normalizeChances(chances + (summ / 2) as float)
-	);
+	crushComb(comb, outputs);
 }
+
+# [Honey Comb]
+crushComb(<forestry:bee_combs:0>, [
+  g['🟡'] % 100, # Beeswax
+	g['💛'] % 90,  # Honey Drop
+]);
 
 # [Cocoa_Comb]
 reprocessComb(<forestry:bee_combs:1>, [
   g['🟡'] % 80, # Beeswax
   <minecraft:dye:3> % 50, # Cocoa
   <nuclearcraft:milk_chocolate> % 20,
+]);
+
+# [Simmering Comb]
+crushComb(<forestry:bee_combs:2>, [
+	g['🔴'] % 100, # refractory wax
+	<forestry:phosphor> % 70,  # Phosphor
 ]);
 
 # [Stringy_Comb]
@@ -170,6 +185,12 @@ reprocessComb(<forestry:bee_combs:7>, [
 	(<minecraft:blaze_powder> * 2) % 45, # Blaze Powder
 	g['🟡'] % 100,# Beeswax
 	g['💛'] % 90, # Honey Drop
+]);
+
+# [Mysterious Comb]
+crushComb(<forestry:bee_combs:8>, [
+  <forestry:propolis:2> % 100, # Pulsating Propolis
+	g['💛'] % 40,  # Honey Drop
 ]);
 
 # [Irradiated_Comb]

@@ -7,6 +7,10 @@ import crafttweaker.liquid.ILiquidStack;
 recipes.remove(<forestry:bronze_shovel>);
 recipes.remove(<forestry:bronze_pickaxe>);
 
+# Remove deprecated recipes
+recipes.removeByRecipeName("forestry:greenhouse_window");
+recipes.removeByRecipeName("forestry:greenhouse_window_roof");
+
 # Fixing fruit juice amount from tomatos
 for tomato in <ore:cropTomato>.items {
 	mods.forestry.Squeezer.removeRecipe(<liquid:juice>, [tomato]);	
@@ -21,7 +25,7 @@ for tomato in <ore:cropTomato>.items {
 
 # Intricate Circuit Board
 mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
-mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), 
   Grid(["pretty",
 	"◊ B ◊",
   "◊ E ◊",
@@ -43,7 +47,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short})
 
 # [Hardened Casing] from [Sturdy Casing][+1]
 mods.forestry.Carpenter.removeRecipe(<forestry:hardened_machine>);
-mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, 
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, 
   Grid(["pretty",
   "◊   ◊",
   "  ⌂  ",
@@ -144,10 +148,10 @@ utils.rh(<forestry:charcoal>);
 
 # Remove pulp recipe
 mods.forestry.Carpenter.removeRecipe(<forestry:wood_pulp>);
-mods.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
+scripts.mods.forestry.Carpenter.addRecipe(<thermalfoundation:material:800>, [[<ore:logWood>]], 40, <liquid:water> * 250);
 
 mods.forestry.Carpenter.removeRecipe(<forestry:letters>);
-mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:letters>, Grid(["AAA","AAA"], {A: <thermalfoundation:material:800>}).shaped(), 40, <liquid:water> * 250);
 
 # Fertilizer ask less sand but more Apatite
 # [Fertilizer*8] from [Sand][+1]
@@ -205,14 +209,14 @@ for name in bagNames {
 
 # Use OreDict recipe for impregnated stick
 mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>);
-mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
-mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
 
 # Use OreDict recipe for Impregnated Casing
 val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
-mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
-mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
+scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
 
 <forestry:wax_cast>.maxDamage = 32;
 
@@ -324,4 +328,9 @@ for log, plank in scripts.category.wood.logPlank {
   if(!log.definition.id.matches('.*fireproof.*')) continue;
   mods.forestry.ThermionicFabricator.removeCast(log);
   mods.forestry.ThermionicFabricator.removeCast(plank * 5);
+}
+
+# Remove Propolis => glass recipes
+for i in 0 .. 16 {
+  mods.forestry.ThermionicFabricator.removeCast(<minecraft:stained_glass>.definition.makeStack(i) * 4);
 }

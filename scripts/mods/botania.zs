@@ -149,6 +149,23 @@ mods.thaumcraft.Infusion.registerRecipe(
   "D": <bloodmagic:item_demon_crystal:2>, # Destructive Will Crystal
 }).spiral(1));
 
+# Peaceful alt
+# [Dice of Fate] from [Chaos Shard][+4]
+mods.thaumcraft.Infusion.removeRecipe(<botania:dice>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "dice", # Name
+  "INFUSION", # Research
+  <botania:dice>.withTag({soulbindUUID: "e23a4a76-82ed-47e0-9ea3-fef726675065"}), # Output
+  10, # Instability
+  [<aspect:caeles> * 160, <aspect:mana> * 160],
+  <draconicevolution:chaos_shard>, # Central Item
+  Grid(["pretty",
+  "  D  ",
+  "D   D",
+  "  D  "], {
+  "D": <cyclicmagic:dice>, # Dice
+}).spiral(1));
+
 # Livingrock
 	mods.botania.PureDaisy.removeRecipe(<botania:livingrock>);
 	mods.botania.PureDaisy.addRecipe(<thaumcraft:stone_arcane>, <botania:livingrock>);

@@ -66,8 +66,8 @@ craft.remake(<psicosts:creative_cell>, ["pretty",
   "§ D ◘ D §",
   "  ▬ D ▬ §",
   "P § §   P"], {
-  "P": <deepmoblearning:pristine_matter_slime>, # Pristine Slime Matter
-  "D": <draconicevolution:draconic_core>,       # Draconic Core
+  "P": <ore:ingotSpectre>,
+  "D": <bloodmagic:decorative_brick:3>,         # Crystal Cluster Brick
   "§": <deepmoblearning:glitch_infused_ingot>,  # Glitch Infused Ingot
   "◘": <psicosts:psi_cell:2>,                   # PSI-Dyne Cell
   "▬": <ore:ingotEbonyPsi>,                     # Ebony Psimetal Ingot

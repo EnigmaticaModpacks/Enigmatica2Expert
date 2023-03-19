@@ -78,7 +78,7 @@ function lF(output as ILiquidStack, mult as double) as ILiquidStack  {
 
 // Use sawblade to split item into pieces
 // 📦 → 📦
-function saw(input as IIngredient, output as IItemStack, exceptions as string = null, extra as IItemStack = null, extraChance as float = 0.0f) {
+function saw(input as IIngredient, output as IItemStack, exceptions as string = null, extra as IItemStack = null, extraChance as float = 0.0f, opts as IData = null) {
   work(['shapeless', 'BlockCutter', 'mekSawmill', 'TESawmill', 'AdvRockCutter'],
     exceptions, [input], null, [output], null, [extra], [extraChance]);
 }

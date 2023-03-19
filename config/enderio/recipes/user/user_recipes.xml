@@ -726,8 +726,8 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Omnivoir">
     <alloying energy="10000">
-      <input name="gemQuartzBlack" amount="2"/>
-      <output name="enderio:block_omni_reservoir"/>
+      <input name="gemQuartzBlack"/>
+      <output name="enderio:block_omni_reservoir" amount="4"/>
     </alloying>
   </recipe>
 </enderio:recipes>

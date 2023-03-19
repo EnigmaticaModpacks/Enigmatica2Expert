@@ -429,3 +429,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<rats:string_cheese>, <ore:foodCh
 
 <entity:rats:pirat_boat>.addPlayerOnlyDrop(<actuallyadditions:block_misc:4>, 1, 3);
 <entity:rats:plague_cloud>.addDrop(<quark:soul_bead>, 1, 3);
+
+# Containment food 
+# [Contaminated Food] alter non-rat recipe
+mods.nuclearcraft.FissionIrradiator.addRecipe(<ore:foodNutrients5>, <rats:contaminated_food>, 10000, 0, 0, 0);

@@ -49,11 +49,11 @@ import crafttweaker.item.IItemStack;
 	
 # Crafting Core
 	recipes.remove(<extendedcrafting:crafting_core>);
-	mods.forestry.Carpenter.addRecipe(<extendedcrafting:crafting_core>, 
+	scripts.mods.forestry.Carpenter.addRecipe(<extendedcrafting:crafting_core>, 
 	[[<extendedcrafting:material:18>, <extendedcrafting:material:18>, <extendedcrafting:material:18>],
 	[<plustic:osmiridiumingot>, <extendedcrafting:pedestal>, <plustic:osmiridiumingot>],
 	[<extendedcrafting:pedestal>, <extendedcrafting:pedestal>, <extendedcrafting:pedestal>]], 
-	40, <liquid:coal> * 5000);
+	40, <liquid:coal> * 5000, null, 1);
 	
 # [Quantum Compressor] from [Elite Compressing Factory][+4]
 	craft.remake(<extendedcrafting:compressor>, ["pretty",
@@ -99,7 +99,7 @@ import crafttweaker.item.IItemStack;
 
 # Pedestal
 	recipes.remove(<extendedcrafting:pedestal>);
-	mods.forestry.Carpenter.addRecipe(<extendedcrafting:pedestal>, 
+	scripts.mods.forestry.Carpenter.addRecipe(<extendedcrafting:pedestal>, 
 	[[null, <extendedcrafting:material:2>, null],
 	[null, blackIron, null],
 	[blackIron, <extendedcrafting:storage>, blackIron]], 

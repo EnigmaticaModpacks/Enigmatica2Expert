@@ -167,6 +167,10 @@ craft.reshapeless(<nuclearcraft:bin> * 3, "aTr", {
   "r": <extrautils2:trashcanenergy>, # Trash Can (Energy)
 });
 
+# [Energetic Blend] harder
+recipes.remove(<nuclearcraft:compound:2>);
+mods.mekanism.infuser.addRecipe("GLOWSTONE", 10, <minecraft:redstone>, <nuclearcraft:compound:2>);
+
 # Graphite from coal
 furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:*>);
 
@@ -544,9 +548,23 @@ for mod, types in nuclearData {
       utils.rh(fuel);
 
       // Pebbles in fuel reprocessor
-      if(key!='americium' || i==0) {
+      if(key!='americium' || i!=2) {
         mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(depleted_fuel * 9);
         utils.rh(depleted_fuel);
+
+        // Everything except Pebbles
+        scripts.category.oredict.addItems(<ore:fuelReactor>, [
+          fuel_carbide, fuel_oxide, fuel_nitride,
+        ]);
+
+        // Add other fuels to Oredict
+        scripts.category.oredict.addItems(<ore:depletedFuelReactor>, [depleted_fuel]);
+        for j in 1 .. 4 {
+          scripts.category.oredict.add(
+            <ore:depletedFuelReactor>,
+            itemUtils.getItem(mod+':depleted_fuel_'+key, i*4+j)
+          );
+        }
       }
       if(key!='americium' && i==2) {
         mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
@@ -785,3 +803,44 @@ for i, plate in radPlates {
 //     mods.nuclearcraft.Radiation.addBlockMutation(_from, _to, threshold);
 //   }
 // }
+
+# --------------------------------------------------------------
+# [Hazmat Suit Headwear] from [Leather Cap][+2]
+recipes.removeByRecipeName("nuclearcraft:helm_hazmat");
+craft.make(<nuclearcraft:helm_hazmat>, ["pretty",
+  "d d d",
+  "M L M"], {
+  "d": <ore:dyeYellow>,    # Floral Yellow Powder
+  "M": <nuclearcraft:rad_shielding:1>, # Medium Radiation Shielding
+  "L": <minecraft:leather_helmet>.anyDamage(), # Leather Cap
+});
+
+# [Hazmat Suit Chestpiece] from [Leather Tunic][+2]
+recipes.removeByRecipeName("nuclearcraft:chest_hazmat");
+craft.make(<nuclearcraft:chest_hazmat>, ["pretty",
+  "d d d",
+  "M L M"], {
+  "d": <ore:dyeYellow>,    # Floral Yellow Powder
+  "M": <nuclearcraft:rad_shielding:1>, # Medium Radiation Shielding
+  "L": <minecraft:leather_chestplate>.anyDamage(), # Leather Tunic
+});
+
+# [Hazmat Suit Leggings] from [Leather Pants][+2]
+recipes.removeByRecipeName("nuclearcraft:legs_hazmat");
+craft.make(<nuclearcraft:legs_hazmat>, ["pretty",
+  "d d d",
+  "M L M"], {
+  "d": <ore:dyeYellow>,    # Floral Yellow Powder
+  "M": <nuclearcraft:rad_shielding:1>, # Medium Radiation Shielding
+  "L": <minecraft:leather_leggings>.anyDamage(), # Leather Pants
+});
+
+# [Hazmat Suit Boots] from [Leather Boots][+2]
+recipes.removeByRecipeName("nuclearcraft:boots_hazmat");
+craft.make(<nuclearcraft:boots_hazmat>, ["pretty",
+  "d d d",
+  "M L M"], {
+  "d": <ore:dyeYellow>,    # Floral Yellow Powder
+  "M": <nuclearcraft:rad_shielding:1>, # Medium Radiation Shielding
+  "L": <minecraft:leather_boots>.anyDamage(), # Leather Boots
+});

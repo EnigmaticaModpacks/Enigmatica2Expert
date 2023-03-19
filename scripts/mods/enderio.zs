@@ -712,6 +712,70 @@ craft.remake(<enderio:block_enhanced_wired_charger>, ["pretty",
   "∩": <rats:charged_creeper_chunk>, # Charged Creeper Chunk
 });
 
+# [Enhanced Alloy Smelter] from [Alloy Smelter][+5]
+mods.thaumcraft.Infusion.registerRecipe(
+  "block_enhanced_alloy_smelter", # Name
+  "INFUSION", # Research
+  <enderio:block_enhanced_alloy_smelter>, # Output
+  7, # Instability
+  [<aspect:amogus> * 50, <aspect:caeles> * 50],
+  <enderio:block_alloy_smelter>, # Central Item
+  Grid(["pretty",
+  "  E  ",
+  "E   E",
+  "  n  "], {
+  "E": <ore:itemEnhancedChassiParts>,   # Enhanced Machine Parts
+  "n": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+}).spiral(1));
+
+# [Enhanced Combustion Generator] from [Combustion Generator][+5]
+mods.thaumcraft.Infusion.registerRecipe(
+  "block_enhanced_combustion_generator", # Name
+  "INFUSION", # Research
+  <enderio:block_enhanced_combustion_generator>, # Output
+  7, # Instability
+  [<aspect:amogus> * 50, <aspect:caeles> * 50],
+  <enderio:block_combustion_generator>, # Central Item
+  Grid(["pretty",
+  "  E  ",
+  "E   E",
+  "  n  "], {
+  "E": <ore:itemEnhancedChassiParts>,   # Enhanced Machine Parts
+  "n": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+}).spiral(1));
+
+# [Enhanced SAG Mill] from [SAG Mill][+5]
+mods.thaumcraft.Infusion.registerRecipe(
+  "block_enhanced_sag_mill", # Name
+  "INFUSION", # Research
+  <enderio:block_enhanced_sag_mill>, # Output
+  7, # Instability
+  [<aspect:amogus> * 50, <aspect:caeles> * 50],
+  <enderio:block_sag_mill>, # Central Item
+  Grid(["pretty",
+  "  E  ",
+  "E   E",
+  "  n  "], {
+  "E": <ore:itemEnhancedChassiParts>,   # Enhanced Machine Parts
+  "n": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+}).spiral(1));
+
+# [The Enhanced Vat] from [The Vat][+5]
+mods.thaumcraft.Infusion.registerRecipe(
+  "block_enhanced_vat", # Name
+  "INFUSION", # Research
+  <enderio:block_enhanced_vat>, # Output
+  7, # Instability
+  [<aspect:amogus> * 50, <aspect:caeles> * 50],
+  <enderio:block_vat>, # Central Item
+  Grid(["pretty",
+  "  E  ",
+  "E   E",
+  "  n  "], {
+  "E": <ore:itemEnhancedChassiParts>,   # Enhanced Machine Parts
+  "n": <ore:itemEnhancedMachineChassi>, # Enhanced Machine Chassis
+}).spiral(1));
+
 # [Grains of Prescience] from [Prescient Crystal]
 scripts.process.crush(<ore:itemPrecientCrystal>, <enderio:item_material:34>, 'only: eu2Crusher AACrusher');
 

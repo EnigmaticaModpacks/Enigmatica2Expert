@@ -55,7 +55,7 @@ config('config/astralsorcery/fluid_rarities.cfg').data.data
   <fluid:hydrofluoric_acid> * 120,
   <fluid:mutagen>           * 100,
   <fluid:vibrant_alloy>     * 40,
-  <fluid:ic2uu_matter>      * 1,
+  <fluid:ic2uu_matter>      * 30,
 /**/
 ];
 

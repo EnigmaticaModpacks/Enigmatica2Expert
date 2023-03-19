@@ -466,6 +466,22 @@ val itemsToRecycle as string[] = [
 "thaumcraft:fortress_helm" , "7" , "thaumcraft:ingot", "thaumium",
 "thaumcraft:fortress_chest", "12", "thaumcraft:ingot", "thaumium",
 "thaumcraft:fortress_legs" , "10", "thaumcraft:ingot", "thaumium",
+"ic2:hazmat_helmet"          , "4", "ic2:crafting", "!saw" ,
+"ic2:hazmat_chestplate"      , "6", "ic2:crafting", "!saw" ,
+"ic2:hazmat_leggings"        , "6", "ic2:crafting", "!saw" ,
+"ic2:rubber_boots"           , "6", "ic2:crafting", "!saw" ,
+"ic2:tool_box"               , "2", "thermalfoundation:material:163", "bronze",
+"nuclearcraft:helm_hazmat"   , "2", "nuclearcraft:part", "!shapeless",
+"nuclearcraft:chest_hazmat"  , "2", "nuclearcraft:part", "!shapeless",
+"nuclearcraft:legs_hazmat"   , "2", "nuclearcraft:part", "!shapeless",
+"nuclearcraft:boots_hazmat"  , "2", "nuclearcraft:part", "!shapeless",
+"nuclearcraft:multitool"     , "2", "thermalfoundation:material:160", "steel",
+"nuclearcraft:rad_x"         , "2", "nuclearcraft:part:6", "!saw",
+"qmd:helm_hev"               , "2", "nuclearcraft:rad_shielding:2", "!shapeless",
+"qmd:chest_hev"              , "2", "nuclearcraft:rad_shielding:2", "!shapeless",
+"qmd:legs_hev"               , "2", "nuclearcraft:rad_shielding:2", "!shapeless",
+"qmd:boots_hev"              , "2", "nuclearcraft:rad_shielding:2", "!shapeless",
+"qmd:lepton_cannon"          , "2", "qmd:ingot2:1", "neodymium",
 ];
 
 # Exceptions for machines that can saw

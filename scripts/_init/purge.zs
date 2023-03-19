@@ -149,6 +149,8 @@ recipes.remove(<ic2:ingot:4>);
 recipes.remove(<ic2:ingot:5>);
 recipes.remove(<ic2:ingot:6>);
 recipes.remove(<ic2:resource:5>);
+utils.rh(<ic2:resource:5>); # Bronze
+utils.rh(<ic2:ingot:1>);
 # *============================*
 
 utils.rh(<contenttweaker:item_ore_tungsten:1>);
@@ -163,6 +165,8 @@ utils.rh(<excompressum:ore_smasher>);
 utils.rh(<forestry:gear_tin>);
 utils.rh(<forestry:gear_bronze>);
 utils.rh(<forestry:gear_copper>);
+utils.rh(<forestry:greenhouse.window>);
+utils.rh(<forestry:greenhouse.window_up>);
 utils.rh(<appliedenergistics2:material:40>);
 utils.rh(<mysticalagriculture:chunk>);
 utils.rh(<mysticalagriculture:chunk:1>);

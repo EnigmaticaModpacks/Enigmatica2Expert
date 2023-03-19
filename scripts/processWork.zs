@@ -142,7 +142,11 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     
     if (machineName == "blockcutter") {
       # mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
-      mods.ic2.BlockCutter.addRecipe(outputItem0, inputIngr0);
+      val hardness = getOption(options, 'hardness');
+      if(!isNull(hardness))
+        mods.ic2.BlockCutter.addRecipe(outputItem0, inputIngr0, hardness.asInt());
+      else
+        mods.ic2.BlockCutter.addRecipe(outputItem0, inputIngr0);
       return machineName;
     }
 

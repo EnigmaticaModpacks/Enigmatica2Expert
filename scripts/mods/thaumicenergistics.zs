@@ -88,3 +88,20 @@ mods.thaumcraft.Infusion.registerRecipe(
   "‚": <ore:nuggetPrimordial>,                # Primal Metal Nugget
   "C": <thaumicenergistics:coalescence_core>, # Coalescence Core
 }).spiral(1));
+
+# [Creative ME Essentia Storage Cell] from [ME Storage Housing][+5]
+craft.remake(<thaumicenergistics:essentia_cell_creative>, ["pretty",
+  "      6      ",
+  "    T E T    ",
+  "  T C S C T  ",
+  "6 E S M S E 6",
+  "  T C S C T  ",
+  "    T E T    ",
+  "      6      "], {
+  "6": <thaumicenergistics:essentia_component_64k>, # 64k ME Essentia Storage Component
+  "T": <ore:sheetTitanium>,                         # Titanium Sheet
+  "E": <ore:processorElite>,                        # Elite Processor
+  "C": <thaumicwonders:creative_essentia_jar>,      # Creative Essentia Jar
+  "S": <threng:material:14>,                        # Speculative Processor
+  "M": <appliedenergistics2:material:39>,           # ME Storage Housing
+});

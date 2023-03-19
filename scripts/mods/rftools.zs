@@ -292,3 +292,47 @@ craft.make(<rftools:storage_control_module>, ["pretty",
   "A": <xnet:antenna_dish>,       # Antenna Dish
   "I": <rftools:infused_diamond>, # Infused Diamond
 });
+
+# [Liquid Monitor] from [Machine Base][+2]
+craft.remake(<rftools:liquid_monitor>, ["pretty",
+  "  l  ",
+  "F M F",
+  "  l  "], {
+  "l": <fluxnetworks:flux>,    # Flux
+  "F": <flopper:flopper>,      # Flopper
+  "M": <rftools:machine_base>, # Machine Base
+});
+
+# Remakes with infusions
+
+# [Infused Diamond] from [Dimensional Shard][+1]
+recipes.remove(<rftools:infused_diamond>);
+mods.mekanism.infuser.addRecipe("DIMENSIONAL", 160, <ore:gemDiamondRat>, <rftools:infused_diamond>);
+
+# [Infused Enderpearl] from [Dimensional Shard][+1]
+recipes.remove(<rftools:infused_enderpearl>);
+mods.mekanism.infuser.addRecipe("DIMENSIONAL", 160, <endreborn:item_advanced_ender_pearl>, <rftools:infused_enderpearl>);
+
+# [CPU Core EX2000] from [Dimensional Shard][+1]
+recipes.remove(<rftoolscontrol:cpu_core_2000>);
+mods.mekanism.infuser.addRecipe("DIMENSIONAL", 160, <rftoolscontrol:cpu_core_1000>, <rftoolscontrol:cpu_core_2000>);
+
+# [Dimlet Template] from [Dimensional Shard][+1]
+recipes.remove(<rftoolsdim:dimlet_template>);
+mods.mekanism.infuser.addRecipe("DIMENSIONAL", 160, <ore:paper>, <rftoolsdim:dimlet_template>);
+
+# [Activity Probe] from [Dimensional Shard][+1]
+recipes.remove(<rftoolsdim:activity_probe>);
+mods.mekanism.infuser.addRecipe("DIMENSIONAL", 160, <rftools:machine_frame>, <rftoolsdim:activity_probe>);
+
+# [Dimension Monitor] from [Redstone Comparator]
+recipes.removeByRecipeName("rftoolsdim:dimension_monitor");
+mods.mekanism.infuser.addRecipe("DIMENSIONAL", 160, <minecraft:comparator>, <rftoolsdim:dimension_monitor>);
+
+# [CPU Core B500] from [Redstone][+1]
+recipes.remove(<rftoolscontrol:cpu_core_500>);
+mods.mekanism.infuser.addRecipe("REDSTONE", 160, <rftoolscontrol:card_base>, <rftoolscontrol:cpu_core_500>);
+
+# [CPU Core S1000] from [Rat Diamond][+1]
+recipes.remove(<rftoolscontrol:cpu_core_1000>);
+mods.mekanism.infuser.addRecipe("DIAMOND", 160, <rftoolscontrol:cpu_core_500>, <rftoolscontrol:cpu_core_1000>);

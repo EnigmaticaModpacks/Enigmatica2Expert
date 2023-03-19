@@ -536,10 +536,9 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("dna_sample",
 <thaumadditions:dna_sample>, 
   Grid(["pretty",
   "  I  ",
-  "F V F",
+  "F   F",
   "  F  "], {
   "I": <thaumicaugmentation:material:5>, #Impetus jewel
-  "V": <enderio:item_soul_vial>, 
   "F": <thaumcraft:fabric>, 
 }).shaped());
 

@@ -84,15 +84,22 @@ craft.make(<avaritia:endest_pearl>, ["pretty",
   "-": <ore:ingotEndSteel>,                        # End Steel Ingot
 });
 	
-# Skullfire Sword
- 	mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <avaritia:skullfire_sword>, [
-	[null, <minecraft:enchanted_book>, null, null, <bloodmagic:lava_crystal>], 
-	[null, null, null, <randomthings:obsidianskull>, null], 
-	[null, <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), <tconstruct:cleaver:*>, null, null], 
-	[null, <tconstruct:tough_tool_rod>.withTag({Material: "dragonbone"}), <tconstruct:wide_guard>.withTag({Material: "dragonbone"}), null, <minecraft:enchanted_book>], 
-	[<ore:netherStar>, null, null, null, null]
-]);
+# [Skullfire Sword] from [Obsidian Skull][+6]
+mods.avaritia.ExtremeCrafting.remove(<avaritia:skullfire_sword>);
+craft.make(<avaritia:skullfire_sword>, ["pretty",
+  "        *",
+  "      R  ",
+  "D ■ O    ",
+  "  ▄ ■    ",
+  "S   D    "], {
+  "*": <bloodmagic:lava_crystal>,      # Lava Crystal
+  "R": <rats:ratlantean_flame>,        # Ratlantean Spirit Flame
+  "D": <ore:boneDragon>,               # Dragon Bone
+  "■": <ore:blockBone>,                # Bone Block
+  "O": <randomthings:obsidianskull>,   # Obsidian Skull
+  "▄": <iceandfire:dragon_bone_block>, # Block of Dragon Bones
+  "S": <cyclicmagic:soulstone>,        # Soulstone
+});
 
 # [Ultimate Stew]*9 from [Cosmic Meatballs][+6]
 craft.make(<avaritia:ultimate_stew> * 9, ["pretty",
