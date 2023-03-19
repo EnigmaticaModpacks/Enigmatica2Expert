@@ -58,8 +58,8 @@ for name, ingr in energyDimletIngrs {
 # [Dimlet Control Circuit Rarity 7] from [Machine Circuitry][+1]
 scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",
   [
-    <advancedrocketry:ic:2>,          # Advanced Circuit
-    <modularmachinery:blockcasing:5>, # Machine Circuitry
+    <advancedrocketry:ic:2>, # Advanced Circuit
+    <ore:processorBasic>,
   ], null,
   [<rftdimtweak:dimlet_control_circuit_seven>], null, {power: 100000, timeRequired: 100}
 );

@@ -184,18 +184,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Modularium Alloy] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>ingotElectricalSteel 2</oreDict>
-			<oreDict>ingotPlatinum 1</oreDict>
-			<itemStack>actuallyadditions:item_crystal_empowered 1 1</itemStack>
-		</input>
-		<output>
-			<itemStack>modularmachinery:itemmodularium 24 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Neodymium Magnet] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

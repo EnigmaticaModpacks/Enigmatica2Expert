@@ -143,20 +143,6 @@ function grow(input as IIngredient, output as IItemStack, exceptions as string =
   workEx('Insolator', exceptions, [input, <thermalfoundation:fertilizer>], null, [iF(output, 0.333f)], null, [secondaryOutput], [secondaryChance], { energy: 4800 });
   workEx('Insolator', exceptions, [input, <thermalfoundation:fertilizer:1>], null, [iF(output, 0.666f)], null, [secondaryOutput], [secondaryChance], { energy: 7200 });
   workEx('Insolator', exceptions, [input, <thermalfoundation:fertilizer:2>], null, [output], null, [secondaryOutput], [secondaryChance], { energy: 9600 });
-
-  // Hydroponics special behaviour
-  val maxFertilizers = 8.0d;
-  val a = min(64, max(1.0f, (1.0f - output.amount as float / 16.0f) * maxFertilizers) as int);
-  val combo = [
-    <minecraft:dye:15> * a,
-    <mysticalagriculture:mystical_fertilizer> * a,
-    <actuallyadditions:item_fertilizer> * a,
-    <forestry:fertilizer_compound> * a,
-    <industrialforegoing:fertilizer> * a,
-    <thermalfoundation:fertilizer:2> * a,
-    input * 5,
-  ] as IIngredient[];
-  work(['Hydroponics'], exceptions, combo, [<fluid:water> * 40000], [output * (64 * 3)], null, !isNull(secondaryOutput) ? [secondaryOutput * 5] : null, [secondaryChance]);
 }
 
 // Crushing rocks (like granite, andesite, etc..) to obtain dusts

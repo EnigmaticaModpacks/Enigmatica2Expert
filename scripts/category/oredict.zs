@@ -144,9 +144,6 @@ add(<ore:blockVoid>, <thaumcraft:metal_void>);
 # Circuit Board
 add(<ore:circuitBoard>, <immersiveengineering:material:27>);
 
-# Modularium
-add(<ore:ingotModularium>, <modularmachinery:itemmodularium>);
-
 # Amber Oredict
 add(<ore:blockAmber>, <biomesoplenty:gem_block:7>);
 add(<ore:blockAmber>, <thaumcraft:amber_block>);

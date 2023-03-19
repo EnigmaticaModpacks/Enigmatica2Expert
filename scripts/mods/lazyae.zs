@@ -3,7 +3,7 @@
 recipes.remove(<threng:big_assembler:3>);
 recipes.addShaped(<threng:big_assembler:3>, [
   [<threng:big_assembler>, <appliedenergistics2:material:37>, <threng:big_assembler>],
-  [<appliedenergistics2:part:76>, <modularmachinery:blockcasing:5>, <appliedenergistics2:part:76>],
+  [<appliedenergistics2:part:76>, <ore:processorBasic>, <appliedenergistics2:part:76>],
   [<threng:big_assembler>, <appliedenergistics2:interface>, <threng:big_assembler>]
   ]);
 

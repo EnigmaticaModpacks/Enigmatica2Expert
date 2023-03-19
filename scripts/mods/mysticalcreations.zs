@@ -14,4 +14,3 @@ recipes.addShaped(Bucket("creosote"), [[null, <mysticalcreations:creosolite_esse
 scripts.process.grow(<mysticalcreations:creosolite_seeds>, <mysticalcreations:creosolite_essence> * 9, "No exceptions", <mysticalcreations:creosolite_seeds>, 1);
 scripts.process.grow(<mysticalcreations:cheese_seeds>, 		<mysticalcreations:cheese_essence> * 9,      "No exceptions", <mysticalcreations:cheese_seeds>, 1);
 scripts.process.grow(<mysticalagriculture:starmetal_seeds>, 		<mysticalagriculture:starmetal_essence> * 9,      "No exceptions", <mysticalagriculture:starmetal_seeds>, 1);
-scripts.process.grow(<mysticalcreations:ultimate_seeds>,   <mysticalcreations:ultimate_essence> * 9,   "only: Hydroponics", <mysticalcreations:ultimate_seeds>, 1);

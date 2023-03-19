@@ -34,7 +34,6 @@
   🍃 Botania
   🍇 End Reborn
   🎲 Random Things
-  🏦 Modular Machinery
   🏪 Requious Fracto
   🏴 Dark Utilities
   🐀 Rats

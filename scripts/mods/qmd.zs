@@ -29,12 +29,12 @@ craft.shapeless(<qmd:chemical_dust:1> * 3, "∆♠∆▲♠▲♣♠♣", {
 # [Plastic Scintillator] from [Blue Dye][+1]
 scripts.process.alloy([<ore:dyeBlue>, <ore:bioplastic>, <ore:bioplastic>], <qmd:part:3>);
 
-# [Basic Processor] from [Silver Plate][+3]
-mods.immersiveengineering.Blueprint.addRecipe('components', <qmd:semiconductor:4>, Grid(["NF⌂F□F"], {
+# [Basic Processor] from [N-Type Doped Silicon][+3]
+mods.immersiveengineering.Blueprint.addRecipe('components', <qmd:semiconductor:4> * 4, Grid(["NF⌂F□F"], {
   "N": <ore:siliconNDoped>,     # N-Type Doped Silicon
   "F": <fluxnetworks:flux>,     # Flux
-  "⌂": <ic2:casing:2>,          # Gold Item Casing
-  "□": <ore:plateSilver>,       # Silver Plate
+  "⌂": <forestry:chipsets:3>.withTag({T: 3 as short}, false), # Intricate Circuit Board
+  "□": <ore:circuitUltimate>, # Ultimate Control Circuit
 }).shapeless());
 
 # [Advanced Processor] from [P-Type Doped Silicon][+3]

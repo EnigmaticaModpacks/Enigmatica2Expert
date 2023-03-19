@@ -33,7 +33,7 @@
 	</Recipe>
 	<Recipe timeRequired="30" power="100000">
 		<input>
-			<itemStack>modularmachinery:blockcasing 1 5</itemStack>
+			<oreDict>processorBasic</oreDict>
 			<oreDict>ingotVibrantAlloy</oreDict>
 			<oreDict>waferSilicon</oreDict>
 		</input>
@@ -263,7 +263,7 @@
 	<Recipe timeRequired="100" power="100000">
 		<input>
 			<itemStack>advancedrocketry:ic 1 2</itemStack>
-			<itemStack>modularmachinery:blockcasing 1 5</itemStack>
+			<oreDict>processorBasic 1</oreDict>
 		</input>
 		<output>
 			<itemStack>rftdimtweak:dimlet_control_circuit_seven 1 0</itemStack>

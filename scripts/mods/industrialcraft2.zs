@@ -226,7 +226,7 @@ scripts.processUtils.avdRockXmlRecipeEx(
 	<ore:dustCoal> * 16,
 ], null, [<ic2:te:8> * 16], null, {power: 120000, timeRequired: 100});
 	
-# Remove Recycler (replaced by Modular Machine)
+# Remove Recycler (replaced by other machines)
 recipes.remove(<ic2:te:48>);
 
 # [Solar Helmet] from [Solar Panel][+2]

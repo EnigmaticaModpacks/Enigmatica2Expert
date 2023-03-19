@@ -191,7 +191,6 @@ tooltips.lang.et_miner_cont_any=Required Blocks:\n%s Null, Speed or Accuracy Mod
 tooltips.lang.nano_cont_personal=Required Blocks:\n%s Null or Potion Effect Modifier in any combination\n%s Structure Frame tier %s\n%s Structure Panel
 tooltips.lang.lightning_cont=Required Blocks:\n%s Structure Frame tier %s\n%s Lightning Rod\n%s Insulated Lightning Rod
 tooltips.lang.et.or_above=or above
-tooltips.lang.modularium_alloy=Modularium Alloy
 tooltips.lang.fuel.shift_for_list===Hold shift to see fuel list==
 tooltips.lang.strike_with_lightning=To obtain strike Life Essense with lightning
 tooltips.lang.thaum.progress=Progress

@@ -183,7 +183,6 @@ desc.tooltip(<industrialforegoing:mob_relocator>, "industrialforegoing:mob_reloc
 desc.tooltipRaw(<mysticalagriculture:enderium_seeds>, desc.local("tier")~": §56§r");
 desc.tooltipRaw(<mysticalagriculture:iridium_seeds>, desc.local("tier")~": §56§r");
 desc.tooltipRaw(<mysticalagriculture:terrasteel_seeds>, desc.local("tier")~": §56§r");
-<modularmachinery:itemmodularium>.displayName = desc.local("modularium_alloy");
 
 # Solar Panels
 val or_above = " " ~ desc.local("et.or_above");

@@ -540,3 +540,15 @@ craft.remake(<randomthings:inventoryrerouter>, ["pretty",
 # Magic Bean alt
 furnace.addRecipe(<randomthings:beans:2>, <twilightforest:magic_beans>, 50);
 scripts.jei.crafting_hints.add1to1(<randomthings:beans:2>, <randomthings:beanpod>);
+
+# Used as ingredient
+# [Biome Glass]*8 from [Empowered Palis Crystal Block][+2]
+recipes.remove(<randomthings:biomeglass>);
+mods.forestry.ThermionicFabricator.addCast(<randomthings:biomeglass> * 8, Grid([
+  " ╳",
+  " *",
+  " ▬"], {
+  "╳": <ore:itemPulsatingCrystal>, # Pulsating Crystal
+  "*": <actuallyadditions:block_crystal_empowered:1>, # Empowered Palis Crystal Block
+  "▬": <ore:ingotPlatinum>,        # Platinum Ingot
+}).shaped(), <fluid:glass> * 4000);

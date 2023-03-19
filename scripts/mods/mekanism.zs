@@ -191,7 +191,7 @@ craft.remake(<mekanismgenerators:generator>, ["pretty",
 	recipes.remove(<mekanism:machineblock3>);
 	recipes.addShaped("Quantum Entangloporter", <mekanism:machineblock3>, 
 	[[<mekanism:basicblock:7>, <ore:heartDragon>, <mekanism:basicblock:7>],
-	[<modularmachinery:blockcasing:5>, <ore:machineTeleporter>, <modularmachinery:blockcasing:5>], 
+	[<randomthings:biomeglass>, <ore:machineTeleporter>, <randomthings:biomeglass>], 
 	[<mekanism:basicblock:7>, <rftools:matter_beamer>, <mekanism:basicblock:7>]]);
 
 // Mekanism Boiler Casing
@@ -301,11 +301,11 @@ craft.remake(<mekanismgenerators:generator:5>, ["pretty",
 
 # Mek Tiered craft
 val mekTiers = [
-	# Primary           , Secondary                      , Additional         , Induction Cell Capacitors
-	[<ore:alloyAdvanced>,<ore:circuitAdvanced>           ,<ore:ingotOsmium>   , <enderio:item_basic_capacitor:0>],
-	[<ore:alloyElite>   ,<ore:circuitElite>              ,<ore:ingotZirconium>, <enderio:item_basic_capacitor:1>],
-	[<ore:alloyUltimate>,<ore:circuitUltimate>           ,<ore:ingotPlutonium242All>, <enderio:item_basic_capacitor:2>],
-	[<ic2:crafting:4>   ,<modularmachinery:blockcasing:5>,<ore:ingotVividAlloy>, <enderio:item_capacitor_melodic>],
+	# Primary           , Secondary           , Additional         , Induction Cell Capacitors
+	[<ore:alloyAdvanced>,<ore:circuitAdvanced>,<ore:ingotOsmium>   , <enderio:item_basic_capacitor:0>],
+	[<ore:alloyElite>   ,<ore:circuitElite>   ,<ore:ingotZirconium>, <enderio:item_basic_capacitor:1>],
+	[<ore:alloyUltimate>,<ore:circuitUltimate>,<ore:ingotPlutonium242All>, <enderio:item_basic_capacitor:2>],
+	[<ic2:crafting:4>   ,<ore:processorBasic> ,<ore:ingotVividAlloy>, <enderio:item_capacitor_melodic>],
 ] as IIngredient[][];
 
 function mekStorage(i as int, item as IItemStack, storageIngrs as IIngredient[string], strGrid as string[]) {

@@ -154,5 +154,10 @@
     "fluidName": "crystal",
     "input": "nuclearcraft:gem_dust:11",
     "output": "endreborn:block_lormyte_crystal"
+  },
+  {
+    "fluidName": "crystal",
+    "input": "randomthings:biomeglass",
+    "output": "actuallyadditions:block_greenhouse_glass"
   }
 ]
