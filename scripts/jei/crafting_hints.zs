@@ -132,3 +132,11 @@ x.addJEIRecipe(AssemblyRecipe.create(function(c) {
 );
 
 add1to1(null, <avaritia:resource:2>, <avaritia:neutron_collector>);
+
+# Luck of the sea
+add1to1(null, <minecraft:fish:*>,
+  <exnihilocreatio:item_mesh:1>.withTag({ench: [{lvl: 0 as short, id: 41}]}) |
+  <exnihilocreatio:item_mesh:2>.withTag({ench: [{lvl: 0 as short, id: 41}]}) |
+  <exnihilocreatio:item_mesh:3>.withTag({ench: [{lvl: 0 as short, id: 41}]}) |
+  <exnihilocreatio:item_mesh:4>.withTag({ench: [{lvl: 0 as short, id: 41}]})
+);
