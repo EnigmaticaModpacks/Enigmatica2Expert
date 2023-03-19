@@ -198,6 +198,10 @@ for i, candle in candleColors {
   });
 }
 
+# Compressed brain
+recipes.remove(<rats:brain_block>);
+utils.compact(<thaumcraft:brain>, <rats:brain_block>);
+
 # [Zombie Brain]*8 from [Zombie Essence]*2
 craft.make(<thaumcraft:brain> * 8, ["pretty",
   "T T",

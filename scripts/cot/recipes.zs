@@ -19,6 +19,21 @@ furnace.addRecipe(<endreborn:item_ingot_wolframium>, <contenttweaker:item_ore_tu
 utils.compact(<contenttweaker:dust_tiny_gold>  , <thermalfoundation:material:1>);
 utils.compact(<contenttweaker:dust_tiny_silver>, <thermalfoundation:material:66>);
 
+// Some compressed blocks
+utils.compact(<thermalfoundation:material:771>, <contenttweaker:block_sulfur>);
+utils.compact(<contenttweaker:block_sulfur>, <contenttweaker:compressed_block_sulfur>);
+utils.compact(<ore:cropPumpkin>, <contenttweaker:compressed_pumpkin>);
+utils.compact(<contenttweaker:compressed_pumpkin>, <contenttweaker:compressed_pumpkin_double>);
+
+// Compressed string
+utils.compact(<minecraft:string>, <contenttweaker:compressed_string>);
+craft.remake(<exnihilocreatio:item_mesh:1>, ["pretty",
+  "  s  ",
+  "s s s",
+  "  s  "], {
+  "s": <ore:string>, # String
+});
+
 // Molten Cheese
 scripts.process.melt(<ore:cheeseWheels> | <ore:blockCheese>, <liquid:cheese> * 1000);
 scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250);

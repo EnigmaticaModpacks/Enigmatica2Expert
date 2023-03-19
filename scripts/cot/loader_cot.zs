@@ -80,6 +80,11 @@ createBlockStone("compressed_dried_sand"      , 3, <blockmaterial:rock>);
 createBlockStone("compressed_gravisand"       , 5, <blockmaterial:rock>);
 createBlockStone("compressed_red_sand"        , 3, <blockmaterial:rock>);
 createBlockStone("compressed_white_sand"      , 3, <blockmaterial:rock>);
+createBlockStone("block_sulfur"               , 2, <blockmaterial:sand>);
+createBlockStone("compressed_block_sulfur"    , 3, <blockmaterial:sand>);
+createBlockStone("compressed_pumpkin"   		  , 3, <blockmaterial:cactus>);
+createBlockStone("compressed_pumpkin_double"  , 4, <blockmaterial:cactus>);
+createBlockStone("compressed_string" 				  , 2, <blockmaterial:cloth>);
 
 createBlockStone("terrestrial_artifact_block", 9, <blockmaterial:rock>);
 createBlockStone("silicon_block", 4, <blockmaterial:rock>);

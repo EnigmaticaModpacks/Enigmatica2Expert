@@ -391,6 +391,9 @@ for item in [
 #
 # ######################################################################
 
+# Compressed ice variant
+utils.compact(<mctsmelteryio:iceball>, <iceandfire:dragon_ice>);
+
 # Simplify bricks for less grind
 remakeEx(<iceandfire:dragonforge_fire_brick> * 2, [
 	[<ore:dragonFireScales>, <ore:bricksStone>, <ore:dragonFireScales>],
