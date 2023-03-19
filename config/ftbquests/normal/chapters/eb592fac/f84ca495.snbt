@@ -1,0 +1,27 @@
+{
+	x: -5.5d,
+	y: 3.1d,
+	text: [
+		"Emit Redstone signal depnding on fluid level."
+	],
+	dependencies: [
+		"094a95d2"
+	],
+	tasks: [{
+		uid: "83b2613e",
+		type: "item",
+		items: [{
+			item: "rftools:liquid_monitor"
+		}]
+	}],
+	rewards: [{
+		uid: "ca4ba876",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
