@@ -2,35 +2,11 @@
 
 List of priorities:
 
-- [ ] ✏️ Better Integrate `QMD`
-- [ ] ✏️ Better Integrate `Trinity`
-- [ ] ✏️ More Cocoa Usages
-- [ ] ✏️ Unify `Sodium Chloride`
-- [ ] ✏️ Compressed Garbage Piles spawn rats sometimes
-- [ ] ✏️ Integrate Spice of Life recipes
-- [ ] ✏️ Add Greater Crymson Portal recipe
-- [ ] ✏️ Make Seared Stone + Essence alternative in adv. machines
-- [ ] ✏️ Better Tier6 recipe https://discord.com/channels/911676461050642432/1064813931966779392/1078776934546296894
-- [ ] ✏️ Fix Robots have wrong power values
-- [ ] ✏️ Add compressed `pumkins`, `firecharge`, `Charged Creeper chunk`, `Iceballs`, `String mesh uncraft`, `Sulfur`, `Zombie Brain`
-- [ ] ✏️ Add modifiers removals for Jetpack
-- [ ] ✏️ Fuelwood heater x2 harder to prevent spam for steam.
-- [ ] ✏️ Mek turbine blocks harder to prevent using before NC
-- [ ] ✏️ Glass fiber harder (clear glass maybe)
-- [ ] ✏️ Pocket Computer alt recipes
-- [ ] ✏️ Fix Creative mana pool not crafting
-- [ ] ✏️ Salt reactor or Gelid Enderium should have more uses
-- [ ] ✏️ AdvRocketry add more recipes
-- [ ] ✏️ Creative CAD cheaper
-- [ ] 🌍 AbandonedWoodTower less spawn
-- [ ] 📀 Rain Tank buff even more
-- [ ] 🔄 Better Hurt Timer may prevent Robots to hit monsters
-- [ ] 🔄 bow On Dragon Causing Crash
-- [ ] 🔄 Placing something on Rustic's slabs crashing game
-- [ ] 🔄 fixReadmeYoutubeEmbeds
-- [ ] 🔴 remove Portal Sizes Since Its Not Working With Any Fire
-- [ ] 🔴 Remove `Void Island Control` (void island created by hand)
-- [ ] 🧱 Automation not run automatically
+- [ ] 💥 `world.catenation()` doesnt working anymore
+- [ ] 💥 bow On Dragon Causing Crash
+- [ ] 💥 Placing something on Rustic's slabs crashing game
+- [ ] 💥 going Between Dims Causing Client Freezez
+- [ ] ✏️ dev/null/ with infinite Scaffold, Cobblestone
 
 ### v0.89.0 -> Next
 - Turn off Fusion reactors since plasma
@@ -43,6 +19,25 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Add compressed `Charged Creeper chunk`
+- [ ] ✏️ Make Seared Stone + Essence alternative in adv. machinesl
+- [ ] 📀 Make Vase accept only unstackable items, increase size https://github.com/cadaverous-eris/Rustic/blob/master/src/main/java/rustic/common/tileentity/ContainerVase.java
+- [ ] 🔄 Make use of Trait table https://docs.google.com/spreadsheets/d/1b12aEIsTEViJtkW69HohADqaEVMkhb4rkbpwV3G6pIw/edit#gid=872731912
+- [ ] ✏️ QMD atmosphere collector for other dims
+- [ ] ✏️ Better Integrate `QMD`
+- [ ] ✏️ Better Integrate `Trinity`
+- [ ] ✏️ More Cocoa Usages
+- [ ] ✏️ Compressed Garbage Piles spawn rats sometimes
+- [ ] ✏️ Glass fiber harder (clear glass maybe)
+- [ ] ✏️ Come up with idea to unify copper coils - there is too many of them
+- [ ] ✏️ NC Motor replace by IC2 motor or change recipes
+- [ ] ✏️ Better Comments of Framed Drawers recipes
+- [ ] ✏️ Add Framed Fluid Drawers recipes
+- [ ] ✏️ Integrate `Orbital Laser Drill` better
+- [ ] 📀 Rain Tank buff even more
+- [ ] 🌍 AbandonedWoodTower less spawn
+- [ ] 🔴 Remove `Void Island Control` and find out how to make Skyblock with OTG
+- [ ] 🔄 Carryon change render for EIO warehouse
 - [ ] ✏️ Find a peaceful way for `scan crimson cultists` `get dimensional fracture` `get to emptyness dimension`. Could be skipped with Tome. https://discord.com/channels/911676461050642432/1064813931966779392/1078266283910496409
 - [ ] 🌍 Some OTG biomes have no Ore spawn because they use not Stone. (Biome serach: `StoneBlock: (?!STONE)\w+`)
 - [ ] ✏️ Add usage of `Perfect Fuel` in NCO (with `flux goo` as sub-product)
@@ -103,7 +98,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 📖 Add mobs in Mek's gear
 - [ ] 🌍 AdvRock geodes should contain modded ores
 - [ ] ✏️ Drawers recipe should apply textures on craft
-- [ ] ✏️ Melt metal essence instead of craft ingots
 - [ ] ✏️ Add IC2 Electrolyzer compat
 - [ ] ✏️ Nerf IO spike metals (carapace with Bedrock cobblestone + Bedrock Ore inside instead of pure blocks)
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
@@ -130,7 +124,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Multiblock structure that speed up blocks like Time In Bottle, but based on numbers of mobs around https://is.gd/tPPqt2
 - [ ] 📀 Adv. Rock tank left 64 buckets when broken
 - [ ] 🟠 Do not update Recurrent Complex to `1.4.8.3` (cause crashes on server)
-- [ ] 🔴 Do not update `JAOPCA`
+- [ ] 🔴 Do not update `JAOPCA` - uncompatible with JAOPCACustom
 - [ ] 🔴 Do not update `Redstone Repository Revolved`
 - [ ] 🔴 Do not update `spark`
 - [ ] 🔴 Do not update `Specrtal Edge` to 1.5
@@ -140,8 +134,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🟢 Install https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap (incompatible with Mineral Tracker)
 - [ ] 🔄 After getting 30 hearts, player need to relog to enter nether
 - [ ] 🔄 Check why mobs are not spawned anough (less then 70 for whole server), probably Install justenoughdimensions to fix mob count issue
-- [ ] ✏️ Mithrilium Plate research require craft
-- [ ] 💙 Better integrate Heart Canisters
 - [ ] ✏️ Creative Impetus add recipe
 - [ ] ✏️ Rethink HedgeAlchemy, add recipes for essential tech-alike ingredients
 - [ ] ✏️ Fix main Vis Crystals doubled in JEI
@@ -274,7 +266,6 @@ Items that should have more uses:
 ![](https://git.io/JLhph "Destabilized Clathrate")
 ![](https://git.io/JLhhB "Steel Sheet")
 ![](https://git.io/JLhpN "Titanium Aluminide Sheet")
-![](https://git.io/JGGjO "Silicon Boule")
 ![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
@@ -327,3 +318,5 @@ Liquids that should have more uses:
 - No Tech
 - No base
   > Cant stay in same chunk for long time
+- Speedrunning item
+  > Item that can replace many other items inrecipes but only if you play fast enough
