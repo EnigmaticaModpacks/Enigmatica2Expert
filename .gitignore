@@ -23,7 +23,6 @@ schematics/*.*
 structures/inactive
 !manifest.json
 !.gitignore
-!local/ftbutilities/ranks.txt
 !.github/
 !.imgbotconfig
 

@@ -64,5 +64,11 @@
     "destinationFilePath": "local/client/ftblib.cfg",
     "clientSide": true,
     "serverSide": false
+  },
+  {
+    "sourceFilePath": "ranks.txt",
+    "destinationFilePath": "local/ftbutilities/ranks.txt",
+    "clientSide": true,
+    "serverSide": false
   }
 ]
