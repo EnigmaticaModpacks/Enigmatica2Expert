@@ -170,7 +170,7 @@ craft.remake(<opencomputers:upgrade:3>, ["pretty",
   "□ C □",
   ": □ :"], {
   ":": <ore:oc:capacitor>,    # Capacitor
-  "□": <ore:plateMithril>,    # Mana Infused Plate
+  "□": <ore:platePlatinum>,
   "C": <ore:itemChassiParts>, # Machine Parts
 });
 
