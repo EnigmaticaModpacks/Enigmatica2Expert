@@ -38,22 +38,22 @@ function isForbidTravel(player as IPlayer, dimension as int) as bool {
   if(player.hasGameStage("skyblock")) {
     # Show message that player playing skyblock and cant visit any dims
     if(isNether || !(allowedDims has dimension)) {
-      player.world.catenation().sleep(1).then(function(world, ctx) {
+      // player.world.catenation().sleep(1).then(function(world, ctx) {
         player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation("tooltips.dim_stages.restricted"));
-      }).start();
+      // }).start();
       return true;
     }
   }
   else {
     if(isNether && !player.hasGameStage("healthy")) {
       # Show message that player not healthy anough
-      player.world.catenation().sleep(1).then(function(world, ctx) {
+      // player.world.catenation().sleep(1).then(function(world, ctx) {
         player.sendRichTextMessage(crafttweaker.text.ITextComponent.fromTranslation(
           "tooltips.dim_stages.healthy",
           health_require as int,
           (health_require / 2.0f + 0.5f) as int
         ));
-      }).start();
+      // }).start();
       return true;
     }
   }
