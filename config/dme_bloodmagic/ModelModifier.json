@@ -1,0 +1,26 @@
+[
+  {
+    "id": "blaze",
+    "modifier": 0.5
+  },
+  {
+    "id": "dragon",
+    "modifier": 1.6
+  },
+  {
+    "id": "ghast",
+    "modifier": 0.1
+  },
+  {
+    "id": "skeleton",
+    "modifier": 0.1
+  },
+  {
+    "id": "wither",
+    "modifier": 1.5
+  },
+  {
+    "id": "wither_skeleton",
+    "modifier": 0.2
+  }
+]

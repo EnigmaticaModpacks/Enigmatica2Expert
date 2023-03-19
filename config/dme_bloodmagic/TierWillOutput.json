@@ -1,0 +1,18 @@
+[
+  {
+    "tier": 1,
+    "will_output": 1.0
+  },
+  {
+    "tier": 2,
+    "will_output": 1.5
+  },
+  {
+    "tier": 3,
+    "will_output": 2.25
+  },
+  {
+    "tier": 4,
+    "will_output": 3.37
+  }
+]

@@ -31,8 +31,8 @@ recipes.remove(<deepmoblearning:polymer_clay> * 16);
 recipes.addShapeless(<deepmoblearning:polymer_clay> * 16, [<fluid:concrete> * 1000, <ore:dustClay>, <ore:dustClay>, <ore:dustClay>, <ore:dustGold>, <ore:dustLapis>]);
 
 # Remove level-to-level conversions
-recipes.removeByRecipeName("deepmoblearning:living_matter_exchange/metadata2_extraterrestrial_living_matter");
-recipes.removeByRecipeName("deepmoblearning:living_matter_exchange/metadata1_hellish_living_matter");
+recipes.remove(<deepmoblearning:living_matter_hellish>);
+recipes.remove(<deepmoblearning:living_matter_extraterrestrial>);
 
 # Add mass crafting recipes for iron
 val matterOver = <deepmoblearning:living_matter_overworldian>;

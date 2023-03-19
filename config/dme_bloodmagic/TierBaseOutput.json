@@ -1,0 +1,18 @@
+[
+  {
+    "tier": 1,
+    "base_output": 50
+  },
+  {
+    "tier": 2,
+    "base_output": 75
+  },
+  {
+    "tier": 3,
+    "base_output": 150
+  },
+  {
+    "tier": 4,
+    "base_output": 300
+  }
+]

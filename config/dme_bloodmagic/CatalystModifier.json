@@ -1,0 +1,37 @@
+[
+  {
+    "catalyst": {
+      "id": "deepmoblearning:living_matter_overworldian"
+    },
+    "multiplier": 2.2,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "deepmoblearning:living_matter_hellish"
+    },
+    "multiplier": 2.4,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "deepmoblearning:living_matter_extraterrestrial"
+    },
+    "multiplier": 2.7,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "deepmoblearning:living_matter_twilight"
+    },
+    "multiplier": 2.5,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "deepmoblearning:glitch_heart"
+    },
+    "multiplier": 5.0,
+    "operations": 100
+  }
+]

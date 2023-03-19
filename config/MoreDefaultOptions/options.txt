@@ -219,7 +219,7 @@ key_key.keyWheel:0
 key_key.left:30
 key_key.little.config:46:CONTROL
 key_key.little.config.item:46
-key_key.little.flip:34
+key_key.little.flip:34:CONTROL
 key_key.little.mark:50
 key_key.little.redo:21:CONTROL
 key_key.little.undo:44:CONTROL

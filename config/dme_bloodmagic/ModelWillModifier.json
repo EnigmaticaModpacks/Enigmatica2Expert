@@ -1,0 +1,66 @@
+[
+  {
+    "id": "blaze",
+    "will": 1.0
+  },
+  {
+    "id": "creeper",
+    "will": 1.0
+  },
+  {
+    "id": "dragon",
+    "will": 10.0
+  },
+  {
+    "id": "enderman",
+    "will": 2.0
+  },
+  {
+    "id": "ghast",
+    "will": 1.0
+  },
+  {
+    "id": "guardian",
+    "will": 1.5
+  },
+  {
+    "id": "shulker",
+    "will": 1.5
+  },
+  {
+    "id": "skeleton",
+    "will": 1.0
+  },
+  {
+    "id": "slime",
+    "will": 0.536
+  },
+  {
+    "id": "spider",
+    "will": 0.8
+  },
+  {
+    "id": "witch",
+    "will": 1.3
+  },
+  {
+    "id": "wither_skeleton",
+    "will": 1.0
+  },
+  {
+    "id": "zombie",
+    "will": 1.0
+  },
+  {
+    "id": "thermal_elemental",
+    "will": 1.0
+  },
+  {
+    "id": "tinker_slime",
+    "will": 0.67
+  },
+  {
+    "id": "mo_android",
+    "will": 1.0
+  }
+]
