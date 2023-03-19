@@ -992,7 +992,7 @@ remakeBlock   ("mysticalagriculture:gemsapphire"          , <blockstate:biomesop
 remakeBlock   ("mysticalagriculture:gemamber"             , <blockstate:biomesoplenty:gem_ore:variant=amber>     , [<mysticalagriculture:amber_essence>]);
 remakeBlock   ("mysticalagriculture:ingotdraconium"       , <blockstate:draconicevolution:draconium_ore>         , [<mysticalagriculture:draconium_essence>]);
 remakeBlock   ("mysticalagriculture:gemapatite"           , <blockstate:forestry:resources>                      , [<mysticalagriculture:apatite_essence>]);
-remakeBlock   ("mysticalagriculture:ingotosmium"          , <blockstate:mekanism:oreblock>                       , [<mysticalagriculture:osmium_essence>]);
+// remakeBlock   ("mysticalagriculture:ingotosmium"          , <blockstate:mekanism:oreblock>                       , [<mysticalagriculture:osmium_essence>]);
 remakeBlock   ("mysticalagriculture:coal"                 , <blockstate:minecraft:coal_ore>                      , [<mysticalagriculture:coal_essence>]);
 remakeBlock   ("mysticalagriculture:diamond"              , <blockstate:minecraft:diamond_ore>                   , [<mysticalagriculture:diamond_essence>]);
 remakeBlock   ("mysticalagriculture:emerald"              , <blockstate:minecraft:emerald_ore>                   , [<mysticalagriculture:emerald_essence>]);
