@@ -23,66 +23,66 @@
 <Recipes useDefault="false">
 	<Recipe timeRequired="10" power="100000">
 		<input>
-			<oreDict>ingotCopper</oreDict>
+			<oreDict>blockCopper</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod 8 4</itemStack>
+			<itemStack>libvulpes:productrod 64 4</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="10" power="100000">
 		<input>
-			<oreDict>ingotSteel</oreDict>
+			<oreDict>blockSteel</oreDict>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material 8 2</itemStack>
+			<itemStack>immersiveengineering:material 64 2</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="15" power="100000">
 		<input>
-			<oreDict>ingotTitanium</oreDict>
+			<oreDict>blockTitanium</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod 8 7</itemStack>
+			<itemStack>libvulpes:productrod 64 7</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="15" power="100000">
 		<input>
-			<oreDict>ingotIridium</oreDict>
+			<oreDict>blockIridium</oreDict>
 		</input>
 		<output>
-			<itemStack>libvulpes:productrod 8 10</itemStack>
+			<itemStack>libvulpes:productrod 64 10</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="20" power="100000">
 		<input>
-			<oreDict>ingotTitaniumAluminide</oreDict>
+			<oreDict>blockTitaniumAluminide</oreDict>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod 8</itemStack>
+			<itemStack>advancedrocketry:productrod 64</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="20" power="100000">
 		<input>
-			<oreDict>ingotTitaniumIridium</oreDict>
+			<oreDict>blockTitaniumIridium</oreDict>
 		</input>
 		<output>
-			<itemStack>advancedrocketry:productrod 8 1</itemStack>
+			<itemStack>advancedrocketry:productrod 64 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="10" power="100000">
 		<input>
-			<oreDict>ingotIron</oreDict>
+			<oreDict>blockIron</oreDict>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material 8 1</itemStack>
+			<itemStack>immersiveengineering:material 64 1</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="10" power="100000">
 		<input>
-			<oreDict>ingotAluminium</oreDict>
+			<oreDict>blockAluminium</oreDict>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:material 8 3</itemStack>
+			<itemStack>immersiveengineering:material 64 3</itemStack>
 		</output>
 	</Recipe>
 </Recipes>
