@@ -172,6 +172,13 @@ reprocessComb(<forestry:bee_combs:7>, [
 	g['💛'] % 90, # Honey Drop
 ]);
 
+# [Irradiated_Comb]
+reprocessComb(<forestry:bee_combs:9>, [
+  g['🟡'] % 50, # Beeswax
+  <ic2:nuclear> % 60,   # Enriched Uranium Nuclear Fuel
+  <ic2:nuclear:4> % 20, # MOX Nuclear Fuel
+]);
+
 # [Powdery_Comb]
 reprocessComb(<forestry:bee_combs:10>, [
 	g['🟡'] % 20,  # Beeswaxer
@@ -180,25 +187,18 @@ reprocessComb(<forestry:bee_combs:10>, [
 	<nuclearcraft:marshmallow> % 30,
 ]);
 
-# [Mossy_Comb]
-reprocessComb(<forestry:bee_combs:15>, [
-	g['🟡'] % 100, # Beeswax
-	g['💛'] % 90, # Honey Drop
-	<tconstruct:materials:18> % 100,
-]);
-
-# [Irradiated_Comb]
-reprocessComb(<forestry:bee_combs:9>, [
-  g['🟡'] % 50, # Beeswax
-  <ic2:nuclear> % 60,   # Enriched Uranium Nuclear Fuel
-  <ic2:nuclear:4> % 20, # MOX Nuclear Fuel
-]);
-
 # [Wheaten_Comb]
 reprocessComb(<forestry:bee_combs:14>, [
   g['🟡'] % 80, # Beeswax
   (<harvestcraft:flouritem> * 3) % 100,
   <nuclearcraft:graham_cracker> % 80, # Graham Cracker
+]);
+
+# [Mossy_Comb]
+reprocessComb(<forestry:bee_combs:15>, [
+	g['🟡'] % 100, # Beeswax
+	g['💛'] % 90, # Honey Drop
+	<tconstruct:materials:18> % 100,
 ]);
 
 # [Mellow_Comb]
