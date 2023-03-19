@@ -4,8 +4,8 @@ import crafttweaker.item.IIngredient;
 #modloaded mekanism
 
 # Clear tooltip for Osmium Ore since its not spawned everywhere
-<mekanism:oreblock>.removeTooltip('.*LSHIFT.*');
-<mekanism:oreblock>.removeTooltip('.*any height.*');
+(<mekanism:oreblock> as IIngredient).removeTooltip('.*LSHIFT.*');
+(<mekanism:oreblock> as IIngredient).removeTooltip('.*any height.*');
 
 # The Combiner can dupe a bunch of stuff, so we're manually handle this
 mods.mekanism.combiner.removeAllRecipes();
