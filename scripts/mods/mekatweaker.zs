@@ -9,3 +9,6 @@ mods.mekatweaker.InfuserType.addTypeObject(<ore:enderpearl>,                  "E
 mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_ender>, "ENDER", 80);
 mods.mekatweaker.InfuserType.addTypeObject(<biomesoplenty:mushroom:*>, "FUNGI", 20);
 mods.mekatweaker.InfuserType.addTypeObject(<botania:mushroom:*>, "FUNGI", 30);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:gemDimensionalShard>,   "DIMENSIONAL", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<ore:dustDimensionalShard>,  "DIMENSIONAL", 10);
+mods.mekatweaker.InfuserType.addTypeObject(<contenttweaker:compressed_dimensional>, "DIMENSIONAL", 80);

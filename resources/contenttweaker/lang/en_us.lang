@@ -12,6 +12,7 @@ fluid.terrestrial=Molten Terrestrial Artifact
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
+item.contenttweaker.compressed_dimensional.name=Compressed Dimensional
 
 item.contenttweaker.compressed_tallow.name=Compressed Tallow
 tile.contenttweaker.compressed_andesite.name=Compressed Andesite

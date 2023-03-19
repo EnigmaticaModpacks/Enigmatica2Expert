@@ -484,6 +484,7 @@ remakeEx(<mekanism:cardboardbox>, [[<forestry:carton>, <forestry:carton>, <fores
 # New compressed items
 mods.mekanism.enrichment.addRecipe(<ore:dustGlowstone>,  <contenttweaker:compressed_glowstone>);
 mods.mekanism.enrichment.addRecipe(<ore:dustEnderPearl>, <contenttweaker:compressed_ender>);
+mods.mekanism.enrichment.addRecipe(<ore:dustDimensionalShard>, <contenttweaker:compressed_dimensional>);
 
 # Remake Universal cables for more efficient transfering of EU
 for i, it in [

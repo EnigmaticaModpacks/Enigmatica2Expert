@@ -60,6 +60,7 @@ for craftMat in [
   # Compressed mekanism items
   "compressed_glowstone",
   "compressed_ender",
+  "compressed_dimensional",
   
 ] as string[] {
 	buildItem(craftMat);

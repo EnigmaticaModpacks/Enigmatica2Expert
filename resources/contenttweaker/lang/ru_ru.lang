@@ -12,6 +12,7 @@ fluid.terrestrial=Расплавленный Земленный Артефакт
 
 item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
 item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг
+item.contenttweaker.compressed_dimensional.name=Сжатость Измерений
 
 item.contenttweaker.compressed_tallow.name=Сжатый Жир
 tile.contenttweaker.compressed_andesite.name=Сжатый Андезит
