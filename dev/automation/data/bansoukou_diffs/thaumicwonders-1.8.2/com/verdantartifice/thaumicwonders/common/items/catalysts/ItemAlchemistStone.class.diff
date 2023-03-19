@@ -1,0 +1,97 @@
+@@ -2,25 +2,28 @@
+  * Decompiled with CFR 0.152.
+  * 
+  * Could not load the following classes:
+- *  com.verdantartifice.thaumicwonders.ThaumicWonders
+  *  com.verdantartifice.thaumicwonders.common.items.base.ItemTW
+  *  com.verdantartifice.thaumicwonders.common.items.catalysts.ICatalystStone
+- *  com.verdantartifice.thaumicwonders.common.misc.OreHelper
++ *  net.minecraft.enchantment.Enchantment
++ *  net.minecraft.enchantment.EnchantmentDurability
++ *  net.minecraft.enchantment.EnchantmentHelper
++ *  net.minecraft.enchantment.EnchantmentMending
+  *  net.minecraft.item.ItemStack
++ *  net.minecraftforge.oredict.OreDictionary
+  *  thaumcraft.api.aspects.Aspect
+- *  thaumcraft.api.items.ItemsTC
+- *  thaumcraft.common.config.ModConfig
+  */
+ package com.verdantartifice.thaumicwonders.common.items.catalysts;
+ 
+-import com.verdantartifice.thaumicwonders.ThaumicWonders;
+ import com.verdantartifice.thaumicwonders.common.items.base.ItemTW;
+ import com.verdantartifice.thaumicwonders.common.items.catalysts.ICatalystStone;
+-import com.verdantartifice.thaumicwonders.common.misc.OreHelper;
++import java.util.Set;
++import net.minecraft.enchantment.Enchantment;
++import net.minecraft.enchantment.EnchantmentDurability;
++import net.minecraft.enchantment.EnchantmentHelper;
++import net.minecraft.enchantment.EnchantmentMending;
+ import net.minecraft.item.ItemStack;
++import net.minecraftforge.oredict.OreDictionary;
+ import thaumcraft.api.aspects.Aspect;
+-import thaumcraft.api.items.ItemsTC;
+-import thaumcraft.common.config.ModConfig;
+ 
+ public class ItemAlchemistStone
+ extends ItemTW
+@@ -29,37 +32,27 @@ implements ICatalystStone {
+         super("alchemist_stone");
+         this.func_77656_e(63);
+         this.func_77625_d(1);
+-        this.setNoRepair();
+     }
+ 
+     public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+-        return false;
++        Set enchantments = EnchantmentHelper.func_82781_a((ItemStack)book).keySet();
++        return enchantments.stream().anyMatch(k -> k instanceof EnchantmentDurability || k instanceof EnchantmentMending);
++    }
++
++    public boolean canApplyAtEnchantingTable(ItemStack thisStack, Enchantment enchantment) {
++        return enchantment instanceof EnchantmentDurability || enchantment instanceof EnchantmentMending;
+     }
+ 
+     public ItemStack getRefiningResult(ItemStack input) {
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"oreIron")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 0);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"oreGold")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 1);
+-        }
+-        if (ModConfig.foundCopperOre && OreHelper.isOreNamed((ItemStack)input, (String)"oreCopper")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 2);
+-        }
+-        if (ModConfig.foundTinOre && OreHelper.isOreNamed((ItemStack)input, (String)"oreTin")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 3);
+-        }
+-        if (ModConfig.foundSilverOre && OreHelper.isOreNamed((ItemStack)input, (String)"oreSilver")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 4);
+-        }
+-        if (ModConfig.foundLeadOre && OreHelper.isOreNamed((ItemStack)input, (String)"oreLead")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 5);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"oreCinnabar")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 6);
++        if (input == null || input.func_190926_b()) {
++            return null;
+         }
+-        if (input != null && !input.func_190926_b()) {
+-            ThaumicWonders.LOGGER.info("ALCHEMIST_STONE: Rejecting item {} with ore names {}", (Object)input.toString(), (Object)String.join((CharSequence)", ", OreHelper.getOreNames((ItemStack)input).toArray(new String[0])));
++        for (int oreID : OreDictionary.getOreIDs((ItemStack)input)) {
++            String clusterName;
++            ItemStack item;
++            String newName = OreDictionary.getOreName((int)oreID);
++            if (!newName.startsWith("ore") || (item = (ItemStack)OreDictionary.getOres((String)(clusterName = "cluster" + newName.substring(3))).stream().findFirst().orElse(null)) == null) continue;
++            return item;
+         }
+         return null;
+     }
+@@ -73,6 +66,6 @@ implements ICatalystStone {
+     }
+ 
+     public int func_77619_b() {
+-        return 10;
++        return 1;
+     }
+ }

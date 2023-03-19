@@ -1,0 +1,79 @@
+@@ -4,6 +4,10 @@
+  * Could not load the following classes:
+  *  com.verdantartifice.thaumicwonders.ThaumicWonders
+  *  com.verdantartifice.thaumicwonders.common.blocks.base.BlockDeviceTW
++ *  com.verdantartifice.thaumicwonders.common.network.PacketHandler
++ *  com.verdantartifice.thaumicwonders.common.network.packets.PacketMeatyOrbAction
++ *  javax.annotation.Nullable
++ *  net.minecraft.block.Block
+  *  net.minecraft.block.SoundType
+  *  net.minecraft.block.material.Material
+  *  net.minecraft.block.properties.IProperty
+@@ -11,13 +15,16 @@
+  *  net.minecraft.client.resources.I18n
+  *  net.minecraft.entity.EntityLivingBase
+  *  net.minecraft.entity.player.EntityPlayer
++ *  net.minecraft.tileentity.TileEntity
+  *  net.minecraft.util.EnumFacing
+  *  net.minecraft.util.EnumHand
+  *  net.minecraft.util.math.BlockPos
+  *  net.minecraft.util.text.ITextComponent
+  *  net.minecraft.util.text.TextComponentString
+  *  net.minecraft.util.text.TextFormatting
++ *  net.minecraft.world.IBlockAccess
+  *  net.minecraft.world.World
++ *  net.minecraftforge.fml.common.network.simpleimpl.IMessage
+  *  thaumcraft.common.blocks.IBlockFacingHorizontal
+  *  thaumcraft.common.lib.SoundsTC
+  */
+@@ -25,7 +32,11 @@ package com.verdantartifice.thaumicwonders.common.blocks.devices;
+ 
+ import com.verdantartifice.thaumicwonders.ThaumicWonders;
+ import com.verdantartifice.thaumicwonders.common.blocks.base.BlockDeviceTW;
++import com.verdantartifice.thaumicwonders.common.network.PacketHandler;
++import com.verdantartifice.thaumicwonders.common.network.packets.PacketMeatyOrbAction;
+ import com.verdantartifice.thaumicwonders.common.tiles.devices.TileMeatyOrb;
++import javax.annotation.Nullable;
++import net.minecraft.block.Block;
+ import net.minecraft.block.SoundType;
+ import net.minecraft.block.material.Material;
+ import net.minecraft.block.properties.IProperty;
+@@ -33,13 +44,16 @@ import net.minecraft.block.state.IBlockState;
+ import net.minecraft.client.resources.I18n;
+ import net.minecraft.entity.EntityLivingBase;
+ import net.minecraft.entity.player.EntityPlayer;
++import net.minecraft.tileentity.TileEntity;
+ import net.minecraft.util.EnumFacing;
+ import net.minecraft.util.EnumHand;
+ import net.minecraft.util.math.BlockPos;
+ import net.minecraft.util.text.ITextComponent;
+ import net.minecraft.util.text.TextComponentString;
+ import net.minecraft.util.text.TextFormatting;
++import net.minecraft.world.IBlockAccess;
+ import net.minecraft.world.World;
++import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+ import thaumcraft.common.blocks.IBlockFacingHorizontal;
+ import thaumcraft.common.lib.SoundsTC;
+ 
+@@ -71,6 +85,21 @@ implements IBlockFacingHorizontal {
+         return bs;
+     }
+ 
++    public void func_189540_a(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
++        super.func_189540_a(state, worldIn, pos, blockIn, fromPos);
++        TileEntity tile = worldIn.func_175625_s(pos);
++        if (!(tile instanceof TileMeatyOrb)) {
++            return;
++        }
++        if (worldIn.func_175687_A(pos) > 0) {
++            PacketHandler.INSTANCE.sendToServer((IMessage)new PacketMeatyOrbAction(pos));
++        }
++    }
++
++    public boolean canConnectRedstone(IBlockState state, IBlockAccess world, BlockPos connectFrom, @Nullable EnumFacing side) {
++        return side != EnumFacing.UP && side != EnumFacing.DOWN;
++    }
++
+     public boolean func_180639_a(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+         if (worldIn.field_72995_K) {
+             if (worldIn.field_73011_w.func_76569_d()) {

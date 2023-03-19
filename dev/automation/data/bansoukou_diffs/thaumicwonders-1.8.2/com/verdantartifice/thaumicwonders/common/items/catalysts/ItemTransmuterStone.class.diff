@@ -1,0 +1,206 @@
+@@ -2,137 +2,93 @@
+  * Decompiled with CFR 0.152.
+  * 
+  * Could not load the following classes:
+- *  com.verdantartifice.thaumicwonders.ThaumicWonders
++ *  com.google.common.collect.BiMap
++ *  com.google.common.collect.HashBiMap
+  *  com.verdantartifice.thaumicwonders.common.items.base.ItemTW
+  *  com.verdantartifice.thaumicwonders.common.items.catalysts.ICatalystStone
+- *  com.verdantartifice.thaumicwonders.common.misc.OreHelper
+- *  net.minecraft.init.Blocks
+- *  net.minecraft.init.Items
++ *  net.minecraft.enchantment.Enchantment
++ *  net.minecraft.enchantment.EnchantmentDurability
++ *  net.minecraft.enchantment.EnchantmentHelper
++ *  net.minecraft.enchantment.EnchantmentMending
+  *  net.minecraft.item.ItemStack
+  *  net.minecraftforge.oredict.OreDictionary
+  *  thaumcraft.api.aspects.Aspect
+- *  thaumcraft.api.items.ItemsTC
+  */
+ package com.verdantartifice.thaumicwonders.common.items.catalysts;
+ 
+-import com.verdantartifice.thaumicwonders.ThaumicWonders;
++import com.google.common.collect.BiMap;
++import com.google.common.collect.HashBiMap;
+ import com.verdantartifice.thaumicwonders.common.items.base.ItemTW;
+ import com.verdantartifice.thaumicwonders.common.items.catalysts.ICatalystStone;
+-import com.verdantartifice.thaumicwonders.common.misc.OreHelper;
+-import net.minecraft.init.Blocks;
+-import net.minecraft.init.Items;
++import java.util.Set;
++import net.minecraft.enchantment.Enchantment;
++import net.minecraft.enchantment.EnchantmentDurability;
++import net.minecraft.enchantment.EnchantmentHelper;
++import net.minecraft.enchantment.EnchantmentMending;
+ import net.minecraft.item.ItemStack;
+ import net.minecraftforge.oredict.OreDictionary;
+ import thaumcraft.api.aspects.Aspect;
+-import thaumcraft.api.items.ItemsTC;
+ 
+ public class ItemTransmuterStone
+ extends ItemTW
+ implements ICatalystStone {
++    private final BiMap<String, String> refiningResults;
++    private final String[] orePrefixes;
++
+     public ItemTransmuterStone() {
+         super("transmuter_stone");
+         this.func_77656_e(63);
+         this.func_77625_d(1);
+-        this.setNoRepair();
++        this.orePrefixes = new String[]{"ore", "nugget", "block", "ingot", "gem", "dust"};
++        this.refiningResults = HashBiMap.create();
++        this.refiningResults.put((Object)"Iron", (Object)"Gold");
++        this.refiningResults.put((Object)"Tin", (Object)"Copper");
++        this.refiningResults.put((Object)"Lead", (Object)"Silver");
++        this.refiningResults.put((Object)"Cobalt", (Object)"Ardite");
++        this.refiningResults.put((Object)"AstralStarmetal", (Object)"Draconium");
++        this.refiningResults.put((Object)"Platinum", (Object)"Iridium");
++        this.refiningResults.put((Object)"Aluminum", (Object)"Titanium");
++        this.refiningResults.put((Object)"Uranium", (Object)"Thorium");
++        this.refiningResults.put((Object)"Xorcyte", (Object)"Aquamarine");
++        this.refiningResults.put((Object)"Diamond", (Object)"Sapphire");
++        this.refiningResults.put((Object)"Emerald", (Object)"Peridot");
++        this.refiningResults.put((Object)"Redstone", (Object)"Ruby");
++        this.refiningResults.put((Object)"CertusQuartz", (Object)"ChargedCertusQuartz");
++        this.refiningResults.put((Object)"Dilithium", (Object)"DimensionalShard");
++        this.refiningResults.put((Object)"gemCoal", (Object)"bitumen");
++        this.refiningResults.put((Object)"oreCoal", (Object)"oreClathrateOilShale");
+     }
+ 
+     public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+-        return false;
++        Set enchantments = EnchantmentHelper.func_82781_a((ItemStack)book).keySet();
++        return enchantments.stream().anyMatch(k -> k instanceof EnchantmentDurability || k instanceof EnchantmentMending);
++    }
++
++    public boolean canApplyAtEnchantingTable(ItemStack thisStack, Enchantment enchantment) {
++        return enchantment instanceof EnchantmentDurability || enchantment instanceof EnchantmentMending;
+     }
+ 
+     public ItemStack getRefiningResult(ItemStack input) {
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"oreIron")) {
+-            return new ItemStack(Blocks.field_150352_o);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"ingotIron")) {
+-            return new ItemStack(Items.field_151043_k);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"blockIron")) {
+-            return new ItemStack(Blocks.field_150340_R);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"nuggetIron")) {
+-            return new ItemStack(Items.field_151074_bl);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"clusterIron")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 1);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"oreGold")) {
+-            return new ItemStack(Blocks.field_150366_p);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"ingotGold")) {
+-            return new ItemStack(Items.field_151042_j);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"blockGold")) {
+-            return new ItemStack(Blocks.field_150339_S);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"nuggetGold")) {
+-            return new ItemStack(Items.field_191525_da);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"clusterGold")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"oreTin") && OreHelper.isOreNamed((ItemStack)input, (String)"oreCopper")) {
+-            return (ItemStack)OreDictionary.getOres((String)"oreTin", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"ingotTin") && OreHelper.isOreNamed((ItemStack)input, (String)"ingotCopper")) {
+-            return (ItemStack)OreDictionary.getOres((String)"ingotTin", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"blockTin") && OreHelper.isOreNamed((ItemStack)input, (String)"blockCopper")) {
+-            return (ItemStack)OreDictionary.getOres((String)"blockTin", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"nuggetTin") && OreHelper.isOreNamed((ItemStack)input, (String)"nuggetCopper")) {
+-            return (ItemStack)OreDictionary.getOres((String)"nuggetTin", (boolean)false).get(0);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"clusterCopper")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 3);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"oreCopper") && OreHelper.isOreNamed((ItemStack)input, (String)"oreTin")) {
+-            return (ItemStack)OreDictionary.getOres((String)"oreCopper", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"ingotCopper") && OreHelper.isOreNamed((ItemStack)input, (String)"ingotTin")) {
+-            return (ItemStack)OreDictionary.getOres((String)"ingotCopper", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"blockCopper") && OreHelper.isOreNamed((ItemStack)input, (String)"blockTin")) {
+-            return (ItemStack)OreDictionary.getOres((String)"blockCopper", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"nuggetCopper") && OreHelper.isOreNamed((ItemStack)input, (String)"nuggetTin")) {
+-            return (ItemStack)OreDictionary.getOres((String)"nuggetCopper", (boolean)false).get(0);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"clusterTin")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 2);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"oreSilver") && OreHelper.isOreNamed((ItemStack)input, (String)"oreLead")) {
+-            return (ItemStack)OreDictionary.getOres((String)"oreSilver", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"ingotSilver") && OreHelper.isOreNamed((ItemStack)input, (String)"ingotLead")) {
+-            return (ItemStack)OreDictionary.getOres((String)"ingotSilver", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"blockSilver") && OreHelper.isOreNamed((ItemStack)input, (String)"blockLead")) {
+-            return (ItemStack)OreDictionary.getOres((String)"blockSilver", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"nuggetSilver") && OreHelper.isOreNamed((ItemStack)input, (String)"nuggetLead")) {
+-            return (ItemStack)OreDictionary.getOres((String)"nuggetSilver", (boolean)false).get(0);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"clusterLead")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 4);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"oreLead") && OreHelper.isOreNamed((ItemStack)input, (String)"oreSilver")) {
+-            return (ItemStack)OreDictionary.getOres((String)"oreLead", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"ingotLead") && OreHelper.isOreNamed((ItemStack)input, (String)"ingotSilver")) {
+-            return (ItemStack)OreDictionary.getOres((String)"ingotLead", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"blockLead") && OreHelper.isOreNamed((ItemStack)input, (String)"blockSilver")) {
+-            return (ItemStack)OreDictionary.getOres((String)"blockLead", (boolean)false).get(0);
+-        }
+-        if (OreDictionary.doesOreNameExist((String)"nuggetLead") && OreHelper.isOreNamed((ItemStack)input, (String)"nuggetSilver")) {
+-            return (ItemStack)OreDictionary.getOres((String)"nuggetLead", (boolean)false).get(0);
+-        }
+-        if (OreHelper.isOreNamed((ItemStack)input, (String)"clusterSilver")) {
+-            return new ItemStack(ItemsTC.clusters, 1, 5);
+-        }
+-        if (input != null && !input.func_190926_b()) {
+-            ThaumicWonders.LOGGER.info("TRANSMUTER_STONE: Rejecting item {} with ore names {}", (Object)input.toString(), (Object)String.join((CharSequence)", ", OreHelper.getOreNames((ItemStack)input).toArray(new String[0])));
++        if (input == null || input.func_190926_b()) {
++            return null;
++        }
++        for (String ore : this.orePrefixes) {
++            for (int oreID : OreDictionary.getOreIDs((ItemStack)input)) {
++                ItemStack resultItem;
++                String result;
++                String oreName = OreDictionary.getOreName((int)oreID);
++                if (oreName == null || !oreName.startsWith(ore)) continue;
++                String string = result = this.refiningResults.containsKey((Object)(oreName = oreName.substring(ore.length()))) ? (String)this.refiningResults.get((Object)oreName) : (String)this.refiningResults.inverse().get((Object)oreName);
++                if (result == null || (resultItem = (ItemStack)OreDictionary.getOres((String)(ore + result)).stream().findFirst().orElse(null)) == null) continue;
++                return resultItem;
++            }
++        }
++        for (int oreID : OreDictionary.getOreIDs((ItemStack)input)) {
++            String oreName = OreDictionary.getOreName((int)oreID);
++            String resultOre = this.refiningResults.containsKey((Object)oreName) ? (String)this.refiningResults.get((Object)oreName) : (String)this.refiningResults.inverse().get((Object)oreName);
++            ItemStack resultItem = OreDictionary.getOres((String)resultOre).stream().findFirst().orElse(null);
++            if (resultItem == null) continue;
++            return resultItem;
+         }
+         return null;
+     }
+@@ -146,6 +102,6 @@ implements ICatalystStone {
+     }
+ 
+     public int func_77619_b() {
+-        return 10;
++        return 1;
+     }
+ }
