@@ -3,7 +3,7 @@
     "id": "blaze",
     "displayName": "Blaze",
     "livingMatter": "hellish",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "minecraft:blaze_powder"
     ],
@@ -31,7 +31,7 @@
     "id": "creeper",
     "displayName": "Creeper",
     "livingMatter": "overworldian",
-    "simulationRFCost": 80,
+    "simulationRFCost": 640,
     "craftingIngredients": [
       "minecraft:gunpowder"
     ],
@@ -58,7 +58,7 @@
     "id": "dragon",
     "displayName": "Ender Dragon",
     "livingMatter": "extraterrestrial",
-    "simulationRFCost": 2560,
+    "simulationRFCost": 20480,
     "craftingIngredients": [
       "minecraft:dragon_egg"
     ],
@@ -69,7 +69,8 @@
       "minecraft:dragon_breath,32",
       "minecraft:dragon_egg,1",
       "draconicevolution:dragon_heart,1",
-      "draconicevolution:draconium_dust,64"
+      "draconicevolution:draconium_dust,64",
+      "endreborn:dragon_essence,32,0"
     ],
     "deepLearnerDisplay": {
       "hearts": 100,
@@ -88,7 +89,7 @@
     "displayName": "Enderman",
     "displayNamePlural": "Endermen",
     "livingMatter": "extraterrestrial",
-    "simulationRFCost": 512,
+    "simulationRFCost": 4096,
     "craftingIngredients": [
       "minecraft:ender_pearl"
     ],
@@ -124,7 +125,7 @@
     "id": "ghast",
     "displayName": "Ghast",
     "livingMatter": "hellish",
-    "simulationRFCost": 372,
+    "simulationRFCost": 2976,
     "craftingIngredients": [
       "minecraft:ghast_tear"
     ],
@@ -150,7 +151,7 @@
     "id": "guardian",
     "displayName": "Guardian",
     "livingMatter": "overworldian",
-    "simulationRFCost": 340,
+    "simulationRFCost": 2720,
     "craftingIngredients": [
       "minecraft:prismarine_shard"
     ],
@@ -180,7 +181,7 @@
     "id": "shulker",
     "displayName": "Shulker",
     "livingMatter": "extraterrestrial",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "minecraft:shulker_shell"
     ],
@@ -189,7 +190,9 @@
     ],
     "lootItems": [
       "minecraft:shulker_shell,18",
-      "minecraft:diamond,2"
+      "minecraft:diamond,2",
+      "darkutils:shulker_pearl,16",
+      "rftoolsdim:dimlet_parcel,16"
     ],
     "deepLearnerDisplay": {
       "hearts": 15,
@@ -207,7 +210,7 @@
     "id": "skeleton",
     "displayName": "Skeleton",
     "livingMatter": "overworldian",
-    "simulationRFCost": 80,
+    "simulationRFCost": 640,
     "craftingIngredients": [
       "minecraft:bone"
     ],
@@ -248,7 +251,7 @@
     "id": "slime",
     "displayName": "Slime",
     "livingMatter": "overworldian",
-    "simulationRFCost": 150,
+    "simulationRFCost": 1200,
     "craftingIngredients": [
       "minecraft:slime_ball"
     ],
@@ -283,7 +286,7 @@
     "id": "spider",
     "displayName": "Spider",
     "livingMatter": "overworldian",
-    "simulationRFCost": 80,
+    "simulationRFCost": 640,
     "craftingIngredients": [
       "minecraft:spider_eye"
     ],
@@ -328,7 +331,7 @@
     "displayName": "Witch",
     "displayNamePlural": "Witches",
     "livingMatter": "overworldian",
-    "simulationRFCost": 120,
+    "simulationRFCost": 960,
     "craftingIngredients": [
       "minecraft:glass_bottle"
     ],
@@ -364,7 +367,7 @@
     "id": "wither",
     "displayName": "Wither",
     "livingMatter": "extraterrestrial",
-    "simulationRFCost": 2048,
+    "simulationRFCost": 16384,
     "craftingIngredients": [
       "minecraft:nether_star"
     ],
@@ -372,7 +375,8 @@
       "minecraft:wither"
     ],
     "lootItems": [
-      "minecraft:nether_star,3"
+      "minecraft:nether_star,3",
+      "mysticalagradditions:stuff,8,1"
     ],
     "deepLearnerDisplay": {
       "hearts": 150,
@@ -391,7 +395,7 @@
     "id": "wither_skeleton",
     "displayName": "Wither Skeleton",
     "livingMatter": "hellish",
-    "simulationRFCost": 880,
+    "simulationRFCost": 7040,
     "craftingIngredients": [
       "minecraft:skull,1,1"
     ],
@@ -400,7 +404,9 @@
     ],
     "lootItems": [
       "minecraft:skull,18,1",
-      "minecraft:coal,64"
+      "minecraft:coal,64",
+      "extrautils2:ingredients,64,10",
+      "tconstruct:materials,64,17"
     ],
     "trial": {
       "entities": "minecraft:wither_skeleton",
@@ -426,7 +432,7 @@
     "id": "zombie",
     "displayName": "Zombie",
     "livingMatter": "overworldian",
-    "simulationRFCost": 80,
+    "simulationRFCost": 640,
     "craftingIngredients": [
       "minecraft:rotten_flesh"
     ],
@@ -475,7 +481,7 @@
     "mod": "thermalfoundation",
     "displayName": "Thermal Elemental",
     "livingMatter": "overworldian",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "thermalfoundation:material,1,1025",
       "thermalfoundation:material,1,1026",
@@ -512,7 +518,7 @@
     "mod": "twilightforest",
     "displayName": "Forest creature",
     "livingMatter": "twilight",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "twilightforest:firefly"
     ],
@@ -529,7 +535,9 @@
       "twilightforest:charm_of_life_1,2",
       "twilightforest:charm_of_keeping_1,2",
       "minecraft:paper,64",
-      "minecraft:book,32"
+      "minecraft:book,32",
+      "iceandfire:myrmex_desert_resin,32",
+      "iceandfire:myrmex_jungle_resin,32"
     ],
     "deepLearnerDisplay": {
       "hearts": 0,
@@ -548,7 +556,7 @@
     "mod": "twilightforest",
     "displayName": "Swamp creature",
     "livingMatter": "twilight",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "minecraft:waterlily"
     ],
@@ -569,7 +577,8 @@
       "twilightforest:hydra_chop,16",
       "minecraft:gold_ingot,22",
       "minecraft:red_mushroom,32",
-      "minecraft:slime_ball,16"
+      "minecraft:slime_ball,16",
+      "iceandfire:pixie_dust,16"
     ],
     "deepLearnerDisplay": {
       "hearts": 0,
@@ -590,7 +599,7 @@
     "mod": "twilightforest",
     "displayName": "Glacier inhabitant",
     "livingMatter": "twilight",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "twilightforest:arctic_fur"
     ],
@@ -611,7 +620,8 @@
       "minecraft:packed_ice,16",
       "minecraft:feather,32",
       "twilightforest:charm_of_life_2,1",
-      "twilightforest:charm_of_keeping_2,1"
+      "twilightforest:charm_of_keeping_2,1",
+      "iceandfire:dragon_ice,64"
     ],
     "deepLearnerDisplay": {
       "hearts": 0,
@@ -631,7 +641,7 @@
     "mod": "twilightforest",
     "displayName": "Darkwood creature",
     "livingMatter": "twilight",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "twilightforest:twilight_log"
     ],
@@ -656,7 +666,8 @@
       "twilightforest:carminite,16",
       "minecraft:diamond_ore,3",
       "minecraft:emerald_ore,2",
-      "minecraft:fish,32"
+      "minecraft:fish,32",
+      "iceandfire:dread_shard,16"
     ],
     "deepLearnerDisplay": {
       "hearts": 0,
@@ -676,7 +687,7 @@
     "mod": "tconstruct",
     "displayName": "Blue Slime",
     "livingMatter": "overworldian",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "tconstruct:edible,1"
     ],
@@ -709,7 +720,7 @@
     "mod": "matteroverdrive",
     "displayName": "Rogue Android",
     "livingMatter": "overworldian",
-    "simulationRFCost": 256,
+    "simulationRFCost": 2048,
     "craftingIngredients": [
       "matteroverdrive:rogue_android_part,1,0",
       "matteroverdrive:rogue_android_part,1,1",
