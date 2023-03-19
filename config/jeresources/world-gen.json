@@ -3770,7 +3770,7 @@
         }
       },
       {
-        "itemStack": "harvestcraft:beanitem:0",
+        "itemStack": "randomthings:beans:0",
         "fortunes": {
           "0": 0.2062,
           "1": 0.1926,
@@ -12039,7 +12039,7 @@
         }
       },
       {
-        "itemStack": "harvestcraft:beanitem:0",
+        "itemStack": "randomthings:beans:0",
         "fortunes": {
           "0": 0.0042
         }
@@ -38032,7 +38032,7 @@
         }
       },
       {
-        "itemStack": "harvestcraft:beanitem:0",
+        "itemStack": "randomthings:beans:0",
         "fortunes": {
           "0": 0.0657
         }

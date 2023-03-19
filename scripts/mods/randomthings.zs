@@ -374,7 +374,7 @@ mods.rt.RandomThingsTweaker.addImbuingRecipe(
 	<randomthings:imbue:1>
 );
 mods.rt.RandomThingsTweaker.addImbuingRecipe(
-	<harvestcraft:beanitem>,
+	<randomthings:beans>,
 	<minecraft:dye:4>,
 	<minecraft:glowstone_dust>,
 	<minecraft:potion>.withTag({Potion: "minecraft:water"}),

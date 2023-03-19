@@ -1728,7 +1728,7 @@
     "1pair12": "{\n  \"left\": 0,\n  \"right\": 1\n}",
     "2pair12": "{\n  \"left\": 0,\n  \"right\": 1\n}",
     "3pair12": "{\n  \"left\": 0,\n  \"right\": 1\n}",
-    "name13": "harvestcraft:beanitem",
+    "name13": "randomthings:beans",
     "meta13": 0,
     "0chance13": 19.0,
     "1chance13": 20.0,

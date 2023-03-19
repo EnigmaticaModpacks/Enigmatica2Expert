@@ -188,6 +188,8 @@ utils.rh(<harvestcraft:oliveitem>);
 utils.rh(<harvestcraft:pamolive>);
 utils.rh(<harvestcraft:tomatoitem>);
 utils.rh(<harvestcraft:tomatoseeditem>);
+utils.rh(<harvestcraft:beanseeditem>);
+utils.rh(<harvestcraft:beanitem>);
 
 # Purge removed items from furnace
 for item in itemUtils.getItemsByRegexRegistryName("thermalfoundation:((tool|armor)\\.|horse_armor_).*") {
