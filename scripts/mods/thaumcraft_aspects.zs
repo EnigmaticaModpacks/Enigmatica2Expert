@@ -16,6 +16,17 @@ import thaumcraft.aspect.CTAspectStack;
 /*
 #######################################################
 
+Actually additions
+
+#######################################################
+*/
+
+<actuallyadditions:block_misc:3>                .setAspects(<aspect:vitreus>*10     ,<aspect:tenebrae>*5        ,<aspect:terra>*10); #Black quartz ore
+<actuallyadditions:item_misc:5>                 .setAspects(<aspect:vitreus>*10     ,<aspect:tenebrae>*5); #Black quartz
+
+/*
+#######################################################
+
 Animus
 
 #######################################################
@@ -34,6 +45,20 @@ Animus
 <animus:sigil_leech>                            .setAspects(<aspect:praecantatio>*10 ,<aspect:sanguis>*15        ,<aspect:desiderium>*20); #sigil leech T2
 <animus:sigil_storm>                            .setAspects(<aspect:praecantatio>*10 ,<aspect:sanguis>*15        ,<aspect:potentia>*50); #sigil storm T2
 <animus:sigil_transposition>                    .setAspects(<aspect:praecantatio>*20 ,<aspect:sanguis>*60        ,<aspect:motus>*40); #sigil acquisition T4
+
+/*
+#######################################################
+
+Applied energetics
+
+#######################################################
+*/
+
+<appliedenergistics2:quartz_ore>                .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*5        ,<aspect:terra>*10); #Certus quartz ore
+<appliedenergistics2:material>                  .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*5); #Certus quartz
+<appliedenergistics2:charged_quartz_ore>        .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*20       ,<aspect:terra>*10); #Charged certus quartz ore
+<appliedenergistics2:material:1>                .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*20); #Charged certus quartz
+<appliedenergistics2:material:10>               .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*10       ,<aspect:ordo>*10); #Charged certus quartz
 
 /*
 #######################################################
@@ -305,12 +330,87 @@ Chisell/Quark - general stones
 /*
 #######################################################
 
+Deep mob learning
+
+#######################################################
+*/
+
+<deepmoblearning:glitch_fragment>                   .setAspects(<aspect:exitium>*10   ,<aspect:machina>*20      ,<aspect:caeles>*10       ,<aspect:imperium>*20); 
+<deepmoblearning:glitch_infused_ingot>              .setAspects(<aspect:metallum>*10  ,<aspect:machina>*20      ,<aspect:caeles>*10       ,<aspect:imperium>*20); 
+<deepmoblearning:glitch_heart>                      .setAspects(<aspect:victus>*30    ,<aspect:machina>*20      ,<aspect:caeles>*10       ,<aspect:imperium>*20); 
+
+<deepmoblearning:living_matter_overworldian>        .setAspects(<aspect:machina>*20   ,<aspect:terra>*30        ,<aspect:victus>*30       ,<aspect:bestia>*30);
+<deepmoblearning:living_matter_hellish>             .setAspects(<aspect:machina>*20   ,<aspect:infernum>*30     ,<aspect:mortuus>*30      ,<aspect:ignis>*30);
+<deepmoblearning:living_matter_extraterrestrial>    .setAspects(<aspect:machina>*20   ,<aspect:alienis>*30      ,<aspect:vacuos>*30       ,<aspect:tenebrae>*30);
+<deepmoblearning:living_matter_twilight>            .setAspects(<aspect:machina>*20   ,<aspect:mythus>*30       ,<aspect:herba>*30        ,<aspect:auram>*10);
+
+<deepmoblearning:pristine_matter_zombie>            .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:exanimis>*30     ,<aspect:mortuus>*30        ,<aspect:humanus>*60);
+<deepmoblearning:pristine_matter_spider>            .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:bestia>*30       ,<aspect:vinculum>*30       ,<aspect:sensus>*30);
+<deepmoblearning:pristine_matter_skeleton>          .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:mortuus>*30      ,<aspect:perditio>*30       ,<aspect:aversio>*60);
+<deepmoblearning:pristine_matter_creeper>           .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:exitium>*30      ,<aspect:ignis>*30          ,<aspect:alkimia>*15        ,<aspect:perditio>*30);
+<deepmoblearning:pristine_matter_slime>             .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:aqua>*30         ,<aspect:victus>*30);
+<deepmoblearning:pristine_matter_witch>             .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:humanus>*60      ,<aspect:praecantatio>*30   ,<aspect:alkimia>*30);
+<deepmoblearning:pristine_matter_guardian>          .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:aqua>*60         ,<aspect:praemunio>*30      ,<aspect:sensus>*30);
+<deepmoblearning:pristine_matter_tinker_slime>      .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:aqua>*60         ,<aspect:victus>*30         ,<aspect:fabrico>*15);
+
+<deepmoblearning:pristine_matter_blaze>             .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:ignis>*60        ,<aspect:infernum>*60);
+<deepmoblearning:pristine_matter_wither_skeleton>   .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:mortuus>*60      ,<aspect:perditio>*60       ,<aspect:aversio>*60        ,<aspect:spiritus>*60);
+<deepmoblearning:pristine_matter_ghast>             .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:spiritus>*60     ,<aspect:volatus>*30        ,<aspect:fluctus>*60);
+<deepmoblearning:pristine_matter_wither>            .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:caeles>*50       ,<aspect:alienis>*50        ,<aspect:ordo>*50);
+
+<deepmoblearning:pristine_matter_enderman>          .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:alienis>*80      ,<aspect:tenebrae>*60);
+<deepmoblearning:pristine_matter_shulker>           .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:alienis>*50      ,<aspect:volatus>*30        ,<aspect:sonus>*30);
+<deepmoblearning:pristine_matter_dragon>            .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:draco>*50        ,<aspect:alienis>*50        ,<aspect:alkimia>*20);
+
+<deepmoblearning:pristine_matter_twilight_forest>   .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:mythus>*10       ,<aspect:terra>*50          ,<aspect:spiritus>*30);
+<deepmoblearning:pristine_matter_twilight_swamp>    .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:mythus>*10       ,<aspect:herba>*50          ,<aspect:vitium>*30);
+<deepmoblearning:pristine_matter_twilight_glacier>  .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:mythus>*10       ,<aspect:gelum>*50          ,<aspect:vitreus>*30);
+
+<deepmoblearning:pristine_matter_thermal_elemental> .setAspects(<aspect:machina>*10   ,<aspect:vinculum>*10     ,<aspect:aqua>*20         ,<aspect:ignis>*20          ,<aspect:terra>*20          ,<aspect:aer>*20);
+
+/*
+#######################################################
+
 Draconic evolution
 
 #######################################################
 */
 
 <draconicevolution:dragon_heart>                .setAspects(<aspect:draco>*100    ,<aspect:praecantatio>*50   ,<aspect:spiritus>*30     ,<aspect:victus>*100); #dragon heart
+
+/*
+#######################################################
+
+End reborn
+
+#######################################################
+*/
+
+<endreborn:item_ingot_wolframium>               .setAspects(<aspect:metallum>*10  ,<aspect:vacuos>*5); #Tungsten ingot
+
+/*
+#######################################################
+
+Extra utilities 2
+
+#######################################################
+*/
+
+<extrautils2:ingredients:11>                    .setAspects(<aspect:metallum>*10  ,<aspect:infernum>*5); #Demonic ingot
+<extrautils2:ingredients:12>                    .setAspects(<aspect:metallum>*10  ,<aspect:cognitio>*5); #Enchanted ingot
+
+/*
+#######################################################
+
+Forestry
+
+#######################################################
+*/
+
+<forestry:apatite>                              .setAspects(<aspect:vitreus>*10  ,<aspect:herba>*5);
+<forestry:candle>                               .setAspects(<aspect:lux>*20      ,<aspect:herba>*5            ,<aspect:aer>*5);
+<forestry:stump>                                .setAspects(<aspect:lux>*20      ,<aspect:herba>*5            ,<aspect:aer>*5);
+<forestry:beeswax>                              .setAspects(<aspect:lux>*5       ,<aspect:aer>*2);
 
 /*
 #######################################################
@@ -544,12 +644,126 @@ Ice and fire
 /*
 #######################################################
 
+Mechanics
+
+#######################################################
+*/
+
+<mechanics:heavy_ingot>                         .setAspects(<aspect:metallum>*10  ,<aspect:perditio>*5); #heavy ingot
+
+/*
+#######################################################
+
+Mekanism
+
+#######################################################
+*/
+
+<mekanism:ingot>                                .setAspects(<aspect:metallum>*10  ,<aspect:tenebrae>*5        ,<aspect:terra>*10); #Refined obsidian ingot
+<mekanism:ingot:1>                              .setAspects(<aspect:metallum>*10  ,<aspect:terra>*5);                              #Osmium ingot
+<mekanism:ingot:3>                              .setAspects(<aspect:metallum>*10  ,<aspect:lux>*5             ,<aspect:terra>*10); #Refined glowstone ingot
+
+/*
+#######################################################
+
+Plustic
+
+#######################################################
+*/
+
+<plustic:mirioningot>                           .setAspects(<aspect:metallum>*10  ,<aspect:mana>*10           ,<aspect:auram>*10); 
+<plustic:osgloglasingot>                        .setAspects(<aspect:metallum>*10  ,<aspect:potentia>*30); 
+<plustic:alumiteingot>                          .setAspects(<aspect:metallum>*10  ,<aspect:visum>*5); 
+<plustic:osmiridiumingot>                       .setAspects(<aspect:metallum>*10  ,<aspect:volatus>*5); 
+
+/*
+#######################################################
+
+Psi
+
+#######################################################
+*/
+
+<psi:material>                                  .setAspects(<aspect:potentia>*10  ,<aspect:alienis>*5         ,<aspect:potentia>*5); #Psi dust
+<psi:material:1>                                .setAspects(<aspect:metallum>*10  ,<aspect:alienis>*5         ,<aspect:potentia>*5); #Psi ingot
+<psi:material:2>                                .setAspects(<aspect:vitreus>*10   ,<aspect:alienis>*5         ,<aspect:potentia>*5); #Psi gem
+
+/*
+#######################################################
+
+Thermal Foundation
+
+#######################################################
+*/
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blizz"}})
+                                                .setAspects(<aspect:aqua>*20      ,<aspect:gelum>*20); 
+<entity:thermalfoundation:blizz>                .setAspects(<aspect:aqua>*20      ,<aspect:gelum>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:basalz"}})
+                                                .setAspects(<aspect:terra>*20     ,<aspect:metallum>*20); 
+<entity:thermalfoundation:basalz>               .setAspects(<aspect:terra>*20     ,<aspect:metallum>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}})
+                                                .setAspects(<aspect:aer>*20       ,<aspect:ventus>*20); 
+<entity:thermalfoundation:blitz>                .setAspects(<aspect:aer>*20       ,<aspect:ventus>*20); 
+
+<thermalfoundation:material:2048>               .setAspects(<aspect:gelum>*15     ,<aspect:vitreus>*5); #Blizz rod 
+<thermalfoundation:material:2052>               .setAspects(<aspect:terra>*15     ,<aspect:exitium>*5); #Basalz rod
+<thermalfoundation:material:2050>               .setAspects(<aspect:aer>*15       ,<aspect:sonus>*5); #Blitz rod
+
+<thermalfoundation:material:130>                .setAspects(<aspect:metallum>*10  ,<aspect:mythus>*5); #Silver ingot
+<thermalfoundation:material:132>                .setAspects(<aspect:metallum>*10  ,<aspect:aer>*5); #Aluminum ingot
+<thermalfoundation:material:133>                .setAspects(<aspect:metallum>*10  ,<aspect:imperium>*5); #Nickiel ingot
+<thermalfoundation:material:134>                .setAspects(<aspect:metallum>*10  ,<aspect:sensus>*5); #Platinum ingot
+<thermalfoundation:material:135>                .setAspects(<aspect:metallum>*10  ,<aspect:fluctus>*5); #Iridium ingot
+<thermalfoundation:material:136>                .setAspects(<aspect:metallum>*10  ,<aspect:auram>*5); #Mana infused ingot
+
+<thermalfoundation:material:161>                .setAspects(<aspect:metallum>*10  ,<aspect:motus>*5); #Electrum ingot
+<thermalfoundation:material:162>                .setAspects(<aspect:metallum>*10  ,<aspect:fabrico>*5); #Invar ingot
+<thermalfoundation:material:163>                .setAspects(<aspect:metallum>*10  ,<aspect:vinculum>*5); #Bronze ingot
+<thermalfoundation:material:164>                .setAspects(<aspect:metallum>*10  ,<aspect:sonus>*5); #Constantan ingot
+<thermalfoundation:material:165>                .setAspects(<aspect:metallum>*10  ,<aspect:machina>*5); #Signalum ingot
+<thermalfoundation:material:166>                .setAspects(<aspect:metallum>*10  ,<aspect:lux>*5); #Lumium ingot
+<thermalfoundation:material:167>                .setAspects(<aspect:metallum>*10  ,<aspect:alienis>*5); #Enderium ingot
+
+/*
+#######################################################
+
 Tinker's construct
 
 #######################################################
 */
 
 <tconstruct:materials:17>                       .setAspects(<aspect:mortuus>*10      ,<aspect:infernum>*10    ,<aspect:tenebrae>*5       ,<aspect:perditio>*5); #wither bone
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "tconstruct:blueslime"}})
+                                                .setAspects(<aspect:aqua>*10      ,<aspect:victus>*10         ,<aspect:fabrico>*5); 
+<entity:tconstruct:blueslime>                   .setAspects(<aspect:aqua>*10      ,<aspect:victus>*10         ,<aspect:fabrico>*5); 
+
+<tconstruct:ingots>                             .setAspects(<aspect:metallum>*10  ,<aspect:volatus>*5); #Cobalt ingot
+<tconstruct:ingots:1>                           .setAspects(<aspect:metallum>*10  ,<aspect:exitium>*5); #Ardite ingot
+<tconstruct:ingots:2>                           .setAspects(<aspect:metallum>*10  ,<aspect:aversio>*5); #Manyullyn ingot
+<tconstruct:ingots:5>                           .setAspects(<aspect:metallum>*10  ,<aspect:alkimia>*5); #Alchemical brass ingot
+<tconstruct:ingots:3>                           .setAspects(<aspect:metallum>*10  ,<aspect:aqua>*5); #Knightslime ingot
+<tconstruct:ingots:4>                           .setAspects(<aspect:metallum>*10  ,<aspect:bestia>*5); #Pigiron ingot
+
+/*
+#######################################################
+
+Tinker's evolution
+
+#######################################################
+*/
+
+<tconevo:metal:25>                              .setAspects(<aspect:metallum>*10  ,<aspect:sanguis>*5); #Bound ingot
+<tconevo:metal:30>                              .setAspects(<aspect:metallum>*10  ,<aspect:spiritus>*5); #Sentient ingot
+<tconevo:metal:35>                              .setAspects(<aspect:metallum>*10  ,<aspect:potentia>*5); #Energium ingot
+<tconevo:metal:40>                              .setAspects(<aspect:metallum>*10  ,<aspect:humanus>*5); #UU-metal ingot
+<tconevo:edible>                                .setAspects(<aspect:metallum>*10  ,<aspect:victus>*5); #Raw meat ingot
+<tconevo:edible:1>                              .setAspects(<aspect:metallum>*10  ,<aspect:bestia>*5); #Cooked meat ingot
+<tconevo:metal:15>                              .setAspects(<aspect:metallum>*10  ,<aspect:exanimis>*5); #Essence-Infused ingot
+<tconevo:metal>                                 .setAspects(<aspect:metallum>*100 ,<aspect:caeles>*50); #Wyvern ingot
+<tconevo:metal:5>                               .setAspects(<aspect:metallum>*100 ,<aspect:draco>*50); #Draconic ingot
+<tconevo:metal:10>                              .setAspects(<aspect:metallum>*100 ,<aspect:rattus>*50); #Chaotic ingot
 
 /*
 #######################################################
@@ -568,48 +782,8 @@ Thaumcraft
 <thaumadditions:mithminite_block>               .setAspects(<aspect:metallum>*150 ,<aspect:draco>*100         ,<aspect:mythus>*100      ,<aspect:caeles>*100  ,<aspect:auram>*200);
 <thaumadditions:puriflower>                     .setAspects(<aspect:auram>*10     ,<aspect:herba>*20          ,<aspect:praecantatio>*10 ,<aspect:sensus>*20);
 
-/*
-#######################################################
-
-Vanilla
-
-#######################################################
-*/
-
-<minecraft:stone:3>                             .setAspects(<aspect:terra>*5      ,<aspect:ordo>); #diorite
-<minecraft:stone:5>                             .setAspects(<aspect:terra>*5      ,<aspect:perditio>); #andesite
-<minecraft:stone:1>                             .setAspects(<aspect:terra>*5      ,<aspect:ignis>); #granite
-
-<minecraft:skull:1>                             .setAspects(<aspect:spiritus>*10      ,<aspect:infernum>*10    ,<aspect:tenebrae>*5       ,<aspect:perditio>*5); #wither skull
-
-# Removing wrong aspects from stuff
-<conarm:armor_trim:*>.setAspects(<aspect:terra>);
-<harvestcraft:freshwateritem>.removeAspects(<aspect:metallum>);
-
-# Override aspects
-<rats:rat_diamond>                             .setAspects(<aspect:desiderium>*4  ,<aspect:vitreus>*4      , <aspect:rattus>*4);
-<enderio:block_enderman_skull>                 .setAspects(<aspect:mortuus>*40    ,<aspect:alienis>*50     ,<aspect:tenebrae>*60);
-<ic2:dust:5>                                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*15);
-<additionalcompression:gemdiamond_compressed:1>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500);
-<additionalcompression:gemdiamond_compressed:2>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500    ,<aspect:caeles>*100);
-<mekanism:compresseddiamond>                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20);
-<avaritia:resource>                            .setAspects(<aspect:desiderium>*250,<aspect:vitreus>*250);
-<thermalfoundation:material:26>                .setAspects(<aspect:desiderium>*50 ,<aspect:machina>*40);
-<actuallyadditions:item_crystal:2>             .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20     , <aspect:potentia>*80);
-<actuallyadditions:block_crystal:2>            .setAspects(<aspect:desiderium>*140,<aspect:vitreus>*140    , <aspect:potentia>*80);
-<actuallyadditions:item_crystal_empowered:2>   .setAspects(<aspect:desiderium>*60 ,<aspect:vitreus>*60     , <aspect:potentia>*150);
-<actuallyadditions:block_crystal_empowered:2>  .setAspects(<aspect:desiderium>*400,<aspect:vitreus>*400    , <aspect:potentia>*400);
-<forestry:candle>                              .setAspects(<aspect:lux>*20        , <aspect:herba>*5       , <aspect:aer>*5);
-<forestry:stump>                               .setAspects(<aspect:lux>*20        , <aspect:herba>*5       , <aspect:aer>*5);
-<forestry:beeswax>                             .setAspects(<aspect:lux>*5         , <aspect:aer>*2);
-<extrautils2:compressedcobblestone:0>          .setAspects(<aspect:terra>*45      , <aspect:perditio>*9);
-<extrautils2:compressedcobblestone:1>          .setAspects(<aspect:terra>*405     , <aspect:perditio>*81);
-<extrautils2:compressedcobblestone:2>          .setAspects(<aspect:terra>*500     , <aspect:perditio>*500);
-<biomesoplenty:hard_ice>                       .setAspects(<aspect:gelum>*21);
-<appliedenergistics2:sky_stone_block>          .setAspects(<aspect:alienis>*2     , <aspect:tenebrae>*7);
-<minecraft:sugar>                              .setAspects(<aspect:desiderium>    , <aspect:aqua>);
 <thaumcraft:alumentum>                         .setAspects(<aspect:ignis>*2       , <aspect:potentia>*2);
-<thaumcraft:condenser_lattice_dirty>           .setAspects(<aspect:vitium>*10); #that one is an interesting item
+<thaumcraft:condenser_lattice_dirty>           .setAspects(<aspect:vitium>*10); 
 <thaumcraft:ingot:2>                           .setAspects(<aspect:metallum>*5    , <aspect:instrumentum>*2);
 
 val nitor = [
@@ -633,6 +807,187 @@ val nitor = [
 for nitor in nitor{
   nitor.setAspects(<aspect:lux>*2,<aspect:sensus>);
 }
+
+/*
+#######################################################
+
+Twilight forest
+
+#######################################################
+*/
+
+<twilightforest:ironwood_ingot>                 .setAspects(<aspect:metallum>*10  ,<aspect:herba>*5); 
+<twilightforest:knightmetal_ingot>              .setAspects(<aspect:metallum>*10  ,<aspect:praemunio>*5); 
+<twilightforest:armor_shard_cluster>            .setAspects(<aspect:metallum>*5  ,<aspect:praemunio>*10); 
+
+/*
+#######################################################
+
+Vanilla
+
+#######################################################
+*/
+
+<minecraft:stone:3>                             .setAspects(<aspect:terra>*5      ,<aspect:ordo>); #diorite
+<minecraft:stone:5>                             .setAspects(<aspect:terra>*5      ,<aspect:perditio>); #andesite
+<minecraft:stone:1>                             .setAspects(<aspect:terra>*5      ,<aspect:ignis>); #granite
+
+<minecraft:skull:1>                             .setAspects(<aspect:spiritus>*10  ,<aspect:infernum>*10       ,<aspect:tenebrae>*5       ,<aspect:perditio>*5); #wither skull
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie"}})
+                                                .setAspects(<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:humanus>*20); 
+<entity:minecraft:zombie>                       .setAspects(<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:humanus>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:husk"}})
+                                                .setAspects(<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:humanus>*20        ,<aspect:perditio>*10); 
+<entity:minecraft:husk>                         .setAspects(<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:humanus>*20        ,<aspect:perditio>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:skeleton"}})
+                                                .setAspects(<aspect:mortuus>*10   ,<aspect:perditio>*10       ,<aspect:aversio>*20); 
+<entity:minecraft:skeleton>                     .setAspects(<aspect:mortuus>*10   ,<aspect:perditio>*10       ,<aspect:aversio>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:stray"}})
+                                                .setAspects(<aspect:mortuus>*10   ,<aspect:perditio>*10       ,<aspect:aversio>*20        ,<aspect:gelum>*10); 
+<entity:minecraft:stray>                        .setAspects(<aspect:mortuus>*10   ,<aspect:perditio>*10       ,<aspect:aversio>*20        ,<aspect:gelum>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:creeper"}})
+                                                .setAspects(<aspect:exitium>*20   ,<aspect:ignis>*10          ,<aspect:alkimia>*5        ,<aspect:perditio>*10); 
+<entity:minecraft:creeper>                      .setAspects(<aspect:exitium>*20   ,<aspect:ignis>*10          ,<aspect:alkimia>*5        ,<aspect:perditio>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:spider"}})
+                                                .setAspects(<aspect:bestia>*20    ,<aspect:vinculum>*10       ,<aspect:sensus>*10); 
+<entity:minecraft:spider>                       .setAspects(<aspect:bestia>*20    ,<aspect:vinculum>*10       ,<aspect:sensus>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cave_spider"}})
+                                                .setAspects(<aspect:bestia>*15    ,<aspect:vinculum>*10       ,<aspect:sensus>*10        ,<aspect:alkimia>*5); 
+<entity:minecraft:cave_spider>                  .setAspects(<aspect:bestia>*15    ,<aspect:vinculum>*10       ,<aspect:sensus>*10        ,<aspect:alkimia>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:witch"}})
+                                                .setAspects(<aspect:humanus>*20   ,<aspect:praecantatio>*10   ,<aspect:alkimia>*10); 
+<entity:minecraft:witch>                        .setAspects(<aspect:humanus>*20   ,<aspect:praecantatio>*10   ,<aspect:alkimia>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:slime"}})
+                                                .setAspects(<aspect:aqua>*10      ,<aspect:victus>*10); 
+<entity:minecraft:slime>                        .setAspects(<aspect:aqua>*10      ,<aspect:victus>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:guardian"}})
+                                                .setAspects(<aspect:aqua>*20      ,<aspect:praemunio>*10      ,<aspect:sensus>*10); 
+<entity:minecraft:guardian>                     .setAspects(<aspect:aqua>*20      ,<aspect:praemunio>*10      ,<aspect:sensus>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:elder_guardian"}})
+                                                .setAspects(<aspect:aqua>*200     ,<aspect:praemunio>*100     ,<aspect:mythus>*50); 
+<entity:minecraft:elder_guardian>               .setAspects(<aspect:aqua>*200     ,<aspect:praemunio>*100     ,<aspect:mythus>*50); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:silverfish"}})
+                                                .setAspects(<aspect:perditio>*20  ,<aspect:vacuos>*10         ,<aspect:vinculum>*10); 
+<entity:minecraft:silverfish>                   .setAspects(<aspect:perditio>*20  ,<aspect:vacuos>*10         ,<aspect:vinculum>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie_horse"}})
+                                                .setAspects(<aspect:bestia>*40    ,<aspect:exanimis>*10       ,<aspect:motus>*10); 
+<entity:minecraft:zombie_horse>                 .setAspects(<aspect:bestia>*40    ,<aspect:exanimis>*10       ,<aspect:motus>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:skeleton_horse"}})
+                                                .setAspects(<aspect:bestia>*40    ,<aspect:mortuus>*10        ,<aspect:motus>*10); 
+<entity:minecraft:skeleton_horse>               .setAspects(<aspect:bestia>*40    ,<aspect:mortuus>*10        ,<aspect:motus>*10); 
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie_pigman"}})
+                                                .setAspects(<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:bestia>*20); 
+<entity:minecraft:zombie_pigman>                .setAspects(<aspect:exanimis>*10  ,<aspect:mortuus>*10        ,<aspect:bestia>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:magma_cube"}})
+                                                .setAspects(<aspect:aqua>*10      ,<aspect:victus>*10         ,<aspect:infernum>*5); 
+<entity:minecraft:magma_cube>                   .setAspects(<aspect:aqua>*10      ,<aspect:victus>*10         ,<aspect:infernum>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:wither_skeleton"}})
+                                                .setAspects(<aspect:mortuus>*10   ,<aspect:perditio>*20       ,<aspect:aversio>*20        ,<aspect:spiritus>*20); 
+<entity:minecraft:wither_skeleton>              .setAspects(<aspect:mortuus>*10   ,<aspect:perditio>*20       ,<aspect:aversio>*20        ,<aspect:spiritus>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:blaze"}})
+                                                .setAspects(<aspect:ignis>*20     ,<aspect:infernum>*20); 
+<entity:minecraft:blaze>                        .setAspects(<aspect:ignis>*20     ,<aspect:infernum>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:ghast"}})
+                                                .setAspects(<aspect:spiritus>*50  ,<aspect:volatus>*10        ,<aspect:fluctus>*20); 
+<entity:minecraft:ghast>                        .setAspects(<aspect:spiritus>*50  ,<aspect:volatus>*10        ,<aspect:fluctus>*20); 
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:enderman"}})
+                                                .setAspects(<aspect:alienis>*40   ,<aspect:tenebrae>*20); 
+<entity:minecraft:enderman>                     .setAspects(<aspect:alienis>*40   ,<aspect:tenebrae>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:endermite"}})
+                                                .setAspects(<aspect:alienis>*20  ,<aspect:vacuos>*10         ,<aspect:vinculum>*10); 
+<entity:minecraft:endermite>                    .setAspects(<aspect:alienis>*20  ,<aspect:vacuos>*10         ,<aspect:vinculum>*10); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:shulker"}})
+                                                .setAspects(<aspect:alienis>*40   ,<aspect:volatus>*20        ,<aspect:sonus>*10); 
+<entity:minecraft:shulker>                      .setAspects(<aspect:alienis>*40   ,<aspect:volatus>*10        ,<aspect:sonus>*10); 
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:cow"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:praemunio>*5); 
+<entity:minecraft:cow>                          .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:praemunio>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:sheep"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:fabrico>*5); 
+<entity:minecraft:sheep>                        .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:fabrico>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:pig"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5); 
+<entity:minecraft:pig>                          .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:chicken"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:volatus>*10        ,<aspect:ventus>*5); 
+<entity:minecraft:chicken>                      .setAspects(<aspect:bestia>*10    ,<aspect:volatus>*10        ,<aspect:ventus>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:rabbit"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:visum>*5); 
+<entity:minecraft:rabbit>                       .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:visum>*5); 
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:wolf"}})
+                                                .setAspects(<aspect:bestia>*20    ,<aspect:terra>*10          ,<aspect:aversio>*5); 
+<entity:minecraft:wolf>                         .setAspects(<aspect:bestia>*20    ,<aspect:terra>*10          ,<aspect:aversio>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:ocelot"}})
+                                                .setAspects(<aspect:bestia>*20    ,<aspect:terra>*10          ,<aspect:desiderium>*5); 
+<entity:minecraft:ocelot>                       .setAspects(<aspect:bestia>*20    ,<aspect:terra>*10          ,<aspect:desiderium>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:parrot"}})
+                                                .setAspects(<aspect:bestia>*20    ,<aspect:volatus>*10        ,<aspect:sonus>*5); 
+<entity:minecraft:parrot>                       .setAspects(<aspect:bestia>*20    ,<aspect:volatus>*10        ,<aspect:sonus>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:horse"}})
+                                                .setAspects(<aspect:bestia>*40    ,<aspect:terra>*10          ,<aspect:motus>*5); 
+<entity:minecraft:horse>                        .setAspects(<aspect:bestia>*40    ,<aspect:terra>*10          ,<aspect:motus>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:donkey"}})
+                                                .setAspects(<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:vinculum>*5); 
+<entity:minecraft:donkey>                       .setAspects(<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:vinculum>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:mule"}})
+                                                .setAspects(<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:imperium>*5); 
+<entity:minecraft:mule>                         .setAspects(<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:imperium>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:llama"}})
+                                                .setAspects(<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:permutatio>*5); 
+<entity:minecraft:llama>                        .setAspects(<aspect:bestia>*30    ,<aspect:terra>*10          ,<aspect:permutatio>*5); 
+
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:squid"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:aqua>*10           ,<aspect:tenebrae>*5); 
+<entity:minecraft:squid>                        .setAspects(<aspect:bestia>*10    ,<aspect:aqua>*10           ,<aspect:tenebrae>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:bat"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:volatus>*10        ,<aspect:tenebrae>*5); 
+<entity:minecraft:bat>                          .setAspects(<aspect:bestia>*10    ,<aspect:volatus>*10        ,<aspect:tenebrae>*5); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:polar_bear"}})
+                                                .setAspects(<aspect:bestia>*50    ,<aspect:terra>*10          ,<aspect:gelum>*20); 
+<entity:minecraft:polar_bear>                   .setAspects(<aspect:bestia>*50    ,<aspect:terra>*10          ,<aspect:gelum>*20); 
+<minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:mooshroom"}})
+                                                .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5); 
+<entity:minecraft:mooshroom>                    .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5); 
+
+/*
+#######################################################
+
+Vulpes library
+
+#######################################################
+*/
+
+<libvulpes:productingot:7>                      .setAspects(<aspect:metallum>*10  ,<aspect:gelum>*5); #Titanium ingot
+
+# Removing wrong aspects from stuff
+<conarm:armor_trim:*>.setAspects(<aspect:terra>);
+<harvestcraft:freshwateritem>.removeAspects(<aspect:metallum>);
+
+# Override aspects
+<rats:rat_diamond>                             .setAspects(<aspect:desiderium>*4  ,<aspect:vitreus>*4      , <aspect:rattus>*4);
+<enderio:block_enderman_skull>                 .setAspects(<aspect:mortuus>*40    ,<aspect:alienis>*50     ,<aspect:tenebrae>*60);
+<ic2:dust:5>                                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*15);
+<additionalcompression:gemdiamond_compressed:1>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500);
+<additionalcompression:gemdiamond_compressed:2>.setAspects(<aspect:desiderium>*500,<aspect:vitreus>*500    ,<aspect:caeles>*100);
+<mekanism:compresseddiamond>                   .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20);
+<avaritia:resource>                            .setAspects(<aspect:desiderium>*250,<aspect:vitreus>*250);
+<thermalfoundation:material:26>                .setAspects(<aspect:desiderium>*50 ,<aspect:machina>*40);
+<actuallyadditions:item_crystal:2>             .setAspects(<aspect:desiderium>*20 ,<aspect:vitreus>*20     , <aspect:potentia>*80);
+<actuallyadditions:block_crystal:2>            .setAspects(<aspect:desiderium>*140,<aspect:vitreus>*140    , <aspect:potentia>*80);
+<actuallyadditions:item_crystal_empowered:2>   .setAspects(<aspect:desiderium>*60 ,<aspect:vitreus>*60     , <aspect:potentia>*150);
+<actuallyadditions:block_crystal_empowered:2>  .setAspects(<aspect:desiderium>*400,<aspect:vitreus>*400    , <aspect:potentia>*400);
+<extrautils2:compressedcobblestone:0>          .setAspects(<aspect:terra>*45      , <aspect:perditio>*9);
+<extrautils2:compressedcobblestone:1>          .setAspects(<aspect:terra>*405     , <aspect:perditio>*81);
+<extrautils2:compressedcobblestone:2>          .setAspects(<aspect:terra>*500     , <aspect:perditio>*500);
+<biomesoplenty:hard_ice>                       .setAspects(<aspect:gelum>*21);
+<appliedenergistics2:sky_stone_block>          .setAspects(<aspect:alienis>*2     , <aspect:tenebrae>*7);
+<minecraft:sugar>                              .setAspects(<aspect:desiderium>    , <aspect:aqua>);
+
 
 
 
