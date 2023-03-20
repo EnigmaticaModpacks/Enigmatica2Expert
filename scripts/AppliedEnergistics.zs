@@ -301,8 +301,8 @@ scripts.process.saw(<ore:blockDiamond>, <appliedenergistics2:material:17> *  9, 
 scripts.process.saw(<ore:crystalPureCertusQuartz> * 9, <appliedenergistics2:material:16> *  9, "only: AdvRockCutter");
 
 # 256k Fluid Component to Lapis only
-	recipe.remove(<extracells:storage.component:8>);
-	recipe.addShapedMirrored("256k Fluid Storage",
+	recipes.remove(<extracells:storage.component:8>);
+	recipes.addShapedMirrored("256k Fluid Storage",
 	<extracells:storage.component:8>,
 	[[<ore:gemLapis>,<appliedenergistics2:material:24>,<ore:gemLapis>],
 	[<appliedenergistics2:material:57>,<appliedenergistics2:material:22>,<appliedenergistics2:material:57>],
