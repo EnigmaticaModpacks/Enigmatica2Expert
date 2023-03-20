@@ -11,7 +11,7 @@ interface Version {
 	releaseTime: Date;
 }
 
-export interface VersionsManifest {
+export interface versionsManifest {
 	latest: Latest;
 	versions: Version[];
 }
