@@ -76,6 +76,5 @@ recipes.addShapeless("part_connector_omni_directional_item_12", connector * 2, [
 	mods.tconstruct.Casting.addTableRecipe(<integrateddynamics:menril_sapling>, <minecraft:sapling>, <liquid:blueslime>, 250, true);
 
 # Remove unused dusts
-val dusts as IItemStack[]=[<enderio:item_material:26>,<enderio:item_material:27>,<exnihilocreatio:item_ore_aluminium:2>,<bigreactors:dustmetals:0>]; 
-for items in dusts{Squeezer.removeRecipesWithOutput(items);}
-for items in dusts{MechanicalSqueezer.removeRecipesWithOutput(items);}
+	Squeezer.removeRecipe(<bigreactors:brore>);
+	Squeezer.removeRecipe(<exnihilocreatio:item_ore_aluminium:1>);
