@@ -73,7 +73,7 @@
 	recipes.addShaped("Rainbow Generator", 
 	<extrautils2:rainbowgenerator>, 
 	[[<extrautils2:opinium:4>, <extrautils2:rainbowgenerator:2>, <extrautils2:opinium:4>],
-	[<extrautils2:ingredients:16>, <draconicevolution:draconium_capacitor:1>, <extrautils2:ingredients:16>], 
+	[<extrautils2:ingredients:16>, <draconicevolution:draconic_core>, <extrautils2:ingredients:16>], 
 	[<extrautils2:opinium:4>, <extrautils2:rainbowgenerator:1>, <extrautils2:opinium:4>]]);
 	
 # Angel Ring
