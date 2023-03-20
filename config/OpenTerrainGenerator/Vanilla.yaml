@@ -94,7 +94,7 @@ Dimensions:
   ShowInWorldCreationGUI: true
   LowestSupportedModPackConfigVersion: 0
   RemoveOnUpdate: false
-  Seed: "6927682468424007680"
+  Seed: ""
   GameType: "Survival"
   BonusChest: false
   AllowCheats: false
@@ -176,7 +176,7 @@ Dimensions:
   ShowInWorldCreationGUI: true
   LowestSupportedModPackConfigVersion: 0
   RemoveOnUpdate: false
-  Seed: "2348307889879293952"
+  Seed: ""
   GameType: "Survival"
   BonusChest: false
   AllowCheats: false
