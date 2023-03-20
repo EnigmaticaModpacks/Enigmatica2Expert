@@ -1,3 +1,0 @@
-guiScale:4
-autoJump:false
-mipmap:0

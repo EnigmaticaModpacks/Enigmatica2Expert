@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+  <recipe name="Spawner, defaults" required="true">
+    <spawning>
+      <entity name="minecraft:villager" costMultiplier="10.0" disabled="false"/>
+    </spawning>
+  </recipe>
+  <recipe name="Spawner, Ice and Fire" required="false">
+    <spawning>
+      <entity name="iceandfire:firedragon" costMultiplier="30.0" disabled="false"/>
+      <entity name="iceandfire:icedragon" costMultiplier="30.0" disabled="false"/>
+      <entity name="iceandfire:snowvillager" costMultiplier="1.0" disabled="false"/>
+	</spawning>
+  </recipe>
+  <recipe name="Spawner, Wither" required="true">
+    <spawning>
+	  <entity name="minecraft:wither" costMultiplier="50" disabled="true" soulvial="false"/>
+	</spawning>
+  </recipe>
+</enderio:recipes>
+

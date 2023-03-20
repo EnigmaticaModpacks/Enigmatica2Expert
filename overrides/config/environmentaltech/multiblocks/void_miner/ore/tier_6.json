@@ -1,0 +1,109 @@
+{
+  "outputs": [
+    {
+      "target": "green",
+      "weight": 24,
+      "id": "environmentaltech:litherite_crystal"
+    },
+    {
+      "target": "magenta",
+      "weight": 22,
+      "id": "environmentaltech:erodium_crystal"
+    },
+    {
+      "target": "purple",
+      "weight": 20,
+      "id": "environmentaltech:kyronite_crystal"
+    },
+    {
+      "target": "blue",
+      "weight": 18,
+      "id": "environmentaltech:pladium_crystal"
+    },
+    {
+      "target": "light_blue",
+      "weight": 16,
+      "id": "environmentaltech:ionite_crystal"
+    },
+    {
+      "target": "black",
+      "weight": 14,
+      "id": "environmentaltech:aethium_crystal"
+    },
+    {
+      "target": "white",
+      "weight": 32,
+      "id": "OD:oreQuartz"
+    },
+    {
+      "target": "yellow",
+      "weight": 19,
+      "id": "OD:oreGold"
+    },
+    {
+      "target": "cyan",
+      "weight": 15,
+      "id": "OD:oreDiamond"
+    },
+    {
+      "target": "lime",
+      "weight": 14,
+      "id": "OD:oreEmerald"
+    },
+    {
+      "target": "yellow",
+      "weight": 18,
+      "id": "OD:glowstone"
+    },
+    {
+      "target": "light_blue",
+      "weight": 7,
+      "id": "OD:oreChargedCertusQuartz"
+    },
+    {
+      "target": "light_blue",
+      "weight": 6,
+      "id": "OD:orePlatinum"
+    },
+    {
+      "target": "light_blue",
+      "weight": 10,
+      "id": "OD:oreMithril"
+    },
+    {
+      "target": "red",
+      "weight": 3,
+      "id": "OD:oreFirestone"
+    },
+    {
+      "target": "blue",
+      "weight": 10,
+      "id": "OD:oreCobalt"
+    },
+    {
+      "target": "orange",
+      "weight": 10,
+      "id": "OD:oreArdite"
+    },
+    {
+      "target": "purple",
+      "weight": 10,
+      "id": "draconicevolution:draconium_ore"
+    },
+    {
+      "target": "white",
+      "weight": 6,
+      "id": "OD:oreIridium"
+    },
+    {
+      "target": "black",
+      "weight": 12,
+      "id": "OD:oreTungsten"
+    },
+    {
+      "target": "white",
+      "weight": 10,
+      "id": "rftools:dimensional_shard_ore"
+    }
+  ]
+}
