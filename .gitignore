@@ -116,3 +116,7 @@ replay_recordings/
 hei_bookmarks.ini
 
 build/
+
+# NF Build Tools
+.cache
+build
