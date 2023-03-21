@@ -152,6 +152,8 @@ export async function downloadOrRetrieveFileDef(fileDef: FileDef): Promise<Retri
  * Mostly intended to be called by CI/CD.
  */
 export function makeArtifactNameBody(baseName: string): string {
+	baseName = baseName.replace(/ /g, "-");
+
 	// If the tag is provided by CI, simply just glue it to the base name.
 	if (process.env.GITHUB_TAG) {
 		return `${baseName}-${process.env.GITHUB_TAG}`;
