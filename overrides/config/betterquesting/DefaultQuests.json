@@ -2947,7 +2947,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Welcome to §9Enigmatica 2: Expert Unoffical§r! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nAs a heads up, if you enable view mode (click the eyeball), you can view quests that are not unlocked. Also, make sure to form a party if your are playing with friends, so your questing progress is synchronized.\n\nCheck the checkbox to get your starter kit.§d§d§0 §r\n\nGood luck!§0",
+          "desc:8": "Welcome to §9Enigmatica 2: Expert Unoffical§r! This modpack is designed to challenge the player through various means, especially harder recipes. I advice that you automate crafting of as much as possible, as early as possible. Things are going to get complicated. \n\nAs a heads up, if you enable view mode (click the eyeball), you can view quests that are not unlocked. Also, make sure to form a party if you are playing with friends, so your questing progress is synchronized.\n\nCheck the checkbox to get your starter kit.§d§d§0 §r\n\nGood luck!§0",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
