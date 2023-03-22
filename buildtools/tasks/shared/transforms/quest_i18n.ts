@@ -21,8 +21,8 @@ function transformKeyPairs(
 
 		const properties = item["properties:10"]["betterquesting:10"];
 		if (properties["name:8"] !== "Gap") {
-			const titleKey = `nomifactory.quest.${namespace}.${storeKey}.title`;
-			const descKey = `nomifactory.quest.${namespace}.${storeKey}.desc`;
+			const titleKey = `e2eu.quest.${namespace}.${storeKey}.title`;
+			const descKey = `e2eu.quest.${namespace}.${storeKey}.desc`;
 
 			// Push lang file lines.
 			lines.push(
