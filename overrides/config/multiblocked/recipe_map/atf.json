@@ -479,7 +479,7 @@
             "content": {
               "amount": 4,
               "matches": [
-                "{id:\"forestry:thermionic_tubes\",Count:4,Damage:3s}"
+                "{id:\"forestry:thermionic_tubes\",Count:4,Damage:1s}"
               ]
             }
           }
