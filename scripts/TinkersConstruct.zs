@@ -132,6 +132,7 @@ for slime, dirts in slimeDirts {
 	for item in <ore:blockRedstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:redstone>, item); }
 	for item in <ore:dustGlowstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:glowstone>, item); }
 	for item in <ore:blockGlowstone>.items { mods.tcomplement.Blacklist.addRecipe(<liquid:glowstone>, item); }
+	mods.tcomplement.Overrides.removeRecipe(<liquid:redstone>, <netherendingores:ore_nether_vanilla:6>);
 
 # Removing the ability to melt coal
 val coals as IItemStack[] = [
