@@ -682,3 +682,7 @@ for item in pressurePlates {
 # Remove couple rods
 	<ore:stickIron>.remove(<libvulpes:productrod:1>);
 	<ore:stickSteel>.remove(<libvulpes:productrod:6>);
+
+# Remove EIO Dusts
+	<ore:dustCopper>.remove(<enderio:item_material:26>);
+	<ore:dustTin>.remove(<enderio:item_material:27>);
