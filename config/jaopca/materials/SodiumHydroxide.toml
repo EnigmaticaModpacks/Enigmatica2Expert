@@ -11,11 +11,7 @@
 	#Should items of this material have the enchanted glow.
 	hasEffect = false
 	#The model type of the material.
-	modelType = "metallic"
+	modelType = "dust"
 	#The color of this material.
-	color = 10331472
-
-[mekanism]
-	#The default base to use in Mekanism's Combiner to recreate ores.
-	oreBase = "minecraft:cobblestone"
+	color = 13024704
 

@@ -1,5 +1,4 @@
 
-
 [general]
 	#The alternative names of this material.
 	alternativeNames = []
@@ -13,3 +12,4 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "metallic"
+

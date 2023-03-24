@@ -15,6 +15,8 @@
 	gemPlain = true
 	#Should the mod find crystal materials without ores.
 	crystalPlain = true
+	#Should the mod find dust materials without ores.
+	dustPlain = true
 
 #Configurations related to material overrides.
 [materialOverrides]
