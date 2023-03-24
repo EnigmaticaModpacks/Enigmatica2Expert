@@ -602,3 +602,8 @@ for item in thaumcraftHintItems {
 # Adv Gen Gas Intake
 	<advgenerators:gas_input>.addTooltip("Disabled");
 	addDescription(<advgenerators:gas_input>,"Disabled due to a bug that was never fixed");
+
+# Marble can be chiseled into..
+	<astralsorcery:blockmarble>.addTooltip(format.aqua("Chisel Variations: Astral Sorcery & Unlimited Chisel Works"));
+	<chisel:marble2:7>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));
+	<quark:marble>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));

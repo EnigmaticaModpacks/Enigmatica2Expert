@@ -672,9 +672,17 @@ for item in pressurePlates {
 
 # Rearrange items in Dye Oredict to better integration
 # with AA [Lens Of Color]
-<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
-<ore:dyeGreen>.remove(<enderio:item_material:48>);
+	<ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
+	<ore:dyeGreen>.remove(<enderio:item_material:48>);
 
 # Wax unification
 	<ore:itemBeeswax>.add(<harvestcraft:beeswaxitem>);
 	<ore:itemBeeswax>.add(<rustic:beeswax>);
+
+# Remove couple rods
+	<ore:stickIron>.remove(<libvulpes:productrod:1>);
+	<ore:stickSteel>.remove(<libvulpes:productrod:6>);
+
+# Remove EIO Dusts
+	<ore:dustCopper>.remove(<enderio:item_material:26>);
+	<ore:dustTin>.remove(<enderio:item_material:27>);

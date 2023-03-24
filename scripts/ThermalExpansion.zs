@@ -17,6 +17,7 @@ for slab in <ore:slabWood>.items {
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:empoweredoil>);
 
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refinedcanolaoil>, 250000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:biofuel>, 500000);
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:crystaloil>, 1000000);
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:empoweredoil>, 1750000);
 
@@ -274,3 +275,8 @@ reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895
 
 # Stone Gear [Compactor] recipe
 mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <ore:cobblestone>.firstItem * 4, 16000);
+
+# Remove AE2 Seeds from Phytogenic Insolator
+mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:0>, <minecraft:glowstone_dust>);
+mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:600>, <minecraft:glowstone_dust>);
+mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:1200>, <minecraft:glowstone_dust>);
