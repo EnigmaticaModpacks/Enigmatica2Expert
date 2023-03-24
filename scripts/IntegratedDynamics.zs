@@ -1,7 +1,5 @@
 import crafttweaker.item.IItemStack as IItemStack;
 import mods.jei.JEI.removeAndHide as rh;
-import mods.integrateddynamics.Squeezer;
-import mods.integrateddynamics.MechanicalSqueezer;
 #modloaded integrateddynamics
 
 /*
