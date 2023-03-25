@@ -57,7 +57,7 @@ Overworld:
     ItemsToAddOnLeaveDimension: ""
     ItemsToRemoveOnLeaveDimension: ""
     ItemsToAddOnRespawn: ""
-    SpawnPointSet: true
+    SpawnPointSet: false
     SpawnPointX: -260
     SpawnPointY: 119
     SpawnPointZ: 1020

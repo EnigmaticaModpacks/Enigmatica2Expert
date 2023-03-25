@@ -28,7 +28,7 @@ Rarity: 100.0
 
 RotateRandomly: true
 
-SpawnHeight: highestBlock
+SpawnHeight: highestSolidBlock
 
 SpawnHeightOffset: 0
 
@@ -63,7 +63,7 @@ ExcludedBiomes: All
 
 SourceBlocks: STATIONARY_WATER
 
-MaxPercentageOutsideSourceBlock: 0
+MaxPercentageOutsideSourceBlock: 100
 
 OutsideSourceBlock: placeAnyway
 
