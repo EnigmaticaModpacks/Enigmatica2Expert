@@ -1,5 +1,19 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.90
+
+_Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90.md)_
+
+**New Mods**
+
+**Removed Mods**
+
+**Improvements**
+
+**Fixed bugs**
+
+---
+
 ## 1.86
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.86.md)_ | _Using Forge-1.12.2-14.23.5.2860_
