@@ -1,4 +1,5 @@
 
+#Configurations for material Malachite.
 [general]
 	#The alternative names of this material.
 	alternativeNames = []

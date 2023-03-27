@@ -1,0 +1,26 @@
+
+#Configurations for material ChargedCertusQuartz.
+[general]
+	#The alternative names of this material.
+	alternativeNames = []
+	#The byproducts of this material.
+	extras = []
+	#Is the storage block of this material small (2x2).
+	isSmallStorageBlock = false
+	#The module blacklist of this material.
+	moduleBlacklist = []
+	#Should items of this material have the enchanted glow.
+	hasEffect = false
+	#The model type of the material.
+	modelType = "crystal"
+	#The color of this material.
+	color = 10138561
+
+[molten]
+	#The temperature of this molten fluid.
+	temperature = 1000
+
+[mekanism]
+	#The default base to use in Mekanism's Combiner to recreate ores.
+	oreBase = "minecraft:cobblestone"
+

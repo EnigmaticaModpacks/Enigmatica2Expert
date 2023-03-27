@@ -1,4 +1,5 @@
 
+#Configurations for material Arsenic.
 [general]
 	#The alternative names of this material.
 	alternativeNames = []

@@ -17,6 +17,10 @@
 	crystalPlain = true
 	#Should the mod find dust materials without ores.
 	dustPlain = true
+	#Should the mod not find materials with ores with used prefixes.
+	nonPlainUsedPrefix = false
+	#Should the mod not find materials with used prefixes when the material name is not found yet.
+	strictUsedPrefix = false
 
 #Configurations related to material overrides.
 [materialOverrides]
