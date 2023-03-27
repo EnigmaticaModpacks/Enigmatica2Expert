@@ -74,4 +74,29 @@ Applied Energistics Interfaces can be named in an anvil, but will lose their nam
 Applied Energistics Interfaces are grouped together by their name in the Interface Terminal.
 The advanced Morphing Tool (Morphing Tool crafted with 4 gears) is a good way to get all wrenches early. It also helps to keep your inventory neat.
 The command /foodlist size shows you how many different foods you already ate.
-You can shift-right click Acceleration Cards into Molecular Assemblers
+You can shift-right click Acceleration Cards into Molecular Assemblers.
+The rockbreaker can be used to easily automate cobblestone in the earlygame.
+Flat transfer nodes work like gregtech covers, allowing you to transfer items and fluids between machines without needing pipes. They can be very useful in compact setups.
+The Bee Diversity Store allows you to trade bees for time, check out it's quest in the forestry questline for more info.
+Wings of The Bat can give you creative flight for a limited time.
+The IC2 Jetpack can be charged in mekanism energy cubes as well as in IC2 batboxes.
+The IC2 Jetpack is a great option for earlygame flight.
+Building gadgets are craftable sooner than Building Wands.
+Join the discord if you need extra help, find friends, or just want to show off your base!
+Extra Utilities 2's Indexer is a pretty underrated storage system option, offering unlimited storage and range with no energy cost, as well has costing very little to set up. Check out it's quest for more info.
+Once you start producing RF, look into the storage scanner. It's a really easy storage option to set up, it scans nearby storage containers and allows you to easily insert and extract items all of them at once, The machines comes with a storage grid, and can save recipes as well.
+If you think something deserves a video guide, post about it in the discord.
+The Tinkers Tank Multiblock can hold multiple fluids, and a large amount of it given its cost.
+Diamond Spikes will make mobs drop "player kill only" items, such as wither skulls and blaze rods.
+Read the questbook! It's bound to Grave (`) by default.
+Multiblocked multis can wallshare and share hatches like Gregtech multis.
+The EnderIO farmer can be used to automate trees and plants.
+The Multiblocked multis can be used to craft various recipe much faster and without requiring the recipe to be set beforehand.
+PAE2 has wireless crafting, pattern, and fluid terminals.
+Universal Cables can convert RF to EU and vice versa.
+Immersive Engineering Waterwheels can produce a passive 88rf/t if set up properly, refer to it's quest for a guide.
+Rustic's boozes can be rather powerful.
+Mekanism's Charging Pad and Power Cube, Immersive Engineering's Charging Station, and Cyclic's Battery are all great options for charging items in the earlygame, such as building gadgets.
+The chute can be used as an alterative to droppers, dropping any items pushed into it.
+ArchitectureCraft can be used to add slopes to your bases, as well as varity of other base enhancing functions
+
