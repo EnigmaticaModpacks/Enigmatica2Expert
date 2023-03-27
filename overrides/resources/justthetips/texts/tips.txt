@@ -7,13 +7,11 @@ The changelog will let you know what has changed between updates.
 Instead of using filled buckets in recipes, you can use filled Portable Tanks for batch crafting.
 XNet is both cheap and powerful.
 Always craft extras.
-Beware the effects of poor nutrition. (Hotkey N)
 To loot a dragon, right-click it with an empty hand.
 Thermal Expansion machines may need upgrades in order to craft certain recipes.
 OP: The command "/bq_admin default load" reloads the questbook. It will not alter your progress.
 OP: The command "/bqs_loot default load" reloads the available loot from Loot Chests.
 OP: You can restore a player's inventory after death with the command "/tmg_restore PlayerName latest". You can also cycle through different deaths with the Tab key.
-Seemingly random debuffs can stem from a bad diet.
 Keep your item cables short. Not only does it speed up the overall transfer, it is also easier on the server.
 Some items have JEI descriptions explaining how to obtain them.
 Use F7 to see the light levels on the ground and F9 to see the chunk borders.
@@ -25,7 +23,6 @@ No more capturing Ghasts for the Angel Ring!
 Mana Infused Ingots can be crafted using Manasteel.
 The Immersive Petroleum Pumpjack needs an Immersive Engineering Fluid Pipe to bedrock to function.
 Titanium Ingots can be crafted in the Advanced Metallurgic Infuser.
-Several foods give all 5 nutrients.
 The majority of power generators have had their output and efficiency tweaked.
 Block of Prosperity is craftable.
 Want flux? Empty out your crucible.
