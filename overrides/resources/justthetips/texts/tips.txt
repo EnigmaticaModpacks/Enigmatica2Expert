@@ -95,5 +95,6 @@ Immersive Engineering Waterwheels can produce a passive 88rf/t if set up properl
 Rustic's boozes can be rather powerful.
 Mekanism's Charging Pad and Power Cube, Immersive Engineering's Charging Station, and Cyclic's Battery are all great options for charging items in the earlygame, such as building gadgets.
 The chute can be used as an alterative to droppers, dropping any items pushed into it.
-ArchitectureCraft can be used to add slopes to your bases, as well as varity of other base enhancing functions
+ArchitectureCraft can be used to add slopes to your bases, as well as varity of other base enhancing functions.
+Sponges can remove jetpacks from armor and tinkers modifiers from tools by crafting them with said item
 
