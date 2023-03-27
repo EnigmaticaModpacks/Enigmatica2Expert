@@ -59,17 +59,6 @@ static polishingFnc as IRecipeFunction = function(out, ins, cInfo) {
   return result;
 } as IRecipeFunction;
 
-recipes.addShapeless("Clear modifiers example",
-  scripts.equipment.utils_tcon.constructTool(<tconstruct:pickaxe>,
-    'flint', 'apatite', 'amber', 'copper'
-  ), [
-  scripts.equipment.utils_tcon.constructTool(<tconstruct:pickaxe>,
-    'flint', 'apatite', 'amber', 'copper',
-    ["diamond", "sharpness", "haste", "emerald"]
-  ).marked('m'),
-  <minecraft:sponge>,
-], polishingFnc, null);
-
 recipes.addShapeless("Clear jetpack example", <minecraft:leather_chestplate>, [
   <minecraft:leather_chestplate>.withTag({charge: 30000.0, hasIC2Jetpack: 1 as byte}).marked('m'),
   <minecraft:sponge>,
