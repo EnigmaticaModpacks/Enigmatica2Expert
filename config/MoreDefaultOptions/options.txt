@@ -97,6 +97,7 @@ key_jecalculation.key.gui_craft:0
 key_jecalculation.key.gui_math:0
 key_key.advancements:38
 key_key.anchor:35
+key_key.aquaacrobatics.toggle_crawling:46:SHIFT
 key_key.attack:-100
 key_key.back:31
 key_key.bookdisplay.display:21
