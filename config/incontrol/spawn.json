@@ -48,7 +48,8 @@
   {"mob": "quark:stoneling","maxcount": {"amount": 3,"perchunk": true},"block": "minecraft:stone", "maxlight": 6,"result": "allow"},
   {"mob": "quark:stoneling","result": "deny"},
 
-  {"mob": "rats:rat","mod": "rats","maxcount": {"amount": 5,"perchunk": true},"block": "rats:garbage_pile","result": "allow"},
+	{"mob": "rats:rat","mod": "rats","mincount": 15,"result": "deny"},
+  {"mob": "rats:rat","mod": "rats","block": "rats:garbage_pile","result": "allow"},
   {"mob": "rats:rat","mod": "rats","result": "deny"},
 	
 	{"dimension": 0, "mob": "endreborn:watcher","mod": "endreborn","mincount": 15,"result": "deny"},
