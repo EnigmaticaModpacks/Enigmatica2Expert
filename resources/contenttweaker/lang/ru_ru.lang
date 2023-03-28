@@ -33,6 +33,7 @@ tile.contenttweaker.compressed_block_sulfur.name=Спрессованный Се
 tile.contenttweaker.compressed_pumpkin.name=Прессованная Тыква
 tile.contenttweaker.compressed_pumpkin_double.name=Двойная Сжатая Тыква
 tile.contenttweaker.compressed_string.name=Сжатая Нить
+tile.contenttweaker.compressed_string_double.name=Двойная Сжатая Нить
 tile.contenttweaker.conglomerate_of_life.name=Конгломерат Жизни
 tile.contenttweaker.conglomerate_of_coal.name=Конгломерат Угля
 tile.contenttweaker.conglomerate_of_sun.name=Конгломерат Солнца

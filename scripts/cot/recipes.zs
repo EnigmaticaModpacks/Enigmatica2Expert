@@ -27,6 +27,7 @@ utils.compact(<contenttweaker:compressed_pumpkin>, <contenttweaker:compressed_pu
 
 // Compressed string
 utils.compact(<minecraft:string>, <contenttweaker:compressed_string>);
+utils.compact(<contenttweaker:compressed_string>, <contenttweaker:compressed_string_double>);
 craft.remake(<exnihilocreatio:item_mesh:1>, ["pretty",
   "  s  ",
   "s s s",

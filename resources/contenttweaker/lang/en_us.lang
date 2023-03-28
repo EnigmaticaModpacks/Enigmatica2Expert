@@ -33,6 +33,7 @@ tile.contenttweaker.compressed_block_sulfur.name=Compressed Sulfur Block
 tile.contenttweaker.compressed_pumpkin.name=Compressed Pumpkin
 tile.contenttweaker.compressed_pumpkin_double.name=Double Compressed Pumpkin
 tile.contenttweaker.compressed_string.name=Compressed String
+tile.contenttweaker.compressed_string_double.name=Double Compressed String
 tile.contenttweaker.conglomerate_of_life.name=Conglomerate Of Life
 tile.contenttweaker.conglomerate_of_coal.name=Conglomerate Of Coal
 tile.contenttweaker.conglomerate_of_sun.name=Conglomerate Of Sun
