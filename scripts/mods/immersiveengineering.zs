@@ -228,6 +228,7 @@ mods.immersiveengineering.Excavator.addMineral("Osmium", 50, 0.005, ["oreTin", "
 mods.immersiveengineering.Excavator.addMineral("Nuclear Ore", 20, 0.005, ["oreBoron", "oreThorium"], [0.01, 0.01]);
 mods.immersiveengineering.Excavator.addMineral("Black Quartz", 20, 0.005, ["oreQuartzBlack", "oreCoal"], [0.3, 0.2]);
 mods.immersiveengineering.Excavator.getMineral("Platinum").removeOre("oreIridium");
+mods.immersiveengineering.Excavator.getMineral("Coal").removeOre("oreEmerald");
 
 # *======= Railgun rods =======*
 
@@ -537,10 +538,6 @@ mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_decoratio
 }).shaped(), <liquid:glass> * 1000, <forestry:wax_cast:*>);
 
 # ---------------------------------------------------------
-
-# For some reason all coils melt into gold only in Magmatic Crucible
-mods.thermalexpansion.Crucible.removeRecipe(<immersiveengineering:metal_decoration0:0>);
-
 
 # [Concrete Trapdoor] from [Concrete]
 craft.remake(<engineersdoors:trapdoor_concrete> * 2, ["pretty",

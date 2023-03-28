@@ -61,11 +61,6 @@
       "id": "OD:oreDiamond"
     },
     {
-      "target": "lime",
-      "weight": 10,
-      "id": "OD:oreEmerald"
-    },
-    {
       "target": "yellow",
       "weight": 12,
       "id": "OD:glowstone"

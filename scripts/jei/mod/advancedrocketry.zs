@@ -43,7 +43,6 @@ addAsteroid("Iridium Enriched asteroid"     , [25, 100, 0.8, 3, 10, 0.2], [<mine
 addAsteroid("Draconium asteroid"            , [64, 75, 0.7, 5, 1, 0.5]  , [<draconicevolution:draconium_ore>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Prosperity asteroid"           , [64, 75, 0.7, 5, 1, 0.5]  , [<mysticalagriculture:prosperity_ore>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Dimensional Shard asteroid"    , [64, 75, 0.7, 5, 1, 0.5]  , [<rftools:dimensional_shard_ore>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
-addAsteroid("Emerald asteroid"              , [64, 75, 0.7, 5, 1, 0.5]  , [<minecraft:emerald_ore>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Mana Infused asteroid"         , [64, 75, 0.7, 5, 1, 0.5]  , [<thermalfoundation:ore:8>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Destabilized Redstone asteroid", [64, 75, 0.7, 5, 1, 0.5]  , [<thermalfoundation:ore_fluid:2>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Energized Netherrack asteroid" , [64, 75, 0.7, 5, 1, 0.5]  , [<thermalfoundation:ore_fluid:3>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);

@@ -308,7 +308,6 @@ addTieredRecipe(<mysticalagriculture:tanzanite_seeds>,      [<biomesoplenty:gem_
 addTieredRecipe(<mysticalagriculture:nickel_seeds>,         [<ore:blockNickel> ,<ore:runeGreedB>], null);
 addTieredRecipe(<mysticalagriculture:fluxed_electrum_seeds>,[<ore:blockElectrumFlux> ,<ore:runeGreedB>], null);
 addTieredRecipe(<mysticalagriculture:diamond_seeds>,        [<ore:blockDiamond> ,<ore:runePrideB>], null);
-addTieredRecipe(<mysticalagriculture:emerald_seeds>,        [<ore:blockEmerald> ,<ore:runeEnvyB>], null);
 addTieredRecipe(<mysticalagriculture:ender_amethyst_seeds>, [<ore:blockAmethyst>, <astralsorcery:itemcoloredlens:2>], null);
 addTieredRecipe(<mysticalagriculture:void_metal_seeds>,     [<ore:blockVoid>], null);
 addTieredRecipe(<mysticalagriculture:rock_crystal_seeds>,   [<astralsorcery:itemcelestialcrystal:*>], "mineralis");
@@ -872,7 +871,6 @@ remakeBlock   ("mysticalagriculture:gemapatite"           , <blockstate:forestry
 // remakeBlock   ("mysticalagriculture:ingotosmium"          , <blockstate:mekanism:oreblock>                       , [<mysticalagriculture:osmium_essence>]);
 remakeBlock   ("mysticalagriculture:coal"                 , <blockstate:minecraft:coal_ore>                      , [<mysticalagriculture:coal_essence>]);
 remakeBlock   ("mysticalagriculture:diamond"              , <blockstate:minecraft:diamond_ore>                   , [<mysticalagriculture:diamond_essence>]);
-remakeBlock   ("mysticalagriculture:emerald"              , <blockstate:minecraft:emerald_ore>                   , [<mysticalagriculture:emerald_essence>]);
 remakeBlock   ("mysticalagriculture:gold_ingot"           , <blockstate:minecraft:gold_ore>                      , [<mysticalagriculture:gold_essence>]);
 remakeBlock   ("mysticalagriculture:iron_ingot"           , <blockstate:minecraft:iron_ore>                      , [<mysticalagriculture:iron_essence>]);
 remakeBlock   ("mysticalagriculture:dye_13"               , <blockstate:minecraft:lapis_ore>                     , [<mysticalagriculture:lapis_lazuli_essence>]);

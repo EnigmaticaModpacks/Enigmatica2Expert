@@ -100,7 +100,6 @@ val mineralisList = [
   <ore:oreDiamond>.firstItem * 2,
   <ore:oreSilver>.firstItem * 2,
   <ore:oreLapis>.firstItem,
-  <ore:oreEmerald>.firstItem,
   <ore:oreMithril>.firstItem,
   <ore:orePlatinum>.firstItem,
 /**/

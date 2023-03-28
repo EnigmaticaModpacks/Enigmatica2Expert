@@ -533,7 +533,6 @@ static values as int[int][string] = {
   "rftools:dimensional_shard": { 0: 4000 },
   "mysticalagriculture:diamond_essence": { 0: 4230 },
   "mysticalagriculture:draconium_essence": { 0: 4230 },
-  "mysticalagriculture:emerald_essence": { 0: 4230 },
   "mysticalagriculture:platinum_essence": { 0: 4230 },
   "mysticalagriculture:rock_crystal_essence": { 0: 4230 },
   "mysticalagriculture:uranium_essence": { 0: 4230 },

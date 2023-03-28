@@ -39,7 +39,6 @@ val endstoneList as int[IItemStack][] = [
   {<netherendingores:ore_other_1:5>: 20},
   {<netherendingores:ore_other_1:3>: 20},
   {<netherendingores:ore_end_vanilla:1>: 10},
-  {<netherendingores:ore_end_vanilla:2>: 10},
 /**/
 ] as int[IItemStack][];
 

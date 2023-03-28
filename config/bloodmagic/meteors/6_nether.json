@@ -16,7 +16,6 @@
     ,{"weight":100,"oreName" : "oreNetherLapis"}
     ,{"weight": 90,"oreName" : "oreNetherIron"}
     ,{"weight": 80,"oreName" : "oreNetherGold"}
-    ,{"weight": 70,"oreName" : "oreNetherEmerald"}
     ,{"weight": 60,"oreName" : "oreNetherDiamond"}
     ,{"weight":130,"oreName" : "oreNetherCoal"}
     ,{"weight": 30,"oreName" : "oreNetherPlatinum"}

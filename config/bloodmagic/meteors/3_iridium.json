@@ -10,7 +10,6 @@
     { "weight": 50, "oreName": "oreIron"}
     ,{"weight": 100,"oreName": "oreGold"}
     ,{"weight": 10, "oreName": "oreLapis"}
-    ,{"weight": 180,"oreName": "oreEmerald"}
     ,{"weight": 50, "oreName": "oreRedstone"}
     ,{"weight": 400,"oreName": "oreDiamond"}
     ,{"weight": 400,"oreName": "oreIridium"}

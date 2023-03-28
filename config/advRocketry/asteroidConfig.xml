@@ -15,10 +15,6 @@
 		<ore itemStack="rftools:dimensional_shard_ore" chance="100"/>
 		<ore itemStack="advancedrocketry:hotturf" chance="25"/>
 	</asteroid>
-	<asteroid name="Emerald asteroid" distance="75" mass="64" massVariability="1" probability="5" richness="0.7" richnessVariability="0.5">
-		<ore itemStack="minecraft:emerald_ore" chance="100"/>
-		<ore itemStack="advancedrocketry:hotturf" chance="25"/>
-	</asteroid>
 	<asteroid name="Mana Infused asteroid" distance="75" mass="64" massVariability="1" probability="5" richness="0.7" richnessVariability="0.5">
 		<ore itemStack="thermalfoundation:ore 8" chance="100"/>
 		<ore itemStack="advancedrocketry:hotturf" chance="25"/>

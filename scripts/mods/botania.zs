@@ -38,7 +38,6 @@ mods.botania.Orechid.addOre("oreApatite", 15000);
 
 # Add Orechid Ingem ores
 mods.botania.OrechidIgnem.addOre("oreNetherChargedCertusQuartz", 800);
-mods.botania.OrechidIgnem.addOre("oreNetherEmerald", 800);
 
 
 #-------------------------------#

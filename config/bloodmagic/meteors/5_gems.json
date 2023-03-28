@@ -9,7 +9,6 @@
   "components": [
     {"weight": 120,"oreName": "oreLapis"}
     ,{"weight":130,"oreName" : "oreDiamond"}
-    ,{"weight":180,"oreName" : "oreEmerald"}
     ,{"weight": 20,"oreName" : "oreCoal"}
     ,{"weight": 20,"oreName" : "oreRuby"}
     ,{"weight": 20,"oreName" : "orePeridot"}
