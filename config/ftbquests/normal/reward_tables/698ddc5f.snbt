@@ -402,6 +402,44 @@
 				"@15": 192
 			}
 		}
+	},
+	{
+		item: {
+			id: "openblocks:dev_null",
+			tag: {
+				Unbreakable: 1b,
+				inventory: {
+					size: 1,
+					Items: [{
+						id: "environmentalmaterials:alabaster",
+						Count: 64,
+						Damage: 8s,
+						Slot: 0b
+					}]
+				},
+				ench: [{}],
+				enchantmentColor: 4408131
+			}
+		}
+	},
+	{
+		item: {
+			id: "openblocks:dev_null",
+			tag: {
+				Unbreakable: 1b,
+				inventory: {
+					size: 1,
+					Items: [{
+						id: "sonarcore:reinforcedstonebrick",
+						Count: 64,
+						Damage: 0s,
+						Slot: 0b
+					}]
+				},
+				ench: [{}],
+				enchantmentColor: 4408131
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "decor",

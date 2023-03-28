@@ -589,6 +589,7 @@ q.mekanism.mekanism.name=通用机械
 q.mekanism.mekanism.desc=欢迎来到通用机械！\n\n通用机械是T2的科技模组，内容超多。它提供了某些方面最快的机器，近乎无穷的能量存储，超强的发电机以及更多内容。\n\n合成大多没有改变，但大多数机器的耗能比原本要多。\n\n这一章通向沉浸工程的重型机械，以及热力膨胀。
 q.mekanism.metallurgic_infuser.desc=冶金灌注机可以向很多材料中灌注碳、红石、钻石、黑曜石或生物燃料。它产出主要在通用机械中用到的各种合成材料。你会需要大量的合金与电路，因此批量生产一些，或者直接自动化生产。
 q.mekanism.solar_generator.desc=从日光中产能。
+q.mekanism.formulaic_assembli.desc=廉价的手艺人，有几个手艺人的配方。
 q.mekanism.enriched_alloy.desc=一种合成材料。
 q.mekanism.crusher.desc=粉碎物品的机器。
 q.mekanism.precision_sawmill.desc=精密锯木机可以把原木切成木板，也有其他功能。它的产率是1:6！

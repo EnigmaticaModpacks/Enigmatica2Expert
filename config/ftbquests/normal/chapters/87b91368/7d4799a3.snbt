@@ -35,7 +35,8 @@
 		},
 		{
 			item: "iceandfire:dragonegg_silver"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "b5fe7435",

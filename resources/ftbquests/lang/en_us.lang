@@ -589,6 +589,7 @@ q.mekanism.mekanism.name=Mekanism
 q.mekanism.mekanism.desc=Welcome to Mekanism!\n\nMekanism is a tier 2 tech mod, with tons of content. It offers some of the fastest machines, near infinite energy storage, insanely powerful generators and a lot more.\n\nThe recipes haven't been altered much, the energy usage of most machines is far higher than normally though.\n\nThis chapter leads to the Heavy Machinery from Immersive Engineering, aswell as Thermal Expansion.
 q.mekanism.metallurgic_infuser.desc=The Metallurgic Infuser can infuse various materials with Coal, Redstone, Diamond, Obsidian or Bio Fuel. It produces the main crafting components used throughout Mekanism. You're going to need tons of Circuits and Alloys, so it's a good idea to craft them in bulk, or automate their production.
 q.mekanism.solar_generator.desc=Produces power from the sun.
+q.mekanism.formulaic_assembli.desc=Cheap crafter with several crafting recipes.
 q.mekanism.enriched_alloy.desc=Crafting component.
 q.mekanism.crusher.desc=A Machine that crushes stuff.
 q.mekanism.precision_sawmill.desc=The Sawmill cuts Logs into Planks among other things. It gives you 6 Planks per Log!

@@ -25,7 +25,8 @@
 					data: "myrmexEgg"
 				}
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "b79b294f",

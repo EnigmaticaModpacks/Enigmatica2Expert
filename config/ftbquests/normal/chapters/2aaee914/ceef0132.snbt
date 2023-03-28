@@ -1,0 +1,28 @@
+{
+	x: -1.2d,
+	y: 3.5d,
+	text: [
+		"{q.mekanism.formulaic_assembli.desc}"
+	],
+	dependencies: [
+		"0b4341a3"
+	],
+	tasks: [{
+		uid: "c13e346e",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock3 1 5"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "756f1415",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}
