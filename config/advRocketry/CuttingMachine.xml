@@ -416,6 +416,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Stick] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<itemStack>forestry:frame_proven 1</itemStack>
+		</input>
+		<output>
+			<itemStack>forestry:oak_stick 30 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Infused Wood Planks] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

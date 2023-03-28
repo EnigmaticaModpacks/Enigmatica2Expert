@@ -60,9 +60,9 @@ for ore_entry in oreDict {
     val oreBlock = utils.getSomething(ore_name, ["ore"], 1);
     if(!isNull(oreBlock)) {
       scripts.jei.mod.thaumicwonders.addAlchemists(oreBlock * 1, ore_entry.firstItem);
-      val crsShard = utils.getSomething(ore_name, ["crystalShard"], 1);
-      if(!isNull(crsShard)) scripts.jei.mod.thaumicwonders.addAlienists(oreBlock * 1, crsShard * 1);
     }
+    val crsShard = utils.getSomething(ore_name, ["crystalShard"], 1);
+    if(!isNull(crsShard)) scripts.jei.mod.thaumicwonders.addAlienists(ore_entry, crsShard * 1);
 
     magicProcessing(ore_entry, ore_name);
     continue;

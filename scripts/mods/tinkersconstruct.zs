@@ -457,3 +457,15 @@ craft.reshapeless(<tconstruct:materials:2> * 4, "D", {
 # Unefficient Seared stone alt
 mods.mechanics.addTubeRecipe([<extrautils2:compressedcobblestone:1>], <liquid:stone> * 1000);
 mods.mechanics.addTubeRecipe([<additionalcompression:stone_compressed:1>], <liquid:stone> * 1000);
+
+# Stone sharpening kit alt for repairing automatisation
+mods.tconstruct.Casting.addTableRecipe(
+	<tconstruct:sharpening_kit>.withTag({Material: "stone"}),
+	<tconstruct:clay_cast>.withTag({PartType: "tconstruct:sharpening_kit"}),
+	<liquid:stone>, 144, true
+);
+mods.tconstruct.Casting.addTableRecipe(
+	<tconstruct:sharpening_kit>.withTag({Material: "stone"}),
+	<tconstruct:cast>.withTag({PartType: "tconstruct:sharpening_kit"}),
+	<liquid:stone>, 144, false
+);

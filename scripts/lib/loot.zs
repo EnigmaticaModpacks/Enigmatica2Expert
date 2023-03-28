@@ -28,14 +28,20 @@ function tweak(
       val smelted = utils.smelt(itemToAdd);
       if (!isNull(smelted)) {
         // Add with smelting function (if smelted item exist)
-        pool.addItemEntryHelper(smelted, poolWeight, 0, [
+        pool.addItemEntry(itemToAdd, poolWeight, 0, [
+          Functions.parse({
+            'function': 'minecraft:furnace_smelt',
+            conditions: [
+              {
+                properties: { 'minecraft:on_fire': true },
+                entity: 'this',
+                condition: 'minecraft:entity_properties',
+              },
+            ],
+          }),
           Functions.setCount(minMax[0], minMax[1]),
           Functions.lootingEnchantBonus(0, 1, 0),
-        ], isByPlayer
-          ? [
-              Conditions.killedByPlayer(), { condition: 'entity_properties', entity: 'this', properties: { on_fire: true } }]
-          : [{ condition: 'entity_properties', entity: 'this', properties: { on_fire: true } },
-            ]);
+        ], isByPlayer ? [Conditions.killedByPlayer()] : []);
       }
       else {
         // Add non-smelt function

@@ -237,10 +237,10 @@ craft.make(<advancedrocketry:spacechestplate>, ["pretty",
 # [Space Suit Leggings] from [Titanium Rod][+1]
 recipes.removeShaped(<advancedrocketry:spaceleggings>);
 craft.make(<advancedrocketry:spaceleggings>, ["pretty",
-  "w ╱ w",
+  "w □ w",
   "w   w",
   "w   w"], {
-  "╱": <ore:stickTitanium>, # Titanium Rod
+  "□": <ore:plateTitanium>, # Titanium Plate
   "w": <ore:woolPrime>, # Wool (Merino, White)
 });
 

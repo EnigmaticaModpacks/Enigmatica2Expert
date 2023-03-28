@@ -135,6 +135,9 @@ val merchData = {
       6: [
         [E*48, <tconevo:part_arcane_focus>.withTag({Material: "pulsating_crystal"})],
       ],
+      7: [
+        [E*64, <thermalfoundation:material:895>, <advancedrocketry:aliensapling>],
+      ],
     },
   },
   "minecraft:smith": {

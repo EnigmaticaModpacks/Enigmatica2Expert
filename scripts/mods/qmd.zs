@@ -95,17 +95,17 @@ craft.remake(<qmd:rtg_strontium>, ["pretty",
 });
 
 val ingrs = {
-  "O": <qmd:luminous_paint:2>,                      # Orange Radioluminescent Paint
-  "H": <nuclearcraft:rad_shielding:2>,              # Heavy Radiation Shielding
-  "R": <industrialforegoing:plastic>,               # Plastic
-  "a": <nuclearcraft:helm_hazmat>.withTag({}),      # Hazmat Suit Headwear
-  "z": <nuclearcraft:chest_hazmat>.withTag({}),     # Hazmat Suit Chestpiece
-  "●": <nuclearcraft:legs_hazmat>.withTag({}),      # Hazmat Suit Leggings
-  "m": <nuclearcraft:boots_hazmat>.withTag({}),     # Hazmat Suit Boots
-  "S": <ic2:hazmat_helmet>.withTag({}).anyDamage(), # Scuba Helmet
-  "⌀": <ic2:hazmat_chestplate>.withTag({}).anyDamage(), # Hazmat Suit
-  "○": <ic2:hazmat_leggings>.withTag({}).anyDamage(), # Hazmat Suit Leggings
-  "u": <ic2:rubber_boots>.withTag({}).anyDamage(),  # Rubber Boots
+  "O": <qmd:luminous_paint:2>, # Orange Radioluminescent Paint
+  "H": <nuclearcraft:rad_shielding:2>, # Heavy Radiation Shielding
+  "R": <industrialforegoing:plastic>, # Plastic
+  "a": <nuclearcraft:helm_hazmat:*> | <nuclearcraft:helm_hazmat:*>.withTag({}, false), # Hazmat Suit Headwear
+  "z": <nuclearcraft:chest_hazmat:*> | <nuclearcraft:chest_hazmat:*>.withTag({}, false), # Hazmat Suit Chestpiece
+  "●": <nuclearcraft:legs_hazmat:*> | <nuclearcraft:legs_hazmat:*>.withTag({}, false), # Hazmat Suit Leggings
+  "m": <nuclearcraft:boots_hazmat:*> | <nuclearcraft:boots_hazmat:*>.withTag({}, false), # Hazmat Suit Boots
+  "S": <ic2:hazmat_helmet:*> | <ic2:hazmat_helmet:*>.withTag({}, false), # Scuba Helmet
+  "⌀": <ic2:hazmat_chestplate:*> | <ic2:hazmat_chestplate:*>.withTag({}, false), # Hazmat Suit
+  "○": <ic2:hazmat_leggings:*> | <ic2:hazmat_leggings:*>.withTag({}, false), # Hazmat Suit Leggings
+  "u": <ic2:rubber_boots:*> | <ic2:rubber_boots:*>.withTag({}, false), # Rubber Boots
 } as IIngredient[string];
 
 # [HEV Helmet] from [Hazmat Suit Headwear][+4]

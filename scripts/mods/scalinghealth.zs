@@ -24,6 +24,7 @@ for mobId, ingr in {
   "emberroot:rainbow_golem"    : <ore:blockSheetmetalIron>,                #  Iron Sheetmetal
   "emberroot:withercat"        : <ore:dustWither>,                         #  Wither Dust
   "quark:crab"                 : <ore:foodCrabraw>,                        #  Raw Crab
+  "quark:pirate"               : <rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1 as float}}}),
   "rats:illager_piper"         : <ore:foodCheese>,
   "iceandfire:stymphalianbird" : <ore:peacockFeathers>,
   "iceandfire:dread_lich"      : <twilightforest:ice_bomb>,

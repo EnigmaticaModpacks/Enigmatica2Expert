@@ -89,12 +89,13 @@ function saw(input as IIngredient, output as IItemStack, exceptions as string = 
 // 📦 → 📦
 function sawWood(input as IIngredient, output as IItemStack, exceptions as string = null) {
   val pulp = <ore:dustWood>.firstItem;
+  val amount = output.amount;
 
-  work(['shapeless'],    exceptions, [input], null, [output * 2], null, [pulp], null);
-  work(['BlockCutter'],  exceptions, [input], null, [output * 4], null, [pulp], null);
-  work(['mekSawmill'],   exceptions, [input], null, [output * 4], null, [pulp], null);
-  work(['TESawmill'],    exceptions, [input], null, [output * 6], null, [pulp], null);
-  work(['AdvRockCutter'], exceptions, [input], null, [output * 10], null, [pulp], null);
+  work(['shapeless'],    exceptions, [input], null, [output * (amount * 2)], null, [pulp], null);
+  work(['BlockCutter'],  exceptions, [input], null, [output * (amount * 4)], null, [pulp], null);
+  work(['mekSawmill'],   exceptions, [input], null, [output * (amount * 4)], null, [pulp], null);
+  work(['TESawmill'],    exceptions, [input], null, [output * (amount * 6)], null, [pulp], null);
+  work(['AdvRockCutter'], exceptions, [input], null, [output * (amount * 10)], null, [pulp], null);
 }
 
 // Crush (grind) item to get it dusts and byproducts

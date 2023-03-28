@@ -39,7 +39,13 @@ scripts.process.squeeze([<betteranimalsplus:blubber>], <liquid:lubricant> * 50, 
 
 # This crab is unobtainable
 utils.rh(<betteranimalsplus:crab_meat_cooked>);
-furnace.remove(<betteranimalsplus:crab_meat_cooked>);
+utils.rh(<betteranimalsplus:crab_meat_raw>);
+
+# [Music Disc] from [Music Disc][+1]
+craft.reshapeless(<betteranimalsplus:record_crab_rave>, "Cr", {
+  "C": <ore:foodCrabraw>, # Raw Crab
+  "r": <ore:record>,      # Music Disc
+});
 
 # Do not unify Venison so we could summon Hirschgeist
 // scripts.lib.loot.tweak("betteranimalsplus:deer","deer-venison","betteranimalsplus:venisonraw", <betteranimalsplus:venisonraw>, [<harvestcraft:venisonrawitem>], [1,3]);

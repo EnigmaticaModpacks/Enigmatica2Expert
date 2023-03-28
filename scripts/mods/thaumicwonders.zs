@@ -99,22 +99,22 @@ for i, stone in transStones {
 
 # [Alienist's Stone] from [Starmetal Ingot][+7]
 mods.thaumcraft.Infusion.removeRecipe(<thaumicwonders:alienist_stone>);
-mods.thaumcraft.Infusion.registerRecipe(
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
   "alienist_stone", # Name
   "TWOND_ALIENIST_STONE@1", # Research
+  10, # Vis cost
+  [<aspect:aer> * 5, <aspect:aqua> * 5],
   <thaumicwonders:alienist_stone>.withDamage(transStoneMaxDamage - 128), # Output
-  3, # Instability
-  [<aspect:alkimia> * 10, <aspect:vitium> * 10],
-  <astralsorcery:itemcraftingcomponent:1>, # Central Item
   Grid(["pretty",
   "  ˛  ",
-  "ͺ   ‚",
+  "ͺ - ‚",
   "  ͵  "], {
   "˛": <ore:nuggetVoid>,      # Void Metal Nugget
   "ͺ": <ore:nuggetMalachite>, # Malachite Nugget
+  "-": <ore:ingotAstralStarmetal>,
   "‚": <ore:nuggetTopaz>,     # Topaz Nugget
   "͵": <ore:nuggetDraconium>, # Draconium Nugget
-}).spiral(1));
+}).shaped());
 
 # [Alchemist's Stone] from [Phial of Ordo Essentia]*5[+2]
 mods.thaumcraft.Crucible.removeRecipe(<thaumicwonders:alchemist_stone>);

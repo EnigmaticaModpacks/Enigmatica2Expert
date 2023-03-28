@@ -54,8 +54,8 @@ val cables = {
 
 for wire, c in cables {
   recipes.addShapeless('cable to wire #' ~ wire.damage, wire.withTag({wireLength: 9}), [c,c,c,c,c,c,c,c,c]);
-  recipes.addShapeless('wire recycle #' ~ wire.damage, c * 64, [
-    wire.withTag({wireLength: 64}, false).marked('marked'),
+  recipes.addShapeless('wire recycle #' ~ wire.damage, c * 9, [
+    wire.withTag({wireLength: 9}, false).marked('marked'),
     <immersiveengineering:tool:1>, // Cutters
   ],
     function(out, ins, cInfo) {

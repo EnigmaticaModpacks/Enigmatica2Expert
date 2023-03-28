@@ -542,12 +542,17 @@ recipes.addShapeless(<iceandfire:dragonforge_ice_core_disabled>, [<iceandfire:dr
 recipes.addShapeless(<iceandfire:dragonforge_fire_core_disabled>, [<iceandfire:dragonforge_fire_core>]);
 
 # Recycling myrmex resin
-scripts.process.squeeze([<iceandfire:myrmex_resin>          ], <liquid:resin>*120, null, <iceandfire:myrmex_desert_resin>);
-scripts.process.squeeze([<iceandfire:myrmex_resin:1>        ], <liquid:resin>*120, null, <iceandfire:myrmex_jungle_resin>);
-scripts.process.squeeze([<iceandfire:myrmex_resin_sticky>   ], <liquid:resin>*180, null, <iceandfire:myrmex_desert_resin> * 2);
-scripts.process.squeeze([<iceandfire:myrmex_resin_sticky:1> ], <liquid:resin>*180, null, <iceandfire:myrmex_jungle_resin> * 2);
-scripts.process.squeeze([<iceandfire:desert_myrmex_cocoon>  ], <liquid:resin>*480, null, <iceandfire:myrmex_desert_resin> * 8);
-scripts.process.squeeze([<iceandfire:jungle_myrmex_cocoon>  ], <liquid:resin>*480, null, <iceandfire:myrmex_jungle_resin> * 8);
+function addResinRecycle(input as IItemStack, amount as int, isDesert as bool) as void {
+	val output = (isDesert ? <iceandfire:myrmex_desert_resin> : <iceandfire:myrmex_jungle_resin>) % (2 * amount);
+	mods.thermalexpansion.Centrifuge.addRecipe([output], input, <liquid:resin> * (120 * amount), 2000);
+	mods.forestry.Squeezer.addRecipe(<liquid:resin> * (100 * amount), [input], 10, output);
+}
+addResinRecycle(<iceandfire:myrmex_resin>         , 1, true);
+addResinRecycle(<iceandfire:myrmex_resin:1>       , 1, false);
+addResinRecycle(<iceandfire:myrmex_resin_sticky>  , 2, true);
+addResinRecycle(<iceandfire:myrmex_resin_sticky:1>, 2, false);
+addResinRecycle(<iceandfire:desert_myrmex_cocoon> , 8, true);
+addResinRecycle(<iceandfire:jungle_myrmex_cocoon> , 8, false);
 
 # StackSize was 1
 <iceandfire:ambrosia>.maxStackSize = 64;

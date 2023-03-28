@@ -218,6 +218,10 @@ mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
 scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
 scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
 
+# Proven Frames recycling
+# [Impregnated Stick]*16 from [Proven Frame]
+scripts.process.sawWood(<forestry:frame_proven>, <forestry:oak_stick> * 3);
+
 <forestry:wax_cast>.maxDamage = 32;
 
 # [Advanced Analyzer] from [Analyzer][+2]

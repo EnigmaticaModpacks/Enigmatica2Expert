@@ -119,12 +119,18 @@ craft.remake(<draconicevolution:dislocator>, ["pretty",
   "F I F",
   "T ■ T",
   "F I F"], {
-  "■": <ore:blockGlass>,             # Chorus Glass
+  "■": <integratedterminals:chorus_glass>, # Chorus Glass
   "T": <mekanism:teleportationcore>, # Teleportation Core
   "F": <randomthings:flootoken>,     # Floo Token
   "I": <rftools:infused_enderpearl>, # Infused Enderpearl
 });
 
+# Resetting
+# [Dislocator] from [Teleportation Core][+1]
+craft.reshapeless(<draconicevolution:dislocator>, "DT", {
+  "D": <draconicevolution:dislocator>.anyDamage(), # Dislocator
+  "T": <mekanism:teleportationcore>,               # Teleportation Core
+});
 
 # Draconium chest easier
 var dchest = <draconicevolution:draconium_chest>;

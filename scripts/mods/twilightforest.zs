@@ -375,3 +375,67 @@ mods.tconstruct.Alloy.addRecipe(<liquid:lava> * 250,       [<liquid:fiery_essenc
 <entity:twilightforest:stable_ice_core>.addDrop(<mysticalagriculture:ice_essence>, 4, 12);
 <entity:twilightforest:unstable_ice_core>.addDrop(<forestry:crafting_material:5>, 3, 9);
 <entity:twilightforest:wraith>.addDrop(<enderio:block_holier_fog>, 10, 40);
+
+# [Aurora Block]*4 from [Plutonium-242][+4]
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "aurora_block", # Name
+  "FIRSTSTEPS", # Research
+  80, # Vis cost
+  [<aspect:aer> * 4, <aspect:aqua> * 4],
+  <twilightforest:aurora_block> * 4, # Output
+  Grid(["pretty",
+  "  M  ",
+  "M ▬ M",
+  "  M  "], {
+  "M": <botania:biomestonea:*>, # Metamorphic Swamp Stone
+  "▬": <ore:ingotPlutonium242All>, # Plutonium-242
+}).shaped());
+
+# [Auroralized Glass] from [Aurora Block][+1]
+craft.shapeless(<twilightforest:auroralized_glass>, "/■", {
+  "/": <botania:rainbowrod>.reuse(), # Rod of the Bifrost
+  "■": <twilightforest:aurora_block>, # Aurora Block
+});
+
+# [Underbrick] from [Phial of Exanimis Essentia][+1]
+mods.thaumcraft.Crucible.registerRecipe(
+  "underbrick", # Name
+  "BASEALCHEMY", # Research
+  <twilightforest:underbrick>, # Output
+  <ore:dustSoularium>, # Input
+  [<aspect:exanimis> * 20]
+);
+
+# [Hedge] from [Phial of Aversio Essentia][+1]
+mods.thaumcraft.Crucible.registerRecipe(
+  "hedge", # Name
+  "BASEALCHEMY", # Research
+  <twilightforest:hedge>, # Output
+  <ore:treeLeaves>, # Input
+  [<aspect:aversio> * 10]
+);
+
+# [Nagastone] from [Reinforced Stone]
+mods.botania.ManaInfusion.addAlchemy(<twilightforest:naga_stone:1>, <sonarcore:reinforcedstoneblock>, 5000);
+
+# [Huge Mushgloom]*4 from [Glowstone][+3]
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
+  "huge_mushgloom", # Name
+  "FIRSTSTEPS", # Research
+  10, # Vis cost
+  [<aspect:ignis>],
+  <twilightforest:huge_mushgloom> * 4, # Output
+  Grid(["pretty",
+  "  M  ",
+  "M g M",
+  "  M  "], {
+  "M": <minecraft:brown_mushroom_block>, # Mushroom
+  "g": <ore:glowstone>, # Glowstone
+}).shaped());
+
+# [Blue Castle Door] from [Yellow Rune][+5]
+craft.shapeless(<twilightforest:castle_door:3>, "LYC", {
+  "L": <twilightforest:lamp_of_cinders>.anyDamage().transformDamage(1), # Lamp of Cinders
+  "Y": <quark:rune:*>,                  # Yellow Rune
+  "C": <twilightforest:castle_brick:*>, # Castle Brick
+});

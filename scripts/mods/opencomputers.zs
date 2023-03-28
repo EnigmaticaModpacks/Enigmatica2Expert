@@ -2,6 +2,7 @@
 
 # Make robot easy to break and replace
 <opencomputers:robot>.hardness = 0.5;
+<opencomputers:cable>.hardness = 0.05;
 
 /*
 

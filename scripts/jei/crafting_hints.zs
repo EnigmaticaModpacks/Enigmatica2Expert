@@ -140,3 +140,10 @@ add1to1(null, <minecraft:fish:*>,
   <exnihilocreatio:item_mesh:3>.withTag({ench: [{lvl: 0 as short, id: 41}]}) |
   <exnihilocreatio:item_mesh:4>.withTag({ench: [{lvl: 0 as short, id: 41}]})
 );
+
+# Metamorphic stones
+addInsOutCatl([<minecraft:stone:*>], <botania:biomestonea:*>, <botania:specialflower>.withTag({type: "marimorphosis"}));
+
+# IC2 Booze
+addInsOutCatl([<minecraft:reeds>], <ic2:booze_mug:2>, <ic2:barrel:*>);
+addInsOutCatl([<ic2:fluid_cell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <ic2:crop_res:4>, <minecraft:wheat>], <ic2:booze_mug:2>, <ic2:barrel:*>);

@@ -482,6 +482,10 @@ val itemsToRecycle as string[] = [
 "qmd:legs_hev"               , "2", "nuclearcraft:rad_shielding:2", "!shapeless",
 "qmd:boots_hev"              , "2", "nuclearcraft:rad_shielding:2", "!shapeless",
 "qmd:lepton_cannon"          , "2", "qmd:ingot2:1", "neodymium",
+"advancedrocketry:spacehelmet"    , "2", "libvulpes:productingot:7", "titanium",
+"advancedrocketry:spacechestplate", "1", "libvulpes:productingot:7", "titanium",
+"advancedrocketry:spaceleggings"  , "1", "libvulpes:productingot:7", "titanium",
+"advancedrocketry:spaceboots"     , "2", "libvulpes:productingot:7", "titanium",
 ];
 
 # Exceptions for machines that can saw

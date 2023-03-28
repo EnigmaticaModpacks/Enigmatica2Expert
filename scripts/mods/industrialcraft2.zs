@@ -579,7 +579,7 @@ craft.remake(<ic2:mining_pipe> * 64, ["pretty",
 # Coil rework
 # replace IC2 coil with Copper Wires
 # --------------------------
-utils.rh(<ic2:crafting:5>);
+recipes.remove(<ic2:crafting:5>);
 
 static copperCoil as IIngredient = <industrialwires:ic2_wire_coil:1>
 .withTag({wireLength: 9}, false)
@@ -590,6 +590,15 @@ static copperCoil as IIngredient = <industrialwires:ic2_wire_coil:1>
 	if(len <= 9) return null;
 	return item.updateTag({ wireLength: len - 9 });
 }) as IIngredient;
+
+# [Coil] for Electric Heater
+craft.remake(<ic2:crafting:5> * 5, ["pretty",
+  "= = =",
+  "- - -",
+  "= = ="], {
+  "-": <ore:nuggetFakeIron>,
+  "=": copperCoil,
+});
 
 # [LV-Transformer] from [Copper Wire Coil][+2]
 craft.remake(<ic2:te:77>, ["pretty",

@@ -3,8 +3,6 @@ import crafttweaker.item.IIngredient;
 
 #modloaded thaumicenergistics
 
-#loader crafttweaker reloadableevents
-
 /* 
 This fix not working - event not fired at all
 

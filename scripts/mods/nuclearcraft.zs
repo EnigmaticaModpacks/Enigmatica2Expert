@@ -174,6 +174,11 @@ mods.mekanism.infuser.addRecipe("GLOWSTONE", 10, <minecraft:redstone>, <nuclearc
 # Graphite from coal
 furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:*>);
 
+# Coal casted into graphite block
+mods.tconstruct.Casting.removeBasinRecipe(<nuclearcraft:ingot_block:8>);
+mods.tconstruct.Casting.addBasinRecipe(<nuclearcraft:ingot_block:8>, null, <liquid:coal>, 900);
+mods.tconstruct.Melting.addRecipe(<liquid:coal> * 900, <nuclearcraft:ingot_block:8>);
+
 # Diamond from 64 graphite
 scripts.process.compress(<ore:dustGraphite> * 64, <minecraft:diamond>, "except: Compressor");
 

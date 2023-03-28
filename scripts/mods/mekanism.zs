@@ -700,8 +700,8 @@ val bioFuelList = {
 	<exnihilocreatio:item_cooked_silkworm>   : 6,  # Cooked Silkworm
 	<ore:cropMelon>                          : 8,  # Melon
 	<twilightforest:raw_meef>                : 8,  # Raw Meef
-	<iceandfire:myrmex_desert_biolight>      : 10, # Desert Myrmex Bioluminescence
-	<iceandfire:myrmex_jungle_biolight>      : 10, # Jungle Myrmex Bioluminescence
+	<iceandfire:myrmex_desert_biolight>      : 64, # Desert Myrmex Bioluminescence
+	<iceandfire:myrmex_jungle_biolight>      : 64, # Jungle Myrmex Bioluminescence
 	<ic2:crafting:20>                        : 10, # Plantball
 	<actuallyadditions:item_worm>            : 16, # Worm
 	<twilightforest:cooked_meef>             : 10, # Meef Steak
@@ -739,7 +739,7 @@ scripts.processWork.work(["Squeezer"],            null, [<ore:oreOsmium>], null,
 scripts.processWork.work(["MechanicalSqueezer"],  null, [<ore:oreOsmium>], null, [OD*2, OD], null, null, [0.5 ]);
 
 # Oredicting cheaper recipe
-# [Formulaic Assemblicator] from [Steel Mechanical Component][+3]
+# [Formulaic Assemblicator] from [Slag][+3]
 craft.remake(<mekanism:machineblock3:5>, ["pretty",
   "‚ w ‚",
   ": S :",
@@ -747,7 +747,7 @@ craft.remake(<mekanism:machineblock3:5>, ["pretty",
   "‚": <ore:nuggetSteel>, # Steel Nugget
   "w": <ore:workbench>, # Crafting Table
   ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
-  "S": <immersiveengineering:material:9>, # Steel Mechanical Component
+  "S": <ore:itemSlag>, # Slag
 });
 
 # Harder to prevent spamming
