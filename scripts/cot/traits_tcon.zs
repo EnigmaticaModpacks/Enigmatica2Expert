@@ -174,7 +174,7 @@ difficulty.onHit = function(trait, tool, attacker, target, damage, isCritical) {
   val player as IPlayer = attacker;
   if(player.world.isRemote()) return;
   if(damage <= 0) return;
-  mods.ctintegration.scalinghealth.DifficultyManager.addDifficulty(player, -0.01 * damage);
+  mods.ctintegration.scalinghealth.DifficultyManager.addDifficulty(player, -0.001 * damage);
 };
 difficulty.register();
 
