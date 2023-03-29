@@ -4,8 +4,16 @@
   "tooltipScale": 2,
   "customIndividualGuiScales": {
     "us.getfluxed.controlsearch.client.gui.GuiNewControls": {
-      "name": "us.getfluxed.controlsearch.client.gui.GuiNewControls",
-      "scale": 2
+      "scale": 2,
+      "name": "us.getfluxed.controlsearch.client.gui.GuiNewControls"
+    },
+    "com.github.terminatornl.laggoggles.client.gui.GuiScanResultsWorld": {
+      "scale": 1,
+      "name": "com.github.terminatornl.laggoggles.client.gui.GuiScanResultsWorld"
+    },
+    "com.github.terminatornl.laggoggles.client.gui.GuiFPSResults": {
+      "scale": 1,
+      "name": "com.github.terminatornl.laggoggles.client.gui.GuiFPSResults"
     }
   },
   "customGroupGuiScales": {},
