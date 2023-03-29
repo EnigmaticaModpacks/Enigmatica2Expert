@@ -53,10 +53,10 @@ static agglMultiblock as AgglomerationMultiblock = AgglomerationMultiblock
 // mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
 mods.astralsorcery.LightTransmutation.addTransmutation(<tconstruct:metal>, <minecraft:diamond_block>, 50);
 
-function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as string) {
+function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as string) as void {
   var hash = abs(ore_name.hashCode());
   var dirtyGem = oreDict['dirtyGem' ~ore_name].firstItem;
-  if (isNull(dirtyGem)) return null; // 🛑
+  if (isNull(dirtyGem)) return; // 🛑
 
   var currItem as IItemStack = nativeClusterOreEntry.firstItem;
   var prevItem as IItemStack = null;
@@ -89,8 +89,8 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   //  ╚═╝
   prevItem = currItem;
   currItem = processList[k]; k += 1;
-  if (isNull(currItem)) return null; // 🛑
-  var crystalShard = oreDict['crystalShard' ~ore_name].firstItem; if (isNull(crystalShard)) return null; // 🛑
+  if (isNull(currItem)) return; // 🛑
+  var crystalShard = oreDict['crystalShard' ~ore_name].firstItem; if (isNull(crystalShard)) return; // 🛑
   furnace.addRecipe(dirtyGem * 1, currItem);
 
   // mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
@@ -108,7 +108,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   // ╚══════╝
   prevItem = currItem;
   currItem = processList[k]; k += 1;
-  if (isNull(currItem)) return null; // 🛑
+  if (isNull(currItem)) return; // 🛑
   furnace.addRecipe(dirtyGem * 4, currItem);
 
   val biomeStone = itemUtils.getItem('botania:biomestonea', hash % 8) * 2;
@@ -130,8 +130,8 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   // ╚═════╝
   prevItem = currItem;
   currItem = processList[k]; k += 1;
-  if (isNull(currItem)) return null; // 🛑
-  var poop = getPoop(ore_name); if (isNull(poop)) return null; // 🛑
+  if (isNull(currItem)) return; // 🛑
+  var poop = getPoop(ore_name); if (isNull(poop)) return; // 🛑
   furnace.addRecipe(dirtyGem * 10, currItem);
 
   // mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
@@ -147,7 +147,7 @@ function magicProcessing(nativeClusterOreEntry as IOreDictEntry, ore_name as str
   //      ╚═╝
   prevItem = currItem;
   currItem = processList[k]; k += 1;
-  if (isNull(currItem)) return null; // 🛑
+  if (isNull(currItem)) return; // 🛑
   furnace.addRecipe(dirtyGem * 48, currItem);
 
   mods.thaumcraft.Infusion.registerRecipe(
