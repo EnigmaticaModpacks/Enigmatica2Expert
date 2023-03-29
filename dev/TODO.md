@@ -3,10 +3,9 @@
 List of priorities:
 
 - [ ] 💥 `world.catenation()` doesnt working anymore
-- [ ] 💥 bow On Dragon Causing Crash
-- [ ] 💥 Placing something on Rustic's slabs crashing game
 - [ ] 💥 going Between Dims Causing Client Freezez
-- [ ] ✏️ dev/null/ with infinite Scaffold, Cobblestone
+- [ ] ✏️ dev/null/ prevent withdrawl after placing
+- [ ] 📀 Remove, 8% FPS `de.sanandrew.mods.immersivecables.client.render.RenderTileIWConnectable.setLightmap()`
 
 ### v0.89.0 -> Next
 - Turn off Fusion reactors since plasma
@@ -19,6 +18,13 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📀 Tweak Myrmex trades
+- [ ] ✏️ `Conglomerate of Life` spawns Foxes and Pigmen near portal
+- [ ] ✏️ `Conglomerate of Coal` should buff portal spread with `onRandomTick`
+- [ ] 🔨 rework Difficulty Trait
+- [ ] ✏️ Quark Frog Drop Cooked Legs on death
+- [ ] 🔄 Giant chest disable sort buttons
+- [ ] 📀 Rebalance Sage and Druids trades
 - [ ] ✏️ Add compressed `Charged Creeper chunk`
 - [ ] ✏️ Make Seared Stone + Essence alternative in adv. machinesl
 - [ ] 📀 Make Vase accept only unstackable items, increase size https://github.com/cadaverous-eris/Rustic/blob/master/src/main/java/rustic/common/tileentity/ContainerVase.java
