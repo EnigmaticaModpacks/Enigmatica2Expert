@@ -116,7 +116,7 @@ mods.immersivetechnology.SteamTurbine.addFuel(<liquid:exhauststeam> * 500, <liqu
 # High pressure steam use NC HPS extremely efficient
 # --------------
 mods.immersivetechnology.HighPressureSteamTurbine.removeFuel(<liquid:highpressuresteam>);
-mods.immersivetechnology.HighPressureSteamTurbine.addFuel(<liquid:exhaust_steam> * 10, <liquid:high_pressure_steam> * 10, 1);
+mods.immersivetechnology.HighPressureSteamTurbine.addFuel(<liquid:exhaust_steam> * 40, <liquid:high_pressure_steam> * 40, 1);
 
 # --------------
 # Cooling Tower x6
