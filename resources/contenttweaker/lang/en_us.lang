@@ -270,9 +270,9 @@ tooltips.lang.experience=Experience
 
 tooltips.dim_stages.healthy=§4You need to have at least §6%s HP§4 (%s hearts) to visit the §cNether
 tooltips.dim_stages.healthy_grant=You reached §6%s HP§r (%s hearts)!§r Now you can visit the §cNether
-tooltips.dim_stages.restricted=§cIn §bSkyblock §cworlds, you cannot visit any other dimension §8(except Space and personal ones)§r.
-tooltips.dim_stages.enter_skyblock=§eYou started a §bSkyblock §eworld. You cannot visit any other dimension §8(except Space and personal ones). Also you get Haste IV for 3 hours.§r
-tooltips.dim_stages.remind_skyblock=§eYou have entered a §bSkyblock §eworld again. Remember: you cannot visit any other dimension §8(except Space and personal ones)§r.
+tooltips.dim_stages.restricted=§cIn §bSkyblock §cworlds, you cannot visit any other dimension §8(except Space, RFTools and personal ones)§r.
+tooltips.dim_stages.enter_skyblock=§eYou started a §bSkyblock §eworld. You cannot visit any other dimension §8(except Space, RFTools and personal ones). Also you get Haste IV for 3 hours.§r
+tooltips.dim_stages.remind_skyblock=§eYou have entered a §bSkyblock §eworld again. Remember: you cannot visit any other dimension §8(except Space, RFTools and personal ones)§r.
 
 requious.jei.recipe.adv_bee_analyzer=Advanced Analyzer
 requious.jei.recipe.alchemists_stone=Alchemists Stone

@@ -277,9 +277,9 @@ tooltips.lang.experience=Опыт
 
 tooltips.dim_stages.healthy=§4Вам нужно иметь хотя бы §6%s HP§4 (%s сердец) что бы посетить §cНезер
 tooltips.dim_stages.healthy_grant=Вы набрали §6%s HP§r (%s сердец)!§r Теперь вы можете посетить §cНезер
-tooltips.dim_stages.restricted=§cВ мире §bСкайблока §c. Вы не можете посетить другие измерения §8(кроме личных и Космоса)§r.
-tooltips.dim_stages.enter_skyblock=§eВы запустили мир-§bСкайблок §e. Вы не можете посетить другие измерения §8(кроме личных и Космоса). А еще тебе дали Хасту на 3 часа.§r
-tooltips.dim_stages.remind_skyblock=§eВы снова запустили мир-§bСкайблок §e. Помните: вы не можете посетить другие измерения §8(кроме личных и Космоса)§r.
+tooltips.dim_stages.restricted=§cВ мире §bСкайблока §c. Вы не можете посетить другие измерения §8(кроме личных, RFTools и Космоса)§r.
+tooltips.dim_stages.enter_skyblock=§eВы запустили мир-§bСкайблок §e. Вы не можете посетить другие измерения §8(кроме личных, RFTools и Космоса). А еще тебе дали Хасту на 3 часа.§r
+tooltips.dim_stages.remind_skyblock=§eВы снова запустили мир-§bСкайблок §e. Помните: вы не можете посетить другие измерения §8(кроме личных, RFTools и Космоса)§r.
 
 requious.jei.recipe.adv_bee_analyzer=Расширенный Анализатор
 requious.jei.recipe.alchemists_stone=Камень Алхимиов
