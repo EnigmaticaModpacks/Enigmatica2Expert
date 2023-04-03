@@ -242,4 +242,376 @@
   "path":"stages/1/text",
   "value": "thaumicaugmentation.research.impetus_generatorfix.1"}
 ]}
+
+,{"key":"METALPURIFICATION","ops":[
+  {"op":"replace",
+  "path":"stages/0/recipes",
+  "value": [
+    "thaumcraft:metal_purification_iron",
+    "thaumcraft:metal_purification_gold",
+    "thaumcraft:metal_purification_cinnabar",
+    "thaumcraft:metal_purification_copper",
+    "thaumcraft:metal_purification_tin",
+    "thaumcraft:metal_purification_silver",
+    "thaumcraft:metal_purification_lead",
+    "thaumcraft:metal_purification_aluminium", 
+    "thaumcraft:metal_purification_nickel",
+    "thaumcraft:metal_purification_iridium" ,
+    "thaumcraft:metal_purification_platinum",
+    "thaumcraft:metal_purification_uranium",
+    "thaumcraft:metal_purification_osmium",
+    "thaumcraft:metal_purification_ardite",
+    "thaumcraft:metal_purification_cobalt",
+    "thaumcraft:metal_purification_tungsten",
+    "thaumcraft:metal_purification_starmetal",
+    "thaumcraft:metal_purification_boron",
+    "thaumcraft:metal_purification_lithium",
+    "thaumcraft:metal_purification_magnesium",
+    "thaumcraft:metal_purification_thorium",
+    "thaumcraft:metal_purification_manainfusedingot",
+    "thaumcraft:metal_purification_blackquartz",
+    "thaumcraft:metal_purification_draconium",
+    "thaumcraft:metal_purification_titanium"
+]}
+]}
+
+,{"key":"PURE_TEAR","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"CLEANSING_AMULET","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"!TWOND_CORRUPTION_AVATAR","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["HEX"]}
+]}
+
+,{"key":"TWOND_CLEANSING_CHARM","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"TWOND_MYSTIC_GARDENING","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"TWOND_DIMENSIONAL_RIPPER","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["SPIKY"]}
+]}
+
+,{"key":"TWOND_PRIMAL_DESTROYER","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"TWOND_MADNESS_ENGINE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["SPIKY"]}
+]}
+
+,{"key":"TWOND_ALIENIST_STONE","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"TWOND_MEATY_ORB","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"TWOND_PRIMORDIAL_ACCRETION_CHAMBER","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"BASEALCHEMY","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"BATHSALTS","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"KNOWLEDGETYPES","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"THEORYRESEARCH","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"WARP","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"CRYSTALFARMER","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"UNLOCKELDRITCH","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND","SPIKY"]}
+]}
+
+,{"key":"FLUXRIFT","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"CrimsonRites","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"TCONEVO_BASE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"PRIMPEARL","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"PRIMPEARL","ops":[
+  {"op":"replace",
+  "path":"stages",
+  "value": [{"text": "research.PRIMPEARL.stage.1"
+            ,"required_knowledge":["OBSERVATION;BASICS;1","THEORY;BASICS;1"]}
+            ,{"text":"research.PRIMPEARL.stage.1"}]}
+]}
+
+,{"key":"PURE_TEAR","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"CLEANSING_AMULET","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"STARFIELD_GLASS_RIFT","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"STARFIELD_GLASS_MIRROR","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"STARFIELD_GLASS_FRACTURE","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"RIFT_STUDIES","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"!VOIDSTONE","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"!VOIDSTONE","ops":[
+  {"op":"replace",
+  "path":"stages",
+  "value": [{"text": "thaumicaugmentation.research.void_stone.0"
+            ,"required_item":["thaumicaugmentation:stone"]}
+            ,{"text":"thaumicaugmentation.research.void_stone.0"}]}
+]}
+
+,{"key":"VOID_STONE_USAGE","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"RIFT_POWER","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"ELDRITCH_SPIRE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["SPIKY"]}
+]}
+
+,{"key":"ELDRITCH_EPIPHANY","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND", "SPIKY"]}
+]}
+
+,{"key":"RIFT_MANAGEMENT","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"THAUMIC_AUGMENTATION_BASE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"IMPETUS","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"BOOTS_VOID","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"MORPHIC_TOOL","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"PRIMAL_CUTTER","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"AUTOCASTER","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"GAUNTLET_VOID","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"EMPTINESS_MODIFIER","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"ELYTRA_HARNESS","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"FOCUSCURSE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE"]}
+]}
+
+,{"key":"FOCUSRIFT","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"FOCUSSCATTER","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE"]}
+]}
+
+,{"key":"FOCUSCLOUD","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"MATSTUDWOOD","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE","ROUND"]}
+]}
+
+,{"key":"MATSTUDBRASS","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE","ROUND"]}
+]}
+
+,{"key":"MATSTUDTHAUMIUM","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"MATSTUDVOID","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"CONTROLSEALS","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"MINDBIOTHAUMIC","ops":[
+  {"op":"remove",
+  "path":"meta"}
+]}
+
+,{"key":"INFUSIONSTABLE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE"]}
+]}
+
+,{"key":"INFUSIONANCIENT","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE"]}
+]}
+
+,{"key":"CHARMUNDYING","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE"]}
+]}
+
+,{"key":"INFUSIONELDRITCH","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["REVERSE"]}
+]}
+
+,{"key":"ORE","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
 ]

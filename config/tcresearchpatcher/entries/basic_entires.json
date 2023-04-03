@@ -6,7 +6,6 @@
             "icons": [ "thaumadditions:vis_scribing_tools" ],
             "category": "BASICS", "location": [ 5,-3 ], 
             "parents": [ "THEORYRESEARCH","RECHARGEPEDESTAL" ], 
-            "meta": ["HIDDEN"],    
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:vis_scribing_tools.1", 
@@ -24,7 +23,7 @@
             "icons": [ "thaumadditions:crystal_block" ],
             "category": "BASICS", "location": [ -4,2 ], 
             "parents": [ "CRYSTALFARMER" ], 
-            "meta": ["HIDDEN","ROUND"],    
+            "meta": ["ROUND"],    
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:crystal_block.1", 
@@ -42,7 +41,6 @@
             "icons": [ "thaumadditions:growth_chamber" ],
             "category": "BASICS", "location": [ -3,1 ], 
             "parents": [ "TAR_CRYSTAL_BLOCK", "INFUSION" ], 
-            "meta": ["HIDDEN"],    
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:growth_chamber.1", 
@@ -59,8 +57,7 @@
             "name": "research_name.thaumadditions:totems",
             "icons": [ "thaumadditions:dawn_totem","thaumadditions:twilight_totem" ],
             "category": "BASICS", "location": [ -4,-4 ], 
-            "parents": [ "FLUXCLEANUP" ], 
-            "meta": ["HIDDEN"],    
+            "parents": [ "FLUXCLEANUP" ],  
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:totems.1", 
@@ -81,8 +78,7 @@
             "name": "research_name.thaumadditions:puriflower",
             "icons": [ "thaumadditions:puriflower" ],
             "category": "BASICS", "location": [ -6,-2 ], 
-            "parents": [ "TOTEMANCY" ], 
-            "meta": ["HIDDEN"],    
+            "parents": [ "TOTEMANCY" ],   
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:puriflower.1", 
@@ -97,7 +93,8 @@
             "key": "!TARBlueWolf",     
             "name": "research_name.thaumadditions:blue_wolf",
             "icons": [ "thaumadditions:textures/research/blue_wolf.png" ],
-            "category": "BASICS", "location": [ -10,-1 ], "meta": [ "HEX","HIDDEN" ],     
+            "category": "BASICS", "location": [ -10,-1 ], "meta": [ "HEX" ],
+            "meta": ["HIDDEN","HEX"],     
             "stages": [{"text": "research_stage.thaumadditions:blue_wolf"}]
             }
     ]

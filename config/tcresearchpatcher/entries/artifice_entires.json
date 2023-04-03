@@ -5,7 +5,7 @@
             "name": "research_name.thaumadditions:arcane_cake",
             "icons": [ "thaumadditions:textures/items/cake.png" ],
             "category": "ARTIFICE", "location": [ -2,-1 ], 
-            "meta":["ROUND","HIDDEN"],
+            "meta":["ROUND"],
             "parents": [ "BASEARTIFICE","PRIMPEARL" ],     
             "stages": [
                 {
@@ -115,7 +115,6 @@
             "icons": [ "thaumadditions:crystal_bore" ],
             "category": "ARTIFICE", "location": [ 0,4 ], 
             "parents": [ "BASEARTIFICE","CRYSTALFARMER" ],
-            "meta":["HIDDEN"],
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:crystal_bore.1",

@@ -119,3 +119,39 @@ recipes.remove(<quark:gravisand>);
 
 recipes.removeByRecipeName("quark:turf");
 recipes.addShapeless('turf any grass', <quark:turf>, [<ore:grassTall>, <ore:grassTall>, <ore:grassTall>, <ore:grassTall>]);
+
+# [Cave root]
+mods.thaumcraft.Crucible.registerRecipe(
+  "quark:root", # Name
+  "HEDGEALCHEMY@1", # Research
+  <quark:root>, # Output
+  <harvestcraft:ediblerootitem>, # Input
+  [<aspect:herba>*5]
+);
+
+# [Blue sprout]
+mods.thaumcraft.Crucible.registerRecipe(
+  "quark:root_flower_blue", # Name
+  "HEDGEALCHEMY@1", # Research
+  <quark:root_flower>, # Output
+  <harvestcraft:ediblerootitem>, # Input
+  [<aspect:instrumentum>*5]
+);
+
+# [Black sprout]
+mods.thaumcraft.Crucible.registerRecipe(
+  "quark:root_flower_black", # Name
+  "HEDGEALCHEMY@1", # Research
+  <quark:root_flower:1>, # Output
+  <harvestcraft:ediblerootitem>, # Input
+  [<aspect:tenebrae>*5]
+);
+
+# [White sprout]
+mods.thaumcraft.Crucible.registerRecipe(
+  "quark:root_flower_white", # Name
+  "HEDGEALCHEMY@1", # Research
+  <quark:root_flower:2>, # Output
+  <harvestcraft:ediblerootitem>, # Input
+  [<aspect:potentia>*5]
+);
