@@ -332,6 +332,39 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Nichrome Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotNickel 1</oreDict>
+			<oreDict>ingotChromium 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:ingot_alloy 2 5</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Niobium-Tin Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotNiobium 3</oreDict>
+			<oreDict>ingotTin 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:ingot_alloy 4 1</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Niobium-Titanium Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotNiobium 1</oreDict>
+			<oreDict>ingotTitanium 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:ingot_alloy 2 3</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Osmiridium Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
@@ -365,11 +398,44 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Stainless Steel Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotSteel 5</oreDict>
+			<oreDict>ingotChromium 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:ingot_alloy 6 2</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Super Alloy Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>ingotNichrome 4</oreDict>
+			<oreDict>ingotNiobiumTitanium 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:ingot_alloy 3 6</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Tungsten Carbide Ingot] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>dustTungsten 1</oreDict>
+			<oreDict>ingotGraphite 1</oreDict>
+		</input>
+		<output>
+			<itemStack>qmd:ingot_alloy 2 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Tungsten Filament] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>qmd:ingot 1</itemStack>
-			<itemStack>qmd:ingot 1</itemStack>
+			<oreDict>ingotTungsten 1</oreDict>
+			<oreDict>ingotTungsten 1</oreDict>
 		</input>
 		<output>
 			<itemStack>qmd:source 1 0</itemStack>

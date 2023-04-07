@@ -30,28 +30,28 @@ craft.shapeless(<qmd:chemical_dust:1> * 3, "∆♠∆▲♠▲♣♠♣", {
 scripts.process.alloy([<ore:dyeBlue>, <ore:bioplastic>, <ore:bioplastic>], <qmd:part:3>);
 
 # [Basic Processor] from [N-Type Doped Silicon][+3]
-mods.immersiveengineering.Blueprint.addRecipe('components', <qmd:semiconductor:4> * 4, Grid(["NF⌂F□F"], {
+craft.make(<qmd:semiconductor:4> * 4, ["NF","⌂F","□F"], {
   "N": <ore:siliconNDoped>,     # N-Type Doped Silicon
   "F": <fluxnetworks:flux>,     # Flux
   "⌂": <forestry:chipsets:3>.withTag({T: 3 as short}, false), # Intricate Circuit Board
   "□": <ore:circuitUltimate>, # Ultimate Control Circuit
-}).shapeless());
+});
 
 # [Advanced Processor] from [P-Type Doped Silicon][+3]
-mods.immersiveengineering.Blueprint.addRecipe('components', <qmd:semiconductor:5>, Grid(["BF▲FPF"], {
+craft.make(<qmd:semiconductor:5>, ["BF","▲F","PF"], {
   "B": <ore:processorBasic>,    # Basic Processor
   "F": <fluxnetworks:flux>,     # Flux
   "▲": <ore:dustHafniumOxide>,  # Hafnium Oxide
   "P": <ore:siliconPDoped>,     # P-Type Doped Silicon
-}).shapeless());
+});
 
 # [Elite Processor] from [Platinum Plate][+3]
-mods.immersiveengineering.Blueprint.addRecipe('components', <qmd:semiconductor:6>, Grid(["AB▲B□B"], {
+craft.make(<qmd:semiconductor:6>, ["AB","▲B","□B"], {
   "A": <ore:processorAdvanced>, # Advanced Processor
   "B": <ore:wireBSCCO>,         # BSCCO Wire
   "▲": <ore:dustHafniumOxide>,  # Hafnium Oxide
   "□": <ore:platePlatinum>,     # Platinum Plate
-}).shapeless());
+});
 
 # [Accelerator Casing]*64 from [Steel Chassis][+2]
 craft.remake(<qmd:accelerator_casing> * 64, ["pretty",
@@ -137,12 +137,18 @@ craft.make(<qmd:boots_hev>, ["pretty",
 );
 
 # [Tungsten Filament] from [Tungsten Ingot]
-scripts.process.alloy([<qmd:ingot>, <qmd:ingot>],
+scripts.process.alloy([<ore:ingotTungsten>, <ore:ingotTungsten>],
   <qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}), "except: AlloyFurnace"
 );
 
-# [Neodymium Magnet] from [Neodymium Ingot][+1]
-scripts.process.alloy([<ore:ingotNeodymium>, <ore:ingotFerroboron>, <ore:ingotFerroboron>], <qmd:part:8>);
+val alloyMachines = "except: alloyFurnace kiln";
+scripts.process.alloy([<ore:ingotNeodymium>, <ore:ingotFerroboron>, <ore:ingotFerroboron>], <qmd:part:8>); # [Neodymium Magnet] from [Neodymium Ingot][+1]
+scripts.process.alloy([<ore:dustTungsten>     , <ore:ingotGraphite>]       , <qmd:ingot_alloy>   * 2, alloyMachines); # [Tungsten Carbide Ingot]*2 from [Graphite Ingot][+1]
+scripts.process.alloy([<ore:ingotNiobium> * 3 , <ore:ingotTin>]            , <qmd:ingot_alloy:1> * 4, alloyMachines); # [Niobium-Tin Ingot]*4 from [Tin Ingot][+1]
+scripts.process.alloy([<ore:ingotSteel> * 5   , <ore:ingotChromium>]       , <qmd:ingot_alloy:2> * 6, alloyMachines); # [Stainless Steel Ingot]*6 from [Chromium Ingot][+1]
+scripts.process.alloy([<ore:ingotNiobium>     , <ore:ingotTitanium>]       , <qmd:ingot_alloy:3> * 2, alloyMachines); # [Niobium-Titanium Ingot]*2 from [Titanium Ingot][+1]
+scripts.process.alloy([<ore:ingotNickel>      , <ore:ingotChromium>]       , <qmd:ingot_alloy:5> * 2, alloyMachines); # [Nichrome Ingot]*2 from [Chromium Ingot][+1]
+scripts.process.alloy([<ore:ingotNichrome> * 2, <ore:ingotNiobiumTitanium>], <qmd:ingot_alloy:6> * 3, alloyMachines); # [Super Alloy Ingot]*3 from [Niobium-Titanium Ingot][+1]
 
 # [Copper Oxide] from [Universal Fluid Cell][+1]
 scripts.process.fill(<ore:dustCopper>, <fluid:oxygen> * 1000, <qmd:chemical_dust:4>, 'except: NCInfuser Casting DryingBasin');
@@ -197,6 +203,7 @@ utils.rh(<qmd:dust>); // Tungsten
 utils.rh(<qmd:ingot>); // Tungsten
 utils.rh(<qmd:ingot:10>); // Platinum
 utils.rh(<qmd:ingot_alloy:4>); // Osmiridium
+utils.rh(<qmd:ingot:9>); // Iridium
 
 # Sodium Chlorde (salt)
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:chemical_dust:3>);

@@ -107,6 +107,13 @@ mods.forestry.Carpenter.removeRecipe(<forestry:crafting_material:6>);
 scripts.mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:for.honey> * 500);
 scripts.mods.forestry.Carpenter.addRecipe(<forestry:crafting_material:6>, scentPanelGrid, 40, <liquid:honey>     * 500);
 
+# Peaceful Skyblock alt
+# [Bee Sample - Species_ Steadfast] from [Genetic Waste][+2]
+mods.forestry.Carpenter.addRecipe(<gendustry:gene_sample>.withTag({species: "rootBees", chromosome: 0, allele: "forestry.speciesSteadfast"}), Grid([
+  "BG"], {
+  "B": <gendustry:gene_sample_blank>, # Blank Gene Sample
+  "G": <gendustry:waste>,             # Genetic Waste
+}).shaped(), 20, <fluid:steadfast_will> * 1000);
 
 # ---------------------------
 # Remake old combs

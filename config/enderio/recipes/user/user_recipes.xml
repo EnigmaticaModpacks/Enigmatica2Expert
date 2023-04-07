@@ -674,6 +674,30 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Nichrome Ingot">
+    <alloying energy="10000">
+      <input name="ingotNickel"/>
+      <input name="ingotChromium"/>
+      <output name="qmd:ingot_alloy:5" amount="2"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Niobium-Tin Ingot">
+    <alloying energy="10000">
+      <input name="ingotNiobium" amount="3"/>
+      <input name="ingotTin"/>
+      <output name="qmd:ingot_alloy:1" amount="4"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Niobium-Titanium Ingot">
+    <alloying energy="10000">
+      <input name="ingotNiobium"/>
+      <input name="ingotTitanium"/>
+      <output name="qmd:ingot_alloy:3" amount="2"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Pulsating Iron Ingot">
     <alloying energy="10000">
       <input name="minecraft:iron_ingot"/>
@@ -692,10 +716,34 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Stainless Steel Ingot">
+    <alloying energy="10000">
+      <input name="ingotSteel" amount="5"/>
+      <input name="ingotChromium"/>
+      <output name="qmd:ingot_alloy:2" amount="6"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Super Alloy Ingot">
+    <alloying energy="10000">
+      <input name="ingotNichrome" amount="4"/>
+      <input name="ingotNiobiumTitanium"/>
+      <output name="qmd:ingot_alloy:6" amount="3"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Tungsten Carbide Ingot">
+    <alloying energy="10000">
+      <input name="dustTungsten"/>
+      <input name="ingotGraphite"/>
+      <output name="qmd:ingot_alloy" amount="2"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Tungsten Filament">
     <alloying energy="10000">
-      <input name="qmd:ingot"/>
-      <input name="qmd:ingot"/>
+      <input name="ingotTungsten"/>
+      <input name="ingotTungsten"/>
       <output name="qmd:source"/>
     </alloying>
   </recipe>

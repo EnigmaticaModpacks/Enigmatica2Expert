@@ -52,16 +52,16 @@ val drillIngrs = {
   "¤": <ore:gearIronInfinity>,           # Infinity Bimetal Gear
   "⌂": <thermalfoundation:material:640>, # Tool Casing
   "P": <ore:gearPlatinum>,               # Platinum Gear
-  "F": <thermalinnovation:drill>.withTag({Energy: 0, Mode: 1}), # Fluxbore (Basic)
+  "F": <thermalinnovation:drill>.withTag({Mode: 1}), # Fluxbore (Basic)
   "n": <ore:gearEnergized>,              # Energized Bimetal Gear
   "L": <ore:gearLumium>,                 # Lumium Gear
-  "x": <thermalinnovation:drill:1>.withTag({Energy: 0, Mode: 2}), # Fluxbore (Hardened)
+  "x": <thermalinnovation:drill:1>.withTag({Mode: 2}), # Fluxbore (Hardened)
   "V": <ore:gearVibrant>,                # Vibrant Bimetal Gear
   "i": <ore:gearSignalum>,               # Signalum Gear
-  "u": <thermalinnovation:drill:2>.withTag({Energy: 0, Mode: 2}), # Fluxbore (Reinforced)
+  "u": <thermalinnovation:drill:2>.withTag({Mode: 2}), # Fluxbore (Reinforced)
   "☼": <ore:gearTitanium>,               # Titanium Gear
   "E": <ore:gearEnderium>,               # Enderium Gear
-  "○": <thermalinnovation:drill:3>.withTag({Energy: 0, Mode: 3}), # Fluxbore (Signalum)
+  "○": <thermalinnovation:drill:3>.withTag({Mode: 3}), # Fluxbore (Signalum)
   "T": <ore:gearTitaniumIridium>,        # Titanium Iridium Alloy Gear
 } as IIngredient[string];
 

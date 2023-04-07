@@ -29,6 +29,7 @@ function fluidDict(ins as string[]) {
 	fluidDict(["distwater", "ic2distilled_water"]);
 	fluidDict(["ic2steam", "steam"]);
 	fluidDict(["tritium","liquidtritium"]);
+	fluidDict(["liquidfusionfuel","deuterium-tritium_mixture"]);
 
 # Protein Reactor, additional entires
 	for item in <ore:listAllmeatraw>.items {

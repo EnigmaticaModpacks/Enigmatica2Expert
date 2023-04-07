@@ -33,7 +33,7 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
 
   e.item.mutable().updateTag({
     inventory: e.item.tag.inventory + {
-      Items: [e.item.tag.inventory.Items[0] + {Count: 65}]
+      Items: [e.item.tag.inventory.Items[0] + {Count: e.item.tag.inventory.Items[0].Count.asInt() + 1}]
     }
   });
 });

@@ -163,3 +163,7 @@ craft.remake(<integrateddynamics:logic_director> * 4, ["pretty",
   "∩": <integrateddynamics:crystalized_chorus_chunk>, # Crystalized Chorus Chunk
   "◊": <ore:gemTanzanite>, # Tanzanite
 });
+
+// Alt recipes for non-ID machines
+scripts.process.fill(<ore:blockGlass>, <fluid:menrilresin> * 1000, <integratedterminals:menril_glass>, "except: Casting DryingBasin MechanicalDryingBasin");
+scripts.process.fill(<ore:blockGlass>, <fluid:liquidchorus> * 1000, <integratedterminals:chorus_glass>, "except: Casting DryingBasin MechanicalDryingBasin");
