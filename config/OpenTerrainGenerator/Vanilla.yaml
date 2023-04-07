@@ -89,6 +89,88 @@ Overworld:
     SpawnRadius: 10
     SpectatorsGenerateChunks: true
 Dimensions:
+- PresetName: "Void"
+  DimensionId: 3
+  ShowInWorldCreationGUI: true
+  LowestSupportedModPackConfigVersion: 0
+  RemoveOnUpdate: false
+  Seed: ""
+  GameType: "Survival"
+  BonusChest: false
+  AllowCheats: false
+  WorldBorderRadiusInChunks: 0
+  PregeneratorRadiusInChunks: 0
+  Settings:
+    DimensionPortalMaterials:
+    - "PRISMARINE:2"
+    PortalColor: "beige"
+    PortalParticleType: "portal"
+    PortalMobType: "zombie_pigman"
+    PortalMobSpawnChance: 2000
+    IsOTGPlus: false
+    DimensionBelow: "BBOP-Extended"
+    DimensionAbove: ""
+    DimensionBelowHeight: -50
+    DimensionAboveHeight: 256
+    TeleportToSpawnOnly: false
+    WelcomeMessage: ""
+    DepartMessage: ""
+    HasSkyLight: true
+    IsSurfaceWorld: true
+    CanRespawnHere: true
+    DoesWaterVaporize: false
+    DoesXZShowFog: false
+    UseCustomFogColor: false
+    FogColorRed: 0.20000000298023224
+    FogColorGreen: 0.029999999329447746
+    FogColorBlue: 0.029999999329447746
+    IsSkyColored: true
+    CloudHeight: 16
+    CanDoLightning: true
+    CanDoRainSnowIce: true
+    IsNightWorld: false
+    VoidFogYFactor: 0.03125
+    GravityFactor: 0.08
+    ShouldMapSpin: true
+    CanDropChunk: true
+    RespawnDimension: 0
+    MovementFactor: 1
+    ItemsToAddOnJoinDimension: ""
+    ItemsToRemoveOnJoinDimension: ""
+    ItemsToAddOnLeaveDimension: ""
+    ItemsToRemoveOnLeaveDimension: ""
+    ItemsToAddOnRespawn: ""
+    SpawnPointSet: false
+    SpawnPointX: -353
+    SpawnPointY: 1
+    SpawnPointZ: 319
+    PlayersCanBreakBlocks: true
+    ExplosionsCanBreakBlocks: true
+    PlayersCanPlaceBlocks: true
+  GameRules:
+    CommandBlockOutput: true
+    DisableElytraMovementCheck: false
+    DoDaylightCycle: true
+    DoEntityDrops: true
+    DoFireTick: true
+    DoLimitedCrafting: false
+    DoMobLoot: true
+    DoMobSpawning: true
+    DoTileDrops: true
+    DoWeatherCycle: true
+    GameLoopFunction: true
+    KeepInventory: false
+    LogAdminCommands: true
+    MaxCommandChainLength: 65536
+    MaxEntityCramming: 24
+    MobGriefing: true
+    NaturalRegeneration: true
+    RandomTickSpeed: 3
+    ReducedDebugInfo: false
+    SendCommandFeedback: true
+    ShowDeathMessages: true
+    SpawnRadius: 1
+    SpectatorsGenerateChunks: true
 - PresetName: "AlienJungle"
   DimensionId: 200
   ShowInWorldCreationGUI: true
