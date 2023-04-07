@@ -220,7 +220,7 @@ key_key.keyWheel:0
 key_key.left:30
 key_key.little.config:46:CONTROL
 key_key.little.config.item:46
-key_key.little.flip:34:CONTROL
+key_key.little.flip:35:CONTROL
 key_key.little.mark:50
 key_key.little.redo:21:CONTROL
 key_key.little.undo:44:CONTROL
@@ -241,7 +241,7 @@ key_key.next_item.desc:0
 key_key.nutrition:49
 key_key.open_danknull.desc:0
 key_key.open_menu:19
-key_key.open_wct.desc:58
+key_key.open_wct.desc:18:CONTROL
 key_key.open_wft.desc:0
 key_key.open_wireless_crafting_terminal.desc:18:SHIFT
 key_key.open_wireless_fluid_terminal.desc:33:SHIFT
@@ -304,8 +304,7 @@ key_keybind.hammercorerenderstack:77
 key_keys.servertabinfo.show:29
 key_keys.servertabinfo.show2:157
 key_keywizard.keybind.openKeyboardWizard:65:CONTROL
-key_Kill Particles:0
-key_mekanism.key.armorMode:34
+key_mekanism.key.armorMode:0
 key_mekanism.key.feetMode:35
 key_mekanism.key.mode:47
 key_mekanism.key.voice:22
