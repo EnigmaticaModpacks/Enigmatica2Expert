@@ -24,7 +24,8 @@
 		},
 		{
 			item: "iceandfire:jar_pixie 1 4"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "50b7e11a",

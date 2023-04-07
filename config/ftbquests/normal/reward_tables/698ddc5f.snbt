@@ -408,6 +408,11 @@
 			id: "openblocks:dev_null",
 			tag: {
 				Unbreakable: 1b,
+				infinite: {
+					id: "environmentalmaterials:alabaster",
+					Count: 1,
+					Damage: 8s
+				},
 				inventory: {
 					size: 1,
 					Items: [{
@@ -427,6 +432,11 @@
 			id: "openblocks:dev_null",
 			tag: {
 				Unbreakable: 1b,
+				infinite: {
+					id: "sonarcore:reinforcedstonebrick",
+					Count: 1,
+					Damage: 0s
+				},
 				inventory: {
 					size: 1,
 					Items: [{

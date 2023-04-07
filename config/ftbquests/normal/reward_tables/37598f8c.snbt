@@ -220,5 +220,10 @@
 		icon: "tconevo:edible 64",
 		item: "tconevo:edible",
 		count: 64
+	},
+	{
+		icon: "twilightforest:raw_meef 64",
+		item: "twilightforest:raw_meef",
+		count: 64
 	}]
 }

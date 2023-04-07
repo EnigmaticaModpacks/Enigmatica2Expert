@@ -12,7 +12,8 @@
 		type: "item",
 		items: [{
 			item: "iceandfire:iceandfire.deathworm_egg 1 1"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "84aef371",
