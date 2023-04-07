@@ -6,37 +6,44 @@ import crafttweaker.item.IIngredient;
 # Remove and hide creative innovation items
 utils.rh(<thermalinnovation:quiver:32000>.withTag({}));
 utils.rh(<thermalinnovation:injector:32000>.withTag({}));
-utils.rh(<thermalinnovation:magnet:32000>.withTag({Energy: 600000}));
 utils.rh(<thermalinnovation:drill:32000>.withTag({Energy: 600000, Mode: 4}));
 utils.rh(<thermalinnovation:saw:32000>.withTag({Energy: 600000, Mode: 4}));
 
+# ===============================================
 # Remake magnet
-recipes.removeByRecipeName("thermalinnovation:magnet");
-recipes.removeByRecipeName("thermalinnovation:magnet_1");
-recipes.removeByRecipeName("thermalinnovation:magnet_2");
-recipes.removeByRecipeName("thermalinnovation:magnet_3");
-recipes.removeByRecipeName("thermalinnovation:magnet_4");
-
-# First level magnet
-recipes.addShaped(<thermalinnovation:magnet>, [
-	[<ore:ingotConductiveIron>, null, <ore:ingotConductiveIron>],
-	[<ore:ingotLead>, null, <ore:ingotLead>],
-	[null, <ore:ingotHeavy>, null]]);
+# ===============================================
+val magnetDef = itemUtils.getItem("thermalinnovation:magnet");
 
 function remakeMagnet(meta as int, i1 as IIngredient, i2 as IIngredient){
-	var item = itemUtils.getItem("thermalinnovation:magnet", meta);
-	var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1).withTag({});
-	recipes.addShaped("TE Magnet " ~ meta, item, [
-		[null, i2, null],
-		[i1, prev.marked("marked"), i1],
-		[i2, null, i2]],
-	utils.upgradeFnc, null);
+  var item = itemUtils.getItem("thermalinnovation:magnet", meta);
+  var prev = itemUtils.getItem("thermalinnovation:magnet", meta - 1).withTag({});
+  recipes.addShaped("TE Magnet " ~ meta, item, [
+    [null, i2, null],
+    [i1, prev.marked("marked"), i1],
+    [i2, null, i2]],
+  utils.upgradeFnc, null);
 }
 
-remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget:0>);
-remakeMagnet(2, <thermalfoundation:material:161>, <enderio:item_alloy_nugget:3>);
-remakeMagnet(3, <thermalfoundation:material:165>, <enderio:item_alloy_nugget:1>);
-remakeMagnet(4, <thermalfoundation:material:167>, <enderio:item_alloy_nugget:2>);
+if (!isNull(magnetDef)) {
+  utils.rh(itemUtils.getItem("thermalinnovation:magnet", 32000).withTag({Energy: 600000})); // creative
+  recipes.removeByRecipeName("thermalinnovation:magnet");
+  recipes.removeByRecipeName("thermalinnovation:magnet_1");
+  recipes.removeByRecipeName("thermalinnovation:magnet_2");
+  recipes.removeByRecipeName("thermalinnovation:magnet_3");
+  recipes.removeByRecipeName("thermalinnovation:magnet_4");
+
+  # First level magnet
+  recipes.addShaped(magnetDef, [
+    [<ore:ingotConductiveIron>, null, <ore:ingotConductiveIron>],
+    [<ore:ingotLead>, null, <ore:ingotLead>],
+    [null, <ore:ingotHeavy>, null]]);
+
+  remakeMagnet(1, <thermalfoundation:material:162>, <enderio:item_alloy_nugget:0>);
+  remakeMagnet(2, <thermalfoundation:material:161>, <enderio:item_alloy_nugget:3>);
+  remakeMagnet(3, <thermalfoundation:material:165>, <enderio:item_alloy_nugget:1>);
+  remakeMagnet(4, <thermalfoundation:material:167>, <enderio:item_alloy_nugget:2>);
+}
+# ===============================================
 
 val drillIngrs = {
   "S": <immersiveengineering:drillhead>, # Steel Drill Head
