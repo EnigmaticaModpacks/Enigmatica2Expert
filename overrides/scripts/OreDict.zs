@@ -324,6 +324,9 @@ for item in pressurePlates {
 
 # Lead blocks
 	rh(<ic2:resource:7>);
+	
+# Amber blocks
+	rh(<biomesoplenty:gem_block:7>);
 		
 # *======= Quark Specific Oredict =======*
 

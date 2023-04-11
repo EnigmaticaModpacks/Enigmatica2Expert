@@ -59,7 +59,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, 
 	[[piston, piston, piston, piston, piston], 
 	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
-	[piston, <extendedcrafting:storage>, <mekanism:machineblock:7>.withTag({recipeType: 3}), <extendedcrafting:storage>, piston], 
+	[piston, <extendedcrafting:storage>, <mekanism:basicblock:8>, <extendedcrafting:storage>, piston], 
 	[piston, <ic2:te:43>, <excompressum:auto_compressor>, <ic2:te:43>, piston], 
 	[piston, piston, piston, piston, piston]]);  
 	

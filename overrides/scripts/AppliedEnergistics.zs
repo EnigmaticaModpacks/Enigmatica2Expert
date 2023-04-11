@@ -9,12 +9,6 @@ mods.actuallyadditions.Crusher.removeRecipe(<appliedenergistics2:material>);
 	var pearlFluix = <ore:pearlFluix>;
 	var crystalCertus = <ore:crystalCertus>;
 
-# Smart Cable -> Dense
-	recipes.addShapeless("4 Smart Cables to Dense", 
-	<appliedenergistics2:part:76>, 
-	[<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<appliedenergistics2:part:56>,<ore:dustRedstone>,<ore:dustGlowstone>]);
-
-
 # ---=== Storage Cell Helpers ===---
   function newCellRecipe(input as IIngredient, output as IItemStack) {
 	recipes.remove(output);
@@ -214,7 +208,7 @@ mods.actuallyadditions.Crusher.removeRecipe(<appliedenergistics2:material>);
 		recipes.addShapedMirrored("Quantum Ring", 
 		<appliedenergistics2:quantum_ring>, 
 		[[<appliedenergistics2:material:9>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:24>],
-		[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:76>, <appliedenergistics2:energy_cell>], 
+		[<appliedenergistics2:energy_cell>, <appliedenergistics2:part:16>, <appliedenergistics2:energy_cell>], 
 		[<appliedenergistics2:material:22>, <appliedenergistics2:energy_cell>, <appliedenergistics2:material:23>]]);
 
 		recipes.remove(controller);
