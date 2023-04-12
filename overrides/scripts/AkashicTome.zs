@@ -1,8 +1,7 @@
 
 
-# Super Akashic Tome
+# Why the fuck is a guidebook gated in e2e
 	val superTome = <akashictome:tome>.withTag({"akashictome:data": {
-	animania:              {id: "animania:animania_manual",             Count: 1 as byte, tag: {"akashictome:definedMod": "animania"},              Damage: 0 as short},
 	industrialforegoing:   {id: "industrialforegoing:book_manual",      Count: 1 as byte, tag: {"akashictome:definedMod": "industrialforegoing"},   Damage: 0 as short},
 	rftoolscontrol:        {id: "rftoolscontrol:rftoolscontrol_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "rftoolscontrol"},        Damage: 0 as short},
 	astralsorcery:         {id: "astralsorcery:itemjournal",            Count: 1 as byte, tag: {"akashictome:definedMod": "astralsorcery"},         Damage: 0 as short},
@@ -32,9 +31,9 @@
 	}});
 	
 	recipes.addShaped("SuperTome", superTome, [
-		[<ore:paper>, <ore:bookshelf>, <ore:paper>],
-		[<extrautils2:decorativesolidwood:1>, <akashictome:tome>.anyDamage(), <extrautils2:decorativesolidwood:1>], 
-		[<ore:paper>, <ore:bookshelf>, <ore:paper>]]);
+		[<ore:paper>, <ore:paper>, <ore:paper>],
+		[<ore:paper>, <minecraft:book>, <ore:paper>], 
+		[<ore:paper>, <ore:paper>, <ore:paper>]]);
 
 # Remove excess not-oredicted recipe
 recipes.removeByRecipeName("akashictome:tome");
