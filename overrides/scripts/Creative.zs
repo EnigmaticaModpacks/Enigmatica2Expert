@@ -15,8 +15,8 @@ import crafttweaker.item.IItemCondition;
 	var draconicEnergyCore = <draconicevolution:draconic_energy_core>;
 	var rtgFuel = <ic2:nuclear:10>;
 	var dilithium = <ore:gemDilithium>;
-	var anglesite = <bigreactors:minerals>;
-	var benitoite = <bigreactors:minerals:1>;
+	var anglesite = <contenttweaker:anglesite>;
+	var benitoite = <contenttweaker:benitoite>;
 	var ingotMirion = <ore:ingotMirion>;
 	var manaTablet = <botania:manatablet>.withTag({mana: 500000});
 	var megaDrum = <extrautils2:drum:3>;
@@ -36,7 +36,7 @@ import crafttweaker.item.IItemCondition;
 	var speedUpgrade3 = <extrautils2:ingredients:16>;
 	var sunCrystal = <extrautils2:suncrystal>;
 	var kleinBottle = <extrautils2:klein>;
-	var blockLudicrite = <bigreactors:blockmetals:4>;
+	var blockStellar = <enderio:block_alloy_endergy:3>;
 	var gasPad = <advancedrocketry:oxygencharger>;
     var blockOsgloglas = <ore:blockOsgloglas>;
 	var blockMirion = <ore:blockMirion>;
@@ -97,8 +97,8 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	<astralsorcery:itemcraftingcomponent:1>,<botania:manaresource>,<botania:manaresource:4>,
 	<botania:manaresource:7>,<draconicevolution:draconium_ingot>,<draconicevolution:draconic_ingot>,
 	<extendedcrafting:material>,<extendedcrafting:material:24>,<extrautils2:ingredients:11>,<extrautils2:ingredients:12>,
-	<extrautils2:ingredients:17>,<bigreactors:ingotmetals:1>,<bigreactors:ingotmetals:3>,
-	<bigreactors:ingotmetals:4>,<immersiveengineering:material:19>,<immersiveengineering:metal:5>,
+	<extrautils2:ingredients:17>,<extrautils2:unstableingots:2>,<enderio:item_alloy_endergy_ingot:2>,
+	<enderio:item_alloy_endergy_ingot:3>,<immersiveengineering:material:19>,<immersiveengineering:metal:5>,
 	<mekanism:ingot>,<mekanism:ingot:1>,<mekanism:ingot:3>,<thermalfoundation:material:131>,
 	<thermalfoundation:material:132>,<thermalfoundation:material:133>,<thermalfoundation:material:134>,
 	<thermalfoundation:material:135>,<thermalfoundation:material:136>,<thermalfoundation:material:160>,
@@ -172,26 +172,26 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 # Thermal Creative Tank
 	mods.extendedcrafting.TableCrafting.addShaped(4, creativeTank, 
 	[[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "milk", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "liquiddna", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "bio.ethanol", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "juice", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mutagen", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "biomass", Amount: 1000}), <industrialforegoing:black_hole_tank>], 
-	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
+	[<forge:bucketfilled>.withTag({FluidName: "empoweredoil", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <contenttweaker:anglesite>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "witchwater", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "corium", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "draconium", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "sewage", Amount: 1000})], 
-	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <bigreactors:minerals>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <bigreactors:minerals>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
+	[<thermalexpansion:tank>.withTag({Fluid: {FluidName: "tree_oil", Amount: 32000}}), <contenttweaker:anglesite>, megaDrum, ultCatalyst, <draconicevolution:chaotic_core>, ultCatalyst, megaDrum, <contenttweaker:anglesite>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 32000}})], 
 	[<forge:bucketfilled>.withTag({FluidName: "pyrotheum", Amount: 1000}), ingotUltimate, megaDrum, awakendedCore, ultCatalyst, awakendedCore, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "ic2pahoehoe_lava", Amount: 1000})], 
 	[<forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}), ingotUltimate, megaDrum, megaDrum, megaDrum, megaDrum, megaDrum, ingotUltimate, <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000})], 
-	[<forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <bigreactors:minerals>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "tritium", Amount: 1000})], 
+	[<forge:bucketfilled>.withTag({FluidName: "essence", Amount: 1000}), resonantFrame, ingotUltimate, ingotUltimate, <contenttweaker:anglesite>, ingotUltimate, ingotUltimate, resonantFrame, <forge:bucketfilled>.withTag({FluidName: "tritium", Amount: 1000})], 
 	[<industrialforegoing:black_hole_tank>, <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}), <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 32000}}), <forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "mirion", Amount: 1000}), <forge:bucketfilled>.withTag({FluidName: "neutron", Amount: 1000}), <industrialforegoing:black_hole_tank>]]); 
 
 # Storage Drawers Unlimited Withdrawel Upgrade
 	mods.extendedcrafting.TableCrafting.addShaped(4, <storagedrawers:upgrade_creative:1> * 2, 
-	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
+	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <contenttweaker:anglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <aeadditions:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
 	[ultCatalyst, draconicChest, creativeEssence, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}), <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
-	[<bigreactors:minerals>, <aeadditions:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <aeadditions:storage.component:3>, <bigreactors:minerals>], 
+	[<contenttweaker:anglesite>, <aeadditions:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <aeadditions:storage.component:3>, <contenttweaker:anglesite>], 
 	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <aeadditions:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
-	[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <bigreactors:minerals>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>]]);
+	[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <contenttweaker:anglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>]]);
 	
 	recipes.addShapeless("Creative Storage Upgrade Duplication", 
 	<storagedrawers:upgrade_creative:1> * 2, 
@@ -223,15 +223,15 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 
 # Creative Gas Tank 
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:gastank>.withTag({tier: 4, mekData: {}}),	
-	[[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate], 
+	[[ingotUltimate, ingotUltimate, ingotUltimate, blockStellar, rocketFuel, blockStellar, ingotUltimate, ingotUltimate, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate], 
 	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
-	[blockLudicrite, benitoite, gasPad, awakendedCore, <advancedrocketry:liquidtank>, awakendedCore, gasPad, benitoite, blockLudicrite], 
+	[blockStellar, benitoite, gasPad, awakendedCore, <advancedrocketry:liquidtank>, awakendedCore, gasPad, benitoite, blockStellar], 
 	[rocketFuel, rocketFuel, ultCatalyst, <advancedrocketry:liquidtank>, creativeGasTankFrame, <advancedrocketry:liquidtank>, ultCatalyst, rocketFuel, rocketFuel], 
-	[blockLudicrite, benitoite, gasPad, awakendedCore, creativeTank, awakendedCore, gasPad, benitoite, blockLudicrite], 
+	[blockStellar, benitoite, gasPad, awakendedCore, creativeTank, awakendedCore, gasPad, benitoite, blockStellar], 
 	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate],
-	[ingotUltimate, ingotUltimate, ingotUltimate, blockLudicrite, rocketFuel, blockLudicrite, ingotUltimate, ingotUltimate, ingotUltimate]]);  
+	[ingotUltimate, ingotUltimate, ingotUltimate, blockStellar, rocketFuel, blockStellar, ingotUltimate, ingotUltimate, ingotUltimate]]);  
 	recipes.addShapeless("Creative Gas Tank Reset", 
 	<mekanism:gastank>.withTag({tier: 4, mekData: {}}), 
 	[<mekanism:gastank>.withTag({tier: 4})]);
@@ -241,12 +241,12 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	[[<psi:cad_assembly:4>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null, null], 
 	[<psi:cad_assembly:4>, <ore:blockInfinity>, <psi:cad_assembly:4>, <ore:ingotIvoryPsi>, null, null, null, null, null], 
 	[<ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <psi:cad_colorizer_:16>, <psi:cad_assembly:4>, null, null, null, null, null], 
-	[null, <ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <bigreactors:minerals:1>, <bigreactors:minerals:1>, null, null, null, null], 
-	[null, null, null, <bigreactors:minerals:1>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null, null], 
+	[null, <ore:ingotIvoryPsi>, <psi:cad_assembly:4>, <contenttweaker:benitoite>, <contenttweaker:benitoite>, null, null, null, null], 
+	[null, null, null, <contenttweaker:benitoite>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null, null], 
 	[null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null, null], 
 	[null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <psi:cad_assembly:3>, null], 
-	[null, null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <bigreactors:minerals:1>], 
-	[null, null, null, null, null, null, null, <bigreactors:minerals:1>, <bigreactors:minerals:1>]]); 
+	[null, null, null, null, null, null, <psi:cad_assembly:3>, <psi:cad_assembly:3>, <contenttweaker:benitoite>], 
+	[null, null, null, null, null, null, null, <contenttweaker:benitoite>, <contenttweaker:benitoite>]]); 
 
 # DE Creative Block Exchanger
 	mods.extendedcrafting.TableCrafting.addShaped(4, <draconicevolution:creative_exchanger>,

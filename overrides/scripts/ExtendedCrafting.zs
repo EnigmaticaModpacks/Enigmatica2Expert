@@ -42,10 +42,6 @@ import mods.jei.JEI.removeAndHide as rh;
 	(<extendedcrafting:material> * 3, 
 	<thermalfoundation:storage_alloy:2>, <nuclearcraft:alloy:3>, 15000);
 	
-	mods.thermalexpansion.InductionSmelter.addRecipe
-	(<extendedcrafting:material> * 3, 
-	<thermalfoundation:storage_alloy:2>, <bigreactors:blockmetals:2>, 15000);	
-	
 # Crafting Core
 	recipes.remove(<extendedcrafting:crafting_core>);
 	mods.forestry.Carpenter.addRecipe(<extendedcrafting:crafting_core>, 

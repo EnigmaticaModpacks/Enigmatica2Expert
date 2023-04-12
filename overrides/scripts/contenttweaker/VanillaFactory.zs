@@ -12,3 +12,5 @@ function buildItem(name as string) {
 
 buildItem("bee_diversity");
 buildItem("modularium");
+buildItem("anglesite");
+buildItem("benitoite");

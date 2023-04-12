@@ -42,7 +42,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.remove(<draconicevolution:draconic_core>);
 	recipes.addShapedMirrored("Draconic Core", 
 	<draconicevolution:draconic_core>, 
-	[[<ore:blockDraconium>, <ore:ingotBlutonium>, <ore:blockDraconium>],
+	[[<ore:blockDraconium>, <ore:ingotMelodicAlloy>, <ore:blockDraconium>],
 	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>], 
 	[<ore:plateElite>, <draconicevolution:dislocator>, <ore:plateElite>]]);
 
@@ -51,7 +51,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>, 
 	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
 	[<draconicevolution:draconic_core>, <minecraft:nether_star>, <draconicevolution:draconic_core>], 
-	[<ore:ingotLudicrite>, <environmentaltech:pladium>, <ore:ingotLudicrite>]], 
+	[<ore:ingotStellarAlloy>, <environmentaltech:pladium>, <ore:ingotStellarAlloy>]], 
 	40, <liquid:mana> * 1000);
 
 # Draconic Energy Core
@@ -130,3 +130,19 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 	[[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>],
 	[<appliedenergistics2:material:41>,<draconicevolution:energy_crystal:0>,<appliedenergistics2:material:41>],
 	[<ore:dustAstralStarmetal>,<extrautils2:powertransmitter>,<ore:dustAstralStarmetal>]]);
+
+# Flux Gate
+	recipes.remove(<draconicevolution:flow_gate:0>);
+	recipes.addShapedMirrored("Flux Gate", 
+	<draconicevolution:flow_gate:0>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<ore:blockRedstone>,<nuclearcraft:part:10>,<ore:blockRedstone>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);
+
+# Fluid Gate
+	recipes.remove(<draconicevolution:flow_gate:8>);
+	recipes.addShapedMirrored("Fluid Gate", 
+	<draconicevolution:flow_gate:8>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<minecraft:bucket>,<nuclearcraft:part:10>,<minecraft:bucket>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);

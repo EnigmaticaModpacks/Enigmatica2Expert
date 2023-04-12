@@ -1,4 +1,5 @@
 {
+  "build:8": "4.1.0",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -1302,19 +1303,19 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "There is no Extreme Reactors chapter, but NuclearCraft and IndustrialCraft grant access to the mod.\n\nCyanite, Blutonium, Ludicrite, Anglesite and Beniotite will all be needed for the endgame.",
+          "desc:8": "There is no endergy chapter, but alongside adding new blocks, endergy adds very powerful conduits and armor.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 3,
             "OreDict:8": "",
-            "id:8": "bigreactors:reactorcontroller"
+            "id:8": "enderio:block_alloy_endergy"
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Gate: Extreme Reactors",
+          "name:8": "Gate: Endergy",
           "partySingleReward:8": "false",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
@@ -1334,22 +1335,10 @@
           "rewardID:8": "bq_standard:item",
           "rewards:9": {
             "0:10": {
-              "Count:3": 4,
-              "Damage:2": 5,
-              "OreDict:8": "",
-              "id:8": "immersiveengineering:storage"
-            },
-            "1:10": {
               "Count:3": 16,
-              "Damage:2": 0,
+              "Damage:2": 10,
               "OreDict:8": "",
-              "id:8": "bigreactors:reactorcasing"
-            },
-            "2:10": {
-              "Count:3": 16,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "bigreactors:reactorglass"
+              "id:8": "enderio:item_endergy_conduit"
             }
           }
         }
@@ -1365,9 +1354,9 @@
           "requiredItems:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 2,
               "OreDict:8": "",
-              "id:8": "bigreactors:reactorcontroller"
+              "id:8": "enderio:block_alloy_endergy"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -4930,13 +4919,21 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "bigreactors:minerals"
+              "id:8": "betterquesting:placeholder",
+              "tag:10": {
+                "orig_id:8": "bigreactors:minerals",
+                "orig_meta:3": 0
+              }
             },
             "1:10": {
               "Count:3": 1,
               "Damage:2": 1,
               "OreDict:8": "",
-              "id:8": "bigreactors:minerals"
+              "id:8": "betterquesting:placeholder",
+              "tag:10": {
+                "orig_id:8": "bigreactors:minerals",
+                "orig_meta:3": 1
+              }
             }
           },
           "index:3": 0,
@@ -11755,9 +11752,6 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "forge:bucketfilled",
               "tag:10": {
@@ -63230,7 +63224,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "editMode:8": "false",
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 3.0,

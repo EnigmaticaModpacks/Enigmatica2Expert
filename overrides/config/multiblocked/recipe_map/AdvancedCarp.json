@@ -207,55 +207,6 @@
       }
     },
     {
-      "uid": "4e475295-eed3-470f-b7f5-27bd0ed7c95a",
-      "duration": 10,
-      "inputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 3,
-              "ore": "egg"
-            }
-          },
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"cyclicmagic:sprout_seed\",Count:1,Damage:0s}"
-              ]
-            }
-          }
-        ],
-        "fluid": [
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"meat\",Amount:125}"
-          }
-        ],
-        "forge_energy": [
-          {
-            "chance": 1.0,
-            "content": 50000
-          }
-        ]
-      },
-      "outputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"animania:entity_egg_random\",Count:1,Damage:0s}"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
       "uid": "5aee3047-6e32-4d1f-946f-56e0aa28b7a3",
       "duration": 10,
       "inputs": {
@@ -690,7 +641,7 @@
             "content": {
               "amount": 1,
               "matches": [
-                "{id:\"bigreactors:blockmetals\",Count:1,Damage:3s}"
+                "{id:\"enderio:block_alloy_endergy\",Count:1,Damage:2s}"
               ]
             }
           },
@@ -754,7 +705,7 @@
             "content": {
               "amount": 1,
               "matches": [
-                "{id:\"bigreactors:blockmetals\",Count:1,Damage:4s}"
+                "{id:\"enderio:block_alloy_endergy\",Count:1,Damage:3s}"
               ]
             }
           }
@@ -780,7 +731,7 @@
             "content": {
               "amount": 2,
               "matches": [
-                "{id:\"bigreactors:ingotmetals\",Count:2,Damage:4s}"
+                "{id:\"enderio:item_alloy_endergy_ingot\",Count:2,Damage:3s}"
               ]
             }
           },
@@ -1053,55 +1004,6 @@
               "amount": 1,
               "matches": [
                 "{id:\"extendedcrafting:pedestal\",Count:1,Damage:0s}"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "uid": "750c1b7a-95a7-47f0-9d33-2c7a2626368f",
-      "duration": 10,
-      "inputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 3,
-              "ore": "egg"
-            }
-          },
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"cyclicmagic:sprout_seed\",Count:1,Damage:0s}"
-              ]
-            }
-          }
-        ],
-        "fluid": [
-          {
-            "chance": 1.0,
-            "content": "{FluidName:\"liquiddna\",Amount:250}"
-          }
-        ],
-        "forge_energy": [
-          {
-            "chance": 1.0,
-            "content": 50000
-          }
-        ]
-      },
-      "outputs": {
-        "item": [
-          {
-            "chance": 1.0,
-            "content": {
-              "amount": 1,
-              "matches": [
-                "{id:\"animania:entity_egg_random\",Count:1,Damage:0s}"
               ]
             }
           }

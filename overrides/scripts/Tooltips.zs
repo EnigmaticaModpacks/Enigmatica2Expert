@@ -237,16 +237,9 @@ for item in thaumcraftHintItems {
 # Thermal Expansion Resonant Machine Frame (Full)
 	addDescription(<thermalexpansion:frame:148>, mil100);
 	
-# Extreme Reactors Crystals
-	<bigreactors:minerals>.displayName = "Anglesite";
-	<bigreactors:minerals:1>.displayName = "Benitoite";
-	
-	addDescription(<bigreactors:minerals>, craftable);
-	addDescription(<bigreactors:minerals:1>, craftable);
-
 # Uncraftable ingots
-	addDescription(<bigreactors:ingotmetals:3>,"Block of Blutonium is craftable.");
-	addDescription(<bigreactors:ingotmetals:4>,"Block of Ludicrite is craftable.");
+	addDescription(<enderio:item_alloy_endergy_ingot:2>,"Melodic Alloy Block is craftable.");
+	addDescription(<enderio:item_alloy_endergy_ingot:3>,"Stellar Alloy Block is craftable.");
 
 # Mana Infused Ingot
 	addDescription(<thermalfoundation:material:136>,"Only obtainable through the Metallurgic Infuser, the Advanced Metallurgic Fabricator, and other planets.");
