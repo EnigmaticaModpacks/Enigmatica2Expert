@@ -317,4 +317,68 @@
 			<itemStack>immersiveengineering:metal 2 14</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherAluminum</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 68</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherCopper</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 67</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherNickel</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 69</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherSilver</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 66</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherOsmium</oreDict>
+		</input>
+		<output>
+			<itemStack>mekanism:dust 4 2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherUranium</oreDict>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:metal 4 14</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherIron</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherGold</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 1</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
