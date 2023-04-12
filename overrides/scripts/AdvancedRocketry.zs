@@ -126,3 +126,4 @@ recipes.addShapeless("Clearing AdvRock Tank", <advancedrocketry:liquidtank>, [<a
 
 # Mushrooms as energy providers
 mods.thermalexpansion.EnervationDynamo.addFuel(<advancedrocketry:electricmushroom>, 90000000);
+

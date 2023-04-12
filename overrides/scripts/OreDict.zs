@@ -674,19 +674,7 @@ for item in pressurePlates {
 	recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [Trapdoor]);
 	recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
-
 	
-# Animania peacock feathers
-<ore:peacockFeathers>.add([
-    <animania:blue_peacock_feather>,
-    <animania:white_peacock_feather>,
-    <animania:charcoal_peacock_feather>,
-    <animania:opal_peacock_feather>,
-    <animania:peach_peacock_feather>,
-    <animania:purple_peacock_feather>,
-    <animania:taupe_peacock_feather>
-]);
-
 # Rearrange items in Dye Oredict to better integration
 # with AA [Lens Of Color]
 <ore:dyeBrown>.remove([<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
