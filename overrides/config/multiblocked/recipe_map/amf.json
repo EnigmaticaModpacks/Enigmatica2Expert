@@ -4,6 +4,60 @@
   "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
     {
+      "uid": "d1a3644c-b2c1-430a-8da8-2a368213beff",
+      "duration": 10,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 5,
+              "matches": [
+                "{id:\"minecraft:iron_ingot\",Count:5,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"tconstruct:edible\",Count:1,Damage:3s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"minecraft:clay\",Count:1,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 1000000
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 5,
+              "matches": [
+                "{id:\"tconstruct:ingots\",Count:5,Damage:4s}"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "uid": "f1bac6fa-2394-4055-9665-4fd53deb455a",
       "duration": 10,
       "inputs": {
@@ -447,6 +501,60 @@
               "amount": 6,
               "matches": [
                 "{id:\"plustic:alumiteingot\",Count:6,Damage:0s}"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uid": "086ff0e1-d921-4143-9656-c4ff9d000799",
+      "duration": 10,
+      "inputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"minecraft:iron_ingot\",Count:2,Damage:0s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 1,
+              "matches": [
+                "{id:\"tconstruct:edible\",Count:1,Damage:2s}"
+              ]
+            }
+          },
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 4,
+              "matches": [
+                "{id:\"tconstruct:materials\",Count:4,Damage:0s}"
+              ]
+            }
+          }
+        ],
+        "forge_energy": [
+          {
+            "chance": 1.0,
+            "content": 1000000
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "chance": 1.0,
+            "content": {
+              "amount": 2,
+              "matches": [
+                "{id:\"tconstruct:ingots\",Count:2,Damage:3s}"
               ]
             }
           }
