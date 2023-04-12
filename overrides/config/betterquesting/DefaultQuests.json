@@ -1,5 +1,4 @@
 {
-  "build:8": "4.1.0",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -471,7 +470,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Completing this quest opens the Immersive Engineering chapter.",
+          "desc:8": "Completing this quest opens the Immersive Engineering chapter.\n",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -7943,7 +7942,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Coke Oven produces Coal Coke, Charcoal and Creosote oil. Supply it with Coal or Wood Logs.",
+          "desc:8": "The Coke Oven produces Coal Coke, Charcoal and Creosote oil. Supply it with Coal or Wood Logs.\n\nUse that pump and tank you got earlier to store extra creosote. You can also craft with the tank of cresote, rather than having to use buckets.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -8298,7 +8297,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Engineer\u0027s Workbench lets you craft some things with a discount, if you have the recipe.",
+          "desc:8": "The Engineer\u0027s Workbench lets you craft some things with a discount, if you have the recipe.\n\nCan be automated later on.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -16243,7 +16242,7 @@
     },
     "214:10": {
       "preRequisites:11": [
-        215
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16437,7 +16436,7 @@
     },
     "216:10": {
       "preRequisites:11": [
-        229
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16534,7 +16533,7 @@
     },
     "217:10": {
       "preRequisites:11": [
-        216
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16630,8 +16629,11 @@
       }
     },
     "218:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
-        230
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16728,7 +16730,7 @@
     },
     "219:10": {
       "preRequisites:11": [
-        214
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16825,7 +16827,7 @@
     },
     "220:10": {
       "preRequisites:11": [
-        217
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -16922,7 +16924,7 @@
     },
     "221:10": {
       "preRequisites:11": [
-        220
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17505,7 +17507,7 @@
     },
     "228:10": {
       "preRequisites:11": [
-        221
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17602,7 +17604,7 @@
     },
     "229:10": {
       "preRequisites:11": [
-        219
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17698,8 +17700,11 @@
       }
     },
     "230:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
-        231
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17795,8 +17800,11 @@
       }
     },
     "231:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
-        232
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -17999,8 +18007,11 @@
       }
     },
     "233:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
-        235
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18094,8 +18105,11 @@
       }
     },
     "234:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
-        233
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18189,8 +18203,11 @@
       }
     },
     "235:10": {
+      "preRequisiteTypes:7": [
+        1
+      ],
       "preRequisites:11": [
-        238
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18423,8 +18440,7 @@
     },
     "238:10": {
       "preRequisites:11": [
-        213,
-        232
+        213
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22074,9 +22090,6 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "forestry:apiarist_helmet",
               "tag:10": {
@@ -22087,9 +22100,6 @@
             "1:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "forestry:apiarist_chest",
               "tag:10": {
@@ -22100,9 +22110,6 @@
             "2:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "forestry:apiarist_legs",
               "tag:10": {
@@ -22113,9 +22120,6 @@
             "3:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "forestry:apiarist_boots",
               "tag:10": {
@@ -31359,9 +31363,6 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 26,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
               "id:8": "ic2:jetpack_electric",
               "tag:10": {
@@ -44676,7 +44677,7 @@
     },
     "595:10": {
       "preRequisites:11": [
-        116
+        115
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -47718,7 +47719,7 @@
         "betterquesting:10": {
           "autoClaim:8": "false",
           "autoclaim:1": 0,
-          "desc:8": "Welcome to Thaumcraft, a tier 1 magic mod. Thaumcraft is one of the oldest magic mods around, and features a lot of interesting content, such as§2§2§0§0 §0§2Golems§0 and a §3spell system§0.\n§r\nYou have to progress in the Thaumonomicon to be able to progress in Thaumcraft. Although these quests provide some guidance, you will need to follow the Thaumonomicon.\n\nTo obtain the Thaumonomicon, you will need to pick up any Vis Crystal, then sleep, and lastly click on a Bookshelf with Salis Mundus.\n\nThis chapter leads to §9Astral Sorcery§0§r and §6Blood Magic§§.",
+          "desc:8": "Welcome to Thaumcraft, a tier 1 magic mod. Thaumcraft is one of the oldest magic mods around, and features a lot of interesting content, such as§2§2§0§0 §0§2Golems§0 and a §3spell system§0.\n§r\nYou have to progress in the Thaumonomicon to be able to progress in Thaumcraft. Although these quests provide some guidance, you will need to follow the Thaumonomicon.\n\nTo obtain the Thaumonomicon, you will need to pick up any Vis Crystal, then sleep, and lastly click on a Bookshelf with Salis Mundus.\n\n§dThaumic Energistics Extended Life§o§r grants Thaumcraft compatibility with Applied Energistics Extended Life, allowing for storage and autocrafting with Thaumcraft, refer to the Applied Energistics chapter for more information.\n\nThis chapter leads to §9Astral Sorcery§0§r and §6Blood Magic§§.",
           "globalShare:8": "false",
           "globalshare:1": 0,
           "icon:10": {
@@ -51724,7 +51725,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "A crafting component, also needed to start Multiblocked.",
+          "desc:8": "A crafting component, also needed to start Multiblocked.\n\nPro tip: Look in either farming blue slime saplings or setting up a mob farm for blue slimes.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -53857,6 +53858,76 @@
       }
     },
     "711:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
+      "preRequisites:11": [
+        762,
+        751
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Crafting Terminal§r, but it works with thaumcraft vis.\n\nMore info in thaumonomicon.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:arcane_terminal"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Vis Crafting",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 712,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:upgrade_arcane"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:arcane_terminal"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "712:10": {
       "preRequisites:11": [
         18
       ],
@@ -53941,7 +54012,7 @@
         }
       }
     },
-    "712:10": {
+    "713:10": {
       "preRequisites:11": [
         37
       ],
@@ -53993,7 +54064,7 @@
         }
       }
     },
-    "713:10": {
+    "714:10": {
       "preRequisites:11": [
         37
       ],
@@ -54055,14 +54126,14 @@
         }
       }
     },
-    "714:10": {
+    "715:10": {
       "preRequisites:11": [
         682
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "§bMultiblocked§r replaces Modular Machinary in E2EU, featuring some cool new features, such as being able to place hatches where ever you want, wallsharing, and item buses being able to pull/push items into connected inventories like gregtech item hatches.\n\nYou are currently able to convert existing MM items into Multiblocked items, so make sure to do that if you need to.",
+          "desc:8": "§bMultiblocked§r replaces Modular Machinary in E2EU, featuring some cool new features, such as being able to place hatches where ever you want, wallsharing, and item buses being able to pull/push items into connected inventories like gregtech item hatches.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54123,7 +54194,7 @@
         }
       }
     },
-    "715:10": {
+    "716:10": {
       "preRequisites:11": [
         716
       ],
@@ -54191,7 +54262,7 @@
         }
       }
     },
-    "716:10": {
+    "717:10": {
       "preRequisites:11": [
         716
       ],
@@ -54259,7 +54330,7 @@
         }
       }
     },
-    "717:10": {
+    "718:10": {
       "preRequisites:11": [
         716
       ],
@@ -54327,7 +54398,7 @@
         }
       }
     },
-    "718:10": {
+    "719:10": {
       "preRequisites:11": [
         2
       ],
@@ -54392,7 +54463,7 @@
         }
       }
     },
-    "719:10": {
+    "720:10": {
       "preRequisites:11": [
         716
       ],
@@ -54460,7 +54531,7 @@
         }
       }
     },
-    "720:10": {
+    "721:10": {
       "preRequisites:11": [
         716
       ],
@@ -54499,7 +54570,72 @@
         }
       }
     },
-    "721:10": {
+    "722:10": {
+      "preRequisites:11": [
+        712
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Uses §6zombie brains§r instead of patterns.\n\nMore info in thaumonomicon.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:arcane_inscriber"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Thaumcraft Patterning",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 723,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumcraft:brain"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:arcane_inscriber"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "723:10": {
       "preRequisites:11": [
         49
       ],
@@ -54573,7 +54709,7 @@
         }
       }
     },
-    "722:10": {
+    "724:10": {
       "preRequisites:11": [
         735
       ],
@@ -54641,7 +54777,7 @@
         }
       }
     },
-    "723:10": {
+    "725:10": {
       "preRequisites:11": [
         735
       ],
@@ -54709,7 +54845,7 @@
         }
       }
     },
-    "724:10": {
+    "726:10": {
       "preRequisites:11": [
         726
       ],
@@ -54773,7 +54909,7 @@
         }
       }
     },
-    "725:10": {
+    "727:10": {
       "preRequisites:11": [
         725
       ],
@@ -54841,7 +54977,7 @@
         }
       }
     },
-    "726:10": {
+    "728:10": {
       "preRequisiteTypes:7": [
         1,
         0
@@ -54914,7 +55050,7 @@
         }
       }
     },
-    "727:10": {
+    "729:10": {
       "preRequisites:11": [
         725
       ],
@@ -54982,7 +55118,7 @@
         }
       }
     },
-    "728:10": {
+    "730:10": {
       "preRequisites:11": [
         729
       ],
@@ -55050,7 +55186,7 @@
         }
       }
     },
-    "729:10": {
+    "731:10": {
       "preRequisiteTypes:7": [
         1,
         0
@@ -55140,7 +55276,7 @@
         }
       }
     },
-    "730:10": {
+    "732:10": {
       "preRequisites:11": [
         752
       ],
@@ -55208,7 +55344,77 @@
         }
       }
     },
-    "731:10": {
+    "733:10": {
+      "preRequisiteTypes:7": [
+        0,
+        1
+      ],
+      "preRequisites:11": [
+        723,
+        755
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "The §6Molecular Assembler§r, but also allows for Vis usage.\n\nMore info in thaumonomicon.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:arcane_assembler"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Arcane Assembling",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 734,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:upgrade_arcane"
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:arcane_assembler"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "734:10": {
       "preRequisites:11": [
         742
       ],
@@ -55276,7 +55482,7 @@
         }
       }
     },
-    "732:10": {
+    "735:10": {
       "preRequisites:11": [
         742
       ],
@@ -55344,7 +55550,7 @@
         }
       }
     },
-    "733:10": {
+    "736:10": {
       "preRequisites:11": [
         738
       ],
@@ -55412,7 +55618,7 @@
         }
       }
     },
-    "734:10": {
+    "737:10": {
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -55478,7 +55684,7 @@
         }
       }
     },
-    "735:10": {
+    "738:10": {
       "preRequisites:11": [
         738
       ],
@@ -55546,7 +55752,80 @@
         }
       }
     },
-    "736:10": {
+    "739:10": {
+      "preRequisiteTypes:7": [
+        1,
+        0
+      ],
+      "preRequisites:11": [
+        753,
+        723
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Exposes Essentia to Infusion Matrixes, allow for Infusion autocrafting.\n\nMore info in thaumonomicon.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:infusion_provider"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Infusion Automation",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 740,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:infusion_provider"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "740:10": {
       "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
@@ -55612,7 +55891,7 @@
         }
       }
     },
-    "737:10": {
+    "741:10": {
       "preRequisites:11": [
         38
       ],
@@ -55680,7 +55959,7 @@
         }
       }
     },
-    "738:10": {
+    "742:10": {
       "preRequisites:11": [
         744
       ],
@@ -55748,7 +56027,7 @@
         }
       }
     },
-    "739:10": {
+    "743:10": {
       "preRequisites:11": [
         746
       ],
@@ -55833,7 +56112,7 @@
         }
       }
     },
-    "740:10": {
+    "744:10": {
       "preRequisiteTypes:7": [
         0,
         0,
@@ -55908,7 +56187,7 @@
         }
       }
     },
-    "741:10": {
+    "745:10": {
       "preRequisites:11": [
         748
       ],
@@ -55976,7 +56255,7 @@
         }
       }
     },
-    "742:10": {
+    "746:10": {
       "preRequisites:11": [
         746
       ],
@@ -56044,7 +56323,7 @@
         }
       }
     },
-    "743:10": {
+    "747:10": {
       "preRequisites:11": [
         742
       ],
@@ -56112,7 +56391,7 @@
         }
       }
     },
-    "744:10": {
+    "748:10": {
       "preRequisites:11": [
         748
       ],
@@ -56180,7 +56459,7 @@
         }
       }
     },
-    "745:10": {
+    "749:10": {
       "preRequisites:11": [
         747,
         745
@@ -56251,7 +56530,7 @@
         }
       }
     },
-    "746:10": {
+    "750:10": {
       "preRequisites:11": [
         745
       ],
@@ -56319,7 +56598,7 @@
         }
       }
     },
-    "747:10": {
+    "751:10": {
       "preRequisites:11": [
         753
       ],
@@ -56387,7 +56666,7 @@
         }
       }
     },
-    "748:10": {
+    "752:10": {
       "preRequisites:11": [
         750
       ],
@@ -56455,7 +56734,7 @@
         }
       }
     },
-    "749:10": {
+    "753:10": {
       "preRequisites:11": [
         759
       ],
@@ -56523,7 +56802,7 @@
         }
       }
     },
-    "750:10": {
+    "754:10": {
       "preRequisiteTypes:7": [
         0,
         1
@@ -56613,7 +56892,7 @@
         }
       }
     },
-    "751:10": {
+    "755:10": {
       "preRequisites:11": [
         757
       ],
@@ -56652,7 +56931,7 @@
         }
       }
     },
-    "752:10": {
+    "756:10": {
       "preRequisites:11": [
         758
       ],
@@ -56691,7 +56970,7 @@
         }
       }
     },
-    "753:10": {
+    "757:10": {
       "preRequisites:11": [
         759
       ],
@@ -56761,7 +57040,7 @@
         }
       }
     },
-    "754:10": {
+    "758:10": {
       "preRequisites:11": [
         753,
         755,
@@ -56831,7 +57110,7 @@
         }
       }
     },
-    "755:10": {
+    "759:10": {
       "preRequisiteTypes:7": [
         1
       ],
@@ -56902,7 +57181,7 @@
         }
       }
     },
-    "756:10": {
+    "760:10": {
       "preRequisites:11": [
         760
       ],
@@ -56964,6 +57243,150 @@
               "Damage:2": 341,
               "OreDict:8": "",
               "id:8": "appliedenergistics2:part"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "761:10": {
+      "preRequisites:11": [
+        763
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Allows you to view the Essentia in your system.\n\nMore info in thaumonomicon.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:essentia_terminal"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Essentia Viewing",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 762,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:essentia_terminal"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "762:10": {
+      "preRequisiteTypes:7": [
+        1,
+        0
+      ],
+      "preRequisites:11": [
+        735,
+        596
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "§dThaumic Energistics Extended Life§o§r grants Thaumcraft compatibility with Applied Energistics Extended Life, allowing for storage and autocrafting with Thaumcraft.\n",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:essentia_cell_1k",
+            "tag:10": {
+              "filter:10": {}
+            }
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Essentia Storage",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 763,
+      "rewards:9": {
+        "0:10": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 101,
+              "OreDict:8": "",
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:essentia_component_1k"
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -59291,22 +59714,22 @@
           "id:3": 639,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 108,
-          "y:3": 72
+          "x:3": -44,
+          "y:3": -16
         },
         "5:10": {
           "id:3": 640,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 120,
-          "y:3": 24
+          "x:3": -20,
+          "y:3": -40
         },
         "6:10": {
           "id:3": 641,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 88,
-          "y:3": 92
+          "x:3": 120,
+          "y:3": 80
         },
         "7:10": {
           "id:3": 642,
@@ -59319,22 +59742,22 @@
           "id:3": 643,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 40,
-          "y:3": 104
+          "x:3": -44,
+          "y:3": -40
         },
         "9:10": {
           "id:3": 644,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 112,
-          "y:3": 48
+          "x:3": 4,
+          "y:3": -40
         },
         "10:10": {
           "id:3": 645,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 64,
-          "y:3": 96
+          "x:3": -44,
+          "y:3": 8
         },
         "11:10": {
           "id:3": 646,
@@ -61228,7 +61651,7 @@
         "betterquesting:10": {
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Quests for Applied Energistics 2, the storage and automation mod.\n\nAlso has quests for AE2FCR, pauto, pex, and pastrial.",
+          "desc:8": "Quests for Applied Energistics 2, the storage and automation mod.\n\nAlso has quests for AE2 Fluid Crafting Reworked, Packaged Auto, pex, pastrial, and Thaumic Energistics Extended Life.",
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
@@ -61255,249 +61678,291 @@
           "y:3": -68
         },
         "2:10": {
+          "id:3": 712,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
+          "y:3": -216
+        },
+        "3:10": {
+          "id:3": 723,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
+          "y:3": -164
+        },
+        "4:10": {
           "id:3": 725,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -260
         },
-        "3:10": {
+        "5:10": {
           "id:3": 726,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -308
         },
-        "4:10": {
+        "6:10": {
           "id:3": 727,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -308
         },
-        "5:10": {
+        "7:10": {
           "id:3": 728,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -260
         },
-        "6:10": {
+        "8:10": {
           "id:3": 729,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -164
         },
-        "7:10": {
+        "9:10": {
           "id:3": 730,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -216
         },
-        "8:10": {
+        "10:10": {
           "id:3": 731,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -116
         },
-        "9:10": {
+        "11:10": {
           "id:3": 732,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -84,
           "y:3": -216
         },
-        "10:10": {
+        "12:10": {
           "id:3": 733,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -116
         },
-        "11:10": {
+        "13:10": {
+          "id:3": 734,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
+          "y:3": -116
+        },
+        "14:10": {
           "id:3": 735,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -260
         },
-        "12:10": {
+        "15:10": {
           "id:3": 736,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -308
         },
-        "13:10": {
+        "16:10": {
           "id:3": 737,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -348
         },
-        "14:10": {
+        "17:10": {
           "id:3": 738,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -208,
           "y:3": -348
         },
-        "15:10": {
+        "18:10": {
           "id:3": 739,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -244,
           "y:3": -348
         },
-        "16:10": {
+        "19:10": {
+          "id:3": 740,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
+          "y:3": -68
+        },
+        "20:10": {
           "id:3": 741,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -280,
           "y:3": -348
         },
-        "17:10": {
+        "21:10": {
           "id:3": 742,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -256,
           "y:3": -320
         },
-        "18:10": {
+        "22:10": {
           "id:3": 743,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -316,
           "y:3": -308
         },
-        "19:10": {
+        "23:10": {
           "id:3": 744,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -316,
           "y:3": -260
         },
-        "20:10": {
+        "24:10": {
           "id:3": 745,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -172,
           "y:3": -220
         },
-        "21:10": {
+        "25:10": {
           "id:3": 746,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -248,
           "y:3": -220
         },
-        "22:10": {
+        "26:10": {
           "id:3": 747,
           "sizeX:3": 32,
           "sizeY:3": 32,
           "x:3": -320,
           "y:3": -220
         },
-        "23:10": {
+        "27:10": {
           "id:3": 748,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -244,
           "y:3": -260
         },
-        "24:10": {
+        "28:10": {
           "id:3": 749,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -204,
           "y:3": -260
         },
-        "25:10": {
+        "29:10": {
           "id:3": 750,
           "sizeX:3": 48,
           "sizeY:3": 48,
           "x:3": -256,
           "y:3": -176
         },
-        "26:10": {
+        "30:10": {
           "id:3": 751,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -164
         },
-        "27:10": {
+        "31:10": {
           "id:3": 752,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -116
         },
-        "28:10": {
+        "32:10": {
           "id:3": 753,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -208,
           "y:3": -116
         },
-        "29:10": {
+        "33:10": {
           "id:3": 754,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -244,
           "y:3": -116
         },
-        "30:10": {
+        "34:10": {
           "id:3": 755,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -284,
           "y:3": -116
         },
-        "31:10": {
+        "35:10": {
           "id:3": 756,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -320,
           "y:3": -116
         },
-        "32:10": {
+        "36:10": {
           "id:3": 757,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -320,
           "y:3": -68
         },
-        "33:10": {
+        "37:10": {
           "id:3": 758,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -284,
           "y:3": -68
         },
-        "34:10": {
+        "38:10": {
           "id:3": 759,
           "sizeX:3": 40,
           "sizeY:3": 40,
           "x:3": -252,
           "y:3": -76
         },
-        "35:10": {
+        "39:10": {
           "id:3": 760,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -168,
           "y:3": -68
         },
-        "36:10": {
+        "40:10": {
           "id:3": 761,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -128,
           "y:3": -68
+        },
+        "41:10": {
+          "id:3": 762,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
+          "y:3": -260
+        },
+        "42:10": {
+          "id:3": 763,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": -40,
+          "y:3": -308
         }
       }
     },
