@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "location": "mbd:lee",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 10.0,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/lee_casing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
+        "type": "gregtech"
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/lee_casing",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech"
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "lee",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ],
+      [
+        "BBB",
+        "B B",
+        "BBB"
+      ],
+      [
+        "AAA",
+        "@ A",
+        "AAA"
+      ],
+      [
+        "BBB",
+        "B B",
+        "BBB"
+      ],
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "states": [
+          {
+            "id": "mbd:base_casing",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "controller": {
+        "location": "mbd:lee",
+        "type": "component"
+      },
+      "B": {
+        "states": [
+          {
+            "id": "bloodmagic:blood_rune",
+            "meta": 0
+          }
+        ],
+        "type": "states"
+      },
+      "fluid": {
+        "location": "mbd:fluid_hatch_input",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "fluidout": {
+        "location": "mbd:fluid_hatch_output",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "OUT"
+      },
+      "mana": {
+        "location": "mbd:mana_hatch",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1,
+        "io": "IN"
+      },
+      "any": {
+        "type": "any"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [
+        "any"
+      ],
+      "-": [
+        "air"
+      ],
+      "A": [
+        "A",
+        "fluid",
+        "fluidout",
+        "mana"
+      ],
+      "B": [
+        "B"
+      ]
+    }
+  }
+}

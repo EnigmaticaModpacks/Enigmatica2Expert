@@ -1,0 +1,33 @@
+{
+  "name": "lee",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "18b58302-3242-49ba-8969-97c375f8fed3",
+      "duration": 2,
+      "inputs": {
+        "bot_mana": [
+          {
+            "chance": 1.0,
+            "content": 100
+          }
+        ],
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"blood\",Amount:10}"
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "chance": 1.0,
+            "content": "{FluidName:\"lifeessence\",Amount:8}"
+          }
+        ]
+      }
+    }
+  ]
+}

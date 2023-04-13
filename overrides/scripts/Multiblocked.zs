@@ -31,6 +31,7 @@ var creativeTank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creati
 	[<ore:circuitAdvanced>, <mbd:base_casing>, <ore:circuitAdvanced>], 
 	[<contenttweaker:modularium>, <ore:circuitAdvanced>, <contenttweaker:modularium>]]);
 	
+	
 # Creative Tank Replicator 
 	recipes.addShapedMirrored("Creative Tank Replicator", 
 	<mbd:ctr>, 
@@ -38,6 +39,13 @@ var creativeTank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creati
 	[<thermalexpansion:frame:148>, creativeTank, <thermalexpansion:frame:148>], 
 	[<mbd:base_casing>, <thermalexpansion:frame:148>, <mbd:base_casing>]]);
 
+# Life Essence Extractor
+	recipes.addShapedMirrored("Life Essence", 
+	<mbd:lee>, 
+	[[<botania:livingrock>, <bloodmagic:slate>, <botania:livingrock>],
+	[<bloodmagic:slate>, <mbd:base_casing>, <bloodmagic:slate>], 
+	[<botania:livingrock>, <bloodmagic:slate>, <botania:livingrock>]]);
+	
 # Base Casing
     recipes.addShapedMirrored("Base Casing", 
     <mbd:base_casing> * 2, 
@@ -69,13 +77,22 @@ var creativeTank = <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creati
 recipes.addShapeless("Inputbusconvert",<mbd:item_bus_output>,[<mbd:item_bus_input>]);
 recipes.addShapeless("Outputbusconvert",<mbd:item_bus_input>,[<mbd:item_bus_output>]);
 
-# Fluid hatch
-      recipes.addShaped("Fluidhatch", 
-      <mbd:fluid_hatch>, 
+# Fluid hatchs
+      recipes.addShaped("Fluidhatchinput", 
+      <mbd:fluid_hatch_input>, 
       [[<ore:blockGlass>, null, null],
       [<mbd:base_casing>, null, null], 
       [null, null, null]]);
 	  
+      recipes.addShaped("Fluidhatchoutput", 
+      <mbd:fluid_hatch_output>, 
+      [[<mbd:base_casing>, null, null],
+      [<mbd:fluid_hatch_input>, null, null], 
+      [null, null, null]]);
+	  
+recipes.addShapeless("Inputhatchconvert",<mbd:fluid_hatch_output>,[<mbd:fluid_hatch_input>]);
+recipes.addShapeless("Outputhatchconvert",<mbd:fluid_hatch_input>,[<mbd:fluid_hatch_output>]);
+
 # Energy hatch
       recipes.addShaped("Energyhatch", 
       <mbd:energy_hatch>, 
@@ -83,3 +100,9 @@ recipes.addShapeless("Outputbusconvert",<mbd:item_bus_input>,[<mbd:item_bus_outp
       [<mbd:base_casing>, null, null], 
       [null, null, null]]);
 
+# Mana Hatch
+      recipes.addShaped("Manahatch", 
+      <mbd:mana_hatch>, 
+      [[<actuallyadditions:item_battery>, null, null],
+      [<mbd:base_casing>, null, null], 
+      [null, null, null]]);
