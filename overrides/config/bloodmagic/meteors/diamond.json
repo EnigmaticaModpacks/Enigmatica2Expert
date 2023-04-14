@@ -32,13 +32,13 @@
       "oreName": "oreRedstone"
     },
     {
-      "weight": 400,
-      "oreName": "oreDiamond"
+      "weight": 40,
+      "oreName": "oreDraconium"
     }
   ],
   "explosionStrength": 10.0,
   "radius": 3,
   "maxWeight": 1040,
   "version": 4,
-  "cost": 5000000
+  "cost": 500000
 }

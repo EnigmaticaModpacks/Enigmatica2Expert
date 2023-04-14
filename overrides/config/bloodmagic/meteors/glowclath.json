@@ -8,10 +8,6 @@
     },
     "components": [
       {
-        "weight": 200,
-        "oreName": "blockGlowstone"
-      },
-      {
         "weight": 100,
         "oreName": "oreClathrateRedstone"
       },
