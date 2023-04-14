@@ -680,15 +680,12 @@
                 "{id:\"thermalfoundation:storage_alloy\",Count:2,Damage:7s}"
               ]
             }
-          },
+          }
+        ],
+        "fluid": [
           {
             "chance": 1.0,
-            "content": {
-              "amount": 500,
-              "matches": [
-                "{id:\"gendustry:liquiddna\",Count:500,Damage:0s}"
-              ]
-            }
+            "content": "{FluidName:\"liquiddna\",Amount:500}"
           }
         ],
         "forge_energy": [

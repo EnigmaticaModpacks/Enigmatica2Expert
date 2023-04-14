@@ -128,7 +128,7 @@
         "previewCount": 1
       },
       "fluid": {
-        "location": "mbd:fluid_hatch",
+        "location": "mbd:fluid_hatch_input",
         "type": "component",
         "minCount": 1,
         "maxCount": 1,

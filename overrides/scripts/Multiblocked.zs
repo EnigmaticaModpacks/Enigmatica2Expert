@@ -103,6 +103,6 @@ recipes.addShapeless("Outputhatchconvert",<mbd:fluid_hatch_input>,[<mbd:fluid_ha
 # Mana Hatch
       recipes.addShaped("Manahatch", 
       <mbd:mana_hatch>, 
-      [[<actuallyadditions:item_battery>, null, null],
+      [[<botania:manaresource:4>, null, null],
       [<mbd:base_casing>, null, null], 
       [null, null, null]]);
