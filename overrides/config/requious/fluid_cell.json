@@ -1,0 +1,22 @@
+[
+  {
+    "generateSubItems": true,
+    "capacity": 1000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "cell",
+    "model": "requious:cell",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  }
+]
