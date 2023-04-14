@@ -20,5 +20,6 @@ multiblocked.recipe_map.atf=Advanced Thermionic Fabrication
 tile.mbd.ctr.name=Creative Tank Replicator 
 ctr.name=Creative Tank Replicator
 multiblocked.recipe_map.ctr=Creative Tank Replication
+tile.lee.ctr.name=Creative Tank Replicator 
 lee.name=Life Essence Extractor
-multiblocked.recipe_map.ctr=Life Essence Extraction
+multiblocked.recipe_map.lee=Life Essence Extraction
