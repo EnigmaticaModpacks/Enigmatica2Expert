@@ -1,4 +1,5 @@
 {
+  "build:8": "4.1.0",
   "format:8": "2.0.0",
   "questDatabase:9": {
     "0:10": {
@@ -54164,8 +54165,8 @@
         },
         "1:10": {
           "asScript:1": 1,
-          "command:8": "tell @p https://youtu.be/3HishGi0CQw",
-          "description:8": "I am so Happy to Finally be Back Home - Eduard Khil",
+          "command:8": "tell @p https://youtu.be/0EzZCJhrRt8",
+          "description:8": "Introducing Enigmatica 2 Expert Unofficial",
           "hideBlockIcon:1": 1,
           "index:3": 1,
           "rewardID:8": "bq_standard:command",
@@ -55818,7 +55819,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Exposes Essentia to Infusion Matrixes, allow for Infusion autocrafting.\n\nMore info in thaumonomicon.",
+          "desc:8": "Exposes Essentia to Infusion Matrixes, allows for Infusion autocrafting.\n\nMore info in thaumonomicon.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
