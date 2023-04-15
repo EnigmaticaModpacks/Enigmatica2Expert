@@ -1,5 +1,17 @@
-[main/ERROR] [mixin]: Critical problem: mixins.tweaks.realmsbutton.json:UTRealmsButtonMainMenuMixin target net.minecraft.client.gui.GuiMainMenu was loaded too early.
-[pool-3-thread-1/ERROR] [craftpresence]: Failed to locate changelog data for craftpresence @ 2.0-.1
+[main/WARN] [mixin]: @Mixin target net/minecraft/client/renderer/BlockModelRenderer$AmbientOcclusionFace is public in mixins.bugfixes.misc.smoothlighting.json:UTSmoothLightingMixin and should be specified in value
+[main/ERROR] [mixin]: Critical problem: mixins.tweaks.misc.buttons.realms.json:UTRealmsButtonMainMenuMixin target net.minecraft.client.gui.GuiMainMenu was loaded too early.
+[Client thread/ERROR] [FML]: Invalid fingerprint detected! The file conarm-1.12.2-1.2.5.10-patched.jar may have been tampered with. This version will NOT be supported by the author!
+[pool-3-thread-1/ERROR] [craftpresence]: Unable to get "atlauncher" pack data (ignore if not using a "atlauncher" pack)
+[Client thread/WARN] [justenoughdimensions]: *********************************************************************************************
+[Client thread/WARN] [justenoughdimensions]: *****                                    WARNING                                        *****
+[Client thread/WARN] [justenoughdimensions]: *****                                                                                   *****
+[Client thread/WARN] [justenoughdimensions]: *****   The signature of the mod file 'justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847.jar' does not match the expected fingerprint!     *****
+[Client thread/WARN] [justenoughdimensions]: *****   This might mean that the mod file has been tampered with!                       *****
+[Client thread/WARN] [justenoughdimensions]: *****   If you did not download the mod Just Enough Dimensions directly from Curse/CurseForge,       *****
+[Client thread/WARN] [justenoughdimensions]: *****   or using one of the well known launchers, and you did not                       *****
+[Client thread/WARN] [justenoughdimensions]: *****   modify the mod file at all yourself, then it's possible,                        *****
+[Client thread/WARN] [justenoughdimensions]: *****   that it may contain malware or other unwanted things!                           *****
+[Client thread/WARN] [justenoughdimensions]: *********************************************************************************************
 [Client thread/WARN] [thaumicaugmentation]: A file failed to match with the signing key.
 [Client thread/WARN] [thaumicaugmentation]: If you *know* this is a homebrew/custom build then this is expected, carry on.
 [Client thread/WARN] [thaumicaugmentation]: Otherwise, you might want to redownload this mod from the *official* CurseForge page.
@@ -228,4 +240,5 @@
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'thaumicwonders:corruption_avatar'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'betteranimalsplus:pheasant'
 [Client thread/ERROR] [FML]: Encountered an exception while constructing entity 'betteranimalsplus:turkey'
+[Client thread/WARN] [tcresearchpatcher]: Key meta was supposed to be removed, but already did not exist
 [pool-12-thread-1/WARN] [FML]: * Mods using BASE must have their mod class extend IBaseMod!

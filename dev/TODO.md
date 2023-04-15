@@ -2,19 +2,16 @@
 
 List of priorities:
 
+- [ ] ✏️ Draconic Metals made in QMD multiblocks
+- [ ] 📀 Downgrade Recurrent Comples or track https://github.com/Ivorforce/RecurrentComplex/pull/494
+- [ ] 📀 Remove, 8% FPS `de.sanandrew.mods.immersivecables.client.render.RenderTileIWConnectable.setLightmap()`
+- [ ] 🔄 Request `Block ID` getter for CTUtils
+- [ ] 🔄 More Defaul Options not copy jei.cfg file
+- [ ] 🔄 Test Skyblock Mode
+- [ ] 🟢 Integrate ☢️ `Moar Reactor Functionality`
+- [ ] 🟢 Integrate ☢️ `New Turbine Parts`
 - [ ] 💥 `world.catenation()` doesnt working anymore
 - [ ] 💥 going Between Dims Causing Client Freezez
-- [ ] ✏️ Basic Processor QMD alt recipe (for players who won't build Irradiator)
-- [ ] 📀 Remove, 8% FPS `de.sanandrew.mods.immersivecables.client.render.RenderTileIWConnectable.setLightmap()`
-- [ ] 🍱 Add screenshots to main meny
-- [ ] 🔄 More Defaul Options not copy jei.cfg file
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/packageddraconic
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-12-continuation
-- [ ] 🟢 Add? https://www.curseforge.com/minecraft/mc-mods/blocks-booster
-- [ ] 🟢 Add? https://www.curseforge.com/minecraft/customization/moar-reactor-functionality
-
-### v0.89.0 -> Next
-- Turn off Fusion reactors since plasma
 
 ---
 
@@ -24,9 +21,20 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Remove Refined Ingots smelting in Smeltery
+- [ ] ✏️ Tritium probably should be sustained only by QMD?
+- [ ] ✏️ Thaumic Slime add interesting drop
+- [ ] ✏️ reduce Dungeon Loot Chest Item kinds to not overfill containers
+- [ ] ✏️ Padauk Tree could be used to get Gold
+- [ ] 🪐 NC have its own "Wateland" dim - make Use Of it
+- [ ] ✏️ Dimlets should not drop from Overworld mobs, only in dimensions
+- [ ] ✏️ Buff mek steam a little
+- [ ] 📖 Better document Butterfly => Wasp transform in Nether Portal
 - [ ] 📖 Fix completion of quest chapters
 - [ ] 🔄 Dispencers still converted into Lootr chests even when blacklisted https://github.com/noobanidus/Lootr/issues/183
-- [ ] 📀 Tweak Myrmex trades
+- [ ] 📀 Tweak Myrmex trades (add sponge)
+- [ ] ✏️ Chemical thrower turns stone into ore if spreading on exact block (calculated based on world seed). Can be determined with Computer
+- [ ] ✏️ RFTools `Dimension building` make cheaper by balancing possible dimlets
 - [ ] ✏️ `Conglomerate of Life` spawns Foxes and Pigmen near portal
 - [ ] ✏️ `Conglomerate of Coal` should buff portal spread with `onRandomTick`
 - [ ] 🔨 rework Difficulty Trait
@@ -285,6 +293,7 @@ Items that should have more uses:
 ![](https://git.io/JnzzI "Glitch Infused Ingot")
 ![](https://is.gd/SoB2O1 "Machine Parts")
 ![](https://is.gd/PpipIo "Osgloglas Ingot")
+[Shulker Shell]
 
 ### Tier 4
 

@@ -93,3 +93,4 @@ config/bogosorter/config.json
 config/FBP/*
 config/startuptimer/startup_times.json
 config/ChatFlow.dat
+config/nuclearcraft.info
