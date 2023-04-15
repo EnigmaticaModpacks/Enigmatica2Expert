@@ -3,6 +3,7 @@
   "_schemaVersion": 3,
   "_lastMCVersionId": 340,
   "generalSettings": {
+    "detectATLauncherInstance": true,
     "detectCurseManifest": true,
     "detectMultiMCManifest": true,
     "detectMCUpdaterInstance": true,
@@ -185,7 +186,6 @@
     }
   },
   "advancedSettings": {
-    "enableCommands": true,
     "enablePerGui": false,
     "enablePerItem": false,
     "enablePerEntity": false,
