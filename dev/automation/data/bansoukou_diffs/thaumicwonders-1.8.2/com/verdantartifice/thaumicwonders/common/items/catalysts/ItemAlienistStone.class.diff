@@ -89,7 +89,7 @@
 +            String clusterName;
 +            ItemStack item;
 +            String newName = OreDictionary.getOreName((int)oreID);
-+            if (!newName.startsWith("cluster") || (item = (ItemStack)OreDictionary.getOres((String)(clusterName = "crystalShard" + newName.substring(3))).stream().findFirst().orElse(null)) == null) continue;
++            if (!newName.startsWith("cluster") || (item = (ItemStack)OreDictionary.getOres((String)(clusterName = "crystalShard" + newName.substring(7))).stream().findFirst().orElse(null)) == null) continue;
 +            return item;
          }
          return null;
