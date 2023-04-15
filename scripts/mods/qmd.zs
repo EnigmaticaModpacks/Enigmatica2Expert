@@ -163,6 +163,7 @@ utils.rh(<qmd:semiconductor:3>); // Wafer replaced by Adv. Rock.
 utils.rh(<qmd:semiconductor:2>); // Silicon boule
 mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(<qmd:semiconductor:1>);
 mods.nuclearcraft.FissionIrradiator.addRecipe(<ore:waferSilicon>, <qmd:semiconductor:1>, 120000, 0, 0, 0);
+mods.rats.recipes.addArcheologistRatRecipe(<advancedrocketry:wafer>, <qmd:semiconductor:1>);
 
 // Molten Silicon from pre-AR sources
 scripts.process.melt(<ore:ingotSilicon>, <fluid:silicon> * 144, "except: melter");
@@ -179,7 +180,7 @@ null, null, null,
 1000, 1.0, 0, 0);
 
 //mods.qmd.nucleosynthesis_chamber.addRecipe(IIngredient inputFluid1, IIngredient inputFluid2, IIngredient inputParticle, IIngredient outputFluid1, IIngredient outputFluid2, {long maxEnergy}, {long heatRelased})
-mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:sky_stone>*52, <liquid:enrichedlava>*20, <particle:neutron>*1000000, <liquid:neutronium>*72, null, 10000, 874000);
+mods.qmd.nucleosynthesis_chamber.addRecipe(<liquid:sky_stone>*52, <liquid:enrichedlava>*20, <particle:neutron>*1000000, <liquid:neutronium>*72, null, 1000000, 874000);
 
 // sodium, iridium, cobalt, and calcium source stack size fix
 <qmd:source:1>.maxStackSize = 1;
@@ -226,7 +227,7 @@ mods.qmd.nucleosynthesis_chamber.addRecipe(<fluid:gold> * 144, null, (<particle:
 mods.qmd.nucleosynthesis_chamber.removeRecipeWithInput(<fluid:mercury> * 144, null, (<particle:neutron>*16940000)~1);
 mods.qmd.nucleosynthesis_chamber.addRecipe(<fluid:fluid_quicksilver> * 144, null, (<particle:neutron>*16940000)~1, <liquid:lead>*144, null, 10000000, 4180);
 mods.nuclearcraft.Turbine.removeRecipeWithOutput(<fluid:mercury>);
-mods.nuclearcraft.Turbine.addRecipe(<liquid:hot_mercury>, <liquid:fluid_quicksilver> * 2, 8192.0, 4.0, 1.0);
+mods.nuclearcraft.Turbine.addRecipe(<liquid:hot_mercury>, <liquid:fluid_quicksilver>, 8192.0, 4.0, 1.0);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(<qmd:discharge_lamp2:1>);
 mods.nuclearcraft.Infuser.addRecipe(<qmd:discharge_lamp:6>, <liquid:fluid_quicksilver>*144, <qmd:discharge_lamp2:1>);
 mods.qmd.nucleosynthesis_chamber_heater.removeRecipeWithOutput(<fluid:hot_mercury>);

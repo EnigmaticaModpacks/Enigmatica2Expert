@@ -412,7 +412,7 @@
 	<!-- [Super Alloy Ingot] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>
-			<oreDict>ingotNichrome 4</oreDict>
+			<oreDict>ingotNichrome 2</oreDict>
 			<oreDict>ingotNiobiumTitanium 1</oreDict>
 		</input>
 		<output>

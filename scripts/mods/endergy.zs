@@ -104,7 +104,7 @@ mods.tconstruct.Alloy.addRecipe(<liquid:vivid_alloy> * 144, [
 ]);
 
 // Multiblock Machine recipe
-scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
+scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler", [
   <ore:blockEnderium>,                  # Block of Enderium
   <ore:blockAlumite>,                   # Alumite Block
   <draconicevolution:infused_obsidian>, # Draconium Infused Obsidian

@@ -119,13 +119,13 @@ remake("environmentaltech modifier_speed",
 	<environmentaltech:modifier_speed>, [
 		[<ore:blockRedstone>, <environmentaltech:erodium_crystal>, <ore:blockRedstone>], 
 		[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], 
-		[<fluid:low_pressure_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:low_pressure_steam> * 1000]]);
+		[<fluid:exhaust_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:exhaust_steam> * 1000]]);
 
 remake("environmentaltech modifier_accuracy", 
 	<environmentaltech:modifier_accuracy>, [
 		[<ore:blockDiamond>, <environmentaltech:pladium_crystal>, <ore:blockDiamond>], 
 		[<environmentaltech:mica>, <environmentaltech:modifier_null>, <environmentaltech:mica>], 
-		[<fluid:low_pressure_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:low_pressure_steam> * 1000]]);
+		[<fluid:exhaust_steam> * 1000, <environmentaltech:lonsdaleite_crystal>, <fluid:exhaust_steam> * 1000]]);
 
 # Nanobot Oredict for Quest book
 <ore:nanoBotBeacon>.addItems([
@@ -192,15 +192,8 @@ static evt as IIngredient[][string] = {
 	],
 } as IIngredient[][string];
 
-# Photovoltatic cell Hard earlier recipe
-craft.remake(<environmentaltech:photovoltaic_cell>, [
-	"ABA",
-	"ACA",
-	"ABA"], {
-	A: <ore:plateSilicon>,
-	B: <ore:plateDenseLapis>,
-	C: <ore:plateEnderium>
-	});
+# Photovoltaic cell remove since replaced with EnderIO one
+utils.rh(<environmentaltech:photovoltaic_cell>);
 
 # ######################################################################
 #
@@ -221,7 +214,7 @@ static evtCores as IIngredient[] = [
 
 # Additional Ingredients for each level
 static evtSolarCores as IIngredient[] = [
-	<environmentaltech:photovoltaic_cell>,
+	<enderio:item_material:3>,
 	<ore:nuggetUUMatter>,
 	<ore:nuggetCrystaltine>,
 	<ore:nuggetStellarAlloy>,
@@ -293,7 +286,7 @@ for i in 0 .. 6 {
 	evtIngrs["y"] = evt.crystal[max(0, i - 1)];
 	evtIngrs["#"] = evtSolarCores[i];
 	evtIngrs["_"] = <environmentaltech:interconnect>;
-	evtIngrs["▂"] = solPanel;
+	evtIngrs["▂"] = i==0 ? evtSolarCores[0] : evt.panel[i - 1].itemArray[0];
 	evtIngrs["p"] = evt.panel[max(0, i - 1)];
 
 	recipes.remove(solPanel);
@@ -354,7 +347,7 @@ for i in 0 .. 6 {
 		". . . . . . ."], evtIngrs);
 	} else
 	if (i==5) {
-		evtIngrs["T"] = <enderio:block_solar_panel:3>;
+		evtIngrs["T"] = <enderio:block_solar_panel:2>;
 		evtIngrs["▫"] = <nuclearcraft:part:3>;
 		evtIngrs["▢"] = <compactsolars:compact_solar_block:2>;
 		evtIngrs["▣"] = <thermalexpansion:frame:147>;

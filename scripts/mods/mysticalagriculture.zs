@@ -303,6 +303,10 @@ addTieredRecipe(<mysticalagriculture:gold_seeds>,           [<ore:blockGold> ,<o
 addTieredRecipe(<mysticalagriculture:amber_seeds>,          [<ore:blockAmber> ,<ore:runeGluttonyB>], null);
 addTieredRecipe(<mysticalagriculture:topaz_seeds>,          [<biomesoplenty:gem_block:3> ,<ore:runeGluttonyB>], null);
 addTieredRecipe(<mysticalagriculture:osmium_seeds>,         [<ore:blockOsmium> ,<ore:runeEnvyB>], null);
+addTieredRecipe(<mysticalagriculture:boron_seeds>,          [<ore:blockBoron> ,<ore:runeEnvyB>], null);
+addTieredRecipe(<mysticalagriculture:lithium_seeds>,        [<ore:blockLithium> ,<ore:runeEnvyB>], null);
+addTieredRecipe(<mysticalagriculture:magnesium_seeds>,      [<ore:blockMagnesium> ,<ore:runeEnvyB>], null);
+addTieredRecipe(<mysticalagriculture:thorium_seeds>,        [<ore:blockThorium> ,<ore:runeEnvyB>], null);
 addTieredRecipe(<mysticalagriculture:malachite_seeds>,      [<biomesoplenty:gem_block:5> ,<ore:runePrideB>], null);
 addTieredRecipe(<mysticalagriculture:tanzanite_seeds>,      [<biomesoplenty:gem_block:4> ,<ore:runeLustB>], null);
 addTieredRecipe(<mysticalagriculture:nickel_seeds>,         [<ore:blockNickel> ,<ore:runeGreedB>], null);
@@ -733,7 +737,7 @@ for i, item in furnaceByTier {
 # Essence remake
 # --------------------------------------------
 function remakeBlock(recName as string, output as IBlockState, ingrs as IIngredient[], fluid as string = 'stone') as void {
-	recipes.removeByRecipeName(recName);
+	if(!isNull(recName)) recipes.removeByRecipeName(recName);
 	scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, fluid, output);
 	// scripts.processUtils.avdRockXmlRecipe("Crystallizer", [ingrs[0]], [game.getLiquid(fluid) * 1000], [output.block.item], null);
 }
@@ -886,6 +890,10 @@ remakeBlock   ("mysticalagriculture:ingotnickel"          , <blockstate:thermalf
 remakeBlock   ("mysticalagriculture:ingotplatinum"        , <blockstate:thermalfoundation:ore:type=platinum>     , [<mysticalagriculture:platinum_essence>], 'base_essence');
 remakeBlock   ("mysticalagriculture:ingotiridium"         , <blockstate:thermalfoundation:ore:type=iridium>      , [<mysticalagriculture:iridium_essence>]);
 remakeBlock   ("mysticalagriculture:ingoturanium"         , <blockstate:immersiveengineering:ore:type=uranium>   , [<mysticalagriculture:uranium_essence>]);
+remakeBlock   (null      															    , <blockstate:nuclearcraft:ore:type=boron>             , [<mysticalagriculture:boron_essence>]);
+remakeBlock   (null      															    , <blockstate:nuclearcraft:ore:type=lithium>           , [<mysticalagriculture:lithium_essence>]);
+remakeBlock   (null      															    , <blockstate:nuclearcraft:ore:type=magnesium>         , [<mysticalagriculture:magnesium_essence>]);
+remakeBlock   (null      															    , <blockstate:nuclearcraft:ore:type=thorium>           , [<mysticalagriculture:thorium_essence>]);
 remakeManapool("mysticalagriculture:ingotknightmetal", <twilightforest:armor_shard> * 3, [<mysticalagriculture:knightmetal_essence>]);
 remakeCrucible("mysticalagriculture:ingotironwood", <twilightforest:root:1> * 2, [<mysticalagriculture:ironwood_essence>], [<aspect:victus>]);
 // remakeSimple("mysticalagriculture:apple"                , <minecraft:apple> * 8                     , [<mysticalagriculture:nature_essence> * 3                                            ]);

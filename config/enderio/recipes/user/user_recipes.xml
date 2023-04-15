@@ -726,7 +726,7 @@
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Super Alloy Ingot">
     <alloying energy="10000">
-      <input name="ingotNichrome" amount="4"/>
+      <input name="ingotNichrome" amount="2"/>
       <input name="ingotNiobiumTitanium"/>
       <output name="qmd:ingot_alloy:6" amount="3"/>
     </alloying>

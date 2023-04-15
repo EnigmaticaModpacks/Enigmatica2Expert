@@ -2,7 +2,6 @@
 import crafttweaker.item.IItemStack;
 
 # [Dimension Enscriber Prototype] from [Resonant Cell Frame (Empty)][+4]
-recipes.remove(<rftoolsdim:dimension_enscriber>);
 craft.remake(<rftdimtweak:dimension_enscriber>, ["pretty",
   "M E M",
   "A ◘ A",

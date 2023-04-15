@@ -82,12 +82,13 @@ val mineralisList = [
   return list.map(([od,w])=>`  ${$('ore', od, 0, Math.max(1,(w/max*64)|0), null, '.firstItem')},`)
 }*/
   <ore:oreCoal>.firstItem * 64,
-  <ore:oreIron>.firstItem * 30,
   <ore:oreTin>.firstItem * 18,
-  <ore:oreCopper>.firstItem * 13,
   <ore:oreLead>.firstItem * 12,
   <ore:oreOsmium>.firstItem * 11,
+  <ore:orePlatinum>.firstItem * 11,
+  <ore:oreSapphire>.firstItem * 9,
   <ore:oreRedstone>.firstItem * 8,
+  <ore:oreMalachite>.firstItem * 8,
   <ore:oreAluminum>.firstItem * 7,
   <ore:oreBoron>.firstItem * 7,
   <ore:oreLithium>.firstItem * 7,
@@ -101,7 +102,6 @@ val mineralisList = [
   <ore:oreSilver>.firstItem * 2,
   <ore:oreLapis>.firstItem,
   <ore:oreMithril>.firstItem,
-  <ore:orePlatinum>.firstItem,
 /**/
 ] as IItemStack[];
 

@@ -176,28 +176,6 @@ remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
 # Rat flowers
 scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower> * 9, "No exceptions", null, 0);
 
-# [Creative Cheese] from [Block of Cheese][+12]
-craft.remake(<rats:creative_cheese>, ["pretty",
-  "C e S e C",
-  "h ♀ ∞ W h",
-  "○ ● ■ ● ○",
-  "h ♂ ⌀ ☻ h",
-  "C e S e C"], {
-  "C": <rats:cheese_cannonball>,         # Cheese Cannonball
-  "e": <animania:cheese_omelette>,       # Cheese Omelette
-  "S": <rats:string_cheese>,             # String Cheese
-  "h": <harvestcraft:cheeseitem>,        # Cheese
-  "♀": <animania:friesian_cheese_wheel>, # Cheese Wheel (Friesian)
-  "∞": <animania:holstein_cheese_wheel>, # Cheese Wheel (Holstein)
-  "W": <animania:jersey_cheese_wheel>,   # Cheese Wheel (Jersey)
-  "○": <culinaryconstruct:sandwich:*>,   # Cheese Wedge (Sheep), Cheese Wedge (Goat), Cheese Wedge (Friesian), Cheese Wedge (Holstein), and Cheese Wedge (Jersey) Sandwich
-  "●": <actuallyadditions:item_food>,    # Cheese
-  "■": <rats:block_of_cheese>,           # Block of Cheese
-  "♂": <animania:goat_cheese_wheel>,     # Cheese Wheel (Goat)
-  "⌀": <betteranimalsplus:goatcheese>,   # Goat Cheese
-  "☻": <animania:sheep_cheese_wheel>,    # Cheese Wheel (Sheep)
-});
-
 # ######################################################################
 #
 # Compat material using

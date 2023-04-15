@@ -67,7 +67,7 @@ craft.remake(<psicosts:creative_cell>, ["pretty",
   "  ▬ D ▬ §",
   "P § §   P"], {
   "P": <ore:ingotSpectre>,
-  "D": <bloodmagic:decorative_brick:3>,         # Crystal Cluster Brick
+  "D": <thaumadditions:taintwood_planks>,
   "§": <deepmoblearning:glitch_infused_ingot>,  # Glitch Infused Ingot
   "◘": <psicosts:psi_cell:2>,                   # PSI-Dyne Cell
   "▬": <ore:ingotEbonyPsi>,                     # Ebony Psimetal Ingot

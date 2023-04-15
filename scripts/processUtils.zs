@@ -318,8 +318,8 @@ function avdRockXmlRecipeFlatten(
   }
 
   if (!isNull(box)) {
-    ingrs += box as IIngredient;
-    countRaw += box.amount;
+    ingrs += (box.damage == 32767 ? box.withDamage(0) : box) as IIngredient;
+    countRaw += min(box.maxStackSize, box.amount);
   }
 
   # Compute discount

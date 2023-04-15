@@ -172,6 +172,50 @@ craft.remake(<extendedcrafting:material:8>, ["pretty",
   "□": <ore:plateAdvancedAlloy>, # Advanced Alloy
 });
 
+# [Advanced Component] from [Plastic][+4]
+craft.remake(<extendedcrafting:material:15>, ["pretty",
+  "# A #",
+  "M R M",
+  "# G #"], {
+  "#": <astralsorcery:blockinfusedwood:1>, # Infused Wood Planks
+  "A": <ore:alloyAdvanced>, # Enriched Alloy
+  "M": <extrautils2:decorativesolidwood>,  # Magical Planks
+  "R": <industrialforegoing:plastic>,      # Plastic
+  "G": <biomesoplenty:coral:*>,            # Glowing Coral
+});
+
+# [Advanced Catalyst] from [Void Crystal][+2]
+craft.remake(<extendedcrafting:material:9>, ["pretty",
+  "∩ A ∩",
+  "A * A",
+  "∩ A ∩"], {
+  "∩": <integrateddynamics:crystalized_menril_chunk>, # Crystalized Menril Chunk
+  "A": <extendedcrafting:material:15>, # Advanced Component
+  "*": <ore:crystalVoid>,              # Void Crystal
+});
+
+# [Elite Component] from [Emerald Gear][+4]
+craft.remake(<extendedcrafting:material:16>, ["pretty",
+  "L ◘ L",
+  "▬ ¤ ▬",
+  "L P L"], {
+  "L": <botania:livingwood:1>,            # Livingwood Planks
+  "◘": <ic2:fluid_cell>.withTag({Fluid: {FluidName: "syngas", Amount: 1000}}), # Universal Fluid Cell
+  "▬": <ore:ingotPlutonium242All>,        # Plutonium-242
+  "¤": <ore:gearEmerald>,                 # Emerald Gear
+  "P": <appliedenergistics2:material:20>, # Printed Silicon
+});
+
+# [Elite Catalyst] from [Material Absorber][+2]
+craft.remake(<extendedcrafting:material:10>, ["pretty",
+  "▲ E ▲",
+  "E M E",
+  "▲ E ▲"], {
+  "▲": <ore:dustPsi>,                  # Psidust
+  "E": <extendedcrafting:material:16>, # Elite Component
+  "M": <rftoolsdim:material_absorber>.withTag({meta: 0, absorbing: 0, block: "minecraft:stone"}), # Material Absorber
+});
+
 # [Black Iron Frame]*8 from [Quartz Glass][+1]
 craft.remake(<extendedcrafting:frame> * 8, ["pretty",
   "‚ ⌃ ‚",

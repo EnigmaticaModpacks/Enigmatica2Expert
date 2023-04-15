@@ -23,8 +23,6 @@ import crafttweaker.liquid.ILiquidStack;
 	Crucible.addRecipe(<liquid:psimetal> * 144, <psi:material:0>, 5000);
 	Crucible.addRecipe(<liquid:psimetal> * 1296, <psi:psi_decorative:1>, 40000);
 	Crucible.addRecipe(<liquid:psimetal> * 1296, <psi:psi_decorative:0>, 40000);
-	Crucible.addRecipe(<liquid:infinity> * 144, <avaritia:resource:6>, 5000);
-	Crucible.addRecipe(<liquid:infinity> * 1296, <avaritia:block_resource:1>, 40000);
 	Crucible.addRecipe(<liquid:thaumium> * 16, <thaumcraft:nugget:6>, 500);
 	Crucible.addRecipe(<liquid:thaumium> * 144, <thaumcraft:ingot:0>, 5000);
 	Crucible.addRecipe(<liquid:thaumium> * 1296, <thaumcraft:metal_thaumium>, 40000);

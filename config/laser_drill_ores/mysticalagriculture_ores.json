@@ -1,15 +1,2 @@
 [
-  {
-    "item" : "mysticalagriculture:prosperity_ore:0",
-    "color" : 3,
-    "rarity" : [
-      {
-        "whitelist": "advancedrocketry:moon",
-        "blacklist": "",
-        "depth_min": 0,
-        "depth_max": 255,
-        "weight": 8
-      }
-    ]
-  }
 ]

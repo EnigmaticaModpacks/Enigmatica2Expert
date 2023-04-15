@@ -140,8 +140,8 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 890
-# Filtered by JEI blacklist: 42
+# Total Furnace recipes registered: 888
+# Filtered by JEI blacklist: 40
 # Filtered manuallly (antidupe): 15
 # Filtered by oredict: 177
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
@@ -744,9 +744,9 @@ infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 11), utils.get("m
 infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 12), utils.get("immersiveengineering:ore", 5, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_1", 14), utils.get("libvulpes:ore0", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_nether_modded_1"), utils.get("thermalfoundation:ore", 4, 2));
-#infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 1), utils.get("biomesoplenty:gem_ore", 1, 2));
+infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 1), utils.get("biomesoplenty:gem_ore", 1, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 2), utils.get("biomesoplenty:gem_ore", 6, 2));
-#infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 3), utils.get("biomesoplenty:gem_ore", 2, 2));
+infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 3), utils.get("biomesoplenty:gem_ore", 2, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 5), utils.get("netherendingores:ore_other_1", 6, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 6), utils.get("netherendingores:ore_other_1", 7, 2));
 #infinFurnace(utils.get("netherendingores:ore_nether_modded_2", 7), utils.get("netherendingores:ore_other_1", 8, 2));
@@ -996,6 +996,7 @@ infinFurnace(utils.get("thaumcraft:cluster"), utils.get("thermalfoundation:mater
 infinFurnace(utils.get("thaumcraft:ore_amber", W), utils.get("thaumcraft:amber"));
 infinFurnace(utils.get("thaumcraft:ore_cinnabar", W), utils.get("thaumcraft:quicksilver"));
 #infinFurnace(utils.get("thaumcraft:ore_quartz", W), utils.get("minecraft:quartz"));
+infinFurnace(utils.get("thaumicaugmentation:stone", 10), utils.get("thaumcraft:stone_ancient_rock"));
 ##infinFurnace(utils.get("thermalfoundation:material", 1), utils.get("minecraft:gold_ingot"));
 ##infinFurnace(utils.get("thermalfoundation:material", 64), utils.get("thermalfoundation:material", 128));
 ##infinFurnace(utils.get("thermalfoundation:material", 65), utils.get("thermalfoundation:material", 129));

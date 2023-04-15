@@ -183,7 +183,7 @@ craft.remake(<immersiveengineering:stone_decoration> * 3, ["pretty",
 
 # Garden Cloche
 	recipes.remove(<immersiveengineering:metal_device1:13>);
-	mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:metal_device1:13>, 
+	scripts.mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:metal_device1:13>, 
 	[[null, <actuallyadditions:block_greenhouse_glass>, null],
 	[null, <ic2:upgrade:4>, null], 
 	[<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:5>, <ore:plankTreatedWood>]], 
@@ -227,8 +227,10 @@ mods.jei.JEI.addItem(<immersiveengineering:stone_decoration:9>);
 mods.immersiveengineering.Excavator.addMineral("Osmium", 50, 0.005, ["oreTin", "oreOsmium", "oreSilver"], [0.01, 0.006, 0.003]);
 mods.immersiveengineering.Excavator.addMineral("Nuclear Ore", 20, 0.005, ["oreBoron", "oreThorium"], [0.01, 0.01]);
 mods.immersiveengineering.Excavator.addMineral("Black Quartz", 20, 0.005, ["oreQuartzBlack", "oreCoal"], [0.3, 0.2]);
-mods.immersiveengineering.Excavator.getMineral("Platinum").removeOre("oreIridium");
 mods.immersiveengineering.Excavator.getMineral("Coal").removeOre("oreEmerald");
+mods.immersiveengineering.Excavator.getMineral("Nickel").removeOre("orePlatinum");
+mods.immersiveengineering.Excavator.getMineral("Cinnabar").removeOre("oreRuby");
+mods.immersiveengineering.Excavator.removeMineral("Platinum");
 
 # *======= Railgun rods =======*
 
@@ -531,7 +533,7 @@ craft.make(<immersiveengineering:stone_decoration:8>, ["pretty",
 });
 
 # [Insulating Glass*4] from [Cactus Green][+1]
-mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_decoration:8> * 6, Grid([
+scripts.mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:stone_decoration:8> * 6, Grid([
   "▲d▲"], {
   "▲": <ore:dustIron>, # Pulverized Iron
   "d": <ore:dyeGreen>, # Cactus Green

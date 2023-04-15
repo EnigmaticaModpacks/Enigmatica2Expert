@@ -51,4 +51,8 @@
 		<ore itemStack="thermalfoundation:storage_alloy" chance="100"/>
 		<ore itemStack="advancedrocketry:hotturf" chance="25"/>
 	</asteroid>
+	<asteroid name="Moon Turf asteroid" distance="50" mass="64" massVariability="10" probability="8" richness="0.9" richnessVariability="0.1">
+		<ore itemStack="advancedrocketry:moonturf" chance="50"/>
+		<ore itemStack="advancedrocketry:moonturf_dark" chance="50"/>
+	</asteroid>
 </Asteroids>

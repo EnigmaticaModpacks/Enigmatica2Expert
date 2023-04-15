@@ -90,9 +90,9 @@ val BT = <ore:gemBenitoite>;
 mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:itemknowledgeshare>.withTag({astralsorcery: {creativeKnowledge: 1 as byte}}), [
 	[IW, IW, PC, PC, null, null, null], 
 	[IW, IW, CO, CO, BT, BT, null], 
-	[PC, CO, <astralsorcery:itemperkgem:*>, EI, <astralsorcery:itemknowledgeshare>, BT, null], 
+	[PC, CO, <ore:gemPerk>, EI, <astralsorcery:itemknowledgeshare>, BT, null], 
 	[PC, CO, EI, TE, EI, CO, PC], 
-	[null, BT, <astralsorcery:itemknowledgeshare>, EI, <astralsorcery:itemperkgem:*>, CO, PC], 
+	[null, BT, <astralsorcery:itemknowledgeshare>, EI, <ore:gemPerk>, CO, PC], 
 	[null, BT, BT, CO, CO, IW, IW], 
 	[null, null, null, PC, PC, IW, IW]
 ]);

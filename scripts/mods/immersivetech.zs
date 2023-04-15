@@ -19,6 +19,9 @@ craft.shapeless(<immersivetech:stone_decoration> * 8, "CCCC⌂CCCC", {
   "⌂": <ic2:casing:5>,                          # Steel Item Casing
 });
 
+// Oredict molten salt
+mods.immersivetechnology.MeltingCrucible.removeRecipe(<qmd:chemical_dust:3>);
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:moltensalt> * 400, <mekanism:saltblock>, 460, 2);
 
 #------------------------------------------------------------------------
 # Harder Electolyze

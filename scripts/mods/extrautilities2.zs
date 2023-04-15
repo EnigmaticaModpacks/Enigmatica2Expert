@@ -6,7 +6,10 @@ import crafttweaker.item.IIngredient;
 function getCreativeHarvest(item as IItemStack) as IItemStack{
 	return <extrautils2:creativeharvest>.withTag({creative_block: {meta: item.damage, block: item.definition.id}, display_stack: {id: item.definition.id, Count: 1 as byte, Damage: item.damage as short}});
 }
-	
+
+# Recycle spikes
+scripts.process.melt(<extrautils2:spike_gold>, <fluid:gold> * (144 * 4));
+
 # Bag of Holding
 	recipes.remove(<extrautils2:bagofholding>);
 	

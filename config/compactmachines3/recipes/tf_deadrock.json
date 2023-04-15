@@ -1,16 +1,16 @@
 {
-  "name": "compactmachines3:tf_mazestone",
-  "target-item": "twilightforest:maze_stone",
-  "target-meta": 0,
+  "name": "compactmachines3:tf_deadrock",
+  "target-item": "twilightforest:deadrock",
+  "target-meta": 2,
   "target-count": 27,
 
   "duration": 20,
 
-  "catalyst": "twilightforest:naga_scale",
+  "catalyst": "twilightforest:cicada",
 
   "input-types": {
     "w": { "id": "sonarcore:reinforcedstoneblock" },
-    "o": { "id": "mekanism:basicblock" }
+    "o": { "id": "jaopca:block_blockdimensionalshard" }
   },
 
   "symmetrical": true,

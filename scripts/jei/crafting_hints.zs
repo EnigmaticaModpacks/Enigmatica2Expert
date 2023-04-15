@@ -147,3 +147,9 @@ addInsOutCatl([<minecraft:stone:*>], <botania:biomestonea:*>, <botania:specialfl
 # IC2 Booze
 addInsOutCatl([<minecraft:reeds>], <ic2:booze_mug:2>, <ic2:barrel:*>);
 addInsOutCatl([<ic2:fluid_cell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}), <ic2:crop_res:4>, <minecraft:wheat>], <ic2:booze_mug:2>, <ic2:barrel:*>);
+
+# Slime spawning
+scripts.jei.requious.add(<assembly:crafting_hints>, {[
+  <exnihilocreatio:block_barrel0> | <exnihilocreatio:block_barrel1>, null, null, null, null,
+  Bucket("milk"), <minecraft:brown_mushroom> | <minecraft:red_mushroom>
+] : [Soul('minecraft:slime'), <minecraft:slime>]});

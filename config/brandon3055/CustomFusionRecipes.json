@@ -144,19 +144,6 @@
     "catalyst": "minecraft:chest"
   },
   {
-    "mode": "ADD",
-    "result": "draconicevolution:draconium_chest",
-    "catalyst": "minecraft:chest",
-    "energy": 5000000,
-    "tier": 0,
-    "ingredients": [
-      "actuallyadditions:block_giant_chest",
-      "draconicevolution:draconium_block",
-      "actuallyadditions:block_giant_chest",
-      "draconicevolution:draconium_block"
-    ]
-  },
-  {
     "mode": "REMOVE",
     "result": "draconicevolution:ender_energy_manipulator",
     "catalyst": "minecraft:skull,1,1"

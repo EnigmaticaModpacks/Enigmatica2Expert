@@ -94,38 +94,11 @@
           },
           {
             "meshLevel": 3,
-            "name": "mysticalagriculture:ruby_essence",
+            "name": "fluxnetworks:flux",
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.04,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "mysticalagriculture:peridot_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.03,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "mysticalagriculture:malachite_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.02,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "mysticalagriculture:sapphire_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.06,
+            "chance": 0.7,
             "rolls": 1
           },
           {
@@ -157,11 +130,11 @@
           },
           {
             "meshLevel": 4,
-            "name": "mysticalagriculture:ender_amethyst_essence",
+            "name": "fluxnetworks:flux",
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.1,
+            "chance": 0.9,
             "rolls": 1
           },
           {
@@ -180,24 +153,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.3,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 4,
-            "name": "mysticalagriculture:topaz_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.6,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 4,
-            "name": "mysticalagriculture:tanzanite_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.4,
             "rolls": 1
           },
           {
@@ -227,20 +182,11 @@
         "rewards": [
           {
             "meshLevel": 2,
-            "name": "exnihilocreatio:item_ore_nickel",
+            "name": "mysticalagriculture:rock_crystal_essence",
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 1,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 2,
-            "name": "exnihilocreatio:item_ore_nickel",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.6,
+            "chance": 0.5,
             "rolls": 1
           },
           {
@@ -254,6 +200,15 @@
           },
           {
             "meshLevel": 2,
+            "name": "mysticalagriculture:nickel_essence",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 2,
             "name": "jaopca:item_pieceboron",
             "metadata": 0,
             "count": 1,
@@ -268,15 +223,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.6,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 2,
-            "name": "mysticalagriculture:rock_crystal_essence",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.5,
             "rolls": 1
           },
           {
@@ -290,29 +236,20 @@
           },
           {
             "meshLevel": 3,
-            "name": "exnihilocreatio:item_ore_nickel",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 1,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "exnihilocreatio:item_ore_nickel",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.8,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
             "name": "mysticalagriculture:osmium_essence",
             "metadata": 0,
             "count": 1,
             "luck": 0,
             "chance": 0.8,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "mysticalagriculture:nickel_essence",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.5,
             "rolls": 1
           },
           {
@@ -394,6 +331,24 @@
             "count": 1,
             "luck": 0,
             "chance": 0.5,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "mysticalagriculture:osmium_essence",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "mysticalagriculture:osmium_essence",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.2,
             "rolls": 1
           },
           {
@@ -564,33 +519,6 @@
             "rolls": 1
           },
           {
-            "meshLevel": 3,
-            "name": "exnihilocreatio:item_ore_lead",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.1,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "jaopca:item_pieceboron",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.11,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "jaopca:item_pieceosmium",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.23,
-            "rolls": 1
-          },
-          {
             "meshLevel": 4,
             "name": "biomesoplenty:mudball",
             "metadata": 0,
@@ -619,38 +547,29 @@
           },
           {
             "meshLevel": 4,
-            "name": "exnihilocreatio:item_ore_lead",
-            "metadata": 0,
+            "name": "tconstruct:materials",
+            "metadata": 2,
             "count": 1,
             "luck": 0,
-            "chance": 0.15,
+            "chance": 1,
             "rolls": 1
           },
           {
             "meshLevel": 4,
-            "name": "exnihilocreatio:item_ore_nickel",
-            "metadata": 0,
+            "name": "tconstruct:materials",
+            "metadata": 2,
             "count": 1,
             "luck": 0,
-            "chance": 0.15,
+            "chance": 1,
             "rolls": 1
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_pieceboron",
-            "metadata": 0,
+            "name": "tconstruct:materials",
+            "metadata": 2,
             "count": 1,
             "luck": 0,
-            "chance": 0.23,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 4,
-            "name": "jaopca:item_pieceosmium",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.45,
+            "chance": 0.5,
             "rolls": 1
           }
         ]

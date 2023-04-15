@@ -201,7 +201,7 @@ registerGasReservoir("Cobalt Slurry Reservoir (Terra Nova)", <gas:slurryCobalt>,
 		volcanic
 		hot
 */
-registerReservoir("Low Pressure Steam Reservoir (Novus)", <liquid:low_pressure_steam>, 2000000000, maxInt  , 0  , 800, 30,  I, [], [113], [], []);
+registerReservoir("Low Pressure Steam Reservoir (Novus)", <liquid:exhaust_steam>     , 2000000000, maxInt  , 0  , 800, 30,  I, [], [113], [], []);
 registerReservoir("IC2 Hot Coolant Reservoir (Novus)"   , <liquid:ic2hot_coolant>    , 15000000  , 30000000, 25 , 50 , 30,  I, [], [113], [], []);
 registerReservoir("Enriched Lava Reservoir (Novus)"     , <liquid:enrichedlava>      , 40000     , maxInt  , 0  , 20 , 10, II, [], [113], [], []);
 
@@ -278,5 +278,6 @@ registerReservoirWithDrainChance("High Pressure Steam Reservoir (Kepler 0118)", 
 	/*
 		oxedised feric sand
 */
-registerReservoir("Destabilized Redstone Reservoir (Kepler 0119)", <liquid:redstone>, 2000000   , 4500000, 50 , 2000 , 30,  I, [], [123], [], []);
-registerGasReservoir("Oxygen Reservoir (Kepler 0119)"            , <gas:oxygen>     , 1228800000, maxInt , 256, 41024, 30, II, [], [123], [], []);
+registerReservoir("Destabilized Redstone Reservoir (Kepler 0119)", <liquid:redstone>   , 2000000   , 4500000, 50 , 2000 , 30,  I, [], [123], [], []);
+registerReservoir("Hot Mercury Reservoir (Kepler 0119)"					 , <liquid:hot_mercury>, 2000000   , 4500000, 50 , 2000 , 30, II, [], [123], [], []);
+registerGasReservoir("Oxygen Reservoir (Kepler 0119)"            , <gas:oxygen>     	 , 1228800000, maxInt , 256, 41024, 30, II, [], [123], [], []);

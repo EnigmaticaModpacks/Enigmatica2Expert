@@ -31,6 +31,7 @@ mods.botania.Orechid.removeOre("orePeridot");
 mods.botania.Orechid.removeOre("oreEmerald");
 mods.botania.Orechid.removeOre("orePlatinum");
 mods.botania.Orechid.removeOre("oreMithril");
+mods.botania.Orechid.removeOre("oreSapphire");
 
 # Buff Apatite
 mods.botania.Orechid.removeOre("oreApatite");
@@ -38,6 +39,8 @@ mods.botania.Orechid.addOre("oreApatite", 15000);
 
 # Add Orechid Ingem ores
 mods.botania.OrechidIgnem.addOre("oreNetherChargedCertusQuartz", 800);
+mods.botania.OrechidIgnem.addOre("oreNetherRuby", 8000);
+mods.botania.OrechidIgnem.addOre("oreNetherPeridot", 4000);
 
 
 #-------------------------------#
@@ -64,7 +67,7 @@ mods.botania.Apothecary.addRecipe("orechidIgnem", [
 	<ore:runeManaB>,        # Rune of Mana
 	<ore:redstoneRoot>,     # Redstone Root
 	<ore:nuggetThaumium>,   # Thaumium Nugget
-	<ore:nuggetTerrasteel>, # Terrasteel Nugget
+	<ore:stoneMetamorphic>,
 ]);
 
 # [Orechid Vacuam] from [Rune of Pride][+7]
@@ -77,7 +80,7 @@ mods.botania.Apothecary.addRecipe("orechidVacuam", [
 	<ore:runeGreedB>,     # Rune of Greed
 	<ore:redstoneRoot>,   # Redstone Root
 	<ore:nuggetVoid>,     # Void Metal Nugget
-	<ore:elvenPixieDust>, # Pixie Dust
+	<ore:nuggetTerrasteel>,# Terrasteel Nugget
 ]);
 #-------------------------------#
 
@@ -141,7 +144,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "▬   ▬",
   "* ◊ D"], {
   "S": <bloodmagic:item_demon_crystal:4>, # Steadfast Will Crystal
-  "◊": <astralsorcery:itemperkgem:*>,     # Ourium Gem
+  "◊": <ore:gemPerk>, 								    # Ourium Gem
   "╳": <bloodmagic:item_demon_crystal:1>, # Corrosive Will Crystal
   "▬": <ore:ingotMirion>,                 # Mirion Ingot
   "*": <bloodmagic:item_demon_crystal:3>, # Vengeful Will Crystal
@@ -267,7 +270,7 @@ mods.thaumcraft.Infusion.registerRecipe(
 	recipes.addShapeless("Botania ring 3", <botania:pixiering>, [<botania:manaresource:8>, <thaumcraft:baubles:5>, <botania:manaresource:7>]);
 	recipes.addShapeless("Botania ring 4", <botania:reachring>, [<botania:rune:15>, <thaumcraft:baubles:5>, <botania:manaresource:7>]);
 	recipes.addShapeless("Botania ring 5", <botania:dodgering>, [<botania:rune:3>, <thaumcraft:baubles:5>, <minecraft:emerald>]);
-	recipes.addShapeless("Botania ring 6", <botania:magnetring>, [<botania:lens:10>, <thaumcraft:cloud_ring>, <astralsorcery:itemcoloredlens:5>, <jaopca:item_rockychunkastralstarmetal>]);
+	recipes.addShapeless("Botania ring 6", <botania:magnetring>, [<botania:lens:10>, <thaumcraft:cloud_ring>, <astralsorcery:itemcoloredlens:5>, <tconstruct:large_plate>.withTag({Material: "starmetal"})]);
 	recipes.addShapeless("Botania ring 7", <botania:miningring>, [<botania:rune:2>, <thaumcraft:baubles:5>, <minecraft:golden_pickaxe>]);
 	recipes.addShapeless("Botania ring 8", <botania:waterring>, [<botania:rune>, <thaumcraft:baubles:5>, <minecraft:fish:1>, <minecraft:fish:3>]);
 	recipes.addShapeless("Botania ring 9", <botania:auraring>, [<botania:rune:8>, <thaumcraft:baubles:5>]);
@@ -363,6 +366,15 @@ mods.botania.ManaInfusion.addInfusion(<botania:manaresource:2>, <rats:rat_diamon
 # Way cheaper tiny potato dupe
 mods.botania.ManaInfusion.removeRecipe(<botania:tinypotato>);
 mods.botania.ManaInfusion.addInfusion(<botania:tinypotato> * 640, <minecraft:potato>, 64);
+
+# High-tech potato recipe
+mods.qmd.target_chamber.addRecipe(
+	<botania:tinypotato>,
+	(<particle:proton> * 2000000) ^ 100000000,
+	<botania_tweaks:compressed_tiny_potato_8>,
+	null, null, null,
+	200000000, 1.0, 0, 0
+);
 
 # Make Crafty Crate tables free
 mods.botania.ElvenTrade.removeRecipe(<botania_tweaks:basic_extended_crafty_crate>);

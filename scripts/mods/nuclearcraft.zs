@@ -146,6 +146,16 @@ craft.remake(<nuclearcraft:rock_crusher>, ["pretty",
   "■": <mechanics:crushing_block>, # Crushing Block
 });
 
+# [Empty Heat Sink]*64 from [Steel Ingot][+2]
+craft.remake(<nuclearcraft:part:14> * 64, ["pretty",
+  "□ - □",
+  "▬   ▬",
+  "□ - □"], {
+  "□": <ore:plateAdvanced>, # Advanced Plating
+  "-": <ore:ingotSteel>,    # Steel Ingot
+  "▬": <ore:ingotTough>,    # Tough Alloy Ingot
+});
+
 # [Fission Reactor Casing]*64 from [Steel Chassis][+1]
 craft.remake(<nuclearcraft:fission_casing> * 64, ["pretty",
   "  □  ",
@@ -169,6 +179,17 @@ craft.reshapeless(<nuclearcraft:bin> * 3, "aTr", {
   "a": <extrautils2:trashcan>,       # Trash Can
   "T": <extrautils2:trashcanfluid>,  # Trash Can (Fluid)
   "r": <extrautils2:trashcanenergy>, # Trash Can (Energy)
+});
+
+# Way cheaper since radiation choking
+# [Radiation Scrubber] from [Graphite Block][+2]
+craft.remake(<nuclearcraft:radiation_scrubber>, ["pretty",
+  "□ ▲ □",
+  "▲ ■ ▲",
+  "□ ▲ □"], {
+  "□": <ore:plateBasic>,      # Basic Plating
+  "▲": <ore:dustVilliaumite>, # Crushed Villiaumite
+  "■": <ore:blockGraphite>, # Graphite Block
 });
 
 # [Energetic Blend] harder
@@ -310,8 +331,6 @@ for ingr, fluid in {
   <psi:material:0>           : <liquid:psimetal> * 144,
   <psi:psi_decorative:1>     : <liquid:psimetal> * 1296,
   <psi:psi_decorative:0>     : <liquid:psimetal> * 1296,
-  <ore:ingotInfinity>        : <liquid:infinity> * 144,
-  <ore:blockInfinity>        : <liquid:infinity> * 1296,
   <ore:nuggetThaumium>       : <liquid:thaumium> * 16,
   <ore:ingotThaumium>        : <liquid:thaumium> * 144,
   <ore:blockThaumium>        : <liquid:thaumium> * 1296,

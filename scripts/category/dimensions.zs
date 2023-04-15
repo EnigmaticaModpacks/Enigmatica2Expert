@@ -82,7 +82,10 @@ events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDi
 static restrictedDims as int[] = [
 /*Inject_js(
 getCSV('config/tellme/dimensions-csv.csv')
-.filter(l=>![0,144,-343800852,2,-2].includes(parseInt(l.ID)))
+.filter(l=>![
+  // Allowed dims:
+  0,144,-343800852,2,-2,3
+].includes(parseInt(l.ID)))
 .map(l=>`  ${l.ID},`)
 )*/
   1,

@@ -9,7 +9,7 @@
     "symmetrical": true,
   
     "catalyst": "extendedcrafting:material",
-    "catalyst-meta": 12,
+    "catalyst-meta": 9,
   
     "input-types": {
       "a": {

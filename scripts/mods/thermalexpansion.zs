@@ -102,7 +102,7 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	mods.thermalexpansion.InductionSmelter.addRecipe(<thermalexpansion:frame:147>, <thermalexpansion:frame:131>, <minecraft:redstone_block> * 40, 100000);
 
 # Resonant Cell Frame (Empty)
-	mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:132>, 
+	scripts.mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:132>, 
 	[[<thermalfoundation:material:166>, <actuallyadditions:block_misc:8>, <thermalfoundation:material:166>],
 	[<thermalfoundation:glass_alloy:7>, <thermalexpansion:frame:147>, <thermalfoundation:glass_alloy:7>],
 	[<thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>]], <liquid:glass> * 4000);
@@ -156,7 +156,7 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 
 # [Machine Frame]*2 from [Device Frame][+6]
 	recipes.remove(<thermalexpansion:frame>);
-	mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
+	scripts.mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame> * 2, 
 		Grid(["pretty",
 			"■ B ■",
 			"M ◙ ⌂",
@@ -532,14 +532,14 @@ for i in 0 to 5 {
 
 # [Device Frame] from [Copper Gear][+2]
 recipes.remove(<thermalexpansion:frame:64>);
-mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["pretty",
+scripts.mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["pretty",
   "▬   ▬",
   "  C  ",
   "▬   ▬"], {
   "C": <ore:gearCopper>, # Copper Gear
   "▬": <ore:ingotTin>,   # Tin Ingot
 }).shaped(), <liquid:glass> * 1000, <forestry:wax_cast:*>);
-mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["pretty",
+scripts.mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:64>, Grid(["pretty",
   "▬ ▬ ▬",
   "▬ C ▬",
   "▬ ▬ ▬"], {

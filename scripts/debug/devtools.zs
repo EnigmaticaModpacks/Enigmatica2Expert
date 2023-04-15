@@ -1,7 +1,7 @@
 #modloaded ctintegration
 
 #priority 3999
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
@@ -172,6 +172,9 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   e.cancel();
 });
 
+// events.onEntityStruckByLightning(function(e as crafttweaker.event.EntityStruckByLightningEvent){
+//   server.commandManager.executeCommand(server, '/say §8Lightning §8striked §6'~e.entity.id);
+// });
 
 
 // events.onEntityLivingAttacked(function(e as crafttweaker.event.EntityLivingAttackedEvent){

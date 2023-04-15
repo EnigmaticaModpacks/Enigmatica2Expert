@@ -52,4 +52,5 @@ addAsteroid("Titanium asteroid"             , [64, 75, 0.7, 5, 1, 0.5]  , [<libv
 addAsteroid("Starmetal asteroid"            , [64, 75, 0.7, 5, 1, 0.5]  , [<astralsorcery:blockcustomore:1>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Rock Crystal asteroid"         , [64, 75, 0.7, 5, 1, 0.5]  , [<astralsorcery:blockcustomore>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
 addAsteroid("Steel asteroid"                , [64, 75, 0.3, 7, 1, 0.2]  , [<thermalfoundation:storage_alloy>.withLore(["§8Chance: §b100"]), <advancedrocketry:hotturf>.withLore(["§8Chance: §b25"])]);
+addAsteroid("Moon Turf asteroid"            , [64, 50, 0.9, 8, 10, 0.1] , [<advancedrocketry:moonturf>.withLore(["§8Chance: §b50"]), <advancedrocketry:moonturf_dark>.withLore(["§8Chance: §b50"])]);
 /**/

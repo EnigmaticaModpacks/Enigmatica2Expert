@@ -47,7 +47,11 @@ addRecipe(x, {[Soul('minecraft:slime')]    : [Soul('minecraft:magma_cube')]});
 addRecipe(x, {[Soul('minecraft:spider')]   : [Soul('minecraft:cave_spider')]});
 addRecipe(x, {[Soul('minecraft:squid')]    : [Soul('minecraft:ghast')]});
 addRecipe(x, {[Soul('minecraft:villager')] : [Soul('minecraft:zombie_villager')]});
+addRecipe(x, {[Soul('minecraft:villager')] : [Soul('minecraft:witch')]});
+addRecipe(x, {[Soul('minecraft:villager')] : [Soul('minecraft:evocation_illager')]});
+addRecipe(x, {[Soul('minecraft:villager')] : [Soul('minecraft:vindication_illager')]});
 addRecipe(x, {[Soul('minecraft:pig')]      : [Soul('minecraft:zombie_pigman')]});
+addRecipe(x, {[Soul('minecraft:cow')]      : [Soul('minecraft:mooshroom')]});
 addRecipe(x, {[<openblocks:luggage>]       : [<openblocks:luggage>.withTag({size: 54})]});
 
 // -----------------------------------------------------------------------

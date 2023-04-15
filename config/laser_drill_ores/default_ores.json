@@ -186,66 +186,6 @@
 		]
 	},
 	{
-		"item": "oreRuby",
-		"color": 14,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "oreSapphire",
-		"color": 11,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "orePeridot",
-		"color": 13,
-		"rarity": [
-			{
-				"whitelist": "minecraft:dark_forest, minecraft:dark_forest_hills",
-				"blacklist": "",
-				"depth_min": 30,
-				"depth_max": 70,
-				"weight": 6
-			},
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 0,
-				"depth_max": 255,
-				"weight": 1
-			}
-		]
-	},
-	{
 		"item": "oreCinnabar",
 		"color": 14,
 		"rarity": [
@@ -255,19 +195,6 @@
 				"depth_min": 0,
 				"depth_max": 255,
 				"weight": 1
-			}
-		]
-	},
-	{
-		"item": "orePlatinum",
-		"color": 3,
-		"rarity": [
-			{
-				"whitelist": "",
-				"blacklist": "minecraft:hell, minecraft:sky",
-				"depth_min": 5,
-				"depth_max": 16,
-				"weight": 2
 			}
 		]
 	},

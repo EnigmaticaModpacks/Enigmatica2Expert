@@ -7,7 +7,7 @@
 	recipes.addShapeless("Dimension Builder", 
 	<rftoolsdim:dimension_builder>, 
 	[<ic2:te:57>,<exnihilocreatio:item_mesh:4>, <avaritia:endest_pearl>,
-	<environmentaltech:void_ore_miner_cont_6>,<draconicevolution:awakened_core>,<environmentaltech:void_res_miner_cont_6>.anyDamage(),
+	<environmentaltech:void_ore_miner_cont_6>,<draconicevolution:wyvern_core>,<environmentaltech:void_res_miner_cont_6>.anyDamage(),
 	<rftools:shape_card:3>,<industrialforegoing:infinity_drill>.anyDamage(), <mekanism:machineblock:4>]);
 
 # Dimension Editor
@@ -26,19 +26,16 @@
 	[<rftools:crafter3>.anyDamage(), <thermalexpansion:frame:148>, <rftools:crafter3>.anyDamage()], 
 	[<vaultopic:vice>, utils.tryCatch(itemUtils.getItem("rftoolscontrol:workbench", 32767), <rftools:crafter3:*>), <vaultopic:vice>]]);
 
-# Dimension Enscriber
-if(isNull(loadedMods["rftdimtweak"])) {
-	craft.remake(<rftoolsdim:dimension_enscriber>, ["pretty",
-		"M E M",
-		"A ◘ A",
-		"M D M"], {
-		"A": utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>), # Advanced Inscriber
-		"D": <draconicevolution:draconic_core>, # Draconic Core
-		"E": <rftoolsdim:empty_dimension_tab>,  # Empty Dimension Tab
-		"◘": <thermalexpansion:frame:148>,      # Resonant Cell Frame (Full)
-		"M": <rftools:machine_base>,            # Machine Base
-	});
-}
+# [Dimension Enscriber] from [Dimension Enscriber Prototype][+3]
+craft.remake(<rftoolsdim:dimension_enscriber>, ["pretty",
+  "P Ϟ P",
+  "Ϟ D Ϟ",
+  "P W P"], {
+  "P": <draconicevolution:particle_generator>,  # Particle Generator
+  "Ϟ": <draconicevolution:energy_storage_core>, # Energy Core
+  "D": <rftdimtweak:dimension_enscriber>,       # Dimension Enscriber Prototype
+  "W": <draconicevolution:wyvern_core>,         # Wyvern Core
+});
 
 # Phased Field Generator
 	recipes.remove(<rftoolsdim:phased_field_generator>);

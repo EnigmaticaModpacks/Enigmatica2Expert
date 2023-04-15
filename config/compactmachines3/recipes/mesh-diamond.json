@@ -8,8 +8,8 @@
     "duration": 1200,
     "symmetrical": true,
   
-    "catalyst": "contenttweaker:benitoite",
-    "catalyst-meta": 0,
+    "catalyst": "extendedcrafting:material",
+    "catalyst-meta": 10,
   
     "input-types": {
       "a": {

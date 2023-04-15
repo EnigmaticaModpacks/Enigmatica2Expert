@@ -544,7 +544,7 @@ scripts.jei.crafting_hints.add1to1(<randomthings:beans:2>, <randomthings:beanpod
 # Used as ingredient
 # [Biome Glass]*8 from [Empowered Palis Crystal Block][+2]
 recipes.remove(<randomthings:biomeglass>);
-mods.forestry.ThermionicFabricator.addCast(<randomthings:biomeglass> * 8, Grid([
+scripts.mods.forestry.ThermionicFabricator.addCast(<randomthings:biomeglass> * 8, Grid([
   " ╳",
   " *",
   " ▬"], {

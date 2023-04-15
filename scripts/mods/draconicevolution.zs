@@ -133,30 +133,31 @@ craft.reshapeless(<draconicevolution:dislocator>, "DT", {
 });
 
 # Draconium chest easier
-var dchest = <draconicevolution:draconium_chest>;
-var ingrds as IItemStack[] = [
-	<actuallyadditions:block_giant_chest>,
-	<draconicevolution:draconium_block>,
-	<actuallyadditions:block_giant_chest>,
-	<draconicevolution:draconium_block>
-] as IItemStack[];
-mods.extendedcrafting.CombinationCrafting.addRecipe(dchest, 20000000, 2000000, <minecraft:chest>, ingrds as IIngredient[]);
-mods.actuallyadditions.Empowerer.addRecipe(dchest, <minecraft:chest>, ingrds[0], ingrds[1], ingrds[2], ingrds[3], 20000000/4, 400, [8.0, 0.1, 0.9]);
-
-mods.rt.RandomThingsTweaker.addImbuingRecipe(
-	<randomthings:specialchest>,
-	<iceandfire:desert_myrmex_cocoon>,
-	<randomthings:specialchest:1>,
-	<draconicevolution:draconium_block>,
-	<draconicevolution:draconium_chest>
-);
-mods.rt.RandomThingsTweaker.addImbuingRecipe(
-	<randomthings:specialchest>,
-	<iceandfire:jungle_myrmex_cocoon>,
-	<randomthings:specialchest:1>,
-	<draconicevolution:draconium_block>,
-	<draconicevolution:draconium_chest>
-);
+# [Draconium Chest] from [Small Storage Crate][+2]
+craft.make(<draconicevolution:draconium_chest>, ["pretty",
+  "▬ ▬ ▬",
+  "¤ S ¤",
+  "▬ ▬ ▬"], {
+  "▬": <ore:ingotDraconium>,                  # Draconium Ingot
+  "¤": <ore:gearDraconium>,                   # Draconium Gear
+  "S": <actuallyadditions:block_giant_chest>, # Small Storage Crate
+});
+craft.make(<draconicevolution:draconium_chest>, ["pretty",
+  "▬ ▬ ▬",
+  "¤ S ¤",
+  "▬ ▬ ▬"], {
+  "▬": <ore:ingotDraconium>,                  # Draconium Ingot
+  "¤": <ore:gearDraconium>,                   # Draconium Gear
+  "S": <randomthings:specialchest>,
+});
+craft.make(<draconicevolution:draconium_chest>, ["pretty",
+  "▬ ▬ ▬",
+  "¤ S ¤",
+  "▬ ▬ ▬"], {
+  "▬": <ore:ingotDraconium>,                  # Draconium Ingot
+  "¤": <ore:gearDraconium>,                   # Draconium Gear
+  "S": <randomthings:specialchest:1>,
+});
 
 # Combination Crafting Alternative for Ender Energy Manipulator
 mods.extendedcrafting.CombinationCrafting.addRecipe(
@@ -254,4 +255,15 @@ craft.remake(<draconicevolution:generator>, ["pretty",
   "▬": <ore:ingotBrickNether>, # Nether Brick
   "⌂": <ic2:casing:5>,         # Steel Item Casing
   "-": <ore:ingotDraconium>,   # Draconium Ingot
+});
+
+# [Entity Detector] from [Eye of Ender][+3]
+craft.remake(<draconicevolution:entity_detector>, ["pretty",
+  "□ E □",
+  "▬ □ ▬",
+  "M M M"], {
+  "□": <ore:plateLapis>,    # Lapis Lazuli Plate
+  "E": <ore:pearlEnderEye>, # Eye of Ender
+  "▬": <ore:ingotCarbon>,   # Carbon Brick
+  "M": <ore:stoneMarble>,   # Marble
 });

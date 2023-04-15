@@ -155,6 +155,10 @@ add(<ore:crystalAstralAny>, <astralsorcery:itemtunedrockcrystal>.withEmptyTag())
 add(<ore:crystalAstralAny>, <astralsorcery:itemcelestialcrystal>.withEmptyTag());
 add(<ore:crystalAstralAny>, <astralsorcery:itemtunedcelestialcrystal>.withEmptyTag());
 
+add(<ore:gemPerk>, <astralsorcery:itemperkgem:0>.withEmptyTag());
+add(<ore:gemPerk>, <astralsorcery:itemperkgem:1>.withEmptyTag());
+add(<ore:gemPerk>, <astralsorcery:itemperkgem:2>.withEmptyTag());
+
 # Blood Magic Runes
 add(<ore:runeBlood>, <bloodmagic:blood_rune:*>);
 

@@ -896,7 +896,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   "ADAMINITE", # Research
   <thaumadditions:adaminite_block>, # Output
   5, # Instability
-  [<aspect:sanguis>*200, <aspect:infernum>*666, <aspect:spiritus>*200],
+  [<aspect:sanguis>*100, <aspect:infernum>*666, <aspect:spiritus>*50],
   <thaumadditions:mithrillium_block>, # CentralItem
   [<bloodmagic:blood_shard>,<bloodmagic:slate>,<tconstruct:materials:11>,<bloodmagic:blood_shard>,<bloodmagic:slate>,<tconstruct:materials:11>]
 );
