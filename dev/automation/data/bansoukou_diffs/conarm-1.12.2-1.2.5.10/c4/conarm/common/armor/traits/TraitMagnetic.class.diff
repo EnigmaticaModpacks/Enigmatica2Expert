@@ -1,0 +1,8 @@
+@@ -40,6 +40,7 @@ extends AbstractArmorTraitLeveled {
+             float strength = 0.07f;
+             Vector3d vec = new Vector3d(x, y, z);
+             vec.sub((Tuple3d)new Vector3d(item.field_70165_t, item.field_70163_u, item.field_70161_v));
++            if (vec.lengthSquared() <= 0.05) continue;
+             vec.normalize();
+             vec.scale((double)strength);
+             item.field_70159_w += vec.x;
