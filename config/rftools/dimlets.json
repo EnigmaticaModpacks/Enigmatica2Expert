@@ -287,7 +287,7 @@
       "create": 1000,
       "maintain": 300,
       "ticks": 100,
-      "worldgen": true,
+      "worldgen": false,
       "dimlet": true
     }
   },
@@ -301,7 +301,7 @@
       "create": 2000,
       "maintain": 600,
       "ticks": 200,
-      "worldgen": true,
+      "worldgen": false,
       "dimlet": true
     }
   },
