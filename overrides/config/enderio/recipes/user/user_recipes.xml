@@ -501,4 +501,171 @@
       <output name="minecraft:hopper, blockHopper"/>
     </crafting>
   </recipe>
+    <!-- Endergy changes -->
+  <recipe name="Alloy: Endergy Crude Steel" disabled="true">
+	<alloying energy="5000" exp="0.5">
+		<input name="oredict:gravel"/>
+		<input name="itemClay"/>
+		<input name="oredict:cobblestone"/>
+		<output name="ingotCrudeSteel"/>
+	</alloying>
+   </recipe>
+
+<recipe name="Alloy: Endergy Crystalline Alloy" disabled="true">
+<alloying energy="10000" exp="0.5">
+<input name="itemPulsatingPowder"/>
+<input name="ingotGold"/>
+<output name="ingotCrystallineAlloy"/>
+</alloying>
+</recipe>   
+
+<recipe name="Alloy: Endergy Crystalline Pink Slime" disabled="true">
+<alloying energy="10000" exp="0.5">
+<input name="itemPulsatingPowder"/>
+<input name="industrialforegoing:pink_slime_ingot"/>
+<output name="ingotCrystallinePinkSlime"/>
+</alloying>
+</recipe>
+
+<recipe name="Alloy: Endergy Stellar Alloy" disabled="true">
+<alloying energy="20000" exp="0.5">
+<input name="minecraft:nether_star"/>
+<input name="ingotMelodicAlloy"/>
+<input name="oredict:itemClay" amount="4" />
+<output name="ingotStellarAlloy" amount="2"/>
+</alloying>
+</recipe>
+
+<recipe name="Capacitor Crystalline, Alt" disabled="true">
+<crafting>
+<grid>
+<item /><item name="ingotCrystallineAlloy"/><item />
+<item name="enderio:item_capacitor_vivid"/><item name="dustPrismarine"/><item
+name="enderio:item_capacitor_vivid"/>
+<item /><item name="ingotCrystallineAlloy"/><item />
+</grid>
+<output name="enderio:item_capacitor_crystalline"/>
+</crafting>
+</recipe>
+
+<recipe name="Capacitor Stellar" disabled="true">
+<crafting>
+<grid>
+<item /><item name="ingotStellarAlloy"/><item />
+<item name="enderio:item_capacitor_melodic"/><item name="minecraft:
+shulker_shell"/><item name="enderio:item_capacitor_melodic"/>
+<item /><item name="ingotStellarAlloy"/><item />
+</grid>
+<output name="enderio:item_capacitor_stellar"/>
+</crafting>
+</recipe>
+
+<recipe name="Capacitor Silver" disabled="true">
+<crafting>
+<grid>
+<item /><item name="nuggetSilver"/><item name="POWDER_INFINITY" />
+<item name="nuggetSilver"/><item name="ingotLead"/><item name="nuggetSilver"/>
+<item name="POWDER_INFINITY"/><item name="nuggetSilver"/><item />
+</grid>
+<output name="enderio:item_capacitor_silver"/>
+</crafting>
+</recipe>
+
+<recipe name="Capacitor Energetic Silver" disabled="true">
+<crafting>
+<grid>
+<item /><item name="ingotEnergeticSilver"/><item />
+<item name="enderio:item_capacitor_silver"/><item name="dustCoal"/><item name="
+enderio:item_capacitor_silver"/>
+<item /><item name="ingotEnergeticSilver"/><item />
+</grid>
+<output name="enderio:item_capacitor_energetic_silver"/>
+</crafting>
+</recipe>
+
+<recipe name="Capacitor Vivid" disabled="true">
+<crafting>
+<grid>
+<item /><item name="ingotVividAlloy"/><item />
+<item name="enderio:item_capacitor_energetic_silver"/><item name="oredict:
+glowstone"/><item name="enderio:item_capacitor_energetic_silver"/>
+<item /><item name="ingotVividAlloy"/><item />
+</grid>
+<output name="enderio:item_capacitor_vivid"/>
+</crafting>
+</recipe>
+
+<recipe name="Capacitor Grainy" disabled="true">
+<crafting>
+<grid size="2x3">
+<item /><item name="POWDER_INFINITY"/><item />
+<item name="nuggetIron"/><item /><item name="nuggetIron"/>
+</grid>
+<output name="enderio:item_capacitor_grainy"/>
+</crafting>
+</recipe>
+
+<recipe name="Alloy: Energetic Silver Alloy" disabled="true">
+<!-- mirroring energetic alloy recipe -->
+<alloying energy="10000" exp="0.7">
+<input name="dustRedstone"/>
+<input name="ingotSilver"/>
+<input name="dustGlowstone"/>
+<output name="ingotEnergeticSilver"/>
+</alloying>
+</recipe>
+
+<recipe name="Alloy: Vivid Alloy" disabled="true">
+<!-- mirroring vibrant alloy recipe -->
+<alloying energy="10000" exp="0.7">
+<input name="minecraft:ender_pearl"/>
+<input name="ingotEnergeticSilver"/>
+<output name="ingotVividAlloy"/>
+</alloying>
+</recipe>
+
+<recipe name="Alloy: Endergy Melodic Alloy" disabled="true">
+<alloying energy="20000" exp="0.5">
+<input name="minecraft:chorus_fruit_popped"/>
+<input name="END_STEEL"/>
+<output name="ingotMelodicAlloy"/>
+</alloying>
+</recipe>
+
+<recipe name="Compressed Solar Panel - Crystalline" disabled="true">
+    <dependency mod="enderiomachines" />
+    <crafting>
+      <grid>
+        <item name="SOLAR_4" /><item name="SOLAR_4"/><item name="SOLAR_4" />
+        <item name="SOLAR_4"/><item name="enderio:item_capacitor_crystalline"/><item 
+name="SOLAR_4"/>
+        <item name="SOLAR_4" /><item name="SOLAR_4"/><item name="SOLAR_4" />
+      </grid>
+      <output name="SOLAR_5"/>
+    </crafting>
+  </recipe>
+  <recipe name="Concentrated Solar Panel - Melodic" disabled="true">
+    <dependency mod="enderiomachines" />
+    <crafting>
+      <grid>
+        <item name="SOLAR_5" /><item name="SOLAR_5"/><item name="SOLAR_5" />
+        <item name="SOLAR_5"/><item name="enderio:item_capacitor_melodic"/><item name="
+SOLAR_5"/>
+        <item name="SOLAR_5" /><item name="SOLAR_5"/><item name="SOLAR_5" />
+      </grid>
+      <output name="SOLAR_6"/>
+    </crafting>
+  </recipe>
+  <recipe name="Ultimate Solar Panel - Stellar" disabled="true">
+    <dependency mod="enderiomachines" />
+    <crafting>
+      <grid>
+        <item name="SOLAR_6" /><item name="SOLAR_6"/><item name="SOLAR_6" />
+        <item name="SOLAR_6"/><item name="enderio:item_capacitor_stellar"/><item name="
+SOLAR_6"/>
+        <item name="SOLAR_6" /><item name="SOLAR_6"/><item name="SOLAR_6" />
+      </grid>
+      <output name="SOLAR_7"/>
+    </crafting>
+  </recipe>
 </enderio:recipes>
