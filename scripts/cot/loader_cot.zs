@@ -20,6 +20,8 @@ import mods.ctutils.utils.Math.floor;
 import mods.ctutils.utils.Math.max;
 import mods.ctutils.utils.Math.min;
 import mods.ctutils.utils.Math.sqrt;
+import mods.contenttweaker.ItemFood;
+import mods.contenttweaker.ResourceLocation;
 
 mods.contenttweaker.VanillaFactory.createCreativeTab("other", <item:minecraft:coal:1>).register();
 
@@ -46,6 +48,13 @@ function createBlockGround(name as string, level as int, blockMaterial as BlockM
 
 function createBlockStone(name as string, level as int, blockMaterial as BlockMaterial) {
 	createBlock(name, level, blockMaterial, <soundtype:stone>);
+}
+
+function createPill(name as string) {
+	val pill = VanillaFactory.createItemFood(name, 50);
+	pill.saturation = 0.0f;
+	pill.alwaysEdible = true;
+	pill.register();
 }
 
 /*** Crafting Materials ***/
@@ -208,6 +217,15 @@ createBlockGround("conglomerate_of_sun",  5, <blockmaterial:clay>);
 buildItem("empowered_phosphor");
 buildItem("saturated_phosphor");
 buildItem("blasted_coal");
+
+# -------------------------------
+# Nutrition pills
+# -------------------------------
+createPill("dairy_pill");
+createPill("fruit_pill");
+createPill("grain_pill");
+createPill("protein_pill");
+createPill("vegetable_pill");
 
 # -------------------------------
 # Other

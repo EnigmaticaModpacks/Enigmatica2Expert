@@ -5,7 +5,7 @@
             "name": "item.thaumicaugmentation.focus_ancient.name",
             "icons": [ "thaumicaugmentation:focus_ancient" ],
             "category": "AUROMANCY", "location": [ 2,-3 ], 
-            "parents": [ "FOCUSADVANCED","!EldritchGuardian" ], 
+            "parents": [ "FOCUSADVANCED", "UNLOCKELDRITCH" ], 
             "stages": [
                 {
                     "text": "research.ancient_focus.1", 

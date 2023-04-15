@@ -286,12 +286,6 @@
   "path":"meta"}
 ]}
 
-,{"key":"!TWOND_CORRUPTION_AVATAR","ops":[
-  {"op":"replace",
-  "path":"meta",
-  "value": ["HEX"]}
-]}
-
 ,{"key":"TWOND_CLEANSING_CHARM","ops":[
   {"op":"remove",
   "path":"meta"}
@@ -363,6 +357,24 @@
   "value": ["ROUND"]}
 ]}
 
+,{"key":"WARP","ops":[
+  {"op":"replace",
+  "path":"location",
+  "value": [3,-3]}
+]}
+
+,{"key":"WARP","ops":[
+  {"op":"add",
+  "path":"",
+  "value": "parents"}
+]}
+
+,{"key":"WARP","ops":[
+  {"op":"add",
+  "path":"parents",
+  "value": ["KNOWLEDGETYPES"]}
+]}
+
 ,{"key":"CRYSTALFARMER","ops":[
   {"op":"replace",
   "path":"meta",
@@ -400,11 +412,21 @@
 ]}
 
 ,{"key":"PRIMPEARL","ops":[
+  {"op":"add",
+  "path":"",
+  "value": "parents"}
+]}
+
+,{"key":"PRIMPEARL","ops":[
+  {"op":"add",
+  "path":"parents",
+  "value": ["UNLOCKELDRITCH"]}
+]}
+
+,{"key":"PRIMPEARL","ops":[
   {"op":"replace",
-  "path":"stages",
-  "value": [{"text": "research.PRIMPEARL.stage.1"
-            ,"required_knowledge":["OBSERVATION;BASICS;1","THEORY;BASICS;1"]}
-            ,{"text":"research.PRIMPEARL.stage.1"}]}
+  "path":"location",
+  "value": [-4,8]}
 ]}
 
 ,{"key":"PURE_TEAR","ops":[
@@ -612,6 +634,42 @@
   {"op":"replace",
   "path":"meta",
   "value": ["ROUND"]}
+]}
+
+,{"key":"ORE","ops":[
+  {"op":"add",
+  "path":"",
+  "value": "parents"}
+]}
+
+,{"key":"ORE","ops":[
+  {"op":"add",
+  "path":"parents",
+  "value": ["PLANTS"]}
+]}
+
+,{"key":"PLANTS","ops":[
+  {"op":"add",
+  "path":"",
+  "value": "parents"}
+]}
+
+,{"key":"PLANTS","ops":[
+  {"op":"add",
+  "path":"parents",
+  "value": ["FIRSTSTEPS"]}
+]}
+
+,{"key":"PLANTS","ops":[
+  {"op":"replace",
+  "path":"meta",
+  "value": ["ROUND"]}
+]}
+
+,{"key":"PLANTS","ops":[
+  {"op":"replace",
+  "path":"location",
+  "value": [-2,0]}
 ]}
 
 ]

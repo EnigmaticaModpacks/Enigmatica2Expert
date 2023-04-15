@@ -1,10 +1,121 @@
 #modloaded thaumadditions
 
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
+mods.thaumcraft.Infusion.removeRecipe(<minecraft:golden_apple:1>);
+
 mods.thaumcraft.Crucible.removeRecipe(<thaumadditions:phantom_ink_phial>);
 utils.rh(<thaumadditions:phantom_ink_phial>);
 
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:phantom_ink_phial>);
 utils.rh(<thaumadditions:levitation_device>);
+
+utils.rh(<thaumadditions:vis_pod:*>);
+
+val toHide = [ 
+<thaumadditions:vis_seeds/sonus>,
+<thaumadditions:vis_seeds/exitium>,
+<thaumadditions:vis_seeds/visum>,
+<thaumadditions:vis_seeds/alkimia>,
+<thaumadditions:vis_seeds/humanus>,
+<thaumadditions:vis_seeds/ventus>,
+<thaumadditions:vis_seeds/herba>,
+<thaumadditions:vis_seeds/spiritus>,
+<thaumadditions:vis_seeds/imperium>,
+<thaumadditions:vis_seeds/lux>,
+<thaumadditions:vis_seeds/bestia>,
+<thaumadditions:vis_seeds/victus>,
+<thaumadditions:vis_seeds/draco>,
+<thaumadditions:vis_seeds/cognitio>,
+<thaumadditions:vis_seeds/motus>,
+<thaumadditions:vis_seeds/fluctus>,
+<thaumadditions:vis_seeds/praecantatio>,
+<thaumadditions:vis_seeds/desiderium>,
+<thaumadditions:vis_seeds/ignis>,
+<thaumadditions:vis_seeds/volatus>,
+<thaumadditions:vis_seeds/metallum>,
+<thaumadditions:vis_seeds/aversio>,
+<thaumadditions:vis_seeds/aer>,
+<thaumadditions:vis_seeds/infernum>,
+<thaumadditions:vis_seeds/vacuos>,
+<thaumadditions:vis_seeds/sensus>,
+<thaumadditions:vis_seeds/vitreus>,
+<thaumadditions:vis_seeds/caeles>,
+<thaumadditions:vis_seeds/instrumentum>,
+<thaumadditions:vis_seeds/machina>,
+<thaumadditions:vis_seeds/fabrico>,
+<thaumadditions:vis_seeds/permutatio>,
+<thaumadditions:vis_seeds/alienis>,
+<thaumadditions:vis_seeds/praemunio>,
+<thaumadditions:vis_seeds/gelum>,
+<thaumadditions:vis_seeds/vinculum>,
+<thaumadditions:vis_seeds/tenebrae>,
+<thaumadditions:vis_seeds/vitium>,
+<thaumadditions:vis_seeds/perditio>,
+<thaumadditions:vis_seeds/mortuus>,
+<thaumadditions:vis_seeds/terra>,
+<thaumadditions:vis_seeds/auram>,
+<thaumadditions:vis_seeds/aqua>,
+<thaumadditions:vis_seeds/potentia>,
+<thaumadditions:vis_seeds/exanimis>,
+<thaumadditions:vis_seeds/ordo>,
+<thaumadditions:vis_pod>.withTag({Aspect: "mythus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "ventus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "ordo"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "alkimia"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "praecantatio"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "vacuos"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "rattus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "vitreus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "tenebrae"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "motus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "desiderium"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "amogus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "herba"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "cognitio"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "fabrico"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "fluctus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "lux"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "metallum"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "vinculum"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "caeles"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "ignis"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "terra"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "humanus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "bestia"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "machina"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "instrumentum"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "praemunio"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "exitium"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "draco"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "sonus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "imperium"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "victus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "sonus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "visum"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "spiritus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "volatus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "aversio"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "aer"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "infernum"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "sensus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "permutatio"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "alienis"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "gelum"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "vitium"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "perditio"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "mortuus"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "auram"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "aqua"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "potentia"}),
+<thaumadditions:vis_pod>.withTag({Aspect: "exanimis"}),
+] as IItemStack[];
+
+for item in toHide{
+  mods.thaumcraft.Crucible.removeRecipe(item);
+  utils.rh(item);
+}
 
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗██████╗ ███████╗███╗   ██╗ ██████╗██╗  ██╗

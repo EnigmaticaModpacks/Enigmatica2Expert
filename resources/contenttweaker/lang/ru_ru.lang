@@ -52,6 +52,11 @@ item.contenttweaker.ore_phosphor.name=Фосфорная Руда
 item.contenttweaker.nugget_phosphor.name=Фосфорный Самородок
 item.contenttweaker.dust_tiny_gold.name=Кучка золотой пыли
 item.contenttweaker.dust_tiny_silver.name=Кучка серебряной пыли
+item.contenttweaker.fruit_pill.name=Фруктовая таблетка
+item.contenttweaker.dairy_pill.name=Молочная таблетка
+item.contenttweaker.vegetable_pill.name=Овощная таблетка
+item.contenttweaker.protein_pill.name=Белковая таблетка
+item.contenttweaker.grain_pill.name=Зерновая таблетка
 
 tile.contenttweaker.terrestrial_artifact_block.name=Блок Артефакта Земли
 tile.contenttweaker.benitoite.name=§bБенитоит

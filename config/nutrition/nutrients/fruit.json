@@ -32,6 +32,7 @@
 			"listAllsmoothie"
 		],
 		"items": [
+			"contenttweaker:fruit_pill",
 			"actuallyadditions:item_food:1",
 			"actuallyadditions:item_jam:0",
 			"actuallyadditions:item_jam:1",

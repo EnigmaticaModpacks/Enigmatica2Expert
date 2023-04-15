@@ -93,7 +93,7 @@
             "key": "!TARBlueWolf",     
             "name": "research_name.thaumadditions:blue_wolf",
             "icons": [ "thaumadditions:textures/research/blue_wolf.png" ],
-            "category": "BASICS", "location": [ -10,-1 ], "meta": [ "HEX" ],
+            "category": "BASICS", "location": [ -10,-1 ],
             "meta": ["HIDDEN","HEX"],     
             "stages": [{"text": "research_stage.thaumadditions:blue_wolf"}]
             }
