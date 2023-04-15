@@ -496,46 +496,7 @@ craft.remake(<extrautils2:decorativesolid:7>, ["pretty",
   "⌃": <ore:blockQuartzBlack>, # Black Quartz
 });
 
-#-----------------------------------------------------
-# Basalt remake for Basalt Sediment Alt
-#-----------------------------------------------------
 <ic2:resource>.displayName = game.localize('e2ee.tile.unsalted_basalt');
-val saltConversion = {
-	{<blockstate:ic2:resource>                       : <ic2:resource>}       : {<blockstate:advancedrocketry:basalt>                       : <advancedrocketry:basalt>},
-	{<blockstate:minecraft:grass>                    : <minecraft:grass>}    : {<blockstate:biomesoplenty:grass:variant=silty>             : <biomesoplenty:grass:4>},
-	{<blockstate:minecraft:dirt:variant=dirt>        : <minecraft:dirt>}     : {<blockstate:biomesoplenty:dirt:coarse=false,variant=silty> : <biomesoplenty:dirt:10>},
-	{<blockstate:minecraft:dirt:variant=coarse_dirt> : <minecraft:dirt:1>}   : {<blockstate:biomesoplenty:dirt:coarse=true,variant=silty>  : <biomesoplenty:dirt:2>},
-	{<blockstate:minecraft:farmland>                 : <minecraft:farmland>} : {<blockstate:biomesoplenty:farmland_1>                      : <biomesoplenty:farmland_1>},
-} as IItemStack[crafttweaker.block.IBlockState][IItemStack[crafttweaker.block.IBlockState]];
-
-for inputs, outputs in saltConversion {
-	for inB, inS in inputs {
-		for outB, outS in outputs {
-			scripts.jei.mod.immersiveengineering.addChemthrower(<liquid:moltensalt>, inS, outS);
-		}
-	}
-}
-
-mods.alfinivia.ImmersiveEngineering.addChemthrowerEffect(<liquid:moltensalt>, false, false, 
-	# IChemEntityEffect
-	function(target,shooter,throwerstack,fluid) {},
-
-	# IChemBlockEffect
-	function(world,pos,side,shooter,throwerstack,fluid) {
-		if(world.remote) return;
-		val blockState = world.getBlockState(pos);
-		for inputs, outputs in saltConversion {
-			for inB, inS in inputs {
-				for outB, outS in outputs {
-					if(inB.matches(blockState)) {
-						world.destroyBlock(pos, false);
-						world.setBlockState(outB, pos);
-					}
-				}
-			}
-		}
-	}
-);
 
 # Semifluid generator usages
 function addSemifluidRecipe(fluid as ILiquidStack, eu_t as double) as void {
