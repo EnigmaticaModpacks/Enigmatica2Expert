@@ -1,0 +1,6 @@
+{
+    "parent": "nuclearcraft:block/turbine_rotor_blade",
+    "textures": {
+        "texture": "contenttweaker:items/sic_mould"
+    }
+}

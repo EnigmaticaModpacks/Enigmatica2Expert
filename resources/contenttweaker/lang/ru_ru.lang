@@ -360,6 +360,15 @@ fluid.hot_tritium=Hot Tritium Plasma
 
 itemGroup.moar_reactor_functionality=Moar Reactor Functionality
 # --------------------------------------
+# New Turbine Parts
+# --------------------------------------
+item.contenttweaker.elektron60_ingot.name=Сплав Электрон60 - Слиток
+tile.contenttweaker.elektron60_block.name=Блок из сплава электрон60
+item.contenttweaker.blade_core.name=Сердечник лопатки ротора турбины из актинидов
+item.contenttweaker.steel_mould.name=Сверхлегкая пресс-форма из нержавеющей стали
+item.contenttweaker.alloy_mould.name=Сверхлегкая пресс-форма из благородного электронного сплава
+item.contenttweaker.sic_mould.name=Сверхлегкая пресс-форма из матричного сплава
+# --------------------------------------
 
 ################################################################
 # Just everything dumped mindlessly

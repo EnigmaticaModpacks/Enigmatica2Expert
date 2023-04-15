@@ -353,3 +353,12 @@ fluid.hot_tritium=Hot Tritium Plasma
 
 itemGroup.moar_reactor_functionality=Moar Reactor Functionality
 # --------------------------------------
+# New Turbine Parts
+# --------------------------------------
+item.contenttweaker.elektron60_ingot.name=Elektron60-Alloy Ingot
+tile.contenttweaker.elektron60_block.name=Elektron60-Alloy Block
+item.contenttweaker.blade_core.name=Turbine Rotor Actinide Blade Core
+item.contenttweaker.steel_mould.name=Ultra Light Edelstahl Mould
+item.contenttweaker.alloy_mould.name=Ultra Light Edle Elektronlegierung Mould
+item.contenttweaker.sic_mould.name=Ultra Light Matrix-Legierung Mould
+# --------------------------------------
