@@ -313,6 +313,8 @@ desc.tooltip(<travelersbackpack:travelers_backpack:67>, 'backpack.Slime');
 desc.tooltip(<travelersbackpack:travelers_backpack:62>, 'backpack.Squid');
 desc.tooltip(<travelersbackpack:travelers_backpack:63>, 'backpack.Sunflower');
 desc.tooltip(<travelersbackpack:travelers_backpack:73>, 'backpack.Wolf');
+desc.tooltip(<ic2:jetpack_electric:26>, 'sponge.removed_with');
+desc.tooltip(<minecraft:sponge>, 'sponge.can_remove');
 
 desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:blaze"})            , 'trophy.blaze');
 desc.tooltip(<openblocks:trophy>.withTag({entity_id: "minecraft:cave_spider"})      , 'trophy.cave_spider');
