@@ -23,5 +23,10 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has completed Enigmatica 2: Expert - Extended, congratulations!"
+	},
+	{
+		uid: "ea9c1dad",
+		type: "item",
+		item: "storagedrawers:upgrade_creative 1 1"
 	}]
 }

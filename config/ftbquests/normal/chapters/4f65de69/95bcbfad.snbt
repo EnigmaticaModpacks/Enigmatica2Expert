@@ -1,5 +1,6 @@
 {
 	title: "{q.getting_started.uncraftable_tcon_p.name}",
+	icon: "contenttweaker:supremium_chest_base",
 	x: 15.6d,
 	y: 6.1d,
 	text: [
@@ -13,38 +14,81 @@
 		type: "item",
 		items: [{
 			item: "contenttweaker:supremium_chest_base"
-		}]
-	},
-	{
-		uid: "f3f16baf",
-		type: "item",
-		items: [{
+		},
+		{
+			item: "contenttweaker:supremium_helmet_base"
+		},
+		{
+			item: "contenttweaker:supremium_leggings_base"
+		},
+		{
+			item: "contenttweaker:supremium_boots_base"
+		},
+		{
 			id: "conarm:armor_trim",
 			tag: {
 				Material: "aethium"
 			}
-		}]
-	},
-	{
-		uid: "295687f7",
-		type: "item",
-		items: [{
-			id: "plustic:battery_cell",
-			tag: {
-				Material: "copper"
-			}
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "8337ddb2",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "plustic:laser_medium",
 			tag: {
 				Material: "prismarine"
 			}
-		}],
-		ignore_nbt: 1b
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "blaze"
+			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "endrod"
+			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "starmetal"
+			}
+		},
+		{
+			id: "plustic:laser_medium",
+			tag: {
+				Material: "psigem"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "manyullyn"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "copper"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "silver"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "blaze"
+			}
+		},
+		{
+			id: "plustic:battery_cell",
+			tag: {
+				Material: "endrod"
+			}
+		}]
 	}]
 }

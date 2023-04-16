@@ -11,22 +11,8 @@
 	],
 	or_tasks: true,
 	tasks: [{
-		uid: "6faf3061",
-		type: "dimension",
-		icon: "thermalfoundation:ore 1 4",
-		dim: 101
-	},
-	{
-		uid: "45b63545",
-		type: "dimension",
-		icon: "minecraft:gold_ore",
-		dim: 102
-	},
-	{
-		uid: "eb20956a",
-		type: "dimension",
-		icon: "minecraft:iron_ore",
-		dim: 103
+		uid: "b49464a2",
+		type: "checkmark"
 	}],
 	rewards: [{
 		uid: "fdf8569e",

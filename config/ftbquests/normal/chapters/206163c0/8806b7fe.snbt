@@ -15,13 +15,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "a461a2ad",
+		uid: "9c179df0",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		item: "contenttweaker:nugget_phosphor",
+		count: 8
 	}]
 }

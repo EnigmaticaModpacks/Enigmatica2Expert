@@ -639,6 +639,9 @@
 		icon: "extrautils2:largishchest 3",
 		item: "extrautils2:largishchest",
 		count: 3
+	},
+	{
+		item: "draconicevolution:draconium_chest"
 	}],
 	loot_crate: {
 		string_id: "storage",
