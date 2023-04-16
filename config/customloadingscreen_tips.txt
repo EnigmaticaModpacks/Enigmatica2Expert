@@ -15,7 +15,6 @@ AE2 controller is available only in late game.
 You can craft Ore Excavation modifier or get one from early quests.
 options.txt loads automatically if you don't have one already.
 Place your Quest Book into Crafting Grid to turn into Modpack Guide.
-To start Skyblock mode, just create new Void World.
 Getting lag when you just joined a world is normal.
 "Extended" addon has over +190 mods compared to original E2E.
 Despite "Extended" +190 mods, its loads only 30% slower than E2E.

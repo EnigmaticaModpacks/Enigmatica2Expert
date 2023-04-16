@@ -79,10 +79,13 @@ Just use *New Instance* feature of your launcher. [GDLauncher example](https://i
 
 ### Skyblock 🌌
 
-When you creating new world, there is Skyblock option. You can play it without preparation, but with standard settings, structures will be generated in an void world. It is desirable (but not necessary) to turn them off.
+In Skyblock mode, you cannot leave the starting Void dimension (with a couple of exceptions).
 
-Download and overwrite [this configs](https://github.com/Krutoy242/Enigmatica2Expert-Extended/tree/master/dev/skyblock_overrides) over your installed instance.  
-New configs would disable some generation in void world, like Slime Islands or Dragon corpses.  
+In order to create a new Skyblock world, you need:
+
+1. In main menu go to `Mods` => `Just Enough Dimensions` Config => `Generic` => `initialSpawnDimensionId` set to `3`
+2. Then `Create New World` => `More World Options` => select `World Type: Void? World`
+
 If you play on a server on which have already made these changes, the client does not need to change the configs.
 
 -----------------

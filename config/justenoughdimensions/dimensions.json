@@ -1,59 +1,37 @@
 {
-   
-    "dimensions":[
-	{
-	    "dim": 3,
-	    "biome":"minecraft:plains",
-	    "override":true,
-	    "dimensiontype": {
-                "name": "void world",
-                "suffix": "DIM3",
-                "worldprovider": "WorldProviderSurfaceJED"
-            },
-	    "worldinfo": {
-		"generatorName": "voidworld",
-		"SpawnX":1,
-		"SpawnZ":1,
-		"SpawnY":89
-	    },
-	    "spawn_structure": {
-              "name": "tree.nbt",
-		"centered": true,
-		"offset": [-1,-2,-1]
-            },
-	    "jed":{
-		"void_teleport": {
-                    "dimension": 0,
-                    "trigger_y": 1,
-                    "teleport_type": "spawn",
-                    "find_surface": true
-                }
-	    }
-	},
-	{
-	    "dim": 4,
-	    "biome":"minecraft:plains",
-	    "dimensiontype": {
-                "name": "peaceful",
-                "suffix": "DIM4",
-                "worldprovider": "WorldProviderSurfaceJED"
-            },
-	    "worldinfo": {
-		"generatorName": "customized",
-		"generatorOptions": "{\"coordinateScale\":684.412,\"heightScale\":684.412,\"lowerLimitScale\":512.0,\"upperLimitScale\":512.0,\"depthNoiseScaleX\":200.0,\"depthNoiseScaleZ\":200.0,\"depthNoiseScaleExponent\":0.5,\"mainNoiseScaleX\":80.0,\"mainNoiseScaleY\":160.0,\"mainNoiseScaleZ\":80.0,\"baseSize\":1.0,\"stretchY\":12.0,\"biomeDepthWeight\":1.0,\"biomeDepthOffset\":0.0,\"biomeScaleWeight\":1.0,\"biomeScaleOffset\":0.0,\"seaLevel\":1,\"useCaves\":false,\"useDungeons\":false,\"dungeonChance\":1,\"useStrongholds\":false,\"useVillages\":false,\"useMineShafts\":false,\"useTemples\":false,\"useMonuments\":false,\"useMansions\":false,\"useRavines\":false,\"useWaterLakes\":false,\"waterLakeChance\":100,\"useLavaLakes\":false,\"lavaLakeChance\":100,\"useLavaOceans\":false,\"fixedBiome\":-1,\"biomeSize\":8,\"riverSize\":1,\"dirtSize\":33,\"dirtCount\":0,\"dirtMinHeight\":0,\"dirtMaxHeight\":256,\"gravelSize\":33,\"gravelCount\":0,\"gravelMinHeight\":0,\"gravelMaxHeight\":256,\"graniteSize\":33,\"graniteCount\":0,\"graniteMinHeight\":0,\"graniteMaxHeight\":80,\"dioriteSize\":33,\"dioriteCount\":0,\"dioriteMinHeight\":0,\"dioriteMaxHeight\":80,\"andesiteSize\":33,\"andesiteCount\":0,\"andesiteMinHeight\":0,\"andesiteMaxHeight\":80,\"coalSize\":17,\"coalCount\":0,\"coalMinHeight\":0,\"coalMaxHeight\":128,\"ironSize\":9,\"ironCount\":0,\"ironMinHeight\":0,\"ironMaxHeight\":64,\"goldSize\":9,\"goldCount\":0,\"goldMinHeight\":0,\"goldMaxHeight\":32,\"redstoneSize\":8,\"redstoneCount\":0,\"redstoneMinHeight\":0,\"redstoneMaxHeight\":16,\"diamondSize\":8,\"diamondCount\":0,\"diamondMinHeight\":0,\"diamondMaxHeight\":16,\"lapisSize\":7,\"lapisCount\":0,\"lapisCenterHeight\":16,\"lapisSpread\":16}"
-	    },
-	    "jed":{
-		"CanSpawnHostiles": false,
-		"CanSpawnPeacefulMobs": false,
-		"HasXZFog": false
-	    },
-	    "GameRules":{
-		
-		"doMobSpawning":false
-	    }
-	   
-	    
-	}
-    ]
+	"dimensions": [
+		{
+			"dim": 3,
+			"biome": "minecraft:plains",
+			"override": true,
+			"dimensiontype": {
+				"name": "void world",
+				"suffix": "DIM3",
+				"worldprovider": "WorldProviderSurfaceJED"
+			},
+			"worldinfo": {
+				"generatorName": "voidworld",
+				"SpawnX": 1,
+				"SpawnZ": 1,
+				"SpawnY": 89
+			},
+			"spawn_structure": {
+				"name": "tree.nbt",
+				"centered": true,
+				"offset": [
+					-1,
+					-2,
+					-1
+				]
+			},
+			"jed": {
+				"void_teleport": {
+					"dimension": 0,
+					"trigger_y": 1,
+					"teleport_type": "spawn",
+					"find_surface": true
+				}
+			}
+		}
+	]
 }
-

@@ -12,7 +12,6 @@
           ,"misc": "node dev/automation/misc.js --keep-cache"
       ,"modsDiff": "node dev/automation/modsDiff.js"
      ,"Conflicts": "node dev/automation/recipe_conflicts.js"
-      ,"skyblock": "node dev/automation/skyblock.js"
           ,"tips": "node dev/automation/tips.js"
            ,"XML": "node dev/automation/XML.js"
 }

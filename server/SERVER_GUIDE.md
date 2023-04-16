@@ -3,12 +3,12 @@
 1) **Download** the zipfile.
 2) **Extract** it to an empty folder.
 3) If you want to **change RAM** usage, Java arguments etc, see the "settings" file.
-4) If you want to play **Skyblock** 🌌, in file `./server.properties` set `level-type=voidworld`. Then overwrite [this configs](https://github.com/Krutoy242/Enigmatica2Expert-Extended/tree/master/dev/skyblock_overrides) on your server (they would disable some generation in void world, like Slime Islands).
+4) If you want to play **Skyblock** 🌌, in file `./server.properties` set `level-type=voidworld`. Then in file [justenoughdimensions.cfg](config/justenoughdimensions/justenoughdimensions.cfg) set `initialSpawnDimensionId` to `3`
 5) Double click "**ServerStart**" or "ServerStartLinux", whichever is appropriate.
 	On Linux you cannot run the script via sh directly.
-5) **Set** EULA=true
-6) On first server load write `/defaultworldgenerator-port 1` when it ask.
-7) **Pregenerate** the world - See below for instructions.
+6) **Set** EULA=true
+7) On first server load write `/defaultworldgenerator-port 1` when it ask.
+8) **Pregenerate** the world - See below for instructions.
 
 
 
