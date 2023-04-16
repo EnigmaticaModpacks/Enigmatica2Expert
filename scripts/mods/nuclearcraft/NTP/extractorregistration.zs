@@ -1,3 +1,4 @@
+#norun
 #loader nc_preinit
 
 import scripts.mods.nuclearcraft.NTP.coilclasses.ExtractorInfo;

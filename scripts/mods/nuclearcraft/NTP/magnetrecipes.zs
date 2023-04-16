@@ -1,3 +1,4 @@
+#norun
 
 import scripts.mods.nuclearcraft.NTP.coilclasses.MagnetInfo;
 import scripts.mods.nuclearcraft.NTP.coilmagnetlist.MagnetInfoList;

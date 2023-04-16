@@ -1,3 +1,4 @@
+#norun
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import mods.nuclearcraft.Infuser;

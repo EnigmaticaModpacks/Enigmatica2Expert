@@ -1,3 +1,4 @@
+#norun
 import scripts.mods.nuclearcraft.NTP.coilclasses.ExtractorInfo;
 import scripts.mods.nuclearcraft.NTP.coilextractorlist.ExtractorInfoList;
 import crafttweaker.item.IIngredient;

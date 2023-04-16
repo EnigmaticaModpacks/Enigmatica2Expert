@@ -1,3 +1,4 @@
+#norun
 import scripts.mods.nuclearcraft.NTP.coilclasses.StabilizerInfo;
 import scripts.mods.nuclearcraft.NTP.coilstabilizerlist.StabilizerInfoList;
 import scripts.mods.nuclearcraft.NTP.coilclasses.LiquidStabilizerInfo;

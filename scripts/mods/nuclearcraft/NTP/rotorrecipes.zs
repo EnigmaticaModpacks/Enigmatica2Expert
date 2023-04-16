@@ -1,3 +1,4 @@
+#norun
 import scripts.mods.nuclearcraft.NTP.rotorclasses.StatorInfo;
 import scripts.mods.nuclearcraft.NTP.rotorclasses.BladeInfo;
 import scripts.mods.nuclearcraft.NTP.rotorclasses.qmdBladeInfo;

@@ -1,3 +1,4 @@
+#norun
 import scripts.mods.nuclearcraft.NTP.coilclasses.ConverterInfo;
 import scripts.mods.nuclearcraft.NTP.coilconverterlist.ConverterInfoList;
 import crafttweaker.item.IIngredient;
