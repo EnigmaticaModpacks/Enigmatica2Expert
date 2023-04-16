@@ -1860,8 +1860,13 @@
       }
     },
     "23:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
       "preRequisites:11": [
-        65
+        65,
+        1
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3563,16 +3568,6 @@
       "questID:3": 44,
       "rewards:9": {
         "0:10": {
-          "asScript:1": 1,
-          "command:8": "/say VAR_NAME has begun the Bragging Rights questline!",
-          "description:8": "Run a command script",
-          "hideBlockIcon:1": 1,
-          "index:3": 0,
-          "rewardID:8": "bq_standard:command",
-          "title:8": "bq_standard.reward.command",
-          "viaPlayer:1": 0
-        },
-        "1:10": {
           "asScript:1": 1,
           "command:8": "/say VAR_NAME has obtained the Creative Screen!",
           "description:8": "Run a command script",
@@ -22659,6 +22654,12 @@
               },
               "OreDict:8": "",
               "id:8": "bq_standard:loot_chest"
+            },
+            "1:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "immersivepetroleum:schematic"
             }
           }
         }
@@ -23064,30 +23065,32 @@
     "301:10": {
       "preRequisites:11": [
         295,
-        296,
         297,
+        296,
         298,
         299
       ],
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "The Projector can display how multiblock structures are supposed to be built.\n\nCraft the Projector with an Engineer\u0027s Manual turned to the page of the machine you want to build, to set it.",
+          "desc:8": "The Multi Builder Tool can be used to create multiblocks from a variety of mods at the click of a button.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
             "Damage:2": 0,
-            "ForgeCaps:10": {
-              "astralsorcery:cap_item_amulet_holder:10": {}
-            },
             "OreDict:8": "",
-            "id:8": "immersivepetroleum:schematic"
+            "id:8": "mbtool:mbtool",
+            "tag:10": {
+              "electricity:5": 10000.0,
+              "recipe:3": 13,
+              "rotation:3": 1
+            }
           },
           "ignoresview:1": 0,
           "ismain:1": 0,
           "issilent:1": 0,
           "lockedprogress:1": 1,
-          "name:8": "Projector",
+          "name:8": "Multi Builder Tool",
           "partysinglereward:1": 0,
           "questlogic:8": "AND",
           "repeat_relative:1": 1,
@@ -23102,37 +23105,19 @@
       "questID:3": 301,
       "rewards:9": {
         "0:10": {
-          "choices:9": {
+          "index:3": 0,
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
             "0:10": {
               "Count:3": 1,
-              "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "bq_standard:loot_chest"
-            },
-            "1:10": {
-              "Count:3": 1,
               "Damage:2": 101,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
-              "id:8": "bq_standard:loot_chest"
-            },
-            "2:10": {
-              "Count:3": 1,
-              "Damage:2": 25,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
-              "OreDict:8": "",
-              "id:8": "bq_standard:loot_chest"
+              "id:8": "bq_standard:loot_chest",
+              "tag:10": {
+                "hideLootInfo:1": 1
+              }
             }
-          },
-          "index:3": 0,
-          "rewardID:8": "bq_standard:choice"
+          }
         }
       },
       "tasks:9": {
@@ -23147,11 +23132,13 @@
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
-              "ForgeCaps:10": {
-                "astralsorcery:cap_item_amulet_holder:10": {}
-              },
               "OreDict:8": "",
-              "id:8": "immersivepetroleum:schematic"
+              "id:8": "mbtool:mbtool",
+              "tag:10": {
+                "electricity:5": 10000.0,
+                "recipe:3": 13,
+                "rotation:3": 1
+              }
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -57583,6 +57570,191 @@
           "taskID:8": "bq_standard:retrieval"
         }
       }
+    },
+    "766:10": {
+      "preRequisites:11": [
+        65
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Infinite Essentia",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "thaumicenergistics:essentia_cell_creative"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Creative Essentia",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 766,
+      "rewards:9": {
+        "0:10": {
+          "asScript:1": 1,
+          "command:8": "/say VAR_NAME has obtained the Creative Essentia Cell!",
+          "description:8": "Run a command script",
+          "hideBlockIcon:1": 1,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "thaumicenergistics:essentia_cell_creative"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "767:10": {
+      "preRequisiteTypes:7": [
+        0,
+        2
+      ],
+      "preRequisites:11": [
+        65,
+        1
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Infinite Items in your ME system.",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": "",
+            "id:8": "appliedenergistics2:creative_storage_cell",
+            "tag:10": {}
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Creative ME Storage Cell",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 767,
+      "rewards:9": {
+        "0:10": {
+          "asScript:1": 1,
+          "command:8": "/say VAR_NAME has obtained the Creative ME Storage Cell!",
+          "description:8": "Run a command script",
+          "hideBlockIcon:1": 1,
+          "index:3": 0,
+          "rewardID:8": "bq_standard:command",
+          "title:8": "bq_standard.reward.command",
+          "viaPlayer:1": 0
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:creative_storage_cell",
+              "tag:10": {}
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
+    },
+    "768:10": {
+      "preRequisites:11": [
+        65
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "autoclaim:1": 0,
+          "desc:8": "Needed to craft vending",
+          "globalshare:1": 0,
+          "icon:10": {
+            "Count:3": 1,
+            "Damage:2": 69,
+            "OreDict:8": "",
+            "id:8": "mysticalagradditions:stuff"
+          },
+          "ignoresview:1": 0,
+          "ismain:1": 0,
+          "issilent:1": 0,
+          "lockedprogress:1": 0,
+          "name:8": "Creative Essense",
+          "questlogic:8": "AND",
+          "repeat_relative:1": 1,
+          "repeattime:3": -1,
+          "simultaneous:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "tasklogic:8": "AND",
+          "visibility:8": "NORMAL"
+        }
+      },
+      "questID:3": 768,
+      "rewards:9": {},
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 69,
+              "OreDict:8": "",
+              "id:8": "mysticalagradditions:stuff"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      }
     }
   },
   "questLines:9": {
@@ -58359,7 +58531,7 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": -56,
-          "y:3": 136
+          "y:3": 104
         },
         "6:10": {
           "id:3": 106,
@@ -63006,15 +63178,15 @@
           "id:3": 3,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 240,
-          "y:3": 72
+          "x:3": 208,
+          "y:3": 112
         },
         "4:10": {
           "id:3": 14,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 240,
-          "y:3": 104
+          "x:3": 280,
+          "y:3": 112
         },
         "5:10": {
           "id:3": 19,
@@ -63027,28 +63199,28 @@
           "id:3": 20,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 272,
-          "y:3": 104
+          "x:3": 208,
+          "y:3": 136
         },
         "7:10": {
           "id:3": 21,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 240,
-          "y:3": 136
+          "x:3": 232,
+          "y:3": 88
         },
         "8:10": {
           "id:3": 22,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 208,
-          "y:3": 104
+          "x:3": 280,
+          "y:3": 88
         },
         "9:10": {
           "id:3": 23,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 272,
+          "x:3": 280,
           "y:3": 136
         },
         "10:10": {
@@ -63133,28 +63305,49 @@
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 208,
-          "y:3": 72
+          "y:3": 88
         },
         "22:10": {
           "id:3": 45,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 208,
+          "x:3": 232,
           "y:3": 136
         },
         "23:10": {
           "id:3": 359,
           "sizeX:3": 24,
           "sizeY:3": 24,
-          "x:3": 272,
-          "y:3": 72
+          "x:3": 256,
+          "y:3": 88
         },
         "24:10": {
           "id:3": 720,
           "sizeX:3": 24,
           "sizeY:3": 24,
           "x:3": 8,
-          "y:3": 52
+          "y:3": 56
+        },
+        "25:10": {
+          "id:3": 766,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 256,
+          "y:3": 112
+        },
+        "26:10": {
+          "id:3": 767,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 232,
+          "y:3": 112
+        },
+        "27:10": {
+          "id:3": 768,
+          "sizeX:3": 24,
+          "sizeY:3": 24,
+          "x:3": 256,
+          "y:3": 136
         }
       }
     },
@@ -63442,7 +63635,7 @@
   "questSettings:10": {
     "betterquesting:10": {
       "editMode:8": "false",
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_anchor_x:5": 0.5,
       "home_anchor_y:5": 3.0,
