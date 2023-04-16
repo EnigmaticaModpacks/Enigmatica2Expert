@@ -1,0 +1,17 @@
+@@ -63,11 +63,11 @@ public class ActuallyBaubles {
+     public static final CreativeTabs TAB = new /* Unavailable Anonymous Inner Class!! */;
+     public static ItemMagnetRingBauble magnetRing = new ItemMagnetRingBauble("magnet_ring_bauble");
+     public static ItemPotionRingAdvancedBauble potionRingAdvanced = new ItemPotionRingAdvancedBauble(true, "potion_ring_advanced_bauble");
+-    public static ItemBatteryBauble battery = new ItemBatteryBauble("battery_bauble", 200000, 1000);
+-    public static ItemBatteryBauble batteryDouble = new ItemBatteryBauble("battery_double_bauble", 350000, 5000);
+-    public static ItemBatteryBauble batteryTriple = new ItemBatteryBauble("battery_triple_bauble", 600000, 10000);
+-    public static ItemBatteryBauble batteryQuadruple = new ItemBatteryBauble("battery_quadruple_bauble", 1000000, 30000);
+-    public static ItemBatteryBauble batteryQuintuple = new ItemBatteryBauble("battery_quintuple_bauble", 2000000, 100000);
++    public static ItemBatteryBauble battery = new ItemBatteryBauble("battery_bauble", 2000000, 10000);
++    public static ItemBatteryBauble batteryDouble = new ItemBatteryBauble("battery_double_bauble", 3500000, 50000);
++    public static ItemBatteryBauble batteryTriple = new ItemBatteryBauble("battery_triple_bauble", 6000000, 100000);
++    public static ItemBatteryBauble batteryQuadruple = new ItemBatteryBauble("battery_quadruple_bauble", 10000000, 300000);
++    public static ItemBatteryBauble batteryQuintuple = new ItemBatteryBauble("battery_quintuple_bauble", 20000000, 1000000);
+ 
+     @Mod.EventHandler
+     public void preInit(FMLPreInitializationEvent event) {
