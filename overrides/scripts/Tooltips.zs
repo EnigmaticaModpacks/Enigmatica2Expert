@@ -78,7 +78,8 @@ var thaumcraftHintItems as IItemStack[] = [
 	<thaumcraft:arcane_workbench>,
 	<thaumcraft:smelter_basic>,
 	<thaumcraft:alumentum>,
-	<thaumcraft:nitor_yellow>
+	<thaumcraft:nitor_yellow>,
+	<thaumicenergistics:essentia_component_1k>
 ];
 
 for item in thaumcraftHintItems {
