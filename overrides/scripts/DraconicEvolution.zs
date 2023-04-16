@@ -11,7 +11,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapedMirrored("Mob Grinder", 
 	<draconicevolution:grinder>, 
 	[[<ore:ingotElectricalSteel>, <draconicevolution:draconium_block:1>, <ore:ingotElectricalSteel>],
-	[<astralsorcery:itemcrystalsword>.anyDamage(), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.anyDamage()], 
+	[<astralsorcery:itemcrystalsword>.onlyDamageAtLeast(0), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword>.onlyDamageAtLeast(0)],
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
@@ -121,7 +121,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 	recipes.remove(<draconicevolution:energy_crystal>);
 	recipes.addShapedMirrored("Basic Energy Relay Crystal", <draconicevolution:energy_crystal>*4,
 	[[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>],
-	[<enderio:item_alloy_ingot>,<ore:crystalAstralAny>,<enderio:item_alloy_ingot>],
+	[<enderio:item_alloy_ingot>,<astralsorcery:itemrockcrystalsimple>.anyDamage(),<enderio:item_alloy_ingot>],
 	[<industrialforegoing:laser_lens:11>,<actuallyadditions:block_laser_relay_extreme>,<industrialforegoing:laser_lens:11>]]);
 	
 # Basic Wireless Energy Crystal

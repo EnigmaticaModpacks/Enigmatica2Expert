@@ -100,7 +100,7 @@ function fluidDict(ins as string[]) {
 	recipes.addShapedMirrored("Black Hole Tank", <industrialforegoing:black_hole_tank>, 
 	[[<ore:itemRubber>, <actuallyadditions:item_crystal_empowered:3>, <ore:itemRubber>],
 	[<teslacorelib:machine_case>, <botania:blackholetalisman>.reuse(), <teslacorelib:machine_case>], 
-	[<mekanism:plasticblock:8>, <mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}}), <mekanism:plasticblock:8>]]);
+	[<mekanism:plasticblock:8>, <mekanism:machineblock2:11>.withTag({tier: 3})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}}), <mekanism:plasticblock:8>]]);
 
 # Black Hole Unit
 	recipes.remove(<industrialforegoing:black_hole_unit>);

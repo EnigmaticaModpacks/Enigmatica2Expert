@@ -34,7 +34,7 @@ for input, output in itemsToUnify {
 	mods.mekanism.smelter.addRecipe(<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemcraftingcomponent:1>);
 	
 	var ultimateGasTank = <mekanism:gastank>.withTag({tier: 3})|<mekanism:gastank>.withTag({tier: 3, mekData:{security:0}});
-	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
+	var ultimateFluidTank = <mekanism:machineblock2:11>.withTag({tier: 3})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{}})|<mekanism:machineblock2:11>.withTag({tier: 3, mekData:{security:0}});
 	
 # Increasing Stacksize
 	<mekanism:tierinstaller>.maxStackSize = 16;
@@ -131,7 +131,7 @@ for input, output in itemsToUnify {
 	<mekanism:machineblock2:8>, 
 	[[ultimateGasTank, <extrautils2:suncrystal>, ultimateGasTank],
 	[<mekanismgenerators:reactor:2>, <advancedrocketry:crystallizer>, <mekanismgenerators:reactor:2>], 
-	[<ore:circuitUltimate>, <ic2:lapotron_crystal>.anyDamage(), <ore:circuitUltimate>]]);
+	[<ore:circuitUltimate>, <ic2:lapotron_crystal:*>, <ore:circuitUltimate>]]);
 
 # Gas-burning generator
 	recipes.remove(<mekanismgenerators:generator:3>);

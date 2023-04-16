@@ -121,7 +121,7 @@
 	recipes.addShaped("Resonator",
 	<extrautils2:resonator>, 
 	[[<ore:circuitAdvanced>, <extrautils2:machine>, <ore:circuitAdvanced>],
-	[<ore:plateSteel>, <chisel:glass:1>, <ore:plateSteel>], 
+	[<ore:plateSteel>, <ore:blockGlass>, <ore:plateSteel>], 
 	[<ore:plateSteel>, <ore:blockCoalCoke>, <ore:plateSteel>]]);
 
 # Machine Block
