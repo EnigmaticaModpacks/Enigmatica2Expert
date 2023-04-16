@@ -330,7 +330,7 @@
 			<oreDict>oreNetherCopper</oreDict>
 		</input>
 		<output>
-			<itemStack>thermalfoundation:material 4 67</itemStack>
+			<itemStack>thermalfoundation:material 4 64</itemStack>
 		</output>
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
