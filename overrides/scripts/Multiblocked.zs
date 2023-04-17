@@ -87,7 +87,7 @@ recipes.addShapeless("Outputbusconvert",<mbd:item_bus_input>,[<mbd:item_bus_outp
       recipes.addShaped("Fluidhatchoutput", 
       <mbd:fluid_hatch_output>, 
       [[<mbd:base_casing>, null, null],
-      [<mbd:fluid_hatch_input>, null, null], 
+      [<ore:blockGlass>, null, null], 
       [null, null, null]]);
 	  
 recipes.addShapeless("Inputhatchconvert",<mbd:fluid_hatch_output>,[<mbd:fluid_hatch_input>]);
