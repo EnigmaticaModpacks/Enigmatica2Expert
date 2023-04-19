@@ -1,13 +1,13 @@
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemCondition;
-
+import scripts.craft.helper.gridRecipe.GridRecipe;
 
 # *======= Variables =======*
 
 	var ingotUltimate = <ore:ingotUltimate>;
 	var ultCatalyst = <extendedcrafting:material:13>;
 	var elitePlating = <ore:plateElite>;
-	var resonantCube = <thermalexpansion:cell>.withTag({Level: 4 as byte});
+	var densecell = <appliedenergistics2:dense_energy_cell>;
 	var resonantFrame = <thermalexpansion:frame:148>;
 	var awakendedCapacitor = <draconicevolution:draconium_capacitor:1>;
 	var awakendedCore = <draconicevolution:awakened_core>;
@@ -137,11 +137,11 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	mods.extendedcrafting.TableCrafting.addShaped(4, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}),
 	[[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel], 
 	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
-	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
-	[ingotUltimate, benitoite, resonantCube, ultCell, <draconicevolution:draconic_energy_core>, ultCell, resonantCube, benitoite, ingotUltimate], 
+	[ingotUltimate, elitePlating, ultProvider, densecell, <environmentaltech:solar_cont_5>, densecell, ultProvider, elitePlating, ingotUltimate], 
+	[ingotUltimate, benitoite, densecell, ultCell, <draconicevolution:draconic_energy_core>, ultCell, densecell, benitoite, ingotUltimate], 
 	[ingotUltimate, dilithium, <environmentaltech:solar_cont_4>, <extrautils2:rainbowgenerator>, ultCatalyst, <extrautils2:rainbowgenerator>, <environmentaltech:solar_cont_4>, dilithium, ingotUltimate], 
-	[ingotUltimate, benitoite, resonantCube, ultCell, <draconicevolution:draconic_energy_core>, ultCell, resonantCube, benitoite, ingotUltimate], 
-	[ingotUltimate, elitePlating, ultProvider, resonantCube, <environmentaltech:solar_cont_5>, resonantCube, ultProvider, elitePlating, ingotUltimate], 
+	[ingotUltimate, benitoite, densecell, ultCell, <draconicevolution:draconic_energy_core>, ultCell, densecell, benitoite, ingotUltimate], 
+	[ingotUltimate, elitePlating, ultProvider, densecell, <environmentaltech:solar_cont_5>, densecell, ultProvider, elitePlating, ingotUltimate], 
 	[resonantFrame, <nuclearcraft:rtg_californium>, elitePlating, anglesite, dilithium, anglesite, elitePlating, <nuclearcraft:rtg_californium>, resonantFrame], 
 	[rtgFuel, resonantFrame, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, ingotUltimate, resonantFrame, rtgFuel]]); 
 	
@@ -225,11 +225,11 @@ var twilightForestMasterTrophy = <simple_trophies:trophy>.withTag({
 	mods.extendedcrafting.TableCrafting.addShaped(4, <mekanism:gastank>.withTag({tier: 4, mekData: {}}),	
 	[[ingotUltimate, ingotUltimate, ingotUltimate, blockStellar, rocketFuel, blockStellar, ingotUltimate, ingotUltimate, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate], 
-	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
+	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte, Lock: 0 as byte})|<thermalexpansion:tank>.withTag({Fluid: {FluidName: "neutron", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte, Lock: 0 as byte})|<thermalexpansion:tank>.withTag({Fluid: {FluidName: "mana", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
 	[blockStellar, benitoite, gasPad, awakendedCore, <advancedrocketry:liquidtank>, awakendedCore, gasPad, benitoite, blockStellar], 
 	[rocketFuel, rocketFuel, ultCatalyst, <advancedrocketry:liquidtank>, creativeGasTankFrame, <advancedrocketry:liquidtank>, ultCatalyst, rocketFuel, rocketFuel], 
 	[blockStellar, benitoite, gasPad, awakendedCore, creativeTank, awakendedCore, gasPad, benitoite, blockStellar], 
-	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
+	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte, Lock: 0 as byte})|<thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte, Lock: 0 as byte})|<thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate],
 	[ingotUltimate, ingotUltimate, ingotUltimate, blockStellar, rocketFuel, blockStellar, ingotUltimate, ingotUltimate, ingotUltimate]]);  
 	recipes.addShapeless("Creative Gas Tank Reset", 
