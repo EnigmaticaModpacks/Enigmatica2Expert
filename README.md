@@ -84,7 +84,7 @@ In Skyblock mode, you cannot leave the starting Void dimension (with a couple of
 In order to create a new Skyblock world, you need:
 
 1. In main menu go to `Mods` => `Just Enough Dimensions` Config => `Generic` => `initialSpawnDimensionId` set to `3`
-2. Then `Create New World` => `More World Options` => select `World Type: Void? World`
+2. Then `Create New World` => `Create New World`
 
 If you play on a server on which have already made these changes, the client does not need to change the configs.
 

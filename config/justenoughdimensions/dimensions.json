@@ -1,37 +1,23 @@
 {
-	"dimensions": [
-		{
-			"dim": 3,
-			"biome": "minecraft:plains",
-			"override": true,
-			"dimensiontype": {
-				"name": "void world",
-				"suffix": "DIM3",
-				"worldprovider": "WorldProviderSurfaceJED"
-			},
-			"worldinfo": {
-				"generatorName": "voidworld",
-				"SpawnX": 1,
-				"SpawnZ": 1,
-				"SpawnY": 89
-			},
-			"spawn_structure": {
-				"name": "tree.nbt",
-				"centered": true,
-				"offset": [
-					-1,
-					-2,
-					-1
-				]
-			},
-			"jed": {
-				"void_teleport": {
-					"dimension": 0,
-					"trigger_y": 1,
-					"teleport_type": "spawn",
-					"find_surface": true
-				}
-			}
-		}
-	]
+    "dimensions": [
+	{
+	    "dim": 3,
+	    "biome": "minecraft:plains",
+	    "override": true,
+	    "dimensiontype": {
+		"name": "void world",
+		"suffix": "DIM3",
+		"worldprovider": "WorldProviderSurfaceJED"
+	    },
+	    "worldinfo": {
+		"generatorName": "voidworld",
+		"SpawnX": 1,
+		"SpawnZ": 1,
+		"SpawnY": 89
+	    },
+	    "jed":{
+		"GenerateFallbackSpawnBlock":true
+	    }
+	}
+    ]
 }
