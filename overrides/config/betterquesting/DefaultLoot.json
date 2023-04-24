@@ -3640,9 +3640,9 @@
           "items:9": {
             "0:10": {
               "id:8": "appliedenergistics2:part",
-              "Count:3": 32,
+              "Count:3": 64,
               "OreDict:8": "",
-              "Damage:3": 70
+              "Damage:3": 16
             }
           }
         },
@@ -4228,10 +4228,10 @@
           "weight:3": 1,
           "items:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:controller",
+              "id:8": "aeadditions:storage.component",
               "Count:3": 1,
               "OreDict:8": "",
-              "Damage:3": 0
+              "Damage:3": 3
             }
           }
         },
