@@ -13,19 +13,19 @@ jobs:
       - id: release
         uses: gregziegan/fetch-latest-release@v2.0.0
 
-      - name: 📃 Save changelog content to file
-        uses: DamianReeves/write-file-action@master
-        with:
-          path: latest.md
-          contents: ${{ steps.release.outputs.body }}
-          write-mode: overwrite
+      # - name: 📃 Save changelog content to file
+      #   uses: DamianReeves/write-file-action@master
+      #   with:
+      #     path: latest.md
+      #     contents: ${{ steps.release.outputs.body }}
+      #     write-mode: overwrite
 
       - uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: 🖼️ Generate image from md
-        run: npx mdimg -i latest.md -o latest.png -w 800 --css githubDark
+        run: npx mdimg -i changelogs/LATEST.md -o latest.png -w 800 --css githubDark
 
       - name: 🖼️ ➡️ Send discord message
         uses: appleboy/discord-action@master
@@ -34,19 +34,19 @@ jobs:
           webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
           file: "./latest.png"
           message: >
-            🚀 New release: __**{{ steps.release.outputs.tag_name }}**__ {{ steps.release.outputs.name }}
-            {{ steps.release.outputs.url }}
+            🚀 New release: __**${{ steps.release.outputs.tag_name }}**__ ${{ steps.release.outputs.name }}
+            ${{ steps.release.outputs.url }}
 
       - run: npm i --omit=dev
 
       - name: 📋 Generate html instead of markdown
-        run: node dev/lib/curseforge-md-to-html.js latest.md
+        run: node dev/lib/curseforge-md-to-html.js changelogs/LATEST.md
 
       - name: 📋 Get content of changelog html
         id: latest_html
         uses: andstor/file-reader-action@v1
         with:
-          path: "latest.html"
+          path: "changelogs/LATEST.html"
 
       - name: 💽 Download .zip files from latest release
         uses: robinraju/release-downloader@v1.4
