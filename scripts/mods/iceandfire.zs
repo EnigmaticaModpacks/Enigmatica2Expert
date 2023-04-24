@@ -584,7 +584,7 @@ mods.iceandfire.recipes.addFireDragonForgeRecipe(<ore:blockPigiron>.firstItem, <
 mods.iceandfire.recipes.addIceDragonForgeRecipe(<ore:blockPigiron>.firstItem, <darkutils:wither_block>, <extrautils2:simpledecorative:2>);
 
 # Skyblock alt for dragon scales
-scripts.category.tooltip_utils.desc.both(<mysticalagradditions:stuff:3>, "kill.slime.by.cockatrice");
+scripts.lib.tooltip.desc.both(<mysticalagradditions:stuff:3>, "kill.slime.by.cockatrice");
 scripts.do.entity_kill_entity.add("minecraft:slime", "iceandfire:if_cockatrice", <mysticalagradditions:stuff:3>);
 
 # Dragon Scales

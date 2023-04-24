@@ -3,9 +3,9 @@ import crafttweaker.item.IItemStack;
 
 #modloaded openblocks
 
-scripts.category.tooltip_utils.desc.tooltip(<openblocks:tank>);
-scripts.category.tooltip_utils.desc.tooltip(<openblocks:builder_guide>, 'redstone.need');
-scripts.category.tooltip_utils.desc.tooltip(<openblocks:guide>, 'redstone.need');
+scripts.lib.tooltip.desc.tooltip(<openblocks:tank>);
+scripts.lib.tooltip.desc.tooltip(<openblocks:builder_guide>, 'redstone.need');
+scripts.lib.tooltip.desc.tooltip(<openblocks:guide>, 'redstone.need');
 
 val o = <ore:ingotAlubrass>;
 

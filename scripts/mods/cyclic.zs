@@ -425,8 +425,8 @@ craft.remake(<cyclicmagic:apple_emerald>, ["pretty",
 recipes.remove(<cyclicmagic:apple>);
 recipes.remove(<cyclicmagic:corrupted_chorus>);
 recipes.remove(<cyclicmagic:glowing_chorus>);
-scripts.category.tooltip_utils.desc.both(<cyclicmagic:apple>, "kill.slime.by.zombie");
-scripts.category.tooltip_utils.desc.both(<cyclicmagic:corrupted_chorus>, "kill.slime.by.enderman");
+scripts.lib.tooltip.desc.both(<cyclicmagic:apple>, "kill.slime.by.zombie");
+scripts.lib.tooltip.desc.both(<cyclicmagic:corrupted_chorus>, "kill.slime.by.enderman");
 scripts.do.entity_kill_entity.add("minecraft:slime", "minecraft:zombie", <cyclicmagic:apple>);
 scripts.do.entity_kill_entity.add("minecraft:slime", "minecraft:enderman", <cyclicmagic:corrupted_chorus>);
 

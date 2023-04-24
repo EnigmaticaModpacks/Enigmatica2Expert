@@ -120,7 +120,7 @@ val defConversion = {
 
 for tool in toolsToNerf {
 	tool.maxDamage = 1;
-	scripts.category.tooltip_utils.desc.both(tool, "vanilla_tools");
+	scripts.lib.tooltip.desc.both(tool, "vanilla_tools");
 
 	val splitted = tool.definition.id.split(":")[1].split("_");
 	if(splitted.length <= 1) continue;

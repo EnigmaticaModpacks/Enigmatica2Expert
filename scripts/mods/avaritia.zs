@@ -395,8 +395,8 @@ val maxBonus = 10.0;
 val factor = pow(1.0 / maxBonus, 1.0 / 28.0) + 0.0000000000000001; // about 0.92
 
 furnace.setFuel(R, needCharge);
-scripts.category.tooltip_utils.desc.jei(F, "singularity.heat", maxBonus * 100.0 as int, needCharge as int);
-scripts.category.tooltip_utils.desc.jei(R, "singularity.burn", maxBonus * 100.0 as int, needCharge as int);
+scripts.lib.tooltip.desc.jei(F, "singularity.heat", maxBonus * 100.0 as int, needCharge as int);
+scripts.lib.tooltip.desc.jei(R, "singularity.burn", maxBonus * 100.0 as int, needCharge as int);
 
 // Fake recipe
 val a = <contenttweaker:any_burnable>;

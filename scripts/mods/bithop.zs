@@ -2,7 +2,7 @@
 
 // Remove BitHop due crashes: https://github.com/elytra/BitHop/issues/12
 recipes.remove(<bithop:bithop>);
-scripts.category.tooltip_utils.desc.jei(<bithop:bithop>, "tooltips.lang.removed.crash");
+scripts.lib.tooltip.desc.jei(<bithop:bithop>, "tooltips.lang.removed.crash");
 
 # [PullHop] from [Cabinet][+1]
 craft.remake(<bithop:pullhop>, ["pretty",

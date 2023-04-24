@@ -3,7 +3,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 #ignoreBracketErrors
 
-val desc = scripts.category.tooltip_utils.desc;
+val desc = scripts.lib.tooltip.desc;
 
 // Some Quark tooltips from https://github.com/Level-5-Pidgey/FantasTek/tree/master/mods
 ////////////////////////////////////////////////////////////////////////////////////////

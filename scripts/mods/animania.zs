@@ -74,7 +74,7 @@ for cheese in [
 	<animania:goat_cheese_wheel>,
 	<animania:sheep_cheese_wheel>
 ] as IItemStack[] {
-	scripts.category.tooltip_utils.desc.jei(cheese, "cheese_in_mold");
+	scripts.lib.tooltip.desc.jei(cheese, "cheese_in_mold");
 }
 
 

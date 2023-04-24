@@ -2,7 +2,7 @@ import crafttweaker.item.IIngredient;
 
 #modloaded littletiles
 
-scripts.category.tooltip_utils.desc.jei(<littletiles:recipeadvanced>, 'dont_put_into_ae');
+scripts.lib.tooltip.desc.jei(<littletiles:recipeadvanced>, 'dont_put_into_ae');
 
 # Storage tiles
 recipes.remove(<littletiles:ltstorageblocktile>);

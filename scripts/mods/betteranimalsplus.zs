@@ -1,6 +1,6 @@
 #modloaded betteranimalsplus
 
-val handOfFatelocalized = mods.zenutils.I18n.format(scripts.category.tooltip_utils.desc.local(<betteranimalsplus:handoffate>), 
+val handOfFatelocalized = mods.zenutils.I18n.format(scripts.lib.tooltip.desc.local(<betteranimalsplus:handoffate>), 
 	<minecraft:flint_and_steel>.displayName,
 	<minecraft:nether_wart>.displayName,
 	<betteranimalsplus:antler>.displayName,

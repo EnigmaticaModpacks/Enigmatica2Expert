@@ -208,9 +208,6 @@ for pos, names in utils.graph([
 	}
 }
 
-# Easter Egg fuel
-mods.tconstruct.Fuel.registerFuel(<liquid:seed> * 10, 500000);
-
 # *============================*
 
 /*

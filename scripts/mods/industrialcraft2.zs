@@ -281,7 +281,7 @@ recipes.addShapeless(<thermalfoundation:material:65> * 2, [<ic2:dust:17>, <ic2:d
 function crystalRecipe(name as string, item as IItemStack, ingrs as IIngredient[]) {
 	recipes.remove(item);
 	recipes.addShapeless(name, <ic2:crystal_memory>.withTag({Pattern: {id: item.definition.id, Count: 1 as byte, Damage: item.damage as short}}), ingrs);
-	scripts.category.tooltip_utils.desc.both(item, "crystal_memory");
+	scripts.lib.tooltip.desc.both(item, "crystal_memory");
 }
 
 crystalRecipe("[Shape Card] crystal", <rftools:shape_card>,      [<ore:circuitElite>, <immersiveengineering:blueprint>.withTag({blueprint: "molds"}), <ic2:crystal_memory>, <ore:paper>, <ore:paper>]);

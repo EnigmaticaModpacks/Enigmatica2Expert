@@ -21,8 +21,8 @@ static hpPortionTreshold as double = 0.8;
 static ignoredHealth as double = 20.0;
 
 // morb-like items limitation hint
-scripts.category.tooltip_utils.desc.both(<thermalexpansion:morb:*>, "morb_resist", (hpPortionTreshold * 100) as int, (ignoredHealth / 2) as int);
-scripts.category.tooltip_utils.desc.both(<cyclicmagic:magic_net>  , "morb_resist", (hpPortionTreshold * 100) as int, (ignoredHealth / 2) as int);
+scripts.lib.tooltip.desc.both(<thermalexpansion:morb:*>, "morb_resist", (hpPortionTreshold * 100) as int, (ignoredHealth / 2) as int);
+scripts.lib.tooltip.desc.both(<cyclicmagic:magic_net>  , "morb_resist", (hpPortionTreshold * 100) as int, (ignoredHealth / 2) as int);
 
 static uncapturables as IEntityDefinition[] = [
 /*Inject_js(

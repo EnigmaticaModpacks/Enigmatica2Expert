@@ -7,7 +7,7 @@ static itemsConsumed as int = 4;
 
 # Remove recipes defined by other methods
 recipes.removeByRecipeName("mysticalagriculture:itemcraftingcomponent");
-scripts.category.tooltip_utils.desc.both(
+scripts.lib.tooltip.desc.both(
   <mysticalagriculture:aquamarine_essence>,
   "tooltips.lang.drop_at_night",
   <mysticalagriculture:aquamarine_essence>.displayName,

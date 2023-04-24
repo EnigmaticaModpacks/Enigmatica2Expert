@@ -16,7 +16,7 @@ static customRecipes as IBlockState[IItemStack][string] = {
 for itemId, tuple in customRecipes {
   for block, state in tuple {
     val item = itemUtils.getItem(itemId);
-    scripts.category.tooltip_utils.desc.both(
+    scripts.lib.tooltip.desc.both(
       item,
       "tooltips.lang.infuse_bedrock",
       item.displayName,

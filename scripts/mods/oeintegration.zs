@@ -22,7 +22,7 @@ recipes.addShapeless('Excavator to book', Book(<enchantment:oeintegration:oreexc
 // --------------------------------------------------------------
 // Add tooltips about excavation special items
 // --------------------------------------------------------------
-val desc = scripts.category.tooltip_utils.desc;
+val desc = scripts.lib.tooltip.desc;
 
 /*Inject_js{
 const c = config('config/oreexcavation.cfg').general

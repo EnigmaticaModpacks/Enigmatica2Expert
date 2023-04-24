@@ -16,6 +16,7 @@ import crafttweaker.block.IBlockState;
 
 #loader crafttweaker reloadableevents
 
+mods.tconstruct.Fuel.registerFuel(<liquid:seed> * 10, 500000);
 
 // List of Regex animals that can be milked
 static animals as float[string] = {

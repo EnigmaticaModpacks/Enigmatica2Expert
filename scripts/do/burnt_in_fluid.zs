@@ -25,7 +25,7 @@ function postInit() as void {
     val item = itemUtils.getItem(itemId);
     for fluid, state in tuple {
       val f = game.getLiquid(fluid);
-      scripts.category.tooltip_utils.desc.both(
+      scripts.lib.tooltip.desc.both(
         item,
         "burn_in_fluid",
         item.displayName,
