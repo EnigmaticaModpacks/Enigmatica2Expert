@@ -10,7 +10,6 @@
 
 // @ts-check
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable unused-imports/no-unused-imports */
 
 import glob from 'glob'
@@ -72,28 +71,35 @@ function xml_to_js(xmlString) {
   return /** @type {XMLElement} */ (xml2js(xmlString, { compact: false }))
 }
 
-const reverseStr = s => [...s].reverse().join('')
-const reverseNaturalSort = (a, b) => naturalSort(reverseStr(a), reverseStr(b))
+function reverseStr(s) {
+  return [...s].reverse().join('')
+}
+function reverseNaturalSort(a, b) {
+  return naturalSort(reverseStr(a), reverseStr(b))
+}
 
 /**
  * @param {string} id
  * @param {string} meta
  */
-const itemize = (id, meta) => id + (meta && meta !== '0' ? `:${meta}` : '')
-const $ = (source, id, meta, count, nbt, modifiers) => {
+function itemize(id, meta) {
+  return id + (meta && meta !== '0' ? `:${meta}` : '')
+}
+function $(source, id, meta, count, nbt, modifiers) {
   return `<${source}:${id}${meta && meta !== '0' ? `:${meta}` : ''}>${
     nbt ? `.withTag(${nbt})` : ''
   }${modifiers || ''}${Number(count) > 1 ? ` * ${count | 0}` : ''}`
 }
 
-const flatTable = arr =>
-  arr.length <= 0
+function flatTable(arr) {
+  return arr.length <= 0
     ? undefined
     : table(arr, {
       border            : getBorderCharacters('void'),
       columnDefault     : { paddingLeft: 0, paddingRight: 0 },
       drawHorizontalLine: () => false,
     }).replace(/[ \t]+$|\n$/gm, '')
+}
 
 /**
  * @param {any} injectValue
@@ -186,6 +192,6 @@ export async function init(h = defaultHelper) {
 }
 
 // Test section:
-// (async () => { console.log('\n', formatOutput((() => {})())); process.exit(0) })()
+// (async () => {console.log('\n', formatOutput((() => {return })())); process.exit(0)})()
 
-if (import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href) init()
+if (import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href) init()

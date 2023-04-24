@@ -20,12 +20,13 @@ let existOreDicts
 /**
  * @param {string} oreName
  */
-export const isODExist = oreName =>
-  (existOreDicts ??= new Set(
+export function isODExist(oreName) {
+  return (existOreDicts ??= new Set(
     getCSV('config/tellme/items-csv.csv')
       .map(o => o['Ore Dict keys'].split(','))
       .flat()
   )).has(oreName)
+}
 
 /** @type {Set<string>} */
 let existItems
@@ -74,8 +75,8 @@ export function isPurged(ctCapture) {
 
 let itemsTree
 
-export const getItemsTree = () =>
-  (itemsTree ??= getCSV('config/tellme/items-csv.csv').reduce(
+export function getItemsTree() {
+  return itemsTree ??= getCSV('config/tellme/items-csv.csv').reduce(
     (result, o) => (
       // @ts-expect-error types
       ((result[o['Registry name']] ??= {})[o['Meta/dmg']] = new Set(
@@ -84,7 +85,8 @@ export const getItemsTree = () =>
       result
     ),
     {}
-  ))
+  )
+}
 
 /** @type {function(string,string=):Set<string>} */
 export function getItemOredictSet(id, meta = '0') {
@@ -119,7 +121,7 @@ export function getSubMetas(definition) {
  * @param {string} ore
  * @returns {TMStack[]}
  */
-export const getByOredict = (ore) => {
+export function getByOredict(ore) {
   return getOresByRegex(new RegExp(`^${ore}$`, 'i'))
 }
 
@@ -137,7 +139,7 @@ export function getByOreBase(oreBase) {
  * @param {string} kindKey
  * @returns {{[OreBase: string]: TMStack}}
  */
-export const getByOreKind = (kindKey) => {
+export function getByOreKind(kindKey) {
   return getByOreRgx(new RegExp(`^${kindKey}([A-Z]\\w+)$`))
 }
 
@@ -250,7 +252,7 @@ const modWeights = `
  * @param {TMStack | string} a
  * @param {TMStack | string} b
  */
-export const prefferedModSort = (a, b) => {
+export function prefferedModSort(a, b) {
   const va = modWeights[b?.owner ?? b] ?? 0
   const vb = modWeights[a?.owner ?? a] ?? 0
   return va > vb ? 1 : va < vb ? -1 : 0

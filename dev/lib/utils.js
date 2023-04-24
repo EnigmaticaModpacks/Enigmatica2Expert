@@ -11,10 +11,10 @@
 /* =============================================
 =                Variables                    =
 ============================================= */
-import { execSync } from 'child_process'
-import { mkdirSync, readFileSync, statSync, writeFileSync } from 'fs'
-import { basename, dirname } from 'path'
-import { URL, fileURLToPath } from 'url'
+import { execSync } from 'node:child_process'
+import { mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { basename, dirname } from 'node:path'
+import { URL, fileURLToPath } from 'node:url'
 
 import chalk from 'chalk'
 import { parse as csvParseSync } from 'csv-parse/sync'
@@ -72,8 +72,9 @@ function createHashedFunction(fn) {
  *
  * @example subFileName('C:/main.js') // 'main'
  */
-export const subFileName = filePath =>
-  basename(filePath).split('.').slice(0, -1).join('.')
+export function subFileName(filePath) {
+  return basename(filePath).split('.').slice(0, -1).join('.')
+}
 
 /**
  * Load file from disk or from hash
@@ -509,8 +510,9 @@ export const defaultHelper = {
 /**
  * @param {string} command
  */
-export const execSyncInherit = command =>
-  execSync(command, { stdio: 'inherit' })
+export function execSyncInherit(command) {
+  return execSync(command, { stdio: 'inherit' })
+}
 
 export function getModsJars() {
   return fast_glob.sync(['mods/*.jar', 'mods/*.disabled'], {
@@ -523,4 +525,6 @@ export function getModsJars() {
  * @param {number[]} numbers
  * @param {number} goal
  */
-export const closest = (numbers, goal) => numbers.reduce((prev, curr) => Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev)
+export function closest(numbers, goal) {
+  return numbers.reduce((prev, curr) => Math.abs(curr - goal) < Math.abs(prev - goal) ? curr : prev)
+}

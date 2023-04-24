@@ -10,7 +10,7 @@
      ,"Inject_JS": "node dev/automation/Inject_JS.js"
            ,"jei": "node dev/automation/jei.js"
           ,"misc": "node dev/automation/misc.js --keep-cache"
-      ,"modsDiff": "node dev/automation/modsDiff.js"
+      ,"modsDiff": "esno dev/automation/modsDiff.js"
      ,"Conflicts": "node dev/automation/recipe_conflicts.js"
           ,"tips": "node dev/automation/tips.js"
            ,"XML": "node dev/automation/XML.js"

@@ -7,7 +7,7 @@
 
 // @ts-check
 
-import { join, parse } from 'path'
+import { join, parse } from 'node:path'
 
 import * as del from 'del'
 import fs_extra from 'fs-extra'
@@ -46,7 +46,9 @@ export async function init(h = defaultHelper, options = argv) {
   const fakeIron_zs = loadText('scripts/mods/enderio_fakeIron.zs')
   let remakes
 
-  if (!globMatch) { h.warn('No /ct recipes found in crafttweaker.log') }
+  if (!globMatch) {
+    h.warn('No /ct recipes found in crafttweaker.log')
+  }
   else {
     remakes = fakeIron_zs.match(/^# Start of automatically generated recipes:$.*/ms)?.[0]
     if (!remakes)
@@ -297,6 +299,6 @@ export async function init(h = defaultHelper, options = argv) {
 }
 
 if (
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+  import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href
 )
   init()

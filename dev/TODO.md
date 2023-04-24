@@ -2,12 +2,16 @@
 
 List of priorities:
 
+- [ ] ✏️ Disable Skeletons on horses since they cause random explosions
+- [ ] ✏️ Uranium 238 can be converted from Block Of Uranium
 - [ ] ✏️ Draconic Metals made in QMD multiblocks
-- [ ] 📀 Downgrade Recurrent Comples or track https://github.com/Ivorforce/RecurrentComplex/pull/494
-- [ ] 📀 Remove, 8% FPS `de.sanandrew.mods.immersivecables.client.render.RenderTileIWConnectable.setLightmap()`
-- [ ] 🔄 Request `Block ID` getter for CTUtils
-- [ ] 🔄 More Defaul Options not copy jei.cfg file
+- [ ] ✏️ Fix Precision Assembler trying to make many items at once
 - [ ] 🔄 Test Skyblock Mode
+- [ ] 🔄 Implement https://github.com/Divine-Journey-2/Divine-Journey-2/pull/829
+- [ ] 🔄 Fix chapter completion message not working
+- [ ] 🔄 rats aren't spawning on garbage blocks.
+- [ ] 🔄 Add request about `Block` => `Item` getter
+- [ ] 🟢 `More Defaul Options` not copy jei.cfg file
 - [ ] 🟢 Integrate ☢️ `Moar Reactor Functionality`
 - [ ] 🟢 Integrate ☢️ `New Turbine Parts`
 - [ ] 💥 `world.catenation()` doesnt working anymore
@@ -21,6 +25,8 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📀 Remove, 8% FPS `de.sanandrew.mods.immersivecables.client.render.RenderTileIWConnectable.setLightmap()`
+- [ ] 🔴 Do not update `Recurrent Complex` until fixed: https://github.com/Ivorforce/RecurrentComplex/pull/494
 - [ ] ✏️ Remove Refined Ingots smelting in Smeltery
 - [ ] ✏️ Tritium probably should be sustained only by QMD?
 - [ ] ✏️ Thaumic Slime add interesting drop

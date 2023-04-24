@@ -10,7 +10,7 @@
 import _ from 'lodash'
 import { getModLoadTimeTuples } from 'mc-benchmark'
 
-import { fetchMods } from '../lib/curseforge.js'
+import { fetchMods } from '../../mc-tools/packages/utils/src/curseforge'
 import { loadMCInstanceFiltered } from '../lib/manifest.js'
 import { defaultHelper, injectInFile, loadText } from '../lib/utils.js'
 
@@ -167,6 +167,6 @@ export async function init(h = defaultHelper) {
 }
 
 if (
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+  import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href
 )
   init()

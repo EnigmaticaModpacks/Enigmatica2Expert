@@ -6,14 +6,14 @@
  */
 // @ts-check
 
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 
 import fast_glob from 'fast-glob'
 import memoize from 'memoizee'
 import parseGitignore from 'parse-gitignore'
 import { getBorderCharacters, table } from 'table'
 
-import { fetchMods } from './curseforge.js'
+import { fetchMods } from '../../mc-tools/packages/utils/src/curseforge'
 import { loadJson, loadText, saveText } from './utils.js'
 
 export async function init() {
@@ -23,7 +23,8 @@ export async function init() {
 /** @typedef {import('./minecraftinstance').InstalledAddon} InstalledAddon */
 
 const getIgnoredModIDs = memoize(() => {
-  const ignoredFiles = fast_glob.sync(parseGitignore(loadText('dev/.devonly.ignore')), {
+  const devonlyIgnore = parseGitignore(loadText('dev/.devonly.ignore'))
+  const ignoredFiles = fast_glob.sync(devonlyIgnore.patterns, {
     dot      : true,
     onlyFiles: false,
   })
@@ -166,6 +167,6 @@ ${formatModList(modList)}
 }
 
 if (
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+  import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href
 )
   init()

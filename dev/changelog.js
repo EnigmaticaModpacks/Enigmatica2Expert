@@ -16,9 +16,9 @@
 ╚═╝╚═╝     ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
 */
 
-import { exec as _exec, execSync } from 'child_process'
-import { URL, fileURLToPath } from 'url'
-import { promisify } from 'util'
+import { exec as _exec, execSync } from 'node:child_process'
+import { URL, fileURLToPath } from 'node:url'
+import { promisify } from 'node:util'
 
 import fs_extra from 'fs-extra'
 import _ from 'lodash'
@@ -26,8 +26,8 @@ import open from 'open'
 import replace_in_file from 'replace-in-file'
 import yargs from 'yargs'
 
+import { fetchMods } from '../mc-tools/packages/utils/src/curseforge'
 import { formatRow, getModsIds } from './automation/modsDiff.js'
-import { fetchMods } from './lib/curseforge.js'
 import { defaultHelper, escapeRegex, loadText, saveText } from './lib/utils.js'
 import { generateManifest } from './lib/manifest.js'
 
@@ -154,7 +154,7 @@ export async function init(h = defaultHelper) {
 }
 
 if (
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+  import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href
 )
   init()
 

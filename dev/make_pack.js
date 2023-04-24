@@ -11,7 +11,7 @@
  */
 
 // @ts-check
-import { join, relative, resolve } from 'path'
+import { join, relative, resolve } from 'node:path'
 
 import chalk from 'chalk'
 import * as del from 'del'
@@ -46,8 +46,9 @@ const { sync: _globs } = fast_glob
  * @param {string | string[]} source
  * @param {import('../node_modules/fast-glob/out/settings').Options} [options]
  */
-const globs = (source, options) =>
-  _globs(source, { dot: true, onlyFiles: false, ...options })
+function globs(source, options) {
+  return _globs(source, { dot: true, onlyFiles: false, ...options })
+}
 
 const argv = yargs(process.argv.slice(2))
   .alias('h', 'help')
@@ -188,9 +189,28 @@ const style = {
 ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
 */
 
-  const devonlyIgnore = parseGitignore(loadText('dev/.devonly.ignore'))
+  const zipPath_base = join(distrDir, `E2E-Extended-${nextVersion}`)
+  const zipPath_EN = `${zipPath_base}.zip`
+  const zipPath_server = `${zipPath_base}-server.zip`
 
-  if (!argv.old) {
+  const isZipsExist = !argv.dryRun && [zipPath_EN, zipPath_server].some(f => existsSync(f))
+
+  let rewriteOldZipFiles = false
+  if (
+    isZipsExist
+  && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))
+  ) {
+    rewriteOldZipFiles = true
+    doTask(
+      '🪓 Removing old zip files ... ',
+      () => del.deleteSync([zipPath_EN, zipPath_server], { force: true }).length
+    )
+  }
+  const makeZips = !isZipsExist || rewriteOldZipFiles
+
+  const devonlyIgnore = parseGitignore(loadText('dev/.devonly.ignore')).patterns
+
+  if (!argv.old && makeZips) {
     doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, () => {
       try {
         rmSync(tmpDir, { recursive: true })
@@ -282,27 +302,6 @@ const style = {
 ╚══════╝╚═╝  ╚═══╝
 
 ********************************************************/
-
-  const zipPath_base = join(distrDir, `E2E-Extended-${nextVersion}`)
-  const zipPath_EN = `${zipPath_base}.zip`
-  const zipPath_server = `${zipPath_base}-server.zip`
-
-  const isZipsExist
-    = !argv.dryRun && [zipPath_EN, zipPath_server].some(f => existsSync(f))
-
-  let rewriteOldZipFiles = false
-  if (
-    isZipsExist
-    && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))
-  ) {
-    rewriteOldZipFiles = true
-    doTask(
-      '🪓 Removing old zip files ... ',
-      () => del.deleteSync([zipPath_EN, zipPath_server], { force: true }).length
-    )
-  }
-
-  const makeZips = !isZipsExist || rewriteOldZipFiles
   makeZips
     && doTask('🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n', () => withZip(zipPath_EN)('.'), tmpDir)
 
@@ -317,7 +316,7 @@ const style = {
 
 ********************************************************/
 
-  const serveronlyIgnore = parseGitignore(loadText('dev/.serveronly.ignore'))
+  const serveronlyIgnore = parseGitignore(loadText('dev/.serveronly.ignore')).patterns
   const serverFilesList = globs(serveronlyIgnore, { cwd: tmpOverrides })
   const serverModsListEvery = globs(serveronlyIgnore, {
     ignore: devonlyIgnore.filter(f => !f.startsWith('!')),
