@@ -478,9 +478,7 @@ scripts.process.electrolyze(<fluid:nitric_oxide> * 100, [<fluid:nitrogen> * 500,
 // Unimplemented multiblocks
 utils.rh(<nuclearcraft:heat_exchanger_controller>);
 utils.rh(<nuclearcraft:condenser_controller>);
-utils.rh(<nuclearcraft:fission_monitor>);
 utils.rh(<nuclearcraft:fission_computer_port>);
-utils.rh(<nuclearcraft:fission_shield_manager>);
 utils.rh(<nuclearcraft:turbine_computer_port>);
 utils.rh(<nuclearcraft:heat_exchanger_casing>);
 utils.rh(<nuclearcraft:heat_exchanger_glass>);
