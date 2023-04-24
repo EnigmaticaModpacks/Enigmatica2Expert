@@ -1,0 +1,77 @@
+@@ -29,6 +29,7 @@ import java.nio.file.Paths;
+ import java.nio.file.StandardCopyOption;
+ import java.util.ArrayList;
+ import java.util.Comparator;
++import java.util.Iterator;
+ 
+ public class DimensionData {
+     public int dimensionOrder;
+@@ -177,20 +178,10 @@ public class DimensionData {
+ 
+     public static void deleteDimSavedData(Path worldSaveDir, DimensionConfig dimConfig) {
+         Path dimensionSaveDir = Paths.get(worldSaveDir + File.separator + "DIM" + dimConfig.DimensionId, new String[0]);
++        dimensionSaveDir = Paths.get(worldSaveDir + File.separator + "OpenTerrainGenerator" + File.separator + "DIM-" + dimConfig.DimensionId, new String[0]);
+         if (Files.exists(dimensionSaveDir, new LinkOption[0]) && Files.isDirectory(dimensionSaveDir, new LinkOption[0])) {
+-            OTG.log((LogMarker)LogMarker.INFO, (String)("Deleting MC world save data for dimension " + dimConfig.DimensionId), (Object[])new Object[0]);
+-            try {
+-                Files.walk(dimensionSaveDir, new FileVisitOption[0]).sorted(Comparator.reverseOrder()).map(Path::toFile).forEach(File::delete);
+-                if (Files.exists(dimensionSaveDir, new LinkOption[0])) {
+-                    OTG.log((LogMarker)LogMarker.ERROR, (String)("Could not delete directory: " + dimensionSaveDir.toString()), (Object[])new Object[0]);
+-                }
+-            }
+-            catch (IOException e) {
+-                OTG.log((LogMarker)LogMarker.ERROR, (String)("Could not delete directory " + dimensionSaveDir.toString() + ". Error: " + e.toString()), (Object[])new Object[0]);
+-                e.printStackTrace();
+-            }
+-        }
+-        if (Files.exists(dimensionSaveDir = Paths.get(worldSaveDir + File.separator + "OpenTerrainGenerator" + File.separator + "DIM-" + dimConfig.DimensionId, new String[0]), new LinkOption[0]) && Files.isDirectory(dimensionSaveDir, new LinkOption[0])) {
++            DimensionData dimData;
++            Object biomeIdData2;
+             OTG.log((LogMarker)LogMarker.INFO, (String)("Deleting OTG world save data for dimension " + dimConfig.DimensionId), (Object[])new Object[0]);
+             try {
+                 Files.walk(dimensionSaveDir, new FileVisitOption[0]).sorted(Comparator.reverseOrder()).map(Path::toFile).forEach(File::delete);
+@@ -202,30 +193,34 @@ public class DimensionData {
+                 OTG.log((LogMarker)LogMarker.ERROR, (String)("Could not delete directory " + dimensionSaveDir.toString() + ". Error: " + e.toString()), (Object[])new Object[0]);
+                 e.printStackTrace();
+             }
+-            ArrayList biomeIds = BiomeIdData.loadBiomeIdData((File)worldSaveDir.toFile());
+-            ArrayList<BiomeIdData> newBiomeIds = new ArrayList<BiomeIdData>();
+-            for (BiomeIdData biomeIdData : biomeIds) {
+-                if (biomeIdData.biomeName.startsWith(dimConfig.PresetName + "_")) continue;
+-                newBiomeIds.add(biomeIdData);
++            ArrayList e = BiomeIdData.loadBiomeIdData((File)worldSaveDir.toFile());
++            ArrayList<Object> newBiomeIds = new ArrayList<Object>();
++            for (Object biomeIdData2 : e) {
++                if (((BiomeIdData)biomeIdData2).biomeName.startsWith(dimConfig.PresetName + "_")) continue;
++                newBiomeIds.add(biomeIdData2);
+             }
+             BiomeIdData.saveBiomeIdData((File)worldSaveDir.toFile(), newBiomeIds);
+             ArrayList<DimensionData> dimensionData = DimensionData.loadDimensionData(worldSaveDir.toFile());
+-            ArrayList<DimensionData> newDimensionData = new ArrayList<DimensionData>();
++            biomeIdData2 = new ArrayList();
+             int removedIndex = -1;
+-            for (DimensionData dimData : dimensionData) {
++            Iterator iterator = dimensionData.iterator();
++            while (iterator.hasNext()) {
++                dimData = (DimensionData)iterator.next();
+                 if (dimData.dimensionId != dimConfig.DimensionId) {
+-                    newDimensionData.add(dimData);
++                    ((ArrayList)biomeIdData2).add(dimData);
+                     continue;
+                 }
+                 removedIndex = dimData.dimensionOrder;
+             }
+             if (removedIndex > -1) {
+-                for (DimensionData dimData : newDimensionData) {
++                iterator = ((ArrayList)biomeIdData2).iterator();
++                while (iterator.hasNext()) {
++                    dimData = (DimensionData)iterator.next();
+                     if (dimData.dimensionOrder <= removedIndex) continue;
+                     --dimData.dimensionOrder;
+                 }
+             }
+-            DimensionData.saveDimensionData(worldSaveDir.toFile(), newDimensionData);
++            DimensionData.saveDimensionData(worldSaveDir.toFile(), (ArrayList<DimensionData>)biomeIdData2);
+         }
+     }
+ }
