@@ -1,6 +1,8 @@
 #modloaded emberroot
 
-<entity:emberroot:fairies>.addPlayerOnlyDrop(<astralsorcery:itemusabledust>, 1, 6);
+// Since Fairies cause crashes on AMD cards, remove them and their drops
+// <entity:emberroot:fairies>.addPlayerOnlyDrop(<astralsorcery:itemusabledust>, 1, 6);
+<entity:emberroot:fairies>.clearDrops();
 
 scripts.lib.loot.tweak("emberroot:entity/golem_blue"     ,"main","minecraft:iron_nugget" , null, [<extrautils2:unstableingots:1>]         , [2,4]);
 scripts.lib.loot.tweak("emberroot:entity/golem_green"    ,"main","minecraft:gunpowder"   , null, [<mysticalagriculture:crafting:39>]      , [2,8]);
