@@ -53,6 +53,7 @@ mods.rustic.CrushingTub.addRecipe(<liquid:water> * 1000, <minecraft:dye:2>, <min
 mods.forestry.Squeezer.removeRecipe(<liquid:ironberryjuice>);
 mods.rustic.EvaporatingBasin.removeRecipe(<rustic:dust_tiny_iron>);
 mods.rustic.EvaporatingBasin.addRecipe(<exnihilocreatio:item_ore_iron>, <liquid:ironberryjuice> * 1000, 30*20);
+utils.compact(<rustic:dust_tiny_iron>, <thermalfoundation:material>);
 
 # [Liquid Barrel] from [Oak Wood Slab][+2]
 craft.remake(<rustic:liquid_barrel>, ["pretty",
