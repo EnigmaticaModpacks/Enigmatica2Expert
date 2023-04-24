@@ -7,6 +7,7 @@ List of priorities:
 - [ ] ✏️ Draconic Metals made in QMD multiblocks
 - [ ] ✏️ Fix Precision Assembler trying to make many items at once
 - [ ] 🔄 Test Skyblock Mode
+- [ ] 🔄 Fix release script
 - [ ] 🔄 Implement https://github.com/Divine-Journey-2/Divine-Journey-2/pull/829
 - [ ] 🔄 Fix chapter completion message not working
 - [ ] 🔄 rats aren't spawning on garbage blocks.
