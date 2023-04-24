@@ -10,7 +10,7 @@
     ]
   },
   {
-    "dimension": 0,
+    "dimension": [0, 3],
     "mobs": [
       {
         "mob": "endreborn:watcher",
@@ -21,7 +21,7 @@
     ]
   },
   {
-    "dimension": 0,
+    "dimension": [0, 3],
     "mobs": [
       {
         "mob": "endreborn:endguard",
