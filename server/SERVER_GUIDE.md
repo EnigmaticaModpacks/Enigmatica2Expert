@@ -7,10 +7,6 @@
 5) Double click "**ServerStart**" or "ServerStartLinux", whichever is appropriate.
 	On Linux you cannot run the script via sh directly.
 6) **Set** EULA=true
-7) On first server load write `/defaultworldgenerator-port 1` when it ask.
-8) **Pregenerate** the world - See below for instructions.
-
-
 
 ## Updating
 
