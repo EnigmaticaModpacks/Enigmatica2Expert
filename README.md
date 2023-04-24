@@ -68,6 +68,12 @@ Generated with:
 
 ## Installation
 
+### ⚠️ Update your Java
+
+To play this pack you **must** update your Java from verson `1.8.0_51` to newer one.
+
+You can check out your current Java version in F3 menu or on 5th line of file `logs/latest.log`.
+
 ### From Curse Forge
 
 Just use *New Instance* feature of your launcher. [GDLauncher example](https://i.imgur.com/1KV7r6T.png).
