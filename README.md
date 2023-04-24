@@ -117,7 +117,7 @@ If you play on a server on which have already made these changes, the client doe
 
 ## Recommended mods
 
-- [**Entity Culling**](https://www.curseforge.com/minecraft/mc-mods/entityculling) - increase performance, but can cause crashes on some machines
+- [**Entity Culling**](https://www.curseforge.com/minecraft/mc-mods/entity-culling) - increase performance, but can cause crashes on some machines
 
 - [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings) - better sounds and environmental, but increaing load time and lower FPS a bit
 
