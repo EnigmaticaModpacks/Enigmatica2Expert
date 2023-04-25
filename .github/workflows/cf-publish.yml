@@ -33,9 +33,7 @@ jobs:
           webhook_id: ${{ secrets.WEBHOOK_ID }}
           webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
           file: "./latest.png"
-          message: >
-            🚀 New release: __**${{ steps.release.outputs.tag_name }}**__ ${{ steps.release.outputs.name }}
-            ${{ steps.release.outputs.url }}
+          message: "🚀 New release: __**${{ steps.release.outputs.tag_name }}**__ ${{ steps.release.outputs.name }} ${{ steps.release.outputs.url }}"
 
       - run: npm i --omit=dev
 
