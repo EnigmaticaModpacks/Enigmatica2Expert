@@ -14,3 +14,5 @@ buildItem("bee_diversity");
 buildItem("modularium");
 buildItem("anglesite");
 buildItem("benitoite");
+buildItem("tankframe");
+buildItem("twilighttrophy");
