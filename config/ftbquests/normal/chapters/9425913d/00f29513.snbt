@@ -19,9 +19,10 @@
 		uid: "e5ec1c33",
 		type: "item",
 		item: {
-			id: "thermalexpansion:tank",
+			id: "mekanism:machineblock2",
+			Damage: 11s,
 			tag: {
-				Level: 0b
+				tier: 0
 			}
 		}
 	},
