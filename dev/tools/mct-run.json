@@ -14,5 +14,5 @@
           ,"tips": "esno dev/automation/tips.js"
            ,"XML": "esno dev/automation/XML.js"
       ,"manifest": "esno mc-tools/packages/curseforge/src/cli.ts manifest --verbose --ignore=dev/.devonly.ignore --key=secrets/~cf_api_key.txt"
-       ,"modlist": "esno mc-tools/packages/curseforge/src/cli.ts modlist --old='../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json' --verbose --ignore=dev/.devonly.ignore --key=secrets/~cf_api_key.txt --template=dev/tools/modlist_template.md"
+       ,"modlist": "esno mc-tools/packages/curseforge/src/cli.ts modlist --old=../E2E-unchanged/minecraftinstance.json --verbose --ignore=dev/.devonly.ignore --key=secrets/~cf_api_key.txt --template=dev/tools/modlist_template.md"
 }
