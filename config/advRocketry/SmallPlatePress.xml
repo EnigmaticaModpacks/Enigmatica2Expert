@@ -21,14 +21,6 @@
 	The "useDefault" attribute will prevent loading of recipes if set to "false"
 <!-->
 <Recipes useDefault="false">
-	<Recipe timeRequired="0" power="0">
-		<input>
-			<oreDict>slabSilver</oreDict>
-		</input>
-		<output>
-			<itemStack>bhc:canister</itemStack>
-		</output>
-	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Adaminite Block] -->
 	<Recipe timeRequired="0" power="0">
