@@ -1,0 +1,87 @@
+@@ -3,7 +3,6 @@
+  * 
+  * Could not load the following classes:
+  *  invtweaks.api.container.ChestContainer
+- *  javax.annotation.Nullable
+  *  net.minecraft.entity.player.EntityPlayer
+  *  net.minecraft.inventory.Container
+  *  net.minecraft.inventory.IInventory
+@@ -16,7 +15,6 @@
+ package rustic.common.tileentity;
+ 
+ import invtweaks.api.container.ChestContainer;
+-import javax.annotation.Nullable;
+ import net.minecraft.entity.player.EntityPlayer;
+ import net.minecraft.inventory.Container;
+ import net.minecraft.inventory.IInventory;
+@@ -42,18 +40,28 @@ extends Container {
+         return this.te;
+     }
+ 
++    public int getRows() {
++        return 9;
++    }
++
++    public int getColumns() {
++        return 18;
++    }
++
+     private void addPlayerSlots(IInventory playerInventory) {
+         int row;
++        int offsetX = (-162 + this.getColumns() * 18) / 2 + 8;
++        int offsetY = this.getRows() * 18 + 22;
+         for (row = 0; row < 3; ++row) {
+             for (int col = 0; col < 9; ++col) {
+-                int x = 8 + col * 18;
+-                int y = row * 18 + 84;
++                int x = offsetX + col * 18;
++                int y = offsetY + row * 18;
+                 this.func_75146_a(new Slot(playerInventory, col + row * 9 + 9, x, y));
+             }
+         }
+         for (row = 0; row < 9; ++row) {
+-            int x = 8 + row * 18;
+-            int y = 142;
++            int x = offsetX + row * 18;
++            int y = offsetY + 54 + 4;
+             this.func_75146_a(new Slot(playerInventory, row, x, y));
+         }
+     }
+@@ -61,8 +69,8 @@ extends Container {
+     private void addOwnSlots() {
+         IItemHandler itemHandler = (IItemHandler)this.te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
+         int slotIndex = 0;
+-        for (int row = 0; row < 3; ++row) {
+-            for (int col = 0; col < 9; ++col) {
++        for (int row = 0; row < this.getRows(); ++row) {
++            for (int col = 0; col < this.getColumns(); ++col) {
+                 int x = 8 + col * 18;
+                 int y = row * 18 + 17;
+                 this.func_75146_a((Slot)new SlotItemHandler(itemHandler, slotIndex, x, y));
+@@ -71,14 +79,13 @@ extends Container {
+         }
+     }
+ 
+-    @Nullable
+     public ItemStack func_82846_b(EntityPlayer playerIn, int index) {
+-        ItemStack itemstack = ItemStack.field_190927_a;
++        ItemStack stack = ItemStack.field_190927_a;
+         Slot slot = (Slot)this.field_75151_b.get(index);
+         if (slot != null && slot.func_75216_d()) {
+             ItemStack itemstack1 = slot.func_75211_c();
+-            itemstack = itemstack1.func_77946_l();
+-            if (index < 27 ? !this.func_75135_a(itemstack1, 27, this.field_75151_b.size(), true) : !this.func_75135_a(itemstack1, 0, 27, false)) {
++            stack = itemstack1.func_77946_l();
++            if (index < this.getRows() * this.getColumns() ? !this.func_75135_a(itemstack1, this.getRows() * this.getColumns(), this.field_75151_b.size(), true) : !this.func_75135_a(itemstack1, 0, this.getRows() * this.getColumns(), false)) {
+                 return ItemStack.field_190927_a;
+             }
+             if (itemstack1.func_190926_b()) {
+@@ -87,7 +94,7 @@ extends Container {
+                 slot.func_75218_e();
+             }
+         }
+-        return itemstack;
++        return stack;
+     }
+ 
+     public boolean func_75145_c(EntityPlayer playerIn) {

@@ -1,0 +1,29 @@
+@@ -2,10 +2,12 @@
+  * Decompiled with CFR 0.152.
+  * 
+  * Could not load the following classes:
++ *  net.minecraft.nbt.NBTTagCompound
+  *  rustic.common.util.ItemStackHandlerRustic
+  */
+ package rustic.common.tileentity;
+ 
++import net.minecraft.nbt.NBTTagCompound;
+ import rustic.common.util.ItemStackHandlerRustic;
+ 
+ class TileEntityVase.1
+@@ -17,4 +19,15 @@ extends ItemStackHandlerRustic {
+     protected void onContentsChanged(int slot) {
+         TileEntityVase.this.func_70296_d();
+     }
++
++    public int getSlotLimit(int slot) {
++        return 1;
++    }
++
++    public void deserializeNBT(NBTTagCompound nbt) {
++        super.deserializeNBT(nbt);
++        if (this.stacks.size() < 162) {
++            this.setSize(162);
++        }
++    }
+ }

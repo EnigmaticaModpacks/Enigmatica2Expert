@@ -1,0 +1,71 @@
+@@ -32,18 +32,20 @@ public class GuiVase
+ extends GuiContainer
+ implements IItemSearchBar,
+ IChestButtonCallback {
+-    public static final int WIDTH = 176;
+-    public static final int HEIGHT = 166;
++    public static final int WIDTH = 338;
++    public static final int HEIGHT = 276;
+     private static final ResourceLocation background = new ResourceLocation("rustic", "textures/gui/generic_27.png");
+     private TileEntityVase te;
+     private InventoryPlayer playerInv;
++    private ContainerVase container;
+ 
+     public GuiVase(ContainerVase container, InventoryPlayer playerInv) {
+         super((Container)container);
+         this.playerInv = playerInv;
+         this.te = container.getTile();
+-        this.field_146999_f = 176;
+-        this.field_147000_g = 166;
++        this.container = container;
++        this.field_146999_f = 338;
++        this.field_147000_g = 276;
+     }
+ 
+     public void func_73863_a(int mouseX, int mouseY, float partialTicks) {
+@@ -54,12 +56,43 @@ IChestButtonCallback {
+ 
+     protected void func_146979_b(int mouseX, int mouseY) {
+         this.field_146289_q.func_78276_b(this.te.func_145748_c_().func_150260_c(), 8, 6, 0x404040);
+-        this.field_146289_q.func_78276_b(this.playerInv.func_145748_c_().func_150260_c(), 8, this.field_147000_g - 96 + 2, 0x404040);
+     }
+ 
+     protected void func_146976_a(float partialTicks, int mouseX, int mouseY) {
+         this.field_146297_k.func_110434_K().func_110577_a(background);
+-        this.func_73729_b(this.field_147003_i, this.field_147009_r, 0, 0, this.field_146999_f, this.field_147000_g);
++        this.drawTop();
++        for (int row = 0; row < this.container.getRows(); ++row) {
++            this.drawRow(row);
++        }
++        this.drawBottom();
++        int right = this.field_147003_i + (-162 + this.container.getColumns() * 18) / 2;
++        this.func_73729_b(right, this.field_147009_r + 20 + this.container.getRows() * 18, 0, 82, 176, 166);
++    }
++
++    private void drawTop() {
++        this.func_73729_b(this.field_147003_i, this.field_147009_r, 0, 0, 7, 16);
++        for (int col = 0; col < this.container.getColumns(); ++col) {
++            this.func_73729_b(this.field_147003_i + 7 + col * 18, this.field_147009_r, 7, 0, 18, 16);
++        }
++        this.func_73729_b(this.field_147003_i + 7 + this.container.getColumns() * 18, this.field_147009_r, 169, 0, 7, 16);
++    }
++
++    private void drawBottom() {
++        int bottom = this.field_147009_r + 16 + this.container.getRows() * 18;
++        this.func_73729_b(this.field_147003_i, bottom, 0, 159, 7, 7);
++        for (int col = 0; col < this.container.getColumns(); ++col) {
++            this.func_73729_b(this.field_147003_i + 7 + col * 18, bottom, 7, 159, 18, 7);
++        }
++        this.func_73729_b(this.field_147003_i + 7 + this.container.getColumns() * 18, bottom, 169, 159, 7, 7);
++    }
++
++    private void drawRow(int row) {
++        int top = this.field_147009_r + 16 + row * 18;
++        this.func_73729_b(this.field_147003_i, top, 0, 8, 7, 18);
++        for (int col = 0; col < this.container.getColumns(); ++col) {
++            this.func_73729_b(this.field_147003_i + 7 + col * 18, top, 7, 16, 18, 18);
++        }
++        this.func_73729_b(this.field_147003_i + 7 + this.container.getColumns() * 18, top, 169, 8, 7, 18);
+     }
+ 
+     public void onSearchBarAdded(GuiTextField guiTextField) {

@@ -1,0 +1,72 @@
+@@ -57,11 +57,22 @@ import vazkii.quark.api.IDropoffManager;
+ public class TileEntityVase
+ extends TileEntityLockableLoot
+ implements IDropoffManager {
+-    private ItemStackHandlerRustic itemStackHandler = new ItemStackHandlerRustic(27){
++    private ItemStackHandlerRustic itemStackHandler = new ItemStackHandlerRustic(162){
+ 
+         protected void onContentsChanged(int slot) {
+             TileEntityVase.this.func_70296_d();
+         }
++
++        public int getSlotLimit(int slot) {
++            return 1;
++        }
++
++        public void deserializeNBT(NBTTagCompound nbt) {
++            super.deserializeNBT(nbt);
++            if (this.stacks.size() < 162) {
++                this.setSize(162);
++            }
++        }
+     };
+ 
+     public void func_145839_a(NBTTagCompound compound) {
+@@ -111,7 +122,7 @@ implements IDropoffManager {
+         if (this.itemStackHandler != null && !world.field_72995_K) {
+             this.func_184281_d(null);
+             for (int i = 0; i < this.itemStackHandler.getSlots(); ++i) {
+-                if (this.itemStackHandler.getStackInSlot(i) == null) continue;
++                this.itemStackHandler.getStackInSlot(i);
+                 Block.func_180635_a((World)world, (BlockPos)pos, (ItemStack)this.itemStackHandler.getStackInSlot(i));
+             }
+         }
+@@ -122,6 +133,10 @@ implements IDropoffManager {
+         return this.itemStackHandler.getSlots();
+     }
+ 
++    public boolean func_94041_b(int slot, ItemStack itemStack) {
++        return itemStack.func_190916_E() + this.itemStackHandler.getStackInSlot(slot).func_190916_E() <= this.itemStackHandler.getSlotLimit(slot);
++    }
++
+     public boolean func_191420_l() {
+         for (int i = 0; i < this.itemStackHandler.getSlots(); ++i) {
+             if (this.itemStackHandler.getStackInSlot(i) == ItemStack.field_190927_a) continue;
+@@ -153,26 +168,7 @@ implements IDropoffManager {
+     }
+ 
+     public int func_70297_j_() {
+-        return 64;
+-    }
+-
+-    public boolean func_70300_a(EntityPlayer player) {
+-        return true;
+-    }
+-
+-    public boolean func_94041_b(int index, ItemStack stack) {
+-        return true;
+-    }
+-
+-    public int func_174887_a_(int id) {
+-        return 0;
+-    }
+-
+-    public void func_174885_b(int id, int value) {
+-    }
+-
+-    public int func_174890_g() {
+-        return 0;
++        return 1;
+     }
+ 
+     public void func_174888_l() {
