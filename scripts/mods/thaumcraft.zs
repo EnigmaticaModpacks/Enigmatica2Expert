@@ -13,7 +13,6 @@ import crafttweaker.data.IData;
 furnace.addRecipe(<thaumcraft:quicksilver> * 2, <thaumcraft:cluster:6>);
 furnace.addRecipe(<thermalfoundation:material:131> * 2, <thaumcraft:cluster:5>);
 
-
 # Primordial Pearl alt (for some people who dont want to close rifts)
 mods.astralsorcery.Altar.addConstellationAltarRecipe(
   'Primordial Pearl alt', <thaumcraft:primordial_pearl>, 1500, 250, Grid([
@@ -32,6 +31,8 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe(
   }).shapeless()
 );
 
+# Since Alch Brass is cheaper, it should not be used for casts
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>, <liquid:brass>);
 
 // ---------------------------
 // No-exploration recipe
