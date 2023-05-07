@@ -1,0 +1,25 @@
+@@ -67,6 +67,12 @@ public class RatConfig {
+     public boolean addLoot = true;
+     public boolean customMainMenu = true;
+     public float plagueTomeDropRate = 0.05f;
++    public int speedChef = 100;
++    public int speedArcheologist = 100;
++    public int speedGemcutter = 100;
++    public int speedEnchanter = 1000;
++    public int speedEating = 40;
++    public int speedBuff = 5;
+ 
+     public void init(Configuration config) {
+         this.customMainMenu = config.getBoolean("Custom Main Menu", "all", true, "True if rats has a custom main menu");
+@@ -127,5 +133,11 @@ public class RatConfig {
+         this.ratRFTransferExtreme = config.getInt("Rat RF Transfer Rate Extreme (kRF)", "all", 100000, 1, Integer.MAX_VALUE, "How much kRF (1000 RF) a rat with an extreme energy transfer upgrade can transport at a time.");
+         this.ratVoodooDistance = config.getFloat("Voodoo Doll Rat distance", "all", 32.0f, 0.0f, Float.MAX_VALUE, "How far away from players the Rat Upgrade: Voodoo Doll is effective.");
+         this.addLoot = config.getBoolean("Add Loot", "all", true, "True if loot from rats can spawn in chests");
++        this.speedChef = config.getInt("Speed of Chef Rat", "all", 100, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");
++        this.speedArcheologist = config.getInt("Speed of Archeologist Rat", "all", 100, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");
++        this.speedGemcutter = config.getInt("Speed of Gemcutter Rat", "all", 100, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");
++        this.speedEnchanter = config.getInt("Speed of Enchanter Rat", "all", 1000, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");
++        this.speedEating = config.getInt("Speed of Eating Rat", "all", 40, 1, Integer.MAX_VALUE, "How much ticks rat require to finish eating ore");
++        this.speedBuff = config.getInt("Speed buff with Speed Upgrade", "all", 5, 2, Integer.MAX_VALUE, "Speed divider");
+     }
+ }

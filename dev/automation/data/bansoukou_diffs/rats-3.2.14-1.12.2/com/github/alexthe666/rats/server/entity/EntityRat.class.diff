@@ -1,0 +1,307 @@
+@@ -801,7 +801,7 @@ implements IAnimatedEntity {
+ 
+     public void func_70037_a(NBTTagCompound compound) {
+         NBTTagCompound fluidTag;
+-        NBTTagList nbttaglist;
++        int i;
+         super.func_70037_a(compound);
+         if (compound.func_74764_b("HomePosX") && compound.func_74764_b("HomePosY") && compound.func_74764_b("HomePosZ")) {
+             this.func_175449_a(new BlockPos(compound.func_74762_e("HomePosX"), compound.func_74762_e("HomePosY"), compound.func_74762_e("HomePosZ")), compound.func_74762_e("HomeDistance"));
+@@ -828,18 +828,18 @@ implements IAnimatedEntity {
+         this.setOwnerMonster(compound.func_74767_n("OwnerMonster"));
+         this.setColorVariant(compound.func_74762_e("ColorVariant"));
+         if (this.ratInventory != null) {
+-            nbttaglist = compound.func_150295_c("Items", 10);
++            NBTTagList nbttaglist = compound.func_150295_c("Items", 10);
+             this.initInventory();
+-            for (int i = 0; i < nbttaglist.func_74745_c(); ++i) {
++            for (i = 0; i < nbttaglist.func_74745_c(); ++i) {
+                 NBTTagCompound nbttagcompound = nbttaglist.func_150305_b(i);
+                 int j = nbttagcompound.func_74771_c("Slot") & 0xFF;
+                 if (j > 4) continue;
+                 this.ratInventory.func_70299_a(j, new ItemStack(nbttagcompound));
+             }
+         } else {
+-            nbttaglist = compound.func_150295_c("Items", 10);
++            NBTTagList nbttaglist = compound.func_150295_c("Items", 10);
+             this.initInventory();
+-            for (int i = 0; i < nbttaglist.func_74745_c(); ++i) {
++            for (i = 0; i < nbttaglist.func_74745_c(); ++i) {
+                 NBTTagCompound nbttagcompound = nbttaglist.func_150305_b(i);
+                 int j = nbttagcompound.func_74771_c("Slot") & 0xFF;
+                 this.ratInventory.func_70299_a(j, new ItemStack(nbttagcompound));
+@@ -1082,11 +1082,11 @@ implements IAnimatedEntity {
+ 
+     public void func_70636_d() {
+         EntityIllagerPiper piper;
++        double d1;
+         TileEntity te;
+         float particleRand;
+         double extraY;
+         double extraZ;
+-        boolean holdingInHands;
+         float plateau;
+         double planeDist;
+         this.setRatStatus(RatStatus.IDLE);
+@@ -1187,11 +1187,11 @@ implements IAnimatedEntity {
+                 this.flyingPitch = 0.0f;
+             }
+         } else {
+-            boolean wildNavigate;
+             if (!this.inTube()) {
+                 this.flyingPitch = 0.0f;
+             }
+-            boolean bl = wildNavigate = !this.func_70909_n() || this.isInCage();
++            boolean wildNavigate = !this.func_70909_n() || this.isInCage();
++            boolean bl = wildNavigate;
+             if (wildNavigate && this.navigatorType != 1) {
+                 this.switchNavigator(1);
+             }
+@@ -1207,7 +1207,8 @@ implements IAnimatedEntity {
+         }
+         boolean sitting = this.func_70906_o() || this.func_184218_aH() || this.isDancing() || (this.getAnimation() == ANIMATION_IDLE_SCRATCH || this.getAnimation() == ANIMATION_IDLE_SNIFF) && this.shouldSitDuringAnimation();
+         float sitInc = this.getAnimation() == ANIMATION_IDLE_SCRATCH || this.getAnimation() == ANIMATION_IDLE_SNIFF ? 5.0f : 1.0f;
+-        boolean bl = holdingInHands = !sitting && (!this.func_184586_b(EnumHand.MAIN_HAND).func_190926_b() && (!this.holdInMouth || this.cookingProgress > 0) || this.getAnimation() == ANIMATION_EAT || this.holdsItemInHandUpgrade() || this.getMBTransferRate() > 0);
++        boolean holdingInHands = !sitting && (!this.func_184586_b(EnumHand.MAIN_HAND).func_190926_b() && (!this.holdInMouth || this.cookingProgress > 0) || this.getAnimation() == ANIMATION_EAT || this.holdsItemInHandUpgrade() || this.getMBTransferRate() > 0);
++        boolean bl = holdingInHands;
+         if (sitting && this.sitProgress < 20.0f) {
+             this.sitProgress += sitInc;
+         } else if (!sitting && this.sitProgress > 0.0f) {
+@@ -1234,10 +1235,12 @@ implements IAnimatedEntity {
+         if (this.func_70906_o() && this.getCommand() != RatCommand.SIT) {
+             this.func_70904_g(false);
+         }
+-        if (this.getAnimation() == ANIMATION_EAT && this.isHoldingFood() && this.eatingTicks <= 40) {
++        int speedDivider = this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_SPEED) ? RatsMod.CONFIG_OPTIONS.speedBuff : 1;
++        int speedEatingActual = Math.max(1, RatsMod.CONFIG_OPTIONS.speedEating / speedDivider);
++        if (this.getAnimation() == ANIMATION_EAT && this.isHoldingFood() && this.eatingTicks <= speedEatingActual) {
+             ++this.eatingTicks;
+             this.eatItem(this.func_184586_b(EnumHand.MAIN_HAND), 3);
+-            if (this.eatingTicks == 40) {
++            if (this.eatingTicks >= speedEatingActual) {
+                 ItemStack pooStack = new ItemStack(RatsItemRegistry.RAT_NUGGET);
+                 ItemStack eatenFood = this.func_184586_b(EnumHand.MAIN_HAND).func_77946_l();
+                 if (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_ORE_DOUBLING) && ItemRatUpgradeOreDoubling.isProcessable((ItemStack)this.func_184586_b(EnumHand.MAIN_HAND))) {
+@@ -1280,24 +1283,24 @@ implements IAnimatedEntity {
+         }
+         if (this.hasPlague() && this.field_70146_Z.nextFloat() < 0.3f) {
+             double d0 = 0.0;
+-            double d1 = this.field_70146_Z.nextGaussian() * 0.05 + 0.5;
++            double d12 = this.field_70146_Z.nextGaussian() * 0.05 + 0.5;
+             double d2 = 0.0;
+-            this.field_70170_p.func_175688_a(EnumParticleTypes.SPELL_MOB, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++            this.field_70170_p.func_175688_a(EnumParticleTypes.SPELL_MOB, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d12, d2, new int[0]);
+         }
+         if (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_CHEF) && !this.func_184614_ca().func_190926_b()) {
+             this.tryCooking();
+             if (this.cookingProgress > 0) {
+                 double d2 = this.field_70146_Z.nextGaussian() * 0.02;
+                 double d0 = this.field_70146_Z.nextGaussian() * 0.02;
+-                double d1 = this.field_70146_Z.nextGaussian() * 0.02;
+-                if (this.cookingProgress == 99) {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                double d13 = this.field_70146_Z.nextGaussian() * 0.02;
++                if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedChef / speedDivider) - 1) {
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d13, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d13, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d13, d2, new int[0]);
+                 } else {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.SMOKE_NORMAL, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.SMOKE_NORMAL, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d13, d2, new int[0]);
+                     if (this.field_70146_Z.nextFloat() < 0.125f) {
+-                        this.field_70170_p.func_175688_a(EnumParticleTypes.FLAME, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                        this.field_70170_p.func_175688_a(EnumParticleTypes.FLAME, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d13, d2, new int[0]);
+                     }
+                 }
+             }
+@@ -1307,15 +1310,15 @@ implements IAnimatedEntity {
+             if (this.cookingProgress > 0) {
+                 double d2 = this.field_70146_Z.nextGaussian() * 0.02;
+                 double d0 = this.field_70146_Z.nextGaussian() * 0.02;
+-                double d1 = this.field_70146_Z.nextGaussian() * 0.02;
+-                if (this.cookingProgress == 99) {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                double d14 = this.field_70146_Z.nextGaussian() * 0.02;
++                if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedArcheologist / speedDivider) - 1) {
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d14, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d14, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d14, d2, new int[0]);
+                 } else {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.BLOCK_CRACK, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[]{Block.func_149682_b((Block)RatsBlockRegistry.GARBAGE_PILE)});
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.BLOCK_CRACK, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d14, d2, new int[]{Block.func_149682_b((Block)RatsBlockRegistry.GARBAGE_PILE)});
+                     if (this.field_70146_Z.nextFloat() < 0.125f) {
+-                        this.field_70170_p.func_175688_a(EnumParticleTypes.ENCHANTMENT_TABLE, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                        this.field_70170_p.func_175688_a(EnumParticleTypes.ENCHANTMENT_TABLE, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d14, d2, new int[0]);
+                     }
+                 }
+             }
+@@ -1325,13 +1328,13 @@ implements IAnimatedEntity {
+             if (this.cookingProgress > 0) {
+                 double d2 = this.field_70146_Z.nextGaussian() * 0.02;
+                 double d0 = this.field_70146_Z.nextGaussian() * 0.02;
+-                double d1 = this.field_70146_Z.nextGaussian() * 0.02;
+-                if (this.cookingProgress == 99) {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                double d15 = this.field_70146_Z.nextGaussian() * 0.02;
++                if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedGemcutter / speedDivider) - 1) {
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d15, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d15, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d15, d2, new int[0]);
+                 } else {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.BLOCK_CRACK, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[]{Block.func_149682_b((Block)Blocks.field_150482_ag)});
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.BLOCK_CRACK, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d15, d2, new int[]{Block.func_149682_b((Block)Blocks.field_150482_ag)});
+                 }
+             }
+         }
+@@ -1340,14 +1343,14 @@ implements IAnimatedEntity {
+             if (this.cookingProgress > 0) {
+                 double d2 = this.field_70146_Z.nextGaussian() * 0.02;
+                 double d0 = this.field_70146_Z.nextGaussian() * 0.02;
+-                double d1 = this.field_70146_Z.nextGaussian() * 0.02;
+-                if (this.cookingProgress == 999) {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                double d16 = this.field_70146_Z.nextGaussian() * 0.02;
++                if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedEnchanter / speedDivider) - 1) {
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d16, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d16, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.VILLAGER_HAPPY, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d16, d2, new int[0]);
+                 } else {
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.ENCHANTMENT_TABLE, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
+-                    this.field_70170_p.func_175688_a(EnumParticleTypes.ENCHANTMENT_TABLE, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.ENCHANTMENT_TABLE, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d16, d2, new int[0]);
++                    this.field_70170_p.func_175688_a(EnumParticleTypes.ENCHANTMENT_TABLE, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d16, d2, new int[0]);
+                 }
+             }
+         }
+@@ -1379,8 +1382,8 @@ implements IAnimatedEntity {
+             } else {
+                 double d2 = this.field_70146_Z.nextGaussian() * 0.02;
+                 double d0 = this.field_70146_Z.nextGaussian() * 0.02;
+-                double d1 = this.field_70146_Z.nextGaussian() * 0.02;
+-                this.field_70170_p.func_175688_a(EnumParticleTypes.PORTAL, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d1, d2, new int[0]);
++                double d17 = this.field_70146_Z.nextGaussian() * 0.02;
++                this.field_70170_p.func_175688_a(EnumParticleTypes.PORTAL, this.field_70165_t + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, this.field_70163_u + (double)(this.field_70146_Z.nextFloat() * this.field_70131_O), this.field_70161_v + (double)(this.field_70146_Z.nextFloat() * this.field_70130_N * 2.0f) - (double)this.field_70130_N, d0, d17, d2, new int[0]);
+             }
+         }
+         if (this.field_70170_p.field_72995_K && this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_FERAL_BITE) && this.func_70681_au().nextInt(5) == 0) {
+@@ -1410,7 +1413,7 @@ implements IAnimatedEntity {
+             TileEntityRatCraftingTable ratCraftingTable = (TileEntityRatCraftingTable)te;
+             double d2 = this.field_70146_Z.nextGaussian() * 0.02;
+             double d0 = this.field_70146_Z.nextGaussian() * 0.02;
+-            double d1 = this.field_70146_Z.nextGaussian() * 0.02;
++            d1 = this.field_70146_Z.nextGaussian() * 0.02;
+             if (ratCraftingTable.func_174887_a_(0) > 0) {
+                 this.crafting = true;
+                 this.field_70170_p.func_72960_a((Entity)this, (byte)85);
+@@ -1508,7 +1511,7 @@ implements IAnimatedEntity {
+                 cannonball.field_184539_c = this;
+                 double extraY2 = 0.6 + this.field_70163_u;
+                 double d0 = this.func_70638_az().field_70163_u + (double)this.func_70638_az().func_70047_e() - (double)1.1f;
+-                double d1 = this.func_70638_az().field_70165_t - this.field_70165_t;
++                d1 = this.func_70638_az().field_70165_t - this.field_70165_t;
+                 double d3 = this.func_70638_az().field_70161_v - this.field_70161_v;
+                 double d2 = d0 - extraY2;
+                 float f = MathHelper.func_76133_a((double)(d1 * d1 + d3 * d3)) * 0.2f;
+@@ -1669,7 +1672,7 @@ implements IAnimatedEntity {
+             this.cookingProgress = 0;
+         } else {
+             ++this.cookingProgress;
+-            if (this.cookingProgress == 100) {
++            if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedArcheologist / (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_SPEED) ? RatsMod.CONFIG_OPTIONS.speedBuff : 1))) {
+                 heldItem.func_190918_g(1);
+                 if (heldItem.func_190926_b()) {
+                     this.func_184611_a(EnumHand.MAIN_HAND, burntItem);
+@@ -1688,7 +1691,7 @@ implements IAnimatedEntity {
+             this.cookingProgress = 0;
+         } else {
+             ++this.cookingProgress;
+-            if (this.cookingProgress == 100) {
++            if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedChef / (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_SPEED) ? RatsMod.CONFIG_OPTIONS.speedBuff : 1))) {
+                 heldItem.func_190918_g(1);
+                 if (heldItem.func_190926_b()) {
+                     this.func_184611_a(EnumHand.MAIN_HAND, burntItem);
+@@ -1707,7 +1710,7 @@ implements IAnimatedEntity {
+             this.cookingProgress = 0;
+         } else {
+             ++this.cookingProgress;
+-            if (this.cookingProgress == 100) {
++            if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedGemcutter / (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_SPEED) ? RatsMod.CONFIG_OPTIONS.speedBuff : 1))) {
+                 heldItem.func_190918_g(1);
+                 if (heldItem.func_190926_b()) {
+                     this.func_184611_a(EnumHand.MAIN_HAND, burntItem);
+@@ -1738,7 +1741,7 @@ implements IAnimatedEntity {
+             this.cookingProgress = 0;
+         } else {
+             ++this.cookingProgress;
+-            if (this.cookingProgress == 1000) {
++            if (this.cookingProgress >= Math.max(1, RatsMod.CONFIG_OPTIONS.speedEnchanter / (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_SPEED) ? RatsMod.CONFIG_OPTIONS.speedBuff : 1))) {
+                 heldItem.func_190918_g(1);
+                 if (!disenchant) {
+                     float power = 0.0f;
+@@ -1774,21 +1777,21 @@ implements IAnimatedEntity {
+         List result = new ArrayList();
+         if (!this.field_70170_p.field_72995_K) {
+             LootContext.Builder lootcontext$builder = new LootContext.Builder((WorldServer)this.field_70170_p);
+-            lootcontext$builder.func_186469_a((float)luck).func_186472_a((Entity)this);
++            lootcontext$builder.func_186469_a(luck ? 1.0f : 0.0f).func_186472_a((Entity)this);
+             result = this.field_70170_p.func_184146_ak().func_186521_a(CHRISTMAS_LOOT).func_186462_a(this.func_70681_au(), lootcontext$builder.func_186471_a());
+             if (result.isEmpty()) {
+                 this.cookingProgress = 0;
+             } else {
+                 ++this.cookingProgress;
+                 if (this.cookingProgress >= 24000) {
+-                    for (ItemStack stack : result) {
++                    for (ItemStack itemStack : result) {
+                         if (heldItem.func_190926_b() && !held) {
+-                            this.func_184611_a(EnumHand.MAIN_HAND, stack.func_77946_l());
++                            this.func_184611_a(EnumHand.MAIN_HAND, itemStack.func_77946_l());
+                             held = true;
+                             continue;
+                         }
+-                        if (this.tryDepositItemInContainers(stack.func_77946_l()) || this.field_70170_p.field_72995_K) continue;
+-                        this.func_70099_a(stack.func_77946_l(), 0.25f);
++                        if (this.tryDepositItemInContainers(itemStack.func_77946_l()) || this.field_70170_p.field_72995_K) continue;
++                        this.func_70099_a(itemStack.func_77946_l(), 0.25f);
+                     }
+                     this.cookingProgress = 0;
+                 }
+@@ -1891,8 +1894,8 @@ implements IAnimatedEntity {
+     }
+ 
+     private boolean rollForPlague(EntityLivingBase target) {
+-        boolean mask;
+-        boolean bl = mask = target.func_184582_a(EntityEquipmentSlot.HEAD).func_77973_b() == RatsItemRegistry.PLAGUE_DOCTOR_MASK || target.func_184582_a(EntityEquipmentSlot.HEAD).func_77973_b() == RatsItemRegistry.BLACK_DEATH_MASK;
++        boolean mask = target.func_184582_a(EntityEquipmentSlot.HEAD).func_77973_b() == RatsItemRegistry.PLAGUE_DOCTOR_MASK || target.func_184582_a(EntityEquipmentSlot.HEAD).func_77973_b() == RatsItemRegistry.BLACK_DEATH_MASK;
++        boolean bl = mask;
+         if (mask) {
+             return this.field_70146_Z.nextFloat() < 0.3f;
+         }
+@@ -2035,9 +2038,9 @@ implements IAnimatedEntity {
+     }
+ 
+     protected void func_70609_aI() {
+-        int maxDeathTime;
+         ++this.field_70725_aQ;
+-        int n = maxDeathTime = this.isDeadInTrap ? 60 : 20;
++        int maxDeathTime = this.isDeadInTrap ? 60 : 20;
++        int n = maxDeathTime;
+         if (this.field_70725_aQ == maxDeathTime) {
+             if (!this.field_70170_p.field_72995_K && (this.func_70684_aJ() || this.field_70718_bc > 0 && this.func_146066_aG() && this.field_70170_p.func_82736_K().func_82766_b("doMobLoot"))) {
+                 int j;
+@@ -2100,7 +2103,7 @@ implements IAnimatedEntity {
+         }
+         if (!this.field_70128_L && this.func_70909_n() && this.getOwnerMonster() != null && this.getOwnerMonster() instanceof EntityBlackDeath) {
+             illagerPiper = (EntityBlackDeath)this.getOwnerMonster();
+-            illagerPiper.setRatsSummoned(illagerPiper.getRatsSummoned() - 1);
++            ((EntityBlackDeath)illagerPiper).setRatsSummoned(((EntityBlackDeath)illagerPiper).getRatsSummoned() - 1);
+         }
+         this.field_70128_L = true;
+         super.func_70106_y();
