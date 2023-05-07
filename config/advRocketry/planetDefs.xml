@@ -281,5 +281,12 @@
 			<rotationalPeriod>100000</rotationalPeriod>
 			<generateCaves>true</generateCaves>
 		</planet>
+		<planet name="Asteroid Belt" DIMID="124">
+			<genType>2</genType>
+		</planet>
+		<planet name="Caveland" DIMID="125">
+			<genType>1</genType>
+			<generateCaves>true</generateCaves>
+		</planet>
 	</star>
 </galaxy>
