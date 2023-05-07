@@ -7,6 +7,10 @@
   "scripts": {
     "automate": "esno mc-tools/packages/run/src/cli.ts dev/tools/mct-run.json",
     "bansoukou-prune": "node \"dev/_other/advancement-fix.js\" -r",
+    "build": "pnpm build:bump-menu && pnpm build:bump-remt",
+    "build:bump-menu": "npx json-patch-cli set config/CustomMainMenu/mainmenu.json labels/version_num/text \"WIP_VERSION\"",
+    "build:bump-remt": "echo \"WIP_VERSION\" > dev/version.txt",
+    "build:gen-manif": "echo \"GENERATE MANIFEST HERE\"",
     "format-test": "esno mc-tools/scripts/format.ts scripts/MiscRecipes.zs",
     "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts levels dev/tools/reduce_mods.json",
     "md-to-html": "node ./dev/lib/curseforge-md-to-html.js ./changelogs/LATEST.md"
@@ -38,6 +42,7 @@
     "glob": "^9.3.5",
     "glob-escape": "^0.0.2",
     "humanize-string": "^3.0.0",
+    "ignore": "^5.2.4",
     "language-name-map": "^0.3.0",
     "lodash": "^4.17.21",
     "log-update": "^5.0.1",

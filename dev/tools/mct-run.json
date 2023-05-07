@@ -10,8 +10,9 @@
      ,"Inject_JS": "esno dev/automation/Inject_JS.js"
            ,"jei": "esno dev/automation/jei.js"
           ,"misc": "esno dev/automation/misc.js --keep-cache"
-      ,"modsDiff": "esno dev/automation/modsDiff.js"
      ,"Conflicts": "esno dev/automation/recipe_conflicts.js"
           ,"tips": "esno dev/automation/tips.js"
            ,"XML": "esno dev/automation/XML.js"
+      ,"manifest": "esno mc-tools/packages/curseforge/src/cli.ts manifest --verbose --ignore=dev/.devonly.ignore --key=secrets/~cf_api_key.txt"
+       ,"modlist": "esno mc-tools/packages/curseforge/src/cli.ts modlist --old='../Enigmatica 2 Expert - E2E (unchanged, updated)/minecraftinstance.json' --verbose --ignore=dev/.devonly.ignore --key=secrets/~cf_api_key.txt --template=dev/tools/modlist_template.md"
 }

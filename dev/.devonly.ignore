@@ -1,6 +1,6 @@
 # .gitignore-alike list of files and derictories
 # that should be ignored when exporting package
-*
+./*
 scripts/debug
 config/tellme
 
@@ -18,7 +18,6 @@ config/sampler.ini
 !manifest.json
 !mods
 !patchouli_books
-!resourcepacks/bq_lootchests
 !resources
 !schematics
 !scripts

@@ -1,0 +1,11 @@
+{{> header}}
+{{modschanges}}
+{{#each commitGroups}}
+{{#each commits}}
+{{> commit root=@root}}
+{{/each}}
+{{/each}}
+
+{{> footer}}
+
+

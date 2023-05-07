@@ -1,99 +1,101 @@
-# Files from cloned repo (overrides folder)
-*
-!minemenu
-!resources
-!resourcepacks
-!manifest.json
+####################################
+# List of files ignored for server #
+####################################
+
+# Clientside only folders and files
+minemenu
+resources
+resourcepacks
+manifest.json
 
 # Clientside configs
-!config/thaumicjei_itemstack_aspects.json
+config/thaumicjei_itemstack_aspects.json
 
 # List of client side mods only
 # Get from debug.log by "client side only." search
 # Or add manually
-mods/*.jar
-!mods/ResourceLoader-*
-!mods/BetterAdvancements*
-!mods/betteranimals-*
-!mods/BetterFps*
-!mods/bilingualname*
-!mods/Biome Border Viewer*
-!mods/blockdrops-*
-!mods/BQTweaker*
-!mods/ChatTweaks_*
-!mods/ChunkAnimator*
-!mods/Controlling-*
-!mods/CTM-MC1*
-!mods/CustomBackgrounds-*
-!mods/CustomMainMenu*
-!mods/DamageTilt*
-!mods/DefaultOptions*
-!mods/Ding-*
-!mods/DiscordSuite*
-!mods/DynamicSurroundings*
-!mods/dynamistics-*
-!mods/ears-forge-*
-!mods/FpsReducer*
-!mods/grid-*
-!mods/IconExporter*
-!mods/InvMove*
-!mods/jetif-*
-!mods/just-enough-harvestcraft-*
-!mods/JustEnoughPetroleum-*
-!mods/JustEnoughResources-*
-!mods/justthetips*
-!mods/keywizard*
-!mods/lootcapacitortooltips-*
-!mods/MemoryTester*
-!mods/MineMenu*
-!mods/moreoverlays-*
-!mods/MouseTweaks*
-!mods/Neat*
-!mods/NoNVFlash*
-!mods/notifymeonstart*
-!mods/OldJavaWarning-*
-!mods/OreLib*'
-!mods/overloadedarmorbar-*
-!mods/ping-*
-!mods/potiondescriptions-*
-!mods/ReAuth*
-!mods/ReBind*
-!mods/ShoulderSurfing*
-!mods/Sound-Physics-*
-!mods/ThaumicJEI-*
-!mods/Tips-*
-!mods/TipTheScales-*
-!mods/Toast Control-*
-!mods/torohealth*
-!mods/toughnessbar*
-!mods/WailaHarvestability-mc*
-!mods/justenoughdrags-*
-!mods/gamestagesviewer-*
-!mods/versioner-*
-!mods/CustomLoadingScreen-*
-!mods/EnableCheats-*
-!mods/scalingguis-*
-!mods/smooth-scrolling-everywhere-*
-!mods/oauth-*
-!mods/bookdisplay-*
-!mods/Nimble-*
-!mods/noRecipeBook_*
-!mods/EntityCulling-*
-!mods/particleculling-*
-!mods/RenderLib-*
-!mods/Nothirium-*
-!mods/SmoothFont-*
-!mods/DefaultWorldGenerator-*
-!mods/betterbiomeblend-*
-!mods/CraftPresence-*
-!mods/JEI-Utilities-*
-!mods/ChatFlow-*
-!mods/startuptimer-*
-!mods/bow-*
+mods/ResourceLoader-*
+mods/BetterAdvancements*
+mods/betteranimals-*
+mods/BetterFps*
+mods/bilingualname*
+mods/Biome Border Viewer*
+mods/blockdrops-*
+mods/BQTweaker*
+mods/ChatTweaks_*
+mods/ChunkAnimator*
+mods/Controlling-*
+mods/CTM-MC1*
+mods/CustomBackgrounds-*
+mods/CustomMainMenu*
+mods/DamageTilt*
+mods/DefaultOptions*
+mods/Ding-*
+mods/DiscordSuite*
+mods/DynamicSurroundings*
+mods/dynamistics-*
+mods/ears-forge-*
+mods/FpsReducer*
+mods/grid-*
+mods/IconExporter*
+mods/InvMove*
+mods/jetif-*
+mods/just-enough-harvestcraft-*
+mods/JustEnoughPetroleum-*
+mods/JustEnoughResources-*
+mods/justthetips*
+mods/keywizard*
+mods/lootcapacitortooltips-*
+mods/MemoryTester*
+mods/MineMenu*
+mods/moreoverlays-*
+mods/MouseTweaks*
+mods/Neat*
+mods/NoNVFlash*
+mods/notifymeonstart*
+mods/OldJavaWarning-*
+mods/OreLib*'
+mods/overloadedarmorbar-*
+mods/ping-*
+mods/potiondescriptions-*
+mods/ReAuth*
+mods/ReBind*
+mods/ShoulderSurfing*
+mods/Sound-Physics-*
+mods/ThaumicJEI-*
+mods/Tips-*
+mods/TipTheScales-*
+mods/Toast Control-*
+mods/torohealth*
+mods/toughnessbar*
+mods/WailaHarvestability-mc*
+mods/justenoughdrags-*
+mods/gamestagesviewer-*
+mods/versioner-*
+mods/CustomLoadingScreen-*
+mods/EnableCheats-*
+mods/scalingguis-*
+mods/smooth-scrolling-everywhere-*
+mods/oauth-*
+mods/bookdisplay-*
+mods/Nimble-*
+mods/noRecipeBook_*
+mods/EntityCulling-*
+mods/particleculling-*
+mods/RenderLib-*
+mods/Nothirium-*
+mods/SmoothFont-*
+mods/DefaultWorldGenerator-*
+mods/betterbiomeblend-*
+mods/CraftPresence-*
+mods/JEI-Utilities-*
+mods/ChatFlow-*
+mods/startuptimer-*
+mods/bow-*
 
 #Not sure
-# !mods/gendustryjei*
-# !mods/jeibees*
-# !mods/jeivillagers*
-# !mods/JustEnoughReactors*
-# !mods/mekanismfluxified*
+# mods/gendustryjei*
+# mods/jeibees*
+# mods/jeivillagers*
+# mods/JustEnoughReactors*
+# mods/mekanismfluxified*

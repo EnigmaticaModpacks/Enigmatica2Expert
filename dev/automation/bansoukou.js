@@ -7,9 +7,9 @@
 
 // @ts-check
 
-import { existsSync, mkdirSync, renameSync, statSync, unlinkSync } from 'fs'
-import { dirname, join, parse } from 'path'
-import { URL, fileURLToPath } from 'url'
+import { existsSync, mkdirSync, renameSync, statSync, unlinkSync } from 'node:fs'
+import { dirname, join, parse } from 'node:path'
+import { URL, fileURLToPath } from 'node:url'
 
 import AdmZip from 'adm-zip'
 import fast_glob from 'fast-glob'
@@ -229,6 +229,6 @@ function getStat(filePath) {
 }
 
 if (
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+  import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href
 )
   init()

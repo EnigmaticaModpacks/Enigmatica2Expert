@@ -18,10 +18,11 @@ import * as del from 'del'
 import fast_glob from 'fast-glob'
 import fs_extra from 'fs-extra'
 import git_describe from 'git-describe'
-import parseGitignore from 'parse-gitignore'
 import simpleGit from 'simple-git'
 import terminal_kit from 'terminal-kit'
 import yargs from 'yargs'
+import ignore from 'ignore'
+import open from 'open'
 
 import {
   end,
@@ -35,7 +36,7 @@ import {
 
 const { gitDescribeSync } = git_describe
 const { terminal: term } = terminal_kit
-const { rmSync, mkdirSync, existsSync, renameSync, copySync, lstatSync }
+const { rmSync, mkdirSync, existsSync, renameSync, copySync, readFileSync, writeFileSync }
   = fs_extra
 const git = simpleGit()
 
@@ -48,6 +49,26 @@ const { sync: _globs } = fast_glob
  */
 function globs(source, options) {
   return _globs(source, { dot: true, onlyFiles: false, ...options })
+}
+
+/**
+ * @param {any} ignored
+ */
+function getIgnoredFiles(ignored) {
+  return globs(
+    ignored._rules.filter(r => !r.negative).map(r => r.pattern),
+    { ignore: ignored._rules.filter(r => r.negative).map(r => r.pattern) }
+  )
+}
+
+/**
+ * @param {string | readonly string[]} files list of globs of files to remove
+ */
+function removeFiles(files) {
+  const removed = del.deleteSync(files, { dryRun: false })
+  return `removed: ${removed.length}\n${
+    removed.map(s => chalk.gray(relative(process.cwd(), s))).join('\n')
+  }`
 }
 
 const argv = yargs(process.argv.slice(2))
@@ -168,8 +189,21 @@ const style = {
   )?.trim()
   const nextVersion = inputVersion || oldVersion || 'v???'
 
-  if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`))
-    execSyncInherit(`esno ./dev/changelog.js --next=${nextVersion}`)
+  if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
+    const latestPath = 'changelogs/LATEST.md'
+
+    // Generate changelog
+    execSyncInherit(`npx conventional-changelog-cli --config ./dev/tools/changelog/config.cjs -o ${latestPath}`)
+
+    // Update version in files
+    execSyncInherit(`npx json -I -f config/CustomMainMenu/mainmenu.json -e "this.labels.version_num.text='${nextVersion}'"`)
+    writeFileSync('dev/version.txt', nextVersion)
+
+    // Iconize
+    execSyncInherit(`esno E:/dev/mc-icons/src/cli.ts "${latestPath}" --silent --no-short --modpack=e2ee --treshold=2`)
+
+    await open(latestPath, { wait: true })
+  }
 
   await pressEnterOrEsc(
     `[${STEP++}] Clear your working tree, rebase, and press ENTER. Press ESC to skip.`,
@@ -196,10 +230,7 @@ const style = {
   const isZipsExist = !argv.dryRun && [zipPath_EN, zipPath_server].some(f => existsSync(f))
 
   let rewriteOldZipFiles = false
-  if (
-    isZipsExist
-  && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))
-  ) {
+  if (isZipsExist && (await pressEnterOrEsc(`[${STEP++}] Rewrite old .zip files? ENTER / ESC`))) {
     rewriteOldZipFiles = true
     doTask(
       '🪓 Removing old zip files ... ',
@@ -208,7 +239,7 @@ const style = {
   }
   const makeZips = !isZipsExist || rewriteOldZipFiles
 
-  const devonlyIgnore = parseGitignore(loadText('dev/.devonly.ignore')).patterns
+  const devonlyIgnore = ignore().add(readFileSync('dev/.devonly.ignore', 'utf8'))
 
   if (!argv.old && makeZips) {
     doTask(`🪓 Clearing tmp folder ${tmpDir} ... `, () => {
@@ -219,12 +250,10 @@ const style = {
       mkdirSync(tmpOverrides, { recursive: true })
     })
 
-    doTask(
-      `👬 Cloning latest tag to ${tmpOverrides} ... \n`,
-      () => {
-        execSyncInherit(`git clone --recurse-submodules -j8 --depth 1 "file://${mcClientPath}" .`)
-      },
-      tmpOverrides
+    doTask(`👬 Cloning latest tag to ${tmpOverrides} ... \n`, () => {
+      execSyncInherit(`git clone --recurse-submodules -j8 --depth 1 "file://${mcClientPath}" .`)
+    },
+    tmpOverrides
     )
 
     doTask(
@@ -240,12 +269,7 @@ const style = {
 
     doTask(
       '🧹 Removing non-release files and folders ... ',
-      () => {
-        const removed = del.deleteSync(globs(devonlyIgnore), { dryRun: false })
-        return `removed: ${removed.length}\n${
-          removed.map(s => chalk.gray(relative(tmpOverrides, s))).join('\n')
-        }`
-      }, tmpOverrides
+      () => removeFiles(getIgnoredFiles(devonlyIgnore)), tmpOverrides
     )
   }
 
@@ -302,8 +326,7 @@ const style = {
 ╚══════╝╚═╝  ╚═══╝
 
 ********************************************************/
-  makeZips
-    && doTask('🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n', () => withZip(zipPath_EN)('.'), tmpDir)
+  makeZips && doTask('🏴󠁧󠁢󠁥󠁮󠁧󠁿 Create EN .zip ... \n', () => withZip(zipPath_EN)('.'), tmpDir)
 
   /********************************************************
 
@@ -316,14 +339,16 @@ const style = {
 
 ********************************************************/
 
-  const serveronlyIgnore = parseGitignore(loadText('dev/.serveronly.ignore')).patterns
-  const serverFilesList = globs(serveronlyIgnore, { cwd: tmpOverrides })
-  const serverModsListEvery = globs(serveronlyIgnore, {
-    ignore: devonlyIgnore.filter(f => !f.startsWith('!')),
-  }).filter(f => f.startsWith('mods/'))
-  const serverModsList = serverModsListEvery.filter(
-    f => !f.endsWith('-patched.jar')
-  ) // Bansoukou-patched files should be handled separately
+  /**
+   * Patterns of files that should be removed from server
+  */
+  const serveronlyIgnore = ignore().add(loadText('dev/.serveronly.ignore'))
+
+  /** List of all server-side mod JARs, except bansoukou and devonly */
+  const serverModsList = globs(['mods/*.jar', 'mods/*/*.jar'])
+    .filter(serveronlyIgnore.createFilter()) // Ignore clientside files
+    .filter(devonlyIgnore.createFilter()) // Ignore devonly files
+    .filter(f => !f.endsWith('-patched.jar')) // Bansoukou-patched files should be handled separately
 
   // List of mods, patched with Bansoukou, but without extension
   // mods/betteranimalsplus-1.12.2-9.0.1
@@ -332,48 +357,40 @@ const style = {
     f.replace('-patched.jar', '')
   )
 
-  const serverRemoveList = globs('*', {
-    ignore: serverFilesList,
-    cwd   : tmpOverrides,
-  })
   doTask(
     '🪑 Removing client-only files and folders ... ',
-    () => `removed: ${del.deleteSync(serverRemoveList).length}`,
+    () => removeFiles(getIgnoredFiles(serveronlyIgnore)),
     tmpOverrides
   )
   doTask('🪑 Add server root files ... ', () => {
-    globs('*', { cwd: serverRoot }).forEach(f =>
-      copySync(join(serverRoot, f), join(tmpOverrides, f))
-    )
-    return `added: ${serverFilesList.length}`
+    const files = globs('*', { cwd: serverRoot })
+    files.forEach(f => copySync(join(serverRoot, f), join(tmpOverrides, f)))
+    return `added: ${files.length}`
   })
 
-  makeZips
-    && doTask(
-      '📥 Create server zip ... \n',
-      () => {
-        // Add everything in overrides dir
-        const zip = withZip(zipPath_server)
-        zip('.')
+  makeZips && doTask('📥 Create server zip ... \n', () => {
+    // Add everything in overrides dir
+    const zip = withZip(zipPath_server)
+    zip('.')
 
-        // Add mods
-        write('\n Add server mods\n')
-        process.chdir(mcClientPath)
-        zip(serverModsList)
+    // Add mods
+    write('\n Add server mods\n')
+    process.chdir(mcClientPath)
+    zip(serverModsList)
 
-        // Add Unpatched by Bansoukou mods
-        write('\n Add & Rename Bansoukou-unpatched mods\n')
-        const disabledList = unpatchedList.map(f => `${f}.disabled`)
-        const renameList = unpatchedList.flatMap(f => [
-          `${f}.disabled`,
-          `${f}.jar`,
-        ])
-        process.chdir(mcClientPath)
-        zip(disabledList)
-        zip(renameList, 'rn')
-      },
-      tmpOverrides
-    )
+    // Add Unpatched by Bansoukou mods
+    write('\n Add & Rename Bansoukou-unpatched mods\n')
+    const disabledList = unpatchedList.map(f => `${f}.disabled`)
+    const renameList = unpatchedList.flatMap(f => [
+      `${f}.disabled`,
+      `${f}.jar`,
+    ])
+    process.chdir(mcClientPath)
+    zip(disabledList)
+    zip(renameList, 'rn')
+  },
+  tmpOverrides
+  )
 
   /*
 ███████╗███████╗████████╗██████╗
@@ -510,10 +527,8 @@ const style = {
   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
   */
 
-  if (await pressEnterOrEsc(`[${STEP++}] Push tag? ENTER / ESC`)) {
-    await git.push()
-    await git.pushTags()
-  }
+  if (await pressEnterOrEsc(`[${STEP++}] Push tag? ENTER / ESC`))
+    execSyncInherit('git push --follow-tags')
 
   const inputTitle = await enterString(
     `[${STEP++}] Enter release title and press ENTER. Press ESC to skip release: `
@@ -526,7 +541,7 @@ const style = {
           + ` ${nextVersion}`
           + ` --title="${(`${nextVersion} ${inputTitle}`).trim()}"`
           + ' --repo=Krutoy242/Enigmatica2Expert-Extended'
-          + ' --notes-file="./dev/release/~GitHub_notes.md"'
+          + ' --notes-file=changelogs/LATEST.md'
           + ` "${zipPath_EN}"`
           + ` "${zipPath_server}"`
       )
