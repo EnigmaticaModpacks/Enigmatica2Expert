@@ -30,12 +30,6 @@
     "serverSide": false
   },
   {
-    "sourceFilePath": "jei.cfg",
-    "destinationFilePath": "config/jei/jei.cfg",
-    "clientSide": true,
-    "serverSide": true
-  },
-  {
     "sourceFilePath": "smoothfont.cfg",
     "destinationFilePath": "config/smoothfont/smoothfont.cfg",
     "clientSide": true,
