@@ -249,7 +249,7 @@
 			<biomeIds>advancedrocketry:alien_forest,biomesoplenty:ominous_woods</biomeIds>
 			<skyColor>1,0,1</skyColor>
 			<fogColor>1,0,0.5</fogColor>
-			<atmosphereDensity>0</atmosphereDensity>
+			<atmosphereDensity>80</atmosphereDensity>
 			<gravitationalMultiplier>70</gravitationalMultiplier>
 			<orbitalDistance>110</orbitalDistance>
 			<rotationalPeriod>180000</rotationalPeriod>
