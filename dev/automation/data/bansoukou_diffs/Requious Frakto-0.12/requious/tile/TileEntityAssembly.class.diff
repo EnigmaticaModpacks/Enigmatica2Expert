@@ -1,0 +1,10 @@
+@@ -171,6 +171,9 @@ IEnergySource {
+     }
+ 
+     public boolean hasCapability(Capability<?> capability, @Nullable EnumFacing facing) {
++        if (this.func_145831_w().func_175623_d(this.func_174877_v())) {
++            return false;
++        }
+         boolean hasCapability = false;
+         if (this.processor != null) {
+             hasCapability = this.processor.hasCapability(capability, TileEntityAssembly.toLocalSide(this.getFacing(), facing), facing);
