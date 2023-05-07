@@ -26,15 +26,15 @@ glob.sync('config/bloodmagic/meteors/*.json')
   ...f.components.map(c=>c.oreName.substring(3))
   ]
   .map(s=>`"${s}"`).join(', ')
-).map(s=>`[${s}]`).join(',\n')
+).map(s=>`[${s}],`).sort(naturalSort).join('\n')
 )*/
+["jaopca:block_blockdilithium", "0", "2000000", "EndDilithium", "ClathrateRedstone", "ClathrateEnder", "ClathrateGlowstone"],
+["minecraft:emerald_block", "0", "1400000", "Lapis", "Diamond", "Coal", "Ruby", "Peridot", "Topaz", "Tanzanite", "Malachite", "Sapphire", "Amber", "Apatite", "CertusQuartz", "Cinnabar", "Prosperity", "QuartzBlack"],
 ["minecraft:iron_block", "0", "600000", "Iron", "Copper", "Tin", "Silver", "Lead", "Gold", "Lapis", "Redstone", "Aluminum"],
+["nuclearcraft:ingot_block", "3", "1100000", "Thorium", "Boron", "Lithium", "Magnesium"],
+["tconstruct:metal", "1", "1700000", "Quartz", "NetherAluminum", "NetherCopper", "NetherLead", "NetherNickel", "NetherRedstone", "NetherLapis", "NetherIron", "NetherGold", "NetherDiamond", "NetherCoal", "NetherPlatinum", "NetherSilver", "NetherTin", "NetherCertusQuartz", "NetherChargedCertusQuartz", "NetherOsmium", "NetherUranium", "Cobalt", "Ardite"],
 ["thermalfoundation:storage", "6", "600000", "Iron", "Copper", "Tin", "Gold", "AstralStarmetal", "Draconium", "Nickel", "Osmium", "Platinum", "Rutile", "Uranium"],
 ["thermalfoundation:storage", "7", "1000000", "Iron", "Gold", "Lapis", "Redstone", "Diamond", "Iridium", "Mithril"],
-["nuclearcraft:ingot_block", "3", "1100000", "Thorium", "Boron", "Lithium", "Magnesium"],
-["minecraft:emerald_block", "0", "1400000", "Lapis", "Diamond", "Coal", "Ruby", "Peridot", "Topaz", "Tanzanite", "Malachite", "Sapphire", "Amber", "Apatite", "CertusQuartz", "Cinnabar", "Prosperity", "QuartzBlack"],
-["tconstruct:metal", "1", "1700000", "Quartz", "NetherAluminum", "NetherCopper", "NetherLead", "NetherNickel", "NetherRedstone", "NetherLapis", "NetherIron", "NetherGold", "NetherDiamond", "NetherCoal", "NetherPlatinum", "NetherSilver", "NetherTin", "NetherCertusQuartz", "NetherChargedCertusQuartz", "NetherOsmium", "NetherUranium", "Cobalt", "Ardite"],
-["jaopca:block_blockdilithium", "0", "2000000", "EndDilithium", "ClathrateRedstone", "ClathrateEnder", "ClathrateGlowstone"]
 /**/
 ];
 
