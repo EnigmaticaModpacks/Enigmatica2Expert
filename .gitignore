@@ -36,7 +36,6 @@ mods/OpenTerrainGenerator/worlds/BBOP-Extended/WorldObjects/_Copies
 mods/OpenTerrainGenerator/worlds/Void/WorldObjects/_Copies
 
 # 3d party mods
-!mods/thaumicenergistics-*.jar
 !mods/Sound-Physics-*.jar
 !mods/Nutrition-*.jar
 
