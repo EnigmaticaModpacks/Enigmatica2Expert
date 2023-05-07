@@ -11,12 +11,7 @@ import scripts.jei.requious.add as addRecipe;
 var x = <assembly:scented_hive>;
 x.addJEICatalyst(<exnihilocreatio:hive:1>);
 x.setJEIDurationSlot(3,0,"duration", scripts.jei.requious.getVisSlots(5,1));
-scripts.jei.requious.addInsOuts(x, [[1,1],[1,0],[2,0],[0,0]], [[4,0]]);
-
-val worldItem as IItemStack[int] = {
-  0: <biomesoplenty:earth>.withTag({display:{Name:"§6OVERWORLD"}}),
-  1: <biomesoplenty:earth>.withTag({display:{Name:"§6THE END"}}),
-};
+scripts.jei.requious.addInsOuts(x, [[1,0],[2,0],[0,0]], [[4,0]]);
 
 /*Inject_js(
 JSON.parse(loadText('config/exnihilocreatio/ScentedHiveRegistry.json'))
@@ -25,13 +20,13 @@ JSON.parse(loadText('config/exnihilocreatio/ScentedHiveRegistry.json'))
 }] : [<${l.hive}>]});`)
 .join('\n')
 )*/
-addRecipe(x, {[worldItem[0], <exnihilocreatio:hive:1>, <ore:treeLeaves>, <ore:logWood>] : [<forestry:beehives:0>]});
-addRecipe(x, {[worldItem[0], <exnihilocreatio:hive:1>, <ore:flower>] : [<forestry:beehives:1>]});
-addRecipe(x, {[worldItem[0], <exnihilocreatio:hive:1>, <ore:sand>] : [<forestry:beehives:2>]});
-addRecipe(x, {[worldItem[0], <exnihilocreatio:hive:1>, <minecraft:log:3>, <ore:treeLeaves>] : [<forestry:beehives:3>]});
-addRecipe(x, {[worldItem[1], <exnihilocreatio:hive:1>, <minecraft:end_stone:0>] : [<forestry:beehives:4>]});
-addRecipe(x, {[worldItem[0], <exnihilocreatio:hive:1>, <minecraft:ice:0>, <minecraft:snow:0>] : [<forestry:beehives:5>]});
-addRecipe(x, {[worldItem[0], <exnihilocreatio:hive:1>, <ore:dirt>] : [<forestry:beehives:6>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <ore:treeLeaves>, <ore:logWood>] : [<forestry:beehives:0>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <ore:flower>] : [<forestry:beehives:1>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <ore:sand>] : [<forestry:beehives:2>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <minecraft:log:3>, <ore:treeLeaves>] : [<forestry:beehives:3>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <minecraft:end_stone:0>] : [<forestry:beehives:4>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <minecraft:ice:0>, <minecraft:snow:0>] : [<forestry:beehives:5>]});
+addRecipe(x, {[<exnihilocreatio:hive:1>, <ore:dirt>] : [<forestry:beehives:6>]});
 /**/
 
 // -----------------------------------------------------------------------
