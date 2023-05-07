@@ -1,0 +1,102 @@
+@@ -14,7 +14,6 @@
+  *  net.minecraft.tileentity.TileEntity
+  *  net.minecraft.util.math.BlockPos
+  *  net.minecraft.util.math.Vec3d
+- *  net.minecraft.util.math.Vec3i
+  *  net.minecraft.world.World
+  *  net.minecraftforge.client.model.animation.FastTESR
+  *  net.minecraftforge.fml.relauncher.Side
+@@ -34,7 +33,6 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
+ import net.minecraft.tileentity.TileEntity;
+ import net.minecraft.util.math.BlockPos;
+ import net.minecraft.util.math.Vec3d;
+-import net.minecraft.util.math.Vec3i;
+ import net.minecraft.world.World;
+ import net.minecraftforge.client.model.animation.FastTESR;
+ import net.minecraftforge.fml.relauncher.Side;
+@@ -86,25 +84,27 @@ extends FastTESR<TileEntityImmersiveConnectable> {
+             double vMax = sprite.func_94210_h();
+             boolean vertical = connection.end.func_177958_n() == connection.start.func_177958_n() && connection.end.func_177952_p() == connection.start.func_177952_p();
+             boolean runBackwards = dx < 0.0 && dz <= 0.0 || dz < 0.0 && dx <= 0.0 || dz < 0.0 && dx > 0.0;
+-            Vec3d tilePosVec = new Vec3d((Vec3i)((TileEntity)start).func_174877_v());
++            int bright = 0xF000F0;
++            int bX = bright >> 16 & 0xFFFF;
++            int bY = bright & 0xFFFF;
+             if (vertical) {
+                 buffer.func_178969_c(tilePos.field_72450_a + initPos.field_72450_a, tilePos.field_72448_b + initPos.field_72448_b, tilePos.field_72449_c + initPos.field_72449_c);
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0 - radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx - radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx + radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0 + radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx - radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0 - radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0 + radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx + radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0, 0.0, 0.0 - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx, dy, dz - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx, dy, dz + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0, 0.0, 0.0 + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx, dy, dz - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0, 0.0, 0.0 - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(0.0, 0.0, 0.0 + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), tilePosVec).func_181675_d();
+-                RenderTileIWConnectable.setLightmap(buffer.func_181662_b(dx, dy, dz + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), tilePosVec).func_181675_d();
++                buffer.func_181662_b(0.0 - radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx - radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx + radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0 + radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx - radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0 - radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0 + radius, 0.0, 0.0).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx + radius, dy, dz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0, 0.0, 0.0 - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx, dy, dz - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx, dy, dz + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0, 0.0, 0.0 + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx, dy, dz - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0, 0.0, 0.0 - radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(0.0, 0.0, 0.0 + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                buffer.func_181662_b(dx, dy, dz + radius).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
+                 buffer.func_178969_c(0.0, 0.0, 0.0);
+             } else {
+                 int i;
+@@ -113,24 +113,22 @@ extends FastTESR<TileEntityImmersiveConnectable> {
+                     Vec3d v0 = i > 0 ? vertex[i - 1] : initPos;
+                     Vec3d v1 = vertex[i];
+                     buffer.func_178969_c(tilePos.field_72450_a, tilePos.field_72448_b, tilePos.field_72449_c);
+-                    Vec3d shiftV0 = v0.func_178787_e(tilePosVec);
+-                    Vec3d shiftV1 = v1.func_178787_e(tilePosVec);
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b + radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b + radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b - radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b - radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b + radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b + radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b - radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b - radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a - radius * rmodx, v0.field_72448_b, v0.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a - radius * rmodx, v1.field_72448_b, v1.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a + radius * rmodx, v1.field_72448_b, v1.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a + radius * rmodx, v0.field_72448_b, v0.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a - radius * rmodx, v1.field_72448_b, v1.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax), shiftV1).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a - radius * rmodx, v0.field_72448_b, v0.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v0.field_72450_a + radius * rmodx, v0.field_72448_b, v0.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin), shiftV0).func_181675_d();
+-                    RenderTileIWConnectable.setLightmap(buffer.func_181662_b(v1.field_72450_a + radius * rmodx, v1.field_72448_b, v1.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin), shiftV1).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b + radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b + radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b - radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b - radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b + radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b + radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a, v0.field_72448_b - radius, v0.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a, v1.field_72448_b - radius, v1.field_72449_c).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a - radius * rmodx, v0.field_72448_b, v0.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a - radius * rmodx, v1.field_72448_b, v1.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a + radius * rmodx, v1.field_72448_b, v1.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a + radius * rmodx, v0.field_72448_b, v0.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a - radius * rmodx, v1.field_72448_b, v1.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a - radius * rmodx, v0.field_72448_b, v0.field_72449_c + radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMax).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v0.field_72450_a + radius * rmodx, v0.field_72448_b, v0.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMax, vMin).func_187314_a(bX, bY).func_181675_d();
++                    buffer.func_181662_b(v1.field_72450_a + radius * rmodx, v1.field_72448_b, v1.field_72449_c - radius * rmodz).func_181669_b(rgba[0], rgba[1], rgba[2], rgba[3]).func_187315_a(uMin, vMin).func_187314_a(bX, bY).func_181675_d();
+                     buffer.func_178969_c(0.0, 0.0, 0.0);
+                     i += runBackwards ? -1 : 1;
+                 }
