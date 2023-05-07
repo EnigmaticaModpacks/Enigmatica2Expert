@@ -214,7 +214,6 @@ q.animals.prime_meat.name=Prime meat
 q.animals.prime_meat.desc=Prime species in animania give prime meat
 q.animals.dragon_egg.name=Dragon Egg
 q.animals.dragon_egg.desc=Dragon Eggs are placeable entities that turn into baby dragons; they are a drop from stage 4-5 female dragons, used to hatch tamed baby dragons.
-q.animals.ocarina.desc=Sneak-right-click the Ocarina on an eligible entity will claim it. Repeating this will unclaim it; doing this to another entity will unclaim the original entity before claiming the new one.\n\nRight-clicking again at any time will attempt to summon the entity to you, even if that entity happens to be in an unloaded chunk.
 q.animals.iron_golem.name=Iron Golem
 q.animals.iron_golem.desc=When the §nIron Golem§r kills someone, it gets a §6buff§r for 1 minute.\n\nWhen it kills again without stopping, it gains the §6next§r level of the buff or another buff.\n\nWhen a golem reaches ~20 level it becomes a §dBlight§r.
 q.animals.dreadwood.name=Dreadwood

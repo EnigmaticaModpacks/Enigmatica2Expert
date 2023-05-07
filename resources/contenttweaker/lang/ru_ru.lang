@@ -858,7 +858,6 @@ tile.deepmoblearning.trial_keystone.name=Пробный ключ
 tile.demagnetize.demagnetizer.name=Размагничиватель
 tile.demagnetize.demagnetizer_advanced.name=Расширенный размагничиватель
 tile.draconicevolution:item_dislocation_inhibitor.name=Проектор поля нормализации дислокаций
-item.dwmh.ocarina.name=Окарина
 tile.block_alloy.construction_alloy.name=Блок из железного сплава
 tile.block_alloy_endergy.crude_steel.name=Блок сырой стали
 tile.block_alloy_endergy.crystalline_alloy.name=Блок кристаллического сплава

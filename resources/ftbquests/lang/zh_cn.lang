@@ -214,7 +214,6 @@ q.animals.prime_meat.name=数一数二的肉
 q.animals.prime_meat.desc=动物谷的一些优秀品种能够产出优秀的肉。
 q.animals.dragon_egg.name=龙蛋
 q.animals.dragon_egg.desc=龙蛋可以放下，能够孵化出幼龙。4-5阶母龙可能掉落龙蛋。
-q.animals.ocarina.desc=对恰当的实体潜行右键可以指定它，再做一次会解除指定；对其他实体操作会在指定它之前先取消指定当前目标。\n\n任意时刻右键，会尝试将实体召唤到你身边，即使实体恰好位于未加载的区块中。
 q.animals.iron_golem.name=铁甲虫
 q.animals.iron_golem.desc=当铁甲虫杀了人，它就会得到一个1分钟的BUFF。当它再次不停地杀人，它就会得到下一级的BUFF或另一个BUFF。
 q.animals.dreadwood.name=悚木
