@@ -15,7 +15,7 @@ _.chunk(loadText('hei_bookmarks.ini')
   .match(/id:"opencomputers:storage"[^\n]+?"oc:eeprom":\[B;([-\dB,]+)\]/m)
   ?.[1].replace(/B/gi, '').split(','), 16).map(l => l.map(s => `${s.padStart(4)},`)).map((l, i) => [
   `/*${String(i * 16).padStart(4)}*`+'/ ', ...l, ...(l.length < 16 ? new Array(16 - l.length).fill('') : []),
-])
+])||cmd.block
 )*/
 /*   0*/  108, 111,  99,  97, 108,  32, 105,  61,  91,  91,  10, -92, 108, 111,  99,  97,
 /*  16*/  108,  32,  65,  44,  67,  44,  69,  44,  74,  44,  75,  44,  76,  44,  77,  44,
