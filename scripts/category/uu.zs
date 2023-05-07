@@ -1034,7 +1034,6 @@ static values as int[int][string] = {
   "ic2:energy_crystal": { 0: 7348 },
   "actuallyadditions:block_atomic_reconstructor": { 0: 7441 },
   "avaritia:resource": {
-    0: 7500,
     1: 341204,
     4: 69020,
     5: 366603082,

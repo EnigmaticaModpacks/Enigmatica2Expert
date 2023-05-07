@@ -46,6 +46,7 @@ utils.rh(<openblocks:cursor>);
 utils.rh(<actuallyadditions:item_misc:17>);
 utils.rh(<avaritia:compressed_crafting_table>);
 utils.rh(<avaritia:double_compressed_crafting_table>);
+utils.rh(<avaritia:resource>); # Diamond Lattice
 
 # Purge saltpeter and sulfur
 utils.rh(<bloodmagic:component:24>);

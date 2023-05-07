@@ -120,7 +120,7 @@
 	<Recipe timeRequired="20" power="100000">
 		<input>
 			<oreDict>netherStar 1</oreDict>
-			<itemStack>avaritia:resource 1</itemStack>
+			<oreDict>gemDilithium 1</oreDict>
 		</input>
 		<output>
 			<itemStack>avaritia:resource 1 1</itemStack>
