@@ -21,6 +21,7 @@ for item in [
   <actuallyadditions:block_farmer>,
   <advgenerators:gas_input>,
   <ae2stuff:visualiser>,
+  <bibliocraft:fancysign>,
   <bloodmagic:blood_rune:1>,
   <bloodmagic:blood_rune:3>,
   <bloodmagic:blood_rune:4>,
