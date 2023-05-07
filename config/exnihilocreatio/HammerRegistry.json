@@ -277,5 +277,14 @@
       "chance": 1.0,
       "fortuneChance": 0.0
     }
+  ],
+  "tconstruct:dried_clay": [
+    {
+      "item": "cyclicmagic:stone_pebble:0",
+      "amount": 12,
+      "miningLevel": 1,
+      "chance": 1.0,
+      "fortuneChance": 1.0
+    }
   ]
 }

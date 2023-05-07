@@ -2,7 +2,7 @@
 	x: -16.666666666666668d,
 	y: 15.5d,
 	text: [
-		"{q.utils.dehydrator.desc}"
+		"{q.utils.drying_rack.desc}"
 	],
 	dependencies: [
 		"a6d357d3",
@@ -12,8 +12,17 @@
 		uid: "21e6fd58",
 		type: "item",
 		items: [{
-			item: "cyclicmagic:dehydrator"
+			id: "tconstruct:rack",
+			Damage: 1s,
+			tag: {
+				textureBlock: {
+					id: "minecraft:wooden_slab",
+					Count: 1,
+					Damage: 0s
+				}
+			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

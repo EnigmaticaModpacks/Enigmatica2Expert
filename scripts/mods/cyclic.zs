@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.cyclicmagic.Hydrator;  
-import mods.cyclicmagic.Solidifier;  
-import mods.cyclicmagic.Dehydrator;
+import mods.cyclicmagic.Solidifier;
 import crafttweaker.data.IData;
 #modloaded cyclicmagic
 
@@ -275,30 +274,10 @@ for i in 0 .. 16 {
 
 Hydrator.removeShapedRecipe(<minecraft:wool>);
 
-/*
-
-  🌢 Dehydrator
-
-*/
-
-# Bug: Dehydrator always output only 100mb of water
-// Dehydrator.addRecipe(<ae2fc:fluid_drop>.withTag({Fluid: "water"}), <mysticalagriculture:water_essence>, 250);
-
-// Terracotta
-Dehydrator.removeShapedRecipe(<minecraft:hardened_clay>);
-
-# Remove default useless concrete recipes
-for i in 0 .. 16 {
-  Dehydrator.removeShapedRecipe(<minecraft:concrete_powder>.definition.makeStack(i));
-}
+# Dehydrator replace
+mods.tconstruct.Drying.addRecipe(<cyclicmagic:stone_pebble>, <ore:ballMud>, 100);
 
 recipes.remove(<cyclicmagic:stone_pebble>);
-Dehydrator.addRecipe(<cyclicmagic:stone_pebble>, <biomesoplenty:mudball>, 100);
-
-# Fast dryed clay
-Dehydrator.addRecipe(<tconstruct:materials:2>, <minecraft:clay_ball> * 2, 100);
-Dehydrator.addRecipe(<tconstruct:dried_clay>, <minecraft:clay> * 2, 100);
-
 
 /*
 
@@ -375,9 +354,6 @@ craft.remake(<cyclicmagic:plate_push> * 8, ["pretty",
 # Remove because transcended by Conarm modifiers
 utils.rh(<cyclicmagic:glowing_helmet>);
 
-# Remove since causing XP dupes in different ways
-utils.rh(<cyclicmagic:exp_pylon>);
-
 # [Empty Sack of Holding] from [Propolis][+2]
 craft.remake(<cyclicmagic:chest_sack_empty>, ["pretty",
   "  s  ",
@@ -437,16 +413,6 @@ craft.remake(<cyclicmagic:corrupted_chorus> * 16, ["pretty",
   "  T  "], {
   "T": <mysticalagriculture:slime_essence>,     # Slime Essence
   "i": <mysticalagriculture:draconium_essence>, # Draconium Essence
-});
-
-# [Dehydrator] from [Iron Rod][+2]
-craft.remake(<cyclicmagic:dehydrator>, ["pretty",
-  "c   c",
-  "c / c",
-  "# # #"], {
-  "c": <ore:clay>, # Clay
-  "/": <quark:iron_rod>, # Iron Rod
-  "#": <ore:plankWood>, # Oak Wood Planks
 });
 
 # [Magic Bean]*4 from [Pebble]*2[+7]
