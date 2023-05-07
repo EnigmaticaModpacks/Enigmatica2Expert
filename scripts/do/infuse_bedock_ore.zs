@@ -1,7 +1,12 @@
-import crafttweaker.entity.IEntityItem;
-import crafttweaker.world.IFacing;
+import crafttweaker.block.IBlock;
 import crafttweaker.block.IBlockState;
+import crafttweaker.data.IData;
+import crafttweaker.entity.IEntityItem;
 import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
 
 #loader crafttweaker reloadable
 #modloaded bedrockores
@@ -9,23 +14,20 @@ import crafttweaker.item.IItemStack;
 recipes.removeByRecipeName("mysticalagriculture:ingotosmium");
 
 # Item and respective block
-static customRecipes as IBlockState[IItemStack][string] = {
-  'mysticalagriculture:osmium_essence' : { <mekanism:oreblock> : <blockstate:mekanism:oreblock:type=osmium> },
-} as IBlockState[IItemStack][string];
+static customRecipes as IItemStack[string] = {
+  'mysticalagriculture:osmium_essence' : <mekanism:oreblock>,
+} as IItemStack[string];
 
-for itemId, tuple in customRecipes {
-  for block, state in tuple {
-    val item = itemUtils.getItem(itemId);
-    scripts.lib.tooltip.desc.both(
-      item,
-      "tooltips.lang.infuse_bedrock",
-      item.displayName,
-      <minecraft:bedrock>.displayName
-    );
-    scripts.jei.crafting_hints.addInsOutCatl([item], block, <minecraft:bedrock>);
-  }
+for itemId, block in customRecipes {
+  val item = itemUtils.getItem(itemId);
+  scripts.lib.tooltip.desc.both(
+    item,
+    "tooltips.lang.infuse_bedrock",
+    item.displayName,
+    <minecraft:bedrock>.displayName
+  );
+  scripts.jei.crafting_hints.addInsOutCatl([item], block, <minecraft:bedrock>);
 }
-
 
 events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent){
   val world = e.world;
@@ -34,29 +36,42 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
   val item = e.item;
   if (isNull(item) || item.amount < 1) return;
 
-  val block = e.block;
-  if(block.definition.id != 'minecraft:bedrock') return;
+  var isInit = false;
+  var isAdd = false;
+       if(e.block.definition.id == 'minecraft:bedrock') isInit = true;
+  else if(e.block.definition.id == 'bedrockores:bedrock_ore') isAdd = true;
+  else return;
 
-  val tuple = customRecipes[item.definition.id];
-  if (isNull(tuple)) return;
+  val resultBlock = customRecipes[item.definition.id];
+  if (isNull(resultBlock)) return;
 
-  var state as IBlockState = null;
-  for _, _state in tuple { state = _state; }
+  val resultId = resultBlock.asBlock().definition.numericalId;
+  if(isAdd && (
+    isNull(e.block.data)
+    || isNull(e.block.data.oreId)
+    || isNull(e.block.data.oreMeta)
+    || isNull(e.block.data.amount)
+    || resultId != e.block.data.oreId.asInt()
+    || resultBlock.damage != e.block.data.oreMeta.asInt()
+  )) return;
 
   if(world.remote) {
     world.playSound("thaumcraft:poof", "ambient", e.position.getOffset(crafttweaker.world.IFacing.up(), 1), 0.5f, 0.2f);
     return;
   }
 
-  world.destroyBlock(e.position, false);
-  world.setBlockState(state, e.position);
+  val oldData = world.getBlock(e.position).data;
+  var totalAmount = isAdd ? e.block.data.amount.asInt() : 0;
+  if(isInit) {
+    world.destroyBlock(e.position, false);
+  }
+
+  val newData = {
+    amount : totalAmount + item.amount,
+    oreMeta: resultBlock.damage,
+    oreId  : resultId,
+  } as IData;
+  world.setBlockState(<blockstate:bedrockores:bedrock_ore>, isNull(oldData) ? newData : oldData + newData, e.position);
   item.mutable().shrink(item.amount);
-
-  // To call a command in a certain world, we have to call it on behalf of ICommandSender.
-  // But, the commands will only work if the player has OP permissions.
-  // So we will create an object which is ICommandSender and has OP permissions.
-  val commandSender = <minecraft:dirt>.createEntityItem(world, e.x, e.y, e.z);
-  server.commandManager.executeCommandSilent(commandSender, "/bedrockores wrap "~item.amount~" "~e.x~" "~e.y~" "~e.z);
-  server.commandManager.executeCommandSilent(commandSender, "/particle fireworksSpark "~e.x~" "~(e.y+1.0)~" "~e.z~" 0.1 0 0.1 0.01 10");
+  mods.contenttweaker.Commands.call("/particle fireworksSpark "~e.x~" "~(e.y+1.0)~" "~e.z~" 0.1 0 0.1 0.01 10", e.player, world, false, true);
 });
-
