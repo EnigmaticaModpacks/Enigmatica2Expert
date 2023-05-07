@@ -108,11 +108,6 @@
 		count: 32
 	},
 	{
-		icon: "rustic:vase 8",
-		item: "rustic:vase",
-		count: 8
-	},
-	{
 		icon: "tconstruct:throwball 16",
 		item: "tconstruct:throwball",
 		count: 16

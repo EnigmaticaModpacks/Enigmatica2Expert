@@ -108,3 +108,11 @@ recipes.addShapeless(<rustic:chili_pepper_seeds>, [<rustic:chili_pepper>]);
 // Remove useless seed from grass drop
 vanilla.seeds.removeSeed(<rustic:tomato_seeds>);
 vanilla.seeds.removeSeed(<rustic:chili_pepper_seeds>);
+
+# [Pot] from [White Glazed Terracotta]
+craft.remake(<rustic:vase>, ["pretty",
+  "  W  ",
+  "W   W",
+  "W W W"], {
+  "W": <ore:terracottaGlazed>,
+});
