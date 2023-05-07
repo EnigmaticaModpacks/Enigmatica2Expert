@@ -160,9 +160,9 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Machine Frame] -->
-	<Recipe timeRequired="160" power="640000">
+	<Recipe timeRequired="20" power="80000">
 		<input>
-			<oreDict>blockOsmium 32</oreDict>
+			<oreDict>blockOsmium 4</oreDict>
 			<itemStack>advancedrocketry:basalt 4</itemStack>
 			<itemStack>rftools:machine_frame 4</itemStack>
 			<itemStack>thermalexpansion:frame 4 64</itemStack>
@@ -172,12 +172,12 @@
 			<fluidStack>glass 24000</fluidStack>
 		</input>
 		<output>
-			<itemStack>thermalexpansion:frame 64 0</itemStack>
+			<itemStack>thermalexpansion:frame 8 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Resonant Cell Frame (Empty)] -->
-	<Recipe timeRequired="160" power="640000">
+	<Recipe timeRequired="20" power="80000">
 		<input>
 			<itemStack>thermalfoundation:material 4 166</itemStack>
 			<itemStack>actuallyadditions:block_misc 4 8</itemStack>
@@ -276,16 +276,16 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Wyvern Core] -->
-	<Recipe timeRequired="10" power="40000">
+	<Recipe timeRequired="5" power="20000">
 		<input>
-			<itemStack>draconicevolution:draconic_core 4</itemStack>
-			<itemStack>minecraft:sponge 2</itemStack>
-			<oreDict>ingotVividAlloy 2</oreDict>
-			<itemStack>environmentaltech:pladium 2</itemStack>
-			<fluidStack>ic2hot_coolant 4000</fluidStack>
+			<itemStack>draconicevolution:draconic_core 2</itemStack>
+			<itemStack>minecraft:sponge 1</itemStack>
+			<oreDict>ingotVividAlloy 1</oreDict>
+			<itemStack>environmentaltech:pladium 1</itemStack>
+			<fluidStack>ic2hot_coolant 2000</fluidStack>
 		</input>
 		<output>
-			<itemStack>draconicevolution:wyvern_core 2 0</itemStack>
+			<itemStack>draconicevolution:wyvern_core 1 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -359,7 +359,7 @@
 		<input>
 			<oreDict>ingotTin 64</oreDict>
 			<oreDict>gearCopper 32</oreDict>
-			<itemStack>forestry:wax_cast</itemStack>
+			<itemStack>forestry:wax_cast 1</itemStack>
 			<fluidStack>glass 32000</fluidStack>
 		</input>
 		<output>
@@ -398,7 +398,7 @@
 		<input>
 			<oreDict>dustIron 10</oreDict>
 			<oreDict>dyeGreen 10</oreDict>
-			<itemStack>forestry:wax_cast</itemStack>
+			<itemStack>forestry:wax_cast 1</itemStack>
 			<fluidStack>glass 10000</fluidStack>
 		</input>
 		<output>
@@ -990,13 +990,13 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Ender Electron Tube] -->
-	<Recipe timeRequired="80" power="320000">
+	<Recipe timeRequired="5" power="20000">
 		<input>
-			<oreDict>oc:stoneEndstone 48</oreDict>
-			<fluidStack>glass 8000</fluidStack>
+			<oreDict>oc:stoneEndstone 3</oreDict>
+			<fluidStack>glass 500</fluidStack>
 		</input>
 		<output>
-			<itemStack>forestry:thermionic_tubes 64 12</itemStack>
+			<itemStack>forestry:thermionic_tubes 4 12</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -1196,22 +1196,22 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Pickaxe Kit] -->
-	<Recipe timeRequired="160" power="640000">
+	<Recipe timeRequired="5" power="20000">
 		<input>
-			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>ingotBronze 2</oreDict>
 		</input>
 		<output>
-			<itemStack>forestry:kit_pickaxe 32 0</itemStack>
+			<itemStack>forestry:kit_pickaxe 1 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Shovel Kit] -->
-	<Recipe timeRequired="320" power="1280000">
+	<Recipe timeRequired="5" power="20000">
 		<input>
-			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>ingotBronze 1</oreDict>
 		</input>
 		<output>
-			<itemStack>forestry:kit_shovel 64 0</itemStack>
+			<itemStack>forestry:kit_shovel 1 0</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

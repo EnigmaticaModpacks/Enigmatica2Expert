@@ -105,7 +105,7 @@ craft.make(<thermalexpansion:frame:130>, ["pretty",
 	scripts.mods.forestry.ThermionicFabricator.addCast(<thermalexpansion:frame:132>, 
 	[[<thermalfoundation:material:166>, <actuallyadditions:block_misc:8>, <thermalfoundation:material:166>],
 	[<thermalfoundation:glass_alloy:7>, <thermalexpansion:frame:147>, <thermalfoundation:glass_alloy:7>],
-	[<thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>]], <liquid:glass> * 4000);
+	[<thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>]], <liquid:glass> * 4000, null, 4);
 
 # Resonant Cell Frame (Full)
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<thermalexpansion:frame:148>, 
@@ -169,7 +169,7 @@ craft.remake(<thermalfoundation:material:1028> * 2, ["pretty",
 			"*": <actuallyadditions:block_crystal:3>,        # Void Crystal Block
 			"▄": <immersiveengineering:metal_decoration0:5>, # Heavy Engineering Block
 		}).shaped(), 
-	<liquid:glass> * 6000);
+	<liquid:glass> * 6000, null, 4);
 	
 # Removing craftable Bronze 
 	recipes.removeShapeless(<thermalfoundation:material:163> * 4, 
@@ -307,6 +307,8 @@ function reworkClathrate(ore as IItemStack, crystal as IItemStack, dust as IItem
 reworkClathrate(<thermalfoundation:ore_fluid:2>, <thermalfoundation:material:893>, <thermalfoundation:material:101>, <liquid:redstone> * 1000);
 reworkClathrate(<thermalfoundation:ore_fluid:3>, <thermalfoundation:material:894>, <thermalfoundation:material:102>, <liquid:glowstone> * 2500);
 reworkClathrate(<thermalfoundation:ore_fluid:4>, <thermalfoundation:material:895>, <thermalfoundation:material:103>, <liquid:ender> * 2500);
+
+recipes.addShapeless('Carminite cheap recipe', <twilightforest:carminite> * 2, [<twilightforest:borer_essence>, <ore:clathrateRedstone>]);
 
 #####################################
 

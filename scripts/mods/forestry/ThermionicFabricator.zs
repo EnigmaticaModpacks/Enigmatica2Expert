@@ -16,21 +16,23 @@ function addAltRecipe(
   output as IItemStack,
   ingredients as IIngredient[][],
   fluidInput as ILiquidStack = null,
-  box as IItemStack = null
+  box as IItemStack = null,
+  altMaxMult as int = 64
 ) as void {
-  scripts.processUtils.avdRockXmlRecipeFlatten("PrecisionAssembler", output, ingredients, fluidInput, box);
+  scripts.processUtils.avdRockXmlRecipeFlatten("PrecisionAssembler", output, ingredients, fluidInput, box, altMaxMult);
 }
 
 function addCast(
   output as IItemStack,
   ingredients as IIngredient[][],
   fluidInput as ILiquidStack = null,
-  box as IItemStack = null
+  box as IItemStack = null,
+  altMaxMult as int = 64
 ) as void {
   //mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
   mods.forestry.ThermionicFabricator.addCast(output, ingredients, fluidInput, box);
   if (!utils.DEBUG) return;
-  addAltRecipe(output, ingredients, fluidInput, box);
+  addAltRecipe(output, ingredients, fluidInput, box, altMaxMult);
 }
 
 # [Ender Electron Tube]*4 from [Pipette][+2]
