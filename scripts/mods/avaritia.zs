@@ -79,7 +79,7 @@ craft.make(<avaritia:endest_pearl>, ["pretty",
   "P": <deepmoblearning:pristine_matter_enderman>, # Pristine Enderman Matter
   "⌂": <actuallyadditions:block_misc:8>,           # Ender Casing
   "D": <minecraft:dragon_breath>,                  # Dragon's Breath
-  "E": <cyclicmagic:exp_pylon>,                    # Experience Pylon
+  "E": <darkutils:monolith>,
   "▬": <ore:ingotEndorium>,                        # Endorium Ingot
   "-": <ore:ingotEndSteel>,                        # End Steel Ingot
 });

@@ -332,7 +332,7 @@ craft.remake(<randomthings:naturecore>, ["pretty",
   "# § #"], {
   "#": <twilightforest:twilight_log:*>,
   "§": <randomthings:slimecube>,     # Slime Cube
-  "E": <cyclicmagic:exp_pylon>,      # Experience Pylon
+  "E": <darkutils:monolith>,
 });
 
 # Cheaper (used ender pearl)
@@ -552,3 +552,13 @@ scripts.mods.forestry.ThermionicFabricator.addCast(<randomthings:biomeglass> * 8
   "*": <actuallyadditions:block_crystal_empowered:1>, # Empowered Palis Crystal Block
   "▬": <ore:ingotPlatinum>,        # Platinum Ingot
 }).shaped(), <fluid:glass> * 4000);
+
+# Cheaper to use as ingredient
+craft.remake(<darkutils:monolith>, ["pretty",
+  "S ▲ S",
+  "S M S",
+  "S ▲ S"], {
+  "▲": <ore:dustEmerald>,         # Crushed Emerald
+  "S": <ore:itemXP>, # Solidified Experience
+  "M": <tconstruct:materials:19>, # Mending Moss
+});

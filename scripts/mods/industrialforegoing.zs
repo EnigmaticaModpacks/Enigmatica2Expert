@@ -303,7 +303,7 @@ craft.remake(<industrialforegoing:enchantment_invoker>, ["pretty",
   "R": <industrialforegoing:plastic>, # Plastic
   "B": <teslacorelib:base_addon>,   # Base Addon
   "¤": <ore:gearMithril>,           # Mana Infused Gear
-  "E": <cyclicmagic:exp_pylon>,     # Experience Pylon
+  "E": <darkutils:monolith>,
   "u": scripts.mods.bibliocraft_books.bookWrittenBy_ingr["Cow"],
   "M": <teslacorelib:machine_case>, # Machine Case
 });
@@ -316,7 +316,7 @@ craft.remake(<industrialforegoing:enchantment_extractor>, ["pretty",
   "R": <industrialforegoing:plastic>, # Plastic
   "B": scripts.mods.bibliocraft_books.bookWrittenBy_ingr["Cow"],
   "¤": <ore:gearPlatinum>,          # Platinum Gear
-  "E": <cyclicmagic:exp_pylon>,     # Experience Pylon
+  "E": <darkutils:monolith>,
   "M": <teslacorelib:machine_case>, # Machine Case
   "n": <thaumcraft:fabric:*>,       # Enchanted Fabric
 });

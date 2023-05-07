@@ -105,7 +105,7 @@ craft.remake(<actuallyadditions:item_mining_lens>, ["pretty",
   "E L E",
   "* D *"], {
   "*": <actuallyadditions:block_crystal:3>, # Void Crystal Block
-  "E": <cyclicmagic:exp_pylon>,             # Experience Pylon
+  "E": <darkutils:monolith>,
   "L": <actuallyadditions:item_color_lens>, # Lens of Color
   "D": <actuallyadditions:item_drill:*>,    # Drill
 });

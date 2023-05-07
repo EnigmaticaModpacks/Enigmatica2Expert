@@ -375,15 +375,8 @@ craft.remake(<cyclicmagic:plate_push> * 8, ["pretty",
 # Remove because transcended by Conarm modifiers
 utils.rh(<cyclicmagic:glowing_helmet>);
 
-# [Experience Pylon] from [Mending Moss][+2]
-craft.remake(<cyclicmagic:exp_pylon>, ["pretty",
-  "S ▲ S",
-  "S M S",
-  "S ▲ S"], {
-  "▲": <ore:dustEmerald>,         # Crushed Emerald
-  "S": <ore:itemXP>, # Solidified Experience
-  "M": <tconstruct:materials:19>, # Mending Moss
-});
+# Remove since causing XP dupes in different ways
+utils.rh(<cyclicmagic:exp_pylon>);
 
 # [Empty Sack of Holding] from [Propolis][+2]
 craft.remake(<cyclicmagic:chest_sack_empty>, ["pretty",
