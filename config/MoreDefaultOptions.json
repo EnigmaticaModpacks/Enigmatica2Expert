@@ -63,6 +63,6 @@
     "sourceFilePath": "ranks.txt",
     "destinationFilePath": "local/ftbutilities/ranks.txt",
     "clientSide": true,
-    "serverSide": false
+    "serverSide": true
   }
 ]
