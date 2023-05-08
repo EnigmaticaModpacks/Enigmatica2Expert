@@ -542,13 +542,6 @@ val nuclearData = {
   }
 } as int[string][string];
 
-function get(mod as string, pfx as string, key as string, i as int) as IItemStack {
-  val j = i * (pfx==''?5:pfx.endsWith('fuel_')?4:2);
-  val item = itemUtils.getItem(mod+':'+pfx+key, j);
-  if(isNull(item)) print('~~ this item doesnt exist: '+mod+':'+key+':'+j);
-  return item;
-}
-
 for mod, types in nuclearData {
   for key, value in types {
     for i in 0 .. value {
