@@ -20,7 +20,7 @@ val worldItem as IItemStack[int] = {
 
 /*Inject_js(
 JSON.parse(loadText('config/exnihilocreatio/ScentedHiveRegistry.json'))
-.map(l=>`addRecipe(x, {[worldItem[${l.dim}], ${'<exnihilocreatio:hive:1>'}, ${
+.map(l=>`addRecipe(x, {[<exnihilocreatio:hive:1>, ${
   Object.keys(l.adjacentBlocks).map(i=>`<${i}>`).join(', ')
 }] : [<${l.hive}>]});`)
 .join('\n')

@@ -140,13 +140,18 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 888
-# Filtered by JEI blacklist: 40
+# Total Furnace recipes registered: 958
+# Filtered by JEI blacklist: 102
 # Filtered manuallly (antidupe): 15
 # Filtered by oredict: 177
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
+#infinFurnace(utils.get("actuallyadditions:item_dust", 1), utils.get("minecraft:gold_ingot"));
+#infinFurnace(utils.get("actuallyadditions:item_dust", 2), utils.get("minecraft:diamond"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 3), utils.get("minecraft:emerald"));
+#infinFurnace(utils.get("actuallyadditions:item_dust", 4), utils.get("minecraft:dye", 4));
+#infinFurnace(utils.get("actuallyadditions:item_dust", 6), utils.get("minecraft:coal"));
 ##infinFurnace(utils.get("actuallyadditions:item_dust", 7), utils.get("actuallyadditions:item_misc", 5));
+#infinFurnace(utils.get("actuallyadditions:item_dust"), utils.get("minecraft:iron_ingot"));
 infinFurnace(utils.get("actuallyadditions:item_misc", 4), utils.get("actuallyadditions:item_food", 15));
 infinFurnace(utils.get("actuallyadditions:item_misc", 9), utils.get("actuallyadditions:item_food", 17));
 infinFurnace(utils.get("actuallyadditions:item_misc", 20), utils.get("minecraft:iron_ingot", 0, 2));
@@ -226,11 +231,32 @@ infinFurnace(utils.get("draconicevolution:draconium_ore", W), utils.get("draconi
 ##infinFurnace(utils.get("enderio:item_material", 25), utils.get("minecraft:gold_ingot"));
 #infinFurnace(utils.get("enderio:item_material", 26), utils.get("thermalfoundation:material", 128));
 #infinFurnace(utils.get("enderio:item_material", 27), utils.get("thermalfoundation:material", 129));
+#infinFurnace(utils.get("enderio:item_material", 30), utils.get("tconstruct:ingots", 1));
+#infinFurnace(utils.get("enderio:item_material", 31), utils.get("tconstruct:ingots"));
 ##infinFurnace(utils.get("enderio:item_material", 74), utils.get("enderio:item_alloy_ingot", 7));
+#infinFurnace(utils.get("enderio:item_owl_egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("endreborn:block_wolframium_ore", W), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("exnihilocreatio:item_material", 2), utils.get("exnihilocreatio:item_cooked_silkworm"));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_aluminium", 1), utils.get("thermalfoundation:material", 132));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_aluminium", 2), utils.get("thermalfoundation:material", 132));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_ardite", 1), utils.get("tconstruct:ingots", 1));
 ##infinFurnace(utils.get("exnihilocreatio:item_ore_ardite", 2), utils.get("tconstruct:ingots", 1));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_cobalt", 1), utils.get("tconstruct:ingots"));
 ##infinFurnace(utils.get("exnihilocreatio:item_ore_cobalt", 2), utils.get("tconstruct:ingots"));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_copper", 1), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_copper", 2), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_gold", 1), utils.get("minecraft:gold_ingot"));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_gold", 2), utils.get("minecraft:gold_ingot"));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_iron", 1), utils.get("minecraft:iron_ingot"));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_iron", 2), utils.get("minecraft:iron_ingot"));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_lead", 1), utils.get("thermalfoundation:material", 131));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_lead", 2), utils.get("thermalfoundation:material", 131));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_nickel", 1), utils.get("thermalfoundation:material", 133));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_nickel", 2), utils.get("thermalfoundation:material", 133));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_silver", 1), utils.get("thermalfoundation:material", 130));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_silver", 2), utils.get("thermalfoundation:material", 130));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_tin", 1), utils.get("thermalfoundation:material", 129));
+#infinFurnace(utils.get("exnihilocreatio:item_ore_tin", 2), utils.get("thermalfoundation:material", 129));
 infinFurnace(utils.get("extrautils2:decorativesolid", 4), utils.get("extrautils2:decorativeglass"));
 ##infinFurnace(utils.get("extrautils2:ironwood_log", W), utils.get("minecraft:coal", 1));
 infinFurnace(utils.get("forestry:ash"), utils.get("tconstruct:materials"));
@@ -299,8 +325,12 @@ infinFurnace(utils.get("ic2:crushed", 5), utils.get("thermalfoundation:material"
 infinFurnace(utils.get("ic2:crushed", 6), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("ic2:crushed"), utils.get("thermalfoundation:material", 128));
 //infinFurnace(utils.get("ic2:dust", 3), utils.get("thermalfoundation:material", 768));
+#infinFurnace(utils.get("ic2:dust", 4), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("ic2:dust", 7), utils.get("minecraft:gold_ingot"));
 ##infinFurnace(utils.get("ic2:dust", 11), utils.get("nuclearcraft:ingot", 6));
+#infinFurnace(utils.get("ic2:dust", 14), utils.get("thermalfoundation:material", 130));
 infinFurnace(utils.get("ic2:dust", 15), utils.get("tconstruct:materials"));
+#infinFurnace(utils.get("ic2:dust", 17), utils.get("thermalfoundation:material", 129));
 infinFurnace(utils.get("ic2:misc_resource", 4), utils.get("ic2:crafting"));
 infinFurnace(utils.get("ic2:mug", 1), utils.get("ic2:mug", 2));
 infinFurnace(utils.get("ic2:purified", 1), utils.get("minecraft:gold_ingot"));
@@ -567,6 +597,19 @@ infinFurnace(utils.get("jaopca:item_dustalchtopaz"), utils.get("jaopca:item_dirt
 infinFurnace(utils.get("jaopca:item_dustalchtungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 48));
 ##infinFurnace(utils.get("jaopca:item_dustapatite"), utils.get("forestry:apatite"));
+#infinFurnace(utils.get("jaopca:item_hunkastralstarmetal"), utils.get("astralsorcery:itemcraftingcomponent", 1));
+#infinFurnace(utils.get("jaopca:item_hunkboron"), utils.get("nuclearcraft:ingot", 5));
+#infinFurnace(utils.get("jaopca:item_hunkdraconium"), utils.get("draconicevolution:draconium_ingot"));
+#infinFurnace(utils.get("jaopca:item_hunkiridium"), utils.get("thermalfoundation:material", 135));
+#infinFurnace(utils.get("jaopca:item_hunklithium"), utils.get("nuclearcraft:ingot", 6));
+#infinFurnace(utils.get("jaopca:item_hunkmagnesium"), utils.get("nuclearcraft:ingot", 7));
+#infinFurnace(utils.get("jaopca:item_hunkmithril"), utils.get("thermalfoundation:material", 136));
+#infinFurnace(utils.get("jaopca:item_hunkosmium"), utils.get("mekanism:ingot", 1));
+#infinFurnace(utils.get("jaopca:item_hunkplatinum"), utils.get("thermalfoundation:material", 134));
+#infinFurnace(utils.get("jaopca:item_hunkthorium"), utils.get("nuclearcraft:ingot", 3));
+#infinFurnace(utils.get("jaopca:item_hunktitanium"), utils.get("libvulpes:productingot", 7));
+#infinFurnace(utils.get("jaopca:item_hunktungsten"), utils.get("endreborn:item_ingot_wolframium"));
+#infinFurnace(utils.get("jaopca:item_hunkuranium"), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("jaopca:item_rockychunkaluminium"), utils.get("jaopca:item_dirtygemaluminium", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkamber"), utils.get("jaopca:item_dirtygemamber", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkamethyst"), utils.get("jaopca:item_dirtygemamethyst", 0, 4));
@@ -612,7 +655,14 @@ infinFurnace(utils.get("jaopca:item_rockychunktopaz"), utils.get("jaopca:item_di
 infinFurnace(utils.get("jaopca:item_rockychunktrinitite"), utils.get("jaopca:item_dirtygemtrinitite", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunktungsten"), utils.get("jaopca:item_dirtygemtungsten", 0, 4));
 infinFurnace(utils.get("jaopca:item_rockychunkuranium"), utils.get("jaopca:item_dirtygemuranium", 0, 4));
+#infinFurnace(utils.get("libvulpes:productdust", 1), utils.get("minecraft:iron_ingot"));
+#infinFurnace(utils.get("libvulpes:productdust", 2), utils.get("minecraft:gold_ingot"));
+#infinFurnace(utils.get("libvulpes:productdust", 3), utils.get("appliedenergistics2:material", 5));
+#infinFurnace(utils.get("libvulpes:productdust", 4), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("libvulpes:productdust", 5), utils.get("thermalfoundation:material", 129));
 ##infinFurnace(utils.get("libvulpes:productdust", 7), utils.get("libvulpes:productingot", 7));
+#infinFurnace(utils.get("libvulpes:productdust", 9), utils.get("thermalfoundation:material", 132));
+#infinFurnace(utils.get("libvulpes:productdust", 10), utils.get("thermalfoundation:material", 135));
 infinFurnace(utils.get("mechanics:heavy_mesh", W), utils.get("mechanics:heavy_ingot", 0, 2));
 ##infinFurnace(utils.get("mekanism:dust", 1), utils.get("minecraft:gold_ingot"));
 ##infinFurnace(utils.get("mekanism:dust", 2), utils.get("mekanism:ingot", 1));
@@ -620,6 +670,8 @@ infinFurnace(utils.get("mechanics:heavy_mesh", W), utils.get("mechanics:heavy_in
 ##infinFurnace(utils.get("mekanism:dust", 4), utils.get("thermalfoundation:material", 129));
 ##infinFurnace(utils.get("mekanism:dust", 5), utils.get("thermalfoundation:material", 130));
 ##infinFurnace(utils.get("mekanism:dust"), utils.get("minecraft:iron_ingot"));
+#infinFurnace(utils.get("mekanism:oreblock", 1), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("mekanism:oreblock", 2), utils.get("thermalfoundation:material", 129));
 infinFurnace(utils.get("mekanism:oreblock"), utils.get("mekanism:ingot", 1));
 ##infinFurnace(utils.get("mekanism:otherdust", 1), utils.get("thermalfoundation:material", 160));
 ##infinFurnace(utils.get("mekanism:otherdust", 4), utils.get("nuclearcraft:ingot", 6));
@@ -803,7 +855,10 @@ infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct
 ##infinFurnace(utils.get("nuclearcraft:curium", 17), utils.get("nuclearcraft:curium", 15));
 ##infinFurnace(utils.get("nuclearcraft:curium", 18), utils.get("nuclearcraft:curium", 15));
 ##infinFurnace(utils.get("nuclearcraft:curium", 19), utils.get("nuclearcraft:curium", 15));
+infinFurnace(utils.get("nuclearcraft:dust", 1), utils.get("thermalfoundation:material", 129));
+infinFurnace(utils.get("nuclearcraft:dust", 2), utils.get("thermalfoundation:material", 131));
 ##infinFurnace(utils.get("nuclearcraft:dust", 3), utils.get("nuclearcraft:ingot", 3));
+infinFurnace(utils.get("nuclearcraft:dust", 4), utils.get("immersiveengineering:metal", 5));
 ##infinFurnace(utils.get("nuclearcraft:dust", 5), utils.get("nuclearcraft:ingot", 5));
 ##infinFurnace(utils.get("nuclearcraft:dust", 6), utils.get("nuclearcraft:ingot", 6));
 ##infinFurnace(utils.get("nuclearcraft:dust", 7), utils.get("nuclearcraft:ingot", 7));
@@ -813,6 +868,7 @@ infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct
 ##infinFurnace(utils.get("nuclearcraft:dust", 11), utils.get("nuclearcraft:ingot", 11));
 ##infinFurnace(utils.get("nuclearcraft:dust", 12), utils.get("thermalfoundation:material", 132));
 ##infinFurnace(utils.get("nuclearcraft:dust", 13), utils.get("thermalfoundation:material", 130));
+infinFurnace(utils.get("nuclearcraft:dust"), utils.get("thermalfoundation:material", 128));
 infinFurnace(utils.get("nuclearcraft:flour"), utils.get("minecraft:bread"));
 infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust", 14));
 ##infinFurnace(utils.get("nuclearcraft:ingot", 14), utils.get("nuclearcraft:ingot", 11));
@@ -823,10 +879,14 @@ infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust
 ##infinFurnace(utils.get("nuclearcraft:neptunium", 7), utils.get("nuclearcraft:neptunium", 5));
 ##infinFurnace(utils.get("nuclearcraft:neptunium", 8), utils.get("nuclearcraft:neptunium", 5));
 ##infinFurnace(utils.get("nuclearcraft:neptunium", 9), utils.get("nuclearcraft:neptunium", 5));
+infinFurnace(utils.get("nuclearcraft:ore", 1), utils.get("thermalfoundation:material", 129));
+infinFurnace(utils.get("nuclearcraft:ore", 2), utils.get("thermalfoundation:material", 131));
 infinFurnace(utils.get("nuclearcraft:ore", 3), utils.get("nuclearcraft:ingot", 3));
+infinFurnace(utils.get("nuclearcraft:ore", 4), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 5), utils.get("nuclearcraft:ingot", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 6), utils.get("nuclearcraft:ingot", 6));
 infinFurnace(utils.get("nuclearcraft:ore", 7), utils.get("nuclearcraft:ingot", 7));
+infinFurnace(utils.get("nuclearcraft:ore"), utils.get("thermalfoundation:material", 128));
 ##infinFurnace(utils.get("nuclearcraft:plutonium", 2), utils.get("nuclearcraft:plutonium"));
 ##infinFurnace(utils.get("nuclearcraft:plutonium", 3), utils.get("nuclearcraft:plutonium"));
 ##infinFurnace(utils.get("nuclearcraft:plutonium", 4), utils.get("nuclearcraft:plutonium"));
@@ -855,6 +915,7 @@ infinFurnace(utils.get("opencomputers:material", 2), utils.get("opencomputers:ma
 ##infinFurnace(utils.get("qmd:dust", 1), utils.get("qmd:ingot", 1));
 ##infinFurnace(utils.get("qmd:dust", 2), utils.get("qmd:ingot", 2));
 ##infinFurnace(utils.get("qmd:dust", 3), utils.get("libvulpes:productingot", 7));
+#infinFurnace(utils.get("qmd:dust", 4), utils.get("tconstruct:ingots"));
 ##infinFurnace(utils.get("qmd:dust", 5), utils.get("thermalfoundation:material", 133));
 ##infinFurnace(utils.get("qmd:dust", 6), utils.get("qmd:ingot", 6));
 ##infinFurnace(utils.get("qmd:dust", 7), utils.get("qmd:ingot", 7));
@@ -976,6 +1037,7 @@ infinFurnace(utils.get("tconstruct:slime_congealed", 1), utils.get("tconstruct:s
 infinFurnace(utils.get("tconstruct:slime_congealed", 2), utils.get("tconstruct:slime_channel", 2, 3));
 infinFurnace(utils.get("tconstruct:slime_congealed", 3), utils.get("tconstruct:slime_channel", 3, 3));
 infinFurnace(utils.get("tconstruct:slime_congealed", 4), utils.get("tconstruct:slime_channel", 4, 3));
+#infinFurnace(utils.get("tconstruct:slime_congealed", 5), utils.get("tconstruct:slime_channel", 5, 3));
 infinFurnace(utils.get("tconstruct:slime_congealed"), utils.get("tconstruct:slime_channel", 0, 3));
 infinFurnace(utils.get("tconstruct:soil", 1), utils.get("tconstruct:materials", 9));
 infinFurnace(utils.get("tconstruct:soil", 2), utils.get("tconstruct:materials", 10));
@@ -997,6 +1059,14 @@ infinFurnace(utils.get("thaumcraft:ore_amber", W), utils.get("thaumcraft:amber")
 infinFurnace(utils.get("thaumcraft:ore_cinnabar", W), utils.get("thaumcraft:quicksilver"));
 #infinFurnace(utils.get("thaumcraft:ore_quartz", W), utils.get("minecraft:quartz"));
 infinFurnace(utils.get("thaumicaugmentation:stone", 10), utils.get("thaumcraft:stone_ancient_rock"));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 1), utils.get("minecraft:gold_ingot", 0, 3));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 2), utils.get("thermalfoundation:material", 128, 3));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 3), utils.get("thermalfoundation:material", 129, 3));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 4), utils.get("thermalfoundation:material", 130, 3));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 6), utils.get("thaumcraft:quicksilver", 0, 3));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 7), utils.get("minecraft:quartz", 0, 3));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster", 8), utils.get("thaumcraft:ingot", 1, 2));
+#infinFurnace(utils.get("thaumicwonders:eldritch_cluster"), utils.get("minecraft:iron_ingot", 0, 3));
 ##infinFurnace(utils.get("thermalfoundation:material", 1), utils.get("minecraft:gold_ingot"));
 ##infinFurnace(utils.get("thermalfoundation:material", 64), utils.get("thermalfoundation:material", 128));
 ##infinFurnace(utils.get("thermalfoundation:material", 65), utils.get("thermalfoundation:material", 129));
