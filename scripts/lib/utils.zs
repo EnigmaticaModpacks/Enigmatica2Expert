@@ -75,7 +75,7 @@ zenClass Utils {
       val actualItem = (item.damage == 0 && item.isDamageable)
         ? item.anyDamage()
         : item;
-      furnace.remove(<*>, actualItem);
+      // furnace.remove(<*>, actualItem); managed by JS script
       furnace.remove(actualItem);
       recipes.remove(actualItem);
 
