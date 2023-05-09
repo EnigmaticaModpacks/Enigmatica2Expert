@@ -82,10 +82,11 @@ events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDi
 static restrictedDims as int[] = [
 /*Inject_js(
 getCSV('config/tellme/dimensions-csv.csv')
-.filter(l=>![
-  // Allowed dims:
-  0,144,-343800852,2,-2,3
-].includes(parseInt(l.ID)))
+.filter(l=>
+  ![0,144,-343800852,2,-2,3].includes(parseInt(l.ID)) // Allowed dims
+  && l.name !== 'rftools_dimension'
+)
+.concat([{ID:200}]) // Hardcoded dimensions (OTG ones)
 .map(l=>`  ${l.ID},`)
 )*/
   1,
@@ -95,7 +96,6 @@ getCSV('config/tellme/dimensions-csv.csv')
   4598,
   -8,
   7,
-  200,
   100,
   101,
   102,
@@ -118,5 +118,6 @@ getCSV('config/tellme/dimensions-csv.csv')
   123,
   124,
   125,
+  200,
 /**/
 ] as int[];
