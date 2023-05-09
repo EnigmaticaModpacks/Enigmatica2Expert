@@ -302,6 +302,13 @@ craft.reshapeless(<ic2:containment_plating>, "п□□□", {
 # Reprocess plutonium
 mods.nuclearcraft.DecayHastener.addRecipe(<ic2:nuclear:3>, <nuclearcraft:uranium:5>, 2.0, 2.0);
 
+# Remove Uranium 238 and replace it with simple uranium
+mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(<nuclearcraft:depleted_fuel_ic2>);
+mods.nuclearcraft.FuelReprocessor.addRecipe(<ore:depletedFuelIC2U>, 
+	<nuclearcraft:uranium:10> * 2, <nuclearcraft:uranium:10>, <nuclearcraft:uranium:10>, <ic2:nuclear:7>,
+	null, null, null, null
+);
+
 # Batch crafting recipe for reflector, skipping microcraftings
 scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler", [
 	<ore:plateCopper> * 64, # Copper Plate

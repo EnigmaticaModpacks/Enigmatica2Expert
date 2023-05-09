@@ -15,6 +15,10 @@ import crafttweaker.potions.IPotionEffect;
 	recipes.remove(<immersiveengineering:material:3>);
 	utils.rh(<immersiveengineering:material:24>);
 
+# Fix IC2 block
+val UI = <ore:ingotUranium>;
+recipes.addShapeless(<immersiveengineering:storage:5>, [UI, UI, UI, UI, UI, UI, UI, UI, UI]);
+
 # Removing Recycling recipes that produce IE Iron Nuggets
 	mods.immersiveengineering.ArcFurnace.removeRecipe(<immersiveengineering:metal:29>);
 
