@@ -163,60 +163,45 @@ events.onPlayerPickupItem(function(e as crafttweaker.event.PlayerPickupItemEvent
 # ---------------------------------------------------------
 # Unbreakable stones
 # ---------------------------------------------------------
+# Sadly, but Infusion recipes bugging with this stones.
+# This may be caused by huge Damage value
+
 
 # [Alchemist's Stone] from [Alchemist's Stone][+7]
-mods.thaumcraft.Infusion.registerRecipe(
-  "unbreakable_alchemist_stone", # Name
-  "INFUSION", # Research
-  <thaumicwonders:alchemist_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), # Output
-  5, # Instability
-  [<aspect:caeles> * 100, <aspect:sanguis> * 40],
-  <thaumicwonders:alchemist_stone>, # Central Item
-  Grid(["pretty",
+craft.make(<thaumicwonders:alchemist_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), ["pretty",
   "▬ e ▬",
-  "□   □",
+  "□ o □",
   "▬ ▲ ▬"], {
+  "o": <thaumicwonders:alchemist_stone>, # Central Item
   "▬": <ore:ingotGlitch>,      # Glitch Infused Ingot
   "e": <thaumcraft:pech_wand>, # Pech Wand
   "□": <ore:plateMithrillium>, # Mithrillium Plate
   "▲": <ore:dustMana>,         # Mana Dust
-}).spiral(1));
+});
 
 # [Transmuter's Stone] from [Transmuter's Stone][+7]
-mods.thaumcraft.Infusion.registerRecipe(
-  "unbreakable_transmuter_stone", # Name
-  "INFUSION", # Research
-  <thaumicwonders:transmuter_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), # Output
-  5, # Instability
-  [<aspect:caeles> * 100, <aspect:sanguis> * 40],
-  <thaumicwonders:transmuter_stone>, # Central Item
-  Grid(["pretty",
+craft.make(<thaumicwonders:transmuter_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), ["pretty",
   "▬ e ▬",
-  "□   □",
+  "□ o □",
   "▬ ▲ ▬"], {
+  "o": <thaumicwonders:transmuter_stone>, # Central Item
   "▬": <ore:ingotGlitch>,      # Glitch Infused Ingot
   "e": <thaumcraft:pech_wand>, # Pech Wand
   "□": <ore:plateMithrillium>, # Mithrillium Plate
   "▲": <ore:dustMana>,         # Mana Dust
-}).spiral(1));
+});
 
 # [Alienist's Stone] from [Alienist's Stone][+7]
-mods.thaumcraft.Infusion.registerRecipe(
-  "unbreakable_alienist_stone", # Name
-  "INFUSION", # Research
-  <thaumicwonders:alienist_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), # Output
-  5, # Instability
-  [<aspect:caeles> * 100, <aspect:sanguis> * 40],
-  <thaumicwonders:alienist_stone>, # Central Item
-  Grid(["pretty",
+craft.make(<thaumicwonders:alienist_stone>.withTag({Unbreakable: 1 as byte} as crafttweaker.data.IData + utils.shinigTag(14602026)), ["pretty",
   "▬ e ▬",
-  "□   □",
+  "□ o □",
   "▬ ▲ ▬"], {
+  "o": <thaumicwonders:alienist_stone>, # Central Item
   "▬": <ore:ingotGlitch>,      # Glitch Infused Ingot
   "e": <thaumcraft:pech_wand>, # Pech Wand
   "□": <ore:plateMithrillium>, # Mithrillium Plate
   "▲": <ore:dustMana>,         # Mana Dust
-}).spiral(1));
+});
 
 # ---------------------------------------------------------
 
