@@ -43,11 +43,11 @@ static polishingFnc as IRecipeFunction = function(out, ins, cInfo) {
       newTraits += [id] as IData;
     }
     
-    result = result.updateTag({
+    result = result.withTag(result.tag - 'ench' - 'TinkerData' - 'Modifiers' - 'Traits' + {
       TinkerData: result.tag.TinkerData - 'Modifiers' + {Modifiers: newDataModifiers} as IData,
       Modifiers: newModifiers,
       Traits: newTraits,
-    });
+    } as IData);
   }
 
   // Strip TCon modifiers except artifact and tool leveling
