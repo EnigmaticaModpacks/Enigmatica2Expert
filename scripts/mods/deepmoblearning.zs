@@ -3,10 +3,14 @@
 val ing = <deepmoblearning:glitch_infused_ingot>;
 
 recipes.remove(<deepmoblearning:glitch_infused_sword>);
-recipes.addShaped(<deepmoblearning:glitch_infused_sword>, [
-  [null, null, ing],
-  [null, ing, null],
-  [<endreborn:sword_shard>, null, null]]);
+utils.addEnchRecipe(<deepmoblearning:glitch_infused_sword>,
+  <enchantment:cyclicmagic:enchantment.beheading>, Grid(["pretty",
+  "    -",
+  "  -  ",
+  "T    "], {
+  "-": <deepmoblearning:glitch_infused_ingot>,
+  "T": <endreborn:sword_shard>
+}).shaped());
 
 recipes.remove(<deepmoblearning:soot_covered_plate> * 8);
 recipes.addShaped(<deepmoblearning:soot_covered_plate> * 4, [

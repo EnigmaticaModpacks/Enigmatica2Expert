@@ -311,34 +311,40 @@ Solidifier.addRecipe(<forestry:oak_stick> * 2, [<ore:logWood>.firstItem * 2], "s
 # ---------------------------------------------
 
 # [Sword of Atrophy] from [Iron Sword][+2]
-craft.remake(<cyclicmagic:sword_weakness>, ["pretty",
+recipes.remove(<cyclicmagic:sword_weakness>);
+utils.addEnchRecipe(<cyclicmagic:sword_weakness>,
+  <enchantment:cyclicmagic:enchantment.beheading>, Grid(["pretty",
   "    ◊",
   "  I  ",
   "T    "], {
   "◊": <ore:gemPeridot>,                   # Peridot
   "I": <minecraft:iron_sword>.anyDamage(), # Iron Sword
   "T": <cyclicmagic:glass_strong>,         # Tempered Glass
-});
+}).shaped());
 
 # [Sword of Decay] from [Iron Sword][+2]
-craft.remake(<cyclicmagic:sword_slowness>, ["pretty",
+recipes.remove(<cyclicmagic:sword_slowness>);
+utils.addEnchRecipe(<cyclicmagic:sword_slowness>,
+  <enchantment:cyclicmagic:enchantment.beheading>, Grid(["pretty",
   "    ◊",
   "  I  ",
   "T    "], {
   "◊": <ore:gemSapphire>,                  # Sapphire
   "I": <minecraft:iron_sword>.anyDamage(), # Iron Sword
   "T": <cyclicmagic:glass_strong>,         # Tempered Glass
-});
+}).shaped());
 
 # [Sword of Evasion] from [Iron Sword][+2]
-craft.remake(<cyclicmagic:sword_ender>, ["pretty",
+recipes.remove(<cyclicmagic:sword_ender>);
+utils.addEnchRecipe(<cyclicmagic:sword_ender>,
+  <enchantment:cyclicmagic:enchantment.beheading>, Grid(["pretty",
   "    *",
   "  I  ",
   "T    "], {
   "*": <biomesoplenty:crystal_shard>,      # Celestial Crystal Shard
   "I": <minecraft:iron_sword>.anyDamage(), # Iron Sword
   "T": <cyclicmagic:glass_strong>,         # Tempered Glass
-});
+}).shaped());
 
 # Fix color of conveyor (was purple)
 # [Conveyor_Belt] from [Clay][+2]

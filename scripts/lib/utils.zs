@@ -394,5 +394,14 @@ zenClass Utils {
   function shinigTag(color as int) as IData {
     return { enchantmentColor: color } as IData + shimmerTag;
   }
+
+  function addEnchRecipe(output as IItemStack, ench as crafttweaker.enchantments.IEnchantmentDefinition, inputs as IIngredient[][]) as void {
+    recipes.addShaped(output.displayName.replaceAll(":", "_").replaceAll('§.|"', "") ~ '_ench',
+      output.withTag({ench:[{lvl: 1 as short, id: ench.id as short}]}),
+      inputs, function(out, ins, cInfo) {
+        return output.withTag({ench:[{lvl: 1 as short, id: ench.id as short}]});
+      }, null
+    );
+  }
 }
 global utils as Utils = Utils();

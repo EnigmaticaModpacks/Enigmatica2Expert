@@ -173,14 +173,16 @@ craft.remake(<appliedenergistics2:fluid_interface>, ["pretty",
 });
 
 # [End-Mage Barclay Sword] from [String of Life][+2]
-craft.remake(<endreborn:ender_sword>, ["pretty",
+recipes.remove(<endreborn:ender_sword>);
+utils.addEnchRecipe(<endreborn:ender_sword>,
+  <enchantment:cyclicmagic:enchantment.beheading>, Grid(["pretty",
   "  ▬ ▬",
   "▬ S ▬",
   "B ▬  "], {
   "B": <endreborn:sword_shard>,       # Broken Sword Part
   "S": <endreborn:item_ender_string>, # String of Life
   "▬": <ore:ingotEndorium>,           # Endorium Ingot
-});
+}).shaped());
 
 # [Xorcite Cluster]*64 from [Broken Sword Part][+1]
 craft.remake(<endreborn:dragon_essence> * 64, ["pretty",
