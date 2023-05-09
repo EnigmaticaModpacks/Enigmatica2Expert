@@ -286,5 +286,14 @@
       "chance": 1.0,
       "fortuneChance": 1.0
     }
+  ],
+  "endreborn:block_entropy_end_stone": [
+    {
+      "item": "exnihilocreatio:block_endstone_crushed:0",
+      "amount": 1,
+      "miningLevel": 2,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
   ]
 }
