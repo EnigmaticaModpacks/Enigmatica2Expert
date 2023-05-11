@@ -4,13 +4,67 @@
 
 _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90.md)_
 
+This is a major update, existing worlds can be updated to it, but to get the best experience we recommend that you start a new world.
+
 **New Mods**
+
+-   [Ender IO Endergy](https://www.curseforge.com/minecraft/mc-mods/ender-io-endergy) (by [tterrag1098](https://www.curseforge.com/members/tterrag1098/projects))
+-   [Framed Compacting Drawers](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers) (by [Eutro](https://www.curseforge.com/members/Eutro/projects))
+-   [IC2 Patcher](https://www.curseforge.com/minecraft/mc-mods/ic2-patcher) (by [Su5eD](https://www.curseforge.com/members/Su5eD/projects))
+-   [LagGoggles](https://www.curseforge.com/minecraft/mc-mods/laggoggles) (by [Terminator_NL](https://www.curseforge.com/members/Terminator_NL/projects))
+-   [spark](https://www.curseforge.com/minecraft/mc-mods/spark) (by [Iucko](https://www.curseforge.com/members/Iucko/projects))
+-   [TickCentral](https://www.curseforge.com/minecraft/mc-mods/tickcentral) (by [Terminator_NL](https://www.curseforge.com/members/Terminator_NL/projects))
 
 **Removed Mods**
 
+-   [Animania Base](https://www.curseforge.com/minecraft/mc-mods/animania) (by [Purplicious*Cow*](https://www.curseforge.com/members/Purplicious_Cow_/projects))
+-   [Just Enough Reactors](https://www.curseforge.com/minecraft/mc-mods/just-enough-reactors) (by [BrainStone](https://www.curseforge.com/members/BrainStone/projects))
+
 **Improvements**
 
+✅ Unbreakable Graphite Rods to AR arc furnace - Note added about repaired graphite rods
+✅ Skullfire Sword remove enchanted books, replace with something non-enchanted (Refined Obsidian Shards?) - enchants can't be future proofed in 1.12, simplify Cleaver required
+✅ Remove Animania
+✅ Remove all function for Extreme Reactors - Set mod for removal later - add temp conversion recipes
+✅ Add Endergy, use scripts from E2E-V2
+✅ Bunch of mods updated to newest versions - By Niller, fixes from updates done
+✅ Mekanism energy rebalance
+✅ ET energy rebalance
+✅ Upgradable EIO Simple Machines - from ghatus
+✅ Remove stray Uranium Plate recipes - from ghatus
+✅ Adjust Stellar mining level to 11 - Now equal to Supremium, Terrasteel and Disassembler
+✅ Disable AdvGen gas intake - Since it doesn't actually consume any fuel..
+✅ Hide ImmersiveTech new creative items
+✅ Re-enable the limited Prism whitelist
+✅ Remove Redstone and Glowstone melting in Melter - from Morgan - Redstone Ore refuses to be disabled, so it'll have to be left in
+✅ Enabled Stone melting in Melter - from Morgan
+✅ Cheaper recipes for Flux Gate and Fluid Gate - from Morgan
+✅ Cheaper recipes for RFTools Elevator and Screen Controller - from Morgan
+✅ Removed oreDict from Adv Rocketry Iron and Steel rods - from Morgan
+✅ Remove unwanted Dusts from ID Squeezers - 2 main ones could be removed, 2 remains that can't be removed due to CT integration being broken - from Morgan
+✅ Add IF Biofuel as Compression Dynamo fuel - from Morgan
+✅ Add Pig Iron to AMF - from MisterMyst
+✅ Add Knightslime to AMF - from lekutree
+✅ Streamline Spice of Life: Carrot Edition food amounts - by lekutree
+✅ Unify all fluid cells to either use Lapis or ore:dyeBlue - 256k now only uses Lapis
+✅ Rainbow Gen recipe slightly cheaper - from ghatus
+
 **Fixed bugs**
+
+✅ Lapotron Crystals can't have 0 charge in its recipes
+✅ Rock Crystal Swords are broken in its recipes
+✅ Rock Crystals are broken in various recipes (couple changes needed to already made fixes)
+✅ EIO upgrade recycling fixed - Machines only accepts Exact items
+✅ Fairies crashing on AMD cards, disable
+✅ Fixed Ultimate Tanks had to be placed to work for the Black Hole Tank
+✅ Bees Wax unification, fixes Wax Capsules - from ghatus
+✅ Invalid comb in JEI - Fixed by Niller
+✅ Fix Electric Jetpack recipe - from lekutree
+✅ Fix Nether Ores mining level - 'NetherEndingOres to be downgraded to 1.3 -Disco' - from Morgan
+✅ Remove AE2 Seeds from Phytogenic Insolator - from lekutree - only works in multiplayer, and even then barely
+✅ Fix and improve Marble chiseling into 3 Chisel categories: AS & UCW, Chisel & Quark, Sooty Marble
+✅ Fix AR Fuel usage
+✅ Some gas names has changed, fix Gas Tank Trophy
 
 ---
 
