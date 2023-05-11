@@ -105,3 +105,9 @@ config/vanillafix.cfg
 config/vanillafix/config_version
 config/vanillafix/methods-stable_39.csv
 jei_bookmarks.ini
+OpenComputersMod-1.8.0-54-libjnlua54-windows-x86_64.dll
+OpenComputersMod-1.8.0-53-libjnlua53-windows-x86_64.dll
+OpenComputersMod-1.8.0-52-libjnlua52-windows-x86_64.dll
+config/LagGoggles-client.cfg
+config/LagGoggles-server.cfg
+config/TickCentral/config.cfg
