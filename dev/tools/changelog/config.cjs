@@ -1,95 +1,166 @@
+/* eslint-disable unused-imports/no-unused-vars */
 // @ts-check
 
 const { readFileSync, existsSync } = require('node:fs')
 const { resolve } = require('node:path')
 const { execSync } = require('node:child_process')
 const compareFunc = require('compare-func')
+const { parse } = require('yaml')
 
+/**
+ * @param {string} command
+ */
 function execSyncInherit(command) {
   return execSync(command, { stdio: 'inherit' })
 }
 
-const renames = {
-  feat  : 'Features',
-  fix   : 'Bug Fixes',
-  perf  : 'Performance Improvements',
-  revert: 'Reverts',
+function capitalize(str) {
+  return str.replace(/(^[\s\p{Emoji}]*?)(\w)/u, (m, r1, r2) => r1 + r2.toLocaleUpperCase())
 }
 
-const discardable = {
-  docs    : 'Documentation',
-  style   : 'Styles',
-  refactor: 'Code Refactoring',
-  test    : 'Tests',
-  build   : 'Build System',
-  ci      : 'Continuous Integration',
-  chore   : 'Misc Changes',
-}
+/**
+ * @typedef Config
+ * @type {object}
+ * @property {Record<string, string>} renames
+ * @property {Record<string, string>} discardable
+ * @property {Record<string, string>} scopes
+ */
 
-function transform(commit, context) {
-  let discard = true
-  const issues = []
+/** @type {Config} */
+const config = parse(readFileSync(resolve(__dirname, 'config.yml'), 'utf8'))
 
-  // Handle breaking
-  commit.notes.forEach((note) => {
-    note.title = 'BREAKING CHANGES'
-    discard = false
-  })
+/** @type {import('../../../node_modules/@types/conventional-changelog-core/index.d.ts').WriterOptions} */
+const writerOpts = {
+  transform(commit, context) {
+    let discard = true
+    const issues = []
 
-  // Rename types
-  const newType = renames[commit.type]
-    ?? (commit.revert ? 'Reverts' : undefined)
+    // Handle breaking
+    commit.notes.forEach((note) => {
+      note.title = 'BREAKING CHANGES'
+      discard = false
+    })
 
-  // This is discardable commit type
-  if (!newType && discard && discardable[commit.type]) return
+    // Rename types
+    // @ts-expect-error obj
+    const newType = config.renames[commit.type]
+      ?? (commit.revert ? 'Reverts' : undefined)
 
-  commit.type = newType
+    // This is discardable commit type
+    // @ts-expect-error obj
+    if (!newType && discard && config.discardable[commit.type]) return false
 
-  if (commit.scope === '*') commit.scope = ''
+    commit.type = newType
 
-  if (typeof commit.hash === 'string')
-    commit.shortHash = commit.hash.substring(0, 7)
+    if (commit.scope === '*') commit.scope = ''
 
-  // Add new "description" field that actually both bod + footer with indentation
-  if (typeof commit.body === 'string' || typeof commit.footer === 'string')
-    commit.description = (`${commit.body ?? ''}${commit.footer ? `\n\n${commit.footer}` : ''}`).trim().split('\n')
-
-  // Create issue urls
-  if (typeof commit.subject === 'string') {
-    let url = context.repository
-      ? `${context.host}/${context.owner}/${context.repository}`
-      : context.repoUrl
-    if (url) {
-      url = `${url}/issues/`
-      // Issue URLs.
-      commit.subject = commit.subject.replace(/#([0-9]+)/g, (_, issue) => {
-        issues.push(issue)
-        return `[#${issue}](${url}${issue})`
-      })
+    if (typeof commit.scope === 'string') {
+      commit.scope = config.scopes[commit.scope.toLocaleLowerCase()]
+        ?? capitalize(commit.scope)
     }
-    if (context.host) {
-      // User URLs.
-      commit.subject = commit.subject.replace(/\B@([a-z0-9](?:-?[a-z0-9/]){0,38})/g, (_, username) => {
-        if (username.includes('/'))
-          return `@${username}`
 
-        return `[@${username}](${context.host}/${username})`
-      })
+    if (typeof commit.hash === 'string')
+      commit.shortHash = commit.hash.substring(0, 7)
+
+    // Transform body images
+    if (typeof commit.body === 'string') {
+      const images = []
+      commit.body = commit.body.replace(
+        /(^|\s+)(!\[[\]]*\]\()?(?<link>(http)?s?:?(\/\/[^"']*?\.(?:png|jpg|jpeg|gif|png|svg)))\)?($|\s+)/gm,
+        (m, ...args) => {
+          const g = args.pop()
+          images.push(g.link)
+          return ''
+        }
+      )
+      if (images.length) /** @type {any} */ (commit).images = images.reverse()
     }
-  }
 
-  // remove references that already appear in the subject
-  commit.references = commit.references.filter((reference) => {
-    if (!issues.includes(reference.issue))
-      return true
+    // Add new "description" field that actually both bod + footer with indentation
+    if (typeof commit.body === 'string' || typeof commit.footer === 'string') {
+      /** @type {any} */ (commit.description)
+        = (`${commit.body ?? ''}${commit.footer ? `\n\n${commit.footer}` : ''}`).trim().split('\n')
+    }
 
-    return false
-  })
+    // Create issue urls
+    if (typeof commit.subject === 'string') {
+      let url = context.repository
+        ? `${context.host}/${context.owner}/${context.repository}`
+        : context.repoUrl
+      if (url) {
+        url = `${url}/issues/`
+        // Issue URLs.
+        commit.subject = commit.subject.replace(/#([0-9]+)/g, (_, issue) => {
+          issues.push(issue)
+          return `[#${issue}](${url}${issue})`
+        })
+      }
+      if (context.host) {
+        // User URLs.
+        commit.subject = commit.subject.replace(/\B@([a-z0-9](?:-?[a-z0-9/]){0,38})/g, (_, username) => {
+          if (username.includes('/'))
+            return `@${username}`
 
-  return commit
+          return `[@${username}](${context.host}/${username})`
+        })
+      }
+
+      commit.subject = capitalize(commit.subject)
+    }
+    if (typeof commit.header === 'string')
+      commit.header = capitalize(commit.header)
+
+    // remove references that already appear in the subject
+    commit.references = commit.references.filter((reference) => {
+      if (!issues.includes(reference.issue))
+        return true
+
+      return false
+    })
+
+    return commit
+  },
+
+  finalizeContext(context, options, commits, keyCommit) {
+    context.modschanges = getModChanges()
+
+    context.commitGroups.forEach((g) => {
+      if (!g.title) g.title = 'Misc'
+
+      const groupedBy = {}
+
+      g.commits.forEach((c) => {
+        (groupedBy[c.scope || ''] ??= []).push(c)
+      })
+
+      // @ts-expect-error nonoptional
+      delete g.commits
+
+      ; /** @type {any} */ (g).scopes = Object.entries(groupedBy)
+        .map(([scope, commits]) => ({ scope, commits }))
+    })
+
+    return context
+  },
+  groupBy         : 'type',
+  commitGroupsSort: 'title',
+  commitsSort     : ['scope', 'subject'],
+  noteGroupsSort  : 'title',
+  // notesSort       : compareFunc,
 }
 
-function finalizeContext(context, options, commits, keyCommit) {
+addTemplate('template', 'mainTemplate')
+;['commit', 'footer', 'header'].forEach(f => addTemplate(f, `${f}Partial`))
+
+function addTemplate(fileName, templateName) {
+  const filePath = resolve(__dirname, `templates/${fileName}.hbs`)
+  if (existsSync(filePath))
+    writerOpts[templateName] = readFileSync(filePath, 'utf8')
+}
+
+////////////////////////////////////////////////////////////////////////
+
+function getModChanges() {
   const old_version = execSync('git describe --tags --abbrev=0').toString().trim()
 
   // Extract old mcinstance
@@ -104,44 +175,7 @@ function finalizeContext(context, options, commits, keyCommit) {
     + ' --output=~mods_changes.md'
   )
 
-  context.modschanges = readFileSync('~mods_changes.md', 'utf8')
-
-  context.commitGroups.forEach((g, i) => {
-    if (!g.title) g.title = 'Misc'
-
-    const groupedBy = {}
-
-    g.commits.forEach((c) => {
-      (groupedBy[c.scope || ''] ??= []).push(c)
-      delete c.scope
-    })
-
-    delete g.commits
-
-    g.scopes = Object.entries(groupedBy)
-      .map(([scope, commits]) => ({ scope, commits }))
-  })
-
-  return context
-}
-
-const writerOpts = {
-  transform,
-  finalizeContext,
-  groupBy         : 'type',
-  commitGroupsSort: 'title',
-  commitsSort     : ['scope', 'subject'],
-  noteGroupsSort  : 'title',
-  notesSort       : compareFunc,
-}
-
-addTemplate('template', 'mainTemplate')
-;['commit', 'footer', 'header'].forEach(f => addTemplate(f, `${f}Partial`))
-
-function addTemplate(fileName, templateName) {
-  const filePath = resolve(__dirname, `templates/${fileName}.hbs`)
-  if (existsSync(filePath))
-    writerOpts[templateName] = readFileSync(filePath, 'utf8')
+  return readFileSync('~mods_changes.md', 'utf8')
 }
 
 ////////////////////////////////////////////////////////////////////////

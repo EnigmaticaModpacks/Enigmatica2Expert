@@ -1,0 +1,23 @@
+
+# Comit groups renamings
+renames:
+  feat  : ✨ New Features
+  fix   : 🐛 Fixes
+  perf  : ⚡ Performance Improvements
+  revert: ↩️ Reverts
+
+# Comit groups that would not be listed in changelogs
+discardable:
+  docs    : Documentation
+  style   : Styles
+  refactor: Code Refactoring
+  test    : Tests
+  build   : Build System
+  ci      : Continuous Integration
+  chore   : Misc Changes
+
+# Optional scope renamings
+scopes:
+  jei      : JEI
+  config   : Configs
+  bansoukou: ''

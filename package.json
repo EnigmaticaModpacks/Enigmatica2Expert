@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
+    "@types/conventional-changelog-core": "^4.2.1",
     "@types/fs-extra": "^11.0.1",
     "@types/memoizee": "^0.4.8",
     "@types/terminal-kit": "^2.5.1",
@@ -66,6 +67,7 @@
     "terminal-kit": "^3.0.0",
     "typescript": "^5.0.4",
     "xml-js": "^1.6.11",
+    "yaml": "^2.2.2",
     "yargs": "^17.7.1",
     "zip-local": "^0.3.5"
   },

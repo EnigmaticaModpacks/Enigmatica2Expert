@@ -1,5 +1,10 @@
 *
 
+{{~!-- images --}}
+{{~#if images}}
+{{~#each images}} <img src="{{this}}" style="max-width: 240px; max-height: 120px" align=right>{{/each}}
+{{~/if}}
+
 {{~!-- commit link --}} {{#if @root.linkReferences~}}
   [🖇](
   {{~#if @root.repository}}
@@ -18,12 +23,13 @@
   {{~shortHash}}
 {{~/if}}
 
-{{~#if scope}} **{{scope}}:**
-{{~/if}} {{#if subject}}
+
+{{~#if subject}}
   {{~subject}}
 {{~else}}
   {{~header}}
 {{~/if}}
+
 
 {{~!-- commit references --}}
 {{~#if references~}}
