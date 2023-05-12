@@ -435,11 +435,6 @@
   "value": ["ROUND"]}
 ]}
 
-,{"key":"CLEANSING_AMULET","ops":[
-  {"op":"remove",
-  "path":"meta"}
-]}
-
 ,{"key":"STARFIELD_GLASS_RIFT","ops":[
   {"op":"remove",
   "path":"meta"}
