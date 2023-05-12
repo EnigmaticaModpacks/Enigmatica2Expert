@@ -92,7 +92,6 @@ desc.jei(<enderio:item_material:17>, "enticing_crystal"); # Enticing Crystal
 desc.jei(<extendedcrafting:crafting_core>, "maximum_allowed_input"); # Crafting Core
 desc.jei(<astralsorcery:blockinfusedwood>, "wood_in_starlight"); # Infused Wood
 desc.jei(<advancedrocketry:platepress>, "plate_presser"); # Small Plate Press
-desc.jei(<guideapi:bloodmagic-guide>, "right_click_blood_altair"); # BM Guide
 desc.jei(<thaumcraft:thaumonomicon>, "click.bookshelf"); # Thaumonomicon
 desc.jei(<thaumcraft:arcane_workbench>, "click.crafting"); # Arcane Workbench
 desc.jei(<thaumcraft:crucible>, "click.cauldron"); # Crucible

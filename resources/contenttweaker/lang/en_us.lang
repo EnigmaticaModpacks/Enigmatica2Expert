@@ -166,7 +166,6 @@ tooltips.lang.not_consumed=Not consumed when used in crafting recipes.
 tooltips.lang.maximum_allowed_input=The FE/t specified in Crafting Core recipes is the maximum allowed input. Any amount of FE/t will work.
 tooltips.lang.wood_in_starlight=Made by dropping Wood Logs in Liquid Starlight. You need to have crafted a Luminous Crafting Table for the process to work.
 tooltips.lang.plate_presser=The Small Plate Presser can convert blocks into Plates and Rods. It's a multiblock, 3 blocks tall and 1 wide. The top block is the Small Plate Presser and the bottom is a block of Obsidian. You place the block you want to compress between the two, and apply a redstone signal to activate the Presser.
-tooltips.lang.right_click_blood_altair=Sneak-Right-Click on a Blood Altar with this book, and it will show you where to place the appropriate blocks for the different Blood Altar tiers. Right-click to change tier.
 tooltips.lang.click.bookshelf=Made by right-clicking a Bookshelf with Salis Mundus.
 tooltips.lang.click.crafting=Made by right-clicking a Crafting Table with Salis Mundus.
 tooltips.lang.click.cauldron=Made by right-clicking a Cauldron with Salis Mundus.
