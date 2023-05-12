@@ -234,7 +234,7 @@ if(!isNull(loadedMods["immersivetech"])) {
 }
 
 # Sic-Sic ingots
-scripts.process.fill(<exnihilocreatio:item_mesh:2>, <fluid:sic_vapor> * 1000, <nuclearcraft:part:13>, "only: NCInfuser Transposer");
+scripts.process.fill(<exnihilocreatio:item_mesh:2>, <fluid:sic_vapor> * 1000, <nuclearcraft:part:13> * 4, "only: NCInfuser Transposer");
 scripts.process.alloy([<ore:bouleSilicon>, <ore:fiberSiliconCarbide>], <nuclearcraft:alloy:14>, "only: advrockarc");
 
 // Unify Silicon
@@ -479,6 +479,27 @@ scripts.process.electrolyze(<fluid:nitric_oxide> * 100, [<fluid:nitrogen> * 500,
 // Remove worthless recipes
 // ------------------------------------------------------------
 
+// Common resources
+utils.rh(<nuclearcraft:alloy>);
+utils.rh(<nuclearcraft:alloy:5>);
+utils.rh(<nuclearcraft:dust>);
+utils.rh(<nuclearcraft:dust:1>);
+utils.rh(<nuclearcraft:dust:2>);
+utils.rh(<nuclearcraft:dust:4>);
+utils.rh(<nuclearcraft:gem_dust>);
+utils.rh(<nuclearcraft:gem_dust:2>);
+utils.rh(<nuclearcraft:gem_dust:3>);
+utils.rh(<nuclearcraft:gem_dust:6>);
+utils.rh(<nuclearcraft:gem:6>);
+utils.rh(<nuclearcraft:ingot>);
+utils.rh(<nuclearcraft:ingot:1>);
+utils.rh(<nuclearcraft:ingot:2>);
+utils.rh(<nuclearcraft:ingot:4>);
+utils.rh(<nuclearcraft:ore>);
+utils.rh(<nuclearcraft:ore:1>);
+utils.rh(<nuclearcraft:ore:2>);
+utils.rh(<nuclearcraft:ore:4>);
+
 // Unimplemented multiblocks
 utils.rh(<nuclearcraft:heat_exchanger_controller>);
 utils.rh(<nuclearcraft:condenser_controller>);
@@ -597,7 +618,7 @@ for mod, types in nuclearData {
           );
         }
       }
-      if(key!='americium' && i==2) {
+      if(!(key=='americium' && i==2)) {
         mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(pellet_carbide);
         utils.rh(pellet_carbide);
       }
