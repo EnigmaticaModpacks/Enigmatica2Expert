@@ -44,8 +44,8 @@ import crafttweaker.item.IIngredient;
 	recipes.addShapedMirrored("Aluminum Scaffolding", 
 	<immersiveengineering:metal_decoration2:8> * 4, 
 	[[<ore:stickAluminum>, null, null],
-	[<ore:scaffoldingAluminium>, <ore:stickAluminum>, null], 
-	[<ore:scaffoldingAluminium>, <ore:scaffoldingAluminium>, <ore:stickAluminum>]]);
+	[<ore:scaffoldingAluminum>, <ore:stickAluminum>, null], 
+	[<ore:scaffoldingAluminum>, <ore:scaffoldingAluminum>, <ore:stickAluminum>]]);
 	
 # Steel Scaffolding
 	recipes.remove(<immersiveengineering:metal_decoration2:7>);
@@ -90,8 +90,8 @@ import crafttweaker.item.IIngredient;
 	recipes.addShapeless("LV - MV Relay", <immersiveengineering:connector:3>, [<immersiveengineering:connector:1>, <ore:ingotIron>]);
 
 # MV - HV Connectors/Relays
-	recipes.addShapeless("MV - HV Connector", <immersiveengineering:connector:4>, [<immersiveengineering:connector:2>, <ore:ingotAluminium>]);
-	recipes.addShapeless("MV - HV Relay", <immersiveengineering:connector:5>, [<immersiveengineering:connector:3>, <ore:ingotAluminium>]);
+	recipes.addShapeless("MV - HV Connector", <immersiveengineering:connector:4>, [<immersiveengineering:connector:2>, <ore:ingotAluminum>]);
+	recipes.addShapeless("MV - HV Relay", <immersiveengineering:connector:5>, [<immersiveengineering:connector:3>, <ore:ingotAluminum>]);
 
 # Coke Bricks
 	recipes.remove(<immersiveengineering:stone_decoration>);

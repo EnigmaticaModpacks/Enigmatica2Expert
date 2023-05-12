@@ -40,9 +40,9 @@ recipes.addShapedMirrored("Cyclic Redstone Clock",
 recipes.remove(<cyclicmagic:block_storeempty>);
 recipes.addShapedMirrored("Cyclic Fluid Storage Tank", 
 <cyclicmagic:block_storeempty>, 
-[[<ore:plateAluminium>, <ore:blockGlass>, <ore:plateAluminium>],
+[[<ore:plateAluminum>, <ore:blockGlass>, <ore:plateAluminum>],
 [<ore:blockGlass>, <thermalexpansion:tank>.anyDamage(), <ore:blockGlass>], 
-[<ore:plateAluminium>, <ore:blockGlass>, <ore:plateAluminium>]]);
+[<ore:plateAluminum>, <ore:blockGlass>, <ore:plateAluminum>]]);
 
 # Charms
 recipes.remove(<cyclicmagic:charm_air>);

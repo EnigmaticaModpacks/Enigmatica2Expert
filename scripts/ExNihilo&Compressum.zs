@@ -67,7 +67,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	recipes.addShapeless("Ex Nihilo Nickel", <thermalfoundation:ore:5>, [<ore:pieceNickel>, <ore:pieceNickel>, <ore:pieceNickel>, <ore:pieceNickel>]);
 	recipes.addShapeless("Ex Nihilo Silver", <thermalfoundation:ore:2>, [<ore:pieceSilver>, <ore:pieceSilver>, <ore:pieceSilver>, <ore:pieceSilver>]);
 	recipes.addShapeless("Ex Nihilo Lead", <thermalfoundation:ore:3>, [<ore:pieceLead>, <ore:pieceLead>, <ore:pieceLead>, <ore:pieceLead>]);
-	recipes.addShapeless("Ex Nihilo Aluminomnomnom", <thermalfoundation:ore:4>, [<ore:pieceAluminium>, <ore:pieceAluminium>, <ore:pieceAluminium>, <ore:pieceAluminium>]);
+	recipes.addShapeless("Ex Nihilo Aluminomnomnom", <thermalfoundation:ore:4>, [<ore:pieceAluminum>, <ore:pieceAluminum>, <ore:pieceAluminum>, <ore:pieceAluminum>]);
 	recipes.addShapeless("Ex Nihilo Tin", <thermalfoundation:ore:1>, [<ore:pieceTin>, <ore:pieceTin>, <ore:pieceTin>, <ore:pieceTin>]);
 	recipes.addShapeless("Ex Nihilo Copper", <thermalfoundation:ore>, [<ore:pieceCopper>, <ore:pieceCopper>, <ore:pieceCopper>, <ore:pieceCopper>]);
 	recipes.addShapeless("Ex Nihilo Iron", <minecraft:iron_ore>, [<ore:pieceIron>, <ore:pieceIron>, <ore:pieceIron>, <ore:pieceIron>]);
