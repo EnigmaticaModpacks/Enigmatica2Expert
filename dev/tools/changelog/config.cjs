@@ -139,7 +139,7 @@ addTemplate('template', 'mainTemplate')
 ;['commit', 'footer', 'header'].forEach(f => addTemplate(f, `${f}Partial`))
 
 function addTemplate(fileName, templateName) {
-  const filePath = resolve(__dirname, `${fileName}.hbs`)
+  const filePath = resolve(__dirname, `templates/${fileName}.hbs`)
   if (existsSync(filePath))
     writerOpts[templateName] = readFileSync(filePath, 'utf8')
 }
