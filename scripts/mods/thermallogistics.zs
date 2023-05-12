@@ -12,12 +12,5 @@ craft.remake(<thermallogistics:terminal_item>, ["pretty",
   "N": <thermallogistics:manager>,       # Network Manager
 });
 
-# [Network Manager] from [Advanced RE-Battery][+2]
-craft.remake(<thermallogistics:manager>, ["pretty",
-  "□ ⌃ □",
-  "□ A □",
-  "□ ⌃ □"], {
-  "□": <ore:plateElectrum>,  # Electrum Plate
-  "⌃": <ore:gemQuartzBlack>, # Black Quartz
-  "A": <ic2:advanced_re_battery>.withTag({}).anyDamage(), # Advanced RE-Battery
-});
+# Defined in shaped_recipes.ini
+recipes.removeByRecipeName("thermallogistics:manager");
