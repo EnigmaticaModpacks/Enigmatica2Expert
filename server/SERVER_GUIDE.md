@@ -1,6 +1,7 @@
 ## Installing
 
-1) **Download** the zipfile.
+1) **Download** server pack zipfile
+  > You can find this file on CurseForge under `Additional Files` or on GitHub under `Releases` => `Assets`
 2) **Extract** it to an empty folder.
 3) If you want to **change RAM** usage, Java arguments etc, see the "settings" file.
 4) If you want to change worldgen:
