@@ -4,7 +4,8 @@
 ### {{title}}
 
 {{#each notes}}
-* {{text}}
+* {{#if commit.scope}}**{{commit.scope}}:** {{/if}}{{text}}
 {{/each}}
 {{/each}}
+
 {{/if}}

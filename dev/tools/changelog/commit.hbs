@@ -1,8 +1,7 @@
+*
 
-* 
-
-{{~!-- commit link --}}
-{{~#if @root.linkReferences}} [🖇](
+{{~!-- commit link --}} {{#if @root.linkReferences~}}
+  [🖇](
   {{~#if @root.repository}}
     {{~#if @root.host}}
       {{~@root.host}}/
@@ -15,7 +14,16 @@
     {{~@root.repoUrl}}
   {{~/if}}/
   {{~@root.commit}}/{{hash}})
-{{~else if hash}} {{shortHash}}{{~/if}} {{header}}
+{{~else}}
+  {{~shortHash}}
+{{~/if}}
+
+{{~#if scope}} **{{scope}}:**
+{{~/if}} {{#if subject}}
+  {{~subject}}
+{{~else}}
+  {{~header}}
+{{~/if}}
 
 {{~!-- commit references --}}
 {{~#if references~}}
@@ -59,3 +67,4 @@
   > {{this}}
 {{~/each}}
 {{~/if}}
+
