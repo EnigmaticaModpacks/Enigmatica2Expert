@@ -13,12 +13,16 @@ recipes.addShapeless('Blood Magic Guide',
   [<bloodmagic:blood_rune>, <ore:foodCake>, <bloodmagic:blood_rune>], 
   [<extrautils2:decorativesolid:3>, <bloodmagic:slate>, <extrautils2:decorativesolid:3>]]);
 
-# Rune of Capacity
-  recipes.remove(<bloodmagic:blood_rune:6>);
-  recipes.addShaped("Rune of Capacity", <bloodmagic:blood_rune:6>, 
-  [[<extrautils2:decorativesolid:3>, <flopper:flopper>, <extrautils2:decorativesolid:3>], 
-  [<flopper:flopper>, <bloodmagic:blood_rune>, <flopper:flopper>], 
-  [<extrautils2:decorativesolid:3>, <bloodmagic:slate:2>, <extrautils2:decorativesolid:3>]]);
+# [Rune of Capacity] from [Blank Rune][+3]
+craft.remake(<bloodmagic:blood_rune:6>, ["pretty",
+  "M F M",
+  "F B F",
+  "M I M"], {
+  "M": <ore:stoneMetamorphic>,  # Metamorphic Forest Stone
+  "F": <flopper:flopper>,       # Flopper
+  "B": <bloodmagic:blood_rune>, # Blank Rune
+  "I": <bloodmagic:slate:2>,    # Imbued Slate
+});
 
 # Rune of Sacrifice
   recipes.remove(<bloodmagic:blood_rune:3>);
