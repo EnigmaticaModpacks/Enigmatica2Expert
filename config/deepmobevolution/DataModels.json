@@ -691,7 +691,7 @@
       "tconstruct:edible,1"
     ],
     "associatedMobs": [
-      "tconstruct:blue_slime"
+      "tconstruct:blueslime"
     ],
     "lootItems": [
       "tconstruct:edible,18,1",
@@ -708,7 +708,7 @@
         "part of some sort of power hierarchy,",
         "since there's a bunch of \"King slimes\" around."
       ],
-      "entity": "tconstruct:blue_slime",
+      "entity": "tconstruct:blueslime",
       "entityScale": 60,
       "entityOffsetX": 10,
       "entityOffsetY": -16
