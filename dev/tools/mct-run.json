@@ -1,6 +1,6 @@
 {
    "Tellme clean": "esno config/tellme/!rename&update.js"
-    ,"mct-errors": "esno mc-tools/packages/errors/src/cli.ts --no-hash --output=dev/tools/unresolved-errors.log --blacklist=dev/tools/ignored_errors"
+    ,"mct-errors": "esno mc-tools/packages/errors/src/cli.ts --config=dev/tools/config.yml --output=dev/tools/unresolved-errors.log"
       ,"mct-tcon": "esno mc-tools/packages/tcon/src/cli.ts --default=dev/default_configs/tweakersconstruct.cfg --tweaks=dev/tools/tcon/tweaks --save=dev/tools/tcon/stats"
   ,"ftbq_cleanup": "esno mc-tools/scripts/ftbq_cleanup.ts"
   ,"mc-benchmark": "mc-benchmark --output=dev/benchmarks/latest.md"

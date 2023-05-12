@@ -1,0 +1,267 @@
+###############################
+# Configuration for mct-errors
+###############################
+
+# If you want to make modpack-related config, copy and modify this one
+# and feed it to mct-errors with argument
+
+# All strings except replace.to is JS RegExes
+
+###############################
+
+# We can cut only partial of log if we dont want to list all the errors
+boundries: 
+  from:
+  to: '[Server thread/' # Server thread started when player joining world
+
+# RegEx to match log.
+# Default confir matches all Warnings and Errors in debug.log
+#       ╔═══════════════════ Regular errors ════════════════════╗╔════════════════════════════════════════ ASM errors that takes several lines ══════════════════════════════════════════════════════════════════╗
+match: '^\[\d+:\d+:\d+\] \[[^\]]+(WARN|ERROR)\]([\s\S\n](?!^\[))+(\n\[\d+:\d+:\d+\] \[Client thread/ERROR\] \[FML\]: Index: \d+ Listeners:\r?\n(\[\d+:\d+:\d+\] \[Client thread/ERROR\] \[FML\]: \d+: .+\r?\n?)+)?'
+
+# Before output errors, all this replaces would be applied to resulted element
+replace:
+  # Remove timestamps
+  - from: '^\[\d+:\d+:\d+\] '
+    to: ''
+
+  # Remove hash codes
+  - from: '@[0-9a-f]{4,8}'
+    to: '@xxxxxxxx'
+
+  # Cut long stack traces
+  - from: '(?<cap>(^[^\n]*$\n){5})([^\n]*\n.*)+'
+    to: $<cap>  [...]
+
+# RegExps to remove entries from output
+ignore:
+  # FML errors that most mods have, no harm
+  - '\[FML\]: The coremod .+ is not signed!'
+  - '\[FML\]: The coremod .+ does not have a MCVersion annotation'
+  - '\[FML\]: Found .+ should be in a separate jar from the coremod.'
+  - '\[FML\]: Potentially Dangerous alternative prefix `.+`'
+  - "\\[FML\\]: Mod .+ is missing the required element 'version'"
+  - '\[LaunchWrapper\]: Tweak class name .+ has already been visited'
+
+  # Warning about Forge Debug
+  - ': ==( Forge Debug Logging is ENABLED|=+)?'
+
+  # FML mod signature errors
+  - '\[FML\]: The mod .* is expecting signature.*however there is no signature matching that description'
+  - '\[FML\]: FML appears to be missing any signature data. This is not a good thing'
+
+  # Most likely happens when recipe changed and recipe name was changed too
+  - '\[net.minecraft.advancements.AdvancementList\]: Couldn.t load advancement'
+
+  # Errors of loading models, have no effects in game
+  - 'ERROR. \[FML\]: Exception loading (model|blockstate) for( the)? variant'
+  - 'ERROR. \[FML\]: MultiModel minecraft:builtin/missing is empty'
+  - 'ERROR. \[FML\]: Could not load override model'
+  - 'WARN. \[FML\]: OBJModel.Parser: found a face .+ with more than 4 vertices'
+
+  # Ignore missing textures (actually, they are unused)
+  - '\[net.minecraft.client.renderer.texture.TextureMap\]: Using missing texture. unable to load '
+
+  # Parsing recipe errors from FML. Probably items just removed but recipe reference is present
+  - '\[FML\]: Parsing error loading recipe '
+
+  # Warnings that not changing game, just notes
+  - '\[CoFH World\]: Using `metadata` .+ for blocks is deprecated'
+
+  # Guide-API error - mod for JSON books documentation for mods. Unrelated to CraftTweaker
+  - '\[Guide-API\]: Cannot get renderer for recipe type class crafttweaker.mc1120.recipes.MCRecipeShaped'
+
+  # Ignore Compact machines disabled recipes
+  - '\[compactmachines3\]: Could not deserialize recipe from file:'
+
+  # Warnings that actually a jokes
+  - '\[enderio\]: TConstruct. you fail again. muhaha! The world is mine. mine!'
+  - '\[enderio\]: Applied Energistics conduits loaded. Let your networks connect!'
+  - '\[enderio\]: OpenComputers conduits loaded. Let your networks connect!'
+  - '\[enderio\]: Forestry integration loaded. Let things grow.'
+  - '\[enderio\]: Mekanism Gas conduits loaded. Let your networks connect!'
+
+  # Warnings about absent mods
+  - '\[enderio\]: Refined Storage conduits NOT loaded. Refined Storage is not installed'
+  - '\[enderio\]: Could not find Build Craft Wrench definition. Wrench integration with other mods may fail'
+
+  # Doesnt change anything in game
+  - 'ERROR. \[(tconstruct-(API|modifier)|conarm)\]: (Could not|Cannot) load (material model|multimodel|modifier-model)'
+  - '\[placebo\]: Exception loading patreon data!'
+  - '\[AstralSorcery Patreon Effect Loader/WARN\] \[Astral Sorcery\]: Skipped .* patreon effects during loading due to malformed data!'
+
+  # Mixins for absent mods. Happen when mod doesn't care to check if mod present first
+  - '\[Client thread/WARN\] \[mixin\]: Error loading class: '
+
+  # PetroPetunia cant be tweaked with decay https://github.com/quat1024/BotaniaTweaks/issues/63
+  - 'Mod floralchemy is loaded. but flower petropetunia is not present??'
+
+  # Probably safe, reported https://github.com/iLexiconn/LLibrary/issues/156
+  - '\[LLibrary Core\]: Failed to fetch hierarchy node for .*. This may cause patch issues'
+
+  # Known warning. reported
+  - '\[TickCentral\]: Unable to get superclass as resource: '
+
+  # plethora incompatible with betteranimals
+  - '\[plethora\]: Cannot inject neural renderer for dev.itsmeow.betteranimals'
+
+  # Immersive automatic recycling cant recycle some recipes
+  - '\[immersiveengineering\]: Recipe has invalid inputs and will be ignored'
+
+  # Actually Additions warning, no harm
+  - '/WARN. \[FML\]: \*{5,}'
+  - '/WARN. \[FML\]: \* Registry Item: The object .+ has been registered twice for the same name'
+  - '/WARN. \[FML\]: \*  at \w+\.'
+
+  # Additional properties for mixins
+  - 'ERROR. \[mixin\]: Mixin config .+ does not specify "minVersion" property'
+
+  # IC2 blocks and fluids that skipped
+  - '\[ic2.(Item|Block)\]: The .* is not initialized.'
+
+  # REAuth complaining about JAVA version
+  - 'WARN. \[ReAuth\]: \+-----------------'
+  - 'WARN. \[ReAuth\]: \| Please complain '
+  - 'WARN. \[ReAuth\]: \| Java 8'
+  - 'WARN. \[ReAuth\]: \| Updating would a'
+  - 'WARN. \[ReAuth\]: \+-----------------'
+  - 'WARN. \[ReAuth\]: Cryptography is restricted'
+  - 'WARN. \[ReAuth\]: Certificates required'
+
+  # Some case-sensetive warnings, can be ignored
+  - 'WARN. \[.+AbstractResourcePack\]: ResourcePack: ignored non-lowercase namespace: META-INF in'
+
+  # Some JEI errors, no harm
+  - 'ERROR. \[jei|HadEnoughItems\]: A Recipe Handler has already been registered for '
+  - 'ERROR. \[jei|HadEnoughItems\]: An interpreter is already registered for this item'
+  - 'ERROR. \[jei|HadEnoughItems\]: Failed to register mod plugin'
+  - 'ERROR. \[jei|HadEnoughItems\]: Recipe has no output. Extra Utilities 2 extrautils2:shortcut_hopper'
+
+  # Happens when IC2 machine recipes changed
+  - 'WARN. \[ic2\.Recipe\]: Late recipe loading failed\.'
+
+  # Forestry using old BoP item entry
+  - 'WARN. \[forestry\]: Missing block: sandstone'
+
+  # Extra Utilities 2 fluids have no block representations
+  - 'WARN. \[tconstruct-API\]: Itemstack 1xitem\.null.+ cannot represent material .+ since it is not associated with the material!'
+
+  # Sledgehammer mod normal behaviour
+  - '\[Sledgehammer\]: Skipping reloadSearchTrees'
+
+  # Nutrition cant attach capabilities to Computercraft and Plethora. Doesnt matter since turtles cant eat anyway
+  - 'Exception caught during firing event \S+AttachCapabilitiesEvent[\s\S\n]+nutrition.events.EventPlayerJoinWorld[\s\S\n]+'
+
+  # JED complaining about file fingerprint
+  - WARN. .Sledgehammer.. Certificate Fingerprint Violation Detected!
+  - WARN. .justenoughdimensions.. \*{15}
+  - 'WARN. .justenoughdimensions.. \*{5}   '
+
+  # Safe WARNings, just for information
+  - '\[LLibrary Core\]: Unable to call Core API! It has not been initialized yet!'
+  - '\[brandonscore\]: No features were detected for mod: brandonscore.'
+  - '\[EnderCore ASM\]: Ersatz patch applied. things may break!'
+  - '\[enderio\]: Farming Station: Forestry integration for farming loaded but could not find Forestry sapling.'
+  - '\[enderio\]: Farming Station: Forestry integration for fertilizing loaded but could not find Forestry fertilizer.'
+  - 'WARN. \[FML\]: A mod has attempted to assign Block Block\{minecraft:air\} to the Fluid'
+  - 'WARN. \[FML\]: No types have been added to Biome'
+  - 'WARN. \[particleculling\]: Could not find particle class .+ If the mod is not installed, this can be ignored'
+  - 'WARN. \[enderio\]: Not adding supplied recipe as a recipe already exists for the input: '
+  - 'WARN. \[enderio\]: Item used in (Smeltery|cast) recipe .+ doesn.t smelt into a fluid'
+  - 'WARN. \[(FML|FTB Library)\]: Replacing .+ with .+'
+  - 'WARN. \[inventorytweaks\]: Failed to check item tree version: null'
+  - 'WARN. \[keywizard\]: Conflicting mod detected, controls gui override may not work'
+  - 'WARN. \[keywizard\]: Controls gui override enabled, this may cause problems with other mods'
+  - 'WARN. \[mixin\]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins\.phosphor\.json:common\.MixinChunk cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded\.'
+  - 'Unable to read property: material with value: iron for blockstate: .+ic2:te'
+  - 'WARN. \[smoothfont\]: Fonts folder "fontfiles" does not exist'
+  - 'WARN. \[smoothfont\]: renderChar method might be replaced\. Fix the space width to 4 \(MC default\)\.'
+  - '\[solcarrot\]: Invalid Fingerprint!'
+  - 'WARN. \[thermalexpansion\]: Thermal Expansion received an invalid IMC from chisel! Key was addcompactorpressrecipe'
+  - 'WARN. \[toolprogression\]: Failed to set tool class of item'
+  - 'WARN. \[mixin\]: Reference map .+ for mixins\.mixincompat\.json could not be read\. If this is a development environment you can ignore this message'
+  - 'WARN. \[FML\]: Mod advancedrocketrycore has been disabled through configuration'
+  - 'WARN. \[net\.minecraft\.client\.audio\.SoundManager\]: Missing sound for event: thaumcraft:runicshieldcharge'
+  - 'WARN. \[ocsensors\]: Could not find field .+ in class '
+  - 'ERROR. \[base\]: java\.io\.FileNotFoundException: biomesoplenty:textures/items/gem\.png'
+  - 'WARN. \[FML\]: Unable to find recipe for minecraft:rabbit_stew'
+  - 'WARN. \[FML\]: Unable to find recipe for minecraft:baked_potato'
+  - 'WARN. \[(HadEnoughItems|jei)\]: Recipe registry plugin is slow, took \d{1,3}(\.\d+)? ms\.'
+
+  ###################
+  # Reported issues #
+  ###################
+  - '\[net.minecraft.entity.passive.EntityVillager\]: PriceRange.* smaller than'
+
+  # Mechanics error https://github.com/wolforcept/mechanics/issues/13
+  - '\[Mechanics\]: Failed to copy .+ property from block '
+
+  # ##################'
+  # E2E-E errors'
+  # ##################'
+  # Reported https://github.com/MKuckert/eye-of-dragons/issues/4'
+  - 'Coremod EyeOfDragonsPlugin: Unable to class load the plugin de.curlybracket.eyeofdragons.EyeOfDragonsPlugin'
+
+  # Some absent slabs. Dont know why they absent.'
+  - '\[net.blay09.mods.kleeslabs.KleeSlabs\]: Slab .* could not be found.'
+
+  # Reported: https://github.com/Janrupf/mod-director/issues/22'
+  - '\[main/WARN\] \[ModDirector/ForgeLateLoader\[Launchwrapper\]\]: Failed to find deobf tweaker'
+
+  # Known, "It's just logging, you can ignore it." https://github.com/LoliKingdom/LoliASM/issues/51'
+  - '\[Finalizer/WARN\] \[LoliASM\]: Clearing LoliStringPool 1'
+
+  # Wooden Crucible error (they disabled anyway)'
+  - '\[excompressum\]: Duplicate entry for .* in WoodenCrucible. overwriting...'
+
+  # Unknown errors but probably no harm'
+  - '\[main/WARN\] \[FML\]: Patcher expecting empty class data file for .+, but received non-empty'
+  - '\[excompressum\]: Could not load remote skins for auto sieve:'
+  - 'ERROR. \[Mekanism\]: Invalid BasicBlock. type: 1, meta: \d+'
+
+  # This error happen for every slot'
+  - '\[MineMenu\]: Menu item in slot .* is '
+
+  # OreDict can have wildcarded items in it => ThaumicWonders want to iterate them =>
+  # it turns items into blocks and iterates their sub - blcokstates
+  # This may cause issue only if blockstates could represent totally different items
+  - Wildcard meta detected for \S+ in void beacon registration; this can result in invalid result blocks
+
+  # Bansoukou normal work'
+  - '\[main/WARN\] \[Bansoukou\]: Marking .+'
+  - '\[main/WARN\] \[Bansoukou\]: .+ was found in the mods folder. Copying to modify the copied cache.'
+  - '\[main/WARN\] \[Bansoukou\]: Patching .+'
+  - '\[main/WARN\] \[Bansoukou\]: Removing .+'
+
+  - 'ERROR. \[(jei|HadEnoughItems)\]: Failed to register mod categories: class lykrast.jetif.JETIFPlugin'
+  - '\[FML\]: Overriding existing radiation moderator data for '
+  - 'ERROR\] \[reborncore\]: Invalid fingerprint detected for RebornCore'
+  - 'WARN\] \[mixin\]: Reference map .mixins\.forkedproxy\.refmap\.json. for mixins\.forkedproxyearlymixins\.json could not be read'
+
+  # Its ok, since we using Bansoukou
+  - 'WARN\] \[thaumicaugmentation\]: A file failed to match with the signing key.'
+  - 'WARN\] \[thaumicaugmentation\]: If you .know. this is a homebrew/custom build then this is expected, carry on.'
+  - 'WARN\] \[thaumicaugmentation\]: Otherwise, you might want to redownload this mod from the .official. CurseForge page.'
+  
+  # Im not using ATLauncher!
+  - 'ERROR\] \[craftpresence\]: Unable to get "atlauncher" pack data \(ignore if not using a "atlauncher" pack\)'
+
+  # We dont care about Realms button since we using Custom Main Menu
+  - ERROR. .mixin.. Critical problem. mixins.tweaks.misc.buttons.realms.json:UTRealmsButtonMainMenuMixin target net.minecraft.client.gui.GuiMainMenu was loaded too early.
+
+  # E2E-E have several debug recipes with `Mob Soul` items. When recipes is generated, CT trying to get name and fails. This makes no harm since its only happens in dev environment
+  - ERROR. .FML.. Encountered an exception while constructing entity '\w+:\w+'
+
+  # Dont know what that means
+  - WARN. .FML.. . Mods using BASE must have their mod class extend IBaseMod!
+
+  # Trials malfunction. Reported https://github.com/ThePansmith/DeepMobEvolution/issues/23
+  - WARN. .deepmoblearning.. Missing JSON entry with key "trial"!
+  - WARN. .deepmoblearning.. Missing Trial JSON entry in config for Data Model \w+:\w+. Using default values.
+
+  # Some Universal Tweaks Mixin problems. Reported https://github.com/ACGaming/UniversalTweaks/issues/180
+  - WARN. .mixin.. Error loading class. net/minecraft/server/dedicated/DedicatedServer
+  - WARN. .mixin.. @Mixin target net.minecraft.server.dedicated.DedicatedServer
+
+  # Some Universal Tweaks Mixin problems. Reported https://github.com/ACGaming/UniversalTweaks/issues/181
+  - WARN. .mixin.. @Mixin target net/minecraft/client/renderer/BlockModelRenderer.AmbientOcclusionFace is public in mixins.bugfixes.misc.smoothlighting.json:UTSmoothLightingMixin and should be specified in value
