@@ -8,7 +8,7 @@
 				"type": "geode",
 				"block": "nuclearcraft:fluid_cryotheum_nak_hot",
 				"crust": {"name": "twilightforest:aurora_block"},
-				"material": ["ice", "packed_ice"]
+				"material": ["ice", "packed_ice", "biomesoplenty:hard_ice"]
 			},
 			"cluster-count": 1,
 			"chunk-chance": 20,
