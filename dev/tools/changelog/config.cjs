@@ -24,6 +24,7 @@ function capitalize(str) {
  * @property {Record<string, string>} renames
  * @property {Record<string, string>} discardable
  * @property {Record<string, string>} scopes
+ * @property {string} defaultAuthor
  */
 
 /** @type {Config} */
@@ -118,6 +119,11 @@ const writerOpts = {
       return false
     })
 
+    if (commit.authorName
+      && commit.authorEmail
+      && commit.authorEmail !== config.defaultAuthor
+    ) /** @type {any} */ (commit).isContribution = true
+
     return commit
   },
 
@@ -144,6 +150,12 @@ const writerOpts = {
   },
   groupBy         : 'type',
   commitGroupsSort: 'title',
+  // commitGroupsSort: (a, b) => {
+  //   const commitGroupOrder = ['Reverts', 'Performance Improvements', 'Bug Fixes', 'Features']
+  //   const gRankA = commitGroupOrder.indexOf(a.title || '')
+  //   const gRankB = commitGroupOrder.indexOf(b.title || '')
+  //   return gRankA >= gRankB ? -1 : 1
+  // },
   commitsSort     : ['scope', 'subject'],
   noteGroupsSort  : 'title',
   // notesSort       : compareFunc,
@@ -179,13 +191,21 @@ function getModChanges() {
 }
 
 ////////////////////////////////////////////////////////////////////////
-module.exports = {
+/** @type {import('../../../node_modules/@types/conventional-changelog-core/index.d.ts').Options.Config} */
+const exportConfig = {
+  gitRawCommitsOpts: {
+    format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
+  },
   writerOpts,
   parserOpts: {
-    headerPattern       : /^(\w*)(?:\((.*)\))?: (.*)$/,
+    headerPattern       : /^(\w*)(?:\((.*)\))?!?: (.*)$/,
+    // breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
     headerCorrespondence: ['type', 'scope', 'subject'],
-    noteKeywords        : ['BREAKING CHANGE'],
+    noteKeywords        : ['BREAKING CHANGE', 'BREAKING-CHANGE'],
     revertPattern       : /^(?:Revert|revert:)\s"?([\s\S]+?)"?\s*This reverts commit (\w*)\./i,
     revertCorrespondence: ['header', 'hash'],
+    // issuePrefixes        : config.issuePrefixes,
   },
 }
+
+module.exports = exportConfig

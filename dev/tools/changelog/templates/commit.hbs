@@ -67,6 +67,12 @@
   {{~/if}}{{/each}}
 {{~/if}}
 
+{{~#if isContribution}}
+
+  > > Contributed by [{{authorName}}]({{authorEmail}})
+  >
+{{~/if}}
+
 {{~#if description}}
 {{~#each description}}
 
