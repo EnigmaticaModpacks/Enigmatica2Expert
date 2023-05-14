@@ -26,5 +26,5 @@ recipes.addShapeless("Blutonium -> Melodic Ingot conversion",<enderio:item_alloy
 recipes.addShapeless("Ludicrite -> Stellar Ingot conversion",<enderio:item_alloy_endergy_ingot:3>,[<bigreactors:ingotmetals:4>]);
 recipes.addShapeless("Blutonium -> Melodic Block conversion",<enderio:block_alloy_endergy:2>,[<bigreactors:blockmetals:3>]);
 recipes.addShapeless("Ludicrite -> Stellar Block conversion",<enderio:block_alloy_endergy:3>,[<bigreactors:blockmetals:4>]);
-recipes.addShapeless("Blutonium -> Melodic Dust conversion",<jaopca:dust.stellar_alloy>,[<bigreactors:dustmetals:3>]);
-recipes.addShapeless("Ludicrite -> Stellar Dust conversion",<jaopca:dust.melodic_alloy>,[<bigreactors:dustmetals:4>]);
+recipes.addShapeless("Blutonium -> Melodic Dust conversion",<enderio:item_alloy_endergy_ingot:2>,[<bigreactors:dustmetals:3>]);
+recipes.addShapeless("Ludicrite -> Stellar Dust conversion",<enderio:item_alloy_endergy_ingot:3>,[<bigreactors:dustmetals:4>]);

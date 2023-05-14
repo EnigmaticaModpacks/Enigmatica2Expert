@@ -1,5 +1,5 @@
 
 [general]
 	#The material blacklist of this module.
-	materialBlacklist = []
+	materialBlacklist = ["Aluminium", "Bedrock", "Brick", "CocoaButter", "EnderEye", "EnderPearl", "Endstone", "Fluix", "Milk", "NetherQuartz", "Netherrack", "PureNetherQuartz", "Stone", "Wheat", "Wood", "Ashes", "BrickNether", "BrickNetherGlazed", "BrickSeared", "CertusQuartz", "ChargedCertusQuartz", "ElvenElementium", "Manasteel", "Marshmallow", "Terrasteel"]
 
