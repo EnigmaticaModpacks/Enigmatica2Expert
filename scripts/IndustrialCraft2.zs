@@ -150,15 +150,15 @@ import mods.ic2.ScrapBox;
 	
 	recipes.addShapedMirrored("Basic Machine Casing2", 
 	<ic2:resource:12> * 4, 
-	[[<ore:plateAluminium>, <ore:plateDenseIron>, <ore:plateAluminium>],
+	[[<ore:plateAluminum>, <ore:plateDenseIron>, <ore:plateAluminum>],
 	[<ore:plateDenseIron>, null, <ore:plateDenseIron>], 
-	[<ore:plateAluminium>, <ore:plateDenseIron>, <ore:plateAluminium>]]);
+	[<ore:plateAluminum>, <ore:plateDenseIron>, <ore:plateAluminum>]]);
 	
 	recipes.addShapedMirrored("Basic Machine Casing3", 
 	<ic2:resource:12> * 4, 
-	[[<ore:plateAluminium>, <ore:plateDenseTin>, <ore:plateAluminium>],
+	[[<ore:plateAluminum>, <ore:plateDenseTin>, <ore:plateAluminum>],
 	[<ore:plateDenseTin>, null, <ore:plateDenseTin>], 
-	[<ore:plateAluminium>, <ore:plateDenseTin>, <ore:plateAluminium>]]);
+	[<ore:plateAluminum>, <ore:plateDenseTin>, <ore:plateAluminum>]]);
 
 # Reinforced Stone
 	recipes.addShapedMirrored("Reinforced Stone", 

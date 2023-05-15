@@ -1,4 +1,5 @@
 
+#Configurations for material Signalum.
 [general]
 	#The alternative names of this material.
 	alternativeNames = []

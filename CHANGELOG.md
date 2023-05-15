@@ -1,5 +1,80 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.90b & 1.90a & 1.90
+
+_Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90.md)_
+
+This is a major update! While you can apply this update to your existing worlds, we highly recommend starting afresh to get the absolute best gaming experience.
+
+**Heads up**: if you do decide to update your current world, remember to clear out your Dank Null. This update will wipe its contents, and we wouldn't want you to lose all your cobble!
+
+Remember to run the commands for updating quests after updating:
+
+```
+/bq_admin default load
+/bqs_loot default load
+```
+
+**New Mods**
+
+-   [Ender IO Endergy](https://www.curseforge.com/minecraft/mc-mods/ender-io-endergy) (by [tterrag1098](https://www.curseforge.com/members/tterrag1098/projects))
+-   [Framed Compacting Drawers](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers) (by [Eutro](https://www.curseforge.com/members/Eutro/projects))
+-   [IC2 Patcher](https://www.curseforge.com/minecraft/mc-mods/ic2-patcher) (by [Su5eD](https://www.curseforge.com/members/Su5eD/projects))
+-   [LagGoggles](https://www.curseforge.com/minecraft/mc-mods/laggoggles) (by [Terminator_NL](https://www.curseforge.com/members/Terminator_NL/projects))
+-   [spark](https://www.curseforge.com/minecraft/mc-mods/spark) (by [Iucko](https://www.curseforge.com/members/Iucko/projects))
+
+**Removed Mods**
+
+-   [Animania Base](https://www.curseforge.com/minecraft/mc-mods/animania) (by [Purplicious*Cow*](https://www.curseforge.com/members/Purplicious_Cow_/projects))
+-   [Just Enough Reactors](https://www.curseforge.com/minecraft/mc-mods/just-enough-reactors) (by [BrainStone](https://www.curseforge.com/members/BrainStone/projects))
+-   [Extreme Reactors](https://legacy.curseforge.com/minecraft/mc-mods/extreme-reactors) (by [ZeroNoRyouki](https://legacy.curseforge.com/members/zeronoryouki/projects)) to be removed - everything disabled for now.
+
+**Improvements**
+
+-   Remove all function from Extreme Reactors, temporary conversion recipes added.
+-   Note added to Unbreakable Graphite Rods about repaired Graphite Rods
+-   Skullfire Sword recipe altered
+-   Mekanism energy rebalance
+-   Environmental Tech energy rebalance
+-   Upgradable EnderIO Simple Machines
+-   Set Stellar tools mining level to 11 - Now equal to Supremium, Terrasteel and Atomic Disassembler
+-   Disable Advanced Generator gas intake due to unfixed bugs
+-   Re-enable the limited Prism whitelist
+-   Remove Redstone and Glowstone melting in Melter
+-   Enabled Stone melting in Melter
+-   Cheaper recipes for Flux Gate and Fluid Gate
+-   Cheaper recipes for RFTools Elevator and Screen Controller
+-   Removed oreDict from Adv Rocketry Iron and Steel rods
+-   Add Industrial Foregoing Biofuel as Compression Dynamo fuel
+-   Add Pig Iron to Advanced Metallurgic Fabricator
+-   Add Knightslime to Advanced Metallurgic Fabricator
+-   Streamline Spice of Life: Carrot Edition food amounts - by lekutree
+-   Unify all fluid cells to use Lapis
+-   Rainbow Gen recipe slightly cheaper
+-   Bees Wax unification
+-   Improve Marble chiseling into 3 Chisel categories: Astral Sorcery & Unlimited Chisel Works, Chisel & Quark, Sooty Marble
+
+**Fixed bugs**
+
+-   Updated scripts to use Aluminum instead of Aluminium, un-breaking a few recipes
+-   Lapotron Crystals can't have 0 charge in its recipes
+-   Rock Crystal Swords are broken in its recipes
+-   Rock Crystals are broken in various recipes
+-   EnderIO upgrade recycling fixed
+-   Fairies disabled due to crashing on AMD GPUs
+-   Fixed Ultimate Tanks had to be placed to work for the Black Hole Tank
+-   Removed invalid combs in JEI
+-   Fix Electric Jetpack recipe
+-   Fix Nether Ores mining level
+-   Remove AE2 Seeds from Phytogenic Insulator, never worked properly
+-   Fix AR Fuel usage
+-   Some gas names has changed, fix Gas Tank Trophy
+-   Remove stray Uranium Plate recipes
+-   Hide ImmersiveTech new creative items
+-   Remove unwanted Dusts from Integrated Dynamics Squeezers
+
+---
+
 ## 1.86
 
 _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.86.md)_ | _Using Forge-1.12.2-14.23.5.2860_
