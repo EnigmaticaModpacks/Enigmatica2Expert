@@ -1,6 +1,8 @@
 ### Enigmatica 2: Expert Changelog
 
-## 1.90b & 1.90a & 1.90
+## 1.90
+
+_... and 1.90a, 1.90b and 1.90c_
 
 _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90.md)_
 
@@ -10,10 +12,8 @@ This is a major update! While you can apply this update to your existing worlds,
 
 Remember to run the commands for updating quests after updating:
 
-```
-/bq_admin default load
-/bqs_loot default load
-```
+`/bq_admin default load`
+`/bqs_loot default load`
 
 **New Mods**
 
