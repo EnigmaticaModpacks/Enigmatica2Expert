@@ -1,4 +1,6 @@
-
+# Re-add Graphite Ingot from Coal & Charcoal
+	furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal>, 0.1);
+	furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:1>, 0.1);
 
 # Removing duplicate recipes
 	furnace.remove(<appliedenergistics2:material:5>, <enderio:item_material:33>);
