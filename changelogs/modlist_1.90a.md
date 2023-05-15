@@ -1,4 +1,4 @@
-## Enigmatica 2 Expert - 1.90
+## Enigmatica 2 Expert - 1.90a
 
   * [ActuallyAdditions-1.12.2-r152.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/3117927) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
   * [ActuallyBaubles-1.12-1.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-baubles/files/2459131) (by [Jacky](https://www.curseforge.com/members/Jacky/projects))
