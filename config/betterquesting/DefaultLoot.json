@@ -943,7 +943,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "jaopca:item_coinboron",
+                            "id:8": "jaopca:coin.boron",
                             "Count:3": 64,
                             "OreDict:8": "",
                             "Damage:3": 0
@@ -954,7 +954,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "jaopca:item_cointitanium",
+                            "id:8": "jaopca:coin.titanium",
                             "Count:3": 64,
                             "OreDict:8": "",
                             "Damage:3": 0
@@ -965,7 +965,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "jaopca:item_coinardite",
+                            "id:8": "jaopca:coin.ardite",
                             "Count:3": 64,
                             "OreDict:8": "",
                             "Damage:3": 0
@@ -976,7 +976,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "jaopca:item_coinastralstarmetal",
+                            "id:8": "jaopca:coin.astralstarmetal",
                             "Count:3": 64,
                             "OreDict:8": "",
                             "Damage:3": 0
@@ -4063,7 +4063,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "crafttweaker:anglesite",
+                            "id:8": "contenttweaker:anglesite",
                             "Count:3": 1,
                             "OreDict:8": "",
                             "Damage:3": 0
@@ -4074,7 +4074,7 @@
                     "weight:3": 1,
                     "items:9": {
                         "0:10": {
-                            "id:8": "crafttweaker:benitoite",
+                            "id:8": "contenttweaker:benitoite",
                             "Count:3": 1,
                             "OreDict:8": "",
                             "Damage:3": 1

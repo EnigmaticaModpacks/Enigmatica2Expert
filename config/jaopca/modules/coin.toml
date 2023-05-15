@@ -3,5 +3,5 @@
 	#The material blacklist of this module.
 	materialBlacklist = []
 	#The materials to force generate passive forms for this module.
-	passiveMaterialWhitelist = []
+	passiveMaterialWhitelist = ["Ardite", "AstralStarmetal", "Boron", "Titanium"]
 
