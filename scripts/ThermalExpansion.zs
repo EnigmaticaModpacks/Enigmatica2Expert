@@ -280,9 +280,3 @@ mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:0>, <minecraft:glowstone_dust>);
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:600>, <minecraft:glowstone_dust>);
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:1200>, <minecraft:glowstone_dust>);
-
-# JAOPCA removed integration :(
-mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.ardite>, 64000);
-mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.astralstarmetal>, 64000);
-mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.boron>, 100000);
-mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.titanium>, 150000);
