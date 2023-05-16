@@ -283,6 +283,6 @@ mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:1
 
 # JAOPCA removed integration :(
 mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.ardite>, 64000);
-mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.astralstarmetal>, 64000);
+mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.astral_starmetal>, 64000);
 mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.boron>, 100000);
 mods.thermalexpansion.NumisticDynamo.addFuel(<jaopca:coin.titanium>, 150000);
