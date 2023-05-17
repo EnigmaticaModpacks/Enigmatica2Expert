@@ -1,4 +1,4 @@
-## Enigmatica 2 Expert - 1.90d
+## Enigmatica 2 Expert - 1.90c
 
   * [ActuallyAdditions-1.12.2-r152.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/3117927) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
   * [ActuallyBaubles-1.12-1.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-baubles/files/2459131) (by [Jacky](https://www.curseforge.com/members/Jacky/projects))
@@ -129,7 +129,7 @@
   * [IronBackpacks-1.12.2-3.0.8-12.jar](https://www.curseforge.com/minecraft/mc-mods/iron-backpacks/files/2564573) (by [gr8pefish](https://www.curseforge.com/members/gr8pefish/projects))
   * [ironchest-1.12.2-7.0.72.847.jar](https://www.curseforge.com/minecraft/mc-mods/iron-chests/files/2747935) (by [ProgWML6](https://www.curseforge.com/members/ProgWML6/projects))
   * [IvToolkit-1.3.3-1.12.jar](https://www.curseforge.com/minecraft/mc-mods/ivtoolkit/files/2443253) (by [Ivorforce](https://www.curseforge.com/members/Ivorforce/projects))
-  * [JAOPCA-1.12.2-2.2.8.106.jar](https://www.curseforge.com/minecraft/mc-mods/jaopca/files/3487112) (by [TheLMiffy1111](https://www.curseforge.com/members/TheLMiffy1111/projects))
+  * [JAOPCA-1.12.2-2.3.8.13.jar](https://www.curseforge.com/minecraft/mc-mods/jaopca/files/4459423) (by [TheLMiffy1111](https://www.curseforge.com/members/TheLMiffy1111/projects))
   * [jei_1.12.2-4.16.1.1003.jar](https://www.curseforge.com/minecraft/mc-mods/jei/files/4538010) (by [mezz](https://www.curseforge.com/members/mezz/projects))
   * [jeibees-0.9.0.5-mc1.12.2.jar](https://www.curseforge.com/minecraft/mc-mods/jei-bees/files/2490058) (by [bdew](https://www.curseforge.com/members/bdew/projects))
   * [jeivillagers-1.12-1.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/jei-villagers/files/2508393) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
