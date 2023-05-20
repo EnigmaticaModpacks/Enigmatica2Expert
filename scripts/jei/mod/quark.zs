@@ -43,7 +43,6 @@ config('config/quark.cfg')
     }']] : [${pos==1?'null, ':''}<minecraft:potion>.withTag({Potion: "${potion.replace('minecraft:health_boost','potioncore:health_boost')}"})]});`
 }))*/
 add({[   <draconicevolution:draconium_block:0>, glyphs['1']] : [<minecraft:potion>.withTag({Potion: "potioncore:diamond_skin"})]});
-add({[            <minecraft:redstone_block:*>, glyphs['1']] : [<minecraft:potion>.withTag({Potion: "potioncore:extension"})]});
 add({[        <twilightforest:block_storage:0>, glyphs['1']] : [<minecraft:potion>.withTag({Potion: "potioncore:solid_core"})]});
 add({[              <thaumcraft:metal_brass:*>, glyphs['1']] : [null, <minecraft:potion>.withTag({Potion: "minecraft:absorption"})]});
 add({[  <endreborn:block_decorative_lormyte:*>, glyphs['1']] : [null, <minecraft:potion>.withTag({Potion: "potioncore:step_up"})]});
