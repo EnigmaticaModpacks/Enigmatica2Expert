@@ -410,4 +410,4 @@ mods.immersiveengineering.MetalPress.addRecipe(<rats:string_cheese>, <ore:foodCh
 
 # Containment food 
 # [Contaminated Food] alter non-rat recipe
-mods.nuclearcraft.FissionIrradiator.addRecipe(<ore:foodNutrients5>, <rats:contaminated_food>, 10000, 0, 0, 0);
+mods.nuclearcraft.FissionIrradiator.addRecipe(<ore:foodNutrients5>, <rats:contaminated_food>, 5000000, 0, 0, 0);
