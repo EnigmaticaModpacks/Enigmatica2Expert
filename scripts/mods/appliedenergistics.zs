@@ -570,3 +570,8 @@ craft.remake(<appliedenergistics2:part:360>, ["pretty",
 # Remake recipe that making hundred of its copies
 mods.appliedenergistics2.Inscriber.removeRecipe(<appliedenergistics2:material:60>);
 mods.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:60>, <appliedenergistics2:material:25>, false, <minecraft:redstone_block>, <minecraft:lapis_block>);
+
+# Pure crystals instant growing in Witch Water
+mods.inworldcrafting.FluidToItem.transform(<appliedenergistics2:material:10>, <fluid:witchwater>, [<appliedenergistics2:crystal_seed>], true);
+mods.inworldcrafting.FluidToItem.transform(<appliedenergistics2:material:11>, <fluid:witchwater>, [<appliedenergistics2:crystal_seed:600>], true);
+mods.inworldcrafting.FluidToItem.transform(<appliedenergistics2:material:12>, <fluid:witchwater>, [<appliedenergistics2:crystal_seed:1200>], true);
