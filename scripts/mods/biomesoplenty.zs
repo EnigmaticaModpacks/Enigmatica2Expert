@@ -40,6 +40,9 @@ scripts.process.compress(<minecraft:packed_ice> * 2, <biomesoplenty:hard_ice>);
 	mods.thermalexpansion.Centrifuge.addRecipe([rawMeat[0], rawMeat[1], rawMeat[2], rawMeat[3]
 		] as WeightedItemStack[],<biomesoplenty:flesh>, null, 2000);
 
+# Blood from flesh
+scripts.process.melt(<biomesoplenty:fleshchunk>, <liquid:blood> * 20);
+
 # Honey Block -> Honey Drop
 	mods.forestry.Centrifuge.addRecipe([(<forestry:honey_drop> * 5) % 80, (<thermalfoundation:material:99> % 25), (<thermalfoundation:material:100> % 25)], <biomesoplenty:honey_block>, 100);
 	mods.thermalexpansion.Centrifuge.addRecipe([(<forestry:honey_drop>) * 5 % 80, <thermalfoundation:material:99> % 25, <thermalfoundation:material:100> % 25], <biomesoplenty:honey_block>, null, 2000);
