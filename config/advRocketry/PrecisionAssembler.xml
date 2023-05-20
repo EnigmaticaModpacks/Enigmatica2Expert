@@ -144,20 +144,6 @@
 			<itemStack>rats:arcane_technology</itemStack>
 		</output>
 	</Recipe>
-	<!-- 2x faster and cheaper EiO capaciotr, using iridium coils -->
-	<Recipe timeRequired="10" power="20000">
-		<input>
-			<!-- HV Capacitor -->
-			<itemStack>immersiveengineering:metal_device0 1 2</itemStack>
-			<!-- Redstone Conductance Coil -->
-			<itemStack>thermalfoundation:material 1 515</itemStack>
-			<!-- Grains of Infinity -->
-			<oreDict>dustBedrock 2</oreDict>
-		</input>
-		<output>
-			<itemStack>enderio:item_basic_capacitor</itemStack>
-		</output>
-	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Machine Frame] -->
 	<Recipe timeRequired="20" power="80000">
@@ -545,6 +531,19 @@
 		</input>
 		<output>
 			<itemStack>forestry:thermionic_tubes 64 10</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Capacitor] -->
+	<Recipe timeRequired="160" power="1280000">
+		<input>
+			<oreDict>stickTitaniumIridium 64</oreDict>
+			<oreDict>dustBedrock 64</oreDict>
+			<oreDict>ingotFluixSteel 64</oreDict>
+			<itemStack>thermalfoundation:material 64 515</itemStack>
+		</input>
+		<output>
+			<itemStack>enderio:item_basic_capacitor 64 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
