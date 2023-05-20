@@ -28,18 +28,28 @@
 		type: "item",
 		items: [{
 			item: "thermalfoundation:ore"
+		},
+		{
+			item: "thermalfoundation:ore 1 4"
+		},
+		{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "slime"
+			}
+		},
+		{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "blueslime"
+			}
 		}],
-		count: 2L
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "5c69ce75",
 		type: "item",
 		item: "tconstruct:soil",
 		count: 64
-	},
-	{
-		uid: "8739a71e",
-		type: "item",
-		item: "forestry:pipette"
 	}]
 }

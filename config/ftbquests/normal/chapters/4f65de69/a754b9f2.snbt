@@ -1,0 +1,20 @@
+{
+	x: -3.95d,
+	y: -1.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "6fe267ff",
+		type: "item",
+		items: [{
+			item: "minecraft:clay"
+		}],
+		count: 36L
+	}]
+}

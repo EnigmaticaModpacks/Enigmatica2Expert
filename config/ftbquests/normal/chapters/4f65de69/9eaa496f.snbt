@@ -39,16 +39,11 @@
 					data: "oreIron"
 				}
 			}
+		},
+		{
+			item: "minecraft:iron_ingot"
 		}],
 		count: 2L
-	},
-	{
-		uid: "78fd66a6",
-		type: "item",
-		disable_toast: true,
-		items: [{
-			item: "minecraft:iron_ingot"
-		}]
 	}],
 	rewards: [{
 		uid: "0f03ee6a",

@@ -1,0 +1,19 @@
+{
+	x: -2.95d,
+	y: -0.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "1c8ee8e8",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_mesh 1 1"
+		}]
+	}]
+}

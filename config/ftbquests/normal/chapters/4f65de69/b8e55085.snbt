@@ -1,0 +1,19 @@
+{
+	x: -4.45d,
+	y: -0.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "bcc26a42",
+		type: "item",
+		items: [{
+			item: "tconstruct:rack 1 1"
+		}]
+	}]
+}

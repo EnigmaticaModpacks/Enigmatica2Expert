@@ -26,13 +26,8 @@
 		type: "item",
 		items: [{
 			item: "mekanism:oreblock"
-		}],
-		count: 2L
-	},
-	{
-		uid: "59d716f9",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "pigiron"

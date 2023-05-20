@@ -1,0 +1,19 @@
+{
+	x: 1.7999999999999998d,
+	y: -0.75d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "f6829c1b",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 163"
+		}]
+	}]
+}

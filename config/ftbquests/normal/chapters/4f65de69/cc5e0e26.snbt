@@ -1,0 +1,19 @@
+{
+	x: -4.45d,
+	y: -1.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "356d2a66",
+		type: "item",
+		items: [{
+			item: "minecraft:bowl"
+		}]
+	}]
+}

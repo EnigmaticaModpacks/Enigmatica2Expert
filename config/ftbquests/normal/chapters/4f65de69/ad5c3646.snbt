@@ -1,0 +1,19 @@
+{
+	x: 1.1000000000000005d,
+	y: -0.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "42c38644",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:white_sand"
+		}]
+	}]
+}

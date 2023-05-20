@@ -16,7 +16,12 @@
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:material"
-		}],
-		count: 2L
+		},
+		{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "treatedwood"
+			}
+		}]
 	}]
 }

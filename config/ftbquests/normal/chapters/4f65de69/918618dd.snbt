@@ -1,0 +1,21 @@
+{
+	x: -0.4500000000000002d,
+	y: -0.5d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "0dcaefb0",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:tool_harvest_leaves"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

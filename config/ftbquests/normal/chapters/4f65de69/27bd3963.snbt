@@ -1,0 +1,19 @@
+{
+	x: 1.1000000000000005d,
+	y: -1.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "69d725ff",
+		type: "item",
+		items: [{
+			item: "netherendingores:ore_nether_modded_1"
+		}]
+	}]
+}

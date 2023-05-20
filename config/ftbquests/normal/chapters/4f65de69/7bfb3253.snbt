@@ -2,7 +2,7 @@
 	title: "{q.getting_started.explosions.name}",
 	icon: "minecraft:skull 1 4",
 	x: -4.0d,
-	y: 0.5d,
+	y: 0.6d,
 	text: [
 		"{q.getting_started.explosions.desc}"
 	],

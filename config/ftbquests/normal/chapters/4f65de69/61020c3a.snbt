@@ -1,0 +1,22 @@
+{
+	disable_toast: true,
+	x: -6.657000000000001d,
+	y: 2.7930000000000006d,
+	shape: "diamond",
+	text: [
+		"{q.getting_started.skyblock.desc}"
+	],
+	hide: true,
+	hide_text_until_complete: true,
+	size: 0.07d,
+	optional: true,
+	tasks: [{
+		uid: "33db62b4",
+		type: "custom",
+		title: "Skyblock",
+		tags: [
+			"skyblock"
+		],
+		disable_toast: true
+	}]
+}

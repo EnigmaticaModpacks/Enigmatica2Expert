@@ -1,0 +1,20 @@
+{
+	x: -2.95d,
+	y: -1.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "5784c999",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}],
+		count: 10L
+	}]
+}

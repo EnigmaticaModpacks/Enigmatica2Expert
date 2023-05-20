@@ -1,0 +1,20 @@
+{
+	x: 0.5499999999999998d,
+	y: -1.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "d50f6c0e",
+		type: "item",
+		items: [{
+			item: "randomthings:blockbreaker"
+		}],
+		count: 2L
+	}]
+}

@@ -21,8 +21,8 @@
 		table: 11
 	},
 	{
-		uid: "6dd35f09",
+		uid: "14ba96a7",
 		type: "item",
-		item: "bibliocraft:handdrill"
+		item: "forestry:pipette"
 	}]
 }

@@ -1,0 +1,20 @@
+{
+	x: 0.8500000000000005d,
+	y: -0.75d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "495e5d69",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_ore_iron"
+		}],
+		count: 9L
+	}]
+}

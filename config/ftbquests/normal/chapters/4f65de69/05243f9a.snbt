@@ -1,7 +1,7 @@
 {
 	icon: "mctsmelteryio:machine 1 1",
 	x: -0.875d,
-	y: 0.5d,
+	y: 0.6d,
 	text: [
 		"{q.getting_started.casting_machine.desc}"
 	],

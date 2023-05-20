@@ -1,7 +1,7 @@
 {
 	title: "{q.getting_started.toolkits.name}",
 	x: 0.625d,
-	y: 0.5d,
+	y: 0.6d,
 	text: [
 		"{q.getting_started.toolkits.desc}"
 	],

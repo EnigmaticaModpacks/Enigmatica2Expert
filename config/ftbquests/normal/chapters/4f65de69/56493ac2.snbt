@@ -1,0 +1,20 @@
+{
+	x: -1.9500000000000002d,
+	y: -1.0d,
+	shape: "diamond",
+	hide_dependency_lines: true,
+	dependencies: [
+		"61020c3a"
+	],
+	hide: true,
+	size: 0.5d,
+	optional: true,
+	tasks: [{
+		uid: "db62937e",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_material 1 3"
+		}],
+		count: 2L
+	}]
+}
