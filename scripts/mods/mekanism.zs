@@ -7,51 +7,6 @@ import crafttweaker.item.IIngredient;
 (<mekanism:oreblock> as IIngredient).removeTooltip('.*LSHIFT.*');
 (<mekanism:oreblock> as IIngredient).removeTooltip('.*any height.*');
 
-# The Combiner can dupe a bunch of stuff, so we're manually handle this
-mods.mekanism.combiner.removeAllRecipes();
-/*Inject_js(
-getCSV('config/tellme/items-csv.csv')
-.map(it=>{
-  const mat = it['Ore Dict keys']
-    .split(',')
-    .map(o=>o.match(/(piece)([A-Z]\w+)/)?.[2])
-    .find(o=>o)
-  if(!mat || !isODExist('block'+mat)) return undefined
-  return [
-    it['Registry name']+':'+it['Meta/dmg'],
-    mat
-]})
-.filter(o=>o)
-.map(([item, mat], i, arr)=>
-  `mods.mekanism.combiner.addRecipe(<ore:block${(mat+'>,').padEnd(17)} ${$(...item.split(':'))});`
-)
-)*/
-mods.mekanism.combiner.addRecipe(<ore:blockTungsten>,        <contenttweaker:item_ore_tungsten>);
-mods.mekanism.combiner.addRecipe(<ore:blockAluminium>,       <exnihilocreatio:item_ore_aluminium>);
-mods.mekanism.combiner.addRecipe(<ore:blockArdite>,          <exnihilocreatio:item_ore_ardite>);
-mods.mekanism.combiner.addRecipe(<ore:blockCobalt>,          <exnihilocreatio:item_ore_cobalt>);
-mods.mekanism.combiner.addRecipe(<ore:blockCopper>,          <exnihilocreatio:item_ore_copper>);
-mods.mekanism.combiner.addRecipe(<ore:blockGold>,            <exnihilocreatio:item_ore_gold>);
-mods.mekanism.combiner.addRecipe(<ore:blockIron>,            <exnihilocreatio:item_ore_iron>);
-mods.mekanism.combiner.addRecipe(<ore:blockLead>,            <exnihilocreatio:item_ore_lead>);
-mods.mekanism.combiner.addRecipe(<ore:blockNickel>,          <exnihilocreatio:item_ore_nickel>);
-mods.mekanism.combiner.addRecipe(<ore:blockSilver>,          <exnihilocreatio:item_ore_silver>);
-mods.mekanism.combiner.addRecipe(<ore:blockTin>,             <exnihilocreatio:item_ore_tin>);
-mods.mekanism.combiner.addRecipe(<ore:blockAstralStarmetal>, <jaopca:item_pieceastralstarmetal>);
-mods.mekanism.combiner.addRecipe(<ore:blockBoron>,           <jaopca:item_pieceboron>);
-mods.mekanism.combiner.addRecipe(<ore:blockDraconium>,       <jaopca:item_piecedraconium>);
-mods.mekanism.combiner.addRecipe(<ore:blockIridium>,         <jaopca:item_pieceiridium>);
-mods.mekanism.combiner.addRecipe(<ore:blockLithium>,         <jaopca:item_piecelithium>);
-mods.mekanism.combiner.addRecipe(<ore:blockMagnesium>,       <jaopca:item_piecemagnesium>);
-mods.mekanism.combiner.addRecipe(<ore:blockMithril>,         <jaopca:item_piecemithril>);
-mods.mekanism.combiner.addRecipe(<ore:blockOsmium>,          <jaopca:item_pieceosmium>);
-mods.mekanism.combiner.addRecipe(<ore:blockPlatinum>,        <jaopca:item_pieceplatinum>);
-mods.mekanism.combiner.addRecipe(<ore:blockThorium>,         <jaopca:item_piecethorium>);
-mods.mekanism.combiner.addRecipe(<ore:blockTitanium>,        <jaopca:item_piecetitanium>);
-mods.mekanism.combiner.addRecipe(<ore:blockUranium>,         <jaopca:item_pieceuranium>);
-/**/
-
-
 for ingot in <ore:ingotGraphite>.items {
 	mods.mekanism.crusher.addRecipe(ingot, <nuclearcraft:dust:8>);
 }
