@@ -92,6 +92,7 @@ for ore_entry in oreDict {
 			: oreDict["block"~ore_name];
 		if(inpOre.items.length <= 0) continue;
 		scripts.process.compress(inpOre, ore_entry.firstItem, "only: Compactor");
+    mods.immersiveengineering.MetalPress.addRecipe(ore_entry.firstItem, oreDict["plate"~ore_name], <immersiveengineering:mold:6>, 16000, 9);
     continue;
 	}
 }
