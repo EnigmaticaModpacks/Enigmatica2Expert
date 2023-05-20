@@ -27,8 +27,22 @@
     { "drop": {"name": "exnihilocreatio:item_seed_rubber"    , "meta": 0} , "chance": 0.05 , "meshLevel": 1 } ,
     { "drop": {"name": "exnihilocreatio:item_material"       , "meta": 3} , "chance": 0.05 , "meshLevel": 1 } ,
     { "drop": {"name": "exnihilocreatio:item_material"       , "meta": 4} , "chance": 0.05 , "meshLevel": 1 } ,
-    { "drop": {"name": "actuallyadditions:item_canola_seed"  , "meta": 0} , "chance": 0.05 , "meshLevel": 1 } ,
-    { "drop": {"name": "extrautils2:redorchid"               , "meta": 0} , "chance": 0.02 , "meshLevel": 1 }
+    { "drop": {"name": "actuallyadditions:item_canola_seed"  , "meta": 0} , "chance": 0.05 , "meshLevel": 1 }
+  ],
+
+  "ore:dirtCoarse": [
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 0} , "chance": 1.0  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 0} , "chance": 1.0  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 0} , "chance": 0.5  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 0} , "chance": 0.5  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 0} , "chance": 0.1  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 0} , "chance": 0.1  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 1} , "chance": 0.5  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 1} , "chance": 0.1  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 2} , "chance": 0.5  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 2} , "chance": 0.1  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 3} , "chance": 0.5  , "meshLevel": 1 } ,
+    { "drop": {"name": "exnihilocreatio:item_pebble"         , "meta": 3} , "chance": 0.1  , "meshLevel": 1 }
   ],
 
   "exnihilocreatio:block_netherrack_crushed:0": [
@@ -281,19 +295,22 @@
   "minecraft:sand:1": [
     {"meshLevel": 1, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.3} ,
     {"meshLevel": 1, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.3} ,
+    {"meshLevel": 1, "drop": {"name": "extrautils2:redorchid"                , "meta": 0}    , "chance": 0.3} ,
 
     {"meshLevel": 2, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.4} ,
-    {"meshLevel": 2, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.15} ,
     {"meshLevel": 2, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.4} ,
+    {"meshLevel": 2, "drop": {"name": "extrautils2:redorchid"                , "meta": 0}    , "chance": 0.4} ,
+    {"meshLevel": 2, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.15} ,
 
     {"meshLevel": 3, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.5} ,
-    {"meshLevel": 3, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.5} ,
+    {"meshLevel": 3, "drop": {"name": "extrautils2:redorchid"                , "meta": 0}    , "chance": 0.5} ,
+    {"meshLevel": 3, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.2} ,
     {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_iron"        , "meta": 0}    , "chance": 0.2} ,
 
     {"meshLevel": 4, "drop": {"name": "deepmoblearning:soot_covered_redstone", "meta": 0}    , "chance": 0.6} ,
-    {"meshLevel": 4, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.25} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_copper"      , "meta": 0}    , "chance": 0.6} ,
+    {"meshLevel": 4, "drop": {"name": "extrautils2:ingredients"              , "meta": 0}    , "chance": 0.25} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_iron"        , "meta": 0}    , "chance": 0.25} ,
     {"meshLevel": 4, "drop": {"name": "exnihilocreatio:item_ore_gold"        , "meta": 0}    , "chance": 0.25}
   ],

@@ -535,3 +535,6 @@ remakeEnchanterRecipe(<minecraft:gold_block>, <minecraft:dye:4> * 9      , <ore:
 remakeEnchanterRecipe(<minecraft:gold_ingot>, <minecraft:dye:4>          , <ore:ingotElectrum>, <ore:gemLapis>        , <extrautils2:ingredients:12>    ,   8000, 20*10);
 remakeEnchanterRecipe(<minecraft:iron_block> * 8, <minecraft:nether_star> * 9, <ore:blockPigiron> , <ore:netherStar>      , <extrautils2:simpledecorative:2>, 500000, 4800);
 remakeEnchanterRecipe(<minecraft:iron_ingot> * 8, <minecraft:nether_star>    , <ore:ingotPigiron> , <ore:nuggetNetherStar>, <extrautils2:ingredients:17>    ,  80000, 480);
+
+# Turn Red Orchids straight into redstone Ore
+scripts.do.burnt_in_fluid.add('extrautils2:redorchid', <blockstate:minecraft:redstone_ore>, 'stone', 1.0 / 3.0);

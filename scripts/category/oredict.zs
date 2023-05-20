@@ -146,6 +146,14 @@ addItems(<ore:dirt>, [
 	<biomesoplenty:dirt:2>
 ]);
 
+# Coarse Dirt
+addItems(<ore:dirtCoarse>, [
+	<minecraft:dirt:1>,
+	<biomesoplenty:dirt:8>,
+	<biomesoplenty:dirt:9>,
+	<biomesoplenty:dirt:10>,
+]);
+
 # Enhanced Ender Ingot
 add(<ore:ingotEnderEnhanced>, <extendedcrafting:material:48>);
 

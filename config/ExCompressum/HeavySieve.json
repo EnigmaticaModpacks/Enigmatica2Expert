@@ -803,8 +803,35 @@
             "rolls": 1
           },
           {
+            "meshLevel": 1,
+            "name": "extrautils2:redorchid",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.3,
+            "rolls": 1
+          },
+          {
             "meshLevel": 2,
             "name": "deepmoblearning:soot_covered_redstone",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.4,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 2,
+            "name": "exnihilocreatio:item_ore_copper",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.4,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 2,
+            "name": "extrautils2:redorchid",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -821,17 +848,26 @@
             "rolls": 1
           },
           {
-            "meshLevel": 2,
-            "name": "exnihilocreatio:item_ore_copper",
+            "meshLevel": 3,
+            "name": "deepmoblearning:soot_covered_redstone",
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.4,
+            "chance": 0.5,
             "rolls": 1
           },
           {
             "meshLevel": 3,
-            "name": "deepmoblearning:soot_covered_redstone",
+            "name": "exnihilocreatio:item_ore_copper",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.5,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "extrautils2:redorchid",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -845,15 +881,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.2,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "exnihilocreatio:item_ore_copper",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.5,
             "rolls": 1
           },
           {
@@ -876,20 +903,20 @@
           },
           {
             "meshLevel": 4,
-            "name": "extrautils2:ingredients",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.25,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 4,
             "name": "exnihilocreatio:item_ore_copper",
             "metadata": 0,
             "count": 1,
             "luck": 0,
             "chance": 0.6,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 4,
+            "name": "extrautils2:ingredients",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 0.25,
             "rolls": 1
           },
           {
