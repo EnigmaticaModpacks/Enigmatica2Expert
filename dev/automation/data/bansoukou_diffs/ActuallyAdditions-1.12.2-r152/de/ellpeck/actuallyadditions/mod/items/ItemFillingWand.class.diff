@@ -1,0 +1,9 @@
+@@ -155,7 +155,7 @@ extends ItemEnergy {
+                     BlockPos firstPos = new BlockPos(compound.func_74762_e("FirstX"), compound.func_74762_e("FirstY"), compound.func_74762_e("FirstZ"));
+                     BlockPos secondPos = new BlockPos(compound.func_74762_e("SecondX"), compound.func_74762_e("SecondY"), compound.func_74762_e("SecondZ"));
+                     if (!BlockPos.field_177992_a.equals((Object)firstPos) && !BlockPos.field_177992_a.equals((Object)secondPos)) {
+-                        int energyUse = 1500;
++                        int energyUse = 100;
+                         Pair<IBlockState, String> data = ItemFillingWand.loadData(stack);
+                         if (data != null && (creative || this.getEnergyStored(stack) >= energyUse)) {
+                             int currZ;
