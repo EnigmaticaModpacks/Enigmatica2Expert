@@ -7,8 +7,8 @@
 
 // @ts-check
 
-import { existsSync, readFileSync, writeFileSync } from 'fs'
-import { join, parse } from 'path'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { join, parse } from 'node:path'
 
 import * as cheerio from 'cheerio'
 import MarkdownIt from 'markdown-it'
@@ -68,6 +68,7 @@ $('body').prepend(
 $('html').contents().unwrap()
 $('body').replaceWith($('body').contents())
 $('head').replaceWith($('head').contents())
+$('nobr').contents().unwrap()
 
 const source = parse(sourcePath)
 writeFileSync(join(source.dir, `${source.name}.html`), $.html())

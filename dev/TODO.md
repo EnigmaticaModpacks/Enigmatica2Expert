@@ -2,28 +2,27 @@
 
 List of priorities:
 
+- [ ] 🔄 Remove Excess MRF files from resources `git show <rev> | git apply -R`
 - [ ] 🐀 Fix rats not spawn on garbage piles
-- [ ] 💥 `world.catenation()` doesnt working anymore
 - [ ] 💥 going Between Dims Causing Client Freezez
-- [ ] 📖 Add info about Sediments + Anvil => Trophy interaction
-- [ ] 📖 Trials JEI tab is invisible https://github.com/ThePansmith/DeepMobEvolution/issues/24
 - [ ] 📖 Implement item storage quests https://discord.com/channels/911676461050642432/1100262454522544128/1106364365109739533
-- [ ] 📖 Add quest about new Rustic's Pots
+- [ ] 📖 `Speed Rat Upgrade` add quest
+- [x] 📖 Conflux level automatically
 - [ ] 🔄 Update E2E
 - [ ] 🔄 Disable Skeletons on horses since they cause random explosions
-- [ ] 🔄 Fix chapter completion message not working
 - [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
-- [ ] 🔄 Remove Excess MRF files from resources `git show <rev> | git apply -R`
-- [ ] 🔄 Test Skyblock Mode
-- [ ] 🔄 Write about unable to run game from first time
+- [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time
+- [ ] 📓 Changelog should change version number
+- [ ] 📓 Changelog images should have `width=240px` instead of `style`
 - [ ] 🟢 Integrate ☢️ `New Turbine Parts`
-- [ ] 🟣 Request about `Block` => `Item` getter for CT or ZenUtils
-- [ ] ✏️ Lootr still turn Dispensers into Lootr Chests https://github.com/noobanidus/Lootr/issues/189
+- [ ] 🟣 Implement `IBlock#getItem(world, pos, blockState)`
+- [ ] 🔄 Teleport player to Alien Forest on Alfheim interaction
+- [ ] 🔄 disable Caves In TF
+- [x] ✏️ add Rat diamond to ME etcher
+- [ ] ✏️ add Dilithium Magic only
+- [x] ✏️ Add Airtight Seal as built-in ench
+- [ ] ✏️ Spawn Pechs in TF
 - [ ] ✏️ Scented Hives Not Working In Skyblock. Still not working, even with config changes
-- [x] ✏️ network Manager Uncraftable
-- [x] ✏️ quantum Ring Required Full Charged Cells
-- [x] ✏️ AS Altair Should No Require Tech Items
-- [x] 📖 remove Sanguine Scienti JEI Info
 - [ ] ✏️ void Beacon Not Working. Probably because of `Bansoukou` OR `Thaumcraft Aspect Creator`
 - [ ] ✏️ Implement BoP drop improvments https://github.com/ProjectHDS/Herodotus/blob/d097ba6b2be402715bf759730c14ebfbd5e42fd4/.minecraft/scripts/hds_main/utils/bopCompat.zs
 
@@ -35,6 +34,9 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Lootr still turn Dispensers into Lootr Chests https://github.com/noobanidus/Lootr/issues/189
+- [ ] ✏️ twlight forest advancement not showing up in advancement tab V1.2.1. Need conformation
+- [ ] 📖 Trials JEI tab is invisible https://github.com/ThePansmith/DeepMobEvolution/issues/24
 - [ ] ✏️ Make use of IC2 brewing
 - [ ] ✏️ Buff EU saber and give it more damage. Material changer cant change its attack speed. BHT cant skip its frames too
 - [ ] ✏️ Draconic Metals made in QMD multiblocks

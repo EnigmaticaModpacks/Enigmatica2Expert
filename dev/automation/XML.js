@@ -8,8 +8,8 @@
 
 // @ts-check
 
-import { writeFileSync } from 'fs'
-import { relative } from 'path'
+import { writeFileSync } from 'node:fs'
+import { relative } from 'node:path'
 
 import detectIndent from 'detect-indent'
 import _ from 'lodash'
@@ -87,13 +87,18 @@ export async function init(h = defaultHelper) {
 
 // @ts-expect-error
 if (
-  import.meta.url === (await import('url')).pathToFileURL(process.argv[1]).href
+  import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href
 )
   init()
 
 /** @param {string} xmlString */
 function xml_to_js(xmlString) {
-  return /** @type {XMLElement} */ (xml2js(xmlString, { compact: false }))
+  try {
+    return /** @type {XMLElement} */ (xml2js(xmlString, { compact: false }))
+  }
+  catch (error) {
+
+  }
 }
 
 /** @return {{[filePath: string]: XMLElement[]}} */
@@ -131,6 +136,7 @@ function getChanges(h = defaultHelper) {
     .mapValues(arr =>
       arr
         .map(xml_to_js)
+        .filter(Boolean)
         .sort(
           (a, b) =>
             countInputs(b) - countInputs(a)
