@@ -438,7 +438,7 @@ recipes.addShapeless("trapdoororedict1", <minecraft:trapdoor>, [<ore:trapdoorWoo
 recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
 
 # Rats
-addItems(<ore:hatArcheologist>, [<quark:archaeologist_hat>, <rats:archeologist_hat>]);
+addItems(<ore:hatArcheologist>, [<quark:archaeologist_hat:*>, <rats:archeologist_hat:*>]);
 addItems(<ore:hatPirate>, [<quark:pirate_hat>, <rats:pirat_hat>]);
 
 # Some dusts
