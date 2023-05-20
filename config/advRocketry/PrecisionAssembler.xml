@@ -206,16 +206,16 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Garden Cloche] -->
-	<Recipe timeRequired="320" power="1280000">
+	<Recipe timeRequired="80" power="320000">
 		<input>
-			<itemStack>actuallyadditions:block_greenhouse_glass 64</itemStack>
-			<itemStack>ic2:upgrade 64 4</itemStack>
-			<oreDict>plankTreatedWood 64</oreDict>
-			<itemStack>immersiveengineering:metal_decoration0 64 5</itemStack>
-			<fluidStack>glass 256000</fluidStack>
+			<itemStack>actuallyadditions:block_greenhouse_glass 16</itemStack>
+			<itemStack>ic2:upgrade 16 4</itemStack>
+			<oreDict>plankTreatedWood 16</oreDict>
+			<itemStack>immersiveengineering:metal_decoration0 16 5</itemStack>
+			<fluidStack>glass 64000</fluidStack>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:metal_device1 64 13</itemStack>
+			<itemStack>immersiveengineering:metal_device1 16 13</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -693,14 +693,14 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Hardened Casing] -->
-	<Recipe timeRequired="160" power="640000">
+	<Recipe timeRequired="60" power="240000">
 		<input>
-			<oreDict>gemDiamondRat 64</oreDict>
-			<itemStack>forestry:sturdy_machine 32</itemStack>
-			<fluidStack>water 160000</fluidStack>
+			<oreDict>gemDiamondRat 24</oreDict>
+			<itemStack>forestry:sturdy_machine 12</itemStack>
+			<fluidStack>water 60000</fluidStack>
 		</input>
 		<output>
-			<itemStack>forestry:hardened_machine 32 0</itemStack>
+			<itemStack>forestry:hardened_machine 12 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

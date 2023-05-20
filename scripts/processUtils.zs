@@ -279,6 +279,10 @@ function avdRockXmlRecipe(filename as string,
   avdRockXmlRecipeEx(filename, inputItems, inputLiquids, outputItems, outputLiquids, null);
 }
 
+static fluidMaxInput as int[string] = {
+  PrecisionAssembler: 64000
+} as int[string];
+
 function avdRockXmlRecipeFlatten(
   filename as string,
   output as IItemStack,
@@ -294,6 +298,12 @@ function avdRockXmlRecipeFlatten(
   var ingrs = [] as IIngredient[];
   var countRaw = [] as int[];
   var maxStackSize = altMaxMult;
+
+  # Clamp max fluid size to 16 buckets
+  if(!isNull(fluidInput)) maxStackSize = min(
+    (!isNull(fluidMaxInput[filename]) ? fluidMaxInput[filename] as int : 16000)
+    / fluidInput.amount, maxStackSize
+  );
 
   # Iterate the grid
   for y, row in ingredients {
