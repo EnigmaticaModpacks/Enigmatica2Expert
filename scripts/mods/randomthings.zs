@@ -562,3 +562,12 @@ craft.remake(<darkutils:monolith>, ["pretty",
   "S": <ore:itemXP>, # Solidified Experience
   "M": <tconstruct:materials:19>, # Mending Moss
 });
+
+# Cheaper platforms
+craft.remake(<randomthings:platform> * 6, ["###", " F "], {"#": <minecraft:planks>,"F": <randomthings:ingredient:7>,});
+craft.remake(<randomthings:platform:1> * 6, ["###", " F "], {"#": <minecraft:planks:1>,"F": <randomthings:ingredient:7>,});
+craft.remake(<randomthings:platform:2> * 6, ["###", " F "], {"#": <minecraft:planks:2>,"F": <randomthings:ingredient:7>,});
+craft.remake(<randomthings:platform:3> * 6, ["###", " F "], {"#": <minecraft:planks:3>,"F": <randomthings:ingredient:7>,});
+craft.remake(<randomthings:platform:4> * 6, ["###", " F "], {"#": <minecraft:planks:4>,"F": <randomthings:ingredient:7>,});
+craft.remake(<randomthings:platform:5> * 6, ["###", " F "], {"#": <minecraft:planks:5>,"F": <randomthings:ingredient:7>,});
+craft.remake(<randomthings:superlubricentplatform> * 6, ["SSS", " F "], {"S": <randomthings:superlubricentice>,"F": <randomthings:ingredient:7>,});
