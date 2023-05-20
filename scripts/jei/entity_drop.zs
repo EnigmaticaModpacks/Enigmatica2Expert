@@ -473,4 +473,5 @@ return list.map(({ groups: { id, display, items } }) => {
 add('emberroot:rootsonespriteboss', [<minecraft:totem_of_undying> * 100, <mysticalagriculture:crafting:3> * 2000]); // Guardian of Sprites
 add('betteranimalsplus:hirschgeist', [<mysticalagriculture:crafting:2> * 400, <randomthings:ingredient:2> * 400, <betteranimalsplus:hirschgeistskull_1> * 25]);
 add('thaumcraft:cultistleader', [ <thaumcraft:crimson_praetor_helm>.withLore(["§4Need to be stripped"]) * 100, <thaumcraft:crimson_praetor_chest>.withLore(["§6Need to be stripped"]) * 100, <thaumcraft:crimson_praetor_legs>.withLore(["§6Need to be stripped"]) * 100, <thaumcraft:crimson_blade>.withLore(["§6Need to be stripped"]) * 100]);
+add('botania:pixie', [<jaopca:item_dusttinytitanium> * 150]);
 
