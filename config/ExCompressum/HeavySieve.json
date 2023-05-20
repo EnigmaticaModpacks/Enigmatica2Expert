@@ -786,15 +786,6 @@
         "rewards": [
           {
             "meshLevel": 1,
-            "name": "deepmoblearning:soot_covered_redstone",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.3,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 1,
             "name": "exnihilocreatio:item_ore_copper",
             "metadata": 0,
             "count": 1,
@@ -809,15 +800,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.3,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 2,
-            "name": "deepmoblearning:soot_covered_redstone",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.4,
             "rolls": 1
           },
           {
@@ -845,15 +827,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.15,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 3,
-            "name": "deepmoblearning:soot_covered_redstone",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.5,
             "rolls": 1
           },
           {
@@ -890,15 +863,6 @@
             "count": 1,
             "luck": 0,
             "chance": 0.2,
-            "rolls": 1
-          },
-          {
-            "meshLevel": 4,
-            "name": "deepmoblearning:soot_covered_redstone",
-            "metadata": 0,
-            "count": 1,
-            "luck": 0,
-            "chance": 0.6,
             "rolls": 1
           },
           {

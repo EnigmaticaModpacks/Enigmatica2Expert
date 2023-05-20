@@ -250,14 +250,6 @@
       <output name="tconstruct:materials:19"/>
     </tanking>
   </recipe>
-  <!-- Water Washing -->
-  <recipe name="Soot-Covered Washing">
-    <tanking type="FILL" logic="NONE">
-      <input name="deepmoblearning:soot_covered_redstone"/>
-      <fluid name="water" amount="20"/>
-      <output name="minecraft:redstone"/>
-    </tanking>
-  </recipe>
   <!-- Treating planks alt -->
   <recipe name="Treated Planks IC2">
     <tanking type="FILL" logic="NONE">
