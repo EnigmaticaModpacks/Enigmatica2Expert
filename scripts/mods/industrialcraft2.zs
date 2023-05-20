@@ -372,6 +372,24 @@ craft.shapeless(<ic2:crafting:23> * 64, "G~", {
   "~": <fluid:condensate_water> * 1000, # Condensate Water
 });
 
+# [Scrap]*64
+craft.shapeless(<ic2:crafting:23> * 64, "G~", {
+  "G": <nuclearcraft:wasteland_earth>,
+  "~": <fluid:condensate_water> * 1000, # Condensate Water
+});
+
+# [Scrap Box]*64
+craft.shapeless(<ic2:crafting:24> * 32, "G~", {
+  "G": <trinity:radioactive_earth>,
+  "~": <fluid:condensate_water> * 1000, # Condensate Water
+});
+
+# [Scrap Box]*64
+craft.shapeless(<ic2:crafting:24> * 64, "G~", {
+  "G": <trinity:radioactive_earth2>,
+  "~": <fluid:water> * 1000, # Condensate Water
+});
+
 # --------------------------------------------------------------------------------------------
 # CROPS
 # --------------------------------------------------------------------------------------------
@@ -542,7 +560,7 @@ recipes.addShapeless('firebox_ashes', <forestry:ash>, [<ic2:misc_resource>]);
 
 # Shortcut for AR
 # [Lapotron Crystal] from [Advanced Circuit][+1]
-scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:circuitAdvanced> * 4], [<fluid:lapis> * 10000], [<ic2:lapotron_crystal>.withTag({}) * 4], null);
+scripts.processUtils.avdRockXmlRecipe("Crystallizer", [<ore:circuitAdvanced> * 4], [<fluid:lapis> * 10000], [<ic2:lapotron_crystal> * 4], null);
 
 # [Scaffold]*20 from [Stick][+1]
 craft.remake(<ic2:scaffold> * 20, ["pretty",
