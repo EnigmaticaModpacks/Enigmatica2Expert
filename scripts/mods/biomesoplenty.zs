@@ -139,8 +139,7 @@ scripts.process.squeeze([<biomesoplenty:planks_0:11>], <liquid:lava> * 750, "onl
 scripts.process.squeeze([<biomesoplenty:leaves_3:8>], <liquid:lava> * 240, "only: Squeezer MechanicalSqueezer", null);
 
 # [Celestial Crystal Shard] from [Obsidian Shard][+1]
-scripts.process.alloy([<ore:crystalPureFluix>, <tconstruct:shard>.withTag({Material: "obsidian"})], <biomesoplenty:crystal_shard>, "only: Kiln");
-scripts.process.alloy([<ore:crystalPureFluix>, <tconstruct:shard>.withTag({Material: "obsidian"})], <biomesoplenty:crystal_shard> * 4, "only: AdvRockArc");
+scripts.process.alloy([<ore:crystalPureFluix>, <tconstruct:shard>.withTag({Material: "obsidian"})], <biomesoplenty:crystal_shard>, "only: Kiln AlloySmelter");
 
 # [Biome Finder] from [Cobweb][+2]
 craft.remake(<biomesoplenty:biome_finder>, ["pretty",
