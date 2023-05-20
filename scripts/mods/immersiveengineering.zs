@@ -118,21 +118,42 @@ craft.make(<immersiveengineering:stone_decoration:5> * 8, ["pretty",
 	mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17>, <thermalfoundation:material:802>, 4000);
 	mods.thermalexpansion.Pulverizer.addRecipe(<immersiveengineering:material:17>, <immersiveengineering:material:6>, 4000);
 
-# Energy Capacitors
-	recipes.remove(<immersiveengineering:metal_device0:1>);
-	recipes.addShaped("MV Capacitor", 
-	<immersiveengineering:metal_device0:1>, 
-	[[<ore:ingotFakeIron>, <ore:ingotFakeIron>, <ore:ingotFakeIron>],
-	[<ore:ingotElectrum>, <immersiveengineering:metal_device0>, <ore:ingotElectrum>], 
-	[<ore:plankTreatedWood>, <ore:blockRedstone>, <ore:plankTreatedWood>]]);
-	
-	recipes.remove(<immersiveengineering:metal_device0:2>);
-	recipes.addShaped("HV Capacitor", 
-	<immersiveengineering:metal_device0:2>, 
-	[[<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>],
-	[<ore:blockLead>, <immersiveengineering:metal_device0:1>, <ore:blockLead>], 
-	[<ore:plankTreatedWood>, <ore:blockRedstone>, <ore:plankTreatedWood>]]);
-	
+# [LV Capacitor] from [Lead Item Casing][+4]
+craft.remake(<immersiveengineering:metal_device0>, ["pretty",
+  "⌂ □ ⌂",
+  "⌂ L ⌂",
+  "# ♥ #"], {
+  "⌂": <ic2:casing:1>,         # Copper Item Casing
+  "□": <ore:plateIron>,        # Iron Plate
+  "L": <ic2:casing:4>,         # Lead Item Casing
+  "#": <ore:stickTreatedWood>, # Treated Stick
+  "♥": <ore:dustRedstone>,     # Redstone
+});
+
+# [MV Capacitor] from [LV Capacitor][+4]
+craft.remake(<immersiveengineering:metal_device0:1>, ["pretty",
+  "⌂ □ ⌂",
+  "⌂ L ⌂",
+  "# ♥ #"], {
+  "⌂": <ic2:casing:3>,                       # Iron Item Casing
+  "□": <ore:plateElectrum>,                  # Electrum Plate
+  "L": <immersiveengineering:metal_device0>, # LV Capacitor
+  "#": <ore:stickTreatedWood>,               # Treated Stick
+  "♥": <ore:blockRedstone>,                  # Block of Redstone
+});
+
+# [HV Capacitor] from [MV Capacitor][+4]
+craft.remake(<immersiveengineering:metal_device0:2>, ["pretty",
+  "⌂ □ ⌂",
+  "⌂ M ⌂",
+  "# ♥ #"], {
+  "⌂": <ic2:casing:5>,                         # Steel Item Casing
+  "□": <ore:plateDenseLead>,                   # Dense Lead Plate
+  "M": <immersiveengineering:metal_device0:1>, # MV Capacitor
+  "#": <ore:stickTreatedWood>,                 # Treated Stick
+  "♥": <ore:blockRedstone>,                    # Block of Redstone
+});
+
 # LV - MV Connectors/Relays
 	recipes.addShapeless("LV - MV Connector", <immersiveengineering:connector:2>, [<immersiveengineering:connector>, <ore:ingotFakeIron>]);
 	recipes.addShapeless("LV - MV Relay", <immersiveengineering:connector:3>, [<immersiveengineering:connector:1>, <ore:ingotFakeIron>]);
