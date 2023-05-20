@@ -27,6 +27,27 @@ furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:crushed:6>);
 furnace.addRecipe(<thermalfoundation:material:131>, <ic2:purified:3>);
 furnace.addRecipe(<immersiveengineering:metal:5>,   <ic2:purified:6>);
 
+# [RE-Battery] from [Rubber][+2]
+craft.make(<ic2:re_battery:26>.withTag({}), ["pretty",
+  "  R  ",
+  "⌂ ♥ ⌂",
+  "⌂ ♥ ⌂"], {
+  "R": <ore:itemRubber>,   # Rubber
+  "⌂": <ic2:casing:6>,     # Tin Item Casing
+  "♥": <ore:dustRedstone>, # Redstone
+});
+
+# [Advanced RE-Battery] from [Sulfur][+3]
+craft.make(<ic2:advanced_re_battery:26>.withTag({}), ["pretty",
+  "R ⌂ R",
+  "⌂ ♠ ⌂",
+  "⌂ ▲ ⌂"], {
+  "R": <ore:itemRubber>, # Rubber
+  "⌂": <ic2:casing>,     # Bronze Item Casing
+  "♠": <ore:dustSulfur>, # Sulfur
+  "▲": <ore:dustLead>,   # Pulverized Lead
+});
+
 # Removing IC2 coal coke
 	recipes.remove(<ic2:coke>);
 
