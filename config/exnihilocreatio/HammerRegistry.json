@@ -151,5 +151,14 @@
       "chance": 1.0,
       "fortuneChance": 0.0
     }
+  ],
+  "ic2:wall": [
+    {
+      "item": "minecraft:sand:0",
+      "amount": 1,
+      "miningLevel": 0,
+      "chance": 1.0,
+      "fortuneChance": 0.0
+    }
   ]
 }
