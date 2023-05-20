@@ -84,7 +84,7 @@
     {
       "item": "biomesoplenty:white_sand:0",
       "amount": 1,
-      "miningLevel": 1,
+      "miningLevel": 0,
       "chance": 1.0,
       "fortuneChance": 0.0
     }
@@ -93,7 +93,7 @@
     {
       "item": "biomesoplenty:dried_sand:0",
       "amount": 1,
-      "miningLevel": 1,
+      "miningLevel": 0,
       "chance": 1.0,
       "fortuneChance": 0.0
     }
@@ -138,7 +138,7 @@
     {
       "item": "cyclicmagic:stone_pebble:0",
       "amount": 12,
-      "miningLevel": 1,
+      "miningLevel": 0,
       "chance": 1.0,
       "fortuneChance": 1.0
     }
