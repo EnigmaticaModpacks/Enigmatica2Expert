@@ -645,44 +645,106 @@ mods.thaumcraft.Infusion.registerRecipe(
   [<thaumcraft:void_boots:*>,<bloodmagic:item_demon_crystal>,<bloodmagic:slate:3>,<thaumadditions:adaminite_fabric>,<thaumadditions:adaminite_fabric>]
 );
 
-#[Mithminite armor set]
+function makeArmor(
+	name as string,
+	research as string,
+	armor as IItemStack,
+	aspects as thaumcraft.aspect.CTAspectStack[],
+	central as IIngredient,
+	ingrs as IIngredient[]
+) as void {
+	armor.addEnchantment(<enchantment:advancedrocketry:spacebreathing>.makeEnchantment(1));
+	mods.thaumcraft.Infusion.registerRecipe(name, research, armor, 10, aspects, central, ingrs);
+}
+
+# 
 mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_hood>);
-mods.thaumcraft.Infusion.registerRecipe(
+makeArmor(
   "mithminite_hood", # Name
   "HOOD", # Research
   <thaumadditions:mithminite_hood>, # Output
-  10, # Instability
-  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:visum>*200,<aspect:sensus>*200,<aspect:amogus>*42],
+  [
+		<aspect:caeles>*100,
+		<aspect:praemunio>*50,
+		<aspect:visum>*200,
+		<aspect:sensus>*200,
+		<aspect:amogus>*42,
+	],
   <thaumadditions:adaminite_hood:*>, # CentralItem
-  [<thaumcraft:sanity_checker>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumadditions:mithminite_fabric>,<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:fragnant_pendant>,<thaumadditions:seal_globe>]
-);
+  [
+		<thaumcraft:sanity_checker>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:fragnant_pendant>,
+		<thaumadditions:seal_globe>,
+]);
+
 mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_robe>);
-mods.thaumcraft.Infusion.registerRecipe(
+makeArmor(
   "mithminite_robe", # Name
   "ROBE", # Research
-  <thaumadditions:mithminite_robe>, # Output
-  10, # Instability
-  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:victus>*200,<aspect:draco>*200,<aspect:amogus>*42],
+  <thaumadditions:mithminite_robe>.withTag({air: 36000}),
+  [
+		<aspect:caeles>*100,
+		<aspect:praemunio>*50,
+		<aspect:victus>*200,
+		<aspect:draco>*200,
+		<aspect:amogus>*42,
+	],
   <thaumadditions:adaminite_robe:*>, # CentralItem
-  [<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicaugmentation:thaumostatic_harness:*>,<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicwonders:panacea:1>]
-);
+  [
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumicaugmentation:thaumostatic_harness:*>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumicwonders:panacea:1>,
+]);
+
 mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_belt>);
-mods.thaumcraft.Infusion.registerRecipe(
+makeArmor(
   "mithminite_belt", # Name
   "BELT", # Research
   <thaumadditions:mithminite_belt>, # Output
-  10, # Instability
-  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:volatus>*200,<aspect:ventus>*200,<aspect:amogus>*42],
+  [
+		<aspect:caeles>*100,
+		<aspect:praemunio>*50,
+		<aspect:volatus>*200,
+		<aspect:ventus>*200,
+		<aspect:amogus>*42,
+	],
   <thaumadditions:adaminite_belt:*>, # CentralItem
- [<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicwonders:flying_carpet:*>,<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>]
-);
+	[
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumicwonders:flying_carpet:*>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:zeith_fur>,
+]);
+
 mods.thaumcraft.Infusion.removeRecipe(<thaumadditions:mithminite_boots>);
-mods.thaumcraft.Infusion.registerRecipe(
+makeArmor(
   "mithminite_boots", # Name
   "BOOTS", # Research
   <thaumadditions:mithminite_boots>, # Output
-  10, # Instability
-  [<aspect:caeles>*100,<aspect:praemunio>*50,<aspect:sonus>*200,<aspect:exitium>*200,<aspect:amogus>*42],
+  [
+		<aspect:caeles>*100,
+		<aspect:praemunio>*50,
+		<aspect:sonus>*200,
+		<aspect:exitium>*200,
+		<aspect:amogus>*42,
+	],
   <thaumadditions:adaminite_boots:*>, # CentralItem
-  [<thaumadditions:mithminite_fabric>,<thaumadditions:zeith_fur>,<thaumadditions:zeith_fur>,<thaumadditions:mithminite_fabric>,<thaumicaugmentation:research_notes>]
-);
+  [
+		<thaumadditions:mithminite_fabric>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:zeith_fur>,
+		<thaumadditions:mithminite_fabric>,
+		<thaumicaugmentation:research_notes>,
+]);
