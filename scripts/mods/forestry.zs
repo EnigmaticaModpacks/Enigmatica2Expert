@@ -338,3 +338,70 @@ for log, plank in scripts.category.wood.logPlank {
 for i in 0 .. 16 {
   mods.forestry.ThermionicFabricator.removeCast(<minecraft:stained_glass>.definition.makeStack(i) * 4);
 }
+
+# [Ash Bricks] from [Mud Brick][+1]
+craft.make(<forestry:ash_brick>, ["pretty",
+  "▲ M ▲",
+  "M   M",
+  "▲ M ▲"], {
+  "▲": <ore:dustAsh>,            # Ash
+  "M": <tconstruct:materials:1>, # Mud Brick
+});
+
+# Make x2 cheaper to help with Wood Piles
+# [Loam]*8 from [Compost][+2]
+craft.remake(<forestry:loam> * 8, ["pretty",
+  "c C c",
+  "▲ c ▲",
+  "c C c"], {
+  "c": <ore:clay>, # Clay
+  "C": <forestry:fertilizer_bio>,   # Compost
+  "▲": <ore:dust>,                  # Dust
+});
+
+recipes.remove(<forestry:fertilizer_bio>);
+
+# [Compost]*6 from [Mud Ball][+1]
+craft.make(<forestry:fertilizer_bio> * 6, ["pretty",
+  "  W  ",
+  "W M W",
+  "  W  "], {
+  "W": <minecraft:wheat>, # Wheat
+  "M": <ore:ballMud>,     # Mud Ball
+});
+
+# [Compost]*6 from [Mud Ball][+1]
+craft.make(<forestry:fertilizer_bio> * 6, ["pretty",
+  "  A  ",
+  "A M A",
+  "  A  "], {
+  "A": <harvestcraft:barleyitem>, # Barley
+  "M": <ore:ballMud>,             # Mud Ball
+});
+
+# [Compost]*6 from [Mud Ball][+1]
+craft.make(<forestry:fertilizer_bio> * 6, ["pretty",
+  "  A  ",
+  "A M A",
+  "  A  "], {
+  "A": <harvestcraft:oatsitem>, # Oats
+  "M": <ore:ballMud>,           # Mud Ball
+});
+
+# [Compost]*6 from [Mud Ball][+1]
+craft.make(<forestry:fertilizer_bio> * 6, ["pretty",
+  "  A  ",
+  "A M A",
+  "  A  "], {
+  "A": <harvestcraft:ryeitem>, # Rye
+  "M": <ore:ballMud>,          # Mud Ball
+});
+
+# [Compost]*6 from [Mud Ball][+1]
+craft.make(<forestry:fertilizer_bio> * 6, ["pretty",
+  "  ▲  ",
+  "▲ M ▲",
+  "  ▲  "], {
+  "▲": <ore:dustAsh>, # Ash
+  "M": <ore:ballMud>, # Mud Ball
+});
