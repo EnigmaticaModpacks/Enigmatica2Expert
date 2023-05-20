@@ -228,7 +228,7 @@ val defaultWeaponMats as IData = [
 )*/
   "paper"             , # 21
   "stone"             , # 31
-  "rubber"            , # 37
+  "rubber"            , # 32
   "construction_alloy", # 41
   "wood"              , # 42
   "chocolate"         , # 47

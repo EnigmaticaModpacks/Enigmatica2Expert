@@ -1,7 +1,7 @@
                    ,Total Power   ,HeadDurability ,MiningSpeed   ,AttackDamage  ,HarvestLevel ,HandleModifier ,HandleDurability ,ExtraDurability ,DrawSpeed     ,Range         ,BonusDamage   
 paper              ,        21.2  ,         9     ,         0.38 ,         0.04 ,         0   ,         0.1   ,         4       ,        11      ,         1.5  ,         0.4  ,        -2    
 stone              ,        30.5  ,        90     ,         1.5  ,         2.25 ,         0   ,         0.5   ,       -87       ,        15      ,         0.2  ,         0.4  ,        -1    
-rubber             ,        36.93 ,      -300     ,         3.75 ,         1.13 ,         1   ,         0.5   ,        56       ,        38      ,         2    ,         0.5  ,         0    
+rubber             ,        31.93 ,      -300     ,         3.75 ,         1.13 ,         0   ,         0.5   ,        56       ,        38      ,         2    ,         0.5  ,         0    
 construction_alloy ,        40.91 ,        38     ,         0.94 ,         0.75 ,         1   ,         0.5   ,         8       ,         8      ,         3    ,         0.5  ,         0    
 wood               ,        42.25 ,        26     ,         1.5  ,         1.5  ,         0   ,         1     ,        19       ,        11      ,         1    ,         1    ,         0    
 chocolate          ,        47.31 ,       319     ,         1.5  ,         1.5  ,         0   ,         0.15  ,         6       ,         6      ,         0.08 ,         0.3  ,         2    

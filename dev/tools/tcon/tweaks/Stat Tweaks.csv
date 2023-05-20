@@ -129,7 +129,7 @@ redstone_alloy,*3,*3,*3,5,*3,*3,*3,*2,*2,*2
 refined_glowstone,,,,6,,,,,,
 refined_obsidian,,,,8,,,,,,
 restonia_crystal,*0.5,*1.5,*1.2,4,,,,,,
-rubber,-435,,,,,,,,,
+rubber,-435,,,0,,,,,,
 ruby,,,,3,,,,,,
 sapphire,,,,3,,,,,,
 sentient_metal,,,*2,,,,,,,
