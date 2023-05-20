@@ -264,6 +264,7 @@ remake("rats idol_of_ratlantis", <rats:idol_of_ratlantis>, [
 scripts.process.melt(<rats:rat_diamond>, <liquid:diamond> * 165, "Except: Melter Crucible");
 scripts.process.alloy([<ore:ingotGraphite> * 2, <rats:rat_diamond>], <nuclearcraft:alloy:2> * 2, "only: Kiln AlloySmelter");
 mods.appliedenergistics2.Inscriber.addRecipe(<appliedenergistics2:material:17>, <rats:rat_diamond>, true, <appliedenergistics2:material:14>);
+mods.threng.Etcher.addRecipe(<appliedenergistics2:material:24>, <rats:rat_diamond>, <ore:dustRedstone>, <ore:itemSilicon>);
 mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:26>, <rats:rat_diamond> * 4, 36000);
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <rats:rat_diamond>, <immersiveengineering:mold:1>, 16000, 4);
 recipes.addShapeless("gem_crystal_flux from rat", <redstonearsenal:material:160> * 2, [<rats:rat_diamond>, <rats:rat_diamond>, Bucket('redstone')]);
