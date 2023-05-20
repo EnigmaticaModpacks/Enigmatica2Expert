@@ -1,6 +1,6 @@
 #loader crafttweaker reloadable
 
-val entityMap as int[string] = {
+static entityMap as int[string] = {
   wolf               : 0,
   chicken            : 1,
   cow                : 2,
@@ -46,6 +46,20 @@ val entityMap as int[string] = {
   vex                : 42,
   vindication_illager: 43,
 } as int[string];
+
+
+
+// This function should be called once
+// warding `/ct reload`
+function postInit() as void {
+  for entity_id, num in entityMap {
+    val id = "minecraft:"~entity_id;
+    scripts.jei.crafting_hints.addInsOutCatl(
+      [Soul(id), null, null, <minecraft:anvil>, <advancedrocketry:basalt>],
+      <openblocks:trophy:2>.withTag({entity_id: id})
+    );
+  }
+}
 
 events.onEntityLivingDamage(function (e as crafttweaker.event.EntityLivingDamageEvent) {
   val mob = e.entity;
