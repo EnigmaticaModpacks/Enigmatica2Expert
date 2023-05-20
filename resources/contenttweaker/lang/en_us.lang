@@ -214,6 +214,7 @@ tooltips.lang.thaum.artifice=Artifice
 tooltips.lang.drop_at_night=§3Drop §n%s§r§3 on §n%s§r§3 undert night sky
 tooltips.lang.must_see_night=§9Must see night sky
 tooltips.lang.burn_in_fluid=§3Burn §n%s§r§3 in §n%s§r§3
+tooltips.lang.burn_in_fluid_chance=§3Burn several §n%s§r§3 in §n%s§r§3
 tooltips.lang.infuse_bedrock=§3Right-click §n%s§r§3 over §n%s§r§3
 
 tooltips.lang.dropper_into_world=§cDropped into the world on death

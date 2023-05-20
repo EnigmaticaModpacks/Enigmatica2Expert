@@ -738,7 +738,7 @@ for i, item in furnaceByTier {
 # --------------------------------------------
 function remakeBlock(recName as string, output as IBlockState, ingrs as IIngredient[], fluid as string = 'stone') as void {
 	if(!isNull(recName)) recipes.removeByRecipeName(recName);
-	scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, fluid, output);
+	scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, output, fluid);
 	// scripts.processUtils.avdRockXmlRecipe("Crystallizer", [ingrs[0]], [game.getLiquid(fluid) * 1000], [output.block.item], null);
 }
 
