@@ -141,7 +141,7 @@ ${filtered.join('\n')}`
 }*/
 
 # Total Furnace recipes registered: 958
-# Filtered by JEI blacklist: 102
+# Filtered by JEI blacklist: 110
 # Filtered manuallly (antidupe): 15
 # Filtered by oredict: 177
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
@@ -855,10 +855,10 @@ infinFurnace(utils.get("netherendingores:ore_other_1", 5), utils.get("tconstruct
 ##infinFurnace(utils.get("nuclearcraft:curium", 17), utils.get("nuclearcraft:curium", 15));
 ##infinFurnace(utils.get("nuclearcraft:curium", 18), utils.get("nuclearcraft:curium", 15));
 ##infinFurnace(utils.get("nuclearcraft:curium", 19), utils.get("nuclearcraft:curium", 15));
-infinFurnace(utils.get("nuclearcraft:dust", 1), utils.get("thermalfoundation:material", 129));
-infinFurnace(utils.get("nuclearcraft:dust", 2), utils.get("thermalfoundation:material", 131));
+#infinFurnace(utils.get("nuclearcraft:dust", 1), utils.get("thermalfoundation:material", 129));
+#infinFurnace(utils.get("nuclearcraft:dust", 2), utils.get("thermalfoundation:material", 131));
 ##infinFurnace(utils.get("nuclearcraft:dust", 3), utils.get("nuclearcraft:ingot", 3));
-infinFurnace(utils.get("nuclearcraft:dust", 4), utils.get("immersiveengineering:metal", 5));
+#infinFurnace(utils.get("nuclearcraft:dust", 4), utils.get("immersiveengineering:metal", 5));
 ##infinFurnace(utils.get("nuclearcraft:dust", 5), utils.get("nuclearcraft:ingot", 5));
 ##infinFurnace(utils.get("nuclearcraft:dust", 6), utils.get("nuclearcraft:ingot", 6));
 ##infinFurnace(utils.get("nuclearcraft:dust", 7), utils.get("nuclearcraft:ingot", 7));
@@ -868,7 +868,7 @@ infinFurnace(utils.get("nuclearcraft:dust", 4), utils.get("immersiveengineering:
 ##infinFurnace(utils.get("nuclearcraft:dust", 11), utils.get("nuclearcraft:ingot", 11));
 ##infinFurnace(utils.get("nuclearcraft:dust", 12), utils.get("thermalfoundation:material", 132));
 ##infinFurnace(utils.get("nuclearcraft:dust", 13), utils.get("thermalfoundation:material", 130));
-infinFurnace(utils.get("nuclearcraft:dust"), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("nuclearcraft:dust"), utils.get("thermalfoundation:material", 128));
 infinFurnace(utils.get("nuclearcraft:flour"), utils.get("minecraft:bread"));
 infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust", 14));
 ##infinFurnace(utils.get("nuclearcraft:ingot", 14), utils.get("nuclearcraft:ingot", 11));
@@ -879,14 +879,14 @@ infinFurnace(utils.get("nuclearcraft:gem_dust", 1), utils.get("nuclearcraft:dust
 ##infinFurnace(utils.get("nuclearcraft:neptunium", 7), utils.get("nuclearcraft:neptunium", 5));
 ##infinFurnace(utils.get("nuclearcraft:neptunium", 8), utils.get("nuclearcraft:neptunium", 5));
 ##infinFurnace(utils.get("nuclearcraft:neptunium", 9), utils.get("nuclearcraft:neptunium", 5));
-infinFurnace(utils.get("nuclearcraft:ore", 1), utils.get("thermalfoundation:material", 129));
-infinFurnace(utils.get("nuclearcraft:ore", 2), utils.get("thermalfoundation:material", 131));
+#infinFurnace(utils.get("nuclearcraft:ore", 1), utils.get("thermalfoundation:material", 129));
+#infinFurnace(utils.get("nuclearcraft:ore", 2), utils.get("thermalfoundation:material", 131));
 infinFurnace(utils.get("nuclearcraft:ore", 3), utils.get("nuclearcraft:ingot", 3));
-infinFurnace(utils.get("nuclearcraft:ore", 4), utils.get("immersiveengineering:metal", 5));
+#infinFurnace(utils.get("nuclearcraft:ore", 4), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 5), utils.get("nuclearcraft:ingot", 5));
 infinFurnace(utils.get("nuclearcraft:ore", 6), utils.get("nuclearcraft:ingot", 6));
 infinFurnace(utils.get("nuclearcraft:ore", 7), utils.get("nuclearcraft:ingot", 7));
-infinFurnace(utils.get("nuclearcraft:ore"), utils.get("thermalfoundation:material", 128));
+#infinFurnace(utils.get("nuclearcraft:ore"), utils.get("thermalfoundation:material", 128));
 ##infinFurnace(utils.get("nuclearcraft:plutonium", 2), utils.get("nuclearcraft:plutonium"));
 ##infinFurnace(utils.get("nuclearcraft:plutonium", 3), utils.get("nuclearcraft:plutonium"));
 ##infinFurnace(utils.get("nuclearcraft:plutonium", 4), utils.get("nuclearcraft:plutonium"));
