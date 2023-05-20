@@ -21,12 +21,14 @@ events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
   /**
   * Endorse player with message to whole server as its finished chapter
   */
-  if(e.reward.quest.tags has 'chapcomplete') {
+  if(e.reward.tags has 'chapcomplete') {
     server.commandManager.executeCommand(server,
-      '/say §l' ~ e.player.name ~
-      '§r has fully completed the §n' ~ e.reward.quest.chapter.title ~
-      '§r chapter after §l' ~ formatPlayTime(e.player) ~
-      '§r of play!§r ```Congrats!```'
+      '/say ' ~ mods.zenutils.I18n.format(
+        game.localize('e2ee.chapter_complete'),
+        e.player.name,
+        e.reward.quest.chapter.title,
+        formatPlayTime(e.player)
+      )
     );
   }
 
@@ -34,9 +36,24 @@ events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
   * Conflux rewards
   */
   for k in 'i ii iii iv'.split(' ') {
-    if(e.reward.tags has 'conflux_' ~ k) server.commandManager.executeCommand(server,
-      '/ranks add ' ~ e.player.name ~ ' conflux_' ~ k
-    );
+    if(e.reward.tags has 'conflux_' ~ k) {
+      server.commandManager.executeCommand(server,
+        '/ranks add ' ~ e.player.name ~ ' conflux_' ~ k
+      );
+
+      e.player.sendMessage(mods.zenutils.I18n.format(
+        game.localize('e2ee.you_achieved'),
+        e.reward.quest.title,
+        formatPlayTime(e.player)
+      ));
+    }
   }
 });
 
+events.onCustomTask(function(e as mods.zenutils.ftbq.CustomTaskEvent) {
+  if (e.task.hasTag("skyblock")) {
+    e.checker = function(player, currentProgress) {
+      return player.hasGameStage("skyblock") ? 1 : 0;
+    };
+  }
+});

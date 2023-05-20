@@ -114,6 +114,8 @@ e2ee.written_book.Creeper=Creeper
 e2ee.written_book.Zombie=Zombie
 
 # Misc
+e2ee.chapter_complete=§l%s§r has fully completed the §n%s§r chapter after §l%s§r of play!§r ```Congrats!```
+e2ee.you_achieved=You achieved §n%s§r after §l%s§r of play!§r
 e2ee.eu2_drum_error=§7You must have at least 1 empty inventory slot to do this
 e2ee.danknull_dock.must_have=§7You need a §f%s§7 in the offhand to insert %s§7 into %s§7. §f%s§7 will be irreversibly consumed.
 e2ee.restrict.vis_seeds=§7§eVis Seeds§7 can only be planted in §nthe Void§7 dimension or on §nplanets§7. They also need Oxygen.
