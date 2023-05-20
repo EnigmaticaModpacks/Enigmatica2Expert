@@ -65,7 +65,7 @@ addRecipe(x, {[<minecraft:melon_block:*>, <minecraft:hay_block:*>] : [<minecraft
 addRecipe(x, {[<minecraft:mossy_cobblestone:*>] : [<minecraft:magma>]});
 addRecipe(x, {[<minecraft:mycelium:*>] : [<extrautils2:cursedearth>]});
 addRecipe(x, {[<minecraft:planks:*>] : [<rustic:painted_wood_black>]});
-addRecipe(x, {[<minecraft:prismarine:*>, <minecraft:piston:*>] : [<minecraft:glowstone>]});
+addRecipe(x, {[<minecraft:prismarine:*>, <minecraft:piston:*>] : [<biomesoplenty:hive>]});
 addRecipe(x, {[<minecraft:redstone_block:*>] : [<quark:smoker>]});
 addRecipe(x, {[<minecraft:ice:*>] : [<minecraft:obsidian>]});
 addRecipe(x, {[<minecraft:sand:*>] : [<minecraft:soul_sand>]});
