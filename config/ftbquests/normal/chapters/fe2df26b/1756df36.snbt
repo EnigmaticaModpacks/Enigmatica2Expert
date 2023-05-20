@@ -22,6 +22,15 @@
 		type: "item",
 		items: [{
 			item: "appliedenergistics2:crafting_storage_1k"
+		},
+		{
+			item: "appliedenergistics2:crafting_storage_4k"
+		},
+		{
+			item: "appliedenergistics2:crafting_storage_16k"
+		},
+		{
+			item: "appliedenergistics2:crafting_storage_64k"
 		}],
 		ignore_nbt: 1b
 	}],

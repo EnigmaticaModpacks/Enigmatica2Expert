@@ -1,22 +1,22 @@
 {
-	x: -22.2d,
-	y: 20.4d,
+	x: -21.9d,
+	y: 22.3d,
+	shape: "gear",
 	text: [
-		"{q.utils.liquid_barrel.desc}"
+		"{q.utils.pot.desc}"
 	],
 	dependencies: [
 		"3ecc3fbe"
 	],
 	tasks: [{
-		uid: "d80a23db",
+		uid: "4b53f41f",
 		type: "item",
 		items: [{
-			item: "rustic:liquid_barrel"
-		}],
-		ignore_nbt: 1b
+			item: "rustic:vase"
+		}]
 	}],
 	rewards: [{
-		uid: "3098c291",
+		uid: "aa45f1c6",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",

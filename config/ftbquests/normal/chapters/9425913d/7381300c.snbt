@@ -1,4 +1,5 @@
 {
+	title: "{q.gates.conflux_iv.name}",
 	x: 14.6d,
 	y: 5.475d,
 	shape: "square",
@@ -16,11 +17,6 @@
 		"f7ad5a10"
 	],
 	size: 0.75d,
-	tasks: [{
-		uid: "793d6b06",
-		type: "checkmark",
-		title: "Conflux IV"
-	}],
 	rewards: [{
 		uid: "74a05819",
 		type: "custom",

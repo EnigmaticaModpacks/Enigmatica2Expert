@@ -1,4 +1,5 @@
 {
+	title: "Kits",
 	loot_size: 1,
 	rewards: [{
 		item: {
@@ -111,6 +112,24 @@
 						Count: 1,
 						Damage: 0s
 					},
+					Slot6: {
+						id: "ic2:scaffold",
+						Count: 64,
+						Damage: 0s
+					},
+					Slot7: {
+						id: "ic2:scaffold",
+						Count: 64,
+						Damage: 0s
+					},
+					Slot8: {
+						id: "actuallyadditions:item_filling_wand",
+						Count: 1,
+						Damage: 0s,
+						tag: {
+							Energy: 500000
+						}
+					},
 					Slot0: {
 						id: "ic2:cf_pack",
 						Count: 1,
@@ -125,21 +144,6 @@
 							},
 							enchantmentColor: 6719955
 						}
-					},
-					Slot6: {
-						id: "ic2:scaffold",
-						Count: 64,
-						Damage: 0s
-					},
-					Slot7: {
-						id: "ic2:scaffold",
-						Count: 64,
-						Damage: 0s
-					},
-					Slot8: {
-						id: "ic2:scaffold",
-						Count: 64,
-						Damage: 0s
 					}
 				},
 				Accessible: 1b

@@ -436,6 +436,9 @@
 		icon: "avaritia:singularity 2 12",
 		item: "avaritia:singularity 1 12",
 		count: 2
+	},
+	{
+		item: "avaritiaio:infinitecapacitor"
 	}],
 	loot_crate: {
 		string_id: "mythic",

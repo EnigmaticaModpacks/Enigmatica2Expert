@@ -1,0 +1,29 @@
+{
+	title: "{q.utils.trophy.name}",
+	x: -8.3d,
+	y: 11.0d,
+	shape: "gear",
+	text: [
+		"{q.utils.trophy.desc}"
+	],
+	dependencies: [
+		"9f41b8d8"
+	],
+	tasks: [{
+		uid: "831f9d7a",
+		type: "item",
+		items: [{
+			id: "openblocks:trophy",
+			tag: {
+				entity_id: "minecraft:cow"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4f0ed4ab",
+		type: "item",
+		item: "advancedrocketry:basalt"
+	}]
+}

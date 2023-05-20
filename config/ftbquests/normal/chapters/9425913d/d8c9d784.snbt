@@ -13,20 +13,16 @@
 		"4fc58528"
 	],
 	tasks: [{
-		uid: "cf92e3ef",
-		type: "item",
-		items: [{
-			item: "biomesoplenty:biome_finder"
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "da8932af",
 		type: "item",
 		items: [{
 			id: "naturescompass:naturescompass",
 			tag: {}
+		},
+		{
+			item: "biomesoplenty:biome_finder"
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

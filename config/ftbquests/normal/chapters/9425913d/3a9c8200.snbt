@@ -7,7 +7,7 @@
 		"{q.gates.gate_ex_nihilo.desc}"
 	],
 	dependencies: [
-		"ca359f03"
+		"c35399e6"
 	],
 	tasks: [{
 		uid: "69390c0f",
@@ -28,5 +28,11 @@
 		uid: "65d056d8",
 		type: "item",
 		item: "excompressum:double_compressed_diamond_hammer"
+	},
+	{
+		uid: "9f2aaab9",
+		type: "item",
+		item: "forestry:fertilizer_compound",
+		count: 64
 	}]
 }

@@ -1,0 +1,19 @@
+{
+	title: "Thaumcraft Reward",
+	loot_size: 1,
+	rewards: [{
+		icon: "mia:packed_paper 10",
+		item: "mia:packed_paper",
+		count: 10
+	},
+	{
+		icon: "harvestcraft:redvelvetcakeitem 6",
+		item: "harvestcraft:redvelvetcakeitem",
+		count: 4
+	},
+	{
+		icon: "additionalcompression:clay_compressed 4",
+		item: "additionalcompression:clay_compressed",
+		count: 4
+	}]
+}

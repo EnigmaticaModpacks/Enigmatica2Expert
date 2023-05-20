@@ -25,15 +25,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "caaee80f",
-		type: "item",
-		item: "minecraft:paper",
-		count: 16
-	},
-	{
-		uid: "9d6caf1e",
-		type: "item",
-		item: "harvestcraft:redvelvetcakeitem",
-		count: 4
+		uid: "a4c2efd1",
+		type: "choice",
+		table: 137
 	}]
 }

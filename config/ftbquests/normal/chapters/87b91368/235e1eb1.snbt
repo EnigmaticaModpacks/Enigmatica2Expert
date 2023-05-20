@@ -16,16 +16,6 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "9bf59f67",
-		type: "item",
-		item: {
-			id: "openblocks:trophy",
-			tag: {
-				entity_id: "minecraft:cow"
-			}
-		}
-	},
-	{
 		uid: "56f0c682",
 		type: "item",
 		item: "scalinghealth:heartdust",

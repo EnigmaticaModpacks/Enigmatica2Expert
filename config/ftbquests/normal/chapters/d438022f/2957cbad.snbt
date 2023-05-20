@@ -1,6 +1,6 @@
 {
-	x: -20.2d,
-	y: 23.6d,
+	x: -22.3d,
+	y: 21.4d,
 	text: [
 		"{q.utils.apple_seeds.desc}"
 	],

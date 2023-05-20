@@ -2,72 +2,6 @@
 	loot_size: 1,
 	rewards: [{
 		item: {
-			id: "tconstruct:shortbow",
-			tag: {
-				StatsOriginal: {
-					AttackSpeedMultiplier: 1.0f,
-					DrawSpeed: 1.0f,
-					MiningSpeed: 2.0f,
-					FreeModifiers: 3,
-					ProjectileBonusDamage: 0.0f,
-					Durability: 35,
-					HarvestLevel: 3,
-					Attack: 2.0f,
-					Range: 1.0f
-				},
-				Special: {
-					Categories: [
-						"tool",
-						"launcher"
-					]
-				},
-				Stats: {
-					AttackSpeedMultiplier: 1.0f,
-					DrawSpeed: 1.0f,
-					MiningSpeed: 2.0f,
-					FreeModifiers: 5,
-					ProjectileBonusDamage: 0.0f,
-					Durability: 35,
-					HarvestLevel: 3,
-					Attack: 2.0f,
-					Range: 1.0f
-				},
-				Modifiers: [{
-					identifier: "magical_modifier",
-					color: -131160,
-					level: 1,
-					magical_modifier: 1b
-				},
-				{
-					identifier: "brittle",
-					color: -131160,
-					level: 1
-				},
-				{
-					identifier: "toolleveling",
-					color: 16777215,
-					level: 1
-				}],
-				TinkerData: {
-					Materials: [
-						"xu_magical_wood",
-						"xu_magical_wood",
-						"string"
-					],
-					Modifiers: [
-						"toolleveling"
-					]
-				},
-				Traits: [
-					"magical_modifier",
-					"brittle",
-					"toolleveling"
-				]
-			}
-		}
-	},
-	{
-		item: {
 			id: "tcomplement:sledge_hammer",
 			tag: {
 				StatsOriginal: {
@@ -118,6 +52,20 @@
 					"dense",
 					"toolleveling"
 				]
+			},
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
 			}
 		}
 	},
@@ -125,5 +73,21 @@
 		icon: "mia:torch_gold 32",
 		item: "mia:torch_gold",
 		count: 32
+	},
+	{
+		icon: {
+			id: "tconstruct:shard",
+			Count: 16,
+			tag: {
+				Material: "xu_magical_wood"
+			}
+		},
+		item: {
+			id: "tconstruct:shard",
+			tag: {
+				Material: "xu_magical_wood"
+			}
+		},
+		count: 16
 	}]
 }
