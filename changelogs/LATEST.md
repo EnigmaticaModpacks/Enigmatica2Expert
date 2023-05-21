@@ -1,192 +1,116 @@
-# v1.3.0 (2023-05-13)
+# v1.4.0 (2023-05-21)
 
 ## Mods changes
-
-### 🟢 Added Mods
-
-Icon | Summary
-----:|:-------
-<img src="https://media.forgecdn.net/avatars/thumbnails/199/165/30/30/636904875003878157.png"            > |                           [**Sledgehammer**](https://www.curseforge.com/minecraft/mc-mods/sledgehammer)                 <sup><sub>Sledgehammer-1.12.2-2.0.23.jar                   </sub></sup><br>Smashes the stupid out of the client &amp; server. 
-<img src="https://media.forgecdn.net/avatars/thumbnails/812/214/30/30/638185479083687455.png"            > |             [**Mekanism Community Edition**](https://www.curseforge.com/minecraft/mc-mods/mekanism-ce)                  <sup><sub>Mekanism-Community-Edition-1.12.2-9.12.5-Core.jar</sub></sup><br>Mekanism with ACTUAL all the known fixes for bugs and dupes. Also includes several improvements and features. OpenSource aswell
-<img src="https://media.forgecdn.net/avatars/thumbnails/763/556/30/30/638099830669702522.png"            > |                   [**Mini Effects (Forge)**](https://www.curseforge.com/minecraft/mc-mods/mini-effects)                 <sup><sub>MiniEffects-1.12.2-1.1.0.jar                     </sub></sup><br>Automatically folds status effects view in inventory screen
-<img src="https://media.forgecdn.net/avatars/thumbnails/548/971/30/30/637885445429300474.png"            > |                             [**燐/Hesperus**](https://www.curseforge.com/minecraft/mc-mods/hesperus)                     <sup><sub>phosphor-1.12.2-0.2.9.2-SNAPSHOT-universal.jar   </sub></sup><br>Lighting optimization mod
-<img src="https://media.forgecdn.net/avatars/thumbnails/802/900/30/30/638167936487950323.png"            > |      [**Thaumic Energistics Extended Life**](https://www.curseforge.com/minecraft/mc-mods/thaumic-energistics-extended-life)<sup><sub>thaumicenergistics-extended_life-2.2.7.jar       </sub></sup><br>The goal of the mod is to serve as a bridge between Thaumcraft and Applied Energistics. The primary focus is essentia management, both in storage, transportation, and application.
------------
-
-
-### 🔴 Removed Mods
-
-Icon | Summary
-----:|:-------
-<img src="https://media.forgecdn.net/avatars/thumbnails/339/558/30/30/637479974379885263.png"            > |                [**Dude! Where's my Horse?**](https://www.curseforge.com/minecraft/mc-mods/dude-wheres-my-horse)         <sup><sub>dwmh-1.12.2-3.1.2.jar                            </sub></sup><br>Tools for retrieving troublesome, wandering steeds.
-<img src="https://media.forgecdn.net/avatars/thumbnails/284/776/30/30/637298471918994610.png"            > |                       [**Phosphor (Forge)**](https://www.curseforge.com/minecraft/mc-mods/phosphor-forge)               <sup><sub>phosphor-forge-mc1.12.2-0.2.7-universal.jar      </sub></sup><br>Performance improvements for Minecraft&#x27;s lighting engine
-<img src="https://media.forgecdn.net/avatars/thumbnails/551/761/30/30/637890134785772271.png"            > |                          [**Spectral Edge**](https://www.curseforge.com/minecraft/mc-mods/spectral-edge)                <sup><sub>spectral_edge-forge-1.12.2-1.5.jar               </sub></sup><br>Adds a new enchantment called Spectral Edge
-<img src="https://media.forgecdn.net/avatars/thumbnails/748/243/30/30/638087836177086730.png"            > |[**Mekanism 1.12.2 Community Edition [MOVED TO MEK:CE 1.7.10]**](https://www.curseforge.com/minecraft/mc-mods/mekanism-1-12-2-ce)           <sup><sub>Mekanism-Community-Edition-1.12.2-9.12.4-Core.jar</sub></sup><br>Mekanism with opensource fixes for dupes and bugs. also includes new features.
------------
-
 ### 🟡 Updated Mods
 
 Icon | Summary | Old / New
 ----:|:--------|:---------
-<img src="https://media.forgecdn.net/avatars/thumbnails/10/395/30/30/635455427535754713.png"             > |                          [**OpenComputers**](https://www.curseforge.com/minecraft/mc-mods/opencomputers)               | <nobr>OpenComputers-MC1.12.2-1.8.0-snapshot-20220917+efb20a2</nobr><br><nobr>OpenComputers-MC1.12.2-1.8.0+9833087</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/109/514/30/30/636380307126307812.png"            > |                               [**Carry On**](https://www.curseforge.com/minecraft/mc-mods/carry-on)                    | <nobr>carryon-1.12.2-1.12.6.20</nobr><br><nobr>carryon-1.12.2-1.12.7.23</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/159/374/30/30/636658415780463602.png"            > |                          [**CraftPresence**](https://www.curseforge.com/minecraft/mc-mods/craftpresence)               | <nobr>CraftPresence-2.0.0-rc.2+1.12.2</nobr><br><nobr>CraftPresence-2.0.0-rc.3+1.12.2</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/337/5/30/30/637473842688195004.png"              > |                          [**Lootr (Forge)**](https://www.curseforge.com/minecraft/mc-mods/lootr)                       | <nobr>lootr-1.12.2-0.6.0</nobr><br><nobr>lootr-1.12.2-0.6.1</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.13.4</nobr><br><nobr>zenutils-1.13.5</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/468/506/30/30/637752171904887013.jpeg"           > |                       [**Had Enough Items**](https://www.curseforge.com/minecraft/mc-mods/had-enough-items)            | <nobr>HadEnoughItems_1.12.2-4.24.5</nobr><br><nobr>HadEnoughItems_1.12.2-4.24.6</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/483/123/30/30/637782695232246251.png"            > |           [**AE2 Unofficial Extended Life**](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)           | <nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.13</nobr><br><nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.13</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/548/30/30/30/637882959576383371.png"             > |              [**AE2 Fluid Crafting Rework**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework)   | <nobr>Fluid Craft for AE2-2.4.18-r</nobr><br><nobr>Fluid Craft for AE2-2.4.19-r</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/799/138/30/30/638161375254345080.png"            > |                     [**Roughly Enough IDs**](https://www.curseforge.com/minecraft/mc-mods/reid)                        | <nobr>RoughlyEnoughIDs-2.0.5</nobr><br><nobr>RoughlyEnoughIDs-2.0.6</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/641/454/30/30/638043757664856777.png"            > |                       [**Universal Tweaks**](https://www.curseforge.com/minecraft/mc-mods/universal-tweaks)            | <nobr>UniversalTweaks-1.12.2-1.5.0</nobr><br><nobr>UniversalTweaks-1.12.2-1.6.0</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/761/180/30/30/638097412031319857.png"            > | [**Mekanism Community Edition: GENERATORS**](https://www.curseforge.com/minecraft/mc-mods/mekanism-ce-generators)      | <nobr>Mekanism-Community-Edition-1.12.2-9.12.4-Generators</nobr><br><nobr>Mekanism-Community-Edition-1.12.2-9.12.5-Generators</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/142/108/30/30/636546700830987709.png"            > |                           [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker)                | <nobr>CraftTweaker2-1.12-4.1.20.688</nobr><br><nobr>CraftTweaker2-1.12-4.1.20.688</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/200/673/30/30/636914940710758684.png"            > |                          [**Village Names**](https://www.curseforge.com/minecraft/mc-mods/village-names)               | <nobr>VillageNames-1.12.2-4.4.5</nobr><br><nobr>VillageNames-1.12.2-4.4.6</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.13.5</nobr><br><nobr>zenutils-1.13.7</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/30/30/637520208754289091.png"            > |                            [**CensoredASM**](https://www.curseforge.com/minecraft/mc-mods/lolasm)                      | <nobr>censoredasm5.6</nobr><br><nobr>censoredasm5.8</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/385/984/30/30/637574191414697010.png"            > |                        [**Fluidlogged API**](https://www.curseforge.com/minecraft/mc-mods/fluidlogged-api)             | <nobr>Fluidlogged-API-v2.1.2-mc1.12.2</nobr><br><nobr>Fluidlogged-API-v2.2.1-mc1.12.2</nobr>
 -----------
-
-## ⚡ Performance Improvements
-
-* <img src="https://i.imgur.com/rYELZzW.png" style="max-width: 240px; max-height: 120px" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/f26e841632978d25a8de3ac72dc7d500324d258f)⚡️ simplify `Industrial Wires` render
-  > Now wires always bright. This will cut 75% of their render time. Its about +10% of FPS if your base have many wires.
 
 ## ✨ New Features
 
-* <img src="https://i.imgur.com/TM2Be1V.png" style="max-width: 240px; max-height: 120px" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/3170736679bd7bb84d4f59830adc6bc5a3ced463)🍯 Make Rustic's pots 162 slots
-  > > Contributed by [Lucas Sivars](lucas.sivars@gmail.com)
-  >
-  > x6 times bigger. But only accept 1 item / slot.
-  > 
-  > Why?
-  > 
-  > - When exploration, unstackable items took all chests space
-  > - We need more early game huge storage with restrictions
-* <img src="https://i.imgur.com/LlbmUgm.gif" align=right>[🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/30f76734e95ad471e2577b92bbef168e9fe8ae27)🐀 Speed up rat processing
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_archeologist__0.png "Rat Upgrade: Archeologist") 100 => 25 ticks / operation
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_gemcutter__0.png "Rat Upgrade: Gemcutter") 100 => 25
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_chef__0.png "Rat Upgrade: Chef") 100 => 25
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_ore_doubling__0.png "Rat Upgrade: Ore Doubling") 40 => 25
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_enchanter__0.png "Rat Upgrade: Enchanter") 1000 => 250
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_speed__0.png "Rat Upgrade: Speed") Now speed up upgrades above x5 times
 
 #### Configs
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/115166da451190ca5b7e94caa00b5e83706713c6)🐛 Enabled tens of fixes from `Sledge Hammer` mod
-  > I dont even know what all of this fixes do, but i though this would help make modpack better and faster. Follow commit link to see what options was enabled.
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/73e70e464a30fddaccd6962e0a4fb8c77c960f57)🧩 Set `forceTitleScreenOnDisconnect=true`
-  > Forces Minecraft to show the title screen after disconnecting rather than the Multiplayer
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/8df95e03075f67d7b88cb0008d4bf7a82cea6be2)🛢️IE Fluid Pump set consumption to 1 rf/t
+
+#### Gear
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5e9b3193ad3141773d5f330d683e3d6303b8cb51)🏨 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/actuallyadditions/item_filling_wand__0.png "Handheld Filler") x15 less RF / block (100rf now)
+
+#### Quest
+
+* <img src="https://i.imgur.com/LJ1LEEt.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/aa41b4fea9ab61f86c84d17b76676961f7e3eaef)📖 Add skyblock helping quests
+  > Also add some alternative items in `Harvest Level` quests
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/715d027d2ec1672e0f1128a18e4030386cd0243a)📖Misc quest changes
+  > - Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rustic/vase__0.png "Pot") quest
+  > - Add Open Block Trophy quest
+  > - Make AE2 quest accept every ![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/crafting_storage_1k__0.png "1k Crafting Storage")![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/crafting_storage_4k__0.png "4k Crafting Storage")![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/crafting_storage_16k__0.png "16k Crafting Storage")![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/crafting_storage_64k__0.png "64k Crafting Storage")![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/spatial_storage_cell_128_cubed__0.png "128³  Spatial Storage Cell")
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/avaritiaio/infinitecapacitor__0__2b1e915d.png "Infinity Capacitor") add to latest loot chest
+  > - Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/actuallyadditions/item_filling_wand__0.png "Handheld Filler") to `Builder Kit`
+  > - Conflux quests auto-completing
+  > - Reward changes for Thaumcraft gate
+  > - Tasks changes for Exploration gate
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/aa2a1518e02187d400132fc26b274b11bf546e2b)📖Send messages when player finished Chapter or Conflux
 
 #### Recipes
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/aab7b446bfff0ee72a6506c54ce2cec7248d397b)☢️ Add trimmed `Moar Reactor Functionality`
-  > Source: https://www.curseforge.com/minecraft/customization/moar-reactor-functionality
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/28a645e1d86645af2902f89fad5e4ac9bf0195f2)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/mithminite_robe__0.png "Mithminite Robe") add built-in Airtight Seal
+  > So magic-only players could visit space with it
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/76b0cb038a3e64305b4088f0575c9107636be0f1)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/item_ore_tin__0.png "Tin Ore Piece") burn in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/stone.png "Seared Stone")
+  > So basically, Ore Pieces now is the same as MA Essence, but reqire 3 pieces to craft 1 Ore
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/25643e72939bd54155ebbebe63533c7352b35e3e)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/te__100.png "Coke Kiln") cheaper
+* <img src="https://i.imgur.com/d48Jzxi.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5b9bc6cfea16d7bc0651aaf6f9de31951ba0f713)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/item_basic_capacitor__0.png "Basic Capacitor") cheaper
   > 
-  > Most features was removed. Only features left:
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/bb878b4e12a0d30b74278e5c6f406543fe7dcffa)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersivepetroleum/schematic__0__1ce52592.png "Metal Press Projector") now can make `Dense Plates`
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5b36f4863afaa4c5e90ab95bbb4124fa666f6f29)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/platform__0.png "Oak Platform")![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/platform__2.png "Birch Platform")![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/platform__4.png "Acacia Platform")![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/platform__3.png "Jungle Platform")![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/platform__1.png "Spruce Platform")![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/platform__5.png "Dark Oak Platform")![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/superlubricentplatform__0.png "Super Lubricated Platform")cheaper
+* <img src="https://i.imgur.com/kgjVe5f.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4150ad3cab360e9d87f50a94912f206918eda655)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/block_sieve__0.png "Sieve") misc changes
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/redorchid__0.png "Red Orchid") now comes from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/sand__1.png "Red Sand") instead of ![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/block_barrel0__0.png "Wooden Barrel") and can be turn into ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/redstone_ore__0.png "Redstone Ore") with ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/stone.png "Seared Stone")
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/dirt__1.png "Coarse Dirt") now can be sifted into Pebbles
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/a14e6d4ab90e5b0cf0ae74daf1616abba1ccd54d)✏️Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/fleshchunk__0.png "Chunk of Flesh") => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/blood.png "Blood")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/06cd51e0d2ca994a45e2f935a8a42a614b0e7799)✏️add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/ic2construction_foam.png "Construction Foam") =>![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/sand__0.png "Sand") hammering
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/457d46bb4d6d8ab507454ef3458cab4a18ae1c7a)✏️add [Radioactive Earth] => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/contaminated_food__0.png "Contaminated Food")
+  > Also fix neutron recipe for Contaminated Food
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ee15fb0b6d43382989ba12a9ac716cd1f0c7c57c)✏️add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_diamond__0.png "Rat Diamond")=>![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/material__24.png "Engineering Processor") in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/threng/machine__2.png "ME Circuit Etcher")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/73b6fc863ae16c7f071114f48997eb1917c8e7ef)✏️add instant ![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/material__10.png "Pure Certus Quartz Crystal") recipe
+  > from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/crystal_seed__0__f5cbc75f.png "Certus Quartz Seed")
+* <img src="https://i.imgur.com/0hlnCwY.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/2b775727bf8875429290f31de2b1be5f9491fe74)✏️Add new recs for ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/crafting__23.png "Scrap") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/crafting__24.png "Scrap Box") with Trinity
   > 
-  > - `Supercritical Carbon Dioxide` line
-  > - Pseudo-Decay Pool System, but without custom items. See Samarium recipes.
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/391f4d14e385e49a696eb40445cc336e6e10a87d)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/tconstruct/cast__0.png "Blank Cast") remove recipe from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/ingot__2.png "Alchemical Brass Ingot")
-  > To prevent dupe of Alchemical Brass
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/50122e149f46fc4f6ce002279533ea69e76a60e7)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/mysticalagriculture/osmium_essence__0.png "Osmium Essence") now can upgrade ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/bedrock__0.png "Bedrock")
-  > Before, essence could only turn fresh bedrock into ore. Now you can add Osmium blocks into already existed Bedrock Ore block.
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/71146234bd015e15fb2907e610b620ebec281cf6)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rustic/vase__0.png "Pot") harder since buffed
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/fbba64b7e91e88b22f84411727866092695f1b4a)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bloodmagic/blood_rune__6.png "Rune of Capacity") now require Metamorphic Stones
-  > .. instead of ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/decorativesolid__3.png "Stoneburnt"). This makes ![](https://github.com/Krutoy242/mc-icons/raw/master/i/astralsorcery/blockaltar__3.png "Iridescent Altar") obtainable without tech mods.
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/7342409450c8796d3a115c790a5d476a431f4276)✏️ add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/endreborn/block_entropy_end_stone__0.png "Entropy End Stone") => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/block_endstone_crushed__0.png "Crushed Endstone")
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/edd87ffbb172927ad2ed40fe6b73bd483e4be97f)✏️ add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/skull__2.png "Zombie Head") => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/nutrient_distillation.png "Nutrient Distillation")
-  > Also make previous recipe in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rustic/condenser__0.png "Alchemic Condenser") harder
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/e2f87d7bb68799acc0aa3970518de53901e3fa73)✏️ cheaper ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/part__13.png "Silicon Carbide Fiber") - x4 output
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/aa9f626bcfce083984e4bfeeb3bf85b2c81c6c5b)✏️ Some swords crafted with `Beheading` ench by default
-  > ![](https://github.com/Krutoy242/mc-icons/raw/master/i/endreborn/ender_sword__0.png "End-Mage Barclay Sword") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/deepmoblearning/glitch_infused_sword__0.png "Glitch Infused Sword") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/sword_weakness__0.png "Sword of Atrophy") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/sword_slowness__0.png "Sword of Decay") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/sword_ender__0.png "Sword of Evasion")
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4068ec36147479e23472cf2151c11fe2071d2c4e)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/avaritia/resource__0.png "Diamond Lattice") replace by ![](https://github.com/Krutoy242/mc-icons/raw/master/i/libvulpes/productgem__0.png "material.Dilithium.name Crystal")
-  > Diamond Lattice was just micro-crafting item that had too few usages
-* <img src="https://i.imgur.com/xhGlVal.png" style="max-width: 240px; max-height: 120px" align=right> <img src="https://i.imgur.com/ggoDpvI.png" style="max-width: 240px; max-height: 120px" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/df5014875256bdffcfe00aee1548346a1474bf45)🗿 Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/openblocks/trophy__2__517cc92b.png "Cow Trophy") recipes
-  > - Place ![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/basalt__0.png "Basalt Sediment")
-  > - Place vanilla mob on it
-  > - Hit it with ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/anvil__0.png "Anvil")
-
-#### Worldgen
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/bdecccc3202900b1ba812b51e4f5fb6656045a72)🌍 Add `Asteroid Belt` and `Caveland` planets
-  > This dimensions can be visited by rocket in "Magnis Vulpes" planetary system.
-  > 
-  > - `Asteroid Belt` ID:124, void dimension with huge flying rocks
-  > - `Caveland` ID:125, Nether-like generation but with Overworld-like ores
-  > 
-  > Right now this dimensions is poor and inpopulated. Suggestions on how to populate this dimensions appreciated!
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/7a331b146f6b73a6e6957a00c380b512cea80bcf)🌍 Add Neptune ![](https://github.com/Krutoy242/mc-icons/raw/master/i/twilightforest/aurora_block__0.png "Aurora Block")+![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/cryotheum_nak_hot.png "Hot Eutectic NaK-Cryotheum Mixture") rare lakes
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/70881d0449ceb41b310eb160795b22e0f319d608)🌍 Set OTG generator as server default
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/a6fd5e3836b7f204b23b886b6b9dc6196e688ec1)✏️Cheaper ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/ash_brick__0.png "Ash Bricks")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/loam__0.png "Loam")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/fertilizer_bio__0.png "Compost")
+* <img src="https://i.imgur.com/J0dJJn2.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4eb3b79e75f3a0b6977066fe5de3f6b1522dbe18)✏️IE capacitors require less resources but more steps
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal_device0__0.png "LV Capacitor") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal_device0__1.png "MV Capacitor") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal_device0__2.png "HV Capacitor")
 
 ## 🐛 Fixes
 
 
 #### Configs
 
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/59f06131f14f146ae2f254b6918b3814494995d8)Fix RequiousFracto machines not dropping on breaking
-  > > Contributed by [Olivoz](olivoz12345@gmail.com)
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ccd5a371cde969d22d3732ed283136c9d0fe3238)🧩Fix `Dynamic Surroundings` crash
+  > > Contributed by [mczph](mczphmodpack@163.com)
   >
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/1cefd3ccde1ca5c06c7db97c180b15000dabd784)📄 Force JEI config rewrite
-  > Previously, JEI configs handled with `MoreDefaultOptions`. But actually, mod would not copy this file correctly, and JEI have always default config on first MC start. This leads to some problems like double mod name label.
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4f90d24dc233c4e19892c07a4be1960ad532fb2c)🔄 Deep Mob Evolution fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/deepmoblearning/data_model_slime__0.png "Slime Data Model")
-  > https://github.com/ThePansmith/DeepMobEvolution/issues/22
+  > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/215
 
-#### JEI
+#### Gear
 
-* <img src="https://i.imgur.com/t02hhy4.png" style="max-width: 240px; max-height: 120px" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ef956da7cd3726730cf439bcdae09e8879c99356)📃 Remove dimension planet from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/hive__1.png "Scented Hive") tab
-  > Dimension restriction will be removed in future.
-  > 
-  > Now just remember - working only for `Dim 0`, except Ender Hive working only in The End.
-  > 
-  > Sorry for skyblock players - still working on solution.
-
-#### Mods
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5c7fd07a139171a134c05a29625c08763f5e284b)🔴 Remove `Dude! Where's my Horse?`
-  > ![](https://github.com/Krutoy242/mc-icons/raw/master/i/dwmh/ocarina__0.png "Ocarina") caused dupes for many animals and all their equipment
-
-#### Quest
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/84430ea598a14fd4f9a025a391ef05f9106e1bf6)📖 Remove mention about TC Golems in Skyblock
-  > Issue with blocks breaking was fixed when i removed `Void Island Control` mod
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ec779a0f7d097d9d2cfa2a99ee5f31298293bd35)📖 Replace ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermalexpansion/tank__0__78e33283.png "Portable Tank (Basic)") reward with mek tank
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/2e333ef7d37bd6d843cef81ee03c50413cfc499e)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/crafting__0.png "Rubber") set mining level to 0
 
 #### Recipes
 
-* <img src="https://i.imgur.com/b67tqd7.png" style="max-width: 240px; max-height: 120px" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/9ddae67523651b6b4eb39eb7b547c767afb03fec)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicwonders/alchemist_stone__0.png "Alchemist's Stone") now made in Crafting Table
-  > Same for ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicwonders/transmuter_stone__0.png "Transmuter's Stone") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumicwonders/alienist_stone__0.png "Alienist's Stone")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/2b42b87e59d5318fb857bb598e17c51abfa431cc)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/advanced_re_battery__0.png "Advanced RE-Battery") ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/re_battery__0.png "RE-Battery") fix unautomatable in ME
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/f63ba8e2d3a4f7dd538c0bfdbb9d8d0c755a74eb)✏️[atmosphere collector] now works in skyblock
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/18d1186b556cb3fb1013042d7435c79eb04855c1)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/beacon__0.png "Beacon") remove ![](https://github.com/Krutoy242/mc-icons/raw/master/i/chisel/redstone__0.png "Block of Redstone") as amplifier
+  > `Potion Of Extension` was disabled, so this amplifier not worked anyway
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5474689d12ea948d7724c22dcfa9869d318aa5c4)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/mekanism/machineblock__2.png "Combiner") remove from game
+  > Combiner have no practical usage
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4a9df41d6cd48d9cc4056e0b5892c097ec6311e7)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler") fix too much liquid input
+  > ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal_device1__13.png "Garden Cloche") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/hardened_machine__0.png "Hardened Casing") now have less multiplier
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/d9dffc35d184c3dc70ff11ac3c2292e7d6231f88)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/deepmoblearning/soot_covered_redstone__0.png "Soot-covered Redstone") remove from seve
+  > Now redstone can be obtainable from ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/redorchid__0.png "Red Orchid")
+* <img src="https://i.imgur.com/PnDBz6j.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/f7232f70e8ff388f53d2418877b6f93c143a2727)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/treated_wood__0.png "Treated Wood Planks") from any [Creosote] (ic2) tank
+  > For example, ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/pipette__0.png "Pipette")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/b02f973bb34b17dad64f2bb3d405f3ac36c94faf)✏️fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/crystal_shard__0.png "Celestial Crystal Shard") alloy in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/arcfurnace__0.png "Electric Arc Furnace")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/08bac1bc469896f7232938547fc08b1ddc5adab6)✏️fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_archeologist__0.png "Rat Upgrade: Archeologist") uncraftable with damaged hats
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5ad2bc7c0ca102fd8bf7b85110dd44a9b4618e50)✏️Nehter Portal Spread cant generate ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/glowstone__0.png "Glowstone") anymore
+  > Now it output ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/hive__0.png "Hive Block") instead
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/889a99da232c5976a3a2e8541725cdafc84e0f0a)✏️Remove all Concrete => Powder recipes from Hammering
+  > Who ever need such recipes?
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ef8630a753baab119986ef455327d44c8baf83be)✏️Set mining level `0` for some hammering
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/dried_sand__0.png "Dried Sand")![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/white_sand__0.png "White Sand")
   > 
-  > This should fix issue when this stones was unable to be crafted on TC Infusion for some reason
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/9894094f69e9d8d9f18d3a19d60dc1383ce9d9b5)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/endreborn/armour_leggings_dragon__0.png "Dragon Leggins") fix dupe ![](https://github.com/Krutoy242/mc-icons/raw/master/i/endreborn/dragon_scales__0.png "Dragon Scales")
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/2b6f579fd5e64005b114f167653acd73b726e3be)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/exp_pylon__0.png "Experience Pylon") repl. by ![](https://github.com/Krutoy242/mc-icons/raw/master/i/darkutils/monolith__0.png "Monolith of Experience")
-  > Pylon caused several infinite XP dupes and now removed
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/882adbfa5926df2e1097f28857164b4c504711f2)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermallogistics/manager__0.png "Network Manager")![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/quantum_ring__0.png "ME Quantum Ring") now accept uncharged ingredients
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/dd11925e43e87987354b4a2d5fb0d3c252e8cb13)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/psicosts/psi_cell__1.png "PSI-O Cell") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/psicosts/psi_cell__2.png "PSI-Dyne Cell") swap ingr tiers
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/fe8d54f52940638a0afded9a3fc5ff4261478e81)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/sponge__0.png "Sponge") now clear Silk Touch from TCon too
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/8f050dd365375e11e68d2262885e53ebac9d9a27)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/nuclear__2.png "Uranium 238") remove and replace with ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal__5.png "Uranium Ingot")
-  > Uranium 238 was basically same thing as Uranium Ingot but from IC2
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/8fa1c4ea61cbf2dfc6cc7263639f5d20ec869719)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/ingot_block__8.png "Graphite Block") remove melting into coal inside Smeltery
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/944a1fee1c3e56499755287bf1fa0626d770962b)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler") ingrs quantity fix
-  > Some ricipes ingredient quantities was changed
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/023dac13a6eb082d962b16083e7b590c7c4a03ea)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/platepress__0.png "Small Plate Presser") remove empty output recipe
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/3a10b12a152c4a68ccebcfe79ebda9a0b696f1e1)✏️purge ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/dehydrator__0.png "Dehydrator")
-  > Cyclic's machines is laggy both FPS and TPS wise. I moved some recipes from Dehydrator to other machines. For examples, new recipes for ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/stone_pebble__0.png "Pebble")
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/fa16512b56b16e1becf40e4420fa17b818f1d628)Revert `framing drawers without a framing table`
-  > Sadly, but recipe function for drawer framing called for mostly EVERY recipe you ever crafting in crafting table. This caused excess lag and crashes with ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bithop/pullhop__0.png "PullHop")
-  > 
-  > This reverts commit 25e2de1a262625fd094b5236283d5708426bd9d6.
-  > 
-  > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/209
+  > This would fix issue when you can break stone variant but sledging not happens
 
 #### Server
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/0c07b1b3bb23badf672995e8ba1294ae2854c336)💻 Fix Conflux levels not work on servers
-  > File with Conflux levels wasnt copied to server files on first load. This caused v1.0+ servers not giving players ranks
-  >
-  > If you created server on `v1.0+` you should manually copy `local/ftbutilities/ranks.txt` from your client to server
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/c5ae5db9fdd2d37790c06b391eef3d2b5b32e99e)💻Include BetterFPS into server pack
 
-#### Worldgen
+#### Skyblock
 
-* <img src="https://i.imgur.com/qyJzMaT.png" style="max-width: 240px; max-height: 120px" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/990ef046e62a59e0f959eee9b63cfca86259abce)🌍 Enable back flora in `KELT-6a`
-  > Leaves, Grass, Shrooms and other flora wasnt generated because planet had too low `atmosphereDensity`
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ff70ffb27359a3f23b821022bb85bad56b15383f)🌍 Set `Alien Forest` portal to ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/bedrock__0.png "Bedrock")
-  > To prevent creating portals, keep it only available for Rocket right now
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4da60ac012ba4f9f389106e5978b9525b3f38558)🌌Fix skyblock forbid tp to Deep Dark
 
 
 
