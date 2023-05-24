@@ -375,6 +375,14 @@
 	</Recipe>
 	<Recipe timeRequired="0" power="0">
 		<input>
+			<oreDict>oreNetherTin</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 65</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
 			<oreDict>oreNetherGold</oreDict>
 		</input>
 		<output>
