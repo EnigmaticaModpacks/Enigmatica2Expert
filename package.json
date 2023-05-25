@@ -11,9 +11,7 @@
     "build:bump-menu": "npx json-patch-cli set config/CustomMainMenu/mainmenu.json labels/version_num/text \"WIP_VERSION\"",
     "build:bump-remt": "echo \"WIP_VERSION\" > dev/version.txt",
     "build:gen-manif": "echo \"GENERATE MANIFEST HERE\"",
-    "format-test": "esno mc-tools/scripts/format.ts scripts/MiscRecipes.zs",
-    "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts levels dev/tools/reduce_mods.json",
-    "md-to-html": "node ./dev/lib/curseforge-md-to-html.js ./changelogs/LATEST.md"
+    "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts levels dev/tools/reduce_mods.json"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
