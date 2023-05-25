@@ -336,34 +336,10 @@ tile.replicator.name=§5Репликатор
 # --------------------------------------
 # Moar Reactor Functionality
 # --------------------------------------
-item.contenttweaker.blaster.name=Небольшой компрессионный заряд
-item.contenttweaker.radio_waste.name=Стандартизированная гранула переработанных ядерных отходов
-
-fluid.liquid_air=Малые воздушные продукты
-fluid.nether_air=Нижний воздух
-fluid.end_air=Конечный воздух
-fluid.well_pressed_water=Вода под давлением в скважине
-fluid.super_critical_steam=Сверхкритический пар
-fluid.crap_steam=Ерундовый Пар
-fluid.hot_nitrogen=Горячий азот
 fluid.hot_carbon_dioxide=Горячий диоксид углерода
-fluid.hot_helium=Горячий гелий
-fluid.hot_argon=Горячий аргон
-fluid.krypton=Криптон
-fluid.hot_krypton=Горячий криптон
-fluid.xenon=Ксенон
-fluid.hot_xenon=Горячий ксенон
-fluid.hot_neon=Горячий неон
 fluid.compr_carbon_dioxide=Сжатый диоксид углерода
 fluid.supercritical_carbon_dioxide=Сверхкритический диоксид углерода
 fluid.critical_exhaust_carbon_dioxide=Критический диоксид углерода выхлопных газов
-
-fluid.cold_nrg=Lukewarm Liquid Energy
-fluid.hot_nrg=Hot Liquid Energy
-fluid.hot_deuterium=Hot Deuterium Plasma
-fluid.hot_tritium=Hot Tritium Plasma
-
-itemGroup.moar_reactor_functionality=Moar Reactor Functionality
 # --------------------------------------
 # New Turbine Parts
 # --------------------------------------

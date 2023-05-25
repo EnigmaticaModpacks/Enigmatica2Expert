@@ -329,34 +329,10 @@ tile.replicator.name=§5Replicator
 # --------------------------------------
 # Moar Reactor Functionality
 # --------------------------------------
-item.contenttweaker.blaster.name=Small Compression Charge
-item.contenttweaker.radio_waste.name=Standardized Reprocessed Nuclear Waste Pellet
-
-fluid.liquid_air=Lesser Air Products
-fluid.nether_air=Nether Air
-fluid.end_air=End Air
-fluid.well_pressed_water=Well Pressurized Water
-fluid.super_critical_steam=Supercritical Steam
-fluid.crap_steam=Crap Steam
-fluid.hot_nitrogen=Hot Nitrogen
 fluid.hot_carbon_dioxide=Hot Carbon Dioxide
-fluid.hot_helium=Hot Helium
-fluid.hot_argon=Hot Argon
-fluid.krypton=Krypton
-fluid.hot_krypton=Hot Krypton
-fluid.xenon=Xenon
-fluid.hot_xenon=Hot Xenon
-fluid.hot_neon=Hot Neon
 fluid.compr_carbon_dioxide=Compressed Carbon Dioxide
 fluid.supercritical_carbon_dioxide=Supercritical Carbon Dioxide
 fluid.critical_exhaust_carbon_dioxide=Critical Exhaust Carbon Dioxide
-
-fluid.cold_nrg=Lukewarm Liquid Energy
-fluid.hot_nrg=Hot Liquid Energy
-fluid.hot_deuterium=Hot Deuterium Plasma
-fluid.hot_tritium=Hot Tritium Plasma
-
-itemGroup.moar_reactor_functionality=Moar Reactor Functionality
 # --------------------------------------
 # New Turbine Parts
 # --------------------------------------
