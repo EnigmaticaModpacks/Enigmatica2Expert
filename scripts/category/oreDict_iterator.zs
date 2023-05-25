@@ -33,12 +33,12 @@ for ore_entry in oreDict {
 		val oreBlock = oreDict.get("ore" ~ ore_name);
 		if(isNull(oreBlock) || oreBlock.empty) continue;
 
-    scripts.do.burnt_in_fluid.add(
-      ore_entry.itemArray[0].definition.id,
-      oreBlock.firstItem.asBlock().definition.getStateFromMeta(oreBlock.firstItem.damage),
-      'stone',
-      1.0 / 3.0
-    );
+    for item in oreBlock.items {
+      val asBlock = item.asBlock();
+      if(isNull(asBlock) || asBlock.definition.id == 'minecraft:air') continue;
+      val oreBlockState = asBlock.definition.getStateFromMeta(item.damage);
+      scripts.do.burnt_in_fluid.add(ore_entry.itemArray[0].definition.id, oreBlockState, 'stone', 1.0 / 3.0);
+    }
     continue;
 	}
 
