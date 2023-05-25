@@ -325,7 +325,7 @@ craft.remake(<randomthings:spectreenergyinjector>, ["pretty",
 
 # ----------------------------
 
-# [Nature Core] from [Experience Pylon][+2]
+# [Nature Core]
 craft.remake(<randomthings:naturecore>, ["pretty",
   "# § #",
   "§ E §",
