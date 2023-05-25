@@ -42,6 +42,7 @@ recipes.addShapeless(<ic2:misc_resource:1> * 2, [<thermalfoundation:material:135
 	mods.thermalexpansion.CompressionDynamo.removeFuel(<liquid:empoweredoil>);
 
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:refinedcanolaoil>, 250000);
+	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:biofuel>, 500000);
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:crystaloil>, 1000000);
 	mods.thermalexpansion.CompressionDynamo.addFuel(<liquid:empoweredoil>, 1750000);
 
@@ -790,3 +791,8 @@ craft.remake(<thermaldynamics:duct_64:1> * 64, ["pretty",
   "□": <thermalfoundation:material:323>, # Lead Plate
   "■": <tconstruct:clear_glass>,         # Clear Glass
 });
+
+# Remove AE2 Seeds from Phytogenic Insolator (recipe is bugged - seeds can't be inserted)
+mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:0>, <minecraft:glowstone_dust>);
+mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:600>, <minecraft:glowstone_dust>);
+mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:1200>, <minecraft:glowstone_dust>);

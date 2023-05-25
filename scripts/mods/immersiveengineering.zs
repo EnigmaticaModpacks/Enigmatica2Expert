@@ -241,8 +241,11 @@ craft.remake(<immersiveengineering:stone_decoration> * 3, ["pretty",
 	mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:895> * 3, <ore:oreClathrateEnder>, 6000);
 	
 # Unbreakable Graphite Electrodes
-	mods.thermalexpansion.InductionSmelter.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}), <immersiveengineering:graphite_electrode>, <advancedrocketry:productingot:1> * 4, 25000);
-	mods.jei.JEI.addItem(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}));
+val electrodeTag = {Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}} as crafttweaker.data.IData;
+val electrodeItem= <immersiveengineering:graphite_electrode>.withTag(electrodeTag);
+mods.thermalexpansion.InductionSmelter.addRecipe(electrodeItem, <immersiveengineering:graphite_electrode>, <advancedrocketry:productingot:1> * 4, 25000);
+mods.jei.JEI.addItem(electrodeItem);
+mods.jei.JEI.addDescription(electrodeItem, "Reinforced Graphite Eletrode. Repaired Graphite Electrodes are insufficient for this process");
 
 # Add missed Quickdry Concrete
 mods.jei.JEI.addItem(<immersiveengineering:stone_decoration:9>);

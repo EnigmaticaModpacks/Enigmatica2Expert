@@ -176,12 +176,6 @@ add(<ore:blockAmber>, <biomesoplenty:gem_block:7>);
 add(<ore:blockAmber>, <thaumcraft:amber_block>);
 add(<ore:blockAmber>, <thaumcraft:amber_brick>);
 
-# Astral Sorcery Rock Crystals
-add(<ore:crystalAstralAny>, <astralsorcery:itemrockcrystalsimple>.withEmptyTag());
-add(<ore:crystalAstralAny>, <astralsorcery:itemtunedrockcrystal>.withEmptyTag());
-add(<ore:crystalAstralAny>, <astralsorcery:itemcelestialcrystal>.withEmptyTag());
-add(<ore:crystalAstralAny>, <astralsorcery:itemtunedcelestialcrystal>.withEmptyTag());
-
 add(<ore:gemPerk>, <astralsorcery:itemperkgem:0>.withEmptyTag());
 add(<ore:gemPerk>, <astralsorcery:itemperkgem:1>.withEmptyTag());
 add(<ore:gemPerk>, <astralsorcery:itemperkgem:2>.withEmptyTag());

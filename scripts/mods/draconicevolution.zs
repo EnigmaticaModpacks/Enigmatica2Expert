@@ -267,3 +267,19 @@ craft.remake(<draconicevolution:entity_detector>, ["pretty",
   "▬": <ore:ingotCarbon>,   # Carbon Brick
   "M": <ore:stoneMarble>,   # Marble
 });
+
+# Flux Gate
+	recipes.remove(<draconicevolution:flow_gate:0>);
+	recipes.addShapedMirrored("Flux Gate", 
+	<draconicevolution:flow_gate:0>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<ore:blockRedstone>,<nuclearcraft:part:10>,<ore:blockRedstone>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);
+
+# Fluid Gate
+	recipes.remove(<draconicevolution:flow_gate:8>);
+	recipes.addShapedMirrored("Fluid Gate", 
+	<draconicevolution:flow_gate:8>,
+	[[<ore:ingotIron>,<draconicevolution:potentiometer>,<ore:ingotIron>],
+	[<minecraft:bucket>,<nuclearcraft:part:10>,<minecraft:bucket>],
+	[<ore:ingotIron>,<minecraft:comparator>,<ore:ingotIron>]]);

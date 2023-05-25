@@ -80,7 +80,7 @@ craft.shapeless(<extrautils2:enderlilly>, "EEEEEEEEE", {
 	recipes.addShaped("Rainbow Generator", 
 	<extrautils2:rainbowgenerator>, 
 	[[<extrautils2:opinium:4>, <extrautils2:rainbowgenerator:2>, <extrautils2:opinium:4>],
-	[<extrautils2:ingredients:16>, <draconicevolution:draconium_capacitor:1>, <extrautils2:ingredients:16>], 
+	[<extrautils2:ingredients:16>, <draconicevolution:crafting_injector:1>, <extrautils2:ingredients:16>], 
 	[<extrautils2:opinium:4>, <extrautils2:rainbowgenerator:1>, <extrautils2:opinium:4>]]);
 	
 # Transper Pipe

@@ -59,3 +59,10 @@ craft.shapeless(<gendustry:pollen_kit> * 4, 'AABC', {
 	B: <ore:dustEmerald>,
 	C: <forestry:crafting_material:2>
 });
+
+# Remove invalid honey combs from TE Centrifugal Separator. Who knows why they even exist in the first place
+# This affects combs with metadata 17-25
+for i in 17 to 26 {
+	val comb as IItemStack = <gendustry:honey_comb>.definition.makeStack(i) as IItemStack;
+	mods.thermalexpansion.Centrifuge.removeRecipe(comb);
+}
