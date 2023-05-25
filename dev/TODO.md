@@ -2,29 +2,34 @@
 
 List of priorities:
 
-- [ ] 🔄 Remove Excess MRF files from resources `git show <rev> | git apply -R`
 - [ ] 🐀 Fix rats not spawn on garbage piles
-- [ ] 💥 going Between Dims Causing Client Freezez
 - [ ] 📖 Implement item storage quests https://discord.com/channels/911676461050642432/1100262454522544128/1106364365109739533
 - [ ] 📖 `Speed Rat Upgrade` add quest
-- [x] 📖 Conflux level automatically
+- [ ] 📖 Describe Skyblock quests
+- [ ] 📖 Add info about 9 length coils
+- [ ] 📖 add some warning about redstone conduits and nuclearcraft reactors in a tooltip
+- [ ] 📖 Placing a Essentia buffer right above the Essentia Combiner seems to circumvent the issue
 - [ ] 🔄 Update E2E
 - [ ] 🔄 Disable Skeletons on horses since they cause random explosions
-- [ ] 🔄 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
+- [ ] 🌍 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
 - [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time
 - [ ] 📓 Changelog should change version number
-- [ ] 📓 Changelog images should have `width=240px` instead of `style`
 - [ ] 🟢 Integrate ☢️ `New Turbine Parts`
 - [ ] 🟣 Implement `IBlock#getItem(world, pos, blockState)`
-- [ ] 🔄 Teleport player to Alien Forest on Alfheim interaction
+- [ ] 🌍 Teleport player to Alien Forest on Alfheim interaction
+- [ ] 🌍 Alien Forest add JER data
 - [ ] 🔄 disable Caves In TF
-- [x] ✏️ add Rat diamond to ME etcher
+- [ ] 🔄 Remove `Particle Culling` from MODS.md
+- [ ] 🚧 Bump version in manifest.json
+- [ ] ✏️ `Burnt in fluid` accept any meta
+- [ ] ✏️ `Precision Assembler` fix conflict between Inpreg. Sticks and Casing, Basic Coil and Advanced Coil, bronze ingot recipes
+- [ ] ✏️ Stellar alloy dupe with cheaper materials
 - [ ] ✏️ add Dilithium Magic only
-- [x] ✏️ Add Airtight Seal as built-in ench
 - [ ] ✏️ Spawn Pechs in TF
 - [ ] ✏️ Scented Hives Not Working In Skyblock. Still not working, even with config changes
-- [ ] ✏️ void Beacon Not Working. Probably because of `Bansoukou` OR `Thaumcraft Aspect Creator`
 - [ ] ✏️ Implement BoP drop improvments https://github.com/ProjectHDS/Herodotus/blob/d097ba6b2be402715bf759730c14ebfbd5e42fd4/.minecraft/scripts/hds_main/utils/bopCompat.zs
+- [ ] 💥 going Between Dims Causing Client Freezez / memory leak
+- [ ] ✏️ void Beacon Not Working. Probably because of `Bansoukou` OR `Thaumcraft Aspect Creator`
 
 ---
 
