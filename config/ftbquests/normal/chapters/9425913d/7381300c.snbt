@@ -1,5 +1,6 @@
 {
 	title: "{q.gates.conflux_iv.name}",
+	icon: "extendedcrafting:material 1 11",
 	x: 14.6d,
 	y: 5.475d,
 	shape: "square",
