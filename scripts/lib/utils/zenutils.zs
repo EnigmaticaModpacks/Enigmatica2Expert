@@ -2,6 +2,7 @@
 #priority 3999
 
 #modloaded zenutils
+#loader crafttweaker reloadable
 
 import crafttweaker.command.ICommandSender;
 import crafttweaker.item.IItemStack;
@@ -44,9 +45,11 @@ function(
       world.spawnEntity(itemEntity);
 
       // world.playSound("thaumcraft:poof", "ambient", pos, 0.5f, 1.5f);
-      server.commandManager.executeCommandSilent(itemEntity, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
+      executeCommandSilent(itemEntity, "/particle fireworksSpark "~x as float~" "~y as float~" "~z as float~" 0 0.1 0 0.1 5");
     }).start();
 
     i += 1;
   }
 };
+
+utils.geyser = geyser;
