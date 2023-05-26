@@ -28,12 +28,16 @@ jobs:
         run: npx mdimg -i latest.md -o latest.png -w 800 --css githubDark
 
       - name: 🖼️ ➡️ Send discord message
-        uses: appleboy/discord-action@master
+        uses: MineBartekSA/discord-webhook@v2
         with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          file: "./latest.png"
-          message: "🚀 New release: __**${{ steps.release.outputs.tag_name }}**__ ${{ steps.release.outputs.name }} ${{ steps.release.outputs.url }}"
+          webhook: ${{ secrets.WEBHOOK_URL }}
+          username: 🚀 New release
+          avatar_url: https://media.forgecdn.net/avatars/820/88/638200951256555174.png
+          embed: |
+            - title:  __**${{ steps.release.outputs.name }}**__
+              url: ${{ steps.release.outputs.html_url }}
+          attachment: |
+            file: latest.png
 
       - run: npm i --omit=dev
 
