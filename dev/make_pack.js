@@ -24,6 +24,7 @@ import yargs from 'yargs'
 import ignore from 'ignore'
 import open from 'open'
 
+import replace_in_file from 'replace-in-file'
 import {
   end,
   execSyncInherit,
@@ -192,12 +193,17 @@ const style = {
   if (await pressEnterOrEsc(`[${STEP++}] Generate Changelog? ENTER / ESC.`)) {
     const latestPath = 'changelogs/LATEST.md'
 
-    // Generate changelog
-    execSyncInherit(`npx conventional-changelog-cli --config ./dev/tools/changelog/config.cjs -o ${latestPath}`)
-
     // Update version in files
     execSyncInherit(`npx json -I -f config/CustomMainMenu/mainmenu.json -e "this.labels.version_num.text='${nextVersion}'"`)
     writeFileSync('dev/version.txt', nextVersion)
+    replace_in_file.sync({
+      files: 'manifest.json',
+      from : /("version"[\s\n]*:[\s\n]*")[^"]+("[\s\n]*,)/m,
+      to   : `$1${nextVersion}$2`,
+    })
+
+    // Generate changelog
+    execSyncInherit(`npx conventional-changelog-cli --config ./dev/tools/changelog/config.cjs -o ${latestPath}`)
 
     // Iconize
     execSyncInherit(`esno E:/dev/mc-icons/src/cli.ts "${latestPath}" --silent --no-short --modpack=e2ee --treshold=2`)
@@ -212,7 +218,6 @@ const style = {
 
   if (await pressEnterOrEsc(`[${STEP++}] Add tag? ENTER / ESC.`))
     execSyncInherit(`git tag -a -f -m "Next automating release" ${nextVersion}`)
-    // await git.addAnnotatedTag(nextVersion, 'Next automating release')
 
   /*
 ██████╗ ██████╗ ███████╗██████╗ ███████╗██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗

@@ -9,19 +9,17 @@ List of priorities:
 - [ ] 📖 Add info about 9 length coils
 - [ ] 📖 add some warning about redstone conduits and nuclearcraft reactors in a tooltip
 - [ ] 📖 Placing a Essentia buffer right above the Essentia Combiner seems to circumvent the issue
-- [ ] 🔄 Update E2E
 - [ ] 🔄 Disable Skeletons on horses since they cause random explosions
 - [ ] 🌍 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
 - [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time
-- [ ] 📓 Changelog should change version number
 - [ ] 🟢 Integrate ☢️ `New Turbine Parts`
 - [ ] 🟣 Implement `IBlock#getItem(world, pos, blockState)`
 - [ ] 🌍 Teleport player to Alien Forest on Alfheim interaction
 - [ ] 🌍 Alien Forest add JER data
 - [ ] 🔄 disable Caves In TF
 - [ ] 🔄 Remove `Particle Culling` from MODS.md
-- [ ] 🚧 Bump version in manifest.json
-- [ ] ✏️ `Burnt in fluid` accept any meta
+- [ ] ✏️ Make Mek reactor cheaper
+- [ ] ✏️ `Burnt in fluid` fix accept any meta
 - [ ] ✏️ `Precision Assembler` fix conflict between Inpreg. Sticks and Casing, Basic Coil and Advanced Coil, bronze ingot recipes
 - [ ] ✏️ Stellar alloy dupe with cheaper materials
 - [ ] ✏️ add Dilithium Magic only
@@ -30,6 +28,9 @@ List of priorities:
 - [ ] ✏️ Implement BoP drop improvments https://github.com/ProjectHDS/Herodotus/blob/d097ba6b2be402715bf759730c14ebfbd5e42fd4/.minecraft/scripts/hds_main/utils/bopCompat.zs
 - [ ] 💥 going Between Dims Causing Client Freezez / memory leak
 - [ ] ✏️ void Beacon Not Working. Probably because of `Bansoukou` OR `Thaumcraft Aspect Creator`
+- [ ] ✏️ Tiny Inventory System cheaper (its 3 chests without GUI)
+- [ ] 📀 Rustic's barrel make as x4 chests but without GUI
+- [ ] 📓 Changelog should change version number
 
 ---
 

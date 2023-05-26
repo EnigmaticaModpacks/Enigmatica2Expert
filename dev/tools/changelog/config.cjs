@@ -146,6 +146,8 @@ const writerOpts = {
         .map(([scope, commits]) => ({ scope, commits }))
     })
 
+    context.version = readFileSync('dev/version.txt', 'utf8').trim()
+
     return context
   },
   groupBy         : 'type',
