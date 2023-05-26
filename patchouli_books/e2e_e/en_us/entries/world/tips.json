@@ -139,7 +139,7 @@
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!$(li)Stand and sneak on §2Experience Pylon§r to dump XP$(li)§nHeads§r with NBT tags in ME terminal cause FPS lag$(li)Press \"§lShift+C§r\" to crawl",
+      "text": "$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!$(li)§nHeads§r with NBT tags in ME terminal cause FPS lag$(li)Press \"§lShift+C§r\" to crawl",
       "title": "Tips"
     }
   ]
