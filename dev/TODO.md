@@ -7,21 +7,25 @@ List of priorities:
 - [ ] 📖 `Speed Rat Upgrade` add quest
 - [ ] 📖 Describe Skyblock quests
 - [ ] 📖 Add info about 9 length coils
-- [ ] 📖 add some warning about redstone conduits and nuclearcraft reactors in a tooltip
+- [x] 📖 add some warning about redstone conduits and nuclearcraft reactors in a tooltip
 - [ ] 📖 Placing a Essentia buffer right above the Essentia Combiner seems to circumvent the issue
-- [ ] 🔄 Disable Skeletons on horses since they cause random explosions
 - [ ] 🌍 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
 - [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time
 - [ ] 🟢 Integrate ☢️ `New Turbine Parts`
 - [ ] 🟣 Implement `IBlock#getItem(world, pos, blockState)`
-- [ ] 🌍 Teleport player to Alien Forest on Alfheim interaction
 - [ ] 🌍 Alien Forest add JER data
+- [ ] 🔄 Disable Skeletons on horses since they cause random explosions
 - [ ] 🔄 disable Caves In TF
-- [ ] 🔄 Remove `Particle Culling` from MODS.md
+- [x] 🔄 fixIrradiatorNetHeatingAndAddFuelInDesc
+- [ ] ✏️ voidPlateToThaumium
+- [ ] ✏️ sagmill produce too much Scrap with balls
+- [x] ✏️ villiamite Cheaper For Scrubber
+- [x] ✏️ betteranimals Make Removable
+- [ ] ✏️ fix Capacitor Upgrade Require Empty Cap
 - [ ] ✏️ Make Mek reactor cheaper
 - [ ] ✏️ `Burnt in fluid` fix accept any meta
 - [ ] ✏️ `Precision Assembler` fix conflict between Inpreg. Sticks and Casing, Basic Coil and Advanced Coil, bronze ingot recipes
-- [ ] ✏️ Stellar alloy dupe with cheaper materials
+- [x] ✏️ Stellar alloy dupe with cheaper materials
 - [ ] ✏️ add Dilithium Magic only
 - [ ] ✏️ Spawn Pechs in TF
 - [ ] ✏️ Scented Hives Not Working In Skyblock. Still not working, even with config changes
@@ -40,6 +44,7 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 🌍 Teleport player to Alien Forest on Alfheim interaction
 - [ ] ✏️ Lootr still turn Dispensers into Lootr Chests https://github.com/noobanidus/Lootr/issues/189
 - [ ] ✏️ twlight forest advancement not showing up in advancement tab V1.2.1. Need conformation
 - [ ] 📖 Trials JEI tab is invisible https://github.com/ThePansmith/DeepMobEvolution/issues/24
@@ -82,7 +87,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ NC Motor replace by IC2 motor or change recipes
 - [ ] ✏️ Better Comments of Framed Drawers recipes
 - [ ] ✏️ Add Framed Fluid Drawers recipes
-- [ ] ✏️ Integrate `Orbital Laser Drill` better
+- [ ] ✏️ Integrate `Orbital Laser Drill` better. It can mine ores on planet orbits for skyblock.
 - [ ] 📀 Rain Tank buff even more
 - [ ] 🌍 AbandonedWoodTower less spawn
 - [ ] 🔄 Carryon change render for EIO warehouse

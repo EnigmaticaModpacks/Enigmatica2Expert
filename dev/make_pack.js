@@ -198,12 +198,12 @@ const style = {
     writeFileSync('dev/version.txt', nextVersion)
     replace_in_file.sync({
       files: 'manifest.json',
-      from : /("version"[\s\n]*:[\s\n]*")[^"]+("[\s\n]*,)/m,
+      from : /(^ {2}"version"[\s\n]*:[\s\n]*")[^"]+("[\s\n]*,)/m,
       to   : `$1${nextVersion}$2`,
     })
 
     // Generate changelog
-    execSyncInherit(`npx conventional-changelog-cli --config ./dev/tools/changelog/config.cjs -o ${latestPath}`)
+    execSyncInherit(`npx conventional-changelog-cli --config dev/tools/changelog/config.cjs -o ${latestPath}`)
 
     // Iconize
     execSyncInherit(`esno E:/dev/mc-icons/src/cli.ts "${latestPath}" --silent --no-short --modpack=e2ee --treshold=2`)

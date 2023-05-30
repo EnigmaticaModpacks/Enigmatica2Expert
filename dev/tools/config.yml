@@ -265,3 +265,6 @@ ignore:
 
   # Some Universal Tweaks Mixin problems. Reported https://github.com/ACGaming/UniversalTweaks/issues/181
   - WARN. .mixin.. @Mixin target net/minecraft/client/renderer/BlockModelRenderer.AmbientOcclusionFace is public in mixins.bugfixes.misc.smoothlighting.json:UTSmoothLightingMixin and should be specified in value
+
+  # Even if you disable this configs, its still erroring
+  - .main/ERROR. .Aqua Acrobatics Transformer.. Disabling soul sand and magma mixins as requested in config

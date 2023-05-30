@@ -1,10 +1,8 @@
-/* eslint-disable unused-imports/no-unused-vars */
 // @ts-check
 
 const { readFileSync, existsSync } = require('node:fs')
 const { resolve } = require('node:path')
 const { execSync } = require('node:child_process')
-const compareFunc = require('compare-func')
 const { parse } = require('yaml')
 
 /**
@@ -67,7 +65,7 @@ const writerOpts = {
     if (typeof commit.body === 'string') {
       const images = []
       commit.body = commit.body.replace(
-        /(^|\s+)(!\[[\]]*\]\()?(?<link>(http)?s?:?(\/\/[^"']*?\.(?:png|jpg|jpeg|gif|png|svg)))\)?($|\s+)/gm,
+        /(^|\s+)(!\[[^\]]*\]\()?(?<link>(http)?s?:?(\/\/[^"'\s]*?\.(?:png|jpg|jpeg|gif|png|svg)))\)?($|\s+)/gm,
         (m, ...args) => {
           const g = args.pop()
           images.push(g.link)
@@ -127,6 +125,7 @@ const writerOpts = {
     return commit
   },
 
+  // eslint-disable-next-line unused-imports/no-unused-vars
   finalizeContext(context, options, commits, keyCommit) {
     context.modschanges = getModChanges()
 
@@ -193,20 +192,67 @@ function getModChanges() {
 }
 
 ////////////////////////////////////////////////////////////////////////
+
+function addBangNotes(commit) {
+  const match = commit.header.match(/^(\w*)(?:\((.*)\))?!: (.*)$/)
+  if (match && commit.notes.length === 0) {
+    const noteText = match[3] // the description of the change.
+    commit.notes.push({
+      text: noteText,
+    })
+  }
+}
+
+/** @type {import('../../../node_modules/@types/conventional-changelog-core/index.d.ts').ParserOptions} */
+const parserOpts = {
+  headerPattern       : /^(\w*)(?:\((.*)\))?!?: (.*)$/,
+  // breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
+  headerCorrespondence: ['type', 'scope', 'subject'],
+  noteKeywords        : ['BREAKING CHANGE', 'BREAKING-CHANGE'],
+  revertPattern       : /^(?:Revert|revert:)\s"?([\s\S]+?)"?\s*This reverts commit (\w*)\./i,
+  revertCorrespondence: ['header', 'hash'],
+  // issuePrefixes        : config.issuePrefixes,
+}
+
 /** @type {import('../../../node_modules/@types/conventional-changelog-core/index.d.ts').Options.Config} */
 const exportConfig = {
   gitRawCommitsOpts: {
     format: '%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae%n-gpgStatus-%n%G?%n-gpgSigner-%n%GS',
   },
   writerOpts,
-  parserOpts: {
-    headerPattern       : /^(\w*)(?:\((.*)\))?!?: (.*)$/,
-    // breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
-    headerCorrespondence: ['type', 'scope', 'subject'],
-    noteKeywords        : ['BREAKING CHANGE', 'BREAKING-CHANGE'],
-    revertPattern       : /^(?:Revert|revert:)\s"?([\s\S]+?)"?\s*This reverts commit (\w*)\./i,
-    revertCorrespondence: ['header', 'hash'],
-    // issuePrefixes        : config.issuePrefixes,
+  parserOpts,
+  recommendedBumpOpts: {
+    whatBump: (commits) => {
+      let level = 2
+      let breakings = 0
+      let features = 0
+
+      commits.forEach((commit) => {
+        // adds additional breaking change notes
+        // for the special case, test(system)!: hello world, where there is
+        // a '!' but no 'BREAKING CHANGE' in body:
+        addBangNotes(commit)
+        if (commit.notes.length > 0) {
+          breakings += commit.notes.length
+          level = 0
+        }
+        else if (commit.type === 'feat' || commit.type === 'feature') {
+          features += 1
+          if (level === 2)
+            level = 1
+        }
+      })
+
+      // @ts-expect-error preMajor
+      if (config.preMajor && level < 2) level++
+
+      return {
+        level,
+        reason: breakings === 1
+          ? `There is ${breakings} BREAKING CHANGE and ${features} features`
+          : `There are ${breakings} BREAKING CHANGES and ${features} features`,
+      }
+    },
   },
 }
 

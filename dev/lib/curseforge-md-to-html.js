@@ -34,12 +34,31 @@ $('img')
   })
 
 // 𝑩𝒆𝒕𝒕𝒆𝒓 𝒉𝒆𝒂𝒅𝒆𝒓𝒔
-$('h1').before('<br/>').after('<br/>')
+$(':header').before('<br/>').after('<br/>')
 $('h2').before('<br/><hr/>').after('<br/>')
 // $('h3').before('<br/>').after('<br/>')
-$('h3').wrap('<span style="text-decoration: underline;">').contents().unwrap()
+$('h3')
+  .wrap('<span style="text-decoration: underline;">').contents().unwrap()
+  .wrapInner('<strong>')
 // $('sub').contents().unwrap()
 $('sup').remove()
+$('th')
+  .wrapInner('<span style="font-size: 1.2rem">')
+  .wrapInner('<strong>')
+
+// CF cant parse colspan
+for (const o of ['d', 'h']) {
+  // Add table margin
+  $(`t${o}`).prepend('&nbsp;').append('&nbsp;')
+
+  for (let i = 1; i < 7; i++) {
+    for (const w of ['row', 'col']) {
+      const p = $(`t${o}[${w}span=${i}]`).removeAttr(`${w}span`)
+      for (let j = 1; j < i; j++)
+        p.before(`<t${o}></t${o}>`)
+    }
+  }
+}
 
 // 𝑷𝒓𝒆𝒇𝒊𝒙𝒆𝒔
 $('body').prepend(
