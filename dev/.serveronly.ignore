@@ -17,6 +17,7 @@ config/thaumicjei_itemstack_aspects.json
 mods/ResourceLoader-*
 mods/BetterAdvancements*
 mods/betteranimals-*
+mods/BetterFps*
 mods/bilingualname*
 mods/Biome Border Viewer*
 mods/blockdrops-*
