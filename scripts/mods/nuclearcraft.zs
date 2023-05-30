@@ -350,9 +350,10 @@ for ingr, fluid in {
 // Alt recipes
 // ------------------------------------------------------------------
 
-# Rhodochrosite & Fluorite alt
+# Gems alts
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem>, <biomesoplenty:gem:1>, 15000);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem:2>, <biomesoplenty:gem:2>, 15000);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<nuclearcraft:gem:3>, <biomesoplenty:gem:3>, 15000);
 
 # Boron Nitride shortcut with AdvRock machines
 scripts.processUtils.avdRockXmlRecipeEx("ChemicalReactor", null, [<fluid:nitrogen> * 800, <fluid:hydrogen> * 2400], null, [<fluid:ammonia> * 16000], {power: 120000, timeRequired: 80});
