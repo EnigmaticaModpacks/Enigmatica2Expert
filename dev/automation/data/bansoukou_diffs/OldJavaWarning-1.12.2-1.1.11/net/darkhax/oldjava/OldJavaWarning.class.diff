@@ -1,0 +1,11 @@
+@@ -48,7 +48,9 @@ public class OldJavaWarning {
+         if (Config.warn32 && !OldJavaWarning.isJvm64bit()) {
+             OldJavaWarning.displayWarning(I18n.func_135052_a((String)"oldjava.notice.bit.body", (Object[])new Object[0]), I18n.func_135052_a((String)"oldjava.notice.bit.title", (Object[])new Object[0]), I18n.func_135052_a((String)"oldjava.url.bitinfo", (Object[])new Object[0]));
+         }
+-        if (Config.warnVersion && Config.minVersion.compareTo(System.getProperty("java.version")) > 0) {
++        String[] VersionConfig = Config.minVersion.split("_");
++        String[] VersionSystem = System.getProperty("java.version").split("_");
++        if (VersionConfig.length > 1 && VersionSystem.length > 1 && VersionConfig[1].matches("[0-9]+") && VersionSystem[1].matches("[0-9]+") && Config.warnVersion && Integer.parseInt(Config.minVersion.split("_")[1]) > Integer.parseInt(System.getProperty("java.version").split("_")[1])) {
+             OldJavaWarning.displayWarning(I18n.func_135052_a((String)"oldjava.notice.update.body", (Object[])new Object[0]), I18n.func_135052_a((String)"oldjava.notice.update.title", (Object[])new Object[0]), I18n.func_135052_a((String)"oldjava.url.updateinfo", (Object[])new Object[0]));
+         }
+     }
