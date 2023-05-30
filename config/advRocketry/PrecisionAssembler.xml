@@ -177,6 +177,21 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Wyvern Core] -->
+	<Recipe timeRequired="10" power="40000">
+		<input>
+			<oreDict>shulkerShell 2</oreDict>
+			<itemStack>draconicevolution:draconic_core 4</itemStack>
+			<itemStack>minecraft:sponge 2</itemStack>
+			<oreDict>ingotVividAlloy 2</oreDict>
+			<itemStack>environmentaltech:pladium 2</itemStack>
+			<fluidStack>ic2hot_coolant 4000</fluidStack>
+		</input>
+		<output>
+			<itemStack>draconicevolution:wyvern_core 2 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Dissipation Charge] -->
 	<Recipe timeRequired="160" power="640000">
 		<input>
@@ -261,21 +276,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wyvern Core] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>shulkerShell 2</oreDict>
-			<itemStack>draconicevolution:draconic_core 4</itemStack>
-			<itemStack>minecraft:sponge 2</itemStack>
-			<oreDict>ingotVividAlloy 2</oreDict>
-			<itemStack>environmentaltech:pladium 2</itemStack>
-			<fluidStack>ic2hot_coolant 4000</fluidStack>
-		</input>
-		<output>
-			<itemStack>draconicevolution:wyvern_core 2 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Advanced Coil] -->
 	<Recipe timeRequired="40" power="140000">
 		<input>
@@ -299,6 +299,19 @@
 		</input>
 		<output>
 			<itemStack>libvulpes:advstructuremachine 4 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Capacitor] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<oreDict>stickTitaniumIridium 64</oreDict>
+			<oreDict>dustBedrock 64</oreDict>
+			<itemStack>thermalfoundation:material 64 515</itemStack>
+			<oreDict>ingotFluixSteel 64</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_basic_capacitor 64 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -535,19 +548,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Basic Capacitor] -->
-	<Recipe timeRequired="320" power="1280000">
-		<input>
-			<oreDict>stickTitaniumIridium 64</oreDict>
-			<oreDict>dustBedrock 64</oreDict>
-			<itemStack>thermalfoundation:material 64 515</itemStack>
-			<oreDict>ingotFluixSteel 64</oreDict>
-		</input>
-		<output>
-			<itemStack>enderio:item_basic_capacitor 64 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Basic Circuit Board] -->
 	<Recipe timeRequired="105" power="420000">
 		<input>
@@ -653,6 +653,18 @@
 		</input>
 		<output>
 			<itemStack>forestry:thermionic_tubes 64 9</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Ender Electron Tube] -->
+	<Recipe timeRequired="80" power="320000">
+		<input>
+			<oreDict>oc:stoneEndstone 48</oreDict>
+			<oreDict>pearlEnderEye 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:thermionic_tubes 64 12</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -989,18 +1001,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Ender Electron Tube] -->
-	<Recipe timeRequired="80" power="320000">
-		<input>
-			<oreDict>oc:stoneEndstone 48</oreDict>
-			<oreDict>pearlEnderEye 16</oreDict>
-			<fluidStack>glass 8000</fluidStack>
-		</input>
-		<output>
-			<itemStack>forestry:thermionic_tubes 64 12</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Escritoire] -->
 	<Recipe timeRequired="105" power="420000">
 		<input>
@@ -1133,6 +1133,17 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Pickaxe Kit] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>stick 32</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:kit_pickaxe 32 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Sawdust] -->
 	<Recipe timeRequired="320" power="1280000">
 		<input>
@@ -1152,6 +1163,17 @@
 		</input>
 		<output>
 			<itemStack>thermalfoundation:material 64 800</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Shovel Kit] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>stick 64</oreDict>
+		</input>
+		<output>
+			<itemStack>forestry:kit_shovel 64 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -1193,28 +1215,6 @@
 		</input>
 		<output>
 			<itemStack>thermalfoundation:material 64 163</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Pickaxe Kit] -->
-	<Recipe timeRequired="160" power="640000">
-		<input>
-			<oreDict>ingotBronze 64</oreDict>
-			<oreDict>stick 32</oreDict>
-		</input>
-		<output>
-			<itemStack>forestry:kit_pickaxe 32 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Shovel Kit] -->
-	<Recipe timeRequired="320" power="1280000">
-		<input>
-			<oreDict>ingotBronze 64</oreDict>
-			<oreDict>stick 64</oreDict>
-		</input>
-		<output>
-			<itemStack>forestry:kit_shovel 64 0</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

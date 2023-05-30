@@ -33,6 +33,19 @@
 <!-->
 <Recipes useDefault="false">
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Basic Energy Relay Crystal] -->
+	<Recipe timeRequired="20" power="8000000">
+		<input>
+			<itemStack>advancedrocketry:vacuumlaser 1</itemStack>
+			<oreDict>ingotMithril 1</oreDict>
+			<oreDict>ingotPlutonium242All 1</oreDict>
+			<oreDict>ingotFluixSteel 1</oreDict>
+		</input>
+		<output>
+			<itemStack>draconicevolution:energy_crystal 4 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Elite Plating] -->
 	<Recipe timeRequired="20" power="160000">
 		<input>
@@ -67,19 +80,6 @@
 		</input>
 		<output>
 			<itemStack>advancedrocketry:itemcircuitplate 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Basic Energy Relay Crystal] -->
-	<Recipe timeRequired="20" power="8000000">
-		<input>
-			<itemStack>advancedrocketry:vacuumlaser 1</itemStack>
-			<oreDict>ingotMithril 1</oreDict>
-			<oreDict>ingotPlutonium242All 1</oreDict>
-			<oreDict>ingotFluixSteel 1</oreDict>
-		</input>
-		<output>
-			<itemStack>draconicevolution:energy_crystal 4 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
