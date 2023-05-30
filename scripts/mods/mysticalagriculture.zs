@@ -778,6 +778,7 @@ function remakeManapool(recName as string, output as IIngredient, ingrs as IIngr
 }
 
 function makeArcane(output as IItemStack, grid as string[], ingrs as IIngredient[string], aspects as CTAspectStack[]) as void {
+	if (isNull(output)) return;
 	mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
 		craft.uniqueRecipeName(output),
 		"FIRSTSTEPS", # Research
@@ -1026,7 +1027,7 @@ recipes.removeByRecipeName("mysticalagriculture:wool");
 makeArcane(<minecraft:beef> * 8                                      , ["CCC"]               , cowIngrs , []);
 makeArcane(<minecraft:leather> * 16                                  , ["CC", "CC"]          , cowIngrs , []);
 makeArcane(<animania:raw_prime_beef> * 4                             , ["", "CCC"]           , cowIngrs , []);
-makeArcane(<betteranimalsplus:antler> * 8                            , ["CC", "SS"]          , cowIngrs , []);
+makeArcane(utils.get('betteranimalsplus:antler', 0, 8)               , ["CC", "SS"]          , cowIngrs , []);
 makeArcane(<harvestcraft:venisonrawitem> * 8                         , ["CSC"]               , cowIngrs , []);
 makeArcane(<animania:raw_prime_beef> * 4                             , ["CCC","C C","CCC"]   , cowIngrs , []);
 makeArcane(<harvestcraft:freshmilkitem> * 8                          , [" C ", "C C" , " C "], cowIngrs , []);
@@ -1046,6 +1047,7 @@ recipes.removeByRecipeName("mysticalagriculture:egg");
 recipes.removeByRecipeName("mysticalagriculture:feather");
 
 function chickEss(ingrs as IIngredient[][], output as IItemStack, visCost as int = 10, aspects as CTAspectStack[] = null) as void {
+	if (isNull(output)) return;
 	mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
 		craft.uniqueRecipeName(output),
 		"FIRSTSTEPS",
@@ -1073,11 +1075,11 @@ chickEss(uniqChick.next(), <animania:purple_peacock_feather> * 4, 20);
 chickEss(uniqChick.next(), <animania:taupe_peacock_feather> * 4, 20);
 chickEss(uniqChick.next(), <animania:peacock_egg_blue> * 2, 20);
 chickEss(uniqChick.next(), <animania:peacock_egg_white> * 2, 20);
-chickEss(uniqChick.next(), <betteranimalsplus:pheasant_egg> * 2, 40, [<aspect:aer>]);
-chickEss(uniqChick.next(), <betteranimalsplus:turkey_egg> * 2, 40, [<aspect:aer>]);
-chickEss(uniqChick.next(), <betteranimalsplus:goose_egg> * 2, 40, [<aspect:aer>]);
+chickEss(uniqChick.next(), utils.get('betteranimalsplus:pheasant_egg', 0, 2), 40, [<aspect:aer>]);
+chickEss(uniqChick.next(), utils.get('betteranimalsplus:turkey_egg', 0, 2), 40, [<aspect:aer>]);
+chickEss(uniqChick.next(), utils.get('betteranimalsplus:goose_egg', 0, 2), 40, [<aspect:aer>]);
 
-chickEss([[CE, <mysticalagriculture:gold_essence>, CE]], <betteranimalsplus:golden_goose_egg>, 20);
+chickEss([[CE, <mysticalagriculture:gold_essence>, CE]], utils.get('betteranimalsplus:golden_goose_egg'), 20);
 chickEss([[CE, <mysticalagriculture:copper_essence>, CE]], <iceandfire:stymphalian_bird_feather>, 40, [<aspect:aer> * 5]);
 chickEss([[CE, <mysticalagriculture:water_essence>, CE]], <iceandfire:amphithere_feather>, 40, [<aspect:aer> * 5]);
 chickEss([[CE, <mysticalagriculture:coal_essence>, CE]], <twilightforest:raven_feather>, 40, [<aspect:aer> * 5]);

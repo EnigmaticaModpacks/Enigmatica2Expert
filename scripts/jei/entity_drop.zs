@@ -18,6 +18,7 @@ scripts.jei.requious.addInsOuts(x, [[0,0]], [
 x.setJEIDurationSlot(1,0,"duration", SlotVisual.arrowRight());
 
 function add(entity as string, dropList as IItemStack[]) as void {
+  if (isNull(game.getEntity(entity))) return;
   var fixedList = [] as IItemStack[];
   for item in dropList {
     if(isNull(item)) continue;
