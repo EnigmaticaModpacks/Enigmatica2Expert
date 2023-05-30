@@ -1,5 +1,3 @@
-
-import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 furnace.setFuel(<contenttweaker:conglomerate_of_coal>, 60000);
@@ -12,11 +10,11 @@ scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, 
 scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
 scripts.process.melt(<contenttweaker:compressed_tallow>, <liquid:biomass> * 1280);
 
-# Add missed furnace recipe
+// Add missed furnace recipe
 furnace.addRecipe(<endreborn:item_ingot_wolframium>, <contenttweaker:item_ore_tungsten:2>, 4.0d);
 
 // Remake usage of new dusts
-utils.compact(<contenttweaker:dust_tiny_gold>  , <thermalfoundation:material:1>);
+utils.compact(<contenttweaker:dust_tiny_gold>, <thermalfoundation:material:1>);
 utils.compact(<contenttweaker:dust_tiny_silver>, <thermalfoundation:material:66>);
 
 // Some compressed blocks
@@ -28,11 +26,11 @@ utils.compact(<contenttweaker:compressed_pumpkin>, <contenttweaker:compressed_pu
 // Compressed string
 utils.compact(<minecraft:string>, <contenttweaker:compressed_string>);
 utils.compact(<contenttweaker:compressed_string>, <contenttweaker:compressed_string_double>);
-craft.remake(<exnihilocreatio:item_mesh:1>, ["pretty",
-  "  s  ",
-  "s s s",
-  "  s  "], {
-  "s": <ore:string>, # String
+craft.remake(<exnihilocreatio:item_mesh:1>, ['pretty',
+  '  s  ',
+  's s s',
+  '  s  '], {
+  's': <ore:string>, // String
 });
 
 // Molten Cheese
@@ -102,54 +100,53 @@ mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:5>, <tconstruct:c
 mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:cast>.withTag({ PartType: 'tconstruct:hammer_head' }), <liquid:electronics>, 144 * 8);
 mods.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>, null, <liquid:electronics>, 144 * 9);
 
-# Anglesite - Highest tier of Tech mods crystals
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_anglesite>, 100000000, 1000000, 
-<additionalcompression:gravelend_compressed:2>, [
-	<ore:singularityEntangled>,
-	<biomesoplenty:terrestrial_artifact>,
-	<ore:clathrateGlowstone>,
-	<ore:clathrateRedstone>,
-	<ore:clathrateEnder>,
-	<ore:crystalSlagRich>,
-	<ore:itemAttractorCrystal>,
-	<ore:itemWeatherCrystal>,
-	<ore:itemPrecientCrystal>,
-	<ore:crystalLitherite>,
-	<ore:crystalErodium>,
-	<ore:crystalKyronite>,
-	<ore:crystalPladium>,
-	<ore:crystalIonite>,
-	<ore:crystalAethium>,
-	<ore:skullSentientEnder>,
-	<enderio:item_basic_capacitor:2>,
-	<ore:crystalPureFluix>,
-	<ore:gemDilithium>,
-	<ore:slimecrystalPink>,
-]);	  
+// Anglesite - Highest tier of Tech mods crystals
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_anglesite>, 100000000, 1000000,
+  <additionalcompression:gravelend_compressed:2>, [
+    <ore:singularityEntangled>,
+    <biomesoplenty:terrestrial_artifact>,
+    <ore:clathrateGlowstone>,
+    <ore:clathrateRedstone>,
+    <ore:clathrateEnder>,
+    <ore:crystalSlagRich>,
+    <ore:itemAttractorCrystal>,
+    <ore:itemWeatherCrystal>,
+    <ore:itemPrecientCrystal>,
+    <ore:crystalLitherite>,
+    <ore:crystalErodium>,
+    <ore:crystalKyronite>,
+    <ore:crystalPladium>,
+    <ore:crystalIonite>,
+    <ore:crystalAethium>,
+    <ore:skullSentientEnder>,
+    <enderio:item_basic_capacitor:2>,
+    <ore:crystalPureFluix>,
+    <ore:gemDilithium>,
+    <ore:slimecrystalPink>,
+  ]);
 
-
-# Benitoite - Highest tier of non-Tech mods crystals
+// Benitoite - Highest tier of non-Tech mods crystals
 val benitoiteIngrs = [
-	<ore:eternalLifeEssence>,
-	<thaumcraft:mechanism_complex>,
-	<ore:elvenDragonstone>,
-	<ore:manaPearl>,
-	<ore:ingotElvenElementium>,
-	<botania:pylon:1>,
-	<ore:manaDiamond>,
-	<ore:elvenPixieDust>,
-	<astralsorcery:itemcraftingcomponent:4>,
-	<astralsorcery:itemcoloredlens:6>,
-	<bloodmagic:blood_rune:9>,
-	<bloodmagic:blood_rune:10>,
-	<bloodmagic:points_upgrade>,
-	<bloodmagic:slate:4>,
-	<rats:gem_of_ratlantis>,
-	<ore:carminite>,
-	<randomthings:ingredient:2>,
-	<randomthings:rezstone>,
-	<cyclicmagic:soulstone>,
-	<ore:gemPerk>,
+  <ore:eternalLifeEssence>,
+  <thaumcraft:mechanism_complex>,
+  <ore:elvenDragonstone>,
+  <ore:manaPearl>,
+  <ore:ingotElvenElementium>,
+  <botania:pylon:1>,
+  <ore:manaDiamond>,
+  <ore:elvenPixieDust>,
+  <astralsorcery:itemcraftingcomponent:4>,
+  <astralsorcery:itemcoloredlens:6>,
+  <bloodmagic:blood_rune:9>,
+  <bloodmagic:blood_rune:10>,
+  <bloodmagic:points_upgrade>,
+  <bloodmagic:slate:4>,
+  <rats:gem_of_ratlantis>,
+  <ore:carminite>,
+  <randomthings:ingredient:2>,
+  <randomthings:rezstone>,
+  <cyclicmagic:soulstone>,
+  <ore:gemPerk>,
 ] as IIngredient[];
 
 mods.extendedcrafting.CombinationCrafting.addRecipe(
@@ -159,19 +156,18 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 );
 
 mods.thaumcraft.Infusion.registerRecipe(
-  "benitoite", # Name
-  "INFUSION", # Research
-  <contenttweaker:ore_benitoite>, # Output
-  15, # Instability
+  'benitoite', // Name
+  'INFUSION', // Research
+  <contenttweaker:ore_benitoite>, // Output
+  15, // Instability
   [<aspect:sanguis> * 1000, <aspect:mana> * 1000, <aspect:draco> * 1000],
-  <additionalcompression:gravelnether_compressed:2>, # CentralItem
+  <additionalcompression:gravelnether_compressed:2>, // CentralItem
   benitoiteIngrs
 );
 
-# Benefication of Anglesite and Benitoite
-scripts.process.beneficiate(<contenttweaker:ore_anglesite>, "Anglesite", 1, {exceptions: "only: Grindstone"});
-scripts.process.beneficiate(<contenttweaker:ore_benitoite>, "Benitoite", 1, {exceptions: "only: Grindstone"});
-
+// Benefication of Anglesite and Benitoite
+scripts.process.beneficiate(<contenttweaker:ore_anglesite>, 'Anglesite', 1, { exceptions: 'only: Grindstone' });
+scripts.process.beneficiate(<contenttweaker:ore_benitoite>, 'Benitoite', 1, { exceptions: 'only: Grindstone' });
 
 /*
 # Knowledge absorber craft
