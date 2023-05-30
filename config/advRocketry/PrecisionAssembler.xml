@@ -262,16 +262,17 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Wyvern Core] -->
-	<Recipe timeRequired="5" power="20000">
+	<Recipe timeRequired="10" power="40000">
 		<input>
-			<itemStack>draconicevolution:draconic_core 2</itemStack>
-			<itemStack>minecraft:sponge 1</itemStack>
-			<oreDict>ingotVividAlloy 1</oreDict>
-			<itemStack>environmentaltech:pladium 1</itemStack>
-			<fluidStack>ic2hot_coolant 2000</fluidStack>
+			<oreDict>shulkerShell 2</oreDict>
+			<itemStack>draconicevolution:draconic_core 4</itemStack>
+			<itemStack>minecraft:sponge 2</itemStack>
+			<oreDict>ingotVividAlloy 2</oreDict>
+			<itemStack>environmentaltech:pladium 2</itemStack>
+			<fluidStack>ic2hot_coolant 4000</fluidStack>
 		</input>
 		<output>
-			<itemStack>draconicevolution:wyvern_core 1 0</itemStack>
+			<itemStack>draconicevolution:wyvern_core 2 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -535,12 +536,12 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Basic Capacitor] -->
-	<Recipe timeRequired="160" power="1280000">
+	<Recipe timeRequired="320" power="1280000">
 		<input>
 			<oreDict>stickTitaniumIridium 64</oreDict>
 			<oreDict>dustBedrock 64</oreDict>
-			<oreDict>ingotFluixSteel 64</oreDict>
 			<itemStack>thermalfoundation:material 64 515</itemStack>
+			<oreDict>ingotFluixSteel 64</oreDict>
 		</input>
 		<output>
 			<itemStack>enderio:item_basic_capacitor 64 0</itemStack>
@@ -989,13 +990,14 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Ender Electron Tube] -->
-	<Recipe timeRequired="5" power="20000">
+	<Recipe timeRequired="80" power="320000">
 		<input>
-			<oreDict>oc:stoneEndstone 3</oreDict>
-			<fluidStack>glass 500</fluidStack>
+			<oreDict>oc:stoneEndstone 48</oreDict>
+			<oreDict>pearlEnderEye 16</oreDict>
+			<fluidStack>glass 8000</fluidStack>
 		</input>
 		<output>
-			<itemStack>forestry:thermionic_tubes 4 12</itemStack>
+			<itemStack>forestry:thermionic_tubes 64 12</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -1195,22 +1197,24 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Pickaxe Kit] -->
-	<Recipe timeRequired="5" power="20000">
+	<Recipe timeRequired="160" power="640000">
 		<input>
-			<oreDict>ingotBronze 2</oreDict>
+			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>stick 32</oreDict>
 		</input>
 		<output>
-			<itemStack>forestry:kit_pickaxe 1 0</itemStack>
+			<itemStack>forestry:kit_pickaxe 32 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Shovel Kit] -->
-	<Recipe timeRequired="5" power="20000">
+	<Recipe timeRequired="320" power="1280000">
 		<input>
-			<oreDict>ingotBronze 1</oreDict>
+			<oreDict>ingotBronze 64</oreDict>
+			<oreDict>stick 64</oreDict>
 		</input>
 		<output>
-			<itemStack>forestry:kit_shovel 1 0</itemStack>
+			<itemStack>forestry:kit_shovel 64 0</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

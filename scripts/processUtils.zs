@@ -202,8 +202,6 @@ function AR_inputItems(inputItems as IIngredient[]) as string {
   if (isNull(inputItems)) return '';
   var s = '';
   for ii in inputItems {
-    if (ii.items.length <= 0) continue;
-
     var display as string = null;
     var id as string = null;
     var meta as int = 0;
@@ -215,11 +213,13 @@ function AR_inputItems(inputItems as IIngredient[]) as string {
       display = id;
     }
     else {
-      type = 'itemStack';
-      val in_it = ii.items[0];
-      display = in_it.displayName;
-      id = in_it.definition.id;
-      meta = in_it.damage;
+      for in_it in ii.items {
+        type = 'itemStack';
+        display = in_it.displayName;
+        id = in_it.definition.id;
+        meta = in_it.damage;
+        break;
+      }
     }
     s = s ~ '    <' ~ type ~ '>' ~ id ~ ' ' ~ ii.amount ~ ((meta != 0) ? ' ' ~ meta : '') ~ '</' ~ type ~ '>\n';
   }
@@ -326,9 +326,10 @@ function avdRockXmlRecipeFlatten(
         countRaw += ingr.amount;
         
         # Calculate max stack size for ingredient
-        var maxSize = 1;
+        var maxSize = 0;
         for item in ingr.items { maxSize = max(maxSize, item.maxStackSize); }
-        maxStackSize = min(maxStackSize, maxSize);
+        // If ingredient have no items in it, its probably late-registered oredict
+        if(maxSize != 0) maxStackSize = min(maxStackSize, maxSize);
       }
     }
   }
@@ -358,11 +359,11 @@ function avdRockXmlRecipeFlatten(
   # Reassemble ingredients with another amount
   var trueIngrs = [] as IIngredient[];
   for i, ingr in ingrs {
-    var maxIngrSize = 1;
-    for it in ingr.itemArray { maxIngrSize = max(it.maxStackSize, maxIngrSize); }
+    var maxSize = 0;
+    for item in ingr.itemArray { maxSize = max(maxSize, item.maxStackSize); }
     // Set amount. Note that item amount could not be more than max item stack size
     // This is useful for boxes
-    trueIngrs += ingr * min(maxIngrSize, count[i] * multiplier);
+    trueIngrs += ingr * min(maxSize == 0 ? 64 : maxSize, count[i] * multiplier);
   }
 
   avdRockXmlRecipeEx(

@@ -76,6 +76,7 @@
 			<itemStack>advancedrocketry:vacuumlaser 1</itemStack>
 			<oreDict>ingotMithril 1</oreDict>
 			<oreDict>ingotPlutonium242All 1</oreDict>
+			<oreDict>ingotFluixSteel 1</oreDict>
 		</input>
 		<output>
 			<itemStack>draconicevolution:energy_crystal 4 0</itemStack>
