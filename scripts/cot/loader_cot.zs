@@ -302,3 +302,42 @@ f.colorize = true;
 f.stillLocation = "base:fluids/molten";
 f.flowingLocation = "base:fluids/molten_flowing";
 f.register();
+
+# -------------------------------
+# mithrillium
+# -------------------------------
+val mr = VanillaFactory.createFluid("mithrillium", Color.fromHex("2B86FC"));
+mr.material = <blockmaterial:lava>;
+mr.viscosity = 2000;
+mr.temperature= 6000;
+mr.colorize = true;
+mr.luminosity = 7;
+mr.stillLocation = "astralsorcery:blocks/fluid/starlight_still";
+mr.flowingLocation = "astralsorcery:blocks/fluid/starlight_flow";
+mr.register();
+
+# -------------------------------
+# adaminite
+# -------------------------------
+val ada = VanillaFactory.createFluid("adaminite", Color.fromHex("AA002D"));
+ada.material = <blockmaterial:lava>;
+ada.viscosity = 4000;
+ada.temperature= 7000;
+ada.colorize = true;
+ada.luminosity = 3;
+ada.stillLocation = "astralsorcery:blocks/fluid/starlight_still";
+ada.flowingLocation = "astralsorcery:blocks/fluid/starlight_flow";
+ada.register();
+
+# -------------------------------
+# mithminite
+# -------------------------------
+val mm = VanillaFactory.createFluid("mithminite", Color.fromHex("ff80b7"));
+mm.material = <blockmaterial:lava>;
+mm.viscosity = 2000;
+mm.temperature= 8000;
+mm.colorize = true;
+mm.luminosity = 10;
+mm.stillLocation = "astralsorcery:blocks/fluid/starlight_still";
+mm.flowingLocation = "astralsorcery:blocks/fluid/starlight_flow";
+mm.register();

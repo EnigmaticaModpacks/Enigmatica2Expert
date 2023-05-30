@@ -9,6 +9,9 @@ fluid.spectre=Спектр
 fluid.perfect_fuel=Идеальное Топливо
 fluid.electronics=Плавленная Электроника
 fluid.terrestrial=Расплавленный Земленный Артефакт
+fluid.mithrillium=Растворимый Митриллиум
+fluid.adaminite=Расплавленный Адаминит
+fluid.mithrillium=Растворенный Митминит
 
 item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
 item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг
@@ -84,6 +87,45 @@ e2ee.tconstruct.material.axing.name=Топор
 e2ee.tconstruct.material.axing.description=§oТопориный чад\n§rРазбить деревянные бревна, чтобы получить доски x4.
 e2ee.tconstruct.material.axing2.name=Топор II
 e2ee.tconstruct.material.axing2.description=§oТопориный гигачад\n§rРазбить деревянные бревна, чтобы получить x6 досок.
+
+e2ee.tconstruct.material.mithrillium.name=Митриллиум
+e2ee.tconstruct.material.vis_siphon.name=Вис-сифон
+e2ee.tconstruct.material.vis_siphon.description=Ремонтирует инструмент, используя локальный вис в ауре.
+e2ee.tconstruct.material.vis_equilibrium.name=Равновесие Вис
+e2ee.tconstruct.material.vis_equilibrium.description=В зависимости от vis в ауре ваш инструмент имеет лучшие статы.
+e2ee.tconstruct.material.adaminite.name=Адаминит
+e2ee.tconstruct.material.forbidden.name=Запрещенный
+e2ee.tconstruct.material.forbidden.description= ̸̻͗̕ ̷͍̓͋ ̷̫͚̕ ̴̳̈ ̵̲͓͘ ̵̠͆ ̸̖̌̄ ̴̨̩̉́ ̸̞̺͝ ̷̢̖̒ ̶͍̺̉ ̴̦͉̊͝ ̸̦̽ ̷̺̽ ̷͖̼͌̌ ̴̹̪̀ ̷̩̜̐ ̶̩͑ ̷̢̝͗ ̵̞͕̔̆ ̴̡̀ ̸̛͓̞̎ ̴̻͑ ̸̛̤̈́ ̸̛͙͂ ̷̜̟̉.
+e2ee.tconstruct.material.possessed.name=Одержимый
+e2ee.tconstruct.material.possessed.description=Воля Дж'Захара нисходит на инструмент разрушения, взывая к эссенции жизни.
+e2ee.tconstruct.material.porous.name=Пористый
+e2ee.tconstruct.material.porous.description=Камень крошится под вашей коррупцией.
+e2ee.tconstruct.material.gaze.name=Смертельный взгляд
+e2ee.tconstruct.material.gaze.description=Заставьте глупцов преклонить перед вами колени.
+e2ee.tconstruct.material.void_shell.name=Варпшелл
+e2ee.tconstruct.material.void_shell.description= Чем больше у вас искривлений, тем мощнее ваша броня.
+e2ee.tconstruct.material.eldritch_retribution.name=Эльдритское возмездие
+e2ee.tconstruct.material.eldritch_retribution.description=Противники, осмелившиеся противостоять вам, понесут наказание.
+e2ee.tconstruct.material.mithminite.name=Митминит
+e2ee.tconstruct.material.researcher.name=Исследователь
+e2ee.tconstruct.material.researcher.description=На основе ваших исследований в таумономиконе, существуют различные эффекты!
+e2ee.tconstruct.material.first_stand.name=Первый стенд
+e2ee.tconstruct.material.first_stand.description=Используйте опыт перед получением урона.
+
+warp.sword.warning=§o§5 Вы слишком разумны, чтобы использовать эту силу!§r
+
+warp.sword.speak.random.0=§o§5Я положу в могилу столько, сколько смогу, достаточно одного взмаха!§r
+warp.sword.speak.random.1=§o§5Реки крови превратятся в моря...§r
+warp.sword.speak.random.2=§o§5Почему бы нам просто не убить всех живых?...§r
+warp.sword.speak.random.3=§o§5Джа'захар зовет добычу! §r
+warp.sword.speak.random.4=§o§5Чем больше мы убиваем, тем больше жажда.
+warp.sword.speak.random.5=§o§5Небо темнеет, плач прекращается, жизнь заканчивается...
+warp.sword.speak.random.6=§o§5Дождаться багрового рассвета и слез ужаса
+warp.sword.speak.random.7=§o§5Ужас... Ненависть... Отчаяние...
+warp.sword.speak.random.8=§o§5Привратник всегда наблюдает...
+
+warp.sword.speak.kill.0=§o§5Я слышу их крики, их страдания текут по моим венам. Это как наркотик, и мне нужно больше... намного больше...§r
+warp.sword.speak.kill.1=§o§5Больше! Больше! Больше!
 
 item.singularity.silver.name=§bМеховая сингулярность
 item.singularity.iron.name=§7Пустая сингулярность

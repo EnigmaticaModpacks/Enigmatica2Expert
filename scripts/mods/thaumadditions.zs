@@ -692,6 +692,7 @@ mods.thaumcraft.Crucible.registerRecipe(
 );
 
 #[Crystal water] recipe
+mods.thaumcraft.Crucible.removeRecipe(<forge:bucketfilled>.withTag({FluidName: "crystal_water", Amount: 1000}));
 mods.thaumcraft.Crucible.registerRecipe(
   "crystal_water", # Name
   "CRYSTALWATER", # Research

@@ -1077,6 +1077,9 @@ Thaumcraft
 <thaumcraft:condenser_lattice_dirty>           .setAspects(<aspect:vitium>*10); 
 <thaumcraft:ingot:2>                           .setAspects(<aspect:metallum>*5    , <aspect:instrumentum>*2);
 
+<thaumcraft:bath_salts>                        .setAspects(<aspect:ordo>*1        , <aspect:victus>*1);
+<thaumcraft:sanity_soap>                       .setAspects(<aspect:ordo>*2        , <aspect:victus>*2         ,<aspect:mana>*2);
+
 val nitor = [
 <thaumcraft:nitor_white>,
 <thaumcraft:nitor_orange>,

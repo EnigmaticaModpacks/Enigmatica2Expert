@@ -9,6 +9,9 @@ fluid.spectre=Spectre
 fluid.perfect_fuel=Perfect Fuel
 fluid.electronics=Molten Electronics
 fluid.terrestrial=Molten Terrestrial Artifact
+fluid.mithrillium=Molten Mithrillium
+fluid.adaminite=Molten Adaminite
+fluid.mithrillium=Molten Mithminite
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender
@@ -84,6 +87,51 @@ e2ee.tconstruct.material.axing.name=Axing
 e2ee.tconstruct.material.axing.description=§oAxing chad\n§rBreak wood logs to get x4 planks.
 e2ee.tconstruct.material.axing2.name=Axing II
 e2ee.tconstruct.material.axing2.description=§oAxing gigachad\n§rBreak wood logs to get x6 planks.
+
+e2ee.tconstruct.material.mithrillium.name=Mithrillium
+e2ee.tconstruct.material.vis_siphon.name=Vis Siphon
+e2ee.tconstruct.material.vis_siphon.description=Repairs tool using local vis in aura.
+e2ee.tconstruct.material.vis_equilibrium.name=Vis Equilibrium
+e2ee.tconstruct.material.vis_equilibrium.description=Depending on vis in aura your tool have better stats.
+e2ee.tconstruct.material.adaminite.name=Adaminite
+e2ee.tconstruct.material.forbidden.name=Forbidden
+e2ee.tconstruct.material.forbidden.description= ̸̻͗̕ ̷͍̓͋ ̷̫͚̕ ̴̳̈ ̵̲͓͘ ̵̠͆ ̸̖̌̄ ̴̨̩̉́ ̸̞̺͝ ̷̢̖̒ ̶͍̺̉ ̴̦͉̊͝ ̸̦̽ ̷̺̽ ̷͖̼͌̌ ̴̹̪̀ ̷̩̜̐ ̶̩͑ ̷̢̝͗ ̵̞͕̔̆ ̴̡̀ ̸̛͓̞̎ ̴̻͑ ̸̛̤̈́ ̸̛͙͂ ̷̜̟̉.
+e2ee.tconstruct.material.possessed.name=Possessed
+e2ee.tconstruct.material.possessed.description=J'zahar's will descends on the instrument of destruction, crying out for the essences of life.
+e2ee.tconstruct.material.porous.name=Porous
+e2ee.tconstruct.material.porous.description=The stone crumbles beneath your corruption.
+e2ee.tconstruct.material.gaze.name=Deadly Gaze
+e2ee.tconstruct.material.gaze.description=Force fools to knee before you.
+e2ee.tconstruct.material.void_shell.name=Warpshell
+e2ee.tconstruct.material.void_shell.description=The more warp you have, the more powerfull your armor.
+e2ee.tconstruct.material.eldritch_retribution.name=Eldritch Retribution
+e2ee.tconstruct.material.eldritch_retribution.description=Opponents who dare to oppose you will suffer the consequences.
+e2ee.tconstruct.material.mithminite.name=Mithminite
+e2ee.tconstruct.material.researcher.name=Researcher
+e2ee.tconstruct.material.researcher.description=Based on your research in thaumonomicon, there are various effects!
+e2ee.tconstruct.material.first_stand.name=First Stand
+e2ee.tconstruct.material.first_stand.description=Consume experience before taking damage.
+
+warp.sword.warning=§o§5 You are too sane to use that power!§r
+
+warp.sword.speak.random.0=§o§5I will put in the grave as many as I can, just one swing is enough!§r
+warp.sword.speak.random.1=§o§5Rivers of blood will turn into seas...§r
+warp.sword.speak.random.2=§o§5Why don't we just kill all livings?...§r
+warp.sword.speak.random.3=§o§5The J'zahar calls for prey!§r
+warp.sword.speak.random.4=§o§5The more we kill, the more thirsty we become
+warp.sword.speak.random.5=§o§5The sky darkens, the crying stops, life ends...
+warp.sword.speak.random.6=§o§5Await for Crimson Dawn and tears of terror
+warp.sword.speak.random.7=§o§5Dread... Hate... Despair...
+warp.sword.speak.random.8=§o§5The Gatekeeper is always watching...
+
+warp.sword.speak.kill.0=§o§5I can hear their cries, their suffering is flowing through my veins. Its like a drug and I need more... much more...§r
+warp.sword.speak.kill.1=§o§5More! More! More!§r
+warp.sword.speak.kill.2=§o§5Still beating heart I hear...
+warp.sword.speak.kill.3=§o§5Headless, like lifeless
+warp.sword.speak.kill.4=§o§5Another tasty flash
+warp.sword.speak.kill.5=§o§5And another sacrifice for J'zahar
+warp.sword.speak.kill.6=§o§5Just like in abyss... Another dead fool!
+warp.sword.speak.kill.7=§o§5J'zahar will be pleased with another soul
 
 item.singularity.silver.name=§bFur Singularity
 item.singularity.iron.name=§7Empty Singularity

@@ -289,7 +289,7 @@
             "key": "MITHMINITESCYTHE",    
             "name": "research_name.thaumadditions:mithminite_scythe",
             "icons": [ "thaumadditions:mithminite_scythe" ],
-            "category": "ELDRITCH", "location": [2,10 ], 
+            "category": "ELDRITCH", "location": [-1,11 ], 
             "parents": [ "MITHMINITE" ], 
             "stages": [
                 {
@@ -311,7 +311,7 @@
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:mithminite_fabric.1", 
-                    "required_craft":["thaumcraft:adaminite_fabric"]
+                    "required_craft": ["thaumadditions:adaminite_fabric"]
                 },
                 {
                     "text": "research_stage.thaumadditions:mithminite_fabric.2",
@@ -418,6 +418,168 @@
                 {
                     "text": "research_stage.thaumadditions:aura_charger.2",
                     "recipes": ["thaumcraft:aura_charger"]
+                }
+            ]
+        },
+        {
+            "key": "GOD_WRAITH",    
+            "name": "research_name.god_wraith",
+            "icons": [ "thaumcraft:textures/god_wraith.png" ],
+            "category": "ELDRITCH", "location": [1,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "stages": [
+                {
+                    "text": "research_stage.god_wraith.1", 
+                    "required_knowledge":["OBSERVATION;BASICS;2","THEORY;BASICS;2"]
+                },
+                {
+                    "text": "research_stage.god_wraith.2",
+                    "required_item": ["thermalfoundation:material;4;161", "tconstruct:ingots;4;2", "thermalfoundation:material;4;134", "plustic:mirioningot;4"]
+                },
+                {
+                    "text": "research_stage.god_wraith.3",
+                    "required_item": ["thaumcraft:amber;4", "minecraft:quartz;4", "actuallyadditions:item_misc;4;5", "appliedenergistics2:material;2", "appliedenergistics2:material;2;1"]
+                },
+                {
+                    "text": "research_stage.god_wraith.4",
+                    "required_item": ["plustic:battery_cell;{Material: 'silver'}"]
+                },
+                {
+                    "text": "research_stage.god_wraith.5",
+                    "required_item": ["rats:psionic_rat_brain"],
+                    "required_knowledge":["THEORY;AUROMANCY;3","THEORY;ARTIFICE;2", "THEORY;ELDRITCH;1"]
+                },
+                {
+                    "text": "research_stage.god_wraith.6"
+                }
+            ]
+        },
+        {
+            "key": "FLUX_STRIKE",    
+            "name": "research_name.flux_strike",
+            "icons": [ "thaumcraft:textures/flux_strike.png" ],
+            "category": "ELDRITCH", "location": [2,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "stages": [
+                {
+                    "text": "research_stage.flux_strike.1", 
+                    "required_item": ["thaumcraft:curio;20;5"]
+                },
+                {
+                    "text": "research_stage.flux_strike.2",
+                    "required_item": ["thaumcraft:condenser_lattice_dirty;32"]
+                },
+                {
+                    "text": "research_stage.flux_strike.3",
+                    "required_craft": ["thaumicaugmentation:rift_feeder"]
+                },
+                {
+                    "text": "research_stage.flux_strike.4",
+                    "required_item": ["thaumicwonders:flux_capacitor"],
+                    "required_knowledge":["THEORY;AUROMANCY;2","THEORY;ARTIFICE;2","THEORY;INFUSION;2" ,"THEORY;ELDRITCH;4"]
+                },
+                {
+                    "text": "research_stage.flux_strike.5",
+                    "warp": 5
+                }
+            ]
+        },
+        {
+            "key": "PURE_SMITE",    
+            "name": "research_name.pure_smite",
+            "icons": [ "thaumcraft:textures/pure_smite.png" ],
+            "category": "ELDRITCH", "location": [3,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "stages": [
+                {
+                    "text": "research_stage.pure_smite.1", 
+                    "required_item": ["thaumcraft:flesh_block;30", "additionalcompression:bone_compressed;30", "thaumcraft:brain;32"]
+                },
+                {
+                    "text": "research_stage.pure_smite.2",
+                    "required_item": ["tconstruct:large_sword_blade;{Material: 'silver'}"]
+                },
+                {
+                    "text": "research_stage.pure_smite.3",
+                    "required_item": ["iceandfire:dread_shard;64"],
+                    "required_knowledge":["THEORY;AUROMANCY;2","THEORY;ARTIFICE;1","THEORY;INFUSION;1"]
+                },
+                {
+                    "text": "research_stage.pure_smite.4"
+                }
+            ]
+        },
+        {
+            "key": "LOOT_STEALER",    
+            "name": "research_name.loot_stealer",
+            "icons": [ "thaumcraft:textures/loot_stealer.png" ],
+            "category": "ELDRITCH", "location": [4,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "stages": [
+                {
+                    "text": "research_stage.loot_stealer.1", 
+                    "required_item": ["thaumcraft:flesh_block;30", "additionalcompression:bone_compressed;30", "thaumcraft:brain;32"]
+                },
+                {
+                    "text": "research_stage.loot_stealer.2",
+                    "required_item": ["iceandfire:ice_dragon_flesh;20", "iceandfire:fire_dragon_flesh;20"]
+                },
+                {
+                    "text": "research_stage.loot_stealer.3",
+                    "required_craft": ["thaumicwonders:void_beacon"],
+                    "required_knowledge":["THEORY;AUROMANCY;2","THEORY;ARTIFICE;2","THEORY;ELDRITCH;4"]
+                },
+                {
+                    "text": "research_stage.loot_stealer.4"
+                }
+            ]
+        },
+        {
+            "key": "ORE_PURIFIER",
+            "name": "research_name.ore_purifier",
+            "icons": [ "thaumcraft:textures/ore_purifier.png" ],
+            "category": "ELDRITCH", "location": [5,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "stages": [
+                {
+                    "text": "research_stage.ore_purifier.1", 
+                    "required_item": ["thaumcraft:elemental_pick"]
+                },
+                {
+                    "text": "research_stage.ore_purifier.2",
+                    "required_item": ["astralsorcery:itemshiftingstar"]
+                },
+                {
+                    "text": "research_stage.ore_purifier.3",
+                    "required_craft": ["thaumicwonders:alienist_stone;1"],
+                    "required_knowledge":["THEORY;ARTIFICE;4","THEORY;INFUSION;4"]
+                },
+                {
+                    "text": "research_stage.ore_purifier.4"
+                }
+            ]
+        },
+        {
+            "key": "FIRST_STAND",
+            "name": "research_name.first_stand",
+            "icons": [ "thaumcraft:textures/first_stand.png" ],
+            "category": "ELDRITCH", "location": [6,10 ], 
+            "parents": [ "MITHMINITE" ], 
+            "stages": [
+                {
+                    "text": "research_stage.first_stand.1", 
+                    "required_item": ["minecraft:shield"]
+                },
+                {
+                    "text": "research_stage.first_stand.2",
+                    "required_craft": ["thaumicaugmentation:material;1;1"]
+                },
+                {
+                    "text": "research_stage.first_stand.3",
+                    "required_item": ["thaumcraft:enchanted_placeholder;1;0;{ench:[{id:26s,lvl:1s}]}"]
+                },
+                {
+                    "text": "research_stage.first_stand.4"
                 }
             ]
         }
