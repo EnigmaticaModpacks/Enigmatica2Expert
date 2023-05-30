@@ -1,0 +1,28 @@
+{
+	icon: "enderio:item_redstone_conduit",
+	x: 13.95d,
+	y: 10.275d,
+	text: [
+		"§4Do not attach Redstone Conduits to Neutron Source!§r",
+		"",
+		"This would cause repeating world crash."
+	],
+	dependencies: [
+		"608d1a00"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "e9bb36f4",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "d09674fc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}
