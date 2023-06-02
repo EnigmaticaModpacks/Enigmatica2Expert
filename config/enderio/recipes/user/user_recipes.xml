@@ -352,9 +352,9 @@
   <recipe name="Inventory Chest, Small">
     <crafting upgrade="true">
       <grid size="3x2">
-        <item name="REMOTE_AWARENESS_UPGRADE"/>
+        <item/>
         <item name="enderio:block_inventory_chest_tiny"/>
-        <item name="REMOTE_AWARENESS_UPGRADE"/>
+        <item/>
         <item name="SIMPLE_CHASSIPARTS"/>
         <item name="extrautils2:largishchest:0"/>
         <item name="SIMPLE_CHASSIPARTS"/>
@@ -365,9 +365,9 @@
   <recipe name="Inventory Chest, Small Alt">
     <crafting upgrade="true">
       <grid size="3x2">
-        <item name="REMOTE_AWARENESS_UPGRADE"/>
+        <item/>
         <item name="enderio:block_inventory_chest_tiny"/>
-        <item name="REMOTE_AWARENESS_UPGRADE"/>
+        <item/>
         <item name="SIMPLE_CHASSIPARTS"/>
         <item name="mekanism:machineblock:13"/>
         <item name="SIMPLE_CHASSIPARTS"/>

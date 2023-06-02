@@ -595,9 +595,9 @@ craft.remake(<enderio:block_inventory_panel_sensor>, ["pretty",
 craft.remake(<enderio:block_inventory_chest_tiny>, ["pretty",
   "  R  ",
   "S c S"], {
-  "R": <ore:itemRemoteAwarenessUpgrade>, # Remote Awareness Upgrade
-  "S": <ore:itemSimpleChassiParts>,      # Simple Machine Parts
-  "c": <ore:chest>,                      # Oak Chest
+  "R": <ore:ingotSilicon>,
+  "S": <ic2:casing:4>,
+  "c": <ore:chest>, # Oak Chest
 });
 
 # [Inventory Panel] from [Storage Terminal][+3]
