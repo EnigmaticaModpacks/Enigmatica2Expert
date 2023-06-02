@@ -87,8 +87,10 @@ function renameFoldersToActualMods() {
       .sortBy('0')
       .value()
 
-    if (levArr[1].lev - levArr[0].lev < 5)
-      throw new Error('Bansoukou mod search function cant find mod')
+    if (levArr[1].lev - levArr[0].lev < 5) {
+      console.error(`\nBansoukou mod search function cant find mod ${modName}`)
+      return
+    }
 
     const currFolder = levArr[0].mod
     renameSync(join('bansoukou', modName), join('bansoukou', currFolder))
@@ -122,6 +124,7 @@ async function showDiffs(/** @type {typeof defaultHelper} */ h) {
     const jarPath = existsSync(`mods/${folder}.disabled`)
       ? `mods/${folder}.disabled`
       : `mods/${folder}.jar`
+    if (!existsSync(jarPath)) continue
     const jarStat = getStat(jarPath)
     const isJarCached = caches[jarPath] === jarStat
     caches[jarPath] = jarStat

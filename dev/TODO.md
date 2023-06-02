@@ -2,39 +2,25 @@
 
 List of priorities:
 
-- [ ] 🐀 Fix rats not spawn on garbage piles
-- [ ] 📖 Implement item storage quests https://discord.com/channels/911676461050642432/1100262454522544128/1106364365109739533
-- [ ] 📖 `Speed Rat Upgrade` add quest
-- [ ] 📖 Describe Skyblock quests
-- [ ] 📖 Add info about 9 length coils
-- [x] 📖 add some warning about redstone conduits and nuclearcraft reactors in a tooltip
 - [ ] 📖 Placing a Essentia buffer right above the Essentia Combiner seems to circumvent the issue
+- [ ] 📖 Describe Skyblock quests
 - [ ] 🌍 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
-- [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time
 - [ ] 🟢 Integrate ☢️ `New Turbine Parts`
 - [ ] 🟣 Implement `IBlock#getItem(world, pos, blockState)`
 - [ ] 🌍 Alien Forest add JER data
 - [ ] 🔄 Disable Skeletons on horses since they cause random explosions
 - [ ] 🔄 disable Caves In TF
-- [x] 🔄 fixIrradiatorNetHeatingAndAddFuelInDesc
-- [ ] ✏️ voidPlateToThaumium
-- [ ] ✏️ sagmill produce too much Scrap with balls
-- [x] ✏️ villiamite Cheaper For Scrubber
-- [x] ✏️ betteranimals Make Removable
-- [ ] ✏️ fix Capacitor Upgrade Require Empty Cap
+- [ ] ✏️ Use potion numerical ID https://github.com/friendlyhj/ZenUtils/commit/52f60859d4609dffec519b9325b56e54e49046d5
+- [ ] ✏️ Fix `Brass Plate` => `Thaumium Ingot` in `Induction Smelter`
 - [ ] ✏️ Make Mek reactor cheaper
 - [ ] ✏️ `Burnt in fluid` fix accept any meta
 - [ ] ✏️ `Precision Assembler` fix conflict between Inpreg. Sticks and Casing, Basic Coil and Advanced Coil, bronze ingot recipes
-- [x] ✏️ Stellar alloy dupe with cheaper materials
-- [ ] ✏️ add Dilithium Magic only
+- [ ] ✏️ add Dilithium Magic only, maybe By Building Multiblocks
 - [ ] ✏️ Spawn Pechs in TF
 - [ ] ✏️ Scented Hives Not Working In Skyblock. Still not working, even with config changes
 - [ ] ✏️ Implement BoP drop improvments https://github.com/ProjectHDS/Herodotus/blob/d097ba6b2be402715bf759730c14ebfbd5e42fd4/.minecraft/scripts/hds_main/utils/bopCompat.zs
 - [ ] 💥 going Between Dims Causing Client Freezez / memory leak
 - [ ] ✏️ void Beacon Not Working. Probably because of `Bansoukou` OR `Thaumcraft Aspect Creator`
-- [ ] ✏️ Tiny Inventory System cheaper (its 3 chests without GUI)
-- [ ] 📀 Rustic's barrel make as x4 chests but without GUI
-- [ ] 📓 Changelog should change version number
 
 ---
 
@@ -44,6 +30,10 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📀 Rustic's barrel make as x4 chests but without GUI or change somehow else to make more fun.
+- [ ] ✏️ Add recipes of throwing items into Ratlantis portal
+- [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time. This happens not always.
+- [ ] 🐀 Fix rats not spawn on garbage piles (they actually spawn in singleplayer)
 - [ ] 🌍 Teleport player to Alien Forest on Alfheim interaction
 - [ ] ✏️ Lootr still turn Dispensers into Lootr Chests https://github.com/noobanidus/Lootr/issues/189
 - [ ] ✏️ twlight forest advancement not showing up in advancement tab V1.2.1. Need conformation
@@ -234,6 +224,7 @@ Planned non-urgent changes, or just good ideas:
   > Giant sword somehow cant be buffed with MaterialChanger mod
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
 - [ ] 📖 whenever you have a rewards for a quest containing three items of tinkers, the last item does not show your stats. (Cant be fixed - FTBQ bug)
+- [ ] ✏️ SAGmill stuck when produce too much Scrap with balls: best grinding balls produce X5 output that would make SAG mill without balls too weak
 
 ---
 

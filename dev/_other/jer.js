@@ -1,16 +1,16 @@
-const fs = require('fs')
+const fs = require('node:fs')
 
 const glob = require('glob')
 const _ = require('lodash')
 
 const whole = glob
   .sync('dev/_other/JER/dims/*.json')
-  .map((fPath) => JSON.parse(fs.readFileSync(fPath)))
+  .map(fPath => JSON.parse(fs.readFileSync(fPath)))
   .flat()
   .filter(
-    (o) =>
-      o.block != 'thaumcraft:loot_urn_uncommon:0' &&
-      o.block != 'thaumcraft:loot_urn_common:0'
+    o =>
+      o.block !== 'thaumcraft:loot_urn_uncommon:0'
+      && o.block !== 'thaumcraft:loot_urn_common:0'
   )
 
 const dims = [
@@ -56,7 +56,7 @@ function getDim(o) {
 }
 
 const sorted = _.sortBy(whole, [
-  (o) => dims.findIndex((dim) => dim[0] === getDim(o)),
+  o => dims.findIndex(dim => dim[0] === getDim(o)),
   'block',
 ])
 
@@ -64,7 +64,7 @@ sorted.forEach((o) => {
   if (!o.dim.match(/Dim (-?\d+): .*/)) console.log('o :>> ', o)
   const dimId = getDim(o)
   if (isNaN(dimId)) console.log('o.dim :>> ', o.dim)
-  o.dim = `${dims.find((dim) => dim[0] === dimId)[1]} (${dimId})`
+  o.dim = `${dims.find(dim => dim[0] === dimId)[1]} (${dimId})`
 })
 
 fs.writeFileSync(
