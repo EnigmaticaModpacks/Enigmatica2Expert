@@ -1,0 +1,132 @@
+{
+	title: "Tanks",
+	icon: "enderio:block_tank",
+	x: 2.75d,
+	y: 4.1d,
+	shape: "circle",
+	text: [
+		"Tanks can hold liquids.",
+		"",
+		"Find them in HEI by typing §b##Tank"
+	],
+	dependencies: [
+		"9eaa496f"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "66a67240",
+		type: "item",
+		title: "Tanks",
+		items: [{
+			id: "thermalexpansion:reservoir",
+			tag: {}
+		},
+		{
+			id: "thermalexpansion:tank",
+			tag: {
+				Level: 0b
+			}
+		},
+		{
+			id: "mekanism:machineblock2",
+			Damage: 11s,
+			tag: {
+				tier: 0
+			}
+		},
+		{
+			item: "tconstruct:seared_tank 1 1"
+		},
+		{
+			item: "tconstruct:seared_tank"
+		},
+		{
+			item: "tconstruct:tinker_tank_controller"
+		},
+		{
+			item: "rustic:liquid_barrel"
+		},
+		{
+			item: "enderio:block_tank"
+		},
+		{
+			item: "enderio:block_tank 1 1"
+		},
+		{
+			item: "bloodmagic:blood_tank"
+		},
+		{
+			item: "industrialforegoing:black_hole_tank"
+		},
+		{
+			item: "advancedrocketry:liquidtank"
+		},
+		{
+			item: "fluiddrawers:tank_custom"
+		},
+		{
+			item: "fluiddrawers:tank"
+		},
+		{
+			id: "immersivepetroleum:schematic",
+			tag: {
+				multiblock: "IE:SheetmetalTank"
+			}
+		},
+		{
+			item: "extrautils2:drum"
+		},
+		{
+			item: "extrautils2:drum 1 2"
+		},
+		{
+			item: "extrautils2:drum 1 1"
+		},
+		{
+			item: "extrautils2:drum 1 3"
+		},
+		{
+			id: "ic2:te",
+			Damage: 131s,
+			tag: {}
+		},
+		{
+			item: "enderstorage:ender_storage 1 1"
+		},
+		{
+			item: "mekanism:basicblock 1 9"
+		},
+		{
+			item: "immersiveengineering:metal_device0 1 4"
+		},
+		{
+			item: "immersivetech:metal_barrel 1 2"
+		},
+		{
+			item: "immersiveengineering:wooden_device0 1 1"
+		},
+		{
+			item: "enderio:block_omni_reservoir"
+		},
+		{
+			item: "openblocks:tank"
+		},
+		{
+			item: "cyclicmagic:block_storeempty"
+		},
+		{
+			item: "aeadditions:certustank"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a775d65d",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

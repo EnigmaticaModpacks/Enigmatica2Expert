@@ -1,0 +1,118 @@
+{
+	title: "Big Chests",
+	icon: {
+		id: "thermalexpansion:strongbox",
+		tag: {
+			Facing: 3b,
+			Level: 0b
+		}
+	},
+	x: -0.25d,
+	y: 4.1d,
+	shape: "circle",
+	text: [
+		"Blocks that can store more than 27 stacks of items."
+	],
+	dependencies: [
+		"90536e42"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "51f66951",
+		type: "item",
+		title: "List",
+		items: [{
+			item: "rustic:vase"
+		},
+		{
+			item: "cookingforblockheads:cabinet"
+		},
+		{
+			item: "engineersdecor:labeled_crate"
+		},
+		{
+			item: "immersiveengineering:wooden_device0 1 5"
+		},
+		{
+			id: "thermalexpansion:strongbox",
+			tag: {
+				Level: 0b
+			}
+		},
+		{
+			item: "ironchest:iron_chest"
+		},
+		{
+			item: "ironchest:iron_chest 1 1"
+		},
+		{
+			item: "ironchest:iron_chest 1 2"
+		},
+		{
+			item: "ironchest:iron_chest 1 5"
+		},
+		{
+			item: "ironchest:iron_chest 1 6"
+		},
+		{
+			item: "ironchest:iron_shulker_box_purple"
+		},
+		{
+			item: "ironchest:iron_shulker_box_purple 1 1"
+		},
+		{
+			item: "ironchest:iron_shulker_box_purple 1 2"
+		},
+		{
+			item: "ironchest:iron_shulker_box_purple 1 5"
+		},
+		{
+			item: "ironchest:iron_shulker_box_purple 1 6"
+		},
+		{
+			item: "mekanism:machineblock 1 13"
+		},
+		{
+			item: "appliedenergistics2:chest"
+		},
+		{
+			item: "actuallyadditions:block_giant_chest"
+		},
+		{
+			item: "actuallyadditions:block_giant_chest_medium"
+		},
+		{
+			item: "actuallyadditions:block_giant_chest_large"
+		},
+		{
+			item: "colossalchests:chest_wall"
+		},
+		{
+			item: "colossalchests:chest_wall 1 1"
+		},
+		{
+			item: "colossalchests:chest_wall 1 2"
+		},
+		{
+			item: "colossalchests:chest_wall 1 3"
+		},
+		{
+			item: "colossalchests:chest_wall 1 4"
+		},
+		{
+			item: "colossalchests:chest_wall 1 5"
+		},
+		{
+			item: "colossalchests:chest_wall 1 6"
+		},
+		{
+			item: "rftools:modular_storage"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f19c63ef",
+		type: "choice",
+		table: 138
+	}]
+}

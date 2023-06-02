@@ -1,6 +1,6 @@
 {
 	x: 6.7d,
-	y: 6.1d,
+	y: 5.1d,
 	description: "{q.getting_started.beacon.desc}",
 	text: [
 		"{q.getting_started.beacon.desc}"

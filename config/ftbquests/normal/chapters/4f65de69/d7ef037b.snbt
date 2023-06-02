@@ -1,0 +1,169 @@
+{
+	title: "Backpacks",
+	icon: "forestry:forester_bag",
+	x: 1.2d,
+	y: 4.1d,
+	shape: "circle",
+	text: [
+		"A list of bags in which items can be carried."
+	],
+	dependencies: [
+		"18c9097c"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "4db0c98a",
+		type: "item",
+		title: "List",
+		items: [{
+			item: "thermalexpansion:satchel"
+		},
+		{
+			item: "cyclicmagic:sack_ender"
+		},
+		{
+			item: "forestry:forester_bag_t2"
+		},
+		{
+			item: "travelersbackpack:travelers_backpack"
+		},
+		{
+			item: "forestry:miner_bag_t2"
+		},
+		{
+			item: "forestry:apiarist_bag"
+		},
+		{
+			item: "forestry:lepidopterist_bag"
+		},
+		{
+			item: "forestry:miner_bag"
+		},
+		{
+			item: "forestry:digger_bag"
+		},
+		{
+			item: "forestry:forester_bag"
+		},
+		{
+			item: "forestry:hunter_bag"
+		},
+		{
+			item: "forestry:adventurer_bag"
+		},
+		{
+			item: "forestry:builder_bag"
+		},
+		{
+			item: "conarm:travel_sack"
+		},
+		{
+			id: "quark:backpack",
+			tag: {
+				Inventory: [{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}]
+			}
+		},
+		{
+			item: "littletiles:container"
+		},
+		{
+			item: "forestry:digger_bag_t2"
+		},
+		{
+			item: "forestry:hunter_bag_t2"
+		},
+		{
+			item: "forestry:adventurer_bag_t2"
+		},
+		{
+			item: "forestry:builder_bag_t2"
+		},
+		{
+			id: "appliedenergistics2:portable_cell",
+			tag: {}
+		},
+		{
+			item: "nuclearcraft:portable_ender_chest"
+		},
+		{
+			item: "cyclicmagic:inventory_food"
+		},
+		{
+			id: "enderio:item_dark_steel_upgrade",
+			Damage: 1s,
+			tag: {
+				"enderio:dsu": "enderio:inv",
+				"enderio:enabled": 1b
+			}
+		},
+		{
+			item: "enderstorage:ender_pouch"
+		},
+		{
+			item: "danknull:dank_null_0"
+		},
+		{
+			item: "danknull:dank_null_1"
+		},
+		{
+			item: "danknull:dank_null_2"
+		},
+		{
+			item: "danknull:dank_null_3"
+		},
+		{
+			item: "danknull:dank_null_4"
+		},
+		{
+			item: "danknull:dank_null_5"
+		},
+		{
+			id: "botania:blackholetalisman",
+			tag: {}
+		},
+		{
+			id: "openblocks:dev_null",
+			tag: {}
+		},
+		{
+			item: "rftools:storage_module_tablet"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "40e6b359",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

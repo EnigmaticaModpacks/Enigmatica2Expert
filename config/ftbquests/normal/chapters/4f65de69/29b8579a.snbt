@@ -1,18 +1,55 @@
 {
-	title: "{q.getting_started.inventory_managment.name}",
-	x: 6.7d,
-	y: 5.1d,
+	title: "Terminals",
+	icon: "vaultopic:vice",
+	x: 5.7d,
+	y: 4.1d,
+	shape: "circle",
 	text: [
-		"{q.getting_started.inventory_managment.desc}"
+		"Terminals help to access item storages and retrive items from them.",
+		"",
+		"- §2The V.I.C.E.§r will let you pull items from nearby inventories into a portable crafting table, with JEI integration.",
+		"",
+		"- §2Indexer§r can acces many storages from §lany dimension§r. Just connect chests via Extra Utilities pipes with Indexer\\n",
+		"",
+		"- §2Inventory Panel§r, terminals from §2Integrated Dynamics§r and §2Thermal Logistics§r can §lrequest crafting items§r"
 	],
 	dependencies: [
-		"4fc58528"
+		"e90285ae"
 	],
+	size: 0.5d,
 	tasks: [{
 		uid: "8e8c980f",
 		type: "item",
+		title: "List",
 		items: [{
 			item: "vaultopic:vice"
+		},
+		{
+			item: "extrautils2:indexerremote"
+		},
+		{
+			item: "integratedterminals:part_terminal_storage_item"
+		},
+		{
+			item: "rftools:storage_scanner"
+		},
+		{
+			item: "thermallogistics:terminal_item"
+		},
+		{
+			item: "enderio:block_inventory_panel"
+		},
+		{
+			item: "botania:corporeaindex"
+		},
+		{
+			item: "rftools:storage_control_module"
+		},
+		{
+			item: "enderio:item_inventory_remote"
+		},
+		{
+			item: "appliedenergistics2:part 1 380"
 		}],
 		ignore_nbt: 1b
 	}],

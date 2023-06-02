@@ -1,0 +1,199 @@
+{
+	title: "Changers",
+	icon: "enderio:item_inventory_charger_simple",
+	x: 7.3d,
+	y: 4.15d,
+	shape: "circle",
+	text: [
+		"This items and blocks can charge tools and armor.",
+		"",
+		"You can find them all in HEI by searching §a##Charger"
+	],
+	dependencies: [
+		"4fc58528"
+	],
+	size: 0.5d,
+	tasks: [{
+		uid: "c09f96fa",
+		type: "item",
+		title: "Chargers",
+		items: [{
+			item: "enderio:item_inventory_charger_simple"
+		},
+		{
+			item: "enderio:item_inventory_charger_basic"
+		},
+		{
+			item: "enderio:item_inventory_charger"
+		},
+		{
+			item: "enderio:item_inventory_charger_vibrant"
+		},
+		{
+			item: "enderio:block_simple_wired_charger"
+		},
+		{
+			item: "enderio:block_wired_charger"
+		},
+		{
+			item: "opencomputers:charger"
+		},
+		{
+			item: "enderio:block_wireless_charger"
+		},
+		{
+			id: "actuallyadditions:battery_bauble",
+			tag: {
+				Energy: 0
+			}
+		},
+		{
+			id: "actuallyadditions:battery_double_bauble",
+			tag: {
+				Energy: 0
+			}
+		},
+		{
+			id: "actuallyadditions:battery_triple_bauble",
+			tag: {
+				Energy: 0
+			}
+		},
+		{
+			id: "actuallyadditions:battery_quadruple_bauble",
+			tag: {
+				Energy: 0
+			}
+		},
+		{
+			id: "actuallyadditions:battery_quintuple_bauble",
+			tag: {
+				Energy: 0
+			}
+		},
+		{
+			id: "integrateddynamics:energy_battery",
+			tag: {
+				energy: 0
+			}
+		},
+		{
+			id: "ic2:te",
+			Damage: 68s,
+			tag: {}
+		},
+		{
+			id: "ic2:te",
+			Damage: 69s,
+			tag: {}
+		},
+		{
+			id: "ic2:te",
+			Damage: 70s,
+			tag: {}
+		},
+		{
+			id: "ic2:te",
+			Damage: 71s,
+			tag: {}
+		},
+		{
+			id: "mekanism:machineblock",
+			Damage: 14s,
+			tag: {
+				mekData: {}
+			}
+		},
+		{
+			id: "ic2:charging_re_battery",
+			Damage: 26s,
+			tag: {}
+		},
+		{
+			id: "ic2:advanced_charging_re_battery",
+			Damage: 26s,
+			tag: {}
+		},
+		{
+			id: "ic2:charging_energy_crystal",
+			Damage: 26s,
+			tag: {}
+		},
+		{
+			id: "ic2:charging_lapotron_crystal",
+			Damage: 26s,
+			tag: {}
+		},
+		{
+			id: "thermalexpansion:capacitor",
+			tag: {
+				Energy: 500000
+			}
+		},
+		{
+			id: "thermalexpansion:capacitor",
+			Damage: 1s,
+			tag: {
+				Energy: 2000000
+			}
+		},
+		{
+			id: "thermalexpansion:capacitor",
+			Damage: 2s,
+			tag: {
+				Energy: 4500000
+			}
+		},
+		{
+			id: "thermalexpansion:capacitor",
+			Damage: 3s,
+			tag: {
+				Energy: 8000000
+			}
+		},
+		{
+			id: "thermalexpansion:capacitor",
+			Damage: 4s,
+			tag: {
+				Energy: 12500000
+			}
+		},
+		{
+			id: "randomthings:spectrecharger",
+			tag: {
+				options: {}
+			}
+		},
+		{
+			id: "randomthings:spectrecharger",
+			Damage: 1s,
+			tag: {
+				options: {}
+			}
+		},
+		{
+			id: "randomthings:spectrecharger",
+			Damage: 2s,
+			tag: {
+				options: {}
+			}
+		},
+		{
+			item: "appliedenergistics2:charger"
+		},
+		{
+			item: "enderio:block_enhanced_wired_charger"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ac6cf66a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}
