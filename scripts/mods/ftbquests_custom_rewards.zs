@@ -1,5 +1,5 @@
 #modloaded ftbquests
-#loader crafttweaker reloadable
+#reloadable
 
 import crafttweaker.player.IPlayer;
 

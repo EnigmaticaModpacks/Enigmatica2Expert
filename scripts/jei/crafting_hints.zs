@@ -1,7 +1,7 @@
 #modloaded requious
 
 #priority 975
-#loader crafttweaker reloadable
+#reloadable
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;

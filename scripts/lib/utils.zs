@@ -15,7 +15,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.recipes.IRecipeFunction;
 import crafttweaker.world.IWorld;
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 zenClass Utils {
   var DEBUG as bool = false;

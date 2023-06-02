@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#reloadable
 
 import mods.ctintegration.data.DataUtil;
 import mods.ctintegration.util.RawLogger.logRaw as logRaw;

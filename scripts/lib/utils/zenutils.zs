@@ -2,7 +2,7 @@
 #priority 3999
 
 #modloaded zenutils
-#loader crafttweaker reloadable
+#reloadable
 
 import crafttweaker.command.ICommandSender;
 import crafttweaker.item.IItemStack;

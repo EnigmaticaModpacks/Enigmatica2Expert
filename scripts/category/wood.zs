@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 #priority 100
-#loader crafttweaker reloadableevents
+#reloadable
 
 # Logs to planks recipes
 static logPlank as IItemStack[IItemStack] = {

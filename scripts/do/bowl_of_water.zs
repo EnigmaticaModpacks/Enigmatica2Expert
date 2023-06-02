@@ -1,5 +1,5 @@
 #priority -1
-#loader crafttweaker reloadableevents
+#reloadable
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;

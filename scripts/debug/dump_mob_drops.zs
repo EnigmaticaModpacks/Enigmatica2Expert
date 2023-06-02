@@ -1,6 +1,6 @@
 #modloaded zenutils
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 #priority 3999
 

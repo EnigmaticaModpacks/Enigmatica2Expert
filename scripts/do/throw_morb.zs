@@ -15,7 +15,7 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.text.ITextComponent.fromTranslation;
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 static hpPortionTreshold as double = 0.8;
 static ignoredHealth as double = 20.0;

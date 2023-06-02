@@ -3,7 +3,7 @@ import crafttweaker.world.IFacing;
 import crafttweaker.block.IBlockState;
 import crafttweaker.item.IItemStack;
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 static offsetOrder as int[] = [
 /*Inject_js{

@@ -4,7 +4,7 @@ import crafttweaker.entity.IEntityItem;
 import crafttweaker.world.IFacing;
 import crafttweaker.block.IBlockState;
 
-#loader crafttweaker reloadable
+#reloadable
 
 // Manually add this when adding new liquids
 static fluidToBlock as string[string] = {

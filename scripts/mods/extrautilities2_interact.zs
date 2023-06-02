@@ -1,6 +1,6 @@
 
 #modloaded extrautils2
-#loader crafttweaker reloadableevents
+#reloadable
 
 # Fix Error when you have a full inventory and try to fill buckets
 # from the Drum, the buckets just disappear instead of falling to the ground

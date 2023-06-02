@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#reloadable
 
 import crafttweaker.item.IIngredient;
 

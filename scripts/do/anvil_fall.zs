@@ -1,4 +1,4 @@
-#loader crafttweaker reloadable
+#reloadable
 
 static entityMap as int[string] = {
   wolf               : 0,

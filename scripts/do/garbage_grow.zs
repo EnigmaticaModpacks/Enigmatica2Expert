@@ -12,7 +12,7 @@ Ideas:
 */
 
 #modloaded zenutils
-#loader crafttweaker reloadable
+#reloadable
 #norun
 
 events.onEntityItemFall(function(e as mods.zenutils.event.EntityItemFallEvent) {

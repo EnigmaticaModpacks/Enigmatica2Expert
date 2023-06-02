@@ -4,7 +4,7 @@ import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
 import crafttweaker.data.IData;
 
-#loader crafttweaker reloadable
+#reloadable
 
 static experience_potions as int[][IPotion][] = [
 //{<potion:minecraft:strength>      : [ 4, 1]},

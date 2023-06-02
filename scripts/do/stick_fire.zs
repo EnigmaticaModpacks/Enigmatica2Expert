@@ -1,5 +1,5 @@
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 events.onBlockHarvestDrops(function(e as crafttweaker.event.BlockHarvestDropsEvent) {
   if(isNull(e.player) || isNull(e.player.world) || e.player.world.remote) return;

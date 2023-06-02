@@ -1,5 +1,5 @@
 #modloaded endreborn
-#loader crafttweaker reloadable
+#reloadable
 #norun
 
 import crafttweaker.world.IFacing;

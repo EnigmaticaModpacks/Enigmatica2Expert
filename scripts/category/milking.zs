@@ -14,7 +14,7 @@ import crafttweaker.entity.IEntityAnimal;
 import crafttweaker.block.IBlockState;
 
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 mods.tconstruct.Fuel.registerFuel(<liquid:seed> * 10, 500000);
 

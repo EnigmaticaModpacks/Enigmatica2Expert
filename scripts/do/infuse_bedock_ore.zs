@@ -8,7 +8,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.world.IFacing;
 import crafttweaker.world.IWorld;
 
-#loader crafttweaker reloadable
+#reloadable
 #modloaded bedrockores
 
 recipes.removeByRecipeName("mysticalagriculture:ingotosmium");

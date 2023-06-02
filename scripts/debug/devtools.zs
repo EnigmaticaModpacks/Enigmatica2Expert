@@ -1,7 +1,7 @@
 #modloaded ctintegration
 
 #priority 3999
-#loader crafttweaker reloadable
+#reloadable
 
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;

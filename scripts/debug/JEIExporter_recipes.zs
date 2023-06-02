@@ -6,7 +6,7 @@ would be exported as icons by JEIExporter mod.
 
 */
 
-#loader crafttweaker reloadableevents
+#reloadable
 #priority -100000
 
 val livingBaseEntities = [

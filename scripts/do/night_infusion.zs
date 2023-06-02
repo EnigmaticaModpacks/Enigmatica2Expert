@@ -1,7 +1,7 @@
 import crafttweaker.world.IFacing;
 import mods.ctutils.utils.Math.abs;
 
-#loader crafttweaker reloadable
+#reloadable
 
 static itemsConsumed as int = 4;
 

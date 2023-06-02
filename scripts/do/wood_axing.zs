@@ -11,7 +11,7 @@ import crafttweaker.item.WeightedItemStack;
 import crafttweaker.event.BlockHarvestDropsEvent;
 
 #priority -1
-#loader crafttweaker reloadableevents
+#reloadable
 
 static axes as int[IIngredient] = {
   <twilightforest:ironwood_axe:*> : 4,

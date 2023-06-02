@@ -1,5 +1,5 @@
 
-#loader crafttweaker reloadableevents
+#reloadable
 
 import crafttweaker.item.IItemStack;
 import mods.ctintegration.data.DataUtil;
