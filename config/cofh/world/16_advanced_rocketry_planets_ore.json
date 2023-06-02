@@ -15,7 +15,6 @@
 			"min-height": 1,
 			"max-height": 12,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -39,7 +38,6 @@
 			"min-height": 35,
 			"max-height": 55,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -63,7 +61,6 @@
 			"min-height": 17,
 			"max-height": 32,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -87,7 +84,6 @@
 			"min-height": 15,
 			"max-height": 60,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -111,7 +107,6 @@
 			"min-height": 10,
 			"max-height": 30,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -135,7 +130,6 @@
 			"min-height": 18,
 			"max-height": 45,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -161,7 +155,6 @@
 			"min-height": 1,
 			"max-height": 16,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -187,7 +180,6 @@
 			"min-height": 1,
 			"max-height": 16,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -210,7 +202,6 @@
 			"min-height": 25,
 			"max-height": 55,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -233,7 +224,6 @@
 			"min-height": 0,
 			"max-height": 120,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -256,7 +246,6 @@
 			"min-height": 17,
 			"max-height": 32,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -282,7 +271,6 @@
 			"min-height": 15,
 			"max-height": 35,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -308,7 +296,6 @@
 			"min-height": 15,
 			"max-height": 35,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -334,7 +321,6 @@
 			"min-height": 25,
 			"max-height": 40,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -358,7 +344,6 @@
 			"min-height": 10,
 			"max-height": 40,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -378,8 +363,6 @@
 			"cluster-count": 18,
 			"min-height": 3,
 			"max-height": 16,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [113]
@@ -395,8 +378,6 @@
 			"cluster-count": 30,
 			"min-height": 18,
 			"max-height": 128,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [113]
@@ -412,8 +393,6 @@
 			"cluster-count": 35,
 			"min-height": 5,
 			"max-height": 64,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [103]
@@ -433,7 +412,6 @@
 			"min-height": 20,
 			"max-height": 50,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [101]
@@ -453,7 +431,6 @@
 			"min-height": 20,
 			"max-height": 65,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [101]
@@ -491,7 +468,6 @@
 			"min-height": 15,
 			"max-height": 36,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [109]
@@ -508,7 +484,6 @@
 			"min-height": 30,
 			"max-height": 55,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [106]
@@ -528,7 +503,6 @@
 			"min-height": 2,
 			"max-height": 64,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [108]
@@ -544,8 +518,6 @@
 			"cluster-count": 22,
 			"min-height": 4,
 			"max-height": 32,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [115]

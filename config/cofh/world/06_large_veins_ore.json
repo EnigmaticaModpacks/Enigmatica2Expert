@@ -27,8 +27,6 @@
 			"vein-diameter": 5,
 			"vertical-density": 5,
 			"horizontal-density": 2,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
@@ -60,8 +58,6 @@
 			"vein-diameter": 5,
 			"vertical-density": 5,
 			"horizontal-density": 2,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
@@ -93,8 +89,6 @@
 			"vein-diameter": 5,
 			"vertical-density": 5,
 			"horizontal-density": 2,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
@@ -127,8 +121,6 @@
 			"vein-diameter": 5,
 			"vertical-density": 5,
 			"horizontal-density": 2,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
@@ -160,8 +152,6 @@
 			"vein-diameter": 5,
 			"vertical-density": 5,
 			"horizontal-density": 2,
-			"retrogen": false,
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]

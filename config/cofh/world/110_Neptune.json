@@ -27,7 +27,6 @@
 			"cluster-count": 10,
 			"center-height": 20,
 			"spread": 18,
-			"biome": "all",
 			"dimension": {"restriction": "whitelist","value": [110]}
 		}
 		

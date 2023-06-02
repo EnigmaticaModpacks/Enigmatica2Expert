@@ -25,7 +25,6 @@
 				"vertical-density": 3,
 				"horizontal-density": 7,
 				"min-height": 40,
-				"retrogen": false,
 				"biome": {
 				"restriction": "whitelist",
 				"value": [
@@ -55,8 +54,6 @@
 				"min-height": 20,
 				"max-height": 100,
 				"follow-terrain": true,
-				"biome": "all",
-				"retrogen": false,
 				"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -81,8 +78,6 @@
 				"min-height": 20,
 				"max-height": 200,
 				"follow-terrain": true,
-				"biome": "all",
-				"retrogen": false,
 				"dimension": {
 				"restriction": "whitelist",
 				"value": [
@@ -109,8 +104,6 @@
 				"min-height": 20,
 				"max-height": 200,
 				"follow-terrain": true,
-				"biome": "all",
-				"retrogen": false,
 				"dimension": {
 				"restriction": "whitelist",
 				"value": [

@@ -15,7 +15,6 @@
 			"min-height": 2,
 			"max-height": 24,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]

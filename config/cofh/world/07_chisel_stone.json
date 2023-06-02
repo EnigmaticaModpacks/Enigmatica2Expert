@@ -15,7 +15,6 @@
 			"min-height": 24,
 			"max-height": 40,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
@@ -35,7 +34,6 @@
 			"min-height": 2,
 			"max-height": 23,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]
@@ -55,7 +53,6 @@
 			"min-height": 42,
 			"max-height": 55,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]

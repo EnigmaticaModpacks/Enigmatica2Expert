@@ -14,7 +14,6 @@
 			"cluster-count": 6,
 			"min-height": 18,
 			"max-height": 55,
-			"biome": "all",
 			"dimension": {
 				"restriction": "blacklist",
 				"value": [-1,1,111,112,119,123]

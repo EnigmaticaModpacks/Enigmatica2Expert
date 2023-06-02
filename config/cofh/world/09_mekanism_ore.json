@@ -13,7 +13,6 @@
 			"min-height": 20,
 			"max-height": 40,
 			"retrogen": "false",
-			"biome": "all",
 			"dimension": {
 				"restriction": "whitelist",
 				"value": [

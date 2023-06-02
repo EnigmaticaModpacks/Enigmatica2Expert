@@ -49,7 +49,6 @@
 
 		"proxima_huge_stone_clusters_with_ores": {
 			"cluster-count": 30,
-			"chunk-chance": 1,
 			"min-height": 5,
 			"max-height": 90,
 			"dimension": {"restriction": "whitelist","value": [111]},
@@ -108,8 +107,7 @@
 				"cluster-size": 300,
 				"material": "iceandfire:frozen_stone"
 			},
-      "chunk-chance": 1,
-			"cluster-count": 20,
+      "cluster-count": 20,
 			"center-height": 5,
 			"spread": 70,
 			"dimension": {"restriction": "whitelist","value": [111]}
@@ -122,8 +120,7 @@
 				"cluster-size": 200,
 				"material": "iceandfire:frozen_stone"
 			},
-      "chunk-chance": 1,
-			"cluster-count": 8,
+      "cluster-count": 8,
 			"min-height": 0,
 			"max-height": 70,
 			"dimension": {"restriction": "whitelist","value": [111]}

@@ -27,8 +27,6 @@
       "min-height": 20,
       "max-height": 100,
       "follow-terrain": true,
-      "biome": "all",
-      "retrogen": false,
       "dimension": {"restriction": "whitelist","value": [-8]}
     },
 
@@ -40,7 +38,6 @@
 				"cluster-size": 3
 			},
 			"cluster-count": 50,
-      "biome": "all",
       "dimension": {"restriction": "whitelist","value": [-8]}
 		}
   }
