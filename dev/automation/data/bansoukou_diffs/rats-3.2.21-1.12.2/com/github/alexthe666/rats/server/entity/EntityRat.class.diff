@@ -30,7 +30,32 @@
                  NBTTagCompound nbttagcompound = nbttaglist.func_150305_b(i);
                  int j = nbttagcompound.func_74771_c("Slot") & 0xFF;
                  this.ratInventory.func_70299_a(j, new ItemStack(nbttagcompound));
-@@ -1082,11 +1082,11 @@ implements IAnimatedEntity {
+@@ -1047,13 +1047,12 @@ implements IAnimatedEntity {
+     }
+ 
+     public boolean func_70652_k(Entity entityIn) {
+-        boolean wasHurt = entityIn.func_70097_a(DamageSource.func_76358_a((EntityLivingBase)this), (float)((int)this.func_110148_a(SharedMonsterAttributes.field_111264_e).func_111126_e()));
+-        if (wasHurt) {
++        boolean flag = entityIn.func_70097_a(DamageSource.func_76358_a((EntityLivingBase)this), (float)((int)this.func_110148_a(SharedMonsterAttributes.field_111264_e).func_111126_e()));
++        if (flag) {
+             Explosion explosion;
+             this.func_174815_a((EntityLivingBase)this, entityIn);
+             if (this.hasPlague() && entityIn instanceof EntityLivingBase && this.rollForPlague((EntityLivingBase)entityIn)) {
+                 ((EntityLivingBase)entityIn).func_70690_d(new PotionEffect(RatsMod.PLAGUE_POTION, RatsMod.CONFIG_OPTIONS.plagueEffectDuration * 20));
+-                System.out.println("PLAGUED");
+             }
+             if (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_FERAL_BITE)) {
+                 entityIn.func_70097_a(DamageSource.func_76358_a((EntityLivingBase)this), 5.0f);
+@@ -1071,7 +1070,7 @@ implements IAnimatedEntity {
+                 explosion.func_77279_a(true);
+             }
+         }
+-        return wasHurt;
++        return flag;
+     }
+ 
+     public int func_70658_aO() {
+@@ -1083,11 +1082,11 @@ implements IAnimatedEntity {
  
      public void func_70636_d() {
          EntityIllagerPiper piper;
@@ -43,7 +68,7 @@
          float plateau;
          double planeDist;
          this.setRatStatus(RatStatus.IDLE);
-@@ -1187,11 +1187,11 @@ implements IAnimatedEntity {
+@@ -1188,11 +1187,11 @@ implements IAnimatedEntity {
                  this.flyingPitch = 0.0f;
              }
          } else {
@@ -57,7 +82,7 @@
              if (wildNavigate && this.navigatorType != 1) {
                  this.switchNavigator(1);
              }
-@@ -1207,7 +1207,8 @@ implements IAnimatedEntity {
+@@ -1208,7 +1207,8 @@ implements IAnimatedEntity {
          }
          boolean sitting = this.func_70906_o() || this.func_184218_aH() || this.isDancing() || (this.getAnimation() == ANIMATION_IDLE_SCRATCH || this.getAnimation() == ANIMATION_IDLE_SNIFF) && this.shouldSitDuringAnimation();
          float sitInc = this.getAnimation() == ANIMATION_IDLE_SCRATCH || this.getAnimation() == ANIMATION_IDLE_SNIFF ? 5.0f : 1.0f;
@@ -67,7 +92,7 @@
          if (sitting && this.sitProgress < 20.0f) {
              this.sitProgress += sitInc;
          } else if (!sitting && this.sitProgress > 0.0f) {
-@@ -1234,10 +1235,12 @@ implements IAnimatedEntity {
+@@ -1235,10 +1235,12 @@ implements IAnimatedEntity {
          if (this.func_70906_o() && this.getCommand() != RatCommand.SIT) {
              this.func_70904_g(false);
          }
@@ -82,7 +107,7 @@
                  ItemStack pooStack = new ItemStack(RatsItemRegistry.RAT_NUGGET);
                  ItemStack eatenFood = this.func_184586_b(EnumHand.MAIN_HAND).func_77946_l();
                  if (this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_ORE_DOUBLING) && ItemRatUpgradeOreDoubling.isProcessable((ItemStack)this.func_184586_b(EnumHand.MAIN_HAND))) {
-@@ -1280,24 +1283,24 @@ implements IAnimatedEntity {
+@@ -1281,24 +1283,24 @@ implements IAnimatedEntity {
          }
          if (this.hasPlague() && this.field_70146_Z.nextFloat() < 0.3f) {
              double d0 = 0.0;
@@ -116,7 +141,7 @@
                      }
                  }
              }
-@@ -1307,15 +1310,15 @@ implements IAnimatedEntity {
+@@ -1308,15 +1310,15 @@ implements IAnimatedEntity {
              if (this.cookingProgress > 0) {
                  double d2 = this.field_70146_Z.nextGaussian() * 0.02;
                  double d0 = this.field_70146_Z.nextGaussian() * 0.02;
@@ -139,7 +164,7 @@
                      }
                  }
              }
-@@ -1325,13 +1328,13 @@ implements IAnimatedEntity {
+@@ -1326,13 +1328,13 @@ implements IAnimatedEntity {
              if (this.cookingProgress > 0) {
                  double d2 = this.field_70146_Z.nextGaussian() * 0.02;
                  double d0 = this.field_70146_Z.nextGaussian() * 0.02;
@@ -159,7 +184,7 @@
                  }
              }
          }
-@@ -1340,14 +1343,14 @@ implements IAnimatedEntity {
+@@ -1341,14 +1343,14 @@ implements IAnimatedEntity {
              if (this.cookingProgress > 0) {
                  double d2 = this.field_70146_Z.nextGaussian() * 0.02;
                  double d0 = this.field_70146_Z.nextGaussian() * 0.02;
@@ -181,7 +206,7 @@
                  }
              }
          }
-@@ -1379,8 +1382,8 @@ implements IAnimatedEntity {
+@@ -1380,8 +1382,8 @@ implements IAnimatedEntity {
              } else {
                  double d2 = this.field_70146_Z.nextGaussian() * 0.02;
                  double d0 = this.field_70146_Z.nextGaussian() * 0.02;
@@ -192,7 +217,7 @@
              }
          }
          if (this.field_70170_p.field_72995_K && this.hasUpgrade(RatsItemRegistry.RAT_UPGRADE_FERAL_BITE) && this.func_70681_au().nextInt(5) == 0) {
-@@ -1410,7 +1413,7 @@ implements IAnimatedEntity {
+@@ -1411,7 +1413,7 @@ implements IAnimatedEntity {
              TileEntityRatCraftingTable ratCraftingTable = (TileEntityRatCraftingTable)te;
              double d2 = this.field_70146_Z.nextGaussian() * 0.02;
              double d0 = this.field_70146_Z.nextGaussian() * 0.02;
@@ -201,7 +226,7 @@
              if (ratCraftingTable.func_174887_a_(0) > 0) {
                  this.crafting = true;
                  this.field_70170_p.func_72960_a((Entity)this, (byte)85);
-@@ -1508,7 +1511,7 @@ implements IAnimatedEntity {
+@@ -1509,7 +1511,7 @@ implements IAnimatedEntity {
                  cannonball.field_184539_c = this;
                  double extraY2 = 0.6 + this.field_70163_u;
                  double d0 = this.func_70638_az().field_70163_u + (double)this.func_70638_az().func_70047_e() - (double)1.1f;
@@ -210,7 +235,7 @@
                  double d3 = this.func_70638_az().field_70161_v - this.field_70161_v;
                  double d2 = d0 - extraY2;
                  float f = MathHelper.func_76133_a((double)(d1 * d1 + d3 * d3)) * 0.2f;
-@@ -1669,7 +1672,7 @@ implements IAnimatedEntity {
+@@ -1670,7 +1672,7 @@ implements IAnimatedEntity {
              this.cookingProgress = 0;
          } else {
              ++this.cookingProgress;
@@ -219,7 +244,7 @@
                  heldItem.func_190918_g(1);
                  if (heldItem.func_190926_b()) {
                      this.func_184611_a(EnumHand.MAIN_HAND, burntItem);
-@@ -1688,7 +1691,7 @@ implements IAnimatedEntity {
+@@ -1689,7 +1691,7 @@ implements IAnimatedEntity {
              this.cookingProgress = 0;
          } else {
              ++this.cookingProgress;
@@ -228,7 +253,7 @@
                  heldItem.func_190918_g(1);
                  if (heldItem.func_190926_b()) {
                      this.func_184611_a(EnumHand.MAIN_HAND, burntItem);
-@@ -1707,7 +1710,7 @@ implements IAnimatedEntity {
+@@ -1708,7 +1710,7 @@ implements IAnimatedEntity {
              this.cookingProgress = 0;
          } else {
              ++this.cookingProgress;
@@ -237,7 +262,7 @@
                  heldItem.func_190918_g(1);
                  if (heldItem.func_190926_b()) {
                      this.func_184611_a(EnumHand.MAIN_HAND, burntItem);
-@@ -1738,7 +1741,7 @@ implements IAnimatedEntity {
+@@ -1739,7 +1741,7 @@ implements IAnimatedEntity {
              this.cookingProgress = 0;
          } else {
              ++this.cookingProgress;
@@ -246,7 +271,7 @@
                  heldItem.func_190918_g(1);
                  if (!disenchant) {
                      float power = 0.0f;
-@@ -1774,21 +1777,21 @@ implements IAnimatedEntity {
+@@ -1775,21 +1777,21 @@ implements IAnimatedEntity {
          List result = new ArrayList();
          if (!this.field_70170_p.field_72995_K) {
              LootContext.Builder lootcontext$builder = new LootContext.Builder((WorldServer)this.field_70170_p);
@@ -273,7 +298,14 @@
                      }
                      this.cookingProgress = 0;
                  }
-@@ -1891,8 +1894,8 @@ implements IAnimatedEntity {
+@@ -1886,14 +1888,14 @@ implements IAnimatedEntity {
+             if (entityIn instanceof EntityRat && !((EntityRat)entityIn).func_70909_n()) {
+                 ((EntityRat)entityIn).setPlague(true);
+             } else if (entityIn instanceof EntityLivingBase && this.rollForPlague((EntityLivingBase)entityIn) && ((EntityLivingBase)entityIn).func_70660_b(RatsMod.PLAGUE_POTION) != null) {
+-                ((EntityLivingBase)entityIn).func_70690_d(new PotionEffect(RatsMod.PLAGUE_POTION, RatsMod.CONFIG_OPTIONS.plagueEffectDuration * 20, 0));
++                ((EntityLivingBase)entityIn).func_70690_d(new PotionEffect(RatsMod.PLAGUE_POTION, RatsMod.CONFIG_OPTIONS.plagueEffectDuration * 20));
+             }
+         }
      }
  
      private boolean rollForPlague(EntityLivingBase target) {
@@ -284,7 +316,7 @@
          if (mask) {
              return this.field_70146_Z.nextFloat() < 0.3f;
          }
-@@ -2035,9 +2038,9 @@ implements IAnimatedEntity {
+@@ -2036,9 +2038,9 @@ implements IAnimatedEntity {
      }
  
      protected void func_70609_aI() {
@@ -296,7 +328,7 @@
          if (this.field_70725_aQ == maxDeathTime) {
              if (!this.field_70170_p.field_72995_K && (this.func_70684_aJ() || this.field_70718_bc > 0 && this.func_146066_aG() && this.field_70170_p.func_82736_K().func_82766_b("doMobLoot"))) {
                  int j;
-@@ -2100,7 +2103,7 @@ implements IAnimatedEntity {
+@@ -2101,7 +2103,7 @@ implements IAnimatedEntity {
          }
          if (!this.field_70128_L && this.func_70909_n() && this.getOwnerMonster() != null && this.getOwnerMonster() instanceof EntityBlackDeath) {
              illagerPiper = (EntityBlackDeath)this.getOwnerMonster();

@@ -1,7 +1,7 @@
-@@ -67,6 +67,12 @@ public class RatConfig {
-     public boolean addLoot = true;
-     public boolean customMainMenu = true;
-     public float plagueTomeDropRate = 0.05f;
+@@ -77,6 +77,12 @@ public class RatConfig {
+     public int plagueStageDuration = 600;
+     public int plagueRespawnStage = -1;
+     public boolean convertPlagueDoctorToBlackDeath;
 +    public int speedChef = 100;
 +    public int speedArcheologist = 100;
 +    public int speedGemcutter = 100;
@@ -11,10 +11,10 @@
  
      public void init(Configuration config) {
          this.customMainMenu = config.getBoolean("Custom Main Menu", "all", true, "True if rats has a custom main menu");
-@@ -127,5 +133,11 @@ public class RatConfig {
-         this.ratRFTransferExtreme = config.getInt("Rat RF Transfer Rate Extreme (kRF)", "all", 100000, 1, Integer.MAX_VALUE, "How much kRF (1000 RF) a rat with an extreme energy transfer upgrade can transport at a time.");
-         this.ratVoodooDistance = config.getFloat("Voodoo Doll Rat distance", "all", 32.0f, 0.0f, Float.MAX_VALUE, "How far away from players the Rat Upgrade: Voodoo Doll is effective.");
-         this.addLoot = config.getBoolean("Add Loot", "all", true, "True if loot from rats can spawn in chests");
+@@ -147,5 +153,11 @@ public class RatConfig {
+         this.plagueStageDuration = config.getInt("Plague Effect Stage Duration (seconds)", "rebirth_of_the_plague", 600, 1, 0x6666666, "Time in seconds that should pass for a Plague effect to progress to the next stage");
+         this.plagueRespawnStage = config.getInt("Plague Effect Respawn Stage", "rebirth_of_the_plague", -1, -1, 4, "The stage the player should respawn with after dying of plague during a non-final plague stage\n0 means plague effect won't be reassigned\n-1 (default) means dynamic, same as the previous plague stage");
+         this.convertPlagueDoctorToBlackDeath = config.getBoolean("Lightning Converts Plague Doctor", "rebirth_of_the_plague", true, "Whether a Plague Doctor should convert to Black Death when struck by a lightning");
 +        this.speedChef = config.getInt("Speed of Chef Rat", "all", 100, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");
 +        this.speedArcheologist = config.getInt("Speed of Archeologist Rat", "all", 100, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");
 +        this.speedGemcutter = config.getInt("Speed of Gemcutter Rat", "all", 100, 1, Integer.MAX_VALUE, "How much ticks rat require to finish recipe");

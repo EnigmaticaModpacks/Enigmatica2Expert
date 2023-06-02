@@ -1,0 +1,3 @@
+[main/ERROR] [mixin]: Critical problem: mixins.tweaks.misc.buttons.realms.json:UTRealmsButtonMainMenuMixin from mod UniversalTweaks_1_12_2_1_6_0 target net.minecraft.client.gui.GuiMainMenu was loaded too early.
+[Client thread/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.phosphor.json:common.MixinChunk from mod phosphor_1_12_2_0_2_9_2_SNAPSHOT_universal cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[CraftPresence/ERROR] [CraftPresence]: Unable to get "atlauncher" pack data (ignore if not using a "atlauncher" pack)
