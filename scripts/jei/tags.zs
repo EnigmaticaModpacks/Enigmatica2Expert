@@ -174,6 +174,7 @@ for lang, items in {
     <immersivepetroleum:schematic>.withTag({multiblock: "IE:Assembler"}),
     <enderio:block_simple_crafter>,
     <enderio:block_crafter>,
+    <extrautils2:crafter>,
     <extrautils2:analogcrafter>,
     <industrialforegoing:fluid_crafter>,
     <ic2:te:89>,
