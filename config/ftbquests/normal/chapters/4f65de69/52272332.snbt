@@ -1,5 +1,5 @@
 {
-	title: "Big Chests",
+	title: "{q.getting_started.big_chests.name}",
 	icon: {
 		id: "thermalexpansion:strongbox",
 		tag: {
@@ -11,7 +11,7 @@
 	y: 4.1d,
 	shape: "circle",
 	text: [
-		"Blocks that can store more than 27 stacks of items."
+		"{q.getting_started.big_chests.desc}"
 	],
 	dependencies: [
 		"90536e42"

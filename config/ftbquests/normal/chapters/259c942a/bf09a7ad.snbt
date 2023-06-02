@@ -16,13 +16,9 @@
 		count: 27L
 	}],
 	rewards: [{
-		uid: "7bff7491",
+		uid: "7c25a282",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		item: "immersiveengineering:wooden_device0 1 1",
+		count: 4
 	}]
 }

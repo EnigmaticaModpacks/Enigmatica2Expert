@@ -1,13 +1,11 @@
 {
-	title: "Changers",
+	title: "{q.getting_started.changers.name}",
 	icon: "enderio:item_inventory_charger_simple",
 	x: 7.3d,
 	y: 4.15d,
 	shape: "circle",
 	text: [
-		"This items and blocks can charge tools and armor.",
-		"",
-		"You can find them all in HEI by searching §a##Charger"
+		"{q.getting_started.changers.desc}"
 	],
 	dependencies: [
 		"4fc58528"

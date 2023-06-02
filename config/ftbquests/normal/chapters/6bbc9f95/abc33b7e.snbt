@@ -1,0 +1,24 @@
+{
+	x: 15.1d,
+	y: 3.8d,
+	text: [
+		"{q.thaumcraft.essentia_combiner.desc}"
+	],
+	dependencies: [
+		"5581ca2d"
+	],
+	tasks: [{
+		uid: "9af3c9fe",
+		type: "item",
+		items: [{
+			item: "thaumadditions:aspect_combiner"
+		}]
+	},
+	{
+		uid: "030e6e54",
+		type: "item",
+		items: [{
+			item: "thaumcraft:tube_buffer"
+		}]
+	}]
+}

@@ -1,17 +1,11 @@
 {
-	title: "Terminals",
+	title: "{q.getting_started.terminals.name}",
 	icon: "vaultopic:vice",
 	x: 5.7d,
 	y: 4.1d,
 	shape: "circle",
 	text: [
-		"Terminals help to access item storages and retrive items from them.",
-		"",
-		"- §2The V.I.C.E.§r will let you pull items from nearby inventories into a portable crafting table, with JEI integration.",
-		"",
-		"- §2Indexer§r can acces many storages from §lany dimension§r. Just connect chests via Extra Utilities pipes with Indexer\\n",
-		"",
-		"- §2Inventory Panel§r, terminals from §2Integrated Dynamics§r and §2Thermal Logistics§r can §lrequest crafting items§r"
+		"{q.getting_started.terminals.desc}"
 	],
 	dependencies: [
 		"e90285ae"

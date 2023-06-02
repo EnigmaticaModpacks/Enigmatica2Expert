@@ -18,7 +18,19 @@
 		uid: "72f01dd3",
 		type: "item",
 		items: [{
-			item: "industrialwires:ic2_connector 2"
+			item: "industrialwires:ic2_connector"
+		},
+		{
+			item: "industrialwires:ic2_connector 1 2"
+		},
+		{
+			item: "industrialwires:ic2_connector 1 4"
+		},
+		{
+			item: "industrialwires:ic2_connector 1 6"
+		},
+		{
+			item: "industrialwires:ic2_connector 1 8"
 		}],
 		ignore_nbt: 1b
 	},
@@ -30,7 +42,36 @@
 			tag: {
 				wireLength: 1024
 			}
+		},
+		{
+			id: "industrialwires:ic2_wire_coil",
+			Damage: 1s,
+			tag: {
+				wireLength: 1024
+			}
+		},
+		{
+			id: "industrialwires:ic2_wire_coil",
+			Damage: 2s,
+			tag: {
+				wireLength: 1024
+			}
+		},
+		{
+			id: "industrialwires:ic2_wire_coil",
+			Damage: 3s,
+			tag: {
+				wireLength: 2048
+			}
+		},
+		{
+			id: "industrialwires:ic2_wire_coil",
+			Damage: 4s,
+			tag: {
+				wireLength: 2048
+			}
 		}],
+		ignore_damage: true,
 		ignore_nbt: 1b
 	}],
 	rewards: [{

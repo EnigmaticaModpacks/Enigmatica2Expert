@@ -1,11 +1,11 @@
 {
-	title: "Crafters",
+	title: "{q.getting_started.crafters.name}",
 	icon: "extrautils2:analogcrafter",
 	x: 4.25d,
 	y: 4.1d,
 	shape: "circle",
 	text: [
-		"Blocks that can automate Crafting Table recipes."
+		"{q.getting_started.crafters.desc}"
 	],
 	dependencies: [
 		"dabc815c"

@@ -1,0 +1,10 @@
+{
+	title: "Workbench",
+	loot_size: 1,
+	rewards: [{
+		item: "engineersdecor:treated_wood_crafting_table"
+	},
+	{
+		item: "forestry:worktable"
+	}]
+}

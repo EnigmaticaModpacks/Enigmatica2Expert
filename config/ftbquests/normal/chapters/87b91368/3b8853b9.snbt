@@ -1,0 +1,27 @@
+{
+	x: -2.0d,
+	y: 5.0d,
+	text: [
+		"{q.animals.rat_upgrade_speed.desc}"
+	],
+	dependencies: [
+		"af77451b"
+	],
+	tasks: [{
+		uid: "aabd0996",
+		type: "item",
+		items: [{
+			item: "rats:rat_upgrade_speed"
+		}]
+	}],
+	rewards: [{
+		uid: "3ab6a081",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "food"
+			}
+		}
+	}]
+}

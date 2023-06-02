@@ -1,13 +1,11 @@
 {
-	title: "Tanks",
+	title: "{q.getting_started.tanks.name}",
 	icon: "enderio:block_tank",
 	x: 2.75d,
 	y: 4.1d,
 	shape: "circle",
 	text: [
-		"Tanks can hold liquids.",
-		"",
-		"Find them in HEI by typing §b##Tank"
+		"{q.getting_started.tanks.desc}"
 	],
 	dependencies: [
 		"9eaa496f"

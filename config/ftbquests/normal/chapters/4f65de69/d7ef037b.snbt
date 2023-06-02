@@ -1,11 +1,11 @@
 {
-	title: "Backpacks",
+	title: "{q.getting_started.backpacks.name}",
 	icon: "forestry:forester_bag",
 	x: 1.2d,
 	y: 4.1d,
 	shape: "circle",
 	text: [
-		"A list of bags in which items can be carried."
+		"{q.getting_started.backpacks.desc}"
 	],
 	dependencies: [
 		"18c9097c"
