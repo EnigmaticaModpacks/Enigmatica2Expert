@@ -1,5 +1,7 @@
-# v1.7.0 (2023-06-03)
+# v1.7.1 (2023-06-03)
+
 ## Mods changes
+
 ### 🟢 Added Mods
 
 Icon | Summary
@@ -24,9 +26,9 @@ Icon | Summary | Old / New
 <img src="https://media.forgecdn.net/avatars/thumbnails/86/235/30/30/636207507685344289.png"             > |                            [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles)                 | <nobr>LittleTiles_v1.5.70_mc1.12.2</nobr><br><nobr>LittleTiles_v1.5.72_mc1.12.2</nobr>
 <img src="https://media.forgecdn.net/avatars/thumbnails/159/374/30/30/636658415780463602.png"            > |                          [**CraftPresence**](https://www.curseforge.com/minecraft/mc-mods/craftpresence)               | <nobr>CraftPresence-2.0.0-rc.3+1.12.2</nobr><br><nobr>CraftPresence-2.0.5+1.12.2</nobr>
 <img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.13.10</nobr><br><nobr>zenutils-1.14.0</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/312/949/30/30/637407315722572617.png"            > |                            [**MixinBooter**](https://www.curseforge.com/minecraft/mc-mods/mixin-booter)                | <nobr>!mixinbooter-8.0</nobr><br><nobr>!mixinbooter-8.2</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/30/30/637520208754289091.png"            > |                            [**CensoredASM**](https://www.curseforge.com/minecraft/mc-mods/lolasm)                      | <nobr>censoredasm5.10</nobr><br><nobr>censoredasm5.11</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/30/30/637520208754289091.png"            > |                            [**CensoredASM**](https://www.curseforge.com/minecraft/mc-mods/lolasm)                      | <nobr>censoredasm5.10</nobr><br><nobr>censoredasm5.12</nobr>
 <img src="https://media.forgecdn.net/avatars/thumbnails/385/984/30/30/637574191414697010.png"            > |                        [**Fluidlogged API**](https://www.curseforge.com/minecraft/mc-mods/fluidlogged-api)             | <nobr>Fluidlogged-API-v2.2.2-mc1.12.2</nobr><br><nobr>Fluidlogged-API-v2.2.4-mc1.12.2</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/548/30/30/30/637882959576383371.png"             > |              [**AE2 Fluid Crafting Rework**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework)   | <nobr>Fluid Craft for AE2-2.4.21-r</nobr><br><nobr>Fluid Craft for AE2-2.4.22-r</nobr>
 -----------
 
 ## ✨ New Features
