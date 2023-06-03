@@ -141,7 +141,7 @@ ${filtered.join('\n')}`
 }*/
 
 # Total Furnace recipes registered: 958
-# Filtered by JEI blacklist: 110
+# Filtered by JEI blacklist: 109
 # Filtered manuallly (antidupe): 15
 # Filtered by oredict: 177
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
@@ -765,7 +765,7 @@ infinFurnace(utils.get("netherendingores:ore_end_modded_1", 9), utils.get("appli
 #infinFurnace(utils.get("netherendingores:ore_end_modded_1", 10), utils.get("appliedenergistics2:charged_quartz_ore", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_1", 11), utils.get("mekanism:oreblock", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_1", 12), utils.get("immersiveengineering:ore", 5, 2));
-#infinFurnace(utils.get("netherendingores:ore_end_modded_1", 14), utils.get("libvulpes:ore0", 0, 2));
+infinFurnace(utils.get("netherendingores:ore_end_modded_1", 14), utils.get("libvulpes:ore0", 0, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_1"), utils.get("thermalfoundation:ore", 4, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_2", 1), utils.get("biomesoplenty:gem_ore", 1, 2));
 infinFurnace(utils.get("netherendingores:ore_end_modded_2", 2), utils.get("biomesoplenty:gem_ore", 6, 2));
