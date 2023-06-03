@@ -1,97 +1,80 @@
-# v1.6.0 (2023-05-30)
-
+# v1.7.0 (2023-06-03)
 ## Mods changes
+### 🟢 Added Mods
+
+Icon | Summary
+----:|:-------
+<img src="https://media.forgecdn.net/avatars/thumbnails/335/4/30/30/637469511646452377.png"              > |                     [**Rats: RatN Edition**](https://www.curseforge.com/minecraft/mc-mods/rats-ratn-edition)            <sup><sub>rats-3.2.21-1.12.2.jar                           </sub></sup><br>A modification of Rats for the Rebirth of the Night (RotN) modpack.
+-----------
+
+
+### 🔴 Removed Mods
+
+Icon | Summary
+----:|:-------
+<img src="https://media.forgecdn.net/avatars/thumbnails/206/15/30/30/636953619080869513.png"             > |                                   [**Rats**](https://www.curseforge.com/minecraft/mc-mods/rats)                         <sup><sub>rats-3.2.14-1.12.2.jar                           </sub></sup><br>Adorable little pests that can be tamed and trained in combat, automation, resource gathering, cooking, and more.
+-----------
+
 ### 🟡 Updated Mods
 
 Icon | Summary | Old / New
 ----:|:--------|:---------
-<img src="https://media.forgecdn.net/avatars/thumbnails/86/235/30/30/636207507685344289.png"             > |                            [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles)                 | <nobr>LittleTiles_v1.5.68_mc1.12.2</nobr><br><nobr>LittleTiles_v1.5.70_mc1.12.2</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/812/214/30/30/638185479083687455.png"            > |             [**Mekanism Community Edition**](https://www.curseforge.com/minecraft/mc-mods/mekanism-ce)                 | <nobr>Mekanism-Community-Edition-1.12.2-9.12.5-Core</nobr><br><nobr>Mekanism-Community-Edition-1.12.2-9.12.7-Core</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/30/30/637520208754289091.png"            > |                            [**CensoredASM**](https://www.curseforge.com/minecraft/mc-mods/lolasm)                      | <nobr>censoredasm5.9</nobr><br><nobr>censoredasm5.10</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/483/123/30/30/637782695232246251.png"            > |           [**AE2 Unofficial Extended Life**](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)           | <nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.13</nobr><br><nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.14</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/548/30/30/30/637882959576383371.png"             > |              [**AE2 Fluid Crafting Rework**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework)   | <nobr>Fluid Craft for AE2-2.4.19-r</nobr><br><nobr>Fluid Craft for AE2-2.4.21-r</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/761/180/30/30/638097412031319857.png"            > | [**Mekanism Community Edition: GENERATORS**](https://www.curseforge.com/minecraft/mc-mods/mekanism-ce-generators)      | <nobr>Mekanism-Community-Edition-1.12.2-9.12.5-Generators</nobr><br><nobr>Mekanism-Community-Edition-1.12.2-9.12.7-Generators</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/10/395/30/30/635455427535754713.png"             > |                          [**OpenComputers**](https://www.curseforge.com/minecraft/mc-mods/opencomputers)               | <nobr>OpenComputers-MC1.12.2-1.8.0+9833087</nobr><br><nobr>OpenComputers-MC1.12.2-1.8.1+d9204b8</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/32/419/30/30/635880199659979425.png"             > |            [**Just Enough Resources (JER)**](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer)   | <nobr>JustEnoughResources-1.12.2-0.9.3.203</nobr><br><nobr>JustEnoughResources-1.12.2-0.9.3.203</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/86/235/30/30/636207507685344289.png"             > |                            [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles)                 | <nobr>LittleTiles_v1.5.70_mc1.12.2</nobr><br><nobr>LittleTiles_v1.5.72_mc1.12.2</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/159/374/30/30/636658415780463602.png"            > |                          [**CraftPresence**](https://www.curseforge.com/minecraft/mc-mods/craftpresence)               | <nobr>CraftPresence-2.0.0-rc.3+1.12.2</nobr><br><nobr>CraftPresence-2.0.5+1.12.2</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.13.10</nobr><br><nobr>zenutils-1.14.0</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/312/949/30/30/637407315722572617.png"            > |                            [**MixinBooter**](https://www.curseforge.com/minecraft/mc-mods/mixin-booter)                | <nobr>!mixinbooter-8.0</nobr><br><nobr>!mixinbooter-8.2</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/30/30/637520208754289091.png"            > |                            [**CensoredASM**](https://www.curseforge.com/minecraft/mc-mods/lolasm)                      | <nobr>censoredasm5.10</nobr><br><nobr>censoredasm5.11</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/385/984/30/30/637574191414697010.png"            > |                        [**Fluidlogged API**](https://www.curseforge.com/minecraft/mc-mods/fluidlogged-api)             | <nobr>Fluidlogged-API-v2.2.2-mc1.12.2</nobr><br><nobr>Fluidlogged-API-v2.2.4-mc1.12.2</nobr>
 -----------
 
 ## ✨ New Features
 
 
-#### Configs
+#### Docs
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/c966ce128b09fd0bffd33db66b99503418d3f8f9)🎺![](https://github.com/Krutoy242/mc-icons/raw/master/i/quark/trowel__0.png "Trowel") make unbreakable
-
-#### Mods
-
-* <img src="https://i.imgur.com/OfIfrWz.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5e6295a001b08e2f5d6ead104df411d9ced9ff6a)📀Make `Old Java Version` mod work again
-  > Now, if player launch game from CurseForge launcher with 7-year-old Java, they will be warned.
-  > 
-  > Implement https://github.com/Darkhax-Minecraft/OldJavaWarning/pull/9
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4e16758aec0df75376cdba191fca15eb53cfac53)🧻 HEI: Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extrautils2/analogcrafter__0.png "Analog Crafter") to `##Crafter` tag
 
 #### Quest
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/74e3ccff644657c561639745c0fb4fdbb3044ac2)📖Add quest warning about ![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/item_redstone_conduit__0.png "Redstone Conduit") + ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/fission_source__1.png "Po-Be Fission Neutron Source")
-
-#### Recipes
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/945414b02a546f7751befbb03d06b1a3ec1174f4)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/spacelaser__0.png "Orbital Laser Drill") add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermalfoundation/ore_fluid__4.png "Resonant End Stone")
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/15a272a7b67f0e9ddf78b97eb45d2d0a5555e304)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/gem__3.png "Villiaumite") add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/actuallyadditions/block_atomic_reconstructor__0.png "Atomic Reconstructor") alt recipe
-* <img src="https://i.imgur.com/Q4yeaof.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/29bf6c99b4e4dc5ca410dd50846f670f14e80f96)🦯Add `Thamic Additions` TCon materials
-  > > Contributed by [TabakaSIM](78695622+TabakaSIM@users.noreply.github.com)
-  >
-  > Added new 3 tinkers materials
+* <img src="https://i.imgur.com/n7IJG4Q.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/0e85f3937d1205904414b705654ba7a51c326d8e)📖Add Item Managment Quests
+  > +6 new small quests in "Getting Started" chapter about `Big Chests`, `Backpacks`, `Tanks`, `Crafters`, `Terminals` and `Chargers`.
   > 
-  > - 🟦 **Mithrilium** (based on aura)
-  > > - Vis Siphon (⛏️🛡️): repairs using vis in aura
-  > > - Vis Equilibrium (⛏️🛡️): increased stats based on vis in aura; relase vis on kill
-  > 
-  > - 🟥 **Adaminite** (based on player warp)
-  > > - Forbidden (⛏️): provides huge debbufs to hited enemies
-  > > - Possessed (⚔️): talking weapon
-  > > - Void shell (🛡️): increased stats based on warp
-  > > - Gaze (🛡️): gives player deadly gaze
-  > > - Porous (🛡️): makes tainted path below you on stone
-  > 
-  > - 🟪 **Mithminite** (based on player research progress)
-  > > - Researcher (⛏️): To enable those functions, player first need to finish research in thaumonomicon
-  > > - God wraith - calls 10 thunders to enemy
-  > > - Flux strike - draw flux from aura, then release it as bonus damage to enemy
-  > > - Pure smite - bonus dmg to undeads
-  > > - Ore purifier - based on refining enchant lvl drops crystalized shards
-  > > - First stand (🛡️): just like last stand enchant, but takes exp before health
-  > 
-  > Unrelated changes:
-  > - Fixed adamanite farbric entry
-  > - Fixed bath salt aspects
+  > Some related quests was removed from their respective chapters, like EU2 Indexer
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/f574fc0229cfd6c6ad3eb9b6b32738b8b94dd519)📖Misc quest improvments
+  > - Add note about ![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialwires/ic2_wire_coil__1__ac9108d8.png "Copper Wire Coil") as ingredient
+  > - Industrial Wire quest better tasks
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/aspect_combiner__0.png "Essentia Combiner") add quest with WARN
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rats/rat_upgrade_speed__0.png "Rat Upgrade: Speed") add quest
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/stone_decoration__0.png "Coke Brick") better reward
 
 ## 🐛 Fixes
 
 
-#### Mod
+#### Configs
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/22ecc56ce7bf5d1de77fddb56137b187b57dbfbd)☢️Fix `Fission Irradiator` schematic not heat stable
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ca4af051bddb1606eb3eca78d2c85bf027fd0549)🦌`Better Animals Plus` now not erroring when removed
-  > Now player groups who dont want this mod could remove it and game would not erroring on world load.
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/1916ff2a9295148460b04087028da90b172e3660)☢️buff ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/rad_x__0.png "Rad-X"): 25=>100 resist, 10=>100 min. duration
 
 #### Recipes
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/9c0dd16e3ff419cecc1521a505a4e10b850d645b)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler") fix missed ingredients
-  > Some OreDicted ingredients was missed for Assembler and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionlaseretcher__0.png "Precision Laser Etcher"), such as ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/shulker_shell__0.png "Shulker Shell").
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/af2386d179d553b0de5a0ba2c8bcb898e251f247)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advgenerators/power_capacitor_redstone__0.png "Basic Power Capacitor") now accept any NBT tag ingrs
+* <img src="https://i.imgur.com/wELSoMS.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/04e9cbdb2e6c8c0cc6207b65f774e4f3ab62d89f)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialwires/ic2_wire_coil__1__ac9108d8.png "Copper Wire Coil") add tip about required length
   > 
-  > Also, this change would tweak multiplier amount for some recipes.
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/73705e332ae54fcc9dd0c738287ee0afa06b8e76)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/block_inventory_chest_tiny__0.png "Tiny Inventory System Storage") cheaper
+  > Also ![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/block_inventory_chest_small__0.png "Small Inventory System Storage") cheaper too
+
+#### Worldgen
+
+* <img src="https://i.imgur.com/MqD3BNm.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/04d0bc15f3420954b4a428acf1d49a40214e1ee5)🌍Nether now have `Better Caves` generator
+  > This would drastically change caves generation in nether.
   > 
-  > Changed recipes for items:
-  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/draconicevolution/energy_crystal__0.png "Basic Energy Relay Crystal")![](https://github.com/Krutoy242/mc-icons/raw/master/i/draconicevolution/wyvern_core__0.png "Wyvern Core")![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/item_basic_capacitor__0.png "Basic Capacitor")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/thermionic_tubes__12.png "Ender Electron Tube")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/kit_pickaxe__0.png "Pickaxe Kit")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/kit_shovel__0.png "Shovel Kit")
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/2eb858e705336194670bd24ccfd5e400a5e0db2b)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/item_stellar_alloy_chestplate__0.png "Stellar Chestplate") fix dupe
-
-#### Server
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/2ee24c656d80efe4d903c099914ecfcf95e7fc3f)📃 Remove `Failed to find preset` log spam on OTG worlds
-  > Nothing actually fixed. I just hide this message from server logs, since when server lagging or crashing, players thinks this log spam causing issues (they actually harmless (i hope)).
+  > Actually, this change should remove the load on the server when generating Twilight Forest - for some unknown reason, Better Caves tried to generate caves in TF, even though they were disabled.
 
 ## Reverts
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/1588d0c162ddeaceeab4e84d9fb404c70274461b)Revert "fix(server): 💻Include BetterFPS into server pack"
-  > Remove BetterFPS from server pack since it caused crashes
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/3ec24b3dda5e99550365ff4ce15f9f7baff021b3)Revert "Revert "fix(server): 💻Include BetterFPS into server pack""
+  > Adding BetterFPS to server pack again 😅
 
 
 
