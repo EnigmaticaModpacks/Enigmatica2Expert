@@ -2,7 +2,7 @@
 
 ## 1.90
 
-_... and 1.90a, 1.90b, 1.90c and 1.90d_
+_... and 1.90a, 1.90b, 1.90c, 1.90d and 1.90e_
 
 _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90.md)_
 
@@ -19,7 +19,6 @@ Remember to run the commands for updating quests after updating:
 
 -   [Ender IO Endergy](https://www.curseforge.com/minecraft/mc-mods/ender-io-endergy) (by [tterrag1098](https://www.curseforge.com/members/tterrag1098/projects))
 -   [Framed Compacting Drawers](https://www.curseforge.com/minecraft/mc-mods/framed-compacting-drawers) (by [Eutro](https://www.curseforge.com/members/Eutro/projects))
--   [IC2 Patcher](https://www.curseforge.com/minecraft/mc-mods/ic2-patcher) (by [Su5eD](https://www.curseforge.com/members/Su5eD/projects))
 -   [LagGoggles](https://www.curseforge.com/minecraft/mc-mods/laggoggles) (by [Terminator_NL](https://www.curseforge.com/members/Terminator_NL/projects))
 -   [spark](https://www.curseforge.com/minecraft/mc-mods/spark) (by [Iucko](https://www.curseforge.com/members/Iucko/projects))
 
@@ -56,7 +55,6 @@ Remember to run the commands for updating quests after updating:
 
 **Fixed bugs**
 
--   Updated scripts to use Aluminum instead of Aluminium, un-breaking a few recipes
 -   Lapotron Crystals can't have 0 charge in its recipes
 -   Rock Crystal Swords are broken in its recipes
 -   Rock Crystals are broken in various recipes
