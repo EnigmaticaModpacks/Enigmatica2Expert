@@ -93,3 +93,4 @@ config/startuptimer/startup_times.json
 config/ChatFlow.dat
 config/nuclearcraft.info
 config/acronym/saved
+scripts/nc_script_addons
