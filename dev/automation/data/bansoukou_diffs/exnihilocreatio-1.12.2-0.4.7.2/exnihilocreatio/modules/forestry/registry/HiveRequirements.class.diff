@@ -1,0 +1,69 @@
+@@ -11,7 +11,6 @@
+  *  net.minecraft.item.crafting.Ingredient
+  *  net.minecraft.util.math.BlockPos
+  *  net.minecraft.world.World
+- *  net.minecraft.world.WorldProvider
+  *  net.minecraft.world.biome.Biome
+  *  org.jetbrains.annotations.NotNull
+  *  org.jetbrains.annotations.Nullable
+@@ -32,7 +31,6 @@ import net.minecraft.block.state.IBlockState;
+ import net.minecraft.item.crafting.Ingredient;
+ import net.minecraft.util.math.BlockPos;
+ import net.minecraft.world.World;
+-import net.minecraft.world.WorldProvider;
+ import net.minecraft.world.biome.Biome;
+ import org.jetbrains.annotations.NotNull;
+ import org.jetbrains.annotations.Nullable;
+@@ -62,18 +60,9 @@ public final class HiveRequirements {
+     @NotNull
+     private Map<Ingredient, Integer> nearbyBlocks;
+ 
+-    public final boolean check(@NotNull World world, @NotNull BlockPos pos) {
++    public final boolean check(World world, BlockPos pos) {
+         Intrinsics.checkParameterIsNotNull((Object)world, (String)"world");
+         Intrinsics.checkParameterIsNotNull((Object)pos, (String)"pos");
+-        if (this.dimension != null) {
+-            Integer n = this.dimension;
+-            WorldProvider worldProvider = world.field_73011_w;
+-            Intrinsics.checkExpressionValueIsNotNull((Object)worldProvider, (String)"world.provider");
+-            int n2 = worldProvider.getDimension();
+-            if (n == null || n != n2) {
+-                return false;
+-            }
+-        }
+         if (this.allowedBiomes != null) {
+             Set<Integer> set = this.allowedBiomes;
+             if (set == null) {
+@@ -107,20 +96,20 @@ public final class HiveRequirements {
+             if (req <= 0) continue;
+             return false;
+         }
+-        List<IBlockState> nearby = this.getNearbyStates(world, pos);
+-        for (Ingredient ingredient : this.nearbyBlocks.keySet()) {
+-            int req;
+-            Integer n = this.nearbyBlocks.get(ingredient);
+-            int n3 = req = n != null ? n : 0;
+-            if (this.adjacentBlocks.containsKey(ingredient)) {
+-                Integer n4 = this.adjacentBlocks.get(ingredient);
+-                req += n4 != null ? n4 : 0;
++        List<IBlockState> list = this.getNearbyStates(world, pos);
++        for (Ingredient v7 : this.nearbyBlocks.keySet()) {
++            int i9;
++            Integer n = this.nearbyBlocks.get(v7);
++            int n2 = i9 = n != null ? n : 0;
++            if (this.adjacentBlocks.containsKey(v7)) {
++                Integer n3 = this.adjacentBlocks.get(v7);
++                i9 += n3 != null ? n3 : 0;
+             }
+-            for (IBlockState state : nearby) {
+-                if (!ingredient.test((Object)new BlockInfo(state).getItemStack())) continue;
+-                --req;
++            for (IBlockState v10 : list) {
++                if (!v7.test((Object)new BlockInfo(v10).getItemStack())) continue;
++                --i9;
+             }
+-            if (req <= 0) continue;
++            if (i9 <= 0) continue;
+             return false;
+         }
+         return true;
