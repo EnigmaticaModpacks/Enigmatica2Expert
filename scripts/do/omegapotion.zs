@@ -4,6 +4,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.potions.IPotion;
 import mods.ctutils.utils.Math.sqrt;
 
 
@@ -13,7 +14,6 @@ import mods.ctutils.utils.Math.sqrt;
 .map(l=>[l['Registry name'], l['ID']])
 
 const potions = []
-const elixirNameID = new Map()
 
 getCSV('config/tellme/potiontypes-csv.csv')
 .filter(o=>o.Effects)
@@ -31,29 +31,17 @@ getCSV('config/tellme/potiontypes-csv.csv')
   potions.push(`  "${(regName+'"').padEnd(40)}: [${
     [found[1], effect.amplifier, effect.duration].map((v,i)=>v.toString().padStart(pads[i])).join(', ')
   }],`)
-
-  // Push Elixir IDs
-  elixirNameID.set(...found)
 })
 
 const blocks = [
   potions.sort((a,b)=>
     naturalSort(a.substr(44), b.substr(44))
-  ).join('\n'),
-
-  [...elixirNameID.entries()]
-  .sort(([,a], [,b])=>a-b)
-  .map(([name, id])=> `  "${(name+'"').padEnd(40)}: ${id},`)
-  .join('\n')
+  ).join('\n')
 ]
 
 return `static potNameTag as IData[string] = {
 ${blocks[0]}
-} as IData[string];
-
-static elixirNameId as int[string] = {
-${blocks[1]}
-} as int[string];`
+} as IData[string];`
 }*/
 static potNameTag as IData[string] = {
   "minecraft:swiftness"                    : [  1, 0, 3600],
@@ -330,123 +318,29 @@ static potNameTag as IData[string] = {
   "cyclicmagic:butter"                     : [150, 0, 3600],
   "cyclicmagic:butter2"                    : [150, 1, 1800],
   "cyclicmagic:saturation"                 : [152, 0, 3600],
-  "extrautils2:xu2.doom"                   : [170, 0, 1200],
-  "extrautils2:xu2.gravity"                : [171, 0, 1200],
-  "extrautils2:xu2.gravity.long"           : [171, 0, 9600],
-  "extrautils2:xu2.second.chance"          : [172, 0, 2400],
-  "extrautils2:xu2.greek.fire"             : [173, 0, 2400],
-  "extrautils2:xu2.fizzy.lifting"          : [174, 0,  600],
-  "extrautils2:xu2.relapse"                : [175, 0, 9600],
-  "extrautils2:xu2.love"                   : [176, 0,  200],
-  "extrautils2:xu2.purging"                : [177, 0,    0],
+  "extrautils2:xu2.doom"                   : [169, 0, 1200],
+  "extrautils2:xu2.gravity"                : [170, 0, 1200],
+  "extrautils2:xu2.gravity.long"           : [170, 0, 9600],
+  "extrautils2:xu2.second.chance"          : [171, 0, 2400],
+  "extrautils2:xu2.greek.fire"             : [172, 0, 2400],
+  "extrautils2:xu2.fizzy.lifting"          : [173, 0,  600],
+  "extrautils2:xu2.relapse"                : [174, 0, 9600],
+  "extrautils2:xu2.love"                   : [175, 0,  200],
+  "extrautils2:xu2.purging"                : [176, 0,    0],
 } as IData[string];
-
-static elixirNameId as int[string] = {
-  "minecraft:speed"                        : 1,
-  "minecraft:slowness"                     : 2,
-  "minecraft:haste"                        : 3,
-  "minecraft:mining_fatigue"               : 4,
-  "minecraft:strength"                     : 5,
-  "minecraft:instant_health"               : 6,
-  "minecraft:instant_damage"               : 7,
-  "minecraft:jump_boost"                   : 8,
-  "minecraft:nausea"                       : 9,
-  "minecraft:regeneration"                 : 10,
-  "minecraft:resistance"                   : 11,
-  "minecraft:fire_resistance"              : 12,
-  "minecraft:water_breathing"              : 13,
-  "minecraft:invisibility"                 : 14,
-  "minecraft:blindness"                    : 15,
-  "minecraft:night_vision"                 : 16,
-  "minecraft:hunger"                       : 17,
-  "minecraft:weakness"                     : 18,
-  "minecraft:poison"                       : 19,
-  "minecraft:wither"                       : 20,
-  "minecraft:health_boost"                 : 21,
-  "minecraft:absorption"                   : 22,
-  "minecraft:saturation"                   : 23,
-  "minecraft:glowing"                      : 24,
-  "minecraft:levitation"                   : 25,
-  "minecraft:luck"                         : 26,
-  "minecraft:unluck"                       : 27,
-  "randomthings:collapse"                  : 34,
-  "quark:resilience"                       : 94,
-  "quark:danger_sight"                     : 96,
-  "potioncore:love"                        : 97,
-  "potioncore:repair"                      : 98,
-  "potioncore:flight"                      : 99,
-  "potioncore:recoil"                      : 100,
-  "potioncore:broken_magic_shield"         : 101,
-  "potioncore:iron_skin"                   : 102,
-  "potioncore:purity"                      : 103,
-  "potioncore:reach"                       : 104,
-  "potioncore:diamond_skin"                : 105,
-  "potioncore:teleport"                    : 106,
-  "potioncore:teleport_surface"            : 107,
-  "potioncore:magic_focus"                 : 108,
-  "potioncore:cure"                        : 109,
-  "potioncore:step_up"                     : 110,
-  "potioncore:drown"                       : 111,
-  "potioncore:teleport_spawn"              : 112,
-  "potioncore:disorganization"             : 113,
-  "potioncore:climb"                       : 114,
-  "potioncore:perplexity"                  : 115,
-  "potioncore:rust"                        : 116,
-  "potioncore:vulnerable"                  : 117,
-  "potioncore:explode"                     : 118,
-  "potioncore:solid_core"                  : 119,
-  "potioncore:fire"                        : 120,
-  "potioncore:lightning"                   : 121,
-  "potioncore:magic_inhibition"            : 122,
-  "potioncore:chance"                      : 123,
-  "potioncore:invert"                      : 124,
-  "potioncore:weight"                      : 125,
-  "potioncore:launch"                      : 126,
-  "potioncore:dispel"                      : 127,
-  "potioncore:revival"                     : 128,
-  "potioncore:klutz"                       : 129,
-  "potioncore:bless"                       : 130,
-  "potioncore:broken_armor"                : 131,
-  "potioncore:magic_shield"                : 132,
-  "potioncore:slow_fall"                   : 133,
-  "potioncore:antidote"                    : 134,
-  "potioncore:spin"                        : 135,
-  "potioncore:curse"                       : 136,
-  "potioncore:burst"                       : 137,
-  "potioncore:archery"                     : 138,
-  "cyclicmagic:potion.magnet"              : 142,
-  "cyclicmagic:potion.ender"               : 143,
-  "cyclicmagic:potion.waterwalk"           : 144,
-  "cyclicmagic:potion.slowfall"            : 145,
-  "cyclicmagic:potion.snow"                : 146,
-  "cyclicmagic:potion.swimspeed"           : 147,
-  "cyclicmagic:potion.bounce"              : 148,
-  "cyclicmagic:potion.frostwalker"         : 149,
-  "cyclicmagic:potion.butter"              : 150,
-  "cyclicmagic:potion.saturation"          : 152,
-  "extrautils2:effect.xu2.doom"            : 170,
-  "extrautils2:effect.xu2.gravity"         : 171,
-  "extrautils2:effect.xu2.second.chance"   : 172,
-  "extrautils2:effect.xu2.greek.fire"      : 173,
-  "extrautils2:effect.xu2.fizzy.lifting"   : 174,
-  "extrautils2:effect.xu2.relapse"         : 175,
-  "extrautils2:effect.xu2.love"            : 176,
-  "extrautils2:effect.xu2.purging"         : 177,
-} as int[string];
 /**/
 
 
 # Convert Rustic's ElixirEffect entry into CustomPotionEffects entry (for Vanilla or BloodMagic potions)
 #  by replacing "Effect" tag to "Id"
 static convertElixir as function(IData)IData = function (elixirEffect as IData) as IData {
+  val effect = D(elixirEffect).getString("Effect");
+  if(isNull(effect)) return elixirEffect;
 
-  var newData = elixirEffect as IData;
-  var effect = D(newData).getString("Effect");
-  if(!isNull(effect) && elixirNameId has effect) {
-    newData = newData - "Effect";
-    newData = newData + {Id: elixirNameId[effect] as int} as IData;
-  }
-  return newData;
+  val potion = game.getPotion(effect);
+  if(isNull(potion)) return elixirEffect;
+
+  return elixirEffect - "Effect" + {Id: potion.numericalId} as IData;
 };
 
 
@@ -546,13 +440,13 @@ static potionFunction as IRecipeFunction = function(out, ins, cInfo) {
       if (i+1 < compoundTags.length) {
         for j in (i+1) to compoundTags.length {
           val b = compoundTags[j];
-
+          if (isNull(a.Id) || isNull(b.Id) || a.Id != b.Id) continue;
           # We found effect with same Id
-          if (a.Id == b.Id) {
-            skipIndexes = skipIndexes + j;
-            newEffect = newEffect + {Amplifier: max(a.Amplifier, b.Amplifier)} as IData;
-            newEffect = newEffect + { Duration: max(a.Duration , b.Duration )} as IData;
-          }
+          skipIndexes = skipIndexes + j;
+          newEffect = newEffect + {
+            Amplifier: max(a.Amplifier, b.Amplifier),
+            Duration : max(a.Duration , b.Duration),
+          } as IData;
         }
       }
 
