@@ -9437,10 +9437,10 @@
       {
         "itemStack": "minecraft:purpur_slab:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -9454,10 +9454,10 @@
       {
         "itemStack": "minecraft:obsidian:0",
         "fortunes": {
-          "0": 8.0,
-          "1": 8.0,
-          "2": 8.0,
-          "3": 8.0
+          "0": 8,
+          "1": 8,
+          "2": 8,
+          "3": 8
         }
       }
     ],
@@ -9477,10 +9477,10 @@
       {
         "itemStack": "minecraft:chest:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -9506,10 +9506,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"aqua\",amount:1}]}",
         "fortunes": {
-          "0": 4.0,
-          "1": 4.0,
-          "2": 4.0,
-          "3": 4.0
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4
         }
       }
     ],
@@ -9538,10 +9538,10 @@
       {
         "itemStack": "forestry:bee_princess_ge:0:{IsAnalyzed:0b,Health:60,MaxH:60,Genome:{Chromosomes:[{Slot:0b,UID0:\"forestry.speciesEnded\",UID1:\"forestry.speciesEnded\"},{Slot:1b,UID0:\"forestry.speedSlower\",UID1:\"forestry.speedSlower\"},{Slot:2b,UID0:\"forestry.lifespanLonger\",UID1:\"forestry.lifespanLonger\"},{Slot:3b,UID0:\"forestry.fertilityLow\",UID1:\"forestry.fertilityLow\"},{Slot:4b,UID0:\"forestry.toleranceUp1\",UID1:\"forestry.toleranceUp1\"},{Slot:5b,UID0:\"forestry.boolTrue\",UID1:\"forestry.boolTrue\"},{Slot:6b,UID0:\"forestry.toleranceNone\",UID1:\"forestry.toleranceNone\"},{Slot:7b,UID0:\"forestry.boolFalse\",UID1:\"forestry.boolFalse\"},{Slot:8b,UID0:\"forestry.boolFalse\",UID1:\"forestry.boolFalse\"},{Slot:9b,UID0:\"forestry.flowersEnd\",UID1:\"forestry.flowersEnd\"},{Slot:10b,UID0:\"forestry.floweringSlowest\",UID1:\"forestry.floweringSlowest\"},{Slot:11b,UID0:\"forestry.territoryLarge\",UID1:\"forestry.territoryLarge\"},{Slot:12b,UID0:\"forestry.effectMisanthrope\",UID1:\"forestry.effectMisanthrope\"}]}}",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       },
       {
@@ -9564,10 +9564,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"ignis\",amount:1}]}",
         "fortunes": {
-          "0": 4.0,
-          "1": 4.0,
-          "2": 4.0,
-          "3": 4.0
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4
         }
       }
     ],
@@ -9587,10 +9587,10 @@
       {
         "itemStack": "minecraft:purpur_stairs:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -9604,10 +9604,10 @@
       {
         "itemStack": "minecraft:end_rod:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -9621,10 +9621,10 @@
       {
         "itemStack": "minecraft:banner:13:{BlockEntityTag:{Patterns:[{Pattern:\"tt\",Color:0},{Pattern:\"bt\",Color:0}]}}",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -10687,10 +10687,10 @@
       {
         "itemStack": "biomesoplenty:crystal_shard:0",
         "fortunes": {
-          "0": 4.0,
-          "1": 4.0,
-          "2": 4.0,
-          "3": 4.0
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4
         }
       }
     ],
@@ -10704,10 +10704,10 @@
       {
         "itemStack": "minecraft:ender_pearl:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       },
       {
@@ -10759,10 +10759,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"terra\",amount:1}]}",
         "fortunes": {
-          "0": 4.0,
-          "1": 4.0,
-          "2": 4.0,
-          "3": 4.0
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4
         }
       }
     ],
@@ -10776,10 +10776,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"perditio\",amount:1}]}",
         "fortunes": {
-          "0": 2.0,
-          "1": 2.0,
-          "2": 2.0,
-          "3": 2.0
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
         }
       }
     ],
@@ -10799,10 +10799,10 @@
       {
         "itemStack": "minecraft:ladder:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -10816,7 +10816,7 @@
       {
         "itemStack": "biomesoplenty:gem:0",
         "fortunes": {
-          "0": 1.0,
+          "0": 1,
           "1": 1.3345,
           "2": 1.7446,
           "3": 2.1907
@@ -10833,7 +10833,7 @@
       {
         "itemStack": "endreborn:death_essence:0",
         "fortunes": {
-          "0": 1.0,
+          "0": 1,
           "1": 1.3345,
           "2": 1.7446,
           "3": 2.1907
@@ -10850,10 +10850,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"ordo\",amount:1}]}",
         "fortunes": {
-          "0": 3.0,
-          "1": 3.0,
-          "2": 3.0,
-          "3": 3.0
+          "0": 3,
+          "1": 3,
+          "2": 3,
+          "3": 3
         }
       }
     ],
@@ -10873,10 +10873,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"aer\",amount:1}]}",
         "fortunes": {
-          "0": 3.0,
-          "1": 3.0,
-          "2": 3.0,
-          "3": 3.0
+          "0": 3,
+          "1": 3,
+          "2": 3,
+          "3": 3
         }
       }
     ],
@@ -10902,10 +10902,10 @@
       {
         "itemStack": "endreborn:item_end_essence:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -10920,9 +10920,9 @@
         "itemStack": "endreborn:item_lormyte_crystal:0",
         "fortunes": {
           "0": 1.5,
-          "1": 3.0,
+          "1": 3,
           "2": 7.5,
-          "3": 15.0
+          "3": 15
         }
       }
     ],
@@ -39570,10 +39570,10 @@
       {
         "itemStack": "biomesoplenty:mushroom:3",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39587,10 +39587,10 @@
       {
         "itemStack": "botania:mushroom:1",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39604,10 +39604,10 @@
       {
         "itemStack": "botania:mushroom:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39621,10 +39621,10 @@
       {
         "itemStack": "botania:mushroom:3",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39638,10 +39638,10 @@
       {
         "itemStack": "botania:mushroom:2",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39678,10 +39678,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"ignis\",amount:1}]}",
         "fortunes": {
-          "0": 2.0,
-          "1": 2.0,
-          "2": 2.0,
-          "3": 2.0
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
         }
       }
     ],
@@ -39718,10 +39718,10 @@
       {
         "itemStack": "botania:mushroom:11",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39735,10 +39735,10 @@
       {
         "itemStack": "botania:mushroom:14",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39775,10 +39775,10 @@
       {
         "itemStack": "botania:mushroom:10",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39795,7 +39795,7 @@
           "0": 0.1009,
           "1": 0.1407,
           "2": 0.2475,
-          "3": 1.0
+          "3": 1
         }
       }
     ],
@@ -39815,10 +39815,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"terra\",amount:1}]}",
         "fortunes": {
-          "0": 2.0,
-          "1": 2.0,
-          "2": 2.0,
-          "3": 2.0
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
         }
       }
     ],
@@ -39841,7 +39841,7 @@
       {
         "itemStack": "minecraft:redstone:0",
         "fortunes": {
-          "0": 1.0,
+          "0": 1,
           "1": 1.4958,
           "2": 2.0072,
           "3": 2.5026
@@ -39858,10 +39858,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"perditio\",amount:1}]}",
         "fortunes": {
-          "0": 3.0,
-          "1": 3.0,
-          "2": 3.0,
-          "3": 3.0
+          "0": 3,
+          "1": 3,
+          "2": 3,
+          "3": 3
         }
       }
     ],
@@ -39892,7 +39892,7 @@
       {
         "itemStack": "minecraft:diamond:0",
         "fortunes": {
-          "0": 1.0,
+          "0": 1,
           "1": 1.3355,
           "2": 1.756,
           "3": 2.1996
@@ -39909,10 +39909,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"aer\",amount:1}]}",
         "fortunes": {
-          "0": 2.0,
-          "1": 2.0,
-          "2": 2.0,
-          "3": 2.0
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
         }
       }
     ],
@@ -39961,10 +39961,10 @@
       {
         "itemStack": "minecraft:clay_ball:0",
         "fortunes": {
-          "0": 4.0,
-          "1": 4.0,
-          "2": 4.0,
-          "3": 4.0
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4
         }
       }
     ],
@@ -39978,10 +39978,10 @@
       {
         "itemStack": "minecraft:red_mushroom:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -39995,10 +39995,10 @@
       {
         "itemStack": "minecraft:dirt:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40012,7 +40012,7 @@
       {
         "itemStack": "minecraft:coal:0",
         "fortunes": {
-          "0": 1.0,
+          "0": 1,
           "1": 1.3374,
           "2": 1.7408,
           "3": 2.2002
@@ -40047,10 +40047,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"aqua\",amount:1}]}",
         "fortunes": {
-          "0": 3.0,
-          "1": 3.0,
-          "2": 3.0,
-          "3": 3.0
+          "0": 3,
+          "1": 3,
+          "2": 3,
+          "3": 3
         }
       }
     ],
@@ -40064,7 +40064,7 @@
       {
         "itemStack": "thermalfoundation:material:895",
         "fortunes": {
-          "0": 1.0,
+          "0": 1,
           "1": 1.4991,
           "2": 2.0019,
           "3": 2.5014
@@ -40087,10 +40087,10 @@
       {
         "itemStack": "advancedrocketry:electricmushroom:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40104,10 +40104,10 @@
       {
         "itemStack": "botania:flower:4",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40121,10 +40121,10 @@
       {
         "itemStack": "minecraft:cobblestone:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40173,8 +40173,8 @@
       {
         "itemStack": "minecraft:coal:1",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
+          "0": 1,
+          "1": 1,
           "2": 1.5005,
           "3": 1.9954
         }
@@ -40246,10 +40246,10 @@
       {
         "itemStack": "botania:flower:12",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40263,10 +40263,10 @@
       {
         "itemStack": "botania:flower:13",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40292,10 +40292,10 @@
       {
         "itemStack": "thaumcraft:crystal_essence:0:{Aspects:[{key:\"ordo\",amount:1}]}",
         "fortunes": {
-          "0": 2.0,
-          "1": 2.0,
-          "2": 2.0,
-          "3": 2.0
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
         }
       }
     ],
@@ -40365,10 +40365,10 @@
       {
         "itemStack": "botania:mushroom:5",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40382,10 +40382,10 @@
       {
         "itemStack": "botania:mushroom:7",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40399,10 +40399,10 @@
       {
         "itemStack": "botania:mushroom:9",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40416,10 +40416,10 @@
       {
         "itemStack": "biomesoplenty:flower_1:3",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -40568,7 +40568,7 @@
       {
         "itemStack": "thaumcraft:primordial_pearl:1",
         "fortunes": {
-          "0": 9.0E-4,
+          "0": 0.0009,
           "1": 0.0014,
           "2": 0.001,
           "3": 0.0014
@@ -40577,10 +40577,10 @@
       {
         "itemStack": "thaumcraft:primordial_pearl:2",
         "fortunes": {
-          "0": 3.0E-4,
-          "1": 7.0E-4,
-          "2": 5.0E-4,
-          "3": 9.0E-4
+          "0": 0.0003,
+          "1": 0.0007,
+          "2": 0.0005,
+          "3": 0.0009
         }
       },
       {
@@ -41060,10 +41060,10 @@
       {
         "itemStack": "thaumcraft:slab_eldritch:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41113,10 +41113,10 @@
       {
         "itemStack": "thaumcraft:pedestal_eldritch:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41130,10 +41130,10 @@
       {
         "itemStack": "thaumcraft:stairs_ancient:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41147,10 +41147,10 @@
       {
         "itemStack": "thaumicaugmentation:stairs_ancient:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41182,10 +41182,10 @@
       {
         "itemStack": "biomesoplenty:ash:0",
         "fortunes": {
-          "0": 4.0,
-          "1": 4.0,
-          "2": 4.0,
-          "3": 4.0
+          "0": 4,
+          "1": 4,
+          "2": 4,
+          "3": 4
         }
       }
     ],
@@ -41228,10 +41228,10 @@
       {
         "itemStack": "thaumicaugmentation:slab:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41274,10 +41274,10 @@
       {
         "itemStack": "minecraft:dirt:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41291,10 +41291,10 @@
       {
         "itemStack": "minecraft:netherrack:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41314,10 +41314,10 @@
       {
         "itemStack": "biomesoplenty:dirt:2",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41361,10 +41361,10 @@
       {
         "itemStack": "biomesoplenty:dirt:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41426,10 +41426,10 @@
       {
         "itemStack": "minecraft:cobblestone:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41449,10 +41449,10 @@
       {
         "itemStack": "thaumcraft:pedestal_ancient:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41484,10 +41484,10 @@
       {
         "itemStack": "minecraft:string:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -41992,10 +41992,10 @@
       {
         "itemStack": "thaumicaugmentation:stairs_eldritch_tile:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
@@ -42009,10 +42009,10 @@
       {
         "itemStack": "thaumcraft:slab_ancient:0",
         "fortunes": {
-          "0": 1.0,
-          "1": 1.0,
-          "2": 1.0,
-          "3": 1.0
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1
         }
       }
     ],
