@@ -485,6 +485,17 @@
     "block": "biomesoplenty:double_plant:0",
     "distrib": "0,0.0;59,0.0;60,3.90625E-7;61,3.90625E-7;62,0.0;63,4.6875E-6;64,7.421875E-6;65,9.375E-6;66,1.171875E-5;67,3.0859374E-5;68,4.1796877E-5;69,3.4765624E-5;70,2.65625E-5;71,2.265625E-5;72,2.1484375E-5;73,2.03125E-5;74,2.265625E-5;75,1.8359375E-5;76,8.59375E-6;77,5.859375E-6;78,6.640625E-6;79,5.46875E-6;80,7.8125E-7;81,3.90625E-7;82,1.5625E-6;83,1.5625E-6;84,3.90625E-7;85,3.90625E-7;86,7.8125E-7;87,1.953125E-6;88,1.953125E-6;89,3.90625E-6;90,4.296875E-6;91,1.5625E-6;92,1.953125E-6;93,1.5625E-6;94,3.90625E-7;95,1.953125E-6;96,2.34375E-6;97,1.5625E-6;98,3.515625E-6;99,2.734375E-6;100,1.5625E-6;101,1.5625E-6;102,7.8125E-7;103,3.90625E-7;104,0.0;105,7.8125E-7;107,7.8125E-7;108,1.5625E-6;109,7.8125E-7;110,0.0;111,0.0;112,3.90625E-7;113,1.171875E-6;114,1.171875E-6;115,3.90625E-7;116,3.90625E-7;117,7.8125E-7;118,3.90625E-7;119,0.0;",
     "silktouch": false,
+    "dropsList": [
+      {
+        "itemStack": "minecraft:dye:12",
+        "fortunes": {
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
+        }
+      }
+    ],
     "dim": "Overworld (0)"
   },
   {
@@ -505,12 +516,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:0",
+        "itemStack": "minecraft:dye:7",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -522,12 +533,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:1",
+        "itemStack": "minecraft:dye:6",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -539,12 +550,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:11",
+        "itemStack": "minecraft:dye:1",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -556,12 +567,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:12",
+        "itemStack": "minecraft:dye:8",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -573,12 +584,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:14",
+        "itemStack": "biomesoplenty:white_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -590,12 +601,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:2",
+        "itemStack": "biomesoplenty:black_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -607,12 +618,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:3",
+        "itemStack": "minecraft:dye:6",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -624,12 +635,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:4",
+        "itemStack": "minecraft:dye:12",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -641,12 +652,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:5",
+        "itemStack": "minecraft:dye:14",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -658,12 +669,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:6",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -675,12 +686,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:7",
+        "itemStack": "minecraft:dye:13",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -692,12 +703,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:8",
+        "itemStack": "minecraft:dye:5",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -709,12 +720,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:9",
+        "itemStack": "biomesoplenty:white_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -726,12 +737,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:0",
+        "itemStack": "minecraft:dye:5",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -743,12 +754,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:1",
+        "itemStack": "minecraft:dye:11",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -760,12 +771,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:2",
+        "itemStack": "biomesoplenty:blue_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -777,12 +788,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -1413,12 +1424,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:0",
+        "itemStack": "biomesoplenty:shroompowder:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -1447,12 +1458,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:2",
+        "itemStack": "biomesoplenty:blue_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -1464,12 +1475,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -1481,12 +1492,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:4",
+        "itemStack": "biomesoplenty:brown_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -1657,12 +1668,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:plant_1:10",
+        "itemStack": "minecraft:dye:1",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -1714,12 +1725,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:plant_1:4",
+        "itemStack": "biomesoplenty:brown_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -8442,12 +8453,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:15",
+        "itemStack": "minecraft:dye:14",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -8580,12 +8591,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:0",
+        "itemStack": "biomesoplenty:shroompowder:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -8597,12 +8608,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -8614,12 +8625,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:4",
+        "itemStack": "biomesoplenty:brown_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -11043,12 +11054,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -11060,12 +11071,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -16604,12 +16615,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -16621,12 +16632,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -18601,12 +18612,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -18618,12 +18629,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -19926,12 +19937,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -19943,12 +19954,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -20758,12 +20769,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -20775,12 +20786,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -21624,12 +21635,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -21641,12 +21652,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -22525,12 +22536,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -22542,12 +22553,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -23408,12 +23419,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -23425,12 +23436,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -25428,12 +25439,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -25445,12 +25456,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -26335,12 +26346,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -26352,12 +26363,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -27327,12 +27338,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -27350,12 +27361,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -28411,12 +28422,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -28445,12 +28456,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -29262,12 +29273,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -29330,12 +29341,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -30782,12 +30793,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -30799,12 +30810,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31741,12 +31752,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:0",
+        "itemStack": "minecraft:dye:7",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31758,12 +31769,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:3",
+        "itemStack": "minecraft:dye:6",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31775,12 +31786,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:4",
+        "itemStack": "minecraft:dye:12",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31792,12 +31803,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:6",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31809,12 +31820,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:9",
+        "itemStack": "biomesoplenty:white_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31826,12 +31837,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31970,12 +31981,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:2",
+        "itemStack": "biomesoplenty:blue_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -31987,12 +31998,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -32076,12 +32087,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:plant_1:10",
+        "itemStack": "minecraft:dye:1",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -34980,12 +34991,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -34997,12 +35008,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -35732,12 +35743,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -35795,12 +35806,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -37016,12 +37027,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_0:2",
+        "itemStack": "biomesoplenty:black_dye:0",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -37033,12 +37044,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -37171,12 +37182,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -39079,12 +39090,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -39096,12 +39107,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -39568,12 +39579,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:mushroom:3",
+        "itemStack": "minecraft:dye:10",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],
@@ -40414,12 +40425,12 @@
     "silktouch": false,
     "dropsList": [
       {
-        "itemStack": "biomesoplenty:flower_1:3",
+        "itemStack": "minecraft:dye:9",
         "fortunes": {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1
+          "0": 1.5,
+          "1": 3,
+          "2": 6,
+          "3": 7.5
         }
       }
     ],

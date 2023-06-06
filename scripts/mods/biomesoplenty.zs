@@ -186,3 +186,46 @@ craft.shapeless(<storagedrawers:customtrim>, "#########", {
 craft.shapeless(<storagedrawers:customtrim>, "#########", {
   "#": <biomesoplenty:plant_1:5>, # River Cane
 });
+
+///////////////////////////////////////////////////////////////
+// Flooding drop rework
+///////////////////////////////////////////////////////////////
+// To avoid flooding inventory with tens of flower variants,
+// we make them drom their dyes and other respective results
+
+for input, output in {
+	<biomesoplenty:double_plant:0> : <minecraft:dye:12>,
+	<biomesoplenty:double_plant:1> : <biomesoplenty:brown_dye:0>,
+	<biomesoplenty:flower_0:0>     : <minecraft:dye:7>,
+	<biomesoplenty:flower_0:1>     : <minecraft:dye:6>,
+	<biomesoplenty:flower_0:2>     : <biomesoplenty:black_dye:0>,
+	<biomesoplenty:flower_0:3>     : <minecraft:dye:6>,
+	<biomesoplenty:flower_0:4>     : <minecraft:dye:12>,
+	<biomesoplenty:flower_0:5>     : <minecraft:dye:14>,
+	<biomesoplenty:flower_0:6>     : <minecraft:dye:9>,
+	<biomesoplenty:flower_0:7>     : <minecraft:dye:13>,
+	<biomesoplenty:flower_0:8>     : <minecraft:dye:5>,
+	<biomesoplenty:flower_0:9>     : <biomesoplenty:white_dye:0>,
+	<biomesoplenty:flower_0:10>    : <biomesoplenty:black_dye:0>,
+	<biomesoplenty:flower_0:11>    : <minecraft:dye:1>,
+	<biomesoplenty:flower_0:12>    : <minecraft:dye:8>,
+	<biomesoplenty:flower_0:13>    : <minecraft:dye:9>,
+	<biomesoplenty:flower_0:14>    : <biomesoplenty:white_dye:0>,
+	<biomesoplenty:flower_0:15>    : <minecraft:dye:14>,
+	<biomesoplenty:flower_1:0>     : <minecraft:dye:5>,
+	<biomesoplenty:flower_1:1>     : <minecraft:dye:11>,
+	<biomesoplenty:flower_1:2>     : <biomesoplenty:blue_dye:0>,
+	<biomesoplenty:flower_1:3>     : <minecraft:dye:9>,
+	<biomesoplenty:flower_1:4>     : <minecraft:dye:12>,
+	<biomesoplenty:flower_1:5>     : <minecraft:dye:1>,
+	<biomesoplenty:mushroom:0>     : <biomesoplenty:shroompowder:0>,
+	<biomesoplenty:mushroom:2>     : <biomesoplenty:blue_dye:0>,
+	<biomesoplenty:mushroom:3>     : <minecraft:dye:10>,
+	<biomesoplenty:mushroom:4>     : <biomesoplenty:brown_dye:0>,
+	<biomesoplenty:plant_1:4>      : <biomesoplenty:brown_dye:0>,
+	<biomesoplenty:plant_1:10>     : <minecraft:dye:1>,
+} as IItemStack[IItemStack] {
+	scripts.lib.dropt.addDrop(input, output, 1.25, 'shears;-1;-1');
+}
+
+///////////////////////////////////////////////////////////////

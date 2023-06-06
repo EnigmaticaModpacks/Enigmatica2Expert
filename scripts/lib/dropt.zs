@@ -26,18 +26,25 @@ Manually add block drops info.
 # Done!
 /**/
 
-function addDrop(block as IItemStack, drop as IItemStack) as void {
+function addDrop(block as IItemStack, drop as IItemStack, exponent as double = 1.5, tool as string = null) as void {
+  val blockStr = block.definition.id~':'~block.metadata;
+  val list = Dropt.list(blockStr.replaceAll(':','_'));
+
   val rule = Dropt.rule()
-    .matchBlocks([block.definition.id])
+    .matchBlocks([blockStr])
     .addDrop(Dropt.drop()
       .selector(Dropt.weight(1), "REQUIRED")
       .items([block])
     );
 
+  if(!isNull(tool)) {
+    rule.matchHarvester(Dropt.harvester().type("PLAYER").mainHand("BLACKLIST", [], tool));
+  }
+
   var logStr = "Modify drop; Block: "~block.definition.id ~" Drop: "~drop.definition.id~" [";
   for i in 0 to 8 {
-    val a = max(1, min(64, (pow((i as double), 1.5d) * 2.0d) as int));
-    val b = max(2, min(64, (pow((i as double), 1.5d) * 4.0d) as int));
+    val a = max(1, min(64, (pow((i as double), exponent) * 2.0) as int));
+    val b = max(2, min(64, (pow((i as double), exponent) * 4.0) as int));
     rule.addDrop(Dropt.drop()
       .selector(Dropt.weight(pow(10, i)), "EXCLUDED", i)
       .items([drop], Dropt.range(a, b))
@@ -45,6 +52,7 @@ function addDrop(block as IItemStack, drop as IItemStack) as void {
     logStr += "["~ a ~", "~b~"],";
   }
   logStr += "]";
-  Dropt.list(block.definition.id.replaceAll(':','_')).add(rule);
+
+  list.add(rule);
   utils.log(logStr);
 }
