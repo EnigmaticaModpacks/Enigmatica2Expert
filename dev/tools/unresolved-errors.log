@@ -1,2 +1,13 @@
-[main/WARN] [LoliASM]: Replacing CA Certs with an updated one...
+[main/ERROR] [Sledgehammer]: Encountered an error while getting metadata from E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\betteranimalsplus-1.12.2-9.0.1.jar
+java.io.FileNotFoundException: E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\betteranimalsplus-1.12.2-9.0.1.jar (�� ������� ����� ��������� ����)
+	at java.util.zip.ZipFile.open(Native Method) ~[?:1.8.0_352]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:228) ~[?:1.8.0_352]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:157) ~[?:1.8.0_352]
+  [...]
+[main/ERROR] [Sledgehammer]: Encountered an error while getting metadata from E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\ImmersiveEngineering-0.12-98.jar
+java.io.FileNotFoundException: E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\ImmersiveEngineering-0.12-98.jar (�� ������� ����� ��������� ����)
+	at java.util.zip.ZipFile.open(Native Method) ~[?:1.8.0_352]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:228) ~[?:1.8.0_352]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:157) ~[?:1.8.0_352]
+  [...]
 [CraftPresence/ERROR] [CraftPresence]: Unable to get "atlauncher" pack data (ignore if not using a "atlauncher" pack)
