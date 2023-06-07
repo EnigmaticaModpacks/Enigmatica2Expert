@@ -418,3 +418,7 @@ craft.remake(<botania:hourglass>, ["pretty",
   "W": <ore:petalWhite>, # Mystical White Petal
   "♥": <ore:torchRedstoneActive>, # Redstone Torch
 });
+
+# Alt recipe for magic-only space exploration
+# [Dilithium Crystal] from [Dilithium Dust]
+mods.botania.ManaInfusion.addInfusion(<libvulpes:productgem>, <ore:dustDilithium>, 10000);
