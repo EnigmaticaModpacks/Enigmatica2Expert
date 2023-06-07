@@ -1,4 +1,3 @@
-#norun
 #loader nc_preinit
 
 

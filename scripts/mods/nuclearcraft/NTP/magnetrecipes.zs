@@ -1,4 +1,3 @@
-#norun
 
 import scripts.mods.nuclearcraft.NTP.coilclasses.MagnetInfo;
 import scripts.mods.nuclearcraft.NTP.coilmagnetlist.MagnetInfoList;
@@ -14,10 +13,16 @@ import mods.nuclearcraft.AlloyFurnace;
 // <ore:ingotHSLASteel> <nuclearcraft:turbine_dynamo_coil_basemagnet> <ore:ingotHSLASteel>
 //material material material 
 
-recipes.addShaped("ntp base magnet coil", <nuclearcraft:turbine_dynamo_coil_basemagnet>*2,
-	[[<ore:ingotCopper>,<ore:ingotHSLASteel>, <ore:ingotCopper>],
-	[<ore:ingotHSLASteel>, <ore:ingotIron>, <ore:ingotHSLASteel>],
-	[<ore:ingotCopper>,<ore:ingotHSLASteel>, <ore:ingotCopper>]]); 
+# [Basic Induction Turbine Magnet] from [Iron Item Casing][+2]
+craft.remake(<nuclearcraft:turbine_dynamo_coil_basemagnet>, ["pretty",
+  "⌂ ▬ ⌂",
+  "▬ I ▬",
+  "⌂ ▬ ⌂"], {
+  "⌂": <ic2:casing:1>,       # Copper Item Casing
+  "▬": <ore:ingotHSLASteel>, # HSLA Steel Ingot
+  "I": <ic2:casing:3>,       # Iron Item Casing
+});
+
 recipes.addShaped("ntp antihydrogen coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_antihydrogenmagnet")*2,
 	[[<ore:cellAntihydrogen>,<ore:cellAntihydrogen>,<ore:cellAntihydrogen>],
 	[<ore:ingotHSLASteel>, <nuclearcraft:turbine_dynamo_coil_basemagnet>, <ore:ingotHSLASteel>],

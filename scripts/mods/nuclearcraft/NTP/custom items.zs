@@ -1,4 +1,3 @@
-#norun
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

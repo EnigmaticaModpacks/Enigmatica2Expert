@@ -1,4 +1,3 @@
-#norun
 import scripts.mods.nuclearcraft.NTP.coilclasses.ConverterInfo;
 import scripts.mods.nuclearcraft.NTP.coilconverterlist.ConverterInfoList;
 import crafttweaker.item.IIngredient;
@@ -17,10 +16,15 @@ var barared = <ore:stoneBaratol>;
 barared.add(barat);
 
 
-recipes.addShaped("ntp base Converter coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_baseconverter")*2,
-	[[<ore:blockRedstone>,<ore:ingotSilver>, <ore:blockRedstone>],
-	[<ore:ingotSilver>, <ore:ingotHSLASteel>, <ore:ingotSilver>],
-	[<ore:blockRedstone>,<ore:blockSilver>, <ore:blockRedstone>]]); 
+# [Basic Redstone Field Converter] from [HSLA Steel Ingot][+2]
+craft.remake(<nuclearcraft:turbine_dynamo_coil_baseconverter>, ["pretty",
+  "□ п □",
+  "п ▬ п",
+  "□ п □"], {
+  "□": <ore:plateElectrumFlux>, # Fluxed Electrum Plate
+  "п": <ore:plateSilver>,       # Silver Plate
+  "▬": <ore:ingotHSLASteel>,    # HSLA Steel Ingot
+});
 	
 recipes.addShaped("ntp antitritium coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_antitritiumconverter")*2,
 	[[<ore:cellAntitritium>,<ore:cellAntitritium>,<ore:cellAntitritium>],

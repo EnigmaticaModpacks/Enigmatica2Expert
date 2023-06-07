@@ -1,4 +1,3 @@
-#norun
 import scripts.mods.nuclearcraft.NTP.coilclasses.StabilizerInfo;
 import scripts.mods.nuclearcraft.NTP.coilstabilizerlist.StabilizerInfoList;
 import scripts.mods.nuclearcraft.NTP.coilclasses.LiquidStabilizerInfo;
@@ -12,10 +11,15 @@ import mods.nuclearcraft.AlloyFurnace;
 
 
 
-recipes.addShaped("ntp base stabilizer coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_basestabilizer")*2,
-	[[<ore:dustRedstone>,<ore:ingotGold>, <ore:dustRedstone>],
-	[<ore:ingotGold>, <ore:ingotHSLASteel>, <ore:ingotGold>],
-	[<ore:dustRedstone>,<ore:ingotGold>, <ore:dustRedstone>]]); 
+# [Basic Redstone Field Stabilizer] from [HSLA Steel Ingot][+2]
+craft.remake(<nuclearcraft:turbine_dynamo_coil_basestabilizer>, ["pretty",
+  "♥ ⌂ ♥",
+  "⌂ ▬ ⌂",
+  "♥ ⌂ ♥"], {
+  "♥": <ore:nuggetRedstoneAlloy>, # Redstone Alloy Nugget
+  "⌂": <ic2:casing:2>,            # Gold Item Casing
+  "▬": <ore:ingotHSLASteel>,      # HSLA Steel Ingot
+});
 	
 recipes.addShaped("ntp antideuterium coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_antideuteriumstabilizer")*2,
 	[[<ore:cellAntideuterium>,<ore:cellAntideuterium>,<ore:cellAntideuterium>],

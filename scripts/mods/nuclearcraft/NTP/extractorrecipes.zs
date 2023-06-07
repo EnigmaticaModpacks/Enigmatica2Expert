@@ -1,4 +1,3 @@
-#norun
 import scripts.mods.nuclearcraft.NTP.coilclasses.ExtractorInfo;
 import scripts.mods.nuclearcraft.NTP.coilextractorlist.ExtractorInfoList;
 import crafttweaker.item.IIngredient;
@@ -16,10 +15,16 @@ var radio = <trinity:salted_sand>;
 var radiod = <ore:blockRadioactiveEarth>;
 radiod.add(radio);
 
-recipes.addShaped("ntp base extractor coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_baseextractor")*2,
-	[[<ore:gemLapis>,<ore:ingotGold>, <ore:gemLapis>],
-	[<ore:ingotHSLASteel>, <ore:gemEmerald>, <ore:ingotHSLASteel>],
-	[<ore:ingotGold>,<ore:ingotGold>, <ore:ingotGold>]]); 
+# [Basic Energy Extractor] from [Emeradic Crystal][+3]
+craft.remake(<nuclearcraft:turbine_dynamo_coil_baseextractor>, ["pretty",
+  "□ ⌂ □",
+  "▬ * ▬",
+  "⌂ ⌂ ⌂"], {
+  "□": <ore:plateLapis>,       # Lapis Lazuli Plate
+  "⌂": <ic2:casing:2>,         # Gold Item Casing
+  "▬": <ore:ingotHSLASteel>,   # HSLA Steel Ingot
+  "*": <ore:crystalEmeraldic>, # Emeradic Crystal
+});
 	
 recipes.addShaped("ntp antihelium coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_antiheliumextractor")*2,
 	[[<ore:cellAntihelium>,<ore:cellAntihelium>,<ore:cellAntihelium>],

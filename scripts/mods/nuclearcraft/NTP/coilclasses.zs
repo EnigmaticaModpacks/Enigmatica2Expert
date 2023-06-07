@@ -1,4 +1,3 @@
-#norun
 #priority 2147483647
  
 #loader preinit nc_preinit crafttweaker

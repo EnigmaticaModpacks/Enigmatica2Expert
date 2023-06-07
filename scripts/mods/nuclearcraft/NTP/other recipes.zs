@@ -1,12 +1,8 @@
-#norun
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
-import mods.nuclearcraft.Infuser;
-import mods.nuclearcraft.Enricher;
-import mods.nuclearcraft.AlloyFurnace;
 
 //elektron
-AlloyFurnace.addRecipe(<ore:ingotMagnesium26>, <ore:ingotCobalt60>, <contenttweaker:elektron60_ingot>*4);
+mods.nuclearcraft.AlloyFurnace.addRecipe(<ore:ingotMagnesium26>, <ore:ingotCobalt60>, <contenttweaker:elektron60_ingot>*4);
 //recipes.addShapeless("elektron2block",<contenttweaker:elektron60_block>,[<ore:ingotElektron60>*9]);
 recipes.addShapeless("block2elektron",<contenttweaker:elektron60_ingot>*9,[<ore:blockElektron60>]);
 var blocked = <ore:ingotElektron60>;
@@ -17,10 +13,9 @@ recipes.addShaped("elektron2blockshape", <contenttweaker:elektron60_block>,
 
 
 // SiC-SiC CMC Recipes
-Enricher.addRecipe(<ore:ingotSiliconCarbide>, <liquid:hydrogen>*1000, <liquid:sic_vapor>*1000);
-Infuser.addRecipe(<nuclearcraft:alloy:13>, <liquid:sic_vapor>*1000, <ore:fiberSiliconCarbide>);
-
-AlloyFurnace.addRecipe(<ore:fiberSiliconCarbide>*8, <ore:ingotExtreme>, <ore:ingotSiCSiCCMC>, 2.0, 4.0, 0.0);
+// mods.nuclearcraft.Enricher.addRecipe(<ore:ingotSiliconCarbide>, <liquid:hydrogen>*1000, <liquid:sic_vapor>*1000);
+// mods.nuclearcraft.Infuser.addRecipe(<nuclearcraft:alloy:13>, <liquid:sic_vapor>*1000, <ore:fiberSiliconCarbide>);
+// mods.nuclearcraft.AlloyFurnace.addRecipe(<ore:fiberSiliconCarbide>*8, <ore:ingotExtreme>, <ore:ingotSiCSiCCMC>, 2.0, 4.0, 0.0);
 
 //ultra light
 		recipes.addShaped("ncoutobladecore",<contenttweaker:blade_core>, 
