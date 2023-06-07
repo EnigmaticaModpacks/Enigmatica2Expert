@@ -344,15 +344,21 @@ for i,list in mekTiers {
 		"A _ A"]);
 }
 
-# Mekanism Fusion Reactor
-recipes.remove(<mekanismgenerators:reactor>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <mekanismgenerators:reactor>, [
-	[<ore:plateElite>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <advancedrocketry:blocklens>, <ore:plateElite>], 
-	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
-	[<qmd:particle_chamber_detector:3>, <advancedrocketry:intake>, <nuclearcraft:salt_fission_controller>, <advancedrocketry:intake>, <qmd:particle_chamber_detector:3>], 
-	[<mekanismgenerators:reactor:2>, <ic2:iridium_reflector>, <mekanism:gastank>.withTag({tier: 3}), <ic2:iridium_reflector>, <mekanismgenerators:reactor:2>], 
-	[<ore:plateElite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <nuclearcraft:lithium_ion_battery_elite>, <ore:plateElite>]
-]);
+# [Reactor Controller] from [Nuclear Reactor][+6]
+craft.remake(<mekanismgenerators:reactor>, ["pretty",
+  "□ B B B □",
+  "⌂ I п I ⌂",
+  "a п N п a",
+  "⌂ I п I ⌂",
+  "□ B B B □"], {
+  "□": <ore:plateTitaniumAluminide>, # Titanium Aluminide Plate
+  "B": <nuclearcraft:lithium_ion_battery_basic>.withTag({energyStorage: {capacity: 32000000 as long, energy: 0 as long}}, false), # Basic Lithium Ion Battery
+  "⌂": <mekanism:basicblock:8>,      # Steel Casing
+  "I": <ic2:iridium_reflector>,      # Iridium Neutron Reflector
+  "п": <tconstruct:large_plate>.withTag({Material: "osgloglas"}), # Osgloglas Large Plate
+  "a": <ore:processorBasic>,         # Basic Processor
+  "N": <ic2:te:22>,                  # Nuclear Reactor
+});
 
 val upgrIngrs = {
   "A": <ore:alloyAdvanced>,    # Enriched Alloy
@@ -471,7 +477,7 @@ craft.remake(<mekanismgenerators:generator:7>, ["pretty",
 });
 
 # [Turbine Casing]*6 from [Steel Casing][+2]
-craft.remake(<mekanismgenerators:generator:10> * 6, ["pretty",
+craft.remake(<mekanismgenerators:generator:10> * 64, ["pretty",
   "◙ H ◙",
   "H ⌂ H",
   "◙ H ◙"], {
