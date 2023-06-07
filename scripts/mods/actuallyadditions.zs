@@ -587,7 +587,7 @@ scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",
 
 # [Advanced Coil] from [Aluminum Ingot*2][+3]
 scripts.processUtils.avdRockXmlRecipeEx("PrecisionAssembler",
-	[<ore:stickWood> * 60, <ore:ingotGold> * 12, <ore:ingotAluminium> * 24, <ore:ingotFakeIron> * 24,], null,
+	[<forestry:oak_stick> * 60, <ore:ingotGold> * 12, <ore:ingotAluminium> * 24, <ore:ingotFakeIron> * 24,], null,
 	[<actuallyadditions:item_misc:8> * 12], null, {power: 140000, timeRequired: 40}
 );
 

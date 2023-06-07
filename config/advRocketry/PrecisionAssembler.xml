@@ -279,7 +279,7 @@
 	<!-- [Advanced Coil] -->
 	<Recipe timeRequired="40" power="140000">
 		<input>
-			<oreDict>stickWood 60</oreDict>
+			<itemStack>forestry:oak_stick 60</itemStack>
 			<oreDict>ingotGold 12</oreDict>
 			<oreDict>ingotAluminium 24</oreDict>
 			<oreDict>ingotFakeIron 24</oreDict>
@@ -1027,39 +1027,6 @@
 	<Recipe timeRequired="80" power="320000">
 		<input>
 			<oreDict>logWood 64</oreDict>
-			<fluidStack>oliveoil 4000</fluidStack>
-		</input>
-		<output>
-			<itemStack>forestry:impregnated_casing 16 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Impregnated Casing] -->
-	<Recipe timeRequired="80" power="320000">
-		<input>
-			<oreDict>logWood 64</oreDict>
-			<fluidStack>oliveoil 4000</fluidStack>
-		</input>
-		<output>
-			<itemStack>forestry:impregnated_casing 16 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Impregnated Casing] -->
-	<Recipe timeRequired="80" power="320000">
-		<input>
-			<oreDict>logWood 64</oreDict>
-			<fluidStack>seed.oil 4000</fluidStack>
-		</input>
-		<output>
-			<itemStack>forestry:impregnated_casing 16 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Impregnated Casing] -->
-	<Recipe timeRequired="80" power="320000">
-		<input>
-			<oreDict>logWood 64</oreDict>
 			<fluidStack>seed.oil 4000</fluidStack>
 		</input>
 		<output>
@@ -1072,28 +1039,6 @@
 		<input>
 			<oreDict>logWood 32</oreDict>
 			<fluidStack>oliveoil 3200</fluidStack>
-		</input>
-		<output>
-			<itemStack>forestry:oak_stick 64 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Impregnated Stick] -->
-	<Recipe timeRequired="160" power="640000">
-		<input>
-			<oreDict>logWood 32</oreDict>
-			<fluidStack>seed.oil 3200</fluidStack>
-		</input>
-		<output>
-			<itemStack>forestry:oak_stick 64 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Impregnated Stick] -->
-	<Recipe timeRequired="160" power="640000">
-		<input>
-			<oreDict>logWood 32</oreDict>
-			<fluidStack>seed.oil 3200</fluidStack>
 		</input>
 		<output>
 			<itemStack>forestry:oak_stick 64 0</itemStack>
@@ -1166,17 +1111,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Shovel Kit] -->
-	<Recipe timeRequired="320" power="1280000">
-		<input>
-			<oreDict>ingotBronze 64</oreDict>
-			<oreDict>stick 64</oreDict>
-		</input>
-		<output>
-			<itemStack>forestry:kit_shovel 64 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Woven Silk] -->
 	<Recipe timeRequired="60" power="240000">
 		<input>
@@ -1195,26 +1129,6 @@
 		</input>
 		<output>
 			<itemStack>actuallyadditions:block_misc 64 6</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Bronze Ingot] -->
-	<Recipe timeRequired="160" power="640000">
-		<input>
-			<itemStack>forestry:broken_bronze_pickaxe 32</itemStack>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 64 163</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Bronze Ingot] -->
-	<Recipe timeRequired="320" power="1280000">
-		<input>
-			<itemStack>forestry:broken_bronze_shovel 64</itemStack>
-		</input>
-		<output>
-			<itemStack>thermalfoundation:material 64 163</itemStack>
 		</output>
 	</Recipe>
 </Recipes>

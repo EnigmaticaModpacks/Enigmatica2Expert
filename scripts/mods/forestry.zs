@@ -210,12 +210,12 @@ for name in bagNames {
 # Use OreDict recipe for impregnated stick
 mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>);
 scripts.mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
-scripts.mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
+        mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
 
 # Use OreDict recipe for Impregnated Casing
 val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
-scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
+        mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
 scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
 
 # Proven Frames recycling
