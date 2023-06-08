@@ -1,0 +1,53 @@
+@@ -10,9 +10,12 @@
+ package jeresources.registry;
+ 
+ import java.util.ArrayList;
++import java.util.Comparator;
+ import java.util.HashMap;
+ import java.util.List;
+ import java.util.Map;
++import java.util.regex.Matcher;
++import java.util.regex.Pattern;
+ import jeresources.api.drop.LootDrop;
+ import jeresources.entry.WorldGenEntry;
+ import jeresources.util.MapKeys;
+@@ -49,7 +52,38 @@ public class WorldGenRegistry {
+     }
+ 
+     public List<WorldGenEntry> getWorldGen() {
+-        return new ArrayList<WorldGenEntry>(this.worldGenMap.values());
++        ArrayList<WorldGenEntry> unsorted = new ArrayList<WorldGenEntry>(this.worldGenMap.values());
++        String regex = "\\((-?\\d+)\\)";
++        final Pattern pattern = Pattern.compile("\\((-?\\d+)\\)", 8);
++        class R {
++            R() {
++            }
++
++            int r(WorldGenEntry d) {
++                String restrict = d.getRestriction().getDimensionRestriction();
++                Matcher matcher = pattern.matcher(restrict);
++                if (matcher.find()) {
++                    return Math.abs(Integer.parseInt(matcher.group(1)));
++                }
++                return 10000;
++            }
++        }
++        final R R = new R();
++        System.out.println("sorting jer worldgen entries by absolute value of dim id");
++        unsorted.sort(new Comparator<WorldGenEntry>(){
++            {
++            }
++
++            @Override
++            public int compare(WorldGenEntry o1, WorldGenEntry o2) {
++                int diff = R.r(o1) - R.r(o2);
++                if (diff != 0) {
++                    return diff;
++                }
++                return o1.toString().compareTo(o2.toString());
++            }
++        });
++        return unsorted;
+     }
+ 
+     public void clear() {
