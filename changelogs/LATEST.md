@@ -1,23 +1,11 @@
-# v1.8.0 (2023-06-08)
+# v1.9.0 (2023-06-14)
 
 ## Mods changes
-
-### 🔴 Removed Mods
-
-Icon | Summary
-----:|:-------
-<img src="https://media.forgecdn.net/avatars/thumbnails/33/253/30/30/635892752942054834.png"             > |         [**Default World Generator (port)**](https://www.curseforge.com/minecraft/mc-mods/default-world-generator-port) <sup><sub>DefaultWorldGenerator-port-1.12-2.3.jar          </sub></sup><br>Change the Default World Generator for both clients and servers!
------------
-
 ### 🟡 Updated Mods
 
 Icon | Summary | Old / New
 ----:|:--------|:---------
-<img src="https://media.forgecdn.net/avatars/thumbnails/10/395/30/30/635455427535754713.png"             > |                          [**OpenComputers**](https://www.curseforge.com/minecraft/mc-mods/opencomputers)               | <nobr>OpenComputers-MC1.12.2-1.8.1+d9204b8</nobr><br><nobr>OpenComputers-MC1.12.2-1.8.2+b4abbf9</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/142/108/30/30/636546700830987709.png"            > |                           [**CraftTweaker**](https://www.curseforge.com/minecraft/mc-mods/crafttweaker)                | <nobr>CraftTweaker2-1.12-4.1.20.688</nobr><br><nobr>CraftTweaker2-1.12-4.1.20.689</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.14.0</nobr><br><nobr>zenutils-1.14.1</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/358/827/30/30/637520208754289091.png"            > |                            [**CensoredASM**](https://www.curseforge.com/minecraft/mc-mods/lolasm)                      | <nobr>censoredasm5.12</nobr><br><nobr>censoredasm5.8</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/468/506/30/30/637752171904887013.jpeg"           > |                       [**Had Enough Items**](https://www.curseforge.com/minecraft/mc-mods/had-enough-items)            | <nobr>HadEnoughItems_1.12.2-4.24.7</nobr><br><nobr>HadEnoughItems_1.12.2-4.25.0</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/159/374/30/30/636658415780463602.png"            > |                          [**CraftPresence**](https://www.curseforge.com/minecraft/mc-mods/craftpresence)               | <nobr>CraftPresence-2.0.5+1.12.2</nobr><br><nobr>CraftPresence-2.0.7+1.12.2</nobr>
 -----------
 
 ## ✨ New Features
@@ -25,54 +13,43 @@ Icon | Summary | Old / New
 
 #### Docs
 
-* <img src="https://i.imgur.com/1Tezj4e.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/c2e38f936ebf0f1a41da25ed2485c2cd35b401fa)🧻Sort `Just Enough Resources` entries by dim ID
-  > This would make easier to find ores without scrolling pages
-  > 
-  > Contribution by https://github.com/git-confused
-
-#### Gear
-
-* <img src="https://i.imgur.com/u0Bshhi.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/8b49e5ca415a86a566a21de6918ba2ddeeb98365)🎨Add textures to custom Thaumic Adds. materials
-  > 
-
-#### Recipes
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/192ffaf7210790dafe56fd658e40d236c83f45a5)✏️add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/libvulpes/productdust__0.png "material.Dilithium.name Dust")=>![](https://github.com/Krutoy242/mc-icons/raw/master/i/libvulpes/productgem__0.png "material.Dilithium.name Crystal") magic recipe
-* <img src="https://i.imgur.com/DtYL1Xb.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/03763acd03e7da90df6a2f8d9b4f311a92b2fd8d)✏️add `New Turbine Parts` NC:O addon
-  > This addon would add plenty of new turbine Coils, Magnets and other stuff
-  > 
-  > https://www.curseforge.com/minecraft/customization/nuclearcraft-overhauled-unrealistic-turbine
-* <img src="https://i.imgur.com/pafY53K.gif" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/28c793391427e1e61868ccde07e00a194f6764fa)🌷BoP plants now drop respective dyes
-  > This will keep the inventory clean without cluttering it up.
-
-## 🐛 Fixes
-
-
-#### Docs
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/3944439467a4581022a031ce7b11c099301aad1c)🧻[Lormite] drop shown correct in JER tab
+* <img src="https://i.imgur.com/kVgP3s7.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4316f26751f1f91fe009fa2565b07e36a706a060)💒Add `Salt Reactor` shematica
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/e5ec6d66b2113612b4f59f297a48d3ca62f721f8)🧻Fix `Mineralis` generating ![](https://github.com/Krutoy242/mc-icons/raw/master/i/appliedenergistics2/charged_quartz_ore__0.png "Charged Certus Quartz Ore")
+  > It was show in HEI non-charged variant
 
 #### Quest
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/c90c2d88e16f7df3e0ee453898429f18c7ea9608)📖[Transmuters Stone] add note about other materials
-  > > Works not only Ore, but also with Nugget, Block, Ingot, Gem, Dust.
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/dec22977b516aa6f83b8538f52398502570ab2ac)📖Orechid fix typo in quest desc.
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ca8c1dfe0fbc9bb8a1983c38767af7b33d5d7b29)📖Add [Trinitite-covered Sand] quest tasks
+
+#### Worldgen
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/0c9710fd6f371b5fe8f4c6587a909613a766b9d1)🌍Pechs now spawn in `Twilight Forest`
+  > 1 Pech / player
+
+## 🐛 Fixes
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/33cd709541aea7be6468d983685e9c7a0b46d2d8)🦯Thaumic addtion fixes
+  > > Contributed by [TabakaSIM](78695622+TabakaSIM@users.noreply.github.com)
+  >
+  > - fixed mithminite fluid name
+  > - fixed missing entries to bookWithAllKnowledge
+  > - fixed crash when crafting mithminite tools with "researcher trait"
+  > - fixed missing checking of offhand in mithninite loot stealer subtrait
+  > - added missing mithrillium, adaminite, mithminite fluids melt and cast recipes
+  > - added missing translation to thaumonomicon entries (RU)
+  > - fixed script in ore purifier trait
+  > - fixed crash when creating mithminite tool
+  > - fixed some of Botania items (not having mana aspect)
 
 #### Recipes
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/dd39dacbba665184823fb02f1457bd9092ca306f)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler") fix conflicts
-  > Fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/actuallyadditions/item_misc__8.png "Advanced Coil")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/impregnated_casing__0.png "Impregnated Casing")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/oak_stick__0.png "Impregnated Stick") craft wrong recipes if inputs inserted in wrong order
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/67ce525c5a60990eff194e5b9b1ed9c908dcf4cb)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/mekanismgenerators/reactor__0.png "Reactor Controller") and [Turbine Casing] way cheaper
-  > Since Mek reactor & turbine was significantly nerfed, recipes should be cheaper now
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/f550a8c0f5235a3a9fef2e64211e9a4c94f3eede)✏️remove ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/plate__0.png "Brass Plate") => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumcraft/ingot__0.png "Thaumium Ingot")
-  > In ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermalexpansion/machine__3__45e2e59d.png "Induction Smelter (Basic)").
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/1f6c763f52273225a86be102b010821ed11c77f3)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/lathe__0.png "Lathe") remove ![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/cable__0__e4beb197.png "Copper Cable") recipe since not work
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5f9b5fd679e20622bf3b15e17e61d36edbe43a60)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler") fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/impregnated_casing__0.png "Impregnated Casing") ingrs
+  > Now it require ![](https://github.com/Krutoy242/mc-icons/raw/master/i/additionalcompression/logwood_compressed__0.png "Single Compressed Wood") instead of wood logs
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/54473cd1714c3487927b439e75adcc5a5c4ef90b)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler") lower output to avoid 32+ bucks
+  > Some recipes required reconstruction of multiblock.
   > 
-  > This recipe was added by MIA. Also removed other minor compat recipes between Thaumcraft and Thermal Expansion.
-
-#### Skyblock
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/fd50a62695531b42a99d146af5db8fb69c31d193)🐝Fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/exnihilocreatio/hive__1.png "Scented Hive") not working in skyblock
-  > Now Scented Hives works in every dimension
+  > - ![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal_device1__13.png "Garden Cloche")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/habitat_screen__0.png "Habitat Screen")![](https://github.com/Krutoy242/mc-icons/raw/master/i/ic2/upgrade__0__da03c3a.png "Overclocker Upgrade")![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/hardened_machine__0.png "Hardened Casing")
 
 
 
