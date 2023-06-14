@@ -1024,13 +1024,24 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Impregnated Casing] -->
-	<Recipe timeRequired="80" power="320000">
+	<Recipe timeRequired="320" power="1280000">
 		<input>
-			<oreDict>logWood 64</oreDict>
-			<fluidStack>seed.oil 4000</fluidStack>
+			<oreDict>compressedLogWood1x 64</oreDict>
+			<fluidStack>oliveoil 16000</fluidStack>
 		</input>
 		<output>
-			<itemStack>forestry:impregnated_casing 16 0</itemStack>
+			<itemStack>forestry:impregnated_casing 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Casing] -->
+	<Recipe timeRequired="320" power="1280000">
+		<input>
+			<oreDict>compressedLogWood1x 64</oreDict>
+			<fluidStack>seed.oil 16000</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:impregnated_casing 64 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -1039,6 +1050,17 @@
 		<input>
 			<oreDict>logWood 32</oreDict>
 			<fluidStack>oliveoil 3200</fluidStack>
+		</input>
+		<output>
+			<itemStack>forestry:oak_stick 64 0</itemStack>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Impregnated Stick] -->
+	<Recipe timeRequired="160" power="640000">
+		<input>
+			<oreDict>logWood 32</oreDict>
+			<fluidStack>seed.oil 3200</fluidStack>
 		</input>
 		<output>
 			<itemStack>forestry:oak_stick 64 0</itemStack>

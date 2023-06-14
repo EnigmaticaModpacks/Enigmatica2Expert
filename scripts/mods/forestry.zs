@@ -207,16 +207,20 @@ for name in bagNames {
 	]);
 }
 
-# Use OreDict recipe for impregnated stick
 mods.forestry.Carpenter.removeRecipe(<forestry:oak_stick>);
-scripts.mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:oliveoil> * 100);
-        mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, <liquid:seed.oil> * 100);
-
-# Use OreDict recipe for Impregnated Casing
-val imprCasingGrid = Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped();
 mods.forestry.Carpenter.removeRecipe(<forestry:impregnated_casing>);
-        mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:oliveoil> * 250);
-scripts.mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid, 40, <liquid:seed.oil> * 250);
+for oil in [<liquid:oliveoil>, <liquid:seed.oil>] as ILiquidStack[] {
+  # Use OreDict recipe for impregnated stick
+  scripts.mods.forestry.Carpenter.addRecipe(<forestry:oak_stick> * 2, [[<ore:logWood>],[<ore:logWood>]], 40, oil * 100);
+
+  # Use OreDict recipe for Impregnated Casing
+  mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>,
+    Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped(), 40, oil * 250
+  );
+  scripts.processUtils.avdRockXmlRecipeFlatten("PrecisionAssembler",
+    <forestry:impregnated_casing>, [[<ore:compressedLogWood1x>]], oil * 250
+  );
+}
 
 # Proven Frames recycling
 # [Impregnated Stick]*16 from [Proven Frame]
