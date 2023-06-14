@@ -79,7 +79,9 @@ val mineralisList = [
   .filter(([od])=>isODExist(od))
   .sort(([,a],[,b])=>b-a)
   let max = _.max(list.map(([,a])=>a))
-  return list.map(([od,w])=>`  ${$('ore', od, 0, Math.max(1,(w/max*64)|0), null, '.firstItem')},`)
+  return list.map(([od,w])=>`  ${
+    $('ore', od.replace('oreCertusQuartz', 'oreChargedCertusQuartz'), 0, Math.max(1,(w/max*64)|0), null, '.firstItem')
+  },`)
 }*/
   <ore:oreCoal>.firstItem * 64,
   <ore:oreTin>.firstItem * 18,
@@ -96,7 +98,7 @@ val mineralisList = [
   <ore:oreThorium>.firstItem * 7,
   <ore:oreGold>.firstItem * 6,
   <ore:oreUranium>.firstItem * 6,
-  <ore:oreCertusQuartz>.firstItem * 6,
+  <ore:oreChargedCertusQuartz>.firstItem * 6,
   <ore:oreNickel>.firstItem * 3,
   <ore:oreDiamond>.firstItem * 2,
   <ore:oreSilver>.firstItem * 2,
