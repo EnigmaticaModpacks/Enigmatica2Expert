@@ -2,17 +2,12 @@
 
 List of priorities:
 
-- [ ] ✏️ Spawn Pechs in TF
-- [ ] 🔄 disable Caves In TF
-- [ ] 📖 addSaltReactorSchematic
-- [ ] 📖 Describe Skyblock quests
-- [ ] 📖 Add Radioactive Sand tip
+- [ ] 📖 addNoteAboutLiquidHeliumCooler
 - [ ] 📖 Add Info about Void Beacon https://t.ly/46Fm
 - [ ] 🌍 Alien Forest add JER data
-- [ ] ✏️ `Burnt in fluid` fix accept any meta
 - [ ] 💥 going Between Dims Causing Client Freezez / memory leak
 - [ ] 🔄 Disable Skeletons on horses since they cause random explosions
-- [ ] 🌍 Remove common blocks from JER planets if they appear in Overworld. For example, we dont need 20 pages of Iron Ore for each planet
+- [ ] 🔴 Remove `Animania`
 
 ---
 
@@ -22,6 +17,8 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ `Burnt in fluid` fix accept any meta
+- [ ] 📖 Describe Skyblock quests
 - [ ] 📀 Rustic's barrel make as x4 chests but without GUI or change somehow else to make more fun.
 - [ ] ✏️ Add recipes of throwing items into Ratlantis portal
 - [ ] 💥 Remove Bansoukou patches that makes unable to run game from first time. This happens not always.
