@@ -395,7 +395,7 @@
   "servertabinfo": "1.2.6",
   "danknull": "1.7.101",
   "lootcapacitortooltips": "1.3",
-  "craftpresence": "2.0.5",
+  "craftpresence": "2.0.7",
   "warptheory": "0.0.3.2",
   "ynot": "0.2.4",
   "ic2cropplugin": "1.1",

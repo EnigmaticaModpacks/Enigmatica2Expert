@@ -251,7 +251,7 @@
     {"projectID":295736,"fileID":2683370,"required":true,"___name":"MemoryTester"},
     {"projectID":295910,"fileID":3010622,"required":true,"___name":"Integrated Terminals"},
     {"projectID":296676,"fileID":2937109,"required":true,"___name":"Culinary Construct (Forge/Fabric/Quilt)"},
-    {"projectID":297038,"fileID":4564843,"required":true,"___name":"CraftPresence"},
+    {"projectID":297038,"fileID":4574214,"required":true,"___name":"CraftPresence"},
     {"projectID":297363,"fileID":2672239,"required":true,"___name":"Biome Border Viewer"},
     {"projectID":298187,"fileID":3005950,"required":true,"___name":"Building Gadgets"},
     {"projectID":298747,"fileID":2677608,"required":true,"___name":"Tree Tweaker"},
