@@ -1,7 +1,8 @@
 {
 	title: "{q.nuclearcraft_overh.thermonuclear_bomb.name}",
-	x: 6.7d,
-	y: 15.2d,
+	icon: "trinity:thermonuclear_core_pu239",
+	x: 7.9d,
+	y: 13.7d,
 	text: [
 		"{q.nuclearcraft_overh.thermonuclear_bomb.desc}"
 	],
@@ -15,6 +16,33 @@
 			item: "trinity:thermonuclear_core_pu239"
 		}],
 		count: 3L
+	},
+	{
+		uid: "3addb877",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_block"
+		}],
+		count: 12L
+	},
+	{
+		uid: "ef74f63a",
+		type: "item",
+		items: [{
+			item: "trinity:trinitite_shard"
+		},
+		{
+			item: "trinity:salted_sand"
+		},
+		{
+			item: "trinity:salted_sand2"
+		},
+		{
+			item: "trinity:radioactive_earth"
+		},
+		{
+			item: "trinity:radioactive_earth2"
+		}]
 	}],
 	rewards: [{
 		uid: "3cd011ec",
@@ -25,5 +53,11 @@
 				type: "uncommon"
 			}
 		}
+	},
+	{
+		uid: "0d0f3f19",
+		type: "item",
+		item: "trinity:radioactive_earth",
+		count: 10
 	}]
 }
