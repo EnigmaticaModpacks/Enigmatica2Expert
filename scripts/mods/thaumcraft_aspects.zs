@@ -15,9 +15,10 @@ import thaumcraft.aspect.CTAspectStack;
 
 /*
 #######################################################
-
-Actually additions
-
+____ ____ ___ _  _ ____ _    _    _   _    ____ ___  ___  _ ___ _ ____ _  _ ____ 
+|__| |     |  |  | |__| |    |     \_/     |__| |  \ |  \ |  |  | |  | |\ | [__  
+|  | |___  |  |__| |  | |___ |___   |      |  | |__/ |__/ |  |  | |__| | \| ___] 
+                                                                                 
 #######################################################
 */
 
@@ -26,9 +27,10 @@ Actually additions
 
 /*
 #######################################################
-
-Animania
-
+____ _  _ _ _  _ ____ _  _ _ ____ 
+|__| |\ | | |\/| |__| |\ | | |__| 
+|  | | \| | |  | |  | | \| | |  | 
+                                  
 #######################################################
 */
 
@@ -312,9 +314,10 @@ Animania
 
 /*
 #######################################################
-
-Animus
-
+____ _  _ _ _  _ _  _ ____ 
+|__| |\ | | |\/| |  | [__  
+|  | | \| | |  | |__| ___] 
+                           
 #######################################################
 */
 
@@ -334,9 +337,10 @@ Animus
 
 /*
 #######################################################
-
-Applied energetics
-
+____ ___  ___  _    _ ____ ___     ____ _  _ ____ ____ ____ ____ ___ _ ____ ____ 
+|__| |__] |__] |    | |___ |  \    |___ |\ | |___ |__/ | __ |___  |  | |    [__  
+|  | |    |    |___ | |___ |__/    |___ | \| |___ |  \ |__] |___  |  | |___ ___] 
+                                                                                 
 #######################################################
 */
 
@@ -348,9 +352,10 @@ Applied energetics
 
 /*
 #######################################################
-
-Astral sorcery
-
+____ ____ ___ ____ ____ _       ____ ____ ____ ____ ____ ____ _   _ 
+|__| [__   |  |__/ |__| |       [__  |  | |__/ |    |___ |__/  \_/  
+|  | ___]  |  |  \ |  | |___    ___] |__| |  \ |___ |___ |  \   |   
+                                                                    
 #######################################################
 */
 
@@ -434,9 +439,10 @@ Astral sorcery
 
 /*
 #######################################################
-
-Bloodmagic
-
+___  _    ____ ____ ___  _  _ ____ ____ _ ____ 
+|__] |    |  | |  | |  \ |\/| |__| | __ | |    
+|__] |___ |__| |__| |__/ |  | |  | |__] | |___ 
+                                               
 #######################################################
 */
 
@@ -558,12 +564,14 @@ Bloodmagic
 
 /*
 #######################################################
-
-Botania
-
+___  ____ ___ ____ _  _ _ ____ 
+|__] |  |  |  |__| |\ | | |__| 
+|__] |__|  |  |  | | \| | |  | 
+                               
 #######################################################
 */
 
+#Random
 <botania:manaresource>                          .setAspects(<aspect:metallum>*10  ,<aspect:mana>*5); #manasteel
 <botania:manaresource:1>                        .setAspects(<aspect:alienis>*10   ,<aspect:motus>*5           ,<aspect:mana>*10); #manapearl
 <botania:manaresource:2>                        .setAspects(<aspect:vitreus>*15   ,<aspect:desiderium>*15     ,<aspect:mana>*10); #manadiamond
@@ -579,18 +587,65 @@ Botania
 <botania:monocle>                               .setAspects(<aspect:sensus>*10    ,<aspect:visum>*20          ,<aspect:mana>*6); #monocle
 <botania:blacklotus>                            .setAspects(<aspect:alienis>*10   ,<aspect:ordo>*10           ,<aspect:mana>*15); #monocle
 <botania:blacklotus:1>                          .setAspects(<aspect:alienis>*20   ,<aspect:ordo>*20           ,<aspect:mana>*50); #monocle
+<botania:manaresource:5>                        .setAspects(<aspect:caeles>*25    ,<aspect:ordo>*50           ,<aspect:alienis>*50); #gaia spirit
+<botania:manaresource:14>                       .setAspects(<aspect:caeles>*75    ,<aspect:ordo>*150          ,<aspect:mana>*20         ,<aspect:metallum>*10); #gaia ingot
+<botania:manaresource:12>                       .setAspects(<aspect:potentia>*20  ,<aspect:permutatio>*20     ,<aspect:alienis>*15      ,<aspect:machina>*15, <aspect:mana>*10); #red string
+<botania:storage>                               .setAspects(<aspect:metallum>*67  ,<aspect:mana>*33); #manasteel block
+<botania:manacookie>                            .setAspects(<aspect:victus>*20    ,<aspect:mana>*25); #mana cookie
+<botania:openbucket>                            .setAspects(<aspect:metallum>*20  ,<aspect:mana>*10           ,<aspect:alienis>*10      ,<aspect:vacuos>*15);
+<botania:runealtar>                             .setAspects(<aspect:mana>*10      ,<aspect:fabrico>*20);                                                                              #runic altar
+<botania:manatablet>                          .setAspects(<aspect:mana>*10      ,<aspect:instrumentum>*20   ,<aspect:imperium>*20);                                                 #mana tablet
+<botania:distributor>                           .setAspects(<aspect:mana>*10      ,<aspect:machina>*5         ,<aspect:terra>*30);
+<botania:foresteye>                             .setAspects(<aspect:mana>*15      ,<aspect:sensus>*15         ,<aspect:terra>*30);
+<botania:platform:0>                            .setAspects(<aspect:mana>*2       ,<aspect:herba>*20          ,<aspect:alienis>*2);
+<botania:platform:1>                            .setAspects(<aspect:mana>*3       ,<aspect:herba>*20          ,<aspect:alienis>*5);
+<botania:spawnerclaw>                           .setAspects(<aspect:aqua>*90      ,<aspect:mana>*30           ,<aspect:victus>*30       ,<aspect:metallum>*50); # life infuser
+<botania:starfield>                             .setAspects(<aspect:mana>*7       ,<aspect:metallum>*30       ,<aspect:alienis>*22      ,<aspect:tenebrae>*23   ,<aspect:lux>*20);
+<botania:rfgenerator>                           .setAspects(<aspect:mana>*3       ,<aspect:potentia>*201      ,<aspect:machina>*20      ,<aspect:terra>*15      ,<aspect:victus>*9);
+<botania:terraplate>                            .setAspects(<aspect:mana>*50      ,<aspect:metallum>*50       ,<aspect:fabrico>*20      ,<aspect:permutatio>*20 ,<aspect:auram>*20);
+<botania:pump>                                  .setAspects(<aspect:mana>*7       ,<aspect:terra>*20          ,<aspect:metallum>*50     ,<aspect:machina>*10    ,<aspect:permutatio>*10);
+<botania:sparkchanger>                          .setAspects(<aspect:mana>*7       ,<aspect:alienis>*7         ,<aspect:metallum>*15     ,<aspect:machina>*10    ,<aspect:terra>*11);
+<botania:teruterubozu>                          .setAspects(<aspect:mana>*9       ,<aspect:permutatio>*9      ,<aspect:aqua>*20         ,<aspect:potentia>*20   ,<aspect:aer>*20);
+<botania:sextant>                               .setAspects(<aspect:mana>*15      ,<aspect:metallum>*30       ,<aspect:herba>*18        ,<aspect:instrumentum>*8,<aspect:victus>*9);
+<botania:enchantedsoil>                         .setAspects(<aspect:mana>*15      ,<aspect:victus>*20         ,<aspect:terra>*10);
+<botania:manamirror:*>                          .setAspects(<aspect:mana>*20      ,<aspect:permutatio>*10     ,<aspect:terra>*20);
 
+# Mana Lenses
+<botania:lens>                                  .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15); #default
+<botania:lens:1>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:motus>*10);        #velocity
+<botania:lens:2>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:potentia>*10);     #potency
+<botania:lens:3>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:vitreus>*10);      #resistance
+<botania:lens:4>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:instrumentum>*10); #efficiency
+<botania:lens:5>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:praemunio>*10);    #bounce
+<botania:lens:6>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:terra>*10);        #gravity
+<botania:lens:7>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:exitium>*10);      #bore
+<botania:lens:8>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:aversio>*10);      #damaging
+<botania:lens:9>                                .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:spiritus>*10);       #phantom
+<botania:lens:10>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:desiderium>*10);   #magnetizing
+<botania:lens:11>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:perditio>*10);     #entropic
+<botania:lens:12>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:ventus>*10);       #influence
+<botania:lens:13>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:praecantatio>*10); #weight
+<botania:lens:14>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:fabrico>*10);      #paintslinger
+<botania:lens:15>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:ignis>*10);        #kindle
+<botania:lens:16>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:machina>*10);      #force
+<botania:lens:17>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:lux>*10);          #flash
+<botania:lens:18>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*15);                                #warp
+<botania:lens:19>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:imperium>*10);     #redirective
+<botania:lens:20>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:alkimia>*10);      #celebratory
+<botania:lens:21>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:permutatio>*10);   #flare
+<botania:lens:22>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:cognitio>*10);     #messenger
+<botania:lens:23>                               .setAspects(<aspect:metallum>*30  ,<aspect:mana>*15           ,<aspect:alienis>*5       ,<aspect:sensus>*10);       #tripwire
+
+#Runes
 <botania:rune:3>                                .setAspects(<aspect:terra>*5      ,<aspect:aer>*25            ,<aspect:mana>*5); #rune air
 <botania:rune:2>                                .setAspects(<aspect:terra>*30     ,<aspect:mana>*5); #rune earth
 <botania:rune:1>                                .setAspects(<aspect:terra>*5      ,<aspect:ignis>*25          ,<aspect:mana>*5); #rune fire
 <botania:rune>                                  .setAspects(<aspect:terra>*5      ,<aspect:aqua>*25           ,<aspect:mana>*5); #rune water
-
 <botania:rune:7>                                .setAspects(<aspect:terra>*5      ,<aspect:gelum>*25          ,<aspect:mana>*10); #rune winter
 <botania:rune:6>                                .setAspects(<aspect:terra>*5      ,<aspect:mortuus>*25        ,<aspect:mana>*10); #rune autumn
 <botania:rune:5>                                .setAspects(<aspect:terra>*5      ,<aspect:victus>*25         ,<aspect:mana>*10); #rune summer
 <botania:rune:4>                                .setAspects(<aspect:terra>*5      ,<aspect:herba>*25          ,<aspect:mana>*10); #rune spring
 <botania:rune:8>                                .setAspects(<aspect:terra>*5      ,<aspect:auram>*25          ,<aspect:mana>*15); #rune of mana
-
 <botania:rune:15>                               .setAspects(<aspect:terra>*5      ,<aspect:desiderium>*20     ,<aspect:mythus>*30       ,<aspect:mana>*15); #rune pride
 <botania:rune:14>                               .setAspects(<aspect:terra>*5      ,<aspect:desiderium>*20     ,<aspect:spiritus>*30     ,<aspect:mana>*15); #rune envy
 <botania:rune:13>                               .setAspects(<aspect:terra>*5      ,<aspect:desiderium>*20     ,<aspect:aversio>*30      ,<aspect:mana>*15); #rune wrath
@@ -599,11 +654,107 @@ Botania
 <botania:rune:10>                               .setAspects(<aspect:terra>*5      ,<aspect:desiderium>*20     ,<aspect:vacuos>*30       ,<aspect:mana>*15); #rune gluttony
 <botania:rune:9>                                .setAspects(<aspect:terra>*5      ,<aspect:desiderium>*20     ,<aspect:fluctus>*30      ,<aspect:mana>*15); #rune lust
 
+#Items/baubles
+<botania:terrasword>                            .setAspects(<aspect:mana>*30      ,<aspect:praecantatio>*30   ,<aspect:aversio>*16      ,<aspect:metallum>*12);                       #terra sword
+<botania:tinyplanet>                            .setAspects(<aspect:mana>*5       ,<aspect:praecantatio>*3    ,<aspect:motus>*3         ,<aspect:terra>*30      ,<aspect:victus>*9);  #tiny planet
+<botania:laputashard:*>                         .setAspects(<aspect:mana>*15      ,<aspect:instrumentum>*40   ,<aspect:alienis>*100     ,<aspect:caeles>*50);                         #shard of laputa
+<botania:knockbackbelt>                         .setAspects(<aspect:terra>*30     ,<aspect:potentia>*30       ,<aspect:praemunio>*10);                          #tectonic gridle  
+<botania:travelbelt>                            .setAspects(<aspect:terra>*30     ,<aspect:motus>*30          ,<aspect:praemunio>*10);                          #soujourner's sash
+<botania:supertravelbelt>                       .setAspects(<aspect:caeles>*75    ,<aspect:motus>*100         ,<aspect:praemunio>*50);  
+<botania:miningring>                            .setAspects(<aspect:exitium>*10   ,<aspect:desiderium>*50     ,<aspect:instrumentum>*10 ,<aspect:metallum>*50); #ring of the mantle
+<botania:waterring>                             .setAspects(<aspect:aqua>*30      ,<aspect:desiderium>*50     ,<aspect:instrumentum>*10 ,<aspect:metallum>*50); #ring of chordata
+<botania:magnetring>                            .setAspects(<aspect:mana>*30      ,<aspect:desiderium>*150    ,<aspect:instrumentum>*10 ,<aspect:metallum>*50); #ring of magnetization
+<botania:pixiering>                             .setAspects(<aspect:mana>*10      ,<aspect:desiderium>*50     ,<aspect:instrumentum>*10 ,<aspect:metallum>*50);  #fairy ring
+<botania:holycloak>                             .setAspects(<aspect:caeles>*30    ,<aspect:praemunio>*30      ,<aspect:vacuos>*20       ,<aspect:lux>*20);      #cloak of virtue
+<botania:balancecloak>                          .setAspects(<aspect:caeles>*30    ,<aspect:praemunio>*30      ,<aspect:permutatio>*20   ,<aspect:visum>*20);    #cloak of balance
+<botania:unholycloak>                           .setAspects(<aspect:caeles>*30    ,<aspect:praemunio>*30      ,<aspect:aversio>*20      ,<aspect:infernum>*20); #cloak of sin
+<botania:manainkwell:*>                         .setAspects(<aspect:mana>*15      ,<aspect:sensus>*5);                                                          #botania inkwell
+<botania:temperancestone>                       .setAspects(<aspect:mana>*5       ,<aspect:terra>*30          ,<aspect:vinculum>*5);
+<botania:blackholetalisman>                     .setAspects(<aspect:mana>*10      ,<aspect:vacuos>*30         ,<aspect:alienis>*50      ,<aspect:tenebrae>*25);
+
+<botania:flighttiara>                           .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:ventus>*50);   #Flugel Tiara
+<botania:flighttiara:1>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:ordo>*50);     #Flugel Tiara (flugel)
+<botania:flighttiara:2>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:perditio>*50); #Flugel Tiara (one winged angel)
+<botania:flighttiara:3>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:gelum>*50);    #Flugel Tiara (ice fairy)
+<botania:flighttiara:4>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:ignis>*50);    #Flugel Tiara (phoenix)
+<botania:flighttiara:5>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:fluctus>*50);  #Flugel Tiara (black snow princess)
+<botania:flighttiara:6>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:tenebrae>*50); #Flugel Tiara (lord of the pit)
+<botania:flighttiara:7>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:lux>*50);      #Flugel Tiara (sylph)
+<botania:flighttiara:8>                         .setAspects(<aspect:caeles>*75    ,<aspect:volatus>*100       ,<aspect:alienis>*150     ,<aspect:bestia>*50);   #Flugel Tiara (chicken)
+
+<botania:dice:*>                                .setAspects(<aspect:mana>*30      ,<aspect:alienis>*30        ,<aspect:desiderium>*25);
+<botania:infinitefruit:*>                       .setAspects(<aspect:victus>*50    ,<aspect:herba>*30          ,<aspect:alienis>*15      ,<aspect:mana>*30   ,<aspect:desiderium>*25);
+<botania:kingkey:*>                             .setAspects(<aspect:aversio>*50   ,<aspect:vinculum>*30       ,<aspect:alienis>*15      ,<aspect:mana>*30   ,<aspect:desiderium>*25);
+<botania:flugeleye:*>                           .setAspects(<aspect:motus>*50     ,<aspect:volatus>*30        ,<aspect:alienis>*15      ,<aspect:mana>*30   ,<aspect:desiderium>*25);
+<botania:odinring:*>                            .setAspects(<aspect:praemunio>*50 ,<aspect:victus>*30         ,<aspect:alienis>*15      ,<aspect:mana>*30   ,<aspect:desiderium>*25);
+<botania:thorring:*>                            .setAspects(<aspect:instrumentum>*50,<aspect:perditio>*30     ,<aspect:alienis>*15      ,<aspect:mana>*30   ,<aspect:desiderium>*25);
+<botania:lokiring:*>                            .setAspects(<aspect:auram>*50     ,<aspect:humanus>*30        ,<aspect:alienis>*15      ,<aspect:mana>*30   ,<aspect:desiderium>*25);
+
+<botania:rainbowrod>                            .setAspects(<aspect:mana>*30      ,<aspect:instrumentum>*20   ,<aspect:alienis>*50      ,<aspect:permutatio>*30);   #rod of bifrost
+<botania:diviningrod>                           .setAspects(<aspect:mana>*10      ,<aspect:desiderium>*20     ,<aspect:sensus>*20       ,<aspect:instrumentum>*10); 
+<botania:tornadorod>                            .setAspects(<aspect:mana>*5       ,<aspect:aer>*20            ,<aspect:fluctus>*10);                                
+<botania:terraformrod>                          .setAspects(<aspect:mana>*40      ,<aspect:instrumentum>*40   ,<aspect:terra>*120       ,<aspect:permutatio>*40);   
+<botania:dirtrod>                               .setAspects(<aspect:mana>*5       ,<aspect:instrumentum>*10   ,<aspect:terra>*20);   
+<botania:gravityrod>                            .setAspects(<aspect:mana>*10      ,<aspect:instrumentum>*20   ,<aspect:alienis>*20      ,<aspect:vinculum>*20);   
+<botania:missilerod>                            .setAspects(<aspect:mana>*25      ,<aspect:aversio>*30        ,<aspect:caeles>*30       ,<aspect:alienis>*100);   
+<botania:cobblerod>                             .setAspects(<aspect:mana>*10      ,<aspect:instrumentum>*10   ,<aspect:terra>*30        ,<aspect:perditio>*5);   
+<botania:exchangerod>                           .setAspects(<aspect:mana>*10      ,<aspect:instrumentum>*20   ,<aspect:permutatio>*30   ,<aspect:imperium>*30);   
+
+#Generating flora
+<botania:specialflower>.withTag({type: "endoflame"})    .setAspects(<aspect:herba>*20       ,<aspect:ignis>*10      ,<aspect:aer>*10);   
+<botania:specialflower>.withTag({type: "kekimurus"})    .setAspects(<aspect:herba>*20       ,<aspect:vacuos>*10     ,<aspect:fabrico>*10);   
+<botania:specialflower>.withTag({type: "narslimmus"})   .setAspects(<aspect:herba>*20       ,<aspect:victus>*10     ,<aspect:aqua>*10);   
+<botania:specialflower>.withTag({type: "entropinnyum"}) .setAspects(<aspect:herba>*20       ,<aspect:alkimia>*10    ,<aspect:exitium>*10);   
+<botania:specialflower>.withTag({type: "spectrolus"})   .setAspects(<aspect:herba>*20       ,<aspect:fabrico>*10    ,<aspect:ordo>*10);   
+<botania:specialflower>.withTag({type: "dandelifeon"})  .setAspects(<aspect:herba>*100      ,<aspect:cognitio>*100  ,<aspect:caeles>*25);   
+<botania:specialflower>.withTag({type: "rafflowsia"})   .setAspects(<aspect:herba>*20       ,<aspect:exanimis>*10   ,<aspect:perditio>*10);   
+<botania:specialflower>.withTag({type: "arcanerose"})   .setAspects(<aspect:herba>*20       ,<aspect:cognitio>*10   ,<aspect:humanus>*10);   
+<botania:specialflower>.withTag({type: "munchdew"})     .setAspects(<aspect:herba>*20       ,<aspect:vacuos>*10     ,<aspect:terra>*10);   
+<botania:specialflower>.withTag({type: "hydroangeas"})  .setAspects(<aspect:herba>*20       ,<aspect:aqua>*10       ,<aspect:sensus>*10);   
+<botania:specialflower>.withTag({type: "gourmaryllis"}) .setAspects(<aspect:herba>*20       ,<aspect:vacuos>*10     ,<aspect:bestia>*10);   
+<botania:specialflower>.withTag({type: "shulk_me_not"}) .setAspects(<aspect:herba>*20       ,<aspect:alienis>*10    ,<aspect:mortuus>*10);   
+<botania:specialflower>.withTag({type: "thermalily"})   .setAspects(<aspect:herba>*20       ,<aspect:ignis>*10      ,<aspect:terra>*10);   
+
+#Functional flora
+<botania:specialflower>.withTag({type: "orechid"})                      .setAspects(<aspect:herba>*50       ,<aspect:desiderium>*50 ,<aspect:terra>*30);   
+<botania:specialflower>.withTag({type: "orechidIgnem"})                 .setAspects(<aspect:herba>*50       ,<aspect:desiderium>*50 ,<aspect:infernum>*30);   
+<botania:specialflower>.withTag({type: "orechidVacuam"})                .setAspects(<aspect:herba>*50       ,<aspect:desiderium>*50 ,<aspect:alienis>*30);   
+<botania:specialflower>.withTag({type: "excompressum.orechidEvolved"})  .setAspects(<aspect:herba>*50       ,<aspect:desiderium>*50 ,<aspect:terra>*30);   
+<botania:specialflower>.withTag({type: "puredaisy"})                    .setAspects(<aspect:herba>*20       ,<aspect:ordo>*10       ,<aspect:permutatio>*10);   
+<botania:specialflower>.withTag({type: "manastar"})                     .setAspects(<aspect:herba>*20       ,<aspect:sensus>*10     ,<aspect:praecantatio>*10);  
+<botania:specialflower>.withTag({type: "petro_petunia"})                .setAspects(<aspect:herba>*20       ,<aspect:alkimia>*10    ,<aspect:aqua>*10);  
+
+<botania:specialflower>.withTag({type: "exoflame"})       .setAspects(<aspect:herba>*20       ,<aspect:ignis>*10      ,<aspect:fabrico>*10);  
+<botania:specialflower>.withTag({type: "dreadthorn"})     .setAspects(<aspect:herba>*20       ,<aspect:mortuus>*10    ,<aspect:visum>*10);  
+<botania:specialflower>.withTag({type: "hopperhock"})     .setAspects(<aspect:herba>*20       ,<aspect:vacuos>*10     ,<aspect:desiderium>*10);  
+<botania:specialflower>.withTag({type: "jadedAmaranthus"}).setAspects(<aspect:herba>*20       ,<aspect:victus>*10     ,<aspect:praecantatio>*10);  
+<botania:specialflower>.withTag({type: "jiyuulia"})       .setAspects(<aspect:herba>*20       ,<aspect:praemunio>*10  ,<aspect:potentia>*10);  
+<botania:specialflower>.withTag({type: "bellethorn"})     .setAspects(<aspect:herba>*20       ,<aspect:aversio>*10    ,<aspect:mortuus>*10);  
+<botania:specialflower>.withTag({type: "agricarnation"})  .setAspects(<aspect:herba>*20       ,<aspect:ordo>*10       ,<aspect:victus>*10);  
+<botania:specialflower>.withTag({type: "clayconia"})      .setAspects(<aspect:herba>*20       ,<aspect:permutatio>*10 ,<aspect:aqua>*10);  
+<botania:specialflower>.withTag({type: "daffomill"})      .setAspects(<aspect:herba>*20       ,<aspect:motus>*10      ,<aspect:ventus>*10);  
+<botania:specialflower>.withTag({type: "hyacidus"})       .setAspects(<aspect:herba>*20       ,<aspect:mortuus>*10    ,<aspect:aqua>*10);  
+<botania:specialflower>.withTag({type: "medumone"})       .setAspects(<aspect:herba>*20       ,<aspect:gelum>*10      ,<aspect:fluctus>*10);  
+<botania:specialflower>.withTag({type: "pollidisiac"})    .setAspects(<aspect:herba>*20       ,<aspect:bestia>*10     ,<aspect:victus>*10);  
+<botania:specialflower>.withTag({type: "vinculotus"})     .setAspects(<aspect:herba>*20       ,<aspect:alienis>*10    ,<aspect:vinculum>*10);  
+<botania:specialflower>.withTag({type: "fallenKanade"})   .setAspects(<aspect:herba>*20       ,<aspect:auram>*10      ,<aspect:victus>*10);  
+<botania:specialflower>.withTag({type: "bergamute"})      .setAspects(<aspect:herba>*20       ,<aspect:vacuos>*10     ,<aspect:sonus>*10);  
+<botania:specialflower>.withTag({type: "bubbell"})        .setAspects(<aspect:herba>*20       ,<aspect:auram>*10      ,<aspect:aqua>*10);  
+<botania:specialflower>.withTag({type: "heiseiDream"})    .setAspects(<aspect:herba>*20       ,<aspect:aversio>*10    ,<aspect:imperium>*10);  
+<botania:specialflower>.withTag({type: "marimorphosis"})  .setAspects(<aspect:herba>*20       ,<aspect:permutatio>*10 ,<aspect:vitreus>*10);  
+<botania:specialflower>.withTag({type: "rannuncarpus"})   .setAspects(<aspect:herba>*20       ,<aspect:desiderium>*10 ,<aspect:ordo>*10);  
+<botania:specialflower>.withTag({type: "spectranthemum"}) .setAspects(<aspect:herba>*20       ,<aspect:alienis>*10    ,<aspect:motus>*10);  
+<botania:specialflower>.withTag({type: "tangleberrie"})   .setAspects(<aspect:herba>*20       ,<aspect:desiderium>*10 ,<aspect:vinculum>*10);  
+<botania:specialflower>.withTag({type: "tigerseye"})      .setAspects(<aspect:herba>*20       ,<aspect:exitium>*10    ,<aspect:bestia>*10);  
+<botania:specialflower>.withTag({type: "solegnolia"})     .setAspects(<aspect:herba>*20       ,<aspect:desiderium>*10 ,<aspect:perditio>*10);  
+<botania:specialflower>.withTag({type: "loonium"})        .setAspects(<aspect:herba>*20       ,<aspect:desiderium>*10 ,<aspect:mythus>*10);  
+
 /*
 #######################################################
-
-Chisell/Quark - general stones
-
+____ _  _ _ ____ ____ _    _      / ____ _  _ ____ ____ _  _          ____ ____ _  _ ____ ____ ____ _       ____ ___ ____ _  _ ____ ____ 
+|    |__| | [__  |___ |    |     /  |  | |  | |__| |__/ |_/     __    | __ |___ |\ | |___ |__/ |__| |       [__   |  |  | |\ | |___ [__  
+|___ |  | | ___] |___ |___ |___ /   |_\| |__| |  | |  \ | \_          |__] |___ | \| |___ |  \ |  | |___    ___]  |  |__| | \| |___ ___] 
+                                                                                                                                         
 #######################################################
 */
 
@@ -620,9 +771,10 @@ Chisell/Quark - general stones
 
 /*
 #######################################################
-
-Deep mob learning
-
+___  ____ ____ ___     _  _ ____ ___     _    ____ ____ ____ _  _ _ _  _ ____ 
+|  \ |___ |___ |__]    |\/| |  | |__]    |    |___ |__| |__/ |\ | | |\ | | __ 
+|__/ |___ |___ |       |  | |__| |__]    |___ |___ |  | |  \ | \| | | \| |__] 
+                                                                              
 #######################################################
 */
 
@@ -661,9 +813,10 @@ Deep mob learning
 
 /*
 #######################################################
-
-Draconic evolution
-
+___  ____ ____ ____ ____ _  _ _ ____    ____ _  _ ____ _    _  _ ___ _ ____ _  _ 
+|  \ |__/ |__| |    |  | |\ | | |       |___ |  | |  | |    |  |  |  | |  | |\ | 
+|__/ |  \ |  | |___ |__| | \| | |___    |___  \/  |__| |___ |__|  |  | |__| | \| 
+                                                                                 
 #######################################################
 */
 
@@ -671,9 +824,10 @@ Draconic evolution
 
 /*
 #######################################################
-
-End reborn
-
+____ _  _ ___     ____ ____ ___  ____ ____ _  _ 
+|___ |\ | |  \    |__/ |___ |__] |  | |__/ |\ | 
+|___ | \| |__/    |  \ |___ |__] |__| |  \ | \| 
+                                                
 #######################################################
 */
 
@@ -681,9 +835,10 @@ End reborn
 
 /*
 #######################################################
-
-Extra utilities 2
-
+____ _  _ ___ ____ ____    _  _ ___ _ _    _ ___ _ ____ ____    
+|___  \/   |  |__/ |__|    |  |  |  | |    |  |  | |___ [__     
+|___ _/\_  |  |  \ |  |    |__|  |  | |___ |  |  | |___ ___]    
+                                                                
 #######################################################
 */
 
@@ -692,9 +847,10 @@ Extra utilities 2
 
 /*
 #######################################################
-
-Forestry
-
+____ ____ ____ ____ ____ ___ ____ _   _ 
+|___ |  | |__/ |___ [__   |  |__/  \_/  
+|    |__| |  \ |___ ___]  |  |  \   |   
+                                        
 #######################################################
 */
 
@@ -705,9 +861,10 @@ Forestry
 
 /*
 #######################################################
-
-Ice and fire
-
+_ ____ ____    ____ _  _ ___     ____ _ ____ ____ 
+| |    |___    |__| |\ | |  \    |___ | |__/ |___ 
+| |___ |___    |  | | \| |__/    |    | |  \ |___ 
+                                                  
 #######################################################
 */
 
@@ -934,9 +1091,10 @@ Ice and fire
 
 /*
 #######################################################
-
-Mechanics
-
+_  _ ____ ____ _  _ ____ _  _ _ ____ ____ 
+|\/| |___ |    |__| |__| |\ | | |    [__  
+|  | |___ |___ |  | |  | | \| | |___ ___] 
+                                          
 #######################################################
 */
 
@@ -944,9 +1102,10 @@ Mechanics
 
 /*
 #######################################################
-
-Mekanism
-
+_  _ ____ _  _ ____ _  _ _ ____ _  _ 
+|\/| |___ |_/  |__| |\ | | [__  |\/| 
+|  | |___ | \_ |  | | \| | ___] |  | 
+                                     
 #######################################################
 */
 
@@ -956,9 +1115,10 @@ Mekanism
 
 /*
 #######################################################
-
-Plustic
-
+___  _    _  _ ____ ___ _ ____ 
+|__] |    |  | [__   |  | |    
+|    |___ |__| ___]  |  | |___ 
+                               
 #######################################################
 */
 
@@ -969,9 +1129,10 @@ Plustic
 
 /*
 #######################################################
-
-Psi
-
+___  ____ _ 
+|__] [__  | 
+|    ___] | 
+            
 #######################################################
 */
 
@@ -981,9 +1142,10 @@ Psi
 
 /*
 #######################################################
-
-Thermal Foundation
-
+___ _  _ ____ ____ _  _ ____ _       ____ ____ _  _ _  _ ___  ____ ___ _ ____ _  _ 
+ |  |__| |___ |__/ |\/| |__| |       |___ |  | |  | |\ | |  \ |__|  |  | |  | |\ | 
+ |  |  | |___ |  \ |  | |  | |___    |    |__| |__| | \| |__/ |  |  |  | |__| | \| 
+                                                                                   
 #######################################################
 */
 
@@ -1018,9 +1180,10 @@ Thermal Foundation
 
 /*
 #######################################################
-
-Tinker's construct
-
+___ _ _  _ _  _ ____ ____ . ____    ____ ____ _  _ ____ ___ ____ _  _ ____ ___ 
+ |  | |\ | |_/  |___ |__/ ' [__     |    |  | |\ | [__   |  |__/ |  | |     |  
+ |  | | \| | \_ |___ |  \   ___]    |___ |__| | \| ___]  |  |  \ |__| |___  |  
+                                                                               
 #######################################################
 */
 
@@ -1039,9 +1202,10 @@ Tinker's construct
 
 /*
 #######################################################
-
-Tinker's evolution
-
+___ _ _  _ _  _ ____ ____ . ____    ____ _  _ ____ _    _  _ ___ _ ____ _  _ 
+ |  | |\ | |_/  |___ |__/ ' [__     |___ |  | |  | |    |  |  |  | |  | |\ | 
+ |  | | \| | \_ |___ |  \   ___]    |___  \/  |__| |___ |__|  |  | |__| | \| 
+                                                                             
 #######################################################
 */
 
@@ -1058,9 +1222,10 @@ Tinker's evolution
 
 /*
 #######################################################
-
-Thaumcraft
-
+___ _  _ ____ _  _ _  _ ____ ____ ____ ____ ___ 
+ |  |__| |__| |  | |\/| |    |__/ |__| |___  |  
+ |  |  | |  | |__| |  | |___ |  \ |  | |     |  
+                                                
 #######################################################
 */
 
@@ -1104,21 +1269,24 @@ for nitor in nitor{
 
 /*
 #######################################################
-
-Twilight forest
-
+___ _ _ _ _ _    _ ____ _  _ ___    ____ ____ ____ ____ ____ ___ 
+ |  | | | | |    | | __ |__|  |     |___ |  | |__/ |___ [__   |  
+ |  |_|_| | |___ | |__] |  |  |     |    |__| |  \ |___ ___]  |  
+                                                                 
 #######################################################
 */
 
 <twilightforest:ironwood_ingot>                 .setAspects(<aspect:metallum>*10  ,<aspect:herba>*5); 
 <twilightforest:knightmetal_ingot>              .setAspects(<aspect:metallum>*10  ,<aspect:praemunio>*5); 
 <twilightforest:armor_shard_cluster>            .setAspects(<aspect:metallum>*5  ,<aspect:praemunio>*10); 
+<twilightforest:auroralized_glass>              .setAspects(<aspect:vitreus>*5    ,<aspect:alienis>*10); 
 
 /*
 #######################################################
-
-Vanilla
-
+_  _ ____ _  _ _ _    _    ____   / _  _ _ _  _ ____ ____ ____ ____ ____ ___ 
+|  | |__| |\ | | |    |    |__|  /  |\/| | |\ | |___ |    |__/ |__| |___  |  
+ \/  |  | | \| | |___ |___ |  | /   |  | | | \| |___ |___ |  \ |  | |     |  
+                                                                             
 #######################################################
 */
 
@@ -1250,9 +1418,10 @@ Vanilla
 
 /*
 #######################################################
-
-Vulpes library
-
+_  _ _  _ _    ___  ____ ____    _    _ ___  ____ ____ ____ _   _ 
+|  | |  | |    |__] |___ [__     |    | |__] |__/ |__| |__/  \_/  
+ \/  |__| |___ |    |___ ___]    |___ | |__] |  \ |  | |  \   |   
+                                                                  
 #######################################################
 */
 
@@ -1284,7 +1453,15 @@ Vulpes library
 
 
 
-# New aspects support
+/*
+ ██████╗ ████████╗██╗  ██╗███████╗██████╗ 
+██╔═══██╗╚══██╔══╝██║  ██║██╔════╝██╔══██╗
+██║   ██║   ██║   ███████║█████╗  ██████╔╝
+██║   ██║   ██║   ██╔══██║██╔══╝  ██╔══██╗
+╚██████╔╝   ██║   ██║  ██║███████╗██║  ██║
+ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+*/
+
 #[Sanguis aspect] source
 mods.bloodmagic.BloodAltar.addRecipe(
 <thaumcraft:phial:1>.withTag({Aspects: [{amount: 10, key: "sanguis"}]}), #output

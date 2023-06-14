@@ -1424,6 +1424,12 @@ val bookWithAllKnowledge = <thaumadditions:knowledge_tome>.withTag({
     {C: 1 as byte, K: "GOLEMCOMBATADV"}, 
     {C: 1 as byte, K: "ITEM_GRATE"}, 
     {C: 1 as byte, K: "WARP_PAPER"},
+    {C: 1 as byte, K: "GOD_WRAITH"},
+    {C: 1 as byte, K: "FLUX_STRIKE"},
+    {C: 1 as byte, K: "PURE_SMITE"},
+    {C: 1 as byte, K: "LOOT_STEALER"},
+    {C: 1 as byte, K: "ORE_PURIFIER"},
+    {C: 1 as byte, K: "FIRST_STAND"},
     {C: 1 as byte, K: "CREATION_PASSIVE_VANILLA"}, 
     {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA"}, 
     {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA_NETHER"}, 
@@ -1452,3 +1458,35 @@ craft.make(bookWithAllKnowledge, ["pretty",
   "T": <thaumadditions:knowledge_tome>, # Tome of Sharing
   "R": <rats:marbled_cheese_raw>,       # Raw Marbled Cheese
 });
+
+# Mithrillium, Adamanite, Mithminite melting and casting
+scripts.process.melt(<thaumadditions:mithrillium_nugget>	,<liquid:mithrillium> * 16);
+scripts.process.melt(<thaumadditions:mithrillium_ingot>		,<liquid:mithrillium> * 144);
+scripts.process.melt(<thaumadditions:mithrillium_plate>		,<liquid:mithrillium> * 144);
+scripts.process.melt(<thaumadditions:mithrillium_block>		,<liquid:mithrillium> * 1296);
+
+scripts.process.melt(<thaumadditions:adaminite_nugget>		,<liquid:adaminite> * 16);
+scripts.process.melt(<thaumadditions:adaminite_ingot>		,<liquid:adaminite> * 144);
+scripts.process.melt(<thaumadditions:adaminite_plate>		,<liquid:adaminite> * 144);
+scripts.process.melt(<thaumadditions:adaminite_block>		,<liquid:adaminite> * 1296);
+
+scripts.process.melt(<thaumadditions:mithminite_nugget>		,<liquid:mithminite> * 16);
+scripts.process.melt(<thaumadditions:mithminite_ingot>		,<liquid:mithminite> * 144);
+scripts.process.melt(<thaumadditions:mithminite_plate>		,<liquid:mithminite> * 144);
+scripts.process.melt(<thaumadditions:mithminite_block>		,<liquid:mithminite> * 1296);
+
+# Mithrillium, Adamanite, Mithminite casting
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:mithrillium_nugget>,<tconstruct:cast_custom:1>,<liquid:mithrillium>, 16,  false,  40);
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:mithrillium_ingot>, <tconstruct:cast_custom>,  <liquid:mithrillium>, 144, false,  200);
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:mithrillium_plate>, <tconstruct:cast_custom:3>,<liquid:mithrillium>, 144, false,  200);
+mods.tconstruct.Casting.addBasinRecipe(<thaumadditions:mithrillium_block>, null,                      <liquid:mithrillium>, 1296,false,  800);
+
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:adaminite_nugget>,<tconstruct:cast_custom:1>,<liquid:adaminite>, 16,  false,  40);
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:adaminite_ingot>, <tconstruct:cast_custom>,  <liquid:adaminite>, 144, false,  200);
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:adaminite_plate>, <tconstruct:cast_custom:3>,<liquid:adaminite>, 144, false,  200);
+mods.tconstruct.Casting.addBasinRecipe(<thaumadditions:adaminite_block>, null,                      <liquid:adaminite>, 1296,false,  800);
+
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:mithminite_nugget>,<tconstruct:cast_custom:1>,<liquid:mithminite>, 16,  false,  40);
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:mithminite_ingot>, <tconstruct:cast_custom>,  <liquid:mithminite>, 144, false,  200);
+mods.tconstruct.Casting.addTableRecipe(<thaumadditions:mithminite_plate>, <tconstruct:cast_custom:3>,<liquid:mithminite>, 144, false,  200);
+mods.tconstruct.Casting.addBasinRecipe(<thaumadditions:mithminite_block>, null,                      <liquid:mithminite>, 1296,false,  800);

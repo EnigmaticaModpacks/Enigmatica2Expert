@@ -36,9 +36,15 @@ events.onEntityLivingDeathDrops(function(e as crafttweaker.event.EntityLivingDea
     val player as IPlayer = e.damageSource.trueSource;
     if(!player.thaumcraftKnowledge.isResearchComplete("LOOT_STEALER")) return;  # Player don't have research
 
-    if(isNull(player.mainHandHeldItem)) return;                                 # Player don't have item in main hand
-    val tool as IItemStack = player.mainHandHeldItem;
-    if(!checkTool(tool)) return;                                                # Tool don't have researcher tag
+    var check as bool = false;
+    if(!isNull(player.mainHandHeldItem)){                       # Player don't have item in main hand
+        check=checkTool(player.mainHandHeldItem);               # Tool check tag
+    }
+    if(!isNull(player.offHandHeldItem)){                       # Player don't have item in off hand
+        check=(check || checkTool(player.offHandHeldItem));     # Tool check tag
+    }
+
+    if(!check) return;                                          # None of tools have research tag
     return;
     //e.addItem(<thaumcraft:bottle_taint>);
 

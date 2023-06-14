@@ -470,19 +470,3 @@ mods.tconstruct.Casting.addTableRecipe(
 	<liquid:stone>, 144, false
 );
 
-# Mithrillium, Adamanite, Mithminite melting
-mods.tconstruct.Melting.addRecipe(<liquid:mithrillium> * 16,	<thaumadditions:mithrillium_nugget>);
-mods.tconstruct.Melting.addRecipe(<liquid:mithrillium> * 144,	<thaumadditions:mithrillium_ingot>);
-mods.tconstruct.Melting.addRecipe(<liquid:mithrillium> * 144,	<thaumadditions:mithrillium_plate>);
-mods.tconstruct.Melting.addRecipe(<liquid:mithrillium> * 1296,	<thaumadditions:mithrillium_block>);
-
-mods.tconstruct.Melting.addRecipe(<liquid:adaminite> * 16,		<thaumadditions:adaminite_nugget>);
-mods.tconstruct.Melting.addRecipe(<liquid:adaminite> * 144,		<thaumadditions:adaminite_ingot>);
-mods.tconstruct.Melting.addRecipe(<liquid:adaminite> * 144,		<thaumadditions:adaminite_plate>);
-mods.tconstruct.Melting.addRecipe(<liquid:adaminite> * 1296,	<thaumadditions:adaminite_block>);
-
-mods.tconstruct.Melting.addRecipe(<liquid:mithminite> * 16,		<thaumadditions:mithminite_nugget>);
-mods.tconstruct.Melting.addRecipe(<liquid:mithminite> * 144,	<thaumadditions:mithminite_ingot>);
-mods.tconstruct.Melting.addRecipe(<liquid:mithminite> * 144,	<thaumadditions:mithminite_plate>);
-mods.tconstruct.Melting.addRecipe(<liquid:mithminite> * 1296,	<thaumadditions:mithminite_block>);
-

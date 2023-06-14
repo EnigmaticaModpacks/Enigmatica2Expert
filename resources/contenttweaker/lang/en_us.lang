@@ -11,7 +11,7 @@ fluid.electronics=Molten Electronics
 fluid.terrestrial=Molten Terrestrial Artifact
 fluid.mithrillium=Molten Mithrillium
 fluid.adaminite=Molten Adaminite
-fluid.mithrillium=Molten Mithminite
+fluid.mithminite=Molten Mithminite
 
 item.contenttweaker.compressed_glowstone.name=Compressed Glowstone
 item.contenttweaker.compressed_ender.name=Compressed Ender

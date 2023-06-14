@@ -16,6 +16,8 @@ import crafttweaker.world.IWorld;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
 import crafttweaker.data.IData;
+import crafttweaker.oredict.IOreDict;
+import crafttweaker.oredict.IOreDictEntry;
 
 import scripts.cot.utils_tcon_cot.getItemMatAmount;
 import scripts.cot.utils_tcon_cot.getArmorMatsAmount;
@@ -615,44 +617,18 @@ porous_Trait.localizedDescription = game.localize('e2ee.tconstruct.material.poro
 
 function porous(player as IPlayer) as void {
   var world as IWorld = player.world;
-  val x = player.getX() as float;
+  val x = player.getX()>0 ? ((player.getX() as int) - 0.5f) : ((player.getX() as int) - 1.5f);
   val y = player.getY() as float;
-  val z = player.getZ() as float;
+  val z = player.getZ()>0 ? ((player.getZ() as int) - 0.5f) : ((player.getZ() as int) - 1.5f);
   val porousStone = <item:thaumcraft:taint_rock>.asBlock();
   if ((y - 2) > 255 || (y - 2) < 3) return;
-  val pos = crafttweaker.util.Position3f.create(x - 1, y - 1, z - 1) as IBlockPos;
+  val pos = crafttweaker.util.Position3f.create(x, y - 1, z) as IBlockPos;
   val block as IBlock = world.getBlock(pos);
   if (isNull(block)) return;
   if (block.definition.id != 'minecraft:stone') return;
   world.setBlockState(porousStone.definition.defaultState, pos);
   // utils.spawnParticles(world, 'fireworksSpark', x+i, y+j, z+k, 0.1, 0.1, 0.1, 0.1, 2);
   player.sendPlaySoundPacket('thaumcraft:roots', 'ambient', pos.asPosition3f(), 0.5f, 0.8f);
-
-  /*
-  OLD FUNCTION HERE, STILL GONNA KEEP IT!
-
-  val rangeXZ = [-5,-4,-3,-2,-1,0,1,2,3] as int[];
-  val rangeY = [-3,-2,-1,0,1,2,3] as int[];
-  for i in rangeXZ {
-    for j in rangeY {
-      for k in rangeXZ {
-        if((y+j)<255
-        && (y+j)>1){
-          val pos = crafttweaker.util.Position3f.create(x+i, y+j, z+k) as IBlockPos;
-          if (player.world.isAirBlock(pos)) continue;
-          val block as IBlock = world.getBlock(pos);
-          if(isNull(block)) continue;
-          //print(block.definition.id);
-          if(block.definition.id != "minecraft:stone") continue;
-          world.setBlockState(<blockstate:minecraft:air>, pos);
-          world.setBlockState(porousStone.definition.defaultState, pos);
-          //utils.spawnParticles(world, 'fireworksSpark', x+i, y+j, z+k, 0.1, 0.1, 0.1, 0.1, 2);
-          player.sendPlaySoundPacket("thaumcraft:poof", "ambient", pos.asPosition3f(), 0.5f, 0.5f);
-          //print("success!");
-        }
-      }
-    }
-  } */
 }
 
 porous_Trait.onArmorTick = function (trait, armor, world, player) {
@@ -856,14 +832,18 @@ ____ _    _  _ _  _    ____ ___ ____ _ _  _ ____    ___ ____ ____    _  _ ___  _
 researcherTrait.onUpdate = function (trait, tool, world, owner, itemSlot, isSelected) {
   if (world.isRemote()) return;
   if (!owner instanceof IPlayer) return;
-  tool.mutable();
 
-  if (isNull(tool.tag) || isNull(tool.tag.flux)) tool.updateTag({ flux: 0 } as IData);
+  if (isNull(tool.tag)) return;         # all tinkers tools should have tags
+  if (isNull(tool.tag.flux)) {
+    tool.mutable().updateTag({ flux: 0 });
+    return;
+  }
 
   if (tool.tag.flux >= 100) return;
   if (world.getFlux(owner.position) <= 1.0f) return;
   world.drainFlux(owner.position, 1.0f);
-  tool.updateTag({ flux: tool.tag.flux + 1 } as IData);
+  tool.mutable().updateTag({ flux: tool.tag.flux + 1 });
+  return;
 };
 
 /*
@@ -872,102 +852,6 @@ ____ ____ ____    ___  _  _ ____ _ ____ _ ____ ____
 |__| |  \ |___    |    |__| |  \ | |    | |___ |  \
 
 */
-
-static clusterList as IItemStack[string] = {
-  'actuallyadditions:block_misc:3'          : <item:jaopca:item_clusterquartzblack>,
-  'astralsorcery:blockcustomore:1'          : <item:jaopca:item_clusterastralstarmetal>,
-  'astralsorcery:blockcustomsandore:0'      : <item:jaopca:item_clusteraquamarine>,
-  'appliedenergistics2:charged_quartz_ore:0': <item:jaopca:item_clusterchargedcertusquartz>,
-  'appliedenergistics2:quartz_ore:0'        : <item:jaopca:item_clustercertusquartz>,
-  'biomesoplenty:gem_ore:3'                 : <item:jaopca:item_clustertopaz>,
-  'biomesoplenty:gem_ore:4'                 : <item:jaopca:item_clustertanzanite>,
-  'biomesoplenty:gem_ore:6'                 : <item:jaopca:item_clustersapphire>,
-  'biomesoplenty:gem_ore:1'                 : <item:jaopca:item_clusterruby>,
-  'biomesoplenty:gem_ore:5'                 : <item:jaopca:item_clustermalachite>,
-  'biomesoplenty:gem_ore:0'                 : <item:jaopca:item_clusteramethyst>,
-  'biomesoplenty:gem_ore:2'                 : <item:jaopca:item_clusterperidot>,
-  'draconicevolution:draconium_ore:0'       : <item:jaopca:item_clusterdraconium>,
-  'forestry:resources:0'                    : <item:jaopca:item_clusterapatite>,
-  'endreborn:block_wolframium_ore:0'        : <item:jaopca:item_clustertungsten>,
-  'immersiveengineering:ore:5'              : <item:jaopca:item_clusteruranium>,
-  'libvulpes:ore0:0'                        : <item:jaopca:item_clusterdilithium>,
-  'libvulpes:ore0:8'                        : <item:jaopca:item_clustertitanium>,
-  'nuclearcraft:ore:7'                      : <item:jaopca:item_clustermagnesium>,
-  'nuclearcraft:ore:5'                      : <item:jaopca:item_clusterboron>,
-  'nuclearcraft:ore:6'                      : <item:jaopca:item_clusterlithium>,
-  'nuclearcraft:ore:3'                      : <item:jaopca:item_clusterthorium>,
-  'mekanism:oreblock:0'                     : <item:jaopca:item_clusterosmium>,
-  'minecraft:iron_ore:0'                    : <item:thaumcraft:cluster>,
-  'minecraft:gold_ore:0'                    : <item:thaumcraft:cluster:1>,
-  'minecraft:lapis_ore:0'                   : <item:jaopca:item_clusterlapis>,
-  'minecraft:emerald_ore:0'                 : <item:jaopca:item_clusteremerald>,
-  'minecraft:diamond_ore:0'                 : <item:jaopca:item_clusterdiamond>,
-  'minecraft:coal_ore:0'                    : <item:jaopca:item_clustercoal>,
-  'minecraft:redstone_ore:0'                : <item:jaopca:item_clusterredstone>,
-  'minecraft:quartz_ore:0'                  : <item:thaumcraft:cluster:7>,
-  'rftools:dimensional_shard_ore:0'         : <item:jaopca:item_clusterdimensionalshard>,
-  'tconstruct:ore:0'                        : <item:jaopca:item_clustercobalt>,
-  'tconstruct:ore:1'                        : <item:jaopca:item_clusterardite>,
-  'thaumcraft:ore_amber:0'                  : <item:jaopca:item_clusteramber>,
-  'thermalfoundation:ore:0'                 : <item:thaumcraft:cluster:2>,
-  'thermalfoundation:ore:3'                 : <item:thaumcraft:cluster:5>,
-  'thermalfoundation:ore:7'                 : <item:jaopca:item_clusteriridium>,
-  'thermalfoundation:ore:4'                 : <item:jaopca:item_clusteraluminium>,
-  'thermalfoundation:ore:2'                 : <item:thaumcraft:cluster:4>,
-  'thermalfoundation:ore:6'                 : <item:jaopca:item_clusterplatinum>,
-  'thermalfoundation:ore:5'                 : <item:jaopca:item_clusternickel>,
-  'thermalfoundation:ore:8'                 : <item:jaopca:item_clustermithril>,
-  'thermalfoundation:ore:1'                 : <item:thaumcraft:cluster:3>,
-  'trinity:trinitite:0'                     : <item:jaopca:item_clustertrinitite>,
-} as IItemStack[string];
-
-static shardList as IItemStack[string] = {
-  'actuallyadditions:block_misc:3'          : <item:jaopca:item_crystalshardquartzblack>,
-  'astralsorcery:blockcustomore:1'          : <item:jaopca:item_crystalshardastralstarmetal>,
-  'astralsorcery:blockcustomsandore:0'      : <item:jaopca:item_crystalshardaquamarine>,
-  'appliedenergistics2:charged_quartz_ore:0': <item:jaopca:item_crystalshardchargedcertusquartz>,
-  'appliedenergistics2:quartz_ore:0'        : <item:jaopca:item_crystalshardcertusquartz>,
-  'biomesoplenty:gem_ore:3'                 : <item:jaopca:item_crystalshardtopaz>,
-  'biomesoplenty:gem_ore:4'                 : <item:jaopca:item_crystalshardtanzanite>,
-  'biomesoplenty:gem_ore:6'                 : <item:jaopca:item_crystalshardsapphire>,
-  'biomesoplenty:gem_ore:1'                 : <item:jaopca:item_crystalshardruby>,
-  'biomesoplenty:gem_ore:5'                 : <item:jaopca:item_crystalshardmalachite>,
-  'biomesoplenty:gem_ore:0'                 : <item:jaopca:item_crystalshardamethyst>,
-  'biomesoplenty:gem_ore:2'                 : <item:jaopca:item_crystalshardperidot>,
-  'draconicevolution:draconium_ore:0'       : <item:jaopca:item_crystalsharddraconium>,
-  'forestry:resources:0'                    : <item:jaopca:item_crystalshardapatite>,
-  'endreborn:block_wolframium_ore:0'        : <item:jaopca:item_crystalshardtungsten>,
-  'immersiveengineering:ore:5'              : <item:jaopca:item_crystalsharduranium>,
-  'libvulpes:ore0:0'                        : <item:jaopca:item_crystalsharddilithium>,
-  'libvulpes:ore0:8'                        : <item:jaopca:item_crystalshardtitanium>,
-  'nuclearcraft:ore:7'                      : <item:jaopca:item_crystalshardmagnesium>,
-  'nuclearcraft:ore:5'                      : <item:jaopca:item_crystalshardboron>,
-  'nuclearcraft:ore:6'                      : <item:jaopca:item_crystalshardlithium>,
-  'nuclearcraft:ore:3'                      : <item:jaopca:item_crystalshardthorium>,
-  'mekanism:oreblock:0'                     : <item:jaopca:item_crystalshardosmium>,
-  'minecraft:iron_ore:0'                    : <item:jaopca:item_crystalshardiron>,
-  'minecraft:gold_ore:0'                    : <item:jaopca:item_crystalshardgold>,
-  'minecraft:lapis_ore:0'                   : <item:jaopca:item_crystalshardlapis>,
-  'minecraft:emerald_ore:0'                 : <item:jaopca:item_crystalshardemerald>,
-  'minecraft:diamond_ore:0'                 : <item:jaopca:item_crystalsharddiamond>,
-  'minecraft:coal_ore:0'                    : <item:jaopca:item_crystalshardcoal>,
-  'minecraft:redstone_ore:0'                : <item:jaopca:item_crystalshardredstone>,
-  'minecraft:quartz_ore:0'                  : <item:jaopca:item_crystalshardquartz>,
-  'rftools:dimensional_shard_ore:0'         : <item:jaopca:item_crystalsharddimensionalshard>,
-  'tconstruct:ore:0'                        : <item:jaopca:item_crystalshardcobalt>,
-  'tconstruct:ore:1'                        : <item:jaopca:item_crystalshardardite>,
-  'thaumcraft:ore_amber:0'                  : <item:jaopca:item_crystalshardamber>,
-  'thermalfoundation:ore:0'                 : <item:jaopca:item_crystalshardcopper>,
-  'thermalfoundation:ore:3'                 : <item:jaopca:item_crystalshardlead>,
-  'thermalfoundation:ore:7'                 : <item:jaopca:item_crystalshardiridium>,
-  'thermalfoundation:ore:4'                 : <item:jaopca:item_crystalshardaluminium>,
-  'thermalfoundation:ore:2'                 : <item:jaopca:item_crystalshardsilver>,
-  'thermalfoundation:ore:6'                 : <item:jaopca:item_crystalshardplatinum>,
-  'thermalfoundation:ore:5'                 : <item:jaopca:item_crystalshardnickel>,
-  'thermalfoundation:ore:8'                 : <item:jaopca:item_crystalshardmithril>,
-  'thermalfoundation:ore:1'                 : <item:jaopca:item_crystalshardtin>,
-  'trinity:trinitite:0'                     : <item:jaopca:item_crystalshardtrinitite>,
-} as IItemStack[string];
 
 function checkRefineEnchant(tool as IItemStack) as int {
   if (
@@ -991,30 +875,51 @@ researcherTrait.onBlockHarvestDrops = function (trait, tool, event) {
 
   val lvl = checkRefineEnchant(tool);
 
-  if (isNull(event.block)) return;
-  val block as IBlock = event.block;
-  val result = shardList[block.definition.id + ':' + block.meta] as IItemStack;
-  if (isNull(result)) return; // block doesn't match
+  var newDrops = [] as WeightedItemStack[];
+  for weightedItem in event.drops {
 
-  if (lvl == 0) {
-    if (event.player.world.getRandom().nextInt(2) == 0) return;
+    var oreName = "";
+    var found = false;
 
-    event.drops = [clusterList[block.definition.id + ':' + block.meta].weight(1.0f)] as WeightedItemStack[];
-    return;
-  }
-  if (lvl == 1) {
-    if (event.player.world.getRandom().nextInt(2) == 1) {
-      event.drops = [result.weight(1.0f)] as WeightedItemStack[];
-      return;
+    for ore in weightedItem.stack.ores { // checking if it's wanted ore
+      if (lvl == 0 && ore.name.startsWith("ore")) {
+        oreName = ore.name.substring(3);
+      }
+      
+      if (ore.name.startsWith("cluster")) {
+        oreName = ore.name.substring(7);
+      }
+      if (! (oreDict has ("cluster" ~ oreName))) continue;
+      if (! (oreDict has ("shard" ~ oreName))) continue;
+      found = true;
+      break;
+    }
+
+    if (!found){ // not found ore, adding item as it is
+      if (!isNull(weightedItem)) newDrops += weightedItem; 
+      continue;
+    } 
+    
+    if (lvl == 0) { // it's ore! add matching cluster/shard
+      val item = oreDict['cluster' ~oreName].firstItem;
+      newDrops += (!isNull(item) && event.player.world.getRandom().nextInt(2)==1) ? item % weightedItem.percent : weightedItem;
+    } 
+    else if (lvl ==1){
+      val item =  oreDict[(event.player.world.getRandom().nextInt(2)==0 ? 'cluster' : 'crystalShard') ~oreName].firstItem;
+      newDrops += !isNull(item) ? item % weightedItem.percent : weightedItem;
     }
     else {
-      event.drops = [clusterList[block.definition.id + ':' + block.meta].weight(1.0f)] as WeightedItemStack[];
-      return;
+      val item = oreDict['crystalShard' ~oreName].firstItem;
+      if (isNull(item)){
+        newDrops += weightedItem;
+      } else{
+        newDrops += item % weightedItem.percent;
+        if (lvl >2) newDrops +=  item % ((lvl - 1) * 25);
+      }
     }
   }
-  if (lvl > 1) event.drops = [result.weight(1.0f)] as WeightedItemStack[];
-  if (lvl == 3) event.addItem(result.weight(0.5f));
-  if (lvl == 4) event.addItem(result.weight(0.75f));
+
+event.drops = newDrops;
 };
 researcherTrait.register();
 

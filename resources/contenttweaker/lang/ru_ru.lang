@@ -11,7 +11,7 @@ fluid.electronics=Плавленная Электроника
 fluid.terrestrial=Расплавленный Земленный Артефакт
 fluid.mithrillium=Растворимый Митриллиум
 fluid.adaminite=Расплавленный Адаминит
-fluid.mithrillium=Растворенный Митминит
+fluid.mithminite=Растворенный Митминит
 
 item.contenttweaker.compressed_glowstone.name=Сжатая Светопыль
 item.contenttweaker.compressed_ender.name=Сжатый Эндер Жемчуг
