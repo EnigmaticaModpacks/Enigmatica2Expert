@@ -30,5 +30,16 @@
         "groupcountmax": 2
       }
     ]
+  },
+  {
+    "dimension": 7,
+    "mobs": [
+      {
+        "mob": "thaumcraft:pech",
+        "weight": 1,
+        "groupcountmin": 1,
+        "groupcountmax": 1
+      }
+    ]
   }
 ]

@@ -55,6 +55,8 @@
 	{"dimension": [0, 3], "mob": "endreborn:watcher","mod": "endreborn","mincount": 15,"result": "deny"},
   {"dimension": [0, 3], "mob": "endreborn:watcher","mod": "endreborn", "maxlight": 7, "block": "ore:endstone","result": "allow"},
   {"dimension": [0, 3], "mob": "endreborn:watcher","mod": "endreborn", "result": "deny"},
+	
+	{"dimension": 7,"mob": "thaumcraft:pech","mod": "thaumcraft","maxcount": 1,"perplayer": true,"result": "allow"},
 
 	{"mob": "endreborn:chronologist","mod": "endreborn","mincount": 20,"result": "deny"},
 	{"mob": "endreborn:endguard","mod": "endreborn","mincount": 5,"result": "deny"},
