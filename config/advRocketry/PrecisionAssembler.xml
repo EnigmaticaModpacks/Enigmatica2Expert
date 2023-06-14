@@ -207,30 +207,30 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Garden Cloche] -->
-	<Recipe timeRequired="80" power="320000">
+	<Recipe timeRequired="40" power="160000">
 		<input>
-			<itemStack>actuallyadditions:block_greenhouse_glass 16</itemStack>
-			<itemStack>ic2:upgrade 16 4</itemStack>
-			<oreDict>plankTreatedWood 16</oreDict>
-			<itemStack>immersiveengineering:metal_decoration0 16 5</itemStack>
-			<fluidStack>glass 64000</fluidStack>
+			<itemStack>actuallyadditions:block_greenhouse_glass 8</itemStack>
+			<itemStack>ic2:upgrade 8 4</itemStack>
+			<oreDict>plankTreatedWood 8</oreDict>
+			<itemStack>immersiveengineering:metal_decoration0 8 5</itemStack>
+			<fluidStack>glass 32000</fluidStack>
 		</input>
 		<output>
-			<itemStack>immersiveengineering:metal_device1 16 13</itemStack>
+			<itemStack>immersiveengineering:metal_device1 8 13</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Habitat Screen] -->
-	<Recipe timeRequired="160" power="640000">
+	<Recipe timeRequired="80" power="320000">
 		<input>
-			<oreDict>ingotBronze 64</oreDict>
-			<itemStack>minecraft:glass_pane 32</itemStack>
-			<itemStack>thermalfoundation:material 32 291</itemStack>
-			<itemStack>minecraft:diamond 32</itemStack>
-			<fluidStack>water 64000</fluidStack>
+			<oreDict>ingotBronze 32</oreDict>
+			<itemStack>minecraft:glass_pane 16</itemStack>
+			<itemStack>thermalfoundation:material 16 291</itemStack>
+			<itemStack>minecraft:diamond 16</itemStack>
+			<fluidStack>water 32000</fluidStack>
 		</input>
 		<output>
-			<itemStack>forestry:habitat_screen 32 0</itemStack>
+			<itemStack>forestry:habitat_screen 16 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -420,15 +420,15 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Overclocker Upgrade] -->
-	<Recipe timeRequired="105" power="420000">
+	<Recipe timeRequired="50" power="200000">
 		<input>
-			<oreDict>plateTin 63</oreDict>
-			<itemStack>ic2:cable 21</itemStack>
-			<oreDict>circuitBasic 21</oreDict>
-			<fluidStack>ic2coolant 63000</fluidStack>
+			<oreDict>plateTin 30</oreDict>
+			<itemStack>ic2:cable 10</itemStack>
+			<oreDict>circuitBasic 10</oreDict>
+			<fluidStack>ic2coolant 30000</fluidStack>
 		</input>
 		<output>
-			<itemStack>ic2:upgrade 42 0</itemStack>
+			<itemStack>ic2:upgrade 20 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
@@ -705,14 +705,14 @@
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Hardened Casing] -->
-	<Recipe timeRequired="60" power="240000">
+	<Recipe timeRequired="30" power="120000">
 		<input>
-			<oreDict>gemDiamondRat 24</oreDict>
-			<itemStack>forestry:sturdy_machine 12</itemStack>
-			<fluidStack>water 60000</fluidStack>
+			<oreDict>gemDiamondRat 12</oreDict>
+			<itemStack>forestry:sturdy_machine 6</itemStack>
+			<fluidStack>water 30000</fluidStack>
 		</input>
 		<output>
-			<itemStack>forestry:hardened_machine 12 0</itemStack>
+			<itemStack>forestry:hardened_machine 6 0</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

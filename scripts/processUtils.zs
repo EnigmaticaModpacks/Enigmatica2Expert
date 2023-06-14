@@ -280,7 +280,7 @@ function avdRockXmlRecipe(filename as string,
 }
 
 static fluidMaxInput as int[string] = {
-  PrecisionAssembler: 64000
+  PrecisionAssembler: 32000
 } as int[string];
 
 function avdRockXmlRecipeFlatten(
