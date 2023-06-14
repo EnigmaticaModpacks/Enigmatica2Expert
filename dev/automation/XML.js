@@ -265,10 +265,6 @@ function getCustomRecipes() {
         ['ingotElectrum', 'immersiveengineering:material:21', 5],
         ['ingotAluminium', 'immersiveengineering:material:22', 5],
         ['ingotSteel', 'immersiveengineering:material:23', 5],
-        ['plateCopper', 'ic2:cable', 6],
-        ['plateGold', 'ic2:cable:2', 6],
-        ['plateIron', 'ic2:cable:3', 6],
-        ['plateTin', 'ic2:cable:4', 6],
         ['integrateddynamics:crystalized_menril_chunk', 'integrateddynamics:cable', 2],
         ['crystalPureFluix', 'appliedenergistics2:part:16', 4],
       ]

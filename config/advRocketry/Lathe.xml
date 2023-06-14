@@ -145,44 +145,4 @@
 			<itemStack>integrateddynamics:cable 2</itemStack>
 		</output>
 	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wires plateCopper] -->
-	<Recipe timeRequired="10" power="100000">
-		<input>
-			<oreDict>plateCopper</oreDict>
-		</input>
-		<output>
-			<itemStack>ic2:cable 6</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wires plateGold] -->
-	<Recipe timeRequired="10" power="100000">
-		<input>
-			<oreDict>plateGold</oreDict>
-		</input>
-		<output>
-			<itemStack>ic2:cable 6 2</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wires plateIron] -->
-	<Recipe timeRequired="10" power="100000">
-		<input>
-			<oreDict>plateIron</oreDict>
-		</input>
-		<output>
-			<itemStack>ic2:cable 6 3</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Wires plateTin] -->
-	<Recipe timeRequired="10" power="100000">
-		<input>
-			<oreDict>plateTin</oreDict>
-		</input>
-		<output>
-			<itemStack>ic2:cable 6 4</itemStack>
-		</output>
-	</Recipe>
 </Recipes>
