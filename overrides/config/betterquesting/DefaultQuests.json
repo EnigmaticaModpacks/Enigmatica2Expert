@@ -3020,7 +3020,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Completing this quest opens the Applied Energistics chapter, which also covers AE2 Fluid Crafting Reworked and Packaged Auto.\n\nE2Eu uses AE2 Unofficial Extended Life (aka PAE2), and along with it some new features have been brought with it. \n\nIf you want detail on the new features and changes that PAE2 has, refer to the video link that will be whispered to you.\n",
+          "desc:8": "Completing this quest opens the Applied Energistics chapter, which also covers AE2 Fluid Crafting Reworked and Packaged Auto.\n\nE2Eu uses AE2 Unofficial Extended Life (aka PAE2), and along with it some new features have been brought with it. \n\nIf you want detail on the new features and changes that PAE2 has, refer to the video link that will be whispered to you.\n\nIn this pack, channels are disabled by default, if you wish to renable them, delete channels.zs from your scripts folder and update the ae2 config accordingly.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
