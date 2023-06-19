@@ -54,10 +54,26 @@
                 "gui": "multiplayer"
             }
         },
+        "servers": {
+            "text": "Servers",
+			"hoverText": "BisectHosting",
+            "posX": 44,
+            "posY": -70,
+            "width": 100,
+            "height": 20,
+            "normalTextColor": 16777215,
+            "hoverTextColor": 16777215,
+            "texture": "modpack:textures/gui/button2.png",
+            "alignment": "left_center",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.bisecthosting.com/pansmith"
+            }
+        },
         "mods": {
             "text": "fml.menu.mods",
             "posX": 44,
-            "posY": -70,
+            "posY": -40,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -72,7 +88,7 @@
         "options": {
             "text": "menu.options",
             "posX": 44,
-            "posY": -40,
+            "posY": -10,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -88,7 +104,7 @@
         "languages": {
             "text": "Languages",
             "posX": 44,
-            "posY": -10,
+            "posY": 20,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -103,7 +119,7 @@
         "bug reports": {
             "text": "Bug Reports",
             "posX": 44,
-            "posY": 20,
+            "posY": 50,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -112,13 +128,13 @@
             "alignment": "left_center",
             "action": {
                 "type": "openLink",
-                "link": "https://github.com/ThePansmith/Enigmatica2ExpertUnofficial/issues"
+                "link": "https://github.com/NillerMedDild/Enigmatica2ExpertUnoffical/issues"
             }
         },
 		"discord": {
             "text": "Discord",
             "posX": 44,
-            "posY": 50,
+            "posY": 80,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -134,7 +150,7 @@
         "quit": {
             "text": "menu.quit",
             "posX": 44,
-            "posY": 80,
+            "posY": 110,
             "width": 100,
             "height": 20,
             "normalTextColor": 16777215,
@@ -173,12 +189,7 @@
 				"modpack:textures/gui/slideshow5.png","modpack:textures/gui/slideshow6.png",
 				"modpack:textures/gui/slideshow7.png","modpack:textures/gui/slideshow8.png",
 				"modpack:textures/gui/slideshow9.png","modpack:textures/gui/slideshow10.png",
-				"modpack:textures/gui/slideshow11.png","modpack:textures/gui/slideshow12.png",
-				"modpack:textures/gui/slideshow13.png","modpack:textures/gui/slideshow14.png",
-				"modpack:textures/gui/slideshow15.png","modpack:textures/gui/slideshow16.png",
-				"modpack:textures/gui/slideshow17.png","modpack:textures/gui/slideshow18.png",
-				"modpack:textures/gui/slideshow19.png","modpack:textures/gui/slideshow20.png",
-				"modpack:textures/gui/slideshow21.png"
+				"modpack:textures/gui/slideshow11.png","modpack:textures/gui/slideshow12.png"
 				],
                 "displayDuration" : 100,
                 "fadeDuration" : 30,
