@@ -33088,41 +33088,9 @@
       "questID:3": 434,
       "rewards:9": {
         "0:10": {
-          "choices:9": {
-            "0:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "appliedenergistics2:wireless_pattern_terminal",
-              "tag:10": {
-                "internalCurrentPower:6": 1600000.0,
-                "internalMaxPower:6": 1600000.0
-              }
-            },
-            "1:10": {
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": "",
-              "id:8": "appliedenergistics2:wireless_fluid_terminal",
-              "tag:10": {
-                "internalCurrentPower:6": 1600000.0,
-                "internalMaxPower:6": 1600000.0
-              }
-            }
-          },
           "index:3": 0,
-          "rewardID:8": "bq_standard:choice"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "autoConsume:1": 0,
-          "consume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 1,
-          "partialMatch:1": 1,
-          "requiredItems:9": {
+          "rewardID:8": "bq_standard:item",
+          "rewards:9": {
             "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
@@ -33132,8 +33100,37 @@
                 "internalCurrentPower:6": 1600000.0,
                 "internalMaxPower:6": 1600000.0
               }
-            },
-            "1:10": {
+            }
+          }
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "Count:3": 1,
+              "Damage:2": 59,
+              "OreDict:8": "",
+              "id:8": "appliedenergistics2:material"
+            }
+          },
+          "taskID:8": "bq_standard:optional_retrieval"
+        },
+        "1:10": {
+          "autoConsume:1": 0,
+          "consume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "partialMatch:1": 1,
+          "requiredItems:9": {
+            "0:10": {
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
