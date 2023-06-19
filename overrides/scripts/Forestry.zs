@@ -97,6 +97,7 @@ mods.forestry.Carpenter.addRecipe(<forestry:impregnated_casing>, imprCasingGrid,
 //mods.forestry.Centrifuge.removeRecipe(IIngredient input);
 #mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
+mods.forestry.Centrifuge.addRecipe([(<gendustry:honey_drop:16> * 1) % 100,<forestry:honey_drop> % 30, <forestry:beeswax> % 50], <gendustry:honey_comb:16>, 100);
 
 # *======= Fermenter =======*
 
