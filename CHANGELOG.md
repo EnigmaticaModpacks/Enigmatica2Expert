@@ -6,7 +6,10 @@ _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigma
 
 **Fixed bugs**
 
-
+-   Revert "Update Creative.zs" - Gas Tank gas names [\#2128](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2128) ([Discomanco](https://github.com/Discomanco))
+-   remove emtpy ER entries [\#2126](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2126) ([MorganSimic](https://github.com/MorganSimic))
+-   Undoing of updated JAOPCA [\#2125](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2125) ([Discomanco](https://github.com/Discomanco))
+-   More leftovers from JAOPCA [\#2129](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2129) ([Discomanco](https://github.com/Discomanco))
 
 ---
 
