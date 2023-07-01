@@ -202,7 +202,7 @@
             "name": "research_name.thaumadditions:mithrillium_smelter",
             "icons": [ "thaumadditions:mithrillium_smelter"],
             "category": "ALCHEMY", "location": [ 10,2 ], 
-            "parents": [ "ESSENTIASMELTERVOID", "MITHMINITE" ],
+            "parents": [ "ESSENTIASMELTERVOID", "MITHRILLIUM" ],
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:mithrillium_smelter.1",
@@ -219,7 +219,7 @@
             "name": "research_name.thaumadditions:adaminite_smelter",
             "icons": [ "thaumadditions:adaminite_smelter"],
             "category": "ALCHEMY", "location": [ 12,2 ], 
-            "parents": [ "SMELTERMITHRILLIUM", "MITHMINITE" ],
+            "parents": [ "SMELTERMITHRILLIUM", "ADAMINITE" ],
             "stages": [
                 {
                     "text": "research_stage.thaumadditions:adaminite_smelter.1",

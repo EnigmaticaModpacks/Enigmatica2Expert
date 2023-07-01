@@ -348,7 +348,7 @@
                     "required_knowledge":["OBSERVATION;ELDRITCH;2","THEORY;ELDRITCH;2"]
                 },
                 {
-                    "text": "research_stage.thaumadditions:mithminite_robe.2",
+                    "text": "research_stage.thaumadditions:mithminite_robe_fixed.2",
                     "recipes": ["thaumcraft:mithminite_robe"]
                 }
             ]

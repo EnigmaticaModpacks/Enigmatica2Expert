@@ -1,0 +1,22 @@
+{
+    "weight": 350,
+    "type": "tconevo:tool",
+    "name": "Wit's End",
+    "lore": ["Once left in the void.", "Once lost in the world.", "Once wielded by Wit.", "Then warped by it."],
+    "tool": "katana",
+    "materials": [
+        "dragonbone",
+        "void_metal",
+        "adaminite",
+        "ruby"
+    ],
+    "data_tag": {"TC.WARP": 6, "infench": [{"lvl": 3, "id": 5}]},
+    "free_mods": 5,
+    "mods": [
+        {
+            "id": "necrotic",
+            "level": 2
+        }
+      ]
+}
+  

@@ -649,6 +649,23 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("HungryChest",
   "T": <ore:trapdoorWood>, #Trap door
 }).shaped());
 
+#[Automated crossbow]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumcraft:automatedcrossbow");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("automatedcrossbow", 
+"BASICTURRET", 
+100,
+[], 
+<thaumcraft:turret>, 
+  Grid(["pretty",
+  "  M  ",
+  "G B G",
+  "S   S"], {
+  "S": <ore:stickWood>, #Stick
+  "G": <thaumcraft:plank_greatwood>, #Greatwood planks
+  "M": <thaumcraft:mind>, #Clockwork Mind
+  "B": <minecraft:bow:*>, #Bow
+}).shaped());
+
 /*
 ██╗███╗   ██╗███████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗
 ██║████╗  ██║██╔════╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║
@@ -844,6 +861,18 @@ mods.thaumcraft.Infusion.registerRecipe(
   [<aspect:aer>*10, <aspect:ignis>*10, <aspect:ordo>*10, <aspect:aqua>*10, <aspect:terra>*10, <aspect:perditio>*10, <aspect:metallum>*30],
   <tconevo:material>, # CentralItem
   [<thaumicwonders:primordial_grain>,<thaumcraft:salis_mundus>]
+);
+
+#[Arcane bore]
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:turret:2>);
+mods.thaumcraft.Infusion.registerRecipe(
+  "ArcaneBore", # Name
+  "ARCANEBORE", # Research
+  <thaumcraft:turret:2>, # Output
+  1, # Instability
+  [<aspect:exitium>*25, <aspect:machina>*50],
+  <thaumcraft:turret>, # CentralItem
+  [<thaumcraft:plank_greatwood>,<thaumcraft:plate>,<thaumcraft:plank_greatwood>,<minecraft:iron_pickaxe:*>]
 );
 
 /*

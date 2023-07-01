@@ -243,6 +243,12 @@
   "value": "thaumicaugmentation.research.impetus_generatorfix.1"}
 ]}
 
+,{"key":"CELESTIAL_OBSERVER","ops":[
+  {"op":"replace",
+  "path":"stages/1/recipes",
+  "value": ["thaumcraft:celestial_observer_placer"]}
+]}
+
 ,{"key":"METALPURIFICATION","ops":[
   {"op":"replace",
   "path":"stages/0/recipes",
@@ -665,6 +671,15 @@
   {"op":"replace",
   "path":"location",
   "value": [-2,0]}
+]}
+
+,{"key":"TT_PRISMARINE","ops":[
+  {"op":"add",
+  "path":"stages/-",
+  "value": {
+    "text": "thaumictinkerer.research.prismarine.1", 
+    "recipes": ["thaumictinkerer:prismarine"]
+}}
 ]}
 
 ]

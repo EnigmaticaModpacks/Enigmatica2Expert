@@ -63,6 +63,22 @@ craft.make(<thaumicaugmentation:stone:7> * 8, ["pretty",
   "g": <ore:glowstone>, # Glowstone
 });
 
+# [Celestial observer]
+mods.thaumcraft.ArcaneWorkbench.removeRecipe("thaumicaugmentation:celestial_observer_placer");
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("celestial_observer_placer", 
+"CELESTIAL_OBSERVER", 
+100,
+[], 
+<thaumicaugmentation:celestial_observer_placer>, 
+  Grid(["pretty",
+  "  S  ",
+  "G T G"], {
+  "G": <ore:ingotGold>, #Gold ingot
+  "T": <thaumcraft:turret>, #Crossbow turret
+  "S": <thaumcraft:thaumometer>, #Thaumometer
+}).shaped());
+
+
 mods.bloodmagic.AlchemyTable.addRecipe(<thaumcraft:stone_ancient>, [<thaumcraft:taint_rock>, <bloodmagic:slate:4>, <botania:manaresource:5>], 100000, 300, 5);
 mods.bloodmagic.AlchemyTable.addRecipe(<thaumicaugmentation:stone:1>, [<thaumcraft:taint_crust>, <bloodmagic:slate:4>, <botania:manaresource:5>], 100000, 300, 5);
 mods.bloodmagic.AlchemyTable.addRecipe(<thaumicaugmentation:stone:2>, [<thaumcraft:taint_soil>, <bloodmagic:slate:4>, <botania:manaresource:5>], 100000, 300, 5);

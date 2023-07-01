@@ -1142,6 +1142,95 @@ ___  ____ _
 
 /*
 #######################################################
+____ ____ _  _ ___  ____ _  _    ___ _  _ _ _  _ ____ ____ 
+|__/ |__| |\ | |  \ |  | |\/|     |  |__| | |\ | | __ [__  
+|  \ |  | | \| |__/ |__| |  |     |  |  | | | \| |__] ___] 
+                                                           
+#######################################################
+*/
+
+<randomthings:ingredient:2>                     .setAspects(<aspect:spiritus>*10); #Ectoplasm
+
+/*
+#######################################################
+____ ____ ___ ____ 
+|__/ |__|  |  [__  
+|  \ |  |  |  ___] 
+                   
+#######################################################
+*/
+
+<rats:rat_sack>                                 .setAspects(<aspect:rattus>*10    ,<aspect:ordo>*5); 
+<rats:piper_hat>                                .setAspects(<aspect:rattus>*10    ,<aspect:praemunio>*4       ,<aspect:praecantatio>*2); 
+<rats:rat_flute>                                .setAspects(<aspect:rattus>*10    ,<aspect:praecantatio>*10   ,<aspect:fabrico>*10); 
+<rats:plague_essence>                           .setAspects(<aspect:rattus>*10    ,<aspect:mortuus>*5); 
+<rats:rat_pelt>                                 .setAspects(<aspect:rattus>*5     ,<aspect:praemunio>*5); 
+<rats:raw_rat>                                  .setAspects(<aspect:rattus>*5     ,<aspect:victus>*5); 
+<rats:cheese_stick>                             .setAspects(<aspect:rattus>*10    ,<aspect:fabrico>*10); 
+<rats:radius_stick>                             .setAspects(<aspect:rattus>*10    ,<aspect:perditio>*10       ,<aspect:mortuus>*10); 
+<rats:string_cheese>                            .setAspects(<aspect:rattus>*5     ,<aspect:fabrico>*5         ,<aspect:victus>*5); 
+<rats:jack_o_ratern>                            .setAspects(<aspect:rattus>*5     ,<aspect:herba>*5           ,<aspect:lux>*5); 
+<rats:rat_lantern>                              .setAspects(<aspect:herba>*1); 
+<rats:marbled_cheese_raw>                       .setAspects(<aspect:rattus>*5     ,<aspect:terra>*5); 
+//<rats:feral_bagh_nakhs>                         .setAspects(<aspect:rattus>*10); 
+<rats:feral_rat_claw>                           .setAspects(<aspect:rattus>*25    ,<aspect:mortuus>*5); 
+<rats:gem_of_ratlantis>                         .setAspects(<aspect:rattus>*10    ,<aspect:vitreus>*15        ,<aspect:desiderium>*10); 
+<rats:arcane_technology>                        .setAspects(<aspect:rattus>*50    ,<aspect:machina>*15        ,<aspect:alienis>*10); 
+//<rats:ancient_sawblade>                         .setAspects(<aspect:rattus>*10   ,<aspect:>*5         ,<aspect:>*5); 
+<rats:ratlantean_flame>                         .setAspects(<aspect:rattus>*5     ,<aspect:spiritus>*10       ,<aspect:alienis>*5); 
+<rats:psionic_rat_brain>                        .setAspects(<aspect:rattus>*100   ,<aspect:cognitio>*100      ,<aspect:desiderium>*100 ,<aspect:alienis>*25, <aspect:alkimia>*50); 
+//<rats:idol_of_ratlantis>                        .setAspects(<aspect:rattus>*10   ,<aspect:>*5         ,<aspect:>*5); 
+<rats:rattrap>                                  .setAspects(<aspect:rattus>*5     ,<aspect:vinculum>*40       ,<aspect:metallum>*5,   <aspect:fabrico>*5); 
+<rats:rat_cage>                                 .setAspects(<aspect:rattus>*5     ,<aspect:vinculum>*50       ,<aspect:metallum>*20,   <aspect:fabrico>*15); 
+<rats:charged_creeper_chunk>                    .setAspects(<aspect:exitium>*10   ,<aspect:alkimia>*5         ,<aspect:ignis>*10,   <aspect:perditio>*10); 
+<rats:plague_scythe>                            .setAspects(<aspect:aversio>*52   ,<aspect:rattus>*15); 
+//<rats:rat_capture_net>                          .setAspects(<aspect:rattus>*10   ,<aspect:>*5         ,<aspect:>*5); 
+
+val tubes = [
+<rats:rat_tube_white>,
+<rats:rat_tube_orange>,
+<rats:rat_tube_magenta>,
+<rats:rat_tube_light_blue>,
+<rats:rat_tube_yellow>,
+<rats:rat_tube_lime>,
+<rats:rat_tube_pink>,
+<rats:rat_tube_gray>,
+<rats:rat_tube_cyan>,
+<rats:rat_tube_silver>,
+<rats:rat_tube_purple>,
+<rats:rat_tube_blue>,
+<rats:rat_tube_brown>,
+<rats:rat_tube_green>,
+<rats:rat_tube_red>,
+ ] as IItemStack[];
+for tube in tubes{
+  tube.setAspects(<aspect:rattus>*1,<aspect:motus>*5);
+}
+
+val igloos = [
+<rats:rat_igloo_cyan>,
+<rats:rat_igloo_purple>,
+<rats:rat_igloo_blue>,
+<rats:rat_igloo_brown>,
+<rats:rat_igloo_green>,
+<rats:rat_igloo_red>,
+<rats:rat_igloo_black>,
+<rats:rat_igloo_white>,
+<rats:rat_igloo_orange>,
+<rats:rat_igloo_magenta>,
+<rats:rat_igloo_light_blue>,
+<rats:rat_igloo_yellow>,
+<rats:rat_igloo_lime>,
+<rats:rat_igloo_pink>,
+<rats:rat_igloo_gray>,
+<rats:rat_igloo_silver>,
+ ] as IItemStack[];
+for igloo in igloos{
+  igloo.setAspects(<aspect:fabrico>*30,<aspect:humanus>*30,<aspect:ordo>*15);
+}
+
+/*
+#######################################################
 ___ _  _ ____ ____ _  _ ____ _       ____ ____ _  _ _  _ ___  ____ ___ _ ____ _  _ 
  |  |__| |___ |__/ |\/| |__| |       |___ |  | |  | |\ | |  \ |__|  |  | |  | |\ | 
  |  |  | |___ |  \ |  | |  | |___    |    |__| |__| | \| |__/ |  |  |  | |__| | \| 
@@ -1293,6 +1382,7 @@ _  _ ____ _  _ _ _    _    ____   / _  _ _ _  _ ____ ____ ____ ____ ____ ___
 <minecraft:stone:3>                             .setAspects(<aspect:terra>*5      ,<aspect:ordo>); #diorite
 <minecraft:stone:5>                             .setAspects(<aspect:terra>*5      ,<aspect:perditio>); #andesite
 <minecraft:stone:1>                             .setAspects(<aspect:terra>*5      ,<aspect:ignis>); #granite
+<minecraft:web>                                 .setAspects(<aspect:bestia>*5     ,<aspect:vinculum>*2);
 
 <minecraft:skull:1>                             .setAspects(<aspect:spiritus>*10  ,<aspect:infernum>*10       ,<aspect:tenebrae>*5       ,<aspect:perditio>*5); #wither skull
 
