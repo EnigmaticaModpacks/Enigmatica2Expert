@@ -969,7 +969,7 @@ mods.thaumcraft.Crucible.registerRecipe(
   "energetic_nitor", # Name
   "TT_ENERGETIC_NITOR", # Research
   <thaumictinkerer:energetic_nitor>, # Output
-  <ore:nitor>, # Input
+  <thaumcraft:nitor_yellow>, # Input
   [<aspect:lux>*25, <aspect:potentia>*25, <aspect:ignis>*10, <aspect:aer>*10]
 );
 
@@ -1112,7 +1112,7 @@ function IsThatEgg(egg as IItemStack, entityId as string) as IItemStack{
   }
 }
 
-function eggRecipe(entityId as string ,research as string ,aspects as CTAspectStack[] ,output as IItemStack = <minecraft:spawn_egg> ,input as IIngredient = <ore:egg> ,items as IIngredient[] = []) as void {
+function eggRecipe(entityId as string ,research as string ,aspects as CTAspectStack[] ,output as IItemStack = <minecraft:spawn_egg> ,input as IIngredient = <minecraft:egg> ,items as IIngredient[] = []) as void {
   if (items.length==0){
     mods.thaumcraft.Crucible.registerRecipe(
     entityId, L(research),
