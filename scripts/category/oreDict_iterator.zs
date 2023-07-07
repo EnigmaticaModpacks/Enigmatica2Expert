@@ -38,6 +38,7 @@ for ore_entry in oreDict {
       if(isNull(asBlock) || asBlock.definition.id == 'minecraft:air') continue;
       val oreBlockState = asBlock.definition.getStateFromMeta(item.damage);
       scripts.do.burnt_in_fluid.add(ore_entry.itemArray[0].definition.id, oreBlockState, 'stone', 1.0 / 3.0);
+      break;
     }
     continue;
 	}
