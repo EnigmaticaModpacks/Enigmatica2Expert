@@ -22,7 +22,7 @@ craft.remake(<mctsmelteryio:upgrade> * 10, ["pretty",
   "□ □ □"], {
   "□": <ore:plateLapis>,    # Lapis Lazuli Plate
   "п": <ore:plateAluminum>, # Aluminum Plate
-  "E": <rustic:elixir>,     # Elixir
+  "E": <rustic:elixir>.withTag({display: {Name: "ANY Elixir"}}, false), # Elixir
 });
 
 # [Speed Upgrade] from [Base Upgrade][+1]
