@@ -137,3 +137,6 @@ val TC = <astralsorcery:itemrockcrystalsimple>.withTag({
 	astralsorcery: {crystalProperties: {collectiveCapability: 1, size: 1, fract: 0, purity: 1, sizeOverride: -1}}
 });
 scripts.process.crush(<ore:oreRockCrystal>, TC, "only: SagMill AEGrinder", [TC, TC, TC], [1.0f, 1.0f, 1.0f]);
+
+// Add TE Sawmill log -> plank compat
+scripts.process.saw(<astralsorcery:blockinfusedwood>, <astralsorcery:blockinfusedwood:1> * 6, "only: TESawmill");
