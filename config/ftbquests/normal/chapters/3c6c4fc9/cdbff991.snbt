@@ -1,4 +1,5 @@
 {
+	title: "Crash: Redstone Conduits",
 	icon: "enderio:item_redstone_conduit",
 	x: 13.95d,
 	y: 10.275d,
