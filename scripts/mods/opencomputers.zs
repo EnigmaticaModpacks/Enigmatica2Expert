@@ -61,3 +61,39 @@ craft.remake(<opencomputers:upgrade>, [
   ":": <ore:oc:circuitChip1>,    # Microchip (Tier 1)
   "■": <extrautils2:angelblock>, # Angel Block
 });
+
+# [Computer Case (Tier 1)] from [Cabinet][+4]
+craft.remake(<opencomputers:case1>, ["pretty",
+  "I c I",
+  "□ C □",
+  "I : I"], {
+  "I": <ore:barsIron>,                       # Iron Bars
+  "c": <ore:oc:circuitChip1>,                # Microchip (Tier 1)
+  "□": <ore:plateCopper>,                    # Copper Plate
+  "C": <rustic:cabinet>,                     # Cabinet
+  ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+});
+
+# [Computer Case (Tier 2)] from [Bronze Storage Box][+4]
+craft.remake(<opencomputers:case2>, ["pretty",
+  "S : S",
+  "□ B □",
+  "S m S"], {
+  "S": <ore:itemSimpleChassiParts>,          # Simple Machine Parts
+  ":": <ore:oc:circuitChip2>,                # Microchip (Tier 2)
+  "□": <ore:plateConstantan>,                # Constantan Plate
+  "B": <ore:chest>,
+  "m": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+});
+
+# [Computer Case (Tier 3)] from [Steel Storage Box][+4]
+craft.remake(<opencomputers:case3>, ["pretty",
+  "C : C",
+  "□ S □",
+  "C m C"], {
+  "C": <ore:itemChassiParts>,                # Machine Parts
+  ":": <ore:oc:circuitChip3>,                # Microchip (Tier 3)
+  "□": <ore:platePlatinum>,                  # Platinum Plate
+  "S": <ic2:te:114>,                         # Steel Storage Box
+  "m": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+});
