@@ -7,6 +7,13 @@ scripts.lib.dropt.addDrop(<advancedrocketry:geode>, <thermalfoundation:geode>);
 # Rename basalt as it not oredicted and have different uses
 <advancedrocketry:basalt>.displayName = game.localize("e2ee.tile.basalt_sediment");
 
+// Hint that Basalt Sediments can be obtained with rocket
+scripts.jei.crafting_hints.addInsOutCatl(
+  [<minecraft:cobblestone> | <minecraft:gravel>],
+  <advancedrocketry:basalt>,
+  <advancedrocketry:launchpad>.withLore(["§6§lRocket burn blocks"])
+);
+
 # Airtight Seal Enchant
 	recipes.addShaped("Airtight Seal Enchant", 
 	Book(<enchantment:advancedrocketry:spacebreathing>), 
