@@ -613,6 +613,17 @@ craft.remake(<thermalexpansion:augment:497>, ["pretty",
   "▲": <ore:dustAerotheum>,                       # Aerotheum Dust
 });
 
+# [Augment_ Boiler Conversion] from [Advanced Pressure Valve][+3]
+craft.remake(<thermalexpansion:augment:576>, ["pretty",
+  "T ¤ T",
+  "◘ A ◘",
+  "T ¤ T"], {
+  "T": <ore:sheetTitaniumIridium>,              # Titanium Iridium Alloy Sheet
+  "¤": <ore:gearEnderium>,                      # Enderium Gear
+  "◘": <thermalexpansion:frame:147>,            # Signalum Cell Frame (Full)
+  "A": <advgenerators:advanced_pressure_valve>, # Advanced Pressure Valve
+});
+
 # [Tool Casing] from [Block of Black Quartz][+2]
 craft.remake(<thermalfoundation:material:640>, ["pretty",
   "R   R",
