@@ -63,6 +63,7 @@ q.getting_started.mob_spawning_changes.name=Mob Spawning Changes
 q.getting_started.mob_spawning_changes.desc=Some mob spawning mechanics was changed.\nSame info duplicates in §3"Enigmatica2:Expert"§r Patchouli book.\n\nNew spawn rules:\n§2-§r §lEnderman§r When spawn in §nOverworld§r, 1/10 of times carry §nCompressed End Stone§r, or §nEnd Ore§r with lower probabilities\n§2-§r §lDire Wolf§r only in the dark\n§2-§r §lStoneling§r §nonly on Stone blocks§r and not more than 3\n§2-§r §lRats§r on §nGarbage Piles§r\n§2-§r §lWatcher§r in Overworld only on §nany Endstone§r\n§2-§r §lPurpur Guard§r anywhere, but only on §nPurpur blocks§r or §nCursed Earth§r
 q.getting_started.backpacks.name=Backpacks
 q.getting_started.backpacks.desc=A list of bags in which items can be carried.
+q.getting_started.dispenser.desc=Dispencer functionality extended.\n\nIts also can:\n§2-§r Place blocks / plant seeds\n§2-§r Use Bonemeal\n§2-§r Fill Bottles with Ender Air\n§2-§r Fill / Empty fluid containers
 q.getting_started.difficulty.name=Difficulty
 q.getting_started.difficulty.desc=The §4Difficulty§r is sometimes highlighted in the bottom corner of the screen.\n\nIt increases slowly over time, by about §n2 per hour§r of play.\n\nDifficulty increases mob health and damage, but §nnon-lineary§r.\nAt §a10§r Difficulty, mob only receive 0.1%% health boost.\nAt §e100§r - about +25%% health.\nAt §4500§r - about x10 or x20 health boost.\nOn Maximum §c1000§r Difficulty zombies would have up to 2000 health.
 q.getting_started.harvest_level_3.name=Harvest level 3

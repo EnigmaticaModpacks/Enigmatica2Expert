@@ -63,6 +63,7 @@ q.getting_started.mob_spawning_changes.name=刷怪改动
 q.getting_started.mob_spawning_changes.desc=一些刷怪机制有所改动。\n相似的信息也可以在§3"Enigmatica2:Expert"§r手册中找到。\n\n新的刷怪规则：\n- §l末影人§r在§n主世界§r生成时，有1/10的概率携带§n压缩末地石§r或更低概率是§n末地矿石§r 。\n- §l惧狼§r只在黑暗中生成。\n- §l石精灵§r§n只会在石头上生成§r至多3个。\n- §l老鼠§r在§n垃圾堆§r上生成。\n- §l观察者§r在主世界只会在§n任意末地石§r上生成。\n- §l紫色守卫§r只能在任意§n紫色方块§r上生成。
 q.getting_started.backpacks.name=Backpacks
 q.getting_started.backpacks.desc=A list of bags in which items can be carried.
+q.getting_started.dispenser.desc=Dispencer functionality extended.\n\nIts also can:\n§2-§r Place blocks / plant seeds\n§2-§r Use Bonemeal\n§2-§r Fill Bottles with Ender Air\n§2-§r Fill / Empty fluid containers
 q.getting_started.difficulty.name=难度
 q.getting_started.difficulty.desc=§4难度§r有时会在下方高亮显示。\n\n它会随时间缓慢增加，大约§n每游玩1小时增加2§r。困难度会增加暴徒的健康和伤害，但是是非线性的。\n\n在§a10§r难度下，暴徒只得到0.1%%的健康提升。\n在§e100§r - 约+25%%健康。\n在§4500§r - 约x10或x20健康提升。\n在最大的§c1000§r难度下，僵尸将有高达2000的健康。
 q.getting_started.harvest_level_3.name=挖掘等级3

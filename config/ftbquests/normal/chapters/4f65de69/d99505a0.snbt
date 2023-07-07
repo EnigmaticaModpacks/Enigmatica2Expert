@@ -1,0 +1,17 @@
+{
+	x: 0.62d,
+	y: 7.04d,
+	text: [
+		"{q.getting_started.dispenser.desc}"
+	],
+	dependencies: [
+		"18c9097c"
+	],
+	tasks: [{
+		uid: "89eb6345",
+		type: "item",
+		items: [{
+			item: "minecraft:dispenser"
+		}]
+	}]
+}
