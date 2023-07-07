@@ -2,12 +2,30 @@
 
 List of priorities:
 
-- [ ] 📖 addNoteAboutLiquidHeliumCooler
-- [ ] 📖 Add Info about Void Beacon https://t.ly/46Fm
-- [ ] 🌍 Alien Forest add JER data
-- [ ] 💥 going Between Dims Causing Client Freezez / memory leak
-- [ ] 🔄 Disable Skeletons on horses since they cause random explosions
-- [ ] 🔴 Remove `Animania`
+- [ ] 📖 Add `Computers` finishing quest
+- [ ] 📖 Add 3d prints usage quest
+- [ ] 📖 Harvest Level 7 fix task
+- [ ] 📖 `Chamelium Block` make smaller reward
+- [ ] 📖 Add note that crushing block can lifted with piston
+- [ ] 🔴 Remove `Animania` + `CraftStudioAPI`
+- [x] ✏️ Remove ring from creative Pool recipe
+- [ ] ✏️ fix `Burn in Fluid` Hopper Dupe
+- [ ] ✏️ Unify `Tungsten Dust` (ore => out)
+- [ ] ✏️ Fix `Tungsten Dust` => Ingot in Arc Furn
+- [ ] ✏️ `Dislocator` cheaper, `Pedestal` harder
+- [ ] ✏️ Fix Cottontail not turning into Dye
+- [ ] ✏️ Inventory Upgrade cheaper
+- [ ] ✏️ AE2fc fix dupe https://t.ly/Az_kQ
+- [ ] ✏️ Basalt should be main ingredient of OC
+- [ ] ✏️ Reinforcement Modifier should have magic alt recipe
+- [ ] ✏️ Add Compressed Granite
+- [ ] ✏️ inventToolForRobotWithLowDurability
+- [ ] ✏️ make8factorialRecipe
+- [ ] ✏️ Life Conglomerate increase Cat drop rate
+- [ ] ✏️ Mulch more usage (source: cherry)
+- [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
+- [ ] 🟢 Configure `Worldgen Indicators`
+- [ ] 🟢 Add `VintageFix`
 
 ---
 
@@ -17,7 +35,19 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Printing and assembling Chaos Guardian spawns Chaos Guardian
+- [ ] 🔴 Do not update `MixinBooter` until fixed: https://github.com/LoliKingdom/MixinBooter/issues/31
+- [ ] 🔴 Do not update `CensoredASM` until fixed: https://github.com/LoliKingdom/LoliASM/issues/169
+- [ ] ✏️ fix ET gen Tuntsten Chunks. Cant reproduce in singleplayer.
+- [ ] ✏️ Base OC components made with machines rather than crafting table. `Small Plate Presser` `Alloy Kiln`
+- [ ] 🟢 Add https://github.com/Project-RT have `string[] IItemStack.getAspects()` method
+- [ ] 🔄 Disable Skeletons on horses since they cause random explosions
+- [ ] 💥 going Between Dims Causing Client Freezez / memory leak
+- [ ] 🌍 Alien Forest add JER data
+- [ ] 📖 add Note that QMD multiblocks need `Liquid Helium` Cooler
+- [ ] 🧩 Turn back Foci sounds in UniversalTweaks
 - [ ] ✏️ `Burnt in fluid` fix accept any meta
+- [ ] 📖 Put most load screen tips into Bibliocraft's book => Akashik. Cut tips count by rearrange them into respective item quests.
 - [ ] 📖 Describe Skyblock quests
 - [ ] 📀 Rustic's barrel make as x4 chests but without GUI or change somehow else to make more fun.
 - [ ] ✏️ Add recipes of throwing items into Ratlantis portal
