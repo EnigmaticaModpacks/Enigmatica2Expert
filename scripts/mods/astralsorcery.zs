@@ -150,3 +150,6 @@ craft.make(<astralsorcery:blockmachine:1>, ["pretty",
   "≢": <ore:plankTreatedWood>, # Treated Wood Planks
   "#": <ore:stickTreatedWood>, # Treated Stick
 });
+
+// Quartz dust compat
+scripts.process.crush(<ore:gemQuartz>, <appliedenergistics2:material:3>, "only: Grindstone");
