@@ -343,6 +343,16 @@ craft.remake(<industrialforegoing:pitiful_fuel_generator>, ["pretty",
   "F": <minecraft:furnace>, # Furnace
 });
 
+# [Block Placer] from [Aluminum Plate][+2]
+craft.remake(<industrialforegoing:block_placer>, ["pretty",
+  "R ░ R",
+  "░ □ ░",
+  "R ░ R"], {
+  "R": <ore:itemRubber>, # Rubber
+  "░": <ore:cobblestone>, # Cobblestone
+  "□": <ore:plateAluminium>, # Aluminum Plate
+});
+
 
 # Remove barely all Ore benification to leave only meat washing
 function cleanupBenification(item as IItemStack, ingot as IItemStack, dust as IItemStack, fluid as ILiquidStack) as void {
