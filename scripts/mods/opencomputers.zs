@@ -13,7 +13,7 @@ craft.remake(<opencomputers:upgrade:2>, ["pretty",
   "□ S □",
   ": □ :"], {
   ":": <ore:oc:capacitor>,          # Capacitor
-  "□": <ore:plateElectrum>,         # Electrum Plate
+  "□": <ore:plateConstantan>,       # Constantan Plate
   "S": <ore:itemSimpleChassiParts>, # Simple Machine Parts
 });
 
