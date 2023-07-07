@@ -53,3 +53,10 @@ addWrittenBook('Dog'     , 'minecraft:wolf'    , ["Wooof"        , "Ruff"]);
 addWrittenBook('Sheep'   , 'minecraft:sheep'   , ["Baa"          , "Maaaa"]);
 addWrittenBook('Creeper' , 'minecraft:creeper' , ["Sssss"        , "Hsssss"]);
 addWrittenBook('Zombie'  , 'minecraft:zombie'  , ["Brains"       , "Eeehhhahhh"]);
+
+// Mending book from all animals knowledges
+recipes.addShapeless('Mending book', Book(<enchantment:minecraft:mending>),[
+  bookWrittenBy_ingr['Cow']     , bookWrittenBy_ingr['Pig']    , bookWrittenBy_ingr['Cat'],
+  bookWrittenBy_ingr['Enderman'], bookWrittenBy_ingr['Chicken'], bookWrittenBy_ingr['Dog'],
+  bookWrittenBy_ingr['Sheep']   , bookWrittenBy_ingr['Creeper'], bookWrittenBy_ingr['Zombie'],
+], function(out, ins, cInfo) { return Book(<enchantment:minecraft:mending>); }, null);
