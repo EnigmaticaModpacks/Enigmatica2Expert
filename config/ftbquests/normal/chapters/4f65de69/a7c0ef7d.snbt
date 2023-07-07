@@ -20,16 +20,13 @@
 			tag: {
 				Material: "obsidian"
 			}
-		}]
-	},
-	{
-		uid: "4666b65d",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "sky_stone"
 			}
-		}]
+		}],
+		ignore_nbt: 2b
 	}]
 }
