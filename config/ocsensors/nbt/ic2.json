@@ -1,0 +1,24 @@
+[
+  {
+    "class": "ic2.core.crop.TileEntityCrop",
+    "prefix": "Crop",
+    "rules": {
+      "cropId": "string[cropId]",
+      "terrainAirQuality": "short[terrainAirQuality]",
+      "cropOwner": "string[cropOwner]",
+      "scanLevel": "short[scanLevel]",
+      "crossingBase": "short[crossingBase]",
+      "storageNutrients": "short[storageNutrients]",
+      "active": "short[active]",
+      "currentSize": "short[currentSize]",
+      "terrainNutrients": "short[terrainNutrients]",
+      "growthPoints": "short[growthPoints]",
+      "storageWeedEX": "short[storageWeedEX]",
+      "statGain": "short[statGain]",
+      "statResistance": "short[statResistance]",
+      "storageWater": "short[storageWater]",
+      "statGrowth": "short[statGrowth]",
+      "terrainHumidity": "short[terrainHumidity]"
+    }
+  }
+]

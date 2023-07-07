@@ -1,0 +1,1 @@
+var worksWith = function(tileEntity, side) { return true; };
