@@ -388,6 +388,26 @@ mods.qmd.target_chamber.addRecipe(<thaumcraft:quicksilver>, <particle:antideuter
 utils.rh(<qmd:ingot2:2>);
 ////////////////////////////////////////
 
+// Low-energy alt recipe
+# [Basalt Sediment] from [Basalt]
+mods.qmd.target_chamber.addRecipe(
+  <ore:stoneBasalt>,
+  (<particle:boron_ion>*1000000)^20,
+  <advancedrocketry:basalt>,
+  null, null, null,
+  2000, 1.0, 0, 0
+);
+
+// Low-energy alt recipe
+# [Draconium Infused Obsidian] from [Obsidian]
+mods.qmd.target_chamber.addRecipe(
+  <ore:obsidian>,
+  (<particle:boron_ion>*1000000)^20,
+  <draconicevolution:infused_obsidian>,
+  null, null, null,
+  2000, 1.0, 0, 0
+);
+
 // mods.qmd.target_chamber.addRecipe(
 //   IIngredient inputItem,
 //   IIngredient inputParticle,
