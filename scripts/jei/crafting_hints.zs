@@ -106,6 +106,7 @@ addInsOutCatl([<opencomputers:material:28>, <ore:dye>], <opencomputers:print>, <
 addInsOutCatl([<opencomputers:case1> | <opencomputers:case2> | <opencomputers:case3>], <opencomputers:robot>, <opencomputers:assembler>);
 addInsOutCatl([<opencomputers:material:17> | <opencomputers:material:18>], <opencomputers:misc>, <opencomputers:assembler>);
 addInsOutCatl([<opencomputers:material:23> | <opencomputers:material:24>], <opencomputers:misc:1>, <opencomputers:assembler>);
+addInsOutCatl([<opencomputers:material:20> | <opencomputers:material:21>], <opencomputers:microcontroller>, <opencomputers:assembler>);
 
 # XP Bottler
 val xp_bottler = itemUtils.getItem("openblocks:xp_bottler");
