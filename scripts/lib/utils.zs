@@ -35,13 +35,19 @@ zenClass Utils {
     return null;
   }
 
+  function firstItem(ingr as IIngredient) as IItemStack {
+    if(ingr.itemArray.length <= 0 ) { return null; }
+    val a = ingr.itemArray[0];
+    return a.damage == 32767 ? a.withDamage(0) : a;
+  }
+
   function compact(a as IIngredient, b as IIngredient) as void {
-    if(b.itemArray.length <= 0 ) {
+    if(a.itemArray.length <= 0 || b.itemArray.length <= 0) {
       logger.logWarning('Cannot compact '~a.commandString~' into '~b.commandString);
       return;
     }
-    recipes.addShapeless(b.itemArray[0].anyAmount(), [a,a,a,a,a,a,a,a,a]);
-    recipes.addShapeless(a.itemArray[0] * 9, [b]);
+    recipes.addShapeless(firstItem(b).anyAmount(), [a,a,a,a,a,a,a,a,a]);
+    recipes.addShapeless(firstItem(a) * 9, [b]);
   }
 
   function ingredientFromArrayByRegex(regex as string) as IIngredient {
