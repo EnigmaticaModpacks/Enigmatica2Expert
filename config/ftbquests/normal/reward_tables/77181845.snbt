@@ -74,9 +74,6 @@
 		item: "enderstorage:ender_pouch"
 	},
 	{
-		item: "storagedrawers:framingtable"
-	},
-	{
 		item: {
 			id: "appliedenergistics2:storage_cell_1k",
 			tag: {
