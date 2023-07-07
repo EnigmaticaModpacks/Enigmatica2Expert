@@ -5,10 +5,10 @@
 
 <p align="center" style="font-size:160%;">
 MC total load time:<br>
-536.65 sec
+535.41 sec
 <br>
 <sup><sub>(
-8:56 min
+8:55 min
 )</sub></sup>
 </p>
 
@@ -20,8 +20,8 @@ MC total load time:<br>
   type: 'horizontalBar',
   data: {
     datasets: [
-      {label:      'MODS:', data: [303.08]},
-      {label: 'FML stuff:', data: [233.57]}
+      {label:      'MODS:', data: [301.09]},
+      {label: 'FML stuff:', data: [234.32]}
     ]
   },
   options: {
@@ -60,31 +60,31 @@ MC total load time:<br>
   },
   data: {...
 `
-436e17  25.60s Had Enough Items;
-3C6315  16.12s Had Enough Items (Plugins);
-813e81  12.09s OpenComputers;
-516fa8  10.62s Ender IO;
-a651a8  10.51s IndustrialCraft 2;
-5161a8   1.18s CraftTweaker2;
-495797   8.95s CraftTweaker2 (Script Loading);
-8f3087   9.18s Forge Mod Loader;
-8f304e   7.15s Astral Sorcery;
-cd922c   5.88s NuclearCraft;
-8c2ccd   5.42s Immersive Engineering;
-6e175e   5.03s Recurrent Complex;
-213664   4.97s Forestry;
-538f30   4.04s Animania;
+436e17  26.02s Had Enough Items;
+3C6315  16.00s Had Enough Items (Plugins);
+516fa8  15.82s Ender IO;
+813e81  12.14s OpenComputers;
+5161a8   0.79s CraftTweaker2;
+495797   8.79s CraftTweaker2 (Script Loading);
+8f3087   9.09s Forge Mod Loader;
+a651a8   8.80s IndustrialCraft 2;
+8f304e   7.10s Astral Sorcery;
+cd922c   6.20s NuclearCraft;
+8c2ccd   5.37s Immersive Engineering;
+213664   5.11s Forestry;
+6e175e   4.91s Recurrent Complex;
+538f30   4.15s Animania;
 308f53   4.02s Village Names;
-436e17   4.01s Integrated Dynamics;
-219e7b   3.92s Fluidlogged API;
-a86e51   3.87s Extra Utilities 2;
-8f4d30   3.72s Open Terrain Generator;
-308f7e   3.50s Quark: RotN Edition;
-ba3eb8   3.33s Cyclic;
-649e21   3.21s OpenBlocks;
-444444  79.31s 44 Other mods;
-333333  60.47s 178 'Fast' mods (load 1.0s - 0.1s);
-222222   7.00s 202 'Instant' mods (load %3C 0.1s)
+8f4d30   3.89s Open Terrain Generator;
+a86e51   3.73s Extra Utilities 2;
+436e17   3.70s Integrated Dynamics;
+308f7e   3.44s Quark: RotN Edition;
+ba3eb8   3.27s Cyclic;
+649e21   3.09s OpenBlocks;
+3e68ba   3.03s AE2 Unofficial Extended Life;
+444444  75.63s 43 Other mods;
+333333  59.88s 175 'Fast' mods (load 1.0s - 0.1s);
+222222   7.13s 207 'Instant' mods (load %3C 0.1s)
 `
     .split(';').reduce((a, l) => {
       l.match(/(\w{6}) *(\d*\.\d*)s (.*)/)
@@ -153,19 +153,19 @@ ba3eb8   3.33s Cyclic;
       .map(l => l.match(/\d: (.*)/).slice(1))
       .forEach(([name]) => a.datasets.push({ label: name, data: [] }));
 `
-                          1      2      3      4      5      6      7      8  ;
-OpenComputers         |  0.25|  0.02|  8.36|  3.25|  0.21|  0.00|  0.00|  0.00;
-Ender IO              |  1.56|  0.01|  3.88|  0.54|  3.43|  0.15|  0.00|  1.07;
-IndustrialCraft 2     |  0.73|  0.02|  8.60|  0.87|  0.00|  0.28|  0.00|  0.00;
-CraftTweaker2         |  0.65|  0.00|  4.30|  0.01|  0.00|  5.17|  0.01|  0.00;
-Astral Sorcery        |  0.23|  0.01|  4.70|  1.64|  0.00|  0.57|  0.00|  0.00;
-NuclearCraft          |  0.57|  0.01|  4.05|  0.46|  0.00|  0.73|  0.00|  0.06;
-Immersive Engineering |  0.83|  0.01|  1.19|  0.98|  0.00|  2.41|  0.00|  0.00;
-Recurrent Complex     |  0.26|  0.01|  0.72|  0.93|  0.00|  3.12|  0.00|  0.00;
-Forestry              |  0.40|  0.01|  3.25|  1.01|  0.00|  0.29|  0.00|  0.00;
-Animania              |  0.32|  0.00|  3.19|  0.10|  0.00|  0.42|  0.00|  0.00;
-Village Names         |  0.12|  0.00|  3.71|  0.19|  0.00|  0.00|  0.00|  0.00;
-Integrated Dynamics   |  0.45|  0.01|  3.50|  0.05|  0.00|  0.00|  0.00|  0.00
+                           1      2      3      4      5      6      7      8  ;
+Ender IO               |  1.55|  0.01|  4.06|  0.55|  3.37|  0.14|  0.00|  6.15;
+OpenComputers          |  0.45|  0.02|  8.26|  3.21|  0.20|  0.00|  0.00|  0.00;
+CraftTweaker2          |  0.62|  0.00|  4.17|  0.01|  0.00|  4.76|  0.01|  0.00;
+IndustrialCraft 2      |  0.70|  0.02|  6.97|  0.85|  0.00|  0.27|  0.00|  0.00;
+Astral Sorcery         |  0.26|  0.01|  4.63|  1.63|  0.00|  0.57|  0.00|  0.00;
+NuclearCraft           |  0.57|  0.01|  3.97|  0.42|  0.00|  1.17|  0.00|  0.06;
+Immersive Engineering  |  0.84|  0.01|  1.12|  1.07|  0.00|  2.33|  0.00|  0.00;
+Forestry               |  0.40|  0.01|  3.24|  1.03|  0.00|  0.42|  0.00|  0.00;
+Recurrent Complex      |  0.26|  0.01|  0.66|  0.90|  0.00|  3.09|  0.00|  0.00;
+Animania               |  0.31|  0.00|  3.22|  0.11|  0.00|  0.51|  0.00|  0.00;
+Village Names          |  0.11|  0.00|  3.72|  0.19|  0.00|  0.00|  0.00|  0.00;
+Open Terrain Generator |  0.04|  0.01|  0.00|  3.84|  0.00|  0.00|  0.00|  0.00
 `
     .split(';').slice(1)
       .map(l => l.split('|').map(s => s.trim()))
@@ -196,22 +196,22 @@ Integrated Dynamics   |  0.45|  0.01|  3.50|  0.05|  0.00|  0.00|  0.00|  0.00
         }]
       };
 `
-  2.41: cofh.thermalexpansion.plugins.jei.JEIPluginTE;
-  1.39: com.github.sokyranthedragon.mia.integrations.jer.JeiJerIntegration$1;
-  1.31: jeresources.jei.JEIConfig;
-  0.99: com.rwtema.extrautils2.crafting.jei.XUJEIPlugin;
-  0.80: ic2.jeiIntegration.SubModule;
-  0.79: mezz.jei.plugins.vanilla.VanillaPlugin;
-  0.76: crazypants.enderio.machines.integration.jei.MachinesPlugin;
-  0.63: nc.integration.jei.NCJEI;
-  0.53: com.buuz135.thaumicjei.ThaumcraftJEIPlugin;
-  0.53: knightminer.tcomplement.plugin.jei.JEIPlugin;
-  0.51: com.buuz135.industrial.jei.JEICustomPlugin;
-  0.36: crazypants.enderio.base.integration.jei.JeiPlugin;
-  0.30: forestry.factory.recipes.jei.FactoryJeiPlugin;
-  0.24: net.bdew.jeibees.BeesJEIPlugin;
-  0.24: ninjabrain.gendustryjei.GendustryJEIPlugin;
-  4.32: Other 127 Plugins
+  2.43: cofh.thermalexpansion.plugins.jei.JEIPluginTE;
+  1.46: jeresources.jei.JEIConfig;
+  1.29: com.github.sokyranthedragon.mia.integrations.jer.JeiJerIntegration$1;
+  0.98: com.rwtema.extrautils2.crafting.jei.XUJEIPlugin;
+  0.89: crazypants.enderio.machines.integration.jei.MachinesPlugin;
+  0.76: ic2.jeiIntegration.SubModule;
+  0.75: mezz.jei.plugins.vanilla.VanillaPlugin;
+  0.66: knightminer.tcomplement.plugin.jei.JEIPlugin;
+  0.55: nc.integration.jei.NCJEI;
+  0.54: com.buuz135.thaumicjei.ThaumcraftJEIPlugin;
+  0.49: com.buuz135.industrial.jei.JEICustomPlugin;
+  0.37: crazypants.enderio.base.integration.jei.JeiPlugin;
+  0.25: ninjabrain.gendustryjei.GendustryJEIPlugin;
+  0.24: rustic.compat.jei.RusticJEIPlugin;
+  0.23: net.bdew.jeibees.BeesJEIPlugin;
+  4.14: Other 127 Plugins
 `
         .split(';')
         .map(l => l.split(':'))
@@ -248,7 +248,7 @@ Integrated Dynamics   |  0.45|  0.01|  3.50|  0.05|  0.00|  0.00|  0.00|  0.00
             font: {size: 18}
           },
           {
-            text: [233.57,'s'].join(''),
+            text: [234.32,'s'].join(''),
             color: 'rgba(128, 128, 128, 1)',
             font: {size: 22}
           }
@@ -268,16 +268,16 @@ Integrated Dynamics   |  0.45|  0.01|  3.50|  0.05|  0.00|  0.00|  0.00|  0.00
       }]
     };
 `
-993A00   1.53s Loading sounds;
-994400   1.59s Loading Resource - SoundHandler;
-994F00  45.02s ModelLoader: blocks;
-995900  15.31s ModelLoader: items;
-996300  16.10s ModelLoader: baking;
-996D00   2.09s Applying remove recipe actions;
-997700   0.15s Applying remove furnace recipe actions;
-998200   0.83s Indexing ingredients;
-998C00   8.41s Indexing ingredients;
-444444 142.55s Other
+993A00   1.50s Loading sounds;
+994400   1.57s Loading Resource - SoundHandler;
+994F00  44.37s ModelLoader: blocks;
+995900  15.36s ModelLoader: items;
+996300  14.97s ModelLoader: baking;
+996D00   1.97s Applying remove recipe actions;
+997700   0.12s Applying remove furnace recipe actions;
+998200   0.92s Indexing ingredients;
+998C00   9.02s Indexing ingredients;
+444444 144.52s Other
 `
     .split(';')
       .map(l => l.match(/(\w{6}) *(\d*\.\d*)s (.*)/))

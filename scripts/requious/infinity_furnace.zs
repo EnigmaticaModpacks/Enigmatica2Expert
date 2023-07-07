@@ -87,6 +87,7 @@ tconstruct:brownstone:3
 tconstruct:seared:3
 thermalfoundation:material:864
 nuclearcraft:ingot:15
+rustic:dust_tiny_iron
 `.trim().split('\n'))
 
 const filters = [
@@ -140,9 +141,9 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 958
-# Filtered by JEI blacklist: 109
-# Filtered manuallly (antidupe): 15
+# Total Furnace recipes registered: 959
+# Filtered by JEI blacklist: 110
+# Filtered manuallly (antidupe): 16
 # Filtered by oredict: 177
 infinFurnace(utils.get("actuallyadditions:block_misc", 3), utils.get("actuallyadditions:item_misc", 5));
 #infinFurnace(utils.get("actuallyadditions:item_dust", 1), utils.get("minecraft:gold_ingot"));
@@ -358,6 +359,7 @@ infinFurnace(utils.get("iceandfire:myrmex_jungle_resin_block", W), utils.get("ic
 infinFurnace(utils.get("iceandfire:stymphalian_bird_feather", W), utils.get("thermalfoundation:material", 227));
 ##infinFurnace(utils.get("immersiveengineering:material", 18), utils.get("immersiveengineering:material", 19));
 ##infinFurnace(utils.get("immersiveengineering:metal", 14), utils.get("immersiveengineering:metal", 5));
+#infinFurnace(utils.get("immersiveengineering:ore", 1), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("immersiveengineering:ore", 5), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("industrialforegoing:dryrubber", W), utils.get("industrialforegoing:plastic"));
 ##infinFurnace(utils.get("integrateddynamics:menril_log_filled"), utils.get("minecraft:coal", 1));
@@ -1009,7 +1011,7 @@ infinFurnace(utils.get("rats:rat_nugget_ore", 101, 1, {OreItem: {id: "endreborn:
 infinFurnace(utils.get("rats:rat_nugget_ore", 102, 1, {OreItem: {id: "immersiveengineering:ore", Count: 1, Damage: 5 as short}, IngotItem: {id: "immersiveengineering:metal", Count: 1, Damage: 5 as short}}), utils.get("immersiveengineering:metal", 5));
 infinFurnace(utils.get("rats:rat_nugget_ore", 0, 1, {OreItem: {id: "thermalfoundation:ore", Count: 1, Damage: 4 as short}, IngotItem: {id: "thermalfoundation:material", Count: 1, Damage: 132 as short}}), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("rats:raw_rat", W), utils.get("rats:cooked_rat"));
-infinFurnace(utils.get("rustic:dust_tiny_iron"), utils.get("minecraft:iron_nugget"));
+//infinFurnace(utils.get("rustic:dust_tiny_iron"), utils.get("minecraft:iron_nugget"));
 infinFurnace(utils.get("rustic:honeycomb"), utils.get("rustic:beeswax"));
 ##infinFurnace(utils.get("rustic:log", 1), utils.get("minecraft:coal", 1));
 ##infinFurnace(utils.get("rustic:log"), utils.get("minecraft:coal", 1));

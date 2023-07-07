@@ -1,1 +1,2 @@
-[CraftPresence/ERROR] [CraftPresence]: Unable to get "atlauncher" pack data (ignore if not using a "atlauncher" pack)
+[main/WARN] [mixin]: @Mixin target net/minecraft/client/renderer/RenderGlobal$ContainerLocalRenderInformation is public in mixins.ondemand_sprites.json:ContainerLocalRenderInformationAccessor and should be specified in value
+[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
