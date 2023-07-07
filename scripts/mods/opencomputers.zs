@@ -54,3 +54,10 @@ craft.make(<opencomputers:material:28> * 8, ["pretty",
   "P": <biomesoplenty:ash>, # Pile of Ashes
   "~": <fluid:latex> * 1000, # Latex Bucket
 });
+
+# [Angel Upgrade] from [Angel Block][+1]
+craft.remake(<opencomputers:upgrade>, [
+  ":■:"], {
+  ":": <ore:oc:circuitChip1>,    # Microchip (Tier 1)
+  "■": <extrautils2:angelblock>, # Angel Block
+});
