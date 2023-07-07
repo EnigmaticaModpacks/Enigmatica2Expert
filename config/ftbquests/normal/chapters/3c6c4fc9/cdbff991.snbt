@@ -1,12 +1,10 @@
 {
-	title: "Crash: Redstone Conduits",
+	title: "{q.nuclearcraft_overh.crash_redstone_con.name}",
 	icon: "enderio:item_redstone_conduit",
 	x: 13.95d,
 	y: 10.275d,
 	text: [
-		"§4Do not attach Redstone Conduits to Neutron Source!§r",
-		"",
-		"This would cause repeating world crash."
+		"{q.nuclearcraft_overh.crash_redstone_con.desc}"
 	],
 	dependencies: [
 		"608d1a00"
