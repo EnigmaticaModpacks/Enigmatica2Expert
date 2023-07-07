@@ -208,6 +208,20 @@
       <output name="thaumadditions:zeith_fur" chance="0.01"/>
     </sagmilling>
   </recipe>
+  <recipe name="Clay Dust">
+    <sagmilling energy="24000">
+      <input name="blockClay"/>
+      <output name="dustClay"/>
+      <output name="dustClay" chance="0.5"/>
+    </sagmilling>
+  </recipe>
+  <recipe name="Clay Dust Compressed">
+    <sagmilling energy="240000">
+      <input name="compressedClay1x"/>
+      <output name="dustClay" amount="9"/>
+      <output name="dustClay" amount="9" chance="0.5"/>
+    </sagmilling>
+  </recipe>
   <recipe name="Sagmill: Black Quartz Block">
     <disabled/>
   </recipe>
