@@ -116,15 +116,6 @@
       "fortuneChance": 0.0
     }
   ],
-  "harvestcraft:pressedwax": [
-    {
-      "item": "forestry:beeswax:0",
-      "amount": 4,
-      "miningLevel": 0,
-      "chance": 1.0,
-      "fortuneChance": 0.0
-    }
-  ],
   "ore:prismarine": [
     {
       "item": "quark:gravisand:0",
