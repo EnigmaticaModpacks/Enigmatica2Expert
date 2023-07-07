@@ -1,7 +1,7 @@
 {
   "_README": "https://gitlab.com/CDAGaming/CraftPresence/-/wikis/home",
   "_SOURCE": "https://gitlab.com/CDAGaming/CraftPresence",
-  "_schemaVersion": 5,
+  "_schemaVersion": 6,
   "_lastMCVersionId": 340,
   "generalSettings": {
     "detectATLauncherInstance": true,
@@ -190,13 +190,10 @@
     "enablePerGui": false,
     "enablePerItem": false,
     "enablePerEntity": false,
-    "renderTooltips": true,
     "formatWords": true,
     "debugMode": false,
     "verboseMode": false,
     "refreshRate": 2,
-    "roundSize": 3,
-    "includeExtraGuiClasses": false,
     "allowPlaceholderPreviews": false,
     "guiSettings": {
       "fallbackGuiIcon": "unknown",
@@ -278,7 +275,9 @@
     },
     "allowEndpointIcons": true,
     "serverIconEndpoint": "https://api.mcsrvstat.us/icon/{server.address.short}",
-    "playerSkinEndpoint": "https://crafatar.com/avatars/%1$s"
+    "playerSkinEndpoint": "https://crafatar.com/avatars/%1$s",
+    "allowDuplicatePackets": false,
+    "maxConnectionAttempts": 10
   },
   "accessibilitySettings": {
     "tooltipBackground": {
@@ -339,6 +338,7 @@
     "stripTranslationColors": false,
     "showLoggingInChat": false,
     "stripExtraGuiElements": false,
+    "renderTooltips": true,
     "configKeyCode": 0
   },
   "displaySettings": {
