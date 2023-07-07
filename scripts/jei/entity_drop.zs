@@ -211,32 +211,32 @@ return list.map(({ groups: { id, display, items } }) => {
 # add('astralsorcery:entityflare'              , []); // Flare
 # add('astralsorcery:entityliquidspark'        , []); // Liquid Spark
   add('betteranimalsplus:badger'               , [<randomthings:fertilizeddirt> * 157, <rats:garbage_pile> * 188, <twilightforest:uberous_soil> * 250]); // Badger
-  add('betteranimalsplus:blackbear'            , [<betteranimalsplus:bear_skin_black> * 90, <betteranimalsplus:bear_skin_kermode> * 9, <betteranimalsplus:bearhead_2> * 9, <betteranimalsplus:bearhead_3> * 1, <minecraft:fish:1> * 102]); // Black Bear
-  add('betteranimalsplus:boar'                 , [<betteranimalsplus:boarhead_1> * 1, <betteranimalsplus:boarhead_2> * 1, <betteranimalsplus:boarhead_3> * 2, <betteranimalsplus:boarhead_4> * 2, <minecraft:porkchop> * 213]); // Boar
+  add('betteranimalsplus:blackbear'            , [utils.get('betteranimalsplus:bear_skin_black', 0, 90), utils.get('betteranimalsplus:bear_skin_kermode', 0, 9), utils.get('betteranimalsplus:bearhead_2', 0, 9), utils.get('betteranimalsplus:bearhead_3', 0, 1), <minecraft:fish:1> * 102]); // Black Bear
+  add('betteranimalsplus:boar'                 , [utils.get('betteranimalsplus:boarhead_1', 0, 1), utils.get('betteranimalsplus:boarhead_2', 0, 1), utils.get('betteranimalsplus:boarhead_3', 0, 2), utils.get('betteranimalsplus:boarhead_4', 0, 2), <minecraft:porkchop> * 213]); // Boar
   add('betteranimalsplus:bobbit_worm'          , [<iceandfire:sea_serpent_scales_bronze> * 21]); // Bobbit Worm
-  add('betteranimalsplus:brownbear'            , [<betteranimalsplus:bear_skin_brown> * 93, <betteranimalsplus:bearhead_1> * 8, <minecraft:fish:1> * 107]); // Brown Bear
-  add('betteranimalsplus:coyote'               , [<betteranimalsplus:coyotehead_1> * 6]); // Coyote
+  add('betteranimalsplus:brownbear'            , [utils.get('betteranimalsplus:bear_skin_brown', 0, 93), utils.get('betteranimalsplus:bearhead_1', 0, 8), <minecraft:fish:1> * 107]); // Brown Bear
+  add('betteranimalsplus:coyote'               , [utils.get('betteranimalsplus:coyotehead_1', 0, 6)]); // Coyote
   add('betteranimalsplus:crab'                 , [<harvestcraft:crabrawitem> * 95, <minecraft:dye:15> * 73]); // Crab
-  add('betteranimalsplus:deer'                 , [<betteranimalsplus:antler> * 200, <betteranimalsplus:deerhead_1> * 3, <betteranimalsplus:deerhead_2> * 5, <betteranimalsplus:deerhead_4> * 2, <betteranimalsplus:venisonraw> * 200]); // Deer
-  add('betteranimalsplus:eel_freshwater'       , [<betteranimalsplus:eel_meat_raw> * 143]); // Freshwater Eel
-  add('betteranimalsplus:eel_saltwater'        , [<betteranimalsplus:eel_meat_raw> * 158]); // Saltwater Eel
-  add('betteranimalsplus:feralwolf'            , [<betteranimalsplus:wolf_pelt_arctic> * 20, <betteranimalsplus:wolf_pelt_black> * 14, <betteranimalsplus:wolf_pelt_brown> * 15, <betteranimalsplus:wolf_pelt_red> * 16, <betteranimalsplus:wolf_pelt_snowy> * 10, <betteranimalsplus:wolf_pelt_timber> * 222, <betteranimalsplus:wolfhead_1> * 1, <betteranimalsplus:wolfhead_3> * 2, <betteranimalsplus:wolfhead_4> * 1, <betteranimalsplus:wolfhead_5> * 1, <betteranimalsplus:wolfhead_6> * 1]); // Feral Wolf
-  add('betteranimalsplus:fox'                  , [<betteranimalsplus:foxhead_1> * 2, <betteranimalsplus:foxhead_2> * 3, <betteranimalsplus:foxhead_3> * 2, <betteranimalsplus:foxhead_4> * 6, <mysticalagriculture:chunk:8> * 200]); // Fox
+  add('betteranimalsplus:deer'                 , [utils.get('betteranimalsplus:antler', 0, 200), utils.get('betteranimalsplus:deerhead_1', 0, 3), utils.get('betteranimalsplus:deerhead_2', 0, 5), utils.get('betteranimalsplus:deerhead_4', 0, 2), utils.get('betteranimalsplus:venisonraw', 0, 200)]); // Deer
+  add('betteranimalsplus:eel_freshwater'       , [utils.get('betteranimalsplus:eel_meat_raw', 0, 143)]); // Freshwater Eel
+  add('betteranimalsplus:eel_saltwater'        , [utils.get('betteranimalsplus:eel_meat_raw', 0, 158)]); // Saltwater Eel
+  add('betteranimalsplus:feralwolf'            , [utils.get('betteranimalsplus:wolf_pelt_arctic', 0, 20), utils.get('betteranimalsplus:wolf_pelt_black', 0, 14), utils.get('betteranimalsplus:wolf_pelt_brown', 0, 15), utils.get('betteranimalsplus:wolf_pelt_red', 0, 16), utils.get('betteranimalsplus:wolf_pelt_snowy', 0, 10), utils.get('betteranimalsplus:wolf_pelt_timber', 0, 222), utils.get('betteranimalsplus:wolfhead_1', 0, 1), utils.get('betteranimalsplus:wolfhead_3', 0, 2), utils.get('betteranimalsplus:wolfhead_4', 0, 1), utils.get('betteranimalsplus:wolfhead_5', 0, 1), utils.get('betteranimalsplus:wolfhead_6', 0, 1)]); // Feral Wolf
+  add('betteranimalsplus:fox'                  , [utils.get('betteranimalsplus:foxhead_1', 0, 2), utils.get('betteranimalsplus:foxhead_2', 0, 3), utils.get('betteranimalsplus:foxhead_3', 0, 2), utils.get('betteranimalsplus:foxhead_4', 0, 6), <mysticalagriculture:chunk:8> * 200]); // Fox
   add('betteranimalsplus:goat'                 , [<minecraft:leather> * 222, <minecraft:mutton> * 204]); // Goat
   add('betteranimalsplus:goose'                , [<bibliocraft:bell> * 5]); // Goose
   add('betteranimalsplus:horseshoecrab'        , [<iceandfire:sea_serpent_scales_bronze> * 55]); // Horseshoe Crab
   add('betteranimalsplus:lammergeier'          , [<minecraft:bone> * 159, <minecraft:feather> * 143]); // Lammergeier
-  add('betteranimalsplus:lamprey'              , [<betteranimalsplus:eel_meat_raw> * 152]); // Lamprey
-  add('betteranimalsplus:moose'                , [<betteranimalsplus:antler> * 200, <betteranimalsplus:moosehead_1> * 7, <betteranimalsplus:moosehead_2> * 4, <betteranimalsplus:moosehead_3> * 1, <betteranimalsplus:venisonraw> * 652]); // Moose
+  add('betteranimalsplus:lamprey'              , [utils.get('betteranimalsplus:eel_meat_raw', 0, 152)]); // Lamprey
+  add('betteranimalsplus:moose'                , [utils.get('betteranimalsplus:antler', 0, 200), utils.get('betteranimalsplus:moosehead_1', 0, 7), utils.get('betteranimalsplus:moosehead_2', 0, 4), utils.get('betteranimalsplus:moosehead_3', 0, 1), utils.get('betteranimalsplus:venisonraw', 0, 652)]); // Moose
   add('betteranimalsplus:nautilus'             , [<harvestcraft:oysterrawitem> * 202]); // Nautilus
-  add('betteranimalsplus:pheasant'             , [<betteranimalsplus:pheasantraw> * 199]); // Pheasant
-  add('betteranimalsplus:reindeer'             , [<betteranimalsplus:antler> * 98, <betteranimalsplus:reindeerhead_1> * 2, <betteranimalsplus:reindeerhead_2> * 1, <betteranimalsplus:reindeerhead_3> * 4, <betteranimalsplus:reindeerhead_4> * 1, <betteranimalsplus:venisonraw> * 188, <minecraft:leather> * 109]); // Reindeer
+  add('betteranimalsplus:pheasant'             , [utils.get('betteranimalsplus:pheasantraw', 0, 199)]); // Pheasant
+  add('betteranimalsplus:reindeer'             , [utils.get('betteranimalsplus:antler', 0, 98), utils.get('betteranimalsplus:reindeerhead_1', 0, 2), utils.get('betteranimalsplus:reindeerhead_2', 0, 1), utils.get('betteranimalsplus:reindeerhead_3', 0, 4), utils.get('betteranimalsplus:reindeerhead_4', 0, 1), utils.get('betteranimalsplus:venisonraw', 0, 188), <minecraft:leather> * 109]); // Reindeer
   add('betteranimalsplus:shark'                , [<minecraft:bone> * 105, <minecraft:fish> * 201, <minecraft:iron_ingot> * 11, <minecraft:prismarine_shard> * 103]); // Shark
   add('betteranimalsplus:songbird'             , [<minecraft:feather> * 101, <twilightforest:raven_feather> * 207]); // Songbird
   add('betteranimalsplus:tarantula'            , [<minecraft:arrow> * 2, <minecraft:bone> * 1, <minecraft:bow> * 1, <minecraft:spider_eye> * 27, <minecraft:string> * 105, <randomthings:ingredient:1> * 49]); // Tarantula
-  add('betteranimalsplus:turkey'               , [<betteranimalsplus:turkey_leg_raw> * 126, <betteranimalsplus:turkey_raw> * 16, <minecraft:feather> * 151]); // Turkey
-  add('betteranimalsplus:walrus'               , [<betteranimalsplus:blubber> * 202, <minecraft:leather> * 147]); // Walrus
-  add('betteranimalsplus:whale'                , [<betteranimalsplus:blubber> * 725]); // Whale
+  add('betteranimalsplus:turkey'               , [utils.get('betteranimalsplus:turkey_leg_raw', 0, 126), utils.get('betteranimalsplus:turkey_raw', 0, 16), <minecraft:feather> * 151]); // Turkey
+  add('betteranimalsplus:walrus'               , [utils.get('betteranimalsplus:blubber', 0, 202), <minecraft:leather> * 147]); // Walrus
+  add('betteranimalsplus:whale'                , [utils.get('betteranimalsplus:blubber', 0, 725)]); // Whale
   add('betteranimalsplus:zotzpyre'             , [<harvestcraft:hardenedleatheritem> * 131, <harvestcraft:netherwingsitem> * 196]); // Zotzpyre
   add('biomesoplenty:wasp'                     , [<extrautils2:spike_gold> * 50]); // Nether Wasp
   add('botania:pink_wither'                    , [<enderio:item_alloy_endergy_ingot:4> * 389, <industrialforegoing:pink_slime_ingot> * 585, <mysticalagradditions:stuff:1> * 38, <mysticalagriculture:crafting:4> * 100, <quark:black_ash> * 1606, <thermalfoundation:material:771> * 16]); // Pink Wither
@@ -344,7 +344,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add('minecraft:witch'                        , [<minecraft:glass_bottle> * 20, <minecraft:glowstone_dust> * 24, <minecraft:gunpowder> * 23, <minecraft:redstone> * 29, <minecraft:spider_eye> * 19, <minecraft:stick> * 53, <minecraft:sugar> * 23, <quark:witch_hat> * 2]); // Witch
   add('minecraft:wither_skeleton'              , [<extrautils2:ingredients:10> * 12, <iceandfire:witherbone> * 45, <minecraft:bone> * 93, <minecraft:skull:1> * 3, <minecraft:stone_sword> * 9, <quark:black_ash> * 155, <tconstruct:materials:17> * 9, <thermalfoundation:material:771> * 16]); // Wither Skeleton
   add('minecraft:wither'                       , [<minecraft:nether_star> * 100, <mysticalagradditions:stuff:1> * 33, <mysticalagriculture:crafting:4> * 100, <quark:black_ash> * 1600, <thermalfoundation:material:771> * 37]); // Wither
-  add('minecraft:wolf'                         , [<betteranimalsplus:wolf_pelt_snowy> * 108]); // Wolf
+  add('minecraft:wolf'                         , [utils.get('betteranimalsplus:wolf_pelt_snowy', 0, 108)]); // Wolf
   add('minecraft:zombie_horse'                 , [<minecraft:rotten_flesh> * 85]); // Zombie Horse
   add('minecraft:zombie_pigman'                , [<minecraft:gold_ingot> * 52, <minecraft:gold_nugget> * 53, <minecraft:golden_sword> * 8, <minecraft:rotten_flesh> * 24, <thaumcraft:brain> * 9, <thermalfoundation:material:771> * 17]); // Zombie Pigman
   add('minecraft:zombie_villager'              , [<minecraft:carrot> * 1, <minecraft:potato> * 2, <minecraft:rotten_flesh> * 95, <thaumcraft:brain> * 11]); // Zombie Villager
@@ -429,7 +429,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add('twilightforest:goblin_knight_upper'     , [<twilightforest:armor_shard> * 89]); // Upper Goblin Knight
   add('twilightforest:hedge_spider'            , [<minecraft:arrow> * 2, <minecraft:bone> * 1, <minecraft:spider_eye> * 39, <minecraft:string> * 93]); // Hedge Spider
   add('twilightforest:helmet_crab'             , [<harvestcraft:crabrawitem> * 94, <twilightforest:armor_shard> * 97]); // Helmet Crab
-  add('twilightforest:hostile_wolf'            , [<betteranimalsplus:wolf_pelt_snowy> * 94]); // Hostile Wolf
+  add('twilightforest:hostile_wolf'            , [utils.get('betteranimalsplus:wolf_pelt_snowy', 0, 94)]); // Hostile Wolf
   add('twilightforest:ice_crystal'             , [<iceandfire:dragon_ice> * 209, <minecraft:snowball> * 98]); // Ice Crystal
   add('twilightforest:king_spider'             , [<minecraft:arrow> * 2, <minecraft:bone> * 101, <minecraft:golden_hoe> * 9, <minecraft:skull> * 2, <minecraft:spider_eye> * 37, <minecraft:string> * 101, <twilightforest:torchberries> * 98]); // King Spider
   add('twilightforest:knight_phantom'          , [<thermalfoundation:material:771> * 25, <twilightforest:knightmetal_sword> * 10, <twilightforest:phantom_chestplate> * 6, <twilightforest:phantom_helmet> * 10]); // Knight Phantom
@@ -440,7 +440,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add('twilightforest:mini_ghast'              , [<minecraft:ghast_tear> * 50, <minecraft:gunpowder> * 98, <thermalfoundation:material:771> * 19]); // Carminite Ghastling
   add('twilightforest:minoshroom'              , [<twilightforest:meef_stroganoff> * 354, <twilightforest:minotaur_axe> * 100, <twilightforest:shader_bag>.withTag({shader_rarity: "Twilight"}) * 100, <twilightforest:shader>.withTag({shader_type: "Minoshroom"}) * 100, <twilightforest:trophy:6> * 100]); // Minoshroom
   add('twilightforest:minotaur'                , [<minecraft:golden_axe> * 9, <twilightforest:maze_map_focus> * 6, <twilightforest:minotaur_axe_gold> * 2, <twilightforest:raw_meef> * 44]); // Minotaur
-  add('twilightforest:mist_wolf'               , [<betteranimalsplus:wolf_pelt_snowy> * 93, <twilightforest:charm_of_keeping_1> * 3]); // Mist Wolf
+  add('twilightforest:mist_wolf'               , [utils.get('betteranimalsplus:wolf_pelt_snowy', 0, 93), <twilightforest:charm_of_keeping_1> * 3]); // Mist Wolf
 # add('twilightforest:mosquito_swarm'          , []); // Mosquito Swarm
   add('twilightforest:naga'                    , [<twilightforest:naga_scale> * 856, <twilightforest:shader_bag>.withTag({shader_rarity: "Twilight"}) * 100, <twilightforest:shader>.withTag({shader_type: "Naga"}) * 100, <twilightforest:trophy> * 100]); // Naga
   add('twilightforest:penguin'                 , [<minecraft:feather> * 101]); // Penguin
@@ -472,7 +472,7 @@ return list.map(({ groups: { id, display, items } }) => {
 
 // Manual added drops
 add('emberroot:rootsonespriteboss', [<minecraft:totem_of_undying> * 100, <mysticalagriculture:crafting:3> * 2000]); // Guardian of Sprites
-add('betteranimalsplus:hirschgeist', [<mysticalagriculture:crafting:2> * 400, <randomthings:ingredient:2> * 400, <betteranimalsplus:hirschgeistskull_1> * 25]);
+add('betteranimalsplus:hirschgeist', [<mysticalagriculture:crafting:2> * 400, <randomthings:ingredient:2> * 400, utils.get('betteranimalsplus:hirschgeistskull_1', 0, 25)]);
 add('thaumcraft:cultistleader', [ <thaumcraft:crimson_praetor_helm>.withLore(["§4Need to be stripped"]) * 100, <thaumcraft:crimson_praetor_chest>.withLore(["§6Need to be stripped"]) * 100, <thaumcraft:crimson_praetor_legs>.withLore(["§6Need to be stripped"]) * 100, <thaumcraft:crimson_blade>.withLore(["§6Need to be stripped"]) * 100]);
 add('botania:pixie', [<jaopca:item_dusttinytitanium> * 150]);
 
