@@ -195,15 +195,16 @@ val bagNames = [
 	"builder",
 ] as string[];
 
+val vax = <ore:itemBeeswax>;
 for name in bagNames {
 	val splBag = itemUtils.getItem("forestry:"~name~"_bag");
 	val advBag = itemUtils.getItem("forestry:"~name~"_bag_t2");
 	mods.forestry.Carpenter.removeRecipe(advBag);
 
 	recipes.addShaped("adv "~name, advBag, [
-		[<quark:gold_button>], # Gold Button
-		[splBag],
-		[<forestry:crafting_material:2>] # Silk Wisp
+		[vax, <quark:gold_button>, vax],
+		[vax, splBag, vax],
+		[vax, <ore:fabricHemp>, vax],
 	]);
 }
 
