@@ -1,0 +1,17 @@
+{
+	title: "Mining Robot Reward",
+	loot_size: 1,
+	rewards: [{
+		icon: "ic2:plate 8 15",
+		item: "ic2:plate 1 15",
+		count: 8
+	},
+	{
+		item: "tinkersaddons:modifier_item 1 1"
+	},
+	{
+		icon: "tconstruct:edible 2 2",
+		item: "tconstruct:edible 1 2",
+		count: 2
+	}]
+}

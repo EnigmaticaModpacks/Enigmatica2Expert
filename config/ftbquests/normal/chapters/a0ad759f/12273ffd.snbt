@@ -1,0 +1,35 @@
+{
+	title: "{q.computers.upgrade_container.name}",
+	x: 10.5d,
+	y: 2.4d,
+	shape: "diamond",
+	text: [
+		"{q.computers.upgrade_container.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "c69f4a7e",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 8"
+		},
+		{
+			item: "opencomputers:upgrade 1 9"
+		},
+		{
+			item: "opencomputers:upgrade 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "e0eb96a2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

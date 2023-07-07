@@ -1,0 +1,30 @@
+{
+	x: 8.4d,
+	y: -0.6d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.advanced_wireless_.desc}"
+	],
+	dependencies: [
+		"15534831",
+		"941b1d99"
+	],
+	tasks: [{
+		uid: "c616e287",
+		type: "item",
+		items: [{
+			item: "computercraft:turtle_advanced"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6a354ca0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

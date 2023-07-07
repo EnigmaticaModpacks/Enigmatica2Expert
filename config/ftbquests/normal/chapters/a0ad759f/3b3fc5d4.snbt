@@ -1,0 +1,206 @@
+{
+	icon: {
+		id: "opencomputers:storage",
+		tag: {
+			enchantmentColor: 15326208,
+			ench: [{
+				lvl: 1s,
+				id: 31s
+			}],
+			"oc:data": {
+				"oc:readonly": 0b,
+				node: {
+					visibility: 1,
+					buffer: 0.0d
+				},
+				"oc:label": "§6LostUser v3.4.0"
+			}
+		}
+	},
+	x: 13.4d,
+	y: 3.4d,
+	shape: "gear",
+	text: [
+		"{q.computers.eeprom.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "09f967b9",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crank"
+		}]
+	},
+	{
+		uid: "6e1c8bcd",
+		type: "item",
+		items: [{
+			id: "opencomputers:storage",
+			tag: {
+				enchantmentColor: 15326208,
+				ench: [{
+					lvl: 1s,
+					id: 30s
+				}],
+				"oc:data": {
+					"oc:label": "§6LostUser"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cd435825",
+		type: "item",
+		item: "minecraft:writable_book"
+	},
+	{
+		uid: "2d5b98ac",
+		type: "item",
+		item: {
+			id: "bibliocraft:bigbook",
+			tag: {
+				pagesTotal: 1,
+				pagesCurrent: 0,
+				pages: {
+					pageScale0: [I;
+						2,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					page0: [
+						"§8Copy-pastable programs for §6LostUser",
+						"",
+						"§5§lCircular Miner §7Optional upgrades: Hover, Inventory, Generator",
+						"Gi,_'Rm3,Rsw3'~i*3,Rtn⒯",
+						"",
+						"§l§5§lForestry Trees Farmer§7 Upgrades: Inverntory, Inv. Controller",
+						"#(1|#Rdt&3)<6ⓐRsw/3-s/1-Rsk/0-Ie-Ru/3-IeⓞRu3,s",
+						"",
+						"§5§lTrading Bot §7Upgrades: Inverntory, Inv. Controller, Trading",
+						"a=-~Tg0\"_{g0}'n',~tr\",Rsel-Rd/0/k~16ⓡ_16'IgI/0&k''a[n]ⓐIsF/0&k'",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						"",
+						""
+					]
+				},
+				chapters: {
+					chapline0: "",
+					chapline1: "",
+					chapline2: "",
+					chapline3: "",
+					chapline4: "",
+					chapline5: "",
+					chapline6: "",
+					chapline7: "",
+					chapline8: "",
+					chapline9: "",
+					chapline10: "",
+					chapline11: "",
+					chapline12: "",
+					chapline13: "",
+					chapline14: "",
+					chapline15: "",
+					chapBools: [I;
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					chapPages: [I;
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				},
+				display: {
+					Name: "LostUser programs"
+				}
+			}
+		}
+	}]
+}

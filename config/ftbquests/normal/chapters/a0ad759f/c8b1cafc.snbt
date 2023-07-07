@@ -1,0 +1,29 @@
+{
+	x: 15.6d,
+	y: 4.6d,
+	shape: "diamond",
+	text: [
+		"{q.computers.generator_upgrade.desc}"
+	],
+	dependencies: [
+		"86f0da88"
+	],
+	tasks: [{
+		uid: "2c85ce8e",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 16"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "85393ada",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

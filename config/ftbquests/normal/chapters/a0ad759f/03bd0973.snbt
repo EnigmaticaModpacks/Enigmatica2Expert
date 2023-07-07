@@ -1,0 +1,30 @@
+{
+	x: 7.0d,
+	y: 7.4d,
+	text: [
+		"{q.computers.computer_case_tier.desc}"
+	],
+	dependencies: [
+		"d8513b8b"
+	],
+	tasks: [{
+		uid: "d7d84461",
+		type: "item",
+		items: [{
+			item: "opencomputers:case3"
+		}]
+	}],
+	rewards: [{
+		uid: "55b83bcb",
+		type: "item",
+		item: {
+			id: "opencomputers:upgrade",
+			Damage: 15s,
+			tag: {
+				"oc:data": {
+					"oc:xp": 25650
+				}
+			}
+		}
+	}]
+}

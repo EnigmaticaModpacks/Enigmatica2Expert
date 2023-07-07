@@ -1,0 +1,28 @@
+{
+	x: 6.300000000000001d,
+	y: 0.8999999999999999d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.introspection_module.desc}"
+	],
+	dependencies: [
+		"63c012b1"
+	],
+	tasks: [{
+		uid: "06cb1361",
+		type: "item",
+		items: [{
+			item: "plethora:module"
+		}]
+	}],
+	rewards: [{
+		uid: "815c8dee",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

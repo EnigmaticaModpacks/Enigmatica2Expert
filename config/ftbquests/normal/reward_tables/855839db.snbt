@@ -1,0 +1,20 @@
+{
+	title: "Additional Modifiers",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "tconstruct:tough_tool_rod",
+			tag: {
+				Material: "xu_magical_wood"
+			}
+		}
+	},
+	{
+		item: {
+			id: "tconstruct:tough_binding",
+			tag: {
+				Material: "livingwood"
+			}
+		}
+	}]
+}

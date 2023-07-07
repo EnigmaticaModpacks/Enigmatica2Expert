@@ -1,0 +1,28 @@
+{
+	x: 8.4d,
+	y: 4.4d,
+	text: [
+		"{q.computers.capacitor.desc}"
+	],
+	dependencies: [
+		"9dceffbe"
+	],
+	tasks: [{
+		uid: "9e8c229f",
+		type: "item",
+		items: [{
+			item: "opencomputers:capacitor"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "153a9954",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,29 @@
+{
+	x: 10.5d,
+	y: 4.4d,
+	shape: "diamond",
+	text: [
+		"{q.computers.solar_generator_up.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "4311a728",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 22"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c9e8c0d1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

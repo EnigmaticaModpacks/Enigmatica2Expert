@@ -1,0 +1,32 @@
+{
+	x: 9.5d,
+	y: -0.6d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.wireless_turtle_1.desc}"
+	],
+	dependencies: [
+		"15534831"
+	],
+	tasks: [{
+		uid: "115e9dcb",
+		type: "item",
+		items: [{
+			id: "computercraft:turtle_expanded",
+			tag: {
+				rightUpgrade: "minecraft:diamond_pickaxe"
+			}
+		}],
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "3817a0a1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

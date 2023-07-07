@@ -1,0 +1,29 @@
+{
+	x: 16.1d,
+	y: 4.1d,
+	shape: "diamond",
+	text: [
+		"{q.computers.inventory_upgrade.desc}"
+	],
+	dependencies: [
+		"86f0da88"
+	],
+	tasks: [{
+		uid: "4fff0e1a",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 17"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c8572909",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

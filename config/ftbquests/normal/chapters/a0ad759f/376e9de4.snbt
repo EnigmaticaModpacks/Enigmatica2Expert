@@ -1,0 +1,28 @@
+{
+	icon: "opencomputers:tool 1 5",
+	x: 4.4d,
+	y: 6.5d,
+	text: [
+		"{q.computers.nanomachines.desc}"
+	],
+	dependencies: [
+		"c89961f3"
+	],
+	tasks: [{
+		uid: "7febc738",
+		type: "item",
+		items: [{
+			item: "opencomputers:tool 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "2d7f5f53",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

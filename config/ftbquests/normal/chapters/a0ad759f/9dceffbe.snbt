@@ -1,0 +1,24 @@
+{
+	x: 8.4d,
+	y: 3.4d,
+	text: [
+		"{q.computers.electronics_assemb.desc}"
+	],
+	dependencies: [
+		"687b05f4"
+	],
+	tasks: [{
+		uid: "601301e7",
+		type: "item",
+		items: [{
+			item: "opencomputers:assembler"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "29fd2ad8",
+		type: "item",
+		item: "minecraft:redstone",
+		count: 64
+	}]
+}

@@ -1,0 +1,101 @@
+{
+	title: "{q.computers.the_chapter_is_com.name}",
+	icon: {
+		id: "simple_trophies:trophy",
+		tag: {
+			TrophyItem: {
+				id: "opencomputers:robot",
+				Count: 1,
+				Damage: 0s
+			},
+			TrophyName: "§fComputer Master Trophy§r",
+			TrophyColorRed: 65,
+			TrophyColorGreen: 205,
+			TrophyColorBlue: 52,
+			TrophyVariant: "gold"
+		}
+	},
+	x: 15.0d,
+	y: 7.5d,
+	text: [
+		"{q.computers.the_chapter_is_com.desc}"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"941b1d99",
+		"a1906a54",
+		"376e9de4",
+		"15e7476c",
+		"719e8f12",
+		"c8b1cafc",
+		"03bd0973",
+		"679b5c95",
+		"687b05f4",
+		"40d5f505",
+		"e8f536e4",
+		"587fa66e",
+		"afe0abb6",
+		"a5b186e9",
+		"94f429ac",
+		"581f7786",
+		"d8513b8b",
+		"a8bf6625",
+		"12273ffd",
+		"ced454c8",
+		"9b369829",
+		"faf32ed2",
+		"15534831",
+		"f9fd4b9e",
+		"3d092aec",
+		"dd6568cd",
+		"9a0cbfe5",
+		"c89961f3",
+		"03de89f5",
+		"920f6324",
+		"3b3fc5d4",
+		"7d53d1ff",
+		"cd3dedd0",
+		"9dceffbe",
+		"63c012b1",
+		"46338640",
+		"d7d433e3",
+		"15b6dc4e",
+		"e9690651",
+		"86f0da88",
+		"b2e54d5a",
+		"8c4741f8",
+		"810f1cb0"
+	],
+	size: 1.5d,
+	rewards: [{
+		uid: "b07c23cd",
+		type: "item",
+		team_reward: true,
+		auto: "enabled",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "opencomputers:robot",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "§fComputer Master Trophy§r",
+				TrophyColorRed: 65,
+				TrophyColorGreen: 205,
+				TrophyColorBlue: 52,
+				TrophyVariant: "gold",
+				TrophyShowsTooltip: 1b
+			}
+		}
+	},
+	{
+		uid: "331be110",
+		type: "custom",
+		title: "Notify everyone",
+		tags: [
+			"chapcomplete"
+		],
+		auto: "invisible"
+	}]
+}

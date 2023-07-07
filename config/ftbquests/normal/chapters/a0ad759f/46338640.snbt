@@ -1,0 +1,28 @@
+{
+	x: 11.5d,
+	y: 4.4d,
+	shape: "diamond",
+	text: [
+		"{q.computers.chunkloader_upgrade.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "7a15997e",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "c7ce69d3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

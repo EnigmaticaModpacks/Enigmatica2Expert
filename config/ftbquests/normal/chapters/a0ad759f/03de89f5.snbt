@@ -1,0 +1,28 @@
+{
+	x: 6.300000000000001d,
+	y: -0.10000000000000009d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.kinetic_augment.desc}"
+	],
+	dependencies: [
+		"63c012b1"
+	],
+	tasks: [{
+		uid: "d0631f9c",
+		type: "item",
+		items: [{
+			item: "plethora:module 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "1da62124",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

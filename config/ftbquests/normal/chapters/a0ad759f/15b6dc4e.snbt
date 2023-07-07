@@ -1,0 +1,28 @@
+{
+	x: 10.0d,
+	y: 3.9d,
+	shape: "diamond",
+	text: [
+		"{q.computers.geolyzer.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "078dda65",
+		type: "item",
+		items: [{
+			item: "opencomputers:geolyzer"
+		}]
+	}],
+	rewards: [{
+		uid: "76ce66d6",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

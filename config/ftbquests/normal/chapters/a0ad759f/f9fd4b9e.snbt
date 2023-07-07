@@ -1,0 +1,159 @@
+{
+	title: "{q.computers.full_computer.name}",
+	icon: "opencomputers:storage 1 2",
+	x: 5.6d,
+	y: 5.4d,
+	text: [
+		"{q.computers.full_computer.desc}"
+	],
+	dependencies: [
+		"d8513b8b"
+	],
+	tasks: [{
+		uid: "960a4cb5",
+		type: "item",
+		items: [{
+			item: "opencomputers:case2"
+		},
+		{
+			item: "opencomputers:case3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0e24e319",
+		type: "item",
+		items: [{
+			item: "opencomputers:screen1"
+		},
+		{
+			item: "opencomputers:screen2"
+		},
+		{
+			item: "opencomputers:screen3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bf2855f6",
+		type: "item",
+		items: [{
+			item: "opencomputers:keyboard"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3c997fc7",
+		type: "item",
+		items: [{
+			item: "opencomputers:diskdrive"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f542435a",
+		type: "item",
+		items: [{
+			id: "opencomputers:storage",
+			tag: {
+				"oc:data": {
+					"oc:label": "EEPROM (Lua BIOS)",
+					"oc:readonly": 0b
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1b651f37",
+		type: "item",
+		items: [{
+			item: "opencomputers:card 1 1"
+		},
+		{
+			item: "opencomputers:card 1 2"
+		},
+		{
+			item: "opencomputers:card 1 3"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f16193da",
+		type: "item",
+		items: [{
+			item: "opencomputers:card 1 8"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "212654b4",
+		type: "item",
+		items: [{
+			item: "opencomputers:component"
+		},
+		{
+			item: "opencomputers:component 1 1"
+		},
+		{
+			item: "opencomputers:component 1 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d78a4c5d",
+		type: "item",
+		items: [{
+			item: "opencomputers:component 1 6"
+		},
+		{
+			item: "opencomputers:component 1 7"
+		},
+		{
+			item: "opencomputers:component 1 8"
+		},
+		{
+			item: "opencomputers:component 1 9"
+		},
+		{
+			item: "opencomputers:component 1 10"
+		},
+		{
+			item: "opencomputers:component 1 11"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "291652c5",
+		type: "item",
+		items: [{
+			item: "opencomputers:storage 1 2"
+		},
+		{
+			item: "opencomputers:storage 1 3"
+		},
+		{
+			item: "opencomputers:storage 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0be0755c",
+		type: "item",
+		item: {
+			id: "opencomputers:storage",
+			Damage: 1s,
+			tag: {
+				"oc:data": {
+					"oc:fs.label": "openos"
+				},
+				"oc:lootFactory": "opencomputers:openos",
+				"oc:color": 2,
+				display: {
+					Name: "OpenOS (Operating System)"
+				}
+			}
+		}
+	}]
+}

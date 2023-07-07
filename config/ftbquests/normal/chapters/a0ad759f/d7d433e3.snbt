@@ -1,0 +1,28 @@
+{
+	x: 4.4d,
+	y: 4.3d,
+	text: [
+		"{q.computers.mfu.desc}"
+	],
+	dependencies: [
+		"920f6324"
+	],
+	tasks: [{
+		uid: "f2be32a1",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 30"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b2bef8df",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

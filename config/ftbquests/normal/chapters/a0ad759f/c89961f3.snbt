@@ -1,0 +1,627 @@
+{
+	icon: {
+		id: "opencomputers:print",
+		tag: {
+			label: "Companion Cube",
+			isButtonMode: 0b,
+			redstoneLevel: 0,
+			pressurePlate: 0b,
+			stateOff: [{
+				bounds: [B;
+					13b,
+					13b,
+					6b,
+					15b,
+					15b,
+					10b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					13b,
+					6b,
+					13b,
+					15b,
+					10b,
+					15b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					13b,
+					6b,
+					1b,
+					15b,
+					10b,
+					3b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					13b,
+					1b,
+					6b,
+					15b,
+					3b,
+					10b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					11b,
+					11b,
+					11b,
+					16b,
+					16b,
+					16b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					11b,
+					11b,
+					0b,
+					16b,
+					16b,
+					5b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					11b,
+					0b,
+					11b,
+					16b,
+					5b,
+					16b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					11b,
+					0b,
+					0b,
+					16b,
+					5b,
+					5b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					6b,
+					13b,
+					13b,
+					10b,
+					15b,
+					15b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					6b,
+					13b,
+					1b,
+					10b,
+					15b,
+					3b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					6b,
+					6b,
+					1b,
+					10b,
+					10b,
+					15b
+				],
+				texture: "wool_colored_magenta"
+			},
+			{
+				bounds: [B;
+					6b,
+					1b,
+					13b,
+					10b,
+					3b,
+					15b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					6b,
+					1b,
+					6b,
+					10b,
+					15b,
+					10b
+				],
+				texture: "wool_colored_magenta"
+			},
+			{
+				bounds: [B;
+					6b,
+					1b,
+					1b,
+					10b,
+					3b,
+					3b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					2b,
+					2b,
+					2b,
+					14b,
+					14b,
+					14b
+				],
+				texture: "wool_colored_gray"
+			},
+			{
+				bounds: [B;
+					1b,
+					13b,
+					6b,
+					3b,
+					15b,
+					10b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					1b,
+					6b,
+					13b,
+					3b,
+					10b,
+					15b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					1b,
+					6b,
+					6b,
+					15b,
+					10b,
+					10b
+				],
+				texture: "wool_colored_magenta"
+			},
+			{
+				bounds: [B;
+					1b,
+					6b,
+					1b,
+					3b,
+					10b,
+					3b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					1b,
+					1b,
+					6b,
+					3b,
+					3b,
+					10b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					0b,
+					11b,
+					11b,
+					5b,
+					16b,
+					16b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					0b,
+					11b,
+					0b,
+					5b,
+					16b,
+					5b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					0b,
+					0b,
+					11b,
+					5b,
+					5b,
+					16b
+				],
+				texture: "wool_colored_silver"
+			},
+			{
+				bounds: [B;
+					0b,
+					0b,
+					0b,
+					5b,
+					5b,
+					5b
+				],
+				texture: "wool_colored_silver"
+			}],
+			stateOn: [],
+			isBeaconBase: 0b,
+			lightLevel: 0b,
+			noclipOff: 0b,
+			noclipOn: 0b
+		}
+	},
+	x: 5.6d,
+	y: 6.5d,
+	text: [
+		"{q.computers.3d_printer.desc}"
+	],
+	dependencies: [
+		"f9fd4b9e"
+	],
+	tasks: [{
+		uid: "6e4ed33d",
+		type: "item",
+		items: [{
+			item: "opencomputers:printer"
+		}]
+	},
+	{
+		uid: "00179815",
+		type: "item",
+		items: [{
+			id: "opencomputers:storage",
+			Damage: 1s,
+			tag: {
+				"oc:data": {
+					"oc:fs.label": "oppm"
+				},
+				"oc:lootFactory": "opencomputers:oppm",
+				"oc:color": 6,
+				display: {
+					Name: "OPPM (Package Manager)"
+				}
+			}
+		}]
+	},
+	{
+		uid: "c33b3786",
+		type: "item",
+		items: [{
+			item: "opencomputers:material 1 28"
+		}],
+		count: 8L
+	},
+	{
+		uid: "73c517f6",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dye"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "dye"
+				}
+			}
+		}],
+		count: 4L
+	},
+	{
+		uid: "4a0a0bf1",
+		type: "item",
+		items: [{
+			id: "opencomputers:print",
+			tag: {
+				label: "Companion Cube",
+				isButtonMode: 0b,
+				redstoneLevel: 0,
+				pressurePlate: 0b,
+				stateOff: [{
+					bounds: [B;
+						13b,
+						13b,
+						6b,
+						15b,
+						15b,
+						10b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						13b,
+						6b,
+						13b,
+						15b,
+						10b,
+						15b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						13b,
+						6b,
+						1b,
+						15b,
+						10b,
+						3b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						13b,
+						1b,
+						6b,
+						15b,
+						3b,
+						10b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						11b,
+						11b,
+						11b,
+						16b,
+						16b,
+						16b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						11b,
+						11b,
+						0b,
+						16b,
+						16b,
+						5b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						11b,
+						0b,
+						11b,
+						16b,
+						5b,
+						16b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						11b,
+						0b,
+						0b,
+						16b,
+						5b,
+						5b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						6b,
+						13b,
+						13b,
+						10b,
+						15b,
+						15b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						6b,
+						13b,
+						1b,
+						10b,
+						15b,
+						3b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						6b,
+						6b,
+						1b,
+						10b,
+						10b,
+						15b
+					],
+					texture: "wool_colored_magenta"
+				},
+				{
+					bounds: [B;
+						6b,
+						1b,
+						13b,
+						10b,
+						3b,
+						15b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						6b,
+						1b,
+						6b,
+						10b,
+						15b,
+						10b
+					],
+					texture: "wool_colored_magenta"
+				},
+				{
+					bounds: [B;
+						6b,
+						1b,
+						1b,
+						10b,
+						3b,
+						3b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						2b,
+						2b,
+						2b,
+						14b,
+						14b,
+						14b
+					],
+					texture: "wool_colored_gray"
+				},
+				{
+					bounds: [B;
+						1b,
+						13b,
+						6b,
+						3b,
+						15b,
+						10b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						1b,
+						6b,
+						13b,
+						3b,
+						10b,
+						15b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						1b,
+						6b,
+						6b,
+						15b,
+						10b,
+						10b
+					],
+					texture: "wool_colored_magenta"
+				},
+				{
+					bounds: [B;
+						1b,
+						6b,
+						1b,
+						3b,
+						10b,
+						3b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						1b,
+						1b,
+						6b,
+						3b,
+						3b,
+						10b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						0b,
+						11b,
+						11b,
+						5b,
+						16b,
+						16b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						0b,
+						11b,
+						0b,
+						5b,
+						16b,
+						5b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						0b,
+						0b,
+						11b,
+						5b,
+						5b,
+						16b
+					],
+					texture: "wool_colored_silver"
+				},
+				{
+					bounds: [B;
+						0b,
+						0b,
+						0b,
+						5b,
+						5b,
+						5b
+					],
+					texture: "wool_colored_silver"
+				}],
+				stateOn: [],
+				isBeaconBase: 0b,
+				lightLevel: 0b,
+				noclipOff: 0b,
+				noclipOn: 0b
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "2b4dd915",
+		type: "item",
+		item: "tinkersaddons:modifier_item 1 3"
+	}]
+}

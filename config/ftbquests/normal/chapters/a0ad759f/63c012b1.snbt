@@ -1,0 +1,44 @@
+{
+	icon: {
+		id: "plethora:neuralinterface",
+		tag: {}
+	},
+	x: 7.300000000000001d,
+	y: 0.3999999999999999d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.neural_interface.desc}"
+	],
+	dependencies: [
+		"941b1d99"
+	],
+	tasks: [{
+		uid: "29119104",
+		type: "item",
+		items: [{
+			id: "plethora:neuralinterface",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9bc2f73c",
+		type: "item",
+		items: [{
+			item: "plethora:neuralconnector"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ce2ef302",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

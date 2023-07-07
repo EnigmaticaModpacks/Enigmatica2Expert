@@ -1,0 +1,28 @@
+{
+	x: 10.0d,
+	y: 2.9d,
+	shape: "diamond",
+	text: [
+		"{q.computers.crafting_upgrade.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "9ccb0850",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 11"
+		}]
+	}],
+	rewards: [{
+		uid: "7dfb2dd9",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

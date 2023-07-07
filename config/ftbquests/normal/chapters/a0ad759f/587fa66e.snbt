@@ -1,0 +1,29 @@
+{
+	x: 8.4d,
+	y: 1.5000000000000004d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.computer.desc}"
+	],
+	dependencies: [
+		"9dceffbe"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "148a2a87",
+		type: "item",
+		items: [{
+			item: "computercraft:computer"
+		}]
+	}],
+	rewards: [{
+		uid: "327e24c8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	x: 15.6d,
+	y: 3.6d,
+	shape: "diamond",
+	text: [
+		"{q.computers.hover_upgrade_tier.desc}"
+	],
+	dependencies: [
+		"86f0da88"
+	],
+	tasks: [{
+		uid: "46d5ea5e",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 27"
+		},
+		{
+			item: "opencomputers:upgrade 1 28"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e999d280",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	icon: "opencomputers:adapter",
+	x: 5.6d,
+	y: 4.3d,
+	text: [
+		"{q.computers.adapter.desc}"
+	],
+	dependencies: [
+		"f9fd4b9e"
+	],
+	tasks: [{
+		uid: "c4b8ffa1",
+		type: "item",
+		items: [{
+			item: "opencomputers:adapter"
+		}]
+	}],
+	rewards: [{
+		uid: "ec263bdf",
+		type: "item",
+		item: "enderio:block_inventory_chest_medium"
+	}]
+}

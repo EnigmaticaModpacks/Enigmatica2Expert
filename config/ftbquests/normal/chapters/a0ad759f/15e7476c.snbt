@@ -1,0 +1,23 @@
+{
+	x: 13.4d,
+	y: 2.0999999999999996d,
+	text: [
+		"{q.computers.analyzer.desc}"
+	],
+	dependencies: [
+		"3b3fc5d4"
+	],
+	tasks: [{
+		uid: "f368c987",
+		type: "item",
+		items: [{
+			item: "opencomputers:tool"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "729fa5b2",
+		type: "item",
+		item: "opencomputers:tool"
+	}]
+}

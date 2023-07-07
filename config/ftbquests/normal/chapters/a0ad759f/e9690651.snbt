@@ -1,0 +1,29 @@
+{
+	x: 12.0d,
+	y: 3.9d,
+	shape: "diamond",
+	text: [
+		"{q.computers.tractor_beam_upgrade.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "b4314334",
+		type: "item",
+		items: [{
+			item: "opencomputers:upgrade 1 25"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d2c25b8a",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

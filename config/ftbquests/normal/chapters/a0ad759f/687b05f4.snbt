@@ -1,0 +1,23 @@
+{
+	title: "{q.computers.computers.name}",
+	icon: "opencomputers:case1",
+	x: 7.0d,
+	y: 3.4d,
+	text: [
+		"{q.computers.computers.desc}"
+	],
+	dependencies: [
+		"4c68415d"
+	],
+	size: 1.25d,
+	rewards: [{
+		uid: "2709e8fb",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

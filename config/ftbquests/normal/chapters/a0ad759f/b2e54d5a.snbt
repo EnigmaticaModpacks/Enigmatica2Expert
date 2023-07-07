@@ -1,0 +1,51 @@
+{
+	icon: "computercraft:printout",
+	x: 7.300000000000001d,
+	y: 1.5d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.printer.desc}"
+	],
+	dependencies: [
+		"587fa66e"
+	],
+	tasks: [{
+		uid: "a01c87d5",
+		type: "item",
+		items: [{
+			item: "computercraft:peripheral 1 3"
+		}]
+	},
+	{
+		uid: "24d09224",
+		type: "item",
+		items: [{
+			item: "minecraft:dye"
+		}]
+	},
+	{
+		uid: "2a8519e1",
+		type: "item",
+		items: [{
+			item: "minecraft:paper"
+		}]
+	},
+	{
+		uid: "9c337ef8",
+		type: "item",
+		items: [{
+			item: "computercraft:printout"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0163be41",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

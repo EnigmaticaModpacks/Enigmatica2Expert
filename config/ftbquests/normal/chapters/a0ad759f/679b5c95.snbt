@@ -1,0 +1,28 @@
+{
+	x: 8.4d,
+	y: 5.4d,
+	text: [
+		"{q.computers.carpeted_capacitor.desc}"
+	],
+	dependencies: [
+		"719e8f12"
+	],
+	tasks: [{
+		uid: "3c4c6a1d",
+		type: "item",
+		items: [{
+			item: "opencomputers:carpetedcapacitor"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "85f01ac3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

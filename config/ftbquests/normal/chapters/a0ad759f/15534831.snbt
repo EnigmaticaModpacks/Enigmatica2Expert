@@ -1,0 +1,29 @@
+{
+	x: 9.5d,
+	y: 0.4d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.wireless_turtle.desc}"
+	],
+	dependencies: [
+		"587fa66e"
+	],
+	tasks: [{
+		uid: "693090f7",
+		type: "item",
+		items: [{
+			item: "computercraft:turtle_expanded"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a5f0d4d1",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

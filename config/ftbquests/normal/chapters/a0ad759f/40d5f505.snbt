@@ -1,0 +1,25 @@
+{
+	title: "{q.computers.robot_use.name}",
+	icon: "mysticalagriculture:watering_can",
+	x: 14.9d,
+	y: 2.5999999999999996d,
+	text: [
+		"{q.computers.robot_use.desc}"
+	],
+	dependencies: [
+		"3b3fc5d4"
+	],
+	tasks: [{
+		uid: "a3ae5095",
+		type: "custom",
+		title: "Make robot use something",
+		tags: [
+			"robotuse"
+		]
+	}],
+	rewards: [{
+		uid: "d9c0cb76",
+		type: "item",
+		item: "mysticalagriculture:watering_can"
+	}]
+}

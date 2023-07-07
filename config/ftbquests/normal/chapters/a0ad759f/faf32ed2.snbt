@@ -1,0 +1,27 @@
+{
+	x: 4.4d,
+	y: 5.4d,
+	text: [
+		"{q.computers.open_sensor.desc}"
+	],
+	dependencies: [
+		"920f6324"
+	],
+	tasks: [{
+		uid: "0a259d03",
+		type: "item",
+		items: [{
+			item: "ocsensors:sensor"
+		}]
+	}],
+	rewards: [{
+		uid: "ad7efe47",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

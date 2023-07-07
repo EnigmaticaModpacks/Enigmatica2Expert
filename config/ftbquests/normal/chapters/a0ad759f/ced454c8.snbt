@@ -1,0 +1,24 @@
+{
+	x: 13.4d,
+	y: 1.1d,
+	text: [
+		"{q.computers.disassembler.desc}"
+	],
+	dependencies: [
+		"15e7476c"
+	],
+	tasks: [{
+		uid: "9f202a78",
+		type: "item",
+		items: [{
+			item: "opencomputers:disassembler"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "13922ea6",
+		type: "item",
+		item: "opencomputers:material 1 11",
+		count: 4
+	}]
+}

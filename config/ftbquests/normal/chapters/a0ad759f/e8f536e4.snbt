@@ -1,0 +1,28 @@
+{
+	x: 7.3d,
+	y: -0.6d,
+	shape: "rsquare",
+	text: [
+		"{q.computers.frickin_laser_beam.desc}"
+	],
+	dependencies: [
+		"3d092aec"
+	],
+	tasks: [{
+		uid: "c46c3f82",
+		type: "item",
+		items: [{
+			item: "plethora:module 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "1add7a28",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

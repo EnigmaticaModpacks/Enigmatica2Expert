@@ -1,0 +1,25 @@
+{
+	title: "{q.computers.robot_swing.name}",
+	icon: "thaumcraft:void_sword",
+	x: 14.9d,
+	y: 4.1d,
+	text: [
+		"{q.computers.robot_swing.desc}"
+	],
+	dependencies: [
+		"3b3fc5d4"
+	],
+	tasks: [{
+		uid: "6c83791e",
+		type: "custom",
+		title: "Make robot hit something",
+		tags: [
+			"robotswing"
+		]
+	}],
+	rewards: [{
+		uid: "64d16e90",
+		type: "item",
+		item: "tinkersaddons:modifier_item 1 2"
+	}]
+}

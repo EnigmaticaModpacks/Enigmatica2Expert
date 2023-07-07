@@ -1,0 +1,101 @@
+{
+	title: "{q.computers.forestry_tree_farmer.name}",
+	x: 17.2d,
+	y: 2.6d,
+	text: [
+		"{q.computers.forestry_tree_farmer.desc}"
+	],
+	dependencies: [
+		"40d5f505"
+	],
+	tasks: [{
+		uid: "6ed135a9",
+		type: "item",
+		items: [{
+			id: "tconstruct:lumberaxe",
+			ForgeCaps: {
+				"plustic:fruitsalad_cap": {
+					Items: [],
+					Size: 5
+				},
+				"plustic:": {
+					Items: [],
+					Size: 1
+				},
+				"plustic:musicofthespheres_cap": {
+					Items: [],
+					Size: 1
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d6c2d4b6",
+		type: "choice",
+		table: 140
+	},
+	{
+		uid: "9c8a4099",
+		type: "item",
+		item: {
+			id: "forestry:sapling",
+			tag: {
+				IsAnalyzed: 0b,
+				Genome: {
+					Chromosomes: [{
+						Slot: 0b,
+						UID0: "forestry.treeCherry",
+						UID1: "forestry.treeCherry"
+					},
+					{
+						Slot: 1b,
+						UID0: "forestry.heightSmaller",
+						UID1: "forestry.heightSmaller"
+					},
+					{
+						Slot: 2b,
+						UID0: "forestry.saplingsLow",
+						UID1: "forestry.saplingsLow"
+					},
+					{
+						Slot: 3b,
+						UID0: "forestry.fruitCherry",
+						UID1: "forestry.fruitCherry"
+					},
+					{
+						Slot: 4b,
+						UID0: "forestry.yieldAverage",
+						UID1: "forestry.yieldAverage"
+					},
+					{
+						Slot: 5b,
+						UID0: "forestry.sappinessLow",
+						UID1: "forestry.sappinessLow"
+					},
+					{
+						Slot: 6b,
+						UID0: "forestry.leavesNone",
+						UID1: "forestry.leavesNone"
+					},
+					{
+						Slot: 7b,
+						UID0: "forestry.maturationAverage",
+						UID1: "forestry.maturationAverage"
+					},
+					{
+						Slot: 8b,
+						UID0: "forestry.i1d",
+						UID1: "forestry.i1d"
+					},
+					{
+						Slot: 9b,
+						UID0: "forestry.fireproofFalse",
+						UID1: "forestry.fireproofFalse"
+					}]
+				}
+			}
+		}
+	}]
+}

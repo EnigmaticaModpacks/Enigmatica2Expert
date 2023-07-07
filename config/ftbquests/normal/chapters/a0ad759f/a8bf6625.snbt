@@ -1,0 +1,28 @@
+{
+	x: 11.0d,
+	y: 5.2d,
+	text: [
+		"{q.computers.charger.desc}"
+	],
+	dependencies: [
+		"afe0abb6"
+	],
+	tasks: [{
+		uid: "b424bf1b",
+		type: "item",
+		items: [{
+			item: "opencomputers:charger"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "108b2307",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

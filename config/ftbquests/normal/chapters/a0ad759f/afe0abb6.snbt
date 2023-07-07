@@ -1,0 +1,47 @@
+{
+	icon: "opencomputers:robot",
+	x: 11.0d,
+	y: 3.4d,
+	text: [
+		"{q.computers.central_processing.desc}"
+	],
+	dependencies: [
+		"9dceffbe"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "3cbb3562",
+		type: "item",
+		items: [{
+			id: "opencomputers:component",
+			tag: {
+				"oc:archClass": "li.cil.oc.server.machine.luac.NativeLua53Architecture",
+				"oc:archName": "Lua 5.3"
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6c74ec6a",
+		type: "item",
+		items: [{
+			item: "opencomputers:component 1 6"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "59a77c3a",
+		type: "item",
+		items: [{
+			item: "opencomputers:robot"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "de51448f",
+		type: "item",
+		item: "opencomputers:component",
+		count: 3
+	}]
+}

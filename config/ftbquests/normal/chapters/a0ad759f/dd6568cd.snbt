@@ -1,0 +1,40 @@
+{
+	icon: "opencomputers:misc 1 1",
+	x: 13.4d,
+	y: 4.7d,
+	text: [
+		"{q.computers.crecopter.desc}"
+	],
+	dependencies: [
+		"3b3fc5d4"
+	],
+	tasks: [{
+		uid: "e4ccf07e",
+		type: "item",
+		items: [{
+			item: "opencomputers:misc 1 1"
+		}]
+	},
+	{
+		uid: "998dc145",
+		type: "item",
+		items: [{
+			item: "opencomputers:wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "587ab9fa",
+		type: "item",
+		items: [{
+			item: "opencomputers:component 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "89df014d",
+		type: "item",
+		item: "opencomputers:material 1 23",
+		count: 2
+	}]
+}
