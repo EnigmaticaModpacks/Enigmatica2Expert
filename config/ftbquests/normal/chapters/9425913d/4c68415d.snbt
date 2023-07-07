@@ -6,8 +6,7 @@
 		"{q.gates.gate_computers.desc}"
 	],
 	dependencies: [
-		"ca359f03",
-		"e07d1afe"
+		"dabc815c"
 	],
 	tasks: [{
 		uid: "25898764",
