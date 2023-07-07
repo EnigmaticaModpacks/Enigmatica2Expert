@@ -140,3 +140,13 @@ scripts.process.crush(<ore:oreRockCrystal>, TC, "only: SagMill AEGrinder", [TC, 
 
 // Add TE Sawmill log -> plank compat
 scripts.process.saw(<astralsorcery:blockinfusedwood>, <astralsorcery:blockinfusedwood:1> * 6, "only: TESawmill");
+
+// Alt bonus non-table recipe
+# [Grindstone] from [Marble][+2]
+craft.make(<astralsorcery:blockmachine:1>, ["pretty",
+  "  M ≢",
+  "# # ≢"], {
+  "M": <ore:stoneMarble>,      # Marble
+  "≢": <ore:plankTreatedWood>, # Treated Wood Planks
+  "#": <ore:stickTreatedWood>, # Treated Stick
+});
