@@ -13,21 +13,19 @@
 	[<ore:stone>, <computercraft:cable>, <ore:stone>], 
 	[<ore:stone>, <ore:dustRedstone>, <ore:stone>]]);
 
-# Computer
-	recipes.remove(<computercraft:computer>);
-	recipes.addShapedMirrored("Computer", 
-	<computercraft:computer>, 
-	[[null, <opencomputers:screen1>, null],
-	[<opencomputers:component>, <opencomputers:storage:2>, <opencomputers:component:6>], 
-	[null, <opencomputers:case1>, null]]);
+# [Computer] from [Screen (Tier 1)][+2]
+craft.reshapeless(<computercraft:computer>, "M:h", {
+  "M": <opencomputers:microcontroller>, # Microcontroller
+  ":": <ore:oc:screen1>,                # Screen (Tier 1)
+  "h": <ore:oc:hdd1>,                   # Hard Disk Drive (Tier 1) (1MB)
+});
 
-# Advanced Computers
-	recipes.remove(<computercraft:computer:16384>);
-	recipes.addShapedMirrored("Advanced Computer", 
-	<computercraft:computer:16384>, 
-	[[null, <opencomputers:screen2>, null],
-	[<opencomputers:component:1>, <opencomputers:storage:3>, <opencomputers:component:8>], 
-	[null, <opencomputers:case2>, null]]);
+# [Advanced Computer] from [Screen (Tier 3)][+2]
+craft.reshapeless(<computercraft:computer:16384>, "Ms:", {
+  "M": <opencomputers:microcontroller>, # Microcontroller
+  "s": <ore:oc:screen3>,                # Screen (Tier 3)
+  ":": <ore:oc:hdd3>,                   # Hard Disk Drive (Tier 3) (4MB)
+});
 
 # Pocket Computer
 	recipes.remove(<computercraft:pocket_computer>);
@@ -49,6 +47,7 @@ remakeEx(<plethora:module:1>, [
 mods.jei.JEI.addItem(<opencomputers:print>);
 mods.jei.JEI.addItem(<opencomputers:misc>);
 mods.jei.JEI.addItem(<opencomputers:robot>);
+mods.jei.JEI.addItem(<opencomputers:microcontroller>);
 
 # Use Fake Iron recipe
 # [Turtle] from [Computer][+2]
