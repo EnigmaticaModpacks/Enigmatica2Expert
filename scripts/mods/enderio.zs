@@ -52,13 +52,14 @@ craft.remake(<enderio:block_painter>, ["pretty",
 	[<ore:blockGlass>, null, <ore:blockGlass>], 
 	[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
 
-# Power Buffer
-	recipes.remove(<enderio:block_buffer:1>);
-	recipes.addShapedMirrored("Power Buffer", 
-	<enderio:block_buffer:1>, 
-	[[<ore:ingotFakeIron>, <ore:ingotElectricalSteel>, <ore:ingotFakeIron>],
-	[<ore:ingotElectricalSteel>, <enderio:item_basic_capacitor>, <ore:ingotElectricalSteel>], 
-	[<ore:ingotFakeIron>, <ore:ingotElectricalSteel>, <ore:ingotFakeIron>]]);
+# [Power Buffer] from [Electrical Steel Ingot][+1]
+craft.remake(<enderio:block_buffer:1>, ["pretty",
+  "S ▬ S",
+  "▬   ▬",
+  "S ▬ S"], {
+  "S": <ore:itemSimpleChassiParts>, # Simple Machine Parts
+  "▬": <ore:ingotElectricalSteel>,  # Electrical Steel Ingot
+});
 
 # Solar Panels
 	# Tier 2
