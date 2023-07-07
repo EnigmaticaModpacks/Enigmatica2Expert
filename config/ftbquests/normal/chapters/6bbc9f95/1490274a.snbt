@@ -1,0 +1,22 @@
+{
+	x: -1.7d,
+	y: 7.3d,
+	text: [
+		"{q.thaumcraft.void_beacon.desc}"
+	],
+	dependencies: [
+		"948f2215"
+	],
+	tasks: [{
+		uid: "5ad41109",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:void_beacon"
+		}]
+	}],
+	rewards: [{
+		uid: "ca308815",
+		type: "item",
+		item: "thaumcraft:primordial_pearl"
+	}]
+}
