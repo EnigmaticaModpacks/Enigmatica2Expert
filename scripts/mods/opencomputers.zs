@@ -43,3 +43,14 @@ craft.remake(<opencomputers:upgrade:25>, [
   "P": <ore:craftingPiston>,                 # Sticky Piston
   ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
 });
+
+# [Chamelium]*8 from [Latex Bucket][+2]
+recipes.removeByRecipeName("opencomputers:material54");
+craft.make(<opencomputers:material:28> * 8, ["pretty",
+  "▲ P ▲",
+  "P ~ P",
+  "▲ P ▲"], {
+  "▲": <ore:dust>,          # Dust
+  "P": <biomesoplenty:ash>, # Pile of Ashes
+  "~": <fluid:latex> * 1000, # Latex Bucket
+});
