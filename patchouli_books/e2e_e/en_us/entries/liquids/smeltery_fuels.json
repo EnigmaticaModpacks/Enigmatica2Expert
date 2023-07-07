@@ -80,17 +80,19 @@
       "text3": "7200°К, 100 ticks",
       "item4": "forge:bucketfilled{FluidName:\"creosote\",Amount:1000}",
       "text4": "1400°К, 100 ticks",
-      "item5": "forge:bucketfilled{FluidName:\"lava\",Amount:1000}",
-      "text5": "1300°К, 80 ticks",
-      "item6": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
-      "text6": "1000°К, 100 ticks",
+      "item5": "forge:bucketfilled{FluidName:\"ic2creosote\",Amount:1000}",
+      "text5": "1400°К, 100 ticks",
+      "item6": "forge:bucketfilled{FluidName:\"lava\",Amount:1000}",
+      "text6": "1300°К, 80 ticks",
       "title": "Smeltery Fuels"
     },
     {
       "item": "tconstruct:smeltery_controller",
       "type": "item_list",
-      "item0": "forge:bucketfilled{FluidName:\"steam\",Amount:1000}",
-      "text0": "500°К, 100 ticks",
+      "item0": "forge:bucketfilled{FluidName:\"canolaoil\",Amount:1000}",
+      "text0": "1000°К, 100 ticks",
+      "item1": "forge:bucketfilled{FluidName:\"steam\",Amount:1000}",
+      "text1": "500°К, 100 ticks",
       "title": "Smeltery Fuels"
     }
   ]

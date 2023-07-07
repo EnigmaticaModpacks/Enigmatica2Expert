@@ -167,7 +167,7 @@ for pos, names in utils.graph([
 	# Fuels
 "*": ["steam"],
 	r: ["canolaoil"],
-	q: ["creosote"],
+	q: ["creosote", "ic2creosote"],
 	a: ["ic2pahoehoe_lava"],
 	b: ["biodiesel", "biofuel"],
 	c: ["diesel", "ic2biogas", "refinedcanolaoil"],
