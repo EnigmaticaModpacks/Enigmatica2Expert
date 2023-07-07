@@ -12,7 +12,10 @@ val defaultArmorMats as IData = [
 /*Inject_js(
   getCSV('dev/tools/tcon/stats/Armory Stats.csv')
   .map(l=>Object.keys(l).slice(0,2).map(k=>l[k].trim()))
-  .filter(([a]) => ![
+  .map(([a, b])=>[`${
+    [
+      'paper',
+      'chocolate',
       'ma.superium',
       'ma.supremium',
       'spectre',
@@ -21,12 +24,11 @@ val defaultArmorMats as IData = [
       'aethium',
       'chaotic_metal',
       'infinity_metal',
-    ].includes(a)
-  )
-  .map(([a, b])=>[`  "${a}"`, ', # ' + Math.round(b)])
+    ].includes(a) ? '//' : '  '
+  }"${a}"`, ', # ' + Math.round(b)])
 )*/
-  "paper"                  , # 18
-  "chocolate"              , # 19
+//"paper"                  , # 18
+//"chocolate"              , # 19
   "wood"                   , # 21
   "stone"                  , # 22
   "netherrack"             , # 22
@@ -184,6 +186,7 @@ val defaultArmorMats as IData = [
   "mirion"                 , # 66
   "conductive_iron"        , # 68
   "ma.prudentium"          , # 69
+//"aethium"                , # 69
   "starmetal"              , # 71
   "redstone_alloy"         , # 71
   "energetic_alloy"        , # 74
@@ -200,11 +203,18 @@ val defaultArmorMats as IData = [
   "wyvern_metal"           , # 97
   "knightmetal"            , # 98
   "soularium"              , # 104
+//"ma.superium"            , # 107
   "osmiridium"             , # 108
   "primal_metal"           , # 111
+//"ma.supremium"           , # 124
   "red_matter"             , # 128
   "gelid_enderium"         , # 135
+//"spectre"                , # 144
+//"draconic_metal"         , # 208
   "gelid_gem"              , # 218
+//"neutronium"             , # 347
+//"chaotic_metal"          , # 570
+//"infinity_metal"         , # 1535
 /**/
 ] as IData;
 
@@ -213,7 +223,9 @@ val defaultWeaponMats as IData = [
 /*Inject_js(
   getCSV('dev/tools/tcon/stats/Stats.csv')
   .map(l=>Object.keys(l).slice(0,2).map(k=>l[k].trim()))
-  .filter(([a]) => ![
+  .map(([a, b])=>[`${
+    [
+      'paper',
       'ma.superium',
       'ma.supremium',
       'spectre',
@@ -222,11 +234,10 @@ val defaultWeaponMats as IData = [
       'aethium',
       'chaotic_metal',
       'infinity_metal',
-    ].includes(a)
-  )
-  .map(([a, b])=>[`  "${a}"`, ', # ' + Math.round(b)])
+    ].includes(a) ? '//' : '  '
+  }"${a}"`, ', # ' + Math.round(b)])
 )*/
-  "paper"             , # 21
+//"paper"             , # 21
   "stone"             , # 31
   "rubber"            , # 32
   "construction_alloy", # 41
@@ -303,6 +314,7 @@ val defaultWeaponMats as IData = [
   "alumite"           , # 120
   "lonsdaleite"       , # 123
   "electrical_steel"  , # 124
+//"spectre"           , # 124
   "ma.inferium"       , # 125
   "aluminium"         , # 126
   "knightslime"       , # 127
@@ -376,14 +388,21 @@ val defaultWeaponMats as IData = [
   "dragonsteel_fire"  , # 335
   "dragonsteel_ice"   , # 335
   "dark_matter"       , # 339
+//"ma.superium"       , # 386
+//"neutronium"        , # 394
   "litherite"         , # 402
   "gelid_gem"         , # 432
   "erodium"           , # 453
   "gelid_enderium"    , # 481
   "kyronite"          , # 508
   "red_matter"        , # 532
+//"draconic_metal"    , # 542
   "pladium"           , # 567
+//"ma.supremium"      , # 609
   "ionite"            , # 636
+//"aethium"           , # 713
+//"chaotic_metal"     , # 1016
+//"infinity_metal"    , # 19537
 /**/
 ] as IData;
 
