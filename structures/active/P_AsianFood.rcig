@@ -37,8 +37,8 @@
       "min": 5,
       "max": 15,
       "item": {
-        "id": "harvestcraft:riceitem",
-        "damage": 0,
+        "id": "actuallyadditions:item_food",
+        "damage": 16,
         "count": 1
       }
     },

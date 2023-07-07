@@ -807,3 +807,12 @@ craft.remake(<thermaldynamics:duct_64:1> * 64, ["pretty",
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:0>, <minecraft:glowstone_dust>);
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:600>, <minecraft:glowstone_dust>);
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:1200>, <minecraft:glowstone_dust>);
+
+// Replace recipe for removed rice
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:riceitem>);
+mods.thermalexpansion.Sawmill.addRecipe(
+	<thermalfoundation:material:816>,
+	<actuallyadditions:item_food:16>,
+	1000,
+	<actuallyadditions:item_rice_seed>, 50
+);

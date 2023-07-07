@@ -185,6 +185,8 @@ utils.rh(<harvestcraft:tomatoitem>);
 utils.rh(<harvestcraft:tomatoseeditem>);
 utils.rh(<harvestcraft:beanseeditem>);
 utils.rh(<harvestcraft:beanitem>);
+utils.rh(<harvestcraft:riceseeditem>);
+utils.rh(<harvestcraft:riceitem>);
 
 utils.rh(<thaumicwonders:eldritch_cluster:0>);
 utils.rh(<thaumicwonders:eldritch_cluster:1>);

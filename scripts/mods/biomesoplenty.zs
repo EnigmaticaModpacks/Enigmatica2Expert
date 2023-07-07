@@ -222,6 +222,7 @@ for input, output in {
 	<biomesoplenty:mushroom:2>     : <biomesoplenty:blue_dye:0>,
 	<biomesoplenty:mushroom:3>     : <minecraft:dye:10>,
 	<biomesoplenty:mushroom:4>     : <biomesoplenty:brown_dye:0>,
+	<biomesoplenty:plant_1:3>      : <actuallyadditions:item_food:16>,
 	<biomesoplenty:plant_1:4>      : <biomesoplenty:brown_dye:0>,
 	<biomesoplenty:plant_1:10>     : <minecraft:dye:1>,
 } as IItemStack[IItemStack] {

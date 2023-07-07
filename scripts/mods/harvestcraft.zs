@@ -157,6 +157,7 @@ for item in [
   // <harvestcraft:coffeeseeditem>,
   // <harvestcraft:grapeseeditem>,
   // <harvestcraft:tomatoseeditem>,
+  // <harvestcraft:riceitem>,
   <harvestcraft:olive_sapling>,
 ] as IItemStack[] {
   for i in 0 .. 3 {
