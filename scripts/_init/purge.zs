@@ -169,6 +169,7 @@ utils.rh(<mysticalagriculture:chunk:3>);
 utils.rh(<mysticalagriculture:chunk:4>);
 utils.rh(<mysticalagradditions:insanium:4>);
 utils.rh(<mysticalagradditions:stuff:69>);
+utils.rh(<qmd:ingot:3>); // Titanium Ingot
 
 # Pams replacements
 utils.rh(<harvestcraft:chilipepperitem>);

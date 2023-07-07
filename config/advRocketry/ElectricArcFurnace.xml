@@ -240,7 +240,7 @@
 			<oreDict>plateCarbon 1</oreDict>
 		</input>
 		<output>
-			<itemStack>qmd:ingot 1 3</itemStack>
+			<itemStack>libvulpes:productingot 1 7</itemStack>
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->

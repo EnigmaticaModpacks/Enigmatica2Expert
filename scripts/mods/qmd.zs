@@ -4,8 +4,6 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.nuclearcraft.ChanceItemIngredient;
 
-utils.rh(<qmd:ingot:3>); // Titanium Ingot
-
 # [BSCCO Wire]*6 from [Silver Plate][+1]
 mods.immersiveengineering.Blueprint.addRecipe('components', <qmd:part:4> * 2, Grid(["▲□□"], {
   "▲": <qmd:chemical_dust:1>, # BSCCO Dust
