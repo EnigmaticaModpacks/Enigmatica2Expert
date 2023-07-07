@@ -301,44 +301,68 @@ var list = {
 	<extrautils2:screen>, <opencomputers:screen3>, 
 	<opencomputers:screen2>, <opencomputers:screen1>]);
 
+// Mana ring cant be accepted on server, so i create immediate recipe
+# [Terra Truncator] from [Greater Band of Mana][+2]
+craft.remake(<botania:terraaxe>, ["pretty",
+  "▬ G",
+  "▬ T",
+  "  T"], {
+  "▬": <ore:ingotTerrasteel>, # Terrasteel Ingot
+  "G": <botania:manaringgreater>.withTag({mana: 2000000}), # Greater Band of Mana
+  "T": <ore:livingwoodTwig>,  # Livingwood Twig
+});
 
-# Creative Mana Tablet
-	list["‡"] = <botania:laputashard>;
-	list["‗"] = <ore:gaiaIngot>;
-	list["◲"] = <botania:storage:1>;
-	list["♰"] = <botania:pylon:2>;
-	list["Ⰰ"] = <botania:manaringgreater>.withTag({mana: 2000000});
-	list["₀"] = <botania:specialflower>.withTag({type: "narslimmus"});
-	list["₁"] = <botania:specialflower>.withTag({type: "kekimurus"});
-	list["₂"] = <botania:specialflower>.withTag({type: "gourmaryllis"});
-	list["₃"] = <botania:specialflower>.withTag({type: "munchdew"});
-	list["₄"] = <botania:specialflower>.withTag({type: "entropinnyum"});
+# [Mana Tablet] from [Shader_ Terra][+12]
+craft.remake(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), ["pretty",
+  "M ▬ ▬ ▬ M ▬ ▬ ▬ M",
+  "▬ S ◊ ◊ ◊ ◊ ◊ S ▬",
+  "▬ ◊ - ■ G ■ - ◊ ▬",
+  "▬ ◊ ■ N K u ■ ◊ ▬",
+  "M ◊ G K h K G ◊ M",
+  "▬ ◊ ■ o K E ■ ◊ ▬",
+  "▬ ◊ - ■ G ■ - ◊ ▬",
+  "▬ S ◊ ◊ ◊ ◊ ◊ S ▬",
+  "M ▬ ▬ ▬ M ▬ ▬ ▬ M"], {
+  "M": <botania:manatablet>.withTag({mana: 500000}), # Mana Tablet
+  "▬": <ore:ingotMirion>,     # Mirion Ingot
+  "S": <botania:laputashard>, # Shard of Laputa
+  "◊": <ore:gemBenitoite>,    # Benitoite
+  "-": <ore:gaiaIngot>,       # Gaia Spirit Ingot
+  "■": <botania:storage:1>,   # Block of Terrasteel
+  "G": <botania:pylon:2>,     # Gaia Pylon
+  "N": <botania:specialflower>.withTag({type: "narslimmus"}), # Narslimmus
+  "K": <botania:specialflower>.withTag({type: "kekimurus"}), # Kekimurus
+  "u": <botania:specialflower>.withTag({type: "munchdew"}), # Munchdew
+  "h": <botania:terraaxe:*>,
+  "o": <botania:specialflower>.withTag({type: "gourmaryllis"}), # Gourmaryllis
+  "E": <botania:specialflower>.withTag({type: "entropinnyum"}), # Entropinnyum
+});
 
-	craft.make(<botania:manatablet>.withTag({mana: 500000, creative: 1 as byte}), ["pretty",
-	"◰ ▭ ▭ ▭ ◰ ▭ ▭ ▭ ◰", 
-	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭", 
-	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭", 
-	"▭ ♦ ◲ ₀ ₁ ₃ ◲ ♦ ▭", 
-	"◰ ♦ ♰ ₁ Ⰰ ₁ ♰ ♦ ◰", 
-	"▭ ♦ ◲ ₂ ₁ ₄ ◲ ♦ ▭", 
-	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭", 
-	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭", 
-	"◰ ▭ ▭ ▭ ◰ ▭ ▭ ▭ ◰"], list);
-	
-# Everlasting Guilty Pool
-	list["∪"] = <botania:pool:3>;
-
-	craft.make(<botania:pool:1>, ["pretty",
-	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪",
-	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭",
-	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭",
-	"▭ ♦ ◲ ₀ ₁ ₃ ◲ ♦ ▭",
-	"∪ ♦ ♰ ₁ Ⰰ ₁ ♰ ♦ ∪",
-	"▭ ♦ ◲ ₂ ₁ ₄ ◲ ♦ ▭",
-	"▭ ♦ ‗ ◲ ♰ ◲ ‗ ♦ ▭",
-	"▭ ‡ ♦ ♦ ♦ ♦ ♦ ‡ ▭",
-	"∪ ▭ ▭ ▭ ∪ ▭ ▭ ▭ ∪"], list);
-
+# [The Everlasting Guilty Pool] from [Shader_ Terra][+12]
+craft.make(<botania:pool:1>, ["pretty",
+  "F ▬ ▬ ▬ F ▬ ▬ ▬ F",
+  "▬ S ◊ ◊ ◊ ◊ ◊ S ▬",
+  "▬ ◊ - ■ G ■ - ◊ ▬",
+  "▬ ◊ ■ N K M ■ ◊ ▬",
+  "F ◊ G K h K G ◊ F",
+  "▬ ◊ ■ o K E ■ ◊ ▬",
+  "▬ ◊ - ■ G ■ - ◊ ▬",
+  "▬ S ◊ ◊ ◊ ◊ ◊ S ▬",
+  "F ▬ ▬ ▬ F ▬ ▬ ▬ F"], {
+  "F": <botania:pool:3>,      # Fabulous Mana Pool
+  "▬": <ore:ingotMirion>,     # Mirion Ingot
+  "S": <botania:laputashard>, # Shard of Laputa
+  "◊": <ore:gemBenitoite>,    # Benitoite
+  "-": <ore:gaiaIngot>,       # Gaia Spirit Ingot
+  "■": <botania:storage:1>,   # Block of Terrasteel
+  "G": <botania:pylon:2>,     # Gaia Pylon
+  "N": <botania:specialflower>.withTag({type: "narslimmus"}), # Narslimmus
+  "K": <botania:specialflower>.withTag({type: "kekimurus"}), # Kekimurus
+  "M": <botania:specialflower>.withTag({type: "munchdew"}), # Munchdew
+  "h": <botania:terraaxe:*>,
+  "o": <botania:specialflower>.withTag({type: "gourmaryllis"}), # Gourmaryllis
+  "E": <botania:specialflower>.withTag({type: "entropinnyum"}), # Entropinnyum
+});
 
 # [Creative Gas Tank] from [Centrifuge Tank][+17]
 craft.remake(<mekanism:gastank>.withTag({tier: 4}), ["pretty",
