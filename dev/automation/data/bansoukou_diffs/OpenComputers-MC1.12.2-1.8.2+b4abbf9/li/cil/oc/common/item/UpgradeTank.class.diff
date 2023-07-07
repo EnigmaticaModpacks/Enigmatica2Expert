@@ -1,0 +1,23 @@
+@@ -200,15 +200,15 @@ implements ItemTier {
+     public void tooltipLines(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
+         BoxedUnit boxedUnit;
+         if (stack.func_77942_o()) {
+-            Object object;
+-            FluidStack fluidStack = FluidStack.loadFluidStackFromNBT((NBTTagCompound)stack.func_77978_p().func_74775_l(new StringBuilder().append((Object)Settings$.MODULE$.namespace()).append((Object)"data").toString()));
+-            if (fluidStack != null) {
+-                FluidStack fluidStack2 = fluidStack;
+-                object = BoxesRunTime.boxToBoolean((boolean)tooltip.add(new StringBuilder().append((Object)fluidStack2.getFluid().getLocalizedName(fluidStack2)).append((Object)": ").append((Object)BoxesRunTime.boxToInteger((int)fluidStack2.amount)).append((Object)"/16000").toString()));
++            Object v7;
++            FluidStack v5 = FluidStack.loadFluidStackFromNBT((NBTTagCompound)stack.func_77978_p().func_74775_l(new StringBuilder().append((Object)Settings$.MODULE$.namespace()).append((Object)"data").toString()));
++            if (v5 != null) {
++                FluidStack v6 = v5;
++                v7 = BoxesRunTime.boxToBoolean((boolean)tooltip.add(new StringBuilder().append((Object)v6.getFluid().getLocalizedName(v6)).append((Object)": ").append((Object)BoxesRunTime.boxToInteger((int)v6.amount)).append((Object)"/20000000").toString()));
+             } else {
+-                object = BoxedUnit.UNIT;
++                v7 = BoxedUnit.UNIT;
+             }
+-            boxedUnit = object;
++            boxedUnit = v7;
+         } else {
+             boxedUnit = BoxedUnit.UNIT;
+         }

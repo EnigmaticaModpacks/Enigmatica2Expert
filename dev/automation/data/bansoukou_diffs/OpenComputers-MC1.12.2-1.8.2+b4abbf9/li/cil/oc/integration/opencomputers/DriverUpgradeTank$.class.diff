@@ -1,0 +1,9 @@
+@@ -93,7 +93,7 @@ HostAware {
+     }
+ 
+     public ManagedEnvironment createEnvironment(ItemStack stack, EnvironmentHost host) {
+-        return host.world() != null && host.world().field_72995_K ? null : new UpgradeTank(host, 16000);
++        return host.world() != null && host.world().field_72995_K ? null : new UpgradeTank(host, 20000000);
+     }
+ 
+     public String slot(ItemStack stack) {
