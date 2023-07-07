@@ -389,4 +389,20 @@
 			<itemStack>thermalfoundation:material 4 1</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherLead</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 67</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<oreDict>oreNetherPlatinum</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material 4 70</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
