@@ -27,6 +27,19 @@ craft.reshapeless(<computercraft:computer:16384>, "Ms:", {
   ":": <ore:oc:hdd3>,                   # Hard Disk Drive (Tier 3) (4MB)
 });
 
+# [Advanced Turtle] from [Turtle][+3]
+recipes.removeByRecipeName("computercraft:advanced_turtle");
+recipes.removeByRecipeName("computercraft:advanced_turtle_upgrade");
+craft.make(<computercraft:turtle_advanced>, ["pretty",
+  "⌂ I ⌂",
+  ": T :",
+  "⌂ ⌂ ⌂"], {
+  "⌂": <ic2:casing:2>,                      # Gold Item Casing
+  "I": <ironchest:iron_gold_chest_upgrade>, # Iron to Gold Chest Upgrade
+  ":": <ore:oc:batteryUpgrade3>,            # Battery Upgrade (Tier 3)
+  "T": <computercraft:turtle> | <computercraft:turtle_expanded>, # Turtle
+});
+
 # Pocket Computer
 	recipes.remove(<computercraft:pocket_computer>);
 	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer>, <computercraft:computer>, <immersiveengineering:mold:0>, 2000);
@@ -49,13 +62,14 @@ mods.jei.JEI.addItem(<opencomputers:misc>);
 mods.jei.JEI.addItem(<opencomputers:robot>);
 mods.jei.JEI.addItem(<opencomputers:microcontroller>);
 
-# Use Fake Iron recipe
-# [Turtle] from [Computer][+2]
+# [Turtle] from [Computer][+3]
+recipes.removeByRecipeName("computercraft:normal_turtle");
 craft.make(<computercraft:turtle_expanded>, ["pretty",
-  "▬ ▬ ▬",
-  "▬ C ▬",
-  "▬ c ▬"], {
-  "▬": <enderio:item_alloy_ingot:9>, # Iron Alloy Ingot
-  "C": <computercraft:computer>,     # Computer
-  "c": <ore:chest>,                  # Oak Chest
+  "⌂ E ⌂",
+  "¤ C ¤",
+  "⌂ E ⌂"], {
+  "⌂": <ic2:casing:5>,           # Steel Item Casing
+  "E": <ic2:crafting:6>,         # Electric Motor
+  "¤": <ore:gearIronInfinity>,   # Infinity Bimetal Gear
+  "C": <computercraft:computer>, # Computer
 });
