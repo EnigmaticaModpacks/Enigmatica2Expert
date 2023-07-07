@@ -9,15 +9,6 @@
 		"c35399e6"
 	],
 	tasks: [{
-		uid: "3ef1fa70",
-		type: "item",
-		items: [{
-			item: "minecraft:wooden_pickaxe"
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
 		uid: "82cff715",
 		type: "item",
 		items: [{
@@ -69,6 +60,9 @@
 					Size: 1
 				}
 			}
+		},
+		{
+			item: "minecraft:wooden_pickaxe"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
