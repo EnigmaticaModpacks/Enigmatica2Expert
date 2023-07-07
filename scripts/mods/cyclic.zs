@@ -825,3 +825,14 @@ craft.reshapeless(<cyclicmagic:ender_fishing> * 64, "FTC", {
   "T": <animania:truffle>,          # Truffle
   "C": <minecraft:web>,             # Cobweb
 });
+
+# [Block Placer] from [Grains of Infinity][+3]
+craft.remake(<cyclicmagic:placer_block>, ["pretty",
+  "░ D ░",
+  "⌂ ▲ ⌂",
+  "░ ⌂ ░"], {
+  "░": <ore:cobblestone>,     # Cobblestone
+  "D": <minecraft:dispenser>, # Dispenser
+  "⌂": <ic2:casing:4>,        # Lead Item Casing
+  "▲": <ore:dustBedrock>,     # Grains of Infinity
+});
