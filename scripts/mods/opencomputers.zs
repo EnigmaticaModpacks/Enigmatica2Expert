@@ -1,5 +1,8 @@
 #modloaded opencomputers
 
+import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
+
 # Make robot easy to break and replace
 <opencomputers:robot>.hardness = 0.5;
 <opencomputers:cable>.hardness = 0.05;
@@ -97,3 +100,59 @@ craft.remake(<opencomputers:case3>, ["pretty",
   "S": <ic2:te:114>,                         # Steel Storage Box
   "m": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
 });
+
+/////////////////////////////////////////////////////////////////////////
+// 3d Prints usage
+/////////////////////////////////////////////////////////////////////////
+
+val itemFromPrint = {
+  <thermalexpansion:frame:64> : {
+    stateOff: [
+      {texture: "thermalexpansion:blocks/device/device_frame_side", bounds: [15, 1, 0, 16, 15, 16] as byte[]},
+      {texture: "thermalexpansion:blocks/device/device_frame_top", bounds: [0, 15, 0, 16, 16, 16] as byte[]},
+      {texture: "thermalexpansion:blocks/device/device_frame_side", bounds: [0, 1, 15, 16, 15, 16] as byte[]},
+      {texture: "thermalexpansion:blocks/device/device_frame_side", bounds: [0, 1, 0, 16, 15, 1] as byte[]},
+      {texture: "thermalexpansion:blocks/device/device_frame_side", bounds: [0, 1, 0, 1, 15, 16] as byte[]},
+      {texture: "thermalexpansion:blocks/device/device_frame_top", bounds: [0, 0, 0, 16, 1, 16] as byte[]},
+    ]
+  },
+
+  <iceandfire:pixie_house> : {
+    stateOff: [
+      {texture: "mushroom_block_skin_stem", bounds: [3, 0, 3, 13, 10, 13] as byte[]},
+      {texture: "mushroom_block_skin_brown", bounds: [0, 10, 0, 16, 13, 16] as byte[]},
+    ]
+  },
+
+  <industrialwires:ic2_connector:9> : {
+    stateOff: [
+      {texture: "glass_white", bounds: [7, 0, 7, 9, 13, 9] as byte[]},
+      {texture: "glass_white", bounds: [6, 13, 6, 10, 14, 10] as byte[]},
+      {texture: "immersiveengineering:blocks/stone_decoration_insulating_glass", bounds: [5, 10, 5, 11, 12, 11] as byte[]},
+      {texture: "immersiveengineering:blocks/stone_decoration_insulating_glass", bounds: [5, 6, 5, 11, 8, 11] as byte[]},
+      {texture: "immersiveengineering:blocks/stone_decoration_insulating_glass", bounds: [5, 2, 5, 11, 4, 11] as byte[]},
+    ]
+  },
+
+  <rftools:storage_module:2> : {
+    stateOff: [
+      {texture: "rftools:items/storage/storagemodule2", bounds: [2, 2, 2, 14, 14, 14] as byte[]},
+    ]
+  },
+
+  <draconicevolution:dislocator_receptacle> : {
+    stateOff: [
+      {texture: "draconicevolution:blocks/animated/dislocator_receptacle_inactive", bounds: [0, 0, 0, 16, 16, 16] as byte[]},
+    ]
+  },
+} as IData[IItemStack];
+
+for output, tag in itemFromPrint {
+  recipes.addShapeless(
+    '3dprint_turn_'~craft.itemName(output),
+    output, [<opencomputers:print>.withTag(tag)]
+  );
+}
+
+
+/////////////////////////////////////////////////////////////////////////
