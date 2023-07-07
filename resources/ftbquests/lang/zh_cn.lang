@@ -99,8 +99,8 @@ q.getting_started.rare_ores.desc=一些矿石是如此的罕见，在主世界�
 q.getting_started.harvest_level_6.name=挖掘等级6
 q.getting_started.harvest_level_6.desc=在地底深处，你能看到流动的水遇到岩浆池生成的黑曜石。
 q.getting_started.beacon.desc=Beacon有扩展的效果列表。在Beacon附近放置特殊的块来改变其效果列表。
-q.getting_started.changers.name=Changers
-q.getting_started.changers.desc=This items and blocks can charge tools and armor.\n\nYou can find them all in HEI by searching §a##Charger
+q.getting_started.chargers.name=Chargers
+q.getting_started.chargers.desc=This items and blocks can charge tools and armor.\n\nYou can find them all in HEI by searching §a##Charger
 q.getting_started.sharpness_modifier.name=Sharpness Modifier
 q.getting_started.sharpness_modifier.desc=Each level of §fSharpness§r adds:\n+ §a1§r bare damage\n+ §a10%%§r from base damage\n+ §abase*lvl⁴/20000§r as high-level bonus\n\nWhole formula is:\n§7base+lvl+\n0.1*lvl*base+\nbase*lvl^4/20000§r\n\nFor example, if your weapon deals 10 damage, there is\n§2Sharpness level§r : §atotal damage§r\n§21§r :§a 12§r\n§25§r :§a 20§r\n§210§r :§a 35§r\n§220§r :§a 130§r\n\n§6For 20 base damage§r\n§21§r :§a 23§r\n§25§r :§a 35§r\n§210§r :§a 60§r\n§220§r :§a 240§r\n\n§cFor base=40§r\n§21§r :§a 45§r\n§25§r :§a 66§r\n§210§r :§a 110§r\n§220§r :§a 460§r
 q.getting_started.harvest_level_7.name=挖掘等级7

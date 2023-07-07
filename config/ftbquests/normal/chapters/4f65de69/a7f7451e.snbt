@@ -1,11 +1,11 @@
 {
-	title: "{q.getting_started.changers.name}",
+	title: "{q.getting_started.chargers.name}",
 	icon: "enderio:item_inventory_charger_simple",
 	x: 7.3d,
 	y: 4.15d,
 	shape: "circle",
 	text: [
-		"{q.getting_started.changers.desc}"
+		"{q.getting_started.chargers.desc}"
 	],
 	dependencies: [
 		"4fc58528"

@@ -99,8 +99,8 @@ q.getting_started.rare_ores.desc=Some ores are so rare, that they don't even gen
 q.getting_started.harvest_level_6.name=Harvest level 6
 q.getting_started.harvest_level_6.desc=Obsidian can be found where pools of lava and flowing water meets, typically deep underground.
 q.getting_started.beacon.desc=Beacon have extended effects list.\nPlace special blocks near beacon to change its list of effects.\n\nSee JEI for whole list of blocks and effects.
-q.getting_started.changers.name=Changers
-q.getting_started.changers.desc=This items and blocks can charge tools and armor.\n\nYou can find them all in HEI by searching §a##Charger
+q.getting_started.chargers.name=Chargers
+q.getting_started.chargers.desc=This items and blocks can charge tools and armor.\n\nYou can find them all in HEI by searching §a##Charger
 q.getting_started.sharpness_modifier.name=Sharpness Modifier
 q.getting_started.sharpness_modifier.desc=Each level of §fSharpness§r adds:\n+ §a1§r to damage\n+ §a10%%§r of the base damage\n+ §abase*lvl⁴/20000§r a significant bonus to damage at higher levels\n\nWhole formula is:\n§7base+lvl+\n0.1*lvl*base+\nbase*lvl^4/20000§r\n\nFor example, if your weapon deals 10 damage, there is\n§2Sharpness level§r : §atotal damage§r\n§21§r :§a 12§r\n§25§r :§a 20§r\n§210§r :§a 35§r\n§220§r :§a 130§r\n\n§6For 20 base damage§r\n§21§r :§a 23§r\n§25§r :§a 35§r\n§210§r :§a 60§r\n§220§r :§a 240§r\n\n§cFor base=40§r\n§21§r :§a 45§r\n§25§r :§a 66§r\n§210§r :§a 110§r\n§220§r :§a 460§r
 q.getting_started.harvest_level_7.name=Harvest level 7
