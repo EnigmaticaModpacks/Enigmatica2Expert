@@ -1,3 +1,5 @@
+// Examples of Requious Fracto: https://github.com/DaedalusGame/The-Testbed
+
 #modloaded requious
 
 #priority 975

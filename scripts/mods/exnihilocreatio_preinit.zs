@@ -13,7 +13,7 @@ mods.exnihilocreatio.Ore.addRecipe(
   "EEEEEE", # HEX Color
   <ore:oreRockCrystal>.firstItem,
   {
-    "en_us": "Display Name", # Display Name
+    "en_us": "Display Name",
     "ru_ru": "Клиентское Имя",
   },
   "BaseName" # Ore BASE name. From uppercase. <ore:oreBaseName>
