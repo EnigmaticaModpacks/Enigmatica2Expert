@@ -1,4 +1,4 @@
-@@ -356,11 +356,11 @@ public final class InitItems {
+@@ -355,11 +355,11 @@ public final class InitItems {
          itemTeleStaff = new ItemTeleStaff("item_tele_staff");
          itemWingsOfTheBats = new ItemWingsOfTheBats("item_wings_of_the_bats");
          itemDrill = new ItemDrill("item_drill");

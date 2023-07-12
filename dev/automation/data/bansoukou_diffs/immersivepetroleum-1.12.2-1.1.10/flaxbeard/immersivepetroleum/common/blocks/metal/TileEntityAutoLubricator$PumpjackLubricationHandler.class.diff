@@ -1,9 +1,0 @@
-@@ -72,7 +72,7 @@ implements LubricatedHandler.ILubricationHandler<TileEntityPumpjack> {
-     public void lubricate(World world, int ticks, TileEntityPumpjack master) {
-         if (!world.field_72995_K) {
-             if (ticks % 4 == 0) {
--                master.update(true);
-+                master.updateTilePumpjack();
-             }
-         } else {
-             master.activeTicks += 0.25f;

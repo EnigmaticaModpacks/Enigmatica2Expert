@@ -1,9 +1,0 @@
-@@ -27,7 +27,7 @@ implements IAction {
-     }
- 
-     public void apply() {
--        Recipes.semiFluidGenerator.addFluid(this.fluid.getFluid().getName(), this.fluid.amount, this.power);
-+        Recipes.semiFluidGenerator.addFluid(this.fluid.getFluid().getName(), (long)this.fluid.amount, (long)this.power);
-     }
- 
-     public String describe() {
