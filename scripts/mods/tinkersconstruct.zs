@@ -66,13 +66,25 @@ mods.tconstruct.Melting.removeRecipe(<liquid:iron>, <minecraft:hopper>);
 # Blank Cast Resmelting
 	mods.tconstruct.Melting.addRecipe(<liquid:alubrass> * 144, <tconstruct:cast>);
 
-# Reinforcement Modifier
-	recipes.remove(<tconstruct:materials:14>);
-	recipes.addShapedMirrored("Reinforcement Modifier",
-	<tconstruct:materials:14> * 2, 
-	[[<ore:blockSheetmetalGold>, <ore:plateDenseObsidian>, <ore:blockSheetmetalGold>],
-	[<ore:blockSheetmetalGold>, <ic2:casing:2>, <ore:blockSheetmetalGold>],
-	[<ore:blockSheetmetalGold>, <ore:plateDenseObsidian>, <ore:blockSheetmetalGold>]]);
+# [Reinforcement] from [Gold Item Casing][+2]
+craft.remake(<tconstruct:materials:14>, ["pretty",
+  "■ □ ■",
+  "■ ⌂ ■",
+  "■ □ ■"], {
+  "■": <ore:blockSheetmetalGold>, # Gold Sheetmetal
+  "□": <tconstruct:large_plate>.withTag({Material: "obsidian"}), # Obsidian Large Plate
+  "⌂": <ic2:casing:2>,            # Gold Item Casing
+});
+
+# [Reinforcement]*2 from [Gold Item Casing][+2]
+craft.make(<tconstruct:materials:14> * 2, ["pretty",
+  "■ □ ■",
+  "■ ⌂ ■",
+  "■ □ ■"], {
+  "■": <ore:blockSheetmetalGold>, # Gold Sheetmetal
+  "□": <ore:plateDenseObsidian>,  # Dense Obsidian Plate
+  "⌂": <ic2:casing:2>,            # Gold Item Casing
+});
 
 # Faster Alumite Alloying
 mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>); // Magically, removing Alumite have effect
