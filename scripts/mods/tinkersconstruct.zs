@@ -100,7 +100,7 @@ scripts.process.alloy([<ore:blockFakeIron> * 2, <ore:blockAluminium> * 5, <ore:o
 	mods.tconstruct.Alloy.addRecipe(<liquid:alubrass> * 576, [<liquid:copper> * 144, <liquid:aluminum> * 432]);
 
 // Aluminium Brass in other machines
-scripts.process.alloy([<ore:ingotCopper>, <ore:ingotAluminium> * 4], <tconstruct:ingots:5>, "only: Kiln");
+scripts.process.alloy([<ore:ingotCopper>, <ore:ingotAluminium> * 3], <tconstruct:ingots:5> * 4, "only: Kiln");
 
 # Tinkers' Complement Melter
 	recipes.remove(<tcomplement:melter>);
