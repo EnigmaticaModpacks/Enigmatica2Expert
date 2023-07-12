@@ -458,7 +458,8 @@ craft.remake(<cyclicmagic:block_fishing>, ["pretty",
 });
 
 # [Antimatter Evaporator] from [Sponge][+2]
-craft.remake(<cyclicmagic:ender_water>, ["pretty",
+recipes.remove(<cyclicmagic:ender_water>);
+craft.make(<cyclicmagic:ender_water>.withTag({ActionType: 2, timeout: 0}), ["pretty",
   "  ◊ ◊",
   "r S ◊",
   "S r  "], {
