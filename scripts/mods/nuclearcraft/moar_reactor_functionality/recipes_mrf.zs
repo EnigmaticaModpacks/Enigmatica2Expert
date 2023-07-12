@@ -11,6 +11,9 @@ this code. Also, you may not sell this code.)
 
 import crafttweaker.liquid.ILiquidStack;
 
+mods.nuclearcraft.FissionHeating.addRecipe(<fluid:carbon_dioxide> * 3, <fluid:hot_carbon_dioxide>, 5);
+mods.nuclearcraft.Turbine.addRecipe(<fluid:hot_carbon_dioxide>, <fluid:carbon_dioxide> * 3, 17.00, 3.00, 1.00);
+
 /* -=-=-=-=-=-=-=-=- SC CO2 Recipes -=-=-=-=-=-=-=-=- */
 mods.nuclearcraft.Enricher.addRecipe(<ic2:dynamite>, <fluid:hot_carbon_dioxide> * 16000, <fluid:compr_carbon_dioxide> * 4000, 0.1, 0.0, 0.0);
 mods.nuclearcraft.FissionHeating.addRecipe(<fluid:compr_carbon_dioxide>, <fluid:supercritical_carbon_dioxide>, 8);
