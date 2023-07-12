@@ -50,10 +50,6 @@ craft.make(<computercraft:turtle_advanced>, ["pretty",
 	mods.immersiveengineering.MetalPress.addRecipe(<computercraft:pocket_computer:1>, <computercraft:computer:16384>, <immersiveengineering:mold:0>, 2000);
 	mods.mechanics.addCrushingBlockRecipe(<computercraft:computer:16384>, [<computercraft:pocket_computer:1>], [1.0]);
 
-// Harder recipe for Laser Beam gun
-recipes.remove(<plethora:module:1>);
-mods.tconstruct.Casting.addTableRecipe(<plethora:module:1>, <bibliocraft:bibliodrill>, <liquid:conductive_iron>, 144*4, true);
-
 # Add missed items to JEI
 mods.jei.JEI.addItem(<opencomputers:print>);
 mods.jei.JEI.addItem(<opencomputers:misc>);
