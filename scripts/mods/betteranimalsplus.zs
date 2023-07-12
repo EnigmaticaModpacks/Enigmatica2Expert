@@ -65,3 +65,6 @@ craft.make(<betteranimalsplus:turkey_raw>, ["pretty",
   "A A A"], {
   "A": <ore:listAllturkeyraw>, # Raw Turkey
 });
+
+# Exploration alternative to easy steel
+scripts.process.melt(<betteranimalsplus:trillium>, <fluid:coal> * 100);
