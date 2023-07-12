@@ -1,6 +1,6 @@
 {
 	x: -1.1d,
-	y: -3.4d,
+	y: -4.4d,
 	text: [
 		"{q.animals.heart_dust.desc}"
 	],

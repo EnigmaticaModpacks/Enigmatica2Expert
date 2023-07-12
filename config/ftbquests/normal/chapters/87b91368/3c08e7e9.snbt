@@ -1,0 +1,24 @@
+{
+	x: -2.3d,
+	y: -3.4d,
+	text: [
+		"{q.animals.conglomerate_of_life.desc}"
+	],
+	dependencies: [
+		"91a85050",
+		"235e1eb1"
+	],
+	tasks: [{
+		uid: "8cac523f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:conglomerate_of_life"
+		}]
+	}],
+	rewards: [{
+		uid: "33933d0a",
+		type: "item",
+		item: "actuallyadditions:item_hairy_ball",
+		count: 64
+	}]
+}

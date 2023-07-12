@@ -267,6 +267,7 @@ q.animals.aristoc_rat.name=Аристок-Крыса
 q.animals.aristoc_rat.desc=Улучшение Крысы: Аристок-Крыса получает из крысы §6 крошечные монеты §r случайным образом или в любое время, когда она убивает врага.
 q.animals.rat_breeding_lantern.desc=Помогает размножаться крысам в клетках
 q.animals.rat_upgrade_speed.desc=Speed upgrade §6buffed§r:\n\nNow if you combine Speed Upgrade with other Processing upgrades, their speed will be §2x5 faster§r.\n\nCompatible upgrades:\n§2-§r Gemcutter\n§2-§r Chef\n§2-§r Ore\n§2-§r Archeologist
+q.animals.conglomerate_of_life.desc=This block increases the drop rate of Ball of Fur from Cats.\n\n§2-§r It interacts with cats within an 8-block Pythagorean radius.\n§2-§r It randomly triggers cats to drop fur with a 25% chance.\n§2-§r If unsuccessful with the first cat, it repeats the process for the next cat until one ball is dropped or all cats are iterated.\n§2-§r When a fur is successfully generated, you will see heart particles.
 q.animals.chunky_cheese_token.desc=Маркер можно использовать для открытия портала в §6 Ratlantis §r. Простое размещение жетона на блоке создаст §6 портал Ratlantis §r, в который сможет войти игрок. Это одноразовое использование.
 q.animals.rat_diamond.desc=Компонент крафта для некоторых инструментов
 q.animals.rat_coal.name=Крысиный уголь

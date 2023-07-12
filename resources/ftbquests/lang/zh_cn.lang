@@ -267,6 +267,7 @@ q.animals.aristoc_rat.name=贵族鼠
 q.animals.aristoc_rat.desc=老鼠升级：贵族可以使老鼠偶尔掉落或者在击杀时掉落§6小硬币§r。
 q.animals.rat_breeding_lantern.desc=帮助鼠笼中的老鼠繁殖。
 q.animals.rat_upgrade_speed.desc=Speed upgrade §6buffed§r:\n\nNow if you combine Speed Upgrade with other Processing upgrades, their speed will be §2x5 faster§r.\n\nCompatible upgrades:\n§2-§r Gemcutter\n§2-§r Chef\n§2-§r Ore\n§2-§r Archeologist
+q.animals.conglomerate_of_life.desc=This block increases the drop rate of Ball of Fur from Cats.\n\n§2-§r It interacts with cats within an 8-block Pythagorean radius.\n§2-§r It randomly triggers cats to drop fur with a 25% chance.\n§2-§r If unsuccessful with the first cat, it repeats the process for the next cat until one ball is dropped or all cats are iterated.\n§2-§r When a fur is successfully generated, you will see heart particles.
 q.animals.chunky_cheese_token.desc=打开通往§6鼠西洲§r的传送门。使用就可以创建玩家可以进入的传送门，但只能用1次。
 q.animals.rat_diamond.desc=一些工具会用到。
 q.animals.rat_coal.name=老鼠煤炭

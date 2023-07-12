@@ -7,7 +7,7 @@
 		}
 	},
 	x: -1.1d,
-	y: -4.3d,
+	y: -3.4d,
 	text: [
 		"{q.animals.iron_golem.desc}"
 	],

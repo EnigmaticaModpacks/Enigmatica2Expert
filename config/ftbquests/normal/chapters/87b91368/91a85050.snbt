@@ -1,6 +1,6 @@
 {
-	x: 4.7d,
-	y: -4.5d,
+	x: -1.1d,
+	y: -2.4d,
 	text: [
 		"{q.animals.ball_of_fur.desc}"
 	],

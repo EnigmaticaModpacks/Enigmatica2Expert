@@ -9,6 +9,10 @@ import mods.contenttweaker.Item;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.SoundType;
 import mods.contenttweaker.VanillaFactory;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+import mods.ctutils.utils.Math.abs;
 
 mods.contenttweaker.VanillaFactory.createCreativeTab('other', <item:minecraft:coal:1>).register();
 
@@ -189,8 +193,55 @@ seed_fluid.register();
 // -------------------------------
 // Animal's blocks
 // -------------------------------
-createBlockGround('conglomerate_of_life', 5, <blockmaterial:clay>);
+function getPlayer(world as IWorld, p as IBlockPos) as IPlayer {
+  for pl in world.getAllPlayers() {
+    if(abs(pl.x - p.x) > 60 || abs(pl.y - p.y) > 60 || abs(pl.z - p.z) > 60) continue;
+    return pl;
+  }
+  return null;
+}
+
+function createParticles(world as IWorld, p as IBlockPos, amount as int = 10) as void {
+  if(world.remote) return;
+  val player = getPlayer(world, p);
+  if(isNull(player)) return;
+  mods.contenttweaker.Commands.call(
+    "/particle heart "~
+    ((p.x+0.5))~" "~(p.y+0.5)~" "~((p.z+0.5))~
+    " 0.25 0.25 0.25 0.02 "~amount, player, world, false, true
+  );
+}
+
 createBlockGround('conglomerate_of_coal', 5, <blockmaterial:clay>);
+
+b = VanillaFactory.createBlock('conglomerate_of_life', <blockmaterial:clay>);
+b.toolClass = 'shovel';
+b.toolLevel = 3;
+b.blockHardness = 3 * 1.6;
+b.blockResistance = 3 * 1.4;
+b.blockSoundType = <soundtype:ground>;
+b.lightValue = (3 as double / 15.0 + 0.00001) as int;
+b.onBlockPlace = function(world, p, blockState) {
+  createParticles(world, p);
+};
+b.onBlockBreak = function(world, p, blockState) {
+  createParticles(world, p);
+};
+b.onRandomTick = function(world, p, blockState) {
+  if(world.remote) return;
+  for entity in world.getEntities() {
+    if(isNull(entity.definition) || entity.definition.id != 'minecraft:ocelot') continue;
+    if(abs(entity.x - p.x) > 8 || abs(entity.y - p.y) > 8 || abs(entity.z - p.z) > 8) continue;
+    if(world.getRandom().nextInt(4) == 1) continue;
+    val w as IWorld = world;
+    val itemEntity = <item:actuallyadditions:item_hairy_ball>.createEntityItem(w, entity.x as float, entity.y as float, entity.z as float);
+    itemEntity.motionY = 0.4;
+    world.spawnEntity(itemEntity);
+    createParticles(world, p);
+  }
+};
+b.register();
+
 createBlockGround('conglomerate_of_sun',  5, <blockmaterial:clay>);
 
 // -------------------------------

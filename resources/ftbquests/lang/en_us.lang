@@ -267,6 +267,7 @@ q.animals.aristoc_rat.name=Aristoc-Rat
 q.animals.aristoc_rat.desc=The Rat Upgrade: Aristoc-Rat grains a rat to drop §6Tiny Coins§r randomly or anytime it kills an enemy
 q.animals.rat_breeding_lantern.desc=Helps to multiply rats in cages
 q.animals.rat_upgrade_speed.desc=Speed upgrade §6buffed§r:\n\nNow if you combine Speed Upgrade with other Processing upgrades, their speed will be §2x5 faster§r.\n\nCompatible upgrades:\n§2-§r Gemcutter\n§2-§r Chef\n§2-§r Ore\n§2-§r Archeologist
+q.animals.conglomerate_of_life.desc=This block increases the drop rate of Ball of Fur from Cats.\n\n§2-§r It interacts with cats within an 8-block Pythagorean radius.\n§2-§r It randomly triggers cats to drop fur with a 25% chance.\n§2-§r If unsuccessful with the first cat, it repeats the process for the next cat until one ball is dropped or all cats are iterated.\n§2-§r When a fur is successfully generated, you will see heart particles.
 q.animals.chunky_cheese_token.desc=The token can be used to open a portal to the §6Ratlantis§r. Simply placing the token on a block will create a §6Ratlantis Portal §rthat the player can enter. It is a one-time use.
 q.animals.rat_diamond.desc=Crafting component for some tools
 q.animals.rat_coal.name=Rat Coal
