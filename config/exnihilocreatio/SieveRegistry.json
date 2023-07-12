@@ -429,13 +429,14 @@
   "enderio:block_infinity:0": [
     {"meshLevel": 2, "drop": {"name": "mysticalagriculture:rock_crystal_essence", "meta": 0} , "chance": 0.5},
     {"meshLevel": 2, "drop": {"name": "mysticalagriculture:osmium_essence"      , "meta": 0} , "chance": 0.6},
-    {"meshLevel": 2, "drop": {"name": "mysticalagriculture:nickel_essence"      , "meta": 0} , "chance": 0.3},
+    {"meshLevel": 2, "drop": {"name": "exnihilocreatio:item_ore_nickel"         , "meta": 0} , "chance": 0.9},
     {"meshLevel": 2, "drop": {"name": "jaopca:item_pieceboron"                  , "meta": 0} , "chance": 1.0},
     {"meshLevel": 2, "drop": {"name": "jaopca:item_pieceboron"                  , "meta": 0} , "chance": 0.6},
     {"meshLevel": 2, "drop": {"name": "enderio:block_infinity_fog"              , "meta": 0} , "chance": 0.5},
 
     {"meshLevel": 3, "drop": {"name": "mysticalagriculture:osmium_essence"      , "meta": 0} , "chance": 0.8},
-    {"meshLevel": 3, "drop": {"name": "mysticalagriculture:nickel_essence"      , "meta": 0} , "chance": 0.5},
+    {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_nickel"         , "meta": 0} , "chance": 1.0},
+    {"meshLevel": 3, "drop": {"name": "exnihilocreatio:item_ore_nickel"         , "meta": 0} , "chance": 0.5},
     {"meshLevel": 3, "drop": {"name": "jaopca:item_pieceboron"                  , "meta": 0} , "chance": 1.0},
     {"meshLevel": 3, "drop": {"name": "jaopca:item_pieceboron"                  , "meta": 0} , "chance": 0.8},
     {"meshLevel": 3, "drop": {"name": "jaopca:item_piecethorium"                , "meta": 0} , "chance": 0.2},

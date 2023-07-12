@@ -200,11 +200,11 @@
           },
           {
             "meshLevel": 2,
-            "name": "mysticalagriculture:nickel_essence",
+            "name": "exnihilocreatio:item_ore_nickel",
             "metadata": 0,
             "count": 1,
             "luck": 0,
-            "chance": 0.3,
+            "chance": 0.9,
             "rolls": 1
           },
           {
@@ -245,7 +245,16 @@
           },
           {
             "meshLevel": 3,
-            "name": "mysticalagriculture:nickel_essence",
+            "name": "exnihilocreatio:item_ore_nickel",
+            "metadata": 0,
+            "count": 1,
+            "luck": 0,
+            "chance": 1,
+            "rolls": 1
+          },
+          {
+            "meshLevel": 3,
+            "name": "exnihilocreatio:item_ore_nickel",
             "metadata": 0,
             "count": 1,
             "luck": 0,
