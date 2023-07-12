@@ -2,30 +2,17 @@
 
 List of priorities:
 
-- [ ] 📖 Add `Computers` finishing quest
-- [ ] 📖 Add 3d prints usage quest
-- [ ] 📖 Harvest Level 7 fix task
-- [ ] 📖 `Chamelium Block` make smaller reward
-- [ ] 📖 Add note that crushing block can lifted with piston
+- [ ] 📖 Add quest Life Conglomerate increase Cat drop rate
 - [ ] 🔴 Remove `Animania` + `CraftStudioAPI`
-- [x] ✏️ Remove ring from creative Pool recipe
-- [ ] ✏️ fix `Burn in Fluid` Hopper Dupe
 - [ ] ✏️ Unify `Tungsten Dust` (ore => out)
-- [ ] ✏️ Fix `Tungsten Dust` => Ingot in Arc Furn
-- [ ] ✏️ `Dislocator` cheaper, `Pedestal` harder
-- [ ] ✏️ Fix Cottontail not turning into Dye
-- [ ] ✏️ Inventory Upgrade cheaper
-- [ ] ✏️ AE2fc fix dupe https://t.ly/Az_kQ
-- [ ] ✏️ Basalt should be main ingredient of OC
-- [ ] ✏️ Reinforcement Modifier should have magic alt recipe
-- [ ] ✏️ Add Compressed Granite
-- [ ] ✏️ inventToolForRobotWithLowDurability
-- [ ] ✏️ make8factorialRecipe
-- [ ] ✏️ Life Conglomerate increase Cat drop rate
 - [ ] ✏️ Mulch more usage (source: cherry)
+- [ ] ✏️ fix Forestry Citcuits In Assembler
+- [ ] ✏️ `Printed Page` more usages
+- [ ] ✏️ TCon Disassembling add reinforcement modifier mechanic
 - [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Configure `Worldgen Indicators`
 - [ ] 🟢 Add `VintageFix`
+- [ ] 🟢 🦈make oceans alive again
 
 ---
 
@@ -35,6 +22,7 @@ List of priorities:
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ invent Tool For Robot With Low Durability
 - [ ] ✏️ Printing and assembling Chaos Guardian spawns Chaos Guardian
 - [ ] 🔴 Do not update `MixinBooter` until fixed: https://github.com/LoliKingdom/MixinBooter/issues/31
 - [ ] 🔴 Do not update `CensoredASM` until fixed: https://github.com/LoliKingdom/LoliASM/issues/169
@@ -244,6 +232,7 @@ Planned non-urgent changes, or just good ideas:
 - `<gendustry:gene_sample>.maxStackSize = 64;` **Transposer** dupe Samples when stackable
 - [ ] 📖 whenever you have a rewards for a quest containing three items of tinkers, the last item does not show your stats. (Cant be fixed - FTBQ bug)
 - [ ] ✏️ SAGmill stuck when produce too much Scrap with balls: best grinding balls produce X5 output that would make SAG mill without balls too weak
+- [ ] ✏️ Fix Cottontail not turning into Dye. Dont know how to determine double plant
 
 ---
 
@@ -252,12 +241,6 @@ Planned non-urgent changes, or just good ideas:
 ## 📦 Items of Interest
 
 Items that should have more uses:
-
-### Tier 1
-
-![](https://is.gd/9ro3hx "Antler")
-![](https://is.gd/rMpCFk "Wasteland Earth")
-![](https://is.gd/ooCy9P "Trillium")
 
 ### Tier 2
 
@@ -268,16 +251,13 @@ Items that should have more uses:
 ![](https://git.io/JRnDa "Tar")
 ![](https://is.gd/ZmKHJr "Gorgon Head")
 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/iceandfire/cyclops_eye__0.png "Eye of Cyclops")
-![](https://is.gd/x6hBwo "A book written by a Cow")
 
 ### Tier 3
 
 ![](https://git.io/JLjsf "Basalt Sediment")
 ![](https://git.io/JLhhf "Energized Clathrate")
 ![](https://git.io/JLhph "Destabilized Clathrate")
-![](https://git.io/JGGhx "Overworldian Matter")
 ![](https://git.io/JRLSU "Huge Stalk")
-![](https://is.gd/PpipIo "Osgloglas Ingot")
 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/minecraft/shulker_shell__0.png "Shulker Shell")
 
 ### Tier 4
@@ -291,9 +271,7 @@ Items that should have more uses:
 
 ## 🔧 Crafting Methods
 
-![](https://git.io/J3hVP "Bursting Powder")
 ![](https://git.io/JG5U9 "Decay Generator")
-![](https://git.io/Jst3B "Crystal Memory")
 ![](https://git.io/JtDnO "Chemical Thrower")
 ![](https://is.gd/rneFnc "Blue Fire Jar")
 ![](https://is.gd/XqQPA0 "Radiator Block")

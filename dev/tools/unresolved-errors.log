@@ -1,2 +1,42 @@
-[main/WARN] [mixin]: @Mixin target net/minecraft/client/renderer/RenderGlobal$ContainerLocalRenderInformation is public in mixins.ondemand_sprites.json:ContainerLocalRenderInformationAccessor and should be specified in value
-[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
+[main/WARN] [LoliASM]: Replacing CA Certs with an updated one...
+[main/ERROR] [mixin]: Critical problem: mixins.tweaks.misc.buttons.realms.json:UTRealmsButtonMainMenuMixin from mod UniversalTweaks_1_12_2_1_7_0 target net.minecraft.client.gui.GuiMainMenu was loaded too early.
+[Client thread/WARN] [mixin]: @ModifyConstant conflict. Skipping mixins.plustweaks.json:MixinBlockCactus from mod plustweaks_1_4_9->@ModifyConstant::modifyConstant_BlockCactus(I)I with priority 1000, already redirected by mixins.tweaks.blocks.growthsize.json:UTCactusSizeMixin from mod UniversalTweaks_1_12_2_1_7_0->@ModifyConstant::utCactusSize(I)I with priority 1000
+[Client thread/WARN] [mixin]: @ModifyConstant conflict. Skipping mixins.plustweaks.json:MixinBlockReed from mod plustweaks_1_4_9->@ModifyConstant::modifyConstant_BlockReed(I)I with priority 1000, already redirected by mixins.tweaks.blocks.growthsize.json:UTSugarCaneSizeMixin from mod UniversalTweaks_1_12_2_1_7_0->@ModifyConstant::utSugarCaneSize(I)I with priority 1000
+[Client thread/WARN] [Config]: [OptiFine] Ambiguous shader option: colortexR
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh: colortex5
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh: colortex0
+[Client thread/WARN] [Config]: [OptiFine] Ambiguous shader option: colortexR
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh, world-1/deferred1.fsh: colortex5
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.fsh: colortex0
+[Client thread/WARN] [Config]: [OptiFine] Ambiguous shader option: colortexR
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh, world-1/deferred1.fsh, world0/deferred1.vsh: colortex5
+[Client thread/WARN] [Config]: [OptiFine]  - in world0/deferred1.vsh: colortex0
+[Client thread/WARN] [Config]: [OptiFine] Ambiguous shader option: colortexR
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh, world-1/deferred1.fsh, world0/deferred1.vsh, world0/deferred1.fsh: colortex5
+[Client thread/WARN] [Config]: [OptiFine]  - in world0/deferred1.fsh: colortex0
+[Client thread/WARN] [Config]: [OptiFine] Ambiguous shader option: colortexR
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh, world-1/deferred1.fsh, world0/deferred1.vsh, world0/deferred1.fsh, world1/deferred1.vsh: colortex5
+[Client thread/WARN] [Config]: [OptiFine]  - in world1/deferred1.vsh: colortex0
+[Client thread/WARN] [Config]: [OptiFine] Ambiguous shader option: colortexR
+[Client thread/WARN] [Config]: [OptiFine]  - in world-1/deferred1.vsh, world-1/deferred1.fsh, world0/deferred1.vsh, world0/deferred1.fsh, world1/deferred1.vsh, world1/deferred1.fsh: colortex5
+[Client thread/WARN] [Config]: [OptiFine]  - in world1/deferred1.fsh: colortex0
+[Client thread/WARN] [mixin]: @Mixin target com.shinoow.abyssalcraft.common.items.ItemConfigurator was not found mixins.mods.abyssalcraft.json:UTItemConfiguratorMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target com.shinoow.abyssalcraft.common.handlers.ItemTransferEventHandler was not found mixins.mods.abyssalcraft.json:UTItemTransferEventHandlerMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target team.cqr.cqrepoured.event.EventsHandler was not found mixins.mods.cqrepoured.json:UTGoldenFeatherEventMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target team.cqr.cqrepoured.item.ItemGoldenFeather was not found mixins.mods.cqrepoured.json:UTGoldenFeatherItemMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target de.krokoyt.element.items.ElectricStaff was not found mixins.mods.elementarystaffs.json:UTElectricStaffMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target com.elenai.elenaidodge2.api.FeathersHelper was not found mixins.mods.elenaidodge2.json:UTED2FeathersHelperMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target funwayguy.epicsiegemod.ai.additions.AdditionDigger was not found mixins.mods.epicsiegemod.json:UTDiggerDebugMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target atomicstryker.infernalmobs.common.mods.MM_Sticky was not found mixins.mods.infernalmobs.json:UTInfernalMobsStickyMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target codersafterdark.reskillable.base.ExperienceHelper was not found mixins.mods.reskillable.json:UTReskillableLinearXPMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target com.charles445.simpledifficulty.block.BlockRainCollector was not found mixins.mods.simpledifficulty.json:UTRainCollectorCanteenMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: @Mixin target techreborn.tiles.tier1.TileRollingMachine was not found mixins.mods.techreborn.json:UTRollingMachineBlockEntityMixin from mod UniversalTweaks_1_12_2_1_7_0
+[Client thread/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.phosphor.json:common.MixinChunk from mod phosphor_1_12_2_0_2_9_2_SNAPSHOT_universal cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
+[Client thread/WARN] [Config]: [OptiFine] Shaders: Block not found for name: minecraft:cobweb
+[Client thread/WARN] [Config]: [OptiFine] Shaders: Block not found for name: minecraft:repeater
+[Client thread/WARN] [Config]: [OptiFine] Shaders: Block not found for name: minecraft:comparator
+[Client thread/WARN] [Config]: [OptiFine] Shaders: Block not found for name: minecraft:lit_redstone_torch
+[Client thread/WARN] [Config]: [OptiFine] Shaders: Block not found for name: minecraft:nether_portal
+[Client thread/WARN] [Config]: [OptiFine] [Shaders] Invalid block ID mapping: block.10303=minecraft:nether_portal
+[Client thread/WARN] [Config]: [OptiFine] Shaders: Block not found for name: minecraft:sign
