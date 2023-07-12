@@ -171,7 +171,7 @@ e2ee.danknull_dock.must_have=§7You need a §f%s§7 in the offhand to insert %s�
 e2ee.restrict.vis_seeds=§7§eVis Seeds§7 can only be planted in §nthe Void§7 dimension or on §nplanets§7. They also need Oxygen.
 e2ee.creature_resisted_morb=§8This creature resist capture by the §n§8%s.
 e2ee.creature_uncapturable=§7This creature can't be captured.
-tooltips.lang.morb_resist=Effective against monsters at §4<%s%%§r hearts, or with fewer than §c%s§r hearts total.
+tooltips.lang.morb_resist=§rEffective against monsters at §4<%s%%§r hearts, or with fewer than §c%s§r hearts total.
 # >
 
 # Bugged langs that losed their names
