@@ -3,6 +3,8 @@
 import crafttweaker.entity.IEntityItem;
 import crafttweaker.world.IFacing;
 import crafttweaker.block.IBlockState;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
 
 #reloadable
 
@@ -71,7 +73,7 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
   if(world.remote) return;
   if(!(e.entity instanceof IEntityItem)) return;
 
-  if(!e.entity.isBurning) return;
+  if(!e.entity.isBurning && !e.entity.isPushedByWater) return;
 
   val entityItem as IEntityItem = e.entity;
   if(isNull(entityItem.item)) return;
@@ -85,17 +87,20 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
     val blockPos = entityItem.position.getOffset(IFacing.down(), i);
     val blockState = e.world.getBlockState(blockPos);
 
-    // Check appropriate liquid
+    // Liquid should be full
     if(blockState.meta != 0) continue;
 
     for fluid, stateChance in result {
       for state, chance in stateChance {
         if(blockState.block.definition.id != fluidToBlock[fluid]) continue;
 
+        // Anti-hopper dupe
+        if(checkHopperUnder(blockPos, world)) continue;
+
         val total = chance * entityItem.item.amount as double;
         if(total < 1.0 && total < world.random.nextDouble()) {
           // Conversion failure
-          utils.spawnParticles(e.entity, 'fallingdust', e.entity.x, e.entity.y+0.5, e.entity.z, 0.1, 0.4, 0.1,0, 6);
+          utils.spawnParticles(e.entity, 'fallingdust', e.entity.x, e.entity.y+0.5, e.entity.z, 0.1, 0.4, 0.1, 0, 6);
           continue;
         }
 
@@ -107,3 +112,13 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
     }
   }
 });
+
+function checkHopperUnder(blockPos as IBlockPos, world as IWorld) as bool {
+  val blockState = world.getBlockState(blockPos.getOffset(IFacing.down(), 1));
+  if(isNull(blockState)) return false;
+  val def = blockState.block.definition;
+  return
+       def.id == 'tconstruct:wooden_hopper'
+    || def.id == 'minecraft:hopper'
+  ;
+}
