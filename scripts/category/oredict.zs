@@ -269,6 +269,14 @@ add(<ore:stoneDiorite>, <quark:world_stone_bricks:1>);
 add(<ore:stoneAndesite>, <quark:world_stone_bricks:2>);
 add(<ore:stoneBasalt>, <quark:world_stone_bricks:3>);
 
+addItems(<ore:slabBasalt>, [
+	<quark:stone_basalt_slab>,
+	<environmentalmaterials:basalt_slab>,
+	<environmentalmaterials:basalt_paver_slab>,
+	<environmentalmaterials:basalt_brick_slab>,
+	<environmentalmaterials:basalt_tile_slab>,
+]);
+
 addItems(<ore:grassTall>, [
   <biomesoplenty:plant_0>,
   <biomesoplenty:plant_0:1>,
