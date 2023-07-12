@@ -26,6 +26,9 @@ craft.remake(<quark:obsidian_pressure_plate>, ['AA', 'AA'], { A: <ore:obsidian> 
 // Conflict recipes
 recipes.removeByRecipeName('quark:basalt_1');
 
+// Too easy recipe
+recipes.removeByRecipeName("quark:basalt");
+
 # Fix recipes (each original quark recipe use basalt bricks for some reason)
 for i in [
 /*Inject_js(getSubMetas('quark:world_stone_carved').join(', '))*/
