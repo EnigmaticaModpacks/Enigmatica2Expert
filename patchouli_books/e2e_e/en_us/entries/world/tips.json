@@ -79,67 +79,67 @@
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)The Cyclic §nSack of Holding§r can move Collector Crystals from Astral Sorcery §8(only for decoration purposes)§r.$(li)§nDrawers§r can be accessed via the Cooking For Blockheads §nFloor§r.$(li)A §nSkeleton§r that falls in Witch Water becomes a §nWither Skeleton§r. §nSquid§r -> §nGhast§r.",
+      "text": "$(li)§nDrawers§r can be accessed via the Cooking For Blockheads §nFloor§r.$(li)A §nSkeleton§r that falls in Witch Water becomes a §nWither Skeleton§r. §nSquid§r -> §nGhast§r.$(li)§nCursed Earth§r spawns §nWither Skeletons§r in §lNether Fortress§res.$(li)§nEnder Lily§r grows faster on End Stone. Get it in §nStone Barrel§rs.",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§nCursed Earth§r spawns §nWither Skeletons§r in §lNether Fortress§res.$(li)§nEnder Lily§r grows faster on End Stone. Get it in §nStone Barrel§rs.$(li)Hover over an item and press §lY§r to show it in nearby §nChest§rs.$(li)A stack of §nSteeleaves§r in your hotbar will dramatically fast repair with the §aSynergy§r trait",
+      "text": "$(li)Hover over an item and press §lY§r to show it in nearby §nChest§rs.$(li)A stack of §nSteeleaves§r in your hotbar will dramatically fast repair with the §aSynergy§r trait$(li)§nBuilding Gadgets§r can take items from ME network. Just §lshift-right-click§r on a §nSecurity Terminal§r with the gadget.",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§nBuilding Gadgets§r can take items from ME network. Just §lshift-right-click§r on a §nSecurity Terminal§r with the gadget.$(li)The §nMaim Trap§r from Dark Utilities is the best way to kill mobs on high §5difficulty§r.$(li)Higher §oHigh Oven§rs output more §lheat§r.",
+      "text": "$(li)The §nMaim Trap§r from Dark Utilities is the best way to kill mobs on high §5difficulty§r.$(li)Higher §oHigh Oven§rs output more §lheat§r.$(li)When you pick up a §nCore Sample§r, it's automatically added to your map. Change your map (default key \"J\") to §ltopography§r mode to see Mineral Deposits.",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)When you pick up a §nCore Sample§r, it's automatically added to your map. Change your map (default key \"J\") to §ltopography§r mode to see Mineral Deposits.$(li)The Ice Bomb from Twilight Forest turns even flowing §nLava§r into §nObsidian§r.$(li)Press §lShift+F§r to lock stairs rotation.$(li)You can §lshear§r Creepers.",
+      "text": "$(li)The Ice Bomb from Twilight Forest turns even flowing §nLava§r into §nObsidian§r.$(li)Press §lShift+F§r to lock stairs rotation.$(li)You can §lshear§r Creepers.$(li)6+ mods support §2JEI dragging§r for item filters, just like §lEnderIO§r.$(li)Stop killing Ghasts to make §bGhast Tears§r. They cry every 60 seconds if you stay near.",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)6+ mods support §2JEI dragging§r for item filters, just like §lEnderIO§r.$(li)Stop killing Ghasts to make §bGhast Tears§r. They cry every 60 seconds if you stay near.$(li)[MP] Hover over an item in a GUI and press §lShift+T§r to show it in chat.$(li)[MP] §lCrouch + right-click§r another player to give them an item.",
+      "text": "$(li)[MP] Hover over an item in a GUI and press §lShift+T§r to show it in chat.$(li)[MP] §lCrouch + right-click§r another player to give them an item.$(li)[MP] Hold §lF4§r to ping a block.$(li)§bPSI Energy§r restores when you gather §aXP§r.$(li)Calm down the fastest tool by press \"§l\\§r\".",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)[MP] Hold §lF4§r to ping a block.$(li)§bPSI Energy§r restores when you gather §aXP§r.$(li)Calm down the fastest tool by press \"§l\\§r\".$(li)Press \"§lShift+F8§r\" to refresh your sound device.$(li)§nFluid Tank§r from Ender IO - When trashing items in §elava§r, a tiny amount of more §elava§r will be produced.",
+      "text": "$(li)Press \"§lShift+F8§r\" to refresh your sound device.$(li)§nFluid Tank§r from Ender IO - When trashing items in §elava§r, a tiny amount of more §elava§r will be produced.$(li)§nCarry on§r mob spawner trigger more mobs to spawn.$(li)Game stages don't actually prohibit anything.",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§nCarry on§r mob spawner trigger more mobs to spawn.$(li)Game stages don't actually prohibit anything.$(li)Full §nBackpacks§r in AE2 system cause lags, or even §5cant be taken out§r.$(li)§nIndustrial Wires§r - cheapest way to convert between RF and EU.$(li)§nCtrl+Delete§r thrashes item from inventory.",
+      "text": "$(li)Full §nBackpacks§r in AE2 system cause lags, or even §5cant be taken out§r.$(li)§nIndustrial Wires§r - cheapest way to convert between RF and EU.$(li)§nCtrl+Delete§r thrashes item from inventory.$(li)§nInventory System Storage§r can't be accessed directly, but work with hoppers and VAULTOPIC",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§nInventory System Storage§r can't be accessed directly, but work with hoppers and VAULTOPIC$(li)Right-Click §nOpenblock's Tank§r with Liquid XP to receive experience.$(li)Want §8/home§r command? Craft §nStable Ender Pearl§r + §nChat Detector§r!$(li)Putting Fluid Bus on a IE Fluid Tank §4cause lag§r",
+      "text": "$(li)Right-Click §nOpenblock's Tank§r with Liquid XP to receive experience.$(li)Want §8/home§r command? Craft §nStable Ender Pearl§r + §nChat Detector§r!$(li)Putting Fluid Bus on a IE Fluid Tank §4cause lag§r$(li)Use §5Horologrium§r stasis to kill the §8Chaos Guardian§r$(li)You can spill §nMilk§r in §4The Nether§r",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)Use §5Horologrium§r stasis to kill the §8Chaos Guardian§r$(li)You can spill §nMilk§r in §4The Nether§r$(li)§0Nocturnal Powder§r can be used to spawn rare mobs such as §oBlizz§r",
+      "text": "$(li)§0Nocturnal Powder§r can be used to spawn rare mobs such as §oBlizz§r$(li)Blood Magic §nTeleposers§r allow for easy long-range transportation of Botania §bMana Pools§r and Astral Temple §bCrystals§r. Even works with Sparks!",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)Blood Magic §nTeleposers§r allow for easy long-range transportation of Botania §bMana Pools§r and Astral Temple §bCrystals§r. Even works with Sparks!$(li)§n/integrateddyanmics networkdiagnostics§r is great to find out what exactly you did with ID that's destroying §4TPS§r",
+      "text": "$(li)§n/integrateddyanmics networkdiagnostics§r is great to find out what exactly you did with ID that's destroying §4TPS§r$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!$(li)§nHeads§r with NBT tags in ME terminal cause FPS lag",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!$(li)§nHeads§r with NBT tags in ME terminal cause FPS lag$(li)Press \"§lShift+C§r\" to crawl",
+      "text": "$(li)Press \"§lShift+C§r\" to crawl",
       "title": "Tips"
     }
   ]
