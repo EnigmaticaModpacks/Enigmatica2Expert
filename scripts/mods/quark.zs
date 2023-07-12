@@ -29,6 +29,9 @@ recipes.removeByRecipeName('quark:basalt_1');
 // Too easy recipe
 recipes.removeByRecipeName("quark:basalt");
 
+recipes.remove(<quark:stone_basalt_slab>);
+recipes.addShaped('oredicted_slab', <quark:stone_basalt_slab> * 6, [[<ore:stoneBasalt>, <ore:stoneBasalt>, <ore:stoneBasalt>]]);
+
 # Fix recipes (each original quark recipe use basalt bricks for some reason)
 for i in [
 /*Inject_js(getSubMetas('quark:world_stone_carved').join(', '))*/
