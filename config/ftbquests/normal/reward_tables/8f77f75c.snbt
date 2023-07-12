@@ -1,0 +1,19 @@
+{
+	title: "Dispenser Reward",
+	loot_size: 1,
+	rewards: [{
+		icon: "minecraft:vine 2",
+		item: "minecraft:vine",
+		count: 2
+	},
+	{
+		icon: "minecraft:redstone_torch 8",
+		item: "minecraft:redstone_torch",
+		count: 8
+	},
+	{
+		icon: "actuallyadditions:item_fertilizer 32",
+		item: "actuallyadditions:item_fertilizer",
+		count: 32
+	}]
+}

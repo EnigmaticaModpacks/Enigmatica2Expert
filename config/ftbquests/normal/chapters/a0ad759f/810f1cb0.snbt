@@ -2,7 +2,7 @@
 	icon: "opencomputers:waypoint",
 	x: 13.4d,
 	y: 5.7d,
-	shape: "diamond",
+	shape: "circle",
 	text: [
 		"{q.computers.navigation_upgrade.desc}"
 	],
@@ -10,22 +10,6 @@
 		"dd6568cd"
 	],
 	tasks: [{
-		uid: "1e879586",
-		type: "item",
-		items: [{
-			item: "opencomputers:upgrade 1 19"
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "a494c42e",
-		type: "item",
-		items: [{
-			item: "opencomputers:upgrade 1 17"
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "4f932c08",
 		type: "item",
 		items: [{

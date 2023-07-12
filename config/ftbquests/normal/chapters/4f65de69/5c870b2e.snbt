@@ -23,12 +23,8 @@
 			tag: {
 				Material: "ma.supremium"
 			}
-		}]
-	},
-	{
-		uid: "5b9dd1af",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "primal_metal"

@@ -13,5 +13,10 @@
 		items: [{
 			item: "minecraft:dispenser"
 		}]
+	}],
+	rewards: [{
+		uid: "acdad51e",
+		type: "choice",
+		table: 142
 	}]
 }

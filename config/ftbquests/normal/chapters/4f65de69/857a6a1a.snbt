@@ -25,12 +25,8 @@
 			tag: {
 				Material: "osgloglas"
 			}
-		}]
-	},
-	{
-		uid: "1dcbbcb0",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "fierymetal"

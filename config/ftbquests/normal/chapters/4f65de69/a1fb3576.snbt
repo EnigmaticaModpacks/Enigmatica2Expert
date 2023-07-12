@@ -13,22 +13,18 @@
 	size: 0.1d,
 	or_tasks: true,
 	tasks: [{
-		uid: "71793651",
-		type: "item",
-		items: [{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "fierymetal"
-			}
-		}]
-	},
-	{
 		uid: "325b5e32",
 		type: "item",
 		items: [{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "osgloglas"
+			}
+		},
+		{
+			id: "tconstruct:sharpening_kit",
+			tag: {
+				Material: "fierymetal"
 			}
 		}]
 	}]

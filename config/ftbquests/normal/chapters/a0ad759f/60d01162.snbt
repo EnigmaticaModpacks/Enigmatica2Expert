@@ -1,0 +1,41 @@
+{
+	title: "{q.computers.printing_ingredients.name}",
+	x: 4.4d,
+	y: 7.5d,
+	text: [
+		"{q.computers.printing_ingredients.desc}"
+	],
+	dependencies: [
+		"c89961f3"
+	],
+	tasks: [{
+		uid: "69695139",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 64"
+		},
+		{
+			item: "iceandfire:pixie_house"
+		},
+		{
+			item: "industrialwires:ic2_connector 1 9"
+		},
+		{
+			item: "rftools:storage_module 1 2"
+		},
+		{
+			item: "draconicevolution:dislocator_receptacle"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1a47bae4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

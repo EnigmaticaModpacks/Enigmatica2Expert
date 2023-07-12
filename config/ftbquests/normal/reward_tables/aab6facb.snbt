@@ -1,9 +1,9 @@
 {
 	loot_size: 1,
 	rewards: [{
-		icon: "opencomputers:chameliumblock 64",
+		icon: "opencomputers:chameliumblock 8",
 		item: "opencomputers:chameliumblock",
-		count: 64
+		count: 8
 	},
 	{
 		icon: "opencomputers:keyboard 32",

@@ -24,26 +24,14 @@
 		type: "item",
 		items: [{
 			item: "tconstruct:ore"
-		}]
-	},
-	{
-		uid: "e4daa64c",
-		type: "item",
-		items: [{
+		},
+		{
 			item: "tconstruct:ore 1 1"
-		}]
-	},
-	{
-		uid: "4df97c03",
-		type: "item",
-		items: [{
+		},
+		{
 			item: "tconstruct:ingots"
-		}]
-	},
-	{
-		uid: "02c2c6ca",
-		type: "item",
-		items: [{
+		},
+		{
 			item: "tconstruct:ingots 1 1"
 		}]
 	}],

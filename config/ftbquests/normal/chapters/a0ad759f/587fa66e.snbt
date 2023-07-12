@@ -14,7 +14,8 @@
 		type: "item",
 		items: [{
 			item: "computercraft:computer"
-		}]
+		}],
+		ignore_damage: true
 	}],
 	rewards: [{
 		uid: "327e24c8",

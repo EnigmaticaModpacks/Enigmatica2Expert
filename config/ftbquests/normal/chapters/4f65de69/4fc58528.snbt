@@ -21,21 +21,26 @@
 	],
 	or_tasks: true,
 	tasks: [{
-		uid: "81ffcb0b",
+		uid: "33509f6e",
 		type: "item",
+		disable_toast: true,
 		items: [{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "obsidian"
 			}
-		},
-		{
+		}]
+	},
+	{
+		uid: "56125e0d",
+		type: "item",
+		disable_toast: true,
+		items: [{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "sky_stone"
 			}
-		}],
-		ignore_nbt: 2b
+		}]
 	}],
 	rewards: [{
 		uid: "312cc253",

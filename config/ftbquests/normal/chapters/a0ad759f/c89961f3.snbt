@@ -623,5 +623,10 @@
 		uid: "2b4dd915",
 		type: "item",
 		item: "tinkersaddons:modifier_item 1 3"
+	},
+	{
+		uid: "b0aa0546",
+		type: "choice",
+		table: 141
 	}]
 }

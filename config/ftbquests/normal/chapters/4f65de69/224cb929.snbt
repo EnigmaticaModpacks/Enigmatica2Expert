@@ -23,12 +23,8 @@
 			tag: {
 				Material: "crystal_matrix"
 			}
-		}]
-	},
-	{
-		uid: "d173b8fd",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "tconstruct:sharpening_kit",
 			tag: {
 				Material: "terrasteel"
