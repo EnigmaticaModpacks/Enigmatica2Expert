@@ -225,6 +225,7 @@ function getCustomRecipes() {
         ),
       makeXMLRecipe('Stone Sticks', 'cobblestone', 'stickStone 6'),
       makeXMLRecipe('HDPE Sticks', 'mekanism:plasticblock:15', 'stickHDPE 6'),
+      makeXMLRecipe('Obsidian Plates', 'quark:obsidian_pressure_plate', 'plateObsidian 2'),
     ],
 
     'config/advRocketry/Centrifuge.xml': [

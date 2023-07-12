@@ -322,6 +322,16 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+	<!-- [Obsidian Plates] -->
+	<Recipe timeRequired="0" power="0">
+		<input>
+			<itemStack>quark:obsidian_pressure_plate</itemStack>
+		</input>
+		<output>
+			<oreDict>plateObsidian 2</oreDict>
+		</output>
+	</Recipe>
+	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Platinum Block] -->
 	<Recipe timeRequired="0" power="0">
 		<input>
