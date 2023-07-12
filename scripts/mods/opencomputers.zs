@@ -7,6 +7,56 @@ import crafttweaker.data.IData;
 <opencomputers:robot>.hardness = 0.5;
 <opencomputers:cable>.hardness = 0.05;
 
+# [Transistor]*8 from [Basalt][+3]
+recipes.remove(<opencomputers:material:6>);
+scripts.process.alloy([<ore:stoneBasalt>, <minecraft:redstone> * 5], <opencomputers:material:6> * 8, "except: arcFurnance AdvRockArc induction");
+scripts.process.alloy([<chisel:basalt2:7>, <minecraft:redstone> * 5], <opencomputers:material:6> * 8, "only: induction");
+
+# [Microchip (Tier 1)]*8 from [Iron Ingot][+1]
+recipes.remove(<opencomputers:material:7>);
+scripts.process.alloy([
+  <opencomputers:material:6>, # Transistor
+  <ore:ingotFakeIron>, # Iron Ingot
+], <opencomputers:material:7> * 16, "except: arcFurnance AdvRockArc");
+
+# [Microchip (Tier 2)]*4 from [Nickel Ingot][+1]
+recipes.remove(<opencomputers:material:8>);
+scripts.process.alloy([
+  <opencomputers:material:6>, # Transistor
+  <ore:ingotNickel>,           # Nickel Ingot
+], <opencomputers:material:8> * 8, "except: arcFurnance AdvRockArc");
+
+# [Microchip (Tier 3)]*2 from [Platinum Ingot][+1]
+recipes.remove(<opencomputers:material:9>);
+scripts.process.alloy([
+  <opencomputers:material:6>, # Transistor
+  <ore:ingotPlatinum>,         # Platinum Ingot
+], <opencomputers:material:9> * 4, "except: arcFurnance AdvRockArc");
+
+# [Inventory Upgrade] from [Mini Chest][+4]
+craft.remake(<opencomputers:upgrade:17>, ["pretty",
+  "B P B",
+  ": M :",
+  "B ♥ B"], {
+  "B": <ore:stoneBasalt>, # Basalt
+  "P": <bithop:pullhop>,        # PullHop
+  ":": <ore:oc:circuitChip1>,   # Microchip (Tier 1)
+  "M": <extrautils2:minichest>, # Mini Chest
+  "♥": <ore:blockRedstone>,     # Block of Redstone
+});
+
+# [Inventory Controller Upgrade] from [Mini Chest][+4]
+craft.remake(<opencomputers:upgrade:18>, ["pretty",
+  "B I B",
+  ": M :",
+  "B ♥ B"], {
+  "B": <ore:stoneBasalt>, # Basalt
+  "I": <randomthings:inventoryrerouter>, # Inventory Rerouter
+  ":": <ore:oc:circuitChip2>,            # Microchip (Tier 2)
+  "M": <extrautils2:minichest>,          # Mini Chest
+  "♥": <ore:blockRedstone>,              # Block of Redstone
+});
+
 # [Battery Upgrade (Tier 2)] from [Simple Machine Parts][+2]
 craft.remake(<opencomputers:upgrade:2>, ["pretty",
   ": □ :",
@@ -70,9 +120,9 @@ craft.remake(<opencomputers:case1>, ["pretty",
   "I c I",
   "□ C □",
   "I : I"], {
-  "I": <ore:barsIron>,                       # Iron Bars
+  "I": <ore:stoneBasalt>,
   "c": <ore:oc:circuitChip1>,                # Microchip (Tier 1)
-  "□": <ore:plateCopper>,                    # Copper Plate
+  "□": <ic2:casing:1>,                       # Copper Item Casing
   "C": <rustic:cabinet>,                     # Cabinet
   ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
 });
@@ -101,9 +151,76 @@ craft.remake(<opencomputers:case3>, ["pretty",
   "m": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
 });
 
+# [Capacitor] from [Printed Circuit Board (PCB)][+3]
+craft.remake(<opencomputers:capacitor>, ["pretty",
+  "  m  ",
+  "‚ : ‚",
+  "B B B"], {
+  "m": <ore:oc:materialTransistor>,          # Transistor
+  "‚": <ore:nuggetGold>,                     # Gold Nugget
+  ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+  "B": <ore:stoneBasalt>,                    # Basalt
+});
+
+# [Charger] from [Microchip (Tier 2)][+3]
+craft.remake(<opencomputers:charger>, ["pretty",
+  "B : B",
+  "c i c",
+  "B : B"], {
+  "B": <ore:stoneBasalt>,                    # Basalt
+  ":": <ore:oc:materialCircuitBoardPrinted>, # Printed Circuit Board (PCB)
+  "c": <ore:oc:capacitor>,                   # Capacitor
+  "i": <ore:oc:circuitChip2>,                # Microchip (Tier 2)
+});
+
+# [End Stone] from [Chamelium][+1]
+recipes.remove(<opencomputers:endstone>);
+scripts.process.alloy([
+  <randomthings:ingredient:7> * 5, # Floo Powder
+  <opencomputers:material:28> * 4, # Chamelium
+], <opencomputers:endstone>, "except: arcFurnance AdvRockArc");
+
+# [Interweb] from [Floo Powder][+1]
+recipes.remove(<opencomputers:material:13>);
+scripts.process.alloy([
+  <randomthings:ingredient:7> * 5, # Floo Powder
+  <minecraft:string> * 4,          # String
+], <opencomputers:material:13>, "except: arcFurnance AdvRockArc");
+
+# [Drone Case (Tier 1)] from [Microcontroller Case (Tier 1)][+4]
+craft.remake(<opencomputers:material:23>, ["pretty",
+  "B h B",
+  ": m :",
+  "B s B"], {
+  "B": <ore:slabBasalt>,              # Basalt Slab
+  "h": <ore:oc:hoverUpgrade1>,        # Hover Upgrade (Tier 1)
+  ":": <ore:oc:circuitChip1>,         # Microchip (Tier 1)
+  "m": <ore:oc:microcontrollerCase1>, # Microcontroller Case (Tier 1)
+  "s": <ore:oc:stoneEndstone>,        # End Stone
+});
+
+# [Drone Case (Tier 2)] from [Microcontroller Case (Tier 2)][+4]
+craft.remake(<opencomputers:material:24>, ["pretty",
+  "B h B",
+  ": m :",
+  "B s B"], {
+  "B": <ore:slabBasalt>,              # Basalt Slab
+  "h": <ore:oc:hoverUpgrade1>,        # Hover Upgrade (Tier 1)
+  ":": <ore:oc:circuitChip2>,         # Microchip (Tier 2)
+  "m": <ore:oc:microcontrollerCase2>, # Microcontroller Case (Tier 2)
+  "s": <ore:oc:stoneEndstone>,        # End Stone
+});
+
 /////////////////////////////////////////////////////////////////////////
 // 3d Prints usage
 /////////////////////////////////////////////////////////////////////////
+
+// {shapes={2, 2, 2, 14, 14, 14,texture="rftools:items/storage/storagemodule2"}}
+/*
+
+{shapes={{0,0,0,16,16,16,texture:"draconicevolution:blocks/animated/dislocator_receptacle_inactive"}}}
+
+*/
 
 val itemFromPrint = {
   <thermalexpansion:frame:64> : {
