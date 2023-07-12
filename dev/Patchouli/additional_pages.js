@@ -49,11 +49,9 @@ export function init(Patchouli_js, helpers) {
     {
       item : 'requious:tinkers_disassembler',
       title: 'Tool recycling',
-      _text: `Tools and Armor can be disassembled in $(l)Disassembler/$.
-      $(li)The disassembler will try to deliver the strongest material
-      $(li)Both of tools should have most or equal harvest level
-      $(li)Output amount based on material cost
-      $(li)Also sum more math`,
+      _text: `Tools and Armor can be disassembled.
+      $(li)???
+      $(li)PROFIT`,
     },
   ])
 

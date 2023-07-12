@@ -7,7 +7,7 @@
     {
       "item": "requious:tinkers_disassembler",
       "title": "Tool recycling",
-      "text": "Tools and Armor can be disassembled in $(l)Disassembler/$.$(br)$(li)The disassembler will try to deliver the strongest material$(br)$(li)Both of tools should have most or equal harvest level$(br)$(li)Output amount based on material cost$(br)$(li)Also sum more math",
+      "text": "Tools and Armor can be disassembled.$(br)$(li)???$(br)$(li)PROFIT",
       "type": "spotlight"
     }
   ]

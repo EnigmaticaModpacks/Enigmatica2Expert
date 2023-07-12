@@ -366,7 +366,6 @@ requious.jei.recipe.pech_trades=Торговля ПеКа
 requious.jei.recipe.petro_petunia=Петро Петуния
 requious.jei.recipe.scented_hive=Ароматный улей
 requious.jei.recipe.syngas_producer=Производитель Сингаза
-requious.jei.recipe.tinkers_disassembler=Разборщик Плотника
 requious.jei.recipe.transmuters_stone=Камень Трансмутаций
 requious.jei.recipe.turbine=Турбина
 requious.jei.recipe.typewriter=Печатная машинка
@@ -374,7 +373,6 @@ requious.jei.recipe.witch_water=Ведьмина Вода
 
 tile.adv_bee_analyzer.name=Расширенный Анализатор
 tile.infinity_furnace.name=Печь Бесконечности
-tile.tinkers_disassembler.name=Разборщик Плотника
 tile.replicator.name=§5Репликатор
 
 # --------------------------------------
