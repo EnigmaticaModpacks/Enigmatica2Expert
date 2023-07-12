@@ -113,21 +113,29 @@ scripts.processUtils.avdRockXmlRecipeEx("PrecisionLaserEtcher", [
 	<advancedrocketry:vacuumlaser>, <ore:ingotMithril>, <ore:ingotPlutonium242All>, <ore:ingotFluixSteel>,
 ], null, [<draconicevolution:energy_crystal> * 4], null, {power: 8000000, timeRequired: 20});
 
-
-# [Dislocator] from [Chorus Glass][+3]
+# [Dislocator] from [Chorus Glass][+2]
 craft.remake(<draconicevolution:dislocator>, ["pretty",
-  "F I F",
-  "T ■ T",
-  "F I F"], {
-  "■": <integratedterminals:chorus_glass>, # Chorus Glass
-  "T": <mekanism:teleportationcore>, # Teleportation Core
-  "F": <randomthings:flootoken>,     # Floo Token
-  "I": <rftools:infused_enderpearl>, # Infused Enderpearl
+  "▬ - ▬",
+  "- C -",
+  "▬ - ▬"], {
+  "▬": <ore:ingotDraconium>,               # Draconium Ingot
+  "-": <ore:ingotManyullyn>,               # Manyullyn Ingot
+  "C": <integratedterminals:chorus_glass>, # Chorus Glass
+});
+
+# [Dislocator Pedestal] from [Infused Enderpearl][+2]
+craft.remake(<draconicevolution:dislocator_pedestal>, ["pretty",
+  "  I  ",
+  "  P  ",
+  "□ P □"], {
+  "I": <rftools:infused_enderpearl>,           # Infused Enderpearl
+  "P": <draconicevolution:particle_generator>, # Particle Generator
+  "□": <tconstruct:large_plate>.withTag({Material: "manyullyn"}), # Manyullyn Large Plate
 });
 
 # Resetting
 # [Dislocator] from [Teleportation Core][+1]
-craft.reshapeless(<draconicevolution:dislocator>, "DT", {
+craft.shapeless(<draconicevolution:dislocator>, "DT", {
   "D": <draconicevolution:dislocator>.anyDamage(), # Dislocator
   "T": <mekanism:teleportationcore>,               # Teleportation Core
 });
