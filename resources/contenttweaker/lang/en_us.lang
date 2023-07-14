@@ -1,5 +1,6 @@
 # Various fixes
 modifier.excompressum:smashingii.desc=Hammering compressed blocks
+tile.spectreCoil_number.info=Generates 32 RF/t and outputs it into the block it's attached to. They can be found in dungeon chests.
 
 itemGroup.other=ContentTweaker
 fluid.heavy_metal=Heavy Metal

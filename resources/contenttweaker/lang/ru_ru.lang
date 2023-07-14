@@ -1,5 +1,6 @@
 # Various fixes
 modifier.excompressum:smashingii.desc=Забивание сжатых блоков молотком
+tile.spectreCoil_number.info=Генерирует 32 RF/t и выдает их в блок, к которому прикреплен. Их можно найти в сундуках в подземельях.
 
 itemGroup.other=ContentTweaker
 fluid.heavy_metal=Тяжёлый Метал

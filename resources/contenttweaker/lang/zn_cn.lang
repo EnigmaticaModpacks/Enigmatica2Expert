@@ -1,0 +1,3 @@
+# Various fixes
+modifier.excompressum:smashingii.desc=锤击压缩块
+tile.spectreCoil_number.info=产生32个RF/t并输出到所连接的块中。它们可以在地牢箱子中找到。
