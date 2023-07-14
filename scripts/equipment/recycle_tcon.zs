@@ -270,11 +270,13 @@ function getGhostID(item as IItemStack, ads as string) as string {
 # ██║  ██║███████╗╚██████╗██║██║     ███████╗███████║
 # ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝╚═╝     ╚══════╝╚══════╝
 # -----------------------------------------------------------------------
+
+val T = validTools.only(function(item) {return item.damage < item.maxDamage;}).transformDamage(1);
 recipes.addShaped(
   "tcon_Disassembling",
   <tconstruct:shard>, [
-    [validTools.marked('t0').transformDamage(10), validTools.marked('t1').transformDamage(10), validTools.marked('t2').transformDamage(10)],
-    [validTools.marked('t3').transformDamage(10), disassemblable.marked('t'), validTools.marked('t4').transformDamage(10)]
+    [T.marked('t0'), T.marked('t1'), T.marked('t2')],
+    [T.marked('t3'), disassemblable.marked('t'), T.marked('t4')]
   ],
   function(out, ins, cInfo) {
     return disassemble(ins);
