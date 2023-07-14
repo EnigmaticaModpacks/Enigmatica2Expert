@@ -1,18 +1,18 @@
 # TODO
 
-List of priorities:
+❌✅🚧 List of priorities:
 
-- [ ] 📖 Add quest Life Conglomerate increase Cat drop rate
 - [ ] 🔴 Remove `Animania` + `CraftStudioAPI`
-- [ ] ✏️ Unify `Tungsten Dust` (ore => out)
+- [ ] ✏️ Unify `Tungsten Dust` Target chamber
 - [ ] ✏️ Mulch more usage (source: cherry)
-- [ ] ✏️ fix Forestry Citcuits In Assembler
 - [ ] ✏️ `Printed Page` more usages
 - [ ] ✏️ TCon Disassembling add reinforcement modifier mechanic
+- [x] 🟢 Add `Dynamic View`
 - [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Configure `Worldgen Indicators`
-- [ ] 🟢 Add `VintageFix`
-- [ ] 🟢 🦈make oceans alive again
+- [x] 🟢 Add `VintageFix`
+- [x] 🟢 🦈make oceans alive again
+- [x] 🟢 Add `Villager Trade Tables`
 
 ---
 
@@ -98,7 +98,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Some QBD / NCO craft MUST use <opencomputers:print>
 - [ ] ✏️ Remove Fiery fruit from Target Chamber recipe
 - [ ] 🔄 Inspect crash when placing Replicator near energy and break it
-- [ ] 🟢 Add **Villager Trade Tables**
 - [ ] 📖 Add quest book chapter about built-in excavators
 - [ ] 📖 Add message about mining Ores in Nether that aggro Pigman. Use whitelist, ignore if Peaceful.
 - [ ] 📖 Give player `Tier1 box` instead of putting Decor into Common boxes
