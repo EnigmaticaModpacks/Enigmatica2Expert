@@ -222,7 +222,6 @@ infinFurnace(utils.get("botania:biomestonea", 13), utils.get("botania:biomestone
 infinFurnace(utils.get("botania:biomestonea", 14), utils.get("botania:biomestonea", 6));
 infinFurnace(utils.get("botania:biomestonea", 15), utils.get("botania:biomestonea", 7));
 infinFurnace(utils.get("claybucket:unfiredclaybucket", W), utils.get("claybucket:claybucket"));
-##infinFurnace(utils.get("contenttweaker:item_ore_tungsten", 2), utils.get("endreborn:item_ingot_wolframium"));
 infinFurnace(utils.get("contenttweaker:ore_phosphor"), utils.get("contenttweaker:nugget_phosphor"));
 infinFurnace(utils.get("cookingforblockheads:recipe_book"), utils.get("cookingforblockheads:recipe_book", 1));
 ##infinFurnace(utils.get("draconicevolution:draconium_dust", W), utils.get("draconicevolution:draconium_ingot"));
@@ -438,7 +437,7 @@ infinFurnace(utils.get("jaopca:item_clusterthorium"), utils.get("nuclearcraft:du
 infinFurnace(utils.get("jaopca:item_clustertitanium"), utils.get("libvulpes:productdust", 7, 2));
 infinFurnace(utils.get("jaopca:item_clustertopaz"), utils.get("biomesoplenty:gem", 3, 3));
 infinFurnace(utils.get("jaopca:item_clustertrinitite"), utils.get("trinity:trinitite_shard", 0, 2));
-infinFurnace(utils.get("jaopca:item_clustertungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 2));
+infinFurnace(utils.get("jaopca:item_clustertungsten"), utils.get("qmd:dust", 0, 2));
 infinFurnace(utils.get("jaopca:item_clusteruranium"), utils.get("immersiveengineering:metal", 14, 2));
 infinFurnace(utils.get("jaopca:item_crushedaluminium"), utils.get("thermalfoundation:material", 132));
 infinFurnace(utils.get("jaopca:item_crushedardite"), utils.get("tconstruct:ingots", 1));
@@ -558,7 +557,7 @@ infinFurnace(utils.get("jaopca:item_dirtygemtin"), utils.get("thermalfoundation:
 infinFurnace(utils.get("jaopca:item_dirtygemtitanium"), utils.get("libvulpes:productingot", 7, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemtopaz"), utils.get("biomesoplenty:gem", 3, 18));
 infinFurnace(utils.get("jaopca:item_dirtygemtrinitite"), utils.get("trinity:trinitite_shard", 0, 12));
-infinFurnace(utils.get("jaopca:item_dirtygemtungsten"), utils.get("contenttweaker:item_ore_tungsten", 2, 12));
+infinFurnace(utils.get("jaopca:item_dirtygemtungsten"), utils.get("qmd:dust", 0, 12));
 infinFurnace(utils.get("jaopca:item_dirtygemuranium"), utils.get("immersiveengineering:metal", 5, 12));
 infinFurnace(utils.get("jaopca:item_dustalchaluminium"), utils.get("jaopca:item_dirtygemaluminium", 0, 48));
 infinFurnace(utils.get("jaopca:item_dustalchamethyst"), utils.get("jaopca:item_dirtygemamethyst", 0, 48));
@@ -928,6 +927,7 @@ infinFurnace(utils.get("opencomputers:material", 2), utils.get("opencomputers:ma
 ##infinFurnace(utils.get("qmd:dust", 12), utils.get("qmd:ingot", 12));
 ##infinFurnace(utils.get("qmd:dust", 13), utils.get("qmd:ingot", 13));
 ##infinFurnace(utils.get("qmd:dust", 14), utils.get("qmd:ingot", 14));
+##infinFurnace(utils.get("qmd:dust"), utils.get("endreborn:item_ingot_wolframium"));
 ##infinFurnace(utils.get("qmd:dust2", 1), utils.get("qmd:ingot2", 1));
 ##infinFurnace(utils.get("qmd:dust2"), utils.get("qmd:ingot2"));
 infinFurnace(utils.get("quark:biome_cobblestone", 2), utils.get("minecraft:stone"));
