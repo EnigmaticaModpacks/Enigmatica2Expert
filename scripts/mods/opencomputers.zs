@@ -178,7 +178,7 @@ recipes.remove(<opencomputers:endstone>);
 scripts.process.alloy([
   <randomthings:ingredient:7> * 5, # Floo Powder
   <opencomputers:material:28> * 4, # Chamelium
-], <opencomputers:endstone>, "except: arcFurnance AdvRockArc");
+], <opencomputers:endstone>, "except: arcFurnance AdvRockArc alloySmelter");
 
 # [Interweb] from [Floo Powder][+1]
 recipes.remove(<opencomputers:material:13>);

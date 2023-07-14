@@ -654,14 +654,6 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-  <recipe name="End Stone">
-    <alloying energy="10000">
-      <input name="randomthings:ingredient:7" amount="5"/>
-      <input name="oc:chamelium" amount="4"/>
-      <output name="opencomputers:endstone"/>
-    </alloying>
-  </recipe>
-  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Enderium Base">
     <alloying energy="10000">
       <input name="ingotPulsatingIron"/>
@@ -681,7 +673,7 @@
   <recipe name="Interweb">
     <alloying energy="10000">
       <input name="randomthings:ingredient:7" amount="5"/>
-      <input name="string" amount="4"/>
+      <input name="minecraft:string" amount="4"/>
       <output name="opencomputers:material:13"/>
     </alloying>
   </recipe>
@@ -781,7 +773,7 @@
   <recipe name="Transistor">
     <alloying energy="10000">
       <input name="stoneBasalt"/>
-      <input name="dustRedstone" amount="5"/>
+      <input name="minecraft:redstone" amount="5"/>
       <output name="opencomputers:material:6" amount="8"/>
     </alloying>
   </recipe>
@@ -791,14 +783,6 @@
       <input name="dustTungsten"/>
       <input name="ingotGraphite"/>
       <output name="qmd:ingot_alloy" amount="2"/>
-    </alloying>
-  </recipe>
-  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-  <recipe name="Tungsten Filament">
-    <alloying energy="10000">
-      <input name="ingotTungsten"/>
-      <input name="ingotTungsten"/>
-      <output name="qmd:source"/>
     </alloying>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
