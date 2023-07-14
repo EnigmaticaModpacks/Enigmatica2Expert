@@ -120,7 +120,7 @@ return result.map((line) => {
 <item:draconicevolution:draconium_ore>        : <item:draconicevolution:draconium_dust>      * 4 ,
 <item:draconicevolution:draconium_ore:1>      : <item:draconicevolution:draconium_dust>      * 4 ,
 <item:draconicevolution:draconium_ore:2>      : <item:draconicevolution:draconium_dust>      * 4 ,
-<item:endreborn:block_wolframium_ore>         : <item:contenttweaker:item_ore_tungsten:2>    * 4 ,
+<item:endreborn:block_wolframium_ore>         : <item:qmd:dust>                              * 4 ,
 <item:forestry:resources>                     : <item:jaopca:item_dustapatite>               * 40,
 <item:immersiveengineering:ore:5>             : <item:immersiveengineering:metal:14>         * 4 ,
 <item:mekanism:oreblock>                      : <item:mekanism:dust:2>                       * 4 ,

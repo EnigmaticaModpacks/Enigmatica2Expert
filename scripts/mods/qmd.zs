@@ -135,8 +135,8 @@ craft.make(<qmd:boots_hev>, ["pretty",
 );
 
 # [Tungsten Filament] from [Tungsten Ingot]
-scripts.process.alloy([<ore:ingotTungsten>, <ore:ingotTungsten>],
-  <qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}), "except: AlloyFurnace"
+scripts.process.alloy([<endreborn:item_ingot_wolframium>, <endreborn:item_ingot_wolframium>],
+  <qmd:source>.withTag({particle_storage: {particle_amount: 50000000}}), "except: AlloyFurnace Kiln induction"
 );
 
 val alloyMachines = "except: alloyFurnace kiln";
@@ -198,11 +198,12 @@ utils.rh(<qmd:hoe_tungsten_carbide>);
 ////////////////////////////////////////
 utils.rh(<qmd:dust:4>); // Cobalt
 utils.rh(<qmd:ingot:4>); // Cobalt
-utils.rh(<qmd:dust>); // Tungsten
 utils.rh(<qmd:ingot>); // Tungsten
 utils.rh(<qmd:ingot:10>); // Platinum
 utils.rh(<qmd:ingot_alloy:4>); // Osmiridium
 utils.rh(<qmd:ingot:9>); // Iridium
+
+mods.immersiveengineering.ArcFurnace.removeRecipe(<qmd:ingot>); // Tungsten from Ore and Dust
 
 # Sodium Chlorde (salt)
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:chemical_dust:3>);

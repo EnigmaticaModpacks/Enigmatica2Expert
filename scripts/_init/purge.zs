@@ -147,6 +147,7 @@ utils.rh(<ic2:ingot:1>);
 # *============================*
 
 utils.rh(<contenttweaker:item_ore_tungsten:1>);
+utils.rh(<contenttweaker:item_ore_tungsten:2>);
 utils.rh(<contenttweaker:item_ore_tungsten:3>);
 utils.rh(<jaopca:block_blocktungsten>);
 utils.rh(<jaopca:item_nuggettungsten>);
