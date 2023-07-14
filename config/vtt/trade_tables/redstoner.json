@@ -1,0 +1,182 @@
+{
+    "Profession": "vtt:redstoner",
+    "Career": "redstoner",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:planks",
+                    "Count": {
+                        "min": 15,
+                        "max": 20
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:stone",
+                    "Count": {
+                        "min": 12,
+                        "max": 16
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": [
+                        1,
+                        1
+                    ]
+                },
+                "sell": {
+                    "id": [
+                        "minecraft:stone_button",
+                        "minecraft:wooden_button"
+                    ],
+                    "Count": [
+                        {
+                            "min": 8,
+                            "max": 10
+                        },
+                        {
+                            "min": 10,
+                            "max": 12
+                        }
+                    ]
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "sell": {
+                    "id": "minecraft:lever",
+                    "Count": {
+                        "min": 4,
+                        "max": 6
+                    }
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": [
+                        1,
+                        1
+                    ]
+                },
+                "sell": {
+                    "id": [
+                        "minecraft:stone_pressure_plate",
+                        "minecraft:wooden_pressure_plate"
+                    ],
+                    "Count": [
+                        {
+                            "min": 4,
+                            "max": 5
+                        },
+                        {
+                            "min": 5,
+                            "max": 6
+                        }
+                    ]
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "sell": {
+                    "id": "minecraft:tripwire_hook",
+                    "Count": {
+                        "min": 3,
+                        "max": 5
+                    }
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:quartz",
+                    "Count": {
+                        "min": 15,
+                        "max": 20
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:repeater",
+                    "Count": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 10,
+                        "max": 16
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:comparator",
+                    "Count": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 10,
+                        "max": 16
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:daylight_detector",
+                    "Count": 1
+                },
+                "CareerLevel": 2
+            }
+        ]
+    }
+}

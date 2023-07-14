@@ -1,0 +1,86 @@
+{
+    "Profession": "minecraft:priest",
+    "Career": "necromancer",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "minecraft:skull",
+                    "Count": 1,
+                    "Damage": 0
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "minecraft:skeleton"
+                        }
+                    }
+                }
+            },
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "minecraft:skull",
+                    "Count": 1,
+                    "Damage": 2
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "minecraft:zombie"
+                        }
+                    }
+                }
+            },
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "minecraft:skull",
+                    "Count": 1,
+                    "Damage": 4
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "minecraft:creeper"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

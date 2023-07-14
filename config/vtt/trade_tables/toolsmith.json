@@ -1,0 +1,26 @@
+{
+    "Profession": "minecraft:smith",
+    "Career": "tool",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 9,
+                        "max": 12
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:diamond_shovel",
+                    "Count": 1,
+                    "tag": {
+                        "ench": "random"
+                    }
+                },
+                "CareerLevel": 3
+            }
+        ]
+    }
+}

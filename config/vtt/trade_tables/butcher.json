@@ -1,0 +1,98 @@
+{
+    "Profession": "minecraft:butcher",
+    "Career": "butcher",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:beef",
+                    "Count": {
+                        "min": 14,
+                        "max": 18
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:mutton",
+                    "Count": {
+                        "min": 14,
+                        "max": 18
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:rabbit",
+                    "Count": {
+                        "min": 14,
+                        "max": 18
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "sell": {
+                    "id": "minecraft:cooked_beef",
+                    "Count": {
+                        "min": 5,
+                        "max": 7
+                    }
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "sell": {
+                    "id": "minecraft:cooked_mutton",
+                    "Count": {
+                        "min": 5,
+                        "max": 7
+                    }
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "sell": {
+                    "id": "minecraft:cooked_rabbit",
+                    "Count": {
+                        "min": 6,
+                        "max": 8
+                    }
+                },
+                "CareerLevel": 2
+            }
+        ]
+    }
+}

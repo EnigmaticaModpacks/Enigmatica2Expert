@@ -1,0 +1,56 @@
+{
+    "Profession": "minecraft:farmer",
+    "Career": "fletcher",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:feather",
+                    "Count": {
+                        "min": 15,
+                        "max": 20
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:flint",
+                    "Count": {
+                        "min": 15,
+                        "max": 20
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 12,
+                        "max": 15
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:bow",
+                    "Count": 1,
+                    "tag": {
+                        "ench": "random"
+                    }
+                },
+                "CareerLevel": 3
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+@@ -179,9 +179,8 @@ implements IMob {
+     public void func_70636_d() {
+         List foxhounds;
+         int cookTime;
+-        BlockPos below;
+         TileEntity tile;
+-        EntityLivingBase owner;
++        EntityLivingBase stack;
+         super.func_70636_d();
+         if (!this.field_70170_p.field_72995_K && this.field_70170_p.func_175659_aa() == EnumDifficulty.PEACEFUL && !this.func_70909_n()) {
+             this.func_70106_y();
+@@ -190,22 +189,22 @@ implements IMob {
+         if (!this.field_70170_p.field_72995_K && TinyPotato.tiny_potato != null) {
+             if (this.timeUntilPotatoEmerges == 1) {
+                 this.timeUntilPotatoEmerges = 0;
+-                ItemStack stack = new ItemStack((Block)TinyPotato.tiny_potato);
++                stack = new ItemStack((Block)TinyPotato.tiny_potato);
+                 ItemNBTHelper.setBoolean((ItemStack)stack, (String)"angery", (boolean)true);
+-                this.func_70099_a(stack, 0.0f);
++                this.func_70099_a((ItemStack)stack, 0.0f);
+                 this.func_184185_a(SoundEvents.field_187543_bD, 1.0f, 1.0f);
+             } else if (this.timeUntilPotatoEmerges > 1) {
+                 --this.timeUntilPotatoEmerges;
+             }
+         }
+-        if (!(!EntityAIWantLove.needsPets((EntityTameable)this) || (owner = this.func_70902_q()) == null || !(owner.func_70068_e((Entity)this) < 1.0) || owner.func_70090_H() || owner.func_70045_F() || owner instanceof EntityPlayer && ((EntityPlayer)owner).func_184812_l_())) {
+-            owner.func_70015_d(5);
++        if (!(!EntityAIWantLove.needsPets((EntityTameable)this) || (stack = this.func_70902_q()) == null || !(stack.func_70068_e((Entity)this) < 1.0) || stack.func_70090_H() || stack.func_70045_F() || stack instanceof EntityPlayer && ((EntityPlayer)stack).func_184812_l_())) {
++            stack.func_70015_d(5);
+         }
+         if (this.field_70170_p.field_72995_K) {
+             this.field_70170_p.func_175688_a(this.isSleeping() ? EnumParticleTypes.SMOKE_NORMAL : EnumParticleTypes.FLAME, this.field_70165_t + (this.field_70146_Z.nextDouble() - 0.5) * (double)this.field_70130_N, this.field_70163_u + (this.field_70146_Z.nextDouble() - 0.5) * (double)this.field_70131_O, this.field_70161_v + (this.field_70146_Z.nextDouble() - 0.5) * (double)this.field_70130_N, 0.0, 0.0, 0.0, new int[0]);
+         }
+-        if (this.func_70909_n() && (tile = this.field_70170_p.func_175625_s(below = this.func_180425_c().func_177977_b())) instanceof TileEntityFurnace && (cookTime = ((TileEntityFurnace)tile).func_174887_a_(2)) > 0 && cookTime % 3 == 0 && !(foxhounds = this.field_70170_p.func_175647_a(EntityFoxhound.class, new AxisAlignedBB(this.func_180425_c()), fox -> fox != null && fox.func_70909_n())).isEmpty() && foxhounds.get(0) == this) {
+-            ((TileEntityFurnace)tile).func_174885_b(2, Math.min(199, cookTime + 1));
++        if (this.func_70909_n() && (tile = this.field_70170_p.func_175625_s((BlockPos)(stack = this.func_180425_c().func_177977_b()))) instanceof TileEntityFurnace && (cookTime = ((TileEntityFurnace)tile).func_174887_a_(2)) > 0 && cookTime % 3 == 0 && !(foxhounds = this.field_70170_p.func_175647_a(EntityFoxhound.class, new AxisAlignedBB(this.func_180425_c()), fox -> fox != null && fox.func_70909_n())).isEmpty() && foxhounds.get(0) == this) {
++            ((TileEntityFurnace)tile).func_174885_b(2, Math.min(199, cookTime + 27));
+         }
+     }
+ 

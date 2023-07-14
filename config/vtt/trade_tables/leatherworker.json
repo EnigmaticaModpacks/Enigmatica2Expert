@@ -1,0 +1,23 @@
+{
+    "Profession": "minecraft:butcher",
+    "Career": "leather",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:rabbit_hide",
+                    "Count": {
+                        "min": 18,
+                        "max": 24
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            }
+        ]
+    }
+}

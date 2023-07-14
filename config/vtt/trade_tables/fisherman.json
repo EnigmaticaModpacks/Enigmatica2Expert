@@ -1,0 +1,51 @@
+{
+    "Profession": "minecraft:farmer",
+    "Career": "fisherman",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "remove",
+                "buy": {
+                    "id": "minecraft:emerald"
+                },
+                "sell": {
+                    "id": "minecraft:fishing_rod"
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 3
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:fishing_rod",
+                    "Count": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 7,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:fishing_rod",
+                    "Count": 1,
+                    "tag": {
+                        "ench": "random"
+                    }
+                },
+                "CareerLevel": 3
+            }
+        ]
+    }
+}

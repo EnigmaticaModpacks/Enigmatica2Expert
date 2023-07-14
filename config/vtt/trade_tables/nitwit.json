@@ -1,0 +1,23 @@
+{
+    "Profession": "minecraft:nitwit",
+    "Career": "nitwit",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:poisonous_potato",
+                    "Count": {
+                        "min": 15,
+                        "max": 19
+                    }
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            }
+        ]
+    }
+}
