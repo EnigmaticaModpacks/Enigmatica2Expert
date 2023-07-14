@@ -87,8 +87,8 @@ addAltRecipe(<forestry:humus> * 9                    , [[<ore:dirt>, <ore:dirt>,
 // addAltRecipe(<forestry:impregnated_casing>        , [[<ore:logWood>, <ore:logWood>, <ore:logWood>], [<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]], 100, <fluid:oliveoil> * 250);
 // addAltRecipe(<forestry:impregnated_casing>        , [[<ore:logWood>, <ore:logWood>, <ore:logWood>], [<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]], 100, <fluid:seed.oil> * 250);
 addAltRecipe(<forestry:iodine_capsule>               , [[<forestry:honey_drop>, <forestry:pollen>, <forestry:honey_drop>], [<forestry:pollen>, <forestry:can>, <forestry:pollen>], [<minecraft:gunpowder>, <forestry:pollen>, <minecraft:gunpowder>]], 100, <fluid:water> * 1000);
-addAltRecipe(<forestry:kit_pickaxe>                  , [[<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>], [null, <ore:stick>, null], [null, <ore:stick>, null]], 100);
-// addAltRecipe(<forestry:kit_shovel>                , [[null, <ore:ingotBronze>, null], [null, <ore:stick>, null], [null, <ore:stick>, null]], 100);
+addAltRecipe(<forestry:kit_pickaxe>                  , [[<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]], 100);
+// addAltRecipe(<forestry:kit_shovel>                , [[null, <ore:ingotBronze>, null], [null, <ore:stickWood>, null], [null, <ore:stickWood>, null]], 100);
 addAltRecipe(<forestry:letters>                      , [[<thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>], [<thermalfoundation:material:800>, <thermalfoundation:material:800>, <thermalfoundation:material:800>], [null, null, null]], 100, <fluid:water> * 250);
 // addAltRecipe(<forestry:oak_stick> * 2             , [[<ore:logWood>, null, null], [<ore:logWood>, null, null], [null, null, null]], 100, <fluid:seed.oil> * 100);
 addAltRecipe(<forestry:stamps:1> * 9                 , [[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>], [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>], [null, null, null]], 100, <fluid:oliveoil> * 300);
@@ -104,3 +104,12 @@ addAltRecipe(<minecraft:paper>                       , [[<thermalfoundation:mate
 // addAltRecipe(<thermalfoundation:material:163> * 2 , [[null, null, null], [null, <forestry:broken_bronze_pickaxe>, null], [null, null, null]], 100);
 addAltRecipe(<thermalfoundation:material:800>        , [[<ore:logWood>, null, null], [null, null, null], [null, null, null]], 100, <fluid:water> * 250);
 /**/
+
+mods.advancedrocketry.RecipeTweaker.forMachine('PrecisionAssembler')
+  .builder()
+  .input(<ore:ingotBronze> * 3)
+  .input(<ore:stickWood> * 2)
+  .outputs(<forestry:kit_pickaxe>)
+  .power(20000)
+  .timeRequired(5)
+  .build();

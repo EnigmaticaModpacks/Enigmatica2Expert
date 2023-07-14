@@ -219,7 +219,7 @@ for oil in [<liquid:oliveoil>, <liquid:seed.oil>] as ILiquidStack[] {
     Grid(["AAA","A A","AAA"], {A:<ore:logWood>}).shaped(), 40, oil * 250
   );
   scripts.processUtils.avdRockXmlRecipeFlatten("PrecisionAssembler",
-    <forestry:impregnated_casing>, [[<ore:compressedLogWood1x>]], oil * 250
+    <forestry:impregnated_casing>, [[<additionalcompression:logwood_compressed>]], oil * 250
   );
 }
 

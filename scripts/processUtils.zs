@@ -366,12 +366,12 @@ function avdRockXmlRecipeFlatten(
     trueIngrs += ingr * min(maxSize == 0 ? 64 : maxSize, count[i] * multiplier);
   }
 
-  avdRockXmlRecipeEx(
-    filename,
-    trueIngrs,
-    !isNull(fluidInput) ? [fluidInput * (fluidInput.amount * multiplier)] as ILiquidStack[] : null,
-    [output * (output.amount * multiplier)],
-    null,
-    { power: 20000 * multiplier, timeRequired: 5 * multiplier }
-  );
+  val builder = mods.advancedrocketry.RecipeTweaker.forMachine(filename).builder();
+  for ingr in trueIngrs { builder.input(ingr); }
+  if (!isNull(fluidInput)) builder.input(fluidInput * (fluidInput.amount * multiplier));
+  builder.outputs(output * (output.amount * multiplier));
+  builder
+    .power(20000 * multiplier)
+    .timeRequired(5 * multiplier)
+    .build();
 }

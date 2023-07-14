@@ -21,7 +21,6 @@ import scripts.processUtils.defaultChanceN;
 import scripts.processUtils.normalizeChances;
 import scripts.processUtils.warning;
 import scripts.processUtils.info;
-import scripts.processUtils.avdRockXmlRecipe;
 import scripts.processUtils.xmlRecipe;
 import scripts.processUtils.enderioXmlRecipe;
 
@@ -572,14 +571,22 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   if (item_to_item) {
 
     if (machineName == "advrockarc") {
-      # Log recipes to manual add in XML file
-      avdRockXmlRecipe("ElectricArcFurnace", inputItems, null, outputItems, null);
+      val b = mods.advancedrocketry.RecipeTweaker.forMachine('ElectricArcFurnace').builder();
+      for o in inputItems  { b.input(o); }
+      for o in outputItems { b.outputs(o); }
+      b.power(getOptionEnergy(options, 100000));
+      b.timeRequired(getOptionTime(options, 5));
+      b.build();
       return machineName;
     }
 
     if (machineName == "advrockcutter") {
-      # Log recipes to manual add in XML file
-      avdRockXmlRecipe("CuttingMachine", inputItems, null, outputItems, null);
+      val b = mods.advancedrocketry.RecipeTweaker.forMachine('CuttingMachine').builder();
+      for o in inputItems  { b.input(o); }
+      for o in outputItems { b.outputs(o); }
+      b.power(getOptionEnergy(options, 100000));
+      b.timeRequired(getOptionTime(options, 5));
+      b.build();
       return machineName;
     }
 
@@ -739,13 +746,12 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   if (haveLiquidInput && haveLiquidOutput) {
 
     if (machineName == "advrockelectrolyzer") {
-      # Log recipes to manual add in XML file
-      var newOutputLiquids = outputLiquids;
-      if(outputLiquids.length > 2) {
-        newOutputLiquids = [] as ILiquidStack[];
-        for i in 0 .. 2 { newOutputLiquids += outputLiquids[i]; }
-      }
-      avdRockXmlRecipe("Electrolyser", null, inputLiquids, null, newOutputLiquids);
+      val b = mods.advancedrocketry.RecipeTweaker.forMachine('Electrolyser').builder();
+      for o in inputLiquids { b.input(o); }
+      for i in 0 .. max(2, outputLiquids.length) { b.outputs(outputLiquids[i]); }
+      b.power(getOptionEnergy(options, 100000));
+      b.timeRequired(getOptionTime(options, 5));
+      b.build();
       return machineName;
     }
   }
@@ -848,12 +854,17 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   if ((haveItemInput || haveLiquidInput) && (haveItemOutput || outputLiquidIsSingle)) {
 
     if (machineName == "chemicalreactor") {
-      if (lenInItem <= 4 && lenInLiqs <= 2 && lenOutItem <= 4 & lenOutLiqs <= 1) {
-        avdRockXmlRecipe("ChemicalReactor", inputItems, inputLiquids, outputItems, outputLiquids);
-        return machineName;
-      } else {
+      if (lenInItem > 4 || lenInLiqs > 2 || lenOutItem > 4 & lenOutLiqs > 1)
         return info(machineNameAnyCase, inputLiquid0.name, "received work, but input and output amounts can't fit in machine");
-      }
+      val b = mods.advancedrocketry.RecipeTweaker.forMachine('ChemicalReactor').builder();
+      if(!isNull(inputItems)) for o in inputItems { b.input(o); }
+      if(!isNull(inputLiquids)) for o in inputLiquids { b.input(o); }
+      if(!isNull(outputItems)) for o in outputItems { b.outputs(o); }
+      if(!isNull(outputLiquids)) for o in outputLiquids { b.outputs(o); }
+      b.power(getOptionEnergy(options, 100000));
+      b.timeRequired(getOptionTime(options, 5));
+      b.build();
+      return machineName;
     }
 
     if (machineName == "forestrysqueezer") {
