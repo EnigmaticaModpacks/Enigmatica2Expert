@@ -1,10 +1,20 @@
 {
+  "iceandfire:myrmex_queen": 10,
+  "betteranimalsplus:bobbit_worm": 40,
+  "betteranimalsplus:crab": 40,
+  "betteranimalsplus:horseshoecrab": 40,
+  "betteranimalsplus:eel_freshwater": 40,
   "iceandfire:myrmex_soldier": 10,
   "iceandfire:myrmex_sentinel": 10,
   "forestry:butterfly_ge": 10,
   "iceandfire:deathworm": 10,
-  "iceandfire:myrmex_queen": 10,
+  "betteranimalsplus:nautilus": 40,
+  "betteranimalsplus:lamprey": 40,
   "iceandfire:myrmex_worker": 10,
   "iceandfire:myrmex_royal": 10,
-  "minecraft:rabbit": 6
+  "betteranimalsplus:whale": 40,
+  "betteranimalsplus:eel_saltwater": 40,
+  "minecraft:rabbit": 6,
+  "betteranimalsplus:jellyfish": 40,
+  "betteranimalsplus:shark": 120
 }

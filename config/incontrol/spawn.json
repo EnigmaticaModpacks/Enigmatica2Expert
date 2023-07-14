@@ -40,9 +40,25 @@
 		],
     "random": 0.1
   },
+	{
+		"mob": [
+			"betteranimalsplus:jellyfish",
+			"betteranimalsplus:whale",
+			"betteranimalsplus:horseshoecrab",
+			"betteranimalsplus:shark",
+			"betteranimalsplus:nautilus",
+			"betteranimalsplus:eel_saltwater",
+			"betteranimalsplus:lamprey",
+			"betteranimalsplus:bobbit_worm",
+			"betteranimalsplus:eel_freshwater",
+			"betteranimalsplus:crab"
+		],
+		"mod": "betteranimalsplus",
+		"mincount": 7,
+		"result": "deny"
+	},
 	{"mob": "quark:frog","mod": "quark","mincount": 20,"result": "deny"},
 	{"mob": "quark:foxhound","mod": "quark","mincount": 20,"result": "deny"},
-	{"mob": "betteranimalsplus:eel_freshwater","mod": "betteranimalsplus","mincount": 20,"result": "deny"},
 	{"mob": "emberroot:dire_wolf","mod": "emberroot","minlight": 7,"result": "deny"},
 
   {"mob": "quark:stoneling","maxcount": {"amount": 3,"perchunk": true},"block": "minecraft:stone", "maxlight": 6,"result": "allow"},
