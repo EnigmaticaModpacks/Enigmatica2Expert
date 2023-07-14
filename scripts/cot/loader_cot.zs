@@ -232,12 +232,12 @@ b.onRandomTick = function(world, p, blockState) {
   for entity in world.getEntities() {
     if(isNull(entity.definition) || entity.definition.id != 'minecraft:ocelot') continue;
     if(abs(entity.x - p.x) > 8 || abs(entity.y - p.y) > 8 || abs(entity.z - p.z) > 8) continue;
-    if(world.getRandom().nextInt(4) == 1) continue;
+    if(world.getRandom().nextInt(4) != 1) continue;
     val w as IWorld = world;
     val itemEntity = <item:actuallyadditions:item_hairy_ball>.createEntityItem(w, entity.x as float, entity.y as float, entity.z as float);
     itemEntity.motionY = 0.4;
     world.spawnEntity(itemEntity);
-    createParticles(world, p);
+    createParticles(world, p, 3);
   }
 };
 b.register();
