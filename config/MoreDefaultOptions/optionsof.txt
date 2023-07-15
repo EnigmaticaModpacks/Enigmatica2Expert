@@ -21,7 +21,7 @@ ofAnimatedSmoke:true
 ofVoidParticles:true
 ofWaterParticles:true
 ofPortalParticles:true
-ofPotionParticles:false
+ofPotionParticles:true
 ofFireworkParticles:true
 ofDrippingWaterLava:true
 ofAnimatedTerrain:true
