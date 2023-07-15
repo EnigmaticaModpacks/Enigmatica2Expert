@@ -31,7 +31,6 @@ function addCast(
 ) as void {
   //mods.forestry.ThermionicFabricator.addCast(IItemStack output, IIngredient[][] ingredients, ILiquidStack liquidStack, @Optional IItemStack plan);
   mods.forestry.ThermionicFabricator.addCast(output, ingredients, fluidInput, box);
-  if (!utils.DEBUG) return;
   addAltRecipe(output, ingredients, fluidInput, box, altMaxMult);
 }
 

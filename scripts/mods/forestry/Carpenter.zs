@@ -32,7 +32,6 @@ function addRecipe(
   altMaxMult as int = 64
 ) as void {
   mods.forestry.Carpenter.addRecipe(output, ingredients, packagingTime, fluidInput, box);
-  if (!utils.DEBUG) return;
   addAltRecipe(output, ingredients, packagingTime, fluidInput, box, altMaxMult);
 }
 
@@ -104,12 +103,3 @@ addAltRecipe(<minecraft:paper>                       , [[<thermalfoundation:mate
 // addAltRecipe(<thermalfoundation:material:163> * 2 , [[null, null, null], [null, <forestry:broken_bronze_pickaxe>, null], [null, null, null]], 100);
 addAltRecipe(<thermalfoundation:material:800>        , [[<ore:logWood>, null, null], [null, null, null], [null, null, null]], 100, <fluid:water> * 250);
 /**/
-
-mods.advancedrocketry.RecipeTweaker.forMachine('PrecisionAssembler')
-  .builder()
-  .input(<ore:ingotBronze> * 3)
-  .input(<ore:stickWood> * 2)
-  .outputs(<forestry:kit_pickaxe>)
-  .power(20000)
-  .timeRequired(5)
-  .build();
