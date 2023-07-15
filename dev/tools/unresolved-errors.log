@@ -1,20 +1,6 @@
 [main/WARN] [LoliASM]: Replacing CA Certs with an updated one...
 [main/WARN] [mixin]: Error loading class: net/optifine/CustomColors (java.lang.ClassNotFoundException: The specified class 'net.optifine.CustomColors' was not found)
 [main/WARN] [mixin]: @Mixin target net.optifine.CustomColors was not found mixins.betterbiomeblend.json:MixinCustomColors from mod betterbiomeblend_1_12_2_1_1_7_forge
-[main/ERROR] [mixin]: Critical problem: mixins.tweaks.misc.buttons.realms.json:UTRealmsButtonMainMenuMixin from mod UniversalTweaks_1_12_2_1_7_0 target net.minecraft.client.gui.GuiMainMenu was loaded too early.
-[Client thread/WARN] [mixin]: @ModifyConstant conflict. Skipping mixins.plustweaks.json:MixinBlockCactus from mod plustweaks_1_4_9->@ModifyConstant::modifyConstant_BlockCactus(I)I with priority 1000, already redirected by mixins.tweaks.blocks.growthsize.json:UTCactusSizeMixin from mod UniversalTweaks_1_12_2_1_7_0->@ModifyConstant::utCactusSize(I)I with priority 1000
-[Client thread/WARN] [mixin]: @ModifyConstant conflict. Skipping mixins.plustweaks.json:MixinBlockReed from mod plustweaks_1_4_9->@ModifyConstant::modifyConstant_BlockReed(I)I with priority 1000, already redirected by mixins.tweaks.blocks.growthsize.json:UTSugarCaneSizeMixin from mod UniversalTweaks_1_12_2_1_7_0->@ModifyConstant::utSugarCaneSize(I)I with priority 1000
-[Client thread/WARN] [mixin]: @Mixin target com.shinoow.abyssalcraft.common.items.ItemConfigurator was not found mixins.mods.abyssalcraft.json:UTItemConfiguratorMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target com.shinoow.abyssalcraft.common.handlers.ItemTransferEventHandler was not found mixins.mods.abyssalcraft.json:UTItemTransferEventHandlerMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target team.cqr.cqrepoured.event.EventsHandler was not found mixins.mods.cqrepoured.json:UTGoldenFeatherEventMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target team.cqr.cqrepoured.item.ItemGoldenFeather was not found mixins.mods.cqrepoured.json:UTGoldenFeatherItemMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target de.krokoyt.element.items.ElectricStaff was not found mixins.mods.elementarystaffs.json:UTElectricStaffMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target com.elenai.elenaidodge2.api.FeathersHelper was not found mixins.mods.elenaidodge2.json:UTED2FeathersHelperMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target funwayguy.epicsiegemod.ai.additions.AdditionDigger was not found mixins.mods.epicsiegemod.json:UTDiggerDebugMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target atomicstryker.infernalmobs.common.mods.MM_Sticky was not found mixins.mods.infernalmobs.json:UTInfernalMobsStickyMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target codersafterdark.reskillable.base.ExperienceHelper was not found mixins.mods.reskillable.json:UTReskillableLinearXPMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target com.charles445.simpledifficulty.block.BlockRainCollector was not found mixins.mods.simpledifficulty.json:UTRainCollectorCanteenMixin from mod UniversalTweaks_1_12_2_1_7_0
-[Client thread/WARN] [mixin]: @Mixin target techreborn.tiles.tier1.TileRollingMachine was not found mixins.mods.techreborn.json:UTRollingMachineBlockEntityMixin from mod UniversalTweaks_1_12_2_1_7_0
 [Client thread/WARN] [mixin]: @Mixin target com.raoulvdberge.refinedstorage.proxy.ProxyClient was not found mixins.vintagefix.late.json:dynamic_resources.RSProxyClientMixin from mod vintagefix_0_2_7
 [Client thread/WARN] [mixin]: @Mixin target pl.asie.ucw.util.ModelLoaderEarlyView was not found mixins.vintagefix.late.json:dynamic_resources.MixinModelLoaderEarlyView from mod vintagefix_0_2_7
 [Client thread/WARN] [mixin]: @Mixin target thebetweenlands.client.render.model.loader.CustomModelLoader was not found mixins.vintagefix.late.json:dynamic_resources.MixinCustomBetweenlandsModels from mod vintagefix_0_2_7
@@ -22,8 +8,6 @@
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.item.EntityMinecartFurnace from class com.lothrazar.cyclicmagic.item.minecart.EntityGoldFurnaceMinecart
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.monster.EntitySlime from class teamroots.emberroot.entity.slime.EntityRainbowSlime
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class malte0811.industrialwires.entities.EntityBrokenPart from class malte0811.industrialwires.IndustrialWires
-[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
-[Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.dynamic_resources.hide_model_exceptions.ModelErrorMixin' as 'mixin.dynamic_resources.hide_model_exceptions' is disabled in config
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack HammerCore Connected Models (com.zeitheron.hammercore.api.inconnect.EmptyModelPack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack resources (com.teamacronymcoders.base.util.files.DirectoryResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack CustomResources (lumien.resourceloader.loader.NormalResourceLoader)
@@ -34,11 +18,6 @@
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack quark-emote-pack (vazkii.quark.vanity.client.emotes.CustomEmoteIconResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack BetterFps (guichaguri.betterfps.gui.BetterFpsResourcePack)
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_no_coremod
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumicaugmentation:ward_foci_no_coremod with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_no_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
@@ -47,11 +26,6 @@ java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$
   [...]
 [Client thread/WARN] [VintageFix]: Path mixins.sledgehammer.conarm.json is not a valid model location
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_no_coremod
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumicaugmentation:ward_foci_no_coremod with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_no_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
@@ -61,11 +35,6 @@ java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$
 [Client thread/WARN] [VintageFix]: Path fabric.mod.json is not a valid model location
 [Client thread/WARN] [VintageFix]: Path mixins.mods.epicsiegemod.json is not a valid model location
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_coremod
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumicaugmentation:ward_foci_coremod with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
@@ -73,11 +42,6 @@ java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$
 	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1196) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_coremod
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumicaugmentation:ward_foci_coremod with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
@@ -94,468 +58,115 @@ java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack architecturecraft-1.12-3.108.jar (com.elytradev.architecturecraft.repackage.com.elytradev.concrete.resgen.ConcreteResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack quark-emote-pack (vazkii.quark.vanity.client.emotes.CustomEmoteIconResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack BetterFps (guichaguri.betterfps.gui.BetterFpsResourcePack)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.TinkersIntegration$2$1 (seen 151/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class net.minecraftforge.client.model.ModelLoader$White (seen 1/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class twilightforest.client.texture.GradientMappedTexture (seen 41/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.GuiOutlineTexture (seen 40/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class net.minecraftforge.client.model.ModelDynBucket$BucketCoverSprite (seen 1/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class net.minecraftforge.client.model.ModelDynBucket$BucketBaseSprite (seen 1/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.TextureRedstoneClock (seen 1/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.TinkersIntegration$4$1 (seen 166/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.PatternTexture (seen 40/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.TinkersIntegration$3$1 (seen 151/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.material.CosmicMaterialRenderInfo$CosmicTexture$CosmicMaskTexture (seen 169/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.SpriteCompressed (seen 27/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.SpriteSub (seen 6/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.CastTexture (seen 40/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.fluids.TexturePlasma (seen 3/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.SpriteConnectedTextures (seen 437/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class openblocks.client.renderer.block.canvas.CanvasTextureManager$CanvasTexture (seen 256/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.material.CosmicMaterialRenderInfo$CosmicTexture (seen 169/50732 times)
 [Client thread/WARN] [VintageFix]: Can't preload sprite class twilightforest.client.texture.MoltenFieryTexture (seen 2/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.TextureRedstoneClock (seen 1/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class codechicken.lib.texture.TextureSpecial (seen 45/50732 times)
 [Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.texture.MaybeTextureColouredTexture (seen 838/50732 times)
 [Client thread/WARN] [VintageFix]: Can't preload sprite class twilightforest.compat.tcon.texture.FieryTConTexture (seen 73/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.material.CosmicMaterialRenderInfo$CosmicTexture$CosmicMaskTexture (seen 169/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class twilightforest.compat.tcon.texture.GradientMappedTConTexture (seen 31/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class openblocks.client.renderer.item.stencil.StencilTextureManager$TexturePool$PoolTexture (seen 15/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.MetalTextureTexture (seen 166/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.XUTConTextureMagicWood (seen 166/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class cofh.thermaldynamics.render.TextureTransparent (seen 6/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.SpriteConnectedTextures (seen 437/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.material.EdgeColourMaterialRenderInfo$EdgeColourTexture (seen 1343/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.PatternTexture (seen 40/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.MetalColoredTexture (seen 6892/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.SimpleColoredTexture (seen 4149/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.SpriteCompressed (seen 27/50732 times)
 [Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.TextureColoredTexture (seen 2001/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.SimpleColoredTexture (seen 4149/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class net.minecraftforge.client.model.ModelDynBucket$BucketBaseSprite (seen 1/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class net.minecraftforge.client.model.ModelLoader$White (seen 1/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.XUTConTextureMagicWood (seen 166/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.material.EdgeColourMaterialRenderInfo$EdgeColourTexture (seen 1343/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.TinkersIntegration$2$1 (seen 151/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class net.minecraftforge.client.model.ModelDynBucket$BucketCoverSprite (seen 1/50732 times)
 [Client thread/WARN] [VintageFix]: Can't preload sprite class forestry.apiculture.render.TextureHabitatLocator (seen 1/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.TinkersIntegration$3$1 (seen 151/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class openblocks.client.renderer.block.canvas.CanvasTextureManager$CanvasTexture (seen 256/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.MetalColoredTexture (seen 6892/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class openblocks.client.renderer.item.stencil.StencilTextureManager$TexturePool$PoolTexture (seen 15/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class twilightforest.client.texture.GradientMappedTexture (seen 41/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class cofh.thermaldynamics.render.TextureTransparent (seen 6/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.MetalTextureTexture (seen 166/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.GuiOutlineTexture (seen 40/50732 times)
+[Client thread/WARN] [VintageFix]: Can't preload sprite class twilightforest.compat.tcon.texture.GradientMappedTConTexture (seen 31/50732 times)
 [Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.InverseColoredTexture (seen 166/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class xyz.phanta.tconevo.client.render.material.CosmicMaterialRenderInfo$CosmicTexture (seen 169/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class slimeknights.tconstruct.library.client.texture.CastTexture (seen 40/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.textures.SpriteSub (seen 6/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.modcompat.TinkersIntegration$4$1 (seen 166/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class codechicken.lib.texture.TextureSpecial (seen 45/50732 times)
-[Client thread/WARN] [VintageFix]: Can't preload sprite class com.rwtema.extrautils2.fluids.TexturePlasma (seen 3/50732 times)
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model enderio:block_painted_double_slab#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model enderio:block_painted_double_slab#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model enderio:block_painted_double_slab#inventory as item enderio:block_painted_double_slab
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model enderio:block_painted_double_slab#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model enderio:block_painted_double_slab#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model enderio:block_painted_stone_double_slab#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model enderio:block_painted_stone_double_slab#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model enderio:block_painted_stone_double_slab#inventory as item enderio:block_painted_stone_double_slab
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model enderio:block_painted_stone_double_slab#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model enderio:block_painted_stone_double_slab#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model enderio:block_painted_sand#variant=sand
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model enderio:block_painted_sand#variant=sand with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model enderio:block_painted_sand#variant=sand as item enderio:block_painted_sand
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model enderio:block_painted_sand#variant=sand with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model enderio:block_painted_sand#variant=sand
 [Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'enderio'
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model ae2wtlib:wut_creative#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model ae2wtlib:wut_creative#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model ae2wtlib:wut_creative#inventory as item ae2wtlib:item/wut_creative
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model ae2wtlib:wut_creative#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model ae2wtlib:wut_creative#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model exnihilocreatio:block_infested_leaves#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model exnihilocreatio:block_infested_leaves#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model exnihilocreatio:block_infested_leaves#normal as item exnihilocreatio:block_infested_leaves
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model exnihilocreatio:block_infested_leaves#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model exnihilocreatio:block_infested_leaves#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model mekanism:glow_panel#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mekanism:glow_panel#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model mekanism:glow_panel#inventory as item mekanism:glow_panel
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model mekanism:glow_panel#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model mekanism:glow_panel#inventory
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=south
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model framedcompactdrawers:framed_drawer_controller#facing=south with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=south as item framedcompactdrawers:framed_drawer_controller
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model framedcompactdrawers:framed_drawer_controller#facing=south with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=west
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model framedcompactdrawers:framed_drawer_controller#facing=west with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=west as item framedcompactdrawers:framed_drawer_controller
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model framedcompactdrawers:framed_drawer_controller#facing=west with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=north
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model framedcompactdrawers:framed_drawer_controller#facing=north with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=north as item framedcompactdrawers:framed_drawer_controller
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model framedcompactdrawers:framed_drawer_controller#facing=north with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=north
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=south,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=south,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=west,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=west,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=north,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=north,slots=open1
 [Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'framedcompactdrawers'
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customtrim#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model storagedrawers:customtrim#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customtrim#normal as item storagedrawers:customtrim
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model storagedrawers:customtrim#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customtrim#normal
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=south
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model storagedrawers:customdrawers#block=full1,facing=south with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=south as item storagedrawers:customdrawers
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model storagedrawers:customdrawers#block=full1,facing=south with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=west
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model storagedrawers:customdrawers#block=full1,facing=west with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=west as item storagedrawers:customdrawers
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model storagedrawers:customdrawers#block=full1,facing=west with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=west
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=south,right=false
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=south,right=false
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=south,right=true
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=south,right=true
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=west,right=false
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=west,right=false
 [Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'storagedrawers'
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:snowglobe#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model extrautils2:snowglobe#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:snowglobe#inventory as item extrautils2:item/snowglobe
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model extrautils2:snowglobe#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model extrautils2:snowglobe#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:itemcreativedestructionwand#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model extrautils2:itemcreativedestructionwand#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:itemcreativedestructionwand#inventory as item extrautils2:item/itemcreativedestructionwand
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model extrautils2:itemcreativedestructionwand#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model extrautils2:itemcreativedestructionwand#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:unstableingots#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model extrautils2:unstableingots#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:unstableingots#inventory as item extrautils2:item/unstableingots
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model extrautils2:unstableingots#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model extrautils2:unstableingots#inventory
 [Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'extrautils2'
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:paintingcanvas#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model bibliocraft:paintingcanvas#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:paintingcanvas#normal as item bibliocraft:item/paintingcanvas
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model bibliocraft:paintingcanvas#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model bibliocraft:paintingcanvas#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:compass#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model bibliocraft:compass#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:compass#normal as item bibliocraft:compass
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model bibliocraft:compass#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model bibliocraft:compass#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:atlasbook#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model bibliocraft:atlasbook#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:atlasbook#normal as item bibliocraft:item/atlasbook
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model bibliocraft:atlasbook#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model bibliocraft:atlasbook#normal
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model industrialwires:panel_component/rgb_led#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model industrialwires:panel_component/rgb_led#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model industrialwires:panel_component/rgb_led#inventory as item industrialwires:item/panel_component/rgb_led
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model industrialwires:panel_component/rgb_led#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model industrialwires:panel_component/rgb_led#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model pressure:block/sided_multiblock.extended with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model advgenerators:generators_data_port#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#inventory as item advgenerators:item/generators_data_port
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model advgenerators:generators_data_port#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model betteranimalsplus:block/items/wolfhead with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model betteranimalsplus:block/items/wolfhead with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model betteranimalsplus:block/items/wolfhead with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model betteranimalsplus:block/items/wolfhead with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model betteranimalsplus:block/items/wolfhead with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model betteranimalsplus:block/items/wolfhead with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'betteranimalsplus'
 [VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture neenergistics:blocks/pattern_interface was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model tconevo:mana_giver#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model tconevo:mana_giver#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model tconevo:mana_giver#inventory as item tconevo:item/mana_giver
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model tconevo:mana_giver#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model tconevo:mana_giver#inventory
+[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumcraft:block/banner_crimson_cult
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumcraft:block/banner_crimson_cult with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicwonders:block/panacea
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumicwonders:block/panacea with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicwonders:block/panacea
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumicwonders:block/panacea with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model minecraft:old_wood_slab#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model minecraft:old_wood_slab#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model minecraft:old_wood_slab#inventory as item minecraft:old_wood_slab
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model minecraft:old_wood_slab#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model minecraft:old_wood_slab#inventory
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class com.github.alexthe666.iceandfire.entity.EntityDreadThrall from class com.github.alexthe666.iceandfire.entity.EntityDreadKnight
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class com.github.alexthe666.rats.server.entity.EntityFeralRatlantean from class com.github.alexthe666.rats.server.entity.EntityNeoRatlantean
-[Client thread/ERROR] [vtt]: Unknown profession "iceandfire:jungleMyrmexWorker" in file "jungle_myrmex_worker.json"
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:fluid/#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model aeadditions:fluid/#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:fluid/#inventory as item aeadditions:fluid/
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model aeadditions:fluid/#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model aeadditions:fluid/#inventory
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:gas/#inventory
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model aeadditions:gas/#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:gas/#inventory as item aeadditions:gas/
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model aeadditions:gas/#inventory with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model aeadditions:gas/#inventory
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model pressure:block/sided_multiblock.extended with loader VanillaLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model advgenerators:generators_data_port#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#normal as item advgenerators:generators_data_port
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model advgenerators:generators_data_port#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#normal
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:sawbench#facing=west
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model architecturecraft:sawbench#facing=west with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:sawbench#facing=west as item architecturecraft:sawbench
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model architecturecraft:sawbench#facing=west with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:sawbench#facing=west
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:shape#light=0
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model architecturecraft:shape#light=0 with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:shape#light=0 as item architecturecraft:shape
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model architecturecraft:shape#light=0 with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
 [pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:shape#light=0
 [Client thread/WARN] [LoliASM]: Clearing LoliVertexDataPool
 [pool-12-thread-1/ERROR] [base]: org.embeddedt.vintagefix.util.FastFileNotFoundException: biomesoplenty:textures/items/gem.png
-[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture neenergistics:blocks/pattern_interface was not discovered during texture pass
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]: The following texture errors were found.
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:   DOMAIN tombmanygraves
@@ -1768,7 +1379,7 @@ net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception l
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]: --------------------------------------------------
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:   domain qmd is missing 2 textures
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     domain qmd has 2 locations:
-[Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod qmd resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\QMD-1.2.1-1.12.2.jar
+[Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod qmd resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\QMD-1.2.2-1.12.2.jar
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       unknown resourcepack type com.zeitheron.hammercore.api.inconnect.EmptyModelPack : HammerCore Connected Models
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     The missing resources for domain qmd are:
@@ -2294,8 +1905,8 @@ net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception l
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     domain base has 5 locations:
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod appliedenergistics2 resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\appliedenergistics2-rv6-stable-7-extended_life-v0.55.18.jar
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod base resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\base-1.12.2-3.14.0.jar
-[Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod qmd resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\QMD-1.2.1-1.12.2.jar
-[Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod zenutils resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\zenutils-1.14.3.jar
+[Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod qmd resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\QMD-1.2.2-1.12.2.jar
+[Client thread/ERROR] [FML.TEXTURE_ERRORS]:       mod zenutils resources at E:\mc_client\GDLuncher\instances\E2E-E\minecraft\mods\zenutils-1.14.4.jar
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       unknown resourcepack type com.zeitheron.hammercore.api.inconnect.EmptyModelPack : HammerCore Connected Models
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]: -------------------------
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:     The following other errors were reported for domain base:
@@ -2306,56 +1917,4 @@ net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception l
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/models/armor/material_layer_1.png
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]:       textures/models/armor/material_layer_2.png
 [Client thread/ERROR] [FML.TEXTURE_ERRORS]: +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model contenttweaker:replicator#active=false,facing=down
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model contenttweaker:replicator#active=false,facing=down with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model contenttweaker:replicator#active=false,facing=down as item contenttweaker:replicator
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model contenttweaker:replicator#active=false,facing=down with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model contenttweaker:replicator#active=false,facing=down
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:aspect_combiner#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumadditions:aspect_combiner#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:aspect_combiner#normal as item thaumadditions:aspect_combiner
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumadditions:aspect_combiner#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model thaumadditions:aspect_combiner#normal
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:aura_charger#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumadditions:aura_charger#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:aura_charger#normal as item thaumadditions:aura_charger
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumadditions:aura_charger#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model thaumadditions:aura_charger#normal
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:crystal_crusher#normal
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumadditions:crystal_crusher#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:crystal_crusher#normal as item thaumadditions:crystal_crusher
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model thaumadditions:crystal_crusher#normal with loader VariantLoader.INSTANCE
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModel(DynamicModelProvider.java:179) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.loadModelFromBlockstateOrInventory(DynamicModelProvider.java:86) ~[DynamicModelProvider.class:?]
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.lambda$getObject$0(DynamicModelProvider.java:61) ~[DynamicModelProvider.class:?]
-  [...]
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model thaumadditions:crystal_crusher#normal
-[pool-12-thread-1/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'thaumadditions'
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture neenergistics:blocks/pattern_interface was not discovered during texture pass

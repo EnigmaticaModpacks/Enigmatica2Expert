@@ -7,12 +7,10 @@
 - [ ] ✏️ Mulch more usage (source: cherry)
 - [ ] ✏️ `Printed Page` more usages
 - [ ] ✏️ TCon Disassembling add reinforcement modifier mechanic
-- [x] 🟢 Add `Dynamic View`
+- [ ] ✏️ Implement new event https://github.com/friendlyhj/ZenUtils/issues/25
 - [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Configure `Worldgen Indicators`
-- [x] 🟢 Add `VintageFix`
-- [x] 🟢 🦈make oceans alive again
-- [x] 🟢 Add `Villager Trade Tables`
+- [ ] 🟢 Configure `Villager Trade Tables`
 
 ---
 
