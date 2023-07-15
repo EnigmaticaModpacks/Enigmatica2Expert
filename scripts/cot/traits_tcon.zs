@@ -18,6 +18,7 @@ import crafttweaker.block.IBlock;
 import crafttweaker.data.IData;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.entity.IEntityItem;
 
 import scripts.cot.utils_tcon_cot.getItemMatAmount;
 import scripts.cot.utils_tcon_cot.getArmorMatsAmount;
@@ -501,8 +502,53 @@ function spin(player as IPlayer) as void {
   player.sendStatusMessage(game.localize('warp.sword.warning'));
 }
 
+// Striping weared armor
+function stripArmor(target as IEntityLivingBase, warp as int, player as IPlayer) as void {
+  if(target.world.random.nextInt(2000)>warp) return;
+  var slots = [] as int[];
+
+  if(target.hasItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.feet())) slots +=0;
+  if(target.hasItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.legs())) slots +=1;
+  if(target.hasItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.chest())) slots +=2;
+  if(target.hasItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.head())) slots +=3;
+
+  if(slots.length==0) return;
+  val slotIndex = slots[target.world.random.nextInt(slots.length)];
+
+  if(slotIndex==0){
+    var item = target.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.feet());
+    if(isNull(item)) return;
+    if(item.isDamageable) item = item.withDamage(target.world.random.nextInt(item.maxDamage));
+    target.world.spawnEntity(item.createEntityItem(target.world, target.position));
+    target.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.feet(),null);
+  }
+  if(slotIndex==1){
+    var item = target.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.legs());
+    if(isNull(item)) return;
+    if(item.isDamageable) item = item.withDamage(target.world.random.nextInt(item.maxDamage));
+    target.world.spawnEntity(item.createEntityItem(target.world, target.position));
+    target.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.legs(),null);
+  }
+  if(slotIndex==2){
+    var item = target.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.chest());
+    if(isNull(item)) return;
+    if(item.isDamageable) item = item.withDamage(target.world.random.nextInt(item.maxDamage));
+    target.world.spawnEntity(item.createEntityItem(target.world, target.position));
+    target.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.chest(),null);
+  }
+  if(slotIndex==3){
+    var item = target.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.head());
+    if(isNull(item)) return;
+    if(item.isDamageable) item = item.withDamage(target.world.random.nextInt(item.maxDamage));
+    target.world.spawnEntity(item.createEntityItem(target.world, target.position));
+    target.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.head(),null);
+  }
+  player.sendPlaySoundPacket('thaumcraft:zap', 'ambient', target.position, 1.0f, 1.0f);
+
+}
+
 // Debuff function
-function debuffenemy(target as IEntityLivingBase, warp as int) as void {
+function debuffenemy(target as IEntityLivingBase, warp as int, player as IPlayer) as void {
   if (target.world.isRemote()) return;
   target.addPotionEffect(<potion:minecraft:glowing>.makePotionEffect(600, 0));
   target.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(600, min(3, (warp - 50) / 200)));
@@ -511,6 +557,7 @@ function debuffenemy(target as IEntityLivingBase, warp as int) as void {
     if (warp >= 300) {
       target.addPotionEffect(<potion:potioncore:vulnerable>.makePotionEffect(600, min(3, (warp - 300) / 300)));
     }
+    stripArmor(target, warp, player);
   }
 }
 
@@ -529,8 +576,7 @@ forbidden_Trait.onHit = function (trait, tool, attacker, target, damage, isCriti
     spin(player);
   }
   else {
-    debuffenemy(target, warp);
-    if (target.health - damage < 0) speakKill(player, player.world);
+    debuffenemy(target, warp, player);
   }
 };
 forbidden_Trait.register();
@@ -675,15 +721,34 @@ eldritchRetribution_trait.onHurt = function (trait, armor, player, source, damag
     val i = player.world.random.nextInt(4);
     if (i == 0) {
       mobTrue.addPotionEffect(<potion:minecraft:levitation>.makePotionEffect(100, 1));
+      return newDamage;
     }
     if (i == 1) {
       mobTrue.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100, 0));
+      return newDamage;
     }
     if (i == 2) {
-      mobTrue.setInWeb();
+      if(mobTrue.hasItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand())){
+        var item = mobTrue.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand());
+        if(!isNull(item)){
+        if(item.isDamageable) item = item.withDamage(mobTrue.world.random.nextInt(item.maxDamage));
+          mobTrue.world.spawnEntity(item.createEntityItem(mobTrue.world, mobTrue.position));
+          mobTrue.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand(),null);
+        }
+      }
+      if(mobTrue.hasItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand())){
+        var item = mobTrue.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand());
+        if(!isNull(item)){
+        if(item.isDamageable) item = item.withDamage(mobTrue.world.random.nextInt(item.maxDamage));
+          mobTrue.world.spawnEntity(item.createEntityItem(mobTrue.world, mobTrue.position));
+          mobTrue.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(),null);
+        }
+      }
+      return newDamage;
     }
-    else {
+    if (i == 3){
       mobTrue.knockBack(player, 5.0f, player.x - mobTrue.x, player.z - mobTrue.z);
+      return newDamage;
     }
   }
   return newDamage;
@@ -853,6 +918,21 @@ ____ ____ ____    ___  _  _ ____ _ ____ _ ____ ____
 
 */
 
+function checkTool(tool as IItemStack) as bool {
+    if(
+    !isNull(tool.tag)
+    && !isNull(tool.tag.TinkerData)
+    && !isNull(tool.tag.Traits)
+    && !isNull(tool.tag.Traits.asList())
+  ) {
+    for trait in tool.tag.Traits.asList() {
+        if(trait != "researcher") continue;
+        return true;
+    }
+  }
+  return false;
+}
+
 function checkRefineEnchant(tool as IItemStack) as int {
   if (
     !isNull(tool.tag)
@@ -872,11 +952,15 @@ researcherTrait.onBlockHarvestDrops = function (trait, tool, event) {
 
   if (!event.isPlayer) return; // no player
   // if(event.silkTouch) return; // silk touch
+  if(!event.player.thaumcraftKnowledge.isResearchComplete('ORE_PURIFIER')) return; //player don't have finished research
 
+  if(!checkTool(tool)) return;
   val lvl = checkRefineEnchant(tool);
 
   var newDrops = [] as WeightedItemStack[];
+  var dropChanged = false;
   for weightedItem in event.drops {
+    if(isNull(weightedItem)) continue;
 
     var oreName = "";
     var found = false;
@@ -900,6 +984,8 @@ researcherTrait.onBlockHarvestDrops = function (trait, tool, event) {
       continue;
     } 
     
+    dropChanged = true;
+
     if (lvl == 0) { // it's ore! add matching cluster/shard
       val item = oreDict['cluster' ~oreName].firstItem;
       newDrops += (!isNull(item) && event.player.world.getRandom().nextInt(2)==1) ? item % weightedItem.percent : weightedItem;
@@ -919,6 +1005,7 @@ researcherTrait.onBlockHarvestDrops = function (trait, tool, event) {
     }
   }
 
+  if(!dropChanged) return;
 event.drops = newDrops;
 };
 researcherTrait.register();
