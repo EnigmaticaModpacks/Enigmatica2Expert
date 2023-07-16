@@ -38,14 +38,6 @@
 		count: 8
 	},
 	{
-		item: "animania:block_hamster_wheel"
-	},
-	{
-		icon: "animania:wool 16 3",
-		item: "animania:wool 1 3",
-		count: 16
-	},
-	{
 		icon: "bithop:screwhop 2",
 		item: "bithop:screwhop",
 		count: 2
@@ -198,9 +190,6 @@
 		icon: "actuallyadditions:item_hairy_ball 16",
 		item: "actuallyadditions:item_hairy_ball",
 		count: 16
-	},
-	{
-		item: "animania:entity_egg_random"
 	},
 	{
 		icon: "minecraft:bone_block 32",

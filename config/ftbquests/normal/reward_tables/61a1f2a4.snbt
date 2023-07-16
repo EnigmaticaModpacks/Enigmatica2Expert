@@ -71,26 +71,6 @@
 	},
 	{
 		item: {
-			id: "animania:honey_bottle",
-			tag: {
-				Fluid: {
-					FluidName: "animania_honey",
-					Amount: 1000
-				}
-			}
-		},
-		count: 4
-	},
-	{
-		icon: "animania:friesian_cheese_wedge 8",
-		item: "animania:friesian_cheese_wedge",
-		count: 8
-	},
-	{
-		item: "animania:truffle"
-	},
-	{
-		item: {
 			id: "culinaryconstruct:sandwich",
 			tag: {
 				Size: 5,

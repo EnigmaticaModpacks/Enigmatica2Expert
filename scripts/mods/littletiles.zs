@@ -18,7 +18,7 @@ val ingrs = {
   "`": <ore:nuggetPlatinum>,
   "╱": <ore:stickIron>,                   # Iron Rod
   "P": <computercraft:printout>,          # Printed Page
-  "w": <ore:woolPrime>,                   # Prime wool
+  "w": <ore:blockRockwool>,
   "M": <appliedenergistics2:material:39>, # ME Storage Housing
 } as IIngredient[string];
 

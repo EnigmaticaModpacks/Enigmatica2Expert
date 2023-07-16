@@ -17,14 +17,6 @@ addVariation("basalt", <environmentalmaterials:basalt_paver>);
 addVariation("basalt", <environmentalmaterials:basalt_bricks>);
 addVariation("basalt", <environmentalmaterials:basalt_tiles>);
 
-addVariation("primewool", <animania:wool:1>);
-addVariation("primewool", <animania:wool:2>);
-addVariation("primewool", <animania:wool:3>);
-addVariation("primewool", <animania:wool:4>);
-addVariation("primewool", <animania:wool:5>);
-addVariation("primewool", <animania:wool:6>);
-addVariation("primewool", <animania:wool>);
-
 addVariation("marble", <quark:marble>);
 
 addVariation("limestone", <quark:limestone>);

@@ -10,9 +10,9 @@ scripts.lib.loot.tweak("twilightforest:entities/deer"       , "meat", "twilightf
 
 // Peacock fan
 recipes.addShaped(<twilightforest:peacock_fan>, [
-  [<ore:peacockFeathers>, <ore:peacockFeathers>, null],
-  [<forestry:oak_stick>, <forestry:oak_stick>, <ore:peacockFeathers>],
-  [<ore:slimecrystalBlue>, <forestry:oak_stick>, <ore:peacockFeathers>],
+  [<mysticalagriculture:crafting:24>, <mysticalagriculture:crafting:24>, null],
+  [<forestry:oak_stick>, <forestry:oak_stick>, <mysticalagriculture:crafting:24>],
+  [<ore:slimecrystalBlue>, <forestry:oak_stick>, <mysticalagriculture:crafting:24>],
 ]);
 
 # List of blocks and their respetive recycle materials

@@ -53,7 +53,7 @@ craft.remake(<rats:rat_cage>, ["pretty",
   "O w O"], {
   "╱": <ore:stickIron>, # Iron Rod
   "O": <ore:plastic>, # Raw Plastic
-  "w": <ore:woolPrime>, # Wool (Suffolk, Brown)
+  "w": <ore:pelt>,
 });
 
 # [Rat Breeding Lantern] from [Heart Dust][+1]
@@ -65,9 +65,9 @@ craft.reshapeless(<rats:rat_breeding_lantern>, "E▲", {
 # Rat upgrade function
 function ratUpgrade(name as string, result as IItemStack, mat as IIngredient){
 	recipes.addShaped(name, result, [
-		[mat, <ore:cheeseAnimania>, mat], 
-		[<ore:cheeseAnimania>, null, <ore:cheeseAnimania>], 
-		[mat, <ore:cheeseAnimania>, mat]
+		[mat, <rats:cheese>, mat], 
+		[<rats:cheese>, null, <rats:cheese>], 
+		[mat, <rats:cheese>, mat]
 	]);
 }
 
@@ -320,7 +320,7 @@ craft.remake(<rats:chunky_cheese_token>, ["pretty",
   "∩ W ∩",
   "∩ ∩ ∩"], {
   "∩": <rats:token_piece>, # Mysterious Token Chunk
-  "W": <ore:cheeseAnimania>,
+  "W": <rats:cheese>,
 });
 
 #--------------------------------------------------------------------------------------

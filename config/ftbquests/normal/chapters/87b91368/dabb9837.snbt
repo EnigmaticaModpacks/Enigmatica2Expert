@@ -1,11 +1,8 @@
 {
-	x: 0.75d,
-	y: 1.25d,
+	x: 1.6d,
+	y: -0.8d,
 	text: [
 		"{q.animals.giant_death_worm_egg.desc}"
-	],
-	dependencies: [
-		"e4f22972"
 	],
 	tasks: [{
 		uid: "efc8cea3",

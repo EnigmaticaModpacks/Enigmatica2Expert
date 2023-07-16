@@ -1,11 +1,8 @@
 {
-	x: 2.0d,
-	y: 1.25d,
+	x: 1.6d,
+	y: 0.30000000000000004d,
 	text: [
 		"{q.animals.pixie_jar.desc}"
-	],
-	dependencies: [
-		"9df40b6e"
 	],
 	tasks: [{
 		uid: "5294b25a",

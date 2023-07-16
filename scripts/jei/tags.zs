@@ -14,7 +14,6 @@ for lang, items in {
     <advancedrocketry:blackholegenerator>,
     <advgenerators:steam_turbine_controller>,
     <advgenerators:turbine_controller>,
-    <animania:block_hamster_wheel>,
     <draconicevolution:generator>,
     <enderio:block_combustion_generator>,
     <enderio:block_ender_generator>,

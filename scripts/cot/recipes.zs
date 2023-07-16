@@ -40,7 +40,7 @@ recipes.addShapeless(<chisel:basalt2:7>, [<contenttweaker:compressed_basalt>]);
 utils.compact(<contenttweaker:compressed_basalt>, <contenttweaker:compressed_basalt_double>);
 
 // Molten Cheese
-scripts.process.melt(<ore:cheeseWheels> | <ore:blockCheese>, <liquid:cheese> * 1000);
+scripts.process.melt(<rats:block_of_cheese>, <liquid:cheese> * 1000);
 scripts.process.melt(<ore:foodCheese>, <liquid:cheese> * 250);
 mods.tconstruct.Casting.addBasinRecipe(<rats:block_of_cheese>, null, <liquid:cheese>, 1000);
 
@@ -63,7 +63,7 @@ craft.make(<contenttweaker:conglomerate_of_life> * 4, ['pretty',
   '▲': <scalinghealth:heartdust>, // Heart Dust
   'B': <randomthings:rezstone>,   // Blood Stone
   'D': <iceandfire:dragon_meal>,  // Dragon Meal
-  'W': <ore:cheeseAnimania>,
+  'W': <ore:blockCheese>,
 });
 
 // [Conglomerate_Of_Sun*8] from [Totem_of_Undying][+3]

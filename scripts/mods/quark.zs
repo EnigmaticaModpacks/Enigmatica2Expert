@@ -115,9 +115,9 @@ craft.shapeless(<quark:slime_bucket>, "§~", {
 });
 
 # [Monster Box] from [Truffle][+1]
-craft.shapeless(<quark:monster_box>, "MT", {
+craft.shaped(<quark:monster_box>, ["---", "-M-", "---"], {
   "M": <minecraft:mob_spawner>, # Monster Spawner
-  "T": <animania:truffle>,      # Truffle
+  "-": <iceandfire:dreadwood_planks>,
 });
 
 # Recipe added with another mod

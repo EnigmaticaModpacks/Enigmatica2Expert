@@ -2,66 +2,6 @@
 	title: "Any meat",
 	loot_size: 1,
 	rewards: [{
-		icon: "animania:raw_chevon 64",
-		item: "animania:raw_chevon",
-		count: 64
-	},
-	{
-		icon: "animania:raw_frog_legs 64",
-		item: "animania:raw_frog_legs",
-		count: 64
-	},
-	{
-		icon: "animania:raw_horse 64",
-		item: "animania:raw_horse",
-		count: 64
-	},
-	{
-		icon: "animania:raw_peacock 64",
-		item: "animania:raw_peacock",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_beef 64",
-		item: "animania:raw_prime_beef",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_chevon 64",
-		item: "animania:raw_prime_chevon",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_chicken 64",
-		item: "animania:raw_prime_chicken",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_mutton 64",
-		item: "animania:raw_prime_mutton",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_peacock 64",
-		item: "animania:raw_prime_peacock",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_pork 64",
-		item: "animania:raw_prime_pork",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_rabbit 64",
-		item: "animania:raw_prime_rabbit",
-		count: 64
-	},
-	{
-		icon: "animania:raw_prime_steak 64",
-		item: "animania:raw_prime_steak",
-		count: 64
-	},
-	{
 		icon: "betteranimalsplus:pheasantraw 64",
 		item: "betteranimalsplus:pheasantraw",
 		count: 64

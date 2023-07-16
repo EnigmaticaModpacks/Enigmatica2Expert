@@ -264,8 +264,6 @@ addTieredRecipe(<mysticalagriculture:tin_seeds> ,           [<ore:blockTin> ,<or
 addTieredRecipe(<mysticalagriculture:sky_stone_seeds> ,     [<appliedenergistics2:material:45>, <ore:runeSummerB>] , null);
 addTieredRecipe(<mysticalagriculture:nether_seeds> ,        [<ore:blockNetherWart> ,<ore:runeAutumnB>], null);
 addTieredRecipe(<mysticalagriculture:certus_quartz_seeds> , [<ore:blockCertusQuartz> ,<ore:runeEarthB>], null);
-addTieredRecipe(itemUtils.getItem("mysticalcreations:cheese_seeds"), [<ore:cheeseAnimania>,<ore:runeSummerB>], null);
-
 
 # *======= Seeds Tier 3 =======*
 curr_tier = 3;
@@ -1026,19 +1024,11 @@ recipes.removeByRecipeName("mysticalagriculture:wool");
 
 makeArcane(<minecraft:beef> * 8                                      , ["CCC"]               , cowIngrs , []);
 makeArcane(<minecraft:leather> * 16                                  , ["CC", "CC"]          , cowIngrs , []);
-makeArcane(<animania:raw_prime_beef> * 4                             , ["", "CCC"]           , cowIngrs , []);
 makeArcane(utils.get('betteranimalsplus:antler', 0, 8)               , ["CC", "SS"]          , cowIngrs , []);
 makeArcane(<harvestcraft:venisonrawitem> * 8                         , ["CSC"]               , cowIngrs , []);
-makeArcane(<animania:raw_prime_beef> * 4                             , ["CCC","C C","CCC"]   , cowIngrs , []);
 makeArcane(<harvestcraft:freshmilkitem> * 8                          , [" C ", "C C" , " C "], cowIngrs , []);
-makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_holstein"}), ["C","C","C"]         , cowIngrs , [<aspect:aqua>]);
-makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_jersey"})  , [" C"," C"," C"]      , cowIngrs , [<aspect:aqua>]);
-makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_friesian"}), ["  C","  C","  C"]   , cowIngrs , [<aspect:aqua>]);
-makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_sheep"})   , ["S","S","S"]         , cowIngrs , [<aspect:aqua>]);
-makeArcane(<thermalexpansion:florb>.withTag({Fluid: "milk_goat"})    , ["SCS","S S","SCS"]   , cowIngrs , [<aspect:aqua>]);
 makeArcane(<minecraft:wool> * 16                                     , ["SSS"]               , cowIngrs , []);
 makeArcane(<minecraft:mutton> * 8                                    , ["","SSS"]            , cowIngrs , []);
-makeArcane(<animania:wool:3> * 4                                     , ["","","SSS"]         , cowIngrs , []);
 # --------------------
 # Chickens
 
@@ -1064,17 +1054,6 @@ val uniqChick = scripts.lib.unique.Unique([CE, CE, CE]);
 chickEss(uniqChick.next(), <minecraft:egg> * 8);
 chickEss(uniqChick.next(), <minecraft:feather> * 8);
 chickEss(uniqChick.next(), <minecraft:chicken> * 4);
-chickEss(uniqChick.next(), <animania:brown_egg> * 2);
-chickEss(uniqChick.next(), <animania:raw_prime_chicken> * 2);
-chickEss(uniqChick.next(), <animania:blue_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:white_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:charcoal_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:opal_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:peach_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:purple_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:taupe_peacock_feather> * 4, 20);
-chickEss(uniqChick.next(), <animania:peacock_egg_blue> * 2, 20);
-chickEss(uniqChick.next(), <animania:peacock_egg_white> * 2, 20);
 chickEss(uniqChick.next(), utils.get('betteranimalsplus:pheasant_egg', 0, 2), 40, [<aspect:aer>]);
 chickEss(uniqChick.next(), utils.get('betteranimalsplus:turkey_egg', 0, 2), 40, [<aspect:aer>]);
 chickEss(uniqChick.next(), utils.get('betteranimalsplus:goose_egg', 0, 2), 40, [<aspect:aer>]);

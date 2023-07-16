@@ -26,7 +26,7 @@ for mobId, ingr in {
   "quark:crab"                 : <ore:foodCrabraw>,                        #  Raw Crab
   "quark:pirate"               : <rustic:fluid_bottle>.withTag({Fluid: {FluidName: "wine", Amount: 1000, Tag: {Quality: 1 as float}}}),
   "rats:illager_piper"         : <ore:foodCheese>,
-  "iceandfire:stymphalianbird" : <ore:peacockFeathers>,
+  "iceandfire:stymphalianbird" : <ore:ingotBronze>,
   "iceandfire:dread_lich"      : <twilightforest:ice_bomb>,
 } as IIngredient[string] {
   mods.rustic.Condenser.addRecipe(

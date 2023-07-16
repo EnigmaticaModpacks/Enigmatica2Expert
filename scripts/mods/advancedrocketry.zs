@@ -226,7 +226,7 @@ craft.make(<advancedrocketry:spacehelmet>, ["pretty",
   "■": <ore:blockGlass>, # Glass
   "╱": <ore:stickTitanium>, # Titanium Rod
   "□": <ore:plateTitanium>, # Titanium Plate
-  "w": <ore:woolPrime>, # Wool (Merino, White)
+  "w": <twilightforest:arctic_fur>,
 });
 
 # [Space Suit Chest-Piece] from [Titanium Plate][+3]
@@ -238,7 +238,7 @@ craft.make(<advancedrocketry:spacechestplate>, ["pretty",
   "□": <ore:plateTitanium>, # Titanium Plate
   "╱": <ore:stickTitanium>, # Titanium Rod
   "S": <ore:fanSteel>,      # Steel Fan
-  "w": <ore:woolPrime>, # Wool (Merino, White)
+  "w": <twilightforest:arctic_fur>,
 });
 
 # [Space Suit Leggings] from [Titanium Rod][+1]
@@ -248,7 +248,7 @@ craft.make(<advancedrocketry:spaceleggings>, ["pretty",
   "w   w",
   "w   w"], {
   "□": <ore:plateTitanium>, # Titanium Plate
-  "w": <ore:woolPrime>, # Wool (Merino, White)
+  "w": <twilightforest:arctic_fur>,
 });
 
 # [Space Suit Boots] from [Titanium Rod][+2]
@@ -259,7 +259,7 @@ craft.make(<advancedrocketry:spaceboots>, ["pretty",
   "□   □"], {
   "□": <ore:plateTitanium>, # Titanium Plate
   "╱": <ore:stickTitanium>, # Titanium Rod
-  "w": <ore:woolPrime>, # Wool (Merino, White)
+  "w": <twilightforest:arctic_fur>,
 });
 
 # [Suit Workstation] from [Crafting Table][+3]
@@ -351,7 +351,7 @@ craft.make(<advancedrocketry:itemupgrade:3>, [
   "RCw"], {
   "R": <ic2:rubber_boots>.anyDamage(), # Rubber Boots
   "C": <advgenerators:controller>,     # Control Circuit
-  "w": <ore:woolPrime>, # Wool (Merino, White)
+  "w": <twilightforest:arctic_fur>,
 });
 
 # [Anti-Fog Visor] from [Traveller's Goggles (Base)][+1]

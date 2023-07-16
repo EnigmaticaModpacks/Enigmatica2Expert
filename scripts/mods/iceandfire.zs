@@ -407,7 +407,11 @@ remakeEx(<iceandfire:dragonforge_ice_brick> * 2, [
 
 # Dragon meal
 recipes.remove(<iceandfire:dragon_meal>);
-mods.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal>, <fluid:blood>, [<ore:primeMeatCooked>*4]);
+mods.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal>, <fluid:blood>, [
+	<ore:foodGroundduck> * 2,
+	<ore:foodGroundturkey> * 2,
+	<ore:foodGroundvenison> * 2,
+]);
 
 # Remove craft table dragon recipes
 recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
@@ -470,9 +474,9 @@ var pixieDyes as IIngredient[] = [
 
 function makePixieJar(name as string, result as IItemStack, mat as IIngredient){
 	recipes.addShaped(name, result, [
-        [<ore:peacockFeathers>, mat, <ore:peacockFeathers>], 
-        [<ore:peacockFeathers>, <rats:chunky_cheese_token>, <ore:peacockFeathers>], 
-        [<ore:peacockFeathers>, <iceandfire:jar_empty>, <ore:peacockFeathers>]
+        [<iceandfire:amphithere_feather>, mat, <iceandfire:amphithere_feather>], 
+        [<iceandfire:amphithere_feather>, <rats:chunky_cheese_token>, <iceandfire:amphithere_feather>], 
+        [<iceandfire:amphithere_feather>, <iceandfire:jar_empty>, <iceandfire:amphithere_feather>]
 	]);
 }
 

@@ -99,61 +99,6 @@
 		</output>
 	</Recipe>
 	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cheese Wheel (Friesian)] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>itemSalt 1</oreDict>
-			<fluidStack>milk_friesian 500</fluidStack>
-		</input>
-		<output>
-			<itemStack>animania:friesian_cheese_wheel 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cheese Wheel (Goat)] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>itemSalt 1</oreDict>
-			<fluidStack>milk_goat 500</fluidStack>
-		</input>
-		<output>
-			<itemStack>animania:goat_cheese_wheel 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cheese Wheel (Holstein)] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>itemSalt 1</oreDict>
-			<fluidStack>milk_holstein 500</fluidStack>
-		</input>
-		<output>
-			<itemStack>animania:holstein_cheese_wheel 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cheese Wheel (Jersey)] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>itemSalt 1</oreDict>
-			<fluidStack>milk_jersey 500</fluidStack>
-		</input>
-		<output>
-			<itemStack>animania:jersey_cheese_wheel 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
-	<!-- [Cheese Wheel (Sheep)] -->
-	<Recipe timeRequired="10" power="40000">
-		<input>
-			<oreDict>itemSalt 1</oreDict>
-			<fluidStack>milk_sheep 500</fluidStack>
-		</input>
-		<output>
-			<itemStack>animania:sheep_cheese_wheel 1 0</itemStack>
-		</output>
-	</Recipe>
-	<!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
 	<!-- [Cubic Boron Nitride] -->
 	<Recipe timeRequired="10" power="40000">
 		<input>

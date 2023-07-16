@@ -1,6 +1,5 @@
 {
 	title: "{q.animals.cheese_wheels.name}",
-	icon: "animania:friesian_cheese_wheel",
 	x: -5.0d,
 	y: 1.5d,
 	text: [
@@ -11,30 +10,24 @@
 	],
 	size: 1.25d,
 	tasks: [{
-		uid: "4e3a7ab9",
+		uid: "d6fb7718",
 		type: "item",
 		items: [{
-			item: "animania:friesian_cheese_wheel"
-		},
-		{
-			item: "animania:holstein_cheese_wheel"
-		},
-		{
-			item: "animania:jersey_cheese_wheel"
-		},
-		{
-			item: "animania:goat_cheese_wheel"
-		},
-		{
-			item: "animania:sheep_cheese_wheel"
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any foodCheese"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "foodCheese"
+				}
+			}
 		}]
 	}],
 	rewards: [{
-		uid: "3aebcb1c",
-		type: "item",
-		item: "animania:carving_knife"
-	},
-	{
 		uid: "16e41ea1",
 		type: "item",
 		item: "minecraft:wheat",

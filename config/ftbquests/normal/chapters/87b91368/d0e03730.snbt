@@ -6,7 +6,7 @@
 		}
 	},
 	x: 4.7d,
-	y: -5.5d,
+	y: -3.4d,
 	text: [
 		"{q.animals.interact_with_foxh.desc}"
 	],

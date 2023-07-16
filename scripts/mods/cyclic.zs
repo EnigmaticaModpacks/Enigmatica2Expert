@@ -504,7 +504,7 @@ craft.remake(<cyclicmagic:glass_strong> * 6, ["pretty",
 craft.remake(<cyclicmagic:fan>, [
   "H",
   "T"], {
-  "H": <animania:block_hamster_wheel>, # Hamster Wheel
+  "H": <ore:fanSteel>,
   "T": <cyclicmagic:glass_strong>,     # Tempered Glass
 });
 
@@ -566,7 +566,7 @@ craft.make(<cyclicmagic:tool_warp_home:16>, ["pretty",
   "  f f",
   "  P f",
   "E    "], {
-  "f": <ore:peacockFeathers>,       # White Peacock Feather
+  "f": <twilightforest:raven_feather>,
   "P": <randomthings:ingredient:9>, # Precious Emerald
   "E": <randomthings:ingredient:1>, # Evil Tear
 });
@@ -577,7 +577,7 @@ craft.make(<cyclicmagic:tool_warp_spawn:16>, ["pretty",
   "  f f",
   "  ◊ f",
   "E    "], {
-  "f": <ore:peacockFeathers>,       # White Peacock Feather
+  "f": <twilightforest:raven_feather>,
   "◊": <ore:gemDiamondRat>,         # Rat Diamond
   "E": <randomthings:ingredient:1>, # Evil Tear
 });
@@ -823,7 +823,7 @@ craft.shapeless(<cyclicmagic:magic_net> * 3, "SGSG▲GSGS", {
 # [Alluring Fishhook]*64 from [Truffle][+2]
 craft.reshapeless(<cyclicmagic:ender_fishing> * 64, "FTC", {
   "F": <randomthings:ingredient:7>, # Floo Powder
-  "T": <animania:truffle>,          # Truffle
+  "T": <iceandfire:wither_shard>,
   "C": <minecraft:web>,             # Cobweb
 });
 

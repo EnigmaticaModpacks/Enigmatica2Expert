@@ -12,7 +12,9 @@
 		"{q.animals.animals_entry.desc}"
 	],
 	dependencies: [
-		"fc892a79"
+		"fc892a79",
+		"dabb9837",
+		"fa0c8cf1"
 	],
 	size: 1.25d,
 	tasks: [{

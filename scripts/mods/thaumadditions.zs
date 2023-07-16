@@ -839,7 +839,16 @@ mods.thaumcraft.Infusion.registerRecipe(
   3, # Instability
   [<aspect:mana>*50, <aspect:fluctus>*100, <aspect:sonus>*50, <aspect:volatus>*50, <aspect:ventus>*50],
   <thaumadditions:traveller_belt>, # CentralItem
-  [<ore:peacockFeathers>,<thaumcraft:amber_block>,<ore:peacockFeathers>,<botania:spark>,<ore:peacockFeathers>,<thaumcraft:amber_block>,<ore:peacockFeathers>,<thaumcraft:inlay>]
+  [
+    <ore:feather>,
+    <thaumcraft:amber_block>,
+    <ore:feather>,
+    <botania:spark>,
+    <ore:feather>,
+    <thaumcraft:amber_block>,
+    <ore:feather>,
+    <thaumcraft:inlay>,
+  ]
 );
 
 # [Meteor belt]
@@ -1433,17 +1442,7 @@ val bookWithAllKnowledge = <thaumadditions:knowledge_tome>.withTag({
     {C: 1 as byte, K: "CREATION_PASSIVE_VANILLA"}, 
     {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA"}, 
     {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA_NETHER"}, 
-    {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA_END"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_COW"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_SHEEP"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_PIG"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_GOAT"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_CHICKEN"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_RABBIT"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_HORSE"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_PEACOCK"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_FROG"}, 
-    {C: 1 as byte, K: "CREATION_ANIMANIA_EXOTIC"}, 
+    {C: 1 as byte, K: "CREATION_HOSTILE_VANILLA_END"},
     {C: 1 as byte, K: "CREATION_HOSTILE_ELEMENTALS"}
   ]
 });

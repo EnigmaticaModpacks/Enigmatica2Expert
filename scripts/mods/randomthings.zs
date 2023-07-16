@@ -219,7 +219,7 @@ var weatherIngrs = {
   "c": <mctsmelteryio:iceball>,
   "f": <minecraft:double_plant>,    # Poppy
   "l": <randomthings:ingredient:13>,# Blackout Powder
-  "e": <ore:animaniaEggs>,
+  "e": <ore:egg>,
 } as IIngredient[string];
 
 # [Weather_Egg_<Sun>*2] from [Egg][+3]

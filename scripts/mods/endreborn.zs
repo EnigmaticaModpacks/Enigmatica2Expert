@@ -96,7 +96,7 @@ craft.remake(<endreborn:item_angel_feather>, ["pretty",
   "M f M",
   "  D  "], {
   "D": <minecraft:dragon_breath>,         # Dragon's Breath
-  "f": <ore:peacockFeathers>,             # Blue Peacock Feather
+  "f": <iceandfire:amphithere_feather>,
   "M": <mysticalagriculture:crafting:24>, # Mystical Feather
 });
 

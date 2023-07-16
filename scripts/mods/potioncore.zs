@@ -150,11 +150,11 @@ addBrewWithUpgrades(
   null, "potioncore:long_solid_core"
 );
 addBrewWithUpgrades(
-  awkward, utils.tryCatch("animania:honey_bottle", <forestry:honeyed_slice>), "potioncore:revival",
+  awkward, <forestry:honeyed_slice>, "potioncore:revival",
   "potioncore:strong_revival", "potioncore:long_revival"
 );
 addBrewWithUpgrades(
-  awkward, <ore:peacockFeathers>, "potioncore:slow_fall",
+  awkward, <twilightforest:raven_feather>, "potioncore:slow_fall",
   "potioncore:strong_slow_fall", "potioncore:long_slow_fall"
 );
 addBrewWithUpgradesFromBase(

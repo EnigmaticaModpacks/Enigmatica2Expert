@@ -103,7 +103,6 @@ addLootList(
 	<minecraft:skull:4>                     : 30,
 	<minecraft:skull>                       : 20,
 	<betteranimalsplus:golden_goose_egg>    : 5,
-	<animania:truffle>                      : 30,
 	<randomthings:lotusseeds>               : 5,
 	<randomthings:spectreanchor>            : 1,
 	<enderio:block_enderman_skull:2>        : 10,
@@ -116,10 +115,6 @@ addLootList(
 addLootList(
 	"iceandfire:myrmex_desert_food_chest",
 	"myrmex_desert_food_chest", {
-	<animania:raw_prime_rabbit>                      : 10,
-	<animania:raw_prime_peacock>                     : 10,
-	<animania:raw_prime_beef>                        : 10,
-	<animania:raw_prime_steak>                       : 10,
 	<additionalcompression:cropwheat_compressed:1>   : 6,
 	<additionalcompression:croppotato_compressed>    : 6,
 	<additionalcompression:cropcarrot_compressed>    : 6,
@@ -131,11 +126,6 @@ addLootList(
 addLootList(
 	"iceandfire:myrmex_jungle_food_chest",
 	"myrmex_jungle_food_chest", {
-	<animania:raw_prime_pork>                       : 10,
-	<animania:raw_prime_bacon>                      : 10,
-	<animania:raw_prime_chicken>                    : 10,
-	<animania:raw_prime_mutton>                     : 10,
-	<animania:raw_prime_chevon>                     : 10,
 	<additionalcompression:meatporkchop_compressed> : 2,
 	<additionalcompression:meatbeef_compressed>     : 2,
 	<additionalcompression:meatchicken_compressed>  : 2,

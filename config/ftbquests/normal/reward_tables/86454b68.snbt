@@ -92,18 +92,6 @@
 	},
 	{
 		item: {
-			id: "openblocks:tank",
-			tag: {
-				tank: {
-					FluidName: "milk_goat",
-					Amount: 24000
-				}
-			}
-		},
-		count: 20
-	},
-	{
-		item: {
 			id: "extrautils2:drum",
 			Damage: 3s,
 			tag: {

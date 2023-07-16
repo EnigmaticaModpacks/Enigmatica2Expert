@@ -129,18 +129,6 @@ mods.extendedcrafting.TableCrafting.addShapeless(
 	.sort(naturalSort)
   .map(o=>[`   ${isJEIBlacklisted(o)?'#':' '}utils.tryCatch('${o}'`, `, <minecraft:beef>),`])
 )*/
-    utils.tryCatch('animania:raw_chevon'             , <minecraft:beef>),
-    utils.tryCatch('animania:raw_frog_legs'          , <minecraft:beef>),
-    utils.tryCatch('animania:raw_horse'              , <minecraft:beef>),
-    utils.tryCatch('animania:raw_peacock'            , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_beef'         , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_chevon'       , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_chicken'      , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_mutton'       , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_peacock'      , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_pork'         , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_rabbit'       , <minecraft:beef>),
-    utils.tryCatch('animania:raw_prime_steak'        , <minecraft:beef>),
     utils.tryCatch('betteranimalsplus:pheasantraw'   , <minecraft:beef>),
     utils.tryCatch('betteranimalsplus:turkey_leg_raw', <minecraft:beef>),
     utils.tryCatch('betteranimalsplus:turkey_raw'    , <minecraft:beef>),

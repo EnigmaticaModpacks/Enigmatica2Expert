@@ -55,7 +55,7 @@
 						tag: {}
 					},
 					Slot8: {
-						id: "animania:item_wagon",
+						id: "endreborn:item_advanced_ender_pearl",
 						Count: 1b,
 						Damage: 0s
 					},

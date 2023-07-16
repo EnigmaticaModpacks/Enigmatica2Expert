@@ -804,7 +804,5 @@ addBrewAlt(<fluid:mead>       * 2000, [<additionalcompression:meatporkchop_compr
 addBrewAlt(<fluid:short.mead> * 2000, [<additionalcompression:meatporkchop_compressed>, <minecraft:sugar>], 'nutrient_distillation');
 addBrewAlt(<fluid:mead>       * 2000, [<minecraft:skull:2>, <minecraft:sugar>], 'nutrient_distillation');
 addBrewAlt(<fluid:short.mead> * 2000, [<minecraft:skull:2>, <minecraft:sugar>], 'nutrient_distillation');
-addBrewAlt(<fluid:milk_goat>  * 2000, [<minecraft:beetroot_seeds>, <minecraft:sugar>], 'hootch');
-addBrewAlt(<fluid:milk_sheep> * 2000, [<minecraft:beetroot_seeds>, <minecraft:sugar>], 'hootch');
 addBrewAlt(<fluid:milk>       * 8000, [<rats:assorted_vegetables>, <additionalcompression:dustsugar_compressed:1>], 'hootch');
 addBrewAlt(<fluid:hootch>     * 2000, [<minecraft:blaze_powder>, <minecraft:redstone>], 'fire_water');
