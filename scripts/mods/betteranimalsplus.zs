@@ -37,6 +37,9 @@ mods.jei.JEI.addDescription(<betteranimalsplus:handoffate>, handOfFatelocalized)
 # Tallow
 scripts.process.squeeze([<betteranimalsplus:blubber>], <liquid:lubricant> * 50, "except: CrushingTub Squeezer MechanicalSqueezer", null);
 
+# Blubber
+mods.thaumcraft.Crucible.registerRecipe("Tallow from blubber", "HEDGEALCHEMY@1", <thaumcraft:tallow>*8, <betteranimalsplus:blubber>, [<aspect:ignis>*4]);
+
 # This crab is unobtainable
 utils.rh(<betteranimalsplus:crab_meat_cooked>);
 utils.rh(<betteranimalsplus:crab_meat_raw>);
