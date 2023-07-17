@@ -7,10 +7,64 @@ import crafttweaker.item.IItemStack;
 // ---------------------------
 for output, ingrs in {
 
+  itemUtils.getItem("betteranimalsplus:pheasant_egg") : [
+    <ore:feather>,
+    <ore:foodGroundchicken>, # Ground Chicken
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  itemUtils.getItem("betteranimalsplus:turkey_egg") : [
+    <ore:feather>,
+    <ore:foodGroundturkey>, # Ground Turkey
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  itemUtils.getItem("betteranimalsplus:goose_egg") : [
+    <ore:feather>,
+    <ore:foodGroundduck>, # Ground Duck
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  <emberroot:owl_egg> : [
+    <ore:feather>,
+    <minecraft:spider_eye>, # Spider Eye
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  <quark:parrot_egg> : [
+    <ore:feather>,
+    <ore:dyeGray>, # Gray Dye
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  <quark:parrot_egg:1> : [
+    <ore:feather>,
+    <ore:dyeRed>, # Rose Red
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  <quark:parrot_egg:2> : [
+    <ore:feather>,
+    <ore:dyeBlue>, # Blue Dye
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  <quark:parrot_egg:3> : [
+    <ore:feather>,
+    <ore:dyeGreen>, # Cactus Green
+    <nuclearcraft:cocoa_solids>,
+  ],
+
+  <quark:parrot_egg:4> : [
+    <ore:feather>,
+    <ore:dyeCyan>, # Cyan Dye
+    <nuclearcraft:cocoa_solids>,
+  ],
+
   # Small worm
   <iceandfire:iceandfire.deathworm_egg> : [
     <twilightforest:moonworm>,
-    <betteranimalsplus:goose_egg>,
+    utils.tryCatch("betteranimalsplus:goose_egg", <iceandfire:iceandfire.deathworm_egg>),
     <actuallyadditions:item_worm>,
   ],
 
@@ -59,5 +113,6 @@ for output, ingrs in {
   <iceandfire:hippogryph_egg:6> : [<ore:foodGroundduck>, <actuallyadditions:item_misc:15>, <thermalfoundation:rockwool:15>],
 
 } as IIngredient[][IItemStack] {
+  if(isNull(output)) continue;
   mods.rustic.Condenser.addRecipe(output, ingrs, <scalinghealth:heartdust>, <tconstruct:edible:33>, <fluid:wine> * 1000, 40);
 }
