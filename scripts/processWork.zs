@@ -76,7 +76,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
   val inputIngr0           = arrN_ingr(inputItems, 0);
   val haveItemInput        = !isNull(inputIngr0);
   val inputIsSingle        = haveItemInput && inputItems.length == 1;
-  val inputHasTag          = haveItemInput && !isNull(inputIngr0.itemArray[0]) && inputIngr0.itemArray[0].hasTag;
+  val inputHasTag          = haveItemInput && inputIngr0.itemArray.length > 0 && !isNull(inputIngr0.itemArray[0]) && inputIngr0.itemArray[0].hasTag;
 
   val inputLiquid0         = arrN_liq(inputLiquids, 0);
   val haveLiquidInput      = !isNull(inputLiquid0);
