@@ -205,6 +205,33 @@ utils.rh(<qmd:ingot:9>); // Iridium
 
 mods.immersiveengineering.ArcFurnace.removeRecipe(<qmd:ingot>); // Tungsten from Ore and Dust
 
+function remakeTarget(
+  oldItem as IIngredient,
+  particle as mod.qmd.particle.IParticleStack,
+  newItem as IIngredient,
+  output as IItemStack,
+  p1 as mod.qmd.particle.IParticleStack,
+  p2 as mod.qmd.particle.IParticleStack,
+  p3 as mod.qmd.particle.IParticleStack,
+  maxEnergy as int,
+  crossSection as double,
+  energyReleased as int = 0,
+  radiation as int = 0
+) as void {
+  mods.qmd.target_chamber.removeRecipeWithInput(oldItem, particle);
+  mods.qmd.target_chamber.addRecipe(newItem, particle, output, p1, p2, p3, maxEnergy, crossSection, energyReleased, radiation);
+}
+
+// Tungsten ingot replacement
+val TG = <endreborn:item_ingot_wolframium>;
+remakeTarget(<qmd:ingot>, (<particle:proton>*12500000)^400000    , TG, <qmd:waste_fission>      , null                    , <particle:neutron>        , null                     , 600000  , 0.08, 0       );
+remakeTarget(<qmd:ingot>, (<particle:photon>*4000000)^11000      , TG, <qmd:ingot:6>            , <particle:alpha>        , null                      , null                     , 16500   , 0.25, 2680    );
+remakeTarget(<qmd:ingot>, (<particle:proton>*5000000)^600000     , TG, <qmd:waste_spallation2:1>, <particle:pion_plus>    , null                      , <particle:pion_minus>    , 5000000 , 0.2 , -279000 );
+remakeTarget(<qmd:ingot>, (<particle:proton>*5000000)^5630000    , TG, <qmd:waste_spallation2:1>, <particle:proton>       , null                      , <particle:antiproton>    , 20000000, 0.2 , -1880000);
+remakeTarget(<qmd:ingot>, (<particle:deuteron>*10000000)^11300000, TG, <qmd:waste_spallation2:1>, <particle:deuteron>     , null                      , <particle:antideuteron>  , 20000000, 0.1 , -3750000);
+remakeTarget(<qmd:ingot>, (<particle:antiproton>*1000000)        , TG, <qmd:waste_spallation2:1>, <particle:pion_plus>    , <particle:pion_naught>    , <particle:pion_minus>    , 10000000, 1   , 1460000 );
+remakeTarget(<qmd:ingot>, (<particle:antideuteron>*10000000)     , TG, <qmd:waste_spallation2:1>, <particle:pion_plus> * 4, <particle:pion_naught> * 4, <particle:pion_minus> * 4, 10000000, 1   , 2090000 );
+
 # Sodium Chlorde (salt)
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:chemical_dust:3>);
 mods.nuclearcraft.Crystallizer.addRecipe(<fluid:sodium_chloride_solution> * 666, <mekanism:salt>);
