@@ -141,7 +141,7 @@ ${filtered.join('\n')}`
 
 }*/
 
-# Total Furnace recipes registered: 959
+# Total Furnace recipes registered: 949
 # Filtered by JEI blacklist: 110
 # Filtered manuallly (antidupe): 16
 # Filtered by oredict: 177
@@ -159,13 +159,6 @@ infinFurnace(utils.get("actuallyadditions:item_misc", 20), utils.get("minecraft:
 infinFurnace(utils.get("actuallyadditions:item_misc", 21), utils.get("actuallyadditions:item_misc", 22));
 ##infinFurnace(utils.get("advancedrocketry:productdust", 1), utils.get("advancedrocketry:productingot", 1));
 ##infinFurnace(utils.get("advancedrocketry:productdust"), utils.get("advancedrocketry:productingot"));
-infinFurnace(utils.get("animania:brown_egg", W), utils.get("animania:plain_omelette"));
-infinFurnace(utils.get("animania:peacock_egg_blue", W), utils.get("animania:plain_omelette"));
-infinFurnace(utils.get("animania:peacock_egg_white", W), utils.get("animania:plain_omelette"));
-infinFurnace(utils.get("animania:raw_chevon", W), utils.get("animania:cooked_chevon"));
-infinFurnace(utils.get("animania:raw_frog_legs", W), utils.get("animania:cooked_frog_legs"));
-infinFurnace(utils.get("animania:raw_horse", W), utils.get("animania:cooked_horse"));
-infinFurnace(utils.get("animania:raw_peacock", W), utils.get("animania:cooked_peacock"));
 infinFurnace(utils.get("appliedenergistics2:material", 2), utils.get("appliedenergistics2:material", 5));
 infinFurnace(utils.get("appliedenergistics2:material", 3), utils.get("appliedenergistics2:material", 5));
 infinFurnace(utils.get("appliedenergistics2:material", 4), utils.get("minecraft:bread"));
@@ -349,13 +342,10 @@ infinFurnace(utils.get("iceandfire:frozen_grass", W), utils.get("minecraft:grass
 infinFurnace(utils.get("iceandfire:frozen_gravel", W), utils.get("minecraft:gravel"));
 infinFurnace(utils.get("iceandfire:frozen_splinters", W), utils.get("minecraft:stick", 0, 3));
 infinFurnace(utils.get("iceandfire:frozen_stone", W), utils.get("minecraft:stone"));
-infinFurnace(utils.get("iceandfire:hippogryph_egg", W), utils.get("betteranimalsplus:fried_egg"));
-infinFurnace(utils.get("iceandfire:iceandfire.deathworm_egg", W), utils.get("betteranimalsplus:fried_egg"));
-infinFurnace(utils.get("iceandfire:myrmex_desert_egg", W), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("iceandfire:myrmex_desert_resin_block", W), utils.get("iceandfire:myrmex_desert_resin_glass"));
-infinFurnace(utils.get("iceandfire:myrmex_jungle_egg", W), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("iceandfire:myrmex_jungle_resin_block", W), utils.get("iceandfire:myrmex_jungle_resin_glass"));
 infinFurnace(utils.get("iceandfire:stymphalian_bird_feather", W), utils.get("thermalfoundation:material", 227));
+infinFurnace(utils.get("immersiveengineering:material", 7), utils.get("thermalfoundation:rockwool", 7));
 ##infinFurnace(utils.get("immersiveengineering:material", 18), utils.get("immersiveengineering:material", 19));
 ##infinFurnace(utils.get("immersiveengineering:metal", 14), utils.get("immersiveengineering:metal", 5));
 #infinFurnace(utils.get("immersiveengineering:ore", 1), utils.get("thermalfoundation:material", 132));
@@ -693,7 +683,7 @@ infinFurnace(utils.get("minecraft:coal", W), utils.get("nuclearcraft:ingot", 8))
 infinFurnace(utils.get("minecraft:cobblestone", W), utils.get("minecraft:stone"));
 infinFurnace(utils.get("minecraft:diamond_ore", W), utils.get("minecraft:diamond"));
 infinFurnace(utils.get("minecraft:dye", 3), utils.get("nuclearcraft:roasted_cocoa_beans"));
-infinFurnace(utils.get("minecraft:egg", W), utils.get("animania:plain_omelette"));
+infinFurnace(utils.get("minecraft:egg"), utils.get("betteranimalsplus:fried_egg"));
 infinFurnace(utils.get("minecraft:emerald_ore", W), utils.get("minecraft:emerald"));
 infinFurnace(utils.get("minecraft:fish", 1), utils.get("minecraft:cooked_fish", 1));
 infinFurnace(utils.get("minecraft:fish"), utils.get("minecraft:cooked_fish"));
