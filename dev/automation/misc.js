@@ -287,7 +287,7 @@ export async function init(h = defaultHelper, options = argv) {
   menuJson.other.background.slideshow.images = fast_glob.sync(
     'resources/enigmatica/textures/slideshow/*.jpg'
     , { dot: true }).map(f => `enigmatica:textures/slideshow/${parse(f).base}`)
-  saveObjAsJson(menuJson, menuFile)
+  saveText(`${JSON.stringify(menuJson, null, 2)}\n`, menuFile)
 
   // ###############################################################################
   // ###############################################################################

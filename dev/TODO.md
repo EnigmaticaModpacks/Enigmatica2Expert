@@ -1,13 +1,7 @@
 # TODO
 
-❌✅🚧 List of priorities:
+🚧✅❌ List of priorities:
 
-- [ ] 🔴 Remove `Animania` + `CraftStudioAPI`
-- [ ] ✏️ Unify `Tungsten Dust` Target chamber
-- [ ] ✏️ Mulch more usage (source: cherry)
-- [ ] ✏️ `Printed Page` more usages
-- [ ] ✏️ TCon Disassembling add reinforcement modifier mechanic
-- [ ] ✏️ Implement new event https://github.com/friendlyhj/ZenUtils/issues/25
 - [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Configure `Worldgen Indicators`
 - [ ] 🟢 Configure `Villager Trade Tables`
@@ -241,6 +235,8 @@ Items that should have more uses:
 
 ### Tier 2
 
+![](https://github.com/Krutoy242/mc-icons/raw/master/i/forestry/mulch__0.png "Mulch")
+![](https://github.com/Krutoy242/mc-icons/raw/master/i/computercraft/printout__0.png "Printed Page")
 ![](https://git.io/JLhhL "Infinity Reagent")
 ![](https://git.io/JGGh7 "Mana Infused Ingot")
 ![](https://git.io/JnN1t "Sun Crystal")
