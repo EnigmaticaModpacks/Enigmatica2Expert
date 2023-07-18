@@ -592,6 +592,8 @@ recipes.remove(<actuallyadditions:item_food:10>);
 recipes.addShapeless("Toast from baguette", <actuallyadditions:item_food:10>, [<actuallyadditions:item_food:15>]);
 scripts.process.mash(<actuallyadditions:item_food:15>, <actuallyadditions:item_food:10>*4, "no exceptions");
 
+recipes.addShapeless("chocolate toast oredicted", <actuallyadditions:item_food:19>, [<actuallyadditions:item_food:10>, <ore:ingotChocolate>]);
+
 # [Pizza] from [Carrot][+5]
 craft.remake(<actuallyadditions:item_food:14>, ["pretty",
   "C K C",

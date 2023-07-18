@@ -23,6 +23,9 @@ recipes.addShaped('Quark Marble Wall',
 // Prevent melting dupe
 craft.remake(<quark:obsidian_pressure_plate>, ['AA', 'AA'], { A: <ore:obsidian> });
 
+// Melt sugar
+scripts.process.melt(<ore:blockSugar>, <fluid:sugar> * (144 * 9));
+
 // Conflict recipes
 recipes.removeByRecipeName('quark:basalt_1');
 
