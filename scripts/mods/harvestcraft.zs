@@ -28,7 +28,7 @@ oreDict.cropLychee.add(<harvestcraft:lycheeitem>);
 oreDict.cropJackfruit.add(<harvestcraft:jackfruititem>);
 
 recipes.addShapeless(<harvestcraft:cracklinsitem>, [<ore:toolPot>, <ore:listAllporkraw>, <ore:foodOliveoil>, <ore:cropSpiceleaf>]);
-recipes.addShapeless(<harvestcraft:porkrindsitem>, [<ore:toolPot>, <ore:foodSalt>, <ore:foodOliveoil>, <ore:foodBlackpepper>]);
+recipes.addShapeless(<harvestcraft:porkrindsitem>, [<ore:toolPot>, <ore:itemSalt>, <ore:foodOliveoil>, <ore:foodBlackpepper>]);
 
 recipes.addShapeless(<harvestcraft:imitationcrabsticksitem>, [<ore:toolCuttingboard>, <ore:foodFlour>, <ore:listAllfishcooked>, <ore:listAllegg>, <minecraft:dye:1>]);
 recipes.addShapeless(<harvestcraft:saucedlambkebabitem>, [<ore:toolMixingbowl>, <ore:foodLambkebab>, <ore:foodPlainyogurt>, <ore:listAllheavycream>, <ore:cropGarlic>, <ore:cropSpiceleaf>, <ore:cropLime>]);
@@ -164,3 +164,63 @@ for item in [
     mods.thermalexpansion.Insolator.removeRecipe(item, <thermalfoundation:fertilizer>.definition.makeStack(i));
   }
 }
+
+// Remove all recipes that have duplicates with other salt oredict
+// Keep only `itemSalt`
+for id in [
+  'harvestcraft:bakedturnipsitem',
+  'harvestcraft:banananutbreaditem',
+  'harvestcraft:beefjerkyitem',
+  'harvestcraft:bolognaitem_x3',
+  'harvestcraft:butteritem',
+  'harvestcraft:chorizoitem',
+  'harvestcraft:cornchipsitem',
+  'harvestcraft:curryitem',
+  'harvestcraft:damperitem',
+  'harvestcraft:doughitem',
+  'harvestcraft:friesitem',
+  'harvestcraft:gherkinitem',
+  'harvestcraft:gourmetbeefpattyitem',
+  'harvestcraft:gourmetmuttonpattyitem',
+  'harvestcraft:gourmetporkpattyitem',
+  'harvestcraft:gourmetvenisonpattyitem',
+  'harvestcraft:gravlaxitem',
+  'harvestcraft:hotsauceitem_x6',
+  'harvestcraft:icecreamitem',
+  'harvestcraft:kimchiitem',
+  'harvestcraft:mashedpotatoesitem',
+  'harvestcraft:misopasteitem_x4',
+  'harvestcraft:okrachipsitem',
+  'harvestcraft:oystersauceitem',
+  'harvestcraft:pepperoniitem',
+  'harvestcraft:pickledbeetsitem',
+  'harvestcraft:pickledonionsitem',
+  'harvestcraft:picklesitem',
+  'harvestcraft:pitepaltitem',
+  'harvestcraft:porkrindsitem',
+  'harvestcraft:porksausageitem',
+  'harvestcraft:potatosoupitem',
+  'harvestcraft:rawtofaconitem',
+  'harvestcraft:roastchickenitem',
+  'harvestcraft:roastpotatoesitem',
+  'harvestcraft:saladdressingitem',
+  'harvestcraft:saltedcaramelitem',
+  'harvestcraft:saltedsunflowerseedsitem',
+  'harvestcraft:sausageitem',
+  'harvestcraft:soysauceitem',
+  'harvestcraft:spicymustardporkitem',
+  'harvestcraft:steamedpeasitem',
+  'harvestcraft:sunflowerwheatrollsitem',
+  'harvestcraft:taffyitem',
+  'harvestcraft:veggiestripsitem',
+  'harvestcraft:yorkshirepuddingitem',
+] as string[] {
+  recipes.removeByRecipeName(id~'_dustsalt');
+  recipes.removeByRecipeName(id~'_foodsalt');
+}
+
+recipes.removeByRecipeName('harvestcraft:zombiejerkyitem_dustsalt_dustsalt');
+recipes.removeByRecipeName('harvestcraft:zombiejerkyitem_foodsalt_dustsalt');
+recipes.removeByRecipeName('harvestcraft:zombiejerkyitem_foodsalt_foodsalt');
+recipes.removeByRecipeName('harvestcraft:zombiejerkyitem_itemsalt_dustsalt');
+recipes.removeByRecipeName('harvestcraft:zombiejerkyitem_itemsalt_foodsalt');
