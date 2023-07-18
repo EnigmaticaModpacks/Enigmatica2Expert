@@ -49,6 +49,8 @@ add(<ore:mushroomAny>, <harvestcraft:whitemushroomitem>);
 # Removing Pam's in-world Apple from cropApple
 remove(<ore:cropApple>, <harvestcraft:pamapple>);
 
+add(<ore:foodButter>, <nuclearcraft:cocoa_butter>);
+
 # Cobalt Block issues
 remove(<ore:oreCobalt>, <tconstruct:metal>);
 removeItems(<ore:oreArdite>, [<tconstruct:metal>, <tconstruct:ore>]);
