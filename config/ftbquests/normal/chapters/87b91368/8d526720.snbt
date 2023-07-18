@@ -16,8 +16,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "1cd43856",
+		uid: "ba8e9ae3",
 		type: "choice",
-		table: 117
+		table: 127
 	}]
 }

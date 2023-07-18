@@ -1,0 +1,13 @@
+{
+	title: "Adv. Rat Upgrade",
+	loot_size: 1,
+	rewards: [{
+		item: "rats:rat_upgrade_milker"
+	},
+	{
+		item: "rats:rat_upgrade_shears"
+	},
+	{
+		item: "rats:rat_upgrade_disenchanter"
+	}]
+}

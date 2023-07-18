@@ -58,5 +58,10 @@
 			item: "excompressum:bait 1 12"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "839dd529",
+		type: "choice",
+		table: 142
 	}]
 }

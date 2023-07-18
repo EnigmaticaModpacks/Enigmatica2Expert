@@ -31,12 +31,6 @@
 	rewards: [{
 		uid: "970d8554",
 		type: "choice",
-		table: 120
-	},
-	{
-		uid: "8636ee3c",
-		type: "item",
-		item: "rats:contaminated_food",
-		count: 4
+		table: 119
 	}]
 }

@@ -1,0 +1,20 @@
+{
+	title: "Trap Bait",
+	loot_size: 1,
+	rewards: [{
+		item: "harvestcraft:fruitbaititem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:grainbaititem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:veggiebaititem",
+		count: 64
+	},
+	{
+		item: "harvestcraft:fishtrapbaititem",
+		count: 64
+	}]
+}
