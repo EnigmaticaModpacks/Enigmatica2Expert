@@ -239,6 +239,14 @@ add(<ore:heartDragon>, <iceandfire:ice_dragon_heart>);
 # Hippogryphs
 add(<ore:hippogryphEgg>, <iceandfire:hippogryph_egg:*>);
 
+# Who would ever use hyppogryphs eggs in craft?
+removeItems(<ore:egg>, [
+	<iceandfire:hippogryph_egg:*>,
+	<iceandfire:iceandfire.deathworm_egg:*>,
+	<iceandfire:myrmex_jungle_egg:*>,
+	<iceandfire:myrmex_desert_egg:*>,
+]);
+
 # Dragon Eggs
 addItems(<ore:dragonEgg>, [
 	<iceandfire:dragonegg_red>,
