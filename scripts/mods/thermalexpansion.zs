@@ -455,7 +455,9 @@ for i, mat in materials {
 			", ▬ ,",
 			"▬ ♥ ▬",
 			", ▬ ,"], {
-			"♥": <thermalexpansion:cache>.withTag(lvl_im).marked("marked"),
+			"♥": ((i==1)
+				? <thermalexpansion:cache>.withTag(lvl_im, false).only(function(item) {return isNull(item.tag) || isNull(item.tag.Level) || item.tag.Level.asByte() < 1;})
+				: <thermalexpansion:cache>.withTag(lvl_im)).marked("marked"),
 			"▬": oreDict["ingot" ~ materials[i - 1]],
 			",": oreDict["nugget" ~ mat],
 		}, tieredUpgradeFnc);
