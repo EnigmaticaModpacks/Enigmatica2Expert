@@ -1,6 +1,6 @@
 {
-	x: -2.0d,
-	y: 0.0d,
+	x: 1.4000000000000001d,
+	y: -1.6d,
 	text: [
 		"{q.animals.rat_diamond.desc}"
 	],

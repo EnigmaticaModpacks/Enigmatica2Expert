@@ -1,6 +1,6 @@
 {
-	x: -6.5d,
-	y: 4.0d,
+	x: -4.2d,
+	y: -3.1d,
 	text: [
 		"{q.animals.rat_breeding_lantern.desc}"
 	],

@@ -1,6 +1,6 @@
 {
-	x: -2.0d,
-	y: 5.0d,
+	x: -4.4d,
+	y: -1.6d,
 	text: [
 		"{q.animals.rat_upgrade_speed.desc}"
 	],

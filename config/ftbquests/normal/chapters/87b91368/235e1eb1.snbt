@@ -1,12 +1,13 @@
 {
-	x: -1.1d,
-	y: -4.4d,
+	x: 5.0d,
+	y: -3.2d,
 	text: [
 		"{q.animals.heart_dust.desc}"
 	],
 	dependencies: [
 		"dcb947b4"
 	],
+	size: 1.25d,
 	tasks: [{
 		uid: "217ff958",
 		type: "item",

@@ -1,6 +1,6 @@
 {
-	x: -0.5d,
-	y: 1.25d,
+	x: 2.6999999999999997d,
+	y: -0.40000000000000036d,
 	text: [
 		"{q.animals.plague_doctorate.desc}"
 	],

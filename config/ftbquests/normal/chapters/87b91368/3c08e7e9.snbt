@@ -1,6 +1,6 @@
 {
-	x: -2.3d,
-	y: -3.4d,
+	x: 5.9d,
+	y: -2.5d,
 	text: [
 		"{q.animals.conglomerate_of_life.desc}"
 	],
@@ -16,9 +16,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "33933d0a",
-		type: "item",
-		item: "actuallyadditions:item_hairy_ball",
-		count: 64
+		uid: "576ac4cc",
+		type: "choice",
+		table: 129
 	}]
 }

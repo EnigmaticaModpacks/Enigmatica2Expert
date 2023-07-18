@@ -1,13 +1,13 @@
 {
 	title: "{q.animals.eye_of_dragons.name}",
 	icon: "eyeofdragons:eye_of_firedragon",
-	x: 3.5d,
-	y: 0.0d,
+	x: 7.3d,
+	y: -2.0d,
 	text: [
 		"{q.animals.eye_of_dragons.desc}"
 	],
 	dependencies: [
-		"dcb947b4"
+		"e875aec9"
 	],
 	tasks: [{
 		uid: "0cc3f30c",
@@ -31,6 +31,6 @@
 	rewards: [{
 		uid: "a6c143af",
 		type: "choice",
-		table: 82
+		table: 81
 	}]
 }

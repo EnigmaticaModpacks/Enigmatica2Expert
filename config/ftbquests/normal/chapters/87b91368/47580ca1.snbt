@@ -1,6 +1,6 @@
 {
-	x: -6.5d,
-	y: 2.75d,
+	x: -4.2d,
+	y: -4.3d,
 	text: [
 		"{q.animals.rat_cage.desc}"
 	],

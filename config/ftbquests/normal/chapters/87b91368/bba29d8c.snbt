@@ -1,13 +1,13 @@
 {
 	title: "{q.animals.archeologist_rat.name}",
-	x: -3.5d,
-	y: 7.5d,
+	x: -1.2d,
+	y: 3.950000000000002d,
 	text: [
 		"{q.animals.archeologist_rat.desc}"
 	],
 	dependencies: [
 		"b02e70fe",
-		"f99929a2"
+		"7d71596f"
 	],
 	tasks: [{
 		uid: "f58d405b",

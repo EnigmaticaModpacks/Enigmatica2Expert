@@ -1,0 +1,23 @@
+{
+	icon: "iceandfire:dragon_skull 1 1",
+	x: 7.9d,
+	y: -3.2d,
+	text: [
+		"Weclome to Ice and Fire branch!",
+		"",
+		"All mobs required by quests can be found in Overworld OR can be spawned without exploration."
+	],
+	dependencies: [
+		"235e1eb1"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "86b464e1",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "03244a2d",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

@@ -1,7 +1,7 @@
 {
 	title: "{q.animals.dragon_steel.name}",
-	x: 4.125d,
-	y: 4.208333333333334d,
+	x: 7.925d,
+	y: 2.158333333333334d,
 	text: [
 		"{q.animals.dragon_steel.desc}"
 	],

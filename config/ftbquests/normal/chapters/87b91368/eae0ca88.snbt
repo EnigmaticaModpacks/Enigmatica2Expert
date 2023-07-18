@@ -1,6 +1,6 @@
 {
-	x: 0.0d,
-	y: -4.4d,
+	x: 1.6d,
+	y: -4.0d,
 	text: [
 		"{q.animals.piggybackpack.desc}"
 	],
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "a42b1958",
 		type: "choice",
-		table: 117
+		table: 116
 	}]
 }

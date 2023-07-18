@@ -1,6 +1,6 @@
 {
-	x: -3.5d,
-	y: 1.25d,
+	x: 0.0d,
+	y: -1.6d,
 	text: [
 		"{q.animals.rat_upgrade_gemcu.desc}"
 	],
@@ -17,6 +17,6 @@
 	rewards: [{
 		uid: "4c56e7ef",
 		type: "choice",
-		table: 73
+		table: 72
 	}]
 }

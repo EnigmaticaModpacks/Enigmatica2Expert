@@ -6,8 +6,8 @@
 			EntityName: "rats:black_death"
 		}
 	},
-	x: -0.5d,
-	y: 2.5d,
+	x: 2.6999999999999997d,
+	y: 0.7999999999999998d,
 	text: [
 		"{q.animals.black_death.desc}"
 	],
@@ -23,6 +23,6 @@
 	rewards: [{
 		uid: "bde01118",
 		type: "choice",
-		table: 91
+		table: 90
 	}]
 }

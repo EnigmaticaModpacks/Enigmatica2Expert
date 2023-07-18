@@ -1,7 +1,7 @@
 {
 	title: "{q.animals.jury_rigged.name}",
-	x: -3.5d,
-	y: 5.0d,
+	x: -3.0d,
+	y: -1.6d,
 	text: [
 		"{q.animals.jury_rigged.desc}"
 	],
@@ -19,6 +19,6 @@
 	rewards: [{
 		uid: "0973479a",
 		type: "choice",
-		table: 107
+		table: 106
 	}]
 }

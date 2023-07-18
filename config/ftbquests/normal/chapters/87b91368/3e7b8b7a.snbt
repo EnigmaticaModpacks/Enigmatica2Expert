@@ -1,13 +1,13 @@
 {
 	title: "{q.animals.myrmex_egg.name}",
 	icon: "iceandfire:myrmex_desert_egg 1 4",
-	x: 4.75d,
-	y: 1.25d,
+	x: 8.55d,
+	y: -0.8d,
 	text: [
 		"{q.animals.myrmex_egg.desc}"
 	],
 	dependencies: [
-		"f5163b70"
+		"dabb9837"
 	],
 	tasks: [{
 		uid: "dc1dda9a",
@@ -31,6 +31,6 @@
 	rewards: [{
 		uid: "b79b294f",
 		type: "choice",
-		table: 80
+		table: 79
 	}]
 }

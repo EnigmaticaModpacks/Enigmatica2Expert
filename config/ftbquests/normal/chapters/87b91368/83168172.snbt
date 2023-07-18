@@ -1,6 +1,6 @@
 {
-	x: -1.25d,
-	y: 6.25d,
+	x: -1.7000000000000002d,
+	y: 1.4000000000000001d,
 	text: [
 		"{q.animals.chunky_cheese_token.desc}"
 	],
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "1235db64",
 		type: "choice",
-		table: 77
+		table: 76
 	}]
 }

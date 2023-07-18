@@ -5,8 +5,8 @@
 			EntityName: "quark:foxhound"
 		}
 	},
-	x: 4.7d,
-	y: -3.4d,
+	x: 3.4d,
+	y: -4.8d,
 	text: [
 		"{q.animals.interact_with_foxh.desc}"
 	],

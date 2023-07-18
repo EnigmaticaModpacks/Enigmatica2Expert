@@ -1,13 +1,13 @@
 {
 	title: "{q.animals.dreadwood.name}",
 	icon: "iceandfire:dreadwood_log",
-	x: 4.75d,
-	y: 0.0d,
+	x: 8.8d,
+	y: -4.3d,
 	text: [
 		"{q.animals.dreadwood.desc}"
 	],
 	dependencies: [
-		"dcb947b4"
+		"e875aec9"
 	],
 	tasks: [{
 		uid: "899bb137",
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "292effa1",
 		type: "choice",
-		table: 119
+		table: 118
 	}]
 }

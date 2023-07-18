@@ -19,8 +19,8 @@
 			TrophyName: "§cAnimals Master Trophy§r"
 		}
 	},
-	x: 4.5d,
-	y: 6.75d,
+	x: 5.1d,
+	y: 3.75d,
 	text: [
 		"{q.animals.the_chapter_is_com.desc}"
 	],
@@ -29,13 +29,10 @@
 		"1af53634",
 		"3e7b8b7a",
 		"a65a3f5b",
-		"4c5d985f",
 		"eaad67ab",
-		"ccee3067",
 		"6a56d29d",
 		"dabb9837",
 		"13baba37",
-		"67de8e53",
 		"dcb947b4",
 		"b02e70fe",
 		"95b518e0",

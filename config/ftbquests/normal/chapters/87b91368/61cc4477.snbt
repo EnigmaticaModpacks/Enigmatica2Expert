@@ -1,6 +1,6 @@
 {
-	x: -0.5d,
-	y: 3.75d,
+	x: 2.6999999999999997d,
+	y: 2.0d,
 	text: [
 		"{q.animals.purifying_liquid.desc}"
 	],

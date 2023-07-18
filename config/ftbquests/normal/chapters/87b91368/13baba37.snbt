@@ -6,13 +6,13 @@
 			EntityName: "iceandfire:hippogryph"
 		}
 	},
-	x: 4.7d,
-	y: -4.4d,
+	x: 7.9d,
+	y: -4.8d,
 	text: [
 		"{q.animals.hippogryph_egg.desc}"
 	],
 	dependencies: [
-		"dcb947b4"
+		"e875aec9"
 	],
 	tasks: [{
 		uid: "7dab109c",
@@ -29,6 +29,6 @@
 	rewards: [{
 		uid: "77048d57",
 		type: "choice",
-		table: 81
+		table: 80
 	}]
 }

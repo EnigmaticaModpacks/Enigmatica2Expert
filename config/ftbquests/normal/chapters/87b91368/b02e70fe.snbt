@@ -1,6 +1,6 @@
 {
-	x: -1.75d,
-	y: 9.0d,
+	x: -2.2d,
+	y: 3.95d,
 	text: [
 		"{q.animals.avatar_of_ratlantis.desc}"
 	],

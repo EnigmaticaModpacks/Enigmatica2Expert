@@ -1,8 +1,8 @@
 {
 	title: "{q.animals.cheese.name}",
 	icon: "rats:cheese",
-	x: -5.0d,
-	y: 0.16666666666666669d,
+	x: -1.7d,
+	y: -3.1d,
 	text: [
 		"{q.animals.cheese.desc}"
 	],
@@ -31,6 +31,12 @@
 	rewards: [{
 		uid: "970d8554",
 		type: "choice",
-		table: 121
+		table: 120
+	},
+	{
+		uid: "8636ee3c",
+		type: "item",
+		item: "rats:contaminated_food",
+		count: 4
 	}]
 }

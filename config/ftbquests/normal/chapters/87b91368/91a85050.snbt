@@ -1,6 +1,6 @@
 {
-	x: -1.1d,
-	y: -2.4d,
+	x: 5.0d,
+	y: -1.9d,
 	text: [
 		"{q.animals.ball_of_fur.desc}"
 	],
@@ -16,13 +16,9 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "06b40f9d",
+		uid: "e893de36",
 		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "food"
-			}
-		}
+		item: "actuallyadditions:item_hairy_ball",
+		count: 64
 	}]
 }

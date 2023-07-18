@@ -1,6 +1,6 @@
 {
-	x: -6.5d,
-	y: -1.0d,
+	x: -3.0000000000000004d,
+	y: -3.1d,
 	text: [
 		"{q.animals.garbage_pile.desc}"
 	],
@@ -16,8 +16,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "ba8e9ae3",
+		uid: "1cd43856",
 		type: "choice",
-		table: 129
+		table: 117
 	}]
 }

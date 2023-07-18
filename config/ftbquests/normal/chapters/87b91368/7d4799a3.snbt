@@ -1,13 +1,13 @@
 {
 	title: "{q.animals.dragon_egg.name}",
 	icon: "iceandfire:dragonegg_red",
-	x: 3.5d,
-	y: 1.25d,
+	x: 7.3d,
+	y: -0.8d,
 	text: [
 		"{q.animals.dragon_egg.desc}"
 	],
 	dependencies: [
-		"dcb947b4"
+		"9fd7c53e"
 	],
 	tasks: [{
 		uid: "36cab091",

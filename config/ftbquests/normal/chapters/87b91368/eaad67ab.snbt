@@ -1,7 +1,7 @@
 {
 	title: "{q.animals.aristoc_rat.name}",
-	x: -3.5d,
-	y: 6.25d,
+	x: -1.7d,
+	y: 0.0d,
 	text: [
 		"{q.animals.aristoc_rat.desc}"
 	],
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "6168e864",
 		type: "choice",
-		table: 75
+		table: 74
 	}]
 }

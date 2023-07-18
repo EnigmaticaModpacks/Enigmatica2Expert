@@ -1,8 +1,8 @@
 {
 	title: "{q.animals.ice_dragon_forge.name}",
 	icon: "iceandfire:dragonforge_ice_core",
-	x: 4.75d,
-	y: 2.75d,
+	x: 8.55d,
+	y: 0.7d,
 	text: [
 		"{q.animals.ice_dragon_forge.desc}"
 	],

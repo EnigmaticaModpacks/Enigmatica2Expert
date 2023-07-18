@@ -1,6 +1,6 @@
 {
-	x: -1.75d,
-	y: 7.75d,
+	x: -2.2d,
+	y: 2.9d,
 	text: [
 		"{q.animals.gem_of_ratlantis.desc}"
 	],

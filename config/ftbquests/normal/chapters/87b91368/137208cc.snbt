@@ -6,8 +6,8 @@
 			EntityName: "emberroot:rootsonespriteboss"
 		}
 	},
-	x: 4.7d,
-	y: -2.4d,
+	x: 2.4d,
+	y: -4.8d,
 	text: [
 		"{q.animals.ember_root.desc}"
 	],

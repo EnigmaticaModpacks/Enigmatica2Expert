@@ -1,7 +1,7 @@
 {
 	title: "{q.animals.rat_coal.name}",
-	x: -2.0d,
-	y: 1.25d,
+	x: 1.4000000000000001d,
+	y: -0.40000000000000036d,
 	text: [
 		"{q.animals.rat_coal.desc}"
 	],

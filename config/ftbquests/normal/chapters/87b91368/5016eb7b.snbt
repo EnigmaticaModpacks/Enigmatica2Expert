@@ -1,11 +1,11 @@
 {
-	x: -6.5d,
-	y: 1.5d,
+	x: -3.0d,
+	y: -4.3d,
 	text: [
 		"{q.animals.raw_plastic.desc}"
 	],
 	dependencies: [
-		"67de8e53"
+		"8d526720"
 	],
 	tasks: [{
 		uid: "ba4c99ba",

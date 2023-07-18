@@ -1,8 +1,11 @@
 {
-	x: 1.6d,
-	y: 0.30000000000000004d,
+	x: 7.0d,
+	y: -4.3d,
 	text: [
 		"{q.animals.pixie_jar.desc}"
+	],
+	dependencies: [
+		"e875aec9"
 	],
 	tasks: [{
 		uid: "5294b25a",
@@ -27,6 +30,6 @@
 	rewards: [{
 		uid: "50b7e11a",
 		type: "choice",
-		table: 78
+		table: 77
 	}]
 }

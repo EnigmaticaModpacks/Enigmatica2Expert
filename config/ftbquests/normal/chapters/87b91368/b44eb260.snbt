@@ -1,6 +1,6 @@
 {
-	x: -2.0d,
-	y: -2.1d,
+	x: 5.0d,
+	y: -0.9d,
 	text: [
 		"{q.animals.cocoon_of_caprice.desc}"
 	],

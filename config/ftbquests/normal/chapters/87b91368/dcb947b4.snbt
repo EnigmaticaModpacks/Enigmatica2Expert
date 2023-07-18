@@ -3,20 +3,18 @@
 	icon: {
 		id: "draconicevolution:mob_soul",
 		tag: {
-			EntityName: "animania:bull_jersey"
+			EntityName: "minecraft:cow"
 		}
 	},
-	x: 1.625d,
-	y: -2.875d,
+	x: 2.85d,
+	y: -3.15d,
 	text: [
 		"{q.animals.animals_entry.desc}"
 	],
 	dependencies: [
-		"fc892a79",
-		"dabb9837",
-		"fa0c8cf1"
+		"fc892a79"
 	],
-	size: 1.25d,
+	size: 1.5d,
 	tasks: [{
 		uid: "bb2c4429",
 		type: "item",
@@ -60,10 +58,5 @@
 			item: "excompressum:bait 1 12"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "f9708ac0",
-		type: "choice",
-		table: 70
 	}]
 }

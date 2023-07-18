@@ -1,13 +1,12 @@
 {
 	title: "{q.animals.rat_ore_doubling.name}",
-	x: -3.5d,
-	y: 3.75d,
+	x: 0.0d,
+	y: 0.7999999999999998d,
 	text: [
 		"{q.animals.rat_ore_doubling.desc}"
 	],
 	dependencies: [
-		"6a56d29d",
-		"f99929a2"
+		"6a56d29d"
 	],
 	tasks: [{
 		uid: "8a03b791",
@@ -19,6 +18,6 @@
 	rewards: [{
 		uid: "28398232",
 		type: "choice",
-		table: 76
+		table: 75
 	}]
 }

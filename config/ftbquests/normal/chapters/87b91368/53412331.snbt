@@ -1,7 +1,7 @@
 {
 	icon: "cyclicmagic:magic_net",
-	x: -1.9d,
-	y: -4.8d,
+	x: 5.9d,
+	y: -4.1d,
 	text: [
 		"{q.animals.monster_ball.desc}"
 	],

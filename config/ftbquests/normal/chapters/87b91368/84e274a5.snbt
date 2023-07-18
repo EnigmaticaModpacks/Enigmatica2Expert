@@ -6,8 +6,8 @@
 			EntityName: "minecraft:villager_golem"
 		}
 	},
-	x: -1.1d,
-	y: -3.4d,
+	x: 4.2d,
+	y: -4.1d,
 	text: [
 		"{q.animals.iron_golem.desc}"
 	],
