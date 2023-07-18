@@ -407,11 +407,11 @@ remakeEx(<iceandfire:dragonforge_ice_brick> * 2, [
 
 # Dragon meal
 recipes.remove(<iceandfire:dragon_meal>);
-mods.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal>, <fluid:blood>, [
-	<ore:foodGroundduck> * 2,
-	<ore:foodGroundturkey> * 2,
-	<ore:foodGroundvenison> * 2,
-]);
+mods.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal> * 4, <fluid:blood>, [
+	<harvestcraft:groundporkitem> * 4,
+	<harvestcraft:groundrabbititem> * 4,
+	<harvestcraft:groundfishitem> * 4,
+], true);
 
 # Remove craft table dragon recipes
 recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
