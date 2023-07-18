@@ -239,6 +239,18 @@ add(<ore:heartDragon>, <iceandfire:ice_dragon_heart>);
 # Hippogryphs
 add(<ore:hippogryphEgg>, <iceandfire:hippogryph_egg:*>);
 
+# Dragon Eggs
+addItems(<ore:dragonEgg>, [
+	<iceandfire:dragonegg_red>,
+	<iceandfire:dragonegg_green>,
+	<iceandfire:dragonegg_bronze>,
+	<iceandfire:dragonegg_gray>,
+	<iceandfire:dragonegg_blue>,
+	<iceandfire:dragonegg_white>,
+	<iceandfire:dragonegg_sapphire>,
+	<iceandfire:dragonegg_silver>,
+]);
+
 # Crafting hammers
 add(<ore:craftingToolForgeHammer>, <immersiveengineering:tool>);
 

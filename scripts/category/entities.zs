@@ -112,6 +112,39 @@ for output, ingrs in {
   <iceandfire:hippogryph_egg:5> : [<ore:foodGroundduck>, <actuallyadditions:item_misc:15>, <thermalfoundation:rockwool:8>],
   <iceandfire:hippogryph_egg:6> : [<ore:foodGroundduck>, <actuallyadditions:item_misc:15>, <thermalfoundation:rockwool:15>],
 
+  <iceandfire:jar_pixie:0> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:1>],
+  <iceandfire:jar_pixie:1> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:7>],
+  <iceandfire:jar_pixie:2> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:5>],
+  <iceandfire:jar_pixie:3> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:4>],
+  <iceandfire:jar_pixie:4> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:3>],
+
+  <iceandfire:dragonegg_red>      : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_red>],
+  <iceandfire:dragonegg_green>    : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_green>],
+  <iceandfire:dragonegg_bronze>   : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_bronze>],
+  <iceandfire:dragonegg_gray>     : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_gray>],
+  <iceandfire:dragonegg_blue>     : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_blue>],
+  <iceandfire:dragonegg_white>    : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_white>],
+  <iceandfire:dragonegg_sapphire> : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_sapphire>],
+  <iceandfire:dragonegg_silver>   : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_silver>],
+
+  <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:hippocampus"}) : [
+    <iceandfire:ambrosia>,  # Ambrosia
+    <ore:dustPrismarine>, # Prismarine Crystals
+    <tconstruct:edible:20>, # Fish Jerky
+  ],
+
+  <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:amphithere"}) : [
+    <iceandfire:rotten_egg>,       # Rotten Egg
+    <iceandfire:shiny_scales>,     # Shiny Scales
+    <iceandfire:hippogryph_talon>, # Hippogryph Talon
+  ],
+
+  <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:seaserpent"}) : [
+    <iceandfire:amphithere_skull>, # Amphithere Skull
+    <ore:dragonscaleBlock>, # Block of Dragon Scales
+    <iceandfire:hippocampus_fin>, # Hippocampus Fin
+  ],
+
 } as IIngredient[][IItemStack] {
   if(isNull(output)) continue;
   mods.rustic.Condenser.addRecipe(output, ingrs, <scalinghealth:heartdust>, <tconstruct:edible:33>, <fluid:wine> * 1000, 40);
