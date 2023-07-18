@@ -594,6 +594,16 @@ scripts.process.mash(<actuallyadditions:item_food:15>, <actuallyadditions:item_f
 
 recipes.addShapeless("chocolate toast oredicted", <actuallyadditions:item_food:19>, [<actuallyadditions:item_food:10>, <ore:ingotChocolate>]);
 
+# [Cheese]*2 from [Mushroom Stew][+2]
+craft.remake(<actuallyadditions:item_food> * 2, ["pretty",
+  "A A A",
+  "e M e",
+  "A A A"], {
+  "A": <ore:listAllmilk>, # Fresh Milk
+  "e": <ore:egg>, # Egg
+  "M": <minecraft:mushroom_stew>, # Mushroom Stew
+});
+
 # [Pizza] from [Carrot][+5]
 craft.remake(<actuallyadditions:item_food:14>, ["pretty",
   "C K C",
