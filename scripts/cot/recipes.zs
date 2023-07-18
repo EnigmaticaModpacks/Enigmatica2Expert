@@ -55,15 +55,15 @@ mods.mechanics.addTubeRecipe([<contenttweaker:conglomerate_of_life>], <liquid:li
 craft.shapeless(<contenttweaker:silicon_block>, 'AAAAAAAAA', { A: <ore:ingotSilicon> });
 craft.shapeless(<libvulpes:productingot:3> * 9,   'A', { A: <ore:blockSilicon> });
 
-// [Conglomerate Of Life]*2 from [Cheese Wheel][+4]
-craft.make(<contenttweaker:conglomerate_of_life> * 4, ['pretty',
-  '▲ B ▲',
-  'D W D',
-  '▲ B ▲'], {
-  '▲': <scalinghealth:heartdust>, // Heart Dust
-  'B': <randomthings:rezstone>,   // Blood Stone
-  'D': <iceandfire:dragon_meal>,  // Dragon Meal
-  'W': <ore:blockCheese>,
+// [Conglomerate Of Life] from [Heart Dust][+3]
+craft.remake(<contenttweaker:conglomerate_of_life>, ["pretty",
+  "w D w",
+  "C ▲ C",
+  "w D w"], {
+  "w": <ore:woolRed>, # Red Wool
+  "D": <iceandfire:dragon_meal>,  # Dragon Meal
+  "C": <ore:foodCheese>,          # Cheese
+  "▲": <scalinghealth:heartdust>, # Heart Dust
 });
 
 // [Conglomerate_Of_Sun*8] from [Totem_of_Undying][+3]
