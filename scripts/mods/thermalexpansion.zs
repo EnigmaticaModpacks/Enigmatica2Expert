@@ -347,6 +347,14 @@ craft.remake(<thermalfoundation:upgrade:3>, ["pretty",
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:compass>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:sand>, <minecraft:clock>);
 
+# Add other slag => Rockwool
+furnace.addRecipe(<thermalfoundation:rockwool:7>, <immersiveengineering:material:7>, 1);
+
+# Remove Slag from Rock Wool recipe
+for i in 0 .. 16 {
+	mods.extrautils2.Crusher.remove(<thermalfoundation:rockwool>.definition.makeStack(i));
+}
+
 # Process Geodes
 scripts.process.crush(<thermalfoundation:geode>, <mysticalagradditions:insanium:5>, "No exceptions", 
   [<mysticalagradditions:insanium:5>], [0.25], {bonusType: "MULTIPLY_OUTPUT"});
