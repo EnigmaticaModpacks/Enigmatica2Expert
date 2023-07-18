@@ -1,7 +1,7 @@
 {
 	title: "{q.gates.gate_actually_add.name}",
 	x: 3.5d,
-	y: 2.166666666666667d,
+	y: 2.2d,
 	text: [
 		"{q.gates.gate_actually_add.desc}"
 	],
