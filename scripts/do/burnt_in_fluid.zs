@@ -1,10 +1,7 @@
 #priority 1
 
-import crafttweaker.entity.IEntityItem;
 import crafttweaker.world.IFacing;
 import crafttweaker.block.IBlockState;
-import crafttweaker.world.IBlockPos;
-import crafttweaker.world.IWorld;
 
 #reloadable
 
@@ -33,6 +30,8 @@ function add(inputId as string, blockOutput as IBlockState, fluidId as string = 
   if (isNull(burntRecipes[inputId][fluidId])) burntRecipes[inputId][fluidId] = {};
   burntRecipes[inputId][fluidId][blockOutput] = chance;
 }
+
+if(utils.DEBUG) add('extrautils2:redorchid', <blockstate:minecraft:redstone_ore>, 'stone', 1.0 / 3.0);
 
 // This function should be called once
 // warding `/ct reload`
@@ -68,14 +67,13 @@ function postInit() as void {
   }
 }
 
-events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
-  val world = e.world;
+events.onEntityItemDeath(function(e as mods.zenutils.event.EntityItemDeathEvent){
+  val world = e.item.world;
   if(world.remote) return;
-  if(!(e.entity instanceof IEntityItem)) return;
 
-  if(!e.entity.isBurning && !e.entity.isPushedByWater) return;
+  if(e.damageSource.damageType != 'onFire') return;
 
-  val entityItem as IEntityItem = e.entity;
+  val entityItem = e.item;
   if(isNull(entityItem.item)) return;
 
   val result = burntRecipes[entityItem.item.definition.id];
@@ -85,7 +83,7 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
   for i in 0 .. 2 {
     // Get state
     val blockPos = entityItem.position.getOffset(IFacing.down(), i);
-    val blockState = e.world.getBlockState(blockPos);
+    val blockState = world.getBlockState(blockPos);
 
     // Liquid should be full
     if(blockState.meta != 0) continue;
@@ -94,13 +92,10 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
       for state, chance in stateChance {
         if(blockState.block.definition.id != fluidToBlock[fluid]) continue;
 
-        // Anti-hopper dupe
-        if(checkHopperUnder(blockPos, world)) continue;
-
         val total = chance * entityItem.item.amount as double;
         if(total < 1.0 && total < world.random.nextDouble()) {
           // Conversion failure
-          utils.spawnParticles(e.entity, 'fallingdust', e.entity.x, e.entity.y+0.5, e.entity.z, 0.1, 0.4, 0.1, 0, 6);
+          utils.spawnParticles(entityItem, 'fallingdust', entityItem.x, entityItem.y+0.5, entityItem.z, 0.1, 0.4, 0.1, 0, 6);
           continue;
         }
 
@@ -112,13 +107,3 @@ events.onEntityRemove(function(e as mods.zenutils.event.EntityRemoveEvent){
     }
   }
 });
-
-function checkHopperUnder(blockPos as IBlockPos, world as IWorld) as bool {
-  val blockState = world.getBlockState(blockPos.getOffset(IFacing.down(), 1));
-  if(isNull(blockState)) return false;
-  val def = blockState.block.definition;
-  return
-       def.id == 'tconstruct:wooden_hopper'
-    || def.id == 'minecraft:hopper'
-  ;
-}
