@@ -13,7 +13,7 @@
 ## Updating
 
 1) **Backup** your world.
-2) **Backup** your custom configs. This is usually `./server.properties` file and some configs, like *Discord Integration* options.
+2) **Backup** your custom configs - `./server.properties`, `local/ftbutilities/ranks.txt` and some configs, like *Discord Integration* options.
 3) **Delete** all the folders from the server that are in the archive.
 4) **Extract** `.zip` into server folder with overwrite.
 7) **Reapply** your custom configs. I recommend that you keep all changes in a seperate archive, so you can just **unarchive** them over after updating.
