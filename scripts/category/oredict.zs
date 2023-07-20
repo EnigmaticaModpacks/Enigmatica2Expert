@@ -161,10 +161,16 @@ add(<ore:ingotEnderEnhanced>, <extendedcrafting:material:48>);
 
 # Venison Oredict
 add(<ore:listAllbeefraw>, <twilightforest:raw_venison>);
-add(<ore:listAllmeatraw>, <twilightforest:raw_venison>);
+addItems(<ore:listAllmeatraw>, [
+	<twilightforest:raw_venison>,
+	<betteranimalsplus:eel_meat_raw>,
+]);
 
 add(<ore:listAllbeefcooked>, <twilightforest:cooked_venison>);
-add(<ore:listAllmeatcooked>, <twilightforest:cooked_venison>);
+addItems(<ore:listAllmeatcooked>, [
+	<twilightforest:cooked_venison>,
+	<betteranimalsplus:eel_meat_cooked>,
+]);
 add(<ore:listAllmeatcooked>, <twilightforest:cooked_meef>);
 remove(<ore:feather>, <twilightforest:raven_feather>);
 
@@ -722,6 +728,66 @@ addItems(<ore:workbench>, [
 
 add(<ore:upgradeDarkSteel>, <enderio:item_dark_steel_upgrade:*>);
 add(<ore:logWood>, <ic2:rubber_wood>);
+
+addItems(<ore:headAnimal>, [
+	<betteranimalsplus:bearhead>,
+	<betteranimalsplus:bearhead_1>,
+	<betteranimalsplus:bearhead_2>,
+	<betteranimalsplus:bearhead_3>,
+	<betteranimalsplus:boarhead>,
+	<betteranimalsplus:boarhead_1>,
+	<betteranimalsplus:boarhead_2>,
+	<betteranimalsplus:boarhead_3>,
+	<betteranimalsplus:boarhead_4>,
+	<betteranimalsplus:coyotehead>,
+	<betteranimalsplus:coyotehead_1>,
+	<betteranimalsplus:deerhead>,
+	<betteranimalsplus:deerhead_1>,
+	<betteranimalsplus:deerhead_2>,
+	<betteranimalsplus:deerhead_3>,
+	<betteranimalsplus:deerhead_4>,
+	<betteranimalsplus:foxhead>,
+	<betteranimalsplus:foxhead_1>,
+	<betteranimalsplus:foxhead_2>,
+	<betteranimalsplus:foxhead_3>,
+	<betteranimalsplus:foxhead_4>,
+	<betteranimalsplus:moosehead>,
+	<betteranimalsplus:moosehead_1>,
+	<betteranimalsplus:moosehead_2>,
+	<betteranimalsplus:moosehead_3>,
+	<betteranimalsplus:moosehead_4>,
+	<betteranimalsplus:reindeerhead>,
+	<betteranimalsplus:reindeerhead_1>,
+	<betteranimalsplus:reindeerhead_2>,
+	<betteranimalsplus:reindeerhead_3>,
+	<betteranimalsplus:reindeerhead_4>,
+	<betteranimalsplus:wolfhead>,
+	<betteranimalsplus:wolfhead_1>,
+	<betteranimalsplus:wolfhead_2>,
+	<betteranimalsplus:wolfhead_3>,
+	<betteranimalsplus:wolfhead_4>,
+	<betteranimalsplus:wolfhead_5>,
+	<betteranimalsplus:wolfhead_6>,
+]);
+
+addItems(<ore:cape>, [
+	<betteranimalsplus:bear_cape_black>,
+	<betteranimalsplus:bear_cape_brown>,
+	<betteranimalsplus:bear_cape_kermode>,
+	<betteranimalsplus:wolf_cape_arctic>,
+	<betteranimalsplus:wolf_cape_black>,
+	<betteranimalsplus:wolf_cape_brown>,
+	<betteranimalsplus:wolf_cape_classic>,
+	<betteranimalsplus:wolf_cape_red>,
+	<betteranimalsplus:wolf_cape_timber>,
+]);
+
+addItems(<ore:record>, [
+	<betteranimalsplus:record_crab_rave>,
+	<betteranimalsplus:record_walrus>,
+]);
+
+add(<ore:foodFriedegg>, <betteranimalsplus:fried_egg>);
 
 ##################
 # Nuclearcraft
