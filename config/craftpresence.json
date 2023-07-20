@@ -361,8 +361,7 @@
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png",
-      "Krutoy242": "https://crafatar.com/avatars/e23a4a7682ed47e09ea3fef726675065"
+      "default": "https://via.placeholder.com/256.png"
     },
     "dynamicVariables": {
       "default": "Example Text",
