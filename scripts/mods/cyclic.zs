@@ -12,9 +12,6 @@ recipes.addShapeless('Cyclic Guide',
   <guideapi:cyclicmagic-guide>,
   [<minecraft:book>, <cyclicmagic:carbon_paper>]);
 
-# Removing Simple Block Miner
-	utils.rh(<cyclicmagic:block_miner>);
-
 # [Redstone Clock] from [Ectoplasm][+2]
 craft.remake(<cyclicmagic:clock>, ["pretty",
   "■ ♥ ■",
@@ -356,9 +353,6 @@ craft.remake(<cyclicmagic:plate_push> * 8, ["pretty",
   "d": <ore:dyeLime>,
   "▬": <ore:ingotIron>, # Iron Ingot
 });
-
-# Remove because transcended by Conarm modifiers
-utils.rh(<cyclicmagic:glowing_helmet>);
 
 # [Empty Sack of Holding] from [Propolis][+2]
 craft.remake(<cyclicmagic:chest_sack_empty>, ["pretty",
