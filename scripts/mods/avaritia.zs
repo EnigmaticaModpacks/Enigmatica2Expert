@@ -129,6 +129,7 @@ mods.extendedcrafting.TableCrafting.addShapeless(
 	.sort(naturalSort)
   .map(o=>[`   ${isJEIBlacklisted(o)?'#':' '}utils.tryCatch('${o}'`, `, <minecraft:beef>),`])
 )*/
+    utils.tryCatch('betteranimalsplus:eel_meat_raw'  , <minecraft:beef>),
     utils.tryCatch('betteranimalsplus:pheasantraw'   , <minecraft:beef>),
     utils.tryCatch('betteranimalsplus:turkey_leg_raw', <minecraft:beef>),
     utils.tryCatch('betteranimalsplus:turkey_raw'    , <minecraft:beef>),
