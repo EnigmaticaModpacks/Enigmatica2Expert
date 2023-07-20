@@ -11,7 +11,7 @@
  */
 
 // @ts-check
-import { join, relative, resolve } from 'node:path'
+import { join, parse, relative, resolve } from 'node:path'
 
 import chalk from 'chalk'
 import * as del from 'del'
@@ -23,6 +23,10 @@ import terminal_kit from 'terminal-kit'
 import yargs from 'yargs'
 import ignore from 'ignore'
 import open from 'open'
+import logUpdate from 'log-update'
+import Client from 'ssh2-sftp-client'
+import numeral from 'numeral'
+import boxen from 'boxen'
 
 import replace_in_file from 'replace-in-file'
 import {
@@ -37,7 +41,7 @@ import {
 
 const { gitDescribeSync } = git_describe
 const { terminal: term } = terminal_kit
-const { rmSync, mkdirSync, existsSync, renameSync, copySync, readFileSync, writeFileSync }
+const { rmSync, mkdirSync, existsSync, renameSync, copySync, readFileSync, writeFileSync, lstatSync }
   = fs_extra
 const git = simpleGit()
 
@@ -406,122 +410,121 @@ const style = {
 ╚══════╝╚═╝        ╚═╝   ╚═╝
   */
 
-  // /**
-  //  * @type {{ dir:string, label:string, config: {[key:string]:string} }[]}
-  //  */
-  // const sftpConfigs = globs('secrets/sftp_servers/*/sftp.json').map(
-  //   (filename) => {
-  //     const dir = parse(filename).dir
-  //     return {
-  //       dir,
-  //       label : /** @type {string} */ (dir.split('/').pop()),
-  //       config: loadJson(filename),
-  //     }
-  //   }
-  // )
+  /**
+   * @type {{ dir:string, label:string, config: {[key:string]:string} }[]}
+   */
+  const sftpConfigs = globs('secrets/sftp_servers/*/sftp.json').map(
+    (filename) => {
+      const dir = parse(filename).dir
+      return {
+        dir,
+        label : /** @type {string} */ (dir.split('/').pop()),
+        config: loadJson(filename),
+      }
+    }
+  )
 
-  // // Relative to overrides
-  // const serverAllOverrides = globs('./*', { cwd: tmpOverrides })
+  // Relative to overrides
+  const serverAllOverrides = globs('./*', { cwd: tmpOverrides })
 
-  // // Relative paths of dirs like
-  // // - bansoukou
-  // // - config
-  // const serverRemoveDirs = serverAllOverrides
-  //   .filter(f => lstatSync(join(tmpOverrides, f)).isDirectory())
-  //   .concat('mods')
+  // Relative paths of dirs like
+  // - bansoukou
+  // - config
+  const serverRemoveDirs = serverAllOverrides
+    .filter(f => lstatSync(join(tmpOverrides, f)).isDirectory())
+    .concat('mods')
 
-  // /** @type {import('boxen').Options} */
-  // const defBoxStyle = {
-  //   borderStyle: 'round',
-  //   borderColor: '#22577a',
-  //   width      : 50,
-  //   // @ts-expect-error types
-  //   padding    : { left: 1, right: 1 },
-  // }
+  /** @type {import('boxen').Options} */
+  const defBoxStyle = {
+    borderStyle: 'round',
+    borderColor: '#22577a',
+    width      : 50,
+    padding    : { left: 1, right: 1 },
+  }
 
-  // for (const conf of sftpConfigs) {
-  //   logUpdate.done()
+  for (const conf of sftpConfigs) {
+    logUpdate.done()
 
-  //   if (
-  //     !(await pressEnterOrEsc(
-  //       `[${STEP++}] To upload SFTP ${style.string(
-  //         conf.label
-  //       )} press ENTER. Press ESC to skip.`
-  //     ))
-  //   )
-  //     continue
+    if (
+      !(await pressEnterOrEsc(
+        `[${STEP++}] To upload SFTP ${style.string(
+          conf.label
+        )} press ENTER. Press ESC to skip.`
+      ))
+    )
+      continue
 
-  //   const sftp = new Client()
+    const sftp = new Client()
 
-  //   const updateBox = (/** @type {any[]} */ ...args) =>
-  //     logUpdate(
-  //       boxen(
-  //         args.map((v, i) => Object.values(style)[i](String(v))).join(' '),
-  //         {
-  //           ...defBoxStyle,
-  //           title: style.info(conf.label),
-  //         }
-  //       )
-  //     )
+    const updateBox = (/** @type {any[]} */ ...args) =>
+      logUpdate(
+        boxen(
+          args.map((v, i) => Object.values(style)[i](String(v))).join(' '),
+          {
+            ...defBoxStyle,
+            title: style.info(conf.label),
+          }
+        )
+      )
 
-  //   updateBox('Establishing connection')
-  //   await sftp.connect(conf.config)
+    updateBox('Establishing connection')
+    await sftp.connect(conf.config)
 
-  //   updateBox('Removing folders')
-  //   await Promise.all(
-  //     serverRemoveDirs.map(async (dir) => {
-  //       try {
-  //         if (!(await sftp.stat(dir)).isDirectory) return
-  //         await sftp.rmdir(dir, true)
-  //         updateBox('Removed folder:', dir)
-  //       }
-  //       catch (error) {}
-  //     })
-  //   )
+    updateBox('Removing folders')
+    await Promise.all(
+      serverRemoveDirs.map(async (dir) => {
+        try {
+          if (!(await sftp.stat(dir)).isDirectory) return
+          await sftp.rmdir(dir, true)
+          updateBox('Removed folder:', dir)
+        }
+        catch (error) {}
+      })
+    )
 
-  //   const zipName = parse(zipPath_server).base
-  //   updateBox('Copy server pack')
-  //   const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
-  //   let step = 0
-  //   await sftp.fastPut(zipPath_server, zipName, {
-  //     step: (total_transferred, chunk, total) => {
-  //       if (step++ % 10 !== 0) return
-  //       updateBox(
-  //         'Copy server pack',
-  //         bytes(total_transferred),
-  //         '/',
-  //         bytes(total)
-  //       )
-  //     },
-  //   })
+    const zipName = parse(zipPath_server).base
+    updateBox('Copy server pack')
+    const bytes = (/** @type {number} */ v) => numeral(v).format('0.0b')
+    let step = 0
+    await sftp.fastPut(zipPath_server, zipName, {
+      step: (total_transferred, chunk, total) => {
+        if (step++ % 10 !== 0) return
+        updateBox(
+          'Copy server pack',
+          bytes(total_transferred),
+          '/',
+          bytes(total)
+        )
+      },
+    })
 
-  //   await pressEnterOrEsc(
-  //     `Go to SFTP server, Unpack ${style.log(
-  //       zipName
-  //     )} and press ENTER to override`
-  //   )
+    await pressEnterOrEsc(
+      `Go to SFTP server, Unpack ${style.log(
+        zipName
+      )} and press ENTER to override`
+    )
 
-  //   updateBox('Change and copy server overrides')
-  //   const jsonPath = join(
-  //     conf.dir,
-  //     'overrides/config/Chikachi/discordintegration.json'
-  //   )
+    updateBox('Change and copy server overrides')
+    const jsonPath = join(
+      conf.dir,
+      'overrides/config/Chikachi/discordintegration.json'
+    )
 
-  //   saveText(
-  //     loadText(jsonPath).replace(
-  //       /("serverStart":\s*")[^"]+"/,
-  //       `$1\`\`\`diff\\n+ Server Started! +\\n     ${nextVersion}\\n\`\`\`"`
-  //     ),
-  //     jsonPath
-  //   )
+    saveText(
+      loadText(jsonPath).replace(
+        /("serverStart":\s*")[^"]+"/,
+        `$1\`\`\`diff\\n+ Server Started! +\\n     ${nextVersion}\\n\`\`\`"`
+      ),
+      jsonPath
+    )
 
-  //   let fileCounter = 0
-  //   sftp.on('upload', () => updateBox('Copy overrides', ++fileCounter))
-  //   const allOverridesDir = join(conf.dir, 'overrides')
-  //   await sftp.uploadDir(allOverridesDir, './')
+    let fileCounter = 0
+    sftp.on('upload', () => updateBox('Copy overrides', ++fileCounter))
+    const allOverridesDir = join(conf.dir, 'overrides')
+    await sftp.uploadDir(allOverridesDir, './')
 
-  //   await sftp.end()
-  // }
+    await sftp.end()
+  }
 
   /*
   ██████╗ ███████╗██╗     ███████╗ █████╗ ███████╗███████╗

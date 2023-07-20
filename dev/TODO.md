@@ -5,6 +5,15 @@
 - [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Configure `Worldgen Indicators`
 - [ ] 🟢 Configure `Villager Trade Tables`
+- [ ] 📖 Add item amount in Animals quest
+- [ ] 📖 Fix Animals entry desc
+- [ ] 📖 fixDryingRackQuestTask
+- [ ] 📖 Add Trinitite quest
+- [ ] ✏️ Traveler Belt storage cheaper
+- [ ] ✏️ Knapsac cheaper
+- [ ] ✏️ Transfer liquid interaction to Witch Water, remove Plus Tweaks
+- [ ] ✏️ Fix Slop unobtainable
+- [ ] ✏️ fixShulkerBoxInAssembler
 
 ---
 
@@ -163,7 +172,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 📀 Colossal Chests make bigger interface
 - [ ] ✏️ Magical Snow Globe add usage
 - [ ] ✏️ Drop items onto garbage piles to make pile bigger
-- [ ] ✏️ Transfer liquid interaction to Witch Water
 - [ ] 🔄 Fix Quark's reacharound not working after update to ROTN edition
 - [ ] ✏️ Add DML data models in Space or Ratlantis
 - [ ] ✏️ ? Quark Crystals: orange -> topaz nuggets, violet -> tanzanite nuggets, yellow -> brass nuggets
