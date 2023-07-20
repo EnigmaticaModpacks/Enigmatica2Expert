@@ -202,9 +202,9 @@ for name in bagNames {
 	mods.forestry.Carpenter.removeRecipe(advBag);
 
 	recipes.addShaped("adv "~name, advBag, [
-		[vax, <quark:gold_button>, vax],
+		[null, <quark:gold_button>, null],
 		[vax, splBag, vax],
-		[vax, <ore:fabricHemp>, vax],
+		[null, <ore:fabricHemp>, null],
 	]);
 }
 
