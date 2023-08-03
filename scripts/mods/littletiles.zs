@@ -13,7 +13,6 @@ recipes.addShaped(<littletiles:ltstorageblocktile>, [
 
 # Tools
 val ingrs = {
-  "▬": <randomthings:ingredient:3>,       # Spectre Ingot
   "#": <randomthings:spectreplank>,       # Spectre Planks
   "`": <ore:nuggetPlatinum>,
   "╱": <ore:stickIron>,                   # Iron Rod
@@ -22,13 +21,13 @@ val ingrs = {
   "M": <appliedenergistics2:material:39>, # ME Storage Housing
 } as IIngredient[string];
 
-craft.remake(<littletiles:hammer>,             [" ` ", " ▬`", "▬  "], ingrs);
+craft.remake(<littletiles:hammer>,             [" ` ", " #`", "#  "], ingrs);
 craft.remake(<littletiles:recipeadvanced> * 4, ["P P", " M ", "P P"], ingrs);
-craft.remake(<littletiles:saw>,                ["  #", " #╱", "▬╱ "], ingrs);
+craft.remake(<littletiles:saw>,                ["  #", " #╱", "#╱ "], ingrs);
 craft.remake(<littletiles:container>,          [" ` ", "w w", " w "], ingrs);
-craft.remake(<littletiles:wrench>,             ["  `", " # ", "▬  "], ingrs);
-craft.remake(<littletiles:chisel>,             ["  `", " ▬ ", "▬  "], ingrs);
-craft.remake(<littletiles:colortube>,          [" w ", " #w", "▬  "], ingrs);
+craft.remake(<littletiles:wrench>,             ["  `", " # ", "w  "], ingrs);
+craft.remake(<littletiles:chisel>,             ["  `", " # ", "#  "], ingrs);
+craft.remake(<littletiles:colortube>,          [" w ", " #w", "#  "], ingrs);
 craft.remake(<littletiles:grabber>,            [" w ", "wOw", " # "], ingrs);
 
 # Melt Water blocks
