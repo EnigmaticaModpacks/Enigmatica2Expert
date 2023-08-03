@@ -715,22 +715,26 @@ for fluid in [
 mods.nuclearcraft.HeatExchanger.removeAllRecipes();
 
 val waterRequired = {
-  water             : 100,
-  preheated_water   : 50,
-  ic2hot_water      : 30,
-  hot_spring_water  : 20,
-  ic2distilled_water: 25,
-  distwater         : 25,
-} as int[string];
+  water             : { high_pressure_steam : 100 },
+  condensate_water  : { preheated_water : 10 },
+  preheated_water   : { high_pressure_steam : 50 },
+  ic2hot_water      : { high_pressure_steam : 30 },
+  hot_spring_water  : { high_pressure_steam : 20 },
+  ic2distilled_water: { high_pressure_steam : 25 },
+  distwater         : { high_pressure_steam : 25 },
+} as int[string][string];
 
 for coolant, cooling in coolants {
   val cold= game.getLiquid(coolant+'_nak');
   val hot = game.getLiquid(coolant+'_nak_hot');
-  val HPS = <fluid:high_pressure_steam>;
-  for fluid, amount in waterRequired {
-    mods.immersivetechnology.HeatExchanger.addRecipe(
-      cold * amount, HPS * (400 * cooling), hot * amount, game.getLiquid(fluid) * (100 * cooling), 32000, 2
-    );
+  for fluid, tuple in waterRequired {
+    for output, amount in tuple {
+      mods.immersivetechnology.HeatExchanger.addRecipe(
+        cold * amount, game.getLiquid(output) * (400 * cooling),
+         hot * amount, game.getLiquid(fluid) * (100 * cooling),
+        32000, 2
+      );
+    }
   }
 }
 
