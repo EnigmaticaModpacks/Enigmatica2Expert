@@ -468,7 +468,13 @@ const style = {
       )
 
     updateBox('Establishing connection')
-    await sftp.connect(conf.config)
+    try {
+      await sftp.connect(conf.config)
+    }
+    catch (error) {
+      end('Cant connect to SFTP')
+      continue
+    }
 
     updateBox('Removing folders')
     await Promise.all(

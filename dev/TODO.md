@@ -5,15 +5,9 @@
 - [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Configure `Worldgen Indicators`
 - [ ] 🟢 Configure `Villager Trade Tables`
-- [ ] 📖 Add item amount in Animals quest
-- [ ] 📖 Fix Animals entry desc
-- [ ] 📖 fixDryingRackQuestTask
-- [ ] 📖 Add Trinitite quest
-- [ ] ✏️ Traveler Belt storage cheaper
-- [ ] ✏️ Knapsac cheaper
-- [ ] ✏️ Transfer liquid interaction to Witch Water, remove Plus Tweaks
-- [ ] ✏️ Fix Slop unobtainable
-- [ ] ✏️ fixShulkerBoxInAssembler
+- [ ] 🟢 Add https://github.com/Olivoz/ExtendedConfigs
+- [ ] 🟢 Add `MC2Discord`
+- [ ] 📖 fixSharpKitQuestsCantHandleNBTDiffs
 
 ---
 
@@ -23,10 +17,11 @@
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 🧩 Make Platforms from Random Things with metal texture instead of wood
+- [ ] ✏️ disable Excavate Ench For Pickarang
+- [ ] ✏️ Transfer liquid interaction to Witch Water, remove Plus Tweaks
 - [ ] ✏️ invent Tool For Robot With Low Durability
 - [ ] ✏️ Printing and assembling Chaos Guardian spawns Chaos Guardian
-- [ ] 🔴 Do not update `MixinBooter` until fixed: https://github.com/LoliKingdom/MixinBooter/issues/31
-- [ ] 🔴 Do not update `CensoredASM` until fixed: https://github.com/LoliKingdom/LoliASM/issues/169
 - [ ] ✏️ fix ET gen Tuntsten Chunks. Cant reproduce in singleplayer.
 - [ ] ✏️ Base OC components made with machines rather than crafting table. `Small Plate Presser` `Alloy Kiln`
 - [ ] 🟢 Add https://github.com/Project-RT have `string[] IItemStack.getAspects()` method
@@ -52,12 +47,11 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔄 Implement https://github.com/Divine-Journey-2/Divine-Journey-2/pull/829
 - [ ] 📖 Add info that sponge not restore free modifiers
 - [ ] ✏️ `.numericalId` may be used to LibVulpes ghost blocks to preview structures. It can be preview for possible QMD coolers
-- [ ] 🔴 Do not update `Recurrent Complex` until fixed: https://github.com/Ivorforce/RecurrentComplex/pull/494
 - [ ] ✏️ Remove Refined Ingots smelting in Smeltery
 - [ ] ✏️ Tritium probably should be sustained only by QMD?
 - [ ] ✏️ Thaumic Slime add interesting drop
 - [ ] ✏️ reduce Dungeon Loot Chest Item kinds to not overfill containers
-- [ ] ✏️ Padauk Tree could be used to get Gold
+- [ ] 🌳 Flora rework: Add immersive usage of trees. Padauk Tree could be used to get Gold. Fireproof obtainable only by breeding
 - [ ] 🪐 NC have its own "Wateland" dim - make Use Of it
 - [ ] ✏️ Dimlets should not drop from Overworld mobs, only in dimensions
 - [ ] ✏️ Buff mek steam a little
@@ -123,7 +117,6 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 🔄 Make `scripts/jei` files not loaded on server
 - [ ] 🔄 Items textures not animated too when **Animated Terrain** disabled
 - [ ] 📖 Obtaining any **sharpening kit** finishes quest for this **mining level**
-- [ ] 🟢 Add **dme**
 - [ ] 🟢 Add **Legendary Tooltips** when fixed: https://github.com/AHilyard/LegendaryTooltips/issues/47
 - [ ] 🟢 Add **Fancier Particles** (note gitignore) when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
 - [ ] 🟢 Add **quality-tools**
