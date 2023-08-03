@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 7.5d,
 	text: [
-		"Crafting material."
+		"{q.thaumcraft.enchanted_fabric.desc}"
 	],
 	dependencies: [
 		"4510505c"
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "6762ceb4",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

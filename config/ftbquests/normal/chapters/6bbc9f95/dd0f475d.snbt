@@ -3,9 +3,7 @@
 	y: 2.25d,
 	shape: "hexagon",
 	text: [
-		"§6Mithrillium Smelter§r have 100% efficiency, meaning no §5flux§r will be produced. In addition it's faster then thaumium version.",
-		"",
-		"§7It does not accept Auxiliart Addons.§r"
+		"{q.thaumcraft.mithrillium_smeltery.desc}"
 	],
 	dependencies: [
 		"5581ca2d",

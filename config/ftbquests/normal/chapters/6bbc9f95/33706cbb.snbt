@@ -2,9 +2,7 @@
 	x: 3.6d,
 	y: 9.3d,
 	text: [
-		"§6Alchemist's Stone§r turns ore into §eNative Clusters§r.",
-		"",
-		"§7Have unbreakable recipe§r"
+		"{q.thaumcraft.alchemist_s_stone.desc}"
 	],
 	dependencies: [
 		"5cf3699e"

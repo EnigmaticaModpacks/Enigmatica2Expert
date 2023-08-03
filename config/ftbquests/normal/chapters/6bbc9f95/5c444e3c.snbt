@@ -2,11 +2,7 @@
 	x: 5.0d,
 	y: -3.0d,
 	text: [
-		"§6Voidseer Caster's Gauntlet§r is an upgraded version of §6Caster's Gauntlet§r. It consumes 30% less §dvis§r from the aura and cast 10% faster than §6Caster's Gauntlet§r.",
-		"",
-		"Additionaly, it takes §dvis§r not only from current chunk, but attached chunks too.",
-		"",
-		"§7Can be dyed and have applied modifier.§r"
+		"{q.thaumcraft.voidseer_caster_s_.desc}"
 	],
 	dependencies: [
 		"376e781b"

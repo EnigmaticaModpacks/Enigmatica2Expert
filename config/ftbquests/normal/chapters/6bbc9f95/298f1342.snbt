@@ -3,9 +3,7 @@
 	y: 3.75d,
 	shape: "hexagon",
 	text: [
-		"Stores 2000 essentia.",
-		"",
-		"Filling jar with §5Vitium§r makes it explode and releasing all stored essentia into aura as §5flux§r."
+		"{q.thaumcraft.adaminite_fortifie.desc}"
 	],
 	dependencies: [
 		"3769a405",

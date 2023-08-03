@@ -3,9 +3,7 @@
 	y: 3.75d,
 	shape: "hexagon",
 	text: [
-		"Stores 4000 essentia.",
-		"",
-		"Voids excess."
+		"{q.thaumcraft.mithminite_fortifi.desc}"
 	],
 	dependencies: [
 		"64c42db9",

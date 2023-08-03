@@ -2,7 +2,7 @@
 	x: -2.0d,
 	y: 3.0d,
 	text: [
-		"Uses §dvis§r and §evis crystals§r for crafting."
+		"{q.thaumcraft.arcane_workbench.desc}"
 	],
 	dependencies: [
 		"4f409b3c"

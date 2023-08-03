@@ -1,14 +1,10 @@
 {
-	title: "Eldritch Altar",
+	title: "{q.thaumcraft.eldritch_altar.name}",
 	icon: "thaumcraft:pillar_eldritch",
 	x: 7.5d,
 	y: -0.75d,
 	text: [
-		"It's an upgraded version on §6Infusion Altar§r. ",
-		"",
-		"It boosts §binfusion speed§r by 2 points and stabilization, but §ndecrease§r §dessentia efficiency§r by 20%.",
-		"",
-		"Placing §6Eldritch Pedestal§r near Infusion Altar will slightly increase §dessentia cost§r and stabilization (if used symmetrically)."
+		"{q.thaumcraft.eldritch_altar.desc}"
 	],
 	dependencies: [
 		"38a388cd"
@@ -32,6 +28,6 @@
 	rewards: [{
 		uid: "75068f92",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

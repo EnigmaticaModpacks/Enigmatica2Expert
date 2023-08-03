@@ -4,18 +4,7 @@
 	x: 7.0d,
 	y: 0.0d,
 	text: [
-		"§6Infusion Crafting§r is a special type of crafting that can result in §cfailure!§r",
-		"",
-		"If we consider §6Infusion Matrix§r as a center of altar, then functional range is 8 blocks horizontally and from 3 blocks bellow to 7 above §6Matrix§r.",
-		"",
-		"Crafting require 3 things: §7(see recipes)§r",
-		"§2- §rcentral item",
-		"§2- §rside items on pedestal",
-		"§2- §ressentia to draw from",
-		"",
-		"It's required to put all side pedestals and stored essentia within the §6Matrix§r range. ",
-		"",
-		"Also try to make everything in it's range as §e§nsymmetrical§r as possible, otherwise it will cause §cinstability§r and can lose some items."
+		"{q.thaumcraft.infusion_crafting.desc}"
 	],
 	dependencies: [
 		"69992959"

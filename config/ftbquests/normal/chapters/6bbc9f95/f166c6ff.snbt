@@ -1,5 +1,5 @@
 {
-	title: "Void Thaumaturge Set",
+	title: "{q.thaumcraft.void_thaumaturge_set.name}",
 	icon: {
 		id: "thaumcraft:void_robe_chest",
 		tag: {
@@ -9,13 +9,7 @@
 	x: 12.0d,
 	y: 7.5d,
 	text: [
-		"This set, when worn gives:",
-		"",
-		"§2- §dVis discount§r depending on your §5warp§r",
-		"§2- §rSelf repair",
-		"§2- §6Googles of Revealing§r in the Hood",
-		"§2- §rYou will gain §dtemporary warp§r that could turn into §5permanent warp§r",
-		"§2- §rMovement bonuses in the Boots"
+		"{q.thaumcraft.void_thaumaturge_set.desc}"
 	],
 	dependencies: [
 		"ff61ed34",

@@ -2,9 +2,7 @@
 	x: 1.0d,
 	y: -0.5d,
 	text: [
-		"§6Cleansing Charm§r will passively remove non permanent §5warp§r. ",
-		"",
-		"While the process is taking a long time, it will also produce §5flux§r."
+		"{q.thaumcraft.cleansing_charm.desc}"
 	],
 	dependencies: [
 		"ccd89357"

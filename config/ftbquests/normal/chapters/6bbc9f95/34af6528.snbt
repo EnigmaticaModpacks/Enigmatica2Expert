@@ -2,9 +2,7 @@
 	x: 1.5d,
 	y: 0.25d,
 	text: [
-		"§5Warp§r can be removed using §6Sanity Soap§r for a few seconds. While it doesn't remove §4permament warp§r, it does remove the little amount of §5normal warp§r and all §dtemporary warp§r.",
-		"",
-		"§7Using it while in arcane spa have better effect.§r  "
+		"{q.thaumcraft.sanitizing_soap.desc}"
 	],
 	dependencies: [
 		"ccd89357"

@@ -1,20 +1,10 @@
 {
-	title: "Research",
+	title: "{q.thaumcraft.research.name}",
 	icon: "thaumcraft:research_table",
 	x: 1.0d,
 	y: 5.0d,
 	text: [
-		"Theories points are mainly acquired via §6Reserach Table§r. It's a minigame about picking §6cards§r. The goal of the game is to gain as much % progress as possible in the categories.",
-		"",
-		"§eThe bulbs§r at the top indicate points of §einspiration§r. If amount of them reaches 0, the research will be completed and % progress will be added to your knowledge.",
-		"",
-		"Most of §6cards§r will consume §einspiration§r, additionally sometimes consume §aexperience§r or require §9items§r. If the item has §6\"!\"§r symbol, the item will be consumed, otherwise it won't.",
-		"",
-		"Be careful, some cards have a chance to give §5warp§r!",
-		"",
-		"§7Research require a ton of paper!§r",
-		"",
-		"§6Can fetch items from adjacent containers§r"
+		"{q.thaumcraft.research.desc}"
 	],
 	dependencies: [
 		"82e27a56"

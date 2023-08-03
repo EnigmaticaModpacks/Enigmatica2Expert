@@ -2,9 +2,7 @@
 	x: 5.0d,
 	y: -1.0d,
 	text: [
-		"§6Caster's Gauntlet§r is used to cast §bFocus§r and starting §dInfusion§r.",
-		"",
-		"Can also break §dArcane Door§r."
+		"{q.thaumcraft.caster_s_gauntlet.desc}"
 	],
 	dependencies: [
 		"b1e42bf7"

@@ -1,18 +1,11 @@
 {
-	title: "Infusion Stabilization",
+	title: "{q.thaumcraft.infusion_stabiliza.name}",
 	icon: "thaumcraft:stabilizer",
 	x: 7.9d,
 	y: 0.0d,
 	shape: "diamond",
 	text: [
-		"Various blocks can be used as §5Infusion Stabilizator§r. Remember to place then §nsymetrically§r. Most of them are:",
-		"§2- §rCandles",
-		"§2- §rSkulls/Heads",
-		"§2- §rCrystal Blocks",
-		"§2- §rBotania flowers",
-		"§2- §rBotania pylons",
-		"",
-		"§6Stabilizer§r is a little special, while it does not provide stabilization directly it will block any item loses on pedestal at the cost of generated §5flux§r."
+		"{q.thaumcraft.infusion_stabiliza.desc}"
 	],
 	dependencies: [
 		"38a388cd"
@@ -212,6 +205,6 @@
 	rewards: [{
 		uid: "da1117f0",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

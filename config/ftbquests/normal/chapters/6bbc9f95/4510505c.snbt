@@ -3,11 +3,7 @@
 	x: 4.0d,
 	y: 6.0d,
 	text: [
-		"§6Goggles of Revealing§r are one of the must have accesories. Those reveal some usefull informations like:",
-		"- Stored essentia in jar / alembic",
-		"- Infusion stability",
-		"",
-		"There are hemlets that support these goggles! §7(see craftings)§r"
+		"{q.thaumcraft.artifice.desc}"
 	],
 	dependencies: [
 		"82e27a56"

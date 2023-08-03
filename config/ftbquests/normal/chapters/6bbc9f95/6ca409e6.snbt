@@ -4,14 +4,7 @@
 	y: 6.8d,
 	shape: "pentagon",
 	text: [
-		"§6Arcane Seal§r can provide various effect depending on configuration. When working these generate §5flux§r.",
-		"",
-		"§bAqua§r, none, none - Farmland Hydration",
-		"§aTerra§r, §aTerra§r, §aTerra§r - Conver Dirt into Farmland",
-		"§cVictus§r, §2Herba§r, none - Produces a bone meal effect on nearby crops",
-		"§1Instumentum§r, §2Herba§r, Ordo - Harvest and replants crops",
-		"§8Vacuos§r, §8Vacuos§r, §8Vacuos§r - Pick up item in nearly inventory",
-		"§dPraecantatio§r, §eAer§r, [Any] - Connect two seals with the same #3 aspect into portals"
+		"{q.thaumcraft.arcane_seal.desc}"
 	],
 	dependencies: [
 		"4510505c"
@@ -47,6 +40,6 @@
 	rewards: [{
 		uid: "2185d536",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

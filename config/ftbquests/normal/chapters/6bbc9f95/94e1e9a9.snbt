@@ -2,7 +2,7 @@
 	x: 1.4d,
 	y: 5.75d,
 	text: [
-		"§6Headband of Curiosity§r converts part of picked §aexperience§r into knowledge. Just put it into babule slot."
+		"{q.thaumcraft.headband_of_curios.desc}"
 	],
 	dependencies: [
 		"adef62af"
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "2844960a",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

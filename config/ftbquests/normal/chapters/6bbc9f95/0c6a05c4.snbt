@@ -4,9 +4,7 @@
 	x: 4.0d,
 	y: 7.5d,
 	text: [
-		"§6Infernal Frunace§r is a construction that smelts items for free. However it will consume some §dvis§r and produce §5taint§r. Sometimes it will produce extra nuggets or §6Rare Earth§r.",
-		"",
-		"Attach §eArcane Bellows§r to speed up smelting process (up to -2 seconds per item) and increasing bonus drops."
+		"{q.thaumcraft.infernal_furnace.desc}"
 	],
 	dependencies: [
 		"4510505c"

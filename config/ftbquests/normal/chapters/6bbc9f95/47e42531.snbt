@@ -1,15 +1,9 @@
 {
-	title: "Adaminite",
+	title: "{q.thaumcraft.adaminite.name}",
 	x: 15.0d,
 	y: 3.0d,
 	text: [
-		"§4Adaminite§r is hellish material focused around §5warp§r and §4blood aspect§r. It's considered demonic and warped.",
-		"",
-		"It's also tinker's material that has synergy with players §5warp§r:",
-		"§2- §rprovides various debufs and damage scaling based on your §5warp§r",
-		"§2- §rcreates §5tainted rock§r under a player on stone block variants",
-		"",
-		"§7(it's recommended on weapon tool)§r"
+		"{q.thaumcraft.adaminite.desc}"
 	],
 	dependencies: [
 		"5581ca2d"

@@ -3,9 +3,7 @@
 	y: 0.1d,
 	shape: "circle",
 	text: [
-		"§6Stability Field Generator§r will stablize §0rift§r. It require power to function.",
-		"",
-		"Stabilized §0Rift§r won't collapse and will not trigger any bad events."
+		"{q.thaumcraft.stability_field_ge.desc}"
 	],
 	dependencies: [
 		"6f49eb69"

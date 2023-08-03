@@ -2,9 +2,7 @@
 	x: 0.6d,
 	y: 5.75d,
 	text: [
-		"§6Inspiration Engine§r is one of the block that helps in research. It provides card that increases §einspiration§r and add bonus % progress depending on picking a card.",
-		"",
-		"It requires §eCognitio§r aspect to function."
+		"{q.thaumcraft.inspiration_engine.desc}"
 	],
 	dependencies: [
 		"adef62af"

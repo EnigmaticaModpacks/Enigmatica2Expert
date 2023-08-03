@@ -3,7 +3,7 @@
 	y: 5.2d,
 	shape: "pentagon",
 	text: [
-		"§6Vis Battery§r stores 10 §dvis§r and release it when chunk's §dvis§r is low."
+		"{q.thaumcraft.vis_battery.desc}"
 	],
 	dependencies: [
 		"4510505c"
@@ -19,6 +19,6 @@
 	rewards: [{
 		uid: "29488feb",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

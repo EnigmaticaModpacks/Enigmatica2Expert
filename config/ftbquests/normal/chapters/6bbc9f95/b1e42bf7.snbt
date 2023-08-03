@@ -2,15 +2,7 @@
 	x: 4.0d,
 	y: 0.0d,
 	text: [
-		"§6Focal Manipulator§r allows to design custom spells and imbue focuses with them.",
-		"",
-		"Crafting spells require things:",
-		"§2- §6Focus§r (using already imbued results overriding it)",
-		"§2- §6Spell formula§r",
-		"§2- §aExperience Levels§r",
-		"§2- §rMatching §eVis Crystals§r (based on the spells you make)",
-		"",
-		"§7Creating spell will consume large amount of §dvis §7from chunk.§r "
+		"{q.thaumcraft.focal_manipulator.desc}"
 	],
 	dependencies: [
 		"82e27a56"

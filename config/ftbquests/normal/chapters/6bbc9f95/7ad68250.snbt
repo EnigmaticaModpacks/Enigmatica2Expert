@@ -3,7 +3,7 @@
 	y: 3.75d,
 	shape: "hexagon",
 	text: [
-		"Stores 500 essentia."
+		"{q.thaumcraft.void_reinforced_jar.desc}"
 	],
 	dependencies: [
 		"83ab3c5f",
@@ -19,6 +19,6 @@
 	rewards: [{
 		uid: "23b12578",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

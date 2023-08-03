@@ -1,14 +1,10 @@
 {
-	title: "Thaumatorium",
+	title: "{q.thaumcraft.thaumatorium.name}",
 	icon: "thaumcraft:thaumatorium",
 	x: 8.0d,
 	y: 5.5d,
 	text: [
-		"§6Alchemical Contruct§r allow to easy automation of crucible recipes. It still needs essentia to craft.",
-		"",
-		"On the side that you used §dSalis Mudus§r becomes an output side (you can place there container).",
-		"",
-		"You can attach §6Mnemonic Matrix§r to increase remembered recipes in it's memory."
+		"{q.thaumcraft.thaumatorium.desc}"
 	],
 	dependencies: [
 		"f0a632f4"

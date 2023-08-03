@@ -2,7 +2,7 @@
 	x: 11.0d,
 	y: -1.0d,
 	text: [
-		"If you happen to make one §0rift§r §6Causality Collapser§r allow to close it. Just simply throw it into one §7(don't drop)§r."
+		"{q.thaumcraft.causality_collapser.desc}"
 	],
 	dependencies: [
 		"ff4e9e03"

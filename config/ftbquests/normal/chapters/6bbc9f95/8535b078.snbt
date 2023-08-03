@@ -1,10 +1,10 @@
 {
-	title: "Thaumium Armor Set",
+	title: "{q.thaumcraft.thaumium_armor_set.name}",
 	icon: "thaumcraft:thaumium_chest",
 	x: 9.0d,
 	y: 5.0d,
 	text: [
-		"A little stronger then iron armor."
+		"{q.thaumcraft.thaumium_armor_set.desc}"
 	],
 	dependencies: [
 		"644b9777"

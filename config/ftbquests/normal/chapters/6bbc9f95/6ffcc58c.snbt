@@ -3,7 +3,7 @@
 	y: 2.25d,
 	shape: "hexagon",
 	text: [
-		"§6Void Smelter§r have 95% efficiency, however it's slower then thaumium version."
+		"{q.thaumcraft.void_metal_essenti.desc}"
 	],
 	dependencies: [
 		"83ab3c5f",
@@ -19,6 +19,6 @@
 	rewards: [{
 		uid: "59d32224",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

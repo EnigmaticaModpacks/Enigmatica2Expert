@@ -1,10 +1,10 @@
 {
-	title: "Thaumaturge's Set",
+	title: "{q.thaumcraft.thaumaturge_s_set.name}",
 	icon: "thaumcraft:cloth_chest",
 	x: 8.0d,
 	y: 7.5d,
 	text: [
-		"It provides small §dvis discount§r."
+		"{q.thaumcraft.thaumaturge_s_set.desc}"
 	],
 	dependencies: [
 		"03e96313"

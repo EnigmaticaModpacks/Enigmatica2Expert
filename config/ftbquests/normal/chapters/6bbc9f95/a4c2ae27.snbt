@@ -3,7 +3,7 @@
 	x: 8.0d,
 	y: 6.4d,
 	text: [
-		"§6Emptying/Filling Essentia Transfuser§r allow to transport essentia without tubes."
+		"{q.thaumcraft.essentia_transfusers.desc}"
 	],
 	dependencies: [
 		"f0a632f4"

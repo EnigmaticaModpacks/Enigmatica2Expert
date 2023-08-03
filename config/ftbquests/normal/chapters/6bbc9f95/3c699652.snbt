@@ -3,9 +3,7 @@
 	y: 2.25d,
 	shape: "hexagon",
 	text: [
-		"§6Adaminite Smelter§r have 120% efficiency, meaning it will produce additional 20% of essentia without pollution. Additionaly it's faster then mithrillium version.",
-		"",
-		"§7It does not accept Auxiliart Addons.§r"
+		"{q.thaumcraft.adaminite_smeltery.desc}"
 	],
 	dependencies: [
 		"47e42531",

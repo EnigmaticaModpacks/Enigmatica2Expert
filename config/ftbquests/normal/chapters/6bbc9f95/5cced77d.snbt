@@ -3,7 +3,7 @@
 	y: 5.6d,
 	shape: "pentagon",
 	text: [
-		"§6Mirrors§r significantly buffed. Now they will transfer up to 4 items / sec §nwithout pollution§r."
+		"{q.thaumcraft.magic_mirror.desc}"
 	],
 	dependencies: [
 		"4510505c"

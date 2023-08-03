@@ -4,13 +4,7 @@
 	y: -1.1d,
 	shape: "circle",
 	text: [
-		"While polluting base with §5flux§r isn't a good idea, having under control §0rift§r in base is wanted.",
-		"",
-		"Firstly, §6Reinforced Jar§r and §6Metaspatial Accumulator§r are needed. Place §6Metaspatial Accumulator§r right under the §0rift§r and right on the §6Reinforced Jar§r. Just don't accidentally place it in §0rfit§r because the machine will be destroyed.",
-		"",
-		"With prepared setup, simply use gauntlet on §6Metaspatial Accumulator§r. There is a chance that the process will result in failure. That depends on §0rift§r size and stability.",
-		"",
-		"§6Rift in a Jar§r can work as item thrasher or allow to take contained §0rift§r out using §6Metaspatial Extruder§r the same way as containing."
+		"{q.thaumcraft.rift_in_a_jar.desc}"
 	],
 	dependencies: [
 		"6f49eb69"

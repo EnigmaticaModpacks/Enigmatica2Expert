@@ -4,11 +4,7 @@
 	y: 2.25d,
 	shape: "hexagon",
 	text: [
-		"§6Essentia Smelter§r burn items to turn their aspects into essentia for insuison and more. It need §6Arcane Alembic§r on top of smelter to function.",
-		"",
-		"It have only 80% efficiency, meaning 20% of aspect will convert into §5flux§r. Too much §5flux§r will make local aure unstable and create §0rifts§r.",
-		"",
-		"§7(see quest about rifts)§r"
+		"{q.thaumcraft.essentia_smeltery.desc}"
 	],
 	dependencies: [
 		"69992959"

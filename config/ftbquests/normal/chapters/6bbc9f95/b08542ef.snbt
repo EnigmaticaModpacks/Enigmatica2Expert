@@ -1,5 +1,5 @@
 {
-	title: "Adept Set",
+	title: "{q.thaumcraft.adept_set.name}",
 	icon: {
 		id: "thaumicaugmentation:thaumium_robes_chestplate",
 		tag: {
@@ -9,10 +9,7 @@
 	x: 10.0d,
 	y: 7.0d,
 	text: [
-		"This set, when worn gives:",
-		"",
-		"§2- §dVis discount§r",
-		"§2- §6Googles of Revealing§r in the Hood"
+		"{q.thaumcraft.adept_set.desc}"
 	],
 	dependencies: [
 		"461ba345"

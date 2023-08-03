@@ -15,11 +15,7 @@
 	x: 17.0d,
 	y: 0.5d,
 	text: [
-		"§6Impulse Cannoc§r is a powerful gun that shots §8impetus§r.",
-		"",
-		"To charged it you need §6Void Recharge Pedestal§r with §8impetus§r source.",
-		"",
-		"Additionaly, it have 2 modules to install to change shot mode."
+		"{q.thaumcraft.impulse_cannon.desc}"
 	],
 	dependencies: [
 		"6f49eb69"

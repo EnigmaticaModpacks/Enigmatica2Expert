@@ -3,7 +3,7 @@
 	y: 9.0d,
 	shape: "hexagon",
 	text: [
-		"§6Belt of the Traveller§r provides the same effect as §6Boots of the Traveller§r."
+		"{q.thaumcraft.belt_of_the_travel.desc}"
 	],
 	dependencies: [
 		"7deecf3a"
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "53dc4de0",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

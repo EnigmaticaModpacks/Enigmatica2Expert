@@ -2,9 +2,7 @@
 	x: 7.5d,
 	y: 10.0d,
 	text: [
-		"§6Timewinder§r is a powerful device that allows skip time. It can make §eday§r or §8night§r with selected §7moon phase§r.",
-		"",
-		"After use §6Timewinder§r will go on cooldown and generate §5flux§r."
+		"{q.thaumcraft.timewinder.desc}"
 	],
 	dependencies: [
 		"7deecf3a"

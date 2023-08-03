@@ -3,7 +3,7 @@
 	y: 3.75d,
 	shape: "hexagon",
 	text: [
-		"Stores 1000 essentia."
+		"{q.thaumcraft.mithrillium_fortif.desc}"
 	],
 	dependencies: [
 		"5581ca2d",

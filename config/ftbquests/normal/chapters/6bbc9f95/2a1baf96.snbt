@@ -3,9 +3,7 @@
 	y: 2.25d,
 	shape: "hexagon",
 	text: [
-		"§6Mithminite Smelter§r have 150% efficiency. It's faster then adaminite version.",
-		"",
-		"§7It does not accept Auxiliart Addons.§r"
+		"{q.thaumcraft.mithminite_smeltery.desc}"
 	],
 	dependencies: [
 		"64c42db9",

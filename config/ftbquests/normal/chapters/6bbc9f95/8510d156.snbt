@@ -2,7 +2,7 @@
 	x: 6.3d,
 	y: 5.5d,
 	text: [
-		"Works the same as §6Warded Jar§r, but if it' full, voids excess."
+		"{q.thaumcraft.void_jar.desc}"
 	],
 	dependencies: [
 		"f0a632f4"
@@ -19,6 +19,6 @@
 	rewards: [{
 		uid: "154d539c",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

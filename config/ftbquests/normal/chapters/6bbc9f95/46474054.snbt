@@ -1,5 +1,5 @@
 {
-	title: "Scribing Tools",
+	title: "{q.thaumcraft.scribing_tools.name}",
 	icon: {
 		id: "thaumadditions:vis_scribing_tools",
 		tag: {
@@ -10,11 +10,7 @@
 	y: 4.3d,
 	shape: "pentagon",
 	text: [
-		"There are two other versions of scribing tools.",
-		"",
-		"§dVis Scribing Tools§r require only to be charged with §dvis§r.",
-		"",
-		"§bBotanurgist's Inkwell§r require Botania §bmana§r."
+		"{q.thaumcraft.scribing_tools.desc}"
 	],
 	dependencies: [
 		"adef62af"

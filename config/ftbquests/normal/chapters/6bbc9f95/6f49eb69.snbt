@@ -1,5 +1,5 @@
 {
-	title: "Impetus",
+	title: "{q.thaumcraft.impetus.name}",
 	icon: {
 		id: "thaumicaugmentation:impetus_linker",
 		ForgeCaps: {
@@ -9,9 +9,7 @@
 	x: 15.0d,
 	y: -0.5d,
 	text: [
-		"Getting §8Impetus§r using gauntlet is highly inefficient. §6Impetus Diffuser§r allows to gather §8impetus§r more efficient.",
-		"",
-		"To transfer §8impetus§r you need some §6Impetus Relays§r and §6Impetus Resonator§r to link devices."
+		"{q.thaumcraft.impetus.desc}"
 	],
 	dependencies: [
 		"ed607e63"

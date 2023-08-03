@@ -2,7 +2,7 @@
 	x: 8.5d,
 	y: 10.0d,
 	text: [
-		"§6Night-Vision Goggles§r simply gives §9night vision§r. These does §nnot§r have properties of §6Goggles of Revealing§r."
+		"{q.thaumcraft.night_vision_goggles.desc}"
 	],
 	dependencies: [
 		"7deecf3a"
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "599ae952",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

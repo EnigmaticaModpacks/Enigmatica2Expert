@@ -3,7 +3,7 @@
 	y: 5.6d,
 	shape: "pentagon",
 	text: [
-		"§6Thaumic Dioptra§r visualizes the amount of §dvis§r (or §5taint§r if right clicked) in nearby chunks."
+		"{q.thaumcraft.thaumic_dioptra.desc}"
 	],
 	dependencies: [
 		"4510505c"
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "2d82a5ae",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

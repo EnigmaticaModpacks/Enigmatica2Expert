@@ -1,11 +1,9 @@
 {
-	title: "Void Frotress Armor Set",
+	title: "{q.thaumcraft.void_frotress_armo.name}",
 	x: 12.0d,
 	y: 6.0d,
 	text: [
-		"§6Void Fortress Armor§r is an upgraded version of §6Thaumium Fortress Armor§. ",
-		"",
-		"It has §6Warpshell§r enchant - the more §5warp§r a player have, the better protection armor provides."
+		"{q.thaumcraft.void_frotress_armo.desc}"
 	],
 	dependencies: [
 		"537d4079",

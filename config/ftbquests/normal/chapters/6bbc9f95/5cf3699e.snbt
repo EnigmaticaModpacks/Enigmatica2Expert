@@ -1,12 +1,10 @@
 {
-	title: "Catalyzation Chamber",
+	title: "{q.thaumcraft.catalyzation_chamber.name}",
 	icon: "thaumicwonders:catalyzation_chamber",
 	x: 4.0d,
 	y: 8.5d,
 	text: [
-		"§6Catalyzation Chamber§r is a structure simillar to §4Infernal Furnace§r. It effect is based on used §6Catalyzator§r.",
-		"",
-		"§7(See attached quests)§r"
+		"{q.thaumcraft.catalyzation_chamber.desc}"
 	],
 	dependencies: [
 		"0c6a05c4"

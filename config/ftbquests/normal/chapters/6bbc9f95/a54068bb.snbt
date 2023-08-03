@@ -2,9 +2,7 @@
 	x: 4.0d,
 	y: 3.0d,
 	text: [
-		"Used for alchemy.",
-		"",
-		"Just §ndon't§r throw whole stack of items to it. §6Crucible§r can hold only 500 of aspects. Any excess will rapidly transfer into §5flux§r."
+		"{q.thaumcraft.crucible.desc}"
 	],
 	dependencies: [
 		"82e27a56"

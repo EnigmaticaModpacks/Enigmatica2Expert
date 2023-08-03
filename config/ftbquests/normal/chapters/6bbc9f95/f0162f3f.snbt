@@ -3,7 +3,7 @@
 	y: 0.1d,
 	shape: "circle",
 	text: [
-		"§6Flux Inducer§r will simply feed §0rift§r. It require §5vitium§r essence."
+		"{q.thaumcraft.flux_inducer.desc}"
 	],
 	dependencies: [
 		"6f49eb69"

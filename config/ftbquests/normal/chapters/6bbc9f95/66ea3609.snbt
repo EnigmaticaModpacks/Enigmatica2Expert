@@ -2,7 +2,7 @@
 	x: 0.975d,
 	y: -1.3499999999999999d,
 	text: [
-		"§6Purification Talisman§r is bauble that removes all types of §5warp§r. Fast and without penalties."
+		"{q.thaumcraft.purification_talis.desc}"
 	],
 	dependencies: [
 		"c9edb2c9",

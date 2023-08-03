@@ -2,7 +2,7 @@
 	x: 7.5d,
 	y: 0.7d,
 	text: [
-		"§6Infusion Cost Stone§r can be placed under §6Infusion Phillar§r. It will decrease §dessentia cost§r by 10% at the cost of 1.5 points of §bspeed§r."
+		"{q.thaumcraft.infusion_cost_stone.desc}"
 	],
 	dependencies: [
 		"38a388cd"

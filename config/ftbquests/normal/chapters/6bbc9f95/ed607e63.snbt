@@ -2,9 +2,7 @@
 	x: 13.0d,
 	y: 0.5d,
 	text: [
-		"If you get §6Tattered Scrolls§r that means you finished §0The Epmtyness§r.",
-		"",
-		"If you are skyblocker, §6Tattered Scrolls§r have alternative recipe, craft it to unlock research."
+		"{q.thaumcraft.tattered_scrolls.desc}"
 	],
 	dependencies: [
 		"e3b967fa"

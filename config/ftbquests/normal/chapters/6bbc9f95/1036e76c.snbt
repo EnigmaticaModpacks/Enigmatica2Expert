@@ -4,11 +4,7 @@
 	x: 7.0d,
 	y: -3.0d,
 	text: [
-		"§6Golem Press§r allow to make §9golems§r. This requires some resources and §7Machina essentia§r to craft one. ",
-		"",
-		"However §nbefore§r you start making golems it is advised to check §4seal§r requirements and forbitted traits you want to use.",
-		"",
-		"§9Golems§r while \"working\" will level up, increasing effectiveness."
+		"{q.thaumcraft.golem_press.desc}"
 	],
 	dependencies: [
 		"38a388cd"

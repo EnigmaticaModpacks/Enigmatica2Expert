@@ -3,7 +3,7 @@
 	y: 6.5d,
 	shape: "circle",
 	text: [
-		"Can be attached to §6Jars§r to prevent storage other then on label essentia types."
+		"{q.thaumcraft.blank_label.desc}"
 	],
 	dependencies: [
 		"f0a632f4"
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "59090339",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

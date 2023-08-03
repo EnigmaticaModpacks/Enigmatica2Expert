@@ -3,11 +3,7 @@
 	x: 7.75d,
 	y: 1.5d,
 	text: [
-		"§6Auxiliary Venting Port§r will filter part of losed essentia in smelting process.",
-		"",
-		"§6Auxiliart Slurry Pump§r will speed up smelting process.",
-		"",
-		"Each smelter has 3 sides that can connect to any §6Auxiliary Addon§r. Attaching more than one icreases effect."
+		"{q.thaumcraft.auxiliary_addons.desc}"
 	],
 	dependencies: [
 		"f85506a2"

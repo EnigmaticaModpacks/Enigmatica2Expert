@@ -3,9 +3,7 @@
 	y: 2.5d,
 	shape: "diamond",
 	text: [
-		"Silverwood trees spawn naturally.",
-		"",
-		"Silverwood leaves accelerate §dvis§r regeneration."
+		"{q.thaumcraft.silverwood_log.desc}"
 	],
 	dependencies: [
 		"82e27a56"

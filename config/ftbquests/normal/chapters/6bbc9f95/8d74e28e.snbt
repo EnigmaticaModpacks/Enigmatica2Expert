@@ -1,23 +1,11 @@
 {
-	title: "Curiosities",
+	title: "{q.thaumcraft.curiosities.name}",
 	icon: "thaumcraft:curio",
 	x: 1.6d,
 	y: 4.6d,
 	shape: "diamond",
 	text: [
-		"While the research table is the main source of theory points, curiosities are the easiest way to acquire knowledge. Generally, they can be aquired from:",
-		"§2- §6Quest rewards§r",
-		"§2- §6Pech trading§r",
-		"§2- §rEating §5Hunk of Something§r",
-		"",
-		"Or individually:",
-		"",
-		"§2- §6Arcane Curiosity§r §d(Auromancy)§r - clearing warp using soap",
-		"§2- §6Preserver Curiosity§r §3(Alchemy)§r - mining amber",
-		"§2- §6Twisted Curiosity§r §e(Artifice)§r - killing taint tentacles",
-		"§2- §6Illuminating Curiosity§r §8(Infusion)§r -  ¯\\_(ツ)_/¯",
-		"§2- §6Ancient Curiosity§r §9(Golemancy)§r - killing friendly golems",
-		"§2- §6Eldritch Curiosoty§r §5(Eldritch)§r - killing eldritch guardians"
+		"{q.thaumcraft.curiosities.desc}"
 	],
 	dependencies: [
 		"adef62af"

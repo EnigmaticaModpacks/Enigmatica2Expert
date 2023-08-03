@@ -2,11 +2,7 @@
 	x: 10.0d,
 	y: 8.0d,
 	text: [
-		"If charged with §dvis§r this boots will give you",
-		"",
-		"§2- §rIncreased movement speed",
-		"§2- §rJump high boost",
-		"§2- §rStep assist"
+		"{q.thaumcraft.boots_of_the_trave.desc}"
 	],
 	dependencies: [
 		"461ba345"
@@ -24,6 +20,6 @@
 	rewards: [{
 		uid: "4caca6b7",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

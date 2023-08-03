@@ -3,7 +3,7 @@
 	y: 9.0d,
 	shape: "hexagon",
 	text: [
-		"§6Striding Belt§r is upgraded version of §6Belt of the Traveller§r."
+		"{q.thaumcraft.striding_belt.desc}"
 	],
 	dependencies: [
 		"6ee12352"

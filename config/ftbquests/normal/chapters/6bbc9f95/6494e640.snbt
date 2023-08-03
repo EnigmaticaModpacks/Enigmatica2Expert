@@ -3,9 +3,7 @@
 	x: 10.0d,
 	y: -2.0d,
 	text: [
-		"§6Flux Distiller§r need to be installed on top of §6Flux Capacitor§r.",
-		"",
-		"It clears chunk from §5flux§r and turn it into §5Vitium essence.§r"
+		"{q.thaumcraft.flux_capacitor.desc}"
 	],
 	dependencies: [
 		"3e097a2f"

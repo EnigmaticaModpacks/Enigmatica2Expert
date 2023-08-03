@@ -2,7 +2,7 @@
 	x: 16.0d,
 	y: 5.0d,
 	text: [
-		"§6Alkahest Vat§r dissolve anything with aspects into §dvis§r."
+		"{q.thaumcraft.alkahest_vat.desc}"
 	],
 	dependencies: [
 		"833c26b3"

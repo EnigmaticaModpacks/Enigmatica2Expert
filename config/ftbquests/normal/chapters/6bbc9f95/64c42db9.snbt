@@ -1,11 +1,9 @@
 {
-	title: "Mithminite",
+	title: "{q.thaumcraft.mithminite.name}",
 	x: 17.0d,
 	y: 3.0d,
 	text: [
-		"§dMithminite§r is a special material focused around §eresearch§r. It's considered mythical and fabulous.",
-		"",
-		"It's also tinker's material, however to unlock it's subtraits function you need to finish the representative research. §7(See thaumonomicon entries)§r"
+		"{q.thaumcraft.mithminite.desc}"
 	],
 	dependencies: [
 		"47e42531"

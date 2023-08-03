@@ -2,9 +2,7 @@
 	x: 0.0d,
 	y: 5.0d,
 	text: [
-		"Some of the research requires §9celestial notes§r. To get them right click on the §bsky§r while holding §6thaumometer§r and having a paper in inventory...",
-		"",
-		"§6Celestial Observer§r will do it automatically instead of a player!"
+		"{q.thaumcraft.celestial_observer.desc}"
 	],
 	dependencies: [
 		"adef62af"
@@ -19,6 +17,6 @@
 	rewards: [{
 		uid: "685d02c3",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

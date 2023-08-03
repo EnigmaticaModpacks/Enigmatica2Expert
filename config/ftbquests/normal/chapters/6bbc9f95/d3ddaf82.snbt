@@ -3,7 +3,7 @@
 	y: 2.25d,
 	shape: "hexagon",
 	text: [
-		"§6Thaumium Smelter§r have 90% efficiency, meaning only 10% will be converted into §5flux§r. Additionaly it's faster then normal smelter."
+		"{q.thaumcraft.thaumium_essentia_.desc}"
 	],
 	dependencies: [
 		"644b9777",
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "d2a22c79",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

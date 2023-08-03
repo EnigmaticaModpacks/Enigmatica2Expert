@@ -1,5 +1,5 @@
 {
-	title: "Rifts",
+	title: "{q.thaumcraft.rifts.name}",
 	icon: {
 		id: "thaumicaugmentation:rift_seed",
 		tag: {
@@ -10,13 +10,7 @@
 	x: 9.5d,
 	y: 0.0d,
 	text: [
-		"If amount of §5flux§r in chunk exceeds 75% of maximal §dvis§r it will spawn a §0rift§r as high as possible. §0Rift§r is invincible and will swallow any blocks and items on it's way.  ",
-		"",
-		"It's a natural reaction of the world to fight pollution. §0Rift§r overtime cosumes some §5flux§r growing bigger. While it happens the §0rift§r will grow, making it bigger. That makes it §cunstable§r and will trigger some bad events.",
-		"",
-		"If there will be no §5flux§r in aura with §0rift§r present, it will collapse itself over time.",
-		"",
-		"§7Don't forget to scan it!§r"
+		"{q.thaumcraft.rifts.desc}"
 	],
 	dependencies: [
 		"f85506a2"
@@ -30,6 +24,6 @@
 	rewards: [{
 		uid: "fd58ee06",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

@@ -2,7 +2,7 @@
 	x: 17.0d,
 	y: -0.5d,
 	text: [
-		"§6Impetus Generator§r when charged with §8impetus§r will generate §c100.000 RF/t§r."
+		"{q.thaumcraft.impetus_generator.desc}"
 	],
 	dependencies: [
 		"6f49eb69"

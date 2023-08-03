@@ -1,12 +1,10 @@
 {
-	title: "Essentia Manipulation",
+	title: "{q.thaumcraft.essentia_manipulat.name}",
 	icon: "thaumcraft:tube",
 	x: 7.0d,
 	y: 6.0d,
 	text: [
-		"§6Essentia Tube§r allows to move essentia without using §7Glass Phial§r. These tubes itself doesn't move essentia. In some more complex systems there are required devices that push/pull essentia (like §6Essentia Buffer§r).",
-		"",
-		"§6Warded Jar§r stores essentia."
+		"{q.thaumcraft.essentia_manipulat.desc}"
 	],
 	dependencies: [
 		"69992959"

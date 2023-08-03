@@ -1,9 +1,9 @@
 {
-	title: "Void metal",
+	title: "{q.thaumcraft.void_metal.name}",
 	x: 11.0d,
 	y: 3.0d,
 	text: [
-		"Self repairing metal. Any tools or armors from this material gives player §5warp§r."
+		"{q.thaumcraft.void_metal.desc}"
 	],
 	dependencies: [
 		"644b9777",

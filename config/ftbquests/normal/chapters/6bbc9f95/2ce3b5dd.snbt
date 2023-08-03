@@ -1,5 +1,5 @@
 {
-	title: "Mithminite Armor Set",
+	title: "{q.thaumcraft.mithminite_armor_set.name}",
 	icon: {
 		id: "thaumadditions:mithminite_robe",
 		tag: {}
@@ -7,16 +7,7 @@
 	x: 17.0d,
 	y: 6.0d,
 	text: [
-		"§dMithminite Armor Set§r besides protection provides:",
-		"",
-		"§2- §rHuge §dvis discount§r",
-		"§2- §6Goggles of Revealing§r in Hood",
-		"§2- §rNight vision, water breathing and fire resistance",
-		"§2- §rBuild in §6Sanity Checker§r, §6Fragrant Pendant§r and §6Seal Globe§r",
-		"§2- §eMending§r effect on any held items",
-		"§2- §rBonus §c10 hearts§r",
-		"§2- §rCreative flight",
-		"§2- §rImproved movement speed"
+		"{q.thaumcraft.mithminite_armor_set.desc}"
 	],
 	dependencies: [
 		"64c42db9",

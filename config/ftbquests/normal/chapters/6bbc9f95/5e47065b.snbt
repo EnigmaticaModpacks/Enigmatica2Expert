@@ -1,14 +1,10 @@
 {
-	title: "Ancient Altar",
+	title: "{q.thaumcraft.ancient_altar.name}",
 	icon: "thaumcraft:pillar_ancient",
 	x: 6.5d,
 	y: -0.75d,
 	text: [
-		"It's an upgraded version on §6Infusion Altar§r. ",
-		"",
-		"It boosts §dessentia efficiency§r by 20%.",
-		"",
-		"Placing §6Ancient Pedestal§r near Infusion Altar will slightly decrease §dessentia cost§r."
+		"{q.thaumcraft.ancient_altar.desc}"
 	],
 	dependencies: [
 		"38a388cd"
@@ -32,6 +28,6 @@
 	rewards: [{
 		uid: "9f86a447",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

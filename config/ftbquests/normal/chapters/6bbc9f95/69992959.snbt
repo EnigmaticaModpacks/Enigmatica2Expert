@@ -3,7 +3,7 @@
 	x: 7.0d,
 	y: 3.0d,
 	text: [
-		"Crafting material."
+		"{q.thaumcraft.alchemical_brass.desc}"
 	],
 	dependencies: [
 		"a54068bb"

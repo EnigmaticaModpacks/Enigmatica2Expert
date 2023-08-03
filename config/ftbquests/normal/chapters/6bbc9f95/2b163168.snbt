@@ -3,7 +3,7 @@
 	y: -1.1d,
 	shape: "pentagon",
 	text: [
-		"§6Extradimesional Monitor§r will display structure of the §0rift§r in the chunk."
+		"{q.thaumcraft.extradimensional_m.desc}"
 	],
 	dependencies: [
 		"6f49eb69"

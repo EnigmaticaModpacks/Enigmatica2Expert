@@ -2,7 +2,7 @@
 	x: 6.5d,
 	y: 0.7d,
 	text: [
-		"§6Infusion Speed Stone§r can be placed under §6Infusion Phillar§r. It will boost §bspeed§r by 1.5 points at the cost of 10% §dessentia efficiency§r."
+		"{q.thaumcraft.infusion_speed_stone.desc}"
 	],
 	dependencies: [
 		"38a388cd"

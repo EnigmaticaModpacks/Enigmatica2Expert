@@ -2,7 +2,7 @@
 	x: 11.75d,
 	y: 0.0d,
 	text: [
-		"§6Void Siphon§r will slowly consume nearby §0rift§ and creating §5void seeds§r."
+		"{q.thaumcraft.void_siphon.desc}"
 	],
 	dependencies: [
 		"baa9431f"
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "53f12d0b",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

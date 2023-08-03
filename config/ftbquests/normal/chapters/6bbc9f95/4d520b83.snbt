@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: -2.0d,
 	text: [
-		"§6Puriflower§r is upgraded version of §6Totem of Dawn§r. It's conisdered as flower that overtime filter any §5flux§r in local aura."
+		"{q.thaumcraft.puriflower.desc}"
 	],
 	dependencies: [
 		"8893af6b"
@@ -18,6 +18,6 @@
 	rewards: [{
 		uid: "4bacdb67",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

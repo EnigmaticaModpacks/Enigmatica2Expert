@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 9.0d,
 	text: [
-		"§6Amulet of Vis§r will automatically charge all items in inventory."
+		"{q.thaumcraft.amulet_of_vis.desc}"
 	],
 	dependencies: [
 		"7deecf3a"

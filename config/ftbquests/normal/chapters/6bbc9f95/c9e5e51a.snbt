@@ -2,7 +2,7 @@
 	x: 6.1d,
 	y: 9.0d,
 	text: [
-		"§6Rechage Charm§r works the same as §6Amulet of Vis§r but §6charm§r slot."
+		"{q.thaumcraft.recharge_charm.desc}"
 	],
 	dependencies: [
 		"587dc05a"
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "5e64af4c",
 		type: "random",
-		table: 141
+		table: 144
 	}]
 }

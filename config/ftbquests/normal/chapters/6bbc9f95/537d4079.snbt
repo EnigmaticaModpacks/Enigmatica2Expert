@@ -1,10 +1,10 @@
 {
-	title: "Void Armor Set",
+	title: "{q.thaumcraft.void_armor_set.name}",
 	icon: "thaumcraft:void_chest",
 	x: 11.0d,
 	y: 5.0d,
 	text: [
-		"Self repairing armor. Gives §5warp§r to a player that wears it."
+		"{q.thaumcraft.void_armor_set.desc}"
 	],
 	dependencies: [
 		"83ab3c5f"

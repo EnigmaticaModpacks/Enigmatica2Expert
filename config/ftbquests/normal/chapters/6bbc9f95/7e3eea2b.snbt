@@ -2,9 +2,7 @@
 	x: 2.0d,
 	y: -0.5d,
 	text: [
-		"One of the ways of removing §4permament warp§r is §6Pure Tear§r.",
-		"",
-		"§cBe careful!§r It will remove ALL types of §5warp§r and will trigger long chain §7(depending on your warp)§r of §5warp events§r. This is §chighly lethal§r."
+		"{q.thaumcraft.pure_tear.desc}"
 	],
 	dependencies: [
 		"34af6528"

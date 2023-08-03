@@ -2,7 +2,7 @@
 	x: 11.0d,
 	y: 0.5d,
 	text: [
-		"§5Void seeds§r drop from closed §0rift§r. It is crafting material that allow to delve into §5Eldritch Knowledge§r."
+		"{q.thaumcraft.void_seed.desc}"
 	],
 	dependencies: [
 		"593b08e5"
