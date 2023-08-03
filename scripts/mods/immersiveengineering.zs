@@ -209,8 +209,8 @@ craft.remake(<immersiveengineering:stone_decoration> * 3, ["pretty",
 # Garden Cloche
 	recipes.remove(<immersiveengineering:metal_device1:13>);
 	scripts.mods.forestry.ThermionicFabricator.addCast(<immersiveengineering:metal_device1:13>, 
-	[[null, <actuallyadditions:block_greenhouse_glass>, null],
-	[null, <ic2:upgrade:4>, null], 
+	[[null, <extrautils2:suncrystal>, null],
+	[null, <advancedrocketry:basalt>, null], 
 	[<ore:plankTreatedWood>, <immersiveengineering:metal_decoration0:5>, <ore:plankTreatedWood>]], 
 	<liquid:glass> * 4000);
 	
