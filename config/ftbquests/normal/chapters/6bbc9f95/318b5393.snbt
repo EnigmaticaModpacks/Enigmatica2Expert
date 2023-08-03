@@ -1,12 +1,14 @@
 {
-	x: 7.0d,
-	y: 6.166666666666667d,
+	x: 3.6d,
+	y: 5.2d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.everfull_urn.desc}"
+		"§6Everfull Urn§r uses 1 §dvis§r to generate a bucket of water. Can fill §7Crucibles§r and §7Pethal Apothecaries§r if is nearby."
 	],
 	dependencies: [
 		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "eda85445",
 		type: "item",

@@ -1,6 +1,7 @@
 {
-	x: 15.1d,
-	y: 3.8d,
+	icon: "thaumadditions:aspect_combiner",
+	x: 13.0d,
+	y: 5.0d,
 	text: [
 		"{q.thaumcraft.essentia_combiner.desc}"
 	],
@@ -20,5 +21,15 @@
 		items: [{
 			item: "thaumcraft:tube_buffer"
 		}]
+	}],
+	rewards: [{
+		uid: "b98dad9c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

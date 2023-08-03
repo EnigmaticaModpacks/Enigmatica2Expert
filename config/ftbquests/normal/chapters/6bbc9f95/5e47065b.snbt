@@ -1,0 +1,37 @@
+{
+	title: "Ancient Altar",
+	icon: "thaumcraft:pillar_ancient",
+	x: 6.5d,
+	y: -0.75d,
+	text: [
+		"It's an upgraded version on §6Infusion Altar§r. ",
+		"",
+		"It boosts §dessentia efficiency§r by 20%.",
+		"",
+		"Placing §6Ancient Pedestal§r near Infusion Altar will slightly decrease §dessentia cost§r."
+	],
+	dependencies: [
+		"38a388cd"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "92f1a5d7",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_ancient"
+		}],
+		count: 8L
+	},
+	{
+		uid: "a4223f90",
+		type: "item",
+		items: [{
+			item: "thaumcraft:pedestal_ancient"
+		}]
+	}],
+	rewards: [{
+		uid: "9f86a447",
+		type: "random",
+		table: 141
+	}]
+}

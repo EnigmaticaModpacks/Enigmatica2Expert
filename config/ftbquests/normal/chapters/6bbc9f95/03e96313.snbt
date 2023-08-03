@@ -1,8 +1,8 @@
 {
-	x: 3.3333333333333335d,
-	y: 6.166666666666667d,
+	x: 7.0d,
+	y: 7.5d,
 	text: [
-		"{q.thaumcraft.enchanted_fabric.desc}"
+		"Crafting material."
 	],
 	dependencies: [
 		"4510505c"
@@ -16,13 +16,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "593fdad0",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "6762ceb4",
+		type: "random",
+		table: 141
 	}]
 }

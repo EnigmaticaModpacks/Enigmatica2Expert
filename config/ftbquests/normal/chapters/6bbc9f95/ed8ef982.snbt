@@ -1,0 +1,24 @@
+{
+	x: 7.75d,
+	y: 3.75d,
+	shape: "hexagon",
+	text: [
+		"Stores 275 essentia."
+	],
+	dependencies: [
+		"69992959",
+		"f0a632f4"
+	],
+	tasks: [{
+		uid: "e510ee8c",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_brass"
+		}]
+	}],
+	rewards: [{
+		uid: "7adaf3ee",
+		type: "random",
+		table: 141
+	}]
+}

@@ -1,12 +1,14 @@
 {
-	x: 4.666666666666667d,
-	y: 13.333333333333334d,
+	x: 6.3d,
+	y: 6.5d,
+	shape: "circle",
 	text: [
-		"{q.thaumcraft.blank_label.desc}"
+		"Can be attached to §6Jars§r to prevent storage other then on label essentia types."
 	],
 	dependencies: [
 		"f0a632f4"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "70fcdba5",
 		type: "item",
@@ -16,8 +18,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "1133835f",
-		type: "choice",
-		table: 62
+		uid: "59090339",
+		type: "random",
+		table: 141
 	}]
 }

@@ -1,0 +1,23 @@
+{
+	x: 11.75d,
+	y: 0.0d,
+	text: [
+		"§6Void Siphon§r will slowly consume nearby §0rift§ and creating §5void seeds§r."
+	],
+	dependencies: [
+		"baa9431f"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "d36bf3fb",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_siphon"
+		}]
+	}],
+	rewards: [{
+		uid: "53f12d0b",
+		type: "random",
+		table: 141
+	}]
+}

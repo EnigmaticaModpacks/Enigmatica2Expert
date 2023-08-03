@@ -1,12 +1,13 @@
 {
-	x: 11.166666666666666d,
-	y: 7.5d,
+	x: 3.4d,
+	y: -2.25d,
 	text: [
 		"{q.thaumcraft.blank_greater_focus.desc}"
 	],
 	dependencies: [
 		"5ace7aee"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "2dec333e",
 		type: "item",
@@ -16,8 +17,40 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "05c68d12",
-		type: "choice",
-		table: 51
+		uid: "0562d4d3",
+		type: "item",
+		item: {
+			id: "thaumcraft:focus_3",
+			tag: {
+				display: {
+					Name: "Fountain of Artemis"
+				},
+				package: {
+					index: 0,
+					power: 1.0f,
+					complexity: 41,
+					nodes: [{
+						type: "MEDIUM",
+						key: "ROOT"
+					},
+					{
+						type: "MEDIUM",
+						key: "thaumcraft.BOLT"
+					},
+					{
+						type: "MEDIUM",
+						key: "thaumcraft.CLOUD",
+						setting.duration: 30,
+						setting.radius: 3
+					},
+					{
+						type: "EFFECT",
+						key: "thaumcraft.HEAL",
+						setting.power: 5
+					}]
+				},
+				color: -2228219
+			}
+		}
 	}]
 }

@@ -1,0 +1,27 @@
+{
+	x: 15.75d,
+	y: 3.75d,
+	shape: "hexagon",
+	text: [
+		"Stores 2000 essentia.",
+		"",
+		"Filling jar with §5Vitium§r makes it explode and releasing all stored essentia into aura as §5flux§r."
+	],
+	dependencies: [
+		"3769a405",
+		"47e42531"
+	],
+	tasks: [{
+		uid: "6b641fe5",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_adaminite"
+		}]
+	}],
+	rewards: [{
+		uid: "24b50fb3",
+		type: "item",
+		item: "thaumcraft:bottle_taint",
+		count: 10
+	}]
+}

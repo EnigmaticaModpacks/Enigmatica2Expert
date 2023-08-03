@@ -1,0 +1,43 @@
+{
+	title: "Flux Condenser",
+	icon: "thaumcraft:condenser",
+	x: 10.0d,
+	y: -1.0d,
+	text: [
+		"§6Flux Condenser§r will filter local aura from §5flux§r at the cost of any essentia. It need to:",
+		"§2- §rhave attached at least one §6Flux Condenser Lattice§r at the top of §6Flux Condenser§r",
+		"§2- §rhave delivered any essentia by the side port (essentia will be consumed)",
+		"",
+		"Then it will clear the aura and as a side effect produce some §5Vitium essence§r from bottom port.",
+		"",
+		"Some §6Flux Condenser Lattice§r will turn into §6Clogged Flux Condenser Lattice§r and need's to be replaced with \"clear\" version."
+	],
+	dependencies: [
+		"ff4e9e03"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "26aa9860",
+		type: "item",
+		items: [{
+			item: "thaumcraft:condenser"
+		}]
+	},
+	{
+		uid: "6fb17226",
+		type: "item",
+		items: [{
+			item: "thaumcraft:condenser_lattice"
+		}]
+	}],
+	rewards: [{
+		uid: "9c464221",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

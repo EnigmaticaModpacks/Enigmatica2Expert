@@ -1,0 +1,25 @@
+{
+	x: 1.4d,
+	y: 5.75d,
+	text: [
+		"§6Headband of Curiosity§r converts part of picked §aexperience§r into knowledge. Just put it into babule slot."
+	],
+	dependencies: [
+		"adef62af"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "0be06d17",
+		type: "item",
+		items: [{
+			item: "thaumcraft:curiosity_band"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2844960a",
+		type: "random",
+		table: 141
+	}]
+}

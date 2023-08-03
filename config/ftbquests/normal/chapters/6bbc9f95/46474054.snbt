@@ -1,0 +1,54 @@
+{
+	title: "Scribing Tools",
+	icon: {
+		id: "thaumadditions:vis_scribing_tools",
+		tag: {
+			tc.charge: 50
+		}
+	},
+	x: 1.0d,
+	y: 4.3d,
+	shape: "pentagon",
+	text: [
+		"There are two other versions of scribing tools.",
+		"",
+		"§dVis Scribing Tools§r require only to be charged with §dvis§r.",
+		"",
+		"§bBotanurgist's Inkwell§r require Botania §bmana§r."
+	],
+	dependencies: [
+		"adef62af"
+	],
+	size: 0.75d,
+	or_tasks: true,
+	tasks: [{
+		uid: "8b5fb3c7",
+		type: "item",
+		items: [{
+			id: "thaumadditions:vis_scribing_tools",
+			Damage: 150s,
+			tag: {
+				tc.charge: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "29b0628c",
+		type: "item",
+		items: [{
+			id: "botania:manainkwell",
+			Damage: 150s,
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bccf3f4c",
+		type: "item",
+		item: "minecraft:paper",
+		count: 32
+	}]
+}

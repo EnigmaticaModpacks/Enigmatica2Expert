@@ -1,12 +1,12 @@
 {
 	title: "{q.thaumcraft.essentia_transfusers.name}",
-	x: 2.0d,
-	y: 14.666666666666666d,
+	x: 8.0d,
+	y: 6.4d,
 	text: [
-		"{q.thaumcraft.essentia_transfusers.desc}"
+		"§6Emptying/Filling Essentia Transfuser§r allow to transport essentia without tubes."
 	],
 	dependencies: [
-		"64586ee7"
+		"f0a632f4"
 	],
 	tasks: [{
 		uid: "9926175f",
@@ -25,8 +25,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "aafdb86e",
-		type: "choice",
-		table: 66
+		uid: "e002cee0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

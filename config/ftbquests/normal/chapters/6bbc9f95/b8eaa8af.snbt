@@ -1,12 +1,13 @@
 {
-	x: 6.833333333333333d,
-	y: 3.8333333333333335d,
+	x: 4.6d,
+	y: 3.6d,
 	text: [
 		"{q.thaumcraft.alumentum.desc}"
 	],
 	dependencies: [
-		"05d8ef32"
+		"a54068bb"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "df017b34",
 		type: "item",
@@ -16,13 +17,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "de6cf04e",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "9993e7d4",
+		type: "random",
+		table: 141
 	}]
 }

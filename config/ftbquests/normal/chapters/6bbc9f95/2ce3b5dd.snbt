@@ -1,0 +1,75 @@
+{
+	title: "Mithminite Armor Set",
+	icon: {
+		id: "thaumadditions:mithminite_robe",
+		tag: {}
+	},
+	x: 17.0d,
+	y: 6.0d,
+	text: [
+		"§dMithminite Armor Set§r besides protection provides:",
+		"",
+		"§2- §rHuge §dvis discount§r",
+		"§2- §6Goggles of Revealing§r in Hood",
+		"§2- §rNight vision, water breathing and fire resistance",
+		"§2- §rBuild in §6Sanity Checker§r, §6Fragrant Pendant§r and §6Seal Globe§r",
+		"§2- §eMending§r effect on any held items",
+		"§2- §rBonus §c10 hearts§r",
+		"§2- §rCreative flight",
+		"§2- §rImproved movement speed"
+	],
+	dependencies: [
+		"64c42db9",
+		"dff7ed3c"
+	],
+	tasks: [{
+		uid: "43635366",
+		type: "item",
+		items: [{
+			id: "thaumadditions:mithminite_hood",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "dc7dbf1d",
+		type: "item",
+		items: [{
+			id: "thaumadditions:mithminite_robe",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "bbd8734e",
+		type: "item",
+		items: [{
+			id: "thaumadditions:mithminite_belt",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9454652a",
+		type: "item",
+		items: [{
+			id: "thaumadditions:mithminite_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "389f0eb0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
+	}]
+}

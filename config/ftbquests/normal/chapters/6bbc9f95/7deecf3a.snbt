@@ -1,0 +1,22 @@
+{
+	x: 8.0d,
+	y: 9.0d,
+	text: [
+		"Some of the items require to be charged with §dvis§r to function. Just place item on §6Recharge Pedestal§r to charge it."
+	],
+	dependencies: [
+		"461ba345"
+	],
+	tasks: [{
+		uid: "434df98f",
+		type: "item",
+		items: [{
+			item: "thaumcraft:recharge_pedestal"
+		}]
+	}],
+	rewards: [{
+		uid: "549fe378",
+		type: "item",
+		item: "thaumcraft:grapple_gun"
+	}]
+}

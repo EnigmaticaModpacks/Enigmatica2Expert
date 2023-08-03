@@ -1,0 +1,24 @@
+{
+	x: 11.75d,
+	y: 2.25d,
+	shape: "hexagon",
+	text: [
+		"§6Void Smelter§r have 95% efficiency, however it's slower then thaumium version."
+	],
+	dependencies: [
+		"83ab3c5f",
+		"d3ddaf82"
+	],
+	tasks: [{
+		uid: "331237ef",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_void"
+		}]
+	}],
+	rewards: [{
+		uid: "59d32224",
+		type: "random",
+		table: 141
+	}]
+}

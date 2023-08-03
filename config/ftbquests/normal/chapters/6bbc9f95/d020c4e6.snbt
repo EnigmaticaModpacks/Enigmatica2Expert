@@ -1,0 +1,31 @@
+{
+	x: 7.5d,
+	y: 10.0d,
+	text: [
+		"§6Timewinder§r is a powerful device that allows skip time. It can make §eday§r or §8night§r with selected §7moon phase§r.",
+		"",
+		"After use §6Timewinder§r will go on cooldown and generate §5flux§r."
+	],
+	dependencies: [
+		"7deecf3a"
+	],
+	tasks: [{
+		uid: "35c7190d",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:timewinder"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6ac5d200",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

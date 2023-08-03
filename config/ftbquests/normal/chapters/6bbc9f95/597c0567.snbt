@@ -1,12 +1,14 @@
 {
-	x: 4.6000000000000005d,
-	y: 10.7d,
+	x: 4.8d,
+	y: 6.4d,
+	shape: "pentagon",
 	text: [
 		"{q.thaumcraft.lamp_of_fertility.desc}"
 	],
 	dependencies: [
-		"38a388cd"
+		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "3f9fd9ba",
 		type: "item",
@@ -15,9 +17,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "70de2038",
-		type: "item",
-		item: "thaumcraft:curio 1 5",
-		count: 5
+		uid: "ea1f84a9",
+		type: "random",
+		table: 141
 	}]
 }

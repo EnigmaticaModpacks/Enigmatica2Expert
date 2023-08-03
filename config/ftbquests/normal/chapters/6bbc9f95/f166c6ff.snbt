@@ -1,17 +1,25 @@
 {
+	title: "Void Thaumaturge Set",
 	icon: {
 		id: "thaumcraft:void_robe_chest",
 		tag: {
 			hasIC2Jetpack: 1b
 		}
 	},
-	x: 16.458333333333336d,
-	y: 0.8333333333333333d,
+	x: 12.0d,
+	y: 7.5d,
 	text: [
-		"{q.thaumcraft.void_thaumaturge_h.desc}"
+		"This set, when worn gives:",
+		"",
+		"§2- §dVis discount§r depending on your §5warp§r",
+		"§2- §rSelf repair",
+		"§2- §6Googles of Revealing§r in the Hood",
+		"§2- §rYou will gain §dtemporary warp§r that could turn into §5permanent warp§r",
+		"§2- §rMovement bonuses in the Boots"
 	],
 	dependencies: [
-		"537d4079"
+		"ff61ed34",
+		"b08542ef"
 	],
 	tasks: [{
 		uid: "de5144af",
@@ -49,14 +57,19 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "b484780d",
-		type: "choice",
-		table: 104
-	},
-	{
 		uid: "e5060bfd",
 		type: "command",
 		auto: "invisible",
 		command: "gamestage silentadd @p armor_void_robe"
+	},
+	{
+		uid: "48fbf0c8",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

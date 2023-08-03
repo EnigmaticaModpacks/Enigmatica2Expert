@@ -1,0 +1,42 @@
+{
+	title: "Impetus Cell",
+	icon: "thaumicaugmentation:material 1 3",
+	x: 13.0d,
+	y: -1.1d,
+	text: [
+		"§6Impetus Cell§r allows to delve even deeper into §0rifts§r.",
+		"",
+		"If you are not skyblocker you can travel into §0The Emptyness§r. However, you need to do few things:",
+		"§2- §rYou need to use §6Impetus Cell§r to make an §6Impetus Conductor§r and install it in gauntlet.",
+		"§2- §rSimply stay next to §0rift§r while holding gauntlet, it will collect §8impetus - rift essence§r §7(rift will shrink and can even collapse)§r",
+		"§2- §rThat's the hardest part, you need to find dimensional fracture. To find it you need §6Fracture Locator§r. If you are nearby any fracture, the §d\"eye\"§r will start to appear. §7(Hint: Fractures are more common in nether).§r",
+		"§2- §rUse gauntlet with stored §8impetus§r to open the Fracture and enter to §8The Epmtyness§r."
+	],
+	dependencies: [
+		"948f2215"
+	],
+	tasks: [{
+		uid: "04ea70bd",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:material 1 3"
+		}]
+	},
+	{
+		uid: "d361b591",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:fracture_locator"
+		}]
+	}],
+	rewards: [{
+		uid: "5bc1aa85",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

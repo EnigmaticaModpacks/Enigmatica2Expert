@@ -1,11 +1,12 @@
 {
-	x: 8.5d,
-	y: 1.1666666666666665d,
+	x: 9.5d,
+	y: -2.7d,
+	shape: "gear",
 	text: [
 		"{q.thaumcraft.porous_stone.desc}"
 	],
 	dependencies: [
-		"a54068bb"
+		"ff4e9e03"
 	],
 	tasks: [{
 		uid: "633fafb2",
@@ -16,13 +17,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "f8d9b620",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "3af9cdc6",
+		type: "random",
+		table: 141
 	}]
 }

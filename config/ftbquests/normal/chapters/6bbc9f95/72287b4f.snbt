@@ -1,6 +1,7 @@
 {
-	x: -0.6d,
-	y: 8.3d,
+	icon: "thaumicwonders:primordial_grain",
+	x: 11.0d,
+	y: -3.0d,
 	text: [
 		"{q.thaumcraft.primordial_grain.desc}"
 	],
@@ -12,6 +13,27 @@
 		type: "item",
 		items: [{
 			item: "thaumicwonders:primordial_grain"
+		}]
+	},
+	{
+		uid: "5897a50a",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:primordial_accelerator"
+		}]
+	},
+	{
+		uid: "f6860861",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:primordial_accelerator_tunnel"
+		}]
+	},
+	{
+		uid: "b5abd926",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:primordial_accelerator_terminus"
 		}]
 	}],
 	rewards: [{

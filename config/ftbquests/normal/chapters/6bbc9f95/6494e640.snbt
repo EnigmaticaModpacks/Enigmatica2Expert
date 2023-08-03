@@ -1,13 +1,16 @@
 {
 	icon: "thaumicwonders:flux_distiller",
-	x: -1.7d,
-	y: 5.3d,
+	x: 10.0d,
+	y: -2.0d,
 	text: [
-		"{q.thaumcraft.flux_capacitor.desc}"
+		"§6Flux Distiller§r need to be installed on top of §6Flux Capacitor§r.",
+		"",
+		"It clears chunk from §5flux§r and turn it into §5Vitium essence.§r"
 	],
 	dependencies: [
-		"c8b6a5ec"
+		"3e097a2f"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "30381c7b",
 		type: "item",
@@ -21,5 +24,15 @@
 		items: [{
 			item: "thaumicwonders:flux_distiller"
 		}]
+	}],
+	rewards: [{
+		uid: "e1c350ba",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

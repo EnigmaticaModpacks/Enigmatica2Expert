@@ -1,0 +1,32 @@
+{
+	x: 14.4d,
+	y: 0.1d,
+	shape: "circle",
+	text: [
+		"§6Flux Inducer§r will simply feed §0rift§r. It require §5vitium§r essence."
+	],
+	dependencies: [
+		"6f49eb69"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "c8e48c73",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_feeder"
+		}]
+	}],
+	rewards: [{
+		uid: "b93cab1f",
+		type: "item",
+		item: {
+			id: "thaumadditions:jar_eldritch",
+			tag: {
+				Aspects: [{
+					key: "vitium",
+					amount: 500
+				}]
+			}
+		}
+	}]
+}

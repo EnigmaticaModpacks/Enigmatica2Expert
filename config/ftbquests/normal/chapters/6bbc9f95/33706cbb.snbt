@@ -1,12 +1,15 @@
 {
-	x: 5.6d,
+	x: 3.6d,
 	y: 9.3d,
 	text: [
-		"{q.thaumcraft.alchemist_s_stone.desc}"
+		"§6Alchemist's Stone§r turns ore into §eNative Clusters§r.",
+		"",
+		"§7Have unbreakable recipe§r"
 	],
 	dependencies: [
-		"0c6a05c4"
+		"5cf3699e"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "15ae7133",
 		type: "item",

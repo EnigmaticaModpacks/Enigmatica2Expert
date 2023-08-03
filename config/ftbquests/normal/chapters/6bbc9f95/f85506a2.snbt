@@ -1,14 +1,18 @@
 {
 	icon: "thaumcraft:smelter_basic",
-	x: 0.6666666666666666d,
-	y: 10.0d,
+	x: 7.75d,
+	y: 2.25d,
+	shape: "hexagon",
 	text: [
-		"{q.thaumcraft.essentia_smeltery.desc}"
+		"§6Essentia Smelter§r burn items to turn their aspects into essentia for insuison and more. It need §6Arcane Alembic§r on top of smelter to function.",
+		"",
+		"It have only 80% efficiency, meaning 20% of aspect will convert into §5flux§r. Too much §5flux§r will make local aure unstable and create §0rifts§r.",
+		"",
+		"§7(see quest about rifts)§r"
 	],
 	dependencies: [
-		"4f409b3c"
+		"69992959"
 	],
-	size: 1.3333333333333333d,
 	tasks: [{
 		uid: "71d672d3",
 		type: "item",
@@ -26,8 +30,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "42e38547",
-		type: "choice",
-		table: 47
+		uid: "db6369a4",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

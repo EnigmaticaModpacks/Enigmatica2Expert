@@ -1,12 +1,14 @@
 {
-	x: -0.6000000000000001d,
-	y: 5.3d,
+	x: 4.4d,
+	y: 5.2d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.vis_battery.desc}"
+		"§6Vis Battery§r stores 10 §dvis§r and release it when chunk's §dvis§r is low."
 	],
 	dependencies: [
-		"b33c744d"
+		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "97ffc7d6",
 		type: "item",
@@ -15,13 +17,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "808d77e9",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "29488feb",
+		type: "random",
+		table: 141
 	}]
 }

@@ -1,0 +1,31 @@
+{
+	x: 0.6d,
+	y: 6.4d,
+	text: [
+		"§5Madness Enigne§r works similarly to §6Inspiration Engine§r, but there are few differences:",
+		"§2- §rrequire §5Alienis§r aspect",
+		"§2- §ris highly focused on §5Eldritch§r knowledge",
+		"§2- §rgives §5warp§r"
+	],
+	dependencies: [
+		"fd732297"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "d1b1974a",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:madness_engine"
+		}]
+	}],
+	rewards: [{
+		uid: "b23e3045",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

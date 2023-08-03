@@ -1,0 +1,52 @@
+{
+	icon: "thaumicaugmentation:arcane_terraformer",
+	x: 17.0d,
+	y: -1.5d,
+	text: [
+		"§6Arcane Terraformer§r allows to change biome near the machine. To do this you'll need:",
+		"§2- §6Biome Focus§r with sample of desired biome",
+		"§2- §rSteady supply of essentia and §8impetus§r",
+		"",
+		"Just put §6Biome Focus§r with sample into the machine in the central slot,on the right configure a desired range of biome and on the left you'll see require aspects.",
+		"",
+		"Those aspects can be: §bAqua,§r §aTerra,§r §cIgnis,§r §eAer§r and §2Permutatio.§r While primal aspects go in side ports of the machine, §2Permutatio§r must be supplied from the bottom.",
+		"",
+		"Link the machine to the §8impetus§r source and use §6Caster's Gauntlet§r on it. It will begin changing biome near it at the cost of some §dvis§r.",
+		"",
+		"Changing biome can also affect changing §daura§r properties, meaning if you change biome near your base to §3Magical Forest§r, local §dvis§r in §daura§r will also change.",
+		"",
+		"If you want to reverse biome change use §6Biome Focus§r with §6Primeval§r biome."
+	],
+	dependencies: [
+		"6f49eb69"
+	],
+	tasks: [{
+		uid: "8f5b04e4",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:arcane_terraformer"
+		}]
+	},
+	{
+		uid: "ac00b380",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:biome_selector",
+			ForgeCaps: {
+				Parent: {
+					biome: "thaumicaugmentation:biome_empty"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "e6a4bbd3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

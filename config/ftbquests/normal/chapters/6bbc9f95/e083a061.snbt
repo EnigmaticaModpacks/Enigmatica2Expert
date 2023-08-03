@@ -1,0 +1,40 @@
+{
+	icon: "thaumadditions:fragnant_pendant",
+	x: 0.0d,
+	y: -0.5d,
+	text: [
+		"Protecting from §5warp events§r requires systematic bathing, however it's easy to forget about this and still get §5warp event§r.",
+		"",
+		"§6Fragrant Pendant§r will apply the salts for you! Just have some §6Odour Powder§r in inventory."
+	],
+	dependencies: [
+		"cdeef867"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "580e74db",
+		type: "item",
+		items: [{
+			item: "thaumadditions:fragnant_pendant"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9a2bb252",
+		type: "item",
+		items: [{
+			item: "thaumadditions:odour_powder"
+		}]
+	}],
+	rewards: [{
+		uid: "bd5ff3e5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

@@ -1,22 +1,22 @@
 {
-	x: 2.166666666666667d,
-	y: 5.5d,
+	x: 7.0d,
+	y: 9.0d,
 	text: [
-		"{q.thaumcraft.arcane_stone.desc}"
+		"§6Amulet of Vis§r will automatically charge all items in inventory."
 	],
 	dependencies: [
-		"4f409b3c"
+		"7deecf3a"
 	],
 	tasks: [{
-		uid: "321aea23",
+		uid: "8be00fa3",
 		type: "item",
 		items: [{
-			item: "thaumcraft:stone_arcane 8"
+			item: "thaumcraft:amulet_vis 1 1"
 		}],
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "c7f241ec",
+		uid: "d5fb77a6",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",

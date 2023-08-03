@@ -1,0 +1,49 @@
+{
+	title: "Warp",
+	icon: "thaumcraft:sanity_checker",
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Some researches are considered §5taboo§r, and as a result will give you §5warp§r.",
+		"",
+		"If you gather some §5warp§r you'll start receiving some random §5warp events§r. If you encounter a heartbeat or blurred vision, it is one of these warp events, and it will only get worse later.",
+		"",
+		"Use §6Sanity Checker§r to measure your §5warp§r level or §6Arcane Litmus Paper§r for more accurate measurements.",
+		"",
+		"There are 3 types of warp:",
+		"§2- §dTemporary§r - fades away after some time.",
+		"§2- §5Normal§r - stick to player, but can be easily removed.",
+		"§2- §4Permament§r - cannot be removed with normal items.",
+		"",
+		"§7Doctor probably won't help here :( §r"
+	],
+	dependencies: [
+		"82e27a56"
+	],
+	tasks: [{
+		uid: "769e088c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:sanity_checker"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eeddab6e",
+		type: "item",
+		items: [{
+			item: "warptheory:item_warppaper"
+		}]
+	}],
+	rewards: [{
+		uid: "e5a23849",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

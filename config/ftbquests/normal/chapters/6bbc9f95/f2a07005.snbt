@@ -1,0 +1,122 @@
+{
+	title: "Focus Modifiers",
+	icon: {
+		id: "thaumicaugmentation:augment_builder_power",
+		tag: {
+			id: "thaumicaugmentation:strength_elemental"
+		}
+	},
+	x: 6.0d,
+	y: -2.0d,
+	shape: "pentagon",
+	text: [
+		"Each §6Caster's Gauntlet§r can have up to 3 modifiers. To apply/remove them, simply place them in §6crafting grind§r.",
+		"",
+		"Most modifiers have two things: §aeffect§r and §bbase§r.",
+		"",
+		"There are 3 §aeffects§r:",
+		"§2- §cPower§r - makes spells deal more §cdamage (or heal)§r",
+		"§2- §bCost§r - gives §dvis discount§r bonus",
+		"§2- §dSpeed§r - dicrease §bcast cooldown§r",
+		"",
+		"And some §bbases§r that determinate condition you must fulfill:",
+		"§2- §3Dimension§r - be in correct dimension",
+		"§2- §aExperience§r - have high level §7(capped at 100 levlels)§r",
+		"§2- §cFrenzy§r - cast lots of spells §7(after a short time - 5 sec - bonus wears off)§r",
+		"§2- §eElemental§r - spell effect needs to match §eelement§r",
+		"",
+		"You link them in §6crafting grind§r.",
+		"",
+		"And two exceptions:",
+		"§2- §3Vis Battery§r - stores §dvis§r in gauntlet in case there won't be enough in the aura",
+		"§2- §8Impetus Conductor§r - stores §8impetus§r in gauntlet (only power effect)",
+		"",
+		"§7It's impossible have several of the same modifier bases unlike effects."
+	],
+	dependencies: [
+		"376e781b"
+	],
+	tasks: [{
+		uid: "dae25140",
+		type: "item",
+		title: "Modifier Effect",
+		items: [{
+			id: "thaumicaugmentation:augment_builder_effect",
+			tag: {
+				id: "thaumicaugmentation:effect_power"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_effect",
+			tag: {
+				id: "thaumicaugmentation:effect_cast_speed"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_effect",
+			tag: {
+				id: "thaumicaugmentation:effect_cost"
+			}
+		}]
+	},
+	{
+		uid: "1888442f",
+		type: "item",
+		title: "Modifier Base",
+		items: [{
+			id: "thaumicaugmentation:augment_builder_power",
+			tag: {
+				id: "thaumicaugmentation:strength_experience"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_power",
+			tag: {
+				id: "thaumicaugmentation:strength_overworld"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_power",
+			tag: {
+				id: "thaumicaugmentation:strength_nether"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_power",
+			tag: {
+				id: "thaumicaugmentation:strength_end"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_power",
+			tag: {
+				id: "thaumicaugmentation:strength_emptiness"
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_caster_rift_energy_storage",
+			ForgeCaps: {
+				Parent: {
+					augment: {},
+					energy: {
+						energy: 0L
+					}
+				}
+			}
+		},
+		{
+			id: "thaumicaugmentation:augment_builder_power",
+			tag: {
+				id: "thaumicaugmentation:strength_elemental",
+				aspect: "ignis"
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2f63f48d",
+		type: "random",
+		table: 141
+	}]
+}

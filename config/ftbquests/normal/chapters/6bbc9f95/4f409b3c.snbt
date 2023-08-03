@@ -1,7 +1,7 @@
 {
 	title: "{q.thaumcraft.thaumcraft.name}",
-	x: 0.6666666666666666d,
-	y: 0.8333333333333333d,
+	x: -4.0d,
+	y: 3.0d,
 	text: [
 		"{q.thaumcraft.thaumcraft.desc}"
 	],
@@ -19,11 +19,6 @@
 	rewards: [{
 		uid: "63b97aed",
 		type: "item",
-		item: {
-			id: "thaumcraft:grapple_gun",
-			tag: {
-				tc.charge: 100
-			}
-		}
+		item: "thaumadditions:thaumic_lectern"
 	}]
 }

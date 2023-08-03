@@ -1,13 +1,22 @@
 {
 	icon: "thaumadditions:seal",
-	x: 7.9d,
-	y: 10.7d,
+	x: 4.4d,
+	y: 6.8d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.arcane_seal.desc}"
+		"§6Arcane Seal§r can provide various effect depending on configuration. When working these generate §5flux§r.",
+		"",
+		"§bAqua§r, none, none - Farmland Hydration",
+		"§aTerra§r, §aTerra§r, §aTerra§r - Conver Dirt into Farmland",
+		"§cVictus§r, §2Herba§r, none - Produces a bone meal effect on nearby crops",
+		"§1Instumentum§r, §2Herba§r, Ordo - Harvest and replants crops",
+		"§8Vacuos§r, §8Vacuos§r, §8Vacuos§r - Pick up item in nearly inventory",
+		"§dPraecantatio§r, §eAer§r, [Any] - Connect two seals with the same #3 aspect into portals"
 	],
 	dependencies: [
-		"38a388cd"
+		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "055dbe7a",
 		type: "item",
@@ -36,13 +45,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "a795fecf",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "2185d536",
+		type: "random",
+		table: 141
 	}]
 }

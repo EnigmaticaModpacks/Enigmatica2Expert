@@ -1,12 +1,14 @@
 {
-	x: 6.6d,
-	y: 4.9d,
+	x: 3.2d,
+	y: 6.4d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.hungry_chest.desc}"
+		"§6Hungry Chest§r is cheaper then regular chest but still can be used in crafts."
 	],
 	dependencies: [
-		"2e8e4ce7"
+		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "026f6ddb",
 		type: "item",

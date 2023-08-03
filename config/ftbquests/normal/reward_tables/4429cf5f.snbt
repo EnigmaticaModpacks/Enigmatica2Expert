@@ -1,0 +1,28 @@
+{
+	title: "Random Curio",
+	loot_size: 1,
+	rewards: [{
+		item: "thaumcraft:curio",
+		count: 10
+	},
+	{
+		item: "thaumcraft:curio 1 1",
+		count: 10
+	},
+	{
+		item: "thaumcraft:curio 1 2",
+		count: 10
+	},
+	{
+		item: "thaumcraft:curio 1 3",
+		count: 10
+	},
+	{
+		item: "thaumcraft:curio 1 4",
+		count: 10
+	},
+	{
+		item: "thaumcraft:curio 1 5",
+		count: 10
+	}]
+}

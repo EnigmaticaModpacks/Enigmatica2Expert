@@ -1,13 +1,14 @@
 {
 	title: "{q.thaumcraft.alchemical_brass.name}",
-	x: 8.166666666666668d,
-	y: 2.5d,
+	x: 7.0d,
+	y: 3.0d,
 	text: [
-		"{q.thaumcraft.alchemical_brass.desc}"
+		"Crafting material."
 	],
 	dependencies: [
-		"05d8ef32"
+		"a54068bb"
 	],
+	size: 1.25d,
 	tasks: [{
 		uid: "fc4771e3",
 		type: "item",
@@ -17,8 +18,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "51984be9",
-		type: "choice",
-		table: 53
+		uid: "0c2c29b9",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

@@ -1,0 +1,35 @@
+{
+	title: "Totems",
+	x: 9.0d,
+	y: -1.0d,
+	text: [
+		"§6Totem of Dawn§r will slowly filter §5flux§r from local aura.",
+		"",
+		"§6Twillight Totem§r is an opposite. It will slowly release §5flux§r into local aura.",
+		"",
+		"§7Both of totems are quite unstable, so there could be side effects.§r"
+	],
+	dependencies: [
+		"ff4e9e03"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "ff439c15",
+		type: "item",
+		items: [{
+			item: "thaumadditions:dawn_totem"
+		}]
+	},
+	{
+		uid: "73623d15",
+		type: "item",
+		items: [{
+			item: "thaumadditions:twilight_totem"
+		}]
+	}],
+	rewards: [{
+		uid: "9556e0c5",
+		type: "random",
+		table: 141
+	}]
+}

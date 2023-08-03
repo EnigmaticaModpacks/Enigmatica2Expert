@@ -1,0 +1,30 @@
+{
+	x: 11.0d,
+	y: 9.0d,
+	shape: "hexagon",
+	text: [
+		"As you probably guessed §4Belt of the Meteor§r gives you even more speed!",
+		"",
+		"Additionally, using §7shift§r mid-air creates an explosion, that damage enemies.",
+		"",
+		"§cTHE EXPLOSION CAN DESTROY ITEMS ON GROUND!§r"
+	],
+	dependencies: [
+		"d6bb7108"
+	],
+	tasks: [{
+		uid: "500f899a",
+		type: "item",
+		items: [{
+			item: "thaumadditions:meteor_belt"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "004ebe6d",
+		type: "item",
+		item: "thaumcraft:turret 1 1",
+		count: 2
+	}]
+}

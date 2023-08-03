@@ -1,12 +1,14 @@
 {
-	x: 4.333333333333334d,
-	y: 7.5d,
+	x: 4.8d,
+	y: 5.6d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.thaumic_dioptra.desc}"
+		"§6Thaumic Dioptra§r visualizes the amount of §dvis§r (or §5taint§r if right clicked) in nearby chunks."
 	],
 	dependencies: [
 		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "c7202d23",
 		type: "item",
@@ -16,13 +18,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "35bf612d",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "2d82a5ae",
+		type: "random",
+		table: 141
 	}]
 }

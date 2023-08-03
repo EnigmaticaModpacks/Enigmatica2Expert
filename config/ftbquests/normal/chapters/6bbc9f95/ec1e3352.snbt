@@ -1,0 +1,24 @@
+{
+	x: 0.0d,
+	y: 5.0d,
+	text: [
+		"Some of the research requires §9celestial notes§r. To get them right click on the §bsky§r while holding §6thaumometer§r and having a paper in inventory...",
+		"",
+		"§6Celestial Observer§r will do it automatically instead of a player!"
+	],
+	dependencies: [
+		"adef62af"
+	],
+	tasks: [{
+		uid: "222f5181",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:celestial_observer_placer"
+		}]
+	}],
+	rewards: [{
+		uid: "685d02c3",
+		type: "random",
+		table: 141
+	}]
+}

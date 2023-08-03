@@ -1,12 +1,15 @@
 {
-	x: 3.6d,
+	x: 4.4d,
 	y: 9.3d,
 	text: [
-		"{q.thaumcraft.alienist_s_stone.desc}"
+		"§6Alienist's Stone§r turns §eNative Cluster§r into §bCrystalized Shard§r.",
+		"",
+		"§7Have unbreakable recipe§r"
 	],
 	dependencies: [
-		"1befcde7"
+		"5cf3699e"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "591a7833",
 		type: "item",

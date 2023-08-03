@@ -1,0 +1,29 @@
+{
+	x: 10.0d,
+	y: 8.0d,
+	text: [
+		"If charged with §dvis§r this boots will give you",
+		"",
+		"§2- §rIncreased movement speed",
+		"§2- §rJump high boost",
+		"§2- §rStep assist"
+	],
+	dependencies: [
+		"461ba345"
+	],
+	tasks: [{
+		uid: "f0d618bf",
+		type: "item",
+		items: [{
+			id: "thaumcraft:traveller_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4caca6b7",
+		type: "random",
+		table: 141
+	}]
+}

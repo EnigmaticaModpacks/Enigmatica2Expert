@@ -1,0 +1,25 @@
+{
+	x: 9.0d,
+	y: 9.0d,
+	shape: "hexagon",
+	text: [
+		"§6Belt of the Traveller§r provides the same effect as §6Boots of the Traveller§r."
+	],
+	dependencies: [
+		"7deecf3a"
+	],
+	tasks: [{
+		uid: "ee02a19d",
+		type: "item",
+		items: [{
+			item: "thaumadditions:traveller_belt"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "53dc4de0",
+		type: "random",
+		table: 141
+	}]
+}

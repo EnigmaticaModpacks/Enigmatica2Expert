@@ -1,14 +1,15 @@
 {
+	title: "Thaumium Fortress Armor Set",
 	icon: {
 		id: "thaumcraft:fortress_chest",
 		tag: {
 			hasIC2Jetpack: 1b
 		}
 	},
-	x: 13.833333333333334d,
-	y: 0.8333333333333333d,
+	x: 10.0d,
+	y: 6.0d,
 	text: [
-		"{q.thaumcraft.thaumium_fortress_.desc}"
+		"§6Thaumium Fortress Armor§r provides greater defence. §6Helmet§r can be upgraded with §dInfusion§r"
 	],
 	dependencies: [
 		"8535b078"
@@ -38,14 +39,19 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "5b2d5aee",
-		type: "choice",
-		table: 65
-	},
-	{
 		uid: "4bf78ddd",
 		type: "command",
 		auto: "invisible",
 		command: "gamestage silentadd @p armor_thaumium_fortress"
+	},
+	{
+		uid: "8a532cd7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

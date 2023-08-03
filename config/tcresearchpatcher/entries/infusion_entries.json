@@ -82,7 +82,7 @@
                 },
                 {
                     "text": "research_stage.thaumadditions:mob_summoning.2",
-                    "required_crafts" : ["thaumcraft:dna_sample"],
+                    "required_craft" : ["thaumadditions:dna_sample"],
                     "recipes":["thaumcraft:dna_sample"]
                 },
                 {

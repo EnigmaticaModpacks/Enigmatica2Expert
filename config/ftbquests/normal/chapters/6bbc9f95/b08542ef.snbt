@@ -1,0 +1,66 @@
+{
+	title: "Adept Set",
+	icon: {
+		id: "thaumicaugmentation:thaumium_robes_chestplate",
+		tag: {
+			color: 11360678
+		}
+	},
+	x: 10.0d,
+	y: 7.0d,
+	text: [
+		"This set, when worn gives:",
+		"",
+		"§2- §dVis discount§r",
+		"§2- §6Googles of Revealing§r in the Hood"
+	],
+	dependencies: [
+		"461ba345"
+	],
+	tasks: [{
+		uid: "fbf820cb",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:thaumium_robes_hood",
+			tag: {
+				color: 11360678
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "08e46f5b",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:thaumium_robes_chestplate",
+			tag: {
+				color: 11360678
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ef421dce",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:thaumium_robes_leggings",
+			tag: {
+				color: 11360678
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "35fb6f69",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

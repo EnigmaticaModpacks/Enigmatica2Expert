@@ -1,13 +1,15 @@
 {
-	x: 6.833333333333334d,
-	y: 0.8333333333333333d,
+	x: 4.0d,
+	y: 3.0d,
 	text: [
-		"{q.thaumcraft.crucible.desc}"
+		"Used for alchemy.",
+		"",
+		"Just §ndon't§r throw whole stack of items to it. §6Crucible§r can hold only 500 of aspects. Any excess will rapidly transfer into §5flux§r."
 	],
 	dependencies: [
-		"4f409b3c"
+		"82e27a56"
 	],
-	size: 1.3333333333333333d,
+	size: 1.25d,
 	tasks: [{
 		uid: "b45fa7c1",
 		type: "item",

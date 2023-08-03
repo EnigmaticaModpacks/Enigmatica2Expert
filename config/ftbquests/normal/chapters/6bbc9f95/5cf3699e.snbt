@@ -1,0 +1,60 @@
+{
+	title: "Catalyzation Chamber",
+	icon: "thaumicwonders:catalyzation_chamber",
+	x: 4.0d,
+	y: 8.5d,
+	text: [
+		"§6Catalyzation Chamber§r is a structure simillar to §4Infernal Furnace§r. It effect is based on used §6Catalyzator§r.",
+		"",
+		"§7(See attached quests)§r"
+	],
+	dependencies: [
+		"0c6a05c4"
+	],
+	tasks: [{
+		uid: "9cf10de6",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_arcane"
+		}],
+		count: 12L
+	},
+	{
+		uid: "2181128b",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 12L
+	},
+	{
+		uid: "4d8936f4",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_bars"
+		}]
+	},
+	{
+		uid: "56d281b6",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fluid_quicksilver",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f4f2e041",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

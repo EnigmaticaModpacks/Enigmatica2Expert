@@ -1,0 +1,26 @@
+{
+	x: 17.75d,
+	y: 3.75d,
+	shape: "hexagon",
+	text: [
+		"Stores 4000 essentia.",
+		"",
+		"Voids excess."
+	],
+	dependencies: [
+		"64c42db9",
+		"298f1342"
+	],
+	tasks: [{
+		uid: "81f66892",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_mithminite"
+		}]
+	}],
+	rewards: [{
+		uid: "6fea7b36",
+		type: "item",
+		item: "thaumadditions:cake"
+	}]
+}

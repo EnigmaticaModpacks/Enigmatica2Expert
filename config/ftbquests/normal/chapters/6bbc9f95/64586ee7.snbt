@@ -1,13 +1,18 @@
 {
 	title: "{q.thaumcraft.auxiliary_addons.name}",
-	x: 2.0d,
-	y: 13.333333333333334d,
+	x: 7.75d,
+	y: 1.5d,
 	text: [
-		"{q.thaumcraft.auxiliary_addons.desc}"
+		"§6Auxiliary Venting Port§r will filter part of losed essentia in smelting process.",
+		"",
+		"§6Auxiliart Slurry Pump§r will speed up smelting process.",
+		"",
+		"Each smelter has 3 sides that can connect to any §6Auxiliary Addon§r. Attaching more than one icreases effect."
 	],
 	dependencies: [
-		"075ca176"
+		"f85506a2"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "a0c41864",
 		type: "item",
@@ -25,8 +30,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "967d5a36",
-		type: "choice",
-		table: 43
+		uid: "7e568b51",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

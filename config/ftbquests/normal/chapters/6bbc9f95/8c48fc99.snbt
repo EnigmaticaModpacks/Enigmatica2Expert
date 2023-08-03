@@ -1,0 +1,31 @@
+{
+	title: "Hunk of Something",
+	x: -0.1d,
+	y: 1.0d,
+	shape: "gear",
+	text: [
+		"Eating is ok! §nBut not this!§r",
+		"",
+		"§6Hunk of Something§r affects directly mind giving all types of §5warp§r, but in return it also gives a diverse type of curiosities."
+	],
+	dependencies: [
+		"ccd89357"
+	],
+	tasks: [{
+		uid: "09105e20",
+		type: "item",
+		items: [{
+			item: "warptheory:item_something"
+		}]
+	}],
+	rewards: [{
+		uid: "917de932",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

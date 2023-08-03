@@ -1,0 +1,24 @@
+{
+	x: 11.75d,
+	y: 3.75d,
+	shape: "hexagon",
+	text: [
+		"Stores 500 essentia."
+	],
+	dependencies: [
+		"83ab3c5f",
+		"3cb82756"
+	],
+	tasks: [{
+		uid: "b868d381",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_eldritch"
+		}]
+	}],
+	rewards: [{
+		uid: "23b12578",
+		type: "random",
+		table: 141
+	}]
+}

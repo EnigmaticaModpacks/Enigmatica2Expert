@@ -1,12 +1,13 @@
 {
-	x: 3.3333333333333335d,
-	y: 14.666666666666666d,
+	x: 7.5d,
+	y: 0.7d,
 	text: [
-		"{q.thaumcraft.infusion_cost_stone.desc}"
+		"§6Infusion Cost Stone§r can be placed under §6Infusion Phillar§r. It will decrease §dessentia cost§r by 10% at the cost of 1.5 points of §bspeed§r."
 	],
 	dependencies: [
-		"9e1f867f"
+		"38a388cd"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "80031c50",
 		type: "item",
@@ -16,8 +17,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "f0f77606",
-		type: "choice",
-		table: 55
+		uid: "01caed07",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

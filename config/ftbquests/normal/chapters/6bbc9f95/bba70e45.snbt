@@ -1,12 +1,13 @@
 {
 	title: "{q.thaumcraft.infusion_enchantme.name}",
-	x: 11.1d,
-	y: 1.2d,
+	x: 5.9d,
+	y: 0.0d,
+	shape: "gear",
 	text: [
 		"{q.thaumcraft.infusion_enchantme.desc}"
 	],
 	dependencies: [
-		"644b9777"
+		"38a388cd"
 	],
 	tasks: [{
 		uid: "063a231a",
@@ -28,9 +29,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "fc4ad415",
-		type: "item",
-		item: "thaumcraft:curio 1 1",
-		count: 10
+		uid: "2ec31e25",
+		type: "random",
+		table: 141
 	}]
 }

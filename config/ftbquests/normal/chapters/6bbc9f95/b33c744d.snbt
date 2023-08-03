@@ -1,14 +1,16 @@
 {
 	title: "{q.thaumcraft.naturally_generate.name}",
 	icon: "thaumcraft:crystal_aer",
-	x: -0.6d,
-	y: 4.3d,
+	x: 1.5d,
+	y: 3.5d,
+	shape: "diamond",
 	text: [
 		"{q.thaumcraft.naturally_generate.desc}"
 	],
 	dependencies: [
 		"82e27a56"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "86ba7f05",
 		type: "checkmark"

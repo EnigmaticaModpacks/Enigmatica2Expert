@@ -1,0 +1,42 @@
+{
+	icon: "thaumcraft:bath_salts",
+	x: 0.5d,
+	y: 0.25d,
+	text: [
+		"Although removing the warp is not an easy task or you don't want to remove it, there is always a way to §nprotect§r yourself from the warp events.",
+		"",
+		"Just drop§6 Purifying Bath Salts§r into the water to make §bpurifying water§r, and then simply immerse yourself in the liquid. §7(It will absorb the liquid!)§r",
+		"",
+		"You can use §6Arcane Spa§r to automatically mix the water with these salts.",
+		"",
+		"Botany Brewing has a special §aVial§r that allows you to get §bwarp ward§r anywhere."
+	],
+	dependencies: [
+		"ccd89357"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "f85cd5ca",
+		type: "item",
+		items: [{
+			item: "thaumcraft:bath_salts"
+		}]
+	},
+	{
+		uid: "9fc24b96",
+		type: "item",
+		items: [{
+			item: "thaumcraft:spa"
+		}]
+	}],
+	rewards: [{
+		uid: "b2390089",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

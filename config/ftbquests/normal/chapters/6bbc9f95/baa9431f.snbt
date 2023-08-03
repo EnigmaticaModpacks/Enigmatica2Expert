@@ -1,11 +1,11 @@
 {
-	x: 12.5d,
-	y: 2.5d,
+	x: 11.0d,
+	y: 0.5d,
 	text: [
-		"{q.thaumcraft.void_seed.desc}"
+		"§5Void seeds§r drop from closed §0rift§r. It is crafting material that allow to delve into §5Eldritch Knowledge§r."
 	],
 	dependencies: [
-		"644b9777"
+		"593b08e5"
 	],
 	tasks: [{
 		uid: "a14dea7a",
@@ -16,8 +16,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "d2984387",
-		type: "choice",
-		table: 59
+		uid: "b5d3dcea",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

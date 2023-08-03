@@ -1,12 +1,14 @@
 {
-	x: 5.3d,
-	y: 3.6d,
+	x: 0.5d,
+	y: 3.5d,
+	shape: "diamond",
 	text: [
 		"{q.thaumcraft.crimson_rites.desc}"
 	],
 	dependencies: [
-		"67773d72"
+		"82e27a56"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "6f94de49",
 		type: "item",
@@ -15,13 +17,12 @@
 		}]
 	}],
 	rewards: [{
-		uid: "1edac101",
-		type: "item",
-		item: "thaumcraft:curio 1 4",
-		count: 10
+		uid: "97a56010",
+		type: "random",
+		table: 141
 	},
 	{
-		uid: "2bf7b175",
+		uid: "30e41576",
 		type: "command",
 		command: "/thaumcraft research @p UNLOCKELDRITCH"
 	}]

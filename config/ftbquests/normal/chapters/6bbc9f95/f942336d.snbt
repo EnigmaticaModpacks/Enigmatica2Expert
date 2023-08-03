@@ -1,12 +1,16 @@
 {
-	x: 5.166666666666667d,
+	x: 1.5d,
 	y: 2.5d,
+	shape: "diamond",
 	text: [
-		"{q.thaumcraft.silverwood_log.desc}"
+		"Silverwood trees spawn naturally.",
+		"",
+		"Silverwood leaves accelerate §dvis§r regeneration."
 	],
 	dependencies: [
-		"4f409b3c"
+		"82e27a56"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "3b2e32ae",
 		type: "item",

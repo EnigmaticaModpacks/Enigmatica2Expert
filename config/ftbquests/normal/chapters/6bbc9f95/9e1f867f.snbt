@@ -1,12 +1,13 @@
 {
-	x: 3.3333333333333335d,
-	y: 13.333333333333334d,
+	x: 6.5d,
+	y: 0.7d,
 	text: [
-		"{q.thaumcraft.infusion_speed_stone.desc}"
+		"§6Infusion Speed Stone§r can be placed under §6Infusion Phillar§r. It will boost §bspeed§r by 1.5 points at the cost of 10% §dessentia efficiency§r."
 	],
 	dependencies: [
-		"f0a632f4"
+		"38a388cd"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "10f6adf9",
 		type: "item",
@@ -16,8 +17,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "afda7d88",
-		type: "choice",
-		table: 56
+		uid: "b047ec5b",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

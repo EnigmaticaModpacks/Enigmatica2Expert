@@ -1,0 +1,30 @@
+{
+	x: 0.6d,
+	y: 5.75d,
+	text: [
+		"§6Inspiration Engine§r is one of the block that helps in research. It provides card that increases §einspiration§r and add bonus % progress depending on picking a card.",
+		"",
+		"It requires §eCognitio§r aspect to function."
+	],
+	dependencies: [
+		"adef62af"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "1502ab5b",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:inspiration_engine"
+		}]
+	}],
+	rewards: [{
+		uid: "ee7b8b93",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

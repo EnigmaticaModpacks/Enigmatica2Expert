@@ -1,6 +1,6 @@
 {
-	x: -0.6d,
-	y: 7.3d,
+	x: 12.0d,
+	y: -2.0d,
 	text: [
 		"{q.thaumcraft.primordial_pearl.desc}"
 	],

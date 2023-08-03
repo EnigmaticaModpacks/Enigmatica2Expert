@@ -1,0 +1,54 @@
+{
+	title: "Void Frotress Armor Set",
+	x: 12.0d,
+	y: 6.0d,
+	text: [
+		"§6Void Fortress Armor§r is an upgraded version of §6Thaumium Fortress Armor§. ",
+		"",
+		"It has §6Warpshell§r enchant - the more §5warp§r a player have, the better protection armor provides."
+	],
+	dependencies: [
+		"537d4079",
+		"3f58b214"
+	],
+	tasks: [{
+		uid: "4930639d",
+		type: "item",
+		items: [{
+			id: "thaumicwonders:void_fortress_helm",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b455eb8a",
+		type: "item",
+		items: [{
+			id: "thaumicwonders:void_fortress_chest",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5a131fd2",
+		type: "item",
+		items: [{
+			id: "thaumicwonders:void_fortress_legs",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "95ea7dbc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

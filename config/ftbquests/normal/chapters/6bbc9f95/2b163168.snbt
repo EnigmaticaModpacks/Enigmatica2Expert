@@ -1,0 +1,24 @@
+{
+	x: 15.6d,
+	y: -1.1d,
+	shape: "pentagon",
+	text: [
+		"§6Extradimesional Monitor§r will display structure of the §0rift§r in the chunk."
+	],
+	dependencies: [
+		"6f49eb69"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "0957e87d",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_monitor"
+		}]
+	}],
+	rewards: [{
+		uid: "c1549214",
+		type: "item",
+		item: "thaumadditions:void_thaumometer"
+	}]
+}

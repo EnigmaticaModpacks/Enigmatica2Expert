@@ -1,0 +1,62 @@
+{
+	icon: {
+		id: "thaumicaugmentation:impulse_cannon",
+		ForgeCaps: {
+			Parent: {
+				augments: {
+					slots: 1
+				},
+				energy: {
+					energy: 0L
+				}
+			}
+		}
+	},
+	x: 17.0d,
+	y: 0.5d,
+	text: [
+		"§6Impulse Cannoc§r is a powerful gun that shots §8impetus§r.",
+		"",
+		"To charged it you need §6Void Recharge Pedestal§r with §8impetus§r source.",
+		"",
+		"Additionaly, it have 2 modules to install to change shot mode."
+	],
+	dependencies: [
+		"6f49eb69"
+	],
+	tasks: [{
+		uid: "9c3e58ed",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:impulse_cannon",
+			ForgeCaps: {
+				Parent: {
+					augments: {
+						slots: 1
+					},
+					energy: {
+						energy: 0L
+					}
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9973fece",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:void_recharge_pedestal"
+		}]
+	}],
+	rewards: [{
+		uid: "e7424946",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

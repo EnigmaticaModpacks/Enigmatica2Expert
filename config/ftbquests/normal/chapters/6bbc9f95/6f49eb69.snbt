@@ -1,0 +1,54 @@
+{
+	title: "Impetus",
+	icon: {
+		id: "thaumicaugmentation:impetus_linker",
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 15.0d,
+	y: -0.5d,
+	text: [
+		"Getting §8Impetus§r using gauntlet is highly inefficient. §6Impetus Diffuser§r allows to gather §8impetus§r more efficient.",
+		"",
+		"To transfer §8impetus§r you need some §6Impetus Relays§r and §6Impetus Resonator§r to link devices."
+	],
+	dependencies: [
+		"ed607e63"
+	],
+	size: 1.25d,
+	tasks: [{
+		uid: "b6389674",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:impetus_linker",
+			ForgeCaps: {
+				Parent: {}
+			}
+		}]
+	},
+	{
+		uid: "acef5eae",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_diffuser"
+		}]
+	},
+	{
+		uid: "578d67a4",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_relay"
+		}]
+	}],
+	rewards: [{
+		uid: "feea9004",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

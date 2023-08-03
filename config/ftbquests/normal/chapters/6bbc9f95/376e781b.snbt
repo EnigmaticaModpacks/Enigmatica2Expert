@@ -1,0 +1,38 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	text: [
+		"§6Thaumium Caster's Gauntlet§r is an upgraded version of normal §6Caster's Gauntlet§r. It works the same but in addition consumes 10% less §dvis§r from the aura and cast 20% faster.",
+		"",
+		"§7Can be dyed and have applied modifier.§r"
+	],
+	dependencies: [
+		"10aa9202"
+	],
+	tasks: [{
+		uid: "4aaa32b1",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:gauntlet",
+			tag: {
+				color: 8022208
+			},
+			ForgeCaps: {
+				Parent: {
+					slots: 3
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "37d15eff",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

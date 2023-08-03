@@ -1,15 +1,18 @@
 {
 	title: "{q.thaumcraft.golem_press.name}",
 	icon: "thaumcraft:golem_builder",
-	x: 9.833333333333332d,
-	y: 4.166666666666667d,
+	x: 7.0d,
+	y: -3.0d,
 	text: [
-		"{q.thaumcraft.golem_press.desc}"
+		"§6Golem Press§r allow to make §9golems§r. This requires some resources and §7Machina essentia§r to craft one. ",
+		"",
+		"However §nbefore§r you start making golems it is advised to check §4seal§r requirements and forbitted traits you want to use.",
+		"",
+		"§9Golems§r while \"working\" will level up, increasing effectiveness."
 	],
 	dependencies: [
-		"69992959"
+		"38a388cd"
 	],
-	size: 1.3333333333333333d,
 	tasks: [{
 		uid: "1e7a70f9",
 		type: "item",
@@ -51,8 +54,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "9d9131c4",
-		type: "choice",
-		table: 57
+		uid: "dc926cb5",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

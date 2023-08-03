@@ -1,0 +1,31 @@
+{
+	x: -1.5d,
+	y: 2.5d,
+	shape: "circle",
+	text: [
+		"Some recipes require a greater amount of §dvis§r, that can't be acquired from only one chunk.",
+		"",
+		"§6Workbench Charger§r allows to increase range of §6Arcane Workbench§r to take §dvis§r from attached chunks."
+	],
+	dependencies: [
+		"2e8e4ce7"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "4455043c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:arcane_workbench_charger"
+		}]
+	}],
+	rewards: [{
+		uid: "d1170ffc",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

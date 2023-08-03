@@ -1,12 +1,14 @@
 {
-	x: 5.7d,
-	y: 10.7d,
+	x: 3.2d,
+	y: 5.6d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.magic_mirror.desc}"
+		"§6Mirrors§r significantly buffed. Now they will transfer up to 4 items / sec §nwithout pollution§r."
 	],
 	dependencies: [
-		"38a388cd"
+		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "8b57975e",
 		type: "item",

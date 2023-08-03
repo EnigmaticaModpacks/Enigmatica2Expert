@@ -1,6 +1,6 @@
 {
-	x: -1.7d,
-	y: 7.3d,
+	x: 13.0d,
+	y: -3.0d,
 	text: [
 		"{q.thaumcraft.void_beacon.desc}"
 	],

@@ -1,0 +1,41 @@
+{
+	x: 5.0d,
+	y: -3.0d,
+	text: [
+		"§6Voidseer Caster's Gauntlet§r is an upgraded version of §6Caster's Gauntlet§r. It consumes 30% less §dvis§r from the aura and cast 10% faster than §6Caster's Gauntlet§r.",
+		"",
+		"Additionaly, it takes §dvis§r not only from current chunk, but attached chunks too.",
+		"",
+		"§7Can be dyed and have applied modifier.§r"
+	],
+	dependencies: [
+		"376e781b"
+	],
+	tasks: [{
+		uid: "217201d7",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:gauntlet",
+			Damage: 1s,
+			tag: {
+				color: 2498903
+			},
+			ForgeCaps: {
+				Parent: {
+					slots: 3
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7c54a4b7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

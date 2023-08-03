@@ -1,14 +1,18 @@
 {
 	title: "{q.thaumcraft.artifice.name}",
-	x: 5.5d,
-	y: 6.166666666666667d,
+	x: 4.0d,
+	y: 6.0d,
 	text: [
-		"{q.thaumcraft.artifice.desc}"
+		"§6Goggles of Revealing§r are one of the must have accesories. Those reveal some usefull informations like:",
+		"- Stored essentia in jar / alembic",
+		"- Infusion stability",
+		"",
+		"There are hemlets that support these goggles! §7(see craftings)§r"
 	],
 	dependencies: [
-		"2e8e4ce7"
+		"82e27a56"
 	],
-	size: 1.3333333333333333d,
+	size: 1.25d,
 	tasks: [{
 		uid: "faa4990e",
 		type: "item",

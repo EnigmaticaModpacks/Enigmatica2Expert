@@ -1,12 +1,14 @@
 {
-	x: 2.0d,
-	y: 12.0d,
+	x: 3.5d,
+	y: 8.0d,
+	shape: "diamond",
 	text: [
-		"{q.thaumcraft.arcane_bellows.desc}"
+		"§6Arcane Bellows§r will speed up process of §4Infernal Furnace§r, §7normal furnaces§r and §8Crucible§r."
 	],
 	dependencies: [
-		"f85506a2"
+		"0c6a05c4"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "e7ec5d0c",
 		type: "item",
@@ -16,13 +18,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "54164bcf",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "50cd7a18",
+		type: "random",
+		table: 141
 	}]
 }

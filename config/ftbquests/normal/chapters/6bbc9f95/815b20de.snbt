@@ -1,29 +1,217 @@
 {
-	title: "{q.thaumcraft.tallow_candle.name}",
-	x: 3.3333333333333335d,
-	y: 10.666666666666666d,
+	title: "Infusion Stabilization",
+	icon: "thaumcraft:stabilizer",
+	x: 7.9d,
+	y: 0.0d,
+	shape: "diamond",
 	text: [
-		"{q.thaumcraft.tallow_candle.desc}"
+		"Various blocks can be used as §5Infusion Stabilizator§r. Remember to place then §nsymetrically§r. Most of them are:",
+		"§2- §rCandles",
+		"§2- §rSkulls/Heads",
+		"§2- §rCrystal Blocks",
+		"§2- §rBotania flowers",
+		"§2- §rBotania pylons",
+		"",
+		"§6Stabilizer§r is a little special, while it does not provide stabilization directly it will block any item loses on pedestal at the cost of generated §5flux§r."
 	],
 	dependencies: [
 		"38a388cd"
 	],
+	size: 0.75d,
+	or_tasks: true,
 	tasks: [{
 		uid: "33a6b741",
 		type: "item",
 		items: [{
 			item: "thaumcraft:candle_white"
+		},
+		{
+			item: "thaumcraft:candle_orange"
+		},
+		{
+			item: "thaumcraft:candle_magenta"
+		},
+		{
+			item: "thaumcraft:candle_lightblue"
+		},
+		{
+			item: "thaumcraft:candle_yellow"
+		},
+		{
+			item: "thaumcraft:candle_lime"
+		},
+		{
+			item: "thaumcraft:candle_pink"
+		},
+		{
+			item: "thaumcraft:candle_gray"
+		},
+		{
+			item: "thaumcraft:candle_silver"
+		},
+		{
+			item: "thaumcraft:candle_cyan"
+		},
+		{
+			item: "thaumcraft:candle_purple"
+		},
+		{
+			item: "thaumcraft:candle_blue"
+		},
+		{
+			item: "thaumcraft:candle_brown"
+		},
+		{
+			item: "thaumcraft:candle_green"
+		},
+		{
+			item: "thaumcraft:candle_red"
+		},
+		{
+			item: "thaumcraft:candle_black"
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "5ebabebe",
+		type: "item",
+		items: [{
+			item: "minecraft:skull"
+		},
+		{
+			item: "minecraft:skull 1 1"
+		},
+		{
+			item: "minecraft:skull 1 2"
+		},
+		{
+			item: "minecraft:skull 1 3"
+		},
+		{
+			item: "minecraft:skull 1 4"
+		},
+		{
+			item: "minecraft:skull 1 5"
+		}]
+	},
+	{
+		uid: "2418ab9e",
+		type: "item",
+		items: [{
+			id: "thaumadditions:crystal_block",
+			tag: {
+				Aspect: "ignis"
+			}
+		},
+		{
+			id: "thaumadditions:crystal_block",
+			tag: {
+				Aspect: "aer"
+			}
+		},
+		{
+			id: "thaumadditions:crystal_block",
+			tag: {
+				Aspect: "ordo"
+			}
+		},
+		{
+			id: "thaumadditions:crystal_block",
+			tag: {
+				Aspect: "perditio"
+			}
+		},
+		{
+			id: "thaumadditions:crystal_block",
+			tag: {
+				Aspect: "aqua"
+			}
+		},
+		{
+			id: "thaumadditions:crystal_block",
+			tag: {
+				Aspect: "terra"
+			}
+		}]
+	},
+	{
+		uid: "2db6f3a7",
+		type: "item",
+		items: [{
+			item: "botania:shinyflower"
+		},
+		{
+			item: "botania:shinyflower 1 1"
+		},
+		{
+			item: "botania:shinyflower 1 2"
+		},
+		{
+			item: "botania:shinyflower 1 3"
+		},
+		{
+			item: "botania:shinyflower 1 4"
+		},
+		{
+			item: "botania:shinyflower 1 5"
+		},
+		{
+			item: "botania:shinyflower 1 6"
+		},
+		{
+			item: "botania:shinyflower 1 7"
+		},
+		{
+			item: "botania:shinyflower 1 8"
+		},
+		{
+			item: "botania:shinyflower 1 9"
+		},
+		{
+			item: "botania:shinyflower 1 10"
+		},
+		{
+			item: "botania:shinyflower 1 11"
+		},
+		{
+			item: "botania:shinyflower 1 12"
+		},
+		{
+			item: "botania:shinyflower 1 13"
+		},
+		{
+			item: "botania:shinyflower 1 14"
+		},
+		{
+			item: "botania:shinyflower 1 15"
+		}]
+	},
+	{
+		uid: "93f4bff7",
+		type: "item",
+		items: [{
+			item: "botania:pylon"
+		},
+		{
+			item: "botania:pylon 1 1"
+		},
+		{
+			item: "botania:pylon 1 2"
+		}]
+	},
+	{
+		uid: "e04460c3",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stabilizer"
+		},
+		{
+			item: "thaumcraft:inlay"
+		}]
 	}],
 	rewards: [{
-		uid: "d54c8496",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "da1117f0",
+		type: "random",
+		table: 141
 	}]
 }

@@ -1,12 +1,14 @@
 {
-	x: 3.1666666666666665d,
-	y: 5.166666666666667d,
+	x: 0.5d,
+	y: 2.5d,
+	shape: "diamond",
 	text: [
 		"{q.thaumcraft.greatwood_log.desc}"
 	],
 	dependencies: [
-		"4f409b3c"
+		"82e27a56"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "55023cf2",
 		type: "item",

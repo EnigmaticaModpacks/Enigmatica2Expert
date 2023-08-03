@@ -1,12 +1,13 @@
 {
-	x: 9.833333333333334d,
-	y: 7.5d,
+	x: 3.0d,
+	y: -1.75d,
 	text: [
 		"{q.thaumcraft.blank_advanced_focus.desc}"
 	],
 	dependencies: [
 		"a2857370"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "f99ab0f9",
 		type: "item",
@@ -16,8 +17,35 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "118b7251",
-		type: "choice",
-		table: 50
+		uid: "8a5473f9",
+		type: "item",
+		item: {
+			id: "thaumcraft:focus_2",
+			tag: {
+				display: {
+					Name: "Riftmaker"
+				},
+				package: {
+					index: 0,
+					power: 1.0f,
+					complexity: 18,
+					nodes: [{
+						type: "MEDIUM",
+						key: "ROOT"
+					},
+					{
+						type: "MEDIUM",
+						key: "thaumcraft.TOUCH"
+					},
+					{
+						type: "EFFECT",
+						key: "thaumcraft.RIFT",
+						setting.duration: 10,
+						setting.depth: 32
+					}]
+				},
+				color: -13692571
+			}
+		}
 	}]
 }

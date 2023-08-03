@@ -1,12 +1,14 @@
 {
-	x: 7.0d,
-	y: 9.0d,
+	x: 4.6d,
+	y: 0.6d,
+	shape: "diamond",
 	text: [
 		"{q.thaumcraft.focus_pouch.desc}"
 	],
 	dependencies: [
 		"b1e42bf7"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "1cba96ae",
 		type: "item",
@@ -16,13 +18,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "483a28bc",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "storage"
-			}
-		}
+		uid: "b9c1b4a1",
+		type: "random",
+		table: 141
 	}]
 }

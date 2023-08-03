@@ -1,11 +1,11 @@
 {
-	x: -0.6d,
-	y: 6.3d,
+	x: 11.0d,
+	y: -1.0d,
 	text: [
-		"{q.thaumcraft.causality_collapser.desc}"
+		"If you happen to make one §0rift§r §6Causality Collapser§r allow to close it. Just simply throw it into one §7(don't drop)§r."
 	],
 	dependencies: [
-		"c8b6a5ec"
+		"ff4e9e03"
 	],
 	tasks: [{
 		uid: "d6daa45d",
@@ -15,9 +15,13 @@
 		}]
 	}],
 	rewards: [{
-		uid: "231623ea",
+		uid: "643e7a21",
 		type: "item",
-		item: "thaumcraft:curio 1 3",
-		count: 10
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

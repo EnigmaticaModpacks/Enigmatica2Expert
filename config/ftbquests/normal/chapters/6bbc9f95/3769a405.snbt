@@ -1,0 +1,24 @@
+{
+	x: 13.75d,
+	y: 3.75d,
+	shape: "hexagon",
+	text: [
+		"Stores 1000 essentia."
+	],
+	dependencies: [
+		"5581ca2d",
+		"7ad68250"
+	],
+	tasks: [{
+		uid: "af3b350d",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_mithrillium"
+		}]
+	}],
+	rewards: [{
+		uid: "dba12e87",
+		type: "item",
+		item: "thaumicwonders:structure_diviner"
+	}]
+}

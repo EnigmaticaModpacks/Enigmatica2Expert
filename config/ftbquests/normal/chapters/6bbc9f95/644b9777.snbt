@@ -1,7 +1,7 @@
 {
 	title: "{q.thaumcraft.thaumium.name}",
-	x: 11.166666666666666d,
-	y: 2.5d,
+	x: 9.0d,
+	y: 3.0d,
 	text: [
 		"{q.thaumcraft.thaumium.desc}"
 	],
@@ -17,8 +17,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "c857688f",
-		type: "choice",
-		table: 54
+		uid: "f7e54de9",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

@@ -1,0 +1,60 @@
+{
+	title: "Additional card",
+	icon: "minecraft:bookshelf",
+	x: 1.8d,
+	y: 5.2d,
+	shape: "diamond",
+	text: [
+		"There are few ways to get additional types of cards:",
+		"",
+		"§2- §dUnlock thaumonomicon tabs§r - obvious, but unlocking thaumonomicon tab will allow to get that knowledge type.",
+		"",
+		"§2- §6Having curio in inventory§r - not only it will help skip some more difficult §6cards§r, but will increase effectiveness of curio.",
+		"",
+		"§2- §9Special blocks§r - §cmust be placed within reach of 4 blocks or one above/below.§r List of blocks:",
+		"",
+		"§6Bookshelf§r §f(General)§r",
+		"§6Beacon§r §f(General)§r",
+		"§6Inspiration Engine§r §f(General)§r",
+		"§6Reinforced Jar§r §f(General)§r",
+		"§6Focal Manipulator§r §d(Auromancy)§r",
+		"§6Enchantment Table§r §8(Infusion§r & §dAuromancy)§r",
+		"§6Runic Matrix§r §8(Infusion)§r",
+		"§6Crucible§r §3(Alchemy)§r",
+		"§6Arcane Workbench§r §e(Artifice)§r",
+		"§6Golem Press§r §9(Golemancy)§r",
+		"§6Portal (Nether, End, §cCrimsor portal counts too!§6)§r §5(Eldritch)§r",
+		"§6Brain in a Jar§r §5(Eldritch)§r",
+		"§6Glyphed Stone§r §5(Eldritch)§r",
+		"§6Madness Engine§r §5(Eldritch)§r",
+		"§6Extradimensional Monitor§r §5(Eldritch)§r"
+	],
+	dependencies: [
+		"adef62af"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "54a5a3a9",
+		type: "item",
+		items: [{
+			item: "minecraft:bookshelf"
+		},
+		{
+			item: "minecraft:beacon"
+		},
+		{
+			item: "minecraft:enchanting_table"
+		},
+		{
+			item: "thaumcraft:jar_brain"
+		},
+		{
+			item: "thaumcraft:stone_ancient_glyphed"
+		}]
+	}],
+	rewards: [{
+		uid: "b63efeae",
+		type: "random",
+		table: 141
+	}]
+}

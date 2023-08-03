@@ -1,0 +1,26 @@
+{
+	x: 1.5d,
+	y: 0.25d,
+	text: [
+		"§5Warp§r can be removed using §6Sanity Soap§r for a few seconds. While it doesn't remove §4permament warp§r, it does remove the little amount of §5normal warp§r and all §dtemporary warp§r.",
+		"",
+		"§7Using it while in arcane spa have better effect.§r  "
+	],
+	dependencies: [
+		"ccd89357"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "a1a04e95",
+		type: "item",
+		items: [{
+			item: "thaumcraft:sanity_soap"
+		}]
+	}],
+	rewards: [{
+		uid: "78d07ad8",
+		type: "item",
+		item: "warptheory:item_warppaper",
+		count: 16
+	}]
+}

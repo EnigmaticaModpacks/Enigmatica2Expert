@@ -1,9 +1,10 @@
 {
+	title: "Void Armor Set",
 	icon: "thaumcraft:void_chest",
-	x: 15.166666666666666d,
-	y: 0.8333333333333333d,
+	x: 11.0d,
+	y: 5.0d,
 	text: [
-		"{q.thaumcraft.void_helm.desc}"
+		"Self repairing armor. Gives §5warp§r to a player that wears it."
 	],
 	dependencies: [
 		"83ab3c5f"
@@ -41,14 +42,19 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "b6077bcd",
-		type: "choice",
-		table: 64
-	},
-	{
 		uid: "990f811d",
 		type: "command",
 		auto: "invisible",
 		command: "gamestage silentadd @p armor_void"
+	},
+	{
+		uid: "bb029370",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

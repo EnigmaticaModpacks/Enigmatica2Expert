@@ -1,10 +1,12 @@
 {
-	x: 13.833333333333334d,
-	y: 2.5d,
+	title: "Void metal",
+	x: 11.0d,
+	y: 3.0d,
 	text: [
-		"{q.thaumcraft.void_metal_ingot.desc}"
+		"Self repairing metal. Any tools or armors from this material gives player §5warp§r."
 	],
 	dependencies: [
+		"644b9777",
 		"baa9431f"
 	],
 	tasks: [{
@@ -16,8 +18,13 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "2e474658",
-		type: "choice",
-		table: 60
+		uid: "124299c0",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
 	}]
 }

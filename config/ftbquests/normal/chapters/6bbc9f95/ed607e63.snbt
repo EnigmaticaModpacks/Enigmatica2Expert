@@ -1,0 +1,35 @@
+{
+	x: 13.0d,
+	y: 0.5d,
+	text: [
+		"If you get §6Tattered Scrolls§r that means you finished §0The Epmtyness§r.",
+		"",
+		"If you are skyblocker, §6Tattered Scrolls§r have alternative recipe, craft it to unlock research."
+	],
+	dependencies: [
+		"e3b967fa"
+	],
+	tasks: [{
+		uid: "b199e000",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:research_notes"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "da735d5c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	},
+	{
+		uid: "ea74cfd5",
+		type: "command",
+		command: "/thaumcraft research @p IMPETUS"
+	}]
+}

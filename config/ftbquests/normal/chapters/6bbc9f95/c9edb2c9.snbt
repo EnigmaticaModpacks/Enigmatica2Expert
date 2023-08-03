@@ -1,0 +1,32 @@
+{
+	x: 1.0d,
+	y: -0.5d,
+	text: [
+		"§6Cleansing Charm§r will passively remove non permanent §5warp§r. ",
+		"",
+		"While the process is taking a long time, it will also produce §5flux§r."
+	],
+	dependencies: [
+		"ccd89357"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "a9763741",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:cleansing_charm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a26ffbe2",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

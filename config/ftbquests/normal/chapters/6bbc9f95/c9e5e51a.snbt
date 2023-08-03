@@ -1,0 +1,25 @@
+{
+	x: 6.1d,
+	y: 9.0d,
+	text: [
+		"§6Rechage Charm§r works the same as §6Amulet of Vis§r but §6charm§r slot."
+	],
+	dependencies: [
+		"587dc05a"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "61d3854f",
+		type: "item",
+		items: [{
+			item: "thaumadditions:recharge_charm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5e64af4c",
+		type: "random",
+		table: 141
+	}]
+}

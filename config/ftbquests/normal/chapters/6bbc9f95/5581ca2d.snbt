@@ -1,8 +1,18 @@
 {
-	x: 15.1d,
-	y: 2.5d,
+	title: "Mithrillium",
+	x: 13.0d,
+	y: 3.0d,
+	text: [
+		"§bMithrillium§r is a special material focused around §dvis§r and §bmana aspect§r. It's considered pure and natural.",
+		"",
+		"It's also tinker's material that has synergy with §dvis§r:",
+		"§2- §rrepairs itself using §dvis§r",
+		"§2- §rstat boost based on §dvis§r amount",
+		"§2- §rreleases §dvis§r on kill"
+	],
 	dependencies: [
-		"83ab3c5f"
+		"83ab3c5f",
+		"ed607e63"
 	],
 	tasks: [{
 		uid: "c395eaa2",

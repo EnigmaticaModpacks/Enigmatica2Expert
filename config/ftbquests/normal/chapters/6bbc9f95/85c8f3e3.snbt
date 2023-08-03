@@ -1,12 +1,17 @@
 {
-	x: 6.8d,
-	y: 10.7d,
+	x: 3.6d,
+	y: 6.8d,
+	shape: "pentagon",
 	text: [
-		"{q.thaumcraft.meaty_orb.desc}"
+		"§6Meaty Orb§r at the cost of 250 each of essentias: §bAqua §cVictus§5 Alienis§r",
+		"it will spawn 300 random raw meat.",
+		"",
+		"Can be activated with §4redstone§r."
 	],
 	dependencies: [
-		"38a388cd"
+		"4510505c"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "1c5ef9ff",
 		type: "item",

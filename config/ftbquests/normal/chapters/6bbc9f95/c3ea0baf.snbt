@@ -1,19 +1,25 @@
 {
+	title: "Thaumatorium",
 	icon: "thaumcraft:thaumatorium",
-	x: 8.166666666666668d,
-	y: 3.8333333333333335d,
+	x: 8.0d,
+	y: 5.5d,
 	text: [
-		"{q.thaumcraft.alchemical_constru.desc}"
+		"§6Alchemical Contruct§r allow to easy automation of crucible recipes. It still needs essentia to craft.",
+		"",
+		"On the side that you used §dSalis Mudus§r becomes an output side (you can place there container).",
+		"",
+		"You can attach §6Mnemonic Matrix§r to increase remembered recipes in it's memory."
 	],
 	dependencies: [
-		"05d8ef32"
+		"f0a632f4"
 	],
 	tasks: [{
 		uid: "ff533bc1",
 		type: "item",
 		items: [{
-			item: "thaumcraft:metal_alchemical 2"
+			item: "thaumcraft:metal_alchemical"
 		}],
+		count: 2L,
 		ignore_nbt: 1b
 	},
 	{
@@ -23,10 +29,22 @@
 			item: "thaumcraft:crucible"
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "0ea6ab44",
+		type: "item",
+		items: [{
+			item: "thaumcraft:brain_box"
+		}]
 	}],
 	rewards: [{
-		uid: "da9fcf2d",
-		type: "choice",
-		table: 52
+		uid: "558b2329",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

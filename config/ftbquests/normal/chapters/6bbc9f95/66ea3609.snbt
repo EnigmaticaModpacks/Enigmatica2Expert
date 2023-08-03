@@ -1,0 +1,31 @@
+{
+	x: 0.975d,
+	y: -1.3499999999999999d,
+	text: [
+		"§6Purification Talisman§r is bauble that removes all types of §5warp§r. Fast and without penalties."
+	],
+	dependencies: [
+		"c9edb2c9",
+		"7e3eea2b",
+		"e083a061"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "739ee615",
+		type: "item",
+		items: [{
+			item: "warptheory:item_cleansing_amulet"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2c30be86",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

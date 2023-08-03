@@ -1,0 +1,27 @@
+{
+	x: 17.0d,
+	y: -0.5d,
+	text: [
+		"§6Impetus Generator§r when charged with §8impetus§r will generate §c100.000 RF/t§r."
+	],
+	dependencies: [
+		"6f49eb69"
+	],
+	tasks: [{
+		uid: "bd3f2980",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_generator"
+		}]
+	}],
+	rewards: [{
+		uid: "426b60fd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	}]
+}

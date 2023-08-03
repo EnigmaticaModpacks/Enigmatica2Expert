@@ -1,0 +1,27 @@
+{
+	x: 16.0d,
+	y: 5.0d,
+	text: [
+		"§6Alkahest Vat§r dissolve anything with aspects into §dvis§r."
+	],
+	dependencies: [
+		"833c26b3"
+	],
+	tasks: [{
+		uid: "3e33666a",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:alkahest_vat"
+		}]
+	}],
+	rewards: [{
+		uid: "4179becd",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

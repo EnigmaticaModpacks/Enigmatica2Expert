@@ -1,0 +1,26 @@
+{
+	x: 10.0d,
+	y: 9.0d,
+	shape: "hexagon",
+	text: [
+		"§6Striding Belt§r is upgraded version of §6Belt of the Traveller§r."
+	],
+	dependencies: [
+		"6ee12352"
+	],
+	tasks: [{
+		uid: "47d47a38",
+		type: "item",
+		items: [{
+			item: "thaumadditions:striding_belt"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "be13ee74",
+		type: "item",
+		item: "thaumcraft:lamp_arcane",
+		count: 8
+	}]
+}

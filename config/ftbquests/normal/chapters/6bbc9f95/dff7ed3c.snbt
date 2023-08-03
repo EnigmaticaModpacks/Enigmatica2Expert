@@ -1,0 +1,67 @@
+{
+	title: "Adaminite Armor Set",
+	icon: {
+		id: "thaumadditions:adaminite_robe",
+		tag: {}
+	},
+	x: 15.0d,
+	y: 6.0d,
+	text: [
+		"§cAdaminite Armor Set§r provides huge protection and §dvis discount§r. It is also unbreakable. And Hood has properties of §6Goggles of Revealing§r."
+	],
+	dependencies: [
+		"f166c6ff",
+		"47e42531",
+		"b1ebded8"
+	],
+	tasks: [{
+		uid: "f0b2fb1f",
+		type: "item",
+		items: [{
+			id: "thaumadditions:adaminite_hood",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "20099e88",
+		type: "item",
+		items: [{
+			id: "thaumadditions:adaminite_robe",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "48aff60f",
+		type: "item",
+		items: [{
+			id: "thaumadditions:adaminite_belt",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3d5182d6",
+		type: "item",
+		items: [{
+			id: "thaumadditions:adaminite_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7f501ff7",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

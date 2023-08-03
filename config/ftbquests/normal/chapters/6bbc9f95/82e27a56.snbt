@@ -1,11 +1,11 @@
 {
-	x: -0.6d,
-	y: 3.3d,
+	x: 1.0d,
+	y: 3.0d,
 	text: [
 		"{q.thaumcraft.thaumometer.desc}"
 	],
 	dependencies: [
-		"4f409b3c"
+		"2e8e4ce7"
 	],
 	tasks: [{
 		uid: "dd4144d9",

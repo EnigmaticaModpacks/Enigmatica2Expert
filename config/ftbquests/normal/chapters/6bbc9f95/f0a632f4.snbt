@@ -1,11 +1,15 @@
 {
-	x: 3.3333333333333335d,
-	y: 12.0d,
+	title: "Essentia Manipulation",
+	icon: "thaumcraft:tube",
+	x: 7.0d,
+	y: 6.0d,
 	text: [
-		"{q.thaumcraft.warded_jar.desc}"
+		"§6Essentia Tube§r allows to move essentia without using §7Glass Phial§r. These tubes itself doesn't move essentia. In some more complex systems there are required devices that push/pull essentia (like §6Essentia Buffer§r).",
+		"",
+		"§6Warded Jar§r stores essentia."
 	],
 	dependencies: [
-		"f85506a2"
+		"69992959"
 	],
 	tasks: [{
 		uid: "4ce86e85",
@@ -14,10 +18,27 @@
 			item: "thaumcraft:jar_normal"
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "a465edbe",
+		type: "item",
+		items: [{
+			item: "thaumcraft:tube"
+		}]
 	}],
 	rewards: [{
-		uid: "0ea5bb9a",
-		type: "choice",
-		table: 46
+		uid: "6cadabd8",
+		type: "item",
+		item: "thaumcraft:resonator"
+	},
+	{
+		uid: "6633c140",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

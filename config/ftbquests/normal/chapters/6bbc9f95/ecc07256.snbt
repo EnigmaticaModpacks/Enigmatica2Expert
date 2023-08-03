@@ -1,12 +1,13 @@
 {
-	x: 7.5d,
-	y: 5.3d,
+	x: -1.5d,
+	y: 3.5d,
 	text: [
 		"{q.thaumcraft.arcane_crafter.desc}"
 	],
 	dependencies: [
 		"2e8e4ce7"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "4c4c247e",
 		type: "item",

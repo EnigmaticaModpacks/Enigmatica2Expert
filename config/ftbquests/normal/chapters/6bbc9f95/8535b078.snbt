@@ -1,9 +1,10 @@
 {
+	title: "Thaumium Armor Set",
 	icon: "thaumcraft:thaumium_chest",
-	x: 12.5d,
-	y: 0.8333333333333333d,
+	x: 9.0d,
+	y: 5.0d,
 	text: [
-		"{q.thaumcraft.thaumium_helm.desc}"
+		"A little stronger then iron armor."
 	],
 	dependencies: [
 		"644b9777"
@@ -41,14 +42,19 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "24584383",
-		type: "choice",
-		table: 63
-	},
-	{
 		uid: "15b76898",
 		type: "command",
 		auto: "invisible",
 		command: "gamestage silentadd @p armor_thaumium"
+	},
+	{
+		uid: "d4968751",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
 	}]
 }

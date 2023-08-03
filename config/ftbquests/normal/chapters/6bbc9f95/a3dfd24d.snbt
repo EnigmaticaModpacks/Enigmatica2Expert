@@ -1,0 +1,27 @@
+{
+	x: 15.6d,
+	y: 0.1d,
+	shape: "circle",
+	text: [
+		"§6Stability Field Generator§r will stablize §0rift§r. It require power to function.",
+		"",
+		"Stabilized §0Rift§r won't collapse and will not trigger any bad events."
+	],
+	dependencies: [
+		"6f49eb69"
+	],
+	size: 0.75d,
+	tasks: [{
+		uid: "4bce12f8",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:stability_field_generator"
+		}]
+	}],
+	rewards: [{
+		uid: "fa7355c6",
+		type: "item",
+		item: "thaumadditions:blue_bone",
+		count: 4
+	}]
+}

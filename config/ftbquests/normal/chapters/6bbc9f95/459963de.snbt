@@ -1,12 +1,14 @@
 {
-	x: 5.5d,
-	y: 4.833333333333333d,
+	x: 0.5d,
+	y: 4.5d,
+	shape: "diamond",
 	text: [
 		"{q.thaumcraft.tome_of_sharing.desc}"
 	],
 	dependencies: [
-		"2e8e4ce7"
+		"adef62af"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "ed61d591",
 		type: "item",

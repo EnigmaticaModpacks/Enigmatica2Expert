@@ -1,12 +1,14 @@
 {
-	x: 9.5d,
-	y: 0.16666666666666669d,
+	x: 4.0d,
+	y: 2.1d,
+	shape: "diamond",
 	text: [
 		"{q.thaumcraft.quartz_sliver.desc}"
 	],
 	dependencies: [
 		"a54068bb"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "aab49f57",
 		type: "item",
@@ -16,13 +18,8 @@
 		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "bc160a3f",
-		type: "item",
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "common"
-			}
-		}
+		uid: "14db7476",
+		type: "random",
+		table: 141
 	}]
 }

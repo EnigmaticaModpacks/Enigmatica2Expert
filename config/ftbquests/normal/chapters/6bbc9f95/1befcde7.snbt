@@ -1,12 +1,18 @@
 {
-	x: 4.6d,
-	y: 9.3d,
+	x: 4.0d,
+	y: 9.9d,
+	shape: "gear",
 	text: [
-		"{q.thaumcraft.transmuter_s_stone.desc}"
+		"§6Transmuter's Stone§r turns one material into another (see JEI).",
+		"",
+		"Works not only with Ore, but also with §6Nugget§r, §6Block§r, §6Ingot§r, §6Gem§r, §6Dust§r.",
+		"",
+		"§7Have unbreakable recipe§r"
 	],
 	dependencies: [
-		"33706cbb"
+		"5cf3699e"
 	],
+	size: 0.75d,
 	tasks: [{
 		uid: "e55d039b",
 		type: "item",
