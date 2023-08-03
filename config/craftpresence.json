@@ -336,7 +336,6 @@
     },
     "languageId": "en_us",
     "stripTranslationColors": false,
-    "showLoggingInChat": false,
     "stripExtraGuiElements": false,
     "renderTooltips": true,
     "configKeyCode": 0
@@ -361,7 +360,9 @@
       }
     },
     "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png"
+      "default": "https://via.placeholder.com/256.png",
+      "Krutoy242": "https://crafatar.com/avatars/e23a4a7682ed47e09ea3fef726675065",
+      "e2ee.guncolony.io": "https://api.mcsrvstat.us/icon/e2ee.guncolony.io"
     },
     "dynamicVariables": {
       "default": "Example Text",

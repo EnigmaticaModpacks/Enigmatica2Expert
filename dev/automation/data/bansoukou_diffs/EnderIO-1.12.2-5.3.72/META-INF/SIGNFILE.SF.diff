@@ -2,7 +2,7 @@
 -Signature-Version: 1.0
 -SHA-256-Digest-Manifest-Main-Attributes: HYXyfZ4o2DM/RJUGryC9+1eoe8C3s
 - z+FXx3nu1rqhmg=
--SHA-256-Digest-Manifest: csNEQkTPxbChb4M6F/U/hqkCIi3tUGTm5cwRcWNEYas=
+-SHA-256-Digest-Manifest: ZnDlB2Jzw4UQzZfbkmzXqLrWBPtUd1mgymrgMZABftE=
 -Created-By: 1.8.0_252 (AdoptOpenJDK)
 -
 -Name: crazypants/enderio/base/material/glass/BlockFusedQuartzBase$Bloc
@@ -381,7 +381,7 @@
 -SHA-256-Digest: qRtr9/MlTLSt7hrePojzYVFZyPCbNIz92iDITTp6knQ=
 -
 -Name: assets/enderio/config/recipes/base.pdf
--SHA-256-Digest: S5QAA1Sm5Tl0x5YeQe7SgVVSQP9bmOGdRbylUOU3ntk=
+-SHA-256-Digest: v1d2y0HloKRcOa2QXAQLAnODDWMzhGkWAfNnVO3/WnM=
 -
 -Name: assets/enderio/models/item/item_end_steel_leggings.json
 -SHA-256-Digest: zaxo9Gdl6Vc0CvGSkh6COwE7sf/aBp4SDXFgqYSzNLk=
@@ -924,7 +924,7 @@
 -SHA-256-Digest: HU6C+Cx5p3ahCqHSF4L+zi53zAshlIxhDMKrJ7qU87o=
 -
 -Name: assets/enderio/config/recipes/materials.pdf
--SHA-256-Digest: KGfI9UNNVqqjbv8wUim7GtStM1WngUqY1Csl79yg0Vg=
+-SHA-256-Digest: cw5ixwkgzNBJPLgMYhkXe9rmVgab0UgS1nKJAaaMs+I=
 -
 -Name: crazypants/enderio/base/block/lever/BlockSelfResettingLever.clas
 - s
@@ -1374,7 +1374,7 @@
 -SHA-256-Digest: wQeIed4QWkti+s63DdOGzpEHgDsDcn/s26kH0m21uoU=
 -
 -Name: assets/enderio/config/recipes/invpanel.pdf
--SHA-256-Digest: FbkiggGuzAE+bdIjYxWCPhRF9vbj8cLriG1fl9am5Tc=
+-SHA-256-Digest: N1jhRYS9P3sbGwLbS9J5fZ9ZVC86iQQWhnOEgZfynIw=
 -
 -Name: crazypants/enderio/base/events/EnderIOLifecycleEvent$ServerStart
 - ing$Integrated.class
@@ -1670,7 +1670,7 @@
 -SHA-256-Digest: fXFt1rXKAh/T/YYjUuNO9WE3g/eXTTSS1cnwZMdU3vI=
 -
 -Name: assets/enderio/config/recipes/machines.pdf
--SHA-256-Digest: oUgLomVv2Fv31gOUymElqGV4gtUYPDs64F2Q65hv+JU=
+-SHA-256-Digest: 0QPh/Ks/0r4OM03pRuye9fgk97zsdQfCaI0NmOZ5AGc=
 -
 -Name: crazypants/enderio/conduits/gui/PowerSettings.class
 -SHA-256-Digest: 2dTrC8+Z4pqRSz3pveVy1Ua2OxnFrtlBjoSfFoFcNQM=
@@ -1742,7 +1742,7 @@
 -SHA-256-Digest: KXyPaHebuptYFB7rB3SWLnRDy7QFEyT1QPFjT8z6fC4=
 -
 -Name: assets/enderio/config/recipes/misc.pdf
--SHA-256-Digest: zbykSD0GRAu1zbkNKR0xZ3t3AF++bEhUPErybs7B6no=
+-SHA-256-Digest: UtIkkHHq2QRpDKeKYGt1bwwW2tUI3OD/gWtGKlAzUoA=
 -
 -Name: assets/enderio/models/item/item_liquid_conduit_ender.json
 -SHA-256-Digest: TRvrvM7OrTpPWpNL7wLsbeh60VDJRYSKijCM48CmYOg=
@@ -2291,7 +2291,7 @@
 -SHA-256-Digest: X/wJ1YSelLWTPoxVQukk5UHDqDtLQ0UJNmS2Nf50QQ0=
 -
 -Name: assets/enderio/config/recipes/sagmill_vanilla2modded.pdf
--SHA-256-Digest: 70jzOfJV8bRf+/H0LeFpzl7zjzSpJXm5B5GfsdOwkBo=
+-SHA-256-Digest: uSuS1m2hVSvf5HUBADYVq2i/m9uHPWm4V8w1J4jS1tg=
 -
 -Name: crazypants/enderio/base/block/charge/ChargeRegister.class
 -SHA-256-Digest: uV2Dr282NHP8pz5XX+kHipRK8dCG09oOlxPmsKjvF+E=
@@ -2311,7 +2311,7 @@
 -SHA-256-Digest: x97BGWfNwomahxWkPQe4D5HH3pSnw4JRZpJuoIpO8Z8=
 -
 -Name: assets/enderio/config/recipes/capacitor_invpanel.pdf
--SHA-256-Digest: /D97SI9pmcykUko3rPCECmTsbLipZ8FWQ0OKLDHsnSg=
+-SHA-256-Digest: THk0BqsLT80QgXgu+Xu23Qbdowo8sGz3jvF+r2aXGwE=
 -
 -Name: crazypants/enderio/base/filter/item/PowerItemFilter.class
 -SHA-256-Digest: T1xfNytI/D6fxJZfUiinj5FduU6grhrfVDmtQ//pD6A=
@@ -2734,7 +2734,7 @@
 -SHA-256-Digest: Pn1nNPiSWA6CsKyMndmpvJDLyq+c36PSIXUq7/0R/zo=
 -
 -Name: assets/enderio/config/recipes/darksteel_upgrades_machines.pdf
--SHA-256-Digest: +NB6OfJ8otdKwd7+Tp1VzxTwf1xbXkPHU9uTCDTK+fE=
+-SHA-256-Digest: T1OdaNA1vGGqJ7g2wCdc3XybLit20JDVM4s/ozL2Oro=
 -
 -Name: crazypants/enderio/base/block/painted/BlockPaintedReinforcedObsi
 - dian.class
@@ -2853,7 +2853,7 @@
 -SHA-256-Digest: gWvpUV1Ol9gEhfLwEzir2ZWSeXvgavbX+/XCZR/8IXM=
 -
 -Name: assets/enderio/config/recipes/generated.pdf
--SHA-256-Digest: QlD9zADPVxn6mEYK646uVgyrmO+UzhS1cXTSupMpqhE=
+-SHA-256-Digest: 9/Tz9ttnz4Ad635YSWcGZNswFNVuwnQ30n7hr/sPHFE=
 -
 -Name: assets/enderio/textures/blocks/solar_panel_simple_top.png
 -SHA-256-Digest: RU2k/MEEw4BCpNBN2o3B5dtymfMx4mwQGlslHin5P58=
@@ -3440,7 +3440,7 @@
 -SHA-256-Digest: f/HTOWeYxSgsrjT9zBZ903km/3OpHPlLNsa4bpx5o/U=
 -
 -Name: assets/enderio/config/recipes/integration_railcraft_recipes.pdf
--SHA-256-Digest: 4wSFeLSz0fjDjCGBSLKkVz8w65CrHrYAdkPO2E9b8Mw=
+-SHA-256-Digest: CwTQBGWPeNKYrTjTZTLU52zEnD2P6xmSCn14tri5aCM=
 -
 -Name: assets/enderio/textures/gui/40/inventory_9x2.png
 -SHA-256-Digest: uPp8z79LFYV5y+l0O+rHxxTLS2FgYg6kPv9sNnhQeKw=
@@ -3688,7 +3688,7 @@
 -SHA-256-Digest: ac/eGUL9yNn6wHi1E6fKVcU4wSNg7Pld1BUk+ldA7lc=
 -
 -Name: assets/enderio/config/recipes/capacitor_machines.pdf
--SHA-256-Digest: GU0kdzHIHMAHHU4HnwvmD9kluuAeUGJRDQ03Re4/jdA=
+-SHA-256-Digest: J+p3CRShjEcz/wVd1kokNN123w+2008M3vlKnX3B8Yc=
 -
 -Name: assets/enderio/textures/blocks/block_simple_sagmill_front_on.png
 - .mcmeta
@@ -3716,7 +3716,7 @@
 -SHA-256-Digest: yFlbiW60XDJ6Lmxk/F60RLgvc2Rl3+6ADe5f/vBL02Y=
 -
 -Name: assets/enderio/config/recipes/hiding_conduits.pdf
--SHA-256-Digest: Ev7FlqLabLVRsTVLBYumnGDih+W2V/SFnvTKN/+w8Yg=
+-SHA-256-Digest: WRDLoTFlrH28vfbtx/SnChvo9PEh42J2E/WRYORtZ+g=
 -
 -Name: assets/enderio/config/recipes/capacitor.xml
 -SHA-256-Digest: DbjdCgqTGO7I1ulPRmCYo2Xwxjv/GnRORuFlnEWfo9o=
@@ -3779,7 +3779,7 @@
 -SHA-256-Digest: fjahUJF14tFTtfcWYMKS6OHihgTNQTsXevwSU/qg7xo=
 -
 -Name: crazypants/enderio/base/EnderIODummy.class
--SHA-256-Digest: zUrl2T9wmzuFkdgEETB1S2nXYz1BCSB/yXBzQPKsVwk=
+-SHA-256-Digest: Sk25HgqfZoJ5GXXSAS51C5TQ9ZBayeKy74gSS1KmLLw=
 -
 -Name: assets/enderio/textures/items/item_dark_steel_upgrade_jumpboost3
 - .png
@@ -3915,7 +3915,7 @@
 -SHA-256-Digest: Tmxg0uIp4xrIE5k7eo1LAveshDnYhoXM6PZLgmRkf0U=
 -
 -Name: assets/enderio/config/recipes/items.pdf
--SHA-256-Digest: RsVi3SWt2PdthTzef65VjDanzOuvTnMMIBDAmeWWnqI=
+-SHA-256-Digest: bHxASEqqHxMwuOfEgc3hNAQnFFPnVsdxCUM5KSnssjc=
 -
 -Name: crazypants/enderio/base/invpanel/database/ItemEntryBase.class
 -SHA-256-Digest: ciVFgLsSKgYgsElo4jWFCATxp5JWC5Et8DfdXcK7HzU=
@@ -4224,7 +4224,7 @@
 -SHA-256-Digest: gzFcRSWKIPb1ArB3N1RPv5cIlI2Itt3m60NCGPS/cvQ=
 -
 -Name: assets/enderio/config/recipes/capacitor.pdf
--SHA-256-Digest: cIqBFVj4gPxTmbYADRtPKq4RF2KtWtbJV6vdSDnEz5g=
+-SHA-256-Digest: 7DxLNPIaBNmmX/QmHJu7vaWcY3NL37pf8+YlHMsOoy0=
 -
 -Name: assets/enderio/textures/blocks/vat/base.png
 -SHA-256-Digest: LTUlunsn4VGxDGXOPy7QbSifcOQcdPSRrLl4IfzY/ok=
@@ -4284,7 +4284,7 @@
 -SHA-256-Digest: xBGi2SpL8uGyfGwMebu87asoorNWqVXWHwSAZ7AO2Gw=
 -
 -Name: assets/enderio/config/recipes/sagmill.pdf
--SHA-256-Digest: /kVaxuazsp4GA7lYu9N++iipIiJKokOA3nC4wk9Y15g=
+-SHA-256-Digest: KDwDO8BtMWgbaEC2QjsDBsx4nr0AurJYzrv9n33tu/M=
 -
 -Name: crazypants/enderio/base/item/darksteel/upgrade/sound/SoundDetect
 - or.class
@@ -4422,7 +4422,7 @@
 -SHA-256-Digest: EcbesUbmhlsASNLBkqQI4ulPGx93MT3MWP5tmUGZJIk=
 -
 -Name: assets/enderio/config/recipes/conduits-applied-energistics.pdf
--SHA-256-Digest: WVLTN0dMIxO4PiSrAAPp+ZHdW4fMMhyuNLqKJ3rC2sQ=
+-SHA-256-Digest: jgtZ+zRJF4ZtOG9A5GC68sa3BLX404Hop2x8FXPlQrk=
 -
 -Name: crazypants/enderio/base/recipe/painter/PressurePlatePainterTempl
 - ate.class
@@ -4500,7 +4500,7 @@
 -SHA-256-Digest: RLQbhqO1+EVyWyEIw6luEEFn3asnU+pND8S/HunLchM=
 -
 -Name: assets/enderio/config/recipes/vat.pdf
--SHA-256-Digest: LMLCXktFRgzVgOGnViWm0yvfx8lpSWcIvJ0KrK1cPdk=
+-SHA-256-Digest: Ji0kzkBApGo1fvk1iwSkydB47rU+xB1p/kXv5ITnx3Q=
 -
 -Name: crazypants/enderio/api/upgrades/IRule$WithTooltip.class
 -SHA-256-Digest: /1knrXGWfm2W5mlmbWNfPGezpE7sNnT4youzogV6VN8=
@@ -4570,7 +4570,7 @@
 -
 -Name: crazypants/enderio/integration/forestry/EnderIOIntegrationForest
 - ry.class
--SHA-256-Digest: 8Wa7Wucf3FYSkg0/ocgZQWStfwNOniPkhaXR9ZM86J8=
+-SHA-256-Digest: iJvG0qfMcugGjodVLsoKPNY/5wzfSDO++DHEEpyQ5Xs=
 -
 -Name: assets/enderio/sounds/machine/vat/gurgle.ogg
 -SHA-256-Digest: IShScgNsNFnu0RRy6lVWzlGZsbX7o5v3oS1vMdnQYWo=
@@ -4607,7 +4607,7 @@
 -SHA-256-Digest: gqFzghbsPQaIkmri3XYw2jZ0czt4OTCeGhctdku8p6g=
 -
 -Name: assets/enderio/config/recipes/integration-forestry.pdf
--SHA-256-Digest: rkE5BU8gpLq7Gs5y5wX08L77AUu/Ea8BtnpdpzkrccU=
+-SHA-256-Digest: GCPi0rnkzpsINqu2Vu14Qw8jRtHI7S8kSnrfoQbKr7Y=
 -
 -Name: assets/enderio/textures/blocks/block_inv_panel_side.png
 -SHA-256-Digest: vFr9PM3itmBqiDQKcGwnACoK/4narAVWx+o5qTK+P2k=
@@ -4763,7 +4763,7 @@
 -SHA-256-Digest: 0HqB9/objGqUp/3g/l59mAfLHXjPLvLahG3TnwryAqA=
 -
 -Name: assets/enderio/config/recipes/sagmill_modded.pdf
--SHA-256-Digest: I+6ltHgjaeRaxjiYP28NhWRAdKzL2I0hjslkLDcMDhw=
+-SHA-256-Digest: up28LPb9XxJY0VP5QkT/UaxM1AjdaUROGPWGqK8zp3A=
 -
 -Name: crazypants/enderio/base/diagnostics/ProfilerDebugger$Element.cla
 - ss
@@ -4778,7 +4778,7 @@
 -SHA-256-Digest: 5goSWdIWPBSJEMG58EIGfC9iiDLjWwEL1qOh2n0nFck=
 -
 -Name: crazypants/enderio/base/handler/DevVersionWarningHandler.class
--SHA-256-Digest: +wCkKzFkKW+kD8LIYFC5kfRT5YGMliRu0t3dap/cmYs=
+-SHA-256-Digest: 70j96s+gsIEEcHXPbqivkVW+mbgg4SbA9WgTpUqq00I=
 -
 -Name: crazypants/enderio/machines/machine/teleport/telepad/BlockTelePa
 - d.class
@@ -4789,7 +4789,7 @@
 -SHA-256-Digest: EOVHfVjAtmhwZtcte4pNQn/MIlgPJZgSA/rOASAYPQo=
 -
 -Name: crazypants/enderio/conduit/oc/EnderIOConduitsOpenComputers.class
--SHA-256-Digest: IF2W2CzscZHkDzFUYYE1GeVUinu7tjMg3+2jkiMgCyY=
+-SHA-256-Digest: OJbTo+TdAcU4rLzZMnz2FWX+4Sv0y9sTINUDhfRLxi0=
 -
 -Name: crazypants/enderio/powertools/machine/capbank/packet/PacketNetwo
 - rkStateResponse.class
@@ -5356,7 +5356,7 @@
 -SHA-256-Digest: vG54S0BM1BubWBiZjoysOqy8BCMwmLKBj6RYudC2+C8=
 -
 -Name: assets/enderio/config/recipes/alloying.pdf
--SHA-256-Digest: RNk20fPKRcrERl0Q58gSkE6IGY7tsYMtkVZ/6VE42hY=
+-SHA-256-Digest: EQ9P5RyGEyCCNZHc5kCGgibSrAOrfjFuFiYCj1DTWyM=
 -
 -Name: assets/enderio/models/item/item_owl_egg.json
 -SHA-256-Digest: 93JZ89vVkc8V1KnOxz7INyzVaepbJeZ32/Jta3ML9us=
@@ -5590,7 +5590,7 @@
 -SHA-256-Digest: zBASbORn2G5vXoRwBzmrn+A896KNal3vpVYw/aTNha0=
 -
 -Name: assets/enderio/config/recipes/hiding_invpanel.pdf
--SHA-256-Digest: knapuiWq3EyfktJSQoB4V1KxECIUB2/gmktWiapcrm0=
+-SHA-256-Digest: K4QIqkjZ7U6rQERgank9MGLmnmIPumyPx666UI2GEb4=
 -
 -Name: crazypants/enderio/base/render/util/HalfBakedQuad.class
 -SHA-256-Digest: HBZqcV0pgmhEfQn3p1FjLkpmOuDChOqOBNVHGM84Rtc=
@@ -5860,7 +5860,7 @@
 -SHA-256-Digest: HAopq5uu0rjWDmetKRez+uEsbphBW0z9AsyTBpXY11k=
 -
 -Name: assets/enderio/config/recipes/soulbinder.pdf
--SHA-256-Digest: 3bt3D28/7JjGRXv2YrFkmnSyavLPfPqfiOlsLc0TI/M=
+-SHA-256-Digest: yNAcvt6pmCqaHQK7nZETRTCSDTRaD7etsWxQPJndf5E=
 -
 -Name: crazypants/enderio/base/item/darksteel/attributes/DarkSteelAttri
 - buteModifier.class
@@ -5970,7 +5970,7 @@
 -SHA-256-Digest: HaI9eTTpgS71oIIrtPSlr/f9RrRpA0WFWDROEFplcqs=
 -
 -Name: assets/enderio/config/recipes/conduits.pdf
--SHA-256-Digest: r32n4yhmIx+Bp5J2bmdzUcz2NHVBAlARxMI92z0krsw=
+-SHA-256-Digest: NmpFC5btgz5BYsVuO4CZYGGrLzZCMjQDV1k0er8fhFc=
 -
 -Name: crazypants/enderio/conduits/render/BlockStateWrapperConduitBundl
 - e.class
@@ -6350,7 +6350,7 @@
 -SHA-256-Digest: Uxs6yAVEm9WUD6uGFW0VcmwqzyNljSd0nearpQ7eUO8=
 -
 -Name: assets/enderio/config/recipes/sagmill_silentgems.pdf
--SHA-256-Digest: +m1nL2Ju6hgRUqWqBCiBpvvF3itFgkXD65+GfXwmup0=
+-SHA-256-Digest: FnQ3gew2M0Ow8N7Od7k1Cg3jCrDAptzs3sl5olncKVE=
 -
 -Name: crazypants/enderio/integration/tic/fluids/Metal$3.class
 -SHA-256-Digest: GG0W8js8yGb0mifb3+thC6FKHaHR6MTxWAvQHihV/hE=
@@ -6438,7 +6438,7 @@
 -SHA-256-Digest: CJCYp6EkYXr8jFd/gFl3rAu/bFUB4b8b6qWz+Aj5DQo=
 -
 -Name: mcmod.info
--SHA-256-Digest: u22JMRfSQ4iEygnpgG1wEHguSke453uryhhpnV1bsns=
+-SHA-256-Digest: BvkuIFAv+dunVo7lPq7AQWkvGMj5ZmynnxDWFOBKh1Y=
 -
 -Name: assets/enderio/models/item/item_refined_storage_conduit.json
 -SHA-256-Digest: abWuoTIl61BBOb/zHRM3UEFc6r/eU5sRmyCGYt2A0D0=
@@ -6658,7 +6658,7 @@
 -SHA-256-Digest: o4Hx1x4c2smWys/7x16K/Rvc937Sb2Ad9hAlmx3ojpA=
 -
 -Name: META-INF/fml_cache_annotation.json
--SHA-256-Digest: XU8miGTwhpUwgu9pWmtwKacKe5xPo93o9mWTSPzJKZk=
+-SHA-256-Digest: kMHPT1OqXcq0s7yXpoYcyiXU5yrjUpKlgo0Hz0PQvYY=
 -
 -Name: crazypants/enderio/invpanel/network/PacketUpdateExtractionDisabl
 - ed.class
@@ -7021,7 +7021,7 @@
 -
 -Name: crazypants/enderio/conduit/me/EnderIOConduitsAppliedEnergistics.
 - class
--SHA-256-Digest: Wd5lsfE138sJlywBRYDjr50xmJfhmdlaViSpOGSgFPs=
+-SHA-256-Digest: cDNokN4AkzmPfXeO/U5WdG54s04LvmQ5KnfXpcKupcg=
 -
 -Name: crazypants/enderio/conduits/render/ConduitTexture.class
 -SHA-256-Digest: 5w2Gj1CbrPlrw7VZOR1DK/aX1InaPJBmiXYBVr7gGW8=
@@ -8361,7 +8361,7 @@
 -SHA-256-Digest: QvKb/Pkhdv7A0Ix2I4w2f56eoHoo1BHAX5CkrDTyauQ=
 -
 -Name: assets/enderio/config/recipes/conduits-opencomputers.pdf
--SHA-256-Digest: Bjdjufq1kjnwp+UbfgwlotaQ9AiYekUnHsup3L788Ik=
+-SHA-256-Digest: DfQkHYLaKS9Kw34/ONPzoxHatd7omtBnSKVqpZ34OnY=
 -
 -Name: assets/enderio/textures/blocks/overlays/pull_top_bottom.png
 -SHA-256-Digest: U0lnL8O2FVOLihHUPgrPnlHG8ff9IddfAPuUmdMN/FQ=
@@ -8512,7 +8512,7 @@
 -SHA-256-Digest: uoOlSvdeZg2IWLV7xKsXKL7+uoIccGajXdhFt0eEpbg=
 -
 -Name: crazypants/enderio/machines/EnderIOMachines.class
--SHA-256-Digest: EZ+sRW9AklQPBCy3bBw4ifvOGcYWsQaPwG+vwfrSkm4=
+-SHA-256-Digest: EU985j5lIAnKMX9MY4dH66oHCESWUYzieDzHD2kQdEc=
 -
 -Name: crazypants/enderio/base/invpanel/database/IServerItemEntry.class
 -SHA-256-Digest: 4qBjQruBj6Le6lVd0yes5dlhguQViC6Munx0k9RRVJY=
@@ -8843,7 +8843,7 @@
 -SHA-256-Digest: KqJ1OW6SS59rCD8qp+wtlR0kwwfdoitgp8NXkIFKyNY=
 -
 -Name: crazypants/enderio/conduits/EnderIOConduits.class
--SHA-256-Digest: QsivSgienCRn93py6Yy42urEhDvy91omPeb9gfiXUq8=
+-SHA-256-Digest: X8p5P9Lr/o+1FOFPDVkTe6qdTPTFrsJcELav9NyBA+o=
 -
 -Name: crazypants/enderio/conduit/refinedstorage/conduit/RefinedStorage
 - ConduitNetwork.class
@@ -8898,7 +8898,7 @@
 -SHA-256-Digest: CfJmqibhbC1CbCxqFjvW18j/t13kqJRafbBqglURAYg=
 -
 -Name: assets/enderio/config/recipes/conduits-refined-storage.pdf
--SHA-256-Digest: xTmoaC7hjRTOinoQLMEotS85xJ0mKY3Bx9h/dF5hdRk=
+-SHA-256-Digest: 4meBLwElex8u4w6M/rjcNch8eDLsPIV55EHGqIevpME=
 -
 -Name: crazypants/enderio/invpanel/conduit/data/DataConduitNetwork.clas
 - s
@@ -8984,7 +8984,7 @@
 -SHA-256-Digest: tN/KH350NZC0IXK1YUmtIP9sh11fsfqnii7qe6mGXhU=
 -
 -Name: crazypants/enderio/base/EnderIO.class
--SHA-256-Digest: xaJMx3dbNyXAyVVS40Ih3r69TGx3Edi9oUHG6fGxoZc=
+-SHA-256-Digest: GxnnWAoZbRwWZHN5HEMzc45rc9213dTxWLVjb3oW6wQ=
 -
 -Name: crazypants/enderio/base/config/factory/ThingsValue$1.class
 -SHA-256-Digest: 8TAh/CWq8G3kc0W3J0v8uaqclzybOz+hxuArmdW66cw=
@@ -9089,7 +9089,7 @@
 -
 -Name: crazypants/enderio/conduit/refinedstorage/EnderIOConduitsRefined
 - Storage.class
--SHA-256-Digest: Mh6wmaaqarHEZkLqHSihS8yj1YuX+v5Pg3sLydkxlXo=
+-SHA-256-Digest: Mq1QSCGwmBc9TjN3QvN65jUkGTG0ii0+V/pf0NU76Ww=
 -
 -Name: crazypants/enderio/invpanel/network/PacketGuiSettings.class
 -SHA-256-Digest: /UTXvhwvumYi5pdiHUO66kWxc2ONGKwMdqqLL9T1oGg=
@@ -9436,7 +9436,7 @@
 -
 -Name: crazypants/enderio/integration/tic/EnderIOIntegrationTicLate.cla
 - ss
--SHA-256-Digest: jvYtvqlttCn7D75G+2oTRDrY4U+oY2iVNDuZVLDQ7ok=
+-SHA-256-Digest: dJJq7lauMv0kl5OGADnaKib+6cx/1v2hXkL9FczS+Gk=
 -
 -Name: assets/enderio/blockstates/block_omni_reservoir.json
 -SHA-256-Digest: 8bSF4I5GC9DOknsXb5WEATzD4+oPba5KbZ64RaBuSFU=
@@ -9979,7 +9979,7 @@
 -SHA-256-Digest: YGzrqP3UE/FHv7i1D51t+r8ZA6v9OTkZ2aLx16bNW8w=
 -
 -Name: assets/enderio/config/recipes/aliases.pdf
--SHA-256-Digest: XGKynTsBZ4iyoYZssaCHZTb60tOrwixegzk+eweYoX4=
+-SHA-256-Digest: FpWiz0agvfWYOQfrAInO7onWvfkEYiBq4i63CRhnr7o=
 -
 -Name: crazypants/enderio/machines/machine/reservoir/ReservoirTankWrapp
 - er.class
@@ -10100,7 +10100,7 @@
 -SHA-256-Digest: lC4EGRFkYNb+4K+Kbxn3ZxT0grDU3DnmkZ5ogTL1UJk=
 -
 -Name: assets/enderio/config/recipes/balls.pdf
--SHA-256-Digest: P+EAdHi+jOkgNqm5DCgk0/5D5vCn6kr9kI0AnhQ/7R0=
+-SHA-256-Digest: rEDh3Kroztyt6lROEkBuaHdu1V91gujMqJYjeah9xVc=
 -
 -Name: crazypants/enderio/base/filter/redstone/LogicOutputSignalFilter$
 - EnumSignalFilterType$4.class
@@ -10324,7 +10324,7 @@
 -SHA-256-Digest: k4WYSHh9nN0pGd3pAog71y3RNKrk+awQnJgXT0GAZhI=
 -
 -Name: crazypants/enderio/base/diagnostics/ModInterferenceWarner.class
--SHA-256-Digest: MpQUceWUPnzGr5TIGSEmDD0aZf9hmGqHzmqXs2IIWms=
+-SHA-256-Digest: JJjaei1rMwyekJFn2YoCbI54ClrjweYx2JLdm+BQ8Tk=
 -
 -Name: assets/enderio/textures/blocks/liquid_conduit_advanced_edge.png
 -SHA-256-Digest: VaLXJcnL20hnAzxA1Wd0b/+OTJjHr6z6LxCHiVHxRoI=
@@ -10549,7 +10549,7 @@
 -SHA-256-Digest: P4v8KBXiKpuwB52+xKIdYE9AHFKD/ELPS0DqtwDZ/GA=
 -
 -Name: assets/enderio/config/recipes/hiding_machines.pdf
--SHA-256-Digest: FAtCcnwKNvEQXAJrjm5urFlX+UmCaOnQfzqyBPDJ6P8=
+-SHA-256-Digest: oWh7FCw5KEq/HUDSWJHNCN9Gu5xLZvRnZQqGSgMmSFs=
 -
 -Name: crazypants/enderio/machines/machine/obelisk/attractor/handlers/S
 - ilverfishAttractorHandler.class
@@ -10880,7 +10880,7 @@
 -SHA-256-Digest: LThPLFcTdFwvJaqtbf4B/3oZ1VmfISpa/l/e5i6s208=
 -
 -Name: assets/enderio/config/recipes/sagmill_vanilla.pdf
--SHA-256-Digest: nsPUBoImUAkAIqCEEgRKbBi69uCtjiPG4ncoEdbDJlE=
+-SHA-256-Digest: ee+tlaeL/T8VjSYA7JFnu1bApQ0B/VrgidlyhWm9Bjg=
 -
 -Name: crazypants/enderio/base/render/itemoverlay/FusedQuartzOverlayRen
 - derHelper.class
@@ -10913,7 +10913,7 @@
 -SHA-256-Digest: WgrUBMAzzJO1OzrR/57D9d6xR7ZIyYjxHyc4eICCNYc=
 -
 -Name: assets/enderio/config/recipes/darksteel_upgrades.pdf
--SHA-256-Digest: vMp/Xok4YchKTBfgSsU9A+kHQcX6064VZfAz4RBh9rw=
+-SHA-256-Digest: xEB2z4VEC6InbevBC3DqeNEYHugm68BHlTulFfTvwmA=
 -
 -Name: crazypants/enderio/base/material/alloy/ItemAlloy.class
 -SHA-256-Digest: 2inmPxIYvOHj++ZmI11PgEvibcI1Ur+eK/AQQSkgrsk=
@@ -11400,19 +11400,19 @@
 -SHA-256-Digest: ERohLLOuIJQwWzBaCcAnUPx9bMugbzpJIZrD9qMYBU4=
 -
 -Name: crazypants/enderio/invpanel/EnderIOInvPanel.class
--SHA-256-Digest: w4Q25b7ur+8IgpqDeIBz13KVwnMVCBrBhn/pkX/MzwU=
+-SHA-256-Digest: KLoyExtOVWpdM1U8+XzCNftKEHOpa+FwBlz0+K95nXM=
 -
 -Name: crazypants/enderio/base/autosave/endercore/HandleThings.class
 -SHA-256-Digest: GuhGI6tVT50WRJmJJXygV97HgdmJUv2NWoZowjYtA7M=
 -
 -Name: assets/enderio/config/recipes/alloying_modded.pdf
--SHA-256-Digest: MGDOiF1EaRg7/tGNhYy/YQ9xDyc6R+p/WSF3jV4uoVw=
+-SHA-256-Digest: sbwTNwJQCLgS6OLGQFwqXvXlzedwkGM7qqCSJ70byiQ=
 -
 -Name: crazypants/enderio/base/recipe/RecipeBonusType.class
 -SHA-256-Digest: DILsgxt80ld51cbi9AR73WFewA33P2IFnb8AIHvW8eI=
 -
 -Name: assets/enderio/config/recipes/fuels.pdf
--SHA-256-Digest: mwhJD9Wxxf5itwWZCifkoZmW3GitgWmDG28CKqQCJEo=
+-SHA-256-Digest: B6L/EaSIyHOnTAUD8xz0Prg7BjNUgcHOKp4w6pPJj88=
 -
 -Name: crazypants/enderio/base/init/TickTimer.class
 -SHA-256-Digest: Q20MCMZzMHYHr6PUYxyq1ac+H7LUHyY1PbpTMlFgxMg=
@@ -11466,7 +11466,7 @@
 -SHA-256-Digest: pMDPKnHhhJ/f5ksYRnHB3m1S8qLMmwvaFmskjku7YX0=
 -
 -Name: assets/enderio/config/recipes/spawner.pdf
--SHA-256-Digest: SFgsXpA/dCsenGn26PY+DqvmfesFxMy3p3DX4AE1+BA=
+-SHA-256-Digest: 8HAVNSRmQ6YmLrR/uw5sDH0q5uUHuwgDL70+P2Es+wc=
 -
 -Name: crazypants/enderio/base/machine/base/te/EnergyLogic.class
 -SHA-256-Digest: vwqzcEdIP2Bo8mQuoPMttbb/qa01DuwH9vw22+p9mYk=
@@ -11941,7 +11941,7 @@
 -SHA-256-Digest: bx6mpP+TyPJdi4F4F+9G+Nd/MbGcCF8M5Tsp+CeGhTA=
 -
 -Name: assets/enderio/config/recipes/glass.pdf
--SHA-256-Digest: OQZx6kZQNm9GZ7Si7TT6BRUBviR1BMBt7k8h4EALyTM=
+-SHA-256-Digest: Rjlf8IOHMGxS0AS8V/eozbBfd39GjKZ9ub86M0CnjEA=
 -
 -Name: crazypants/enderio/base/material/alloy/endergy/ItemBlockEndergyA
 - lloy$1.class
@@ -12009,7 +12009,7 @@
 -SHA-256-Digest: h0x7aQBDpd2mrGSLT5w6k9KniuZNkSNS5BjguFGD/yk=
 -
 -Name: assets/enderio/config/recipes/powertools.pdf
--SHA-256-Digest: GzKc2WmV8SloIYL55b2kURrn81F1py+xZnQR2U3pk94=
+-SHA-256-Digest: xe/U/ar0A8N59Bf4F4+ZlQnvmfRFiBucoLMKs+7M1sQ=
 -
 -Name: assets/enderio/textures/blocks/block_wired_charger.png
 -SHA-256-Digest: r06S4jsTQ4IUldv1dHS7cGIplCraxoDqYsBIae5PwPQ=
@@ -12217,7 +12217,7 @@
 -SHA-256-Digest: my5MMW+WmS3AqBbewUIe3mkksu3IsvdXtT46lptp+5o=
 -
 -Name: assets/enderio/config/recipes/hiding_base.pdf
--SHA-256-Digest: LwCi0+gtWqtqkgN3kQDG3eXt9MN/i4TMN2zuC+54v/8=
+-SHA-256-Digest: qDO15dN/PHWB6UDwogPkoCWbyJ81hzCwhPs+rivES6E=
 -
 -Name: assets/enderio/models/item/item_dark_steel_shield.json
 -SHA-256-Digest: MFhWWHbyHLsCuisF4fR1LdTqpTdRibYsAJfYxrSFOiU=
@@ -12249,7 +12249,7 @@
 -SHA-256-Digest: mLuo/g4ac1AqSkUWHn1drwUrK7G3XKzhgkOvwVY2ETk=
 -
 -Name: crazypants/enderio/integration/tic/EnderIOIntegrationTic.class
--SHA-256-Digest: UUAI7WSxz+FtEJU2zUi85stimBnlajTLUJ8Ax6z+9uA=
+-SHA-256-Digest: D6gwdiVBjQfOBp9ufMSCWsfEHi0T2WifnuylCqRNHmM=
 -
 -Name: assets/enderio/eiobook/en_us/intro/welcome.json
 -SHA-256-Digest: bq7Y7XqWDfrkYJhW2JWlyIjLBZwArDSp8YGQBfH7/D8=
@@ -12541,7 +12541,7 @@
 -SHA-256-Digest: zxwEGCtJA4iKMcESqWidUUyo7MhErn8b0AeUzLIKWDg=
 -
 -Name: assets/enderio/config/recipes/tank.pdf
--SHA-256-Digest: hs3RWFBpq1MxdyGu0Giww9KUgQNz9LRGm1BbbXALxzs=
+-SHA-256-Digest: j8G8gszvh2dGHTP1+Zab1KqXLQGCtr0JJsaFnkh5Ll8=
 -
 -Name: crazypants/enderio/machines/machine/wired/TileWiredCharger$Enhan
 - ced.class
@@ -12749,7 +12749,7 @@
 -SHA-256-Digest: YQmCA+P/Ywl4pIiomr6pSlEh3ULHMMbEYGPMDKRMVJo=
 -
 -Name: assets/enderio/config/recipes/darksteel_upgrades_forestry.pdf
--SHA-256-Digest: 0urgpXAINMnna+V51/3Q+AVZ1myi+R7skSJmKe2a9yI=
+-SHA-256-Digest: qPa6RoP4kpa7U2v/O7R6ZteKBum/AVd9i1RHbWG5D1Y=
 -
 -Name: crazypants/enderio/machines/machine/soul/GuiSoulBinder.class
 -SHA-256-Digest: PUL/OZzUkqvrvfDmUBQvToRB8MJK1dvmQJG0Kyt+veg=
@@ -12799,7 +12799,7 @@
 -SHA-256-Digest: vZO8rfO5APPJwD2CBHgKCMt8hWSHWfBjaSVzYQEoItk=
 -
 -Name: assets/enderio/config/recipes/sagmill_ores.pdf
--SHA-256-Digest: Mt80fm2R4CUUA90oPZH7Z3wwQ/+xv0AF+6XAFCedkYo=
+-SHA-256-Digest: n8+nH0+xDapOiJfhLZ3XXa1kP525bvwtlgXW+BvWRQU=
 -
 -Name: crazypants/enderio/machines/integration/jei/WiredChargerRecipeCa
 - tegory$WiredChargerRecipeWrapper.class
@@ -12896,7 +12896,7 @@
 -SHA-256-Digest: Zb2nLMh3p3JH20KowfbzWhlcEKpO8z+hC6JjFuUQVM8=
 -
 -Name: assets/enderio/config/recipes/sagmill_metals.pdf
--SHA-256-Digest: I0waju72KEsLVseKUfioAoeHRh1J2KgZzbkRaZzkyUs=
+-SHA-256-Digest: Im2/GwhmYlFIKbV8oPEmoH0pIRAFVhUrYrnQHmRZTzk=
 -
 -Name: assets/enderio/textures/items/item_rs_crafting_speed_downgrade.p
 - ng
@@ -13216,7 +13216,7 @@
 -SHA-256-Digest: asspxJPHvJSfmw52qqbn5UJXEPgGwmecQUThkEmCncs=
 -
 -Name: assets/enderio/config/recipes/enchanter.pdf
--SHA-256-Digest: zACgPclVQ1RORMNHBL/8F0i3SahptYlMC/8Ncd4Ogf8=
+-SHA-256-Digest: lBGFGRWDdNp2oWujFZa4wQVTN1/ZxLX2L2ydXL3Zrq8=
 -
 -Name: assets/enderiomachines/textures/items/item_dark_steel_upgrade_so
 - lar2.png
@@ -13265,7 +13265,7 @@
 -SHA-256-Digest: 5AGVY6VskIAlT8W7yjj4dhuxQohfrIP1azuGxhM2PLI=
 -
 -Name: crazypants/enderio/powertools/EnderIOPowerTools.class
--SHA-256-Digest: nfsPrZa2Qlm/CA1WfJUjZtl/18jfIlhcdgrVMm1up8g=
+-SHA-256-Digest: UPE47YM4egAXmE8XNbgip11cEWMW5HO61ASFEa9VM0k=
 -
 -Name: crazypants/enderio/base/config/recipes/xml/Alloying.class
 -SHA-256-Digest: yrCrP6ojZKUsW28C55vOFF7OH3U+SdVGNuFkHPF5ET4=
