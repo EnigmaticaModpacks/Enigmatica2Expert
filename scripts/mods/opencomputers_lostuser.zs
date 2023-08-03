@@ -10,13 +10,20 @@ https://gist.github.com/Krutoy242/1f18eaf6b262fb7ffb83c4666a93cbcc
 
 val userEEPROM = <opencomputers:storage>.withTag({"oc:data": {"oc:readonly": 0 as byte, node: {visibility: 1, buffer: 0.0},
   "oc:eeprom": [
-/*Inject_js(
-_.chunk(loadText('hei_bookmarks.ini')
-  .match(/id:"opencomputers:storage"[^\n]+?"oc:eeprom":\[B;([-\dB,]+)\]/m)
-  ?.[1].replace(/B/gi, '').split(','), 16).map(l => l.map(s => `${s.padStart(4)},`)).map((l, i) => [
-  `/*${String(i * 16).padStart(4)}*`+'/ ', ...l, ...(l.length < 16 ? new Array(16 - l.length).fill('') : []),
-])||cmd.block
-)*/
+/*Inject_js{
+const list = _.chunk(
+  loadText('hei_bookmarks.ini')
+    .match(/id:"opencomputers:storage"[^\n]+?"oc:eeprom":\[B;([-\dB,]+)\]/m)
+    ?.[1].replace(/B/gi, '').split(','), 16
+)
+.map(l => l.map(s => `${s.padStart(4)},`))
+.map((l, i) => [
+  `/*${String(i * 16).padStart(4)}*` + '/ ',
+  ...l,
+  ...(l.length < 16 ? new Array(16 - l.length).fill('') : []),
+])
+return list.length ? list : cmd.block
+}*/
 /*   0*/  108, 111,  99,  97, 108,  32, 105,  61,  91,  91,  10,-111, 108, 111,  99,  97,
 /*  16*/  108,  32,  66,  44,  67,  44,  70,  44,  71,  44,  72,  44,  73,  44,  74,  44,
 /*  32*/   75,  44,  83,  44,  84,  44,  85,  44,  87,  44,  88,  44,  89,  44,  90,  44,
