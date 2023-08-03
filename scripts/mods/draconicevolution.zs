@@ -55,7 +55,7 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 # Wyvern Core
 	recipes.remove(<draconicevolution:wyvern_core>);
 	scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
-	[[<ore:shulkerShell>, <draconicevolution:draconic_core>, <ore:shulkerShell>],
+	[[<minecraft:shulker_shell>, <draconicevolution:draconic_core>, <minecraft:shulker_shell>],
 	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>],
 	[<ore:ingotVividAlloy>, <environmentaltech:pladium>, <ore:ingotVividAlloy>]],
 	40, <liquid:ic2hot_coolant> * 2000, null, 2);
