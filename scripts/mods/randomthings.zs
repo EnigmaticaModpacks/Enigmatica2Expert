@@ -200,14 +200,14 @@ craft.remake(<randomthings:slimecube>, ["pretty",
   "M": <tconstruct:materials:19>,   # Mending Moss
 });
 
-# [Fertilized Dirt]*8 from [Slop Bucket][+2]
+# [Fertilized Dirt]*8
 craft.remake(<randomthings:fertilizeddirt> * 8, ["pretty",
   "F f F",
   "f ~ f",
   "F f F"], {
   "F": <randomthings:ingredient:7>, # Floo Powder
   "f": <ore:fertilizer>,            # Fertilizer
-  "~": Bucket('slop'),              # Slop Bucket
+  "~": Bucket('witchwater'),
 });
 
 
