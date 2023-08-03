@@ -101,7 +101,7 @@ craft.remake(<randomthings:spectrekey>, ["pretty",
 recipes.removeShaped(<randomthings:spectreanchor>);
 recipes.addShaped(<randomthings:spectreanchor>, [
 	[<randomthings:ingredient:2>],
-	[<tombmanygraves:death_list>],
+	[utils.tryCatch("tombmanygraves:death_list", <minecraft:paper>)],
 	[<randomthings:rezstone>]]);
 
 # Spectre Ingot
