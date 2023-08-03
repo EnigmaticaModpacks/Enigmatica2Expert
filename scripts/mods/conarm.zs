@@ -19,32 +19,33 @@ remakeResistance(<conarm:resist_mat_fire>,  <ore:itemBeeswax>);
 remakeResistance(<conarm:resist_mat_proj>,  <ore:dragonscales>);
 remakeResistance(<conarm:resist_mat_blast>, <ore:dustAsh>);
 
-remake("Travel Belt Base", <conarm:travel_belt_base>, [
-	[null, <ore:string>, null],
-	[<harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>, <harvestcraft:hardenedleatheritem>],
-	[null, <ore:string>, null]]);
+# [Traveller's Belt (Base)] from [Red Wolf Pelt][+1]
+craft.remake(<conarm:travel_belt_base>, [
+  "sps"], {
+  "s": <ore:string>, # String
+  "p": <ore:pelt>,   # Red Wolf Pelt
+});
 
-
-# [Traveller's Goggles (Base)] from [Raw Plastic][+2]
+# [Traveller's Goggles (Base)] from [Plastic][+2]
 craft.remake(<conarm:travel_goggles_base>, ["pretty",
-  "H O H",
-  "⌃ H ⌃"], {
-  "H": <harvestcraft:hardenedleatheritem>, # Hardened Leather
-  "O": <ore:plastic>, # Raw Plastic
-  "⌃": <appliedenergistics2:quartz_glass>, # Quartz Glass
+  "p R p",
+  "■ p ■"], {
+  "p": <ore:pelt>,       # Red Wolf Pelt
+  "R": <ore:itemRubber>, # Plastic
+  "■": <ore:blockGlass>, # Glass
 });
 
 # [Traveller's Goggles (Night Vision)] from [Traveller's Goggles (Base)][+1]
 craft.remake(<conarm:travel_night>, [
   "PTP"], {
-  "P": <endreborn:item_end_shard>,   # Purpur Shards
+  "P": <ore:stonePurpur>,            # Purpur Block
   "T": <conarm:travel_goggles_base>, # Traveller's Goggles (Base)
 });
 
 # [Traveller's Goggles (Soul Sight)] from [Traveller's Goggles (Base)][+1]
 craft.remake(<conarm:travel_soul>, [
-  "RTR"], {
-  "R": <rats:ratlantean_flame>,      # Ratlantean Spirit Flame
+  "GTG"], {
+  "G": <enderio:block_holier_fog>,   # Glowstone Nano-Particles
   "T": <conarm:travel_goggles_base>, # Traveller's Goggles (Base)
 });
 
@@ -55,14 +56,14 @@ remakeEx(<conarm:gauntlet_mat>, [
 	[null, <ore:deathwormChitin>, <ore:deathwormChitin>]
 ]);
 
-# [Traveller's Knapsack] from [Uncolossal Chest][+2]
+# [Traveller's Knapsack] from [Cabinet][+2]
 craft.remake(<conarm:travel_sack>, ["pretty",
   "p   p",
-  "R U R",
-  "R R R"], {
-  "p": <ore:pelt>,                        # Snowy Wolf Pelt
-  "R": <ore:leather>,
-  "U": <colossalchests:uncolossal_chest>, # Uncolossal Chest
+  "l C l",
+  "l l l"], {
+  "p": <ore:pelt>,       # Red Wolf Pelt
+  "l": <ore:leather>,    # Leather
+  "C": <rustic:cabinet>, # Cabinet
 });
 
 # [Traveller's Cloak (Slow Fall)] from [Traveller's Cloak (Base)][+1]
