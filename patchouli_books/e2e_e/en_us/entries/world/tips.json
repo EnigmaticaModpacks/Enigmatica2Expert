@@ -133,7 +133,7 @@
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§n/integrateddyanmics networkdiagnostics§r is great to find out what exactly you did with ID that's destroying §4TPS§r$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!$(li)§nHeads§r with NBT tags in ME terminal cause FPS lag",
+      "text": "$(li)§n/integrateddynamics networkdiagnostics§r is great to find out what exactly you did with ID that's destroying §4TPS§r$(li)§lNeed Vis?§r Place the §nArcane Workbench§r in the §2Twilight Forest§r!$(li)§oEnvironmental Tech§r multiblocks can §lshare blocks§r!$(li)§nHeads§r with NBT tags in ME terminal cause FPS lag",
       "title": "Tips"
     },
     {
