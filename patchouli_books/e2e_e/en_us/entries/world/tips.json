@@ -37,13 +37,13 @@
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§lStarlight Transmutation§r gives you access to §nEnd Stone§r without ever going to The End.$(li)You can put the Astral Sorcery §nLinking Wand§r in your offhand, and it won't stop linking.$(li)§e/xu_powersharing§r allows you to share Extra Utilities §4Grid Power§r with anyone on your server.",
+      "text": "$(li)§lStarlight Transmutation§r gives you access to §nEnd Stone§r without ever going to The End.$(li)You can put the Astral Sorcery §nLinking Wand§r in your offhand, and it won't stop linking.$(li)§6/xu_powersharing§r allows you to share Extra Utilities §4Grid Power§r with anyone on your server.",
       "title": "Tips"
     },
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)§e/foodlist size§r shows you how many different foods you already ate.$(li)§e/undo_excavation§r can undo §6Ore Excavator§r$(li)§e/wandOops§r can undo the §6Better Builder's Wand§r$(li)§lAstral Sorcery Rituals§r (and linked Ritual Anchors) act as §lChunkloaders§r.",
+      "text": "$(li)§6/foodlist size§r shows you how many different foods you already ate.$(li)§6/undo_excavation§r can undo §6Ore Excavator§r$(li)§6/wandOops§r can undo the §6Better Builder's Wand§r$(li)§lAstral Sorcery Rituals§r (and linked Ritual Anchors) act as §lChunkloaders§r.",
       "title": "Tips"
     },
     {
@@ -109,7 +109,7 @@
     {
       "item": "thaumicaugmentation:research_notes",
       "type": "text",
-      "text": "$(li)Press \"§lShift+F8§r\" to refresh your sound device.$(li)§nFluid Tank§r from Ender IO - When trashing items in §elava§r, a tiny amount of more §elava§r will be produced.$(li)§nCarry on§r mob spawner trigger more mobs to spawn.$(li)Game stages don't actually prohibit anything.",
+      "text": "$(li)Press \"§lShift+F8§r\" to refresh your sound device.$(li)§nFluid Tank§r from Ender IO - When trashing items in §6lava§r, a tiny amount of more §6lava§r will be produced.$(li)§nCarry on§r mob spawner trigger more mobs to spawn.$(li)Game stages don't actually prohibit anything.",
       "title": "Tips"
     },
     {

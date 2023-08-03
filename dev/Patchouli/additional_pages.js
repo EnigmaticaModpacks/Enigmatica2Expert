@@ -114,7 +114,10 @@ export function init(Patchouli_js, helpers) {
     .map(lines => ({
       item: 'thaumicaugmentation:research_notes',
       type: 'text',
-      text: lines.replace(/^(.+)/gm, '$(li)$1').replace(/\n/gm, ''),
+      text: lines
+        .replace(/^(.+)/gm, '$(li)$1')
+        .replace(/§e/gm, '§6') // Yellow too bright to read with default Patchouli background texture
+        .replace(/\n/gm, ''),
     }))
   )
 }
