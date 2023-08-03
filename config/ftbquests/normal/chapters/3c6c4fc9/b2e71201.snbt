@@ -29,9 +29,6 @@
 		uid: "ef74f63a",
 		type: "item",
 		items: [{
-			item: "trinity:trinitite_shard"
-		},
-		{
 			item: "trinity:salted_sand"
 		},
 		{

@@ -1,0 +1,23 @@
+{
+	x: 9.1d,
+	y: 13.7d,
+	text: [
+		"{q.nuclearcraft_overh.trinitite_shard.desc}"
+	],
+	dependencies: [
+		"b2e71201"
+	],
+	tasks: [{
+		uid: "a237777e",
+		type: "item",
+		items: [{
+			item: "trinity:trinitite_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "a53c5354",
+		type: "item",
+		item: "trinity:trinitite_shard",
+		count: 25
+	}]
+}
