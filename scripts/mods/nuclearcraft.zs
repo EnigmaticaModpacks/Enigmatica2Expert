@@ -196,6 +196,9 @@ craft.remake(<nuclearcraft:radiation_scrubber>, ["pretty",
 mods.nuclearcraft.Melter.addRecipe(<nuclearcraft:solidified_corium>, <fluid:corium> * 1000);
 mods.nuclearcraft.IngotFormer.addRecipe(<fluid:corium> * 1000, <nuclearcraft:solidified_corium>);
 
+# Remove unused infinity metal recipe
+mods.nuclearcraft.IngotFormer.removeRecipeWithInput(<fluid:infinity> * 144);
+
 # [Energetic Blend] harder
 recipes.remove(<nuclearcraft:compound:2>);
 mods.mekanism.infuser.addRecipe("GLOWSTONE", 10, <minecraft:redstone>, <nuclearcraft:compound:2>);
