@@ -63,6 +63,7 @@ static uncapturables as IEntityDefinition[] = [
   <entity:twilightforest:snow_queen>,
   <entity:twilightforest:ur_ghast>,
   <entity:twilightforest:yeti_alpha>,
+  <entity:thaumadditions:chester>,
 /**/
 ] as IEntityDefinition[];
 
