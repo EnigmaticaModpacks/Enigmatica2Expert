@@ -79,7 +79,7 @@ print("--- loading Endergy.zs ---");
 	mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:benitoite>, 100000000, 1000000, <botania:manaresource:5>, 
 	[<botania:manaresource:9>, <botania:manaresource:1>, <botania:manaresource:7>, 
 	<botania:pylon:1>, <botania:manaresource:2>, <botania:manaresource:8>, 
-	<astralsorcery:itemcraftingcomponent:2>, <extendedcrafting:material:40>, 
+	<astralsorcery:itemcraftingcomponent:2>, <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), 
 	<astralsorcery:itemcraftingcomponent:4>, <astralsorcery:itemcoloredlens:6>, 
 	<bloodmagic:blood_rune:9>, <bloodmagic:blood_rune:10>, <bloodmagic:points_upgrade>,
 	<bloodmagic:slate:4>, <thaumcraft:mechanism_complex>]);
