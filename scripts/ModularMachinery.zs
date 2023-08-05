@@ -20,7 +20,7 @@ import mods.jei.JEI.removeAndHide as rh;
 # Starlight Crafting Engine
 	recipes.addShapedMirrored("Starlight Crafting Engine", 
 	<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:starlight_crafting_engine"}), 
-	[[<ore:ingotModularium>, <astralsorcery:itemshiftingstar>, <ore:ingotModularium>],
+	[[<ore:ingotModularium>, <astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}), <ore:ingotModularium>],
 	[<ore:ingotModularium>, <immersiveengineering:blueprint>.anyDamage(), <ore:ingotModularium>], 
 	[<ore:ingotModularium>, <astralsorcery:itemcraftingcomponent:4>, <ore:ingotModularium>]]);
 
