@@ -1,7 +1,7 @@
 var machineName = "starlight_crafting_engine";
 
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_shifting_star", machineName, 600)
-	.addItemOutput(<astralsorcery:itemshiftingstar>)
+	.addItemOutput(<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}))
 	.addFluidInput(<liquid:astralsorcery.liquidstarlight> * 5000)
 	.addItemInput(<ore:gemAquamarine>, 4)
 	.addItemInput(<ore:dustAstralStarmetal>, 2)
@@ -37,7 +37,7 @@ mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_luminous_powder",
 mods.modularmachinery.RecipeBuilder.newBuilder(machineName + "_prism", machineName, 700)
 	.addItemOutput(<astralsorcery:itemenchantmentamulet>)
 	.addFluidInput(<liquid:astralsorcery.liquidstarlight> * 6000)
-	.addItemInput(<astralsorcery:itemshiftingstar>)
+	.addItemInput(<astralsorcery:itemshiftingstar>.withTag({astralsorcery: {}}))
 	.addItemInput(<ore:string>)
 	.addItemInput(<ore:pearlEnderEye>)
 	.addItemInput(<ore:ingotGold>, 2)
