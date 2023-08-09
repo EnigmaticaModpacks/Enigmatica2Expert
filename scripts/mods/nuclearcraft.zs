@@ -309,6 +309,7 @@ mods.nuclearcraft.Melter.removeRecipeWithOutput(<fluid:lead_platinum> * 144);
 mods.tconstruct.Casting.removeTableRecipe(<nuclearcraft:alloy:9>);
 mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:9> * 4);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:9>);
+mods.nuclearcraft.SaltMixer.removeRecipeWithInput(<fluid:lead_platinum> * 144, <fluid:ender> * 250);
 utils.rh(<nuclearcraft:alloy:9>);
 
 # More melting compat
