@@ -1,5 +1,30 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.90g
+
+_Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90g.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90g.md)_
+
+**Added mods**
+
+-   [SerializationIsBad](https://www.curseforge.com/minecraft/mc-mods/serializationisbad) (by [Dogboy21](https://www.curseforge.com/members/Dogboy21/projects))
+
+**Removed mods**
+
+-   [JustTheTips](https://www.curseforge.com/minecraft/mc-mods/justthetips) (by [DeflatedPickle](https://www.curseforge.com/members/DeflatedPickle/projects)) (The files were removed from CurseForge)
+
+**Fixed bugs**
+
+-   Fixed a security issue, by adding the mod SerializationIsBad [\#2146](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2146)
+-   Game crashes when you try to bucket Biomes O' Plenty poison [\#2143](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2143)
+-   Disable Cyclic fluid poison, to make BoPs the default one as it generates in world and causes crashes otherwise
+-   Replace Shifting Star in a few recipes that could be uncraftable on servers with Ender Stars
+
+**Improvements**
+
+-   Made Ender Stars a bit harder to craft, matching Shifting Star slightly
+
+---
+
 ## 1.90f
 
 _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90f.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90f.md)_
