@@ -157,3 +157,7 @@ recipes.addShaped("ExtendedCrafting Automating table", <extendedcrafting:interfa
 	[<ore:ingotBlackIron>, <extendedcrafting:material:10>, <ore:ingotBlackIron>],
 	[<extendedcrafting:material:17>, <extendedcrafting:frame>, <extendedcrafting:material:17>],
 	[<ore:ingotBlackIron>, <extendedcrafting:material:2>, <ore:ingotBlackIron>]]);
+
+# Harder Ender Star
+mods.extendedcrafting.EnderCrafting.remove(<extendedcrafting:material:40>);
+mods.extendedcrafting.EnderCrafting.addShaped(<extendedcrafting:material:40>, [[<astralsorcery:itemcraftingcomponent:4>, <minecraft:ender_eye>, <astralsorcery:itemcraftingcomponent:4>], [<astralsorcery:itemcraftingcomponent:2>, <actuallyadditions:item_misc:19>, <astralsorcery:itemcraftingcomponent:2>], [<astralsorcery:itemcraftingcomponent:4>, <minecraft:ender_eye>, <astralsorcery:itemcraftingcomponent:4>]]);
