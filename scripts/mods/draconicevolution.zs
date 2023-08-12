@@ -2,6 +2,9 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 #modloaded draconicevolution
 
+// Increase blast resistant to omit mining cheasing with dynamite
+<draconicevolution:draconium_ore>.asBlock().definition.resistance = 720;
+
 # Debug chest for recipes
 if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag({
   ench:[{lvl:1,id:0}], // Add enchant glow
