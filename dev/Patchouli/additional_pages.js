@@ -47,11 +47,33 @@ export function init(Patchouli_js, helpers) {
   // ----------------------------------------------------
   Patchouli_js('Items/Recycling', [
     {
-      item : 'requious:tinkers_disassembler',
+      item : 'tconstruct:shard{Material:"wood"}',
       title: 'Tool recycling',
-      _text: `Tools and Armor can be disassembled.
-      $(li)???
-      $(li)PROFIT`,
+      _text: `
+      $(li)You need 5 tools: §6Hatchet§r, §6Pickaxe§r, §6Shovel§r, §6Chisel§r and §6Sledge Hammer§r.
+      $(li)Place tools (§2T§r) and gear you want to disassemble (§3G§r) into crafting table in this order
+        §2TTT§r
+        §2T§3G§2T§r.`,
+    },
+    {
+      title: 'Tool recycling',
+      _text: `
+      $(li)If you placed items in right order, you would get Shards of material with highest mining level.
+      $(li)You get less shards if gear damaged.
+      $(li)If you placed tools in wrong order, you will get same gear back but damaged. Each tool that "not on its place" damage gear to 1.`,
+    },
+    {
+      title: 'Tool recycling',
+      _text: `
+      $(li)So, cycling tools order you can descrease damage, finding perfect order eventually.
+      $(li)Each time you perform recipe, tools damaged on 10
+      $(li)You can get shards of material softer than average mining level or tools. For example, you cant get Iron Shards by disassembling with Wooden tools.`,
+    },
+    {
+      title: 'Tool recycling',
+      _text: `
+      $(li)If you disassembling gear, which every tool part have higher mining level than your tools, you get Stone Shard as result.
+      $(li)There is also Paper and Bone shards - when you disassemble buggy tool.`,
     },
   ])
 
