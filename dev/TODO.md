@@ -2,12 +2,16 @@
 
 🚧✅❌ List of priorities:
 
-- [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
-- [ ] 🟢 Configure `Worldgen Indicators`
-- [ ] 🟢 Configure `Villager Trade Tables`
+- [ ] ✏️ cut ore list of `Laser Drill`
+- [ ] 📖 fix Sharp Kit Quests Cant Handle NBT Diffs
+- [ ] 🐛 fix Tool Station Lag
+- [ ] 📖 FTBQuest can have links by `Custom Click` field
 - [ ] 🟢 Add https://github.com/Olivoz/ExtendedConfigs
-- [ ] 🟢 Add `MC2Discord`
-- [ ] 📖 fixSharpKitQuestsCantHandleNBTDiffs
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/filedirector
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/visualores
+- [ ] 🟢 Configure `Villager Trade Tables`
+- [ ] 🟢 Configure `Worldgen Indicators`
+- [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
 
 ---
 
@@ -17,6 +21,7 @@
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ blight Tamed Always Drop Something. Problem: dont know how to determine if entity is tamed
 - [ ] 🧩 Make Platforms from Random Things with metal texture instead of wood
 - [ ] ✏️ disable Excavate Ench For Pickarang
 - [ ] ✏️ Transfer liquid interaction to Witch Water, remove Plus Tweaks
