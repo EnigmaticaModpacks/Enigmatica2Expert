@@ -6,9 +6,9 @@
 		count: 32
 	},
 	{
-		icon: "actuallyadditions:block_shock_suppressor 2",
+		icon: "actuallyadditions:block_shock_suppressor 20",
 		item: "actuallyadditions:block_shock_suppressor",
-		count: 2
+		count: 20
 	},
 	{
 		icon: "forestry:sturdy_machine 4",

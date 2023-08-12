@@ -4,7 +4,7 @@
 		item: {
 			id: "tconstruct:excavator_head",
 			tag: {
-				Material: "ma.prudentium"
+				Material: "ma.soulium"
 			}
 		}
 	},
