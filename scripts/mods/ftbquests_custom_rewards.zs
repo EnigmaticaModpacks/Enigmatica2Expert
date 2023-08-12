@@ -17,19 +17,23 @@ function formatPlayTime(player as IPlayer) as string {
   ).trim();
 }
 
+function notifyEveryone(player as IPlayer, langCode as string, title as string) as string {
+  server.commandManager.executeCommand(server,
+    '/say ' ~ mods.zenutils.I18n.format(
+      game.localize(langCode),
+      player.name,
+      title,
+      formatPlayTime(player)
+    )
+  );
+}
+
 events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
   /**
   * Endorse player with message to whole server as its finished chapter
   */
   if(e.reward.tags has 'chapcomplete') {
-    server.commandManager.executeCommand(server,
-      '/say ' ~ mods.zenutils.I18n.format(
-        game.localize('e2ee.chapter_complete'),
-        e.player.name,
-        e.reward.quest.chapter.title,
-        formatPlayTime(e.player)
-      )
-    );
+    notifyEveryone(e.player, 'e2ee.chapter_complete', e.reward.quest.chapter.title);
   }
 
   /**
@@ -41,11 +45,7 @@ events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
         '/ranks add ' ~ e.player.name ~ ' conflux_' ~ k
       );
 
-      e.player.sendMessage(mods.zenutils.I18n.format(
-        game.localize('e2ee.you_achieved'),
-        e.reward.quest.title,
-        formatPlayTime(e.player)
-      ));
+      notifyEveryone(e.player, 'e2ee.player_achieved', e.reward.quest.title);
     }
   }
 });
