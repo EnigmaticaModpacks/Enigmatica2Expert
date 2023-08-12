@@ -165,6 +165,9 @@ e2ee.written_book.Creeper=Creeper
 e2ee.written_book.Zombie=Zombie
 
 # Misc
+e2ee.otg.not_otg_biome=§2Cant TP to non-OTG biome with ID:§r §a§n%s§r§2. §8Try other Biome Essence.§r
+e2ee.otg.tp_to=§2Attempt teleport to:§r §a§n%s§r §8Wait until teleported or aborted.§r
+e2ee.otg.tp_finished=§2Teleporting finished.§r §8Try again if not teleported.§r
 e2ee.chapter_complete=§l%s§r has fully completed the §n%s§r chapter after §l%s§r of play!§r ```Congrats!```
 e2ee.player_achieved=§l%s§r achieved §n%s§r after §l%s§r of play!§r
 e2ee.eu2_drum_error=§7You must have at least 1 empty inventory slot to do this
