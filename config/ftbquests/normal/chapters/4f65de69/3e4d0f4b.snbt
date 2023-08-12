@@ -1,5 +1,12 @@
 {
 	title: "{q.getting_started.harvest_level_10.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		Count: 10,
+		tag: {
+			Material: "enderium"
+		}
+	},
 	x: 12.625d,
 	y: 3.5d,
 	text: [

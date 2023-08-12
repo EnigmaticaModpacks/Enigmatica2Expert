@@ -1,5 +1,12 @@
 {
 	title: "{q.getting_started.harvest_level_14.name}",
+	icon: {
+		id: "tconstruct:sharpening_kit",
+		Count: 14,
+		tag: {
+			Material: "chaotic_metal"
+		}
+	},
 	x: 18.625d,
 	y: 3.5d,
 	text: [

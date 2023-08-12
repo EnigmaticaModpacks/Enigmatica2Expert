@@ -2,6 +2,7 @@
 	title: "{q.getting_started.harvest_level_2.name}",
 	icon: {
 		id: "tconstruct:sharpening_kit",
+		Count: 2,
 		tag: {
 			Material: "certus_quartz"
 		}
