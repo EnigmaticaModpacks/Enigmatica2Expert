@@ -748,7 +748,7 @@ function workEx(machineNameAnyCase as string, exceptions as string,
     if (machineName == "advrockelectrolyzer") {
       val b = mods.advancedrocketry.RecipeTweaker.forMachine('Electrolyser').builder();
       for o in inputLiquids { b.input(o); }
-      for i in 0 .. max(2, outputLiquids.length) { b.outputs(outputLiquids[i]); }
+      for i in 0 .. min(2, outputLiquids.length) { b.outputs(outputLiquids[i]); }
       b.power(getOptionEnergy(options, 100000));
       b.timeRequired(getOptionTime(options, 5));
       b.build();
