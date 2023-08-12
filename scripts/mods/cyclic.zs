@@ -666,7 +666,7 @@ craft.remake(<cyclicmagic:fire_starter>, ["pretty",
   "n": <ore:netherrack>,                         # Netherrack
   "D": <cyclicmagic:ender_blaze>.anyDamage(),    # Duskflame Hex
   "B": <randomthings:ingredient:13>,             # Blackout Powder
-  "□": <bibliocraft:enchantedplate>.anyDamage(), # Enchanted Plate
+  "□": <bibliocraft:enchantedplate>.anyDamage().transformDamage(), # Enchanted Plate
   "L": <tconstruct:firewood>,                    # Lavawood
 });
 
