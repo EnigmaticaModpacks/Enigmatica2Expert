@@ -116,3 +116,9 @@ craft.remake(<rustic:vase>, ["pretty",
   "W W W"], {
   "W": <ore:terracottaGlazed>,
 });
+
+# Skyblock Alt
+// val sphere = <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks", BaseData: 0});
+for fluid in [<liquid:oliveoil>, <liquid:for.honey>, <liquid:honey>] as crafttweaker.liquid.ILiquidStack[] {
+  mods.tconstruct.Casting.addBasinRecipe(<rustic:beehive>, <ore:blockSugarcane>, fluid, 1000, true, 100);
+}
