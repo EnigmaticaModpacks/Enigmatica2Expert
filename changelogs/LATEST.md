@@ -1,95 +1,91 @@
-# v1.15.0 (2023-08-05)
+# v1.16.0 (2023-08-12)
 
 ## Mods changes
 ### 🟡 Updated Mods
 
 Icon | Summary | Old / New
 ----:|:--------|:---------
-<img src="https://media.forgecdn.net/avatars/thumbnails/6/770/30/30/635368290959736289.png"              > |                               [**Ender IO**](https://www.curseforge.com/minecraft/mc-mods/ender-io)                    | <nobr>EnderIO-1.12.2-5.3.70</nobr><br><nobr>EnderIO-1.12.2-5.3.72</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/572/312/30/30/637933317111167967.png"            > |                                  [**BdLib**](https://www.curseforge.com/minecraft/mc-mods/bdlib)                       | <nobr>bdlib-1.14.3.12-mc1.12.2</nobr><br><nobr>bdlib-1.14.4.1-mc1.12.2</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/14/392/30/30/635594066493907797.png"             > |                      [**Recurrent Complex**](https://www.curseforge.com/minecraft/mc-mods/recurrent-complex)           | <nobr>RecurrentComplex-1.4.8.5</nobr><br><nobr>RecurrentComplex-1.4.8.5</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/10/842/30/30/635468327818431130.png"             > |                        [**Storage Drawers**](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)             | <nobr>StorageDrawers-1.12.2-5.4.2</nobr><br><nobr>StorageDrawers-1.12.2-5.5.0</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/20/10/30/30/635705133000275418.jpeg"             > |                              [**EnderCore**](https://www.curseforge.com/minecraft/mc-mods/endercore)                   | <nobr>EnderCore-1.12.2-0.5.76</nobr><br><nobr>EnderCore-1.12.2-0.5.78</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/39/232/30/30/635978074894958293.png"             > |                      [**Advanced Rocketry**](https://www.curseforge.com/minecraft/mc-mods/advanced-rocketry)           | <nobr>AdvancedRocketry-1.12.2-2.0.0-13</nobr><br><nobr>AdvancedRocketry-1.12.2-2.0.0-17</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/86/235/30/30/636207507685344289.png"             > |                            [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles)                 | <nobr>LittleTiles_v1.5.73_mc1.12.2</nobr><br><nobr>LittleTiles_v1.5.76_mc1.12.2</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/159/374/30/30/636658415780463602.png"            > |                          [**CraftPresence**](https://www.curseforge.com/minecraft/mc-mods/craftpresence)               | <nobr>CraftPresence-2.1.2+1.12.2</nobr><br><nobr>CraftPresence-2.2.0+1.12.2</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/173/547/30/30/636744592426092398.png"            > |                       [**Ender IO Endergy**](https://www.curseforge.com/minecraft/mc-mods/ender-io-endergy)            | <nobr>EnderIO-endergy-1.12.2-5.3.70</nobr><br><nobr>EnderIO-endergy-1.12.2-5.3.72</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/180/855/30/30/636796143936766724.png"            > |                           [**PackagedAuto**](https://www.curseforge.com/minecraft/mc-mods/packagedauto)                | <nobr>PackagedAuto-1.12.2-1.0.8.31</nobr><br><nobr>PackagedAuto-1.12.2-1.0.9.33</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/183/191/30/30/636813467342327346.png"            > |                           [**Gas Conduits**](https://www.curseforge.com/minecraft/mc-mods/gas-conduits)                | <nobr>EnderIO-conduits-mekanism-1.12.2-5.3.70</nobr><br><nobr>EnderIO-conduits-mekanism-1.12.2-5.3.72</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/205/161/30/30/636946414091294708.png"            > |                     [**PackagedExCrafting**](https://www.curseforge.com/minecraft/mc-mods/packagedexcrafting)          | <nobr>PackagedExCrafting-1.12.2-1.0.2.10</nobr><br><nobr>PackagedExCrafting-1.12.2-1.0.2.12</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/482/727/30/30/637781780002046810.png"            > | [**Extended Crafting: Nomifactory Edition**](https://www.curseforge.com/minecraft/mc-mods/extended-crafting-nomifactory-edition)| <nobr>extendedcrafting-nomifactory-edition-1.7.0.6</nobr><br><nobr>extendedcrafting-nomifactory-edition-1.7.0.6</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.14.4</nobr><br><nobr>zenutils-1.14.7</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/359/974/30/30/637523163306802796.png"            > |                [**Mouse Tweaks Unofficial**](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks-unofficial)     | <nobr>mousetweaks-3.1.3</nobr><br><nobr>mousetweaks-1.12.2-3.1.4</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/483/123/30/30/637782695232246251.png"            > |           [**AE2 Unofficial Extended Life**](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)           | <nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.19</nobr><br><nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.20</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/548/30/30/30/637882959576383371.png"             > |              [**AE2 Fluid Crafting Rework**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework)   | <nobr>Fluid Craft for AE2-2.4.24-r</nobr><br><nobr>Fluid Craft for AE2-2.4.27-r</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/676/130/30/30/638066753607299461.png"            > |                     [**Deep Mob Evolution**](https://www.curseforge.com/minecraft/mc-mods/dme)                         | <nobr>DeepMobEvolution-1.1.2</nobr><br><nobr>DeepMobEvolution-1.12.2-1.2.1</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/759/528/30/30/638095905122883877.png"            > |                         [**PackagedAstral**](https://www.curseforge.com/minecraft/mc-mods/packagedastral)              | <nobr>PackagedAstral-1.12.2-1.0.1.7</nobr><br><nobr>PackagedAstral-1.12.2-1.0.2.8</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/787/691/30/30/638140500840428199.png"            > |                   [**Deep Blood Evolution**](https://www.curseforge.com/minecraft/mc-mods/deep-blood-evolution)        | <nobr>DeepBloodEvolution-1.1.3-e</nobr><br><nobr>DeepBloodEvolution-1.1.4-e</nobr>
-<img src="https://media.forgecdn.net/avatars/thumbnails/828/846/30/30/638216794274587308.png"            > |                             [**VintageFix**](https://www.curseforge.com/minecraft/mc-mods/vintagefix)                  | <nobr>vintagefix-0.2.7</nobr><br><nobr>vintagefix-0.2.9</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/843/687/30/30/638240125803582535.png"            > |                             [**Hammer Lib**](https://www.curseforge.com/minecraft/mc-mods/hammer-lib)                  | <nobr>HammerLib-1.12.2-2.0.6.32</nobr><br><nobr>HammerLib-1.12.2-2.0.6.33</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/86/235/30/30/636207507685344289.png"             > |                            [**LittleTiles**](https://www.curseforge.com/minecraft/mc-mods/littletiles)                 | <nobr>LittleTiles_v1.5.76_mc1.12.2</nobr><br><nobr>LittleTiles_v1.5.77_mc1.12.2</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/159/374/30/30/636658415780463602.png"            > |                          [**CraftPresence**](https://www.curseforge.com/minecraft/mc-mods/craftpresence)               | <nobr>CraftPresence-2.2.0+1.12.2</nobr><br><nobr>CraftPresence-2.2.1+1.12.2</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/292/428/30/30/637325593905195388.png"            > |                              [**Zen Utils**](https://www.curseforge.com/minecraft/mc-mods/zenutil)                     | <nobr>zenutils-1.14.7</nobr><br><nobr>zenutils-1.14.8</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/807/535/30/30/638176807291603882.png"            > |                 [**Not Enough Energistics**](https://www.curseforge.com/minecraft/mc-mods/not-enough-energistics)      | <nobr>NotEnoughEnergistics-1.12.2-2.0.5-2.0.5</nobr><br><nobr>NotEnoughEnergistics-1.12.2-2.0.6</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/483/123/30/30/637782695232246251.png"            > |           [**AE2 Unofficial Extended Life**](https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life)           | <nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.20</nobr><br><nobr>appliedenergistics2-rv6-stable-7-extended_life-v0.55.21</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/548/30/30/30/637882959576383371.png"             > |              [**AE2 Fluid Crafting Rework**](https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting-rework)   | <nobr>Fluid Craft for AE2-2.4.27-r</nobr><br><nobr>Fluid Craft for AE2-2.4.28-r</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/785/360/30/30/638135438959255507.png"            > |                       [**PackagedDraconic**](https://www.curseforge.com/minecraft/mc-mods/packageddraconic)            | <nobr>PackagedDraconic-1.12.2-1.0.0.5</nobr><br><nobr>PackagedDraconic-1.12.2-1.0.0.6</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/787/691/30/30/638140500840428199.png"            > |                   [**Deep Blood Evolution**](https://www.curseforge.com/minecraft/mc-mods/deep-blood-evolution)        | <nobr>DeepBloodEvolution-1.1.4-e</nobr><br><nobr>DeepBloodEvolution-1.1.6-e</nobr>
+<img src="https://media.forgecdn.net/avatars/thumbnails/828/846/30/30/638216794274587308.png"            > |                             [**VintageFix**](https://www.curseforge.com/minecraft/mc-mods/vintagefix)                  | <nobr>vintagefix-0.2.9</nobr><br><nobr>vintagefix-0.2.10</nobr>
 -----------
 
 ## ✨ New Features
 
-* <img src="https://i.imgur.com/5TDnH10.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/12f5f6be61f3ecd4935db9fc15764ce19f941b6d)🌆Add new screenshots to main meny by `_Stea`
-  > 
-
-#### Quest
-
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/afd9cd040727f826bf08174e0c0fb6b30d2f09e4)🦯Thaumcraft quest tab rework
-  > <img src="https://i.imgur.com/EBEiZD8.png">
-  > <img src="https://i.imgur.com/aDL2uQ0.png" align=right>
-  > 
-  > 
-  > > Contributed by [TabakaSIM](78695622+TabakaSIM@users.noreply.github.com)
-
-## 🐛 Fixes
-
 
 #### Configs
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/28e62208884339b3c8633418740cb84e1a6f30e3)🐝Add more items to backpacks
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/dba8adc25c1eaf79cad711002f8779be5e22b440)🧩Fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/thaumadditions/chester__0.png "Chester") dupe with Pokeballs
-  > Blacklist Chester to ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/magic_net__0.png "Monster Ball")![](https://github.com/Krutoy242/mc-icons/raw/master/i/thermalexpansion/morb__0__4584ecb5.png "Morb (Bat)")![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialforegoing/mob_imprisonment_tool__0.png "Mob Imprisonment Tool")
-* 🦯 Thaumcraft fixes
-  > 
-  > > Contributed by [TabakaSIM](78695622+TabakaSIM@users.noreply.github.com)
-  > 
-  > - Crystal block dupe fix
-  > - Fix `Enitity recreation` Thaunomicon entry
-  > - Buffed Impetus cost in Terraformer
-  > - Changed following moddifiers:
-  >   > - dimension modifier 1.75positive/0.75negative (was 1.5;1.25/1.0)
-  >   > - elemental modifier 2.5positive/0.5negative (was 1.75/0.75)
-  >   > - experience modifier cap increased too 1000lvl (was 100)
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/3c052c51dc101335a9dacff4c4a8deabcb9b4e42)🌍 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/biome_finder__0.png "Biome Finder") now working in OTG!
+  > Right-clicking in OTG world would teleport you to specified (or random) biome
 
-#### Dosc
+#### JEI
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/71dcb119998a23579408c224765aa5234001ceb2)📃Fix typo for ID command
-  > `/integrateddynamics networkdiagnostics`
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/7a292bd5ca6409c41c1fe00270a3d0917de00e9a)📃Fix yellow text too bright in Patchouli book
-  > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/242
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/164ab01882388eee7bf625530a859041cee22134)🌴 Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/log_1__4.png "Ethereal Wood") and ![](https://github.com/Krutoy242/mc-icons/raw/master/i/biomesoplenty/log_4__4.png "Giant Flower Stem") in JER tab
 
 #### Quest
 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/b5d085292fde1cea2203971cec69bd5cd3091839)📖Add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/trinity/trinitite_shard__0.png "Trinitite Shard") quest
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/ee8fd8beaa741840861d0e07d70a8bc6bb28cfbd)📖Fix Animals opening quest desc
-  > Fixes https://github.com/Krutoy242/Enigmatica2Expert-Extended/issues/243
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/415a86252d35d37c15cfd803d06167326b099581)📖Fix count display in Animals entry rewards
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/f6c80cf6fefa7af4b901c1549e6613f465610ae0)📖Slightly improve ![](https://github.com/Krutoy242/mc-icons/raw/master/i/computercraft/printout__0.png "Printed Page") quest & tooltip
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5ab44bade1991ee07f5d9fad98fd1e392a0f9589)📖 Add numbers to `Mining Level` quests icons
+
+## 🐛 Fixes
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/933d27fc7b3bb4c315d283f3abd2031f14f45ce9)🏫 Improve NC `Irradiator` schematica
+
+#### Configs
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/3fefffd0ef2395ce54c3d92087e95ad4be9a1317)🐝 Forestry: Attempt to increase Cocoons generation x10
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/b968b4a5ee62e670dbf2af0712b1e684e8b54a04)🧩 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialforegoing/laser_drill__0.png "Laser Drill") increase power consumption
+  > about x2 times more consumption (but not sure)
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/38859967ea446cb913e8fb3aff5fc972da354669)🧩 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialforegoing/laser_lens__0.png "White Laser Lens"), and other lens, buff efficiency x2
+
+#### Docs
+
+* <img src="https://i.imgur.com/vwqKHw0.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/a4274e5588f40a46e809cf1f5b39274a89667159)📃 Add information in Patchouli book about TCon recycling
+  > 
+
+#### Gear
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/aafa83ec8c23b84e7f4cdecfe7b841479d85bc3a)⛏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/draconicevolution/draconium_ingot__0.png "Draconium Ingot") buff stats +50%
+
+#### JEI
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4414577d81c8ee576a7147d59f0c0b706e835b87)🌍 Increase percentage number of some ores in The End
+  > Not changing anything in game, just number on screen.
+
+#### Quest
+
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/816c544fec29dda5600a1f86efffd1cda1c5af7b)📖  Send global message when player finished Conflux (instead just send it to player)
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/277e762a270cad56f0e76e57869b7fdbecec82f1)📖Misc changes
+  > - More ![](https://github.com/Krutoy242/mc-icons/raw/master/i/actuallyadditions/block_shock_suppressor__0.png "Shock Absorber") in reward
+  > - Change ![](https://github.com/Krutoy242/mc-icons/raw/master/i/tconstruct/excavator_head__0__f9cb5592.png "Prudentium Excavator Head") to ![](https://github.com/Krutoy242/mc-icons/raw/master/i/tconstruct/excavator_head__0__fc106199.png "Soulium Excavator Head")
+  > - Remove `Format Error` text in Thaumcraft chapter
 
 #### Recipes
 
-* <img src="https://i.imgur.com/eOxPdpT.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/a7450870a39b86ee2c8b8b7fd3b54e6d16bf5a0d)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/immersiveengineering/metal_device1__13.png "Garden Cloche") cheaper
+* <img src="https://i.imgur.com/Ciy7wEB.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/7341324a8ccdde306304e7ab858a7b3c1e7f2cc0)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/rustic/beehive__0.png "Beehive") cheaper
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/0f7f5b9a9ad6ebc80576522d889ca808ca24f757)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/cyclicmagic/fire_starter__0.png "Fire Starter") now consume durability of ![](https://github.com/Krutoy242/mc-icons/raw/master/i/bibliocraft/enchantedplate__0.png "Enchanted Plate")
+  > .. instead of consuming whole item
   > 
-* <img src="https://i.imgur.com/ThMfBDK.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/4d0c40ccaad34ffbf63f44643cc985f5063d7dff)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/conarm/travel_sack__0.png "Traveller's Knapsack") cheaper
-  > Also cheaper: ![](https://github.com/Krutoy242/mc-icons/raw/master/i/conarm/travel_belt_base__0.png "Traveller's Belt (Base)")![](https://github.com/Krutoy242/mc-icons/raw/master/i/conarm/travel_goggles_base__0.png "Traveller's Goggles (Base)")![](https://github.com/Krutoy242/mc-icons/raw/master/i/conarm/travel_goggles_base__0.png "Traveller's Goggles (Night Vision)")![](https://github.com/Krutoy242/mc-icons/raw/master/i/conarm/travel_goggles_base__0.png "Traveller's Goggles (Soul Sight)")
-* <img src="https://i.imgur.com/s4u59m2.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/384a1d259708771c4a9d18ff16f23c553b3bb407)✏️![](https://github.com/Krutoy242/mc-icons/raw/master/i/draconicevolution/wyvern_core__0.png "Wyvern Core") fix in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/advancedrocketry/precisionassemblingmachine__0.png "Precision Assembler")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/25d3b3b4fcde118d4c7e77f5e759717beb766194)✏️ [Electrolyzer] (AR) fix some recipes unable to craft
+  > Since machine cant output more than 2 liquids, recipes with 3 liquids in output not worked.
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/e36530633f9244faee8b80a034ee18ebb99ccfad)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/extendedcrafting/singularity_custom__101.png "Experience Singularity") fix uncraftable
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/bee69a0da96d359f37d86c02632a9995b109b826)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/advgenerators/pressure_valve__0.png "Pressure Valve") cheaper
+* <img src="https://i.imgur.com/D1BXnPU.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/426e43d91f5107f857b8044d71e8b175231f5983)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/enderio/item_alloy_endergy_ingot__3.png "Stellar Alloy Ingot") cheaper
   > 
-* <img src="https://i.imgur.com/lTwmmnY.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/272f873ebc685ba22a648aa7160ff56a0cd52661)✏️`Little Tiles` tools cheaper
-  > 
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/5585a67bcbf7c7471e08f27b9f3259c4cc3f4773)✏️add ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/condensate_water.png "Condensate Water") => ![](https://github.com/Krutoy242/mc-icons/raw/master/i/fluid/condensate_water.png "Preheated Water") recipes
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/05cce640a1d9379f1807ca6ec36db73c119502e3)✏️fix ![](https://github.com/Krutoy242/mc-icons/raw/master/i/randomthings/fertilizeddirt__0.png "Fertilized Dirt") unobtainable after removal of Animania
-* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/815b47b710e50b6607c6899bfc4ca36f4b72f793)✏️remove unused Molten Infinity => ingot recipe in ![](https://github.com/Krutoy242/mc-icons/raw/master/i/nuclearcraft/ingot_former_idle__0.png "Ingot Former")
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/355183a5bed288c09fc94ab3c70d642723cfcb83)✏️ ![](https://github.com/Krutoy242/mc-icons/raw/master/i/industrialforegoing/laser_lens__0.png "White Laser Lens") and other lenses harder
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/48592e8a04b6197c5b670b6f226e2dd305165ef7)✏️ remove [Lead-Platinum alloy] usage (redundant fluid)
+
+#### Worldgen
+
+* <img src="https://i.imgur.com/dIQndqW.png" align=right> [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/91914ae16f6b99924ccd1110f4dc15e896e78391)🌍 ![](https://github.com/Krutoy242/mc-icons/raw/master/i/draconicevolution/draconium_ore__0.png "Draconium Ore") now mining level 11
+  > .. and also harder to break
+* [🖇](https://github.com/Krutoy242/Enigmatica2Expert-Extended/commit/fa4a37a6d1b0e9789de0c9f2d07190c69469c8ba)🌳Enable generation of giant Ethereal trees (again)
 
 
 
