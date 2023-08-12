@@ -590,7 +590,7 @@
     <alloying energy="10000">
       <input name="itemVibrantPowder"/>
       <input name="ingotCrystallinePinkSlime"/>
-      <input name="ingotUUMatter"/>
+      <input name="ingotThermoconducting"/>
       <output name="enderio:item_alloy_endergy_ingot:2"/>
     </alloying>
   </recipe>
@@ -617,7 +617,7 @@
     <alloying energy="10000">
       <input name="itemPrecientPowder"/>
       <input name="ingotMelodicAlloy"/>
-      <input name="ingotWyvernMetal"/>
+      <input name="ingotUUMatter"/>
       <output name="enderio:item_alloy_endergy_ingot:3"/>
     </alloying>
   </recipe>

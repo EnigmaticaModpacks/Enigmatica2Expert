@@ -54,10 +54,10 @@ mods.tconstruct.Melting.removeRecipe(<liquid:crude_steel>);
 mods.tconstruct.Melting.removeRecipe(<liquid:energetic_silver>);
 
 # Add harder stepped alloys
-scripts.process.alloy([<ore:itemPulsatingPowder>   , <ore:ingotVibrantAlloy>        , <ore:ingotSentientMetal>], <ore:ingotCrystallineAlloy>.firstItem    , "no exceptions");
-scripts.process.alloy([<ore:itemEnderCrystalPowder>, <ore:ingotCrystallineAlloy>    , <industrialforegoing:pink_slime_ingot>], <ore:ingotCrystallinePinkSlime>.firstItem, "no exceptions");
-scripts.process.alloy([<ore:itemVibrantPowder>     , <ore:ingotCrystallinePinkSlime>, <ore:ingotUUMatter>     ], <ore:ingotMelodicAlloy>.firstItem        , "no exceptions");
-scripts.process.alloy([<ore:itemPrecientPowder>    , <ore:ingotMelodicAlloy>        , <ore:ingotWyvernMetal>  ], <ore:ingotStellarAlloy>.firstItem        , "no exceptions");
+scripts.process.alloy([<ore:itemPulsatingPowder>   , <ore:ingotVibrantAlloy>        , <ore:ingotSentientMetal>              ], <ore:ingotCrystallineAlloy>.firstItem);
+scripts.process.alloy([<ore:itemEnderCrystalPowder>, <ore:ingotCrystallineAlloy>    , <industrialforegoing:pink_slime_ingot>], <ore:ingotCrystallinePinkSlime>.firstItem);
+scripts.process.alloy([<ore:itemVibrantPowder>     , <ore:ingotCrystallinePinkSlime>, <ore:ingotThermoconducting>           ], <ore:ingotMelodicAlloy>.firstItem);
+scripts.process.alloy([<ore:itemPrecientPowder>    , <ore:ingotMelodicAlloy>        , <ore:ingotUUMatter>                   ], <ore:ingotStellarAlloy>.firstItem);
 
 # [Stellar Energy Conduit]*8 from [Infinity Reagent][+2]
 craft.remake(<enderio:item_endergy_conduit:11> * 8, ["pretty",
