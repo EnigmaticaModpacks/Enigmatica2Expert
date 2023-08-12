@@ -40,7 +40,7 @@ craft.remake(<advgenerators:pressure_valve>, ["pretty",
   "I H I",
   "D I D"], {
   "D": <mekanism:basicblock:11>,    # Dynamic Valve
-  "H": <thermaldynamics:duct_16:2> | <thermaldynamics:duct_16:3>, # Hardened Fluiduct
+  "H": <extrautils2:flattransfernode:1>,
   "I": <advgenerators:iron_tubing>, # Iron Tubing
 });
 
