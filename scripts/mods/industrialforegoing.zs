@@ -382,3 +382,17 @@ cleanupBenification(<libvulpes:ore0:8>, <libvulpes:productingot:7>, <libvulpes:p
 
 # Peaceful alt
 mods.rustic.EvaporatingBasin.addRecipe(<industrialforegoing:pink_slime>, <liquid:if.pink_slime> * 1000, 30*20);
+
+# [White Laser Lens] from [Purple Dye][+3]
+for i, dye in scripts.vars.oreDye {
+	recipes.removeByRecipeName("industrialforegoing:laser_lens_"~i);
+	craft.make(<industrialforegoing:laser_lens>.definition.makeStack(i), ["pretty",
+		"I ▬ I",
+		"- d -",
+		"I ▬ I"], {
+		"I": <immersiveengineering:stone_decoration:8>, # Insulating Glass
+		"▬": <ore:ingotPinkMetal>,                      # Pink Slime Ingot
+		"-": <ore:ingotEssenceMetal>,                   # Essence-Infused Ingot
+		"d": dye,
+	});
+}
