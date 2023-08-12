@@ -37,7 +37,7 @@ darkwood,*4,*4,*4,,*4,*4,*4,*4,*4,*4
 desert_myrmex,,,+8,,,,,,,
 diamantine_crystal,/2,,,5,,,,,,
 draconic_metal,,,,13,,,,,,
-draconium,,,,,,,,,,
+draconium,*1.5,*1.5,*1.5,9,,,*1.5,*1.5,*1.5,*1.5
 dragonbone,/2,/2,/2,,1.1,/2,/2,,,
 dragonsteel_fire,,,*(5/6),9,,,,,,+8
 dragonsteel_ice,,,*(5/6),9,,,,,,+8

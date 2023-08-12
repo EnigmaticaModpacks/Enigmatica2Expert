@@ -325,7 +325,6 @@ val defaultWeaponMats as IData = [
   "emerald_plustic"     , # 129
   "invar"               , # 130
   "endorium"            , # 131
-  "draconium"           , # 131
   "steeleaf"            , # 132
   "uranium"             , # 133
   "ghostwood"           , # 134
@@ -370,6 +369,7 @@ val defaultWeaponMats as IData = [
   "hard_carbon"         , # 204
   "heavy"               , # 207
   "iridium"             , # 208
+  "draconium"           , # 212
   "mithrillium"         , # 216
   "xu_evil_metal"       , # 222
   "pulsating_iron"      , # 225
