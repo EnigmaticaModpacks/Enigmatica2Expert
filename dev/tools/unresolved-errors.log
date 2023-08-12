@@ -1,8 +1,8 @@
 [main/WARN] [LoliASM]: Replacing CA Certs with an updated one...
-[Client thread/WARN] [mixin]: @Mixin target mod.chiselsandbits.chiseledblock.data.VoxelBlob was not found mixins.vintagefix.late.json:dynamic_resources.VoxelBlobMixin from mod vintagefix_0_2_9
-[Client thread/WARN] [mixin]: @Mixin target com.raoulvdberge.refinedstorage.proxy.ProxyClient was not found mixins.vintagefix.late.json:dynamic_resources.RSProxyClientMixin from mod vintagefix_0_2_9
-[Client thread/WARN] [mixin]: @Mixin target pl.asie.ucw.util.ModelLoaderEarlyView was not found mixins.vintagefix.late.json:dynamic_resources.MixinModelLoaderEarlyView from mod vintagefix_0_2_9
-[Client thread/WARN] [mixin]: @Mixin target thebetweenlands.client.render.model.loader.CustomModelLoader was not found mixins.vintagefix.late.json:dynamic_resources.MixinCustomBetweenlandsModels from mod vintagefix_0_2_9
+[Client thread/WARN] [mixin]: @Mixin target mod.chiselsandbits.chiseledblock.data.VoxelBlob was not found mixins.vintagefix.late.json:dynamic_resources.VoxelBlobMixin from mod vintagefix_0_2_10
+[Client thread/WARN] [mixin]: @Mixin target com.raoulvdberge.refinedstorage.proxy.ProxyClient was not found mixins.vintagefix.late.json:dynamic_resources.RSProxyClientMixin from mod vintagefix_0_2_10
+[Client thread/WARN] [mixin]: @Mixin target pl.asie.ucw.util.ModelLoaderEarlyView was not found mixins.vintagefix.late.json:dynamic_resources.MixinModelLoaderEarlyView from mod vintagefix_0_2_10
+[Client thread/WARN] [mixin]: @Mixin target thebetweenlands.client.render.model.loader.CustomModelLoader was not found mixins.vintagefix.late.json:dynamic_resources.MixinCustomBetweenlandsModels from mod vintagefix_0_2_10
 [Client thread/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.phosphor.json:common.MixinChunk from mod phosphor_1_12_2_0_2_9_2_SNAPSHOT_universal cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
 [Client thread/ERROR] [soundphysicsinjector]: What the hell, DS's version is not properly formatted ?
 [Client thread/ERROR] [soundphysicsinjector]: What the hell, DS's version is not properly formatted ?
@@ -33,62 +33,62 @@
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack BetterFps (guichaguri.betterfps.gui.BetterFpsResourcePack)
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_no_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_no_coremod
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_no_coremod
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/WARN] [VintageFix]: Path mixins.sledgehammer.conarm.json is not a valid model location
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/saltmod
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/saltmod
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/saltmod
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_no_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_no_coremod
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_no_coremod
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/WARN] [VintageFix]: Path fabric.mod.json is not a valid model location
 [Client thread/WARN] [VintageFix]: Path mixins.mods.epicsiegemod.json is not a valid model location
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/conarm
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/conarm
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/conarm
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_coremod
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_coremod
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/conarm
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/conarm
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/conarm
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_coremod
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_coremod
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/saltmod
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/saltmod
-java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure
+java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/saltmod
 	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1082) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1214) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
   [...]
 [Client thread/WARN] [VintageFix]: Path mixins.searchtree_mod.json is not a valid model location
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack HammerCore Connected Models (com.zeitheron.hammercore.api.inconnect.EmptyModelPack)
@@ -100,6 +100,7 @@ java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack architecturecraft-1.12-3.108.jar (com.elytradev.architecturecraft.repackage.com.elytradev.concrete.resgen.ConcreteResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack quark-emote-pack (vazkii.quark.vanity.client.emotes.CustomEmoteIconResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack BetterFps (guichaguri.betterfps.gui.BetterFpsResourcePack)
+[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
 [Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from plethora:textures/models/neural_interface.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:380) ~[cdq.class:?]
@@ -5165,20 +5166,26 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model exnihilocreatio:block_infested_leaves#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model mekanism:glow_panel#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model mekanism:glow_panel#inventory
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=north
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=north
-[Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'framedcompactdrawers'
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=north
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=north
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=south,right=false
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=south,right=false
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=south,right=true
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=south,right=true
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=west,right=false
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=west,right=false
 [Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'storagedrawers'
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=south,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=south,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=west,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=west,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=north,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=north,slots=open1
+[Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'framedcompactdrawers'
+[Client thread/ERROR] [VintageFix]: net.minecraftforge.client.event.ModelBakeEvent@xxxxxxxx listener 'net.minecraftforge.fml.common.eventhandler.EventBus$1@xxxxxxxx' threw exception, models may be broken
+java.lang.ClassCastException: org.embeddedt.vintagefix.dynamicresources.WrappingModelRegistry cannot be cast to net.minecraft.util.registry.RegistrySimple
+	at li.cil.oc.client.renderer.block.ModelInitialization$.onModelBake(ModelInitialization.scala:137) ~[ModelInitialization$.class:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_3113_ModelInitialization$_onModelBake_ModelBakeEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) ~[ASMEventHandler.class:?]
+  [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:snowglobe#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model extrautils2:snowglobe#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:itemcreativedestructionwand#inventory
@@ -5192,9 +5199,10 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model bibliocraft:compass#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model bibliocraft:atlasbook#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model bibliocraft:atlasbook#normal
-[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model industrialwires:panel_component/rgb_led#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model industrialwires:panel_component/rgb_led#inventory
+[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model opencomputers:netsplitter#inventory
+[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model opencomputers:netsplitter#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#inventory
@@ -5209,6 +5217,11 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model tconevo:mana_giver#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model tconevo:mana_giver#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumcraft:block/banner_crimson_cult
+[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model opencomputers:robot#inventory
+[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model opencomputers:robot#inventory
+[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model opencomputers:cable#inventory
+[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model opencomputers:cable#inventory
+[VintageFix item baking thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'opencomputers'
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicwonders:block/panacea
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicwonders:block/panacea
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model minecraft:old_wood_slab#inventory
@@ -5220,11 +5233,11 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#normal
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#normal
+[Client thread/WARN] [dsurround]: Cannot find sound that should be registered [minecraft:]
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:sawbench#facing=west
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:sawbench#facing=west
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:shape#light=0
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:shape#light=0
-[Client thread/WARN] [dsurround]: Cannot find sound that should be registered [minecraft:]
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_helm_emerald] for ItemRegistry
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_chest_emerald] for ItemRegistry
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_pants_emerald] for ItemRegistry
@@ -5271,12 +5284,4 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model thaumadditions:aura_charger#normal
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumadditions:crystal_crusher#normal
 [pool-11-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model thaumadditions:crystal_crusher#normal
-[pool-11-thread-1/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'thaumadditions'
-[Client thread/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: enigmatica:textures/slideshow/slideshow_02.jpg
-org.embeddedt.vintagefix.util.FastFileNotFoundException: enigmatica:textures/slideshow/slideshow_02.jpg
-[Client thread/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: enigmatica:textures/slideshow/_stea-2023-04-16_08.03.14.jpg
-org.embeddedt.vintagefix.util.FastFileNotFoundException: enigmatica:textures/slideshow/_stea-2023-04-16_08.03.14.jpg
-[Client thread/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: enigmatica:textures/slideshow/slideshow_03.jpg
-org.embeddedt.vintagefix.util.FastFileNotFoundException: enigmatica:textures/slideshow/slideshow_03.jpg
-[Client thread/WARN] [net.minecraft.client.renderer.texture.TextureManager]: Failed to load texture: enigmatica:textures/slideshow/slideshow_24.jpg
-org.embeddedt.vintagefix.util.FastFileNotFoundException: enigmatica:textures/slideshow/slideshow_24.jpg
+[pool-11-thread-1/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'thaumadditions'
