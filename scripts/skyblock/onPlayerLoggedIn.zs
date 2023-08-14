@@ -4,7 +4,6 @@
 
 import crafttweaker.data.IData;
 import crafttweaker.player.IPlayer;
-import mods.ctintegration.advancement.AdvancementHelper;
 
 events.onPlayerLoggedIn(function(e as crafttweaker.event.PlayerLoggedInEvent){
   if(e.player.world.isRemote()) return;

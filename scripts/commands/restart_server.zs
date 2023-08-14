@@ -4,7 +4,6 @@ import crafttweaker.world.IWorld;
 import mods.zenutils.command.CommandUtils;
 import mods.zenutils.command.IGetTabCompletion;
 import mods.zenutils.command.ZenCommand;
-import mods.zenutils.I18n;
 import mods.zenutils.StringList;
 
 static playerPending as StringList = StringList.empty();
