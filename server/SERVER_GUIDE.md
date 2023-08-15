@@ -5,8 +5,8 @@
 2) **Extract** it to an empty folder.
 3) If you want to **change RAM** usage, Java arguments etc, see the "settings" file.
 4) If you want to change worldgen:
-  > - 🌌 **Skyblock**: in file [justenoughdimensions.cfg](config/justenoughdimensions/justenoughdimensions.cfg) set `initialSpawnDimensionId` to `3`
   > - ⛺ **Biomes O' Plenty**: in file `server.properties` set `level-type=BIOMESOP`
+  > - 🌌 **Skyblock**: change `level-type` as mentioned above, then in file [justenoughdimensions.cfg](config/justenoughdimensions/justenoughdimensions.cfg) set `initialSpawnDimensionId` to `3`
 5) Double click "**ServerStart**" or "ServerStartLinux", whichever is appropriate. On Linux you cannot run the script via sh directly.
 6) **Set** EULA=true
 
