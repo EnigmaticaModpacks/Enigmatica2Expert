@@ -40,7 +40,7 @@ addAltRecipe(<forestry:thermionic_tubes:12> * 4, Grid(["pretty",
   "E : E",
   ": : :"], {
   ":": <ore:oc:stoneEndstone>, # End Stone
-  "E": <ore:pearlEnderEye>,    # Eye of Ender
+  "E": <minecraft:ender_eye>,  # Eye of Ender
 }).shaped(), <fluid:glass> * 500);
 
 # [Tin Electron Tube]*4 from [Pipette][+2]
