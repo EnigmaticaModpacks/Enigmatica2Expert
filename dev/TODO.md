@@ -2,16 +2,18 @@
 
 🚧✅❌ List of priorities:
 
+- [ ] 📖 Check on server if quest name still available (conflux global message)
+- [ ] ✏️ nanomachines Dissaper On Rejoin Server
+
 - [ ] ✏️ cut ore list of `Laser Drill`
+- [x] ✏️ heavy Surikens Infinite
 - [ ] 📖 fix Sharp Kit Quests Cant Handle NBT Diffs
-- [ ] 🐛 fix Tool Station Lag
-- [ ] 📖 FTBQuest can have links by `Custom Click` field
-- [ ] 🟢 Add https://github.com/Olivoz/ExtendedConfigs
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/filedirector
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/visualores
+- [x] 🔄 Grant Conflux ranks based on game stages. Also add back-support
 - [ ] 🟢 Configure `Villager Trade Tables`
 - [ ] 🟢 Configure `Worldgen Indicators`
-- [ ] 🟢 Move AdvRocketry to tweaker mod instead of XML
+- [x] 🟡 Roll back Nether Ores
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/filedirector
+- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/visualores
 
 ---
 
@@ -21,6 +23,10 @@
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📖 FTBQuest can have links by `Custom Click` field
+- [ ] ✏️ Completely move AdvRocketry to tweaker mod instead of XML
+- [ ] 🟢 Add https://github.com/Olivoz/ExtendedConfigs
+- [ ] ✏️ Add `Block Shrooms` + `salis mundus` => `something` recipe
 - [ ] ✏️ blight Tamed Always Drop Something. Problem: dont know how to determine if entity is tamed
 - [ ] 🧩 Make Platforms from Random Things with metal texture instead of wood
 - [ ] ✏️ disable Excavate Ench For Pickarang

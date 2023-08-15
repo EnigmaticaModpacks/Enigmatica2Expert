@@ -511,17 +511,17 @@ const style = {
     )
 
     updateBox('Change and copy server overrides')
-    const jsonPath = join(
+    const configPath = join(
       conf.dir,
-      'overrides/config/Chikachi/discordintegration.json'
+      'overrides/config/mc2discord.toml'
     )
 
     saveText(
-      loadText(jsonPath).replace(
-        /("serverStart":\s*")[^"]+"/,
+      loadText(configPath).replace(
+        /(start\s*=\s*")[^"]+"/,
         `$1\`\`\`diff\\n+ Server Started! +\\n     ${nextVersion}\\n\`\`\`"`
       ),
-      jsonPath
+      configPath
     )
 
     let fileCounter = 0
