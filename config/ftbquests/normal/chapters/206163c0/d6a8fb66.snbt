@@ -1,0 +1,44 @@
+{
+	title: "{q.forestry.escritoire_the_mem.name}",
+	x: 0.5d,
+	y: -0.5d,
+	description: "{q.forestry.escritoire_the_mem.desc}",
+	text: [
+		"{q.forestry.escritoire_the_mem.desc}"
+	],
+	dependencies: [
+		"2c5eefd7"
+	],
+	min_width: 310,
+	tasks: [{
+		uid: "6c42a923",
+		type: "item",
+		items: [{
+			item: "forestry:escritoire"
+		}]
+	}],
+	rewards: [{
+		uid: "60366eb8",
+		type: "item",
+		item: {
+			id: "forestry:research_note",
+			tag: {
+				res: {
+					Name: "Gkiritol",
+					Id: "9fed2c30-d8ec-4c92-a209-ad93f94f8f79"
+				},
+				TYP: 1b,
+				INN: {
+					ROT: "rootBees",
+					AL0: "forestry.speciesMeadows",
+					AL1: "forestry.speciesModest",
+					RST: "forestry.speciesCommon"
+				}
+			}
+		}
+	},
+	{
+		uid: "845a49c3",
+		type: "custom"
+	}]
+}

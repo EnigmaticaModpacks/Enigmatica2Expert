@@ -1,6 +1,6 @@
 {
 	x: -8.5d,
-	y: 0.8d,
+	y: 0.83d,
 	text: [
 		"{q.forestry.rain_tank.desc}"
 	],

@@ -1,0 +1,86 @@
+{
+	title: "{q.forestry.the_forestry_path_.name}",
+	icon: {
+		id: "forestry:sapling",
+		tag: {
+			IsAnalyzed: 0b,
+			Genome: {
+				Chromosomes: [{
+					Slot: 0b,
+					UID0: "forestry.treeGigant",
+					UID1: "forestry.treeGigant"
+				},
+				{
+					Slot: 1b,
+					UID0: "forestry.heightGigantic",
+					UID1: "forestry.heightGigantic"
+				},
+				{
+					Slot: 2b,
+					UID0: "forestry.saplingsLower",
+					UID1: "forestry.saplingsLower"
+				},
+				{
+					Slot: 3b,
+					UID0: "forestry.fruitNone",
+					UID1: "forestry.fruitNone"
+				},
+				{
+					Slot: 4b,
+					UID0: "forestry.yieldLowest",
+					UID1: "forestry.yieldLowest"
+				},
+				{
+					Slot: 5b,
+					UID0: "forestry.sappinessLowest",
+					UID1: "forestry.sappinessLowest"
+				},
+				{
+					Slot: 6b,
+					UID0: "forestry.leavesNone",
+					UID1: "forestry.leavesNone"
+				},
+				{
+					Slot: 7b,
+					UID0: "forestry.maturationSlowest",
+					UID1: "forestry.maturationSlowest"
+				},
+				{
+					Slot: 8b,
+					UID0: "forestry.i4d",
+					UID1: "forestry.i4d"
+				},
+				{
+					Slot: 9b,
+					UID0: "forestry.fireproofTrue",
+					UID1: "forestry.fireproofTrue"
+				}]
+			}
+		}
+	},
+	x: 4.5d,
+	y: -0.5d,
+	description: "{q.forestry.the_forestry_path_.desc}",
+	text: [
+		"{q.forestry.the_forestry_path_.desc}"
+	],
+	dependencies: [
+		"88f68657"
+	],
+	min_width: 300,
+	tasks: [{
+		uid: "145ad13a",
+		type: "checkmark",
+		title: "Abeia + avore"
+	}],
+	rewards: [{
+		uid: "6b64e6b3",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		}
+	}]
+}

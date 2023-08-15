@@ -1,0 +1,24 @@
+{
+	title: "{q.forestry.tree_s_stats.name}",
+	icon: "minecraft:sapling",
+	x: 3.2d,
+	y: -0.5d,
+	shape: "gear",
+	description: "{q.forestry.tree_s_stats.desc}",
+	text: [
+		"{q.forestry.tree_s_stats.desc}"
+	],
+	dependencies: [
+		"29f2b63c"
+	],
+	min_width: 300,
+	tasks: [{
+		uid: "b7a0f93b",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "09f6cce8",
+		type: "item",
+		item: "harvestcraft:honeyglazedcarrotsitem"
+	}]
+}

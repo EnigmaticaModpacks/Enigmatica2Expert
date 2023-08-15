@@ -1,0 +1,37 @@
+{
+	title: "{q.forestry.the_perfect_place_.name}",
+	icon: "forestry:habitat_former",
+	x: 4.5d,
+	y: 0.8d,
+	description: "{q.forestry.the_perfect_place_.desc}",
+	text: [
+		"{q.forestry.the_perfect_place_.desc}"
+	],
+	dependencies: [
+		"29f2b63c"
+	],
+	tasks: [{
+		uid: "7cf03631",
+		type: "item",
+		items: [{
+			item: "forestry:habitat_former"
+		},
+		{
+			item: "forestry:habitat_locator"
+		},
+		{
+			item: "forestry:habitat_screen"
+		}]
+	}],
+	rewards: [{
+		uid: "1adc909f",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "common"
+			}
+		},
+		count: 2
+	}]
+}

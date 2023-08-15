@@ -1,0 +1,24 @@
+{
+	title: "{q.forestry.even_bees_has_some.name}",
+	x: -2.175d,
+	y: 1.425d,
+	shape: "gear",
+	description: "{q.forestry.even_bees_has_some.desc}",
+	text: [
+		"{q.forestry.even_bees_has_some.desc}"
+	],
+	dependencies: [
+		"5b525421"
+	],
+	size: 0.75d,
+	min_width: 250,
+	tasks: [{
+		uid: "e70b3f02",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "1af3bed8",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}

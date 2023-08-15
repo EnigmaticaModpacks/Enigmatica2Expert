@@ -1,0 +1,80 @@
+{
+	title: "{q.forestry.alveary_sieve.name}",
+	icon: "forestry:alveary.sieve",
+	x: 4.5d,
+	y: -1.7d,
+	description: "{q.forestry.alveary_sieve.desc}",
+	text: [
+		"{q.forestry.alveary_sieve.desc}"
+	],
+	dependencies: [
+		"8c16c60c"
+	],
+	tasks: [{
+		uid: "49a95074",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "ed9def05",
+		type: "item",
+		item: {
+			id: "forestry:pollen_fertile",
+			tag: {
+				IsAnalyzed: 0b,
+				Genome: {
+					Chromosomes: [{
+						Slot: 0b,
+						UID0: "forestry.treeOak",
+						UID1: "forestry.treeOak"
+					},
+					{
+						Slot: 1b,
+						UID0: "forestry.heightSmall",
+						UID1: "forestry.heightSmall"
+					},
+					{
+						Slot: 2b,
+						UID0: "forestry.saplingsAverage",
+						UID1: "forestry.saplingsAverage"
+					},
+					{
+						Slot: 3b,
+						UID0: "forestry.fruitApple",
+						UID1: "forestry.fruitApple"
+					},
+					{
+						Slot: 4b,
+						UID0: "forestry.yieldLowest",
+						UID1: "forestry.yieldLowest"
+					},
+					{
+						Slot: 5b,
+						UID0: "forestry.sappinessLowest",
+						UID1: "forestry.sappinessLowest"
+					},
+					{
+						Slot: 6b,
+						UID0: "forestry.leavesNone",
+						UID1: "forestry.leavesNone"
+					},
+					{
+						Slot: 7b,
+						UID0: "forestry.maturationFaster",
+						UID1: "forestry.maturationFaster"
+					},
+					{
+						Slot: 8b,
+						UID0: "forestry.i1d",
+						UID1: "forestry.i1d"
+					},
+					{
+						Slot: 9b,
+						UID0: "forestry.fireproofFalse",
+						UID1: "forestry.fireproofFalse"
+					}]
+				}
+			}
+		},
+		count: 2
+	}]
+}

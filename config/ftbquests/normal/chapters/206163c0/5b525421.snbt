@@ -1,0 +1,100 @@
+{
+	icon: "forestry:soldering_iron",
+	x: -2.2d,
+	y: 2.2d,
+	text: [
+		"{q.forestry.soldering_iron.desc}"
+	],
+	dependencies: [
+		"c8f37d85"
+	],
+	tasks: [{
+		uid: "86173911",
+		type: "item",
+		items: [{
+			item: "forestry:soldering_iron"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "975179d1",
+		type: "item",
+		title: "Any Circuit Board",
+		items: [{
+			id: "forestry:chipsets",
+			tag: {
+				T: 0s
+			}
+		},
+		{
+			id: "forestry:chipsets",
+			Damage: 1s,
+			tag: {
+				T: 1s
+			}
+		},
+		{
+			id: "forestry:chipsets",
+			Damage: 2s,
+			tag: {
+				T: 2s
+			}
+		},
+		{
+			id: "forestry:chipsets",
+			Damage: 3s,
+			tag: {
+				T: 3s
+			}
+		}]
+	},
+	{
+		uid: "3a80e3b9",
+		type: "item",
+		title: "Any Electrun Tube",
+		items: [{
+			item: "forestry:thermionic_tubes 1 2"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 1"
+		},
+		{
+			item: "forestry:thermionic_tubes"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 11"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 12"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 9"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 7"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 6"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 5"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 4"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 3"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "9b16b8f8",
+		type: "item",
+		item: "harvestcraft:biscuititem",
+		count: 3,
+		random_bonus: 2
+	}]
+}

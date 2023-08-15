@@ -1,0 +1,156 @@
+{
+	title: "{q.forestry.the_pollen_path_.name}",
+	icon: {
+		id: "forestry:pollen_fertile",
+		tag: {
+			IsAnalyzed: 0b,
+			Genome: {
+				Chromosomes: [{
+					Slot: 0b,
+					UID0: "forestry.treeOak",
+					UID1: "forestry.treeOak"
+				},
+				{
+					Slot: 1b,
+					UID0: "forestry.heightSmall",
+					UID1: "forestry.heightSmall"
+				},
+				{
+					Slot: 2b,
+					UID0: "forestry.saplingsAverage",
+					UID1: "forestry.saplingsAverage"
+				},
+				{
+					Slot: 3b,
+					UID0: "forestry.fruitApple",
+					UID1: "forestry.fruitApple"
+				},
+				{
+					Slot: 4b,
+					UID0: "forestry.yieldLowest",
+					UID1: "forestry.yieldLowest"
+				},
+				{
+					Slot: 5b,
+					UID0: "forestry.sappinessLowest",
+					UID1: "forestry.sappinessLowest"
+				},
+				{
+					Slot: 6b,
+					UID0: "forestry.leavesNone",
+					UID1: "forestry.leavesNone"
+				},
+				{
+					Slot: 7b,
+					UID0: "forestry.maturationFaster",
+					UID1: "forestry.maturationFaster"
+				},
+				{
+					Slot: 8b,
+					UID0: "forestry.i1d",
+					UID1: "forestry.i1d"
+				},
+				{
+					Slot: 9b,
+					UID0: "forestry.fireproofFalse",
+					UID1: "forestry.fireproofFalse"
+				}]
+			}
+		}
+	},
+	x: 3.2d,
+	y: -1.7d,
+	description: "{q.forestry.the_pollen_path_.desc}",
+	text: [
+		"{q.forestry.the_pollen_path_.desc}"
+	],
+	dependencies: [
+		"88f68657"
+	],
+	tasks: [{
+		uid: "96e8c2f8",
+		type: "item",
+		items: [{
+			item: "gendustry:apiary.upgrade 1 15"
+		},
+		{
+			item: "forestry:alveary.sieve"
+		},
+		{
+			item: "gendustry:pollen_kit"
+		}]
+	},
+	{
+		uid: "e517a49d",
+		type: "item",
+		title: "Any Tree Pollen",
+		tags: [
+			"pollen_fertile"
+		],
+		items: [{
+			id: "forestry:pollen_fertile",
+			tag: {
+				IsAnalyzed: 0b,
+				Genome: {
+					Chromosomes: [{
+						Slot: 0b,
+						UID0: "forestry.treeOak",
+						UID1: "forestry.treeOak"
+					},
+					{
+						Slot: 1b,
+						UID0: "forestry.heightSmall",
+						UID1: "forestry.heightSmall"
+					},
+					{
+						Slot: 2b,
+						UID0: "forestry.saplingsAverage",
+						UID1: "forestry.saplingsAverage"
+					},
+					{
+						Slot: 3b,
+						UID0: "forestry.fruitApple",
+						UID1: "forestry.fruitApple"
+					},
+					{
+						Slot: 4b,
+						UID0: "forestry.yieldLowest",
+						UID1: "forestry.yieldLowest"
+					},
+					{
+						Slot: 5b,
+						UID0: "forestry.sappinessLowest",
+						UID1: "forestry.sappinessLowest"
+					},
+					{
+						Slot: 6b,
+						UID0: "forestry.leavesNone",
+						UID1: "forestry.leavesNone"
+					},
+					{
+						Slot: 7b,
+						UID0: "forestry.maturationFaster",
+						UID1: "forestry.maturationFaster"
+					},
+					{
+						Slot: 8b,
+						UID0: "forestry.i1d",
+						UID1: "forestry.i1d"
+					},
+					{
+						Slot: 9b,
+						UID0: "forestry.fireproofFalse",
+						UID1: "forestry.fireproofFalse"
+					}]
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1e7c32e1",
+		type: "item",
+		team_reward: true,
+		item: "harvestcraft:honeycombchocolatebaritem"
+	}]
+}
