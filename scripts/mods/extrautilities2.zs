@@ -461,6 +461,7 @@ for biome, input in {
 	"minecraft:swampland" : <twilightforest:twilight_log:2> | <biomesoplenty:log_1:6>,
 	"minecraft:ice_flats" : <biomesoplenty:hard_ice>,
 	"minecraft:desert"    : Bucket('sand'),
+	"thaumcraft:magical_forest": <thaumcraft:vishroom>,
 } as IIngredient[string] {
 	recipes.addShapeless(<extrautils2:biomemarker>.withTag({Biome: biome}), [<extrautils2:biomemarker>, input]);
 }
