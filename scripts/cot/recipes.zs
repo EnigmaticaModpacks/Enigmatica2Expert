@@ -5,6 +5,9 @@ furnace.setFuel(<contenttweaker:blasted_coal>, 120000);
 furnace.setFuel(<contenttweaker:empowered_phosphor>, 180000);
 furnace.setFuel(<contenttweaker:saturated_phosphor>, 450000);
 
+// Since Heavy have negative durability, surikens becomes infinite
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:knife_blade>.withTag({Material: "heavy"}));
+
 // Tallow into biomass
 scripts.process.compress(<ore:tallow> * 64, <contenttweaker:compressed_tallow>, 'except: compressor');
 scripts.process.melt(<ore:tallow>, <liquid:biomass> * 20);
