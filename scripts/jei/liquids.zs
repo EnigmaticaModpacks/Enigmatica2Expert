@@ -16,7 +16,8 @@ scripts.jei.requious.addInsOuts(x, [[3,0]], [[1,1]]);
 x.setJEIFluidSlot(0, 0, 'input');
 x.setJEIFluidSlot(2, 0, 'input');
 
-function interact(liquid0 as ILiquidStack, liquid1 as ILiquidStack, input0 as IIngredient, out as IItemStack) {
+function interact(liquid0 as ILiquidStack, liquid1 as ILiquidStack, input0 as IIngredient, out as IItemStack) as void {
+  if(isNull(out)) return;
   val rec = AssemblyRecipe.create(function(c) {
     c.addItemOutput('output0', out);
   }).requireFluid('input', liquid0 * 1000);
