@@ -130,17 +130,15 @@ craft.make(<fluiddrawers:tank>, ["pretty",
 
 #---------------------------------------------------------------------------
 #---------------------------------------------------------------------------
-static empty as string = '§8Empty§r';
-
 # Drawer sealed content
 function sealed(name as string, amount as int = 0) as string {
-  if(isNull(name)) return empty;
+  if(isNull(name)) return null;
   return amount > 0
     ? "§2Sealed: §a" ~ name ~ ' §2(§ax' ~ amount ~ '§2)'
     : "§2Sealed: §a" ~ name;
 }
 function sealedItem(item as IItemStack) as string {
-  if(isNull(item)) return empty;
+  if(isNull(item)) return null;
   return sealed(item.displayName, item.amount);
 }
 
@@ -186,9 +184,9 @@ if(!isNull(loadedMods["fluiddrawers"])) {
   val fluidDrawerTooltip as ITooltipFunction = function(item) {
     val dTag = D(item.tag);
     val fluidName = dTag.getString("Tile.Drawer.Fluid.FluidName");
-    if(isNull(fluidName)) return empty;
+    if(isNull(fluidName)) return null;
     val fluid = game.getLiquid(fluidName);
-    if(isNull(fluid)) return empty;
+    if(isNull(fluid)) return null;
     val fluidAmount = dTag.getInt("Tile.Drawer.Fluid.Amount");
     return sealed(fluid.displayName, fluidAmount);
   };

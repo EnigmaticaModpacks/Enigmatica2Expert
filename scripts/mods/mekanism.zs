@@ -552,7 +552,7 @@ utils.rh(<mekanism:nugget:5>);
 		tag.mekData.blockData.tileTag.id != "minecraft:mob_spawner" ||
 		isNull(tag.mekData.blockData.tileTag.SpawnData) ||
 		isNull(tag.mekData.blockData.tileTag.SpawnData.id)
-	) return '';
+	) return null;
   return "§2Spawner with §a" ~ tag.mekData.blockData.tileTag.SpawnData.id.asString() ~ '§r';
 });
 
