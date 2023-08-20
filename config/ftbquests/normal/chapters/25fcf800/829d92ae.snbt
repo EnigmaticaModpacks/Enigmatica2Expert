@@ -13,7 +13,8 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:solar_cont_1"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "f13a8522",

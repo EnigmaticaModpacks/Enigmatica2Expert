@@ -1,5 +1,11 @@
 {
 	title: "{q.forestry.circuit_boards.name}",
+	icon: {
+		id: "forestry:chipsets",
+		tag: {
+			T: 0s
+		}
+	},
 	x: -3.5d,
 	y: 2.166666666666667d,
 	text: [
@@ -14,6 +20,27 @@
 		items: [{
 			id: "forestry:chipsets",
 			tag: {}
+		},
+		{
+			id: "forestry:chipsets",
+			Damage: 1s,
+			tag: {
+				T: 1s
+			}
+		},
+		{
+			id: "forestry:chipsets",
+			Damage: 2s,
+			tag: {
+				T: 2s
+			}
+		},
+		{
+			id: "forestry:chipsets",
+			Damage: 3s,
+			tag: {
+				T: 3s
+			}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -1,0 +1,44 @@
+{
+	icon: "minecraft:piston",
+	x: 2.125d,
+	y: 2.0d,
+	text: [
+		"{q.getting_started.piston.desc}"
+	],
+	dependencies: [
+		"9eaa496f"
+	],
+	tasks: [{
+		uid: "96834b67",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		},
+		{
+			item: "minecraft:sticky_piston"
+		}]
+	},
+	{
+		uid: "146a2b72",
+		type: "item",
+		items: [{
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any blockSlime"
+				}
+			},
+			ForgeCaps: {
+				Parent: {
+					id: "ore",
+					data: "blockSlime"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "9e60d8a0",
+		type: "choice",
+		table: 144
+	}]
+}

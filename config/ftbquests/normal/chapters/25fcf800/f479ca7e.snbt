@@ -14,7 +14,8 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:void_res_miner_cont_6"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "607109b5",

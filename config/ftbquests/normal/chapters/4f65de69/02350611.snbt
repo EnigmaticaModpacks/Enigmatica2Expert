@@ -17,13 +17,8 @@
 				FluidName: "creosote",
 				Amount: 1000
 			}
-		}],
-		ignore_nbt: 2b
-	},
-	{
-		uid: "85b95b67",
-		type: "item",
-		items: [{
+		},
+		{
 			id: "forge:bucketfilled",
 			tag: {
 				FluidName: "ic2creosote",

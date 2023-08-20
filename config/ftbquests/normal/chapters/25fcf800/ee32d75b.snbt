@@ -14,7 +14,8 @@
 		type: "item",
 		items: [{
 			item: "environmentaltech:void_ore_miner_cont_3"
-		}]
+		}],
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "4eebc076",
