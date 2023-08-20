@@ -5,6 +5,8 @@ com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonExcepti
 	at com.google.gson.JsonParser.parse(JsonParser.java:84) ~[JsonParser.class:?]
 	at com.google.gson.JsonParser.parse(JsonParser.java:59) ~[JsonParser.class:?]
   [...]
+[main/WARN] [VintageFix Mixin Loader]: Added missing entry 'mixin.jar_discoverer_cache' to config file with default value 'true'
+[main/WARN] [VintageFix Mixin Loader]: Added missing entry 'mixin.bugfix.exit_freeze' to config file with default value 'true'
 [Client thread/WARN] [mixin]: Method overwrite conflict for getRenderBoundingBox in mixins.bugfixes.blocks.banner.json:UTBannerBoundingBoxMixin from mod UniversalTweaks_1_12_2_1_8_0, previously written by meldexun.renderlib.mixin.MixinTileEntityBanner. Skipping method.
 [Client thread/ERROR] [FML]: The mcmod.info file in LittleTiles_v1.5.79_mc1.12.2.jar cannot be parsed as valid JSON. It will be ignored
 com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 11 column 73 path $[0].credits
@@ -12,10 +14,10 @@ com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonExcepti
 	at com.google.gson.JsonParser.parse(JsonParser.java:84) ~[JsonParser.class:?]
 	at com.google.gson.JsonParser.parse(JsonParser.java:59) ~[JsonParser.class:?]
   [...]
-[Client thread/WARN] [mixin]: @Mixin target mod.chiselsandbits.chiseledblock.data.VoxelBlob was not found mixins.vintagefix.late.json:dynamic_resources.VoxelBlobMixin from mod vintagefix_0_2_11
-[Client thread/WARN] [mixin]: @Mixin target com.raoulvdberge.refinedstorage.proxy.ProxyClient was not found mixins.vintagefix.late.json:dynamic_resources.RSProxyClientMixin from mod vintagefix_0_2_11
-[Client thread/WARN] [mixin]: @Mixin target pl.asie.ucw.util.ModelLoaderEarlyView was not found mixins.vintagefix.late.json:dynamic_resources.MixinModelLoaderEarlyView from mod vintagefix_0_2_11
-[Client thread/WARN] [mixin]: @Mixin target thebetweenlands.client.render.model.loader.CustomModelLoader was not found mixins.vintagefix.late.json:dynamic_resources.MixinCustomBetweenlandsModels from mod vintagefix_0_2_11
+[Client thread/WARN] [mixin]: @Mixin target mod.chiselsandbits.chiseledblock.data.VoxelBlob was not found mixins.vintagefix.late.json:dynamic_resources.VoxelBlobMixin from mod vintagefix_0_3_0
+[Client thread/WARN] [mixin]: @Mixin target com.raoulvdberge.refinedstorage.proxy.ProxyClient was not found mixins.vintagefix.late.json:dynamic_resources.RSProxyClientMixin from mod vintagefix_0_3_0
+[Client thread/WARN] [mixin]: @Mixin target pl.asie.ucw.util.ModelLoaderEarlyView was not found mixins.vintagefix.late.json:dynamic_resources.MixinModelLoaderEarlyView from mod vintagefix_0_3_0
+[Client thread/WARN] [mixin]: @Mixin target thebetweenlands.client.render.model.loader.CustomModelLoader was not found mixins.vintagefix.late.json:dynamic_resources.MixinCustomBetweenlandsModels from mod vintagefix_0_3_0
 [Client thread/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.phosphor.json:common.MixinChunk from mod phosphor_1_12_2_0_2_9_2_SNAPSHOT_universal cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
 [Client thread/ERROR] [soundphysicsinjector]: What the hell, DS's version is not properly formatted ?
 [Client thread/ERROR] [soundphysicsinjector]: What the hell, DS's version is not properly formatted ?
@@ -35,6 +37,15 @@ com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonExcepti
 [Client thread/WARN] [orelib]: Unable to locate field [org.orecruncher.dsurround.ModOptions$rain::PATH]
 [Client thread/WARN] [orelib]: Unable to locate field [org.orecruncher.dsurround.ModOptions$logging::PATH]
 [Client thread/WARN] [orelib]: Unable to locate field [org.orecruncher.dsurround.ModOptions$asm::PATH]
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack HammerCore Connected Models (com.zeitheron.hammercore.api.inconnect.EmptyModelPack)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack resources (com.teamacronymcoders.base.util.files.DirectoryResourcePack)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack CustomResources (lumien.resourceloader.loader.NormalResourceLoader)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack quark-texture-proxy (vazkii.quark.base.client.ResourceProxy)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack aquaacrobatics-new-water (com.fuzs.aquaacrobatics.client.model.WaterResourcePack)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack libnine magic pi pack (io.github.phantamanta44.libnine.client.model.ParameterizedItemModelLoader$ResourceInjector)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack architecturecraft-1.12-3.108.jar (com.elytradev.architecturecraft.repackage.com.elytradev.concrete.resgen.ConcreteResourcePack)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack quark-emote-pack (vazkii.quark.vanity.client.emotes.CustomEmoteIconResourcePack)
+[ForkJoinPool-1-worker-1/WARN] [VintageFix]: Cannot list resources from pack BetterFps (guichaguri.betterfps.gui.BetterFpsResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack HammerCore Connected Models (com.zeitheron.hammercore.api.inconnect.EmptyModelPack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack resources (com.teamacronymcoders.base.util.files.DirectoryResourcePack)
 [Client thread/WARN] [VintageFix]: Cannot list resources from pack CustomResources (lumien.resourceloader.loader.NormalResourceLoader)
@@ -47,73 +58,63 @@ com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonExcepti
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_no_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_no_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_no_coremod
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/WARN] [VintageFix]: Path mixins.sledgehammer.conarm.json is not a valid model location
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/saltmod
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/saltmod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/saltmod
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_no_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_no_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_no_coremod
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/WARN] [VintageFix]: Path fabric.mod.json is not a valid model location
 [Client thread/WARN] [VintageFix]: Path mixins.mods.epicsiegemod.json is not a valid model location
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/conarm
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/conarm
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/conarm
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_coremod
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/conarm
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/conarm
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/conarm
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicaugmentation:ward_foci_coremod
 [Client thread/ERROR] [VintageFix]: Early load error for thaumicaugmentation:ward_foci_coremod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for thaumicaugmentation:ward_foci_coremod
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model dsurround:data/saltmod
 [Client thread/ERROR] [VintageFix]: Early load error for dsurround:data/saltmod
 java.lang.RuntimeException: net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Model loading failure for dsurround:data/saltmod
-	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:63) ~[DynamicModelProvider.class:?]
+	at org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.getObject(DynamicModelProvider.java:66) ~[DynamicModelProvider.class:?]
 	at net.minecraft.client.renderer.block.model.ModelManager.doEarlyModelLoading(ModelManager.java:1079) [cgc.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1211) [cgc.class:?]
+	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:1212) [cgc.class:?]
   [...]
 [Client thread/WARN] [VintageFix]: Path mixins.searchtree_mod.json is not a valid model location
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack HammerCore Connected Models (com.zeitheron.hammercore.api.inconnect.EmptyModelPack)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack resources (com.teamacronymcoders.base.util.files.DirectoryResourcePack)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack CustomResources (lumien.resourceloader.loader.NormalResourceLoader)
-[CraftPresence/ERROR] [craftpresence]: Unable to connect to Discord...
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack quark-texture-proxy (vazkii.quark.base.client.ResourceProxy)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack aquaacrobatics-new-water (com.fuzs.aquaacrobatics.client.model.WaterResourcePack)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack libnine magic pi pack (io.github.phantamanta44.libnine.client.model.ParameterizedItemModelLoader$ResourceInjector)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack architecturecraft-1.12-3.108.jar (com.elytradev.architecturecraft.repackage.com.elytradev.concrete.resgen.ConcreteResourcePack)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack quark-emote-pack (vazkii.quark.vanity.client.emotes.CustomEmoteIconResourcePack)
-[Client thread/WARN] [VintageFix]: Cannot list resources from pack BetterFps (guichaguri.betterfps.gui.BetterFpsResourcePack)
 [Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from plethora:textures/models/neural_interface.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:380) ~[cdq.class:?]
@@ -4746,13 +4747,13 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:228) [cdp.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:152) [cdp.class:?]
   [...]
-[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from iceandfire:textures/models/hippogryph/chestnut_blink.png
+[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from enderio:textures/models/armor/stellar_alloy_layer_2.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:380) ~[cdq.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:228) [cdp.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:152) [cdp.class:?]
   [...]
-[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from enderio:textures/models/armor/stellar_alloy_layer_2.png
+[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from iceandfire:textures/models/hippogryph/chestnut_blink.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:380) ~[cdq.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:228) [cdp.class:?]
@@ -4920,13 +4921,13 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:228) [cdp.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:152) [cdp.class:?]
   [...]
-[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from forestry:textures/blocks/machine_tank_maximum.png
+[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from twilightforest:textures/model/snowqueen.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:380) ~[cdq.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:228) [cdp.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadSprites(TextureMap.java:152) [cdp.class:?]
   [...]
-[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from twilightforest:textures/model/snowqueen.png
+[Client thread/ERROR] [net.minecraft.client.renderer.texture.TextureMap]: Unable to parse metadata from forestry:textures/blocks/machine_tank_maximum.png
 java.lang.RuntimeException: broken aspect ratio and not an animation
 	at net.minecraft.client.renderer.texture.TextureAtlasSprite.loadSprite(TextureAtlasSprite.java:380) ~[cdq.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:228) [cdp.class:?]
@@ -5179,26 +5180,20 @@ java.lang.RuntimeException: broken aspect ratio and not an animation
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model exnihilocreatio:block_infested_leaves#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model mekanism:glow_panel#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model mekanism:glow_panel#inventory
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=south
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=west
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_drawer_controller#facing=north
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_drawer_controller#facing=north
-[Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'framedcompactdrawers'
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_slave#normal
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_slave#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customtrim#normal
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customtrim#normal
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=south,right=false
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=south,right=false
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:framingtable#facing=south,right=true
-[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:framingtable#facing=south,right=true
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=south
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=south
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model storagedrawers:customdrawers#block=full1,facing=west
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model storagedrawers:customdrawers#block=full1,facing=west
 [Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'storagedrawers'
-[Client thread/ERROR] [VintageFix]: net.minecraftforge.client.event.ModelBakeEvent@xxxxxxxx listener 'net.minecraftforge.fml.common.eventhandler.EventBus$1@xxxxxxxx' threw exception, models may be broken
-java.lang.ClassCastException: org.embeddedt.vintagefix.dynamicresources.WrappingModelRegistry cannot be cast to net.minecraft.util.registry.RegistrySimple
-	at li.cil.oc.client.renderer.block.ModelInitialization$.onModelBake(ModelInitialization.scala:137) ~[ModelInitialization$.class:?]
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_3114_ModelInitialization$_onModelBake_ModelBakeEvent.invoke(.dynamic) ~[?:?]
-	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90) ~[ASMEventHandler.class:?]
-  [...]
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=south,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=south,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model framedcompactdrawers:framed_compact_drawer#facing=west,slots=open1
+[Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model framedcompactdrawers:framed_compact_drawer#facing=west,slots=open1
+[Client thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'framedcompactdrawers'
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:snowglobe#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model extrautils2:snowglobe#inventory
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model extrautils2:itemcreativedestructionwand#inventory
@@ -5214,42 +5209,227 @@ java.lang.ClassCastException: org.embeddedt.vintagefix.dynamicresources.Wrapping
 [Client thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model bibliocraft:atlasbook#normal
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model industrialwires:panel_component/rgb_led#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model industrialwires:panel_component/rgb_led#inventory
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model opencomputers:netsplitter#inventory
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model opencomputers:netsplitter#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#inventory
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture mekanism:entities/balloon was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model betteranimalsplus:block/items/wolfhead
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/eject was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/eject was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/bottom was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'betteranimalsplus'
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
 [VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture neenergistics:blocks/pattern_interface was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model tconevo:mana_giver#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model tconevo:mana_giver#inventory
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/error_off was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/error_off was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/error_on was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/error_on was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture immersivepetroleum:multiblocks/distillation_tower was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/import was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture gendustry:covers/import was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/bottom was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumcraft:block/banner_crimson_cult
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model opencomputers:robot#inventory
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model opencomputers:robot#inventory
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model opencomputers:cable#inventory
-[VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model opencomputers:cable#inventory
-[VintageFix item baking thread/ERROR] [VintageFix]: Suppressing further model loading errors for namespace 'opencomputers'
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture cyclicmagic:entity/projectile/fire_dark_anim was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture cyclicmagic:entity/projectile/fire_dark_anim was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/bottom was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/bottom was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicwonders:block/panacea
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model thaumicwonders:block/panacea
+[Client thread/WARN] [forestry]: Failed to find item for (harvestcraft:pastagarden) in the Forge registry.
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[Client thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/shield_base was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/shield_base was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/shield_base was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/shield_base was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/shield_base was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/bottom was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model minecraft:old_wood_slab#inventory
 [VintageFix item baking thread/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model minecraft:old_wood_slab#inventory
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:fluid/#inventory
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model aeadditions:fluid/#inventory
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:gas/#inventory
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model aeadditions:gas/#inventory
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#normal
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#normal
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:sawbench#facing=west
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:sawbench#facing=west
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:shape#light=0
-[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:shape#light=0
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[VintageFix item baking thread/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
 [Client thread/WARN] [dsurround]: Cannot find sound that should be registered [minecraft:]
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_helm_emerald] for ItemRegistry
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_chest_emerald] for ItemRegistry
@@ -5287,5 +5467,182 @@ java.lang.ClassCastException: org.embeddedt.vintagefix.dynamicresources.Wrapping
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_chest_crystal_black] for ItemRegistry
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_pants_crystal_black] for ItemRegistry
 [Client thread/WARN] [dsurround]: Cannot locate item [actuallyadditions:item_boots_crystal_black] for ItemRegistry
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:fluid/#inventory
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model aeadditions:fluid/#inventory
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model aeadditions:gas/#inventory
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model aeadditions:gas/#inventory
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model pressure:block/sided_multiblock.extended
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model advgenerators:generators_data_port#normal
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model advgenerators:generators_data_port#normal
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:sawbench#facing=west
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:sawbench#facing=west
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider]: Failed to load model architecturecraft:shape#light=0
+[pool-12-thread-1/ERROR] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Error occured while loading model architecturecraft:shape#light=0
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture astralsorcery:misc/blank was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/bottom was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/avaritia/dire/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/bottom was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/basic/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/bottom was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/advanced/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/bottom was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/elite/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/bottom was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture botania_tweaks:crate/extended/ultimate/side was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture rf-capability-adapter:aecapproxy was not discovered during texture pass
 [pool-12-thread-1/ERROR] [base]: org.embeddedt.vintagefix.util.FastFileNotFoundException: biomesoplenty:textures/items/gem.png
-[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture neenergistics:blocks/pattern_interface was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
+[pool-12-thread-1/WARN] [org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider]: Texture minecraft:entity/steve was not discovered during texture pass
