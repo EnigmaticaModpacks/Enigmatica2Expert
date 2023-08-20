@@ -330,4 +330,44 @@
 			}
 		]
 	}
+	,{"item":"minecraft:stone:3"               ,"color": 0,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"quark:biome_cobblestone:2"       ,"color": 0,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:stone:1"               ,"color": 1,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"iceandfire:myrmex_resin:0"       ,"color": 1,"rarity":[{"weight": 5,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dirt:9"            ,"color": 1,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dirt:1"            ,"color": 1,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:mud:0"             ,"color": 2,"rarity":[{"weight":15,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dirt:0"            ,"color": 2,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"quark:glowcelium:0"              ,"color": 3,"rarity":[{"weight": 5,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"quark:biome_cobblestone:1"       ,"color": 3,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"quark:slate:0"                   ,"color": 3,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:sandstone:0"           ,"color": 4,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"chisel:limestone2:7"             ,"color": 4,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:sponge:0"              ,"color": 4,"rarity":[{"weight": 5,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dirt:10"           ,"color": 5,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dirt:2"            ,"color": 5,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"quark:elder_prismarine:0"        ,"color": 6,"rarity":[{"weight": 5,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"nuclearcraft:wasteland_earth:0"  ,"color": 6,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dried_sand:0"      ,"color": 7,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"iceandfire:ash:0"                ,"color": 7,"rarity":[{"weight": 8,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:stone:5"               ,"color": 8,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:clay:0"                ,"color": 8,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_congealed:1"    ,"color": 9,"rarity":[{"weight": 7,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:prismarine:0"          ,"color": 9,"rarity":[{"weight": 6,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_dirt:0"         ,"color": 9,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:obsidian:0"            ,"color":10,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_congealed:2"    ,"color":10,"rarity":[{"weight": 7,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_dirt:2"         ,"color":10,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:hard_ice:0"        ,"color":11,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"minecraft:ice:0"                 ,"color":11,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_dirt:1"         ,"color":11,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"biomesoplenty:dirt:8"            ,"color":12,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"mysticalagriculture:soulstone:0" ,"color":12,"rarity":[{"weight": 5,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"iceandfire:chared_dirt:0"        ,"color":12,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_congealed:0"    ,"color":13,"rarity":[{"weight": 7,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"iceandfire:myrmex_resin_sticky:1","color":13,"rarity":[{"weight":10,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"quark:jasper:0"                  ,"color":14,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"tconstruct:slime_congealed:3"    ,"color":14,"rarity":[{"weight": 7,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"chisel:basalt2:7"                ,"color":15,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
+	,{"item":"iceandfire:chared_stone:0"       ,"color":15,"rarity":[{"weight":20,"whitelist":"","blacklist":"minecraft:hell,minecraft:sky","depth_min":0,"depth_max":255}]}
 ]
