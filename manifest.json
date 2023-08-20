@@ -99,7 +99,7 @@
     {"projectID":238003,"fileID":2559089,"required":true,"___name":"Thaumic Inventory Scanning (Thaumcraft Addon)"},
     {"projectID":238372,"fileID":2595310,"required":true,"___name":"Neat"},
     {"projectID":238403,"fileID":2691084,"required":true,"___name":"Better Builder's Wands"},
-    {"projectID":239197,"fileID":4638548,"required":true,"___name":"CraftTweaker"},
+    {"projectID":239197,"fileID":4707234,"required":true,"___name":"CraftTweaker"},
     {"projectID":239286,"fileID":4075832,"required":true,"___name":"Cyclic"},
     {"projectID":239418,"fileID":2645156,"required":true,"___name":"Sonar Core"},
     {"projectID":240630,"fileID":4440935,"required":true,"___name":"Just Enough Resources (JER)"},
@@ -128,7 +128,7 @@
     {"projectID":246640,"fileID":2704562,"required":true,"___name":"Mystical Agriculture"},
     {"projectID":246996,"fileID":3440963,"required":true,"___name":"B.A.S.E"},
     {"projectID":247007,"fileID":3053017,"required":true,"___name":"Common Capabilities"},
-    {"projectID":247401,"fileID":4702607,"required":true,"___name":"Hammer Lib"},
+    {"projectID":247401,"fileID":4709973,"required":true,"___name":"Hammer Lib"},
     {"projectID":248020,"fileID":3178199,"required":true,"___name":"Flux Networks"},
     {"projectID":248027,"fileID":2816920,"required":true,"___name":"Scaling Health"},
     {"projectID":248370,"fileID":2490058,"required":true,"___name":"JEI Bees"},
@@ -420,7 +420,7 @@
     {"projectID":836009,"fileID":4690550,"required":true,"___name":"Deep Blood Evolution"},
     {"projectID":849094,"fileID":4513158,"required":true,"___name":"Thaumic Energistics Extended Life"},
     {"projectID":870276,"fileID":4576653,"required":true,"___name":"ConfigAnytime"},
-    {"projectID":871198,"fileID":4705531,"required":true,"___name":"VintageFix"},
+    {"projectID":871198,"fileID":4712851,"required":true,"___name":"VintageFix"},
     {"projectID":896591,"fileID":4685926,"required":true,"___name":"SerializationIsBad"}
   ]
 }
