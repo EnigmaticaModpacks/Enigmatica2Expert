@@ -2,17 +2,18 @@
 
 🚧✅❌ List of priorities:
 
-- [ ] 📖 Check on server if quest name still available (conflux global message)
 - [ ] ✏️ nanomachines Dissaper On Rejoin Server
 
-- [ ] ✏️ cut ore list of `Laser Drill`
-- [x] ✏️ heavy Surikens Infinite
+- [x] ✏️ Iron Rod cheaper
+- [x] ✏️ cut ore list of `Laser Drill`
+- [x] 📖 fixVoidMinerNbtQuest
 - [ ] 📖 fix Sharp Kit Quests Cant Handle NBT Diffs
+- [x] 📖 fix Double Soldering Iron Quest
+- [x] 📖 smeltery Fuels Require Both Oils
+- [x] 📖 Add 12->24 piston logic
 - [x] 🔄 Grant Conflux ranks based on game stages. Also add back-support
 - [ ] 🟢 Configure `Villager Trade Tables`
 - [ ] 🟢 Configure `Worldgen Indicators`
-- [x] 🟡 Roll back Nether Ores
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/filedirector
 - [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/visualores
 
 ---
@@ -23,6 +24,8 @@
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 📖 Fix achievments: end reborn hammer, Rats cauldron, Quark decor
+- [ ] 📖 Fix conflux and chapter messages to be localized
 - [ ] 📖 FTBQuest can have links by `Custom Click` field
 - [ ] ✏️ Completely move AdvRocketry to tweaker mod instead of XML
 - [ ] 🟢 Add https://github.com/Olivoz/ExtendedConfigs
