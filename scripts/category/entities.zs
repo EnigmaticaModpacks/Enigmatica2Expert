@@ -118,14 +118,15 @@ for output, ingrs in {
   <iceandfire:jar_pixie:3> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:4>],
   <iceandfire:jar_pixie:4> : [<biomesoplenty:jar_filled:1>, <tconstruct:materials:19>, <quark:crystal:3>],
 
-  <iceandfire:dragonegg_red>      : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_red>],
-  <iceandfire:dragonegg_green>    : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_green>],
-  <iceandfire:dragonegg_bronze>   : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_bronze>],
-  <iceandfire:dragonegg_gray>     : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_gray>],
-  <iceandfire:dragonegg_blue>     : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_blue>],
-  <iceandfire:dragonegg_white>    : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_white>],
-  <iceandfire:dragonegg_sapphire> : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_sapphire>],
-  <iceandfire:dragonegg_silver>   : [<ore:heartDragon>, <ore:seaSerpentScales>, <iceandfire:dragonscale_silver>],
+
+  <iceandfire:dragonegg_red>      : [<iceandfire:fire_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_red>],
+  <iceandfire:dragonegg_green>    : [<iceandfire:fire_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_green>],
+  <iceandfire:dragonegg_bronze>   : [<iceandfire:fire_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_bronze>],
+  <iceandfire:dragonegg_gray>     : [<iceandfire:fire_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_gray>],
+  <iceandfire:dragonegg_blue>     : [<iceandfire:ice_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_blue>],
+  <iceandfire:dragonegg_white>    : [<iceandfire:ice_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_white>],
+  <iceandfire:dragonegg_sapphire> : [<iceandfire:ice_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_sapphire>],
+  <iceandfire:dragonegg_silver>   : [<iceandfire:ice_dragon_heart>, <ore:seaSerpentScaleBlock>, <iceandfire:dragonscale_silver>],
 
   <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "iceandfire:hippocampus"}) : [
     <iceandfire:ambrosia>,  # Ambrosia
