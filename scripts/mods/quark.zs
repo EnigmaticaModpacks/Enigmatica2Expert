@@ -73,10 +73,10 @@ for i, log in mcWoodLogs {
 recipes.remove(<quark:world_stone_pavement:*>);
 
 # [Iron Rod] from [Slime in a Bucket][+2]
-craft.remake(<quark:iron_rod>, ["pretty",
-  "    ╱",
-  "  ~  ",
-  "B    "], {
+craft.remake(<quark:iron_rod> * 3, ["pretty",
+  "  ╱ ╱",
+  "B ~ ╱",
+  "B B  "], {
   "╱": <ore:stickIron>,      # Iron Rod
   "~": <quark:slime_bucket:*>, # Slime in a Bucket
   "B": <ore:stoneBrimstone>, # Brimstone
