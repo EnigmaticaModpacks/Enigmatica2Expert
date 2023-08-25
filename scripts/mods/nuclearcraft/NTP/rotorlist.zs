@@ -11,7 +11,7 @@ static StatorInfoList as [StatorInfo] = [
 					StatorInfo("thorium","TBU", 0.65),
 					StatorInfo("uranium","Uranium238",0.70),
 					StatorInfo("trinitite","Trinitite", 0.60),
-					StatorInfo("elektron","Elektron", 0.80)
+					StatorInfo("elektron","Elektron60", 0.80)
 					];			
 					
 static BladeInfoList as [BladeInfo] = [
