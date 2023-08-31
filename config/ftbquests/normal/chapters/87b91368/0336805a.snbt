@@ -1,7 +1,7 @@
 {
-	title: "{q.animals.fire_dragon_forge.name}",
+	title: "{q.animals.dragon_forge.name}",
 	icon: "iceandfire:dragonforge_fire_core",
-	x: 7.3d,
+	x: 7.9d,
 	y: 0.7d,
 	text: [
 		"{q.animals.fire_dragon_forge.desc}"
@@ -23,6 +23,9 @@
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonforge_fire_brick"
+		},
+		{
+			item: "iceandfire:dragonforge_ice_brick"
 		}],
 		count: 17L
 	},
@@ -31,6 +34,9 @@
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonforge_fire_input"
+		},
+		{
+			item: "iceandfire:dragonforge_ice_input"
 		}]
 	},
 	{
@@ -38,17 +44,16 @@
 		type: "item",
 		items: [{
 			item: "iceandfire:dragonforge_fire_core_disabled"
-		}]
+		},
+		{
+			item: "iceandfire:dragonforge_ice_core_disabled"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
-		uid: "440fa399",
-		type: "item",
-		item: "iceandfire:fire_dragon_blood",
-		count: 64
-	},
-	{
-		uid: "eedef055",
-		type: "item",
-		item: "iceandfire:fire_dragon_heart"
+		uid: "298c0c89",
+		type: "choice",
+		table: 145
 	}]
 }

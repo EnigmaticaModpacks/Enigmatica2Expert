@@ -6,8 +6,7 @@
 		"{q.animals.dragon_steel.desc}"
 	],
 	dependencies: [
-		"0336805a",
-		"1af53634"
+		"0336805a"
 	],
 	size: 1.5d,
 	tasks: [{

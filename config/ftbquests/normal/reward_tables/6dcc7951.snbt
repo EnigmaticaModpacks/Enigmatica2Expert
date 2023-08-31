@@ -1,0 +1,24 @@
+{
+	title: "Dragon forge reward",
+	loot_size: 1,
+	rewards: [{
+		icon: "iceandfire:fire_dragon_blood 32",
+		item: "iceandfire:fire_dragon_blood",
+		count: 32
+	},
+	{
+		icon: "iceandfire:ice_dragon_blood 32",
+		item: "iceandfire:ice_dragon_blood",
+		count: 32
+	},
+	{
+		icon: "iceandfire:fire_dragon_heart 4",
+		item: "iceandfire:fire_dragon_heart",
+		count: 4
+	},
+	{
+		icon: "iceandfire:ice_dragon_heart 4",
+		item: "iceandfire:ice_dragon_heart",
+		count: 4
+	}]
+}
