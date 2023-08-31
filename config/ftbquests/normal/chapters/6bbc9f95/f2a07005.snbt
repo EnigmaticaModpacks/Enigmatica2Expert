@@ -36,7 +36,8 @@
 			tag: {
 				id: "thaumicaugmentation:effect_cost"
 			}
-		}]
+		}],
+		ignore_nbt: 1b
 	},
 	{
 		uid: "1888442f",
