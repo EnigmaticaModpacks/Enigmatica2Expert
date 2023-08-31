@@ -190,7 +190,7 @@ for pos, names in utils.graph([
 	"2": [],
 	"3": ["osmium", "obsidian", "vibrant_alloy", "pulsating_iron", "end_steel"],
 	"4": ["xu_demonic_metal", "mirion", "signalum", "lumium", "crystalline_alloy", "melodic_alloy", "crystalline_pink_slime"],
-	"5": ["xu_enchanted_metal", "xu_evil_metal", "fierymetal"],
+	"5": ["xu_enchanted_metal", "xu_evil_metal", "fierymetal", "crystal_matrix"],
 	"6": ["stellar_alloy", "osgloglas", "enderium", "gelid_enderium", "supremium", "refinedglowstone", "refinedobsidian"],
 }) {
 	for name in names {
