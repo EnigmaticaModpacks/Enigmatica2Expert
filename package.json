@@ -11,6 +11,10 @@
     "build:bump-menu": "npx json-patch-cli set config/CustomMainMenu/mainmenu.json labels/version_num/text \"WIP_VERSION\"",
     "build:bump-remt": "echo \"WIP_VERSION\" > dev/version.txt",
     "build:gen-manif": "echo \"GENERATE MANIFEST HERE\"",
+    "dev": "concurrently npm:dev:* --prefix-colors auto",
+    "dev:errors": "esno mc-tools/packages/errors/src/cli.ts --config=dev/tools/config.yml --output=dev/tools/unresolved-errors.log",
+    "dev:inject_js": "node dev/automation/Inject_JS.js",
+    "dev:tellme": "node config/tellme/!rename_update.js",
     "mc-tools:reducer": "esno mc-tools/packages/reducer/src/cli.ts levels dev/tools/reduce_mods.json"
   },
   "dependencies": {
@@ -28,6 +32,7 @@
     "chalk": "^5.2.0",
     "cli-progress": "^3.12.0",
     "compare-func": "^2.0.0",
+    "concurrently": "^8.2.1",
     "csv-parse": "^5.3.8",
     "csvtojson": "^2.0.10",
     "curseforge-v2": "^1.2.0",

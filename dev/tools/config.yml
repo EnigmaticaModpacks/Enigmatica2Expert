@@ -172,7 +172,7 @@ ignore:
   - 'WARN. \[inventorytweaks\]: Failed to check item tree version: null'
   - 'WARN. \[keywizard\]: Conflicting mod detected, controls gui override may not work'
   - 'WARN. \[keywizard\]: Controls gui override enabled, this may cause problems with other mods'
-  - 'WARN. \[mixin\]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins\.phosphor\.json:common\.MixinChunk cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded\.'
+  - 'WARN. \[mixin\]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins\.phosphor\.json:common\.MixinChunk .+ cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded\.'
   - 'Unable to read property: material with value: iron for blockstate: .+ic2:te'
   - 'WARN. \[smoothfont\]: Fonts folder "fontfiles" does not exist'
   - 'WARN. \[smoothfont\]: renderChar method might be replaced\. Fix the space width to 4 \(MC default\)\.'
@@ -210,6 +210,9 @@ ignore:
 
   # Known, "It's just logging, you can ignore it." https://github.com/LoliKingdom/LoliASM/issues/51'
   - '\[Finalizer/WARN\] \[LoliASM\]: Clearing LoliStringPool 1'
+
+  # LoliASM dev say i need to ignore that
+  - .main/WARN. .LoliASM.. Replacing CA Certs with an updated one...
 
   # Wooden Crucible error (they disabled anyway)'
   - '\[excompressum\]: Duplicate entry for .* in WoodenCrucible. overwriting...'
@@ -268,3 +271,34 @@ ignore:
 
   # Even if you disable this configs, its still erroring
   - .main/ERROR. .Aqua Acrobatics Transformer.. Disabling soul sand and magma mixins as requested in config
+
+  # CraftPresence error - dont know how to configure this
+  - ERROR. .craftpresence.. Asset name "enigmatica2expert-extended" does not exist, attempting to use an alternative icon "curse"...
+
+  # Dynamic Surroundings errors that actually wont matter
+  - ERROR. .soundphysicsinjector.. What the hell, DS's version is not properly formatted .
+  - WARN. .dsurround.. Invalid fingerprint detected.
+  - WARN. .orelib.. Unable to locate field \[.+\]
+  - WARN. .dsurround.. Cannot find sound that should be registered \[.+\]
+  - WARN. .dsurround.. Cannot locate item \[.+\] for ItemRegistry
+
+  # VintageFix provide lot of errors. Most of them are harmless. VintageFix dev not very enthusiastic to explain what they do.
+  # https://github.com/embeddedt/VintageFix/issues/41
+  - .Client thread/WARN. .mixin.. .Mixin target .+ was not found .+ from mod vintagefix_.+
+  - .VintageFix.. Cannot list resources from pack .+ (.+)
+  - .Client thread/ERROR. .org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.. Failed to load model .+
+  - .VintageFix.. Path .+ is not a valid model location
+  - .Client thread/ERROR. .VintageFix.. Early load error for .+
+  - .Client thread/ERROR. .net.minecraft.client.renderer.texture.TextureMap.. Unable to parse metadata from .+
+  - ERROR. .base.. org.embeddedt.vintagefix.util.FastFileNotFoundException. .+
+  - ERROR. .org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider.. Error occured while loading model .+
+  - ERROR. .VintageFix.. Suppressing further model loading errors for namespace '.+'
+  - ERROR. .org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.. Failed to load model .+
+  - ERROR. .org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider.. Error occured while loading model .+
+  - WARN. .org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider.. Texture .+ was not discovered during texture pass
+  - ERROR. .org.embeddedt.vintagefix.dynamicresources.model.DynamicModelProvider.. Failed to load model .+
+  - ERROR. .org.embeddedt.vintagefix.dynamicresources.model.DynamicBakedModelProvider.. Error occured while loading model .+
+  - ERROR. .VintageFix.. Suppressing further model loading errors for namespace .+
+
+  # Universal Tweaks Warns:
+  - WARN. .mixin.. Method overwrite conflict for getRenderBoundingBox in mixins.bugfixes.blocks.banner.json:UTBannerBoundingBoxMixin from mod \w+, previously written by meldexun.renderlib.mixin.MixinTileEntityBanner. Skipping method.

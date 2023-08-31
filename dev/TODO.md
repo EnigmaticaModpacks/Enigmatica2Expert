@@ -3,18 +3,16 @@
 🚧✅❌ List of priorities:
 
 - [ ] ✏️ nanomachines Dissaper On Rejoin Server
-
-- [x] ✏️ Iron Rod cheaper
-- [x] ✏️ cut ore list of `Laser Drill`
-- [x] 📖 fixVoidMinerNbtQuest
-- [ ] 📖 fix Sharp Kit Quests Cant Handle NBT Diffs
-- [x] 📖 fix Double Soldering Iron Quest
-- [x] 📖 smeltery Fuels Require Both Oils
-- [x] 📖 Add 12->24 piston logic
-- [x] 🔄 Grant Conflux ranks based on game stages. Also add back-support
+- [ ] 🌍 fix Mercury Have Water
 - [ ] 🟢 Configure `Villager Trade Tables`
 - [ ] 🟢 Configure `Worldgen Indicators`
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/visualores
+- [ ] 🟢 Find why looking at JER page with villagers this error cut list of trades every roll:
+  > Error caught from Recipe Category: jeresources.jei.villager.VillagerCategory
+  > java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+  > 	at java.util.LinkedList.checkElementIndex(LinkedList.java:555) ~[?:1.8.0_352]
+  > 	at java.util.LinkedList.get(LinkedList.java:476) ~[?:1.8.0_352]
+  > 	at jeresources.entry.VillagerEntry.getVillagerTrades(VillagerEntry.java:37) ~[VillagerEntry.class:?]
+  > 	at jeresources.jei.villager.VillagerWrapper.getTrades(VillagerWrapper.java:35) ~[VillagerWrapper.class:?]
 
 ---
 
@@ -24,6 +22,7 @@
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] ✏️ Dank Null go out of ExtendedCrafting (keep EC recipes for end-tier)
 - [ ] 📖 Fix achievments: end reborn hammer, Rats cauldron, Quark decor
 - [ ] 📖 Fix conflux and chapter messages to be localized
 - [ ] 📖 FTBQuest can have links by `Custom Click` field
