@@ -60,7 +60,7 @@ events.onCustomReward(function(e as mods.zenutils.ftbq.CustomRewardEvent) {
       // notifyEveryone(e.player, 'e2ee.player_achieved', 'q.gates.conflux_'~k~'.name');
       // notifyEveryone(e.player, 'e2ee.player_achieved', e.reward.quest.titleText.formattedText);
       server.commandManager.executeCommand(server,
-        '/say §l'~e.player.name~'§r achieved §nConflux '~k.toUpperCase()~'§r after §l'~formatPlayTime(e.player)~'§r of play!§r'
+        '/say §l'~e.player.name~'§r achieved §nConflux §n'~k.toUpperCase()~'§r after §l'~formatPlayTime(e.player)~'§r of play!§r'
       );
     }
   }
