@@ -39,7 +39,7 @@ craft.remake(<exnihilocreatio:item_mesh:1>, ['pretty',
 // Compressed Basalt
 val B = <ore:stoneBasalt>;
 recipes.addShapeless(<contenttweaker:compressed_basalt>, [B,B,B,B,B,B,B,B,B]);
-recipes.addShapeless(<chisel:basalt2:7>, [<contenttweaker:compressed_basalt>]);
+recipes.addShapeless(<chisel:basalt2:7> * 9, [<contenttweaker:compressed_basalt>]);
 utils.compact(<contenttweaker:compressed_basalt>, <contenttweaker:compressed_basalt_double>);
 
 // Molten Cheese
