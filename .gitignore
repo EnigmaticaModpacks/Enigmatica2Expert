@@ -94,3 +94,4 @@ config/ChatFlow.dat
 config/nuclearcraft.info
 config/acronym/saved
 scripts/nc_script_addons
+config/serializationisbad-remotecache.json
