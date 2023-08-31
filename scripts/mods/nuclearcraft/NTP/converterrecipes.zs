@@ -25,11 +25,14 @@ craft.remake(<nuclearcraft:turbine_dynamo_coil_baseconverter>, ["pretty",
   "п": <ore:plateSilver>,       # Silver Plate
   "▬": <ore:ingotHSLASteel>,    # HSLA Steel Ingot
 });
+
+val attank = <qmd:cell:3>.withTag({particle_storage: {particle_amount: 100000, particle_capacity: 100000}});
+val attankre = attank.transformReplace(<qmd:cell>);
 	
 recipes.addShaped("ntp antitritium coil", itemUtils.getItem("nuclearcraft:turbine_dynamo_coil_antitritiumconverter")*2,
-	[[<ore:cellAntitritium>,<ore:cellAntitritium>,<ore:cellAntitritium>],
+	[[attankre,attankre,attankre],
 	[<ore:ingotHSLASteel>, <nuclearcraft:turbine_dynamo_coil_baseconverter>, <ore:ingotHSLASteel>],
-	[<ore:cellAntitritium>,<ore:cellAntitritium>, <ore:cellAntitritium>]]);	
+	[attankre,attankre, attankre]]);	
 
 function addConverterRecipe (info as ConverterInfo){
 	var oring as string[] = ["ingot","dust","gem","stone"];
