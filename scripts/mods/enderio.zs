@@ -150,7 +150,7 @@ val BCIngrs = Grid(["pretty",
   "╱": <ore:stickTitaniumIridium>,       # Titanium Iridium Alloy Rod
   "▲": <ore:dustBedrock>,                # Grains of Infinity
   "♥": <thermalfoundation:material:515>, # Redstone Conductance Coil
-  "▬": <ore:ingotFluixSteel>,            # Fluix Steel Ingot
+  "▬": <threng:material>,                # Fluix Steel Ingot
 }).shaped();
 recipes.remove(<enderio:item_basic_capacitor>);
 recipes.addShaped('EIO capacitor', <enderio:item_basic_capacitor>, BCIngrs);
