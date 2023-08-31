@@ -60,7 +60,7 @@ addBrewWithUpgradesFromBase(
   "potioncore:strong_haste", "potioncore:long_haste"
 );
 addBrewWithUpgrades(
-  mundane, <minecraft:rotten_flesh>, "potioncore:hunger",
+  mundane, <minecraft:wheat_seeds>, "potioncore:hunger",
   "potioncore:strong_hunger", "potioncore:long_hunger"
 );
 addBrewWithUpgradesFromBase(
