@@ -4,6 +4,9 @@ import crafttweaker.item.WeightedItemStack;
 import thaumcraft.aspect.CTAspectStack;
 import crafttweaker.data.IData;
 
+// T:{id:"thaumicaugmentation:morphic_tool",Count:1,Damage:0s,ForgeCaps:{Parent:{functional:{id:"minecraft:diamond_sword",Count:1,Damage:0s},display:{id:"minecraft:golden_hoe",Count:1,Damage:0s}}}}
+
+
 #modloaded thaumcraft
 
 # [Ancient Runes]*8 from [White Rune][+1]
