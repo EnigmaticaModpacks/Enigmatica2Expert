@@ -429,10 +429,10 @@ craft.remake(<randomthings:pitcherplant>, [
 });
 
 # [Stable Ender Pearl] from [Ender Pearl][+2]
-craft.remake(<randomthings:stableenderpearl> * 4, ["pretty",
-  "  F  ",
+craft.remake(<randomthings:stableenderpearl> * 16, ["pretty",
+  "F F F",
   "F e F",
-  "  o  "], {
+  "o o o"], {
   "F": <randomthings:ingredient:7>, # Floo Powder
   "e": <ore:enderpearl>,            # Ender Pearl
   "o": <fluxnetworks:flux>,
