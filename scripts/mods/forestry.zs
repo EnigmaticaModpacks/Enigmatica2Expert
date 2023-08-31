@@ -321,8 +321,8 @@ for i, input in farmBlocks {
   });
 }
 
-# [Carton]*2 from [Compressed Sawdust]
-scripts.process.crush(<thermalfoundation:material:801> /* Compressed Sawdust */, <forestry:carton> * 2, "only: CrushingBlock");
+# [Carton] from [Compressed Sawdust]
+scripts.process.crush(<thermalfoundation:material:801> /* Compressed Sawdust */, <forestry:carton>, "only: CrushingBlock");
 
 # Fix wax capsule uncraftable
 # [Wax Capsule]*2 from [Pressed Wax]
