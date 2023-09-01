@@ -22,17 +22,12 @@
 		uid: "49965a09",
 		type: "item",
 		items: [{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "osgloglas"
-			}
+			item: "plustic:osgloglasingot"
 		},
 		{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "fierymetal"
-			}
-		}]
+			item: "twilightforest:fiery_ingot"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "dd92b5ad",

@@ -20,17 +20,12 @@
 		uid: "c36d64d6",
 		type: "item",
 		items: [{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "crystal_matrix"
-			}
+			item: "avaritia:resource 1 1"
 		},
 		{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "terrasteel"
-			}
-		}]
+			item: "botania:manaresource 1 4"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "2bd87621",

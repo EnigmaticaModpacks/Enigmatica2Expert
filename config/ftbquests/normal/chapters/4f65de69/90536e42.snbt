@@ -37,12 +37,6 @@
 			tag: {
 				Material: "slime"
 			}
-		},
-		{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "blueslime"
-			}
 		}],
 		ignore_nbt: 2b
 	}],

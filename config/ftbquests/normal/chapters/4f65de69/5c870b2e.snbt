@@ -20,17 +20,12 @@
 		uid: "23598306",
 		type: "item",
 		items: [{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "ma.supremium"
-			}
+			item: "mysticalagriculture:crafting 1 37"
 		},
 		{
-			id: "tconstruct:sharpening_kit",
-			tag: {
-				Material: "primal_metal"
-			}
-		}]
+			item: "tconevo:metal 1 20"
+		}],
+		count: 2L
 	}],
 	rewards: [{
 		uid: "f61e2f0c",
