@@ -1,5 +1,8 @@
 #modloaded betteranimalsplus
 
+// --------------------------------
+// Hand Of Fate usage description
+// --------------------------------
 val handOfFatelocalized = mods.zenutils.I18n.format(scripts.lib.tooltip.desc.local(<betteranimalsplus:handoffate>), 
 	<minecraft:flint_and_steel>.displayName,
 	<minecraft:nether_wart>.displayName,
@@ -8,6 +11,18 @@ val handOfFatelocalized = mods.zenutils.I18n.format(scripts.lib.tooltip.desc.loc
 );
 <betteranimalsplus:handoffate>.addTooltip(handOfFatelocalized);
 mods.jei.JEI.addDescription(<betteranimalsplus:handoffate>, handOfFatelocalized);
+
+scripts.jei.crafting_hints.addInsOutCatl(
+	[
+		<minecraft:flint_and_steel>,
+		<minecraft:nether_wart>,
+		<betteranimalsplus:antler>,
+		<betteranimalsplus:venisonraw>,
+	],
+	Soul('betteranimalsplus:hirschgeist'),
+	<betteranimalsplus:handoffate>
+);
+// --------------------------------
 
 <entity:betteranimalsplus:zotzpyre>.addDrop(<harvestcraft:hardenedleatheritem> % 70, 1, 3);
 <entity:betteranimalsplus:zotzpyre>.addPlayerOnlyDrop(<harvestcraft:netherwingsitem>, 1, 3);
