@@ -4,9 +4,6 @@
 	y: 1.425d,
 	shape: "gear",
 	description: "{q.forestry.even_bees_has_some.desc}",
-	text: [
-		"{q.forestry.even_bees_has_some.desc}"
-	],
 	dependencies: [
 		"5b525421"
 	],
