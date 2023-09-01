@@ -110,8 +110,8 @@ for lList, itList in chaliceGrid {
 	}
 
 	# Liquid interactions:
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.defaultState, false);
-	mods.plustweaks.Liquid.registerLiquidInteraction(lList[1], lList[0], itList[0].asBlock().definition.defaultState, false);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[0], lList[1], itList[0].asBlock().definition.getStateFromMeta(itList[0].damage), false);
+	mods.plustweaks.Liquid.registerLiquidInteraction(lList[1], lList[0], itList[0].asBlock().definition.getStateFromMeta(itList[0].damage), false);
 }
 
 for lList, itList in chaliceGrid {
