@@ -438,7 +438,7 @@ for i, mat in materials {
 		"♥": <ore:ingotRedstoneAlloy>,
 		"▬": oreDict["ingot" ~ mat],
 		"-": i!=0
-			? <thermalexpansion:capacitor>.definition.makeStack(i - 1).marked("marked")
+			? <thermalexpansion:capacitor>.definition.makeStack(i - 1).withTag({}, false).marked("marked")
 			: <ore:ingotCopper>,
 	}, i!=0 ? utils.upgradeFnc : null);
 
