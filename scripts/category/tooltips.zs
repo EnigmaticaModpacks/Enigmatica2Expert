@@ -38,6 +38,7 @@ for item in [
   <botania:odinring>,
   <botania:thorring>,
   <computercraft:printout>,
+  <contenttweaker:conglomerate_of_life>,
   <cyclicmagic:inventory_food>,
   <exnihilocreatio:hammer_diamond>,
   <farmingforblockheads:feeding_trough>,
