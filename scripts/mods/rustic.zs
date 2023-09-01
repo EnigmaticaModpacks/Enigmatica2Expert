@@ -8,6 +8,10 @@ recipes.addShapeless('slate',
   <rustic:slate> * 4,
   [<ore:stoneBasalt>, <ore:stoneBasalt>, <ore:stoneBasalt>, <ore:stoneLimestone>]);
 
+// Move stone pillar to chisel
+recipes.remove(<rustic:stone_pillar>);
+mods.chisel.Carving.addVariation('stonebrick', <rustic:stone_pillar>);
+
 # Simplified Crushing tub
 recipes.remove(<rustic:crushing_tub>);
 recipes.addShaped(<rustic:crushing_tub>, [
