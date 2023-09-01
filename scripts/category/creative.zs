@@ -304,9 +304,9 @@ var list = {
 // Mana ring cant be accepted on server, so i create immediate recipe
 # [Terra Truncator] from [Greater Band of Mana][+2]
 craft.remake(<botania:terraaxe>, ["pretty",
-  "▬ G",
-  "▬ T",
-  "  T"], {
+  "▬ G ▬",
+  "▬ T  ",
+  "  T  "], {
   "▬": <ore:ingotTerrasteel>, # Terrasteel Ingot
   "G": <botania:manaringgreater>.withTag({mana: 2000000}), # Greater Band of Mana
   "T": <ore:livingwoodTwig>,  # Livingwood Twig
