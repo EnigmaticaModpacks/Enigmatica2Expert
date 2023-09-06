@@ -308,7 +308,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add(<entity:twilightforest:stable_ice_core>         , [<minecraft:snowball> * 98, <mysticalagriculture:ice_essence> * 800]); // Stable Ice Core
   add(<entity:twilightforest:swarm_spider>            , [<minecraft:arrow> * 1, <minecraft:spider_eye> * 32, <minecraft:string> * 92]); // Swarm Spider
   add(<entity:twilightforest:tiny_bird>               , [<minecraft:feather> * 95]); // Tiny Bird
-  add(<entity:twilightforest:tower_broodling>         , [<minecraft:arrow> * 1, <minecraft:bone> * 1, <minecraft:spider_eye> * 32, <minecraft:string> * 100]); // Carminite Broodling
+  add(<entity:twilightforest:tower_broodling>         , [<minecraft:spider_eye> * 32, <minecraft:string> * 100, <plustic:osgloglasnugget> * 150]); // Carminite Broodling
   add(<entity:twilightforest:tower_ghast>             , [<minecraft:ghast_tear> * 50, <minecraft:gunpowder> * 102, <thermalfoundation:material:771> * 18]); // Carminite Ghastguard
   add(<entity:twilightforest:tower_golem>             , [<minecraft:iron_ingot> * 101, <twilightforest:tower_wood> * 99]); // Carminite Golem
   add(<entity:twilightforest:tower_termite>           , [<twilightforest:borer_essence> * 87]); // Towerwood Borer

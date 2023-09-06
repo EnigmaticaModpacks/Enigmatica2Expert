@@ -375,6 +375,7 @@ mods.tconstruct.Alloy.addRecipe(<liquid:lava> * 250,       [<liquid:fiery_essenc
 <entity:twilightforest:stable_ice_core>.addDrop(<mysticalagriculture:ice_essence>, 4, 12);
 <entity:twilightforest:unstable_ice_core>.addDrop(<forestry:crafting_material:5>, 3, 9);
 <entity:twilightforest:wraith>.addDrop(<enderio:block_holier_fog>, 10, 40);
+<entity:twilightforest:tower_broodling>.addPlayerOnlyDrop(<plustic:osgloglasnugget> % 50, 1, 3);
 
 # [Aurora Block]*4 from [Plutonium-242][+4]
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(
