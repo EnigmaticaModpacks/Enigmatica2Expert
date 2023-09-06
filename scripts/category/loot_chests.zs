@@ -126,7 +126,7 @@ addLootList(
 	<additionalcompression:cropcarrot_compressed>    : 6,
 	<additionalcompression:cropmelon_compressed:1>   : 6,
 	<additionalcompression:cropapple_compressed>     : 6,
-	<additionalcompression:cropsugarcane_compressed> : 6,
+	<additionalcompression:cropsugarcane_compressed:1>: 6,
 });
 
 addLootList(
