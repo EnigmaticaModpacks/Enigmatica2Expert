@@ -75,6 +75,10 @@ scripts.lib.dropt.addDrop(<endreborn:block_lormyte_crystal>, <endreborn:item_lor
 # Fix automatic recipe
 mods.actuallyadditions.Crusher.removeRecipe(<endreborn:death_essence>);
 
+# fix wrong crusher output
+mods.immersiveengineering.Crusher.removeRecipe(<qmd:dust>);
+mods.immersiveengineering.Crusher.addRecipe(<qmd:dust> * 2, <ore:oreTungsten>, 2048, <nuclearcraft:dust:7>, 0.2);
+
 # Skyblock Alternative
 # [Essence Ore] from [Molten Obsidian Bucket][+1]
 mods.tconstruct.Casting.addBasinRecipe(<endreborn:block_essence_ore>, <endreborn:block_decorative_lormyte>, <liquid:obsidian>, 144, true);
