@@ -260,7 +260,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add(<entity:thaumicaugmentation:autocaster>         , [<thaumicaugmentation:autocaster_placer> * 100]); // Autocaster
 # add(<entity:thaumicaugmentation:celestial_observer> , []); // Celestial Observer
   add(<entity:thaumicaugmentation:eldritch_guardian>  , [<thaumcraft:curio:3> * 1, <thaumcraft:loot_bag:1> * 2, <thaumcraft:loot_bag> * 2]); // Eldritch Guardian
-  add(<entity:thaumicaugmentation:primal_wisp>        , [<thaumcraft:loot_bag:1> * 100, <thaumcraft:primordial_pearl> * 100]); // Primordial Wisp
+  add(<entity:thaumicaugmentation:primal_wisp>        , [<thaumcraft:loot_bag:1> * 100, <thaumcraft:primordial_pearl> * 100, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "amogus"}]}) * 2000, <randomthings:ingredient:2> * 1200, <rftools:infused_enderpearl> * 2]); // Primordial Wisp
 # add(<entity:thaumicwonders:corruption_avatar>       , []); // Avatar of Corruption
   add(<entity:thermalfoundation:basalz>               , [<thermalfoundation:material:770> * 108, <thermalfoundation:material:2052> * 45]); // Basalz
   add(<entity:thermalfoundation:blitz>                , [<thermalfoundation:material:772> * 105, <thermalfoundation:material:2050> * 55]); // Blitz
