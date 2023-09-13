@@ -13,6 +13,60 @@ import thaumcraft.aspect.CTAspectStack;
 ╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
 */
 
+val allAspects = [
+<aspect:aer>,       
+<aspect:terra>,     
+<aspect:ignis>,     
+<aspect:aqua>,      
+<aspect:perditio>,  
+<aspect:ordo>,      
+<aspect:metallum>,  
+<aspect:sanguis>,   
+<aspect:imperium>,  
+<aspect:sensus>,    
+<aspect:alienis>,   
+<aspect:amogus>,    
+<aspect:victus>,    
+<aspect:herba>,     
+<aspect:ventus>,    
+<aspect:rattus>,  
+<aspect:spiritus>,  
+<aspect:exanimis>,  
+<aspect:praemunio>, 
+<aspect:mythus>,    
+<aspect:praecantatio>,
+<aspect:fluctus>,   
+<aspect:visum>,     
+<aspect:tenebrae>,  
+<aspect:vinculum>, 
+<aspect:fabrico>,   
+<aspect:alkimia>,   
+<aspect:volatus>,   
+<aspect:draco>,     
+<aspect:sonus>,     
+<aspect:vitium>,    
+<aspect:instrumentum>,
+<aspect:vacuos>,    
+<aspect:caeles>,    
+<aspect:lux>,       
+<aspect:permutatio>,
+<aspect:humanus>,   
+<aspect:machina>,   
+<aspect:desiderium>,
+<aspect:vitreus>,   
+<aspect:motus>,     
+<aspect:exitium>,   
+<aspect:cognitio>,  
+<aspect:mana>,      
+<aspect:infernum>,  
+<aspect:mortuus>,   
+<aspect:aversio>,
+<aspect:potentia>, 
+<aspect:auram>,     
+<aspect:bestia>, 
+<aspect:gelum>,     
+] as CTAspectStack[];
+
 /*
 #######################################################
 ____ ____ ___ _  _ ____ _    _    _   _    ____ ___  ___  _ ___ _ ____ _  _ ____ 
@@ -62,6 +116,8 @@ ____ ___  ___  _    _ ____ ___     ____ _  _ ____ ____ ____ ____ ___ _ ____ ____
 <appliedenergistics2:charged_quartz_ore>        .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*20       ,<aspect:terra>*10); #Charged certus quartz ore
 <appliedenergistics2:material:1>                .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*20); #Charged certus quartz
 <appliedenergistics2:material:10>               .setAspects(<aspect:vitreus>*10     ,<aspect:potentia>*10       ,<aspect:ordo>*10); #Charged certus quartz
+
+<aeadditions:pattern.fluid>.removeAspects(allAspects);
 
 /*
 #######################################################
@@ -274,6 +330,8 @@ ___  _    ____ ____ ___  _  _ ____ ____ _ ____
 <bloodmagic:sigil_haste>                        .setAspects(<aspect:praecantatio>*20  ,<aspect:sanguis>*60   ,<aspect:ventus>*40); #sigil haste
 <bloodmagic:sigil_ender_severance>              .setAspects(<aspect:praecantatio>*20  ,<aspect:sanguis>*60   ,<aspect:tenebrae>*40); #sigil severance
 <bloodmagic:sigil_compression>                  .setAspects(<aspect:praecantatio>*20  ,<aspect:sanguis>*60   ,<aspect:ordo>*40); #sigil compression
+
+<bloodmagic:upgrade_trainer>.removeAspects(allAspects);
 
 /*
 #######################################################
@@ -548,6 +606,17 @@ ____ _  _ ___     ____ ____ ___  ____ ____ _  _
 
 /*
 #######################################################
+____ _  _ ___  ____ ____    _ ____ 
+|___ |\ | |  \ |___ |__/    | |  | 
+|___ | \| |__/ |___ |  \    | |__| 
+                            
+#######################################################
+*/
+
+<enderio:item_soul_vial:1>.removeAspects(allAspects);
+
+/*
+#######################################################
 ____ _  _ ___ ____ ____    _  _ ___ _ _    _ ___ _ ____ ____    
 |___  \/   |  |__/ |__|    |  |  |  | |    |  |  | |___ [__     
 |___ _/\_  |  |  \ |  |    |__|  |  | |___ |  |  | |___ ___]    
@@ -557,6 +626,7 @@ ____ _  _ ___ ____ ____    _  _ ___ _ _    _ ___ _ ____ ____
 
 <extrautils2:ingredients:11>                    .setAspects(<aspect:metallum>*10  ,<aspect:infernum>*5); #Demonic ingot
 <extrautils2:ingredients:12>                    .setAspects(<aspect:metallum>*10  ,<aspect:cognitio>*5); #Enchanted ingot
+<extrautils2:biomemarker>.removeAspects(allAspects);
 
 /*
 #######################################################
@@ -571,6 +641,20 @@ ____ ____ ____ ____ ____ ___ ____ _   _
 <forestry:candle>                               .setAspects(<aspect:lux>*20      ,<aspect:herba>*5            ,<aspect:aer>*5);
 <forestry:stump>                                .setAspects(<aspect:lux>*20      ,<aspect:herba>*5            ,<aspect:aer>*5);
 <forestry:beeswax>                              .setAspects(<aspect:lux>*5       ,<aspect:aer>*2);
+
+<forestry:can:1>.removeAspects(allAspects);
+<forestry:capsule:1>.removeAspects(allAspects);
+
+/*
+#######################################################
+____ ____ _  _ ___  _  _ ____ ___ ____ _   _ 
+| __ |___ |\ | |  \ |  | [__   |  |__/  \_/  
+|__] |___ | \| |__/ |__| ___]  |  |  \   |   
+                                             
+#######################################################
+*/
+
+<gendustry:gene_template>.removeAspects(allAspects);
 
 /*
 #######################################################
@@ -804,6 +888,28 @@ _ ____ ____    ____ _  _ ___     ____ _ ____ ____
 
 /*
 #######################################################
+_ _  _ _  _ ____ ____ ____ _ _  _ ____ 
+| |\/| |\/| |___ |__/ [__  | |  | |___ 
+| |  | |  | |___ |  \ ___] |  \/  |___ 
+                                                                                                                                          
+#######################################################
+*/
+
+<immersivepetroleum:schematic>.removeAspects(allAspects);
+
+/*
+#######################################################
+_ _  _ ___  _  _ ____ ___ ____ _ ____ _    ____ ____ ____ ____ ___ 
+| |\ | |  \ |  | [__   |  |__/ | |__| |    |    |__/ |__| |___  |  
+| | \| |__/ |__| ___]  |  |  \ | |  | |___ |___ |  \ |  | |     |  
+                                                                                                             
+#######################################################
+*/
+
+<ic2:fluid_cell>.removeAspects(allAspects);
+
+/*
+#######################################################
 _  _ ____ ____ _  _ ____ _  _ _ ____ ____ 
 |\/| |___ |    |__| |__| |\ | | |    [__  
 |  | |___ |___ |  | |  | | \| | |___ ___] 
@@ -944,6 +1050,17 @@ for igloo in igloos{
 
 /*
 #######################################################
+____ ____    ___ ____ ____ _    ____ 
+|__/ |___     |  |  | |  | |    [__  
+|  \ |        |  |__| |__| |___ ___] 
+                                     
+#######################################################
+*/
+
+<rftools:syringe>.removeAspects(allAspects);
+
+/*
+#######################################################
 ___ _  _ ____ ____ _  _ ____ _       ____ ____ _  _ _  _ ___  ____ ___ _ ____ _  _ 
  |  |__| |___ |__/ |\/| |__| |       |___ |  | |  | |\ | |  \ |__|  |  | |  | |\ | 
  |  |  | |___ |  \ |  | |  | |___    |    |__| |__| | \| |__/ |  |  |  | |__| | \| 
@@ -980,6 +1097,10 @@ ___ _  _ ____ ____ _  _ ____ _       ____ ____ _  _ _  _ ___  ____ ___ _ ____ _ 
 <thermalfoundation:material:166>                .setAspects(<aspect:metallum>*10  ,<aspect:lux>*5); #Lumium ingot
 <thermalfoundation:material:167>                .setAspects(<aspect:metallum>*10  ,<aspect:alienis>*5); #Enderium ingot
 
+<thermalexpansion:florb>.removeAspects(allAspects);
+<thermalexpansion:morb>.removeAspects(allAspects);
+<thermalexpansion:florb:1>.removeAspects(allAspects);
+
 /*
 #######################################################
 ___ _ _  _ _  _ ____ ____ . ____    ____ ____ _  _ ____ ___ ____ _  _ ____ ___ 
@@ -1001,6 +1122,12 @@ ___ _ _  _ _  _ ____ ____ . ____    ____ ____ _  _ ____ ___ ____ _  _ ____ ___
 <tconstruct:ingots:5>                           .setAspects(<aspect:metallum>*10  ,<aspect:alkimia>*5); #Alchemical brass ingot
 <tconstruct:ingots:3>                           .setAspects(<aspect:metallum>*10  ,<aspect:aqua>*5); #Knightslime ingot
 <tconstruct:ingots:4>                           .setAspects(<aspect:metallum>*10  ,<aspect:bestia>*5); #Pigiron ingot
+
+<conarm:armor_trim>.removeAspects(allAspects);
+<tconstruct:shard>.removeAspects(allAspects);
+<tconstruct:tooltables:*>.removeAspects(allAspects);
+<tconstruct:toolforge>.removeAspects(allAspects);
+<conarm:armorforge>.removeAspects(allAspects);
 
 /*
 #######################################################
@@ -1068,6 +1195,11 @@ val nitor = [
 for nitor in nitor{
   nitor.setAspects(<aspect:lux>*2,<aspect:sensus>);
 }
+
+<thaumadditions:dna_sample>.removeAspects(allAspects);
+<thaumadditions:seal_symbol>.removeAspects(allAspects);
+
+//<thaumicaugmentation:biome_selector>.removeAspects(allAspects);
 
 /*
 #######################################################
@@ -1218,6 +1350,8 @@ _  _ ____ _  _ _ _    _    ____   / _  _ _ _  _ ____ ____ ____ ____ ____ ___
 <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:mooshroom"}})
                                                 .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5); 
 <entity:minecraft:mooshroom>                    .setAspects(<aspect:bestia>*10    ,<aspect:terra>*10          ,<aspect:victus>*5); 
+
+<forge:bucketfilled>.removeAspects(allAspects);
 
 /*
 #######################################################

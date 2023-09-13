@@ -731,7 +731,7 @@ mods.thaumcraft.Infusion.registerRecipe(
   1, # Instability
   [<aspect:ventus>*30, <aspect:imperium>*50, <aspect:machina>*25, <aspect:fluctus>*15],
   <minecraft:dispenser>, # CentralItem
-  [<thaumcraft:vishroom>,<thaumcraft:shimmerleaf>,<thaumadditions:salt_essence>.withTag({Aspects: [{amount: 1, key: "aer"}, {amount: 1, key: "aqua"}, {amount: 1, key: "perditio"}, {amount: 1, key: "ordo"}, {amount: 1, key: "ignis"}, {amount: 1, key: "terra"}]}),<thaumcraft:mechanism_simple>]
+  [<thaumcraft:vishroom>,<thaumcraft:shimmerleaf>,<thaumadditions:salt_essence>.withTag({Aspects: [{amount: 9, key: "auram"}]}),<thaumcraft:mechanism_simple>]
 );
 
 # [Void pickaxe]
