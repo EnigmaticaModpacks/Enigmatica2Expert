@@ -57,24 +57,21 @@ import crafttweaker.item.ITooltipFunction;
   [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
   [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
 
-# [Creative Storage Upgrade]*4 from [Black Hole Unit][+8]
-craft.remake(<storagedrawers:upgrade_creative> * 4, ["pretty",
-  "i M # # # M i",
-  "M M T ‚ T M M",
-  "# T S ⌃ S T #",
-  "# ‚ t B t ‚ #",
-  "# T S ⌃ S T #",
-  "M M T ‚ T M M",
-  "i M # # # M i"], {
-  "B": <industrialforegoing:black_hole_unit>, # Black Hole Unit
-  "#": <randomthings:spectreplank>,           # Spectre Planks
-  "S": <storagedrawers:upgrade_storage:2>,    # Storage Upgrade (III)
-  "⌃": <extrautils2:decorativesolid:6>,       # Blue Quartz
-  "T": <thaumcraft:taint_log>,                # Taintwood Log
-  "t": <storagedrawers:upgrade_storage:3>,    # Storage Upgrade (IV)
-  "i": <rftools:storage_module:2>,            # Tier 3 Storage Module
-  "‚": <draconicevolution:infused_obsidian>,
-  "M": <extrautils2:decorativesolidwood>,     # Magical Planks
+# [Creative Storage Upgrade] from [Storage Upgrade (V)][+7]
+craft.remake(<storagedrawers:upgrade_creative>, ["pretty",
+  "M # D # M",
+  "# S T S #",
+  "⌃ t o t ⌃",
+  "# S T S #",
+  "M # D # M"], {
+  "M": <tconstruct:materials:19>,            # Mending Moss
+  "#": <randomthings:spectreplank>,          # Spectre Planks
+  "D": <draconicevolution:infused_obsidian>, # Draconium Infused Obsidian
+  "S": <storagedrawers:upgrade_storage:2>,   # Storage Upgrade (III)
+  "T": <draconicevolution:chaos_shard:3>,    # Tiny Chaos Fragment
+  "⌃": <extrautils2:decorativesolid:6>,      # Blue Quartz
+  "t": <storagedrawers:upgrade_storage:3>,   # Storage Upgrade (IV)
+  "o": <storagedrawers:upgrade_storage:4>,   # Storage Upgrade (V)
 });
 
 # Upgrades
@@ -88,8 +85,8 @@ function remakeDrawerUpgrade(item as IItemStack, primary as IIngredient){
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:0>, <ore:nuggetLead>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:1>, <ore:nuggetEndSteel>);
 remakeDrawerUpgrade(<storagedrawers:upgrade_storage:2>, <ore:nuggetMirion>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetUltimate>);
-remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <draconicevolution:chaos_shard:3>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:3>, <ore:nuggetVividAlloy>);
+remakeDrawerUpgrade(<storagedrawers:upgrade_storage:4>, <ore:nuggetUltimate>);
 
 # [Upgrade Template]*2 from [Basic Drawer][+2]
 craft.remake(<storagedrawers:upgrade_template> * 2, ["pretty",

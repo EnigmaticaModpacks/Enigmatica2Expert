@@ -7,6 +7,9 @@ import crafttweaker.item.IItemStack;
 # Chronologist
 <entity:endreborn:chronologist>.addPlayerOnlyDrop(<deepmoblearning:living_matter_extraterrestrial>, 1, 2);
 
+// Mage-Barclay
+<entity:endreborn:endlord>.addPlayerOnlyDrop(<storagedrawers:upgrade_storage:4>, 1, 2);
+
 # Remove excess items
 for item in [
   <endreborn:tool_pickaxe_endorium>,

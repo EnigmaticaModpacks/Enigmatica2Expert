@@ -119,7 +119,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add(<entity:emberroot:witherwitch>                  , [<minecraft:bone> * 32, <minecraft:glowstone> * 4, <minecraft:gunpowder> * 75, <minecraft:rotten_flesh> * 38, <minecraft:spider_eye> * 55, <minecraft:string> * 44, <minecraft:sugar> * 66]); // Toxic Witch
   add(<entity:endreborn:chronologist>                 , [<deepmoblearning:living_matter_extraterrestrial> * 149, <minecraft:ender_pearl> * 100]); // Chronologist
   add(<entity:endreborn:endguard>                     , [<endreborn:item_end_shard> * 79, <thermalfoundation:material:771> * 14]); // Purpur Guard
-  add(<entity:endreborn:endlord>                      , [<endreborn:sword_shard> * 1, <thermalfoundation:material:771> * 1]); // End-Mage Barclay
+  add(<entity:endreborn:endlord>                      , [<endreborn:sword_shard> * 100, <thermalfoundation:material:771> * 100, <storagedrawers:upgrade_storage:4> * 150]); // End-Mage Barclay
   add(<entity:endreborn:watcher>                      , [<endreborn:food_ender_flesh> * 100, <minecraft:ender_eye> * 100]); // Watcher
   add(<entity:excompressum:angry_chicken>             , [<excompressum:chicken_stick>.withTag({IsAngry: 1 as byte}) * 100, <minecraft:chicken> * 100, <minecraft:feather> * 103]); // Angry Chicken
   add(<entity:iceandfire:amphithere>                  , [<iceandfire:amphithere_feather> * 373, <iceandfire:amphithere_skull> * 2]); // Amphithere
