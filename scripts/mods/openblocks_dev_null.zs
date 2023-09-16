@@ -20,6 +20,7 @@ events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBloc
     || isNull(e.item.tag.Unbreakable)
     || isNull(e.item.tag.inventory)
     || isNull(e.item.tag.inventory.Items)
+    || e.item.tag.inventory.Items.length <= 0
     || isNull(e.item.tag.inventory.Items[0])
     || isNull(e.item.tag.inventory.Items[0].Count)
     || e.item.tag.inventory.Items[0].Count.asInt() >= 65
