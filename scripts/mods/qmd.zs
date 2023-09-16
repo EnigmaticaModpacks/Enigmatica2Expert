@@ -232,6 +232,9 @@ remakeTarget(<qmd:ingot>, (<particle:deuteron>*10000000)^11300000, TG, <qmd:wast
 remakeTarget(<qmd:ingot>, (<particle:antiproton>*1000000)        , TG, <qmd:waste_spallation2:1>, <particle:pion_plus>    , <particle:pion_naught>    , <particle:pion_minus>    , 10000000, 1   , 1460000 );
 remakeTarget(<qmd:ingot>, (<particle:antideuteron>*10000000)     , TG, <qmd:waste_spallation2:1>, <particle:pion_plus> * 4, <particle:pion_naught> * 4, <particle:pion_minus> * 4, 10000000, 1   , 2090000 );
 
+// Melt tungsten misssed recipe
+scripts.process.melt(<endreborn:item_ingot_wolframium>, <fluid:tungsten> * 144);
+
 # Sodium Chlorde (salt)
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(<qmd:chemical_dust:3>);
 mods.nuclearcraft.Crystallizer.addRecipe(<fluid:sodium_chloride_solution> * 666, <mekanism:salt>);
