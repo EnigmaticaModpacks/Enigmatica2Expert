@@ -19,5 +19,15 @@
 		type: "command",
 		auto: "invisible",
 		command: "/say @p has obtained the Creative Modifier!"
+	},
+	{
+		uid: "ca2ae586",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}]
 }
