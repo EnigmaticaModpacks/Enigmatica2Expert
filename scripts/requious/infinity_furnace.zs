@@ -17,7 +17,7 @@ craft.remake(<requious:infinity_furnace>, ["pretty",
   "H r I r H",
   "# ▬ Ϟ ▬ #",
   "T R E R T"], {
-  "R": <rats:marbled_cheese_raw>,                 # Raw Marbled Cheese
+  "R": <rats:rat_upgrade_basic_ratlantean>,
   "#": <ore:logSequoia>,                          # Sequoia
   "T": <mysticalagriculture:supremium_furnace>,
   "E": <contenttweaker:empowered_phosphor>,       # Empowered Phosphor
