@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 /**
  * @file Inject_JS
  *
@@ -32,6 +33,7 @@ import {
   getOreBases_byKinds,
   getSomething,
   getSubMetas,
+  getTableRecipes,
   getUnchangedFurnaceRecipes,
   getUnchangedTableRecipes,
   isFluidExist,
@@ -83,10 +85,10 @@ function reverseNaturalSort(a, b) {
  * @param {string} meta
  */
 function itemize(id, meta) {
-  return id + (meta && meta !== '0' ? `:${meta}` : '')
+  return id + ((meta && meta !== '0') ? `:${meta}` : '')
 }
 function $(source, id, meta, count, nbt, modifiers) {
-  return `<${source}:${id}${meta && meta !== '0' ? `:${meta}` : ''}>${
+  return `<${source}:${id}${(meta && meta !== '0') ? `:${meta}` : ''}>${
     nbt ? `.withTag(${nbt})` : ''
   }${modifiers || ''}${Number(count) > 1 ? ` * ${count | 0}` : ''}`
 }
@@ -132,7 +134,7 @@ export async function init(h = defaultHelper) {
         filePath,
         capture: whole,
         command:
-          p1 === '{' && p2 === '}'
+          (p1 === '{' && p2 === '}')
             ? `(()=>${whole.trim()})()`
             : whole.trim(),
         line : lineNumber,
@@ -192,8 +194,7 @@ export async function init(h = defaultHelper) {
 }
 
 // Test section:
-// (async () => {
-// console.log('\n', formatOutput((() => {return })())); process.exit(0)
-// })()
+// console.log('\n', formatOutput((() => {return })()))
+// process.exit(0)
 
 if (import.meta.url === (await import('node:url')).pathToFileURL(process.argv[1]).href) init()

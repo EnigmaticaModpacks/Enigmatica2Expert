@@ -366,12 +366,12 @@ const style = {
     f.replace('-patched.jar', '')
   )
 
-  doTask(
+  makeZips && doTask(
     '🪑 Removing client-only files and folders ... ',
     () => removeFiles(getIgnoredFiles(serveronlyIgnore)),
     tmpOverrides
   )
-  doTask('🪑 Add server root files ... ', () => {
+  makeZips && doTask('🪑 Add server root files ... ', () => {
     const files = globs('*', { cwd: serverRoot })
     files.forEach(f => copySync(join(serverRoot, f), join(tmpOverrides, f)))
     return `added: ${files.length}`

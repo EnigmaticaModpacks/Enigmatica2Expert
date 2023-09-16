@@ -149,7 +149,7 @@ key_key.draconicevolution.toolConfig:52
 key_key.draconicevolution.toolProfileChange:43
 key_key.dragon_change_view:0
 key_key.dragon_down:44
-key_key.dragon_fireAttack:0
+key_key.dragon_fireAttack:34
 key_key.dragon_strike:-96
 key_key.drop:16
 key_key.exportAll:43:CONTROL
@@ -278,7 +278,7 @@ key_key.showhide:0
 key_key.smoothCamera:0
 key_key.sneak:42
 key_key.sort_config:34:CONTROL
-key_key.sort:-98
+key_key.sort:0
 key_key.spectatorOutlines:0
 key_key.sprint:29
 key_key.swapHands:33

@@ -3,9 +3,12 @@
 🚧✅❌ List of priorities:
 
 - [ ] ✏️ nanomachines Dissaper On Rejoin Server
-- [ ] 🌍 fix Mercury Have Water
+- [x] ✏️ illium Gen Shoul Have No Nbt Recipe
+- [ ] ✏️ Check cat opener script
+- [ ] ✏️ Balance EIO obelisks (too costy right now)
+- [ ] ✏️ Octadic Capacitor remove from usages since its gating them hard
 - [ ] 🟢 Configure `Villager Trade Tables`
-- [ ] 🟢 Configure `Worldgen Indicators`
+- [ ] 🟢 Make `Essential` work with modpack
 - [ ] 🟢 Find why looking at JER page with villagers this error cut list of trades every roll:
   > Error caught from Recipe Category: jeresources.jei.villager.VillagerCategory
   > java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
@@ -13,6 +16,8 @@
   > 	at java.util.LinkedList.get(LinkedList.java:476) ~[?:1.8.0_352]
   > 	at jeresources.entry.VillagerEntry.getVillagerTrades(VillagerEntry.java:37) ~[VillagerEntry.class:?]
   > 	at jeresources.jei.villager.VillagerWrapper.getTrades(VillagerWrapper.java:35) ~[VillagerWrapper.class:?]
+- [ ] 🌍 fix Mercury Have Water
+- [ ] ✏️ Sun Conglomerate instantly grow animals
 
 ---
 
@@ -22,6 +27,9 @@
 
 Planned non-urgent changes, or just good ideas:
 
+- [ ] 🔴 Remove `Culinari Construct`
+- [ ] ✏️ Add mobs that always blights (probably breedable mobs)
+- [ ] ✏️ Moon stone could be used in Animals chapter
 - [ ] ✏️ Dank Null go out of ExtendedCrafting (keep EC recipes for end-tier)
 - [ ] 📖 Fix achievments: end reborn hammer, Rats cauldron, Quark decor
 - [ ] 📖 Fix conflux and chapter messages to be localized
@@ -238,6 +246,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] 📖 whenever you have a rewards for a quest containing three items of tinkers, the last item does not show your stats. (Cant be fixed - FTBQ bug)
 - [ ] ✏️ SAGmill stuck when produce too much Scrap with balls: best grinding balls produce X5 output that would make SAG mill without balls too weak
 - [ ] ✏️ Fix Cottontail not turning into Dye. Dont know how to determine double plant
+- [ ] 🧩 nerf Cake Flower, Buff Game Of Life One. Impossible - no config options for this flowers.
 
 ---
 

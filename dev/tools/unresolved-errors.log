@@ -1,1 +1,16 @@
-[Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[main/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.json could not be read. If this is a development environment you can ignore this message
+[main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.version_protest.MinecraftMixin' as 'mixin.version_protest' is disabled in config
+[main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.version_protest.FMLCommonHandlerMixin' as 'mixin.version_protest' is disabled in config
+[Client thread/WARN] [mixin]: Method overwrite conflict for getRenderBoundingBox in mixins.bugfixes.blocks.banner.json:UTBannerBoundingBoxMixin from mod unknown-owner, previously written by meldexun.renderlib.mixin.MixinTileEntityBanner. Skipping method.
+[Client thread/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.crafttweaker.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.jei.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.modtweaker.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.forestry.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.avaritia.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: Reference map 'mixins.zenrecipereloading.refmap.json' for mixins.zenrecipereloading.tconstruct.json could not be read. If this is a development environment you can ignore this message
+[Client thread/WARN] [mixin]: @Mixin target mod.chiselsandbits.chiseledblock.data.VoxelBlob was not found mixins.vintagefix.late.json:dynamic_resources.VoxelBlobMixin from mod unknown-owner
+[Client thread/WARN] [mixin]: @Mixin target com.raoulvdberge.refinedstorage.proxy.ProxyClient was not found mixins.vintagefix.late.json:dynamic_resources.RSProxyClientMixin from mod unknown-owner
+[Client thread/WARN] [mixin]: @Mixin target pl.asie.ucw.util.ModelLoaderEarlyView was not found mixins.vintagefix.late.json:dynamic_resources.MixinModelLoaderEarlyView from mod unknown-owner
+[Client thread/WARN] [mixin]: @Mixin target thebetweenlands.client.render.model.loader.CustomModelLoader was not found mixins.vintagefix.late.json:dynamic_resources.MixinCustomBetweenlandsModels from mod unknown-owner
+[Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.version_protest.F3Change' as 'mixin.version_protest' is disabled in config
+[Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.version_protest.LoaderChange' as 'mixin.version_protest' is disabled in config

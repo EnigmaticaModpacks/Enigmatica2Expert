@@ -116,13 +116,16 @@ export function getSubMetas(definition) {
  * @property {(multiplier: number)=>string} withAmount '\<astralsorcery:blockaltar:2\> * 2'
  */
 
+/** @type {Object<string, TMStack[]>} */
+const getByOredict_memo = {}
+
 /**
  *
  * @param {string} ore
  * @returns {TMStack[]}
  */
 export function getByOredict(ore) {
-  return getOresByRegex(new RegExp(`^${ore}$`, 'i'))
+  return getByOredict_memo[ore] ??= getOresByRegex(new RegExp(`^${ore}$`, 'i'))
 }
 
 /**
@@ -177,13 +180,33 @@ function getByOreRgx(rgx) {
     .value()
 }
 
+/** @type {Map<string, TMStack[]> | undefined} */
+let oresMap
+
+/** @type {Object<string, TMStack[]> | undefined} */
+const getOresByRegexHash = {}
+
 /**
  * @param {RegExp} rgx
  */
 function getOresByRegex(rgx) {
-  return getCSV('config/tellme/items-csv.csv')
-    .filter(o => o['Ore Dict keys']?.split(',').some(ore => rgx.test(ore)))
-    .map(tellmeToObj)
+  if (!oresMap) {
+    oresMap = new Map()
+    getCSV('config/tellme/items-csv.csv')
+      .filter(o => o['Ore Dict keys'])
+      .map(tellmeToObj)
+      .forEach((o) => {
+        o.ores.forEach((ore) => {
+          oresMap?.set(ore, (oresMap?.has(ore) ? oresMap.get(ore) : [])?.concat(o))
+        })
+      })
+  }
+
+  const result = new Set()
+  for (const [key, list] of oresMap)
+    if (rgx.test(key)) list.forEach(it => result.add(it))
+
+  return [...result]
 }
 
 /**

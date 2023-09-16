@@ -180,7 +180,7 @@ function getModChanges() {
   execSyncInherit(`git show tags/${old_version}:minecraftinstance.json > minecraftinstance_old.json`)
 
   execSyncInherit(
-    'esno mc-tools/packages/curseforge/src/cli.ts modlist'
+    'esno mc-tools/packages/modlist/src/cli.ts'
     + ' --old=minecraftinstance_old.json'
     + ' --ignore=dev/.devonly.ignore'
     + ' --key=secrets/~cf_api_key.txt'
