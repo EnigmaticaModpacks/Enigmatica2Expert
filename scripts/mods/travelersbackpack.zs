@@ -10,5 +10,5 @@ recipes.addShaped(<travelersbackpack:hose>, [
 	[null, null, <ore:dyeGreen>]]);
 
 # Remake Sleeping bag (prevent conflict)
-remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<quark:quilted_wool:14>, <quark:quilted_wool:14>, <quark:quilted_wool>]]);
+remakeEx(<travelersbackpack:sleeping_bag_bottom>, [[<ore:woolRed>, <ore:woolRed>, <ore:woolWhite>]]);
 
