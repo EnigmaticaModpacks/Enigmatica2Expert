@@ -69,33 +69,73 @@ import crafttweaker.item.IItemStack;
 		"E": <mekanism:tierinstaller:2>,
 	});
 
-# Advanced Crafting
-	recipes.remove(<extendedcrafting:table_advanced>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, 
-	<extendedcrafting:table_advanced>, 
-	[[<extendedcrafting:material:8>, <extendedcrafting:material:15>, <extendedcrafting:material:9>], 
-	[<extendedcrafting:material:14>, <extendedcrafting:table_basic>, <extendedcrafting:material:17>], 
-	[<extendedcrafting:material:10>, <extendedcrafting:material:16>, <extendedcrafting:material:11>]]);  
+# [Basic Crafting Table] from [End Steel Block][+4]
+craft.remake(<extendedcrafting:table_basic>, ["pretty",
+  "B a B",
+  "w ■ w",
+  "B l B"], {
+  "B": <extendedcrafting:material:14>, # Basic Component
+  "a": <extendedcrafting:material:8>,  # Basic Catalyst
+  "w": <ore:workbench>,                # Crafting Station
+  "■": <ore:blockEndSteel>,            # End Steel Block
+  "l": <extendedcrafting:material:2>,  # Black Iron Slate
+});
 
-# Elite Crafting
-	recipes.remove(<extendedcrafting:table_elite>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_elite>, [
-	[<thermalexpansion:frame:129>, <extendedcrafting:material:16>, <thermalexpansion:frame:147>, <extendedcrafting:material:16>, <thermalexpansion:frame:129>], 
-	[<extendedcrafting:material:16>, <ore:dustMana>, <extendedcrafting:table_advanced>, <ore:dustMana>, <extendedcrafting:material:16>], 
-	[<thermalfoundation:fertilizer:2>, <ore:blockOsgloglas>, <rftools:crafter3>, <ore:blockOsgloglas>, <thermalfoundation:fertilizer:2>], 
-	[<extendedcrafting:material:16>, <ore:dustMana>, <extendedcrafting:table_advanced>, <ore:dustMana>, <extendedcrafting:material:16>], 
-	[<thermalexpansion:frame:129>, <extendedcrafting:material:16>, <thermalexpansion:frame:147>, <extendedcrafting:material:16>, <thermalexpansion:frame:129>]]);
+# [Advanced Crafting Table] from [Block of Luminessence][+4]
+recipes.remove(<extendedcrafting:table_advanced>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_advanced>, Grid(["pretty",
+  "A d A",
+  "B ■ B",
+  "A l A"], {
+  "A": <extendedcrafting:material:15>, # Advanced Component
+  "d": <extendedcrafting:material:9>,  # Advanced Catalyst
+  "B": <extendedcrafting:table_basic>, # Basic Crafting Table
+  "■": <ore:blockLuminessence>,        # Block of Luminessence
+  "l": <extendedcrafting:material:2>,  # Black Iron Slate
+}).shaped());
 
-# Ultimate Crafting
-	recipes.remove(<extendedcrafting:table_ultimate>);
-	mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:table_ultimate>, [
-	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>], 
-	[<extendedcrafting:trimmed:4>, <ore:blockAethium>, <vaultopic:vice>, <thermalexpansion:frame:148>, <vaultopic:vice>, <ore:blockEnderium>, <extendedcrafting:trimmed:4>], 
-	[<ore:crystalDraconium>, <vaultopic:vice>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <vaultopic:vice>, <ore:crystalDraconium>], 
-	[<advancedrocketry:ic:2>, <draconicevolution:wyvern_core>, <ic2:iridium_reflector>, <avaritia:extreme_crafting_table>, <ic2:iridium_reflector>, <draconicevolution:wyvern_core>, <advancedrocketry:ic:2>], 
-	[<ore:crystalDraconium>, <vaultopic:vice>, <extendedcrafting:table_advanced>, <extendedcrafting:table_elite>, <extendedcrafting:table_advanced>, <vaultopic:vice>, <ore:crystalDraconium>], 
-	[<extendedcrafting:trimmed:4>, <ore:blockVividAlloy>, <vaultopic:vice>, <thermalexpansion:frame:148>, <vaultopic:vice>, <ore:blockMirion>, <extendedcrafting:trimmed:4>], 
-	[<thermalexpansion:frame:147>, <extendedcrafting:trimmed:4>, <ore:crystalDraconium>, <advancedrocketry:ic:2>, <ore:crystalDraconium>, <extendedcrafting:trimmed:4>, <thermalexpansion:frame:147>]]);
+# [Elite Crafting Table] from [Basic Crafting Table][+7]
+craft.remake(<extendedcrafting:table_elite>, ["pretty",
+  "◘ E ◙ E ◘",
+  "E ▲ ■ ▲ E",
+  "f A B A f",
+  "E ▲ ■ ▲ E",
+  "◘ E ◙ E ◘"], {
+  "◘": <thermalexpansion:frame:129>,      # Hardened Cell Frame
+  "E": <extendedcrafting:material:10>,    # Elite Catalyst
+  "◙": <thermalexpansion:frame:147>,      # Signalum Cell Frame (Full)
+  "▲": <ore:dustMana>,                    # Mana Dust
+  "■": <ore:blockOsgloglas>,              # Osgloglas Block
+  "f": <thermalfoundation:fertilizer:2>,  # Fluxed Phyto-Gro
+  "A": <extendedcrafting:table_advanced>, # Advanced Crafting Table
+  "B": <extendedcrafting:table_basic>,    # Basic Crafting Table
+});
+
+# [Ultimate Crafting Table] from [Extreme Crafting Table][+14]
+craft.remake(<extendedcrafting:table_ultimate>, ["pretty",
+  "◘ ■ * A * ■ ◘",
+  "■ e V ◙ V ▀ ■",
+  "* V d E d V *",
+  "A Ϟ I x I Ϟ A",
+  "* V d E d V *",
+  "■ i V ◙ V ▄ ■",
+  "◘ ■ * A * ■ ◘"], {
+  "◘": <thermalexpansion:frame:147>,           # Signalum Cell Frame (Full)
+  "■": <extendedcrafting:trimmed:4>,           # Block of Black Iron
+  "*": <ore:crystalDraconium>,                 # Draconium Crystal
+  "A": <advancedrocketry:ic:2>,                # Advanced Circuit
+  "e": <ore:blockAethium>,                     # Aethium
+  "V": <vaultopic:vice>,                       # V.I.C.E. (Vaultopic Item Crafting Entity)
+  "◙": <thermalexpansion:frame:148>,           # Resonant Cell Frame (Full)
+  "▀": <ore:blockEnderium>,                    # Block of Enderium
+  "d": <extendedcrafting:table_advanced>,      # Advanced Crafting Table
+  "E": <extendedcrafting:table_elite>,         # Elite Crafting Table
+  "Ϟ": <draconicevolution:wyvern_energy_core>, # Wyvern Energy Core
+  "I": <ic2:iridium_reflector>,                # Iridium Neutron Reflector
+  "x": <avaritia:extreme_crafting_table>,      # Extreme Crafting Table
+  "i": <ore:blockVividAlloy>,                  # Vivid Alloy Block
+  "▄": <ore:blockMirion>,                      # Mirion Block
+});
 
 # Pedestal
 	recipes.remove(<extendedcrafting:pedestal>);

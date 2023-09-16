@@ -469,7 +469,7 @@ craft.remake(<tconstruct:materials:50>, ["pretty",
   "S": <cyclicmagic:soulstone>,          # Soulstone
   "s": <ore:blockOsgloglas>,             # Osgloglas Block
   "▄": <ore:blockAlumite>,               # Alumite Block
-  "G": <extendedcrafting:singularity:5>, # Gold Singularity
+  "G": <additionalcompression:ingotgold_compressed:2>,
   "M": <ore:blockMirion>,                # Mirion Block
   "O": <ore:blockOsmiridium>,            # Osmiridium Block
 });
@@ -607,5 +607,25 @@ recipes.addHiddenShapeless("Creative Storage Upgrade Duplication",
 [<storagedrawers:upgrade_creative:1>]);
 
 # Add later
-recipes.remove(<twilightforest:uncrafting_table>);
 recipes.remove(<cyclicmagic:uncrafting_block>);
+
+# [Uncrafting Table] from [Creative Modifier][+11]
+craft.remake(<twilightforest:uncrafting_table>, ["pretty",
+  "▄ ■ h ■ ▄",
+  "¤ E Ϟ E ¤",
+  "P C r C P",
+  "¤ E Ϟ E ¤",
+  "▀ M _ M ▀"], {
+  "▄": <ore:blockFiery>,                     # Block of Fiery Metal
+  "■": <twilightforest:block_storage:4>,     # Block of Carminite
+  "h": <draconicevolution:chaotic_core>,     # Chaotic Core
+  "¤": <ore:gearMithril>,                    # Mana Infused Gear
+  "E": <contenttweaker:empowered_phosphor>,  # Empowered Phosphor
+  "Ϟ": <draconicevolution:ender_energy_manipulator>, # Ender Energy Manipulator
+  "P": <twilightforest:castle_rune_brick:*>, # Pink Castle Rune Brick
+  "C": <storagedrawers:upgrade_creative>,    # Creative Storage Upgrade
+  "r": <tconstruct:materials:50>,            # Creative Modifier
+  "▀": <ore:blockKnightmetal>,               # Block of Knightmetal
+  "M": <quark:monster_box>,                  # Monster Box
+  "_": <ore:magic_snow_globe>,               # Magical Snow Globe
+});

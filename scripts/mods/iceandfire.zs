@@ -420,7 +420,7 @@ recipes.remove(<iceandfire:dragonforge_ice_core_disabled>);
 # Spring water recipe
 mods.iceandfire.recipes.addIceDragonForgeRecipe( 
     <biomesoplenty:jar_filled:1>, 
-    Bucket("ic2hot_water"), 
+    <minecraft:water_bucket>, 
     Bucket("hot_spring_water"));
 
 # Remove craft from shards

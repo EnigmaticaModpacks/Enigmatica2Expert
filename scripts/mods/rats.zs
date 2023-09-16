@@ -220,6 +220,7 @@ mods.rats.recipes.addArcheologistRatRecipe(<rats:rat_pelt>, <iceandfire:troll_le
 mods.rats.recipes.addArcheologistRatRecipe(<harvestcraft:hardenedleatheritem>, <iceandfire:troll_leather_frost>);
 mods.rats.recipes.addArcheologistRatRecipe(<redstonerepository:tool.sword_gelid>, <endreborn:sword_shard>);
 mods.rats.recipes.addArcheologistRatRecipe(<mysticalagradditions:stuff:1>, <iceandfire:dread_shard> * 3);
+mods.rats.recipes.addArcheologistRatRecipe(<rats:raw_plastic> * 4, <industrialforegoing:plastic>);
 
 ##################
 

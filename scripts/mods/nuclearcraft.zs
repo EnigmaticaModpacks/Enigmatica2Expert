@@ -203,6 +203,15 @@ mods.nuclearcraft.IngotFormer.removeRecipeWithInput(<fluid:infinity> * 144);
 recipes.remove(<nuclearcraft:compound:2>);
 mods.mekanism.infuser.addRecipe("GLOWSTONE", 10, <minecraft:redstone>, <nuclearcraft:compound:2>);
 
+# [Energetic Blend] from [Redstone][+1]
+craft.make(<nuclearcraft:compound:2>, ["pretty",
+  "▲ ▲ ▲",
+  "▲ ♥ ▲",
+  "▲ ▲ ▲"], {
+  "▲": <ore:dustGlowstone>, # Glowstone Dust
+  "♥": <ore:dustRedstone>,  # Redstone
+});
+
 # Graphite from coal
 furnace.addRecipe(<nuclearcraft:ingot:8>, <minecraft:coal:*>);
 
