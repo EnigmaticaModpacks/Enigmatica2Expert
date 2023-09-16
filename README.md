@@ -314,6 +314,7 @@ Some screenshots of new worldgen:
 - [**Entity Culling**](https://www.curseforge.com/minecraft/mc-mods/entity-culling) - increase performance, but can cause crashes on some machines
 - [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings) - better sounds and environmental, but increaing load time and lower FPS a bit
 - [**No Advancements**](https://www.curseforge.com/minecraft/mc-mods/no-advancements) - radical way to faster world load. Warning: TF progress and some quests will not working.
+- [**Fluidlogged API**](https://modrinth.com/mod/fluidlogged-api) - adds basic fluidlogging, widely configured for `E2E-E`. Its not included by default since causing slight TPS consumption [[1]](https://github.com/jbredwards/Fluidlogged-API/issues/184)[[2]](https://github.com/jbredwards/Fluidlogged-API/issues/182).
 
 -----------------
 
