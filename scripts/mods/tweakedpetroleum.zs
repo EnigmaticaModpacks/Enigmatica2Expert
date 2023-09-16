@@ -210,6 +210,7 @@ registerReservoir("Enriched Lava Reservoir (Novus)"     , <liquid:enrichedlava> 
 		Magic
 */
 registerReservoir("Flux Goo Reservoir (Stella)", <liquid:flux_goo>, 750000, 1750000, 10, 200, 30, I, [], [114], [], []);
+registerReservoir("Will Reservoir (Stella)"    , <liquid:raw_will> , 85000,  265000,  0,  60, 20,II, [], [114], [], []);
 
 # Philucka ID=115
 	/*
@@ -264,6 +265,7 @@ registerReservoir("Hot Spring Water Reservoir (KELT-4ab)", <liquid:hot_spring_wa
 registerReservoir("Protein Reservoir (KELT-6a)"   , <liquid:protein>  , 265000, 530000, 0, 60, 30,  I, [], [121], [], []);
 registerReservoir("Liquid DNA Reservoir (KELT-6a)", <liquid:liquiddna>, 85000 , 265000, 0, 60, 15, II, [], [121], [], []);
 registerReservoir("Mutagen Reservoir (KELT-6a)"   , <liquid:mutagen>  , 85000 , 265000, 0, 60, 15, II, [], [121], [], []);
+registerReservoir("Will Reservoir (KELT-6a)"      , <liquid:raw_will> , 850000,2650000,30, 60, 20,III, [], [121], [], []);
 
 # Kepler 0118 ID=122
 	/*
