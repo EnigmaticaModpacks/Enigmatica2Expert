@@ -153,7 +153,7 @@ val benitoiteIngrs = [
   <rats:gem_of_ratlantis>,
   <ore:carminite>,
   <randomthings:ingredient:2>,
-  <randomthings:rezstone>,
+  <extrautils2:ingredients:5>,
   <cyclicmagic:soulstone>,
   <ore:gemPerk>,
 ] as IIngredient[];

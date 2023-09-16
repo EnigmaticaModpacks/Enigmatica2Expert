@@ -102,7 +102,7 @@ recipes.removeShaped(<randomthings:spectreanchor>);
 recipes.addShaped(<randomthings:spectreanchor>, [
 	[<randomthings:ingredient:2>],
 	[utils.tryCatch("tombmanygraves:death_list", <minecraft:paper>)],
-	[<randomthings:rezstone>]]);
+	[<extrautils2:ingredients:5>]]);
 
 # Spectre Ingot
 recipes.remove(<randomthings:ingredient:3>);
@@ -177,11 +177,6 @@ craft.remake(<randomthings:imbuingstation>, ["pretty",
 	D: <tconstruct:materials:18>,
 	E: <rats:raw_plastic>,
 });
-
-
-# Blood stone from moon stone
-mods.inworldcrafting.FluidToItem.transform(<randomthings:rezstone>, <fluid:blood>, [<extrautils2:ingredients:5>]);
-<randomthings:rezstone>.maxStackSize = 64;
 
 # [Blackout_Powder*4] from [Bio_Coal][+2]
 craft.reshapeless(<randomthings:ingredient:13>, "F☺▲", {
