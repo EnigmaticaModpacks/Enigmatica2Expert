@@ -14,7 +14,7 @@
       "inverted": false
     },
     {
-      "name": "is_block",
+      "name": "block_type",
       "inverted": false
     },
     {
