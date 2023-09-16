@@ -144,6 +144,7 @@ Object.entries(_.groupBy(getCSV('config/tellme/biomes-csv.csv'), 'ID'))
 
 events.onPlayerRightClickItem(function(e as crafttweaker.event.PlayerRightClickItemEvent){
   if(e.player.world.remote) return;
+  if(isNull(e.item)) return;
 
   val id = e.item.definition.id;
   if(id != "biomesoplenty:biome_finder") return;
