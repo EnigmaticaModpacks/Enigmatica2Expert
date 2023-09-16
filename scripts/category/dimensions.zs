@@ -77,6 +77,7 @@ events.onPlayerChangedDimension(function(e as crafttweaker.event.PlayerChangedDi
 // We need to use Restricted dims to allow RFTools generated dimensions
 static restrictedDims as int[] = [
 /*Inject_js(
+[...new Set(
 getCSV('config/tellme/dimensions-csv.csv')
 .filter(l=>
   ![0,144,-343800852,2,-2,3].includes(parseInt(l.ID)) // Allowed dims
@@ -84,6 +85,7 @@ getCSV('config/tellme/dimensions-csv.csv')
 )
 .concat([{ID:200}]) // Hardcoded dimensions (OTG ones)
 .map(l=>`  ${l.ID},`)
+)]
 )*/
   1,
   -1,
