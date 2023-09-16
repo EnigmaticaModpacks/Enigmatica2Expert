@@ -11,19 +11,13 @@
 		"48f0d63f"
 	],
 	tasks: [{
-		uid: "78fb5a20",
+		uid: "48f4e6d0",
 		type: "item",
 		items: [{
-			item: "draconicevolution:draconic_core"
+			item: "draconicevolution:crafting_injector"
 		}]
 	}],
 	rewards: [{
-		uid: "78f575bc",
-		type: "item",
-		item: "draconicevolution:draconic_core",
-		count: 2
-	},
-	{
 		uid: "20e516e2",
 		type: "item",
 		item: {
@@ -32,6 +26,12 @@
 				type: "legendary"
 			}
 		},
+		count: 2
+	},
+	{
+		uid: "5dea40d1",
+		type: "item",
+		item: "draconicevolution:crafting_injector",
 		count: 2
 	}]
 }

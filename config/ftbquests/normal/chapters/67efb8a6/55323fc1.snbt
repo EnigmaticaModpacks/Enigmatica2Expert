@@ -16,8 +16,8 @@
 			TrophyName: "Draconic Evolution Trophy§r"
 		}
 	},
-	x: 12.75d,
-	y: 2.25d,
+	x: 13.049999999999999d,
+	y: -4.95d,
 	text: [
 		"{q.draconic_evolution.the_chapter_is_com.desc}"
 	],
@@ -25,13 +25,10 @@
 	dependencies: [
 		"d62d89ef",
 		"0ae32b60",
-		"64f8083b",
 		"bfbcdbf9",
 		"72c18686",
-		"eac08347",
 		"d498d691",
 		"84b5dffe",
-		"ca069fca",
 		"8c1583d8",
 		"1cb25522",
 		"65f22360",
@@ -40,7 +37,6 @@
 		"652f0bb3",
 		"965611ca",
 		"af16df8a",
-		"b5098494",
 		"ffa34abd",
 		"6ec50a24",
 		"3febe889",
@@ -54,7 +50,6 @@
 		"eb59a16d",
 		"77457833",
 		"a9d391e5",
-		"6cd0c127",
 		"30fedcc6",
 		"822b1c53",
 		"0fa6089d",

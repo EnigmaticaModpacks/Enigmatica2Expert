@@ -1,6 +1,7 @@
 {
-	x: 3.5d,
-	y: 9.5d,
+	x: 10.299999999999999d,
+	y: -7.1000000000000005d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.draconic_pickaxe.desc}"
 	],

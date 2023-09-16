@@ -1,11 +1,11 @@
 {
-	x: 8.5d,
-	y: 2.25d,
+	x: 6.4d,
+	y: -1.8d,
 	text: [
 		"{q.draconic_evolution.wyvern_fusion_craf.desc}"
 	],
 	dependencies: [
-		"6cd0c127"
+		"71081527"
 	],
 	tasks: [{
 		uid: "7cd67366",

@@ -1,12 +1,14 @@
 {
-	x: 4.5d,
-	y: 5.25d,
+	x: 6.4d,
+	y: -4.6d,
+	shape: "octagon",
 	text: [
 		"{q.draconic_evolution.wyvern_energy_core.desc}"
 	],
 	dependencies: [
 		"a9d391e5"
 	],
+	size: 1.2d,
 	tasks: [{
 		uid: "db3ce017",
 		type: "item",

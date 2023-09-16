@@ -1,11 +1,11 @@
 {
-	x: 2.5d,
-	y: 3.75d,
+	x: 9.5d,
+	y: -3.2d,
 	text: [
 		"{q.draconic_evolution.draconic_hoe.desc}"
 	],
 	dependencies: [
-		"65f22360"
+		"77457833"
 	],
 	tasks: [{
 		uid: "146e5de6",

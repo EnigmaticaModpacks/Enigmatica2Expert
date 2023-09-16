@@ -1,0 +1,45 @@
+{
+	x: 2.8d,
+	y: -4.6d,
+	text: [
+		"{q.draconic_evolution.draconic_core.desc}"
+	],
+	dependencies: [
+		"a9d391e5"
+	],
+	tasks: [{
+		uid: "2dcb78ea",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_core"
+		},
+		{
+			item: "draconicevolution:wyvern_core"
+		},
+		{
+			item: "draconicevolution:awakened_core"
+		},
+		{
+			item: "draconicevolution:chaotic_core"
+		}]
+	},
+	{
+		uid: "16fb0779",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_spawner"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2b195c0c",
+		type: "item",
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	}]
+}

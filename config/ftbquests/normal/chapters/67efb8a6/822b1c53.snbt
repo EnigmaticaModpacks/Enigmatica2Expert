@@ -6,13 +6,13 @@
 			Energy: 16000000
 		}
 	},
-	x: 8.5d,
-	y: 8.666666666666666d,
+	x: 8.7d,
+	y: -7.1000000000000005d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.draconic_chestplate.desc}"
 	],
 	dependencies: [
-		"b5098494",
 		"9043cbbc"
 	],
 	tasks: [{

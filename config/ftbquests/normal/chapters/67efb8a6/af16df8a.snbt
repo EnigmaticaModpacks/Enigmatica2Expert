@@ -1,12 +1,12 @@
 {
-	x: 10.5d,
-	y: 0.75d,
+	x: 11.2d,
+	y: -1.8d,
 	text: [
 		"{q.draconic_evolution.chaotic_fusion_cra.desc}"
 	],
 	dependencies: [
-		"ca069fca",
-		"77457833"
+		"77457833",
+		"e41f2331"
 	],
 	tasks: [{
 		uid: "c6e6097d",

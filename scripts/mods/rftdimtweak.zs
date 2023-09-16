@@ -7,7 +7,7 @@ craft.remake(<rftdimtweak:dimension_enscriber>, ["pretty",
   "A ◘ A",
   "M D M"], {
   "A": utils.tryCatch("ae2stuff:inscriber", <appliedenergistics2:inscriber>), # Advanced Inscriber
-  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "D": <draconicevolution:crafting_injector>,
   "E": <rftoolsdim:empty_dimension_tab>,  # Empty Dimension Tab
   "◘": <thermalexpansion:frame:132>,      # Resonant Cell Frame (Empty)
   "M": <rftools:machine_base>,            # Machine Base

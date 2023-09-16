@@ -1,22 +1,21 @@
 {
-	x: 10.5d,
-	y: 6.75d,
+	x: 5.2d,
+	y: -3.2d,
 	text: [
-		"{q.draconic_evolution.chaotic_core.desc}"
+		"{q.draconic_evolution.celestial_manipula.desc}"
 	],
 	dependencies: [
-		"b5098494",
-		"e41f2331"
+		"5dae2dc0"
 	],
 	tasks: [{
-		uid: "89e7bb55",
+		uid: "8bb2b699",
 		type: "item",
 		items: [{
-			item: "draconicevolution:chaotic_core"
+			item: "draconicevolution:celestial_manipulator"
 		}]
 	}],
 	rewards: [{
-		uid: "15b7a9f1",
+		uid: "8776029c",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",

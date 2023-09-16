@@ -1,11 +1,11 @@
 {
-	x: 8.5d,
-	y: 5.25d,
+	x: 4.5d,
+	y: -1.8d,
 	text: [
 		"{q.draconic_evolution.fusion_crafting_core.desc}"
 	],
 	dependencies: [
-		"64f8083b"
+		"a9d391e5"
 	],
 	tasks: [{
 		uid: "e68dcffe",

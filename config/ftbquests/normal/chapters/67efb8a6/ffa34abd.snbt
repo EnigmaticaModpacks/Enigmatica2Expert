@@ -1,11 +1,12 @@
 {
-	x: 6.5d,
-	y: 5.25d,
+	x: 6.4d,
+	y: -7.1000000000000005d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.wyvern_flux_capaci.desc}"
 	],
 	dependencies: [
-		"64f8083b"
+		"5dae2dc0"
 	],
 	tasks: [{
 		uid: "3a913d7e",

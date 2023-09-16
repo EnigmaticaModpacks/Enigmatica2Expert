@@ -1,6 +1,6 @@
 {
-	x: 2.5d,
-	y: 7.5d,
+	x: 4.5d,
+	y: -8.2d,
 	text: [
 		"{q.draconic_evolution.ender_energy_manip.desc}"
 	],

@@ -1,6 +1,6 @@
 {
-	x: 4.5d,
-	y: 0.75d,
+	x: 6.4d,
+	y: -3.2d,
 	text: [
 		"{q.draconic_evolution.dragon_heart.desc}"
 	],

@@ -1,6 +1,7 @@
 {
-	x: 1.5d,
-	y: 10.0d,
+	x: 11.3d,
+	y: -7.1d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.draconic_staff_of_.desc}"
 	],

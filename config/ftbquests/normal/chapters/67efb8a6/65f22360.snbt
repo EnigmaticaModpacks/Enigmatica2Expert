@@ -1,14 +1,15 @@
 {
-	x: 4.5d,
-	y: 3.75d,
+	x: 9.479999999999999d,
+	y: -4.56d,
+	shape: "octagon",
 	text: [
 		"{q.draconic_evolution.draconic_energy_core.desc}"
 	],
 	dependencies: [
 		"b22a849a",
-		"5dae2dc0",
-		"64f8083b"
+		"5dae2dc0"
 	],
+	size: 1.2d,
 	tasks: [{
 		uid: "db137fa5",
 		type: "item",

@@ -1,7 +1,7 @@
 {
 	icon: "draconicevolution:particle_generator 1 2",
-	x: 2.5d,
-	y: 5.0d,
+	x: 4.5d,
+	y: -6.0d,
 	text: [
 		"{q.draconic_evolution.energy_core.desc}"
 	],

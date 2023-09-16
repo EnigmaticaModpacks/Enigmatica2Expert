@@ -15,12 +15,14 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 
 # *======= Recipes =======*
 
+recipes.remove(<draconicevolution:celestial_manipulator>);
+
 # Mob Grinder - by request of Vyraal1
 	recipes.remove(<draconicevolution:grinder>);
 	recipes.addShapedMirrored("Mob Grinder",
 	<draconicevolution:grinder>,
 	[[<ore:ingotElectricalSteel>, <draconicevolution:draconium_block:1>, <ore:ingotElectricalSteel>],
-	[<astralsorcery:itemcrystalsword:*>.withTag({astralsorcery:{}}), <draconicevolution:draconic_core>, <astralsorcery:itemcrystalsword:*>.withTag({astralsorcery:{}})],
+	[<astralsorcery:itemcrystalsword:*>.withTag({astralsorcery:{}}), <draconicevolution:crafting_injector>, <astralsorcery:itemcrystalsword:*>.withTag({astralsorcery:{}})],
 	[<ore:ingotElectricalSteel>, <industrialforegoing:mob_relocator>, <ore:ingotElectricalSteel>]]);
 
 # Charged Draconium
@@ -47,30 +49,6 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 	recipes.addShaped("Wyvern Bow", <draconicevolution:wyvern_bow>, [[<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_core>, <draconicevolution:infused_obsidian>],[<ore:blockDraconium>, <extrautils2:compoundbow>.anyDamage(), <ore:blockDraconium>], [<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_energy_core>, <draconicevolution:infused_obsidian>]]);
 	recipes.addShaped("Wyvern Axe", <draconicevolution:wyvern_axe>, [[<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_core>, <draconicevolution:infused_obsidian>],[<ore:blockDraconium>, <thaumcraft:elemental_axe>.anyDamage(), <ore:blockDraconium>], [<draconicevolution:infused_obsidian>, <draconicevolution:wyvern_energy_core>, <draconicevolution:infused_obsidian>]]);
 
-# Draconic Core
-	recipes.remove(<draconicevolution:draconic_core>);
-	recipes.addShapedMirrored("Draconic Core",
-	<draconicevolution:draconic_core>,
-	[[<ore:gearDraconium>, <ore:ingotCobalt60>, <ore:gearDraconium>],
-	[<ore:crystalLitherite>, <gendustry:genetics_processor>, <ore:crystalLitherite>],
-	[<ore:plateElite>, <draconicevolution:energy_crystal>, <ore:plateElite>]]);
-
-# Wyvern Core
-	recipes.remove(<draconicevolution:wyvern_core>);
-	scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_core>,
-	[[<minecraft:shulker_shell>, <draconicevolution:draconic_core>, <minecraft:shulker_shell>],
-	[<draconicevolution:draconic_core>, <minecraft:sponge>, <draconicevolution:draconic_core>],
-	[<ore:ingotVividAlloy>, <environmentaltech:pladium>, <ore:ingotVividAlloy>]],
-	40, <liquid:ic2hot_coolant> * 2000, null, 2);
-
-# Draconic Energy Core
-	recipes.remove(<draconicevolution:draconic_energy_core>);
-	scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>,
-	[[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>],
-	[<draconicevolution:wyvern_energy_core>, <draconicevolution:wyvern_core>, <draconicevolution:wyvern_energy_core>],
-	[<ore:ingotDraconiumAwakened>, <draconicevolution:wyvern_energy_core>, <ore:ingotDraconiumAwakened>]],
-	40, <liquid:ic2hot_coolant> * 2000, null, 2);
-
 # Fusion Crafting Core
 	recipes.remove(<draconicevolution:fusion_crafting_core>);
 	mods.extendedcrafting.CombinationCrafting.addRecipe
@@ -93,12 +71,103 @@ if(utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTag
 		<thermalexpansion:frame:148>
 	]);
 
-# Wyvern Energy Core
-	recipes.remove(<draconicevolution:wyvern_energy_core>);
-	mods.thermalexpansion.Transposer.addFillRecipe
-	(<draconicevolution:wyvern_energy_core>,
-	<draconicevolution:draconic_core>,
-	<liquid:redstone> * 10000, 250000);
+# [Draconic Core]*2 from [Draconium Infused Obsidian][+1]
+recipes.remove(<draconicevolution:draconic_core>);
+scripts.process.alloy(
+	[<jaopca:item_geardraconium> * 2, <draconicevolution:infused_obsidian>],
+	<draconicevolution:draconic_core> * 2,
+	"only: induction alloySmelter kiln"
+);
+
+# [Wyvern Core] from [Sponge][+2]
+craft.remake(<draconicevolution:wyvern_core>, ["pretty",
+  "D S D",
+  "S p S",
+  "D S D"], {
+  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "S": <minecraft:shulker_shell>,         # Shulker Shell
+  "p": <minecraft:sponge>,                # Sponge
+});
+mods.advancedrocketry.RecipeTweaker.forMachine('PrecisionAssembler').builder()
+	.outputs(<draconicevolution:wyvern_core>)
+	.input(<draconicevolution:draconic_core> * 2)
+	.input(<minecraft:shulker_shell> * 2)
+	.input(<minecraft:sponge>)
+	.input(<fluid:redstone> * 4000)
+	.power(60000).timeRequired(5).build();
+
+# [Awakened Core] from [Vibrant Bimetal Gear][+2]
+craft.remake(<draconicevolution:awakened_core>, ["pretty",
+  "W ◊ W",
+  "◊ ¤ ◊",
+  "W ◊ W"], {
+  "W": <draconicevolution:wyvern_core>, # Wyvern Core
+  "◊": <ore:gemTopaz>,                  # Topaz
+  "¤": <ore:gearVibrant>,               # Vibrant Bimetal Gear
+});
+mods.advancedrocketry.RecipeTweaker.forMachine('PrecisionLaserEtcher').builder()
+	.outputs(<draconicevolution:awakened_core>)
+	.input(<draconicevolution:wyvern_core> * 2)
+	.input(<ore:gemTopaz> * 2)
+	.input(<ore:gearVibrant>)
+	.input(<fluid:glowstone> * 8000)
+	.power(1200000).timeRequired(10).build();
+
+# [Chaotic Core] from [Chaos Shard][+4]
+craft.remake(<draconicevolution:chaotic_core>, ["pretty",
+  "A E A",
+  "■ C ■",
+  "A ▄ A"], {
+  "A": <draconicevolution:awakened_core>,           # Awakened Core
+  "E": <ore:dragonEgg>,                             # Dragon Egg
+  "■": <ore:blockEvilMetal>,                        # Block of Evil Infused Iron
+  "C": <draconicevolution:chaos_shard>,             # Chaos Shard
+  "▄": <contenttweaker:terrestrial_artifact_block>, # Terrestrial Artifact Block
+});
+mods.advancedrocketry.RecipeTweaker.forMachine('PrecisionLaserEtcher').builder()
+	.outputs(<draconicevolution:chaotic_core>)
+	.input(<draconicevolution:awakened_core> * 2)
+	.input(<draconicevolution:chaos_shard>)
+	.input(<ore:dragonEgg>)
+	.input(<ore:blockEvilMetal>)
+	.input(<contenttweaker:terrestrial_artifact_block>)
+	.input(<fluid:silicon> * 16000)
+	.power(5000000).timeRequired(20).build();
+
+# [Wyvern Energy Core] from [Wyvern Core][+3]
+recipes.remove(<draconicevolution:wyvern_energy_core>);
+scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:wyvern_energy_core>, Grid(["pretty",
+  "  ▬  ",
+  "▬ W ▬",
+  "  ■  "], {
+  "▬": <ore:ingotCrystallineAlloy>,     # Crystalline Alloy Ingot
+  "W": <draconicevolution:wyvern_core>, # Wyvern Core
+  "■": <environmentaltech:pladium>,     # Pladium
+}).shaped(), 40, <fluid:ic2hot_coolant> * 4000, null, 2);
+
+# [Draconic Energy Core] from [Awakened Core][+2]
+recipes.remove(<draconicevolution:draconic_energy_core>);
+scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:draconic_energy_core>, Grid(["pretty",
+  "  ▬  ",
+  "▬ A ▬",
+  "  ■  "], {
+  "▬": <ore:ingotDraconiumAwakened>,      # Awakened Draconium Ingot
+  "A": <draconicevolution:awakened_core>, # Awakened Core
+  "■": <environmentaltech:ionite>,        # Ionite
+}).shaped(), 40, <fluid:ic2hot_coolant> * 8000, null, 2);
+
+# [Basic Fusion Crafting Injector] from [Genetics Processor][+5]
+craft.remake(<draconicevolution:crafting_injector>, ["pretty",
+  "D ▬ D",
+  "* G *",
+  "□ Ϟ □"], {
+  "D": <draconicevolution:draconic_core>,  # Draconic Core
+  "▬": <ore:ingotCobalt60>,                # Cobalt-60
+  "*": <ore:crystalLitherite>,             # Litherite Crystal
+  "G": <gendustry:genetics_processor>,     # Genetics Processor
+  "□": <ore:plateElite>,                   # Elite Plating
+  "Ϟ": <draconicevolution:energy_crystal>, # Basic Energy Relay Crystal
+});
 
 # Potentiometer
 	recipes.remove(<draconicevolution:potentiometer>);
@@ -170,14 +239,22 @@ craft.make(<draconicevolution:draconium_chest>, ["pretty",
   "S": <randomthings:specialchest:1>,
 });
 
-# Combination Crafting Alternative for Ender Energy Manipulator
-mods.extendedcrafting.CombinationCrafting.addRecipe(
-	<draconicevolution:ender_energy_manipulator>, 12000000, 1200000,
-	<randomthings:obsidianskull>, Grid(["AABCCCCCCC"], {
-		A: <draconicevolution:draconic_core>,
-		B: <draconicevolution:dislocator>,
-		C: <deepmoblearning:pristine_matter_enderman>,
-	}).shapeless());
+# [Ender Energy Manipulator] from [Obsidian Skull][+2]
+craft.make(<draconicevolution:ender_energy_manipulator>, ["pretty",
+  "  W  ",
+  "W O W",
+  "  D  "], {
+  "W": <draconicevolution:wyvern_core>, # Wyvern Core
+  "O": <randomthings:obsidianskull>, # Obsidian Skull
+  "D": <draconicevolution:dislocator:*>, # Dislocator
+});
+scripts.mods.forestry.Carpenter.addRecipe(<draconicevolution:ender_energy_manipulator>, Grid(["pretty",
+  "W O W",
+  "  D  "], {
+  "W": <draconicevolution:wyvern_core>, # Wyvern Core
+  "O": <randomthings:obsidianskull>, # Obsidian Skull
+  "D": <draconicevolution:dislocator:*>, # Dislocator
+}).shaped(), 40, <fluid:hot_spring_water> * 8000, null, 1);
 
 # [Bound Dislocator (Point to Point)] from [Siren Tear][+2]
 craft.reshapeless(<draconicevolution:dislocator_bound:1>, "DrDS", {
@@ -214,7 +291,7 @@ craft.remake(<draconicevolution:energy_storage_core>, ["pretty",
   "□ ▬ □"], {
   "□": <tconstruct:large_plate>.withTag({Material: "xu_demonic_metal"}), # Demonic Large Plate
   "B": <advancedrocketry:basalt>,         # Basalt Sediment
-  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "D": <draconicevolution:crafting_injector>,
   "▬": <ore:ingotDraconium>,              # Draconium Ingot
 });
 
@@ -225,7 +302,7 @@ craft.remake(<draconicevolution:energy_pylon> * 2, ["pretty",
   "□ ▬ □"], {
   "□": <ore:plateTitanium>,               # Titanium Plate
   "B": <advancedrocketry:basalt>,         # Basalt Sediment
-  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "D": <draconicevolution:crafting_injector>,
   "▬": <ore:ingotDraconium>,              # Draconium Ingot
 });
 
@@ -236,7 +313,7 @@ craft.remake(<draconicevolution:particle_generator:2>, ["pretty",
   "¤ ■ ¤"], {
   "■": <ore:blockAmber>,                  # Amber Block
   "¤": <ore:gearMithril>,                 # Mana Infused Gear
-  "D": <draconicevolution:draconic_core>, # Draconic Core
+  "D": <draconicevolution:crafting_injector>,
 });
 
 # [Energy Infuser] from [Steel Casing][+2]

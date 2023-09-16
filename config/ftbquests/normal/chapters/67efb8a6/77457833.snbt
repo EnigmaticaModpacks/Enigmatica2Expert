@@ -1,6 +1,6 @@
 {
-	x: 8.5d,
-	y: 0.75d,
+	x: 9.5d,
+	y: -1.8d,
 	text: [
 		"{q.draconic_evolution.draconic_fusion_cr.desc}"
 	],

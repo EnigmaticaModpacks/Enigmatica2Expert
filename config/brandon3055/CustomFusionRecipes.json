@@ -98,11 +98,6 @@
   },
   {
     "mode": "REMOVE",
-    "result": "draconicevolution:draconic_block",
-    "catalyst": "draconicevolution:draconium_block"
-  },
-  {
-    "mode": "REMOVE",
     "result": "draconicevolution:draconic_helm",
     "catalyst": "draconicevolution:wyvern_helm"
   },
@@ -122,20 +117,35 @@
     "catalyst": "draconicevolution:wyvern_boots"
   },
   {
+    "mode": "REMOVE",
+    "result": "draconicevolution:awakened_core",
+    "catalyst": "minecraft:nether_star"
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:chaotic_core",
+    "catalyst": "draconicevolution:chaos_shard"
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:draconic_block",
+    "catalyst": "draconicevolution:draconium_block"
+  },
+  {
     "mode": "ADD",
     "result": "draconicevolution:draconic_block,4,0",
-    "catalyst": "draconicevolution:draconium_block,4,1",
+    "catalyst": "draconicevolution:crafting_injector,3",
     "energy": 50000000,
     "tier": 1,
     "ingredients": [
-      "draconicevolution:draconic_core",
-      "draconicevolution:draconic_core",
-      "draconicevolution:draconic_core",
-      "biomesoplenty:gem_block,1,3",
-      "draconicevolution:dragon_heart",
-      "botania:manaresource,1,9",
-      "enderio:item_material,1,20",
-      "enderio:item_material,1,37"
+      "draconicevolution:draconium_block,1,1",
+      "draconicevolution:draconium_block,1,1",
+      "ore:elvenDragonstone",
+      "ore:itemEnderCrystalPowder",
+      "ore:heartDragon",
+      "ore:blockTopaz",
+      "draconicevolution:draconium_block,1,1",
+      "draconicevolution:draconium_block,1,1"
     ]
   },
   {
@@ -150,25 +160,6 @@
   },
   {
     "mode": "ADD",
-    "result": "draconicevolution:ender_energy_manipulator",
-    "catalyst": "randomthings:obsidianskull",
-    "energy": 12000000,
-    "tier": 0,
-    "ingredients": [
-      "draconicevolution:draconic_core",
-      "draconicevolution:draconic_core",
-      "draconicevolution:dislocator",
-      "deepmoblearning:pristine_matter_enderman",
-      "deepmoblearning:pristine_matter_enderman",
-      "deepmoblearning:pristine_matter_enderman",
-      "deepmoblearning:pristine_matter_enderman",
-      "deepmoblearning:pristine_matter_enderman",
-      "deepmoblearning:pristine_matter_enderman",
-      "deepmoblearning:pristine_matter_enderman"
-    ]
-  },
-  {
-    "mode": "ADD",
     "result": "draconicevolution:chaos_shard,1,3",
     "catalyst": "enderio:item_alloy_nugget,1,2",
     "energy": 10000000000,
@@ -176,6 +167,80 @@
     "ingredients": [
       "ore:dustWither",
       "thaumadditions:taintwood_planks"
+    ]
+  },
+  {
+    "mode": "ADD",
+    "result": "draconicevolution:celestial_manipulator",
+    "catalyst": "draconicevolution:crafting_injector",
+    "energy": 12000000,
+    "tier": 0,
+    "ingredients": [
+      "ore:dragonEgg",
+      "twilightforest:time_planks",
+      "twilightforest:time_planks",
+      "twilightforest:time_planks"
+    ]
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:crafting_injector,1,1",
+    "catalyst": "draconicevolution:crafting_injector"
+  },
+  {
+    "mode": "ADD",
+    "result": "draconicevolution:crafting_injector,1,1",
+    "catalyst": "draconicevolution:crafting_injector",
+    "energy": 256000,
+    "tier": 0,
+    "ingredients": [
+      "draconicevolution:wyvern_energy_core",
+      "draconicevolution:wyvern_energy_core",
+      "ore:blockDraconium",
+      "ore:ingotVividAlloy",
+      "ore:blockDraconium"
+    ]
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:crafting_injector,1,2",
+    "catalyst": "draconicevolution:crafting_injector,1,1"
+  },
+  {
+    "mode": "ADD",
+    "result": "draconicevolution:crafting_injector,1,2",
+    "catalyst": "draconicevolution:crafting_injector,1,1",
+    "energy": 1800000,
+    "tier": 1,
+    "ingredients": [
+      "draconicevolution:draconic_energy_core",
+      "draconicevolution:draconic_energy_core",
+      "ore:ingotVividAlloy",
+      "ore:ingotVividAlloy",
+      "ore:blockDraconiumAwakened",
+      "endreborn:dragon_scales"
+    ]
+  },
+  {
+    "mode": "REMOVE",
+    "result": "draconicevolution:crafting_injector,1,3",
+    "catalyst": "draconicevolution:crafting_injector,1,2"
+  },
+  {
+    "mode": "ADD",
+    "result": "draconicevolution:crafting_injector,1,3",
+    "catalyst": "draconicevolution:crafting_injector,1,2",
+    "energy": 48000000,
+    "tier": 2,
+    "ingredients": [
+      "draconicevolution:draconic_energy_core",
+      "draconicevolution:draconic_energy_core",
+      "ore:ingotVividAlloy",
+      "ore:ingotVividAlloy",
+      "ore:ingotVividAlloy",
+      "ore:ingotVividAlloy",
+      "ore:dragonEgg",
+      "draconicevolution:chaotic_core"
     ]
   }
 ]

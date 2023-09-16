@@ -632,6 +632,14 @@
     </fermenting>
   </recipe>
   <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
+  <recipe name="Draconic Core">
+    <alloying energy="10000">
+      <input name="jaopca:item_geardraconium" amount="2"/>
+      <input name="draconicevolution:infused_obsidian"/>
+      <output name="draconicevolution:draconic_core" amount="2"/>
+    </alloying>
+  </recipe>
+  <!-- Recipe below generated automatically. Do not make changes or they gonna be rewritten. -->
   <recipe name="Enderium Base">
     <alloying energy="10000">
       <input name="ingotPulsatingIron"/>

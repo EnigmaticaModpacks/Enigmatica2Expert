@@ -1,11 +1,12 @@
 {
-	x: 5.5d,
-	y: 9.0d,
+	x: 6.0d,
+	y: -6.4d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.axe_of_the_wyvern.desc}"
 	],
 	dependencies: [
-		"64f8083b"
+		"ffa34abd"
 	],
 	tasks: [{
 		uid: "53571e6c",

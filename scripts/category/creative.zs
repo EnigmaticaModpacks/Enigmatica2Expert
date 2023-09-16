@@ -75,7 +75,7 @@ var list = {
 	"♦": <ore:gemBenitoite>,
 	"◰": <botania:manatablet>.withTag({mana: 500000}),
 	"◙": <compactsolars:compact_solar_block:2>,
-	"ж": <draconicevolution:awakened_core>,
+	"ж": <draconicevolution:crafting_injector:2>,
 	"Ж": <draconicevolution:draconium_capacitor:1>,
 	"☑": utils.tryCatch("threng:material", 14, <gendustry:genetics_processor>), # Speculative Processor
 	"☠": <extendedcrafting:material:13>,
@@ -385,7 +385,7 @@ craft.remake(<mekanism:gastank>.withTag({tier: 4}), ["pretty",
   "E": <advgenerators:turbine_enderium>,  # Enderium Turbine
   "◊": <ore:gemBenitoite>,                # Benitoite
   "G": <advancedrocketry:oxygencharger>,  # Gas Charge Pad
-  "A": <draconicevolution:awakened_core>, # Awakened Core
+  "A": <draconicevolution:crafting_injector:2>,
   "B": <bloodmagic:blood_tank:9>,         # Blood Tank Tier 10
   "C": <plustic:centrifuge>,              # Centrifuge Tank
   "n": FluidCell("aerotheum"),            # Universal Fluid Cell
@@ -416,7 +416,7 @@ recipes.addShapeless("creative Fluid Tank Frame", creativeFluidTankFrame, [
 
 # *======= Mekanism Creative Tank =======*
 list["⍤"] = <mekanism:gastank>.withTag({tier: 4});
-list["✝"] = <draconicevolution:chaotic_core>;
+list["✝"] = <draconicevolution:crafting_injector:3>;
 list["♥"] = creativeFluidTankFrame;
 list["♀"] = <mctsmelteryio:upgrade:4>;
 list["θ"] = <ic2:te:134>;
@@ -524,7 +524,7 @@ craft.remake(<extrautils2:passivegenerator:6>, ["pretty",
   "C": <extendedcrafting:material:12>,   # Crystaltine Catalyst
   "D": <extrautils2:teleporter:1>,       # Deep Dark Portal
   "F": <extrautils2:passivegenerator:5>, # Fire Mill
-  "W": <draconicevolution:wyvern_core>,  # Wyvern Core
+  "W": <draconicevolution:wyvern_energy_core>,
   "i": <extrautils2:passivegenerator:4>, # Wind Mill
   "L": <extrautils2:passivegenerator:2>, # Lava Mill
   "O": <extrautils2:opinium:6>,          # Opinium Core (Amazing)
@@ -590,7 +590,7 @@ craft.make(<storagedrawers:upgrade_creative:1>, ["pretty",
   "S": <threng:material:14>,                  # Speculative Processor
   "1": <aeadditions:storage.component:3>,     # 16384k ME Storage Component
   "■": <ore:blockAethium>,                    # Aethium
-  "C": <draconicevolution:chaotic_core>,      # Chaotic Core
+  "C": <draconicevolution:crafting_injector:3>,# Chaotic Injector
   "◊": <ore:gemBenitoite>,                    # Benitoite
   "r": <tconstruct:large_plate>.withTag({Material: "red_matter"}),
   "▬": <ore:ingotInfinity>,                   # Infinity Ingot

@@ -1,8 +1,9 @@
 {
 	title: "{q.draconic_evolution.wyvern_power_trans.name}",
 	icon: "draconicevolution:energy_crystal 1 7",
-	x: 0.375d,
-	y: 5.25d,
+	x: 2.1d,
+	y: -3.0d,
+	shape: "square",
 	text: [
 		"{q.draconic_evolution.wyvern_power_trans.desc}"
 	],

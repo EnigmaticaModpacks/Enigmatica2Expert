@@ -1,6 +1,7 @@
 {
-	x: 6.5d,
-	y: 3.75d,
+	x: 9.5d,
+	y: -7.1000000000000005d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.draconic_flux_capa.desc}"
 	],

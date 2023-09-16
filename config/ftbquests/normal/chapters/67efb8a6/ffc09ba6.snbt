@@ -1,11 +1,12 @@
 {
-	x: 5.0d,
-	y: 10.0d,
+	x: 7.2d,
+	y: -7.1000000000000005d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.pickaxe_of_the_wyv.desc}"
 	],
 	dependencies: [
-		"64f8083b"
+		"ffa34abd"
 	],
 	tasks: [{
 		uid: "a60a11ff",
@@ -14,6 +15,12 @@
 			id: "draconicevolution:wyvern_pick",
 			tag: {
 				Energy: 2000000
+			},
+			ForgeCaps: {
+				Parent: {
+					Items: [],
+					Size: 9
+				}
 			}
 		}],
 		ignore_nbt: 1b

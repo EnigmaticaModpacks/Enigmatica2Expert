@@ -2,21 +2,29 @@
 
 # *======= Recipes =======*
 	
-# Dimension Builder
-	recipes.remove(<rftoolsdim:dimension_builder>);
-	recipes.addShapeless("Dimension Builder", 
-	<rftoolsdim:dimension_builder>, 
-	[<ic2:te:57>,<exnihilocreatio:item_mesh:4>, <avaritia:endest_pearl>,
-	<environmentaltech:void_ore_miner_cont_6>,<draconicevolution:wyvern_core>,<environmentaltech:void_res_miner_cont_6>.anyDamage(),
-	<rftools:shape_card:3>,<industrialforegoing:infinity_drill>.anyDamage(), <mekanism:machineblock:4>]);
+# [Dimension Builder] from [Basic Fusion Crafting Injector][+8]
+craft.remake(<rftoolsdim:dimension_builder>, ["pretty",
+  "A i E",
+  "o B V",
+  "S I D"], {
+  "A": <ic2:te:57>,                                 # Advanced Miner
+  "i": <exnihilocreatio:item_mesh:4>,               # Diamond Stiffened Mesh
+  "E": <avaritia:endest_pearl>,                     # Endest Pearl
+  "o": <environmentaltech:void_ore_miner_cont_6:*>, # Void Ore Miner Controller Tier 6
+  "B": <draconicevolution:crafting_injector>,       # Basic Fusion Crafting Injector
+  "V": <environmentaltech:void_res_miner_cont_6:*>, # Void Resource Miner Controller Tier 6
+  "S": <rftools:shape_card:3>,                      # Shape Card (Silk Quarry)
+  "I": <industrialforegoing:infinity_drill:*>,      # Infinity Drill
+  "D": <mekanism:machineblock:4>,                   # Digital Miner
+});
 
 # Dimension Editor
 	recipes.remove(<rftoolsdim:dimension_editor>);
 	recipes.addShapedMirrored("Dimension Editor", 
 	<rftoolsdim:dimension_editor>, 
-	[[<rftools:machine_base>, <draconicevolution:draconic_core>, <rftools:machine_base>],
+	[[<rftools:machine_base>, <draconicevolution:crafting_injector>, <rftools:machine_base>],
 	[<rftools:machine_frame>, <thermalexpansion:frame:148>, <rftools:machine_frame>], 
-	[<rftools:machine_base>, <draconicevolution:draconic_core>, <rftools:machine_base>]]);
+	[<rftools:machine_base>, <draconicevolution:crafting_injector>, <rftools:machine_base>]]);
 
 # Dimlet Workbench
 	recipes.remove(<rftoolsdim:dimlet_workbench>);
@@ -34,7 +42,7 @@ craft.remake(<rftoolsdim:dimension_enscriber>, ["pretty",
   "P": <draconicevolution:particle_generator>,  # Particle Generator
   "Ϟ": <draconicevolution:energy_storage_core>, # Energy Core
   "D": <rftdimtweak:dimension_enscriber>,       # Dimension Enscriber Prototype
-  "W": <draconicevolution:wyvern_core>,         # Wyvern Core
+  "W": <draconicevolution:wyvern_energy_core>,
 });
 
 # Phased Field Generator

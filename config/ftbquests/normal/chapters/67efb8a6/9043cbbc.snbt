@@ -6,13 +6,14 @@
 			Energy: 2000000
 		}
 	},
-	x: 7.333333333333333d,
-	y: 8.666666666666666d,
+	x: 5.6d,
+	y: -7.1000000000000005d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.wyvern_chestplate.desc}"
 	],
 	dependencies: [
-		"64f8083b"
+		"ffa34abd"
 	],
 	tasks: [{
 		uid: "4b54eadc",

@@ -1,6 +1,7 @@
 {
-	x: 3.0d,
-	y: 10.5d,
+	x: 9.9d,
+	y: -7.8d,
+	shape: "hexagon",
 	text: [
 		"{q.draconic_evolution.draconic_shovel.desc}"
 	],

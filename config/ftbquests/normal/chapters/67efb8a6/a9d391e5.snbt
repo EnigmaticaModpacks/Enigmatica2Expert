@@ -1,8 +1,8 @@
 {
 	title: "{q.draconic_evolution.draconic_evolution.name}",
-	icon: "draconicevolution:draconic_core",
+	icon: "draconicevolution:crafting_injector",
 	x: 4.5d,
-	y: 6.75d,
+	y: -4.6d,
 	text: [
 		"{q.draconic_evolution.draconic_evolution.desc}"
 	],

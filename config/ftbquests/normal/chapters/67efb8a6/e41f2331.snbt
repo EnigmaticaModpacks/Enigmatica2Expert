@@ -1,11 +1,11 @@
 {
-	x: 12.666666666666666d,
-	y: 6.75d,
+	x: 11.2d,
+	y: -3.2d,
 	text: [
 		"{q.draconic_evolution.chaos_shard.desc}"
 	],
 	dependencies: [
-		"b5098494"
+		"91dd82e5"
 	],
 	tasks: [{
 		uid: "5da3a9d3",

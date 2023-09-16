@@ -1,6 +1,7 @@
 {
-	x: 0.375d,
-	y: 8.25d,
+	x: 3.0d,
+	y: -2.1d,
+	shape: "square",
 	text: [
 		"{q.draconic_evolution.crystal_binder.desc}"
 	],

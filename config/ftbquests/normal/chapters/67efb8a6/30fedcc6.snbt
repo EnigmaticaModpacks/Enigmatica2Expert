@@ -1,8 +1,9 @@
 {
 	title: "{q.draconic_evolution.draconic_power_tra.name}",
 	icon: "draconicevolution:energy_crystal 1 8",
-	x: 0.375d,
-	y: 3.75d,
+	x: 2.1d,
+	y: -2.1d,
+	shape: "square",
 	text: [
 		"{q.draconic_evolution.draconic_power_tra.desc}"
 	],
