@@ -347,11 +347,11 @@ val defaultWeaponMats as IData = [
   "refined_glowstone"   , # 160
   "elementium"          , # 160
   "fluxed_electrum"     , # 162
-  "osmiridium"          , # 162
   "dark_steel"          , # 162
   "ma.prudentium"       , # 163
   "electrum"            , # 163
   "boron"               , # 165
+  "osmiridium"          , # 167
   "starmetal"           , # 170
   "fierymetal"          , # 173
   "fusewood"            , # 177
@@ -365,10 +365,10 @@ val defaultWeaponMats as IData = [
   "enderium"            , # 200
   "mirion"              , # 201
   "terrasteel"          , # 203
+  "iridium"             , # 203
   "cobalt"              , # 204
   "hard_carbon"         , # 204
   "heavy"               , # 207
-  "iridium"             , # 208
   "draconium"           , # 212
   "mithrillium"         , # 216
   "xu_evil_metal"       , # 222
