@@ -270,6 +270,8 @@ q.animals.gem_of_ratlantis.desc=合成材料
 q.animals.black_death.name=黑死神
 q.animals.black_death.desc=黑死神是一个boss，它召唤很多怪物保护它，而且能够在它触及范围内传播瘟疫并造成大破坏。\n\n用 §3闪电§r 击中 §0瘟疫医生§r，将其转化为 §0黑死病§r。
 q.animals.golden_egg.desc=金蛋使金鸡，当你用本土金簇喂养它们时，它们会产下金锭。
+q.animals.ratlantis_world_ge.name=Ratlantis World Generation
+q.animals.ratlantis_world_ge.desc=Blue Quartz blocs generating once per 8 chunks. But, always they spawn Glimmering Light Blue Flower on surface.\n\nUU-Metal Ore spawn in cave celling under y=20.
 q.animals.avatar_of_ratlantis.desc=合成材料
 q.animals.purifying_liquid.desc=治愈僵尸村民与瘟疫。
 q.animals.rat_ore_doubling.name=老鼠升级：矿物翻倍

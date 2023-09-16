@@ -39,6 +39,51 @@
 			},
 			"cluster-count": 50,
       "dimension": {"restriction": "whitelist","value": [-8]}
+		},
+
+		"ratlantis_blue_queartz": {
+			"distribution": "uniform",
+			"generator": {
+				"material": "minecraft:stone",
+				"block": {
+          "name": "extrautils2:decorativesolid",
+          "properties": {
+            "decorstates": "blue_quartz"
+          }
+        },
+				"cluster-size": 1
+			},
+			"cluster-count": 1,
+			"chunk-chance": 8,
+			"min-height": 9,
+			"max-height": 32,
+			"dimension": {"restriction": "whitelist","value": [-8]}
+		},
+
+		"ratlantis_uu_metal_ore": {
+			"distribution": "cave",
+			"generator": {
+        "type": "structure",
+        "structure": "uu_metal_ore.nbt",
+        "rotation": "NONE"
+			},
+			"cluster-count": 4,
+			"chunk-chance": 1,
+      "ceiling": true,
+			"ground-level": 20,
+			"dimension": {"restriction": "whitelist","value": [-8]}
+		},
+
+		"ratlantis_rat_statue": {
+			"distribution": "surface",
+			"generator": {
+        "type": "structure",
+        "structure": "rat_statue.nbt",
+        "material": "minecraft:grass"
+			},
+			"cluster-count": 1,
+			"chunk-chance": 20,
+			"dimension": {"restriction": "whitelist","value": [-8]}
 		}
   }
 }

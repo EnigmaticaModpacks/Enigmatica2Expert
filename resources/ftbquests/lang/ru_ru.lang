@@ -270,6 +270,8 @@ q.animals.gem_of_ratlantis.desc=Ингредиент для крафта
 q.animals.black_death.name=Черная смерть
 q.animals.black_death.desc=Черная Смерть - это босс-моб, который призывает множество других мобов, чтобы защитить себя, чтобы сеять чуму и сеять хаос на всех мобах в пределах досягаемости.\n\nНанесите молнией §3Поджигателя§r, чтобы превратить его в §0Чуму§r.
 q.animals.golden_egg.desc=Золотое яйцо делает золотых цыплят, откладывающих золотые слитки, когда вы кормите их Золотыми Кластерами.
+q.animals.ratlantis_world_ge.name=Ratlantis World Generation
+q.animals.ratlantis_world_ge.desc=Blue Quartz blocs generating once per 8 chunks. But, always they spawn Glimmering Light Blue Flower on surface.\n\nUU-Metal Ore spawn in cave celling under y=20.
 q.animals.avatar_of_ratlantis.desc=Изготовление ингредиентов
 q.animals.purifying_liquid.desc=Лечит зомби сельских жителей и чума
 q.animals.rat_ore_doubling.name=Удвоение крысиной руды
