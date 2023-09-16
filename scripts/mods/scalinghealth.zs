@@ -30,7 +30,7 @@ for mobId, ingr in {
   "iceandfire:dread_lich"      : <twilightforest:ice_bomb>,
 } as IIngredient[string] {
   mods.rustic.Condenser.addRecipe(
-    <thermalexpansion:morb>.withTag({id: mobId}),
+    <thermalexpansion:morb>.withTag({id: mobId, Generic: 1 as byte}),
     [h,h,h], ingr, <thermalexpansion:morb>, <fluid:water> * 50, 40);
 }
 
