@@ -205,10 +205,10 @@ function createParticles(world as IWorld, p as IBlockPos, amount as int = 10) as
   if(world.remote) return;
   val player = getPlayer(world, p);
   if(isNull(player)) return;
-  mods.contenttweaker.Commands.call(
+  server.commandManager.executeCommandSilent(<item:minecraft:dirt>.createEntityItem(world, p.x, p.y, p.z),
     "/particle heart "~
     ((p.x+0.5))~" "~(p.y+0.5)~" "~((p.z+0.5))~
-    " 0.25 0.25 0.25 0.02 "~amount, player, world, false, true
+    " 0.25 0.25 0.25 0.02 "~amount
   );
 }
 
