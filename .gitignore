@@ -95,3 +95,4 @@ config/nuclearcraft.info
 config/acronym/saved
 scripts/nc_script_addons
 config/serializationisbad-remotecache.json
+config/loliasm/methods-stable_39.csv
