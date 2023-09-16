@@ -1,5 +1,40 @@
 #modloaded rftoolsdim
 
+// Create oredict with all dimlets
+<ore:dimlet>.add([
+	<rftoolsdim:dimlet_base:0>,
+	<rftoolsdim:dimlet_control_circuit:0>,
+	<rftoolsdim:dimlet_control_circuit:1>,
+	<rftoolsdim:dimlet_control_circuit:2>,
+	<rftoolsdim:dimlet_control_circuit:3>,
+	<rftoolsdim:dimlet_control_circuit:4>,
+	<rftoolsdim:dimlet_control_circuit:5>,
+	<rftoolsdim:dimlet_control_circuit:6>,
+	<rftoolsdim:dimlet_energy_module:0>,
+	<rftoolsdim:dimlet_energy_module:1>,
+	<rftoolsdim:dimlet_energy_module:2>,
+	<rftoolsdim:dimlet_memory_unit:0>,
+	<rftoolsdim:dimlet_memory_unit:1>,
+	<rftoolsdim:dimlet_memory_unit:2>,
+	<rftoolsdim:dimlet_type_controller:0>,
+	<rftoolsdim:dimlet_type_controller:1>,
+	<rftoolsdim:dimlet_type_controller:2>,
+	<rftoolsdim:dimlet_type_controller:3>,
+	<rftoolsdim:dimlet_type_controller:4>,
+	<rftoolsdim:dimlet_type_controller:5>,
+	<rftoolsdim:dimlet_type_controller:6>,
+	<rftoolsdim:dimlet_type_controller:7>,
+	<rftoolsdim:dimlet_type_controller:8>,
+	<rftoolsdim:dimlet_type_controller:9>,
+	<rftoolsdim:dimlet_type_controller:10>,
+	<rftoolsdim:dimlet_type_controller:11>,
+	<rftoolsdim:dimlet_type_controller:12>,
+	<rftoolsdim:dimlet_type_controller:13>,
+	<rftoolsdim:dimlet_type_controller:14>,
+]);
+
+scripts.jei.crafting_hints.addInsOutCatl([<rftoolsdim:dimlet_parcel>], <ore:dimlet>.firstItem);
+
 # *======= Recipes =======*
 	
 # [Dimension Builder] from [Basic Fusion Crafting Injector][+8]
