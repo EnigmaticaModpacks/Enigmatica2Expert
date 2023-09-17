@@ -147,6 +147,7 @@ q.gates.gate_ex_nihilo.desc=There is no Ex Nihilo chapter, but completing this q
 q.gates.gate_immersive_en.name=Gate: Immersive Engineering
 q.gates.gate_immersive_en.desc=Completing this quest opens the Immersive Engineering chapter.
 q.gates.gate_thaumcraft.name=Gate: Thaumcraft
+q.gates.gate_thaumcraft.subtitle=(You must craft it to finish the quest)
 q.gates.gate_thaumcraft.desc=Completing this quest opens the Thaumcraft chapter.\n\nSome types of Vis Crystal can be found under ground.
 q.gates.gate_astral_sorcery.name=Gate: Astral Sorcery
 q.gates.gate_astral_sorcery.desc=Completing this quest opens the §3Astral Sorcery§r chapter.\n\n§nResonating Wand§r is used to complete crafts in the altars. It'll also highlight where you can find §nRock Crystal§r ores at night. They're found at bedrock level.\n\nThe Resonating Wand can be crafted in a normal Crafting Table, if placed near one of the Floating Crystals, found bellow some Astral Sorcery structures.

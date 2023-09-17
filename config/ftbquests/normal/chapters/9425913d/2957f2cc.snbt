@@ -3,6 +3,7 @@
 	icon: "thaumcraft:goggles",
 	x: 9.5d,
 	y: 0.5d,
+	description: "{q.gates.gate_thaumcraft.subtitle}",
 	text: [
 		"{q.gates.gate_thaumcraft.desc}"
 	],
@@ -10,19 +11,14 @@
 		"90536e42"
 	],
 	tasks: [{
-		uid: "e5afc695",
+		uid: "5776a9bd",
 		type: "item",
 		items: [{
-			id: "thaumcraft:crystal_essence",
-			tag: {
-				Aspects: [{
-					amount: 1,
-					key: "aer"
-				}]
-			}
+			item: "thaumcraft:salis_mundus"
 		}],
 		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_nbt: 1b,
+		only_from_crafting: true
 	}],
 	rewards: [{
 		uid: "a4c2efd1",

@@ -147,6 +147,7 @@ q.gates.gate_ex_nihilo.desc=无中生有没有单独的章节，完成这个任�
 q.gates.gate_immersive_en.name=门槛：沉浸工程
 q.gates.gate_immersive_en.desc=这个任务开启沉浸工程的章节。
 q.gates.gate_thaumcraft.name=门槛：神秘时代
+q.gates.gate_thaumcraft.subtitle=(You must craft it to finish the quest)
 q.gates.gate_thaumcraft.desc=这个任务开启神秘时代的章节。\n\n可以在地下找到一些魔力碎片。
 q.gates.gate_astral_sorcery.name=门槛：星辉魔法
 q.gates.gate_astral_sorcery.desc=这个任务开启星辉魔法的章节。\n\n海蓝宝石会露天生成，在沙子附近就能找得到。
