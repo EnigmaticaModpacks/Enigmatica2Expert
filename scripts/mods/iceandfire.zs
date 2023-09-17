@@ -2,6 +2,11 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 #modloaded iceandfire
 
+<iceandfire:myrmex_jungle_egg:*>.maxStackSize = 64;
+<iceandfire:myrmex_desert_egg:*>.maxStackSize = 64;
+<iceandfire:iceandfire.deathworm_egg>.maxStackSize = 64;
+<iceandfire:iceandfire.deathworm_egg:1>.maxStackSize = 64;
+
 # *======= Recipes =======*
 
 # Remove too powerful aspects

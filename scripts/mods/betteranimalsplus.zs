@@ -1,5 +1,10 @@
 #modloaded betteranimalsplus
 
+<betteranimalsplus:pheasant_egg>.maxStackSize = 64;
+<betteranimalsplus:turkey_egg>.maxStackSize = 64;
+<betteranimalsplus:goose_egg>.maxStackSize = 64;
+<betteranimalsplus:golden_goose_egg>.maxStackSize = 64;
+
 // --------------------------------
 // Hand Of Fate usage description
 // --------------------------------
