@@ -222,6 +222,22 @@
       <output name="dustClay" amount="9" chance="0.5"/>
     </sagmilling>
   </recipe>
+  <recipe name="Lormite">
+    <sagmilling energy="24000">
+      <input name="endreborn:block_lormyte_crystal"/>
+      <output name="endreborn:item_lormyte_crystal" amount="8"/>
+      <output name="endreborn:item_lormyte_crystal" amount="6" chance="0.6"/>
+      <output name="endreborn:item_lormyte_crystal" amount="5" chance="0.5"/>
+      <output name="endreborn:item_lormyte_crystal" amount="4" chance="0.4"/>
+    </sagmilling>
+  </recipe>
+  <recipe name="Obsidian Essence">
+    <sagmilling energy="24000">
+      <input name="endreborn:block_essence_ore"/>
+      <output name="endreborn:item_end_essence"/>
+      <output name="endreborn:item_end_essence" chance="0.1"/>
+    </sagmilling>
+  </recipe>
   <recipe name="Sagmill: Black Quartz Block">
     <disabled/>
   </recipe>
