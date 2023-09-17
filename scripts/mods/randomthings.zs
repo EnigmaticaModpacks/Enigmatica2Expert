@@ -3,6 +3,17 @@ import crafttweaker.item.IIngredient;
 
 #modloaded randomthings
 
+
+// Add hints with Spectre trees mechanics
+scripts.jei.crafting_hints.addInsOutCatl(
+  [<randomthings:ingredient:2>, <ore:treeSapling>],
+  <randomthings:spectresapling>
+);
+scripts.jei.crafting_hints.addInsOutsCatl(
+  [<randomthings:spectresapling>],
+  [<randomthings:spectrelog> * 7, <randomthings:spectreleaf> * 50]
+);
+
 /*Inject_js{
 setBlockDrops('randomthings:beanpod', [
 {stack: 'randomthings:ingredient:11'},...
