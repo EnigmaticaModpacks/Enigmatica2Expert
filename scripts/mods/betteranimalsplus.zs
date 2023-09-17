@@ -42,6 +42,10 @@ scripts.jei.crafting_hints.addInsOutCatl(
 <entity:betteranimalsplus:songbird>.addDrop(<twilightforest:raven_feather>, 1, 3);
 <entity:betteranimalsplus:tarantula>.addPlayerOnlyDrop(<randomthings:ingredient:1> % 50, 1, 1);
 
+// Add drops to other mods
+<entity:emberroot:deers>.addPlayerOnlyDrop(<betteranimalsplus:antler> % 50, 1, 1);
+<entity:twilightforest:deer>.addPlayerOnlyDrop(<betteranimalsplus:antler> % 50, 1, 1);
+
 <ore:pelt>.addItems([
 	<betteranimalsplus:bear_skin_black>,
 	<betteranimalsplus:bear_skin_brown>,

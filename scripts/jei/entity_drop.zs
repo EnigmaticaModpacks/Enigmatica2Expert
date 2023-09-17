@@ -99,7 +99,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add(<entity:deepmoblearning:trial_slime>            , [<minecraft:slime_ball> * 34]); // Trial Slime
   add(<entity:deepmoblearning:trial_spider>           , [<minecraft:spider_eye> * 30, <minecraft:string> * 98]); // Trial Spider
   add(<entity:emberroot:creeper>                      , [<minecraft:gunpowder> * 311, <minecraft:skull:4> * 8]); // Cursed Creeper
-# add(<entity:emberroot:deers>                        , []); // Wild Deer
+# add(<entity:emberroot:deers>                        , [<betteranimalsplus:antler> * 50]); // Wild Deer
   add(<entity:emberroot:dire_wolf>                    , [<minecraft:bone> * 47, <minecraft:rotten_flesh> * 48]); // Dire Wolf
   add(<entity:emberroot:enderminy>                    , [<minecraft:ender_eye> * 21, <minecraft:ender_pearl> * 19]); // Mini Enderman
   add(<entity:emberroot:fallenmount>                  , [<minecraft:bone> * 46, <minecraft:rotten_flesh> * 52, <minecraft:saddle> * 4]); // Fallen Mount
@@ -273,7 +273,7 @@ return list.map(({ groups: { id, display, items } }) => {
   add(<entity:twilightforest:bunny>                   , [<minecraft:rabbit_foot> * 6, <minecraft:rabbit_hide> * 58, <minecraft:rabbit> * 47]); // Dwarf Rabbit
 # add(<entity:twilightforest:castle_guardian>         , []); // Castle Guardian [NYI]
   add(<entity:twilightforest:death_tome>              , [<minecraft:book> * 90, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16}]}) * 1, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 19}]}) * 1, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 32}]}) * 1, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 2}]}) * 1, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 32}, {lvl: 1 as short, id: 57}]}) * 1, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 34}]}) * 1, <minecraft:paper> * 352, <minecraft:writable_book> * 8, <twilightforest:magic_map_focus> * 2]); // Death Tome
-  add(<entity:twilightforest:deer>                    , [<harvestcraft:venisonrawitem> * 194, <minecraft:leather> * 106]); // Wild Deer
+  add(<entity:twilightforest:deer>                    , [<harvestcraft:venisonrawitem> * 194, <minecraft:leather> * 106, <betteranimalsplus:antler> * 50]); // Wild Deer
   add(<entity:twilightforest:fire_beetle>             , [<minecraft:gunpowder> * 99, <thermalfoundation:material:771> * 18]); // Fire Beetle
 # add(<entity:twilightforest:firefly>                 , []); // Firefly
   add(<entity:twilightforest:giant_miner>             , [<twilightforest:giant_pickaxe> * 100]); // Giant Miner
