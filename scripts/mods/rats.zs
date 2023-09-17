@@ -173,6 +173,69 @@ remake("rat_upgrade_archeologist", <rats:rat_upgrade_archeologist>, [
   ]
 ]);
 
+# [Rat Upgrade_ Health] from [Rat Upgrade_ Basic][+2]
+craft.remake(<rats:rat_upgrade_health>, ["pretty",
+  "E M E",
+  "E R E",
+  "E M E"], {
+  "E": <ore:foodFlour>, # Flour
+  "M": <minecraft:melon>, # Melon
+  "R": <rats:rat_upgrade_basic>, # Rat Upgrade: Basic
+});
+
+# [Rat Upgrade_ Strength] from [Rat Upgrade_ Basic][+3]
+craft.remake(<rats:rat_upgrade_strength>, ["pretty",
+  "b ▬ b",
+  "b R b",
+  "b M b"], {
+  "b": <ore:bone>,                        # Bone
+  "▬": <ore:ingotFakeIron>,               # Iron Alloy Ingot
+  "R": <rats:rat_upgrade_basic>,          # Rat Upgrade: Basic
+  "M": <extrautils2:decorativesolidwood>, # Magical Planks
+});
+
+# [Rat Upgrade_ Armor] from [Rat Upgrade_ Basic][+2]
+craft.remake(<rats:rat_upgrade_armor>, ["pretty",
+  "‚ □ ‚",
+  "‚ R ‚",
+  "‚ □ ‚"], {
+  "‚": <ore:nuggetFakeIron>,     # Iron Alloy Nugget
+  "□": <ore:plateLead>,          # Lead Plate
+  "R": <rats:rat_upgrade_basic>, # Rat Upgrade: Basic
+});
+
+# [Rat Upgrade_ Warrior] from [Rat Upgrade_ Strength][+4]
+craft.remake(<rats:rat_upgrade_warrior>, ["pretty",
+  "◊ □ ◊",
+  "a R t",
+  "◊ □ ◊"], {
+  "◊": <ore:gemDiamond> | <ore:gemDiamondRat>,     # Diamond
+  "□": <ore:plateAluminum> | <ore:plateAluminium>, # Aluminum Plate
+  "a": <rats:rat_upgrade_health>,                  # Rat Upgrade: Health
+  "R": <rats:rat_upgrade_strength>,                # Rat Upgrade: Strength
+  "t": <rats:rat_upgrade_armor>,                   # Rat Upgrade: Armor
+});
+
+# [Rat Upgrade_ Battle-God] from [Nether Star Nugget][+2]
+craft.remake(<rats:rat_upgrade_god>, ["pretty",
+  "G R G",
+  "R ‚ R",
+  "G R G"], {
+  "G": <ore:itemGhastTear>,        # Ghast Tear
+  "R": <rats:rat_upgrade_warrior>, # Rat Upgrade: Warrior
+  "‚": <ore:nuggetNetherStar>,     # Nether Star Nugget
+});
+
+# [Rat Upgrade_ Nonbeliever] from [Avatar of Ratlantis][+2]
+craft.remake(<rats:rat_upgrade_nonbeliever>, ["pretty",
+  "M R M",
+  "R O R",
+  "M R M"], {
+  "M": <rats:marbled_cheese>,  # Marbled Cheese
+  "R": <rats:rat_upgrade_god>, # Rat Upgrade: Battle-God
+  "O": <ore:tokenOrIdolFlag>,  # Avatar of Ratlantis
+});
+
 # Rat flowers
 scripts.process.grow(<rats:ratglove_flower>, <rats:ratglove_flower> * 9, "No exceptions", null, 0);
 
