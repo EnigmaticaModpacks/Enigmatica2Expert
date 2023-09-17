@@ -826,3 +826,6 @@ mods.thermalexpansion.Sawmill.addRecipe(
 	1000,
 	<actuallyadditions:item_rice_seed>, 50
 );
+
+// Remove unused Obsidian melting recipes
+mods.thermalexpansion.Crucible.removeRecipe(<minecraft:obsidian>);
