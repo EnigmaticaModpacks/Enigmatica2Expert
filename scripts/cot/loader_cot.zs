@@ -2,6 +2,10 @@
 
 #loader contenttweaker
 
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
 import mods.contenttweaker.AxisAlignedBB;
 import mods.contenttweaker.BlockMaterial;
 import mods.contenttweaker.Color;
@@ -9,9 +13,6 @@ import mods.contenttweaker.Item;
 import mods.contenttweaker.MaterialSystem;
 import mods.contenttweaker.SoundType;
 import mods.contenttweaker.VanillaFactory;
-import crafttweaker.player.IPlayer;
-import crafttweaker.world.IBlockPos;
-import crafttweaker.world.IWorld;
 import mods.ctutils.utils.Math.abs;
 
 mods.contenttweaker.VanillaFactory.createCreativeTab('other', <item:minecraft:coal:1>).register();
@@ -221,23 +222,30 @@ b.blockHardness = 3 * 1.6;
 b.blockResistance = 3 * 1.4;
 b.blockSoundType = <soundtype:ground>;
 b.lightValue = (3 as double / 15.0 + 0.00001) as int;
-b.onBlockPlace = function(world, p, blockState) {
-  createParticles(world, p);
-};
-b.onBlockBreak = function(world, p, blockState) {
-  createParticles(world, p);
-};
+b.onBlockPlace = function(world, p, blockState) { createParticles(world, p); };
+b.onBlockBreak = function(world, p, blockState) { createParticles(world, p); };
+
+val lifeRecipes = {
+  'betteranimalsplus:goose': { <item:betteranimalsplus:golden_goose_egg>: 100},
+  'minecraft:ocelot'       : { <item:actuallyadditions:item_hairy_ball> :  4 },
+} as int[IItemStack][string];
+
 b.onRandomTick = function(world, p, blockState) {
   if(world.remote) return;
   for entity in world.getEntities() {
-    if(isNull(entity.definition) || entity.definition.id != 'minecraft:ocelot') continue;
-    if(abs(entity.x - p.x) > 8 || abs(entity.y - p.y) > 8 || abs(entity.z - p.z) > 8) continue;
-    if(world.getRandom().nextInt(4) != 1) continue;
-    val w as IWorld = world;
-    val itemEntity = <item:actuallyadditions:item_hairy_ball>.createEntityItem(w, entity.x as float, entity.y as float, entity.z as float);
-    itemEntity.motionY = 0.4;
-    world.spawnEntity(itemEntity);
-    createParticles(world, p, 3);
+    if(isNull(entity.definition)) continue;
+    val output = lifeRecipes[entity.definition.id];
+    if(isNull(output)) continue;
+
+    for outItem, outChance in output {
+      if(abs(entity.x - p.x) > 8 || abs(entity.y - p.y) > 8 || abs(entity.z - p.z) > 8) continue;
+      if(world.getRandom().nextInt(outChance) != 1) continue;
+      val w as IWorld = world;
+      val itemEntity = outItem.createEntityItem(w, entity.x as float, entity.y as float, entity.z as float);
+      itemEntity.motionY = 0.4;
+      world.spawnEntity(itemEntity);
+      createParticles(world, p, 3);
+    }
   }
 };
 b.register();
