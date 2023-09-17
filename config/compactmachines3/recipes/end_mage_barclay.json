@@ -1,0 +1,28 @@
+{
+  "name": "compactmachines3:end_mage_barclay",
+
+  "target-item": "draconicevolution:mob_soul",
+  "target-nbt": "{EntityName:\"endreborn:endlord\"}",
+  "target-count": 1,
+
+  "catalyst": "draconicevolution:mob_soul",
+  "catalyst-nbt": "{EntityName:\"endreborn:endlord\"}",
+
+  "input-types": {
+    "p": { "id": "minecraft:purpur_block" },
+    "r": { "id": "endreborn:block_rune" }
+  },
+
+  "symmetrical": true,
+  "shape": [
+    [
+      ["p", "p", "p"]
+    ],
+    [
+      ["p", "r", "p"]
+    ],
+    [
+      ["p", "p", "p"]
+    ]
+  ]
+}
