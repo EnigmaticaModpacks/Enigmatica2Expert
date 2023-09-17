@@ -417,6 +417,11 @@ mods.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal> * 4, <fluid:
 	<harvestcraft:groundrabbititem> * 4,
 	<harvestcraft:groundfishitem> * 4,
 ], true);
+mods.inworldcrafting.FluidToItem.transform(<iceandfire:dragon_meal> * 8, <fluid:blood>, [
+	<harvestcraft:groundvenisonitem>,
+	<harvestcraft:groundturkeyitem>,
+	<harvestcraft:groundduckitem>,
+], true);
 
 # Remove craft table dragon recipes
 recipes.remove(<iceandfire:dragonforge_fire_core_disabled>);
