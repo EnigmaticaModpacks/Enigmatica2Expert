@@ -179,6 +179,7 @@ mods.tconstruct.Casting.addBasinRecipe(<minecraft:sand:1>, <exnihilocreatio:bloc
 
 // Additional bonus
 scripts.do.entity_kill_entity.add('minecraft:slime', 'minecraft:wolf', <ore:essencePrudentium>.firstItem);
+scripts.do.entity_kill_entity.add('minecraft:slime', 'minecraft:polar_bear', <thermalfoundation:fertilizer:2>);
 
 // Compressed Sticks
 recipes.remove(<openblocks:scaffolding>);
