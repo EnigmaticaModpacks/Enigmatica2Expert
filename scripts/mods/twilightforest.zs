@@ -8,6 +8,21 @@ import crafttweaker.item.WeightedItemStack;
 scripts.lib.loot.tweak("twilightforest:entities/helmet_crab", "fish", "minecraft:fish", null, [<harvestcraft:crabrawitem>], [1,3]);
 scripts.lib.loot.tweak("twilightforest:entities/deer"       , "meat", "twilightforest:raw_venison", <twilightforest:raw_venison>, [<harvestcraft:venisonrawitem>], [1,3]);
 
+for tuple in [
+  ['minecraft:sheep', 'twilightforest:bighorn_sheep'],
+  ['minecraft:pig', 'twilightforest:wild_boar'],
+  ['minecraft:wolf', 'twilightforest:hostile_wolf'],
+  ['minecraft:chicken', 'twilightforest:penguin'],
+  ['minecraft:witch', 'twilightforest:skeleton_druid'],
+  ['minecraft:bat', 'twilightforest:raven'],
+  ['minecraft:blaze', 'twilightforest:wraith'],
+  ['minecraft:cave_spider', 'twilightforest:swarm_spider'],
+  ['minecraft:zombie_pigman', 'twilightforest:minotaur'],
+  ['minecraft:spider', 'twilightforest:hedge_spider'],
+] as string[][] {
+  scripts.jei.crafting_hints.addInsOutCatl([Soul(tuple[0])], Soul(tuple[1]), <twilightforest:transformation_powder>);
+}
+
 // Peacock fan
 recipes.addShaped(<twilightforest:peacock_fan>, [
   [<mysticalagriculture:crafting:24>, <mysticalagriculture:crafting:24>, null],
