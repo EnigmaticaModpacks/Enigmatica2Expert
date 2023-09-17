@@ -54,6 +54,23 @@ static entityToTag as string[][IEntityDefinition] = {
   <entity:minecraft:zombie_horse>   : ["Horse Head"          , "31ca5a99-7f0e-4251-85bf-b1003ca6f86a", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjE5MDI4OTgzMDg3MzBjNDc0NzI5OWNiNWE1ZGE5YzI1ODM4YjFkMDU5ZmU0NmZjMzY4OTZmZWU2NjI3MjkifX19"],
 } as string[][IEntityDefinition];
 
+function getSkullByName(skinName as string) as IItemStack {
+  return <minecraft:skull:3>.withTag({SkullOwner: skinName});
+}
+
+function getSkullByTag(skinTags as string[]) as IItemStack {
+  if(skinTags.length < 3) return null;
+  return <minecraft:skull:3>.withTag({
+    display: {Name: skinTags[0]},
+    SkullOwner: {
+      Id: skinTags[1],
+      Properties: {textures: [{Value: skinTags[2]}]},
+  }});
+}
+
+for entityDef, skinName in entityToSkin { mods.jei.JEI.addItem(getSkullByName(skinName)); }
+for entityDef, skinTags in entityToTag { mods.jei.JEI.addItem(getSkullByTag(skinTags)); }
+
 events.onEntityLivingDeathDrops(function(e as crafttweaker.event.EntityLivingDeathDropsEvent) {
   if(e.entity.world.remote) return;
 
@@ -103,13 +120,8 @@ events.onEntityLivingDeathDrops(function(e as crafttweaker.event.EntityLivingDea
 
   // Add head to drop list
   if (!isNull(skinName)) {
-    e.addItem(<minecraft:skull:3>.withTag({SkullOwner: skinName}));
+    e.addItem(getSkullByName(skinName));
   } else {
-    e.addItem(<minecraft:skull:3>.withTag({
-      display: {Name: skinTags[0]},
-      SkullOwner: {
-        Id: skinTags[1],
-        Properties: {textures: [{Value: skinTags[2]}]},
-    }}));
+    e.addItem(getSkullByTag(skinTags));
   }
 });
