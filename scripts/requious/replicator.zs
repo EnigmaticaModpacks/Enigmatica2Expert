@@ -93,7 +93,7 @@ x.setFluidSlot(mattX, mattY, ComponentFace.all(), 16000)
 
 static powX as int = 8;
 static powY as int = 0;
-x.setEnergySlot(powX, powY, ComponentFace.all(), 100000000)
+x.setEnergySlot(powX, powY, ComponentFace.all(), 2000000000)
   .setAccess(true,false)
   .setUnit('rf')
   .setBackground(SlotVisual.create(1,5))
