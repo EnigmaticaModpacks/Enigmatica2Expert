@@ -1,4 +1,5 @@
 {
+	icon: "advancedrocketry:alienwood",
 	x: 6.166666666666667d,
 	y: 11.25d,
 	text: [
@@ -12,6 +13,12 @@
 		type: "item",
 		items: [{
 			item: "advancedrocketry:alienwood"
+		},
+		{
+			item: "advancedrocketry:aliensapling"
+		},
+		{
+			item: "advancedrocketry:alienleaves"
 		}],
 		ignore_nbt: 1b
 	}],

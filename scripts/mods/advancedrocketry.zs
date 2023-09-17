@@ -555,3 +555,19 @@ craft.remake(<libvulpes:coil0:7>, ["pretty",
   "B": <nuclearcraft:turbine_dynamo_coil:1>, # Beryllium Turbine Dynamo Coil
 });
 #####################################
+
+// Skyblock recipe
+# [Lightwood Leaves]*8 from [Moon Turf][+2]
+mods.thaumcraft.Infusion.registerRecipe(
+  "alienleaves", # Name
+  "INFUSION", # Research
+  <advancedrocketry:alienleaves> * 8, # Output
+  3, # Instability
+  [<aspect:amogus> * 100],
+  <advancedrocketry:moonturf>, # Central Item
+  Grid(["pretty",
+  "L L L",
+  "L   L",
+  "L L L"], {
+  "L": <twilightforest:magic_leaves:1>, # Leaves of Transformation
+}).spiral(1));
