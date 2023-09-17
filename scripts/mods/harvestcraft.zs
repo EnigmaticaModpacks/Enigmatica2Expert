@@ -1,6 +1,56 @@
 #Compatibility for Immersive Engineering <liquid:ethanol> and <liquid:plantoil>
 import crafttweaker.item.IItemStack;
 
+// Make Universal Tweaks highlite items that have usages in crafting table recipes
+/*Inject_js{
+const recipesIngredients = getTableRecipes()
+  .map(r => [...new Set([
+    ...r.input.matchAll(/<([^:]+:[^:]+(?::\d+)?)>/g),
+  ].map(o => o[1]))])
+
+const itemsMap = {}
+
+recipesIngredients.forEach((ingrs) => {
+  ingrs.forEach((item) => {
+    const push = (it) => {
+      if (!it.startsWith('harvestcraft:')) return
+      itemsMap[it] ??= 0
+      itemsMap[it]++
+    }
+    if (item.startsWith('ore:')) {
+      const dictItems = getByOredict(item.substring(4))
+      // if (item === 'ore:listAllmeatraw') debugger
+      dictItems.forEach(tm =>
+        push(tm.commandString.substring(1, tm.commandString.length - 1))
+      )
+    }
+    else { push(item) }
+  })
+})
+
+const result = Object.entries(itemsMap)
+  .sort(([,a], [,b]) => b - a)
+  .map(([item, recipesCount]) => {
+    return `${item};${
+      recipesCount === 1 ? 'uncommon' : recipesCount < 20 ? 'rare' : 'epic'
+    }`
+  })
+
+const cfgPath = 'config/UniversalTweaks.cfg'
+const cfg = config(cfgPath)
+
+const union = [...new Set(config(cfgPath)
+  .general['tweaks: items']['Custom Rarity']
+  .concat(result))]
+
+injectInFile(cfgPath, 'S:"Custom Rarity" <', '         >',
+  `\n${union.map(s => `            ${s}`).join('\n')}\n`
+)
+
+return `# Managed ${result.length} Harvestcraft items`
+}*/
+# Managed 638 Harvestcraft items
+/**/
 
 // Pam's Lemonade
 recipes.remove(<harvestcraft:lemonaideitem>);
