@@ -25,9 +25,9 @@ carbon_fiber,*0.6,*0.6,*0.6,*0.6,*0.6,*0.6
 certus_quartz,,,,,,
 chaotic_metal,,,,,,
 cheese,,,,,,
-chitinbrowndeathworm,,,,,,
-chitintandeathworm,,,,,,
-chitinwhitedeathworm,,,,,,
+chitinbrowndeathworm,*1.5,*1.5,*1.5,*1.5,*1.5,+10
+chitintandeathworm,*1.5,*1.5,*1.5,*1.5,*1.5,+10
+chitinwhitedeathworm,*1.5,*1.5,*1.5,*1.5,*1.5,+10
 chocolate,,,+0.5,,,
 cobalt,,,,,,
 conductive_iron,,,,,,

@@ -84,9 +84,6 @@ leathermountaintroll    ,        41.07 ,        15     ,        10.5  ,         
 vibrant_alloy           ,        41.09 ,         5     ,        22.78 ,         7.94 ,         5       ,         0    ,         5      
 mirion                  ,        41.61 ,        12.5   ,        17.09 ,         8.74 ,         5.25    ,         0    ,         5.25   
 ma.soulium              ,        41.65 ,        16     ,        11.64 ,        12.71 ,         5       ,         0    ,         5      
-chitintandeathworm      ,        41.67 ,        11     ,        10.5  ,         0.63 ,        11       ,         1.69 ,         2      
-chitinwhitedeathworm    ,        41.67 ,        11     ,        10.5  ,         0.63 ,        11       ,         1.69 ,         2      
-chitinbrowndeathworm    ,        41.67 ,        11     ,        10.5  ,         0.63 ,        11       ,         1.69 ,         2      
 pladium                 ,        41.82 ,         7     ,        16.13 ,         1    ,         5       ,         1.5  ,         5      
 amber                   ,        41.9  ,        14     ,        10.82 ,        15.88 ,         5       ,         0    ,         5      
 tanzanite               ,        41.9  ,        17     ,        17.72 ,        11.12 ,         2       ,         0    ,         2      
@@ -145,6 +142,9 @@ scalebluedragon         ,        59.51 ,        27     ,        13.5  ,         
 scalegreendragon        ,        59.51 ,        27     ,        13.5  ,         1.88 ,        27       ,         2.25 ,         4      
 scalereddragon          ,        59.51 ,        27     ,        13.5  ,         1.88 ,        27       ,         2.25 ,         4      
 scalesilverdragon       ,        59.51 ,        27     ,        13.5  ,         1.88 ,        27       ,         2.25 ,         4      
+chitintandeathworm      ,        60.04 ,        16.5   ,        15.75 ,         0.94 ,        16.5     ,         2.53 ,        12      
+chitinwhitedeathworm    ,        60.04 ,        16.5   ,        15.75 ,         0.94 ,        16.5     ,         2.53 ,        12      
+chitinbrowndeathworm    ,        60.04 ,        16.5   ,        15.75 ,         0.94 ,        16.5     ,         2.53 ,        12      
 scaleblueseaserpent     ,        61.4  ,        23     ,        10.5  ,         3.13 ,        23       ,         2.81 ,         3      
 scalepurpleseaserpent   ,        61.4  ,        23     ,        10.5  ,         3.13 ,        23       ,         2.81 ,         3      
 scaletealseaserpent     ,        61.4  ,        23     ,        10.5  ,         3.13 ,        23       ,         2.81 ,         3      

@@ -112,9 +112,6 @@ val defaultArmorMats as IData = [
   "vibrant_alloy"          , # 41
   "mirion"                 , # 42
   "ma.soulium"             , # 42
-  "chitintandeathworm"     , # 42
-  "chitinwhitedeathworm"   , # 42
-  "chitinbrowndeathworm"   , # 42
   "pladium"                , # 42
   "amber"                  , # 42
   "tanzanite"              , # 42
@@ -173,6 +170,9 @@ val defaultArmorMats as IData = [
   "scalegreendragon"       , # 60
   "scalereddragon"         , # 60
   "scalesilverdragon"      , # 60
+  "chitintandeathworm"     , # 60
+  "chitinwhitedeathworm"   , # 60
+  "chitinbrowndeathworm"   , # 60
   "scaleblueseaserpent"    , # 61
   "scalepurpleseaserpent"  , # 61
   "scaletealseaserpent"    , # 61
