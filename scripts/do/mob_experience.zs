@@ -50,7 +50,10 @@ events.onEntityLivingDeath(function(e as crafttweaker.event.EntityLivingDeathEve
 
   for tuple in experience_potions {
     for potion, value in tuple {
-      if(increaseLevel(source, potion, value[0], value[1])) return;
+      if(increaseLevel(source, potion, value[0], value[1])) {
+        utils.spawnParticles(source, 'happyVillager', source.x, source.y+1.5, source.z, 0.4, 0.4, 0.4, 0, 20);
+        return;
+      }
     }
   }
 
