@@ -939,6 +939,7 @@ static values as int[int][string] = {
   "rftools:crafter1": { 0: 2434 },
   "mekanism:polyethene": { 0: 2457, 2: 3935 },
   "minecraft:prismarine_shard": { 0: 2458 },
+  "minecraft:sea_lantern": { 0: 3000 },
   "actuallyadditions:block_crystal": {
     0: 2526,
     1: 3579,
