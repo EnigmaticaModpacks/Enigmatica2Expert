@@ -12,6 +12,7 @@
 		"37406152"
 	],
 	size: 1.3333333333333333d,
+	or_tasks: true,
 	tasks: [{
 		uid: "a45d31a1",
 		type: "item",
