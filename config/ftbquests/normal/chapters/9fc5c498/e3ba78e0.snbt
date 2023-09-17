@@ -5,7 +5,7 @@
 		"{q.ender_io.soul_machine_chassis.desc}"
 	],
 	dependencies: [
-		"0cce2fa6"
+		"2265d20b"
 	],
 	tasks: [{
 		uid: "a068c5b4",

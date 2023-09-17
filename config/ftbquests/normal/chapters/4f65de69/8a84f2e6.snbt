@@ -1,27 +1,26 @@
 {
-	x: 7.5d,
-	y: 2.5d,
+	x: 9.62d,
+	y: 6.1d,
 	text: [
-		"{q.ender_io.painting_machine.desc}"
+		"{q.getting_started.painting_machine.desc}"
 	],
 	dependencies: [
-		"0cce2fa6"
+		"558597eb"
 	],
 	tasks: [{
-		uid: "cc71dadb",
+		uid: "9cf50558",
 		type: "item",
 		items: [{
 			item: "enderio:block_painter"
-		}],
-		ignore_nbt: 1b
+		}]
 	}],
 	rewards: [{
-		uid: "43a44434",
+		uid: "ff0aac66",
 		type: "item",
 		item: {
 			id: "ftbquests:lootcrate",
 			tag: {
-				type: "rare"
+				type: "common"
 			}
 		}
 	}]

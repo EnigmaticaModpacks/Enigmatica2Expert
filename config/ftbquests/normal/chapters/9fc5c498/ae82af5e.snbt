@@ -1,6 +1,6 @@
 {
-	x: 4.833333333333333d,
-	y: 5.166666666666667d,
+	x: 7.5d,
+	y: 3.8d,
 	text: [
 		"{q.ender_io.weather_obelisk.desc}"
 	],

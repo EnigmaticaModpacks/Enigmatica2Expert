@@ -1,6 +1,6 @@
 {
-	x: 6.166666666666667d,
-	y: 3.8333333333333335d,
+	x: 4.8d,
+	y: 3.8d,
 	text: [
 		"{q.ender_io.alloy_smelter.desc}"
 	],

@@ -1,8 +1,8 @@
 {
 	title: "{q.ender_io.ender_io.name}",
 	icon: "enderio:item_material",
-	x: 0.8333333333333333d,
-	y: 0.8333333333333333d,
+	x: 0.9d,
+	y: 0.8d,
 	text: [
 		"{q.ender_io.ender_io.desc}"
 	],

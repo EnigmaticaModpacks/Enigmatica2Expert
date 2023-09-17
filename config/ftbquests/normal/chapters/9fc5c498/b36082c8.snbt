@@ -1,6 +1,6 @@
 {
-	x: 3.5d,
-	y: 6.5d,
+	x: 6.2d,
+	y: 5.2d,
 	text: [
 		"{q.ender_io.relocator_obelisk.desc}"
 	],

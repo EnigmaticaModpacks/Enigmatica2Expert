@@ -1,6 +1,6 @@
 {
-	x: 10.166666666666666d,
-	y: 2.5d,
+	x: 10.2d,
+	y: 2.6d,
 	text: [
 		"{q.ender_io.soul_binder.desc}"
 	],

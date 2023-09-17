@@ -1,6 +1,6 @@
 {
-	x: 8.833333333333334d,
-	y: 2.5d,
+	x: 11.5d,
+	y: 2.6d,
 	text: [
 		"{q.ender_io.slice_n_splice.desc}"
 	],

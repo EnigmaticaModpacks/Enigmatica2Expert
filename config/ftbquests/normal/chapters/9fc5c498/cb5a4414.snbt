@@ -1,6 +1,6 @@
 {
-	x: 8.833333333333334d,
-	y: 3.8333333333333335d,
+	x: 11.5d,
+	y: 3.8d,
 	text: [
 		"{q.ender_io.powered_spawner.desc}"
 	],

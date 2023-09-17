@@ -1,6 +1,6 @@
 {
-	x: 7.5d,
-	y: 3.8333333333333335d,
+	x: 6.1d,
+	y: 3.8d,
 	text: [
 		"{q.ender_io.sag_mill.desc}"
 	],

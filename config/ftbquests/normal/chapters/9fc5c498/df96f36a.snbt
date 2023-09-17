@@ -1,5 +1,5 @@
 {
-	x: 3.5d,
+	x: 2.2d,
 	y: 2.5d,
 	text: [
 		"{q.ender_io.basic_capacitor_bank.desc}"

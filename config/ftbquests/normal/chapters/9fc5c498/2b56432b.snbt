@@ -1,11 +1,11 @@
 {
-	x: 7.5d,
-	y: 5.166666666666667d,
+	x: -2.3d,
+	y: 0.8d,
 	text: [
 		"{q.ender_io.power_monitor.desc}"
 	],
 	dependencies: [
-		"0cce2fa6"
+		"2265d20b"
 	],
 	tasks: [{
 		uid: "d2f38874",

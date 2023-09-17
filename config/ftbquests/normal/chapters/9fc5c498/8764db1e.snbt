@@ -1,11 +1,11 @@
 {
-	x: 0.8333333333333333d,
+	x: 7.5d,
 	y: 2.5d,
 	text: [
 		"{q.ender_io.stirling_generator.desc}"
 	],
 	dependencies: [
-		"2265d20b"
+		"0cce2fa6"
 	],
 	tasks: [{
 		uid: "d6df1dae",

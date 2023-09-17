@@ -1,11 +1,11 @@
 {
-	x: 6.166666666666667d,
-	y: 5.166666666666667d,
+	x: -1.4d,
+	y: 0.8d,
 	text: [
 		"{q.ender_io.the_vat.desc}"
 	],
 	dependencies: [
-		"0cce2fa6"
+		"2265d20b"
 	],
 	tasks: [{
 		uid: "26894147",
