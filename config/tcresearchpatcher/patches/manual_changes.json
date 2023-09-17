@@ -685,6 +685,10 @@
 ,{"key":"TWOND_MYSTIC_GARDENING","ops":[
   {"op":"remove",
   "path":"stages/0/required_item"
+  },
+  {"op":"replace",
+  "path":"parents",
+  "value": ["TWOND_BASE", "~INFUSION"]
   }
 ]}
 
