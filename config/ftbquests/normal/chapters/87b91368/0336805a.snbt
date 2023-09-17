@@ -4,7 +4,7 @@
 	x: 7.9d,
 	y: 0.7d,
 	text: [
-		"{q.animals.fire_dragon_forge.desc}"
+		"{q.animals.dragon_forge.desc}"
 	],
 	dependencies: [
 		"7d4799a3",
