@@ -5,7 +5,7 @@
 		"{q.blood_magic.demonic_slate.desc}"
 	],
 	dependencies: [
-		"1002494e"
+		"4c883699"
 	],
 	tasks: [{
 		uid: "58f0f556",

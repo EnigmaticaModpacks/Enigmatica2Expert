@@ -5,7 +5,7 @@
 		"{q.blood_magic.ethereal_slate.desc}"
 	],
 	dependencies: [
-		"c46bf64f"
+		"3331d611"
 	],
 	tasks: [{
 		uid: "e6bd5868",

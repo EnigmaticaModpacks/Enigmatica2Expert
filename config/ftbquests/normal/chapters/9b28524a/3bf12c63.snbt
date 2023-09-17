@@ -5,7 +5,7 @@
 		"{q.blood_magic.blank_slate.desc}"
 	],
 	dependencies: [
-		"b02daccb"
+		"6a6dc36e"
 	],
 	tasks: [{
 		uid: "f02ca352",

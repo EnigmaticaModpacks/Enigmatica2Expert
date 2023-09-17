@@ -5,7 +5,7 @@
 		"{q.blood_magic.imbued_slate.desc}"
 	],
 	dependencies: [
-		"6557109c"
+		"170439ef"
 	],
 	tasks: [{
 		uid: "62ea20a8",

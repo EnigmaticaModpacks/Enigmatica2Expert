@@ -5,7 +5,7 @@
 		"{q.blood_magic.reinforced_slate.desc}"
 	],
 	dependencies: [
-		"c359a62a"
+		"f1f052a5"
 	],
 	tasks: [{
 		uid: "42d37c5e",
