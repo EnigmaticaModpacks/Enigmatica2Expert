@@ -174,6 +174,14 @@ export async function init(h = defaultHelper, options = argv) {
     { block_stack: 'forestry:bog_earth:3', dropList: [{ stack: 'forestry:peat', luck: [2, 2] }] },
     { block_stack: 'endreborn:crop_ender_flower', dropList: [{ stack: 'minecraft:ender_pearl' }] },
     { block_stack: 'exnihilocreatio:block_infested_leaves', dropList: [{ stack: 'minecraft:string', luck: [1, 3] }] },
+
+    {
+      block_stack: 'randomthings:spectreleaf',
+      dropList   : [
+        { stack: 'randomthings:spectresapling', luck: [0, 1] },
+        { stack: 'randomthings:ingredient:2' },
+      ],
+    },
   ])
 
   // ###############################################################################
