@@ -110,6 +110,7 @@ val defaultArmorMats as IData = [
   "leatherforesttroll"     , # 41
   "leathermountaintroll"   , # 41
   "vibrant_alloy"          , # 41
+  "mirion"                 , # 42
   "ma.soulium"             , # 42
   "chitintandeathworm"     , # 42
   "chitinwhitedeathworm"   , # 42
@@ -133,7 +134,6 @@ val defaultArmorMats as IData = [
   "peridot"                , # 45
   "lonsdaleite"            , # 45
   "diamantine_crystal"     , # 46
-  "mirion"                 , # 46
   "pink_slime"             , # 46
   "refined_obsidian"       , # 46
   "lumium"                 , # 47
@@ -353,6 +353,7 @@ val defaultWeaponMats as IData = [
   "boron"               , # 165
   "osmiridium"          , # 167
   "starmetal"           , # 170
+  "mirion"              , # 172
   "fierymetal"          , # 173
   "fusewood"            , # 177
   "refined_obsidian"    , # 178
@@ -363,7 +364,6 @@ val defaultWeaponMats as IData = [
   "thaumium"            , # 193
   "tough"               , # 199
   "enderium"            , # 200
-  "mirion"              , # 201
   "terrasteel"          , # 203
   "iridium"             , # 203
   "cobalt"              , # 204
