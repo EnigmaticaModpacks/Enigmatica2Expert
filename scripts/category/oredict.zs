@@ -185,9 +185,9 @@ add(<ore:blockAmber>, <biomesoplenty:gem_block:7>);
 add(<ore:blockAmber>, <thaumcraft:amber_block>);
 add(<ore:blockAmber>, <thaumcraft:amber_brick>);
 
-add(<ore:gemPerk>, <astralsorcery:itemperkgem:0>.withEmptyTag());
-add(<ore:gemPerk>, <astralsorcery:itemperkgem:1>.withEmptyTag());
-add(<ore:gemPerk>, <astralsorcery:itemperkgem:2>.withEmptyTag());
+add(<ore:gemPerk>, <astralsorcery:itemperkgem:0>.withTag({astralsorcery: {}}));
+add(<ore:gemPerk>, <astralsorcery:itemperkgem:1>.withTag({astralsorcery: {}}));
+add(<ore:gemPerk>, <astralsorcery:itemperkgem:2>.withTag({astralsorcery: {}}));
 
 # Blood Magic Runes
 add(<ore:runeBlood>, <bloodmagic:blood_rune:*>);
