@@ -48,6 +48,14 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
 	[<ore:paper>, <enderio:block_enderman_skull>, <ore:paper>], 
 	[<ore:blockRedstone>, <ore:paper>, <ore:blockRedstone>]]);
 
+    # Inventory Panel
+    recipes.remove(<enderio:block_inventory_panel>);
+    recipes.addShaped("Ender IO Inventory Panel", 
+    <enderio:block_inventory_panel>,
+    [[<enderio:item_alloy_ingot:6>, <enderio:item_material:64>, <enderio:item_alloy_ingot:6>],
+    [<enderio:item_material:14>, <rftools:storage_scanner>, <enderio:item_material:14>],
+    [<enderio:item_alloy_ingot:6>, <enderio:block_tank>, <enderio:item_alloy_ingot:6>]]);
+
 # Painting Machine
 	recipes.remove(<enderio:block_painter>);
 	recipes.addShaped("Ender IO Painting Machine", <enderio:block_painter>, 
