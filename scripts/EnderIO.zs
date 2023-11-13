@@ -53,7 +53,7 @@ craft.remake(<enderio:block_impulse_hopper>, ["pretty",
     recipes.addShaped("Ender IO Inventory Panel", 
     <enderio:block_inventory_panel>,
     [[<enderio:item_alloy_ingot:6>, <enderio:item_material:64>, <enderio:item_alloy_ingot:6>],
-    [<enderio:item_material:14>, <nuclearcraft:part:10>, <enderio:item_material:14>],
+    [<enderio:item_material:14>, <rftools:storage_scanner>, <enderio:item_material:14>],
     [<enderio:item_alloy_ingot:6>, <enderio:block_tank>, <enderio:item_alloy_ingot:6>]]);
 
 # Painting Machine
