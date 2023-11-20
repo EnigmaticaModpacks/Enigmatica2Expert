@@ -6,8 +6,6 @@
 4) Double click "ServerStart" or "ServerStartLinux", whichever is appropriate.
 	On Linux you cannot run the script via sh directly
 5) Set EULA=true
-6) Pregenerate the world - See below for instructions.
-
 
 
 ## Updating
@@ -23,28 +21,5 @@
 	folder, so you can just move them over after updating.
 	
 	
-	
-## Pregeneration
-
-Run these commands:
-
-Pregenerates a circle of terrain, with radius of 300 chunks, centered on 0 0
-	1) /pregen gen startradius circle 0 0 300 0
-
-Pregenerates a circle of terrain, with radius of 50 chunks, centered on 0 0 in the Twilight Forest
-Only applicable for modpacks with the Twilight Forest
-	2) /pregen gen startradius circle 0 0 50 7
-
-This process will take a while, so I suggest you speed it up:
-Increases speed drastically
-	3) /pregen timepertick 250
-
-Allocates most of the servers resources to the pregenerator.
-	4) /pregen utils setPriority Pregenerator
-
-
-While the server pregens, no one should play on it.
-It can take several hours to finish. When it has completed,
-restart the server.
 
 Feel free to contact me if you need any help, preferably on Discord.
