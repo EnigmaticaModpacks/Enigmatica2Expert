@@ -366,11 +366,3 @@ scripts.process.crush(<minecraft:arrow>, <minecraft:flint>, "no exceptions", [<o
 	recipes.addShaped("Chiseled Limestone Bricks", <quark:world_stone_carved:5> * 8, [[<quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>],[<quark:world_stone_bricks:5>, null, <quark:world_stone_bricks:5>], [<quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>, <quark:world_stone_bricks:5>]]);
 	recipes.addShaped("Chiseled Jasper Bricks", <quark:world_stone_carved:6> * 8, [[<quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>],[<quark:world_stone_bricks:6>, null, <quark:world_stone_bricks:6>], [<quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>, <quark:world_stone_bricks:6>]]);
 	recipes.addShaped("Chiseled Slate Bricks", <quark:world_stone_carved:7> * 8, [[<quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>],[<quark:world_stone_bricks:7>, null, <quark:world_stone_bricks:7>], [<quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>, <quark:world_stone_bricks:7>]]);
-
-# Multi builder tool
-	recipes.remove(<mbtool:mbtool>);
-	recipes.addShaped("mbtool", 
-	<mbtool:mbtool>, 
-	[[<minecraft:diamond_pickaxe>, <immersivepetroleum:schematic>, <minecraft:diamond_shovel>], 
-	[<thermalfoundation:material:353>, <immersiveengineering:metal_device0>, <thermalfoundation:material:353>], 
-	[null, <immersiveengineering:material:13>, null]]);

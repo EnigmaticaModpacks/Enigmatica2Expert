@@ -1,3 +1,5 @@
+#reloadable
+
 import mods.jei.JEI.removeAndHide as rh;
 import crafttweaker.item.IItemCondition;
 import scripts.craft.helper.gridRecipe.GridRecipe;
@@ -176,14 +178,14 @@ import scripts.craft.helper.gridRecipe.GridRecipe;
 	[[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <contenttweaker:anglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <aeadditions:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
-	[ultCatalyst, draconicChest, creativeEssence, <enderio:block_cap_bank>.withTag({"enderio:energy": 1000000000}), <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
+	[ultCatalyst, draconicChest, creativeEssence, <ore:ccapbank>, <ore:ingotInfinity>, <ic2:te:86>, creativeEssence, draconicChest, ultCatalyst], 
 	[<contenttweaker:anglesite>, <aeadditions:storage.component:3>, benitoite, <environmentaltech:solar_cont_6>, twilightForestMasterTrophy, <environmentaltech:solar_cont_6>, benitoite, <aeadditions:storage.component:3>, <contenttweaker:anglesite>], 
-	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, creativeGasTank, creativeEssence, draconicChest, ultCatalyst], 
+	[ultCatalyst, draconicChest, creativeEssence, creativeTank, <ore:ingotInfinity>, <ore:cgastank>, creativeEssence, draconicChest, ultCatalyst], 
 	[ultCatalyst, resonantFrame, <ore:blockAethium>, <draconicevolution:chaotic_core>, benitoite, <draconicevolution:chaotic_core>, <ore:blockAethium>, resonantFrame, ultCatalyst], 
 	[blackHoleUnit, resonantFrame, resonantFrame, draconicChest, <aeadditions:storage.component:3>, draconicChest, resonantFrame, resonantFrame, blackHoleUnit], 
 	[<ore:blockCrystalMatrix>, blackHoleUnit, ultCatalyst, ultCatalyst, <contenttweaker:anglesite>, ultCatalyst, ultCatalyst, blackHoleUnit, <ore:blockCrystalMatrix>]]);
 	
-	recipes.addShapeless("Creative Storage Upgrade Duplication", 
+	recipes.addHiddenShapeless("Creative Storage Upgrade Duplication", 
 	<storagedrawers:upgrade_creative:1> * 2, 
 	[<storagedrawers:upgrade_creative:1>]);
 
@@ -222,9 +224,10 @@ import scripts.craft.helper.gridRecipe.GridRecipe;
 	[ingotUltimate, blockMirion, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte, Lock: 0 as byte})|<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3as byte})|<thermalexpansion:tank>.withTag({Fluid: {FluidName: "ic2uu_matter", Amount: 512000}, Level: 3 as byte}), <avaritia:resource:4>, ultCatalyst, <avaritia:resource:4>, <thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte, Lock: 0 as byte})|<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3as byte})|<thermalexpansion:tank>.withTag({Fluid: {FluidName: "liquiddna", Amount: 512000}, Level: 3 as byte}), blockMirion, ingotUltimate], 
 	[ingotUltimate, blackHoleTank, blockOsgloglas, anglesite, rocketFuel, anglesite, blockOsgloglas, blackHoleTank, ingotUltimate],
 	[ingotUltimate, ingotUltimate, ingotUltimate, blockStellar, rocketFuel, blockStellar, ingotUltimate, ingotUltimate, ingotUltimate]]);  
-	recipes.addShapeless("Creative Gas Tank Reset", 
+
+	recipes.addHiddenShapeless("Creative Gas Tank Reset", 
 	<mekanism:gastank>.withTag({tier: 4, mekData: {}}), 
-	[<mekanism:gastank>.withTag({tier: 4})]);
+	[<mekanism:gastank>.withTag({tier: 4})]);	
 	
 # Psi Creative Rod Frame
 	mods.extendedcrafting.TableCrafting.addShaped(4, <psi:cad_assembly:5>, 

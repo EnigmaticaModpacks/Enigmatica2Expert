@@ -683,3 +683,10 @@ for item in pressurePlates {
 # Remove EIO Dusts
 	<ore:dustCopper>.remove(<enderio:item_material:26>);
 	<ore:dustTin>.remove(<enderio:item_material:27>);
+	
+# Creative Item NBT BS
+	<ore:cgastank>.add(<mekanism:gastank>.withTag({tier: 4, mekData: {}}));
+	<ore:cgastank>.add(<mekanism:gastank>.withTag({tier: 4}));
+	<ore:ccapbank>.add(<enderio:block_cap_bank:0>.withTag({"enderio:energy": 1000000000}));
+	<ore:ccapbank>.add(<enderio:block_cap_bank:0>.withTag({"enderio:energy": 1000000000, "enderio:data": {}}));
+	
