@@ -53975,7 +53975,7 @@
       "properties:10": {
         "betterquesting:10": {
           "autoclaim:1": 0,
-          "desc:8": "Aqua Acrobatics, added in E2Eu backports 1.13\u0027s swimming, crawling and crouching mechanics, so movement in water isn\u0027t sluggish anymore.\n\nOn the topic of backporting, Fluidlogged and Friendly Chests backport 1.13\u0027s waterlogging and chest mechanics.",
+          "desc:8": "Aqua Acrobatics, added in E2Eu, backports 1.13\u0027s swimming, crawling and crouching mechanics, so movement in water isn\u0027t sluggish anymore.\n\nOn the topic of backporting, Fluidlogged and Friendly Chests backport 1.13\u0027s waterlogging and chest mechanics.",
           "globalshare:1": 0,
           "icon:10": {
             "Count:3": 1,
@@ -54060,7 +54060,7 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "",
-              "id:8": "minecraft:writable_book"
+              "id:8": "omniwand:wand"
             }
           }
         },

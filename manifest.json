@@ -517,11 +517,6 @@
          "required":true
       },
       {
-         "fileID":2658176,
-         "projectID":245287,
-         "required":true
-      },
-      {
          "fileID":3962479,
          "projectID":461660,
          "required":true
@@ -807,13 +802,13 @@
          "required":true
       },
       {
-         "fileID":3064112,
-         "projectID":253043,
+         "fileID":2481605,
+         "projectID":79287,
          "required":true
       },
       {
-         "fileID":2916368,
-         "projectID":224712,
+         "fileID":3064112,
+         "projectID":253043,
          "required":true
       },
       {
@@ -832,8 +827,8 @@
          "required":true
       },
       {
-         "fileID":2491032,
-         "projectID":225194,
+         "fileID":5002181,
+         "projectID":951064,
          "required":true
       },
       {
@@ -872,8 +867,13 @@
          "required":true
       },
       {
-         "fileID":2518031,
+         "fileID":4675629,
          "projectID":70496,
+         "required":true
+      },
+      {
+         "fileID":4928154,
+         "projectID":943734,
          "required":true
       },
       {
@@ -1107,6 +1107,11 @@
          "required":true
       },
       {
+         "fileID":4805869,
+         "projectID":923677,
+         "required":true
+      },
+      {
          "fileID":2719400,
          "projectID":314002,
          "required":true
@@ -1255,5 +1260,5 @@
    },
    "name":"Enigmatica 2 Expert Unofficial - E2Eu",
    "overrides":"overrides",
-   "version":"1.4"
+   "version":"1.3.9"
 }
