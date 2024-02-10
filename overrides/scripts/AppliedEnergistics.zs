@@ -301,7 +301,8 @@ var ae2fcrathome as IItemStack[] = [
 	<aeadditions:terminal.gas.wireless>.withTag({}),
 	<aeadditions:pattern.fluid>,
 	<aeadditions:fluidcrafter>,
-	<aeadditions:fluidfiller>
+	<aeadditions:fluidfiller>,
+	<aeadditions:terminal.fluid.wireless>.withTag({})
 ];
 
 for item in ae2fcrathome {
