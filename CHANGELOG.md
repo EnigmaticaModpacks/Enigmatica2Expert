@@ -1,5 +1,15 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.90h
+
+_Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90h.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90h.md)_
+
+**Fixed bugs**
+
+-   Crash on startup when using older java versions [\#2146](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2177)
+
+---
+
 ## 1.90g
 
 _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/modlist_1.90g.md)_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica2Expert/blob/master/changelogs/CHANGELOG_MODS_1.90g.md)_

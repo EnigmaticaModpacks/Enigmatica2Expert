@@ -280,3 +280,8 @@ mods.thermalexpansion.Compactor.addGearRecipe(<thermalfoundation:material:23>, <
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:0>, <minecraft:glowstone_dust>);
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:600>, <minecraft:glowstone_dust>);
 mods.thermalexpansion.Insolator.removeRecipe(<appliedenergistics2:crystal_seed:1200>, <minecraft:glowstone_dust>);
+
+# Add Havestcraft Sesame Seeds to Phytogenic Insolator
+mods.thermalexpansion.Insolator.addRecipe(<harvestcraft:sesameseedsitem>, <thermalfoundation:fertilizer>, <harvestcraft:sesameseedsseeditem>, 4800, <harvestcraft:sesameseedsseeditem>, 110, 1200);
+mods.thermalexpansion.Insolator.addRecipe(<harvestcraft:sesameseedsitem> * 2, <thermalfoundation:fertilizer:1>, <harvestcraft:sesameseedsseeditem>, 7200, <harvestcraft:sesameseedsseeditem>, 125, 1800);
+mods.thermalexpansion.Insolator.addRecipe(<harvestcraft:sesameseedsitem> * 3, <thermalfoundation:fertilizer:2>, <harvestcraft:sesameseedsseeditem>, 9600, <harvestcraft:sesameseedsseeditem>, 150, 2400);

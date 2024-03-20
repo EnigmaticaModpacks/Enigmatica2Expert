@@ -60,6 +60,7 @@
     "harvestcraft:tomatilloseeditem": "1*minecraft:emerald",
     "minecraft:spawn_egg@{EntityTag: {id: \"minecraft:mooshroom\"}}": "10*minecraft:emerald",
     "minecraft:spawn_egg@{EntityTag: {id: \"quark:frog\"}}": "10*minecraft:emerald",
+    "minecraft:spawn_egg@{EntityTag: {id: \"minecraft:bat\"}}": "10*minecraft:emerald",
     "rustic:sapling:1": "10*minecraft:emerald",
     "rustic:sapling": "10*minecraft:emerald",
     "rustic:wildberry_bush": "10*minecraft:emerald",
