@@ -1,0 +1,38 @@
+[
+  {
+    "resourceName": "infernal_furnace",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "liquid_heat_exchanger",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "neromantic_prime",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "scented_hive",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "witch_water",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "meteor",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "turbine",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "heat_exchanger",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  },
+  {
+    "resourceName": "forestry_farm",
+    "model": "requious:assembly_block","placeType": "Any","layerType": "Cutout","hasGUI": false,"extraVariants": [],"colors": [{"r": 255,"g": 255,"b": 255,"a": 255}],"hardness": 5.0,"blastResistance": 5.0,"aabb": {"x1": 0.0,"y1": 0.0,"z1": 0.0,"x2": 1.0,"y2": 1.0,"z2": 1.0}
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "capacity": 1000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "battery_copper",
+    "model": "requious:battery_small",
+    "colors": [
+      {
+        "r": 220,
+        "g": 64,
+        "b": 16,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 192,
+        "b": 64,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  },
+  {
+    "capacity": 2000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "battery_iron",
+    "model": "requious:battery_medium_fill0",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 192,
+        "b": 64,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  },
+  {
+    "capacity": 64000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "energy_gem",
+    "model": "requious:energy_diamond",
+    "colors": [
+      {
+        "r": 255,
+        "g": 0,
+        "b": 0,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 192,
+        "b": 192,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  },
+  {
+    "capacity": 256000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "lapotron",
+    "model": "requious:lapotron_diamond",
+    "colors": [
+      {
+        "r": 0,
+        "g": 0,
+        "b": 255,
+        "a": 255
+      },
+      {
+        "r": 192,
+        "g": 192,
+        "b": 255,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  },
+  {
+    "capacity": 2048000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "lapotron_orb",
+    "model": "requious:containment_gem",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      },
+      {
+        "r": 0,
+        "g": 0,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  },
+  {
+    "capacity": 68000000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "quantron",
+    "model": "requious:lapotron_emerald",
+    "colors": [
+      {
+        "r": 128,
+        "g": 255,
+        "b": 0,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 255,
+        "b": 192,
+        "a": 255
+      },
+      {
+        "r": 64,
+        "g": 64,
+        "b": 64,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  },
+  {
+    "capacity": 1000000000,
+    "minInput": 0,
+    "maxInput": 2147483647,
+    "minOutput": 0,
+    "maxOutput": 2147483647,
+    "showTooltip": true,
+    "resourceName": "positron_unit",
+    "model": "requious:containment_fill0",
+    "colors": [
+      {
+        "r": 128,
+        "g": 255,
+        "b": 192,
+        "a": 255
+      },
+      {
+        "r": 255,
+        "g": 255,
+        "b": 0,
+        "a": 255
+      }
+    ],
+    "stackSize": 64
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "capacity": 64,
+    "interval": 40,
+    "canEmit": false,
+    "canReceive": false,
+    "canRelay": false,
+    "resourceName": "red_emitter_basic",
+    "model": "requious:red_emitter",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  },
+  {
+    "capacity": 128,
+    "interval": 20,
+    "canEmit": false,
+    "canReceive": false,
+    "canRelay": false,
+    "resourceName": "red_emitter_advanced",
+    "model": "requious:red_emitter",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  }
+]
