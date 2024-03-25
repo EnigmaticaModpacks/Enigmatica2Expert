@@ -6,12 +6,12 @@ _Forge-1.12.2-14.23.5.2860_ | _[Modlist](https://github.com/NillerMedDild/Enigma
 
 **Fixed bugs**
 
--   Crash on startup when using older java versions [\#2146](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2177)
+-   Crash on startup when using older java versions [\#2177](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/issues/2177)
 
 **Improvements**
 
--   Change inventory panel recipe to be friendlier to earlygame [\#2172](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2172) by ([ghatus0](https://github.com/ghatus0))
--   Add bat spawn egg recipe to market [\#2164](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2164) by ([Risa-G](https://github.com/Risa-G))
+-   Change inventory panel recipe to be friendlier to earlygame [\#2164](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2164) by ([Risa-G](https://github.com/Risa-G))
+-   Add bat spawn egg recipe to market [\#2172](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2172) by ([ghatus0](https://github.com/ghatus0))
 
 ---
 
