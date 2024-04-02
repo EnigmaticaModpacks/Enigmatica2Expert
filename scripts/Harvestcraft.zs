@@ -18,6 +18,15 @@ recipes.addShapeless(<harvestcraft:schnitzelitem>, [<ore:toolSkillet>, <ore:list
 recipes.addShapeless(<harvestcraft:schnitzelitem>, [<ore:toolSkillet>, <ore:listAllporkraw>, <ore:foodFlour>, <ore:cropLemon>, <ore:foodOliveoil>, <ore:foodBlackpepper>]);
 recipes.addShapeless(<harvestcraft:bratwurstitem>, [<ore:toolCuttingboard>, <ore:foodPorksausage>, <ore:foodPickles>, <ore:cropOnion>, <minecraft:bread>]);
 
+recipes.removeShapeless(<harvestcraft:gourmetbeefpattyitem>);
+recipes.removeShapeless(<harvestcraft:gourmetmuttonpattyitem>);
+recipes.removeShapeless(<harvestcraft:gourmetporkpattyitem>);
+recipes.removeShapeless(<harvestcraft:gourmetvenisonpattyitem>);
+recipes.addShapeless(<harvestcraft:gourmetbeefpattyitem>, [<ore:toolMixingbowl>, <ore:foodGroundbeef>, <ore:foodBlackpepper>, <ore:cropSpiceleaf>, <ore:cropMustard>, <ore:foodSalt>]);
+recipes.addShapeless(<harvestcraft:gourmetmuttonpattyitem>, [<ore:toolMixingbowl>, <ore:foodGroundmutton>, <ore:foodBlackpepper>, <ore:cropSpiceleaf>, <ore:cropMustard>, <ore:foodSalt>]);
+recipes.addShapeless(<harvestcraft:gourmetporkpattyitem>, [<ore:toolMixingbowl>, <ore:foodGroundpork>, <ore:foodBlackpepper>, <ore:cropSpiceleaf>, <ore:cropMustard>, <ore:foodSalt>]);
+recipes.addShapeless(<harvestcraft:gourmetvenisonpattyitem>, [<ore:toolMixingbowl>, <ore:foodGroundvenison>, <ore:foodBlackpepper>, <ore:cropSpiceleaf>, <ore:cropMustard>, <ore:foodSalt>]);
+
 # Raw Meat -> Ground Meat
 mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundduckitem>, <harvestcraft:duckrawitem>, 2000);
 mods.thermalexpansion.Pulverizer.addRecipe(<harvestcraft:groundmuttonitem>, <minecraft:mutton>, 2000);
