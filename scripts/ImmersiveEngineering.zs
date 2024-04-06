@@ -179,25 +179,17 @@ for block, slab in {
 }
 
 
-# [Conveyor Belt]*32 from [Redstone][+2]
-craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
-  "l l l",
-  "▬ ♥ ▬"], {
-  "♥": <ore:dustRedstone>, # Redstone
-  "l": <ore:leather>,      # Leather
-  "▬": <ore:ingotIron>, # Iron Alloy Ingot
-  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
-});
+# Conveyor Belt
 
-# [Conveyor Belt]*32 from [Redstone][+2]
-craft.remake(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32, ["pretty",
-  "R R R",
-  "▬ ♥ ▬"], {
-  "R": <ore:itemRubber>, # Plastic
-  "♥": <ore:dustRedstone>, # Redstone
-  "▬": <ore:ingotIron>, # Iron Alloy Ingot
-  remove: <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, # Conveyor Belt
-});
+	recipes.removeShaped(<immersiveengineering:conveyor>, [[<*>, <*>, <*>], [<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]]);
+
+	recipes.addShaped("Conveyor_Basic", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32,
+	[[<ore:leather>, <ore:leather>, <ore:leather>],
+	[<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]]);
+
+	recipes.addShaped("Conveyor_Basic_Rubber", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 32,
+	[[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>],
+	[<ore:ingotIron>, <ore:dustRedstone>, <ore:ingotIron>]]);
 
 # Unbreakable Graphite Electrodes
     mods.thermalexpansion.InductionSmelter.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}), <immersiveengineering:graphite_electrode>, <advancedrocketry:productingot:1> * 4, 25000);
