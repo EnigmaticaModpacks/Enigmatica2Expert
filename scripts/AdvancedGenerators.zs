@@ -42,6 +42,3 @@
 	[[<ore:ingotSilver>, <ore:ingotTin>, <ore:ingotSilver>],
 	[<ore:ingotTin>, <gendustry:power_module>, <ore:ingotTin>], 
 	[<ore:ingotSilver>, <ore:ingotTin>, <ore:ingotSilver>]]);
-
-# Remove Gas Intake
-	recipes.remove(<advgenerators:gas_input>);
