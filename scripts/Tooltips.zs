@@ -598,11 +598,7 @@ for item in thaumcraftHintItems {
 
 # Unbreakable Graphite Electrode
 	addDescription(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1, display: {Lore: ["Reinforced with Titanium Iridium Alloy"], Name: "Unbreakable Graphite Electrode"}}),"Reinforced Graphite Eletrode. Repaired Graphite Electrodes are insufficient for this process");
-
-# Adv Gen Gas Intake
-	<advgenerators:gas_input>.addTooltip("Disabled");
-	addDescription(<advgenerators:gas_input>,"Disabled due to a bug that was never fixed");
-
+    
 # Marble can be chiseled into..
 	<astralsorcery:blockmarble>.addTooltip(format.aqua("Chisel Variations: Astral Sorcery & Unlimited Chisel Works"));
 	<chisel:marble2:7>.addTooltip(format.aqua("Chisel Variations: Chisel & Quark"));
