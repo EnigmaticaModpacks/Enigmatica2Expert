@@ -50,6 +50,11 @@ mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<ore:oreLead>, <thermalfoundation
 	[<ore:slabTreatedWood>, <ore:slabTreatedWood>, <ore:slabTreatedWood>],
 	[<ore:plankTreatedWood>, null, <ore:plankTreatedWood>]]);
 
+# Amber
+	recipe.remove(<thaumcraft:Amber>);
+	recipe.addShapeless("Amber", <thaumcraft:Amber> * 4, 
+	[<thaumcraft:amber_block>]);
+
 # Amber Bricks
 	recipes.remove(<thaumcraft:amber_brick>);
 	recipes.addShapeless("Thaumcraft Amber Brick", 
