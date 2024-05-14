@@ -32415,7 +32415,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Rolling Machine",
-          "desc:8": "The Rolling Machine is a multiblock machine that uses RF and Water to make Plates much more efficiently than the Smal Plate Presser.\n\nIts other uses include the ability to craft Sheets of various materials, as well as Pressure Tanks that allow to easily transport higher quantities of fluid than Buckets.\n\nIt is recommended to make this machine early to cut down the metal cost of crafting the various components required by other machines."
+          "desc:8": "The Rolling Machine is a multiblock machine that uses RF and Lubricant to make Plates much more efficiently than the Small Plate Presser.\n\nIts other uses include the ability to craft Sheets of various materials, as well as Pressure Tanks that allow to easily transport higher quantities of fluid than Buckets.\n\nIt is recommended to make this machine early to cut down the metal cost of crafting the various components required by other machines."
         }
       },
       "tasks:9": {
