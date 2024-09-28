@@ -8,4 +8,4 @@ This is the official repository and issue-tracker for the modpack Enigmatica 2: 
 
 * [Curseforge](https://minecraft.curseforge.com/projects/enigmatica2expert)
 
-* [Discord](https://discord.gg/HnWNd7X)
+* [Discord](https://discord.gg/enigmatica)
