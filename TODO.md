@@ -26,16 +26,12 @@
 🟧 AdvRocketry 2 if it's stable - Does not seem stable at the moment, tons of unresolved issues
 🟧 Export BetterQuesting changes from world save to config/betterquesting (QuestDatabase.json untracked/out of sync)
 
-## TO VERIFY
-
-- You can craft mekanism gas tanks with any tank instead of just the tank in the recipe
-
 Skyblock:
 🟧 Update SIB
 🟧 Add Parchment recipe
 🟧 Find solution for TC 150vis crafts - cheaper discount armor maybe?
 
-| Remove                    | Add                               |
+| Removed                   | Added                             |
 | ------------------------- | --------------------------------- |
 | **FoamFix**               | **Chibi**                         |
 | **BetterFPS**             | **Naughthirium**                  |
@@ -48,10 +44,4 @@ Skyblock:
 |                           | **Improved Cleanroom Relauncher** |
 |                           | **Universal Tweaks**              |
 |                           | **Stellar Core**                  |
-
-## TODO
-
-We need to get the modpack uploader flow in here, and server files, and git
-
-### Recipes
 
