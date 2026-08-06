@@ -3,9 +3,9 @@
 
 {
   // Cleanroom version to launch (auto-selected on first run)
-  "selectedVersion": "0.5.12-alpha",
+  "selectedVersion": "0.6.8-alpha",
   // Latest Cleanroom version seen by the relauncher (informational)
-  "latestVersion": "0.5.12-alpha",
+  "latestVersion": "0.6.8-alpha",
   // Preferred Java vendor: "adoptium" (Temurin) or "graalvm" (GraalVM Community JDK).
   // If chosen vendor is unavailable for your OS/arch/version, the relauncher falls back to Adoptium automatically.
   "javaVendor": "adoptium",
@@ -15,7 +15,7 @@
   "darkMode": true,
   // Automatically switch to the latest Cleanroom release on launch.
   // When true, the relauncher will always select the latest release, skipping update prompts.
-  "autoUpdate": false,
+  "autoUpdate": true,
   // Disable the cache TTL (Time To Live). If true, the list of Cleanroom releases won't be refetched if already cached.
   "disableCacheTTL": false,
   // Directory where downloaded files (Java, Cleanroom, etc.) will be cached.
