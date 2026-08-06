@@ -7,7 +7,7 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz_ore>, <appliedenergistics2:material:3>);
 
 # Rock Crystal SAG Mill processing (mid-late game gate)
-	scripts.process.crush(<astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>, "only: SagMill",
+	scripts.process.crush(<astralsorcery:blockcustomore:1>, <astralsorcery:itemrockcrystalsimple>, "only: SagMill",
 		[<astralsorcery:itemcelestialcrystal>], [0.05f]);
 
 # Crystal Sword: infuse Diamond Sword with starlight
