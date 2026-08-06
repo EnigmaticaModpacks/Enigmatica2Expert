@@ -63,6 +63,8 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
 - The Orbital Laser Drill is now much more effective at drilling certain rare metals and crystals (Including Rutile)
 - Decreased Slime/Magma island spawn rate by 50%, in an effort to decrease lag
 - Better JEI descriptions on several items, including Rutile Ore and Titanium Ingot
+- Rock Crystal can now be processed in the EnderIO SAG Mill for a chance at bonus Celestial Crystals
+- Added Crystal Sword recipe: infuse a Diamond Sword in the Astral Sorcery Starlight Infuser
 
 ## Bugs fixed:
 
