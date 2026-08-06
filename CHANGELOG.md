@@ -4,7 +4,7 @@
 
 When loading an existing world, you'll get a warning that Extreme Reactors blocks and items are missing. It's both safe and intentional 👍
 
-**Heads up**: Thanks to [CleanroomMC](https://cleanroommc.com/), we're now running on a modern Java version. Java 25 is recommended (any Java 21+ LTS works), instead of the old Java 8 requirement. The included Cleanroom Relauncher mod handles switching Java versions for you, so most players won't need to do anything manually — just make sure your launcher/profile allows it to relaunch.
+**Heads up**: Thanks to [CleanroomMC](https://cleanroommc.com/), we're now running on a modern Java version. Java 25 is recommended (any Java 21+ LTS works), instead of the old Java 8 requirement. The included Cleanroom Relauncher mod handles switching Java versions for you, so most players won't need to do anything manually.
 
 ### ✔️ New Mods
 
