@@ -5,6 +5,7 @@
 /nul
 /GenerateChangelog.ps1
 /vintagefix/
+/automation/secrets.ps1
 
 # Folders to ignore
 /journeymap/
@@ -100,7 +101,6 @@ OpenComputersMod-1.7.4.153-lua52-native.64.dll
 ModpackUploader.ps1
 ModpackUploader.bat
 twitch-export-builder.exe
-settings.ps1
 TwitchExportBuilder.exe
 CHANGELOG-GENERATED.md
 MakeModpackFiles.bat
