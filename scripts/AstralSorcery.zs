@@ -6,6 +6,13 @@ import mods.jei.JEI.removeAndHide as rh;
 	mods.astralsorcery.Grindstone.removeRecipe(<nuclearcraft:gem_dust:2>);
 	mods.astralsorcery.Grindstone.addRecipe(<minecraft:quartz_ore>, <appliedenergistics2:material:3>);
 
+# Rock Crystal SAG Mill processing (mid-late game gate)
+	scripts.process.crush(<astralsorcery:itemrockcrystalsimple>.anyDamage(), <astralsorcery:itemrockcrystalsimple>, "only: SagMill",
+		[<astralsorcery:itemcelestialcrystal>], [0.05f]);
+
+# Crystal Sword: infuse Diamond Sword with starlight
+	scripts.process.magic([<minecraft:diamond_sword>], [<astralsorcery:itemcrystalsword>]);
+
 # Nocturnal Powder
 	mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/nocturnalpowder");
 	mods.astralsorcery.Altar.addDiscoveryAltarRecipe("enigmatica2expert:shaped/internal/altar/nocturnalpowder",
