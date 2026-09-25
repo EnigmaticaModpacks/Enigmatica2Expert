@@ -201,7 +201,6 @@
   * [plethora-1.12.2-1.2.3.jar](https://www.curseforge.com/minecraft/mc-mods/plethora-peripherals/files/2858569) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
   * [plustic-8.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/plusticminusbad/files/3648592) (by [TeamDman](https://www.curseforge.com/members/TeamDman/projects))
   * [PrettyBeaches_1.12.2-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/pretty-beaches/files/3067807) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
-  * [Nutrition-1.12.2-4.6.1.jar](https://www.curseforge.com/minecraft/mc-mods/project-429036/files/3141251) (by [radu02360236](https://www.curseforge.com/members/radu02360236/projects))
   * [ProjectIntelligence-1.12.2-1.0.9.28-universal.jar](https://www.curseforge.com/minecraft/mc-mods/project-intelligence/files/2833640) (by [brandon3055](https://www.curseforge.com/members/brandon3055/projects))
   * [Psi-r1.1-78.2.jar](https://www.curseforge.com/minecraft/mc-mods/psi/files/3085917) (by [Vazkii](https://www.curseforge.com/members/Vazkii/projects))
   * [Quark-r1.6-179.jar](https://www.curseforge.com/minecraft/mc-mods/quark/files/2924091) (by [Vazkii](https://www.curseforge.com/members/Vazkii/projects))
