@@ -16,7 +16,7 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
 ### ❌ Removed Mods
 
 - ZeroCore2
-- Extreme Reactors (remove quest icon)
+- Extreme Reactors
 
 ### ✨ Improvements
 
