@@ -24,7 +24,6 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
   * [Mouse Tweaks Unofficial](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks-unofficial) (by [CleanroomMC](https://www.curseforge.com/members/CleanroomMC/projects))
   * [Naughthirium](https://www.curseforge.com/minecraft/mc-mods/naughthirium) (by [Rongmario](https://www.curseforge.com/members/Rongmario/projects))
   * [Nothirium](https://www.curseforge.com/minecraft/mc-mods/nothirium) (by [meldexun](https://www.curseforge.com/members/meldexun/projects))
-  * [project-429036](https://www.curseforge.com/minecraft/mc-mods/project-429036) (by [radu02360236](https://www.curseforge.com/members/radu02360236/projects))
   * [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core) (by [Desoroxxx](https://www.curseforge.com/members/Desoroxxx/projects))
   * [RenderLib](https://www.curseforge.com/minecraft/mc-mods/renderlib) (by [meldexun](https://www.curseforge.com/members/meldexun/projects))
   * [Scalar Legacy](https://www.curseforge.com/minecraft/mc-mods/scalar-legacy) (by [kappa_maintainer](https://www.curseforge.com/members/kappa_maintainer/projects))
