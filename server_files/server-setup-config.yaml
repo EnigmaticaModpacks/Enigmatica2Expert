@@ -4,7 +4,7 @@ _specver: 2
 # modpack related settings, changes the supposed to change the visual appearance of the launcher
 modpack:
     # Name of the mod pack, that is displayed in various places where it fits
-    name: Enigmatica 2: Expert
+    name: Enigmatica 2 Expert
 
     # Description
     description: A hardcore-questing take on Enigmatica 2 for Minecraft 1.12.2!
@@ -23,7 +23,7 @@ install:
     # For forge: "http://files.minecraftforge.net/maven/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar"
     # For Fabric: "https://maven.fabricmc.net/net/fabricmc/fabric-installer/{{@loaderversion@}}/fabric-installer-{{@loaderversion@}}.jar"
     # For NeoForge: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
-    installerUrl: 'http://files.minecraftforge.net/maven/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar'
+    installerUrl: 'https://github.com/CleanroomMC/Cleanroom/releases/download/0.6.11-alpha/cleanroom-0.6.11-alpha-installer.jar'
 
     # Installer Arguments
     # These Arguments have to be passed to the installer
@@ -77,12 +77,15 @@ install:
     # this can either use regex or glob {default glob: https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileSystem.html#getPathMatcher-java.lang.String-}
     # specify with regex:.... or glob:.... if you want to force a matching type
     ignoreFiles:
+        - config/thaumicjei_itemstack_aspects.json
         - resourcepacks/**
         - shaderpacks/**
         - config/*-client.toml
         - config/*-client.cfg
         - local/**
         - patchouli_books/**
+        - resources
+        - schematics
 
     # often a server needs more files, which are nearly useless on the client, such as tickprofiler
     # This is a list of files, each ' - ' is a new file:
@@ -154,7 +157,7 @@ launch:
     # For Forge 1.12-: "forge-{{@mcversion@}}-{{@loaderversion@}}-universal.jar"
     # For Forge 1.13+: "forge-{{@mcversion@}}-{{@loaderversion@}}.jar"
     # For Fabric: "fabric-server-launch.jar"
-    startFile: 'forge-{{@mcversion@}}-{{@loaderversion@}}-universal.jar'
+    startFile: cleanroom-0.6.11-alpha.jar
 
     # This is the command how the server is supposed to be started
     # For <1.16 it should be
@@ -197,7 +200,13 @@ launch:
         - '-XX:SurvivorRatio=32'
         - '-XX:+PerfDisableSharedMem'
         - '-XX:MaxTenuringThreshold=1'
+        # The pack settles at ~370 MB of metaspace; the 21 MB default trips a
+        # metadata-threshold collection six times on the way there.
+        - '-XX:MetaspaceSize=384M'
         - '-Dusing.aikars.flags=https://mcflags.emc.gs'
-        - '-Daikars.new.flags=true'
-        - '-Dfml.readTimeout=180' # servertimeout
-        - '-Dfml.queryResult=confirm' # auto /fmlconfirm
+        - -Daikars.new.flags=true
+        - -Dfml.readTimeout=180 # servertimeout
+        - -Dfml.queryResult=confirm # auto /fmlconfirm
+        - --add-opens=java.base/sun.security.util=ALL-UNNAMED # java16+ support
+        - --add-opens=java.base/java.util.jar=ALL-UNNAMED # java16+ support
+        - '-XX:+IgnoreUnrecognizedVMOptions' # java16+ support
