@@ -113,7 +113,7 @@ function New-ClientFiles {
 
         # Zipping up the newly created overrides folder and $manifest
         7z a $clientZip $manifest -sdel
-        7z a $clientZip $overridesFolder -r -sdel
+        7z a $clientZip "./$overridesFolder" -r -sdel
 
         Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
         Write-Host "Client files $clientZip created!" -ForegroundColor Green
@@ -458,7 +458,7 @@ function New-ServerFiles {
 
         # Zip up server manifest and overrides folder
         7z a $serverZip $serverManifest -sdel
-        7z a $serverZip $serverOverridesFolder -r -sdel
+        7z a $serverZip "./$serverOverridesFolder" -r -sdel
 
         # Add server_files to zip root (start scripts, config yaml, etc.)
         Write-Host "Adding server files from " -ForegroundColor Cyan -NoNewline
