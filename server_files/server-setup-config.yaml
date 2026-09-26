@@ -69,6 +69,28 @@ install:
             - 271740 # Toast Control
             - 871198 # VintageFix
             - 79287 # WAILA Harvestability
+            - 624960 # Nothirium (client-only, breaks Cleanroom mixin discovery on server; Naughthirium is the server-side replacement)
+            - 624967 # RenderLib (client-only rendering lib, Nothirium dependency; same mixin-discovery crash on server)
+            - 225928 # Custom Backgrounds
+            - 226406 # Custom Main Menu
+            - 226447 # Resource Loader
+            - 240630 # Just Enough Resources (JER)
+            - 243478 # More Overlays
+            - 245733 # ToroHealth Damage Indicators
+            - 250398 # Controlling
+            - 267602 # ConnectedTexturesMod
+            - 267939 # Just Enough HarvestCraft (JEHC)
+            - 272515 # Better Advancements
+            - 280294 # FPS Reducer
+            - 285492 # Thaumic JEI
+            - 291727 # Just Enough Petroleum
+            - 295736 # MemoryTester
+            - 303122 # Just Enough Throwing In Fluids (JETIF)
+            - 306549 # Tips
+            - 313816 # Armor Toughness Bar
+            - 314002 # Overloaded Armor Bar
+            - 316304 # Loot Capacitor Tooltips
+            - 461660 # Mouse Tweaks Unofficial
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~
