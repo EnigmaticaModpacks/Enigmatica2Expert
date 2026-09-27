@@ -199,6 +199,17 @@ launch:
     # Example: "\"C:/Program Files/Java/jre1.8.0_201/bin/java.exe\""
     forcedJavaPath: ~
 
+    # If you aren't sure what the java path is you can let serverstarter attempt to find the correct JVM
+    # For this you need to have all available JVMs on the PATH
+    # Cleanroom 0.6.11-alpha requires Java 25 (class file version 69) - java 17/21 will not work
+    supportedJavaVersions: [25]
+
+    # If no matching JVM (see supportedJavaVersions above) is found on PATH, serverstarter can
+    # download one automatically from Eclipse Adoptium (https://adoptium.net) into a local folder.
+    # The first entry of supportedJavaVersions is used as the version to download.
+    # You will be prompted for confirmation before anything is downloaded.
+    autoDownloadJava: true
+
     # Java args that are supposed to be used when the server launches
     # keep in mind java args often need ' - ' in front of it to work, use clarifying parentheses to make sure it uses it correctly
     # reference: https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/
