@@ -95,7 +95,9 @@ $MODLIST_CREATOR_JAR = "ModListCreator-5.0.0-fatjar.jar"
 $CLIENT_FILE_AUTHOR = "EnigmaticaModpacks"
 
 $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @("config",
-  "defaultconfigs")
+  "resources",
+  "schematics",
+  "scripts")
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
   "InvTweaks.cfg",
@@ -107,7 +109,7 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 
 # Example:
 # $FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES = @("mods/Apotheosis-1.19.2-6.2.1.jar", "mods/create-1.19.2-0.5.1.b.jar")
-$FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES = @()
+$FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES = @("mods/Nutrition-1.12.2-4.6.1.jar")
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @(
   "resourcepacks"
