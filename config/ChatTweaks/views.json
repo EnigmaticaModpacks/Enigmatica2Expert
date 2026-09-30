@@ -1,0 +1,51 @@
+{
+  "views": [
+    {
+      "name": "*",
+      "filterPattern": "",
+      "outputFormat": "$0",
+      "style": "Chat",
+      "isExclusive": false,
+      "isMuted": false,
+      "channels": [
+        "main",
+        "interaction",
+        "system",
+        "death"
+      ]
+    },
+    {
+      "name": "system",
+      "filterPattern": "",
+      "outputFormat": "$0",
+      "style": "Side",
+      "isExclusive": true,
+      "isMuted": false,
+      "channels": [
+        "system"
+      ]
+    },
+    {
+      "name": "interaction",
+      "filterPattern": "",
+      "outputFormat": "$0",
+      "style": "Bottom",
+      "isExclusive": true,
+      "isMuted": false,
+      "channels": [
+        "interaction"
+      ]
+    },
+    {
+      "name": "Muted",
+      "filterPattern": ".*I'm sorry, but this command can only be used in single player mode\\..*",
+      "outputFormat": "$0",
+      "style": "Hidden",
+      "isExclusive": true,
+      "isMuted": true,
+      "channels": [
+        "main"
+      ]
+    }
+  ]
+}
