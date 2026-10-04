@@ -4,6 +4,8 @@
 
 Taking a backup before updating is recommended, as always.
 
+**Important**: Install this version as a **new instance** rather than updating your existing one. Several mods were removed or replaced in this update, and updating in place can leave the old jars behind in your `mods` folder, causing crashes or conflicts. To keep your worlds, copy your `saves` folder (and optionally `journeymap`, `options.txt`, etc.) from the old instance into the new one.
+
 When loading an existing world, you'll get a warning that Extreme Reactors blocks and items are missing. It's both safe and intentional 👍 
 
 **Note**: Thanks to [CleanroomMC](https://cleanroommc.com/), we're now running on a modern Java version. Java 25 is recommended (any Java 21+ LTS works), instead of the old Java 8 requirement. The included Cleanroom Relauncher mod handles switching Java versions for you, so most players won't need to do anything manually.
