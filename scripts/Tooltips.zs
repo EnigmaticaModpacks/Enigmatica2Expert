@@ -191,9 +191,6 @@ for item in thaumcraftHintItems {
 	
 # Space Ores
 	var spaceOres = [
-	<thermalfoundation:ore_fluid:4>,
-	<thermalfoundation:ore_fluid:3>,
-	<thermalfoundation:ore_fluid:2>,
 	<libvulpes:ore0>,
 	<thermalfoundation:ore:7>,
 	<thermalfoundation:ore:8>,
@@ -210,6 +207,26 @@ for item in thaumcraftHintItems {
 	for item in spaceOres {
 	addDescription(item, spaceGen);
 	}
+
+	# Clathrate Ores (planet worldgen, asteroids, meteors, Laser Drill)
+	addDescription(<thermalfoundation:ore_fluid:2>,
+	["Destabilized Redstone Clathrate Ore:",
+	"- Generates as ore on Europa, Proxima B, Terra Nova, Stella, KELT-6a and Kepler 0119",
+	"- Found in Destabilized Redstone asteroids",
+	"- Dropped by Blood Magic meteors (Clathrate catalysts and the Moon Turf meteor)",
+	"- Orbital Laser Drill: Stormland biome (found on Philucka)"]);
+	addDescription(<thermalfoundation:ore_fluid:3>,
+	["Energized Glowstone Clathrate Ore:",
+	"- Generates as ore on Mercury, Venus, Novus, KELT-2ab and Kepler 0118",
+	"- Found in Energized Netherrack asteroids",
+	"- Dropped by Blood Magic meteors (Clathrate catalysts)",
+	"- Orbital Laser Drill: Crystal Chasms biome (found on Proxima B)"]);
+	addDescription(<thermalfoundation:ore_fluid:4>,
+	["Resonant Ender Clathrate Ore:",
+	"- Generates as ore on Mars, Philucka and KELT-3",
+	"- Found in Resonant End Stone asteroids",
+	"- Dropped by Blood Magic meteors (Clathrate catalysts)",
+	"- Orbital Laser Drill: Alien Forest and Marsh biomes (found on KELT-6a)"]);
 	
 	addDescription(<libvulpes:ore0:8>,
 	["Rutile Ore:",
