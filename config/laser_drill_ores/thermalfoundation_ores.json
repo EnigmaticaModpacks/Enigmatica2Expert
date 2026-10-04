@@ -43,7 +43,7 @@
 		"color": 5,
 		"rarity": [
 			{
-				"whitelist": " advancedrocketry:alien forest, advancedrocketry:marsh",
+				"whitelist": "advancedrocketry:alien_forest, advancedrocketry:marsh",
 				"blacklist": "",
 				"depth_min": 0,
 				"depth_max": 255,
