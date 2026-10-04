@@ -5,8 +5,10 @@
   * [Aerial Affinity](https://www.curseforge.com/minecraft/mc-mods/aerial-affinity) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
   * [Alfheim Lighting Engine](https://www.curseforge.com/minecraft/mc-mods/alfheim-lighting-engine) (by [Desoroxxx](https://www.curseforge.com/members/Desoroxxx/projects))
   * [BloodMagic Meteors JEI  Support](https://www.curseforge.com/minecraft/mc-mods/bloodmagic-meteors-jei-support) (by [MeowmelMuku](https://www.curseforge.com/members/MeowmelMuku/projects))
+  * [Chat Tweaks](https://www.curseforge.com/minecraft/mc-mods/chat-tweaks) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [Chibi](https://www.curseforge.com/minecraft/mc-mods/chibi) (by [Rongmario](https://www.curseforge.com/members/Rongmario/projects))
   * [Cleanroom Relauncher](https://www.curseforge.com/minecraft/mc-mods/cleanroom-relauncher) (by [CleanroomMC](https://www.curseforge.com/members/CleanroomMC/projects))
+  * [CodeChicken Lib CRE](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-cre) (by [kappa_maintainer](https://www.curseforge.com/members/kappa_maintainer/projects))
   * [ConfigAnytime](https://www.curseforge.com/minecraft/mc-mods/configanytime) (by [CleanroomMC](https://www.curseforge.com/members/CleanroomMC/projects))
   * [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore) (by [CreativeMD](https://www.curseforge.com/members/CreativeMD/projects))
   * [Forgelin-Continuous](https://www.curseforge.com/minecraft/mc-mods/forgelin-continuous) (by [ChAoS_UnItY_](https://www.curseforge.com/members/ChAoS_UnItY_/projects))
@@ -18,6 +20,7 @@
   * [Mouse Tweaks Unofficial](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks-unofficial) (by [CleanroomMC](https://www.curseforge.com/members/CleanroomMC/projects))
   * [Naughthirium](https://www.curseforge.com/minecraft/mc-mods/naughthirium) (by [Rongmario](https://www.curseforge.com/members/Rongmario/projects))
   * [Nothirium](https://www.curseforge.com/minecraft/mc-mods/nothirium) (by [meldexun](https://www.curseforge.com/members/meldexun/projects))
+  * [project-429036](https://www.curseforge.com/minecraft/mc-mods/project-429036) (by [radu02360236](https://www.curseforge.com/members/radu02360236/projects))
   * [Red Core](https://www.curseforge.com/minecraft/mc-mods/red-core) (by [Desoroxxx](https://www.curseforge.com/members/Desoroxxx/projects))
   * [RenderLib](https://www.curseforge.com/minecraft/mc-mods/renderlib) (by [meldexun](https://www.curseforge.com/members/meldexun/projects))
   * [Scalar Legacy](https://www.curseforge.com/minecraft/mc-mods/scalar-legacy) (by [kappa_maintainer](https://www.curseforge.com/members/kappa_maintainer/projects))
@@ -31,6 +34,7 @@
 ### Removed
 
   * [BetterFps](https://www.curseforge.com/minecraft/mc-mods/betterfps) (by [Guichaguri](https://www.curseforge.com/members/Guichaguri/projects))
+  * [CodeChicken Lib 1.8.+](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8) (by [covers1624](https://www.curseforge.com/members/covers1624/projects))
   * [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors) (by [ZeroNoRyouki](https://www.curseforge.com/members/ZeroNoRyouki/projects))
   * [Foam​Fix](https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod) (by [asiekierka](https://www.curseforge.com/members/asiekierka/projects))
   * [Just Enough Items (JEI)](https://www.curseforge.com/minecraft/mc-mods/jei) (by [mezz](https://www.curseforge.com/members/mezz/projects))
