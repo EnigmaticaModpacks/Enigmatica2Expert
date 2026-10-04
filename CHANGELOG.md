@@ -109,7 +109,7 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
 
 - Dilithium Ore shows up as material.dilithium.name
 - Batteries show up as item.battery1.name
-- Corrected Immersive Tech shematics [#2179](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2179/changes)
+- Corrected Immersive Tech schematics [#2179](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2179/changes)
 - Change EmberRoot Zoo Deer to drop Venison [#2184](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2184)
 - Fix Immersive Engineering Conveyor Belt Redstone Recipes [#2183](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2183)
 - Change Gourmet Patty recipes from Mustard Seed to Mustard Crop [#2182](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2182)
