@@ -202,6 +202,38 @@ function Add-ThirdPartyMods {
     }
 }
 
+function Remove-ThirdPartyModsFromInstance {
+    # CurseForge re-adds third-party jars to installedAddons when it rescans the mods folder.
+    # They're shipped via overrides instead, so strip them before generating manifests.
+    if ($FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES.Count -eq 0 -or !(Test-Path $minecraftInstanceFile)) {
+        return
+    }
+
+    $instancePath = "$INSTANCE_ROOT/$minecraftInstanceFile"
+    $instanceJson = [System.Text.Json.Nodes.JsonNode]::Parse([System.IO.File]::ReadAllText($instancePath))
+    $installedAddons = $instanceJson["installedAddons"]
+    $removedCount = 0
+
+    for ($i = $installedAddons.Count - 1; $i -ge 0; $i--) {
+        $fileName = $installedAddons[$i]["installedFile"]?["fileNameOnDisk"]?.GetValue[string]()
+        $isThirdParty = $FILES_TO_INCLUDE_IN_MODS_FOLDER_IN_CLIENT_FILES | Where-Object { $fileName -match $_ }
+        if ($fileName -and $isThirdParty) {
+            Write-Host "Removing " -ForegroundColor Cyan -NoNewline
+            Write-Host $fileName -ForegroundColor Blue -NoNewline
+            Write-Host " from $minecraftInstanceFile." -ForegroundColor Cyan
+            $installedAddons.RemoveAt($i)
+            $removedCount++
+        }
+    }
+
+    if ($removedCount -gt 0) {
+        # Relaxed escaping keeps the output byte-identical to CurseForge's formatting
+        $jsonOptions = [System.Text.Json.JsonSerializerOptions]::new()
+        $jsonOptions.Encoder = [System.Text.Encodings.Web.JavaScriptEncoder]::UnsafeRelaxedJsonEscaping
+        [System.IO.File]::WriteAllText($instancePath, $instanceJson.ToJsonString($jsonOptions))
+    }
+}
+
 function Remove-BlacklistedFiles {
     if ($ENABLE_CLIENT_FILE_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
         $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
@@ -606,6 +638,7 @@ Test-ForDependencies
 . "$PSScriptRoot/$secretsFile"
 Validate-SecretsFile
 
+Remove-ThirdPartyModsFromInstance
 New-ClientFiles
 Push-ClientFiles
 
