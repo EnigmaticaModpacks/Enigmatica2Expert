@@ -39,7 +39,7 @@
 		]
 	},
 	{
-		"item": "thermalfoundation:ore:4",
+		"item": "thermalfoundation:ore_fluid:4",
 		"color": 5,
 		"rarity": [
 			{
@@ -52,7 +52,7 @@
 		]
 	},
 	{
-		"item": "thermalfoundation:ore:2",
+		"item": "thermalfoundation:ore_fluid:2",
 		"color": 6,
 		"rarity": [
 			{
@@ -65,7 +65,7 @@
 		]
 	},
 	{
-		"item": "thermalfoundation:ore:3",
+		"item": "thermalfoundation:ore_fluid:3",
 		"color": 4,
 		"rarity": [
 			{

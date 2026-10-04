@@ -1,5 +1,18 @@
 ### Enigmatica 2: Expert Changelog
 
+## 1.93a
+
+### 🦟 Bugs Fixed
+
+- Clathrates can _actually_ be mined using the IF Laser Drill on certain planets now
+  - Destabilized Clathrate: Stormland biome
+  - Energized Clathrate: Crystal Chasms biome
+  - Resonant Clathrate: Alien Forest and Marsh biomes
+- Fixed KELT-6a (dim 121) biome typo (`alien forest` → `alien_forest`), so the planet and its Laser Drill ores now use the correct Alien Forest biome
+  - Existing worlds need the same steps as the 1.93 KELT-6a fix (remove `advRocketry/planetDefs.xml`, join the world, run `advRocketry planet delete 121`)
+
+---
+
 ## 1.93
 
 Taking a backup before updating is recommended, as always.
