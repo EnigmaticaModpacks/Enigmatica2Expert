@@ -2,19 +2,6 @@
 
 ## 1.93a
 
-### 🦟 Bugs Fixed
-
-- Clathrates can _actually_ be mined using the IF Laser Drill on certain planets now
-  - Destabilized Clathrate: Stormland biome
-  - Energized Clathrate: Crystal Chasms biome
-  - Resonant Clathrate: Alien Forest and Marsh biomes
-- Fixed KELT-6a (dim 121) biome typo (`alien forest` → `alien_forest`), so the planet and its Laser Drill ores now use the correct Alien Forest biome
-  - Existing worlds need the same steps as the 1.93 KELT-6a fix (remove `advRocketry/planetDefs.xml`, join the world, run `advRocketry planet delete 121`)
-
----
-
-## 1.93
-
 Taking a backup before updating is recommended, as always.
 
 **Important**: Install this version as a **new instance** rather than updating your existing one. Several mods were removed or replaced in this update, and updating in place can leave the old jars behind in your `mods` folder, causing crashes or conflicts. To keep your worlds, copy your `saves` folder (and optionally `journeymap`, `options.txt`, etc.) from the old instance into the new one.
@@ -112,6 +99,9 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
 - Added Void Seed to Arcane Crafting Engine
 - Added Essentia Buffer to Arcane Crafting Engine
 - Clathrates can now be mined using the IF Laser Drill on certain planets
+  - Destabilized Clathrate: Stormland biome
+  - Energized Clathrate: Crystal Chasms biome
+  - Resonant Clathrate: Alien Forest and Marsh biomes
 - The Orbital Laser Drill is now much more effective at drilling certain rare metals and crystals (Including Rutile)
 - Decreased Slime/Magma island spawn rate by 50%, in an effort to decrease lag
 - Better JEI descriptions on several items, including Rutile Ore and Titanium Ingot
@@ -127,7 +117,7 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
 - Fix Immersive Engineering Conveyor Belt Redstone Recipes [#2183](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2183)
 - Change Gourmet Patty recipes from Mustard Seed to Mustard Crop [#2182](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2182)
 - _Actually_ Change Pork Rinds and Cracklins recipes [#2181](https://github.com/EnigmaticaModpacks/Enigmatica2Expert/pull/2181)
-- Fixed planet KELT-6a (dim 121) having incorrect biomes - It's now alien forest and marsh as intended.
+- Fixed planet KELT-6a (dim 121) having incorrect biomes - It's now Alien Forest and Marsh as intended, and its Laser Drill ores match.
   - For the fix to take effect in existing worlds, you need to:
     - Remove the `advRocketry/planetDefs.xml` file (just that 1 file)
     - Join the world
