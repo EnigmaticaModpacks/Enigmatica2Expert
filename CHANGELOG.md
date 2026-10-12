@@ -10,6 +10,8 @@ When loading an existing world, you'll get a warning that Extreme Reactors block
 
 **Note**: Thanks to [CleanroomMC](https://cleanroommc.com/), we're now running on a modern Java version. Java 25 is recommended (any Java 21+ LTS works), instead of the old Java 8 requirement. The included Cleanroom Relauncher mod handles switching Java versions for you, so most players won't need to do anything manually.
 
+**Note**: If you've played other modpacks that use Cleanroom, the Relauncher may pick up a cached version from them instead of the one this pack needs. If the game fails to launch or uses the wrong Cleanroom version, close the game and delete (or back up) the `java` and `relauncher` folders in `%USERPROFILE%\.cleanroom` (Windows, e.g. `C:\Users\<username>\.cleanroom`) or `~/.cleanroom` (macOS/Linux). The next launch will download the correct version.
+
 ### ✔️ New Mods
 
   * [Aerial Affinity](https://www.curseforge.com/minecraft/mc-mods/aerial-affinity) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
