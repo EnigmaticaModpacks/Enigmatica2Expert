@@ -62,7 +62,6 @@ install:
         # optional paramenter used for curse to specify a whole project to ignore (mostly if it is client side only)
         ignoreProject:
             - 248787 # AppleSkin
-            - 253449 # Hwyla
             - 60089 # Mouse Tweaks
             - 238372 # Neat
             - 237701 # ReAuth
